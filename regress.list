@@ -561,6 +561,7 @@ dummy7	normal	ivltests diff=log/dummy7.log:gold/dummy7.gold
 time6b  normal  ivltests # Rewrote time6 to pass with XL
 time6c  normal  ivltests diff=log/time6c.log:gold/time6c.gold
 disblock normal ivltests # PR280
+disblock2 normal	ivltests diff=log/disblock2.log:gold/displock2.gold
 comment1	normal	ivltests # PR410/411
 pr136    normal  ivltests # PR136 param foo_size 8 * 4
 port-test4a	CE	ivltests # Port declaration input duplication checks (PR394)
@@ -662,4 +663,5 @@ pr729		normal  ivltests diff=log/pr729.log:gold/pr729.gold
 pr734		normal	ivltests
 pr735		normal	ivltests
 pr748		normal	ivltests
+pr751		normal  ivltests diff=log/pr751.log:gold/pr751.gold
 prng		normal	ivltests
