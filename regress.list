@@ -155,6 +155,8 @@ sdw_array	normal	ivltests
 sdw_assign	normal	ivltests
 sdw_dsbl	normal	ivltests
 sdw_force	normal	ivltests
+force1		normal	ivltests
+force2		normal	ivltests
 sdw_function1	normal	ivltests
 sdw_function2	normal	ivltests
 sdw_function3	normal	ivltests
