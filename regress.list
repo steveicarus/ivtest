@@ -643,3 +643,4 @@ pr675		normal	ivltests
 pr678		normal	ivltests
 pr685		normal,-S ivltests
 pr690		normal	ivltests
+pr693		normal  ivltests diff=log/pr693.log:gold/pr693.gold
