@@ -356,6 +356,7 @@ task_mem 		normal	ivltests	#
 task_omemw2     normal	ivltests	# 
 unary_lnot1      normal	ivltests	# 
 unary_lnot2      normal	ivltests	# 
+unary_lnot3      normal	ivltests	# 
 lh_varindx2      normal	ivltests	# 
 lh_varindx4      normal	ivltests	# 
 lh_varindx5      normal	ivltests	# 
