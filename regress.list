@@ -205,6 +205,7 @@ udp_x	normal	ivltests
 wireadd1 normal ivltests
 wiremod1 normal ivltests
 wiresl normal ivltests
+wiresl2 normal ivltests gold=wiresl2.gold
 wiresr normal ivltests
 wiresub1 normal ivltests
 wirexor1 normal ivltests
