@@ -432,6 +432,7 @@ memport_bs normal ivltests # PR#303
 pr224 normal ivltests  # reg [3:0] ack; ... @(posedge ack)
 pr224a normal ivltests # reg [3:0] ack; ... @(posedge ack[p])
 pr298  normal ivltests diff=log/pr298.log:gold/pr298.gold
+writememh1 normal ivltests # pr#334
 varlsfht1 normal ivltests # variable << in always
 varlsfht2 normal ivltests # variable << in function
 varlsfht normal ivltests  # variable << in wire
