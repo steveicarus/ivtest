@@ -1,2 +1,4 @@
-sh: iverilog: command not found
+./ivltests/contrib8.3.v:22: error: Unknown module type: MUX_REG_8x8
+Unable to elaborate module test.
+errors translating Verilog program.
 COMPERR

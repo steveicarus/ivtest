@@ -1,3 +1,4 @@
 ./ivltests/readmemh5.v:35: error: part select of a memory: main.array
 1 error(s) elaborating design.
 errors translating Verilog program.
+COMPERR

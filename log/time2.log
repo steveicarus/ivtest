@@ -1,2 +1,18 @@
-sh: iverilog: command not found
-COMPERR
+time = 0, clock = 0
+time = 10, clock = 1
+ edge ! time = 10, count = 1
+time = 20, clock = 2
+time = 30, clock = 3
+ edge ! time = 30, count = 2
+time = 40, clock = 4
+time = 50, clock = 5
+ edge ! time = 50, count = 3
+time = 60, clock = 6
+time = 70, clock = 7
+ edge ! time = 70, count = 4
+time = 80, clock = 8
+time = 90, clock = 9
+ edge ! time = 90, count = 5
+time = 100, clock = a
+ edge ! time = 110, count = 6
+PASSED

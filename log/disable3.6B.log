@@ -1,2 +1,2 @@
-sh: iverilog: command not found
-COMPERR
+./ivltests/disable3.6B.v:69: internal error: target (10target_vvm): does not support disable statements.
+FAILED - disable3.6B - Disable task didn't stop toggle

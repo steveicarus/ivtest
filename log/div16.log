@@ -1,4 +1,3 @@
-ERROR: $dumpvars: Unsupported parameter type
 16-bit Dividend, 8-bit divisor
 Circuit: 17767 / 198 = 89, rem = 145 		......... Reality: 89, rem = 145
 Circuit: 39017 / 115 = 339, rem = 32 		......... Reality: 339, rem = 32
@@ -48,3 +47,43 @@ Circuit: 17132 / 3248 = 5, rem = 892 		......... Reality: 5, rem = 892
 Circuit: 54331 / 1787 = 30, rem = 721 		......... Reality: 30, rem = 721
 Circuit: 39474 / 3247 = 12, rem = 510 		......... Reality: 12, rem = 510
 Circuit: 36156 / 3924 = 9, rem = 840 		......... Reality: 9, rem = 840
+Circuit: 35308 / 2840 = 12, rem = 1228 		......... Reality: 12, rem = 1228
+Circuit: 32731 / 1116 = 29, rem = 367 		......... Reality: 29, rem = 367
+Circuit: 63746 / 2074 = 30, rem = 1526 		......... Reality: 30, rem = 1526
+Circuit: 30974 / 2883 = 10, rem = 2144 		......... Reality: 10, rem = 2144
+
+16-bit Dividend, 16-bit divisor
+Circuit: 16635 / 9978 = 1, rem = 6657 		......... Reality: 1, rem = 6657
+Circuit: 57002 / 49978 = 1, rem = 7024 		......... Reality: 1, rem = 7024
+Circuit: 34299 / 42281 = 0, rem = 34299 		......... Reality: 0, rem = 34299
+Circuit: 60881 / 16358 = 3, rem = 11807 		......... Reality: 3, rem = 11807
+Circuit: 61445 / 49468 = 1, rem = 11977 		......... Reality: 1, rem = 11977
+Circuit: 46972 / 51092 = 0, rem = 46972 		......... Reality: 0, rem = 46972
+Circuit: 25973 / 4056 = 6, rem = 1637 		......... Reality: 6, rem = 1637
+Circuit: 5566 / 43105 = 0, rem = 5566 		......... Reality: 0, rem = 5566
+Circuit: 35977 / 59897 = 0, rem = 35977 		......... Reality: 0, rem = 35977
+Circuit: 44892 / 9915 = 4, rem = 5232 		......... Reality: 4, rem = 5232
+Circuit: 46760 / 15513 = 3, rem = 221 		......... Reality: 3, rem = 221
+Circuit: 46607 / 16533 = 2, rem = 13541 		......... Reality: 2, rem = 13541
+Circuit: 22449 / 13803 = 1, rem = 8646 		......... Reality: 1, rem = 8646
+Circuit: 58609 / 20659 = 2, rem = 17291 		......... Reality: 2, rem = 17291
+Circuit: 32261 / 24047 = 1, rem = 8214 		......... Reality: 1, rem = 8214
+Circuit: 3063 / 48896 = 0, rem = 3063 		......... Reality: 0, rem = 3063
+Circuit: 34025 / 60065 = 0, rem = 34025 		......... Reality: 0, rem = 34025
+Circuit: 33338 / 2789 = 11, rem = 2659 		......... Reality: 11, rem = 2659
+Circuit: 36810 / 28683 = 1, rem = 8127 		......... Reality: 1, rem = 8127
+Circuit: 19147 / 32720 = 0, rem = 19147 		......... Reality: 0, rem = 19147
+Circuit: 12616 / 583 = 21, rem = 373 		......... Reality: 21, rem = 373
+Circuit: 18276 / 38589 = 0, rem = 18276 		......... Reality: 0, rem = 18276
+Circuit: 4639 / 23843 = 0, rem = 4639 		......... Reality: 0, rem = 4639
+Circuit: 16158 / 40616 = 0, rem = 16158 		......... Reality: 0, rem = 16158
+Circuit: 18204 / 61051 = 0, rem = 18204 		......... Reality: 0, rem = 18204
+
+Special Cases:
+Circuit: 65535 / 65535 = 1, rem = 0 		......... Reality: 1, rem = 0
+Circuit: 312 / 1 = 312, rem = 0 		......... Reality: 312, rem = 0
+Circuit: 0 / 42 = 0, rem = 0 		......... Reality: 0, rem = 0
+Circuit: 312 / 0 = 65535, rem = 312 		......... Reality: x, rem = x
+
+
+PASSED. -  There were 0 Errors.

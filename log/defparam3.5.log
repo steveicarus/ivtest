@@ -1,2 +1,3 @@
-sh: iverilog: command not found
-COMPERR
+./ivltests/defparam3.5.v:26: warning: Ranges in parameter definition are not supported.
+./ivltests/defparam3.5.v:27: warning: Ranges in parameter definition are not supported.
+PASSED

@@ -1,4 +1,11 @@
-./ivltests/shellho1.v: No such file or directory
-No top level modules, and no -s option.
-errors translating Verilog program.
-COMPERR
+Running first test.
+
+PASS! top.memory.memory[0] set correctly.
+top.memory.memory[0] = f
+
+Running second test.
+
+top.memory.memory[1] = f
+PASS! top.memory.memory[1] set correctly.
+top.memory.memory[1] = f
+PASSED

@@ -1,2 +1,4 @@
-sh: iverilog: command not found
+./ivltests/always3.1.9A.v:40: internal error: target (10target_vvm): does not support disable statements.
+error: Code generation had errors.
+errors translating Verilog program.
 COMPERR

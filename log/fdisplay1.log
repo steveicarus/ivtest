@@ -4,5 +4,3 @@ another message (via fwrite)  to stdout
  (via fdisplay) 
 a = 01011010 at 5
 PASSED
-FAILED
-FAILED
