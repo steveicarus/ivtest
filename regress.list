@@ -44,11 +44,11 @@ always3.1.11B	normal	ivltests
 always3.1.12A	normal	ivltests	# always fork join
 always3.1.12B	normal	ivltests	# always fork: block_id join
 always3.1.12C	normal	ivltests
-always3.1.1A	CO	ivltests
-always3.1.1B	CO	ivltests
-always3.1.1C	CO	ivltests
-always3.1.1D	CO	ivltests
-always3.1.1E	CO	ivltests
+always3.1.1A	CO	ivltests	# has an infinite loop.
+always3.1.1B	CO	ivltests	# has an infinite loop
+always3.1.1C	normal	ivltests
+always3.1.1D	normal	ivltests
+always3.1.1E	normal	ivltests
 always3.1.1F	CO	ivltests
 always3.1.1G	CO	ivltests
 always3.1.1H	CO	ivltests
