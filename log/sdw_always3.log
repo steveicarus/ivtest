@@ -1,7 +1,0 @@
-time=5, c=0, r=0, reg=x
-time=10, c=0, r=1, reg=0
-time=15, c=0, r=0, reg=0
-time=20, c=1, r=0, reg=1
-time=25, c=0, r=0, reg=1
-PASSED
-
