@@ -412,6 +412,7 @@ eeq normal ivltests       # === and !== in structural context
 dumpvars normal ivltests # PR#174: dumpvars non-hiearchical arguments
 dangling_port normal ivltests # PR#209: dangling port optimization (VVP) 
 sysargs normal ivltests # VVP postponed $syscall argument lookup 
+many_drivers normal ivltests # net with many drivers
 varlsfht1 normal ivltests # variable << in always
 varlsfht2 normal ivltests # variable << in function
 varlsfht normal ivltests  # variable << in wire
