@@ -324,8 +324,8 @@ Test Results:
                      param_mod has C Compiler problem
                     param_tern passed
                       integer5 passed
-                       signed2 execution failed
-                       signed3 execution failed
+                       signed2 passed
+                       signed3 passed
                        signed4 passed
                        signed5 had parse errors:
                        repeat1 passed
@@ -333,4 +333,4 @@ Test Results:
                         vector passed
                           mcl1 passed
                           mcl2 passed
-Tests passed: 309, Parse Errors: 2, Unsupported: 6, failed execution, 9, crashed: 0, C Compiler errors: 6 total: 337
+Tests passed: 311, Parse Errors: 2, Unsupported: 6, failed execution, 7, crashed: 0, C Compiler errors: 6 total: 337
