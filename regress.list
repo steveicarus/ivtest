@@ -545,4 +545,9 @@ pr509		normal	ivltests
 pr509b		normal	ivltests
 pr511		normal	ivltests
 pr513		normal	ivltests
-csae3           normal,-S ivltests # First Synth test
+case3           normal,-S ivltests # First Synth test
+case3           normal,-S ivltests # First Synth test
+basicreg        normal,-S ivltests # First Synth test
+basiclatch      normal,-S ivltests # First Synth test
+basicstate      normal,-S ivltests # First Synth test
+basicstate2     normal,-S ivltests # First Synth test
