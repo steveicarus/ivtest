@@ -240,6 +240,7 @@ mult1		normal ivltests # wire * and reg * operators
 xnor_test	normal ivltests # ~^ in an IF()
 pullupdown	normal ivltests # Contributed test
 pullupdown2	normal ivltests # Contributed test
+pullupdown3	normal ivltests # Contributed test
 drive_strength	normal ivltests # Contributed test
 sdw_function4	normal ivltests # function with if from George Gallant bug rpt
 sdw_function5	normal ivltests # function with if from George Gallant bug rpt
