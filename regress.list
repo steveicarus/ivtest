@@ -331,3 +331,7 @@ cprop		normal	ivltests
 supply1		normal	ivltests
 supply2		normal	ivltests
 for3.16A    normal  ivltests
+force3.17A  normal  ivltests
+force3.17B  normal  ivltests
+force3.17C  normal  ivltests
+
