@@ -40,7 +40,7 @@ module main;
 	 #1 { a, vec[i] } <= 2'b11;
       end
 
-      #1 if (vec !== 4'b11111) begin
+      #1 if (vec !== 4'b1111) begin
 	 $display("FAILED == vec (%b) is not 1111", vec);
 	 $finish;
       end
