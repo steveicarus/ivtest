@@ -1,2 +1,1 @@
-./ivltests/lh_varindx5.v:43: warning: Numeric binary constant ``11111'' truncated to 4 bits.
 PASSED

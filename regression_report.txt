@@ -208,7 +208,7 @@ Test Results:
                      readmemb2 passed
                      readmemb3 execution failed
                           dff1 passed
-                       con_tri execution failed
+                       con_tri passed
                           tri0 passed
                          tri0b passed
                           tri1 passed
@@ -333,4 +333,4 @@ Test Results:
                         vector passed
                           mcl1 passed
                           mcl2 passed
-Tests passed: 311, Parse Errors: 2, Unsupported: 6, failed execution, 7, crashed: 0, C Compiler errors: 6 total: 337
+Tests passed: 312, Parse Errors: 2, Unsupported: 6, failed execution, 6, crashed: 0, C Compiler errors: 6 total: 337
