@@ -444,4 +444,5 @@ memassign normal ivltests # PR 126 - daavid Leask - assign bus part fm memory it
 string4 normal ivltests # Assign strings in a function
 lh_memcat normal ivltests # Left hand arrays in concat (PR 77)
 unary_minus normal ivltests # Similar to 272 already reported.
-unary_minus1 normal invltests # From 272 directly.
+unary_minus1 normal ivltests # From 272 directly.
+npmos	normal	ivltests
