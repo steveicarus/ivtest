@@ -260,6 +260,7 @@ fork3.19A	normal ivltests #
 fork3.19B   normal ivltests # 
 mult16		normal contrib mul16 # Contributed by Tom Coonan - has $random
 event_list	normal ivltests # Contrib by S Williams
+event_list2	normal ivltests # Contrib by S Williams
 posedge		normal ivltests # Contrib by S Williams
 nblkorder	normal ivltests # Validates Non-blocking order determinism
 task_inpad	normal ivltests # Validates input of task should pad w/ 0
