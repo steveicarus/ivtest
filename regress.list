@@ -463,7 +463,7 @@ dcomp1	normal	ivltests diff=log/dcomp1.log:gold/dcomp1.gold
 sp2     normal  ivltests main # PR 110 Steve Tell - concat of param in sys task
 const   normal  ivltests # PR 122 - Steve Tell - const without length spec.
 memassign normal ivltests # PR 126 - daavid Leask - assign bus part fm memory item
-string4 normal ivltests # Assign strings in a function
+string4 normal ivltests diff=log/string4.log:gold/string4.gold
 string5 normal ivltests diff=log/string5.log:gold/string5.gold
 lh_memcat normal ivltests # Left hand arrays in concat (PR 77)
 npmos	normal	ivltests

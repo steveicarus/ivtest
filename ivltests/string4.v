@@ -30,10 +30,10 @@ reg  [31:0] B;
 function [31:0] message;
         input [1:0] reg_num;
   begin
-        assign message = (reg_num == 2'b00) ? "Mes0":
-                         (reg_num == 2'b01) ? "Mes1":
-                         (reg_num == 2'b10) ? "Mes2":
-                                              "Mes3";
+        message = (reg_num == 2'b00) ? "Mes0":
+                  (reg_num == 2'b01) ? "Mes1":
+                  (reg_num == 2'b10) ? "Mes2":
+                                       "Mes3";
   end
 endfunction
 
