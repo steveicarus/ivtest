@@ -20,3 +20,4 @@ pr723     vpi   pr723.c         pr723           pr723.v
 realtime  vpi   realtime.c	realtime	realtime.v
 realtime2 vpi   realtime2.c	realtime2	realtime2.v
 putvalue  vpi	putvalue.c	putvalue	putvalue.v
+timescale vpi	timescale.c	timescale	timescale.v
