@@ -522,6 +522,8 @@ bitsel4	normal	ivltests
 bitsel5	normal	ivltests
 bitsel6	normal	ivltests
 bitsel7	normal	ivltests
+bitsel8	normal	ivltests # pr615
+bitsel9	normal	ivltests # pr617
 pr312	normal	ivltests
 pr355	normal	ivltests
 ram16x1 normal ivltests # Sitting here for a long time?
