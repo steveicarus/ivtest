@@ -24,7 +24,6 @@ reg [3:0] a,b;
 wire [3:0] wa,wb;
 reg [7:0] result;
 wire [8:0] wresult;
-reg error ;
 
 assign wa = a;
 assign wb = b;
@@ -35,7 +34,6 @@ always @(a or b)
  
 initial
   begin
-    error = 0;   
     #1;
     a = 0;
     b = 0;
@@ -43,12 +41,12 @@ initial
     if( result !== 8'b0)
       begin
         $display("FAILED - Mult 0*0 reg assign failed - is %b",result);
-        error = 1;
+        $finish;
       end
     if( wresult !== 9'b0)
       begin
         $display("FAILED - Mult 0*0 wire assign failed - is %b",result);
-        error = 1;
+        $finish;
       end
 
     #1;
@@ -57,12 +55,12 @@ initial
     if( result !== 8'b0)
       begin
         $display("FAILED - Mult 0*1 reg assign failed - is %b",result);
-        error = 1;
+        $finish;
       end
     if( wresult !== 9'b0)
       begin
         $display("FAILED - Mult 0*1 wire assign failed - is %b",result);
-        error = 1;
+        $finish;
       end
 
     #1;
@@ -71,12 +69,12 @@ initial
     if( result !== 8'b1)
       begin
         $display("FAILED - Mult 1*1 reg assign failed - is %b",result);
-        error = 1;
+        $finish;
       end
     if( wresult !== 9'b1)
       begin
         $display("FAILED - Mult 1*1 wire assign failed - is %b",result);
-        error = 1;
+        $finish;
       end
 
     #1;
@@ -85,12 +83,12 @@ initial
     if( result !== 8'h2)
       begin
         $display("FAILED - Mult 2*1 reg assign failed - is %b",result);
-        error = 1;
+        $finish;
       end
     if( wresult !== 9'h2)
       begin
         $display("FAILED - Mult 2*1 wire assign failed - is %b",result);
-        error = 1;
+        $finish;
       end
 
     #1;
@@ -100,12 +98,12 @@ initial
     if( result !== 8'h6)
       begin
         $display("FAILED - Mult 2*3 reg assign failed - is %b",result);
-        error = 1;
+        $finish;
       end
     if( wresult !== 9'h6)
       begin
         $display("FAILED - Mult 2*3 wire assign failed - is %b",result);
-        error = 1;
+        $finish;
       end
 
     #1;
@@ -115,13 +113,16 @@ initial
     if( result !== 8'bxxxx_xxxx)
       begin
         $display("FAILED - Mult 2*x reg assign failed - is %b",result);
-        error = 1;
+        $finish;
       end
-    if( wresult !== 9'hx_xxxx_xxxx)
+    if( wresult !== 9'bx_xxxx_xxxx)
       begin
         $display("FAILED - Mult 2*x wire assign failed - is %b",wresult);
-        error = 1;
+        $finish;
       end
+
+    $display("PASSED");
+
   end
 
 endmodule           

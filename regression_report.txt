@@ -194,7 +194,7 @@ Test Results:
                          inout passed
                       modparam passed
                        modulus has C Compiler problem
-                         mult1 execution failed
+                         mult1 passed
                      xnor_test passed
                     pullupdown passed
                 drive_strength passed
@@ -331,4 +331,4 @@ Test Results:
                        repeat1 passed
                   decl_assign1 passed
                         vector passed
-Tests passed: 306, Parse Errors: 2, Unsupported: 6, failed execution, 10, crashed: 0, C Compiler errors: 6 total: 335
+Tests passed: 307, Parse Errors: 2, Unsupported: 6, failed execution, 9, crashed: 0, C Compiler errors: 6 total: 335
