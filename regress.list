@@ -228,6 +228,8 @@ fifo	normal contrib
 event3.15	normal ivltests # Validate event lists, and -> operator.
 unary_and	normal ivltests # Unary And &(vect)
 unary_minus	normal ivltests # Unary minus -(vect)
+unary_minus1	normal ivltests # From 272 directly.
+unary_minus2	normal ivltests
 unary_nand	normal ivltests # Unary nand ~&(vect)
 unary_not	normal ivltests # Unary not ~
 unary_or 	normal ivltests # Unary or  |(vect)
@@ -463,8 +465,6 @@ memassign normal ivltests # PR 126 - daavid Leask - assign bus part fm memory it
 string4 normal ivltests # Assign strings in a function
 string5 normal ivltests diff=log/string5.log:gold/string5.gold
 lh_memcat normal ivltests # Left hand arrays in concat (PR 77)
-unary_minus normal ivltests # Similar to 272 already reported.
-unary_minus1 normal ivltests # From 272 directly.
 npmos	normal	ivltests
 rnpmos	normal	ivltests
 npmos2	normal	ivltests
