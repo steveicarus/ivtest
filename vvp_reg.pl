@@ -23,6 +23,9 @@
 # 3/25/2001  SDW   Modified sregress.pl script to run vvp.
 # 4/13/2001  SDW   Added CORE DUMP detection
 # $Log: vvp_reg.pl,v $
+# Revision 1.8  2001/07/08 03:19:16  sib4
+# Add COMPERR check
+#
 # Revision 1.7  2001/06/26 00:41:41  sib4
 # Will we finally have that LF at the end
 #
@@ -241,7 +244,7 @@ sub execute_regression {
                    
                  }
                  if( -e "core") {
-                    system ("echo CRASHED > $lpath" );
+                    system ("echo CRASHED >> $lpath" );
                  }
               } elsif ( -e "core") {
                   system ("echo CRASHED >> $lpath" );
@@ -251,6 +254,8 @@ sub execute_regression {
               } else {
                   system ("echo COMPERR >> $lpath" );
               }
+        } else {
+              system ("echo COMPERR $rc >> $lpath" );
         }
  
     }
@@ -377,6 +382,12 @@ sub check_results {
             if ($result =~ "CRASHED" ) {
                $err_flag = 1;
                printf REPORT "Ran-CORE DUMP-"; 
+               $failed++;
+            }
+            if ($result =~ "COMPERR" ) {
+               $err_flag = 1;
+               printf REPORT "Compiler Error-"; 
+               $comperr_cnt++;
                $failed++;
             }
 
