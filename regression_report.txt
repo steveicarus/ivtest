@@ -232,6 +232,7 @@ Test Results:
                       meminit2 passed
                           mem1 execution failed
                      task_noop passed
+                   task_bypath passed
                         scope1 passed
                         scope2 passed
                     task-scope passed
@@ -326,4 +327,4 @@ Test Results:
                        signed3 execution failed
                        repeat1 passed
                   decl_assign1 passed
-Tests passed: 302, Parse Errors: 1, Unsupported: 6, failed execution, 10, crashed: 0, C Compiler errors: 6 total: 330
+Tests passed: 303, Parse Errors: 1, Unsupported: 6, failed execution, 10, crashed: 0, C Compiler errors: 6 total: 331
