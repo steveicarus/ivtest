@@ -34,7 +34,7 @@ initial
     error = 0;
     var1 = 4'h0 ;
     #1 ;
-    if(var2 != 1'b1)
+    if(var2 !== 1'b1)
       begin
         $display("FAILED continuous >= logical op (1)");
         error = 1;
@@ -42,7 +42,7 @@ initial
     #1 ;
     var1 = 4'h2;
     #1 ;
-    if(var2 != 1'b1)
+    if(var2 !== 1'b1)
       begin
         $display("FAILED continuos <= logical op (2)");
         error = 1;
@@ -50,7 +50,7 @@ initial
     #1 ;
     var1 = 4'h4;
     #1 ;
-    if(var2 != 1'b0)
+    if(var2 !== 1'b0)
       begin
         $display("FAILED continuos <= logical op (3)");
         error = 1;

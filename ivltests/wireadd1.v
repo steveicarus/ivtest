@@ -18,6 +18,11 @@
 //
 //  SDW - Validate continuous adds in assignment..dependent on always + working
 //
+// $Log: wireadd1.v,v $
+// Revision 1.2  2001/05/03 05:45:37  ka6s
+// Lets try this again
+//
+//
 
 
 module main;
@@ -40,16 +45,15 @@ for ( var1 = 4'b0; var1 != 4'hf; var1 = var1 + 1)
   for ( var2 = 4'b0; var2 != 4'hf; var2 = var2 + 1)
      begin
         #1 ;
-        if(var3 != var3a)
-           begin
-              $display("FAILED continuous add 1=%x,2=%x,3=%x,3a=%x",
-                     var1,var2,var3,var3a); 
+        if(var3 !== var3a)
                error = 1;
-           end
         #1;
      end
 if(error == 0) 
   $display("PASSED");
+else
+  $display("FAILED");
+
 end
 
 endmodule // main
