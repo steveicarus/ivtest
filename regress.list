@@ -221,6 +221,7 @@ ga_nand normal ivltests
 ga_nor normal ivltests
 constmult normal ivltests
 constadd normal ivltests
+constadd2 normal ivltests
 qmark6  normal ivltests
 muxtest normal ivltests	# Validates that X sel and inputs same, output not X
 fifo	normal contrib
@@ -481,5 +482,5 @@ escape1 normal ivltests # \$modulename in defparam and if()
 escape2a CO	ivltests
 escape2b CO	ivltests
 escape2c CO	ivltests
-pr338   normal ivltests # pr 338 - constant zz
+pr338   CO ivltests # pr 338 - constant zz see also constadd2.v
 shift1	normal	ivltests diff=log/shift1.log:gold/shift1.gold
