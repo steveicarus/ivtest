@@ -370,6 +370,7 @@ shift_pad	normal	ivltests
 format     normal  ivltests diff=log/format.log:gold/format.gold
 disp_dec   normal  ivltests diff=log/disp_dec.log:gold/disp_dec.gold
 disp_dec2  normal  ivltests diff=log/disp_dec2.log:gold/disp_dec2.gold
+disp_parm   	normal  ivltests diff=log/disp_parm.log:gold/disp_parm.gold
 disp_part   	normal  ivltests diff=log/disp_part.log:gold/disp_part.gold
 shellho1	normal	ivltests top diff=log/shellho1.log:gold/shellho1.gold
 test_width	normal  ivltests diff=log/test_width.log:gold/test_width.gold
@@ -473,7 +474,8 @@ varrshft normal ivltests  # variable >> in wire
 select	normal	ivltests # structural word select
 select2	normal	ivltests # structural bit select
 select3 normal	ivltests diff=log/select3.log:gold/select3.gold
-monitor	normal	ivltests diff=log/monitor.log:gold/monitor.gold
+monitor		normal	ivltests diff=log/monitor.log:gold/monitor.gold
+monitor2	normal	ivltests diff=log/monitor2.log:gold/monitor2.gold
 fork1   normal  ivltests # Validate 3 way fork with simple assignments.
 function5 CO ivltests # PR 184 
 blankport normal ivltests main # PR 204 Stephan Boettcher - 
