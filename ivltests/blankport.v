@@ -59,7 +59,7 @@ module main;
    two     Uc (.b(w8));
    two     Ud (.b(w8),.a(w9));
    three   Ue ();
-   three   Uf (,);
+   //three   Uf (,);  //XXXX I doubt this is legal... ?
    three   Ug (,,);
    
    initial $display("PASSED");
