@@ -403,7 +403,8 @@ assign_le normal ivltests # continuous assign with <=
 mangle normal ivltests # 
 mangle_1 normal ivltests # 
 rop normal ivltests # 
-task_scope normal ivltests #
+task_scope normal ivltests # 
+hello1	normal	ivltests
 hierspace normal ivltests # whitespace.around .dots. in. hierachical .names
 dotinid normal ivltests # escaped names with . dots
 eeq normal ivltests # === and !== in structural context
