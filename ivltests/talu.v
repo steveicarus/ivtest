@@ -88,7 +88,7 @@ module alu(Aval, Bval, cin, op, ALUout, cout);
 	
 // C++ compilation troubles with both of these:	
 	2'b01 : {cout, ALUout} = 9'h100 ^ (Aval + Bval + 9'h001);
-	2'b11 : {cout, ALUout} = {1'b0, 1'b1 << Bval};
+	2'b11 : {cout, ALUout} = {1'b0, 8'b1 << Bval};
 
 //	2'b01 : {cout, ALUout} = 9'h000;
 //	2'b11 : {cout, ALUout} = 9'h000;

@@ -1,4 +1,0 @@
-./ivltests/talu.v:91: error: operand of concatenation has indefinite width: (+'d1)<<(talu.alu_m.Bval)
-talu: error: 1 elaborating module.
-errors translating Verilog program.
-COMPERR
