@@ -440,6 +440,7 @@ signed6  normal  ivltests
 signed7  normal  ivltests
 signed8  normal  ivltests
 signed9  normal  ivltests
+signed10 normal  ivltests diff=log/signed10.log:gold/signed10.gold
 repeat1  normal  ivltests
 repeat2  normal  ivltests
 decl_assign1	normal	ivltests
