@@ -269,6 +269,7 @@ event_list	normal ivltests # Contrib by S Williams
 event_list2	normal ivltests # Contrib by S Williams
 posedge		normal ivltests # Contrib by S Williams
 nblkorder	normal ivltests # Validates Non-blocking order determinism
+nblkpush	normal ivltests # test if non-blocking assignments propagate
 task_inpad	normal ivltests # Validates input of task should pad w/ 0
 task_omemw3	CO		 ivltests # Pass bit selected from vector to task
 cond_band	normal ivltests # Bitwise and in if condition
