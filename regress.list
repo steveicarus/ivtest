@@ -467,6 +467,7 @@ string4 normal ivltests diff=log/string4.log:gold/string4.gold
 string5 normal ivltests diff=log/string5.log:gold/string5.gold
 string7 normal ivltests diff=log/string7.log:gold/string7.gold
 string8 normal ivltests diff=log/string8.log:gold/string8.gold
+string9 normal ivltests diff=log/string9.log:gold/string9.gold
 lh_memcat normal ivltests # Left hand arrays in concat (PR 77)
 npmos	normal	ivltests
 rnpmos	normal	ivltests
