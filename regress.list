@@ -427,6 +427,7 @@ resolv1 normal ivltests # PR#300
 memport_bs normal ivltests # PR#303
 pr224 normal ivltests  # reg [3:0] ack; ... @(posedge ack)
 pr224a normal ivltests # reg [3:0] ack; ... @(posedge ack[p])
+pr298  normal ivltests diff=log/pr298.log:gold/pr298.gold
 varlsfht1 normal ivltests # variable << in always
 varlsfht2 normal ivltests # variable << in function
 varlsfht normal ivltests  # variable << in wire
@@ -450,3 +451,4 @@ unary_minus1 normal ivltests # From 272 directly.
 npmos	normal	ivltests
 npmos2	normal	ivltests
 pr142   normal  ivltests # Test for PR142
+pr304	normal	ivltests # test for PR304
