@@ -35,6 +35,7 @@ wire [1:0] q;
 
 mul u_mul (.q(q),.a(d),.b(d));
 
+(* ivl_synthesis_off *)
 initial 
   begin
     $dumpfile("test.vcd");	   
