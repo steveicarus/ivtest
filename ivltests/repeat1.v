@@ -41,8 +41,8 @@
  * head is used and the statement in the example is executed 5 times.
  *
  * These two interpretations both appear to be perfectly valid. However,
- * real tools use the first, so the standard must be considered broken
- * and the first interpretation used.
+ * real tools use the loop_statement, so the standard must be considered
+ * broken and this interpretation used.
  */
 
 module main;
@@ -50,14 +50,15 @@ module main;
    reg clk = 1;
    always #5 clk = ~clk;
 
-   initial #1 begin
-      repeat (5) @(posedge clk)
-	if ($time !== 50) begin
-	   $display("FAILED -- $time = %t", $time);
-	   $finish;
-	end
+   initial #1
+      repeat (5) @(posedge clk) begin
+	 if ($time !== 10) begin
+	    $display("FAILED -- $time = %t", $time);
+	    $finish;
+	 end
 
-      $display("PASSED");
-   end
+	 $display("PASSED");
+	 $finish;
+      end
 
 endmodule // main

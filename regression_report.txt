@@ -312,7 +312,7 @@ Test Results:
                        signed1 passed
                     param_expr passed
                      param_and passed
-                    param_and2 has C Compiler problem
+                    param_and2 passed
                     param_band passed
                      param_bor passed
                      param_eq3 has C Compiler problem
@@ -323,5 +323,5 @@ Test Results:
                       integer5 has C Compiler problem
                        signed2 execution failed
                        signed3 execution failed
-                       repeat1 execution failed
-Tests passed: 296, Parse Errors: 1, Unsupported: 6, failed execution, 11, crashed: 0, C Compiler errors: 9 total: 328
+                       repeat1 passed
+Tests passed: 298, Parse Errors: 1, Unsupported: 6, failed execution, 10, crashed: 0, C Compiler errors: 8 total: 328
