@@ -275,7 +275,7 @@ fork3.19B   normal ivltests #
 mult16		normal contrib mul16 # Contributed by Tom Coonan - has $random
 event_list	normal ivltests # Contrib by S Williams
 event_list2	normal ivltests # Contrib by S Williams
-event_list3	normal ivltests diff=log/event_list.log:gold/event_list.gold
+event_list3	normal ivltests diff=log/event_list3.log:gold/event_list3.gold
 posedge		normal ivltests # Contrib by S Williams
 nblkorder	normal ivltests # Validates Non-blocking order determinism
 nblkpush	normal ivltests # test if non-blocking assignments propagate
