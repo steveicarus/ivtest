@@ -39,7 +39,9 @@ buf(QQ, Q);
 
 initial
   begin
-    $display(QQ, Q);
+     // The #1 is needed here to allow the initial values to
+     // settle. Without it, there is a time-0 race.
+    #1 $display(QQ, Q);
     #10 
     D = 0;
     #15
