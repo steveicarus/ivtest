@@ -29,9 +29,9 @@ module fopen1;
       fp = $fopen("fopen1.out");
       case(fp)
         32'h0000_0001: error = 1;  	
-        32'h0000_0002: error = 1;  	
+        32'h0000_0002: error = 0;  	
         32'h0000_0004: error = 1;  	
-        32'h0000_0008: error = 0;  	
+        32'h0000_0008: error = 1;  	
         32'h0000_0010: error = 1;  	
         32'h0000_0020: error = 1;  	
         32'h0000_0040: error = 1;  	
