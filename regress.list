@@ -484,7 +484,8 @@ string7 normal ivltests diff=log/string7.log:gold/string7.gold
 string8 normal ivltests diff=log/string8.log:gold/string8.gold
 string9 normal ivltests diff=log/string9.log:gold/string9.gold
 string10 normal ivltests diff=log/string10.log:gold/string10.gold
-lh_memcat normal ivltests # Left hand arrays in concat (PR 77)
+lh_memcat normal ivltests diff=log/lh_memcat.log:gold/lh_memcat.gold
+lh_memcat2 normal ivltests
 npmos	normal	ivltests
 rnpmos	normal	ivltests
 npmos2	normal	ivltests
@@ -521,3 +522,4 @@ big_int	normal	ivltests # PR#405
 concat1	normal	ivltests # PR#327,372
 concat2	normal	ivltests # PR#282
 extend	normal	ivltests
+timeform1	normal	ivltests diff=log/timeform1.log:gold/timeform1.gold
