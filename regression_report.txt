@@ -229,6 +229,7 @@ Test Results:
                         scope2 passed
                     task-scope passed
                     assign_nb1 passed
+                  assign_delay passed
                       wireland passed
                   param_concat passed
                    param_times passed
@@ -297,4 +298,4 @@ Test Results:
                        string2 passed
                         ga_mod had elaboration errors:had unsupported features
                        ga_mod1 had elaboration errors:had unsupported features
-Tests passed: 277, Parse Errors: 1, Unsupported: 6, failed execution, 7, crashed: 0, C Compiler errors: 5 total: 301
+Tests passed: 278, Parse Errors: 1, Unsupported: 6, failed execution, 7, crashed: 0, C Compiler errors: 5 total: 302
