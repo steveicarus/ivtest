@@ -704,4 +704,5 @@ pr938b		normal  ivltests diff=log/pr938b.log:gold/pr938.gold
 pr941		normal	ivltests
 prng		normal	ivltests
 race		normal	ivltests
+pr973		normal  ivltests
 pr985		normal  ivltests diff=log/pr985.log:gold/pr985.gold
