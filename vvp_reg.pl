@@ -23,6 +23,9 @@
 # 3/25/2001  SDW   Modified sregress.pl script to run vvp.
 # 4/13/2001  SDW   Added CORE DUMP detection
 # $Log: vvp_reg.pl,v $
+# Revision 1.12  2001/10/08 22:14:42  sib4
+# Remove absolute path names for IVL executable
+#
 # Revision 1.11  2001/10/08 22:13:30  sib4
 # assert portability
 #
@@ -75,7 +78,7 @@ $comp_name = "IVL" ;	# Change the name of the compiler in use here.
                         # this may change to a command line option after
 		        		# I get things debugged!
 
-   $vername = "/usr/local/bin/iverilog";	    # IVL's shell 
+   $vername = "iverilog";	    # IVL's shell 
    $versw   = "";			    # switches
    $verout  = "-o simv -tvvp";	# vvp source output (for IVL ) 
    #$redir = "&>";
@@ -248,7 +251,7 @@ sub execute_regression {
                     !($testtype{$testname} eq "CN" ) && 
                     !($testtype{$testname} eq "CE" )) {
                    system ("rm -rf core");
-                   system ("/usr/local/bin/vvp simv >> $lpath 2>&1 ");
+                   system ("vvp simv >> $lpath 2>&1 ");
                  } else {
                    
                  }
