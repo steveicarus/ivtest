@@ -420,6 +420,7 @@ many_drivers normal ivltests # net with many drivers
 task_port_size normal ivltests # truncate task port connections
 p_monta normal ivltests 
 memidx normal ivltests # PR 221
+memidxrng normal ivltests # PR 271 memory address range checks
 mem2port normal ivltests # memory ports with constant address
 pr224 normal ivltests  # reg [3:0] ack; ... @(posedge ack)
 pr224a normal ivltests # reg [3:0] ack; ... @(posedge ack[p])
