@@ -285,6 +285,8 @@ con_tri		normal ivltests # Contrib by S Willaims
 tri0		normal	ivltests
 tri0b		normal	ivltests
 tri1		normal	ivltests
+triand		normal	ivltests
+trior		normal	ivltests
 idiv1		normal ivltests # Contrib by S Willaims
 fork3.19A	normal ivltests # 
 fork3.19B   normal ivltests # 
