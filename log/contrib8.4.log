@@ -1,3 +1,0 @@
-./ivltests/contrib8.4.v:24: warning: Bit select [4] out of range of vector a[4:0].
-./ivltests/contrib8.4.v:24:        : Replacing expression with a constant 1'bx.
-PASSED

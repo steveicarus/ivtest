@@ -1,5 +1,0 @@
-./ivltests/readmemb2.v:41: error: part select [2:0] out of range.
-./ivltests/readmemb2.v:41: error: Unable to elaborate index expression `count['sd2:'sd0]'
-./ivltests/readmemb2.v:41: error: Unable to elaborate condition expression.
-3 error(s) during elaboration.
-COMPERR 768
