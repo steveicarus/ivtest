@@ -42,7 +42,7 @@ initial
 	     $display("PASSED");
      else
 	     $display("FAILED");
-
+     $finish ;
   end
 
 always #5 clk = ~clk;
