@@ -23,6 +23,9 @@
 # 3/25/2001  SDW   Modified sregress.pl script to run vvp.
 # 4/13/2001  SDW   Added CORE DUMP detection
 # $Log: vvp_reg.pl,v $
+# Revision 1.5  2001/04/14 03:44:03  ka6s
+# Added what I THINK is working redirection. The Parse Err is showing up now!
+#
 # Revision 1.4  2001/04/14 03:33:02  ka6s
 # Fixed detection of Core dumps. Made sure I remove core before we run vvp.
 #
@@ -57,7 +60,8 @@ $comp_name = "IVL" ;	# Change the name of the compiler in use here.
    $vername = "/usr/local/bin/iverilog";	    # IVL's shell 
    $versw   = "";			    # switches
    $verout  = "-o simv -tvvp";	# vvp source output (for IVL ) 
-   $redir = "&>";
+   #$redir = "&>";
+   $redir = "> ";
 
 #  Main script
 
@@ -211,7 +215,7 @@ sub execute_regression {
         # Now build the command up
         #
 	#	$cmd = "$vername $versw $vermod $verout $vpath &> $lpath ";
-		$cmd = "$vername $versw $vermod $verout $vpath $redir $lpath ";
+		$cmd = "$vername $versw $vermod $verout $vpath $redir $lpath 2>&1 ";
 
 	print "$cmd\n";
 	$rc = system("$cmd");
@@ -226,7 +230,7 @@ sub execute_regression {
                     !($testtype{$testname} eq "CN" ) && 
                     !($testtype{$testname} eq "CE" )) {
                    system ("rm -rf core");
-                   system ("/usr/local/bin/vvp simv >> $lpath");
+                   system ("/usr/local/bin/vvp simv >> $lpath 2>&1 ");
                  } else {
                    
                  }
@@ -360,7 +364,7 @@ sub check_results {
             }
             if ($result =~ "CRASHED" ) {
                $err_flag = 1;
-               printf REPORT "CORE DUMP-"; 
+               printf REPORT "Ran-CORE DUMP-"; 
                $failed++;
             }
 
