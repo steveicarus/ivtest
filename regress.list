@@ -506,3 +506,5 @@ time6b  normal  ivltests # Rewrote time6 to pass with XL
 disblock normal ivltests # PR280
 comment1	normal	ivltests # PR410/411
 pr136    normal  ivltests # PR136 param foo_size 8 * 4
+port-test4a	CE	ivltests # Port declaration input duplication checks (PR394)
+port-test4b	CE	ivltests # Port declaration output duplication checks (PR394)
