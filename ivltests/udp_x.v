@@ -24,9 +24,6 @@
 
 module main;
 
-   input  A, B, S;
-   output Y;
-
    wire   Y;
    reg 	  A, B, S;
 
