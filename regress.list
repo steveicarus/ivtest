@@ -577,6 +577,7 @@ pr541		normal	ivltests diff=log/pr541.log:gold/pr541.gold
 pr542		normal	ivltests diff=log/pr542.log:gold/pr542.gold
 pr544		normal	ivltests diff=log/pr544.log:gold/pr544.gold
 pr547		normal	ivltests diff=log/pr547.log:gold/pr547.gold
+pr564		normal	ivltests
 case1           normal,-S ivltests # First Synth test
 case2           normal,-S ivltests # First Synth test
 case3           normal,-S ivltests # First Synth test
@@ -589,3 +590,4 @@ basicexpr       normal,-S ivltests # First Synth test
 basicexpr2      normal,-S ivltests # First Synth test
 basicexpr3      normal,-S ivltests # First Synth test
 basicexpr4      normal,-S ivltests # First Synth test
+busbug		normal	ivltests diff=log/busbug.log:gold/busbug.gold
