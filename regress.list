@@ -308,7 +308,7 @@ include2	normal ivltests #  include file 2 levels deep
 include3	normal ivltests #  include file 3 levels deep
 define1		normal ivltests #  Use defined value for reg def and reg assign
 fdisplay1	normal	ivltests  gold=fdisplay1.gold	# 
-fdisplay2	normal  ivltests  diff=work/fdisplay2.out:gold/fdisplay2.out #
+fdisplay2	normal  ivltests  diff=log/fdisplay2.log:gold/fdisplay2.out #
 fdisplay3	normal	ivltests  gold=fdisplay3.gold
 fopen1		normal  ivltests # Test basic fopen operation	
 fopen2		normal  ivltests # Test basic fopen operation	
