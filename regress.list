@@ -725,3 +725,4 @@ pr1008		normal  ivltests diff=log/pr1008.log:gold/pr1008.gold
 pr1022		normal  ivltests
 pr1024		normal  ivltests
 pr1026		normal  ivltests diff=log/pr1026.log:gold/pr1026.gold
+pr1029		normal  ivltests
