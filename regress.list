@@ -405,4 +405,4 @@ mangle_1 normal ivltests #
 rop normal ivltests # 
 task_scope normal ivltests #
 hierspace normal ivltests # whitespace.around .dots. in. hierachical .names
-dotinid.v normal ivltests # escaped names with . dots
+dotinid normal ivltests # escaped names with . dots
