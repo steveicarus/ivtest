@@ -7,6 +7,7 @@ scanmem	  vpi	scanmem.cc	scanmem		scanmem.v
 scanmem2  vpi	scanmem2.cc	scanmem2	scanmem2.v
 scanmem3  vpi	scanmem3.cc	scanmem3	scanmem3.v
 event1	  vpi	event1.c	event1		event1.v
+event2	  vpi	event2.c	event2		event2.v
 pokevent  vpi	pokevent.cc	pokevent	pokevent.v
 pokereg   vpi	pokereg.cc	pokereg		pokereg.v
 memwide   vpi	memwide.cc	memwide		memwide.v
