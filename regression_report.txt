@@ -292,4 +292,5 @@ Test Results:
                     force3.17A passed
                     force3.17B passed
                     force3.17C passed
-Tests passed: 273, Parse Errors: 2, Unsupported: 4, failed execution, 7, crashed: 0, C Compiler errors: 5 total: 296
+                         wait1 passed
+Tests passed: 274, Parse Errors: 2, Unsupported: 4, failed execution, 7, crashed: 0, C Compiler errors: 5 total: 297
