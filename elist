@@ -1,4 +1,7 @@
 # $Log: elist,v $
+# Revision 1.7  2001/02/09 03:01:20  stevewilliams
+#  Add test for PR#133.
+#
 # Revision 1.6  2000/12/07 02:24:54  stevewilliams
 #  Get add32 error message right.
 #
@@ -14,3 +17,5 @@ function3.11E ivltests test
 ./ivltests/function3.11E.v:30: parse error
 add32 contrib main
 ./contrib/add32.v:14: error: sum is not a reg in this context.
+range1	ivltests main
+./ivltests/range1.v:44: error: bit/part select main.thing[9:9] is out of range.
