@@ -366,6 +366,7 @@ force3.17A  normal  ivltests
 force3.17B  normal  ivltests
 force3.17C  normal  ivltests
 wait1        normal  ivltests
+wait2        normal  ivltests
 string1		normal	ivltests
 string2		normal	ivltests
 string3		normal	ivltests
