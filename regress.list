@@ -456,4 +456,6 @@ rnpmos	normal	ivltests
 npmos2	normal	ivltests
 rnpmos2	normal	ivltests
 pr142   normal  ivltests # Test for PR142
+multiply_large normal ivltests # Takes care of PR222
 pr304	normal	ivltests # test for PR304
+mhead_task normal ivltests # Verify hierarchical task name in another mod.
