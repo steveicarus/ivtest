@@ -143,7 +143,7 @@ Test Results:
                     integer4ge passed
                          land2 passed
                          land3 passed
-                          talu passed
+                          talu has C Compiler problem
                          time2 passed
                 sdw_lvalconcat passed
                sdw_lvalconcat2 passed
@@ -222,6 +222,7 @@ Test Results:
                     task_inpad passed
                    task_omemw3 passed
                      cond_band passed
+                     cond_wide passed
                          bufif passed
                           pca1 passed
                      wildsense had parse errors:
@@ -335,4 +336,4 @@ Test Results:
                         vector passed
                           mcl1 passed
                           mcl2 passed
-Tests passed: 315, Parse Errors: 2, Unsupported: 6, failed execution, 6, crashed: 0, C Compiler errors: 5 total: 339
+Tests passed: 315, Parse Errors: 2, Unsupported: 6, failed execution, 6, crashed: 0, C Compiler errors: 6 total: 340

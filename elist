@@ -1,4 +1,7 @@
 # $Log: elist,v $
+# Revision 1.8  2001/02/13 03:35:31  stevewilliams
+#  Add cond_wide test (PR#143)
+#
 # Revision 1.7  2001/02/09 03:01:20  stevewilliams
 #  Add test for PR#133.
 #
@@ -19,3 +22,5 @@ add32 contrib main
 ./contrib/add32.v:14: error: sum is not a reg in this context.
 range1	ivltests main
 ./ivltests/range1.v:44: error: bit/part select main.thing[9:9] is out of range.
+range2	ivltests bug
+./ivltests/range2.v:9: error: bit/part select [3:2] out of range for bug.din
