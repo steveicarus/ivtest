@@ -230,6 +230,7 @@ unary_and	normal ivltests # Unary And &(vect)
 unary_minus	normal ivltests # Unary minus -(vect)
 unary_minus1	normal ivltests # From 272 directly.
 unary_minus2	normal ivltests
+unary_minus3	normal ivltests
 unary_nand	normal ivltests # Unary nand ~&(vect)
 unary_not	normal ivltests # Unary not ~
 unary_or 	normal ivltests # Unary or  |(vect)
