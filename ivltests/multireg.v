@@ -24,6 +24,7 @@ input clk, d;
 output q;
 reg [2:0] q;
 
+(* ivl_synthesis_on *)
 always @(posedge clk)
   begin
 	q[0] <= d;
@@ -41,6 +42,7 @@ wire [2:0] q;
 
 basicreg u_reg (clk,d,q);
 
+(* ivl_synthesis_off *)
 initial 
   begin
     $dumpfile("test.vcd");	   

@@ -24,6 +24,7 @@ input clk, d;
 output q;
 reg q;
 
+(* ivl_synthesis_on *)
 always @(posedge clk)
 	q <= d;
 
@@ -35,7 +36,7 @@ reg clk, d;
 
 basicreg u_reg (clk,d,q);
 
-
+(* ivl_synthesis_off *)
 initial 
   begin
     clk = 0;
