@@ -1,4 +1,7 @@
 # $Log: elist,v $
+# Revision 1.12  2002/04/12 02:56:57  stevewilliams
+#  Fix typos in elist file.
+#
 # Revision 1.11  2002/04/12 02:51:52  stevewilliams
 #  Add range3 to error test.
 #
@@ -33,7 +36,7 @@ range2	ivltests bug
 ./ivltests/range2.v:9: error: bit/part select [3:2] out of range for bug.din
 range3	ivltests simple
 ./ivltests/range3.v:26: error: Signal ``b'' declared both as a vector and a scalar.
-port-test3 ivltests BANCH
-./ivltests/port-test2.v:16: error: data in  module CPU declared as inout and as a reg type.
-scope2b	ivtests main
+port-test3 ivltests BENCH
+./ivltests/port-test3.v:16: error: data in  module CPU declared as inout and as a reg type.
+scope2b	ivltests main
 ./ivltests/scope2b.v:30: error: Net q is not defined in this context.
