@@ -1,3 +1,5 @@
+./ivltests/select3.v:30: warning: Port 2 of RAM expects 4 pins, got 5.
+./ivltests/select3.v:30:        : Leaving 1 high bits of the parameter dangling.
 dut[00] = 0
 dut[01] = 1
 dut[02] = 0
