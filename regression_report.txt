@@ -87,7 +87,7 @@ Test Results:
                       defparam Ran-PASSED-
                    disable3.6A Ran-PASSED-
                    disable3.6B Ran-PASSED-
-                  disable_fork Ran-FAILED-
+                  disable_fork Ran-PASSED-
                  function3.11B Ran-PASSED-
                  function3.11C Ran-PASSED-
                  function3.11D Ran-PASSED-
@@ -149,6 +149,7 @@ Test Results:
                          land2 Ran-PASSED-
                          land3 Ran-PASSED-
                          land4 Ran-PASSED-
+                       landor1 Ran-PASSED-
                           talu Ran-PASSED-
                          time2 Ran-PASSED-
                 sdw_lvalconcat Ran-PASSED-
@@ -170,6 +171,7 @@ Test Results:
                       udp_jkff Ran-PASSED-
                          udp_x Ran-PASSED-
                         udp_bx Ran-PASSED-
+                     udp_sched Ran-PASSED-
                       wireadd1 Ran-PASSED-
                       wiremod1 Ran-PASSED-
                         wiresl Ran-PASSED-
@@ -189,6 +191,7 @@ Test Results:
                      constmult Ran-PASSED-
                       constadd Ran-PASSED-
                      constadd2 Ran-PASSED-
+                     constadd3 Ran-PASSED-
                      consttern Ran-PASSED-
                         qmark6 Ran-PASSED-
                        muxtest Ran-PASSED-
@@ -221,6 +224,7 @@ Test Results:
                        modulus Ran-PASSED-
                       modulus2 Ran-PASSED-
                          mult1 Ran-PASSED-
+                         mult2 Ran-PASSED-
                      xnor_test Ran-PASSED-
                     pullupdown Ran-PASSED-
                    pullupdown2 Ran-PASSED-
@@ -244,11 +248,13 @@ Test Results:
                           tri0 Ran-PASSED-
                          tri0b Ran-PASSED-
                           tri1 Ran-PASSED-
+                        triand Ran-PASSED-
+                         trior Ran-PASSED-
                          idiv1 Ran-PASSED-
                      fork3.19A Ran-PASSED-
                      fork3.19B Ran-PASSED-
                         mult16 Ran-PASSED-
-                    event_list Unable-Compiler Error-
+                    event_list Ran-PASSED-
                    event_list2 Ran-PASSED-
                    event_list3 Ran-PASSED-
                        posedge Ran-PASSED-
@@ -271,13 +277,14 @@ Test Results:
                       meminit2 Ran-PASSED-
                           mem1 Ran-PASSED-
                      task_noop Ran-PASSED-
-                    task_noop2 CO-FAILED-
+                    task_noop2 CO-PASSED-
                    task_bypath Ran-PASSED-
                   task_iotypes Ran-PASSED-
                         scope1 Ran-PASSED-
                         scope2 Ran-PASSED-
                        scope2b CE-PASSED-
                         scope4 Ran-PASSED-
+                        scope5 Ran-PASSED-
                     task-scope Ran-PASSED-
                     assign_nb1 Ran-PASSED-
                     assign_nb2 Ran-PASSED-
@@ -320,8 +327,11 @@ Test Results:
                          addsr Ran-PASSED-
                          tern1 Ran-PASSED-
                          tern2 CO-PASSED-
+                         tern3 Ran-PASSED-
+                         tern4 Ran-PASSED-
+                         tern5 Ran-PASSED-
                      readmemh5 CE-PASSED-
-                    port-test2 Compiler Error-
+                    port-test2 Ran-PASSED-
                     port-test3 CE-PASSED-
                   param_string Ran-PASSED-
                       inertdly Ran-FAILED-
@@ -371,11 +381,13 @@ Test Results:
                     force3.17C Ran-PASSED-
                          wait1 Ran-PASSED-
                          wait2 Ran-PASSED-
+                         wait3 Ran-PASSED-
                        string1 Ran-PASSED-
                        string2 Ran-PASSED-
                        string3 Ran-PASSED-
-                        ga_mod Sorry-Compiler Error-
-                       ga_mod1 Sorry-Compiler Error-
+                        ga_mod Ran-PASSED-
+                       ga_mod1 Ran-PASSED-
+                       ga_mod2 Ran-PASSED-
                        signed1 Ran-PASSED-
                     param_expr Ran-PASSED-
                      param_and Ran-PASSED-
@@ -390,6 +402,7 @@ Test Results:
                    param_test1 Ran-PASSED-
                    param_test2 Ran-PASSED-
                    param_test3 CO-PASSED-
+                   param_test4 Ran-PASSED-
                      param_vec Ran-PASSED-
                     param_vec2 Ran-PASSED-
                       integer5 Ran-FAILED-
@@ -401,6 +414,7 @@ Test Results:
                        signed7 Ran-PASSED-
                        signed8 Ran-PASSED-
                        signed9 Ran-PASSED-
+                      signed10 Ran-PASSED-
                        repeat1 Ran-PASSED-
                        repeat2 Ran-PASSED-
                   decl_assign1 Ran-PASSED-
@@ -439,7 +453,7 @@ Test Results:
                          pr307 Ran-PASSED-
                         pr307a Ran-PASSED-
                     memport_bs Ran-PASSED-
-                         pr224 Ran-FAILED-
+                         pr224 Ran-PASSED-
                         pr224a Ran-PASSED-
                          pr298 Ran-PASSED-
                     writememh1 Ran-PASSED-
@@ -460,13 +474,14 @@ Test Results:
                       monitor3 Ran-PASSED-
                          fork1 Ran-PASSED-
                      function5 CO-PASSED-
+                     function6 Ran-PASSED-
                      blankport Ran-PASSED-
                         dcomp1 Ran-PASSED-
                            sp2 Ran-PASSED-
-                         const Parse Err-Compiler Error-
+                         const Ran-PASSED-
                         const2 Ran-PASSED-
                         const3 Ran-PASSED-
-                        const4 Assertion-Compiler Error-
+                        const4 Ran-PASSED-
                      memassign Ran-PASSED-
                        string4 Ran-PASSED-
                        string5 Ran-PASSED-
@@ -495,6 +510,9 @@ Test Results:
                        bitsel7 Ran-PASSED-
                        bitsel8 Ran-PASSED-
                        bitsel9 Ran-PASSED-
+                      bitwidth Ran-PASSED-
+                     bitwidth2 Ran-PASSED-
+                     bitwidth3 Ran-FAILED-
                          pr312 Ran-PASSED-
                          pr355 Ran-PASSED-
                        ram16x1 Ran-PASSED-
@@ -510,17 +528,22 @@ Test Results:
                       escape4b Ran-PASSED-
                          pr338 CO-PASSED-
                         shift1 Ran-PASSED-
+                        shift2 Ran-PASSED-
+                        shift3 Ran-FAILED-
+                        shift4 Ran-PASSED-
                          pr243 Ran-PASSED-
                         dummy7 Ran-PASSED-
                         time6b Ran-PASSED-
                         time6c Ran-PASSED-
                       disblock Ran-PASSED-
+                     disblock2 Ran-PASSED-
                       comment1 Ran-PASSED-
                          pr136 Ran-PASSED-
                    port-test4a CE-PASSED-
                    port-test4b CE-PASSED-
                     port-test5 Ran-PASSED-
                     port-test6 Ran-PASSED-
+                    port-test7 Ran-PASSED-
                          pr445 Ran-PASSED-
                        big_int Ran-PASSED-
                        concat1 Ran-PASSED-
@@ -529,6 +552,9 @@ Test Results:
                      timeform1 Ran-PASSED-
                      timeform2 Ran-PASSED-
                          pr183 CO-PASSED-
+                         pr245 Ran-PASSED-
+                         pr377 Ran-PASSED-
+                         pr487 Ran-FAILED-
                          pr492 Ran-PASSED-
                          pr498 Ran-PASSED-
                        addwide Ran-PASSED-
@@ -591,9 +617,77 @@ Test Results:
                          real3 Ran-PASSED-
                          real4 Ran-PASSED-
                          real5 Ran-PASSED-
+                         real6 Ran-PASSED-
+                         real7 Ran-PASSED-
                     realtobits Ran-PASSED-
                       negvalue Ran-PASSED-
+                         pr434 Ran-PASSED-
+                         pr556 Ran-PASSED-
                          pr632 Ran-FAILED-
                          pr617 Ran-PASSED-
                          pr673 Ran-PASSED-
-Tests passed: 568, failed: 32, Unhandled: 6 Unable: 1, Assert: 1, Parse Errs: 3
+                         pr675 Ran-PASSED-
+                         pr678 Ran-PASSED-
+                         pr685 Ran-PASSED-
+                         pr690 Ran-PASSED-
+                         pr693 Ran-PASSED-
+                         pr704 Ran-PASSED-
+                         pr707 Ran-PASSED-
+                         pr708 Ran-PASSED-
+                         pr710 Ran-PASSED-
+                         pr718 Ran-PASSED-
+                         pr721 Ran-PASSED-
+                         pr722 Ran-PASSED-
+                         pr729 Ran-PASSED-
+                         pr734 Ran-PASSED-
+                         pr735 Ran-PASSED-
+                         pr748 Ran-PASSED-
+                         pr751 Ran-PASSED-
+                         pr757 Ran-PASSED-
+                         pr772 Ran-PASSED-
+                         pr809 Ran-PASSED-
+                        pr809b Ran-PASSED-
+                         pr810 Ran-PASSED-
+                         pr812 Ran-PASSED-
+                         pr820 Ran-PASSED-
+                         pr823 Ran-PASSED-
+                         pr841 Ran-PASSED-
+                         pr842 Ran-PASSED-
+                         pr848 Ran-PASSED-
+                         pr856 Ran-PASSED-
+                         pr859 Ran-PASSED-
+                         pr860 Ran-PASSED-
+                         pr872 Ran-PASSED-
+                         pr902 Ran-PASSED-
+                         pr903 Ran-PASSED-
+                         pr905 Ran-PASSED-
+                         pr910 Ran-PASSED-
+                         pr913 Ran-PASSED-
+                         pr923 Ran-PASSED-
+                         pr938 Ran-PASSED-
+                        pr938b Ran-PASSED-
+                         pr941 Ran-PASSED-
+                          prng Ran-PASSED-
+                          race Ran-PASSED-
+                         pr973 Ran-PASSED-
+                         pr978 Compiler Error-
+                         pr979 Ran-PASSED-
+                         pr985 Ran-PASSED-
+                         pr987 Ran-PASSED-
+                         pr991 Ran-PASSED-
+                         pr993 Ran-PASSED-
+                         pr995 Ran-PASSED-
+                            eq Ran-PASSED-
+                          neq1 Ran-PASSED-
+                        pr1000 Ran-PASSED-
+                        pr1002 Ran-PASSED-
+                       pr1002a Ran-PASSED-
+                        pr1007 Ran-PASSED-
+                        pr1008 Ran-PASSED-
+                        pr1022 Ran-PASSED-
+                        pr1024 Ran-PASSED-
+                        pr1026 Ran-PASSED-
+                        pr1029 Ran-PASSED-
+                        pr1032 Ran-PASSED-
+                        pr1033 Ran-PASSED-
+Tests passed: 667, failed: 27, Unhandled: 4 Unable: 0, Assert: 0, Parse Errs: 2
