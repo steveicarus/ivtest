@@ -193,6 +193,8 @@ vardly normal ivltests
 lh_varindx normal ivltests
 always3.1.6D normal ivltests
 time3 normal ivltests
+time4 normal ivltests
+timescale1	normal ivltests
 udp_bufg normal ivltests
 wireadd1 normal ivltests
 wiremod1 normal ivltests
@@ -243,6 +245,9 @@ readmemb2	normal ivltests # $readmemb w/ short data file - readmemh2.dat
 readmemb3	normal ivltests # $readmemb 0-3 with long dfile - readmemh1.dat
 dff1		normal ivltests # Contrib by S Willaims
 con_tri		normal ivltests # Contrib by S Willaims
+tri0		normal	ivltests
+tri0b		normal	ivltests
+tri1		normal	ivltests
 idiv1		normal ivltests # Contrib by S Willaims
 fork3.19A	normal ivltests # 
 fork3.19B   normal ivltests # 
@@ -259,11 +264,15 @@ wildsense	normal ivltests # Wildcard sensitivity list.
 idiv2		normal ivltests # Int div within an expression
 assign_mem1	normal ivltests #
 assign_mem2	normal ivltests # Const prop/dead signal elimination
+meminit		normal	ivltests
 task_noop	normal ivltests # Task with no contents.
 scope1   	normal ivltests # scope of var into a task
+scope2   	normal ivltests # scope of var stops at module boundaries
+task-scope	normal ivltests
 assign_nb1  normal ivltests # Assign a constant to a single bit array (pmonta)
 wireland	normal ivltests # assign a && (b ? 0 : 1) (pmonta)
 param_concat normal ivltests #  param has concat value (pmonta)
+param_times	normal ivltests #  param has multiplication.
 case3.8D	 normal ivltests #  test case for x and z exact match in labels.  
 function_exp normal ivltests # Cntrib by steve williams
 ifdef1		 normal ivltests #  ifdef with no define
@@ -292,6 +301,7 @@ inertdly 	normal ivltests 	# Test for inertial delay
 galan       normal ivltests 	# Ternary test with varying size lhs vs rhs 
 pic     normal  contrib pictest diff=log/pic.log:gold/pic.gold
 drive_strength2 normal ivltests diff=log/drive_strength2.log:gold/drive_strength2.gold 
+initmod		normal	ivltests diff=log/initmod.log:gold/initmod.gold
 initmod2      normal  ivltests diff=log/initmod2.log:gold/initmod2.gold
 bnot		normal	ivltests	# test triggered an overzealous assert in vvm
 stask_parm1		normal	ivltests	# 
@@ -303,8 +313,9 @@ lh_varindx2      normal	ivltests	#
 lh_varindx4      normal	ivltests	# 
 lh_varindx5      normal	ivltests	# 
 lh_catadd      normal	ivltests	# 
-shellho1      normal	ivltests	# 
+shift_pad	normal	ivltests
 test4      normal	ivltests	# 
 format     normal  ivltests diff=log/format.log:gold/format.gold
-
-
+disp_dec   normal  ivltests diff=log/disp_dec.log:gold/disp_dec.gold
+shellho1	normal	ivltests top diff=log/shellho1.log:gold/shellho1.gold
+schedule	normal	ivltests
