@@ -285,7 +285,11 @@ Test Results:
                      test_pmos passed
                     test_rnmos passed
                     test_rpmos passed
-                         cprop execution failed
+                         cprop passed
                        supply1 passed
                        supply2 passed
-Tests passed: 268, Parse Errors: 2, Unsupported: 4, failed execution, 8, crashed: 0, C Compiler errors: 5 total: 292
+                      for3.16A passed
+                    force3.17A passed
+                    force3.17B passed
+                    force3.17C passed
+Tests passed: 273, Parse Errors: 2, Unsupported: 4, failed execution, 7, crashed: 0, C Compiler errors: 5 total: 296
