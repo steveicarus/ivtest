@@ -41,7 +41,7 @@ module main;
 
    initial begin
 
-      #1 if (out !== 2'bzz) begin
+      #1 if (out !== 2'bxx) begin
 	 $display("FAILED -- sel==%b, out==%b", sel, out);
 	 $finish;
       end

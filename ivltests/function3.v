@@ -52,7 +52,7 @@ module main;
         $finish;
      end
 
-   function test;
+   function [1:0] test;
       input [3:0] a, b;
       input [7:0] line;
       test = { (b == line[7:4]), (a[3:0] == line[3:0]) };

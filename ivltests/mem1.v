@@ -15,6 +15,11 @@
  *    You should have received a copy of the GNU General Public License
  *    along with this program; if not, write to the Free Software
  *    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
+ *
+ * $Log: mem1.v,v $
+ * Revision 1.2  2001/01/29 17:26:06  ka6s
+ * Check in fixes contributed by Paul Campbell (Thanks Paul)
+ *
  */
 
 `define CLK 10
@@ -53,6 +58,7 @@ module main;
     begin
         begin
             write = 1;
+            #1 ;
             $write("%d %x\n", counter, data);
             write = 0;
             counter = counter + 1;
