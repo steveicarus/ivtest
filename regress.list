@@ -200,6 +200,7 @@ time7	normal	ivltests	gold=time7.gold
 time8	normal	ivltests
 timescale1	normal ivltests
 udp_bufg normal ivltests
+udp_bufg2 normal ivltests
 udp_jkff normal	ivltests
 udp_x	normal	ivltests
 wireadd1 normal ivltests
@@ -465,5 +466,6 @@ pr304	normal	ivltests # test for PR304
 mhead_task normal ivltests # Verify hierarchical task name in another mod.
 bitsel	normal	ivltests diff=log/bitsel.log:gold/bitsel.gold
 pr312	normal	ivltests
+pr355	normal	ivltests
 ram16x1 normal ivltests # Sitting here for a long time?
 sched1  normal ivltests # 
