@@ -399,3 +399,7 @@ assign_neq normal ivltests # continuous assign with !=
 assign_deq normal ivltests # continuous assign with ==
 assign_ge normal ivltests # continuous assign with >=
 assign_le normal ivltests # continuous assign with <=
+mangle normal ivltests # 
+mangle_1 normal ivltests # 
+rop normal ivltests # 
+task_scope normal ivltests # 
