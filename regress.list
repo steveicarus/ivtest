@@ -423,6 +423,7 @@ param_test1 normal ivltests diff=log/param_test1.log:gold/param_test1.gold
 param_test2 normal ivltests diff=log/param_test2.log:gold/param_test2.gold
 param_test3 CO	ivltests # PR#293
 param_vec	normal	ivltests
+param_vec2	normal	ivltests
 integer5  normal  ivltests  # 
 signed2  normal  ivltests  # 
 signed3  normal  ivltests  # 
