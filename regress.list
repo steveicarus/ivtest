@@ -368,5 +368,6 @@ integer5  normal  ivltests  #
 signed2  normal  ivltests  # 
 signed3  normal  ivltests  # 
 signed4  normal  ivltests diff=log/signed4.log:gold/signed4.gold
+signed5  normal  ivltests
 repeat1  normal  ivltests
 decl_assign1	normal	ivltests
