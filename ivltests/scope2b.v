@@ -27,7 +27,7 @@
 module test(p);
    output p;
 
-   wire q = 1;
+   assign q = 1; // This should generate an error, q not defined
    assign p = q;
 
 endmodule // test

@@ -298,6 +298,7 @@ task_bypath	normal ivltests # task enabled by complete path name.
 task_iotypes	normal ivltests # task ports with types.
 scope1   	normal ivltests # scope of var into a task
 scope2   	normal ivltests # scope of var stops at module boundaries
+scope2b   	CE ivltests # broken version of scope2
 task-scope	normal ivltests
 assign_nb1  normal ivltests # Assign a constant to a single bit array (pmonta)
 assign_delay	normal ivltests # continuous assign with a delay

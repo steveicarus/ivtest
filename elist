@@ -1,4 +1,7 @@
 # $Log: elist,v $
+# Revision 1.10  2002/01/23 05:57:41  stevewilliams
+#  Fix scope2.v implicit wire error.
+#
 # Revision 1.9  2001/05/25 02:17:54  stevewilliams
 #  add port-test3 test.
 #
@@ -29,3 +32,5 @@ range2	ivltests bug
 ./ivltests/range2.v:9: error: bit/part select [3:2] out of range for bug.din
 port-test3 ivltests BANCH
 ./ivltests/port-test2.v:16: error: data in  module CPU declared as inout and as a reg type.
+scope2b	ivtests main
+./ivltests/scope2b.v:30: error: Net q is not defined in this context.
