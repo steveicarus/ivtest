@@ -1,0 +1,7 @@
+# test  testbench arch=? part=?     gold_file
+ge2  ge2_tb   virtex  XC2S15-VQ100  ge2.gold
+ge2  ge2_tb   virtex2 XC2V40        ge2.gold
+ge8  ge8_tb   virtex  XC2S15-VQ100  -
+ge8  ge8_tb   virtex2 XC2V40        -
+sqrt sqrt_tb  virtex  XC2S15-VQ100  -
+sqrt sqrt_tb  virtex2 XC2V40-CS144  -
