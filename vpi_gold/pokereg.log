@@ -9,13 +9,13 @@ RegPoke Callback
   4: 69
 RegPeek Callback
   0: 'b_00xxx010, 'o_0x2, 'd_X, 'h_XX
-  1: 'b_11101001, 'o_351, 'd_233, 'h_e9
+  1: 'b_00000011, 'o_003, 'd_3, 'h_03
   2: 'b_xxxx0100, 'o_xX4, 'd_X, 'h_x4
   3: 'b_01000101, 'o_105, 'd_69, 'h_45
   4: 'b_x001x001, 'o_XX1, 'd_X, 'h_XX
 Verilog compare r_poke <=> r_peek
   'b_x001x001 <=> 'b_x001x001        
   'b_00xxx010 <=> 'b_00xxx010        
-  'b_11101001 <=> 'b_11101001        
+  'b_00000011 <=> 'b_00000011        
   'b_xxxx0100 <=> 'b_xxxx0100        
   'b_01000101 <=> 'b_01000101        
