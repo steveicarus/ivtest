@@ -459,6 +459,7 @@ varrshft2 normal ivltests # variable >> in function
 varrshft normal ivltests  # variable >> in wire
 select	normal	ivltests # structural word select
 select2	normal	ivltests # structural bit select
+select3 normal	ivltests diff=log/select3.log:gold/select3.gold
 monitor	normal	ivltests diff=log/monitor.log:gold/monitor.gold
 fork1   normal  ivltests # Validate 3 way fork with simple assignments.
 function5 normal ivltests # PR 184 
@@ -472,6 +473,7 @@ string5 normal ivltests diff=log/string5.log:gold/string5.gold
 string7 normal ivltests diff=log/string7.log:gold/string7.gold
 string8 normal ivltests diff=log/string8.log:gold/string8.gold
 string9 normal ivltests diff=log/string9.log:gold/string9.gold
+string10 normal ivltests diff=log/string10.log:gold/string10.gold
 lh_memcat normal ivltests # Left hand arrays in concat (PR 77)
 npmos	normal	ivltests
 rnpmos	normal	ivltests
