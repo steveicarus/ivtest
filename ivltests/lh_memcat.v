@@ -15,7 +15,7 @@ module main;
      #10 clk = ~clk;
 
    // -- iverilog generates a warning here
-   assign x[31:0] = { 28'hfffffff, (~a[3:0] + 1) };
+   assign x[31:0] = { 28'hfffffff, (~a[3:0] + 4'd1) };
 
    initial
      begin
