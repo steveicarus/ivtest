@@ -1,0 +1,5 @@
+expr_scan_t (13vvm_parm_rval): unhandled expr_unary.
+simv.cc: In function `bool thread1_t_step_0_(vvm_thread *)':
+simv.cc:26: parse error before `;'
+errors compiling translated program.
+COMPERR

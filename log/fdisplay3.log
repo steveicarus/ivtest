@@ -1,0 +1,5 @@
+expect compile or runtime error from bad $fdisplay args:
+ERROR: $fdisplay mcd parameter must be of integral, got vpiType=32
+PASSED
+FAILED
+FAILED

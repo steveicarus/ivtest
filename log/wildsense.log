@@ -1,0 +1,6 @@
+./ivltests/wildsense.v:31: parse error
+./ivltests/wildsense.v:33: error: malformed statement
+./ivltests/wildsense.v:34: parse error
+I give up.
+errors translating Verilog program.
+COMPERR

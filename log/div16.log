@@ -1,0 +1,50 @@
+ERROR: $dumpvars: Unsupported parameter type
+16-bit Dividend, 8-bit divisor
+Circuit: 17767 / 198 = 89, rem = 145 		......... Reality: 89, rem = 145
+Circuit: 39017 / 115 = 339, rem = 32 		......... Reality: 339, rem = 32
+Circuit: 56401 / 255 = 221, rem = 46 		......... Reality: 221, rem = 46
+Circuit: 37962 / 236 = 160, rem = 202 		......... Reality: 160, rem = 202
+Circuit: 7977 / 205 = 38, rem = 187 		......... Reality: 38, rem = 187
+Circuit: 22714 / 171 = 132, rem = 142 		......... Reality: 132, rem = 142
+Circuit: 16882 / 251 = 67, rem = 65 		......... Reality: 67, rem = 65
+Circuit: 43491 / 70 = 621, rem = 21 		......... Reality: 621, rem = 21
+Circuit: 124 / 194 = 0, rem = 124 		......... Reality: 0, rem = 124
+Circuit: 2132 / 248 = 8, rem = 148 		......... Reality: 8, rem = 148
+Circuit: 8987 / 232 = 38, rem = 171 		......... Reality: 38, rem = 171
+Circuit: 52711 / 141 = 373, rem = 118 		......... Reality: 373, rem = 118
+Circuit: 3958 / 90 = 43, rem = 88 		......... Reality: 43, rem = 88
+Circuit: 63790 / 99 = 644, rem = 34 		......... Reality: 644, rem = 34
+Circuit: 49715 / 159 = 312, rem = 107 		......... Reality: 312, rem = 107
+Circuit: 50377 / 154 = 327, rem = 19 		......... Reality: 327, rem = 19
+Circuit: 64358 / 50 = 1287, rem = 8 		......... Reality: 1287, rem = 8
+Circuit: 20493 / 183 = 111, rem = 180 		......... Reality: 111, rem = 180
+Circuit: 47665 / 88 = 541, rem = 57 		......... Reality: 541, rem = 57
+Circuit: 12451 / 90 = 138, rem = 31 		......... Reality: 138, rem = 31
+Circuit: 24869 / 93 = 267, rem = 38 		......... Reality: 267, rem = 38
+Circuit: 45317 / 23 = 1970, rem = 7 		......... Reality: 1970, rem = 7
+Circuit: 43096 / 233 = 184, rem = 224 		......... Reality: 184, rem = 224
+Circuit: 33886 / 212 = 159, rem = 178 		......... Reality: 159, rem = 178
+Circuit: 48555 / 178 = 272, rem = 139 		......... Reality: 272, rem = 139
+
+16-bit Dividend, 12-bit divisor
+Circuit: 53453 / 198 = 269, rem = 191 		......... Reality: 269, rem = 191
+Circuit: 30363 / 3764 = 8, rem = 251 		......... Reality: 8, rem = 251
+Circuit: 9300 / 1553 = 5, rem = 1535 		......... Reality: 5, rem = 1535
+Circuit: 50190 / 3458 = 14, rem = 1778 		......... Reality: 14, rem = 1778
+Circuit: 63604 / 1601 = 39, rem = 1165 		......... Reality: 39, rem = 1165
+Circuit: 62753 / 3389 = 18, rem = 1751 		......... Reality: 18, rem = 1751
+Circuit: 36316 / 135 = 269, rem = 1 		......... Reality: 269, rem = 1
+Circuit: 6768 / 3561 = 1, rem = 3207 		......... Reality: 1, rem = 3207
+Circuit: 51262 / 1185 = 43, rem = 307 		......... Reality: 43, rem = 307
+Circuit: 49729 / 2273 = 21, rem = 1996 		......... Reality: 21, rem = 1996
+Circuit: 44540 / 871 = 51, rem = 119 		......... Reality: 51, rem = 119
+Circuit: 33342 / 3841 = 8, rem = 2614 		......... Reality: 8, rem = 2614
+Circuit: 50814 / 2711 = 18, rem = 2016 		......... Reality: 18, rem = 2016
+Circuit: 47594 / 2780 = 17, rem = 334 		......... Reality: 17, rem = 334
+Circuit: 54123 / 1942 = 27, rem = 1689 		......... Reality: 27, rem = 1689
+Circuit: 55183 / 1080 = 51, rem = 103 		......... Reality: 51, rem = 103
+Circuit: 22620 / 3626 = 6, rem = 864 		......... Reality: 6, rem = 864
+Circuit: 17132 / 3248 = 5, rem = 892 		......... Reality: 5, rem = 892
+Circuit: 54331 / 1787 = 30, rem = 721 		......... Reality: 30, rem = 721
+Circuit: 39474 / 3247 = 12, rem = 510 		......... Reality: 12, rem = 510
+Circuit: 36156 / 3924 = 9, rem = 840 		......... Reality: 9, rem = 840

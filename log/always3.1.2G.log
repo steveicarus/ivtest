@@ -1,0 +1,3 @@
+./ivltests/always3.1.2G.v:46: sorry: Event controls not supported here.
+errors translating Verilog program.
+COMPERR

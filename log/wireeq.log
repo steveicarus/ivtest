@@ -1,0 +1,2 @@
+./ivltests/wireeq.v:30: warning: Numeric hex constant ``02'' truncated to 4 bits.
+PASSED

@@ -1,0 +1,2 @@
+./ivltests/mult1.v:120: warning: Numeric hex constant ``x_xxxx_xxxx'' truncated to 9 bits.
+FAILED - Mult 2*x wire assign failed - is 0xxxxxxxx

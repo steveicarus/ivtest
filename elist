@@ -1,0 +1,4 @@
+readmemh5 ivltests main
+./ivltests/readmemh5.v:35: error: part select of a memory: main.array
+function_exp ivltests main
+./ivltests/function_exp.v:31: error: Unable to elaborate `foo(x)' as gates.

@@ -1,0 +1,4 @@
+./ivltests/test4.v: No such file or directory
+No top level modules, and no -s option.
+errors translating Verilog program.
+COMPERR

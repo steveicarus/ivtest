@@ -1,0 +1,310 @@
+#
+# Copyright (c) 1999 Guy Hutchison (ghutchis@pacbell.net)
+#
+#    This source code is free software; you can redistribute it
+#    and/or modify it in source code form under the terms of the GNU
+#    General Public License as published by the Free Software
+#    Foundation; either version 2 of the License, or (at your option)
+#    any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program; if not, write to the Free Software
+#    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
+#
+# Format of the file
+# 
+# testname	testtype	directory
+#
+# Note that no  extension is required for the testname, and that the 
+# sregress.pl logic requires that the FIRST test in the list not be a
+# CO class test.
+#
+# Testtype can be one of
+#
+# normal:	Normal results expected, i.e it should compile an execute 
+#               to a PASSED
+# CO:		Compile only - Examine the logfile for any errors - shouldn't 
+#               be any.
+# CE:		Compile with Errors - We EXPECT errors - we're checking 
+#               illegal syntax
+# 
+# The third arguement is the directory, and forth optional is one of
+# modulename - Defines the top level module
+# gold=filename - Compare a gold file against the generated log file.
+# diff=filename1:filename2 - Compare the two files for equality.
+#
+always3.1.10A	CO	ivltests	# always -> event ; infinite loop
+always3.1.11A	normal	ivltests
+always3.1.11B	normal	ivltests
+always3.1.12A	normal	ivltests	# always fork join
+always3.1.12B	CN		ivltests	# always fork: block_id join
+always3.1.12C	CN		ivltests
+always3.1.1A	CO	ivltests
+always3.1.1B	CO	ivltests
+always3.1.1C	CO	ivltests
+always3.1.1D	CO	ivltests
+always3.1.1E	CO	ivltests
+always3.1.1F	CO	ivltests
+always3.1.1G	CO	ivltests
+always3.1.1H	CO	ivltests
+always3.1.1I	CO	ivltests
+always3.1.1J	CO	ivltests
+always3.1.1K	CO	ivltests
+always3.1.2A	CO	ivltests
+always3.1.2B	CO	ivltests
+always3.1.2C	CO	ivltests
+always3.1.2D	CO	ivltests
+always3.1.2E	CO	ivltests
+always3.1.2F	CO	ivltests
+always3.1.2G	CO	ivltests
+always3.1.2H	CO	ivltests
+always3.1.2I	CO	ivltests
+always3.1.3A	CO	ivltests
+always3.1.3B	CO	ivltests
+always3.1.3C	CO	ivltests
+always3.1.3D	CO	ivltests
+always3.1.3E	CO	ivltests
+always3.1.3F	CO	ivltests
+always3.1.3G	CO	ivltests
+always3.1.3H	CO	ivltests
+always3.1.3J	CO	ivltests
+always3.1.4A	normal	ivltests
+always3.1.4B	normal	ivltests
+always3.1.4C	normal	ivltests
+always3.1.4D	normal	ivltests
+always3.1.4E	normal	ivltests
+always3.1.4F	normal	ivltests
+always3.1.4G	normal	ivltests
+always3.1.4H	normal	ivltests
+always3.1.4I	normal	ivltests
+always3.1.5A	normal	ivltests
+always3.1.5B	normal	ivltests
+always3.1.5C	normal	ivltests
+always3.1.5D	normal	ivltests
+always3.1.5E	normal	ivltests
+always3.1.5F	normal	ivltests
+always3.1.6A	normal	ivltests
+always3.1.6B	normal	ivltests
+always3.1.6C	normal	ivltests
+always3.1.7A	normal	ivltests
+always3.1.7B	normal	ivltests
+always3.1.7C	normal	ivltests
+always3.1.7D	normal	ivltests
+always3.1.8A	normal	ivltests
+always3.1.9A	CO	ivltests	# always disable taskname
+always3.1.9B	CO    	ivltests	# always disable blockid
+always3.1.9C	normal	ivltests	# always #1 disable taskname
+always3.1.9D	normal  ivltests	# always #1 disable blockid
+assign3.2A	normal	ivltests
+assign3.2B	normal	ivltests
+assign3.2C	normal	ivltests
+assign3.2D	normal	ivltests
+assign3.2E	CE    	ivltests
+case3.8A	normal	ivltests
+case3.8B	normal	ivltests
+case3.8C	normal	ivltests
+casex3.9A	normal	ivltests
+casex3.9B	normal	ivltests
+casex3.9C	normal	ivltests
+casex3.9D	normal	ivltests
+casex3.9E	normal	ivltests
+casez3.10A	normal	ivltests
+casez3.10B	normal	ivltests
+casez3.10C	normal	ivltests
+casez3.10D	normal	ivltests
+casez3.10E	normal	ivltests 		# Use ? and z in label
+contrib8.1	normal	ivltests
+contrib8.2	normal	ivltests test	# Add the 4th optional arguement -s test
+contrib8.5	normal	ivltests # Add the 4th optional arguement -s test
+deassign3.4A	normal	ivltests
+defparam3.5	normal	ivltests		# defparam(single)
+defparam    normal  ivltests main	# defparams with list
+disable3.6A	normal	ivltests
+disable3.6B	normal	ivltests
+function3.11B	normal	ivltests
+function3.11C	normal	ivltests
+function3.11D	normal	ivltests
+function3.11F	normal	ivltests
+module3.12A	normal	ivltests main
+module3.12B	normal	ivltests
+ptest001	normal	ivltests
+ptest002	normal	ivltests
+ptest003	normal	ivltests
+ptest004	normal	ivltests
+ptest005	normal	ivltests
+ptest006	normal	ivltests
+ptest007	normal	ivltests
+ptest008	normal	ivltests
+ptest009	normal	ivltests
+ptest010	normal	ivltests
+ptest011	normal	ivltests
+qmark	normal	ivltests
+qmark1	normal	ivltests
+qmark3	normal	ivltests
+qmark5	normal	ivltests
+sdw_always1	normal	ivltests
+sdw_always2	normal	ivltests
+sdw_always3	normal	ivltests
+sdw_array	normal	ivltests
+sdw_assign	normal	ivltests
+sdw_dsbl	normal	ivltests
+sdw_force	normal	ivltests
+sdw_function1	normal	ivltests
+sdw_function2	normal	ivltests
+sdw_function3	normal	ivltests
+sdw_instmod1	normal	ivltests
+sdw_instmod2	normal	ivltests
+sdw_int		normal	ivltests
+sdw_lvalconcat	normal	ivltests
+sdw_lvalconcat2	normal	ivltests
+sdw_param1	normal	ivltests
+sdw_param2	normal	ivltests
+sdw_release	normal	ivltests
+sdw_stmt002	normal	ivltests
+sdw_task1	normal	ivltests
+sdw_task2	normal	ivltests
+task3.14A	normal	ivltests
+task3.14B	normal	ivltests
+task3.14C	normal	ivltests
+task3.14D	normal	ivltests
+task3.14E	normal	ivltests
+task3.14F	normal	ivltests
+z1	normal	ivltests foo
+z2	normal	ivltests foo
+contrib8.3	CE	ivltests
+contrib8.4  normal  ivltests
+integer1lt  normal ivltests
+integer2le  normal ivltests
+integer3gt  normal ivltests
+integer4ge  normal ivltests
+land2 normal ivltests
+land3 normal ivltests
+talu normal ivltests
+time2 normal ivltests  # Tests posedge vector uses vector[0]
+sdw_lvalconcat normal ivltests
+sdw_lvalconcat2 normal ivltests
+time1 normal ivltests
+vardly normal ivltests
+lh_varindx normal ivltests
+always3.1.6D normal ivltests
+time3 normal ivltests
+udp_bufg normal ivltests
+wireadd1 normal ivltests
+wiremod1 normal ivltests
+wiresl normal ivltests
+wiresr normal ivltests
+wiresub1 normal ivltests
+wirexor1 normal ivltests
+wirele normal ivltests
+wirege normal ivltests
+wireeq normal ivltests
+ga_and normal ivltests
+ga_or normal ivltests
+ga_xor normal ivltests
+ga_xnor normal ivltests
+ga_nand normal ivltests
+ga_nor normal ivltests
+constmult normal ivltests
+constadd normal ivltests
+qmark6  normal ivltests
+muxtest normal ivltests	# Validates that X sel and inputs same, output not X
+fifo	normal contrib
+event3.15	normal ivltests # Validate event lists, and -> operator.
+unary_and	normal ivltests # Unary And &(vect)
+unary_nand	normal ivltests # Unary nand ~&(vect)
+unary_or 	normal ivltests # Unary or  |(vect)
+unary_nor	normal ivltests # Unary nor ~|(vect)
+unary_xor 	normal ivltests # Unary or  ^(vect)
+unary_xnor1	normal ivltests # Unary xnor ~^(vect)
+unary_xnor2	normal ivltests # Unary xnor ^~(vect)
+rptconcat	normal ivltests # Repeat concatenation operation.
+gencrc		normal contrib  # 32/16 bit crc 
+onehot		normal contrib	# one hot design
+inout		normal ivltests # modname(a,a); inout a;
+modparam	normal ivltests top # Overide parameter via passed down value
+modulus		normal ivltests # wire % and reg % operators 
+mult1		normal ivltests # wire * and reg * operators 
+xnor_test	normal ivltests # ~^ in an IF()
+pullupdown	normal ivltests # Contributed test
+drive_strength	normal ivltests # Contributed test
+sdw_function4	normal ivltests # function with if from George Gallant bug rpt
+sdw_function5	normal ivltests # function with if from George Gallant bug rpt
+readmemh1	normal ivltests # basic $readmemh - uses readmemh1.dat
+readmemh2	normal ivltests # $readmemh w/ short data file - readmemh2.dat
+readmemh3	normal ivltests # $readmemh 0-3 with long dfile - readmemh1.dat
+readmemh4	normal ivltests # $readmemh - comments in data file 
+readmemb1	normal ivltests # basic $readmemb - uses readmemh1.dat
+readmemb2	normal ivltests # $readmemb w/ short data file - readmemh2.dat
+readmemb3	normal ivltests # $readmemb 0-3 with long dfile - readmemh1.dat
+dff1		normal ivltests # Contrib by S Willaims
+con_tri		normal ivltests # Contrib by S Willaims
+idiv1		normal ivltests # Contrib by S Willaims
+fork3.19A	normal ivltests # 
+fork3.19B   normal ivltests # 
+mult16		normal contrib mul16 # Contributed by Tom Coonan - has $random
+event_list	normal ivltests # Contrib by S Williams
+posedge		normal ivltests # Contrib by S Williams
+nblkorder	normal ivltests # Validates Non-blocking order determinism
+task_inpad	normal ivltests # Validates input of task should pad w/ 0
+task_omemw3	CO		 ivltests # Pass bit selected from vector to task
+cond_band	normal ivltests # Bitwise and in if condition
+bufif		normal ivltests # Validate bufif0, bufif1
+pca1		normal ivltests # Procedural Continous Assignement in a mux 
+wildsense	normal ivltests # Wildcard sensitivity list.
+idiv2		normal ivltests # Int div within an expression
+assign_mem1	normal ivltests #
+assign_mem2	normal ivltests # Const prop/dead signal elimination
+task_noop	normal ivltests # Task with no contents.
+scope1   	normal ivltests # scope of var into a task
+assign_nb1  normal ivltests # Assign a constant to a single bit array (pmonta)
+wireland	normal ivltests # assign a && (b ? 0 : 1) (pmonta)
+param_concat normal ivltests #  param has concat value (pmonta)
+case3.8D	 normal ivltests #  test case for x and z exact match in labels.  
+function_exp normal ivltests # Cntrib by steve williams
+ifdef1		 normal ivltests #  ifdef with no define
+ifdef2		 normal ivltests #  ifdef with define
+ifdef3		 normal ivltests #  compound ifdef with 1 define
+ifdef4		 normal ivltests #  compound ifdef with 2 defines
+else1		 normal ivltests #  ifdef with else
+else2		 normal ivltests #  compound ifdef with else
+else3		 normal ivltests #  compound ifdef compound else
+include1	normal ivltests #  include file 1 level deep
+include2	normal ivltests #  include file 2 levels deep
+include3	normal ivltests #  include file 3 levels deep
+define1		normal ivltests #  Use defined value for reg def and reg assign
+fdisplay1	normal	ivltests  gold=fdisplay1.gold	# 
+fdisplay2	normal  ivltests  diff=work/fdisplay2.out:gold/fdisplay2.out #
+fdisplay3	normal	ivltests  gold=fdisplay3.gold
+fopen1		normal  ivltests # Test basic fopen operation	
+fopen2		normal  ivltests # Test basic fopen operation	
+div16		normal	contrib test_div16 # Uses $random and divide operator (Tom Coonan)
+addsr		normal	ivltests # Finds problems with >> using different sizes
+tern1		normal	ivltests # Finds problems with ?: using different sizes
+readmemh5	CE		ivltests # Should be error for readmemh(romimg,rom[0:7])
+port-test2	normal  ivltests # Port declaration syntax checks
+param_string normal ivltests # parameter storing a string.
+inertdly 	normal ivltests 	# Test for inertial delay
+galan       normal ivltests 	# Ternary test with varying size lhs vs rhs 
+pic     normal  contrib pictest diff=log/pic.log:gold/pic.gold
+drive_strength2 normal ivltests diff=log/drive_strength2.log:gold/drive_strength2.gold 
+initmod2      normal  ivltests diff=log/initmod2.log:gold/initmod2.gold
+bnot		normal	ivltests	# test triggered an overzealous assert in vvm
+stask_parm1		normal	ivltests	# 
+task_inpad 		normal	ivltests	# 
+task_omemw2     normal	ivltests	# 
+unary_lnot1      normal	ivltests	# 
+unary_lnot2      normal	ivltests	# 
+lh_varindx2      normal	ivltests	# 
+lh_varindx4      normal	ivltests	# 
+lh_varindx5      normal	ivltests	# 
+lh_catadd      normal	ivltests	# 
+shellho1      normal	ivltests	# 
+test4      normal	ivltests	# 
+format     normal  ivltests diff=log/format.log:gold/format.gold
+
+

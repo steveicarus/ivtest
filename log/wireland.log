@@ -1,0 +1,3 @@
+./ivltests/wireland.v:27: warning: Number with indefinite size in self-determined context.
+./ivltests/wireland.v:27: warning: Number with indefinite size in self-determined context.
+PASSED
