@@ -286,6 +286,7 @@ task_inpad	normal ivltests # Validates input of task should pad w/ 0
 task_omemw3	CO		 ivltests # Pass bit selected from vector to task
 cond_band	normal ivltests # Bitwise and in if condition
 cond_wide	normal ivltests # condition is a wide value
+cond_wide2	normal ivltests # condition is a wide value
 bufif		normal ivltests # Validate bufif0, bufif1
 pca1		normal ivltests # Procedural Continous Assignement in a mux 
 wildsense	normal ivltests # Wildcard sensitivity list.
