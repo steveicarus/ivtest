@@ -119,8 +119,6 @@ sub check_results {
     foreach $testname (@testlist) {
 	    $number++;
             print "$testname:" ;
-	    # remove the last diff file
-            system("rm -rf diff.file");
 	    $cmd4 = "diff vpi_gold/$testname.log vpi_log/$testname.log > diff.file";
 	    #print $cmd4,"\n";
 	    system("$cmd4");
@@ -134,6 +132,8 @@ sub check_results {
 		 system("$cmd4");
                  print "PASSED\n";
             }
+	    # remove the last diff file
+            system("rm -rf diff.file");
     }
     print "Tests: Total=$number, failed=$error\n";
 }
