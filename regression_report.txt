@@ -325,4 +325,5 @@ Test Results:
                        signed2 execution failed
                        signed3 execution failed
                        repeat1 passed
-Tests passed: 301, Parse Errors: 1, Unsupported: 6, failed execution, 10, crashed: 0, C Compiler errors: 6 total: 329
+                  decl_assign1 passed
+Tests passed: 302, Parse Errors: 1, Unsupported: 6, failed execution, 10, crashed: 0, C Compiler errors: 6 total: 330

@@ -367,3 +367,4 @@ integer5  normal  ivltests  #
 signed2  normal  ivltests  # 
 signed3  normal  ivltests  # 
 repeat1  normal  ivltests
+decl_assign1	normal	ivltests
