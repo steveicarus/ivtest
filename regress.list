@@ -609,3 +609,4 @@ basicexpr2      normal,-S ivltests # First Synth test
 basicexpr3      normal,-S ivltests # First Synth test
 basicexpr4      normal,-S ivltests # First Synth test
 busbug		normal	ivltests diff=log/busbug.log:gold/busbug.gold
+real		normal  ivltests
