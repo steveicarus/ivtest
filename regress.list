@@ -561,6 +561,7 @@ port-test4a	CE	ivltests # Port declaration input duplication checks (PR394)
 port-test4b	CE	ivltests # Port declaration output duplication checks (PR394)
 port-test5	normal	ivltests # demonstrates 2001 module port syntax
 port-test6	normal	ivltests # demonstrates 2001 module port syntax
+port-test7	normal	ivltests # demonstrates 2001 module port syntax
 pr445	normal	ivltests
 big_int	normal	ivltests # PR#405
 concat1	normal	ivltests # PR#327,372
