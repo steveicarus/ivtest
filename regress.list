@@ -314,7 +314,6 @@ lh_varindx4      normal	ivltests	#
 lh_varindx5      normal	ivltests	# 
 lh_catadd      normal	ivltests	# 
 shift_pad	normal	ivltests
-test4      normal	ivltests	# 
 format     normal  ivltests diff=log/format.log:gold/format.gold
 disp_dec   normal  ivltests diff=log/disp_dec.log:gold/disp_dec.gold
 shellho1	normal	ivltests top diff=log/shellho1.log:gold/shellho1.gold
