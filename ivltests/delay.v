@@ -1,3 +1,5 @@
+`timescale 1ns/100ps 
+
 module assign_test;
 
 
@@ -23,9 +25,9 @@ end
 
 
 always begin
-    clk = 1;
-    #50;
     clk = 0;
+    #50;
+    clk = 1;
     #50;
 end
 
@@ -46,7 +48,8 @@ always @(posedge clk) begin
 end
 
 
-always @(cat1)  $write("time=%04d, cat1=%0h\n", $time, cat1);
+always @(cat1) 
+  $write("time=%0t, cat1=%0h\n", $time, cat1);
 
 always @(cat2)  $write("time=%04d, cat2=%0h\n", $time, cat2);
 
