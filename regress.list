@@ -126,6 +126,7 @@ defparam3.5	normal	ivltests		# defparam(single)
 defparam    normal  ivltests main	# defparams with list
 disable3.6A	normal	ivltests
 disable3.6B	normal	ivltests
+disable_fork	normal	ivltests
 function3.11B	normal	ivltests
 function3.11C	normal	ivltests
 function3.11D	normal	ivltests
