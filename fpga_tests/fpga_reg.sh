@@ -36,8 +36,9 @@ cat fpga_reg.list |
 	fi
 
 	true > fpga_log/$test-$arch.log 2>&1
+	EDIF="$test-$arch.edf"
 
-	synth="iverilog -ofpga_tmp/$test.edf -tfpga -parch=$arch $part $test.v"
+	synth="iverilog -ofpga_tmp/$EDIF -tfpga -parch=$arch $part $test.v"
 	echo "synth=$synth"
 	eval "$synth" > fpga_log/$test-$arch-synth.log 2>&1
 	if test $? != 0
@@ -46,7 +47,7 @@ cat fpga_reg.list |
 	    continue
 	fi
 
-	ngdbuild="ngdbuild $test.edf $test.ngd"
+	ngdbuild="ngdbuild $EDIF $test.ngd"
 	echo "ngdbuild=$ngdbuild"
 	(eval "cd fpga_tmp; $ngdbuild") > fpga_log/$test-$arch-build.log 2>&1
 	if test $? != 0
