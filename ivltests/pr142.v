@@ -55,7 +55,7 @@ module testit;
          $display("PASSED");
        else
          $display("FAILED");
-       $finish();
+       $finish;
    end
 
 endmodule
