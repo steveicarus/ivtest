@@ -21,10 +21,16 @@
 #    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 #
 # 3/25/2001  SDW   Modified sregress.pl script to run vvp.
+# 4/13/2001  SDW   Added CORE DUMP detection
+# $Log: vvp_reg.pl,v $
+# Revision 1.4  2001/04/14 03:33:02  ka6s
+# Fixed detection of Core dumps. Made sure I remove core before we run vvp.
+#
 
 #  Global setup and paths
-
+$| = 1;             # This turns off buffered I/O 
 $total_count = 0;
+$debug = 1;
 
 $num_opts = $#ARGV ;
 
@@ -206,7 +212,6 @@ sub execute_regression {
         #
 	#	$cmd = "$vername $versw $vermod $verout $vpath &> $lpath ";
 		$cmd = "$vername $versw $vermod $verout $vpath $redir $lpath ";
-        $rerun = "/usr/local/bin/vvp vsim $redir $lpath ";
 
 	print "$cmd\n";
 	$rc = system("$cmd");
@@ -220,9 +225,13 @@ sub execute_regression {
                  if(!($testtype{$testname} eq "CO" ) &&
                     !($testtype{$testname} eq "CN" ) && 
                     !($testtype{$testname} eq "CE" )) {
+                   system ("rm -rf core");
                    system ("/usr/local/bin/vvp simv >> $lpath");
                  } else {
                    
+                 }
+                 if( -e "core") {
+                    system ("echo CRASHED > $lpath" );
                  }
               } elsif ( -e "core") {
                   system ("echo CRASHED >> $lpath" );
@@ -349,6 +358,11 @@ sub check_results {
                printf REPORT "Assertion-"; 
                $assertion++;
             }
+            if ($result =~ "CRASHED" ) {
+               $err_flag = 1;
+               printf REPORT "CORE DUMP-"; 
+               $failed++;
+            }
 
             if($testtype{$testname} ne "CO") {
               if ($result =~ "PASSED" ) {
@@ -379,7 +393,7 @@ sub check_results {
     }
     $total = $pass_count + $no_compile + $no_run + $crash_count;
     print REPORT "Tests passed: $passed, failed: $failed, Unhandled: $unhandled Unable: $unable, Assert: $assertion, Parse Errs: $parse";
-    print         "Tests passed: $passed, failed: $failed, Unhandled: $unhandled Unable: $unable, Assert: $assertion  Parse Errs: $parse";
+    print         "Tests passed: $passed, failed: $failed, Unhandled: $unhandled Unable: $unable, Assert: $assertion  Parse Errs: $parse\n";
 
     close (REPORT);
 }
