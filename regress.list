@@ -423,6 +423,7 @@ memidx normal ivltests # PR 221
 memidxrng normal ivltests # PR 271 memory address range checks
 mem2port normal ivltests # memory ports with constant address
 vcd-dup normal ivltests diff=vcd-dup.vcd:gold/vcd-dup.vcd.gold:40
+resolv1 normal ivltests # PR#300
 pr224 normal ivltests  # reg [3:0] ack; ... @(posedge ack)
 pr224a normal ivltests # reg [3:0] ack; ... @(posedge ack[p])
 varlsfht1 normal ivltests # variable << in always
