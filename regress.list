@@ -318,7 +318,7 @@ initmod2      normal  ivltests diff=log/initmod2.log:gold/initmod2.gold
 bnot		normal	ivltests	# test triggered an overzealous assert in vvm
 stask_parm1		normal	ivltests	# 
 stask_parm2	normal	ivltests	gold=stask_parm2.gold
-task_inpad 		normal	ivltests	# 
+task_mem 		normal	ivltests	# 
 task_omemw2     normal	ivltests	# 
 unary_lnot1      normal	ivltests	# 
 unary_lnot2      normal	ivltests	# 

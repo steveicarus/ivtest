@@ -276,7 +276,7 @@ Test Results:
                           bnot passed
                    stask_parm1 passed
                    stask_parm2 passed
-                    task_inpad passed
+                      task_mem passed
                    task_omemw2 passed
                    unary_lnot1 passed
                    unary_lnot2 passed
