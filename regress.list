@@ -508,6 +508,8 @@ mhead_task normal ivltests # Verify hierarchical task name in another mod.
 bitsel	normal	ivltests diff=log/bitsel.log:gold/bitsel.gold
 bitsel2	normal	ivltests
 bitsel3	normal	ivltests
+bitsel4	normal	ivltests
+bitsel5	normal	ivltests
 pr312	normal	ivltests
 pr355	normal	ivltests
 ram16x1 normal ivltests # Sitting here for a long time?
@@ -552,6 +554,11 @@ pr522		normal	ivltests diff=log/pr522.log:gold/pr522.gold
 pr524		normal	ivltests diff=log/pr524.log:gold/pr524.gold
 pr528		normal	ivltests diff=log/pr528.log:gold/pr528.gold
 pr528b		normal	ivltests diff=log/pr528b.log:gold/pr528b.gold
+pr530a		normal	ivltests diff=log/pr530a.log:gold/pr530.gold
+pr530b		normal	ivltests diff=log/pr530b.log:gold/pr530.gold
+pr530c		normal	ivltests diff=log/pr530c.log:gold/pr530.gold
+pr531a		normal	ivltests diff=log/pr531a.log:gold/pr531a.gold
+pr532		normal	ivltests diff=log/pr532.log:gold/pr532.gold
 pr533		normal	ivltests diff=log/pr533.log:gold/pr533.gold
 case1           normal,-S ivltests # First Synth test
 case2           normal,-S ivltests # First Synth test
