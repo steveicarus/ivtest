@@ -1,4 +1,7 @@
 # $Log: elist,v $
+# Revision 1.11  2002/04/12 02:51:52  stevewilliams
+#  Add range3 to error test.
+#
 # Revision 1.10  2002/01/23 05:57:41  stevewilliams
 #  Fix scope2.v implicit wire error.
 #
@@ -20,8 +23,6 @@
 #
 readmemh5 ivltests main
 ./ivltests/readmemh5.v:35: error: part select of a memory: main.array
-function_exp ivltests main
-./ivltests/function_exp.v:31: error: Unable to elaborate `foo(x)' as gates.
 function3.11E ivltests test
 ./ivltests/function3.11E.v:30: parse error
 add32 contrib main
@@ -30,6 +31,8 @@ range1	ivltests main
 ./ivltests/range1.v:44: error: bit/part select main.thing[9:9] is out of range.
 range2	ivltests bug
 ./ivltests/range2.v:9: error: bit/part select [3:2] out of range for bug.din
+range3	ivltests simple
+./ivltests/range3.v:26: error: Signal ``b'' declared both as a vector and a scalar.
 port-test3 ivltests BANCH
 ./ivltests/port-test2.v:16: error: data in  module CPU declared as inout and as a reg type.
 scope2b	ivtests main
