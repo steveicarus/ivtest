@@ -187,6 +187,7 @@ integer3gt  normal ivltests
 integer4ge  normal ivltests
 land2 normal ivltests
 land3 normal ivltests
+land4 normal ivltests diff=log/land4.log:gold/land4.gold
 talu normal ivltests
 time2 normal ivltests  # Tests posedge vector uses vector[0]
 sdw_lvalconcat normal ivltests
