@@ -281,6 +281,7 @@ scope2   	normal ivltests # scope of var stops at module boundaries
 task-scope	normal ivltests
 assign_nb1  normal ivltests # Assign a constant to a single bit array (pmonta)
 assign_delay	normal ivltests # continuous assign with a delay
+delay		normal ivltests diff=log/delay.log:gold/delay.gold
 wireland	normal ivltests # assign a && (b ? 0 : 1) (pmonta)
 param_concat normal ivltests #  param has concat value (pmonta)
 param_times	normal ivltests #  param has multiplication.

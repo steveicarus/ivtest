@@ -240,6 +240,7 @@ Test Results:
                     task-scope passed
                     assign_nb1 passed
                   assign_delay passed
+                         delay passed
                       wireland passed
                   param_concat passed
                    param_times passed
@@ -337,4 +338,6 @@ Test Results:
                         vector passed
                           mcl1 passed
                           mcl2 passed
-Tests passed: 317, Parse Errors: 2, Unsupported: 6, failed execution, 6, crashed: 0, C Compiler errors: 5 total: 341
+                      comp1000 has C Compiler problem
+                      comp1001 has C Compiler problem
+Tests passed: 318, Parse Errors: 2, Unsupported: 6, failed execution, 6, crashed: 0, C Compiler errors: 7 total: 344
