@@ -310,12 +310,13 @@ Test Results:
                         ga_mod had elaboration errors:had unsupported features
                        ga_mod1 had elaboration errors:had unsupported features
                        signed1 passed
-                    param_expr has C Compiler problem
+                    param_expr passed
+                     param_and passed
                     param_and2 has C Compiler problem
-                    param_band has C Compiler problem
-                     param_bor has C Compiler problem
+                    param_band passed
+                     param_bor passed
                      param_eq3 has C Compiler problem
-                    param_binv has C Compiler problem
+                    param_binv passed
                      param_add passed
                      param_mod has C Compiler problem
                     param_tern passed
@@ -323,4 +324,4 @@ Test Results:
                        signed2 execution failed
                        signed3 execution failed
                        repeat1 execution failed
-Tests passed: 291, Parse Errors: 1, Unsupported: 6, failed execution, 11, crashed: 0, C Compiler errors: 13 total: 327
+Tests passed: 296, Parse Errors: 1, Unsupported: 6, failed execution, 11, crashed: 0, C Compiler errors: 9 total: 328

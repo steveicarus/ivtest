@@ -353,6 +353,7 @@ ga_mod		normal  ivltests main
 ga_mod1		normal  ivltests main
 signed1		normal	ivltests
 param_expr  normal  ivltests # & in param declar
+param_and   normal  ivltests # bitwise &
 param_and2  normal  ivltests # logical && in param declar
 param_band  normal  ivltests # Bitwise and in param declar
 param_bor  normal  ivltests  # Bitwise OR in param declar
