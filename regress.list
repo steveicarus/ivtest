@@ -237,7 +237,7 @@ muxtest normal ivltests	# Validates that X sel and inputs same, output not X
 fifo	normal contrib
 event3.15	normal ivltests # Validate event lists, and -> operator.
 event2		normal ivltests
-event3		normal ivltests diff=log/event3.log:gold/event3.log
+event3		normal ivltests diff=log/event3.log:gold/event3.gold
 unary_and	normal ivltests # Unary And &(vect)
 unary_minus	normal ivltests # Unary minus -(vect)
 unary_minus1	normal ivltests # From 272 directly.
@@ -569,7 +569,7 @@ dummy7	normal	ivltests diff=log/dummy7.log:gold/dummy7.gold
 time6b  normal  ivltests # Rewrote time6 to pass with XL
 time6c  normal  ivltests diff=log/time6c.log:gold/time6c.gold
 disblock normal ivltests # PR280
-disblock2 normal	ivltests diff=log/disblock2.log:gold/displock2.gold
+disblock2 normal	ivltests diff=log/disblock2.log:gold/disblock2.gold
 comment1	normal	ivltests # PR410/411
 pr136    normal  ivltests # PR136 param foo_size 8 * 4
 port-test4a	CE	ivltests # Port declaration input duplication checks (PR394)
