@@ -23,6 +23,9 @@
 # 3/25/2001  SDW   Modified sregress.pl script to run vvp.
 # 4/13/2001  SDW   Added CORE DUMP detection
 # $Log: vvp_reg.pl,v $
+# Revision 1.7  2001/06/26 00:41:41  sib4
+# Will we finally have that LF at the end
+#
 # Revision 1.6  2001/05/18 13:24:10  ka6s
 # Detect sorry as well as the others..
 #
@@ -405,7 +408,7 @@ sub check_results {
       }
     }
     $total = $pass_count + $no_compile + $no_run + $crash_count;
-    print REPORT "Tests passed: $passed, failed: $failed, Unhandled: $unhandled Unable: $unable, Assert: $assertion, Parse Errs: $parse";
+    print REPORT "Tests passed: $passed, failed: $failed, Unhandled: $unhandled Unable: $unable, Assert: $assertion, Parse Errs: $parse\n";
     print         "Tests passed: $passed, failed: $failed, Unhandled: $unhandled Unable: $unable, Assert: $assertion  Parse Errs: $parse\n";
 
     close (REPORT);
