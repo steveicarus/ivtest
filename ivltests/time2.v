@@ -30,7 +30,7 @@ initial
     count = 0;
     for (clock = 0; clock<=10; clock = clock + 1)
        begin
-        $display("time = %t, clock = %x",$time,clock);
+        $display("time = %t, clock = %h",$time,clock);
         #10;
        end
   end
@@ -38,7 +38,7 @@ initial
 always @(posedge clock & b)
   begin
     count = count+1;          
-    $display(" edge ! time = %t, count = %x",$time,count);
+    $display(" edge ! time = %t, count = %h",$time,count);
   end
 
 initial 

@@ -49,7 +49,7 @@ module main;
 	 d = a[0];
 	 #1 wclk = 1;
 	 #1 wclk = 0;
-	 $display("r1[%x] == %b", a, q);
+	 $display("r1[%h] == %b", a, q);
       end
 
       for (a = 0 ; a < 4'hf ;  a = a + 1)

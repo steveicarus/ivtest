@@ -77,14 +77,14 @@ initial  // Validation block
     #5 ;
     if(result != 32'h00000000)   
       begin
-        $display("FAILED - -1 + 1 = %x\n",result);
+        $display("FAILED - -1 + 1 = %h\n",result);
         $finish ;
       end
  
     #5 ;
     if(result != 32'hffffffff)   
       begin
-        $display("FAILED - 0 - 1 = %x\n",result);
+        $display("FAILED - 0 - 1 = %h\n",result);
         $finish ;
       end
     $display("PASSED\n");

@@ -40,7 +40,7 @@ initial
     if(value !== 8'h1)
       begin
         error = 1;
-	$display ("FAILED - 1 << 0 is %x",value);
+	$display ("FAILED - 1 << 0 is %h",value);
       end
     #1 ;
     var1 = 8'h1;
@@ -49,7 +49,7 @@ initial
     if(value !== 8'h2)
       begin
         error = 1;
-	$display ("FAILED - 1 << 1 is %x",value);
+	$display ("FAILED - 1 << 1 is %h",value);
       end
     #1 ;
     var1 = 8'h1;
@@ -58,7 +58,7 @@ initial
     if(value !== 8'h4)
       begin
         error = 1;
-	$display ("FAILED - 1 << 2 is %x",value);
+	$display ("FAILED - 1 << 2 is %h",value);
       end
     #1 ;
     var1 = 8'h1;
@@ -67,7 +67,7 @@ initial
     if(value !== 8'h8)
       begin
         error = 1;
-	$display ("FAILED - 1 << 3 is %x",value);
+	$display ("FAILED - 1 << 3 is %h",value);
       end
     #1 ;
     var1 = 8'h1;
@@ -76,7 +76,7 @@ initial
     if(value !== 8'h10)
       begin
         error = 1;
-	$display ("FAILED - 1 << 4 is %x",value);
+	$display ("FAILED - 1 << 4 is %h",value);
       end
     #1 ;
     var1 = 8'h1;
@@ -85,7 +85,7 @@ initial
     if(value !== 8'h20)
       begin
         error = 1;
-	$display ("FAILED - 1 << 5 is %x",value);
+	$display ("FAILED - 1 << 5 is %h",value);
       end
     #1 ;
     var1 = 8'h1;
@@ -94,7 +94,7 @@ initial
     if(value !== 8'h40)
       begin
         error = 1;
-	$display ("FAILED - 1 << 6 is %x",value);
+	$display ("FAILED - 1 << 6 is %h",value);
       end
     #1 ;
     var1 = 8'h1;
@@ -103,7 +103,7 @@ initial
     if(value !== 8'h80)
       begin
         error = 1;
-	$display ("FAILED - 1 << 6 is %x",value);
+	$display ("FAILED - 1 << 6 is %h",value);
       end
     #1 ;
     var1 = 8'ha5;
@@ -112,7 +112,7 @@ initial
     if(value !== 8'h80)
       begin
         error = 1;
-	$display ("FAILED - a5 << 7 is %x",value);
+	$display ("FAILED - a5 << 7 is %h",value);
       end
     #1 ;
     var1 = 8'ha5;
@@ -121,7 +121,7 @@ initial
     if(value !== 8'h4a)
       begin
         error = 1;
-	$display ("FAILED - aa << 1 is %x",value);
+	$display ("FAILED - aa << 1 is %h",value);
       end
     if(error === 0)
         $display("PASSED");

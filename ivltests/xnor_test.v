@@ -56,7 +56,7 @@ module xnor_test;
 	  if (large3 !== large4)
 	    begin
 	      fail = 1;
-	      $display ("Pattern failed: %x != %x", large3, large4);
+	      $display ("Pattern failed: %h != %h", large3, large4);
 	    end
 	end // for (large1 = 0; large1 < 1000; large1=large1+1)
       

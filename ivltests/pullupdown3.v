@@ -65,7 +65,7 @@ module pullupdown;
 	begin
 	  driver_1 = ~driver_1;
 	  driver_8 = i;
-	  $display ("Testing drivers with value %x", driver_8);
+	  $display ("Testing drivers with value %h", driver_8);
 	  #1;
 	  
 	  check_drivers;

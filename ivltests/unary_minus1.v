@@ -49,7 +49,7 @@ module test;
        if(x !== 32'heeee_eeef)
          begin
            error = 1;
-	   $display("FAILED - X should still be EEEE_EEEF, rather x=%x",x);
+	   $display("FAILED - X should still be EEEE_EEEF, rather x=%h",x);
 	 end    
 
        #10;
