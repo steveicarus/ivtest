@@ -450,6 +450,8 @@ lh_memcat normal ivltests # Left hand arrays in concat (PR 77)
 unary_minus normal ivltests # Similar to 272 already reported.
 unary_minus1 normal ivltests # From 272 directly.
 npmos	normal	ivltests
+rnpmos	normal	ivltests
 npmos2	normal	ivltests
+rnpmos2	normal	ivltests
 pr142   normal  ivltests # Test for PR142
 pr304	normal	ivltests # test for PR304
