@@ -17,8 +17,11 @@
  *    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
  */
 
-// $Id: many_drivers.v,v 1.1 2001/07/18 01:22:26 sib4 Exp $
+// $Id: many_drivers.v,v 1.2 2001/07/21 02:30:44 stevewilliams Exp $
 // $Log: many_drivers.v,v $
+// Revision 1.2  2001/07/21 02:30:44  stevewilliams
+//  Get the expected blended values right.
+//
 // Revision 1.1  2001/07/18 01:22:26  sib4
 // test for nets with many drivers
 //
@@ -121,19 +124,19 @@ module test;
 	
 	in =  67'h 5_55555555_55555555; 
 	#1 $display("in=%b out=%b", in, out);
-	// if (out!==1'b1) err = 1;
+	if (out!==1'bx) err = 1;
 	
 	in = ~67'h 5_55555555_55555555; 
 	#1 $display("in=%b out=%b", in, out);
-	// if (out!==1'b0) err = 1;
+	if (out!==1'bx) err = 1;
 	
 	in =  67'h 0_xxxxxxxx_00000000; 
 	#1 $display("in=%b out=%b", in, out);
-	// if (out!==1'b0) err = 1;
+	if (out!==1'bx) err = 1;
 
 	in = ~67'h 0_xxxxxxxx_00000000; 
 	#1 $display("in=%b out=%b", in, out);
-	// if (out!==1'b1) err = 1;
+	if (out!==1'bx) err = 1;
 
 	in =  67'h x_xxxxxxxx_00000000; 
 	#1 $display("in=%b out=%b", in, out);
@@ -153,11 +156,11 @@ module test;
 
 	in =  67'h 1_ffffxxxx_00000000; 
 	#1 $display("in=%b out=%b", in, out);
-	// if (out!==1'b0) err = 1;
+	if (out!==1'bx) err = 1;
 
 	in = ~67'h 1_ffffxxxx_00000000;
 	#1 $display("in=%b out=%b", in, out);
-	// if (out!==1'b1) err = 1;
+	if (out!==1'bx) err = 1;
 
 	if (err)
 	  $display("FAILED");
