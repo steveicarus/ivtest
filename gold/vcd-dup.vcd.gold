@@ -1,5 +1,5 @@
 $date
-	Mon Oct  8 17:49:46 2001
+	Sun Oct 14 22:19:48 2001
 $end
 $version
 	Icarus Verilog
@@ -7,38 +7,68 @@ $end
 $timescale
 	1s
 $end
-$var reg 1 ! test.a $end
-$var reg 1 " test.b1 $end
-$var reg 1 # test.b2 $end
-$var wire 1 $ test.c1 $end
-$var wire 1 % test.c2 $end
-$var wire 1 ! test.m1.a $end
-$var wire 1 " test.m1.b $end
-$var wire 1 $ test.m1.c $end
-$var wire 1 & test.m1.c1 $end
-$var wire 1 ' test.m1.c2 $end
-$var wire 1 ! test.m2.a $end
-$var wire 1 # test.m2.b $end
-$var wire 1 % test.m2.c $end
-$var wire 1 ( test.m2.c1 $end
-$var wire 1 ) test.m2.c2 $end
-$var wire 1 ( test.m2.c1 $end
-$var wire 1 & test.m1.mm1.c1 $end
-$var wire 1 * test.m1.mm1.a $end
-$var wire 1 & test.m1.mm1.c $end
-$var wire 1 & test.m1.mm1.c1 $end
-$var wire 1 + test.m1.mm2.a $end
-$var wire 1 ' test.m1.mm2.c $end
-$var wire 1 ' test.m1.mm2.c1 $end
+$scope module test $end
+$var reg 1 ! a $end
+$var reg 1 " b1 $end
+$var reg 1 # b2 $end
+$var wire 1 $ c1 $end
+$var wire 1 % c2 $end
+$scope task set $end
+$var reg 3 & bits $end
+$var reg 1 ' t1 $end
+$upscope $end
+$scope module m1 $end
+$var wire 1 ! a $end
+$var wire 1 " b $end
+$var wire 1 $ c $end
+$var wire 1 ( c1 $end
+$var wire 1 ) c2 $end
+$upscope $end
+$scope module m2 $end
+$var wire 1 ! a $end
+$var wire 1 # b $end
+$var wire 1 % c $end
+$var wire 1 * c1 $end
+$var wire 1 + c2 $end
+$upscope $end
+$upscope $end
+$scope module test $end
+$scope module m2 $end
+$var wire 1 * c1 $end
+$upscope $end
+$upscope $end
+$scope module test $end
+$scope module m1 $end
+$scope module mm1 $end
+$var wire 1 ( c1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module test $end
+$scope module m1 $end
+$scope module mm1 $end
+$var wire 1 , a $end
+$var wire 1 ( c $end
+$var wire 1 ( c1 $end
+$upscope $end
+$scope module mm2 $end
+$var wire 1 - a $end
+$var wire 1 ) c $end
+$var wire 1 ) c1 $end
+$upscope $end
+$upscope $end
+$upscope $end
 $enddefinitions $end
 #0
 $dumpvars
+x-
+0,
 x+
-0*
+1*
 x)
 1(
 x'
-1&
+bx &
 x%
 x$
 x#
@@ -46,62 +76,122 @@ x"
 0!
 $end
 #1
+bx0 &
+bx00 &
+b0 &
+0'
+#2
 0#
 0"
-0+
-1)
-1'
-0%
-0$
-#2
-1#
-0)
-1%
-#3
-0#
-1"
+0-
 1+
 1)
-0'
+0%
+0$
+#4
+b1 &
+#5
+1#
+0+
+1%
+#7
+b0 &
+b10 &
+#8
+0#
+1"
+1-
+1+
+0)
 0%
 1$
-#4
-1#
+#9
+$dumpoff
+x-
+x,
+x+
+x*
+x)
+x(
+x'
+bx &
+x%
+x$
+x#
+x"
+x!
+$end
+#15
+$dumpon
+1-
+0,
+0+
+1*
 0)
+1(
+0'
+b100 &
 1%
-#5
+1$
 0#
 0"
 1!
-1+
-1+
-#6
+$end
+#16
+b101 &
+1'
+#17
 1#
-0(
+0*
 0%
-#7
+#19
+b100 &
+b110 &
+#20
 0#
 1"
+1,
 1*
-1(
-0&
+0(
 1%
 0$
-#8
+#22
+b111 &
+#23
 1#
-0(
+0*
 0%
-#9
+#25
+b110 &
+b100 &
+b0 &
+#26
 0#
 0"
 0!
-0*
-0+
+0,
+0-
+1*
 1(
-1&
+1+
 1)
+0%
+0$
+0%
+0$
+#27
+$dumpall
+0-
+0,
+1+
+1*
+1)
+1(
 1'
+b0 &
 0%
 0$
-0%
-0$
+0#
+0"
+0!
+$end

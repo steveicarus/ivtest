@@ -1,2 +1,2 @@
-VCD error: $dumpvars ignored
-VCD error: $dumpvars was previously called at simtime 0
+VCD warning: ignoring signals in previously scanned scope test.m1
+VCD Error: $dumpvars ignored, previously called at simtime 0

@@ -6,6 +6,15 @@ module test;
    submod m1 (a, b1, c1);
    submod m2 (a, b2, c2);
 
+   task set;
+      input [2:0] bits;
+      reg t1;
+      begin
+	 t1 <= a;
+	 #1 {a,b1,b2} <= bits;
+      end
+   endtask
+
    initial
      begin
 	$dumpfile("vcd-dup.vcd");
@@ -20,15 +29,24 @@ module test;
 	
    initial
      begin
-	#1 {a,b1,b2} <= 3'd 0;
-	#1 {a,b1,b2} <= 3'd 1;
-	#1 {a,b1,b2} <= 3'd 2;
-	#1 {a,b1,b2} <= 3'd 3;
-	#1 {a,b1,b2} <= 3'd 4;
-	#1 {a,b1,b2} <= 3'd 5;
-	#1 {a,b1,b2} <= 3'd 6;
-	#1 {a,b1,b2} <= 3'd 7;
-	#1 {a,b1,b2} <= 3'd 0;
+	#1 set(3'd 0);
+	#1;
+	#1 set(3'd 1);
+	#1;
+	#1 set(3'd 2);
+	#1 $dumpoff;
+	#1 set(3'd 3);
+	#1;
+	#1 set(3'd 4);
+	#1 $dumpon;
+	#1 set(3'd 5);
+	#1;
+	#1 set(3'd 6);
+	#1;
+	#1 set(3'd 7);
+	#1;
+	#1 set(3'd 0);
+	#1 $dumpall;
 	#1 $finish;
      end
 
