@@ -367,7 +367,7 @@ disp_dec2  normal  ivltests diff=log/disp_dec2.log:gold/disp_dec2.gold
 disp_part   	normal  ivltests diff=log/disp_part.log:gold/disp_part.gold
 shellho1	normal	ivltests top diff=log/shellho1.log:gold/shellho1.gold
 test_width	normal  ivltests diff=log/test_width.log:gold/test_width.gold
-test_disphob	normal  ivltests diff=log/test_disbhob.log:gold/test_disphob.gold
+test_disphob	normal  ivltests diff=log/test_disphob.log:gold/test_disphob.gold
 test_dispwided	normal  ivltests diff=log/test_dispwided.log:gold/test_dispwided.gold
 test_extended	normal  ivltests diff=log/test_extended.log:gold/test_extended.gold
 schedule	normal	ivltests
@@ -514,3 +514,4 @@ port-test4a	CE	ivltests # Port declaration input duplication checks (PR394)
 port-test4b	CE	ivltests # Port declaration output duplication checks (PR394)
 pr445	normal	ivltests
 big_int	normal	ivltests # PR#405
+concat1	normal	ivltests # PR#327,372
