@@ -1,7 +1,7 @@
 #! /usr/local/bin/vvp -v
 :vpi_time_precision + 0;
 :vpi_module "system";
-S_test .scope "test";
+S_test .scope module, "test";
 V_test.val1 .var "val1", 3, 0;
 V_test.val2 .var "val2", 3, 0;
 V_test._L0 .net "_L0", 1, 0, C<0>, C<1>;

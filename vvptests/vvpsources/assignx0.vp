@@ -23,7 +23,7 @@
 ; This program tests the indexed %assign statement.
 ;
 
-S_main .scope "main";
+S_main .scope module, "main";
 
 V_test	.var	"test", 3, 0;
 

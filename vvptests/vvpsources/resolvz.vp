@@ -21,7 +21,7 @@
 ; This program tests the .resolv functor. It works by sending a few
 ; variables into the .resolv object and watching what it does.
 
-main	.scope	"main";
+main    .scope  module, "main" ;
 
 main.a	.var	"a", 0, 0;
 main.b	.var	"b", 0, 0;

@@ -1,6 +1,6 @@
 #! /usr/local/lib/ivl/../../bin/vvp
 :vpi_module "system";
-S_main .scope "main";
+S_main .scope module, "main";
     .scope S_main;
 T_0 ;
     %vpi_call "$display", "PASSED";

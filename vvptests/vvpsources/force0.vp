@@ -1,7 +1,7 @@
 #! /home/drjury/stephan/icarus/lib/ivl/../../bin/vvp
 :vpi_time_precision + 0;
 :vpi_module "system";
-S_ftest .scope "ftest";
+S_ftest .scope module, "ftest";
 V_ftest.a .net "a", 0, 0, C<0>;
 V_ftest.b .net "b", 0, 0, C<0>;
 V_ftest._L4 .net "_L4", 0, 0, C<1>;
