@@ -231,6 +231,7 @@ muxtest normal ivltests	# Validates that X sel and inputs same, output not X
 fifo	normal contrib
 event3.15	normal ivltests # Validate event lists, and -> operator.
 event2		normal ivltests
+event3		normal ivltests diff=log/event3.log:gold/event3.log
 unary_and	normal ivltests # Unary And &(vect)
 unary_minus	normal ivltests # Unary minus -(vect)
 unary_minus1	normal ivltests # From 272 directly.
