@@ -502,6 +502,7 @@ monitor2	normal	ivltests diff=log/monitor2.log:gold/monitor2.gold
 monitor3	normal	ivltests diff=log/monitor3.log:gold/monitor3.gold
 fork1   normal  ivltests # Validate 3 way fork with simple assignments.
 function5 CO ivltests # PR 184 
+function6	normal	ivltests
 blankport normal ivltests main # PR 204 Stephan Boettcher - 
 dcomp1	normal	ivltests diff=log/dcomp1.log:gold/dcomp1.gold
 sp2     normal  ivltests diff=sp2.inv:gold/sp2.inv
