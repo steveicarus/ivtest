@@ -35,6 +35,7 @@ module main;
    realtime time1;
    realtime time2;
 
+   real     eps;
 
    always @(posedge clk) #2.4 begin
       $display($time,,$realtime, " set out1 == 1");
@@ -69,13 +70,20 @@ module main;
 	 err =1 ;
       end
 
-      if (time1 != 3.4) begin
+      eps = time1 - 3.4;
+      if (eps < 0.0)
+	eps = 0.0 - eps;
+
+      if (eps > 0.0001) begin
 	 $display("Error -- time1 s/b 3.4 but is=%t", time1);
 		 
 	 err =1 ;
       end
 
-      #1 if (time2 != 3.6) begin
+      #1 eps = time2 - 3.6;
+      if (eps < 0.0)
+	eps = 0.0 - eps;
+      if (eps > 0.0001) begin
 	 $display("Error -- time2 s/b 3.6 but is=%t, ", time2);
 	 err =1 ;
       end
