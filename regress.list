@@ -42,8 +42,8 @@ always3.1.10A	CO	ivltests	# always -> event ; infinite loop
 always3.1.11A	normal	ivltests
 always3.1.11B	normal	ivltests
 always3.1.12A	normal	ivltests	# always fork join
-always3.1.12B	CN		ivltests	# always fork: block_id join
-always3.1.12C	CN		ivltests
+always3.1.12B	normal	ivltests	# always fork: block_id join
+always3.1.12C	normal	ivltests
 always3.1.1A	CO	ivltests
 always3.1.1B	CO	ivltests
 always3.1.1C	CO	ivltests
