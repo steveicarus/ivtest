@@ -400,6 +400,7 @@ Test Results:
                        signed6 Ran-PASSED-
                        signed7 Ran-PASSED-
                        signed8 Ran-PASSED-
+                       signed9 Ran-PASSED-
                        repeat1 Ran-PASSED-
                        repeat2 Ran-PASSED-
                   decl_assign1 Ran-PASSED-
@@ -583,6 +584,7 @@ Test Results:
                     basicexpr2 Ran-PASSED-
                     basicexpr3 Ran-PASSED-
                     basicexpr4 Ran-PASSED-
+                        shiftl Ran-PASSED-
                         busbug Ran-PASSED-
                           real Ran-PASSED-
                          real2 Ran-PASSED-
@@ -593,4 +595,5 @@ Test Results:
                       negvalue Ran-PASSED-
                          pr632 Ran-FAILED-
                          pr617 Ran-PASSED-
-Tests passed: 565, failed: 32, Unhandled: 6 Unable: 1, Assert: 1, Parse Errs: 3
+                         pr673 Ran-PASSED-
+Tests passed: 568, failed: 32, Unhandled: 6 Unable: 1, Assert: 1, Parse Errs: 3
