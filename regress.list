@@ -656,4 +656,6 @@ pr710		normal	ivltests
 pr718		normal	ivltests
 pr721		normal	ivltests
 pr722		normal	ivltests
+pr729		normal  ivltests diff=log/pr729.log:gold/pr729.gold
+pr734		normal	ivltests
 prng		normal	ivltests
