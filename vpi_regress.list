@@ -16,6 +16,7 @@ by_name	  vpi	by_name.c	by_name		by_name.v
 realcb    vpi   realcb.c        realcb          realcb.v
 pr521     vpi   pr521.c         pr521           pr521.v
 pr686     vpi   pr686.c         pr686           pr686.v
+pr723     vpi   pr723.c         pr723           pr723.v
 realtime  vpi   realtime.c	realtime	realtime.v
 realtime2 vpi   realtime2.c	realtime2	realtime2.v
 putvalue  vpi	putvalue.c	putvalue	putvalue.v
