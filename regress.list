@@ -318,3 +318,12 @@ format     normal  ivltests diff=log/format.log:gold/format.gold
 disp_dec   normal  ivltests diff=log/disp_dec.log:gold/disp_dec.gold
 shellho1	normal	ivltests top diff=log/shellho1.log:gold/shellho1.gold
 schedule	normal	ivltests
+test_bufif0	normal	ivltests
+test_bufif1	normal	ivltests
+test_mos_strength_reduction	normal	ivltests
+test_nmos	normal	ivltests
+test_notif0	normal	ivltests
+test_notif1	normal	ivltests
+test_pmos	normal	ivltests
+test_rnmos	normal	ivltests
+test_rpmos	normal	ivltests
