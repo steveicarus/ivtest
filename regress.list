@@ -512,6 +512,7 @@ escape1 normal ivltests # \$modulename in defparam and if()
 escape2a CO	ivltests
 escape2b CO	ivltests
 escape2c CO	ivltests
+escape3	normal	ivltests
 pr338   CO ivltests # pr 338 - constant zz see also constadd2.v
 shift1	normal	ivltests diff=log/shift1.log:gold/shift1.gold
 pr243	normal	ivltests diff=log/pr243.log:gold/pr243.gold
