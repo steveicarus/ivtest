@@ -200,6 +200,7 @@ time7	normal	ivltests	gold=time7.gold
 time8	normal	ivltests
 timescale1	normal ivltests
 udp_bufg normal ivltests
+udp_jkff normal	ivltests
 udp_x	normal	ivltests
 wireadd1 normal ivltests
 wiremod1 normal ivltests
