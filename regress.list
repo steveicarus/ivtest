@@ -505,3 +505,4 @@ dummy7	normal	ivltests diff=log/dummy7.log:gold/dummy7.gold
 time6b  normal  ivltests # Rewrote time6 to pass with XL
 disblock normal ivltests # PR280
 comment1	normal	ivltests # PR410/411
+pr136    normal  ivltests # PR136 param foo_size 8 * 4
