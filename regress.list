@@ -246,6 +246,7 @@ unary_xor 	normal ivltests # Unary or  ^(vect)
 unary_xnor1	normal ivltests # Unary xnor ~^(vect)
 unary_xnor2	normal ivltests # Unary xnor ^~(vect)
 binary_nand	normal ivltests # Binary nand (~&)
+binary_nor	normal ivltests # Binary nor  (~|)
 rptconcat	normal ivltests # Repeat concatenation operation.
 rptconcat2	normal ivltests # Repeat concatenation operation.
 gencrc		normal contrib  # 32/16 bit crc 
