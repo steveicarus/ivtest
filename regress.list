@@ -345,4 +345,11 @@ string3		normal	ivltests
 ga_mod		normal  ivltests main
 ga_mod1		normal  ivltests main
 signed1		normal	ivltests
-param_expr  normal  ivltests
+param_expr  normal  ivltests # & in param declar
+param_and2  normal  ivltests # logical && in param declar
+param_band  normal  ivltests # Bitwise and in param declar
+param_bor  normal  ivltests  # Bitwise OR in param declar
+param_eq3  normal  ivltests  # Bit equiv in param declar
+param_binv normal  ivltests  # Bit vector inv in param declar
+param_add  normal  ivltests  # Addition in param declar
+param_mod  normal  ivltests  # Modulus in param declar
