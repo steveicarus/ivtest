@@ -296,6 +296,7 @@ Test Results:
                          wait1 passed
                        string1 passed
                        string2 passed
+                       string3 passed
                         ga_mod had elaboration errors:had unsupported features
                        ga_mod1 had elaboration errors:had unsupported features
-Tests passed: 278, Parse Errors: 1, Unsupported: 6, failed execution, 7, crashed: 0, C Compiler errors: 5 total: 302
+Tests passed: 279, Parse Errors: 1, Unsupported: 6, failed execution, 7, crashed: 0, C Compiler errors: 5 total: 303

@@ -338,5 +338,6 @@ force3.17C  normal  ivltests
 wait1        normal  ivltests
 string1		normal	ivltests
 string2		normal	ivltests
+string3		normal	ivltests
 ga_mod		normal  ivltests main
 ga_mod1		normal  ivltests main
