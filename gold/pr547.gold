@@ -1,3 +1,3 @@
-./ivltests/pr547.v:7: warning: Bit select [15] out of range of vector top.a[9:0].
+./ivltests/pr547.v:7: warning: Bit select [15] out of range of vector a[9:0].
 ./ivltests/pr547.v:7:        : Replacing expression with a constant 1'bx.
 A = 3ff, b = x
