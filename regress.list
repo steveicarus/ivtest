@@ -195,7 +195,7 @@ always3.1.6D normal ivltests
 time3 normal ivltests
 time4 normal ivltests
 time5 normal ivltests
-time6	normal	ivtests
+time6	normal	ivltests
 timescale1	normal ivltests
 udp_bufg normal ivltests
 wireadd1 normal ivltests

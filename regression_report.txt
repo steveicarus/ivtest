@@ -153,6 +153,8 @@ Test Results:
                   always3.1.6D passed
                          time3 passed
                          time4 passed
+                         time5 passed
+                         time6 passed
                     timescale1 passed
                       udp_bufg passed
                       wireadd1 passed
@@ -299,4 +301,4 @@ Test Results:
                        string3 passed
                         ga_mod had elaboration errors:had unsupported features
                        ga_mod1 had elaboration errors:had unsupported features
-Tests passed: 279, Parse Errors: 1, Unsupported: 6, failed execution, 7, crashed: 0, C Compiler errors: 5 total: 303
+Tests passed: 281, Parse Errors: 1, Unsupported: 6, failed execution, 7, crashed: 0, C Compiler errors: 5 total: 305
