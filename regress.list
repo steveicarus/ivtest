@@ -248,6 +248,8 @@ pullupdown	normal ivltests # Contributed test
 pullupdown2	normal ivltests # Contributed test
 pullupdown3	normal ivltests # Contributed test
 drive_strength	normal ivltests # Contributed test
+drive_strength1	normal ivltests #
+drive_strength2 normal ivltests diff=log/drive_strength2.log:gold/drive_strength2.gold 
 sdw_function4	normal ivltests # function with if from George Gallant bug rpt
 sdw_function5	normal ivltests # function with if from George Gallant bug rpt
 readmemh1	normal ivltests # basic $readmemh - uses readmemh1.dat
@@ -332,7 +334,6 @@ param_string normal ivltests # parameter storing a string.
 inertdly 	normal ivltests 	# Test for inertial delay
 galan       normal ivltests 	# Ternary test with varying size lhs vs rhs 
 pic     normal  contrib pictest diff=log/pic.log:gold/pic.gold
-drive_strength2 normal ivltests diff=log/drive_strength2.log:gold/drive_strength2.gold 
 initmod		normal	ivltests diff=log/initmod.log:gold/initmod.gold
 initmod2      normal  ivltests diff=log/initmod2.log:gold/initmod2.gold
 bnot		normal	ivltests	# test triggered an overzealous assert in vvm
