@@ -465,6 +465,7 @@ const   normal  ivltests # PR 122 - Steve Tell - const without length spec.
 memassign normal ivltests # PR 126 - daavid Leask - assign bus part fm memory item
 string4 normal ivltests diff=log/string4.log:gold/string4.gold
 string5 normal ivltests diff=log/string5.log:gold/string5.gold
+string7 normal ivltests diff=log/string7.log:gold/string7.gold
 lh_memcat normal ivltests # Left hand arrays in concat (PR 77)
 npmos	normal	ivltests
 rnpmos	normal	ivltests
