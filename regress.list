@@ -699,5 +699,8 @@ pr905		normal  ivltests diff=log/pr905.log:gold/pr905.gold
 pr910		normal  ivltests diff=log/pr910.log:gold/pr910.gold
 pr913		normal	ivltests
 pr923		normal  ivltests diff=log/pr923.log:gold/pr923.gold
+pr938		normal  ivltests diff=log/pr938.log:gold/pr938.gold
+pr938b		normal  ivltests diff=log/pr938b.log:gold/pr938.gold
+pr941		normal	ivltests
 prng		normal	ivltests
 race		normal	ivltests
