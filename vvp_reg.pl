@@ -23,6 +23,9 @@
 # 3/25/2001  SDW   Modified sregress.pl script to run vvp.
 # 4/13/2001  SDW   Added CORE DUMP detection
 # $Log: vvp_reg.pl,v $
+# Revision 1.6  2001/05/18 13:24:10  ka6s
+# Detect sorry as well as the others..
+#
 # Revision 1.5  2001/04/14 03:44:03  ka6s
 # Added what I THINK is working redirection. The Parse Err is showing up now!
 #
@@ -342,6 +345,12 @@ sub check_results {
             if ($result =~ "Unhandled")  {
                $err_flag = 1;
                printf REPORT "Unhandled-"; 
+               $unhandled++;
+            }
+
+            if ($result =~ "sorry")  {
+               $err_flag = 1;
+               printf REPORT "Sorry-"; 
                $unhandled++;
             }
 
