@@ -390,3 +390,4 @@ comp1001 normal ivltests
 specify1 CO	ivltests
 deposit_wire	normal	ivltests
 specify_01 normal ivltests test # Yet another versio of specify
+deposit normal ivltests # Yet another versio of specify
