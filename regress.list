@@ -316,6 +316,7 @@ fopen2		normal  ivltests # Test basic fopen operation
 div16		normal	contrib test_div16 # Uses $random and divide operator (Tom Coonan)
 addsr		normal	ivltests # Finds problems with >> using different sizes
 tern1		normal	ivltests # Finds problems with ?: using different sizes
+tern2		CO	ivltests # make sure ?: is recognixed by -tnull
 readmemh5	CE		ivltests # Should be error for readmemh(romimg,rom[0:7])
 port-test2	normal  ivltests # Port declaration syntax checks
 param_string normal ivltests # parameter storing a string.
