@@ -1,1 +1,6 @@
-PASSED
+simv:6: invalid functor type.
+simv:7: invalid functor type.
+unresolved vvp_net reference: L_0x203510
+unresolved vvp_net reference: L_0x203490
+compile_cleanup: 2 unresolved items
+simv: Program not runnable, 2 errors.

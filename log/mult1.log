@@ -1,1 +1,3 @@
-PASSED
+XXXX: t-dll.cc: Forgot how to handle lpm_mult.
+t-dll-api.cc:1168: failed assertion `net'
+COMPERR 34304

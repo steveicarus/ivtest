@@ -1,4 +1,4 @@
-R=00000001
-R=00000010
-R=00000011
-PASSED
+R=xxxxxxxx
+R=xxxxxxxx
+R=xxxxxxxx
+FAILED

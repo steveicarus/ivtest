@@ -1,1 +1,3 @@
-PASSED
+unresolved vvp_net reference: C<1>
+compile_cleanup: 1 unresolved items
+simv: Program not runnable, 1 errors.

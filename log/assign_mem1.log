@@ -1,1 +1,2 @@
-PASSED
+vvp_process.c:232: failed assertion `0'
+COMPERR 34304

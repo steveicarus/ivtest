@@ -1,1 +1,4 @@
-PASSED
+:0: internal error: pin(1) out of bounds(1)
+:0:               : typeid=6NetNet
+netlist.cc:208: failed assertion `idx < npins_'
+COMPERR 34304
