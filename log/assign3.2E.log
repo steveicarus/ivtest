@@ -1,7 +1,0 @@
-./ivltests/assign3.2E.v:34: error: bit/part selects not allowed on left side of procedural continuous asignment.
-./ivltests/assign3.2E.v:34: error: bit/part selects not allowed on left side of procedural continuous asignment.
-./ivltests/assign3.2E.v:34: error: bit/part selects not allowed on left side of procedural continuous asignment.
-./ivltests/assign3.2E.v:34: error: bit/part selects not allowed on left side of procedural continuous asignment.
-main: error: 5 elaborating module.
-errors translating Verilog program.
-COMPERR

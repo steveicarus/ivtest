@@ -1,4 +1,0 @@
-internal error: No signal for nexus of top._L8 pin 8(Result<8>) type=9NetModulo?
-ivl: net_link.cc:339: const char * Nexus::name() const: Assertion `sig' failed.
-errors translating Verilog program.
-COMPERR

@@ -1,2 +1,0 @@
-./ivltests/idiv1.v:89: warning: Numeric hex constant ``xxxx_xxxx'' truncated to 8 bits.
-PASSED

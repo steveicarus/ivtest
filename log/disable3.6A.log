@@ -1,2 +1,0 @@
-./ivltests/disable3.6A.v:65: internal error: target (10target_vvm): does not support disable statements.
-PASSED

@@ -1,4 +1,0 @@
-./ivltests/always3.1.9B.v:33: internal error: target (10target_vvm): does not support disable statements.
-error: Code generation had errors.
-errors translating Verilog program.
-COMPERR

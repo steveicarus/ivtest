@@ -1,2 +1,0 @@
-./ivltests/sdw_dsbl.v:45: internal error: target (10target_vvm): does not support disable statements.
-FAILED
