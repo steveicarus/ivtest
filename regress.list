@@ -250,6 +250,7 @@ drive_strength	normal ivltests # Contributed test
 sdw_function4	normal ivltests # function with if from George Gallant bug rpt
 sdw_function5	normal ivltests # function with if from George Gallant bug rpt
 readmemh1	normal ivltests # basic $readmemh - uses readmemh1.dat
+readmemh1a	normal ivltests # basic $readmemh with @addr - uses readmemh1a.dat
 readmemh2	normal ivltests # $readmemh w/ short data file - readmemh2.dat
 readmemh3	normal ivltests # $readmemh 0-3 with long dfile - readmemh1.dat
 readmemh4	normal ivltests # $readmemh - comments in data file 
