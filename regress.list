@@ -729,4 +729,5 @@ pr1026		normal  ivltests diff=log/pr1026.log:gold/pr1026.gold
 pr1029		normal  ivltests
 pr1032		normal  ivltests
 pr1033		normal  ivltests diff=log/pr1033.log:gold/pr1033.gold
+assign_add	normal	ivltests
 credence20041209 normal ivltests
