@@ -366,6 +366,7 @@ param_add  normal  ivltests  # Addition in param declar
 param_mod  normal  ivltests  # Modulus in param declar
 param_tern normal  ivltests
 param_test1 normal ivltests diff=log/param_test1.log:gold/param_test1.gold
+param_test2 normal ivltests diff=log/param_test2.log:gold/param_test2.gold
 integer5  normal  ivltests  # 
 signed2  normal  ivltests  # 
 signed3  normal  ivltests  # 

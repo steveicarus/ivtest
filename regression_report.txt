@@ -324,6 +324,7 @@ Test Results:
                      param_mod passed
                     param_tern passed
                    param_test1 passed
+                   param_test2 passed
                       integer5 passed
                        signed2 passed
                        signed3 passed
@@ -334,4 +335,4 @@ Test Results:
                         vector passed
                           mcl1 passed
                           mcl2 passed
-Tests passed: 314, Parse Errors: 2, Unsupported: 6, failed execution, 6, crashed: 0, C Compiler errors: 5 total: 338
+Tests passed: 315, Parse Errors: 2, Unsupported: 6, failed execution, 6, crashed: 0, C Compiler errors: 5 total: 339
