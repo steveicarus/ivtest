@@ -196,7 +196,7 @@ time3 normal ivltests
 time4 normal ivltests
 time5 normal ivltests
 time6	normal	ivltests
-time7	normal	ivltests	gold=time7.gold
+time7	normal	ivltests   #	gold=time7.gold
 time8	normal	ivltests
 timescale1	normal ivltests
 udp_bufg normal ivltests

@@ -42,7 +42,9 @@ module main;
         #10 a[1:0]      = 2'b10;
         #20 $display ("\n<< END  >>");
 	if (passed == 2)
-          $display ("OK");
+          $display ("PASSED");
+        else
+          $display ("FAILED");
         $finish;
      end
 
