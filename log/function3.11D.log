@@ -1,5 +1,0 @@
-./ivltests/function3.11D.v:33: error: Unable to elaborate `myfunc(val2)' as gates.
-./ivltests/function3.11D.v:33: error: Unable to elaborate r-value: myfunc(val2)
-1 error(s) elaborating design.
-errors translating Verilog program.
-COMPERR
