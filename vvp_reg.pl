@@ -23,6 +23,9 @@
 # 3/25/2001  SDW   Modified sregress.pl script to run vvp.
 # 4/13/2001  SDW   Added CORE DUMP detection
 # $Log: vvp_reg.pl,v $
+# Revision 1.11  2001/10/08 22:13:30  sib4
+# assert portability
+#
 # Revision 1.10  2001/10/08 22:11:50  sib4
 # diff=file:file:ignore
 #
@@ -384,7 +387,7 @@ sub check_results {
                $unable++;
             }
             
-            if ($result =~ "Assertion" ) {
+            if ($result =~ "[Aa]ssertion" ) {
                $err_flag = 1;
                printf REPORT "Assertion-"; 
                $assertion++;
