@@ -236,6 +236,7 @@ onehot		normal contrib	# one hot design
 inout		normal ivltests # modname(a,a); inout a;
 modparam	normal ivltests top # Overide parameter via passed down value
 modulus		normal ivltests # wire % and reg % operators 
+modulus2	normal ivltests # reg % operators 
 mult1		normal ivltests # wire * and reg * operators 
 xnor_test	normal ivltests # ~^ in an IF()
 pullupdown	normal ivltests # Contributed test
