@@ -12,3 +12,4 @@ memwide   vpi	memwide.cc	memwide		memwide.v
 scopes	  vpi	scopes.c	scopes		scopes.v
 by_name	  vpi	by_name.c	by_name		by_name.v
 realcb    vpi   realcb.c        realcb          realcb.v
+pr521     vpi   pr521.c         pr521           pr521.v
