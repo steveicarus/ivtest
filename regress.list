@@ -447,3 +447,4 @@ unary_minus normal ivltests # Similar to 272 already reported.
 unary_minus1 normal ivltests # From 272 directly.
 npmos	normal	ivltests
 npmos2	normal	ivltests
+pr142   normal  ivltests # Test for PR142
