@@ -23,6 +23,9 @@
 # 3/25/2001  SDW   Modified sregress.pl script to run vvp.
 # 4/13/2001  SDW   Added CORE DUMP detection
 # $Log: vvp_reg.pl,v $
+# Revision 1.13  2002/01/06 17:01:10  ka6s
+# Added CE support.
+#
 # Revision 1.12  2001/10/08 22:14:42  sib4
 # Remove absolute path names for IVL executable
 #
@@ -360,12 +363,12 @@ sub check_results {
 
         printf REPORT "%30s ",$testname;
 
-		if(	($testtype{$testname} ne "CE") &&  
-			($testtype{$testname} ne "CN")) {
-			# 
-			# This section is true for all tests that execute - 
-			# no matter the compiler.
-			#
+	if(	($testtype{$testname} ne "CE") &&  
+	  ($testtype{$testname} ne "CN")) {
+	   # 
+	   # This section is true for all tests that execute - 
+	   # no matter the compiler.
+	   #
             if ($result =~ "Unhandled")  {
                $err_flag = 1;
                printf REPORT "Unhandled-"; 
@@ -429,7 +432,15 @@ sub check_results {
             }
           
             printf REPORT "\n";
-        } else {
+        } elsif($testtype{$testname} eq "CE") {
+            if($result =~ "COMPERR") {
+               printf REPORT "CE-PASSED-\n";
+               $passed++;
+            } else {
+               printf REPORT "CE-FAILED-\n";
+               $failed++;
+            }
+	} else {
             printf REPORT "\n";
         }
       }
