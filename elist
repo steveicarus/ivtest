@@ -1,3 +1,8 @@
+# $Log: elist,v $
+# Revision 1.5  2000/12/07 01:41:13  ka6s
+# Add the $log feature to the comments here to allow automatic update logging.
+#
+#
 readmemh5 ivltests main
 ./ivltests/readmemh5.v:35: error: part select of a memory: main.array
 function_exp ivltests main
