@@ -365,6 +365,7 @@ disp_part   	normal  ivltests diff=log/disp_part.log:gold/disp_part.gold
 shellho1	normal	ivltests top diff=log/shellho1.log:gold/shellho1.gold
 test_width	normal  ivltests diff=log/test_width.log:gold/test_width.gold
 test_disphob	normal  ivltests diff=log/test_disbhob.log:gold/test_disphob.gold
+test_dispwided	normal  ivltests diff=log/test_dispwided.log:gold/test_dispwided.gold
 test_extended	normal  ivltests diff=log/test_extended.log:gold/test_extended.gold
 schedule	normal	ivltests
 test_bufif0	normal	ivltests
