@@ -654,6 +654,7 @@ real6		normal  ivltests
 real7		normal  ivltests
 realtobits	normal	ivltests
 negvalue	normal	ivltests diff=log/negvalue.log:gold/negvalue.gold
+pr434		normal	ivltests diff=log/pr434.log:gold/pr434.gold
 pr632		normal	ivltests diff=log/pr632.log:gold/pr632.gold
 pr617		normal	ivltests 
 pr673		normal	ivltests diff=log/pr673.log:gold/pr673.gold
@@ -690,7 +691,10 @@ pr859		normal	ivltests
 pr860		normal	ivltests
 pr872		normal	ivltests
 pr902		normal  ivltests diff=log/pr902.log:gold/pr902.gold
+pr903		normal	ivltests
+pr905		normal  ivltests diff=log/pr905.log:gold/pr905.gold
 pr910		normal  ivltests diff=log/pr910.log:gold/pr910.gold
 pr913		normal	ivltests
+pr923		normal  ivltests diff=log/pr923.log:gold/pr923.gold
 prng		normal	ivltests
 race		normal	ivltests
