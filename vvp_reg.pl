@@ -23,6 +23,9 @@
 # 3/25/2001  SDW   Modified sregress.pl script to run vvp.
 # 4/13/2001  SDW   Added CORE DUMP detection
 # $Log: vvp_reg.pl,v $
+# Revision 1.10  2001/10/08 22:11:50  sib4
+# diff=file:file:ignore
+#
 # Revision 1.9  2001/08/06 02:59:27  ka6s
 # Added test for PR126 - constant assign to bus part from memory
 #
@@ -324,8 +327,12 @@ sub check_results {
       $diff_file = $optname ;
       $diff_file =~ s/diff=//;
       system("rm -rf ./dfile");	
-      ($out_file,$gold_file) = split(/:/,$diff_file);
-      system("diff $out_file $gold_file > ./dfile");
+      ($out_file,$gold_file,$ignbytes) = split(/:/,$diff_file);
+      if( $ignbytes ne "" ) {
+        system("cmp $out_file $gold_file $ignbytes $ignbytes > ./dfile");
+      } else {
+        system("diff $out_file $gold_file > ./dfile");
+      }
       if( -z "dfile" ) {
         system ("echo PASSED >> $lpath" );
       } else {
