@@ -330,3 +330,4 @@ test_rpmos	normal	ivltests
 cprop		normal	ivltests
 supply1		normal	ivltests
 supply2		normal	ivltests
+for3.16A    normal  ivltests
