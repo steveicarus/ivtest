@@ -621,6 +621,7 @@ busbug		normal	ivltests diff=log/busbug.log:gold/busbug.gold
 real		normal  ivltests
 real2		normal  ivltests
 real3		normal  ivltests
+real4		normal  ivltests
 realtobits	normal	ivltests
 negvalue	normal	ivltests diff=log/negvalue.log:gold/negvalue.gold
 pr632		normal	ivltests diff=log/pr632.log:gold/pr632.gold
