@@ -425,6 +425,7 @@ string2		normal	ivltests
 string3		normal	ivltests
 ga_mod		normal  ivltests main
 ga_mod1		normal  ivltests main
+ga_mod2		normal  ivltests main
 signed1		normal	ivltests
 param_expr  normal  ivltests # & in param declar
 param_and   normal  ivltests # bitwise &
