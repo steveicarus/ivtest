@@ -271,40 +271,40 @@ sub check_results {
     # This section runs if gold=name is the 4th option
     #
      
-    #$gold_file = "";
-    #$gold_file = "";
-    #$diff_file = "";
-    #$optname = $opt{$testname} ;
-    #if(($opt{$testname} ne "")  && ($optname  =~ /gold=/)){
-    #  $gold_file = $opt{$testname};
-    #  $gold_file =~ s/gold=//;		# remove gold= operator
-    #  system("rm -rf ./dfile");
-    #  system("diff $lpath ./gold/$gold_file > ./dfile ");
-    #  if( -z "dfile" ) {
-    #    system ("echo PASSED >> $lpath" );
-    #  } else {
-    #    system ("echo FAILED >> $lpath");
-    #  }
-    #}
+    $gold_file = "";
+    $gold_file = "";
+    $diff_file = "";
+    $optname = $opt{$testname} ;
+    if(($opt{$testname} ne "")  && ($optname  =~ /gold=/)){
+      $gold_file = $opt{$testname};
+      $gold_file =~ s/gold=//;		# remove gold= operator
+      system("rm -rf ./dfile");
+      system("diff $lpath ./gold/$gold_file > ./dfile ");
+      if( -z "dfile" ) {
+        system ("echo PASSED >> $lpath" );
+      } else {
+        system ("echo FAILED >> $lpath");
+      }
+    }
     
-    #$gold_file = "";
-    #$diff_file = "";
-    ##
-    ## Now look for difference file requirements - use this for
-    ## vcd's initially I guess. 
-    ##
-    #if(($opt{$testname} ne "")  && ($optname  =~ /diff=/)){
-    #  $diff_file = $optname ;
-    #  $diff_file =~ s/diff=//;
-    #  system("rm -rf ./dfile");	
-    #  ($out_file,$gold_file) = split(/:/,$diff_file);
-    ##  system("diff $out_file $gold_file > ./dfile");
-    #  if( -z "dfile" ) {
-    #    system ("echo PASSED >> $lpath" );
-    #  } else {
-    #    system ("echo FAILED >> $lpath");
-    #  }
-    #}
+    $gold_file = "";
+    $diff_file = "";
+    #
+    # Now look for difference file requirements - use this for
+    # vcd's initially I guess. 
+    #
+    if(($opt{$testname} ne "")  && ($optname  =~ /diff=/)){
+      $diff_file = $optname ;
+      $diff_file =~ s/diff=//;
+      system("rm -rf ./dfile");	
+      ($out_file,$gold_file) = split(/:/,$diff_file);
+      system("diff $out_file $gold_file > ./dfile");
+      if( -z "dfile" ) {
+        system ("echo PASSED >> $lpath" );
+      } else {
+        system ("echo FAILED >> $lpath");
+      }
+    }
 
 	# uncompress the log file, if a compressed log file exists
 	if (-f "$lpath.gz") { system "gunzip $lpath.gz"; }
@@ -361,6 +361,14 @@ sub check_results {
                  $failed++;
               }
 
+            } else {
+              if(-z $lpath) {
+                 printf REPORT "CO-PASSED-"; 
+                 $passed++;
+                } else {
+                 printf REPORT "CO-FAILED-"; 
+                 $failed++;
+                }              
             }
           
             printf REPORT "\n";
