@@ -504,6 +504,7 @@ sp2     normal  ivltests diff=sp2.inv:gold/sp2.inv
 const   normal  ivltests # PR 122 - Steve Tell - const without length spec.
 const2	normal	ivltests # Some cases that the DCM module trips.
 const3	normal	ivltests
+const4	normal	ivltests
 memassign normal ivltests # PR 126 - daavid Leask - assign bus part fm memory item
 string4 normal ivltests diff=log/string4.log:gold/string4.gold
 string5 normal ivltests diff=log/string5.log:gold/string5.gold
