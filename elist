@@ -1,4 +1,7 @@
 # $Log: elist,v $
+# Revision 1.19  2004/01/21 04:52:30  stevewilliams
+#  Add pr904
+#
 # Revision 1.18  2002/11/21 21:16:51  stevewilliams
 #  Add array5 as an error test.
 #
@@ -49,9 +52,9 @@ function3.11E ivltests test
 add32 contrib main
 ./contrib/add32.v:14: error: sum is not a reg in this context.
 range1	ivltests main
-./ivltests/range1.v:44: error: bit/part select main.thing[9:9] is out of range.
+./ivltests/range1.v:44: error: bit/part select thing[9:9] is out of range.
 range2	ivltests bug
-./ivltests/range2.v:9: error: bit/part select [3:2] out of range for bug.din
+./ivltests/range2.v:9: error: bit/part select [3:2] out of range for din
 range3	ivltests simple
 ./ivltests/range3.v:26: error: Signal ``b'' declared both as a vector and a scalar.
 port-test3 ivltests BENCH
@@ -68,3 +71,5 @@ pr581	ivltests main
 ./ivltests/pr581.v:14: error: memories (data) cannot be l-values in continuous assignments.
 array5	ivltests test
 ./ivltests/array5.v:14: error: Part select expressions must be constant.
+pr904   ivltests err
+./ivltests/pr904.v:26: error: Missing expression 3 of concatenation list.
