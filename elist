@@ -1,4 +1,7 @@
 # $Log: elist,v $
+# Revision 1.16  2002/11/02 01:11:16  stevewilliams
+#  Add pr567 to elist
+#
 # Revision 1.15  2002/11/02 01:02:32  stevewilliams
 #  memory names in messages no longer have scope.
 #
@@ -53,3 +56,5 @@ memidx2	ivltests main
 ./ivltests/memidx2.v:14: error: memory mem needs an index in this context.
 implicit1 ivltests Counter56
 ./ivltests/implicit1.v:25: error: Counter56.CounterReset not defined in this scope.
+pr567 ivltests test
+./ivltests/pr567.v:3: error: Assign to memory "blah" requires a word select index.
