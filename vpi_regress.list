@@ -1,4 +1,5 @@
 hello	  vpi	hello_vpi.c	hello_vpi	hello_vpi.v
+hello_tf  vpi	hello_tf.c	hello_tf	hello_tf.v
 callback1 vpi	callback1.c	callback1	callback1.v
 nulls1	  vpi	nulls1.c	nulls1		nulls1.v
 scanmem	  vpi	scanmem.cc	scanmem		scanmem.v
