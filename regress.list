@@ -515,3 +515,4 @@ port-test4b	CE	ivltests # Port declaration output duplication checks (PR394)
 pr445	normal	ivltests
 big_int	normal	ivltests # PR#405
 concat1	normal	ivltests # PR#327,372
+concat2	normal	ivltests # PR#282
