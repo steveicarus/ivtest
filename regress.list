@@ -478,5 +478,8 @@ ram16x1 normal ivltests # Sitting here for a long time?
 sched1  normal ivltests # 
 pr273   normal ivltests # Non-constant bit select in ordered list.
 escape1 normal ivltests # \$modulename in defparam and if()
+escape2a CO	ivltests
+escape2b CO	ivltests
+escape2c CO	ivltests
 pr338   normal ivltests # pr 338 - constant zz
 shift1	normal	ivltests diff=log/shift1.log:gols/shift1.gold
