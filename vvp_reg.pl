@@ -207,13 +207,15 @@ sub execute_regression {
 	#	$cmd = "$vername $versw $vermod $verout $vpath &> $lpath ";
 		$cmd = "$vername $versw $vermod $verout $vpath $redir $lpath ";
         $rerun = "/usr/local/bin/vvp vsim $redir $lpath ";
-		print "$cmd\n";
-	 	system("$cmd");
+
+	print "$cmd\n";
+	$rc = system("$cmd");
+
         # Note that with IVL we have to execute the code now
         # that it's compiled - there is GOING to be switch in 
         # the verilog switch that will make this unnecessary. 
   
-        if($comp_name eq "IVL") {
+        if(($rc == 0) && ($comp_name eq "IVL")) {
               if( -e "simv") {
                  if(!($testtype{$testname} eq "CO" ) &&
                     !($testtype{$testname} eq "CN" ) && 
