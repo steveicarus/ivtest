@@ -682,5 +682,6 @@ pr820		normal  ivltests diff=log/pr820.log:gold/pr820.gold
 pr823		normal	ivltests
 pr841		normal	ivltests
 pr842		normal	ivltests
+pr848		normal	ivltests
 prng		normal	ivltests
 race		normal	ivltests
