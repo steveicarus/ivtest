@@ -1,0 +1,8 @@
+#! /usr/local/lib/ivl/../../bin/vvp
+:vpi_module "system";
+S_main .scope "main";
+    .scope S_main;
+T_0 ;
+    %vpi_call "$display", "PASSED";
+    %end;
+    .thread T_0;
