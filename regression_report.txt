@@ -318,8 +318,9 @@ Test Results:
                     param_binv has C Compiler problem
                      param_add passed
                      param_mod has C Compiler problem
+                    param_tern passed
                       integer5 has C Compiler problem
                        signed2 execution failed
                        signed3 execution failed
                        repeat1 execution failed
-Tests passed: 290, Parse Errors: 1, Unsupported: 6, failed execution, 11, crashed: 0, C Compiler errors: 13 total: 326
+Tests passed: 291, Parse Errors: 1, Unsupported: 6, failed execution, 11, crashed: 0, C Compiler errors: 13 total: 327
