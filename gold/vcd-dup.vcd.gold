@@ -1,0 +1,107 @@
+$date
+	Mon Oct  8 17:49:46 2001
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$var reg 1 ! test.a $end
+$var reg 1 " test.b1 $end
+$var reg 1 # test.b2 $end
+$var wire 1 $ test.c1 $end
+$var wire 1 % test.c2 $end
+$var wire 1 ! test.m1.a $end
+$var wire 1 " test.m1.b $end
+$var wire 1 $ test.m1.c $end
+$var wire 1 & test.m1.c1 $end
+$var wire 1 ' test.m1.c2 $end
+$var wire 1 ! test.m2.a $end
+$var wire 1 # test.m2.b $end
+$var wire 1 % test.m2.c $end
+$var wire 1 ( test.m2.c1 $end
+$var wire 1 ) test.m2.c2 $end
+$var wire 1 ( test.m2.c1 $end
+$var wire 1 & test.m1.mm1.c1 $end
+$var wire 1 * test.m1.mm1.a $end
+$var wire 1 & test.m1.mm1.c $end
+$var wire 1 & test.m1.mm1.c1 $end
+$var wire 1 + test.m1.mm2.a $end
+$var wire 1 ' test.m1.mm2.c $end
+$var wire 1 ' test.m1.mm2.c1 $end
+$enddefinitions $end
+#0
+$dumpvars
+x+
+0*
+x)
+1(
+x'
+1&
+x%
+x$
+x#
+x"
+0!
+$end
+#1
+0#
+0"
+0+
+1)
+1'
+0%
+0$
+#2
+1#
+0)
+1%
+#3
+0#
+1"
+1+
+1)
+0'
+0%
+1$
+#4
+1#
+0)
+1%
+#5
+0#
+0"
+1!
+1+
+1+
+#6
+1#
+0(
+0%
+#7
+0#
+1"
+1*
+1(
+0&
+1%
+0$
+#8
+1#
+0(
+0%
+#9
+0#
+0"
+0!
+0*
+0+
+1(
+1&
+1)
+1'
+0%
+0$
+0%
+0$
