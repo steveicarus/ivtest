@@ -23,6 +23,9 @@
 # 3/25/2001  SDW   Modified sregress.pl script to run vvp.
 # 4/13/2001  SDW   Added CORE DUMP detection
 # $Log: vvp_reg.pl,v $
+# Revision 1.15  2002/08/10 14:58:17  ka6s
+# Added -S option detection. So normal,-S will cause a -S flag.
+#
 # Revision 1.14  2002/07/03 23:57:35  stevewilliams
 #  Clean up test temporary files.
 #
@@ -197,14 +200,14 @@ sub execute_regression {
            $vermod = " ";
         }
 
-		print "Test $testname:";
-		if ($testpath{$testname} eq "") {
-			$vpath = "./$testname.v";
-		} else {
-			$vpath = "./$testpath{$testname}/$testname.v";
-		}
+	print "Test $testname:";
+	if ($testpath{$testname} eq "") {
+	  $vpath = "./$testname.v";
+	} else {
+	  $vpath = "./$testpath{$testname}/$testname.v";
+	}
 
-		$lpath = "./$logdir/$testname.log";
+	$lpath = "./$logdir/$testname.log";
         system("rm -rf $lpath");  
         system("rm -rf *.out");  
 
@@ -229,6 +232,10 @@ sub execute_regression {
              }
         } else { 
           $versw = $old_versw ;	 # Restore non-compile only state
+        }
+
+        if($testtype{$testname} =~ /-S/) {
+            $versw = $versw." -S";
         }
          
         #
@@ -378,6 +385,10 @@ sub check_results {
                $err_flag = 1;
                printf REPORT "Unhandled-"; 
                $unhandled++;
+            }
+            if ($result =~ "failing")  {
+               $err_flag = 1;
+               printf REPORT "synth failed-"; 
             }
 
             if ($result =~ "sorry")  {
