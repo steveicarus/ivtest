@@ -387,3 +387,4 @@ comp1000 normal ivltests
 comp1001 normal ivltests
 specify1 CO	ivltests
 deposit_wire	normal	ivltests
+specify_01 normal ivltests test # Yet another versio of specify
