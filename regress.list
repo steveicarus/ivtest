@@ -560,8 +560,11 @@ pr530a		normal	ivltests diff=log/pr530a.log:gold/pr530.gold
 pr530b		normal	ivltests diff=log/pr530b.log:gold/pr530.gold
 pr530c		normal	ivltests diff=log/pr530c.log:gold/pr530.gold
 pr531a		normal	ivltests diff=log/pr531a.log:gold/pr531a.gold
+pr531b		normal	ivltests diff=log/pr531b.log:gold/pr531a.gold
 pr532		normal	ivltests diff=log/pr532.log:gold/pr532.gold
+pr532b		normal	ivltests diff=log/pr532b.log:gold/pr532.gold
 pr533		normal	ivltests diff=log/pr533.log:gold/pr533.gold
+pr542		normal	ivltests diff=log/pr542.log:gold/pr542.gold
 case1           normal,-S ivltests # First Synth test
 case2           normal,-S ivltests # First Synth test
 case3           normal,-S ivltests # First Synth test
