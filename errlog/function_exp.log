@@ -1,4 +1,0 @@
-./ivltests/function_exp.v:31: error: Unable to elaborate `foo(x)' as gates.
-./ivltests/function_exp.v:31: error: Unable to elaborate r-value: foo(x)
-main: error: 1 elaborating module.
-errors translating Verilog program.
