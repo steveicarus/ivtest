@@ -1,4 +1,7 @@
 # $Log: elist,v $
+# Revision 1.6  2000/12/07 02:24:54  stevewilliams
+#  Get add32 error message right.
+#
 # Revision 1.5  2000/12/07 01:41:13  ka6s
 # Add the $log feature to the comments here to allow automatic update logging.
 #
@@ -10,4 +13,4 @@ function_exp ivltests main
 function3.11E ivltests test
 ./ivltests/function3.11E.v:30: parse error
 add32 contrib main
-foo.vl:14: error: sum is not a reg in this context.
+./contrib/add32.v:14: error: sum is not a reg in this context.
