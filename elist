@@ -1,4 +1,7 @@
 # $Log: elist,v $
+# Revision 1.9  2001/05/25 02:17:54  stevewilliams
+#  add port-test3 test.
+#
 # Revision 1.8  2001/02/13 03:35:31  stevewilliams
 #  Add cond_wide test (PR#143)
 #
@@ -24,3 +27,5 @@ range1	ivltests main
 ./ivltests/range1.v:44: error: bit/part select main.thing[9:9] is out of range.
 range2	ivltests bug
 ./ivltests/range2.v:9: error: bit/part select [3:2] out of range for bug.din
+port-test3 ivltests BANCH
+./ivltests/port-test2.v:16: error: data in  module CPU declared as inout and as a reg type.
