@@ -19,7 +19,7 @@
 //    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 //
 
-`define W (40)	// any value past 32 will suffice
+`define W (65)	// any value past 32 will suffice
 
 module multiplier(a,b,sum);
 parameter N=1;
@@ -65,6 +65,7 @@ for(i=0;i<`W;i=i+1)
 	b={{`W-1{1'b0}}, 1'b1};
 	for(j=0;j<`W;j=j+1)
 		begin
+                #1;			 
 		d=a*b;
 		if ((c!=d)||(c!=s)) 
 			begin
@@ -82,6 +83,7 @@ for(i=0;i<`W;i=i+1)
 	b={{`W-1{1'b1}}, 1'b0};
 	for(j=0;j<`W;j=j+1)
 		begin
+                #1;			 
 		d=a*b;
 		if ((c!=d)||(c!=s))
 			begin
@@ -99,6 +101,7 @@ for(i=0;i<`W;i=i+1)
 	b={{`W-2{1'b0}}, 2'b11};
 	for(j=0;j<`W;j=j+1)
 		begin
+                #1;			 
 		d=a*b;
 		if ((c!=d)||(c!=s))
 			begin
@@ -116,6 +119,7 @@ for(i=0;i<`W;i=i+1)
 	b={{`W-2{1'b1}}, 2'b00};
 	for(j=0;j<`W;j=j+1)
 		begin
+                #1;			 
 		d=a*b;
 		if ((c!=d)||(c!=s))
 			begin
@@ -133,6 +137,7 @@ for(i=0;i<`W;i=i+1)
 	b={{`W-3{1'b0}}, 3'b101};
 	for(j=0;j<`W;j=j+1)
 		begin
+                #1;			 
 		d=a*b;
 		if ((c!=d)||(c!=s))
 			begin
@@ -150,6 +155,7 @@ for(i=0;i<`W;i=i+1)
 	b={{`W-3{1'b1}}, 3'b010};
 	for(j=0;j<`W;j=j+1)
 		begin
+                #1;			 
 		d=a*b;
 		if ((c!=d)||(c!=s))
 			begin
