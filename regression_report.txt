@@ -332,4 +332,5 @@ Test Results:
                   decl_assign1 passed
                         vector passed
                           mcl1 passed
-Tests passed: 308, Parse Errors: 2, Unsupported: 6, failed execution, 9, crashed: 0, C Compiler errors: 6 total: 336
+                          mcl2 passed
+Tests passed: 309, Parse Errors: 2, Unsupported: 6, failed execution, 9, crashed: 0, C Compiler errors: 6 total: 337

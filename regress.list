@@ -374,3 +374,4 @@ repeat1  normal  ivltests
 decl_assign1	normal	ivltests
 vector   normal  ivltests diff=log/vector.log:gold/vector.gold
 mcl1	 normal  ivltests diff=log/mcl1.log:gold/mcl1.gold
+mcl2	 normal  ivltests diff=log/mcl2.log:gold/mcl2.gold
