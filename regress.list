@@ -479,3 +479,4 @@ sched1  normal ivltests #
 pr273   normal ivltests # Non-constant bit select in ordered list.
 escape1 normal ivltests # \$modulename in defparam and if()
 pr338   normal ivltests # pr 338 - constant zz
+shift1	normal	ivltests diff=log/shift1.log:gols/shift1.gold
