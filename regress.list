@@ -486,6 +486,7 @@ string9 normal ivltests diff=log/string9.log:gold/string9.gold
 string10 normal ivltests diff=log/string10.log:gold/string10.gold
 lh_memcat normal ivltests diff=log/lh_memcat.log:gold/lh_memcat.gold
 lh_memcat2 normal ivltests
+lh_memcat3 normal ivltests
 npmos	normal	ivltests
 rnpmos	normal	ivltests
 npmos2	normal	ivltests
