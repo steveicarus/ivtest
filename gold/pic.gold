@@ -1,4 +1,5 @@
 Clearing SRAM.
+VCD info: dumpfile pic.vcd opened for output.
 SYNTHETIC PIC 2.0.  This is TEST #9
 $readmemh(contrib/TEST9.ROM): address (0x200) out of range (0x0:0x1ff)
                   50: portc changes to: 00
