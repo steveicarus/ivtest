@@ -602,6 +602,7 @@ pr594		normal	ivltests diff=log/pr594.log:gold/pr594.gold
 pr596		normal	ivltests diff=log/pr596.log:gold/pr596.gold
 pr602		normal	ivltests
 pr622		normal	ivltests diff=log/pr622.log:gold/pr622.gold
+pr639		normal	ivltests diff=log/pr639.log:gold/pr639.gold
 case1           normal,-S ivltests # First Synth test
 case2           normal,-S ivltests # First Synth test
 case3           normal,-S ivltests # First Synth test
