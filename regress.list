@@ -372,3 +372,4 @@ signed4  normal  ivltests diff=log/signed4.log:gold/signed4.gold
 signed5  normal  ivltests
 repeat1  normal  ivltests
 decl_assign1	normal	ivltests
+vector   normal  ivltests diff=log/vector.log:gold/vector.gold
