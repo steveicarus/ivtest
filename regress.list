@@ -534,3 +534,4 @@ pr492		normal	ivltests diff=log/pr492.log:gold/pr492.gold
 pr498		normal	ivltests
 addwide		normal	ivltests
 pr508		normal	ivltests
+pr509		normal	ivltests
