@@ -500,6 +500,7 @@ string7 normal ivltests diff=log/string7.log:gold/string7.gold
 string8 normal ivltests diff=log/string8.log:gold/string8.gold
 string9 normal ivltests diff=log/string9.log:gold/string9.gold
 string10 normal ivltests diff=log/string10.log:gold/string10.gold
+string11 normal ivltests diff=log/string11.log:gold/string11.gold
 lh_memcat normal ivltests diff=log/lh_memcat.log:gold/lh_memcat.gold
 lh_memcat2 normal ivltests
 lh_memcat3 normal ivltests
