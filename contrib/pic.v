@@ -1857,6 +1857,8 @@ piccpu piccpu_inst (
 
 // Reset
 initial begin
+	$dumpfile("pic.vcd");
+	$dumpvars(0,pictest);
    reset = 1;
    #200;
    reset = 0;
@@ -2082,17 +2084,17 @@ end
 
 always @(porta) begin
    if (dbg_showporta)
-      $display ("porta changes to: %h", porta);
+      $display ("%d: porta changes to: %h", $time, porta);
 end
 
 always @(portb) begin
    if (dbg_showportb)
-      $display ("portb changes to: %h", portb);
+      $display ("%d: portb changes to: %h", $time, portb);
 end
 
 always @(portc) begin
    if (dbg_showportc)
-      $display ("portc changes to: %h", portc);
+      $display ("%d: portc changes to: %h", $time, portc);
 end
 
 initial begin
