@@ -301,4 +301,5 @@ Test Results:
                        string3 passed
                         ga_mod had elaboration errors:had unsupported features
                        ga_mod1 had elaboration errors:had unsupported features
-Tests passed: 281, Parse Errors: 1, Unsupported: 6, failed execution, 7, crashed: 0, C Compiler errors: 5 total: 305
+                       signed1 passed
+Tests passed: 282, Parse Errors: 1, Unsupported: 6, failed execution, 7, crashed: 0, C Compiler errors: 5 total: 306
