@@ -28,7 +28,7 @@ module test;
      begin
 	ack <= 0; clk <= 0;
 	#10 clk <= 1;
-	#10 ack <= 2; clk <= 0;
+	#10 ack <= 3; clk <= 0;
 	#10 clk <= 1;
 	#10 $display("FAILED");
 	$finish;
