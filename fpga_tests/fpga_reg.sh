@@ -18,7 +18,7 @@
 #    59 Temple Place - Suite 330
 #    Boston, MA 02111-1307, USA
 #
-#ident "$Id: fpga_reg.sh,v 1.4 2003/04/01 05:58:36 stevewilliams Exp $"
+#ident "$Id: fpga_reg.sh,v 1.5 2004/01/13 03:37:04 stevewilliams Exp $"
 
 # This script runs the synthesis tests listed in the fpga_reg.list
 # list file. The script uses Icarus Verilog from the path, and also
@@ -33,6 +33,10 @@
 #  then only run the tests that match the select regular expression.
 #
 
+# This is a diff command for comparing log with gold files.
+diff="diff --strip-trailing-cr -aq"
+
+# This is the output file.
 status_file=fpga_reg.txt
 true > $status_file
 
@@ -97,7 +101,7 @@ cat fpga_reg.list |
 	    continue
 	fi
 
-	iverilog -oa.out $tb.v fpga_tmp/$test.edf.v $XILINX/verilog/src/glbl.v -y $XILINX/verilog/src/simprims
+	iverilog -oa.out -Ttyp $tb.v fpga_tmp/$test.edf.v $XILINX/verilog/src/glbl.v -y $XILINX/verilog/src/simprims
 	if test $? != 0
 	then
 	    echo "$test-$arch: FAILED -- compiling test bench" >> $status_file
@@ -106,7 +110,7 @@ cat fpga_reg.list |
 
 	vvp a.out > fpga_log/$test-$arch.log 2>&1
 	if test "X$gold" != "X-" ; then
-	    if diff -aq $gold fpga_log/$test-$arch.log > /dev/null
+	    if $diff $gold fpga_log/$test-$arch.log > /dev/null
 	    then
 		echo "$test-$arch: PASSED -- Correct output." >> $status_file
             else
@@ -129,6 +133,9 @@ FAILED=`grep ': FAILED' $status_file | wc -l`
 echo "PASSED=$PASSED, FAILED=$FAILED" >> $status_file
 
 # $Log: fpga_reg.sh,v $
+# Revision 1.5  2004/01/13 03:37:04  stevewilliams
+#  Cope with dos line-ends while comparing gold files.
+#
 # Revision 1.4  2003/04/01 05:58:36  stevewilliams
 #  Add a select argument.
 #
