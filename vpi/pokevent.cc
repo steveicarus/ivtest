@@ -60,7 +60,7 @@ FindPoke(char *name)
     // find named event
     iterate = vpi_iterate(vpiReg, module);
     if (iterate != NULL) {
-	while (handle = vpi_scan(iterate)) {
+	while ((handle = vpi_scan(iterate))) {
 	    if (!strcmp(name, vpi_get_str(vpiName, handle))) {
 		rtn = handle;
 		break;
@@ -86,7 +86,7 @@ RegisterPeek(char *name, vpiHandle poke)
     // find named event
     iterate = vpi_iterate(vpiNamedEvent, module);
     if (iterate != NULL) {
-	while (handle = vpi_scan(iterate)) {
+	while ((handle = vpi_scan(iterate))) {
 	    if (!strcmp(name, vpi_get_str(vpiName, handle))) {
 		break;
 	    }
@@ -103,12 +103,26 @@ RegisterPeek(char *name, vpiHandle poke)
     vpi_register_cb(&vc_cb_data);
 }
 
-static void
-my_Register(void)
+static int
+EndofCompile(s_cb_data * cb_data)
 {
-    vpi_printf("Registering Callbacks\n");
-
     RegisterPeek("e_Peek", FindPoke("r_Poke"));
+    return 0;
+}
+
+static void my_Register(void)
+{
+        s_cb_data cb_data;
+
+        vpi_printf("!!!C++:     Registering Callbacks\n");
+
+        cb_data.time = NULL;
+        cb_data.value = NULL;
+        cb_data.user_data = (char *) NULL;
+        cb_data.obj = NULL;
+        cb_data.reason = cbEndOfCompile;
+        cb_data.cb_rtn = EndofCompile;
+        vpi_register_cb(&cb_data);
 }
 
 void (*vlog_startup_routines[]) () = {
