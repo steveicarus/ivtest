@@ -321,8 +321,9 @@ Test Results:
                      param_eq3 passed
                     param_binv passed
                      param_add passed
-                     param_mod has C Compiler problem
+                     param_mod passed
                     param_tern passed
+                   param_test1 passed
                       integer5 passed
                        signed2 passed
                        signed3 passed
@@ -333,4 +334,4 @@ Test Results:
                         vector passed
                           mcl1 passed
                           mcl2 passed
-Tests passed: 312, Parse Errors: 2, Unsupported: 6, failed execution, 6, crashed: 0, C Compiler errors: 6 total: 337
+Tests passed: 314, Parse Errors: 2, Unsupported: 6, failed execution, 6, crashed: 0, C Compiler errors: 5 total: 338
