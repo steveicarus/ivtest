@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2002 
+ * Copyright (c) 2002 Tom Verbeure
  *
  *    This source code is free software; you can redistribute it
  *    and/or modify it in source code form under the terms of the GNU
