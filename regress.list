@@ -435,3 +435,4 @@ blankport normal ivltests main # PR 204 Stephan Boettcher -
 dcomp1	normal	ivltests diff=log/dcomp1.log:gold/dcomp1.gold
 sp2     normal  ivltests main # PR 110 Steve Tell - concat of param in sys task
 const   normal  ivltests # PR 122 - Steve Tell - const without length spec.
+memassign normal ivltests # PR 126 - daavid Leask - assign bus part fm memory item

@@ -23,6 +23,9 @@
 # 3/25/2001  SDW   Modified sregress.pl script to run vvp.
 # 4/13/2001  SDW   Added CORE DUMP detection
 # $Log: vvp_reg.pl,v $
+# Revision 1.9  2001/08/06 02:59:27  ka6s
+# Added test for PR126 - constant assign to bus part from memory
+#
 # Revision 1.8  2001/07/08 03:19:16  sib4
 # Add COMPERR check
 #
@@ -362,7 +365,7 @@ sub check_results {
                $unhandled++;
             }
 
-            if ($result =~ "parse")  {
+            if (($result =~ "parse") ||($result =~ "ERROR"))  {
                $err_flag = 1;
                printf REPORT "Parse Err-"; 
                $parse++;
