@@ -24,14 +24,14 @@
  */
 module test;
 
-   reg [4:0] a;
+   reg [3:0] a;
    wire      o;
 
    RAM dut(o, a);
    defparam test.dut.INIT = 16'h55aa;
 
    initial begin
-      for (a = 0 ;  a[4] == 0 ;  a = a + 1) begin
+      for (a = 0 ;  a[3] == 0 ;  a = a + 1) begin
 	 #1 $display("dut[%h] = %b", a, o);
       end
    end
