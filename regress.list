@@ -685,5 +685,6 @@ pr842		normal	ivltests
 pr848		normal	ivltests
 pr856		normal	ivltests
 pr859		normal	ivltests
+pr860		normal	ivltests
 prng		normal	ivltests
 race		normal	ivltests
