@@ -18,7 +18,7 @@
 #    59 Temple Place - Suite 330
 #    Boston, MA 02111-1307, USA
 #
-#ident "$Id: fpga_reg.sh,v 1.3 2003/03/31 01:16:43 stevewilliams Exp $"
+#ident "$Id: fpga_reg.sh,v 1.4 2003/04/01 05:58:36 stevewilliams Exp $"
 
 # This script runs the synthesis tests listed in the fpga_reg.list
 # list file. The script uses Icarus Verilog from the path, and also
@@ -26,6 +26,12 @@
 # to point to the XILINX install directory so that the simprims
 # can be found. The run test uses these to generate a simulation
 # from the synthesized file.
+#
+# Usage: sh ./fpga_reg.sh [select]
+#
+#  If there is no select, then run all the tests. If there is a select,
+#  then only run the tests that match the select regular expression.
+#
 
 status_file=fpga_reg.txt
 true > $status_file
@@ -40,11 +46,17 @@ then
     mkdir fpga_tmp
 fi
 
+if test "X$1" = "X"; then
+    match='.*'
+else
+    match="$1"
+fi
+
 cat fpga_reg.list |
  sed -e 's/#.*//' |
  while read test tb arch part gold junk
  do
-    if test "X$test" = "X"
+    if test "X$test" = "X" -o 0 = `expr X$test : X$match`
     then
 	: skip a comment
     else
@@ -115,3 +127,8 @@ cat fpga_reg.list |
 PASSED=`grep ': PASSED' $status_file | wc -l`
 FAILED=`grep ': FAILED' $status_file | wc -l`
 echo "PASSED=$PASSED, FAILED=$FAILED" >> $status_file
+
+# $Log: fpga_reg.sh,v $
+# Revision 1.4  2003/04/01 05:58:36  stevewilliams
+#  Add a select argument.
+#
