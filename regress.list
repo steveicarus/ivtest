@@ -275,6 +275,7 @@ meminit2	normal	ivltests
 mem1		normal	ivltests	gold=mem1.gold
 task_noop	normal ivltests # Task with no contents.
 task_bypath	normal ivltests # task enabled by complete path name.
+task_iotypes	normal ivltests # task ports with types.
 scope1   	normal ivltests # scope of var into a task
 scope2   	normal ivltests # scope of var stops at module boundaries
 task-scope	normal ivltests

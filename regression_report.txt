@@ -234,6 +234,7 @@ Test Results:
                           mem1 execution failed
                      task_noop passed
                    task_bypath passed
+                  task_iotypes passed
                         scope1 passed
                         scope2 passed
                     task-scope passed
@@ -336,4 +337,4 @@ Test Results:
                         vector passed
                           mcl1 passed
                           mcl2 passed
-Tests passed: 316, Parse Errors: 2, Unsupported: 6, failed execution, 6, crashed: 0, C Compiler errors: 5 total: 340
+Tests passed: 317, Parse Errors: 2, Unsupported: 6, failed execution, 6, crashed: 0, C Compiler errors: 5 total: 341
