@@ -715,6 +715,7 @@ pr993		normal  ivltests diff=log/pr993.log:gold/pr993.gold
 pr995		normal  ivltests diff=log/pr995.log:gold/pr995.gold
 eq		normal  ivltests
 neq1		normal  ivltests diff=log/neq1.log:gold/neq1.gold
+pr1000		normal  ivltests
 pr1002		normal  ivltests diff=log/pr1002.log:gold/pr1002.gold
 pr1002a		normal  ivltests diff=log/pr1002a.log:gold/pr1002a.gold
 pr1007		normal  ivltests
