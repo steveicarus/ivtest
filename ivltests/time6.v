@@ -37,13 +37,13 @@ module main;
 
    always @(posedge clk) #2.4 begin
       $display($time,, "set out1 == 1");
-      time1 = $time;
+      time1 = $simtime;
       out1 = 1;
    end
 
    always @(posedge clk) #2.6 begin
       $display($time,, "set out2 == 1");
-      time2 = $time;
+      time2 = $simtime;
       out2 = 1;
    end
 
