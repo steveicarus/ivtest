@@ -52,7 +52,7 @@ initial
   if(big_word !== 32'h12_00_00_00)
     begin
       $display("FAILED -Memory assign - expect %h, but have %h",
-                myconst,,big_word);
+                myconst,big_word);
       error = 1;
     end
   #100  ; 
