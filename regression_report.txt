@@ -243,6 +243,7 @@ Test Results:
                   function_exp had elaboration errors:
                      function1 passed
                      function2 passed
+                     function3 passed
                         ifdef1 passed
                         ifdef2 passed
                         ifdef3 passed
@@ -320,4 +321,4 @@ Test Results:
                       integer5 has C Compiler problem
                        signed2 execution failed
                        signed3 execution failed
-Tests passed: 289, Parse Errors: 1, Unsupported: 6, failed execution, 10, crashed: 0, C Compiler errors: 13 total: 324
+Tests passed: 290, Parse Errors: 1, Unsupported: 6, failed execution, 10, crashed: 0, C Compiler errors: 13 total: 325
