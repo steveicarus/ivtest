@@ -21,3 +21,6 @@ realtime  vpi   realtime.c	realtime	realtime.v
 realtime2 vpi   realtime2.c	realtime2	realtime2.v
 putvalue  vpi	putvalue.c	putvalue	putvalue.v
 timescale vpi	timescale.c	timescale	timescale.v
+getp      vpi	getp.c		getp		getp.v
+putp      vpi	putp.c		putp		putp.v
+mipname   vpi	mipname.c	mipname		mipname.v
