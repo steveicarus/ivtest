@@ -417,6 +417,7 @@ sysargs normal ivltests # VVP postponed $syscall argument lookup
 many_drivers normal ivltests # net with many drivers
 task_port_size normal ivltests # truncate task port connections
 p_monta normal ivltests 
+memidx normal ivltests # PR 221
 varlsfht1 normal ivltests # variable << in always
 varlsfht2 normal ivltests # variable << in function
 varlsfht normal ivltests  # variable << in wire
