@@ -452,6 +452,9 @@ pr224 normal ivltests  # reg [3:0] ack; ... @(posedge ack)
 pr224a normal ivltests # reg [3:0] ack; ... @(posedge ack[p])
 pr298  normal ivltests diff=log/pr298.log:gold/pr298.gold
 writememh1 normal ivltests # pr#334
+writememh2 normal ivltests # pr#400
+writememb1 normal ivltests # pr#400
+writememb2 normal ivltests # pr#400
 varlsfht1 normal ivltests # variable << in always
 varlsfht2 normal ivltests # variable << in function
 varlsfht normal ivltests  # variable << in wire
@@ -489,6 +492,7 @@ pr312	normal	ivltests
 pr355	normal	ivltests
 ram16x1 normal ivltests # Sitting here for a long time?
 sched1  normal ivltests # 
+sched2  normal ivltests # 
 pr273   normal ivltests # Non-constant bit select in ordered list.
 escape1 normal ivltests # \$modulename in defparam and if()
 escape2a CO	ivltests
@@ -500,3 +504,4 @@ pr243	normal	ivltests diff=log/pr243.log:gold/pr243.gold
 dummy7	normal	ivltests diff=log/dummy7.log:gold/dummy7.gold
 time6b  normal  ivltests # Rewrote time6 to pass with XL
 disblock normal ivltests # PR280
+comment1	normal	ivltests # PR410/411
