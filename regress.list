@@ -312,6 +312,7 @@ ldelay4	normal ivltests
 ldelay5	normal ivltests
 wireland	normal ivltests # assign a && (b ? 0 : 1) (pmonta)
 param_concat normal ivltests #  param has concat value (pmonta)
+param_select	normal	ivltests # bit and part select of parameters.
 param_times	normal ivltests #  param has multiplication.
 case3.8D	 normal ivltests #  test case for x and z exact match in labels.  
 function_exp normal ivltests # Cntrib by steve williams
