@@ -38,7 +38,7 @@ initial
     global_var = 2;
     result = my_func(global_var);
 
-    if(result != 4)
+    if(result !== 4)
       begin
          $display("FAILED - function didn't function!\n");
          $finish ;
