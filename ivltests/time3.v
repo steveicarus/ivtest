@@ -57,6 +57,8 @@ initial
        $display("FAILED");
     else
        $display("PASSED");    
+    #5;
+    $finish;
   end
 
 
