@@ -49,7 +49,7 @@ always3.1.1B	CO	ivltests	# has an infinite loop
 always3.1.1C	normal	ivltests
 always3.1.1D	normal	ivltests
 always3.1.1E	normal	ivltests
-always3.1.1F	CO	ivltests
+always3.1.1F	normal	ivltests
 always3.1.1G	CO	ivltests
 always3.1.1H	CO	ivltests
 always3.1.1I	CO	ivltests
@@ -282,6 +282,7 @@ task-scope	normal ivltests
 assign_nb1  normal ivltests # Assign a constant to a single bit array (pmonta)
 assign_delay	normal ivltests # continuous assign with a delay
 delay		normal ivltests diff=log/delay.log:gold/delay.gold
+delay_assign_nb	normal ivltests
 wireland	normal ivltests # assign a && (b ? 0 : 1) (pmonta)
 param_concat normal ivltests #  param has concat value (pmonta)
 param_times	normal ivltests #  param has multiplication.
