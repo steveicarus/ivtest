@@ -262,7 +262,7 @@ Test Results:
                        initmod passed
                       initmod2 passed
                           bnot passed
-                   stask_parm1 had parse errors:had elaboration errors:
+                   stask_parm1 passed
                     task_inpad passed
                    task_omemw2 passed
                    unary_lnot1 passed
@@ -295,4 +295,6 @@ Test Results:
                          wait1 passed
                        string1 passed
                        string2 passed
-Tests passed: 276, Parse Errors: 2, Unsupported: 4, failed execution, 7, crashed: 0, C Compiler errors: 5 total: 299
+                        ga_mod had elaboration errors:had unsupported features
+                       ga_mod1 had elaboration errors:had unsupported features
+Tests passed: 277, Parse Errors: 1, Unsupported: 6, failed execution, 7, crashed: 0, C Compiler errors: 5 total: 301
