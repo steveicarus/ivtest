@@ -418,7 +418,7 @@ decl_assign1	normal	ivltests
 vector   normal  ivltests diff=log/vector.log:gold/vector.gold
 mcl1	 normal  ivltests diff=log/mcl1.log:gold/mcl1.gold
 mcl2	 normal  ivltests diff=log/mcl2.log:gold/mcl2.gold
-comp1000 normal ivltests
+comp1000 normal ivltests diff=log/comp1000.log:gold/comp1000.gold
 comp1001 normal ivltests
 specify1 CO	ivltests
 deposit_wire	normal	ivltests
