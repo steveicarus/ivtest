@@ -237,6 +237,7 @@ Test Results:
                    param_times passed
                       case3.8D passed
                   function_exp had elaboration errors:
+                     function1 passed
                         ifdef1 passed
                         ifdef2 passed
                         ifdef3 passed
@@ -302,4 +303,4 @@ Test Results:
                         ga_mod had elaboration errors:had unsupported features
                        ga_mod1 had elaboration errors:had unsupported features
                        signed1 passed
-Tests passed: 282, Parse Errors: 1, Unsupported: 6, failed execution, 7, crashed: 0, C Compiler errors: 5 total: 306
+Tests passed: 283, Parse Errors: 1, Unsupported: 6, failed execution, 7, crashed: 0, C Compiler errors: 5 total: 307

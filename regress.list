@@ -278,6 +278,7 @@ param_concat normal ivltests #  param has concat value (pmonta)
 param_times	normal ivltests #  param has multiplication.
 case3.8D	 normal ivltests #  test case for x and z exact match in labels.  
 function_exp normal ivltests # Cntrib by steve williams
+function1	normal	ivltests diff=log/function1.log:gold/function1.gold
 ifdef1		 normal ivltests #  ifdef with no define
 ifdef2		 normal ivltests #  ifdef with define
 ifdef3		 normal ivltests #  compound ifdef with 1 define
