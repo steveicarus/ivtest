@@ -592,6 +592,7 @@ pr569		normal	ivltests diff=log/pr569.log:gold/pr569.gold
 pr572		normal	ivltests diff=log/pr572.log:gold/pr572.gold
 pr572b		normal	ivltests diff=log/pr572b.log:gold/pr572.gold
 pr578		normal	ivltests
+pr584		normal	ivltests diff=log/pr584.log:gold/pr584.gold
 pr585		normal	ivltests
 pr590		normal	ivltests diff=log/pr590.log:gold/pr590.gold
 pr594		normal	ivltests diff=log/pr594.log:gold/pr594.gold
