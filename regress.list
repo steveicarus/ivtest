@@ -468,7 +468,7 @@ select2	normal	ivltests # structural bit select
 select3 normal	ivltests diff=log/select3.log:gold/select3.gold
 monitor	normal	ivltests diff=log/monitor.log:gold/monitor.gold
 fork1   normal  ivltests # Validate 3 way fork with simple assignments.
-function5 normal ivltests # PR 184 
+function5 CO ivltests # PR 184 
 blankport normal ivltests main # PR 204 Stephan Boettcher - 
 dcomp1	normal	ivltests diff=log/dcomp1.log:gold/dcomp1.gold
 sp2     normal  ivltests main # PR 110 Steve Tell - concat of param in sys task
