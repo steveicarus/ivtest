@@ -1,2 +1,5 @@
 simv
+vsim
+dfile
 *.vcd
+*.dump
