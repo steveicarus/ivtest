@@ -1,4 +1,7 @@
 # $Log: elist,v $
+# Revision 1.14  2002/04/22 00:50:54  stevewilliams
+#  Add the implicit1 test to the elist.
+#
 # Revision 1.13  2002/04/13 02:39:57  stevewilliams
 #  Add the memidx2 test of mem index errors.
 #
@@ -45,3 +48,5 @@ scope2b	ivltests main
 ./ivltests/scope2b.v:30: error: Net q is not defined in this context.
 memidx2	ivltests main
 ./ivltests/memidx2.v:14: error: memory main.mem needs an index in this context.
+implicit1 ivltests Counter56
+./ivltests/implicit1.v:25: error: Counter56.CounterReset not defined in this scope.
