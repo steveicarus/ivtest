@@ -419,3 +419,4 @@ varrshft2 normal ivltests # variable >> in function
 varrshft normal ivltests  # variable >> in wire
 select	normal	ivltests # structural word select
 select2	normal	ivltests # structural bit select
+monitor	normal	ivltests diff=log/monitor.log:gold/monitor.gold
