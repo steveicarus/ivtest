@@ -397,3 +397,5 @@ specify_01 normal ivltests test # Yet another versio of specify
 deposit normal ivltests # Yet another versio of specify
 assign_neq normal ivltests # continuous assign with !=
 assign_deq normal ivltests # continuous assign with ==
+assign_ge normal ivltests # continuous assign with >=
+assign_le normal ivltests # continuous assign with <=
