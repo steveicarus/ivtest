@@ -583,6 +583,7 @@ extend	normal	ivltests
 timeform1	normal	ivltests diff=log/timeform1.log:gold/timeform1.gold
 timeform2	normal	ivltests diff=log/timeform2.log:gold/timeform2.gold
 pr183		CO	ivltests
+pr245		normal	ivltests diff=log/pr245.log:gold/pr245.gold
 pr377		normal	ivltests diff=log/pr377.log:gold/pr377.gold
 pr487		normal	ivltests diff=log/pr487.log:gold/pr487.gold
 pr492		normal	ivltests diff=log/pr492.log:gold/pr492.gold
@@ -673,4 +674,5 @@ pr748		normal	ivltests
 pr751		normal  ivltests diff=log/pr751.log:gold/pr751.gold
 pr757		normal	ivltests
 pr772		normal	ivltests
+pr810		normal	ivltests
 prng		normal	ivltests
