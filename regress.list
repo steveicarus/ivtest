@@ -493,3 +493,4 @@ escape2c CO	ivltests
 pr338   CO ivltests # pr 338 - constant zz see also constadd2.v
 shift1	normal	ivltests diff=log/shift1.log:gold/shift1.gold
 pr243	normal	ivltests diff=log/pr243.log:gold/pr243.gold
+dummy7	normal	ivltests diff=log/dummy7.log:gold/dummy7.gold
