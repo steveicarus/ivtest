@@ -23,6 +23,9 @@
 # 3/25/2001  SDW   Modified sregress.pl script to run vvp.
 # 4/13/2001  SDW   Added CORE DUMP detection
 # $Log: vvp_reg.pl,v $
+# Revision 1.14  2002/07/03 23:57:35  stevewilliams
+#  Clean up test temporary files.
+#
 # Revision 1.13  2002/01/06 17:01:10  ka6s
 # Added CE support.
 #
@@ -321,6 +324,7 @@ sub check_results {
       system("diff $lpath ./gold/$gold_file > ./dfile ");
       if( -z "dfile" ) {
         system ("echo PASSED >> $lpath" );
+	system ("rm -f $testname.*");
       } else {
         system ("echo FAILED >> $lpath");
       }
@@ -344,6 +348,7 @@ sub check_results {
       }
       if( -z "dfile" ) {
         system ("echo PASSED >> $lpath" );
+	system ("rm -f $testname.*");
       } else {
         system ("echo FAILED >> $lpath");
       }
@@ -414,6 +419,7 @@ sub check_results {
               if ($result =~ "PASSED" ) {
                  printf REPORT "Ran-PASSED-"; 
                  $passed++;
+		 system ("rm -f $testname.*");
               }
 
               if ($result =~ "FAILED" ) {
@@ -425,6 +431,7 @@ sub check_results {
               if(-z $lpath) {
                  printf REPORT "CO-PASSED-"; 
                  $passed++;
+		 system ("rm -f $testname.*");
                 } else {
                  printf REPORT "CO-FAILED-"; 
                  $failed++;
@@ -436,6 +443,7 @@ sub check_results {
             if($result =~ "COMPERR") {
                printf REPORT "CE-PASSED-\n";
                $passed++;
+	       system ("rm -f $testname.*");
             } else {
                printf REPORT "CE-FAILED-\n";
                $failed++;
