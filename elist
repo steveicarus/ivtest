@@ -1,4 +1,7 @@
 # $Log: elist,v $
+# Revision 1.18  2002/11/21 21:16:51  stevewilliams
+#  Add array5 as an error test.
+#
 # Revision 1.17  2002/11/13 03:26:33  stevewilliams
 #  Add tests pr564, pr581 and pr585.
 #
@@ -63,3 +66,5 @@ pr567 ivltests test
 ./ivltests/pr567.v:3: error: Assign to memory "blah" requires a word select index.
 pr581	ivltests main
 ./ivltests/pr581.v:14: error: memories (data) cannot be l-values in continuous assignments.
+array5	ivltests test
+./ivltests/array5.v:14: error: Part select expressions must be constant.
