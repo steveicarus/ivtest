@@ -688,6 +688,9 @@ pr848		normal	ivltests
 pr856		normal	ivltests
 pr859		normal	ivltests
 pr860		normal	ivltests
+pr872		normal	ivltests
 pr902		normal  ivltests diff=log/pr902.log:gold/pr902.gold
+pr910		normal  ivltests diff=log/pr910.log:gold/pr910.gold
+pr913		normal	ivltests
 prng		normal	ivltests
 race		normal	ivltests
