@@ -4,3 +4,5 @@ function_exp ivltests main
 ./ivltests/function_exp.v:31: error: Unable to elaborate `foo(x)' as gates.
 function3.11E ivltests test
 ivltests/function3.11E.v:30: parse error
+add32 contrib main
+foo.vl:14: error: sum is not a reg in this context.
