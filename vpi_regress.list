@@ -9,3 +9,4 @@ pokevent  vpi	pokevent.cc	pokevent	pokevent.v
 pokereg   vpi	pokereg.cc	pokereg		pokereg.v
 memwide   vpi	memwide.cc	memwide		memwide.v
 scopes	  vpi	scopes.c	scopes		scopes.v
+by_name	  vpi	by_name.c	by_name		by_name.v
