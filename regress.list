@@ -580,6 +580,7 @@ pr547		normal	ivltests diff=log/pr547.log:gold/pr547.gold
 pr564		normal	ivltests
 pr572		normal	ivltests diff=log/pr572.log:gold/pr572.gold
 pr572b		normal	ivltests diff=log/pr572b.log:gold/pr572.gold
+pr578		normal	ivltests
 case1           normal,-S ivltests # First Synth test
 case2           normal,-S ivltests # First Synth test
 case3           normal,-S ivltests # First Synth test
