@@ -127,6 +127,9 @@ sub check_results {
 	    if(!(-z "diff.file")) {
                  print "diff files don't match\n";
 		 $error++;
+            } else {
+		     
+                 print "PASSED\n";
             }
     }
     print "Tests: Total=$number, failed=$error\n";
