@@ -39,3 +39,4 @@
 # diff=filename1:filename2 - Compare the two files for equality.
 #
 hello	normal	vvpsources
+resolvz	normal	vvpsources
