@@ -344,6 +344,7 @@ lh_catadd      normal	ivltests	#
 shift_pad	normal	ivltests
 format     normal  ivltests diff=log/format.log:gold/format.gold
 disp_dec   normal  ivltests diff=log/disp_dec.log:gold/disp_dec.gold
+disp_part   	normal  ivltests diff=log/disp_part.log:gold/disp_part.gold
 shellho1	normal	ivltests top diff=log/shellho1.log:gold/shellho1.gold
 schedule	normal	ivltests
 test_bufif0	normal	ivltests
