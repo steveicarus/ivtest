@@ -1,1 +1,1 @@
-event.cc:73: failed assertion `port.port() == 0'
+PASSED

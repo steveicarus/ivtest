@@ -1,1 +1,7 @@
+simv:16: invalid functor type.
+simv:23: invalid functor type.
+unresolved vvp_net reference: L_0x203190
+unresolved vvp_net reference: L_0x2029c0
+compile_cleanup: 2 unresolved items
+simv: Program not runnable, 2 errors.
 FAILED

@@ -1,0 +1,4 @@
+FAILED - defparam.v main.testmodA.value0 != 15
+FAILED - defparam.v main.testmodA.value1 != 20
+FAILED - defparam.v main.testmodB.value0 != 17
+FAILED - defparam.v main.testmodB.value1 != 16
