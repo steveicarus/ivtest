@@ -226,6 +226,7 @@ fifo	normal contrib
 event3.15	normal ivltests # Validate event lists, and -> operator.
 unary_and	normal ivltests # Unary And &(vect)
 unary_nand	normal ivltests # Unary nand ~&(vect)
+unary_not	normal ivltests # Unary not ~
 unary_or 	normal ivltests # Unary or  |(vect)
 unary_nor	normal ivltests # Unary nor ~|(vect)
 unary_xor 	normal ivltests # Unary or  ^(vect)
