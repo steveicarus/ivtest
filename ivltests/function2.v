@@ -11,7 +11,7 @@ module main;
         function [31:0] test;
                 input   [31:0]  op1;
 
-                $write("op1 = %x\n", op1);
+                $write("op1 = %h\n", op1);
 
         endfunction
 
