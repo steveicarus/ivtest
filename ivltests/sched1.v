@@ -56,7 +56,7 @@ initial
     d = 0;
     #20;
     @(posedge clk)
-    d = 1;
+    d <= 1;
     #25;
     if(err == 1)
       $display("FAILED");
