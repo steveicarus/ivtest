@@ -327,3 +327,4 @@ test_notif1	normal	ivltests
 test_pmos	normal	ivltests
 test_rnmos	normal	ivltests
 test_rpmos	normal	ivltests
+cprop		normal	ivltests
