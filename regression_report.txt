@@ -229,6 +229,7 @@ Test Results:
                    assign_mem1 passed
                    assign_mem2 passed
                        meminit passed
+                      meminit2 passed
                           mem1 execution failed
                      task_noop passed
                         scope1 passed
@@ -315,13 +316,13 @@ Test Results:
                     param_and2 passed
                     param_band passed
                      param_bor passed
-                     param_eq3 has C Compiler problem
+                     param_eq3 passed
                     param_binv passed
                      param_add passed
                      param_mod has C Compiler problem
                     param_tern passed
-                      integer5 has C Compiler problem
+                      integer5 passed
                        signed2 execution failed
                        signed3 execution failed
                        repeat1 passed
-Tests passed: 298, Parse Errors: 1, Unsupported: 6, failed execution, 10, crashed: 0, C Compiler errors: 8 total: 328
+Tests passed: 301, Parse Errors: 1, Unsupported: 6, failed execution, 10, crashed: 0, C Compiler errors: 6 total: 329

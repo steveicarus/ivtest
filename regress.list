@@ -270,6 +270,7 @@ idiv2		normal ivltests # Int div within an expression
 assign_mem1	normal ivltests #
 assign_mem2	normal ivltests # Const prop/dead signal elimination
 meminit		normal	ivltests
+meminit2	normal	ivltests
 mem1		normal	ivltests	gold=mem1.gold
 task_noop	normal ivltests # Task with no contents.
 scope1   	normal ivltests # scope of var into a task
