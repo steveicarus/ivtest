@@ -128,7 +128,10 @@ sub check_results {
                  print "diff files don't match\n";
 		 $error++;
             } else {
-		     
+		 $cmd4 = "$ccode{$testname}";
+		 $cmd4 =~ s/\.[^\.]*$/.o/;
+		 $cmd4 = "rm -f " . $cmd4 . " $modname{$testname}.vpi";
+		 system("$cmd4");
                  print "PASSED\n";
             }
     }
