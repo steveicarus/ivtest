@@ -274,6 +274,7 @@ meminit		normal	ivltests
 meminit2	normal	ivltests
 mem1		normal	ivltests	gold=mem1.gold
 task_noop	normal ivltests # Task with no contents.
+task_noop2	CO	ivltests # Task *really* with no contents.
 task_bypath	normal ivltests # task enabled by complete path name.
 task_iotypes	normal ivltests # task ports with types.
 scope1   	normal ivltests # scope of var into a task
@@ -383,3 +384,4 @@ mcl1	 normal  ivltests diff=log/mcl1.log:gold/mcl1.gold
 mcl2	 normal  ivltests diff=log/mcl2.log:gold/mcl2.gold
 comp1000 normal ivltests
 comp1001 normal ivltests
+specify1 CO	ivltests
