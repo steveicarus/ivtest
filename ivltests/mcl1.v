@@ -90,7 +90,7 @@ module test_simple;
     c = count[15:8];
     
     #10
-    $display("%x %x %x %x", a, b, c, y);
+    $display("%h %h %h %h", a, b, c, y);
     
     count = count + 1;
     if(count == 0)

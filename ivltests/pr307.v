@@ -8,7 +8,7 @@ module top;
       in1 = 64'hffffffffffffffff;
       in2 = 64'hfffffffffffffff7;
       out = in1 + in2;
-      $display("%x + %x =  %x", in1,in2,out);
+      $display("%h + %h =  %h", in1,in2,out);
       if (out === 64'hfffffffffffffff6)
 	$display("PASSED");
       else

@@ -74,7 +74,7 @@ initial
      if(out0 != 5'h11) 
        begin
           $display("FAILED - defparam3.5A - Defparam testmodA.ident0");
-          $display("out0 = %x",out0);
+          $display("out0 = %h",out0);
           error = 1;
        end
      #1 ;

@@ -35,7 +35,7 @@ initial
      $display("PASSED");
    else
      begin
-       $display("FAILED val2 s/b 4'ha, but is %x",val2);
+       $display("FAILED val2 s/b 4'ha, but is %h",val2);
      end
    
   end

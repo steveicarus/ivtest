@@ -69,7 +69,7 @@ for(i=0;i<`W;i=i+1)
 		d=a*b;
 		if ((c!=d)||(c!=s)) 
 			begin
-			$display("a=%x b=%x c=%x d=%x s=%x", a,b,c,d,s);
+			$display("a=%h b=%h c=%h d=%h s=%h", a,b,c,d,s);
 			rc=1;
 			end
 		b={b[1:`W-1], 1'b0};
@@ -87,7 +87,7 @@ for(i=0;i<`W;i=i+1)
 		d=a*b;
 		if ((c!=d)||(c!=s))
 			begin
-			$display("a=%x b=%x c=%x d=%x s=%x", a,b,c,d,s);
+			$display("a=%h b=%h c=%h d=%h s=%h", a,b,c,d,s);
 			rc=1;
 			end
 		b={b[1:`W-1], 1'b1};
@@ -105,7 +105,7 @@ for(i=0;i<`W;i=i+1)
 		d=a*b;
 		if ((c!=d)||(c!=s))
 			begin
-			$display("a=%x b=%x c=%x d=%x s=%x", a,b,c,d,s);
+			$display("a=%h b=%h c=%h d=%h s=%h", a,b,c,d,s);
 			rc=1;
 			end
 		b={b[1:`W-1], 1'b0};
@@ -123,7 +123,7 @@ for(i=0;i<`W;i=i+1)
 		d=a*b;
 		if ((c!=d)||(c!=s))
 			begin
-			$display("a=%x b=%x c=%x d=%x s=%x", a,b,c,d,s);
+			$display("a=%h b=%h c=%h d=%h s=%h", a,b,c,d,s);
 			rc=1;
 			end
 		b={b[1:`W-1], 1'b1};
@@ -141,7 +141,7 @@ for(i=0;i<`W;i=i+1)
 		d=a*b;
 		if ((c!=d)||(c!=s))
 			begin
-			$display("a=%x b=%x c=%x d=%x s=%x", a,b,c,d,s);
+			$display("a=%h b=%h c=%h d=%h s=%h", a,b,c,d,s);
 			rc=1;
 			end
 		b={b[1:`W-1], 1'b0};
@@ -159,7 +159,7 @@ for(i=0;i<`W;i=i+1)
 		d=a*b;
 		if ((c!=d)||(c!=s))
 			begin
-			$display("a=%x b=%x c=%x d=%x s=%x", a,b,c,d,s);
+			$display("a=%h b=%h c=%h d=%h s=%h", a,b,c,d,s);
 			rc=1;
 			end
 		b={b[1:`W-1], 1'b1};

@@ -98,7 +98,7 @@ module test_mis;
     b = count[7:4];
     
     #10
-    $display("%x %x %x", a, b, y);
+    $display("%h %h %h", a, b, y);
     
     count = count + 1;
     if(count == 0)

@@ -32,7 +32,7 @@ initial
            #3 ;					// t=3
            value1 = 4'b0000 ;	// Picked up at time 4 
            #5 ;				    // check at time 8	
-           $display("check == 0000:at time=%t value2=%x",$time,value2);
+           $display("check == 0000:at time=%t value2=%h",$time,value2);
            if(value2 != 4'b0)
              begin
                 $display("FAILED - always3.1.6C - casez 0 at %t",$time);
@@ -42,7 +42,7 @@ initial
            value1 = 4'b00z1 ;	// Set at time 9.
 
            #5 ;					// Check at time 14
-           $display("check == 0001:at time=%t value2=%x",$time,value2);
+           $display("check == 0001:at time=%t value2=%h",$time,value2);
            if(value2 != 4'b0001)
              begin
                 $display("FAILED - always3.1.6C - casez z1 at %t",$time);
@@ -52,7 +52,7 @@ initial
            value1 = 4'b0100;	// Changed at time 15.
       
            #5;					// Check at time 20...
-           $display("check == 0010:at time=%t value2=%x",$time,value2);
+           $display("check == 0010:at time=%t value2=%h",$time,value2);
            if(value2 != 4'b0010)
              begin
                 $display("FAILED - always3.1.6C - casez 4 at %t",$time);

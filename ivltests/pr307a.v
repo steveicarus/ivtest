@@ -13,9 +13,9 @@ module top;
       integer   errors;
       begin
       out2 = in1 + in2;
-      $display("\n   %x\n+  %x", in1,in2);
-      $display("= %x", out1);
-      $display("= %x", out2);
+      $display("\n   %h\n+  %h", in1,in2);
+      $display("= %h", out1);
+      $display("= %h", out2);
       if (out1 != out2)
 	begin
            $display("MISMATCH");

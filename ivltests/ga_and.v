@@ -46,7 +46,7 @@ initial
             #1 ;
             if(out !== rslt)
               begin  // {
-                 $display("FAILED - GA And a=%x,b=%x,expct=%x - rcvd=%x",
+                 $display("FAILED - GA And a=%h,b=%h,expct=%h - rcvd=%h",
                            a,b,rslt,out);
                  error = 1; 
               end // } 
