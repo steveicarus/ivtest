@@ -414,3 +414,5 @@ varlsfht normal ivltests  # variable << in wire
 varrshft1 normal ivltests # variable >> in always
 varrshft2 normal ivltests # variable >> in function
 varrshft normal ivltests  # variable >> in wire
+select	normal	ivltests # structural word select
+select2	normal	ivltests # structural bit select
