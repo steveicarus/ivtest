@@ -26,10 +26,8 @@ wire t0, t1, t2, t3, t4, t5, t6, t7,
 reg failed;
 wire StH, StL;
 
-assign (strong1, strong0) StH = 1'b1;
-assign (strong1, highz0)  StH = 1'b0;
-assign (highz1,  strong0) StL = 1'b1;
-assign (strong1, strong0) StL = 1'b0;
+assign (strong1, highz0)  StH = 1'bx;
+assign (highz1,  strong0) StL = 1'bx;
 
 bufif1 b0 ( t0,  gnd,  gnd);
 bufif1 b1 ( t1,  gnd,  vdd);

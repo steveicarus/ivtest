@@ -26,10 +26,8 @@ reg failed;
 
 wire StH, StL;
 
-assign (strong1, strong0) StH = 1'b1;
-assign (strong1, highz0)  StH = 1'b0;
-assign (highz1,  strong0) StL = 1'b1;
-assign (strong1, strong0) StL = 1'b0;
+assign (strong1, highz0)  StH = 1'bx;
+assign (highz1,  strong0) StL = 1'bx;
 
 
 notif0 n0 ( t0,  gnd,  gnd);
