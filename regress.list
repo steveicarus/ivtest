@@ -545,3 +545,4 @@ pr509		normal	ivltests
 pr509b		normal	ivltests
 pr511		normal	ivltests
 pr513		normal	ivltests
+csae3           normal,-S ivltests # First Synth test
