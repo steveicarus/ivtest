@@ -8,3 +8,4 @@ scanmem3  vpi	scanmem3.cc	scanmem3	scanmem3.v
 pokevent  vpi	pokevent.cc	pokevent	pokevent.v
 pokereg   vpi	pokereg.cc	pokereg		pokereg.v
 memwide   vpi	memwide.cc	memwide		memwide.v
+scopes	  vpi	scopes.c	scopes		scopes.v
