@@ -9,3 +9,5 @@ sub8 sub8_tb  virtex  XC2S15-VQ100  -
 sub8 sub8_tb  virtex2 XC2V40        -
 sqrt sqrt_tb  virtex  XC2S15-VQ100  -
 sqrt sqrt_tb  virtex2 XC2V40-CS144  -
+timer timer_tb  virtex  XC2S15  -
+timer timer_tb  virtex2 XC2V40  -
