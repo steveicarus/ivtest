@@ -228,6 +228,7 @@ ga_nor normal ivltests
 constmult normal ivltests
 constadd normal ivltests
 constadd2 normal ivltests
+constadd3 normal ivltests
 consttern normal ivltests
 qmark6  normal ivltests
 muxtest normal ivltests	# Validates that X sel and inputs same, output not X
