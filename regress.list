@@ -400,11 +400,17 @@ assign_neq normal ivltests # continuous assign with !=
 assign_deq normal ivltests # continuous assign with ==
 assign_ge normal ivltests # continuous assign with >=
 assign_le normal ivltests # continuous assign with <=
-mangle normal ivltests # 
-mangle_1 normal ivltests # 
-rop normal ivltests # 
+mangle normal ivltests    # 
+mangle_1 normal ivltests  # 
+rop normal ivltests       # 
 task_scope normal ivltests # 
 hello1	normal	ivltests
 hierspace normal ivltests # whitespace.around .dots. in. hierachical .names
-dotinid normal ivltests # escaped names with . dots
-eeq normal ivltests # === and !== in structural context
+dotinid normal ivltests   # escaped names with . dots
+eeq normal ivltests       # === and !== in structural context
+varlsfht1 normal ivltests # variable << in always
+varlsfht2 normal ivltests # variable << in function
+varlsfht normal ivltests  # variable << in wire
+varrshft1 normal ivltests # variable >> in always
+varrshft2 normal ivltests # variable >> in function
+varrshft normal ivltests  # variable >> in wire
