@@ -23,6 +23,9 @@
 # 3/25/2001  SDW   Modified sregress.pl script to run vvp.
 # 4/13/2001  SDW   Added CORE DUMP detection
 # $Log: vvp_reg.pl,v $
+# Revision 1.16  2002/08/18 17:00:33  ka6s
+# Changed arguments to cmp to "cmp -i $ignorebytes f1 f2" from "cmp f1 f2 $ignorebytes $ignorebytes"
+#
 # Revision 1.15  2002/08/10 14:58:17  ka6s
 # Added -S option detection. So normal,-S will cause a -S flag.
 #
@@ -349,7 +352,7 @@ sub check_results {
       system("rm -rf ./dfile");	
       ($out_file,$gold_file,$ignbytes) = split(/:/,$diff_file);
       if( $ignbytes ne "" ) {
-        system("cmp $out_file $gold_file $ignbytes $ignbytes > ./dfile");
+        system("cmp -i $ignbytes $out_file $gold_file > ./dfile");
       } else {
         system("diff $out_file $gold_file > ./dfile");
       }
