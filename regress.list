@@ -546,6 +546,7 @@ pr509		normal	ivltests
 pr509b		normal	ivltests
 pr511		normal	ivltests
 pr513		normal	ivltests
+pr519		normal,-S ivltests
 pr522		normal	ivltests diff=log/pr522.log:gold/pr522.gold
 pr524		normal	ivltests diff=log/pr524.log:gold/pr524.gold
 case1           normal,-S ivltests # First Synth test
