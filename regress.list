@@ -210,6 +210,7 @@ udp_bufg2 normal ivltests
 udp_jkff normal	ivltests
 udp_x	normal	ivltests
 udp_bx	normal	ivltests gold=udp_bx.gold
+udp_sched	normal	ivltests
 wireadd1 normal ivltests
 wiremod1 normal ivltests
 wiresl normal ivltests
