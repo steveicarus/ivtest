@@ -482,4 +482,4 @@ escape2a CO	ivltests
 escape2b CO	ivltests
 escape2c CO	ivltests
 pr338   normal ivltests # pr 338 - constant zz
-shift1	normal	ivltests diff=log/shift1.log:gols/shift1.gold
+shift1	normal	ivltests diff=log/shift1.log:gold/shift1.gold
