@@ -29,11 +29,11 @@ module signed1();
 	x = 8'b0000_0011;
 	y = 8'b1111_1101;
 
-	$display("x = %d (should be 3)",x);
-	$display("y = %d (should be -3)",y);
+	$display("x = %0d (should be 3)",x);
+	$display("y = %0d (should be -3)",y);
 	
 	x = y;
-	$display("x = %d (should be 253)",x);
+	$display("x = %0d (should be 253)",x);
 	
 
      end

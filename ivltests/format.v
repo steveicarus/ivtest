@@ -5,7 +5,7 @@ module test;
    initial
      begin
         #1;
-        $display(">%d<", a);
+        $display(">%0d<", a);
         $display(">%4d<", a);
         $display(">%h<", a);
         $display(">%4h<", a);

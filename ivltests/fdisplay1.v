@@ -35,7 +35,7 @@ module fdisplay1;
       #5
 
       a = 8'h5a;
-      $fwrite(1, "a = %b at %t\n", a, $time);
+      $fwrite(1, "a = %b at %0t\n", a, $time);
                   
       $finish;
       
