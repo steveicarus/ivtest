@@ -196,8 +196,11 @@ time3 normal ivltests
 time4 normal ivltests
 time5 normal ivltests
 time6	normal	ivltests
+time7	normal	ivltests	gold=time7.gold
+time8	normal	ivltests
 timescale1	normal ivltests
 udp_bufg normal ivltests
+udp_x	normal	ivltests
 wireadd1 normal ivltests
 wiremod1 normal ivltests
 wiresl normal ivltests
@@ -267,6 +270,7 @@ idiv2		normal ivltests # Int div within an expression
 assign_mem1	normal ivltests #
 assign_mem2	normal ivltests # Const prop/dead signal elimination
 meminit		normal	ivltests
+mem1		normal	ivltests	gold=mem1.gold
 task_noop	normal ivltests # Task with no contents.
 scope1   	normal ivltests # scope of var into a task
 scope2   	normal ivltests # scope of var stops at module boundaries
@@ -279,6 +283,7 @@ param_times	normal ivltests #  param has multiplication.
 case3.8D	 normal ivltests #  test case for x and z exact match in labels.  
 function_exp normal ivltests # Cntrib by steve williams
 function1	normal	ivltests diff=log/function1.log:gold/function1.gold
+function2	normal	ivltests
 ifdef1		 normal ivltests #  ifdef with no define
 ifdef2		 normal ivltests #  ifdef with define
 ifdef3		 normal ivltests #  compound ifdef with 1 define
@@ -309,6 +314,7 @@ initmod		normal	ivltests diff=log/initmod.log:gold/initmod.gold
 initmod2      normal  ivltests diff=log/initmod2.log:gold/initmod2.gold
 bnot		normal	ivltests	# test triggered an overzealous assert in vvm
 stask_parm1		normal	ivltests	# 
+stask_parm2	normal	ivltests	gold=stask_parm2.gold
 task_inpad 		normal	ivltests	# 
 task_omemw2     normal	ivltests	# 
 unary_lnot1      normal	ivltests	# 

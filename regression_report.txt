@@ -155,8 +155,11 @@ Test Results:
                          time4 passed
                          time5 passed
                          time6 passed
+                         time7 passed
+                         time8 passed
                     timescale1 passed
                       udp_bufg passed
+                         udp_x passed
                       wireadd1 passed
                       wiremod1 passed
                         wiresl passed
@@ -226,6 +229,7 @@ Test Results:
                    assign_mem1 passed
                    assign_mem2 passed
                        meminit passed
+                          mem1 execution failed
                      task_noop passed
                         scope1 passed
                         scope2 passed
@@ -238,6 +242,7 @@ Test Results:
                       case3.8D passed
                   function_exp had elaboration errors:
                      function1 passed
+                     function2 passed
                         ifdef1 passed
                         ifdef2 passed
                         ifdef3 passed
@@ -267,6 +272,7 @@ Test Results:
                       initmod2 passed
                           bnot passed
                    stask_parm1 passed
+                   stask_parm2 passed
                     task_inpad passed
                    task_omemw2 passed
                    unary_lnot1 passed
@@ -303,4 +309,15 @@ Test Results:
                         ga_mod had elaboration errors:had unsupported features
                        ga_mod1 had elaboration errors:had unsupported features
                        signed1 passed
-Tests passed: 283, Parse Errors: 1, Unsupported: 6, failed execution, 7, crashed: 0, C Compiler errors: 5 total: 307
+                    param_expr has C Compiler problem
+                    param_and2 has C Compiler problem
+                    param_band has C Compiler problem
+                     param_bor has C Compiler problem
+                     param_eq3 has C Compiler problem
+                    param_binv has C Compiler problem
+                     param_add passed
+                     param_mod has C Compiler problem
+                      integer5 has C Compiler problem
+                       signed2 execution failed
+                       signed3 execution failed
+Tests passed: 289, Parse Errors: 1, Unsupported: 6, failed execution, 10, crashed: 0, C Compiler errors: 13 total: 324
