@@ -1,5 +1,6 @@
 Clearing SRAM.
 SYNTHETIC PIC 2.0.  This is TEST #9
+$readmemh(contrib/TEST9.ROM): too much data (addr=0x200)
 50: portc changes to: 00
 50: portb changes to: 00
 1650: portb changes to: 07
