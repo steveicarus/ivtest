@@ -477,3 +477,4 @@ pr355	normal	ivltests
 ram16x1 normal ivltests # Sitting here for a long time?
 sched1  normal ivltests # 
 pr273   normal ivltests # Non-constant bit select in ordered list.
+escape1 normal ivltests # \$modulename in defparam and if()
