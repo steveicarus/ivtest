@@ -353,3 +353,6 @@ param_eq3  normal  ivltests  # Bit equiv in param declar
 param_binv normal  ivltests  # Bit vector inv in param declar
 param_add  normal  ivltests  # Addition in param declar
 param_mod  normal  ivltests  # Modulus in param declar
+integer5  normal  ivltests  # 
+signed2  normal  ivltests  # 
+signed3  normal  ivltests  # 
