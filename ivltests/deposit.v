@@ -17,7 +17,7 @@
  *    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
  */
 
-// $Id: deposit.v,v 1.3 2001/05/19 13:51:15 ka6s Exp $
+// $Id: deposit.v,v 1.4 2001/11/22 04:36:33 sib4 Exp $
 
 // Test for vpi_put_value() to properly propagate in structural context.
 
@@ -106,7 +106,9 @@ endmodule
 module dffe (CK, E, D,  Q);
    input  CK, E, D;
    output Q;
-   UDP_dffe ff (Q, CK, E, D);
+   wire   qq;
+   UDP_dffe ff (qq, CK, E, D);
+   buf #1 (Q, qq);
 endmodule
 
 primitive UDP_dffe (q,  cp, e, d);
