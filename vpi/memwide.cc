@@ -62,6 +62,7 @@ CallbackPeek(s_cb_data * data)
 	if((handle=findMem("my_mem"))) {
 		unsigned size=vpi_get(vpiSize,handle);
 		vpi_printf("!!!C++:    %s size is %d\n",vpi_get_str(vpiName,handle),size);
+		vpi_printf("!!!C++:    fullname is %s\n", vpi_get_str(vpiFullName,handle));
 
 		s_vpi_value value;
 
@@ -84,6 +85,7 @@ static vpiHandle
 findReg(char *name_)
 {
 	vpiHandle mod_i, mod_h, reg_i, reg_h = NULL;
+	char full[8096];
 
 	// get top module handle
 	mod_i = vpi_iterate(vpiModule, NULL);
@@ -94,8 +96,12 @@ findReg(char *name_)
 		reg_i = vpi_iterate(vpiReg, mod_h);
 		if (reg_i != NULL) {
 			while ((reg_h = vpi_scan(reg_i))) {
-				if (!strcmp(name_, vpi_get_str(vpiName, reg_h))) {
-					break;
+				if (!strcmp(name_,
+				    vpi_get_str(vpiName, reg_h))) {
+				    strcpy(full,vpi_get_str(vpiFullName,reg_h));
+				    vpi_printf("!!!C++:    %s fullname is %s\n",
+					vpi_get_str(vpiName,reg_h), full);
+				    break;
 				}
 			}
 		}
@@ -106,7 +112,8 @@ findReg(char *name_)
 static vpiHandle
 findMem(char *name_)
 {
-    vpiHandle mod_i, mod_h, hand, mem_i, mem_h = NULL;
+    vpiHandle mod_i, mod_h, hand, mem_i, word_i, mem_h = NULL;
+    char full[8096];
 
     mod_i = vpi_iterate(vpiModule, NULL);
     mod_h = vpi_scan(mod_i);
@@ -115,13 +122,18 @@ findMem(char *name_)
     if (mem_i != NULL) {
         while ((hand = vpi_scan(mem_i))) {
             if (!strcmp("my_mem", vpi_get_str(vpiName, hand))) {
+		strcpy(full,vpi_get_str(vpiFullName,hand));
+		vpi_printf("!!!C++:    %s fullname is %s\n",
+		    vpi_get_str(vpiName,hand), full);
                 mem_h = hand;
                 break;
             }
         }
     }
 
-    return (vpi_scan(vpi_iterate(vpiMemoryWord, mem_h)));
+    word_i = vpi_iterate(vpiMemoryWord, mem_h);
+    vpi_scan(word_i);
+    return vpi_scan(word_i);
 }
 
 static int SetupTrigger(s_cb_data * cb_data)
