@@ -64,10 +64,10 @@ module test;
 	    err = 1;
 	end
 
-	i = # 69  - 20 'd 255 + 1;
+	i = # 69  - 20 'd 255 + 20'd1;
 	#100;
-	if (i != -20'd254) begin
-	    $display("'d254 != %0d", i);
+	if (i[19:0] != 20'hf_ff_02) begin
+	    $display("- 'd254 != %0d (%h)", i, i);
 	    err = 1;
 	end
 
