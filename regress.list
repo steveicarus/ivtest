@@ -528,3 +528,5 @@ concat2	normal	ivltests # PR#282
 extend	normal	ivltests
 timeform1	normal	ivltests diff=log/timeform1.log:gold/timeform1.gold
 pr492		normal	ivltests diff=log/pr492.log:gold/pr492.gold
+pr498		normal	ivltests
+
