@@ -331,4 +331,5 @@ Test Results:
                        repeat1 passed
                   decl_assign1 passed
                         vector passed
-Tests passed: 307, Parse Errors: 2, Unsupported: 6, failed execution, 9, crashed: 0, C Compiler errors: 6 total: 335
+                          mcl1 passed
+Tests passed: 308, Parse Errors: 2, Unsupported: 6, failed execution, 9, crashed: 0, C Compiler errors: 6 total: 336
