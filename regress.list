@@ -574,6 +574,7 @@ shift1	normal	ivltests diff=log/shift1.log:gold/shift1.gold
 shift2	normal	ivltests
 shift3	normal	ivltests
 shift4	normal	ivltests
+shift5	normal	ivltests diff=log/shift5.log:gold/shift5.gold
 pr243	normal	ivltests diff=log/pr243.log:gold/pr243.gold
 dummy7	normal	ivltests diff=log/dummy7.log:gold/dummy7.gold
 time6b  normal  ivltests # Rewrote time6 to pass with XL
@@ -736,3 +737,4 @@ pr1033		normal  ivltests diff=log/pr1033.log:gold/pr1033.gold
 assign_add	normal	ivltests
 credence20041209 normal ivltests
 pr1065		normal	ivltests diff=log/pr1065.log:gold/pr1065.gold
+pr1072		normal	ivltests
