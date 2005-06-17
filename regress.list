@@ -374,6 +374,7 @@ tern2		CO	ivltests # make sure ?: is recognixed by -tnull
 tern3		normal ivltests diff=log/tern3.log:gold/tern3.gold
 tern4		normal	ivltests
 tern5		normal ivltests diff=log/tern5.log:gold/tern5.gold
+tern6		normal	ivltests
 readmemh5	CE		ivltests # Should be error for readmemh(romimg,rom[0:7])
 port-test2	normal  ivltests # Port declaration syntax checks
 port-test3	CE  ivltests # Port declaration syntax checks
