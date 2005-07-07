@@ -668,6 +668,7 @@ real4		normal  ivltests
 real5		normal	ivltests diff=log/real5.log:gold/real5.gold
 real6		normal  ivltests
 real7		normal  ivltests
+real8		normal  ivltests
 realtobits	normal	ivltests
 negvalue	normal	ivltests diff=log/negvalue.log:gold/negvalue.gold
 pr434		normal	ivltests diff=log/pr434.log:gold/pr434.gold
@@ -744,6 +745,6 @@ assign_add	normal	ivltests
 credence20041209 normal ivltests
 pr1065		normal	ivltests diff=log/pr1065.log:gold/pr1065.gold
 pr1072		normal	ivltests
-pr1077		normal	ivltests diff=log/pr1077.log:gold/pr1077.gold
+pr1077		normal,-g2	ivltests diff=log/pr1077.log:gold/pr1077.gold
 pr1087		normal	ivltests
 pr1101		normal	ivltests
