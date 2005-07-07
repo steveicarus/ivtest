@@ -17,7 +17,14 @@
 //    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 //
 // Validates Non-blocking assignment propagation
-// $Id: nblkpush.v,v 1.1 2001/10/27 03:04:44 sib4 Exp $
+// $Id: nblkpush.v,v 1.2 2005/07/07 16:25:20 stevewilliams Exp $
+
+// Update: This test has a race in it that makes it not valid. The
+// assumption that a blocking assign will push through the continuous
+// assignment before the thread doing the assign is allowed to advance
+// is not valid. This test only passes Verilog XL. Every other tool,
+// commercial or otherwise, seems to FAIL this test. Therefore, this
+// test should not be relied on.
 
 module test;
 
