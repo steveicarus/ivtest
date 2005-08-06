@@ -263,6 +263,7 @@ rptconcat2	normal ivltests # Repeat concatenation operation.
 gencrc		normal contrib  # 32/16 bit crc 
 onehot		normal contrib	# one hot design
 inout		normal ivltests # modname(a,a); inout a;
+inout2		normal ivltests
 modparam	normal ivltests top # Overide parameter via passed down value
 modulus		normal ivltests # wire % and reg % operators 
 modulus2	normal ivltests # reg % operators 
