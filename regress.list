@@ -661,6 +661,8 @@ basicexpr2      normal,-S ivltests # First Synth test
 basicexpr3      normal,-S ivltests # First Synth test
 basicexpr4      normal,-S ivltests # First Synth test
 shiftl		normal,-S ivltests
+blocksynth1	normal,-S ivltests
+blocksynth2	normal,-S ivltests
 busbug		normal	ivltests diff=log/busbug.log:gold/busbug.gold
 real		normal  ivltests
 real2		normal  ivltests
