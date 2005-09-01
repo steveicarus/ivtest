@@ -31,13 +31,13 @@ module main;
       b <= 0;
       c <= 1.0;
       d <= 2.0;
-      #1 if (a !== 2.0) begin
+      #1 if (a != 2.0) begin
 	 $display("FAILED (1)");
 	 $finish;
       end
 
       b <= 1;
-      #1 if (a !== 1.0) begin
+      #1 if (a != 1.0) begin
 	 $display("FAILED (2)");
 	 $finish;
       end
