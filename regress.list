@@ -231,6 +231,7 @@ ga_xor normal ivltests
 ga_xnor normal ivltests
 ga_nand normal ivltests
 ga_nor normal ivltests
+andnot1 normal ivltests
 constmult normal ivltests
 constadd normal ivltests
 constadd2 normal ivltests
