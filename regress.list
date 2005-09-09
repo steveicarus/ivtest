@@ -215,6 +215,7 @@ udp_jkff normal	ivltests
 udp_x	normal	ivltests
 udp_bx	normal	ivltests gold=udp_bx.gold
 udp_sched	normal	ivltests
+udp_dff	normal	ivltests
 wireadd1 normal ivltests
 wiremod1 normal ivltests
 wiresl normal ivltests
@@ -677,6 +678,7 @@ real5		normal	ivltests diff=log/real5.log:gold/real5.gold
 real6		normal  ivltests
 real7		normal  ivltests
 real8		normal  ivltests
+real9		normal  ivltests
 realtobits	normal	ivltests
 negvalue	normal	ivltests diff=log/negvalue.log:gold/negvalue.gold
 pr434		normal	ivltests diff=log/pr434.log:gold/pr434.gold
