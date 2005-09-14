@@ -381,6 +381,7 @@ tern5		normal ivltests diff=log/tern5.log:gold/tern5.gold
 tern6		normal	ivltests
 tern7		normal	ivltests
 tern8		normal	ivltests
+tern9		normal	ivltests
 readmemh5	CE		ivltests # Should be error for readmemh(romimg,rom[0:7])
 port-test2	normal  ivltests # Port declaration syntax checks
 port-test3	CE  ivltests # Port declaration syntax checks
@@ -679,6 +680,7 @@ real6		normal  ivltests
 real7		normal  ivltests
 real8		normal  ivltests
 real9		normal  ivltests
+bool1		normal	ivltests
 realtobits	normal	ivltests
 negvalue	normal	ivltests diff=log/negvalue.log:gold/negvalue.gold
 pr434		normal	ivltests diff=log/pr434.log:gold/pr434.gold
