@@ -348,6 +348,7 @@ wireland	normal ivltests # assign a && (b ? 0 : 1) (pmonta)
 param_concat normal ivltests #  param has concat value (pmonta)
 param_select	normal	ivltests # bit and part select of parameters.
 param_select2	normal	ivltests # bit and part select of parameters.
+param_select3	normal	ivltests # bit and part select of parameters.
 param_times	normal ivltests #  param has multiplication.
 case3.8D	 normal ivltests #  test case for x and z exact match in labels.  
 function_exp normal ivltests # Cntrib by steve williams
@@ -451,6 +452,7 @@ param_binv normal  ivltests  # Bit vector inv in param declar
 param_add  normal  ivltests  # Addition in param declar
 param_mod  normal  ivltests  # Modulus in param declar
 param_tern normal  ivltests
+param_tern2 normal  ivltests
 param_test1 normal ivltests diff=log/param_test1.log:gold/param_test1.gold
 param_test2 normal ivltests diff=log/param_test2.log:gold/param_test2.gold
 param_test3 CO	ivltests # PR#293
