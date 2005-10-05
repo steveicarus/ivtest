@@ -525,6 +525,7 @@ select	normal	ivltests # structural word select
 select2	normal	ivltests # structural bit select
 select3 normal	ivltests diff=log/select3.log:gold/select3.gold
 select4	normal	ivltests # structural bit select
+select5	normal	ivltests # structural bit select
 monitor		normal	ivltests diff=log/monitor.log:gold/monitor.gold
 monitor2	normal	ivltests diff=log/monitor2.log:gold/monitor2.gold
 monitor3	normal	ivltests diff=log/monitor3.log:gold/monitor3.gold
