@@ -695,6 +695,7 @@ pr678		normal	ivltests
 pr685		normal,-S ivltests
 pr690		normal	ivltests
 pr693		normal  ivltests diff=log/pr693.log:gold/pr693.gold
+pr699		normal	ivltests
 pr704		normal	ivltests # Uses ivltests/pr704.hex
 pr707		normal	ivltests
 pr708		normal	ivltests
