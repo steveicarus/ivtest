@@ -612,6 +612,7 @@ timeform2	normal	ivltests diff=log/timeform2.log:gold/timeform2.gold
 pr183		CO	ivltests
 pr245		normal	ivltests diff=log/pr245.log:gold/pr245.gold
 pr377		normal	ivltests diff=log/pr377.log:gold/pr377.gold
+pr478		normal	ivltests
 pr487		normal	ivltests diff=log/pr487.log:gold/pr487.gold
 pr492		normal	ivltests diff=log/pr492.log:gold/pr492.gold
 pr498		normal	ivltests
@@ -650,6 +651,7 @@ pr572b		normal	ivltests diff=log/pr572b.log:gold/pr572.gold
 pr578		normal	ivltests
 pr584		normal	ivltests diff=log/pr584.log:gold/pr584.gold
 pr585		normal	ivltests
+pr587		normal	ivltests
 pr590		normal	ivltests diff=log/pr590.log:gold/pr590.gold
 pr594		normal	ivltests diff=log/pr594.log:gold/pr594.gold
 pr596		normal	ivltests diff=log/pr596.log:gold/pr596.gold
