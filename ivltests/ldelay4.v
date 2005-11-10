@@ -17,7 +17,7 @@
  *    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
  */
 
-// $Id: ldelay4.v,v 1.1 2001/12/26 23:45:57 sib4 Exp $
+// $Id: ldelay4.v,v 1.2 2005/11/10 01:56:32 stevewilliams Exp $
 
 // Test for delays in structural logic.  Differential clock receiver UDP.
 
@@ -34,7 +34,7 @@ module test;
 	error = 0;
 	#2;
 	forever @(e)
-	  begin
+	  if (e !== 1'bx) begin // Fail on anything other then x.
 	     error = 1;
 	     $display("%0d: FAILED: e=%b", $time, e);
 	  end

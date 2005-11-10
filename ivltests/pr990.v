@@ -14,7 +14,7 @@ initial begin
   x = 0;
   #0;
   $display("y: %b", y);
-  if (y === 1'b0)
+  if (y === 1'b1) // if x is 0, then x==0 is 1.
     $display("PASSED");
   else
     $display("FAILED");
