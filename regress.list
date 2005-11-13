@@ -664,6 +664,9 @@ case1           normal,-S ivltests # First Synth test
 case2           normal,-S ivltests # First Synth test
 case3           normal,-S ivltests # First Synth test
 case4           normal,-S ivltests # First Synth test
+case5           normal,-S ivltests # First Synth test
+case6           normal,-S ivltests # First Synth test
+case7           normal,-S ivltests # First Synth test
 basicreg        normal,-S ivltests # First Synth test
 basiclatch      normal,-S ivltests # First Synth test
 basicstate      normal,-S ivltests # First Synth test
