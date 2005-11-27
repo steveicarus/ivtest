@@ -626,6 +626,7 @@ pr513		normal	ivltests
 pr519		normal,-S ivltests
 pr522		normal	ivltests diff=log/pr522.log:gold/pr522.gold
 pr524		normal	ivltests diff=log/pr524.log:gold/pr524.gold
+pr527		normal	ivltests diff=log/pr527.log:gold/pr527.gold
 pr528		normal	ivltests diff=log/pr528.log:gold/pr528.gold
 pr528b		normal	ivltests diff=log/pr528b.log:gold/pr528b.gold
 pr529		normal	ivltests
