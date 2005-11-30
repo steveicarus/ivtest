@@ -774,4 +774,5 @@ pr1077		normal,-g2	ivltests diff=log/pr1077.log:gold/pr1077.gold
 pr1087		normal	ivltests
 pr1101		normal	ivltests
 pr1115		normal	ivltests
+pr1367855	normal	ivltests
 types1		normal	ivltests
