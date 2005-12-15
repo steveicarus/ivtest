@@ -682,7 +682,9 @@ shiftl		normal,-S ivltests
 blocksynth1	normal,-S ivltests
 blocksynth2	normal,-S ivltests
 blocksynth3	normal,-S ivltests
+conditsynth1	normal,-S ivltests
 lcatsynth	normal,-S ivltests
+dffsynth	normal,-S ivltests
 busbug		normal	ivltests diff=log/busbug.log:gold/busbug.gold
 real		normal  ivltests
 real2		normal  ivltests
@@ -776,4 +778,5 @@ pr1087		normal	ivltests
 pr1101		normal	ivltests
 pr1115		normal	ivltests
 pr1367855	normal	ivltests
+pr1380261	normal  ivltests
 types1		normal	ivltests
