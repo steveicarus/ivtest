@@ -686,6 +686,7 @@ conditsynth1	normal,-S ivltests
 conditsynth2	normal,-S ivltests
 conditsynth3	normal,-S ivltests
 casesynth1	normal,-S ivltests
+casesynth2	normal,-S ivltests
 lcatsynth	normal,-S ivltests
 dffsynth	normal,-S ivltests
 sqrt32synth	normal,-S ivltests
