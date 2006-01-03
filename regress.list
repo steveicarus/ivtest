@@ -338,6 +338,8 @@ assign_nb2  normal ivltests # Assign a constant to a single bit array (pmonta)
 assign_delay	normal ivltests # continuous assign with a delay
 delay		normal ivltests diff=log/delay.log:gold/delay.gold
 delay2	normal ivltests
+delay3	normal ivltests
+delay4	normal ivltests
 delay_assign_nb	normal ivltests
 delay_assign_nb2	normal ivltests
 ldelay1	normal ivltests
