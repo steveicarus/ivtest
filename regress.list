@@ -340,6 +340,7 @@ delay		normal ivltests diff=log/delay.log:gold/delay.gold
 delay2	normal ivltests
 delay3	normal ivltests
 delay4	normal ivltests
+delay5	normal ivltests
 delay_assign_nb	normal ivltests
 delay_assign_nb2	normal ivltests
 ldelay1	normal ivltests
