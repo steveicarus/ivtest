@@ -690,12 +690,14 @@ conditsynth2	normal,-S ivltests
 conditsynth3	normal,-S ivltests
 casesynth1	normal,-S ivltests
 casesynth2	normal,-S ivltests
+casesynth3	normal,-S ivltests
 lcatsynth	normal,-S ivltests
 dffsynth	normal,-S ivltests
 sqrt32synth	normal,-S ivltests
 sqrt32		normal	ivltests
 ssetclr1	normal,-S ivltests
 ssetclr2	normal,-S ivltests
+ssetclr3	normal,-S ivltests
 busbug		normal	ivltests diff=log/busbug.log:gold/busbug.gold
 real		normal  ivltests
 real2		normal  ivltests
