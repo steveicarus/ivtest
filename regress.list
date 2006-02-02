@@ -530,6 +530,9 @@ select2	normal	ivltests # structural bit select
 select3 normal	ivltests diff=log/select3.log:gold/select3.gold
 select4	normal	ivltests # structural bit select
 select5	normal	ivltests # structural bit select
+select6	normal	ivltests
+select7	normal	ivltests
+select8	normal	ivltests
 monitor		normal	ivltests diff=log/monitor.log:gold/monitor.gold
 monitor2	normal	ivltests diff=log/monitor2.log:gold/monitor2.gold
 monitor3	normal	ivltests diff=log/monitor3.log:gold/monitor3.gold
@@ -708,6 +711,7 @@ real6		normal  ivltests
 real7		normal  ivltests
 real8		normal  ivltests
 real9		normal  ivltests
+real10		normal  ivltests
 bool1		normal	ivltests
 realtobits	normal	ivltests
 negvalue	normal	ivltests diff=log/negvalue.log:gold/negvalue.gold
