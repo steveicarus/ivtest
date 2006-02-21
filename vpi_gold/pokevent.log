@@ -1,3 +1,6 @@
+Compiling vpi/pokevent.cc...
+Making pokevent.vpi from  pokevent.o...
+!!!C++:     Registering Callbacks
 r_Poke recieved @ 0
 e_Peek asserted @ 10
  callback
