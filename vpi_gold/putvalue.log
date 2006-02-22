@@ -1,5 +1,7 @@
 Compiling vpi/putvalue.c...
 Making putvalue.vpi from  putvalue.o...
+<monitor> r = x
+<display> r = 0 @ 0
 <monitor> r = 0
 <display> r = 1 @ 1000
 <monitor> r = 1
