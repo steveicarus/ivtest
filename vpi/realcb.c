@@ -17,7 +17,7 @@
  *    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
  */
 #ifdef HAVE_CVS_IDENT
-#ident "$Id: realcb.c,v 1.1 2003/02/10 05:14:13 stevewilliams Exp $"
+#ident "$Id: realcb.c,v 1.2 2006/02/22 03:06:12 stevewilliams Exp $"
 #endif
 
 /*
@@ -64,6 +64,7 @@ static int my_watchreal_calltf(char *xx)
 	    cb.cb_rtn = watchreal_cb;
 	    cb.time = &time;
 	    cb.obj = arg;
+	    cb.value = 0;
 	    cb.user_data = (char*)arg;
 	    vpi_register_cb(&cb);
 
@@ -92,6 +93,9 @@ void (*vlog_startup_routines[])() = {
 
 /*
  * $Log: realcb.c,v $
+ * Revision 1.2  2006/02/22 03:06:12  stevewilliams
+ *  Add a missing initialization of value.
+ *
  * Revision 1.1  2003/02/10 05:14:13  stevewilliams
  *  Add the vpi/realcb test.
  *
