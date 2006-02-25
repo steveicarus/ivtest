@@ -696,6 +696,7 @@ casesynth2	normal,-S ivltests
 casesynth3	normal,-S ivltests
 lcatsynth	normal,-S ivltests
 dffsynth	normal,-S ivltests
+dffsynth2	normal,-S ivltests
 sqrt32synth	normal,-S ivltests
 sqrt32		normal	ivltests
 memsynth2	normal,-S ivltests
