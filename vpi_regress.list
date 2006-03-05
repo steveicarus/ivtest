@@ -25,3 +25,4 @@ getp      vpi	getp.c		getp		getp.v
 putp      vpi	putp.c		putp		putp.v
 putp2     vpi	putp2.c		putp2		putp2.v
 mipname   vpi	mipname.c	mipname		mipname.v
+memmon    vpi	memmon.c	memmon		memmon.v
