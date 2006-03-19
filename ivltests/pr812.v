@@ -8,7 +8,7 @@
 // Top level module
 //
 module top();
-	parameter tp = 1;
+	parameter tp = 'd1;
 
 	reg a;
 	wire b;
