@@ -814,3 +814,5 @@ pr1465769	normal	ivltests
 types1		normal	ivltests
 genloop		normal	ivltests
 pr1467825	CO	ivltests
+pr1455873	normal	ivltests
+pr1474316	normal	ivltests
