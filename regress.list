@@ -816,3 +816,6 @@ genloop		normal	ivltests
 pr1467825	CO	ivltests
 pr1455873	normal	ivltests
 pr1474316	normal	ivltests
+pr1474318	normal	ivltests
+pr1476440	normal	ivltests diff=log/pr1476440.log:gold/pr1476440.gold
+pr1478121	normal	ivltests
