@@ -250,6 +250,7 @@ unary_minus	normal ivltests # Unary minus -(vect)
 unary_minus1	normal ivltests # From 272 directly.
 unary_minus2	normal ivltests
 unary_minus3	normal ivltests
+unary_minus4	normal ivltests
 unary_nand	normal ivltests # Unary nand ~&(vect)
 unary_nand2	normal ivltests # Unary nand ~&(vect)
 unary_not	normal ivltests # Unary not ~
@@ -825,3 +826,4 @@ pr1474318	normal	ivltests
 pr1476440	normal	ivltests diff=log/pr1476440.log:gold/pr1476440.gold
 pr1478121	normal	ivltests
 pr1478988	normal	ivltests
+pr1492075	normal	ivltests diff=log/pr1492075.log:gold/pr1492075.gold
