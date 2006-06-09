@@ -715,6 +715,8 @@ ssetclr1	normal,-S ivltests
 ssetclr2	normal,-S ivltests
 ssetclr3	normal,-S ivltests
 partselsynth	normal,-S ivltests
+inside_synth	normal,-S ivltests
+inside_synth2	normal,-S ivltests
 busbug		normal	ivltests diff=log/busbug.log:gold/busbug.gold
 real		normal  ivltests
 real2		normal  ivltests
