@@ -733,6 +733,7 @@ real7		normal  ivltests
 real8		normal  ivltests
 real9		normal  ivltests
 real10		normal  ivltests
+real11		normal  ivltests
 bool1		normal	ivltests
 realtobits	normal	ivltests
 negvalue	normal	ivltests diff=log/negvalue.log:gold/negvalue.gold
