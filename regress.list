@@ -822,6 +822,7 @@ pr1444055	normal  ivltests
 pr1449749a	normal	ivltests
 pr1353345	normal	ivltests
 pr1353345b	normal	ivltests
+pr1388974	normal	ivltests
 pr1421777	normal	ivltests
 pr1465769	normal	ivltests
 types1		normal	ivltests
@@ -833,6 +834,7 @@ pr1474283	normal	ivltests
 pr1474316	normal	ivltests
 pr1474318	normal	ivltests
 pr1476440	normal	ivltests diff=log/pr1476440.log:gold/pr1476440.gold
+pr1477190	normal	ivltests
 pr1478121	normal	ivltests
 pr1478988	normal	ivltests
 pr1489570	normal	ivltests
@@ -841,4 +843,5 @@ pr1492075	normal	ivltests diff=log/pr1492075.log:gold/pr1492075.gold
 pr1494799	normal	ivltests diff=log/pr1494799.log:gold/pr1494799.gold
 pr1515168	normal	ivltests
 pr1522570	normal	ivltests
+pr1528093	normal	ivltests
 pr1530426	normal	ivltests
