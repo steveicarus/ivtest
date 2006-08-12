@@ -829,6 +829,7 @@ types1		normal	ivltests
 genloop		normal	ivltests
 scanf		normal	ivltests
 scanf2		normal	ivltests
+scanf3		normal	ivltests
 pr1467825	CO	ivltests
 pr1455873	normal	ivltests
 pr1474283	normal	ivltests
