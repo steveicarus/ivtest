@@ -722,6 +722,7 @@ inside_synth2	normal,-S ivltests
 inside_synth3	normal,-S ivltests
 mix_reset	normal,-S ivltests
 casex_synth	normal,-S ivltests
+full_case	normal,-S ivltests
 busbug		normal	ivltests diff=log/busbug.log:gold/busbug.gold
 real		normal  ivltests
 real2		normal  ivltests
@@ -847,3 +848,4 @@ pr1515168	normal	ivltests
 pr1522570	normal	ivltests
 pr1528093	normal	ivltests
 pr1530426	normal	ivltests
+pr1561597	normal	ivltests
