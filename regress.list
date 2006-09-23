@@ -487,6 +487,7 @@ mcl2	 normal  ivltests diff=log/mcl2.log:gold/mcl2.gold
 comp1000 normal ivltests diff=log/comp1000.log:gold/comp1000.gold
 comp1001 normal ivltests
 specify1 CO	ivltests
+specify2 normal	ivltests
 deposit_wire	normal	ivltests
 specify_01 normal ivltests test # Yet another versio of specify
 deposit normal ivltests
