@@ -703,6 +703,7 @@ lcatsynth	normal,-S ivltests
 dffsynth	normal,-S ivltests
 dffsynth2	normal,-S ivltests
 dffsynth3	normal,-S ivltests
+dffsynth4	normal,-S ivltests
 sqrt32synth	normal,-S ivltests
 sqrt32		normal	ivltests
 memsynth1	normal,-S ivltests
@@ -714,6 +715,7 @@ memsynth6	normal,-S ivltests
 memsynth7	normal,-S ivltests
 memsynth8	normal,-S ivltests
 memsynth9	normal,-S ivltests
+ufuncsynth1	normal,-S ivltests
 ssetclr1	normal,-S ivltests
 ssetclr2	normal,-S ivltests
 ssetclr3	normal,-S ivltests
