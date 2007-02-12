@@ -621,7 +621,7 @@ concat2	normal	ivltests # PR#282
 extend	normal	ivltests
 timeform1	normal	ivltests diff=log/timeform1.log:gold/timeform1.gold
 timeform2	normal	ivltests diff=log/timeform2.log:gold/timeform2.gold
-pr183		CO	ivltests
+pr183		CO,-gno-specify	ivltests
 pr245		normal	ivltests diff=log/pr245.log:gold/pr245.gold
 pr377		normal	ivltests diff=log/pr377.log:gold/pr377.gold
 pr478		normal	ivltests
@@ -834,7 +834,7 @@ genloop		normal	ivltests
 scanf		normal	ivltests
 scanf2		normal	ivltests
 scanf3		normal	ivltests
-pr1467825	CO	ivltests
+pr1467825	CO,-gno-specify	ivltests
 pr1455873	normal	ivltests
 pr1474283	normal	ivltests
 pr1474316	normal	ivltests

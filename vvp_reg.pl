@@ -23,6 +23,9 @@
 # 3/25/2001  SDW   Modified sregress.pl script to run vvp.
 # 4/13/2001  SDW   Added CORE DUMP detection
 # $Log: vvp_reg.pl,v $
+# Revision 1.18  2007/02/12 01:49:11  stevewilliams
+#  Pass -gno-specify to certain CO specify tests.
+#
 # Revision 1.17  2005/07/07 16:24:21  stevewilliams
 #  Allow -g2 and -g2x flags on command line.
 #
@@ -225,11 +228,12 @@ sub execute_regression {
         # as the FIRST test in the list for this to work. 
         #
 
-        if($testtype{$testname} ne "CO") {	# Capture ONLY
+        if($testtype{$testname} =~ /^CO/) {	# Capture ONLY
+        } else {
             $versw = $old_versw ;			# the non-compile only
         }									# command here.
          
-        if(($testtype{$testname} eq "CO") ||
+        if(($testtype{$testname} =~ /^CO/) ||
            ($testtype{$testname} eq "CN")) {
              if($testtype{$testname} eq "CN") {
                   $versw = "-t null";
@@ -249,7 +253,11 @@ sub execute_regression {
         } else {
 	     if($testtype{$testname} =~ /-g2/) {
                   $versw = $versw." -g2";
-             }
+             } else {
+		if ($testtype{$testname} =~ /-gno-specify/) {
+			$versw = $versw." -gno-specify";
+		}
+	     }
         }
          
         #
@@ -274,7 +282,7 @@ sub execute_regression {
   
         if(($rc == 0) && ($comp_name eq "IVL")) {
               if( -e "simv") {
-                 if(!($testtype{$testname} eq "CO" ) &&
+                 if(!($testtype{$testname} =~ /^CO/ ) &&
                     !($testtype{$testname} eq "CN" ) && 
                     !($testtype{$testname} eq "CE" )) {
                    system ("rm -rf core");
@@ -440,7 +448,7 @@ sub check_results {
                $failed++;
             }
 
-            if($testtype{$testname} ne "CO") {
+            if(! ($testtype{$testname} =~ /^CO/)) {
               if ($result =~ "PASSED" ) {
                  printf REPORT "Ran-PASSED-"; 
                  $passed++;
