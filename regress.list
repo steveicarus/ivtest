@@ -866,9 +866,11 @@ pr1574175	normal	ivltests diff=log/pr1574175.log:gold/pr1574175.gold
 pr1581580	normal	ivltests
 pr1587634	CO	ivltests
 pr1587669	normal	ivltests diff=log/pr1587669.log:gold/pr1587669.gold
+pr1589497	normal	ivltests diff=log/pr1589497.log:gold/pr1589497.gold
 pr1598445	normal	ivltests
 pr1601896	normal	ivltests
 pr1601898	normal	ivltests
+pr1603313	normal	ivltests
 pr1603918	normal	ivltests
 pr1609611	normal	ivltests
 pr1612693	normal	ivltests
