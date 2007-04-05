@@ -23,6 +23,9 @@
 # 3/25/2001  SDW   Modified sregress.pl script to run vvp.
 # 4/13/2001  SDW   Added CORE DUMP detection
 # $Log: vvp_reg.pl,v $
+# Revision 1.19  2007/04/05 03:06:40  stevewilliams
+#  CE can take flags to pass to iverilog.
+#
 # Revision 1.18  2007/02/12 01:49:11  stevewilliams
 #  Pass -gno-specify to certain CO specify tests.
 #
@@ -284,7 +287,7 @@ sub execute_regression {
               if( -e "simv") {
                  if(!($testtype{$testname} =~ /^CO/ ) &&
                     !($testtype{$testname} eq "CN" ) && 
-                    !($testtype{$testname} eq "CE" )) {
+                    !($testtype{$testname} =~ /^CE/ )) {
                    system ("rm -rf core");
                    system ("vvp simv >> $lpath 2>&1 ");
                  } else {
@@ -397,7 +400,7 @@ sub check_results {
 
         printf REPORT "%30s ",$testname;
 
-	if(	($testtype{$testname} ne "CE") &&  
+	if(	!($testtype{$testname} =~ /^CE/) &&  
 	  ($testtype{$testname} ne "CN")) {
 	   # 
 	   # This section is true for all tests that execute - 
@@ -472,7 +475,7 @@ sub check_results {
             }
           
             printf REPORT "\n";
-        } elsif($testtype{$testname} eq "CE") {
+        } elsif($testtype{$testname} =~ /^CE/) {
             if($result =~ "COMPERR") {
                printf REPORT "CE-PASSED-\n";
                $passed++;
