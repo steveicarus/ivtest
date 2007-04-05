@@ -332,7 +332,7 @@ task_iotypes	normal ivltests # task ports with types.
 task_iotypes2	normal ivltests # task ports with types.
 scope1   	normal ivltests # scope of var into a task
 scope2   	normal ivltests # scope of var stops at module boundaries
-scope2b   	CE ivltests # broken version of scope2
+scope2b   	CE,-g2 ivltests # broken version of scope2
 scope4		normal ivltests
 scope5		normal ivltests
 task-scope	normal ivltests
@@ -902,5 +902,6 @@ pr1682887	normal	ivltests
 pr1688717	normal	ivltests diff=log/pr1688717.log:gold/pr1688717.gold
 pr1690058	normal	ivltests
 pr1691709	normal	ivltests
+pr1693890	normal	ivltests
 pr1693921	normal	ivltests
 pr1694427	normal	ivltests
