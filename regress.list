@@ -890,6 +890,7 @@ pr1639064b	normal	ivltests diff=log/pr1639064b.log:gold/pr1639064b.gold
 pr1639968	normal	ivltests diff=log/pr1639968.log:gold/pr1639968.gold
 pr1645277	normal	ivltests diff=log/pr1645277.log:gold/pr1645277.gold
 pr1645518	normal	ivltests diff=log/pr1645518.log:gold/pr1645518.gold
+pr1648365	normal	ivltests diff=log/pr1648365.log:gold/pr1648365.gold
 pr1650842	normal	ivltests
 pr1657307	normal	ivltests
 pr1661640	normal	ivltests diff=log/pr1661640.log:gold/pr1661640.gold
@@ -899,4 +900,7 @@ pr1676071	normal	ivltests
 pr1676836	normal	ivltests
 pr1682887	normal	ivltests
 pr1688717	normal	ivltests diff=log/pr1688717.log:gold/pr1688717.gold
+pr1690058	normal	ivltests
 pr1691709	normal	ivltests
+pr1693921	normal	ivltests
+pr1694427	normal	ivltests
