@@ -27,3 +27,4 @@ putp2     vpi	putp2.c		putp2		putp2.v
 mipname   vpi	mipname.c	mipname		mipname.v
 memmon    vpi	memmon.c	memmon		memmon.v
 listparams vpi	listparams.c	listparams	listparams.v
+pr1693971 vpi	pr1693971.c	pr1693971	pr1693971.v
