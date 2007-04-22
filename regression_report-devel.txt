@@ -27,10 +27,14 @@ Test Results:
                   always3.1.2I Sorry-Compiler Error-CO-FAILED-
                   always3.1.3A CO-PASSED-
                   always3.1.3B CO-PASSED-
+                 always3.1.3B2 Ran-PASSED-
                   always3.1.3C CO-PASSED-
                   always3.1.3D CO-PASSED-
+                 always3.1.3D2 Ran-PASSED-
                   always3.1.3E CO-PASSED-
+                 always3.1.3E2 Ran-PASSED-
                   always3.1.3F CO-PASSED-
+                 always3.1.3F2 Ran-PASSED-
                   always3.1.3G CO-PASSED-
                   always3.1.3H CO-PASSED-
                   always3.1.3J CO-PASSED-
@@ -149,6 +153,7 @@ Test Results:
                          land2 Ran-PASSED-
                          land3 Ran-PASSED-
                          land4 Ran-PASSED-
+                         land5 Ran-FAILED-
                        landor1 Ran-PASSED-
                           talu Ran-PASSED-
                          time2 Ran-PASSED-
@@ -172,6 +177,7 @@ Test Results:
                          udp_x Ran-PASSED-
                         udp_bx Ran-PASSED-
                      udp_sched Ran-PASSED-
+                       udp_dff Ran-PASSED-
                       wireadd1 Ran-PASSED-
                       wiremod1 Ran-PASSED-
                         wiresl Ran-PASSED-
@@ -188,6 +194,7 @@ Test Results:
                        ga_xnor Ran-PASSED-
                        ga_nand Ran-PASSED-
                         ga_nor Ran-PASSED-
+                       andnot1 Ran-PASSED-
                      constmult Ran-PASSED-
                       constadd Ran-PASSED-
                      constadd2 Ran-PASSED-
@@ -204,6 +211,7 @@ Test Results:
                   unary_minus1 Ran-PASSED-
                   unary_minus2 Ran-PASSED-
                   unary_minus3 Ran-PASSED-
+                  unary_minus4 Ran-PASSED-
                     unary_nand Ran-PASSED-
                    unary_nand2 Ran-PASSED-
                      unary_not Ran-PASSED-
@@ -220,6 +228,7 @@ Test Results:
                         gencrc Ran-PASSED-
                         onehot Ran-PASSED-
                          inout Ran-PASSED-
+                        inout2 Ran-PASSED-
                       modparam Ran-PASSED-
                        modulus Ran-PASSED-
                       modulus2 Ran-PASSED-
@@ -248,6 +257,7 @@ Test Results:
                           tri0 Ran-PASSED-
                          tri0b Ran-PASSED-
                           tri1 Ran-PASSED-
+                          tri2 Ran-PASSED-
                         triand Ran-PASSED-
                          trior Ran-PASSED-
                          idiv1 Ran-PASSED-
@@ -280,6 +290,7 @@ Test Results:
                     task_noop2 CO-PASSED-
                    task_bypath Ran-PASSED-
                   task_iotypes Ran-PASSED-
+                 task_iotypes2 Ran-PASSED-
                         scope1 Ran-PASSED-
                         scope2 Ran-PASSED-
                        scope2b CE-PASSED-
@@ -290,7 +301,12 @@ Test Results:
                     assign_nb2 Ran-PASSED-
                   assign_delay Ran-PASSED-
                          delay Ran-PASSED-
+                        delay2 Ran-PASSED-
+                        delay3 Ran-PASSED-
+                        delay4 Ran-PASSED-
+                        delay5 Ran-PASSED-
                delay_assign_nb Ran-PASSED-
+              delay_assign_nb2 Ran-PASSED-
                        ldelay1 Ran-PASSED-
                        ldelay2 Ran-PASSED-
                        ldelay3 Ran-PASSED-
@@ -300,6 +316,7 @@ Test Results:
                   param_concat Ran-PASSED-
                   param_select Ran-PASSED-
                  param_select2 Ran-PASSED-
+                 param_select3 Ran-PASSED-
                    param_times Ran-PASSED-
                       case3.8D Ran-PASSED-
                   function_exp Ran-PASSED-
@@ -330,6 +347,11 @@ Test Results:
                          tern3 Ran-PASSED-
                          tern4 Ran-PASSED-
                          tern5 Ran-PASSED-
+                         tern6 Ran-PASSED-
+                         tern7 Ran-PASSED-
+                         tern8 Ran-PASSED-
+                         tern9 Ran-PASSED-
+                        tern10 Ran-PASSED-
                      readmemh5 CE-PASSED-
                     port-test2 Ran-PASSED-
                     port-test3 CE-PASSED-
@@ -362,7 +384,7 @@ Test Results:
                   test_disphob Ran-PASSED-
                 test_dispwided Ran-PASSED-
                  test_extended Ran-PASSED-
-                      schedule Ran-FAILED-
+                      schedule Ran-PASSED-
                    test_bufif0 Ran-PASSED-
                    test_bufif1 Ran-PASSED-
    test_mos_strength_reduction Ran-PASSED-
@@ -399,13 +421,14 @@ Test Results:
                      param_add Ran-PASSED-
                      param_mod Ran-PASSED-
                     param_tern Ran-PASSED-
+                   param_tern2 Ran-PASSED-
                    param_test1 Ran-PASSED-
                    param_test2 Ran-PASSED-
                    param_test3 CO-PASSED-
                    param_test4 Ran-PASSED-
                      param_vec Ran-PASSED-
                     param_vec2 Ran-PASSED-
-                      integer5 Ran-FAILED-
+                      integer5 Ran-PASSED-
                        signed2 Ran-PASSED-
                        signed3 Ran-PASSED-
                        signed4 Ran-PASSED-
@@ -415,6 +438,7 @@ Test Results:
                        signed8 Ran-PASSED-
                        signed9 Ran-PASSED-
                       signed10 Ran-PASSED-
+                      signed11 Ran-PASSED-
                        repeat1 Ran-PASSED-
                        repeat2 Ran-PASSED-
                   decl_assign1 Ran-PASSED-
@@ -424,9 +448,13 @@ Test Results:
                       comp1000 Ran-FAILED-
                       comp1001 
                       specify1 CO-PASSED-
+                      specify2 Ran-PASSED-
+                      specify3 Ran-PASSED-
+                      specify4 Ran-PASSED-
+                      specify5 Ran-PASSED-
                   deposit_wire Ran-PASSED-
-                    specify_01 Ran-FAILED-
-                       deposit Ran-PASSED-
+                    specify_01 Ran-PASSED-
+                       deposit Ran-FAILED-
                     assign_neq Ran-PASSED-
                     assign_deq Ran-PASSED-
                      assign_ge Ran-PASSED-
@@ -469,6 +497,11 @@ Test Results:
                         select Ran-PASSED-
                        select2 Ran-PASSED-
                        select3 Ran-PASSED-
+                       select4 Ran-PASSED-
+                       select5 Ran-PASSED-
+                       select6 Ran-PASSED-
+                       select7 Ran-PASSED-
+                       select8 Ran-PASSED-
                        monitor Ran-PASSED-
                       monitor2 Ran-PASSED-
                       monitor3 Ran-PASSED-
@@ -512,7 +545,7 @@ Test Results:
                        bitsel9 Ran-PASSED-
                       bitwidth Ran-PASSED-
                      bitwidth2 Ran-PASSED-
-                     bitwidth3 Ran-FAILED-
+                     bitwidth3 Ran-PASSED-
                          pr312 Ran-PASSED-
                          pr355 Ran-PASSED-
                        ram16x1 Ran-PASSED-
@@ -531,6 +564,7 @@ Test Results:
                         shift2 Ran-PASSED-
                         shift3 Ran-FAILED-
                         shift4 Ran-PASSED-
+                        shift5 Ran-FAILED-
                          pr243 Ran-PASSED-
                         dummy7 Ran-PASSED-
                         time6b Ran-PASSED-
@@ -554,7 +588,8 @@ Test Results:
                          pr183 CO-PASSED-
                          pr245 Ran-PASSED-
                          pr377 Ran-PASSED-
-                         pr487 Ran-FAILED-
+                         pr478 Ran-PASSED-
+                         pr487 Ran-PASSED-
                          pr492 Ran-PASSED-
                          pr498 Ran-PASSED-
                        addwide Ran-PASSED-
@@ -566,8 +601,10 @@ Test Results:
                          pr519 Ran-PASSED-
                          pr522 Ran-PASSED-
                          pr524 Ran-PASSED-
+                         pr527 Assertion-Compiler Error-Ran-FAILED-
                          pr528 Ran-PASSED-
                         pr528b Ran-PASSED-
+                         pr529 Assertion-Compiler Error-
                         pr530a Ran-PASSED-
                         pr530b Ran-PASSED-
                         pr530c Ran-PASSED-
@@ -585,32 +622,74 @@ Test Results:
                          pr542 Ran-PASSED-
                          pr544 Ran-PASSED-
                          pr547 Ran-PASSED-
-                         pr564 Ran-FAILED-
+                         pr564 Ran-PASSED-
                          pr569 Ran-PASSED-
                          pr572 Ran-PASSED-
                         pr572b Ran-PASSED-
                          pr578 Ran-PASSED-
                          pr584 Ran-PASSED-
                          pr585 Ran-PASSED-
+                         pr587 Ran-PASSED-
                          pr590 Ran-PASSED-
                          pr594 Ran-PASSED-
                          pr596 Ran-PASSED-
                          pr602 Ran-PASSED-
                          pr622 Ran-PASSED-
                          pr639 Ran-PASSED-
-                         case1 Ran-PASSED-
-                         case2 Ran-PASSED-
+                         case1 Compiler Error-
+                         case2 Compiler Error-
                          case3 Ran-PASSED-
+                         case4 Assertion-Compiler Error-
+                         case5 Assertion-Compiler Error-
+                         case6 Assertion-Compiler Error-
+                         case7 Assertion-Compiler Error-
+                       condit1 Sorry-Ran-PASSED-
                       basicreg Ran-PASSED-
-                    basiclatch Ran-FAILED-
-                    basicstate Ran-PASSED-
-                   basicstate2 Ran-PASSED-
-                      multireg Ran-PASSED-
+                    basiclatch Sorry-Ran-FAILED-
+                    basicstate Sorry-Unable-Compiler Error-
+                   basicstate2 Sorry-Unable-Compiler Error-
+                      multireg Sorry-Unable-Compiler Error-
                      basicexpr Ran-PASSED-
                     basicexpr2 Ran-PASSED-
                     basicexpr3 Ran-PASSED-
                     basicexpr4 Ran-PASSED-
                         shiftl Ran-PASSED-
+                   blocksynth1 Sorry-Ran-PASSED-
+                   blocksynth2 Sorry-Assertion-Compiler Error-
+                   blocksynth3 Sorry-Assertion-Compiler Error-
+                  conditsynth1 Sorry-Unable-Compiler Error-
+                  conditsynth2 Sorry-Unable-Compiler Error-
+                  conditsynth3 Sorry-Unable-Compiler Error-
+                    casesynth1 Sorry-Unable-Compiler Error-
+                    casesynth2 Sorry-Unable-Compiler Error-
+                    casesynth3 Sorry-Unable-Compiler Error-
+                     lcatsynth Sorry-Unable-Compiler Error-
+                      dffsynth Sorry-Unable-Compiler Error-
+                     dffsynth2 Ran-FAILED-
+                     dffsynth3 Sorry-Unable-Compiler Error-
+                     dffsynth4 Sorry-Unable-Compiler Error-
+                   sqrt32synth Sorry-Unable-Compiler Error-
+                        sqrt32 Ran-PASSED-
+                     memsynth1 Sorry-Unable-Compiler Error-
+                     memsynth2 Sorry-Unable-Compiler Error-
+                     memsynth3 Sorry-Unable-Compiler Error-
+                     memsynth4 Sorry-Unable-Compiler Error-
+                     memsynth5 Sorry-Unable-Compiler Error-
+                     memsynth6 Sorry-Unable-Compiler Error-
+                     memsynth7 Sorry-Unable-Compiler Error-
+                     memsynth8 Ran-PASSED-
+                     memsynth9 Sorry-Unable-Compiler Error-
+                   ufuncsynth1 Assertion-Compiler Error-
+                      ssetclr1 Sorry-Unable-Compiler Error-
+                      ssetclr2 Sorry-Unable-Compiler Error-
+                      ssetclr3 Sorry-Unable-Compiler Error-
+                  partselsynth Ran-PASSED-
+                  inside_synth Sorry-Ran-PASSED-
+                 inside_synth2 Sorry-Unable-Compiler Error-
+                 inside_synth3 Assertion-Compiler Error-
+                     mix_reset Sorry-Unable-Compiler Error-
+                   casex_synth Compiler Error-
+                     full_case Compiler Error-
                         busbug Ran-PASSED-
                           real Ran-PASSED-
                          real2 Ran-PASSED-
@@ -619,6 +698,11 @@ Test Results:
                          real5 Ran-PASSED-
                          real6 Ran-PASSED-
                          real7 Ran-PASSED-
+                         real8 Ran-PASSED-
+                         real9 Ran-PASSED-
+                        real10 Ran-PASSED-
+                        real11 Ran-PASSED-
+                         bool1 Ran-PASSED-
                     realtobits Ran-PASSED-
                       negvalue Ran-PASSED-
                          pr434 Ran-PASSED-
@@ -631,6 +715,7 @@ Test Results:
                          pr685 Ran-PASSED-
                          pr690 Ran-PASSED-
                          pr693 Ran-PASSED-
+                         pr699 Ran-PASSED-
                          pr704 Ran-PASSED-
                          pr707 Ran-PASSED-
                          pr708 Ran-PASSED-
@@ -670,10 +755,11 @@ Test Results:
                           prng Ran-PASSED-
                           race Ran-PASSED-
                          pr973 Ran-PASSED-
-                         pr978 Compiler Error-
+                         pr978 Ran-PASSED-
                          pr979 Ran-PASSED-
                          pr985 Ran-PASSED-
                          pr987 Ran-PASSED-
+                         pr990 Ran-PASSED-
                          pr991 Ran-PASSED-
                          pr993 Ran-PASSED-
                          pr995 Ran-PASSED-
@@ -681,7 +767,7 @@ Test Results:
                           neq1 Ran-PASSED-
                         pr1000 Ran-PASSED-
                         pr1002 Ran-PASSED-
-                       pr1002a Ran-PASSED-
+                       pr1002a Ran-PASSED-Ran-FAILED-
                         pr1007 Ran-PASSED-
                         pr1008 Ran-PASSED-
                         pr1022 Ran-PASSED-
@@ -690,4 +776,111 @@ Test Results:
                         pr1029 Ran-PASSED-
                         pr1032 Ran-PASSED-
                         pr1033 Ran-PASSED-
-Tests passed: 667, failed: 27, Unhandled: 4 Unable: 0, Assert: 0, Parse Errs: 2
+                    assign_add Ran-PASSED-
+              credence20041209 Ran-PASSED-
+                        pr1065 Ran-PASSED-
+                        pr1072 Ran-PASSED-
+                        pr1077 Ran-PASSED-
+                        pr1087 Ran-PASSED-
+                        pr1101 Ran-PASSED-
+                        pr1115 Ran-PASSED-
+                     pr1367855 Ran-PASSED-
+                     pr1380261 Ran-PASSED-
+                     pr1444055 Ran-PASSED-
+                    pr1449749a Ran-PASSED-
+                     pr1353345 Ran-PASSED-
+                    pr1353345b Compiler Error-
+                     pr1388974 Ran-PASSED-
+                     pr1421777 Compiler Error-
+                     pr1465769 Ran-PASSED-
+                        types1 Ran-PASSED-
+                       genloop Ran-PASSED-
+                         scanf Ran-PASSED-
+                        scanf2 Ran-PASSED-
+                        scanf3 Ran-PASSED-
+                     pr1467825 CO-PASSED-
+                     pr1455873 Ran-PASSED-
+                     pr1474283 Ran-PASSED-
+                     pr1474316 Ran-PASSED-
+                     pr1474318 Ran-PASSED-
+                     pr1476440 Ran-PASSED-
+                     pr1477190 Ran-PASSED-
+                     pr1478121 Ran-PASSED-
+                     pr1478988 Ran-PASSED-
+                     pr1489570 Ran-PASSED-
+                     pr1491355 Ran-PASSED-
+                     pr1492075 Ran-PASSED-
+                     pr1494799 Ran-PASSED-
+                     pr1508882 Ran-PASSED-
+                     pr1515168 Ran-PASSED-
+                     pr1520314 CO-PASSED-
+                     pr1522570 Ran-PASSED-
+                     pr1528093 Ran-PASSED-
+                     pr1530426 Ran-PASSED-
+                     pr1561597 Ran-PASSED-
+                     pr1565544 Ran-PASSED-
+                     pr1570451 Ran-PASSED-
+                    pr1570451b Ran-PASSED-
+                     pr1570635 Ran-PASSED-
+                    pr1570635b Ran-PASSED-
+                     pr1574175 Ran-PASSED-
+                     pr1581580 Ran-PASSED-
+                     pr1587634 CO-PASSED-
+                     pr1587669 Ran-PASSED-
+                     pr1589497 Ran-PASSED-
+                     pr1598445 Ran-PASSED-
+                     pr1601896 Ran-PASSED-
+                     pr1601898 Ran-PASSED-
+                     pr1603313 Ran-PASSED-
+                     pr1603918 Ran-PASSED-
+                     pr1609611 Ran-PASSED-
+                     pr1612693 Ran-PASSED-
+                     pr1623097 Ran-PASSED-
+                     pr1625912 Ran-PASSED-
+                     pr1628288 Ran-PASSED-
+                     pr1628300 Ran-PASSED-
+                     pr1629683 Ran-PASSED-
+                     pr1632861 Ran-PASSED-
+                     pr1634526 Ran-PASSED-
+                     pr1636409 Ran-PASSED-
+                     pr1637208 Ran-PASSED-
+                     pr1638985 Ran-PASSED-
+                     pr1639060 Ran-PASSED-
+                     pr1639064 Ran-PASSED-
+                    pr1639064b Ran-PASSED-
+                     pr1639968 Ran-PASSED-
+                     pr1639971 Ran-PASSED-
+                     pr1645277 Ran-PASSED-
+                     pr1645518 Ran-PASSED-
+                     pr1648365 Ran-PASSED-
+                     pr1650842 Ran-PASSED-
+                     pr1657307 Ran-PASSED-
+                     pr1661640 Ran-PASSED-
+                     pr1662508 Ran-PASSED-
+                     pr1664684 Ran-PASSED-
+                     pr1675789 Ran-PASSED-
+                    pr1675789b Ran-PASSED-
+                     pr1676071 Ran-PASSED-
+                     pr1676836 Ran-PASSED-
+                     pr1682887 Ran-PASSED-
+                     pr1687193 Ran-PASSED-
+                     pr1688717 Ran-PASSED-
+                     pr1690058 Ran-PASSED-
+                     pr1691709 Ran-PASSED-
+                     pr1693890 Ran-PASSED-
+                     pr1693921 Ran-PASSED-
+                     pr1694413 Ran-PASSED-
+                     pr1694427 Ran-PASSED-
+                     pr1695257 CO-PASSED-
+                     pr1695322 Ran-PASSED-
+                     pr1695334 Ran-PASSED-
+                     pr1696137 Ran-PASSED-
+                     pr1697250 Ran-PASSED-
+                     pr1697732 Ran-PASSED-
+                     pr1698499 Ran-PASSED-
+                     pr1698658 Ran-PASSED-
+                     pr1698820 Ran-PASSED-
+                     pr1699519 Ran-PASSED-
+                     pr1702593 Ran-PASSED-
+                     pr1703346 Ran-PASSED-
+Tests passed: 820, failed: 69, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2

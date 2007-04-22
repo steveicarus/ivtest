@@ -2,6 +2,13 @@ Important Notice - this is not the sign-off regression
 list for IVL - that is a separate list that Steve Williams
 currently has. It is a subset of these tests.
 
+21 April 2007
+
+I've added to CVS regression_report-devel.txt that is the
+expected regression test results for the snapshot at the
+time of the checkin. I expect to tag this file with the
+makes of snapshots that are made, so that the expected
+result for a given snapshot can be found.
 
 11/3/2000
 
