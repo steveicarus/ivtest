@@ -930,3 +930,4 @@ elsif_test	normal	ivltests
 pr1703120	normal	ivltests diff=log/pr1703120.log:gold/pr1703120.gold
 pr1717361	normal	ivltests
 pr1719055	normal	ivltests diff=log/pr1719055.log:gold/pr1719055.gold
+pr1735822	normal	ivltests
