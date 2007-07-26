@@ -1,0 +1,48 @@
+// Copyright 2007, Martin Whitaker.
+// This code may be freely copied for any purpose.
+
+module gen_param_test();
+
+localparam	W = 3;
+localparam	D = 3;
+
+reg  [W-1:0]	A[1:D];
+reg  [W-1:0]	B[1:D];
+wire [W-1:0]	Y[1:D];
+
+generate
+  genvar	i;
+
+  for (i = 1; i <= D; i = i + 1) begin:sum
+    adder #(W) instance(A[i], B[i], Y[i]);
+  end
+endgenerate
+
+integer		i;
+
+initial begin
+  for (i = 1; i <= D; i = i + 1) begin
+    A[i] = i - 1;
+    B[i] = i + 1;
+  end
+  for (i = 1; i <= D; i = i + 1) begin
+    $display("%d + %d = %d", A[i-1], B[i-1], Y[i-1]);
+  end
+end
+
+endmodule
+
+
+module adder #(parameter W = 1) (
+
+input  wire [W-1:0]	A,
+input  wire [W-1:0]	B,
+output wire [W-1:0]	Y
+
+);
+
+assign Y = A + B;
+
+endmodule
+
+ 	  	 
