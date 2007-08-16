@@ -1,0 +1,10 @@
+WARNING: %l currently unsupported $swrite<%l>.
+WARNING: %L currently unsupported $swrite<%L>.
+WARNING: $swrite returned a value with an embedded NULL (see %u/%z).
+WARNING: $swrite returned a value with an embedded NULL (see %u/%z).
+WARNING: $swrite returned a value with an embedded NULL (see %u/%z).
+WARNING: $swrite returned a value with an embedded NULL (see %u/%z).
+WARNING: $swrite returned a value with an embedded NULL (see %u/%z).
+WARNING: missing argument for $sformat<%s>.
+WARNING: $sformat has 1 extra argument(s).
+All tests passed.
