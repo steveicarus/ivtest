@@ -895,6 +895,7 @@ Test Results:
                      pr1703959 Ran-PASSED-
                     elsif_test Ran-PASSED-
                      pr1703120 Ran-PASSED-
+                     pr1704013 CE-PASSED-
                      pr1716276 Ran-PASSED-
                      pr1717361 Ran-PASSED-
                      pr1719055 Ran-PASSED-
@@ -916,4 +917,4 @@ Test Results:
                      pr1770199 Ran-PASSED-
                         swrite Ran-PASSED-
                      pr1771903 Ran-PASSED-
-Tests passed: 853, failed: 69, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2
+Tests passed: 854, failed: 69, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2
