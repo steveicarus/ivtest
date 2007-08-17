@@ -23,7 +23,7 @@
 
 module nest(r);
 
-   output r;
+   output [7:0] r;
    reg [7:0] r;
 
    task incr;

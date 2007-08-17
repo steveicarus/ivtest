@@ -934,6 +934,7 @@ pr1703346	normal	ivltests
 pr1703959	normal	ivltests
 elsif_test	normal	ivltests
 pr1703120	normal	ivltests diff=log/pr1703120.log:gold/pr1703120.gold
+pr1704013	CE	ivltests
 pr1716276	normal	ivltests
 pr1717361	normal	ivltests
 pr1719055	normal	ivltests diff=log/pr1719055.log:gold/pr1719055.gold

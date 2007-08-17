@@ -14,7 +14,7 @@ module test();
 endmodule
 
 module mux(SEL);
-input SEL;
+input [3:0] SEL;
 wire [3:0] SEL;
 integer offset;
 

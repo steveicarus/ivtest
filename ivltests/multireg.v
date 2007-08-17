@@ -21,7 +21,7 @@
 //
 module basicreg ( clk, d, q);
 input clk, d;
-output q;
+output [2:0] q;
 reg [2:0] q;
 
 (* ivl_synthesis_on *)
