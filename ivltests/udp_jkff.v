@@ -17,7 +17,7 @@
  *    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
  */
 
-// $Id: udp_jkff.v,v 1.1 2001/04/24 03:53:19 stevewilliams Exp $
+// $Id: udp_jkff.v,v 1.2 2007/08/29 00:01:22 stevewilliams Exp $
 
 module test_jkff;
 
@@ -96,9 +96,9 @@ module test_jkff;
      begin
 	#2;
 	$display("cp=%b j=%b k=%b s=%b r=%b  q=%b", cp, j, k, s, r, q);
-	if (q !== qq)
+	if (q !== qq && $time > 2)
 	  begin
-	     $display("FAILED: expect        q=%b", qq);
+	     $display("FAILED: expect        q=%b  (time=%t)", qq, $time);
 	     errors = errors + 1;
 	  end
      end

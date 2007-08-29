@@ -6,8 +6,8 @@ module test;
 
    initial begin
       b = 4'b0110;
-      #1 if (a !== 6'bxxxx10) begin
-	 $display("FAILED -- a=%b");
+      #1 if (a !== 6'bzzzz10) begin
+	 $display("FAILED -- a=%b", a);
 	 $finish;
       end
       $display("PASSED");

@@ -1,5 +1,5 @@
-                   0 A = x B = x C = x D = x, eSeg = x
-                  10 A = 0 B = 0 C = 0 D = 0, eSeg = x
+                   0 A = x B = x C = x D = x, eSeg = z
+                  10 A = 0 B = 0 C = 0 D = 0, eSeg = z
                   12 A = 0 B = 0 C = 0 D = 0, eSeg = 1
                   20 A = 0 B = 0 C = 0 D = 1, eSeg = 1
                   22 A = 0 B = 0 C = 0 D = 1, eSeg = 0
