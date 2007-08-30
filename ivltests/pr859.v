@@ -5,10 +5,7 @@
  * statements within case alternatives.
  */
 
-module test(output [15:0] probe_data,input[3:0] probe_sel);
-
-   reg [15:0] probe_data;
-   wire [3:0] probe_sel;
+module test(output reg [15:0] probe_data,input wire [3:0] probe_sel);
 
    always @*
      case(probe_sel)

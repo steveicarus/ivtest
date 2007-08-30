@@ -16,7 +16,7 @@
  *    along with this program; if not, write to the Free Software
  *    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
  *
- *   $Id: sqrt32.v,v 1.1 2005/12/31 03:04:59 stevewilliams Exp $"
+ *   $Id: sqrt32.v,v 1.2 2007/08/30 01:25:29 stevewilliams Exp $"
  */
 
 
@@ -44,7 +44,7 @@
 
 module sqrt
   (input clk,
-   output rdy,
+   output wire rdy,
    input reset,
    input [31:0] x,
    output reg [15:0] acc);
@@ -64,7 +64,7 @@ module sqrt
    wire [w-1:0] bit2 = 1 << (bitl << 1);
 
    // The output is ready when the bitl counter underflows.
-   wire rdy = bitl[ss-1];
+   assign rdy = bitl[ss-1];
 
    // guess holds the potential next values for acc, and guess2 holds
    // the square of that guess. The guess2 calculation is a little bit
