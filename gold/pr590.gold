@@ -6,3 +6,4 @@ out: 0000, in: 0000
 out: 0011, in: 0010
                   30..................clock tickling
                   50..................clock tickling
+                  70..................clock tickling

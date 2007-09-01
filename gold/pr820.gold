@@ -297,3 +297,4 @@
                 2970 waddr wdata  8 120    raddr rdata  6 111
                 2980 waddr wdata  9 123    raddr rdata  7 114
                 2990 waddr wdata 10 126    raddr rdata  8 117
+                3000 waddr wdata 11 129    raddr rdata  9 120
