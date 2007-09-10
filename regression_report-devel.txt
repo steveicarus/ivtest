@@ -907,6 +907,7 @@ Test Results:
                      pr1746401 Ran-PASSED-
                      pr1746848 Ran-PASSED-
                      pr1750870 Ran-PASSED-
+                     pr1752353 Ran-PASSED-
                     pr1752823a Ran-PASSED-
                     pr1752823b Ran-PASSED-
                      pr1755593 Ran-PASSED-
@@ -921,4 +922,4 @@ Test Results:
                      pr1777103 Ran-PASSED-
                      pr1784984 Ran-PASSED-
                           cmos Ran-FAILED-
-Tests passed: 857, failed: 70, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2
+Tests passed: 858, failed: 70, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2
