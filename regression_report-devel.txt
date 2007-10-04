@@ -445,7 +445,7 @@ Test Results:
                         vector Ran-PASSED-
                           mcl1 Ran-PASSED-
                           mcl2 Ran-PASSED-
-                      comp1000 Ran-FAILED-
+                      comp1000 Assertion-Compiler Error-Ran-FAILED-
                       comp1001 
                       specify1 CO-PASSED-
                       specify2 Ran-PASSED-
@@ -927,5 +927,7 @@ Test Results:
                           cmos Ran-FAILED-
                      pr1792152 Ran-PASSED-
                      pr1792734 Ran-PASSED-
+                    pr1795005a Ran-PASSED-
+                    pr1795005b Ran-PASSED-
                      pr1799904 Ran-PASSED-
-Tests passed: 864, failed: 70, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2
+Tests passed: 866, failed: 71, Unhandled: 37 Unable: 27, Assert: 11, Parse Errs: 2
