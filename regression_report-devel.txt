@@ -927,8 +927,9 @@ Test Results:
                           cmos Ran-FAILED-
                      pr1792152 Ran-PASSED-
                      pr1792734 Ran-PASSED-
+                     pr1793157 Ran-PASSED-
                     pr1795005a Ran-PASSED-
                     pr1795005b Ran-PASSED-
                      pr1799904 Ran-PASSED-
                      pr1805837 Ran-PASSED-
-Tests passed: 867, failed: 71, Unhandled: 37 Unable: 27, Assert: 11, Parse Errs: 2
+Tests passed: 868, failed: 71, Unhandled: 37 Unable: 27, Assert: 11, Parse Errs: 2
