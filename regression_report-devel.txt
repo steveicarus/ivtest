@@ -928,10 +928,11 @@ Test Results:
                      pr1792152 Ran-PASSED-
                      pr1792734 Ran-PASSED-
                      pr1793157 Ran-PASSED-
+                     pr1793749 Ran-PASSED-
                     pr1795005a Ran-PASSED-
                     pr1795005b Ran-PASSED-
                      pr1799904 Ran-PASSED-
                      pr1805837 Ran-PASSED-
                          urand Ran-PASSED-
                        urand_r Ran-PASSED-
-Tests passed: 870, failed: 70, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2
+Tests passed: 871, failed: 70, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2
