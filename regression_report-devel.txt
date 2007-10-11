@@ -935,4 +935,5 @@ Test Results:
                      pr1805837 Ran-PASSED-
                          urand Ran-PASSED-
                        urand_r Ran-PASSED-
-Tests passed: 871, failed: 70, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2
+                        fileio Ran-PASSED-
+Tests passed: 872, failed: 70, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2
