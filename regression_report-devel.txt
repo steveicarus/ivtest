@@ -439,6 +439,7 @@ Test Results:
                        signed9 Ran-PASSED-
                       signed10 Ran-PASSED-
                       signed11 Ran-PASSED-
+                      signed12 Ran-PASSED-
                        repeat1 Ran-PASSED-
                        repeat2 Ran-PASSED-
                   decl_assign1 Ran-PASSED-
@@ -929,6 +930,7 @@ Test Results:
                      pr1792734 Ran-PASSED-
                      pr1793157 Ran-PASSED-
                      pr1793749 Ran-PASSED-
+                    pr1793749b Ran-PASSED-
                     pr1795005a Ran-PASSED-
                     pr1795005b Ran-PASSED-
                      pr1799904 Ran-PASSED-
@@ -936,4 +938,4 @@ Test Results:
                          urand Ran-PASSED-
                        urand_r Ran-PASSED-
                         fileio Ran-PASSED-
-Tests passed: 872, failed: 70, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2
+Tests passed: 874, failed: 70, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2

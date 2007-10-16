@@ -478,6 +478,7 @@ signed8  normal  ivltests
 signed9  normal  ivltests
 signed10 normal  ivltests diff=log/signed10.log:gold/signed10.gold
 signed11  normal  ivltests
+signed12	normal	ivltests diff=log/signed12.log:gold/signed12.gold
 repeat1  normal  ivltests
 repeat2  normal  ivltests
 decl_assign1	normal	ivltests
@@ -968,6 +969,7 @@ pr1792152	normal	ivltests diff=log/pr1792152.log:gold/pr1792152.gold
 pr1792734	normal	ivltests diff=log/pr1792734.log:gold/pr1792734.gold
 pr1793157	normal	ivltests diff=log/pr1793157.log:gold/pr1793157.gold
 pr1793749	normal	ivltests diff=log/pr1793749.log:gold/pr1793749.gold
+pr1793749b	normal	ivltests diff=log/pr1793749b.log:gold/pr1793749b.gold
 pr1795005a	normal	ivltests diff=log/pr1795005a.log:gold/pr1795005a.gold
 pr1795005b	normal	ivltests diff=log/pr1795005b.log:gold/pr1795005b.gold
 pr1799904	normal	ivltests diff=log/pr1799904.log:gold/pr1799904.gold
