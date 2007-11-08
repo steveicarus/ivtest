@@ -926,6 +926,7 @@ Test Results:
                     pr1787394a Ran-PASSED-
                     pr1787394b Ran-PASSED-
                           cmos Ran-FAILED-
+                     pr1792108 Ran-PASSED-
                      pr1792152 Ran-PASSED-
                      pr1792734 Ran-PASSED-
                      pr1793157 Ran-PASSED-
@@ -940,4 +941,4 @@ Test Results:
                         fileio Ran-PASSED-
                      pr1819452 Ran-PASSED-
                       long_div Ran-PASSED-
-Tests passed: 876, failed: 70, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2
+Tests passed: 877, failed: 70, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2
