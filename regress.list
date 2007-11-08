@@ -982,3 +982,4 @@ fileio	normal	ivltests diff=log/fileio.log:gold/fileio.gold
 pr1819452	normal	ivltests diff=log/pr1819452.log:gold/pr1819452.gold
 pr1820472	normal	ivltests diff=log/pr1820472.log:gold/pr1820472.gold
 long_div	normal	ivltests diff=log/long_div.log:gold/long_div.gold
+generate_multi_loop	normal	ivltests diff=log/generate_multi_loop.log:gold/generate_multi_loop.gold

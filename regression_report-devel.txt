@@ -943,4 +943,5 @@ Test Results:
                      pr1819452 Ran-PASSED-
                      pr1820472 Ran-PASSED-
                       long_div Ran-PASSED-
-Tests passed: 879, failed: 70, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2
+           generate_multi_loop Ran-PASSED-
+Tests passed: 880, failed: 70, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2
