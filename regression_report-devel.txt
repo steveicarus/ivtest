@@ -941,5 +941,6 @@ Test Results:
                        urand_r Ran-PASSED-
                         fileio Ran-PASSED-
                      pr1819452 Ran-PASSED-
+                     pr1820472 Ran-PASSED-
                       long_div Ran-PASSED-
-Tests passed: 878, failed: 70, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2
+Tests passed: 879, failed: 70, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2
