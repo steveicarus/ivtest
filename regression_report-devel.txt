@@ -901,6 +901,7 @@ Test Results:
                      pr1716276 Ran-PASSED-
                      pr1717361 Ran-PASSED-
                      pr1719055 Ran-PASSED-
+                     pr1735724 CE-PASSED-
                      pr1735822 Ran-PASSED-
                     pr1740476b Ran-PASSED-
                      pr1741212 Ran-PASSED-
@@ -941,4 +942,4 @@ Test Results:
                         fileio Ran-PASSED-
                      pr1819452 Ran-PASSED-
                       long_div Ran-PASSED-
-Tests passed: 877, failed: 70, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2
+Tests passed: 878, failed: 70, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2
