@@ -565,7 +565,7 @@ Test Results:
                         shift2 Ran-PASSED-
                         shift3 Ran-FAILED-
                         shift4 Ran-PASSED-
-                        shift5 Ran-FAILED-
+                        shift5 Ran-PASSED-
                          pr243 Ran-PASSED-
                         dummy7 Ran-PASSED-
                         time6b Ran-PASSED-
@@ -944,4 +944,4 @@ Test Results:
                      pr1820472 Ran-PASSED-
                       long_div Ran-PASSED-
            generate_multi_loop Ran-PASSED-
-Tests passed: 880, failed: 70, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2
+Tests passed: 881, failed: 69, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2
