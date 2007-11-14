@@ -523,7 +523,7 @@ Test Results:
                        string8 Ran-PASSED-
                        string9 Ran-PASSED-
                       string10 Ran-PASSED-
-                      string11 Ran-FAILED-
+                      string11 Ran-PASSED-
                      lh_memcat Ran-PASSED-
                     lh_memcat2 Ran-PASSED-
                     lh_memcat3 Ran-PASSED-
@@ -946,4 +946,4 @@ Test Results:
                       long_div Ran-PASSED-
            generate_multi_loop Ran-PASSED-
                      pr1828642 Ran-PASSED-
-Tests passed: 884, failed: 68, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2
+Tests passed: 885, failed: 67, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2
