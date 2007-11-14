@@ -927,7 +927,7 @@ Test Results:
                      pr1784984 Ran-PASSED-
                     pr1787394a Ran-PASSED-
                     pr1787394b Ran-PASSED-
-                          cmos Ran-FAILED-
+                          cmos Ran-PASSED-
                      pr1792108 Ran-PASSED-
                      pr1792152 Ran-PASSED-
                      pr1792734 Ran-PASSED-
@@ -946,4 +946,4 @@ Test Results:
                       long_div Ran-PASSED-
            generate_multi_loop Ran-PASSED-
                      pr1828642 Ran-PASSED-
-Tests passed: 883, failed: 69, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2
+Tests passed: 884, failed: 68, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2
