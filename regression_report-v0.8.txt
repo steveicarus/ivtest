@@ -768,7 +768,7 @@ Test Results:
                           neq1 Ran-PASSED-
                         pr1000 Ran-PASSED-
                         pr1002 Ran-PASSED-Ran-FAILED-
-                       pr1002a Ran-PASSED-
+                       pr1002a Ran-PASSED-Ran-FAILED-
                         pr1007 Ran-PASSED-
                         pr1008 Ran-PASSED-
                         pr1022 Ran-PASSED-
@@ -901,7 +901,9 @@ Test Results:
                      pr1716276 Compiler Error-
                      pr1717361 Ran-PASSED-
                      pr1719055 Compiler Error-Ran-FAILED-
+                     pr1735724 CE-PASSED-
                      pr1735822 Compiler Error-
+                     pr1735836 Ran-PASSED-
                     pr1740476b Compiler Error-
                      pr1741212 Compiler Error-Ran-FAILED-
                      pr1742910 Ran-FAILED-
@@ -926,6 +928,7 @@ Test Results:
                     pr1787394a Ran-FAILED-
                     pr1787394b Ran-PASSED-
                           cmos Compiler Error-Ran-FAILED-
+                     pr1792108 Ran-PASSED-
                      pr1792152 Ran-FAILED-
                      pr1792734 Compiler Error-Ran-FAILED-
                      pr1793157 Ran-FAILED-
@@ -938,4 +941,9 @@ Test Results:
                          urand Ran-FAILED-
                        urand_r Ran-FAILED-
                         fileio Ran-FAILED-
-Tests passed: 778, failed: 176, Unhandled: 9 Unable: 3, Assert: 7, Parse Errs: 3
+                     pr1819452 Ran-FAILED-
+                     pr1820472 Compiler Error-Ran-FAILED-
+                      long_div Assertion-Ran-FAILED-
+           generate_multi_loop Compiler Error-Ran-FAILED-
+                     pr1828642 Compiler Error-Ran-FAILED-
+Tests passed: 781, failed: 185, Unhandled: 9 Unable: 3, Assert: 8, Parse Errs: 3
