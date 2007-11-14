@@ -768,7 +768,7 @@ Test Results:
                           neq1 Ran-PASSED-
                         pr1000 Ran-PASSED-
                         pr1002 Ran-PASSED-
-                       pr1002a Ran-PASSED-Ran-FAILED-
+                       pr1002a Ran-PASSED-
                         pr1007 Ran-PASSED-
                         pr1008 Ran-PASSED-
                         pr1022 Ran-PASSED-
@@ -946,4 +946,4 @@ Test Results:
                       long_div Ran-PASSED-
            generate_multi_loop Ran-PASSED-
                      pr1828642 Ran-PASSED-
-Tests passed: 885, failed: 67, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2
+Tests passed: 885, failed: 66, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2

@@ -1,3 +1,4 @@
+datain =     x dataout =      X expected =      X ... CHECK PASSED
 datain =  4095 dataout =  16380 expected =  16380 ... CHECK PASSED
 datain =     0 dataout =      0 expected =      0 ... CHECK PASSED
 datain =  8191 dataout =  32764 expected =  32764 ... CHECK PASSED
