@@ -20,6 +20,8 @@
 /*
  * This problem shows the case of a function with no input ports,
  * and also a function with a parameter (not a port).
+ *
+ * A function without an argument is an error, so this should fail.
  */
 
 module main;

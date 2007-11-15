@@ -362,7 +362,7 @@ function_exp normal ivltests # Cntrib by steve williams
 function1	normal	ivltests diff=log/function1.log:gold/function1.gold
 function2	normal	ivltests
 function3	normal	ivltests
-function4	normal	ivltests
+function4	CE	ivltests # Functions must have at least one argument
 ifdef1		 normal ivltests #  ifdef with no define
 ifdef2		 normal ivltests #  ifdef with define
 ifdef3		 normal ivltests #  compound ifdef with 1 define

@@ -323,7 +323,7 @@ Test Results:
                      function1 Ran-PASSED-
                      function2 Ran-PASSED-
                      function3 Ran-PASSED-
-                     function4 Compiler Error-
+                     function4 CE-PASSED-
                         ifdef1 Ran-PASSED-
                         ifdef2 Ran-PASSED-
                         ifdef3 Ran-PASSED-
@@ -946,4 +946,4 @@ Test Results:
                       long_div Ran-PASSED-
            generate_multi_loop Ran-PASSED-
                      pr1828642 Ran-PASSED-
-Tests passed: 885, failed: 66, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2
+Tests passed: 886, failed: 65, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2
