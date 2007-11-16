@@ -583,7 +583,7 @@ Test Results:
                        big_int Ran-PASSED-
                        concat1 Ran-PASSED-
                        concat2 Ran-PASSED-
-                        extend Ran-FAILED-
+                        extend Ran-PASSED-
                      timeform1 Ran-PASSED-
                      timeform2 Ran-PASSED-
                          pr183 CO-PASSED-
@@ -948,4 +948,4 @@ Test Results:
            generate_multi_loop Ran-PASSED-
                      pr1822658 Ran-PASSED-
                      pr1828642 Ran-PASSED-
-Tests passed: 888, failed: 65, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2
+Tests passed: 889, failed: 64, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2
