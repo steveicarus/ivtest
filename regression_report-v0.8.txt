@@ -323,7 +323,7 @@ Test Results:
                      function1 Ran-PASSED-
                      function2 Ran-PASSED-
                      function3 Ran-PASSED-
-                     function4 Compiler Error-
+                     function4 CE-PASSED-
                         ifdef1 Ran-PASSED-
                         ifdef2 Ran-PASSED-
                         ifdef3 Ran-PASSED-
@@ -337,7 +337,7 @@ Test Results:
                        define1 Ran-PASSED-
                      fdisplay1 Ran-PASSED-
                      fdisplay2 Ran-PASSED-
-                     fdisplay3 Parse Err-Ran-PASSED-
+                     fdisplay3 RE-PASSED-
                         fopen1 Ran-PASSED-
                         fopen2 Ran-PASSED-
                          div16 Ran-PASSED-
@@ -374,7 +374,7 @@ Test Results:
                    lh_varindx5 Ran-PASSED-
                      lh_catadd Ran-PASSED-
                      shift_pad Ran-PASSED-
-                        format Parse Err-Ran-PASSED-
+                        format RE-PASSED-
                       disp_dec Ran-PASSED-
                      disp_dec2 Ran-PASSED-
                      disp_parm Ran-PASSED-
@@ -447,7 +447,7 @@ Test Results:
                           mcl1 Ran-PASSED-
                           mcl2 Ran-PASSED-
                       comp1000 Ran-FAILED-
-                      comp1001 
+                      comp1001 Ran-FAILED-
                       specify1 CO-PASSED-
                       specify2 Ran-FAILED-
                       specify3 Ran-FAILED-
@@ -809,7 +809,7 @@ Test Results:
                      pr1478121 Ran-PASSED-
                      pr1478988 Ran-PASSED-
                      pr1489568 Ran-PASSED-
-                     pr1489570 Assertion-
+                     pr1489570 Parse Err-Assertion-
                      pr1491355 Sorry-Unable-Compiler Error-
                      pr1492075 Ran-FAILED-
                      pr1494799 Ran-FAILED-
@@ -882,7 +882,7 @@ Test Results:
                      pr1696137 Ran-PASSED-
                      pr1697250 Ran-PASSED-
                      pr1697732 Ran-PASSED-
-                     pr1698499 Assertion-Ran-FAILED-
+                     pr1698499 Parse Err-Assertion-Ran-FAILED-
                      pr1698658 Ran-FAILED-
                      pr1698659 Unable-Compiler Error-Ran-FAILED-
                      pr1698820 Ran-FAILED-
@@ -918,6 +918,7 @@ Test Results:
                      pr1755629 Compiler Error-
                      pr1758122 Compiler Error-Ran-FAILED-
                      pr1758135 Ran-PASSED-
+                     pr1763333 CE-PASSED-
                      pr1765789 Compiler Error-
                      pr1770199 Ran-PASSED-
                         swrite Compiler Error-Ran-FAILED-
@@ -943,7 +944,8 @@ Test Results:
                         fileio Ran-FAILED-
                      pr1819452 Ran-FAILED-
                      pr1820472 Compiler Error-Ran-FAILED-
-                      long_div Assertion-Ran-FAILED-
+                      long_div Parse Err-Assertion-Ran-FAILED-
            generate_multi_loop Compiler Error-Ran-FAILED-
+                     pr1822658 Ran-PASSED-
                      pr1828642 Compiler Error-Ran-FAILED-
-Tests passed: 781, failed: 185, Unhandled: 9 Unable: 3, Assert: 8, Parse Errs: 3
+Tests passed: 784, failed: 185, Unhandled: 9 Unable: 3, Assert: 8, Parse Errs: 4
