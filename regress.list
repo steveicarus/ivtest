@@ -376,7 +376,7 @@ include3	normal ivltests #  include file 3 levels deep
 define1		normal ivltests #  Use defined value for reg def and reg assign
 fdisplay1	normal	ivltests  gold=fdisplay1.gold	# 
 fdisplay2	normal  ivltests  diff=work/fdisplay2.out:gold/fdisplay2.out #
-fdisplay3	normal	ivltests  gold=fdisplay3.gold
+fdisplay3	RE	ivltests  gold=fdisplay3.gold
 fopen1		normal  ivltests # Test basic fopen operation	
 fopen2		normal  ivltests # Test basic fopen operation	
 div16		normal	contrib test_div16 # Uses $random and divide operator (Tom Coonan)
@@ -413,7 +413,7 @@ lh_varindx4      normal	ivltests	#
 lh_varindx5      normal	ivltests	# 
 lh_catadd      normal	ivltests	# 
 shift_pad	normal	ivltests
-format     normal  ivltests diff=log/format.log:gold/format.gold
+format     RE  ivltests diff=log/format.log:gold/format.gold
 disp_dec   normal  ivltests diff=log/disp_dec.log:gold/disp_dec.gold
 disp_dec2  normal  ivltests diff=log/disp_dec2.log:gold/disp_dec2.gold
 disp_parm   	normal  ivltests diff=log/disp_parm.log:gold/disp_parm.gold
@@ -486,7 +486,7 @@ vector   normal  ivltests diff=log/vector.log:gold/vector.gold
 mcl1	 normal  ivltests diff=log/mcl1.log:gold/mcl1.gold
 mcl2	 normal  ivltests diff=log/mcl2.log:gold/mcl2.gold
 comp1000 normal ivltests diff=log/comp1000.log:gold/comp1000.gold
-comp1001 normal ivltests
+comp1001 normal ivltests diff=log/comp1001.log:gold/comp1001.gold
 specify1 CO	ivltests
 specify2 normal	ivltests
 specify3 normal ivltests diff=log/specify3.log:gold/specify3.gold

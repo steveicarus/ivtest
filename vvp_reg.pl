@@ -23,6 +23,9 @@
 # 3/25/2001  SDW   Modified sregress.pl script to run vvp.
 # 4/13/2001  SDW   Added CORE DUMP detection
 # $Log: vvp_reg.pl,v $
+# Revision 1.20  2007/11/16 03:40:47  stevewilliams
+#  Clean up some broken test invocations/add RE test type.
+#
 # Revision 1.19  2007/04/05 03:06:40  stevewilliams
 #  CE can take flags to pass to iverilog.
 #
@@ -401,7 +404,7 @@ sub check_results {
         printf REPORT "%30s ",$testname;
 
 	if(	!($testtype{$testname} =~ /^CE/) &&  
-	  ($testtype{$testname} ne "CN")) {
+	  ($testtype{$testname} ne "CN") && ($testtype{$testname} ne "RE")) {
 	   # 
 	   # This section is true for all tests that execute - 
 	   # no matter the compiler.
@@ -482,6 +485,15 @@ sub check_results {
 	       system ("rm -f $testname.*");
             } else {
                printf REPORT "CE-FAILED-\n";
+               $failed++;
+            }
+        } elsif($testtype{$testname} eq "RE") {
+            if($result =~ "ERROR") {
+               printf REPORT "RE-PASSED-\n";
+               $passed++;
+	       system ("rm -f $testname.*");
+            } else {
+               printf REPORT "RE-FAILED-\n";
                $failed++;
             }
 	} else {

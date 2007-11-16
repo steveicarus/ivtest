@@ -337,7 +337,7 @@ Test Results:
                        define1 Ran-PASSED-
                      fdisplay1 Ran-PASSED-
                      fdisplay2 Ran-PASSED-
-                     fdisplay3 Parse Err-Ran-PASSED-
+                     fdisplay3 RE-PASSED-
                         fopen1 Ran-PASSED-
                         fopen2 Ran-PASSED-
                          div16 Ran-PASSED-
@@ -374,7 +374,7 @@ Test Results:
                    lh_varindx5 Ran-PASSED-
                      lh_catadd Ran-PASSED-
                      shift_pad Ran-PASSED-
-                        format Parse Err-Ran-PASSED-
+                        format RE-PASSED-
                       disp_dec Ran-PASSED-
                      disp_dec2 Ran-PASSED-
                      disp_parm Ran-PASSED-
@@ -447,7 +447,7 @@ Test Results:
                           mcl1 Ran-PASSED-
                           mcl2 Ran-PASSED-
                       comp1000 Ran-FAILED-
-                      comp1001 
+                      comp1001 Ran-FAILED-
                       specify1 CO-PASSED-
                       specify2 Ran-PASSED-
                       specify3 Ran-PASSED-
@@ -948,4 +948,4 @@ Test Results:
            generate_multi_loop Ran-PASSED-
                      pr1822658 Ran-PASSED-
                      pr1828642 Ran-PASSED-
-Tests passed: 889, failed: 64, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 2
+Tests passed: 889, failed: 65, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 0
