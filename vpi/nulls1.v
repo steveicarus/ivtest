@@ -30,6 +30,6 @@ module test;
 	end
 
 	initial
-		$vpi_call(foo);
+		#1 $vpi_call(foo);
 
 endmodule
