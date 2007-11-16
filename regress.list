@@ -957,6 +957,7 @@ pr1755593	normal	ivltests
 pr1755629	normal	ivltests
 pr1758122	normal	ivltests diff=log/pr1758122.log:gold/pr1758122.gold
 pr1758135	normal	ivltests diff=log/pr1758135.log:gold/pr1758135.gold
+pr1763333	CE	ivltests
 pr1765789	normal	ivltests
 pr1770199	normal	ivltests diff=log/pr1770199.log:gold/pr1770199.gold
 swrite	normal	ivltests diff=log/swrite.log:gold/swrite.gold
