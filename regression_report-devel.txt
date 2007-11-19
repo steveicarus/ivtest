@@ -644,9 +644,9 @@ Test Results:
                          case5 Assertion-Compiler Error-
                          case6 Assertion-Compiler Error-
                          case7 Assertion-Compiler Error-
-                       condit1 Sorry-Ran-PASSED-
+                       condit1 Sorry-Compiler Error-
                       basicreg Ran-PASSED-
-                    basiclatch Sorry-Ran-FAILED-
+                    basiclatch Sorry-Compiler Error-
                     basicstate Sorry-Unable-Compiler Error-
                    basicstate2 Sorry-Unable-Compiler Error-
                       multireg Sorry-Unable-Compiler Error-
@@ -655,9 +655,9 @@ Test Results:
                     basicexpr3 Ran-PASSED-
                     basicexpr4 Ran-PASSED-
                         shiftl Ran-PASSED-
-                   blocksynth1 Sorry-Ran-PASSED-
-                   blocksynth2 Sorry-Assertion-Compiler Error-
-                   blocksynth3 Sorry-Assertion-Compiler Error-
+                   blocksynth1 Sorry-Compiler Error-
+                   blocksynth2 Sorry-Compiler Error-
+                   blocksynth3 Sorry-Compiler Error-
                   conditsynth1 Sorry-Unable-Compiler Error-
                   conditsynth2 Sorry-Unable-Compiler Error-
                   conditsynth3 Sorry-Unable-Compiler Error-
@@ -685,7 +685,7 @@ Test Results:
                       ssetclr2 Sorry-Unable-Compiler Error-
                       ssetclr3 Sorry-Unable-Compiler Error-
                   partselsynth Ran-PASSED-
-                  inside_synth Sorry-Ran-PASSED-
+                  inside_synth Sorry-Compiler Error-
                  inside_synth2 Sorry-Unable-Compiler Error-
                  inside_synth3 Assertion-Compiler Error-
                      mix_reset Sorry-Unable-Compiler Error-
@@ -950,4 +950,4 @@ Test Results:
                      pr1822658 Ran-PASSED-
                      pr1828642 Ran-PASSED-
                      pr1831724 Ran-PASSED-
-Tests passed: 891, failed: 65, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 0
+Tests passed: 888, failed: 68, Unhandled: 37 Unable: 27, Assert: 8, Parse Errs: 0
