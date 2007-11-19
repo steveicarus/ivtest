@@ -938,6 +938,7 @@ Test Results:
                     pr1795005a Ran-PASSED-
                     pr1795005b Ran-PASSED-
                      pr1799904 Ran-PASSED-
+                     pr1804877 Ran-PASSED-
                      pr1805837 Ran-PASSED-
                          urand Ran-PASSED-
                        urand_r Ran-PASSED-
@@ -948,4 +949,4 @@ Test Results:
            generate_multi_loop Ran-PASSED-
                      pr1822658 Ran-PASSED-
                      pr1828642 Ran-PASSED-
-Tests passed: 889, failed: 65, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 0
+Tests passed: 890, failed: 65, Unhandled: 37 Unable: 27, Assert: 10, Parse Errs: 0
