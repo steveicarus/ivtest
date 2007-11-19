@@ -988,3 +988,4 @@ long_div	normal	ivltests diff=log/long_div.log:gold/long_div.gold
 generate_multi_loop	normal	ivltests diff=log/generate_multi_loop.log:gold/generate_multi_loop.gold
 pr1822658	normal	ivltests
 pr1828642	normal	ivltests diff=log/pr1828642.log:gold/pr1828642.gold
+pr1831724	normal	ivltests diff=log/pr1831724.log:gold/pr1831724.gold
