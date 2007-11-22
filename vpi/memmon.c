@@ -10,14 +10,14 @@ static PLI_INT32 memmonitor_compiletf(PLI_BYTE8*name)
       vpiHandle arg;
 
       if (argv == 0) {
-	    vpi_printf("ERROR: %s expects at least 1 argument.", name);
+	    vpi_printf("ERROR: %s expects at least 1 argument.\n", name);
 	    vpi_sim_control(vpiFinish, 1);
 	    return 0;
       }
 
       while ( (arg = vpi_scan(argv)) ) {
 	    if (vpi_get(vpiType, arg) != vpiMemory) {
-		  vpi_printf("ERROR: %s expects only memory arguments", name);
+		  vpi_printf("ERROR: %s expects only memory arguments\n", name);
 		  vpi_sim_control(vpiFinish, 1);
 		  return 0;
 	    }
