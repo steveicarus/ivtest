@@ -477,7 +477,7 @@ Test Results:
                         memidx Ran-PASSED-
                      memidxrng Ran-PASSED-
                       mem2port Ran-PASSED-
-                       vcd-dup Ran-FAILED-
+                       vcd-dup Ran-PASSED-
                        resolv1 Ran-PASSED-
                          pr307 Ran-PASSED-
                         pr307a Ran-PASSED-
@@ -952,4 +952,4 @@ Test Results:
                      pr1831724 Ran-PASSED-
         unnamed_generate_block Ran-PASSED-
                      pr1833754 CE-PASSED-
-Tests passed: 892, failed: 66, Unhandled: 37 Unable: 27, Assert: 8, Parse Errs: 0
+Tests passed: 893, failed: 65, Unhandled: 37 Unable: 27, Assert: 8, Parse Errs: 0

@@ -1,5 +1,5 @@
 $date
-	Fri Oct 26 23:19:11 2001
+	Wed Nov 21 18:10:57 2007
 $end
 $version
 	Icarus Verilog
@@ -8,33 +8,28 @@ $timescale
 	1s
 $end
 $scope module test $end
-$var reg 1 ! a $end
-$var reg 1 " b1 $end
-$var reg 1 # b2 $end
-$var wire 1 $ c1 $end
-$var wire 1 % c2 $end
-$scope task set $end
-$var reg 3 & bits $end
-$var reg 1 ' t1 $end
-$upscope $end
+$var wire 1 ! c1 $end
+$var wire 1 " c2 $end
+$var reg 1 # a $end
+$var reg 1 $ b1 $end
+$var reg 1 % b2 $end
 $scope module m1 $end
-$var wire 1 ! a $end
-$var wire 1 " b $end
-$var wire 1 $ c $end
+$var wire 1 & a $end
+$var wire 1 ' b $end
+$var wire 1 ! c $end
 $var wire 1 ( c1 $end
 $var wire 1 ) c2 $end
 $upscope $end
 $scope module m2 $end
-$var wire 1 ! a $end
-$var wire 1 # b $end
-$var wire 1 % c $end
-$var wire 1 * c1 $end
-$var wire 1 + c2 $end
+$var wire 1 & a $end
+$var wire 1 * b $end
+$var wire 1 " c $end
+$var wire 1 + c1 $end
+$var wire 1 , c2 $end
 $upscope $end
-$upscope $end
-$scope module test $end
-$scope module m2 $end
-$var wire 1 * c1 $end
+$scope task set $end
+$var reg 3 - bits [2:0] $end
+$var reg 1 . t1 $end
 $upscope $end
 $upscope $end
 $scope module test $end
@@ -47,12 +42,11 @@ $upscope $end
 $scope module test $end
 $scope module m1 $end
 $scope module mm1 $end
-$var wire 1 , a $end
+$var wire 1 / a $end
 $var wire 1 ( c $end
-$var wire 1 ( c1 $end
 $upscope $end
 $scope module mm2 $end
-$var wire 1 - a $end
+$var wire 1 0 a $end
 $var wire 1 ) c $end
 $var wire 1 ) c1 $end
 $upscope $end
@@ -61,60 +55,68 @@ $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-x-
-0,
-x+
-1*
+x0
+0/
+x.
+bx -
+x,
+1+
+x*
 x)
 1(
 x'
-bx &
+0&
 x%
 x$
-x#
+0#
 x"
-0!
+x!
 $end
 #1
-bx0 &
-bx00 &
-b0 &
-0'
+0.
+b0 -
 #2
-0#
-1+
-0%
+0!
 0"
-0-
 1)
+1,
+00
 0$
-#4
-b1 &
-#5
-1#
-0+
-1%
-#7
-b0 &
-b10 &
-#8
-0#
-1+
+0'
 0%
+0*
+#4
+b1 -
+#5
 1"
-1-
+0,
+1%
+1*
+#7
+b10 -
+#8
+1!
+0"
 0)
+1,
+10
 1$
+1'
+0%
+0*
 #9
 $dumpoff
-x-
+x0
+x/
+x.
+bx -
 x,
 x+
 x*
 x)
 x(
 x'
-bx &
+x&
 x%
 x$
 x#
@@ -123,75 +125,82 @@ x!
 $end
 #15
 $dumpon
-1-
+10
+0/
+0.
+b100 -
 0,
-0+
-1*
+1+
+0*
 0)
 1(
 0'
-b100 &
-1%
-1$
-0#
-0"
+1&
+0%
+0$
+1#
+1"
 1!
 $end
 #16
-b101 &
-1'
+1.
+b101 -
 #17
-1#
-0*
-0%
-#19
-b100 &
-b110 &
-#20
-0#
-1*
-1%
-1"
-1,
-0(
-0$
-#22
-b111 &
-#23
-1#
-0*
-0%
-#25
-b110 &
-b100 &
-b0 &
-#26
-0#
-1*
-1%
 0"
-0,
-1(
-1$
+0+
+1%
+1*
+#19
+b110 -
+#20
 0!
+1"
+0(
 1+
+1/
+1$
+1'
 0%
-0-
+0*
+#22
+b111 -
+#23
+0"
+0+
+1%
+1*
+#25
+b0 -
+#26
+1(
 1)
+1+
+1,
+0/
+00
+0#
+0&
 0$
+0'
+0%
+0*
 #27
 $dumpall
-0-
-0,
+00
+0/
+1.
+b0 -
+1,
 1+
-1*
+0*
 1)
 1(
-1'
-b0 &
+0'
+0&
 0%
 0$
 0#
 0"
 0!
 $end
+#28
