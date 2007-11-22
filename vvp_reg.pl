@@ -23,6 +23,9 @@
 # 3/25/2001  SDW   Modified sregress.pl script to run vvp.
 # 4/13/2001  SDW   Added CORE DUMP detection
 # $Log: vvp_reg.pl,v $
+# Revision 1.21  2007/11/22 03:43:35  stevewilliams
+#  Add -Ttyp flag to get rid of warnings.
+#
 # Revision 1.20  2007/11/16 03:40:47  stevewilliams
 #  Clean up some broken test invocations/add RE test type.
 #
@@ -262,6 +265,10 @@ sub execute_regression {
              } else {
 		if ($testtype{$testname} =~ /-gno-specify/) {
 			$versw = $versw." -gno-specify";
+		} else {
+		    if ($testtype{$testname} =~ /-Ttyp/) {
+			$versw = $versw." -Ttyp";
+		    }
 		}
 	     }
         }

@@ -32,6 +32,9 @@
 #               be any.
 # CE:		Compile with Errors - We EXPECT errors - we're checking 
 #               illegal syntax
+#
+# RE:		Runtime with Errors - We EXPECT errors - we're checking 
+#               illegal syntax
 # 
 # The third arguement is the directory, and forth optional is one of
 # modulename - Defines the top level module
@@ -59,8 +62,8 @@ always3.1.2A	CO	ivltests
 always3.1.2B	CO	ivltests
 always3.1.2C	CO	ivltests
 always3.1.2D	CO	ivltests
-always3.1.2E	CO	ivltests
-always3.1.2F	CO	ivltests
+always3.1.2E	CO,-Ttyp ivltests
+always3.1.2F	CO,-Ttyp ivltests
 always3.1.2G	CO	ivltests
 always3.1.2H	CO	ivltests
 always3.1.2I	CO	ivltests
@@ -867,7 +870,7 @@ pr1570635	normal	ivltests
 pr1570635b	normal	ivltests
 pr1574175	normal	ivltests diff=log/pr1574175.log:gold/pr1574175.gold
 pr1581580	normal	ivltests
-pr1587634	CO	ivltests
+pr1587634	CO,-Ttyp ivltests
 pr1587669	normal	ivltests diff=log/pr1587669.log:gold/pr1587669.gold
 pr1589497	normal	ivltests diff=log/pr1589497.log:gold/pr1589497.gold
 pr1598445	normal	ivltests
