@@ -1,7 +1,7 @@
 #include "veriuser.h"
 
 static int
-calltf(char *data)
+calltf(int ud, int reason)
 {
     char *inst = tf_getinstance();
 
@@ -11,7 +11,7 @@ calltf(char *data)
     return 0;
 }
 
-static int sizetf() { return 32; }
+static int sizetf(int ud, int reason) { return 32; }
 
 s_tfcell veriusertfs[2] = {
   {usertask, 0, 0, sizetf, calltf, 0, "$mytest", 1},

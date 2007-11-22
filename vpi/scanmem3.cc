@@ -37,8 +37,8 @@ static struct str_s {
     {vpiHexStrVal, "x8"}
 };
 
-static int
-MemPeek(char *)
+static PLI_INT32
+MemPeek(PLI_BYTE8 *)
 {
     vpiHandle	mod_h, mem_h, iterate, handle;
     vpiHandle	word_h[8];
@@ -100,8 +100,8 @@ MemPeek(char *)
     return 0;
 }
 
-static int
-MemPoke(char *)
+static PLI_INT32
+MemPoke(PLI_BYTE8 *)
 {
     vpiHandle	mod_h, mem_h, iterate, handle;
     vpiHandle	word_h[8];

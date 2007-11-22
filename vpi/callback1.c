@@ -19,21 +19,21 @@
 #include <stdio.h>
 #include "vpi_user.h"
 
-static int
+static PLI_INT32
 my_EndOfCompile(p_cb_data cb_data)
 {
     vpi_printf ("EndOfCompile %s\n", cb_data->user_data);
     return 0;
 }
 
-static int
+static PLI_INT32
 my_StartOfSimulation(p_cb_data cb_data)
 {
     vpi_printf ("StartOfSimulation %s\n", cb_data->user_data);
     return 0;
 }
 
-static int
+static PLI_INT32
 my_EndOfSimulation(p_cb_data cb_data)
 {
     vpi_printf ("EndOfSimulation %s\n", cb_data->user_data);
@@ -44,6 +44,7 @@ static void
 my_Register(void)
 {
     s_cb_data cb_data;
+    cb_data.time = NULL;
 
     vpi_printf("Registering Callbacks\n");
 

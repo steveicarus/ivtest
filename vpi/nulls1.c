@@ -22,7 +22,7 @@ USA
 #include "vpi_user.h"
 #include <stdlib.h>
 
-int
+PLI_INT32
 ValueChange(p_cb_data cb_data)
 {
 	static s_vpi_time get_time = { vpiSimTime, 0, 0, 0 };
@@ -31,8 +31,8 @@ ValueChange(p_cb_data cb_data)
 	return(0);
 }
 
-int
-CompileTF(char *user_data)
+PLI_INT32
+CompileTF(PLI_BYTE8 *user_data)
 {
 	s_cb_data cb_data;
 	vpiHandle call_h=vpi_handle(vpiSysTfCall,NULL);

@@ -17,7 +17,7 @@
  *    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
  */
 #ifdef HAVE_CVS_IDENT
-#ident "$Id: realcb.c,v 1.2 2006/02/22 03:06:12 stevewilliams Exp $"
+#ident "$Id: realcb.c,v 1.3 2007/11/22 04:10:16 stevewilliams Exp $"
 #endif
 
 /*
@@ -26,7 +26,7 @@
 # include  <vpi_user.h>
 # include  <assert.h>
 
-static int watchreal_cb(p_cb_data cb)
+static PLI_INT32 watchreal_cb(p_cb_data cb)
 {
       s_vpi_value value;
       vpiHandle arg = (vpiHandle) (cb->user_data);
@@ -42,7 +42,7 @@ static int watchreal_cb(p_cb_data cb)
       return 0;
 }
 
-static int my_watchreal_calltf(char *xx)
+static PLI_INT32 my_watchreal_calltf(PLI_BYTE8 *xx)
 {
       struct t_cb_data cb;
       struct t_vpi_time time;
@@ -90,14 +90,3 @@ void (*vlog_startup_routines[])() = {
       my_watchreal_register,
       0
 };
-
-/*
- * $Log: realcb.c,v $
- * Revision 1.2  2006/02/22 03:06:12  stevewilliams
- *  Add a missing initialization of value.
- *
- * Revision 1.1  2003/02/10 05:14:13  stevewilliams
- *  Add the vpi/realcb test.
- *
- */
-

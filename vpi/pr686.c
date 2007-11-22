@@ -16,12 +16,12 @@
  *    along with this program; if not, write to the Free Software
  *    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
  */
-#ident "$Id: pr686.c,v 1.1 2003/04/19 23:37:54 stevewilliams Exp $"
+#ident "$Id: pr686.c,v 1.2 2007/11/22 04:10:16 stevewilliams Exp $"
 
 # include  "vpi_user.h"
 # include  <assert.h>
 
-static int next_sim_time_callback(struct t_cb_data*cb)
+static PLI_INT32 next_sim_time_callback(struct t_cb_data*cb)
 {
       vpiHandle obj = (vpiHandle)cb->user_data;
       s_vpi_value val;
@@ -39,12 +39,12 @@ static int next_sim_time_callback(struct t_cb_data*cb)
       return 0;
 }
 
-static int test_next_compiletf(char *name)
+static PLI_INT32 test_next_compiletf(PLI_BYTE8 *name)
 {
       return 0;
 }
 
-static int test_next_calltf(char *name)
+static PLI_INT32 test_next_calltf(PLI_BYTE8 *name)
 {
       vpiHandle sys, argv, value;
       s_vpi_value val;
@@ -84,11 +84,3 @@ void (*vlog_startup_routines[])() = {
       register_functions,
       0
 };
-
-/*
- * $Log: pr686.c,v $
- * Revision 1.1  2003/04/19 23:37:54  stevewilliams
- *  Add pr686.
- *
- */
-

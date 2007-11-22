@@ -26,8 +26,8 @@
 
 s_vpi_time get_time = { vpiScaledRealTime, 0, 0, 0 };
 
-static int
-calltf(char *data)
+static PLI_INT32
+calltf(PLI_BYTE8 *data)
 {
     vpiHandle hand;
     

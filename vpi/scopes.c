@@ -32,7 +32,7 @@ static void RecurseScope(vpiHandle handle, int depth)
     }
 }
 
-static int CompileTF(char *x)
+static PLI_INT32 CompileTF(PLI_BYTE8 *x)
 {
 	RecurseScope(NULL, 0);
 	return 0;

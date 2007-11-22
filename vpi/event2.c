@@ -26,7 +26,7 @@
 
 static vpiHandle Handle;
 
-static int
+static PLI_INT32
 Callback(s_cb_data *data)
 {
     s_vpi_time t;
@@ -47,7 +47,7 @@ Callback(s_cb_data *data)
     return 0;
 }
 
-static int
+static PLI_INT32
 CallbackRegister(s_cb_data *data)
 {
     vpiHandle hand;

@@ -4,7 +4,7 @@
 # include  <stdlib.h>
 # include  <assert.h>
 
-static int listparams_compiletf(char*name)
+static PLI_INT32 listparams_compiletf(PLI_BYTE8*name)
 {
       return 0;
 }
@@ -42,7 +42,7 @@ static void param_by_name(vpiHandle scope, const char*key)
       }
 }
 
-static int listparams_calltf(char*name)
+static PLI_INT32 listparams_calltf(PLI_BYTE8*name)
 {
       vpiHandle sys  = vpi_handle(vpiSysTfCall,0);
       vpiHandle scope= vpi_handle(vpiScope, sys);

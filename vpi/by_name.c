@@ -64,7 +64,7 @@ static void FindHandleByName()
     }
 }
 
-static int CompileTF(char *x)
+static PLI_INT32 CompileTF(PLI_BYTE8 *x)
 {
 	FindHandleByName();
 	return 0;

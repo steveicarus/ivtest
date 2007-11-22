@@ -3,7 +3,7 @@
 # include  <vpi_user.h>
 # include  <stdlib.h>
 
-static int memmonitor_compiletf(char*name)
+static PLI_INT32 memmonitor_compiletf(PLI_BYTE8*name)
 {
       vpiHandle sys = vpi_handle(vpiSysTfCall,0);
       vpiHandle argv = vpi_iterate(vpiArgument, sys);
@@ -33,7 +33,7 @@ static PLI_INT32 callback(struct t_cb_data*cb)
       return 0;
 }
 
-static int memmonitor_calltf(char*name)
+static PLI_INT32 memmonitor_calltf(PLI_BYTE8*name)
 {
       vpiHandle sys  = vpi_handle(vpiSysTfCall,0);
       vpiHandle argv = vpi_iterate(vpiArgument, sys);

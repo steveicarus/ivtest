@@ -26,7 +26,7 @@
 
 static int num;
 
-static int CompileTF(char *x)
+static PLI_INT32 CompileTF(PLI_BYTE8 *x)
 {
 	vpiHandle sys = vpi_handle(vpiSysTfCall, 0);
 	vpiHandle argv = vpi_iterate(vpiArgument, sys);

@@ -24,7 +24,7 @@
 #include <assert.h>
 #include "vpi_user.h"
 
-static int
+static PLI_INT32
 EndOfCompile(s_cb_data *data)
 {
     vpiHandle hand;

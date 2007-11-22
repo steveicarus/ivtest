@@ -1,12 +1,12 @@
 #include "veriuser.h"
 
 static int
-mytest(char *data)
+mytest(int ud, int reason)
 {
-    int ht, lt;
-    char *cp;
-    char *inst = tf_getinstance();
-    char *name = tf_spname();
+    PLI_INT32 ht, lt;
+    PLI_BYTE8 *cp;
+    PLI_BYTE8 *inst = tf_getinstance();
+    PLI_BYTE8 *name = tf_spname();
 
     io_printf("Module %s\n", name);
 
@@ -40,7 +40,7 @@ mytest(char *data)
     return 0;
 }
 
-static int return_32() { return 32; }
+static int return_32(int ud, int reason) { return 32; }
 
 s_tfcell veriusertfs[2] = {
   { usertask, 0, 0, return_32, mytest, 0, "$mytest", 1},

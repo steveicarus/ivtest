@@ -17,12 +17,12 @@
  *    along with this program; if not, write to the Free Software
  *    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
  */
-#ident "$Id: hello_poke.c,v 1.1 2002/11/25 23:26:37 stevewilliams Exp $"
+#ident "$Id: hello_poke.c,v 1.2 2007/11/22 04:10:16 stevewilliams Exp $"
 
 # include  <vpi_user.h>
 # include  <assert.h>
 
-static int my_hello_calltf(char *xx)
+static PLI_INT32 my_hello_calltf(PLI_BYTE8 *xx)
 {
       s_vpi_value value;
 
@@ -74,11 +74,3 @@ void (*vlog_startup_routines[])() = {
       my_hello_register,
       0
 };
-
-/*
- * $Log: hello_poke.c,v $
- * Revision 1.1  2002/11/25 23:26:37  stevewilliams
- *  Add hello_poke to vpi tests.
- *
- */
-

@@ -16,7 +16,7 @@
  *    along with this program; if not, write to the Free Software
  *    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
  */
-#ident "$Id: hello_tf.c,v 1.1 2002/05/23 03:34:05 stevewilliams Exp $"
+#ident "$Id: hello_tf.c,v 1.2 2007/11/22 04:10:16 stevewilliams Exp $"
 
 /*
  */
@@ -24,7 +24,7 @@
 # include  <vpi_user.h>
 # include  <veriuser.h>
 
-static int my_hello_calltf(char *xx)
+static PLI_INT32 my_hello_calltf(PLI_BYTE8 *xx)
 {
       io_printf("Hello World, from VPI.\n");
       return 0;
@@ -51,16 +51,3 @@ void (*vlog_startup_routines[])() = {
       my_hello_register,
       0
 };
-/*
- * $Log: hello_tf.c,v $
- * Revision 1.1  2002/05/23 03:34:05  stevewilliams
- *  Add the hello_tf test.
- *
- * Revision 1.1  2002/05/04 16:34:13  ka6s
- * First release of vpi tests
- *
- * Revision 1.1  2002/04/18 03:25:16  steve
- *  More examples.
- *
- */
-

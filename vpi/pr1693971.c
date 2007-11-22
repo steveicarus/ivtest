@@ -25,10 +25,10 @@
 #endif
 
 /* prototypes of PLI application routine names */
-static int PLIbook_PowSizetf(char *user_data);
-static int PLIbook_PowCalltf(char *user_data);
-static int PLIbook_PowCompiletf(char *user_data);
-static int PLIbook_PowStartOfSim(s_cb_data *callback_data);
+static PLI_INT32 PLIbook_PowSizetf(PLI_BYTE8 *user_data);
+static PLI_INT32 PLIbook_PowCalltf(PLI_BYTE8 *user_data);
+static PLI_INT32 PLIbook_PowCompiletf(PLI_BYTE8 *user_data);
+static PLI_INT32 PLIbook_PowStartOfSim(s_cb_data *callback_data);
 
 /**********************************************************************
  * $pow Registration Data
@@ -62,7 +62,7 @@ void PLIbook_pow_register()
 /**********************************************************************
  * Sizetf application
  *********************************************************************/
-static int PLIbook_PowSizetf(char *user_data)
+static PLI_INT32 PLIbook_PowSizetf(PLI_BYTE8 *user_data)
 {
   vpi_printf("\n$pow PLI sizetf function.\n\n");
   return(32);   /* $pow returns 32-bit values */
@@ -71,7 +71,7 @@ static int PLIbook_PowSizetf(char *user_data)
 /**********************************************************************
  * compiletf application to verify valid systf args.
  *********************************************************************/
-static int PLIbook_PowCompiletf(char *user_data)
+static PLI_INT32 PLIbook_PowCompiletf(PLI_BYTE8 *user_data)
 {
   vpiHandle systf_handle, arg_itr, arg_handle;
   PLI_INT32 tfarg_type;
@@ -128,7 +128,7 @@ static int PLIbook_PowCompiletf(char *user_data)
  * calltf to calculate base to power of exponent and return result.
  *********************************************************************/
 #include <math.h>
-static int PLIbook_PowCalltf(char *user_data)
+static PLI_INT32 PLIbook_PowCalltf(PLI_BYTE8 *user_data)
 {
   s_vpi_value value_s;
   vpiHandle   systf_handle, arg_itr, arg_handle;
@@ -168,7 +168,7 @@ static int PLIbook_PowCalltf(char *user_data)
 /**********************************************************************
  * Start-of-simulation application
  *********************************************************************/
-static int PLIbook_PowStartOfSim(s_cb_data *callback_data)
+static PLI_INT32 PLIbook_PowStartOfSim(s_cb_data *callback_data)
 {
   vpi_printf("\n$pow StartOfSim callback.\n\n");
   return(0);
@@ -183,5 +183,3 @@ void (*vlog_startup_routines[])() =
   //PLIbook_test_user_data_register,
   0 /*** final entry must be 0 ***/
 };
-
- 	  	 

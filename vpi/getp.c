@@ -1,10 +1,10 @@
 #include "veriuser.h"
 
 static int
-calltf(char *data)
+calltf(int ud, int reason)
 {
     int i;
-    char *inst = tf_getinstance();
+    PLI_BYTE8 *inst = tf_getinstance();
 
     for (i = 1; i < 5; i++) {
 	io_printf("tf_getp(%d)\t\t-> %d\n", i, tf_getp(i));
@@ -17,7 +17,7 @@ calltf(char *data)
     return 0;
 }
 
-static int sizetf() { return 32; }
+static int sizetf(int ud, int reason) { return 32; }
 
 s_tfcell veriusertfs[2] = {
   {usertask, 0, 0, sizetf, calltf, 0, "$mytest", 1},

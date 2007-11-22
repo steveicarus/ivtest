@@ -32,7 +32,7 @@ static s_vpi_time suppress_time = { vpiSuppressTime, 0, 0, 0 };
 static vpiHandle findReg(char *name_);
 static vpiHandle findMem(char *name_);
 
-static int
+static PLI_INT32
 CallbackPeek(s_cb_data * data)
 {
 	vpiHandle handle;
@@ -136,7 +136,7 @@ findMem(char *name_)
     return vpi_scan(word_i);
 }
 
-static int SetupTrigger(s_cb_data * cb_data)
+static PLI_INT32 SetupTrigger(s_cb_data * cb_data)
 {
 	s_cb_data vc_cb_data;
 	vpiHandle handle;

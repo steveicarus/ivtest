@@ -27,7 +27,7 @@
 #include <stdlib.h>
 #include "vpi_user.h"
 
-static int
+static PLI_INT32
 CallbackPeek(s_cb_data *data) {
 
     static s_vpi_time	zero_delay = { vpiNoDelay, 0, 0, 0 };
@@ -103,7 +103,7 @@ RegisterPeek(char *name, vpiHandle poke)
     vpi_register_cb(&vc_cb_data);
 }
 
-static int
+static PLI_INT32
 EndofCompile(s_cb_data * cb_data)
 {
     RegisterPeek("e_Peek", FindPoke("r_Poke"));

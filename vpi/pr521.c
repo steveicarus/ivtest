@@ -3,7 +3,7 @@
 
 char *veriuser_version_str = "Test PLI v0.1 ";
 
-static int pli_test()
+static int pli_test(int ud, int reason)
 {
    int a;
    a = tf_getp(1);
@@ -11,7 +11,7 @@ static int pli_test()
    return 0;
 }
    
-static int return_32()
+static int return_32(int ud, int reason)
 {
   return (32);
 }

@@ -1,8 +1,8 @@
 #include <assert.h>
 #include "vpi_user.h"
 
-static int
-calltf(char *data)
+static PLI_INT32
+calltf(PLI_BYTE8 *data)
 {
     int i;
 
@@ -33,4 +33,3 @@ VPIRegister(void)
 }
 
 void (*vlog_startup_routines[]) () = { VPIRegister, 0};
-

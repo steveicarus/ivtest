@@ -30,8 +30,8 @@ char *str[4] = {
  "1111000000001100101011111010101110101011111011011110101010111011111011101111"
 };
 
-static int
-MemPeek(char *)
+static PLI_INT32
+MemPeek(PLI_BYTE8 *)
 {
     vpiHandle	mod_h, mem_h, iterate, handle;
     s_vpi_value	value;
@@ -92,8 +92,8 @@ MemPeek(char *)
     return 0;
 }
 
-static int
-MemPoke(char *)
+static PLI_INT32
+MemPoke(PLI_BYTE8 *)
 {
     vpiHandle	mod_h, mem_h, iterate, handle;
     s_vpi_value	value;
