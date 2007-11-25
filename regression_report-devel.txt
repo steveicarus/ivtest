@@ -948,9 +948,10 @@ Test Results:
                       long_div Ran-PASSED-
            generate_multi_loop Ran-PASSED-
                      pr1822658 Ran-PASSED-
+                     pr1823732 Ran-PASSED-
                      pr1828642 Ran-PASSED-
                      pr1831724 Ran-PASSED-
         unnamed_generate_block Ran-PASSED-
                      pr1833754 CE-PASSED-
                           sdf1 Ran-PASSED-
-Tests passed: 894, failed: 65, Unhandled: 37 Unable: 27, Assert: 8, Parse Errs: 0
+Tests passed: 895, failed: 65, Unhandled: 37 Unable: 27, Assert: 8, Parse Errs: 0
