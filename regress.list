@@ -996,3 +996,4 @@ pr1831724	normal	ivltests diff=log/pr1831724.log:gold/pr1831724.gold
 unnamed_generate_block	normal	ivltests diff=log/unnamed_generate_block.log:gold/unnamed_generate_block.gold
 pr1833754	CE	ivltests
 sdf1	normal	ivltests diff=log/sdf1.log:gold/sdf1.gold
+sdf2	normal	ivltests diff=log/sdf2.log:gold/sdf1.gold
