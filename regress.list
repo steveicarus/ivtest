@@ -998,3 +998,4 @@ pr1833754	CE	ivltests
 sdf1	normal	ivltests diff=log/sdf1.log:gold/sdf1.gold
 sdf2	normal	ivltests diff=log/sdf2.log:gold/sdf1.gold
 sdf3	normal	ivltests diff=log/sdf3.log:gold/sdf1.gold
+sdf4	normal	ivltests diff=log/sdf4.log:gold/sdf1.gold
