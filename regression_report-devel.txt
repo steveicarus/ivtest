@@ -957,4 +957,6 @@ Test Results:
                           sdf2 Ran-PASSED-
                           sdf3 Ran-PASSED-
                           sdf4 Ran-PASSED-
-Tests passed: 898, failed: 65, Unhandled: 37 Unable: 27, Assert: 8, Parse Errs: 0
+               macro_with_args Ran-PASSED-
+                        macro2 Ran-PASSED-
+Tests passed: 900, failed: 65, Unhandled: 37 Unable: 27, Assert: 8, Parse Errs: 0
