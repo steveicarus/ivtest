@@ -26,7 +26,7 @@ module fopen1;
 
    initial begin
 
-      fp = $fopen("fopen1.out");
+      fp = $fopen("work/fopen1.out");
       case(fp)
         32'h0000_0001: error = 1;  	
         32'h0000_0002: error = 0;  	

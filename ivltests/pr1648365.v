@@ -54,8 +54,8 @@ end
 
 
 initial begin
-    $dumpfile( "test.vcd" );
-    $dumpvars;
+//    $dumpfile( "test.vcd" );
+//    $dumpvars;
     
     #100;
     $finish;

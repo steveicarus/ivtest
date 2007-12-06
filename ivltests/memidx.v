@@ -80,8 +80,8 @@ module BENCH ();
 	always_test_case usingalways (array_out2, clock, reset);
 
 	initial begin
-		$dumpfile("waves.vcd");
-		$dumpvars(0, BENCH);
+//		$dumpfile("waves.vcd");
+//		$dumpvars(0, BENCH);
 		clock <= 0;
 		reset <= 0;
 		count <= 0;

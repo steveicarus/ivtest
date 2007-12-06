@@ -17,7 +17,7 @@
  *    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
  */
 
-// $Id: ldelay4.v,v 1.2 2005/11/10 01:56:32 stevewilliams Exp $
+// $Id: ldelay4.v,v 1.3 2007/12/06 02:31:10 stevewilliams Exp $
 
 // Test for delays in structural logic.  Differential clock receiver UDP.
 
@@ -45,7 +45,7 @@ module test;
    
    initial
      begin
-	$dumpvars;
+//	$dumpvars;
 	a = 0;
 	b = 1;
 	#3;

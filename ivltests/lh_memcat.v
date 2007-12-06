@@ -49,10 +49,10 @@ module main;
      end
 
    // Waves definition
-   initial
-     begin
-        $dumpfile("out.dump");
-        $dumpvars(0, main);
-     end
+//   initial
+//     begin
+//        $dumpfile("out.dump");
+//        $dumpvars(0, main);
+//     end
 
 endmodule // main

@@ -16,8 +16,11 @@
  *    along with this program; if not, write to the Free Software
  *    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
  */
-// $Id: dumpvars.v,v 1.1 2001/07/08 02:56:25 sib4 Exp $
+// $Id: dumpvars.v,v 1.2 2007/12/06 02:31:10 stevewilliams Exp $
 // $Log: dumpvars.v,v $
+// Revision 1.2  2007/12/06 02:31:10  stevewilliams
+//  Clean up work files (caryr)
+//
 // Revision 1.1  2001/07/08 02:56:25  sib4
 // Test for PR#174
 //
@@ -31,7 +34,7 @@ module dumptest;
 
    initial
      begin
-        $dumpfile("dumptest.vcd");
+        $dumpfile("work/dumptest.vcd");
         $dumpvars(0, dumptest.u1);
         $dumpvars(0, u2);
         $display("PASSED");

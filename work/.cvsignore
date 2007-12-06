@@ -1,1 +1,4 @@
 fopen2.out*
+*.vcd
+*.dump
+test.txt

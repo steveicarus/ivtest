@@ -3,3 +3,6 @@ vsim
 dfile
 *.vcd
 *.dump
+*.o
+*.vpi
+regression_report.txt

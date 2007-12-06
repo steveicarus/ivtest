@@ -519,7 +519,7 @@ p_monta normal ivltests
 memidx normal ivltests # PR 221
 memidxrng normal ivltests # PR 271 memory address range checks
 mem2port normal ivltests # memory ports with constant address
-vcd-dup normal ivltests diff=vcd-dup.vcd:gold/vcd-dup.vcd.gold:40
+vcd-dup normal ivltests diff=work/vcd-dup.vcd:gold/vcd-dup.vcd.gold:40
 resolv1 normal ivltests # PR#300
 pr307 normal ivltests # wide adds
 pr307a normal ivltests # wide adds

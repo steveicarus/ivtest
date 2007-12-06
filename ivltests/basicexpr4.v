@@ -38,8 +38,8 @@ adder u_add (.q(q),.a(d),.b(d));
 (* ivl_synthesis_off *)
 initial 
   begin
-    $dumpfile("test.vcd");	   
-    $dumpvars(0,test);
+//    $dumpfile("test.vcd");	   
+//    $dumpvars(0,test);
     d = 0;
     # 1;
     if (q !== 2'b0)

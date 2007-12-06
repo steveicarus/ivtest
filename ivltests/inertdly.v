@@ -11,8 +11,8 @@ reg inp,error;
 
 initial
   begin
-      $dumpfile("test.vcd");
-      $dumpvars(0,test);
+//      $dumpfile("test.vcd");
+//      $dumpvars(0,test);
       #1 ;		// 1 ns
       error = 0;
       inp = 0;

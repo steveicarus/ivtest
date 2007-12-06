@@ -22,8 +22,8 @@ module top;
    end
 
   initial begin
-    $dumpfile("results.vcd");
-    $dumpvars(0, top);
+//    $dumpfile("results.vcd");
+//    $dumpvars(0, top);
     clk = 0;
     en = 0;
     in = 0;

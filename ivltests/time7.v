@@ -83,14 +83,14 @@ module main;
      end
 
    // Waves definition
-   initial
-     begin
+//   initial
+//     begin
 //        $recordvars("primitives", "drivers");
-        $dumpfile("out.dump");
-        $dumpvars(5, main);
+//        $dumpfile("out.dump");
+//        $dumpvars(5, main);
 // Line below ought to work
 //       $dumpvars;
-     end
+//     end
 
 endmodule // main
 

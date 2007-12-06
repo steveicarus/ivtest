@@ -53,8 +53,8 @@ always #5 clk = ~clk;
 
 initial
   begin
-    $dumpfile("test.vcd");	   
-    $dumpvars(0,test);
+//    $dumpfile("test.vcd");	   
+//    $dumpvars(0,test);
     clk = 0;
     rst = 1;
     @(posedge clk);

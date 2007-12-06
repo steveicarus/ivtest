@@ -41,8 +41,8 @@ initial
     v1 = 0;
     v2 = 0;
     v3 = 0;
-    $dumpfile("test.vcd");
-    $dumpvars(0,main);
+//    $dumpfile("test.vcd");
+//    $dumpvars(0,main);
  
     #(5);
     -> event_1;

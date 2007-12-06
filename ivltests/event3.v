@@ -8,7 +8,7 @@ reg [31:0] y;
 event e1;
 
 initial begin
-	$dumpvars;
+//	$dumpvars;
 	$monitor ("T=", $time, ", a=", a, ", b=", b, ", x=",
 x, ", y=", y);
 	#200

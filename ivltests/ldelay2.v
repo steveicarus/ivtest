@@ -17,7 +17,7 @@
  *    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
  */
 
-// $Id: ldelay2.v,v 1.1 2001/12/26 23:45:57 sib4 Exp $
+// $Id: ldelay2.v,v 1.2 2007/12/06 02:31:10 stevewilliams Exp $
 
 // Test for delays in structural logic. Inertial delays suppress event.
 
@@ -39,7 +39,7 @@ module test;
    
    initial
      begin
-	$dumpvars;
+//	$dumpvars;
 	a = 0;
 	b = 1;
 	#3;

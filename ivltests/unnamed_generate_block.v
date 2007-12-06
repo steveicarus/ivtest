@@ -42,10 +42,10 @@ always @(genblk0001.counter.count) begin
   $display(genblk0001.counter.count);
 end
 
-initial begin
-  $dumpfile("dump.vcd");
-  $dumpvars;
-end
+//initial begin
+//  $dumpfile("dump.vcd");
+//  $dumpvars;
+//end
 
 endmodule
 

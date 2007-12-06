@@ -7,8 +7,8 @@ module test();
 
    initial
      begin
-	$dumpfile("indexed_part.vcd");
-	$dumpvars;
+//	$dumpfile("indexed_part.vcd");
+//	$dumpvars;
      end
 
    initial 

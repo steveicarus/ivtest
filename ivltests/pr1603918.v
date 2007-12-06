@@ -5,8 +5,8 @@ module top;
   reg a, b;
 
   initial begin
-    $dumpfile("test.lx2");  // Need to also use the -lxt2 flags on exe.
-    $dumpvars(0, top);
+//    $dumpfile("test.lx2");  // Need to also use the -lxt2 flags on exe.
+//    $dumpvars(0, top);
                             // Initial value should be X is 1.
     #1 a = 1'b1;            // Should be X is 1.
     #1 if (q !== 1'bx) begin

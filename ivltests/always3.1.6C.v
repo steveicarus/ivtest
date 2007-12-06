@@ -26,8 +26,8 @@ reg [3:0] value1,value2,value3;
 initial 
 	begin
            #0;
-           $dumpfile("test.vcd");
-           $dumpvars(0,main);
+//           $dumpfile("test.vcd");
+//           $dumpvars(0,main);
            value3 = 0;
            #3 ;					// t=3
            value1 = 4'b0000 ;	// Picked up at time 4 

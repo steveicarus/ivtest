@@ -1857,8 +1857,8 @@ piccpu piccpu_inst (
 
 // Reset
 initial begin
-	$dumpfile("pic.vcd");
-	$dumpvars(0,pictest);
+//	$dumpfile("pic.vcd");
+//	$dumpvars(0,pictest);
    reset = 1;
    #200;
    reset = 0;

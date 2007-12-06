@@ -45,8 +45,8 @@ basicreg u_reg (clk,d,q);
 (* ivl_synthesis_off *)
 initial 
   begin
-    $dumpfile("test.vcd");	   
-    $dumpvars(0,test);
+//    $dumpfile("test.vcd");	   
+//    $dumpvars(0,test);
     clk = 0;
     d = 0;
     # 1;

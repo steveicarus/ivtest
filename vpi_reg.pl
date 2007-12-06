@@ -109,6 +109,7 @@ sub execute_regression {
 	print $cmd3,"\n" ;
 	system("$cmd3");
     }
+    system("rm -rf ./vsim");
 }
 sub check_results {
 

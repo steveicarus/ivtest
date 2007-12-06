@@ -10,8 +10,8 @@ reg [24:0] APAD;
 wire [24:0] AIN;
 
 initial begin
-  $dumpfile("dumpfile.vcd");
-  $dumpvars;
+//  $dumpfile("dumpfile.vcd");
+//  $dumpvars;
 
   APAD=25'h1ffffff;
   #21 if (AIN !== APAD) begin

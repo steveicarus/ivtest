@@ -46,7 +46,7 @@ xorckt myckt (.out(xout),.in0(i1),.in1(i2));
 
 initial
   begin
-    $dumpfile("test.vcd");
+    $dumpfile("work/test.vcd");
     $dumpvars(0,main.myckt);
     i1 = 1'b0;
     i2 = 1'b0;

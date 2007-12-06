@@ -9,7 +9,7 @@ module example;
 
     initial begin
     #100
-    fd = $fopen( "example.dump" );
+    fd = $fopen( "work/example.dump" );
     $fdisplay( fd );
     #1000
     $display( "PASSED" );

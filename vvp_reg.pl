@@ -23,6 +23,9 @@
 # 3/25/2001  SDW   Modified sregress.pl script to run vvp.
 # 4/13/2001  SDW   Added CORE DUMP detection
 # $Log: vvp_reg.pl,v $
+# Revision 1.22  2007/12/06 02:31:09  stevewilliams
+#  Clean up work files (caryr)
+#
 # Revision 1.21  2007/11/22 03:43:35  stevewilliams
 #  Add -Ttyp flag to get rid of warnings.
 #
@@ -320,6 +323,7 @@ sub execute_regression {
  
     }
 
+    system("rm -rf ./simv");	
 }
 
 sub check_results {
@@ -394,6 +398,7 @@ sub check_results {
       } else {
         system ("echo FAILED >> $lpath");
       }
+      system("rm -rf ./dfile");	
     }
 
 	# uncompress the log file, if a compressed log file exists

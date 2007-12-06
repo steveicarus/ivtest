@@ -16,7 +16,7 @@ module test();
 
 
   initial begin
-   $dumpvars;
+//   $dumpvars;
    ee=2'b00;
    aa=2'b00; #100;
    if (zz !== 2'bzz) begin

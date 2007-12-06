@@ -252,9 +252,9 @@ initial begin
    #133 resetb = 1;
 end
 
-initial begin
-   $dumpfile ("test_div16.vcd");
-   $dumpvars (0,test_div16);   
-end
+//initial begin
+//   $dumpfile ("test_div16.vcd");
+//   $dumpvars (0,test_div16);   
+//end
 
 endmodule

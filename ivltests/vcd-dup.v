@@ -17,7 +17,7 @@ module test;
 
    initial
      begin
-	$dumpfile("vcd-dup.vcd");
+	$dumpfile("work/vcd-dup.vcd");
 	$dumpvars(2, test);             // test, test.m1, test.m2
 	$dumpvars(3, m2.c1, m1.mm1.c1); // duplicate signals
 	#0;                             // does not trip $enddefinitions

@@ -123,8 +123,8 @@ memory mem (clk, we, addr, din,  dout);
 
 initial
   begin
-    $dumpfile("test.vcd");
-    $dumpvars(0,top.mem.reg0);
+//    $dumpfile("test.vcd");
+//    $dumpvars(0,top.mem.reg0);
 
     clk = 0;
     error =0;

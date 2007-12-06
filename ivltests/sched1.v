@@ -49,8 +49,8 @@ always @(negedge clk)
 
 initial 
   begin
-    $dumpfile("test.vcd"); 
-    $dumpvars(0,test);
+//    $dumpfile("test.vcd"); 
+//    $dumpvars(0,test);
     err = 0;
     clk = 0;
     d = 0;

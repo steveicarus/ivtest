@@ -35,8 +35,8 @@ module main;
    always #5 PCLK = !PCLK;
 
    initial begin
-      $dumpfile("dump.vcd");
-      $dumpvars(0, main);
+//      $dumpfile("dump.vcd");
+//      $dumpvars(0, main);
       #50 $display("done: x=%b", x);
 
       if (x !== 6'b000010)

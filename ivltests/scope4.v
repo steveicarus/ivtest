@@ -15,6 +15,7 @@ endmodule
 
 module test;
     initial begin
+	$dumpfile("work/dumpfile.vcd");
 	$dumpvars(1, test2.test3);
 	$display("PASSED");
     end

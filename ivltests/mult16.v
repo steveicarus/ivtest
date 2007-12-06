@@ -115,12 +115,12 @@ integer num_errors;
 parameter MAX_TRIALS = 10;
 
 initial begin
-   $dumpfile ("multdiv.vcd");
-   $dumpvars (0,a);   
-   $dumpvars (0,b);   
-   $dumpvars (0,y);   
-   $dumpvars (0,resetb);   
-   $dumpvars (0,done);   
+//   $dumpfile ("multdiv.vcd");
+//   $dumpvars (0,a);   
+//   $dumpvars (0,b);   
+//   $dumpvars (0,y);   
+//   $dumpvars (0,resetb);   
+//   $dumpvars (0,done);   
    num_errors = 0;
 
    #100;
