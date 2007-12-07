@@ -4,7 +4,11 @@
 # include  <stdlib.h>
 # include  <assert.h>
 
+#ifdef IVERILOG_V0_8
+static PLI_INT32 listparams_compiletf(char*name)
+#else
 static PLI_INT32 listparams_compiletf(PLI_BYTE8*name)
+#endif
 {
       return 0;
 }
@@ -42,7 +46,11 @@ static void param_by_name(vpiHandle scope, const char*key)
       }
 }
 
+#ifdef IVERILOG_V0_8
+static PLI_INT32 listparams_calltf(char*name)
+#else
 static PLI_INT32 listparams_calltf(PLI_BYTE8*name)
+#endif
 {
       vpiHandle sys  = vpi_handle(vpiSysTfCall,0);
       vpiHandle scope= vpi_handle(vpiScope, sys);

@@ -938,6 +938,7 @@ Test Results:
                     pr1795005a Ran-PASSED-
                     pr1795005b Ran-FAILED-
                      pr1799904 Compiler Error-Ran-FAILED-
+                     pr1804877 Ran-PASSED-
                      pr1805837 Ran-PASSED-
                          urand Ran-FAILED-
                        urand_r Ran-FAILED-
@@ -948,4 +949,7 @@ Test Results:
            generate_multi_loop Compiler Error-Ran-FAILED-
                      pr1822658 Ran-PASSED-
                      pr1828642 Compiler Error-Ran-FAILED-
-Tests passed: 784, failed: 185, Unhandled: 9 Unable: 3, Assert: 8, Parse Errs: 4
+                     pr1831724 Ran-FAILED-
+        unnamed_generate_block Compiler Error-Ran-FAILED-
+                     pr1833754 CE-PASSED-
+Tests passed: 786, failed: 188, Unhandled: 9 Unable: 3, Assert: 8, Parse Errs: 4

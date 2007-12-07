@@ -1,31 +1,59 @@
-hello	  vpi	hello_vpi.c	hello_vpi	hello_vpi.v
-hello_tf  vpi	hello_tf.c	hello_tf	hello_tf.v
-hello_poke  vpi	hello_poke.c	hello_poke	hello_poke.v
-callback1 vpi	callback1.c	callback1	callback1.v
-nulls1	  vpi	nulls1.c	nulls1		nulls1.v
-scanmem	  vpi	scanmem.cc	scanmem		scanmem.v
-scanmem2  vpi	scanmem2.cc	scanmem2	scanmem2.v
-scanmem3  vpi	scanmem3.cc	scanmem3	scanmem3.v
-event1	  vpi	event1.c	event1		event1.v
-event2	  vpi	event2.c	event2		event2.v
-pokevent  vpi	pokevent.cc	pokevent	pokevent.v
-pokereg   vpi	pokereg.cc	pokereg		pokereg.v
-memwide   vpi	memwide.cc	memwide		memwide.v
-scopes	  vpi	scopes.c	scopes		scopes.v
-by_name	  vpi	by_name.c	by_name		by_name.v
-realcb    vpi   realcb.c        realcb          realcb.v
-pr521     vpi   pr521.c         pr521           pr521.v
-pr686     vpi   pr686.c         pr686           pr686.v
-pr723     vpi   pr723.c         pr723           pr723.v
-realtime  vpi   realtime.c	realtime	realtime.v
-realtime2 vpi   realtime2.c	realtime2	realtime2.v
-putvalue  vpi	putvalue.c	putvalue	putvalue.v
-timescale vpi	timescale.c	timescale	timescale.v
-getp      vpi	getp.c		getp		getp.v
-putp      vpi	putp.c		putp		putp.v
-putp2     vpi	putp2.c		putp2		putp2.v
-mipname   vpi	mipname.c	mipname		mipname.v
-memmon    vpi	memmon.c	memmon		memmon.v
-listparams vpi	listparams.c	listparams	listparams.v
-pr1693971 vpi	pr1693971.c	pr1693971	pr1693971.v
-spec_delays	vpi	spec_delays.c	spec_delays	spec_delays.v
+#
+# The default case.
+#
+hello_vpi        normal hello_vpi.c   hello.log
+hello_tf         normal hello_tf.c    hello_tf.log
+hello_poke       normal hello_poke.c  hello_poke.log
+callback1        normal callback1.c   callback1.log
+nulls1           normal nulls1.c      nulls1.log
+scanmem          normal scanmem.cc    scanmem.log
+scanmem2         normal scanmem2.cc   scanmem2.log
+scanmem3         normal scanmem3.cc   scanmem3.log
+event1           normal event1.c      event1.log
+event2           normal event2.c      event2.log
+pokevent         normal pokevent.cc   pokevent.log
+pokereg          normal pokereg.cc    pokereg.log
+memwide          normal memwide.cc    memwide.log
+scopes           normal scopes.c      scopes.log
+by_name          normal by_name.c     by_name.log
+realcb           normal realcb.c      realcb.log
+pr521            normal pr521.c       pr521.log
+pr686            normal pr686.c       pr686.log
+pr723            normal pr723.c       pr723.log
+realtime         normal realtime.c    realtime.log
+realtime2        normal realtime2.c   realtime2.log
+putvalue         normal putvalue.c    putvalue.log
+timescale        normal timescale.c   timescale.log
+getp             normal getp.c        getp.log
+putp             normal putp.c        putp.log
+putp2            normal putp2.c       putp2.log
+mipname          normal mipname.c     mipname.log
+memmon           normal memmon.c      memmon.log
+listparams       normal listparams.c  listparams.log
+pr1693971        normal pr1693971.c   pr1693971.log
+spec_delays      normal spec_delays.c spec_delays.log
+
+#
+# For version 0.8 do these instead of the default case.
+#
+v0.8:hello_vpi   normal hello_vpi.c   hello.log         -DIVERILOG_V0_8
+v0.8:hello_tf    normal hello_tf.c    hello_tf.log      -DIVERILOG_V0_8
+v0.8:hello_poke  normal hello_poke.c  hello_poke.log    -DIVERILOG_V0_8
+v0.8:nulls1      normal nulls1.c      nulls1-v0.8.log   -DIVERILOG_V0_8
+v0.8:scanmem     normal scanmem.cc    scanmem.log       -DIVERILOG_V0_8
+v0.8:scanmem2    normal scanmem2.cc   scanmem2.log      -DIVERILOG_V0_8
+v0.8:scanmem3    normal scanmem3.cc   scanmem3-v0.8.log -DIVERILOG_V0_8
+v0.8:event1      normal event1.c      event1.log        -DIVERILOG_V0_8
+v0.8:pokereg     normal pokereg.cc    pokereg.log       -DIVERILOG_V0_8
+v0.8:memwide     normal memwide.cc    memwide-v0.8.log
+v0.8:scopes      normal scopes.c      scopes.log        -DIVERILOG_V0_8
+v0.8:by_name     normal by_name.c     by_name.log       -DIVERILOG_V0_8
+v0.8:realcb      normal realcb.c      realcb.log        -DIVERILOG_V0_8
+v0.8:pr686       normal pr686.c       pr686.log         -DIVERILOG_V0_8
+v0.8:pr723       normal pr723.c       pr723.log         -DIVERILOG_V0_8
+v0.8:realtime    normal realtime.c    realtime.log      -DIVERILOG_V0_8
+v0.8:realtime2   normal realtime2.c   realtime2.log     -DIVERILOG_V0_8
+v0.8:memmon      normal memmon.c      memmon.log        -DIVERILOG_V0_8
+v0.8:listparams  normal listparams.c  listparams.log    -DIVERILOG_V0_8
+v0.8:pr1693971   normal pr1693971.c   pr1693971.log     -DIVERILOG_V0_8
+v0.8:spec_delays NI     spec_delays.c spec_delays.log   -DIVERILOG_V0_8

@@ -16,7 +16,7 @@
  *    along with this program; if not, write to the Free Software
  *    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
  */
-#ident "$Id: hello_vpi.c,v 1.2 2007/11/22 04:10:16 stevewilliams Exp $"
+#ident "$Id: hello_vpi.c,v 1.3 2007/12/07 02:44:23 stevewilliams Exp $"
 
 /*
  * This file contains an example VPI module to demonstrate the tools
@@ -31,7 +31,11 @@
 
 # include  <vpi_user.h>
 
+#ifdef IVERILOG_V0_8
+static PLI_INT32 my_hello_calltf(char *xx)
+#else
 static PLI_INT32 my_hello_calltf(PLI_BYTE8 *xx)
+#endif
 {
       vpi_printf("Hello World, from VPI.\n");
       return 0;

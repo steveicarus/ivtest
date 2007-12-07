@@ -32,7 +32,11 @@ static void RecurseScope(vpiHandle handle, int depth)
     }
 }
 
+#ifdef IVERILOG_V0_8
+static PLI_INT32 CompileTF(char *x)
+#else
 static PLI_INT32 CompileTF(PLI_BYTE8 *x)
+#endif
 {
 	RecurseScope(NULL, 0);
 	return 0;

@@ -16,7 +16,7 @@
  *    along with this program; if not, write to the Free Software
  *    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
  */
-#ident "$Id: pr686.c,v 1.2 2007/11/22 04:10:16 stevewilliams Exp $"
+#ident "$Id: pr686.c,v 1.3 2007/12/07 02:44:23 stevewilliams Exp $"
 
 # include  "vpi_user.h"
 # include  <assert.h>
@@ -39,12 +39,20 @@ static PLI_INT32 next_sim_time_callback(struct t_cb_data*cb)
       return 0;
 }
 
+#ifdef IVERILOG_V0_8
+static PLI_INT32 test_next_compiletf(char *name)
+#else
 static PLI_INT32 test_next_compiletf(PLI_BYTE8 *name)
+#endif
 {
       return 0;
 }
 
+#ifdef IVERILOG_V0_8
+static PLI_INT32 test_next_calltf(char *name)
+#else
 static PLI_INT32 test_next_calltf(PLI_BYTE8 *name)
+#endif
 {
       vpiHandle sys, argv, value;
       s_vpi_value val;

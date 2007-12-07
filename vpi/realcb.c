@@ -17,7 +17,7 @@
  *    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
  */
 #ifdef HAVE_CVS_IDENT
-#ident "$Id: realcb.c,v 1.3 2007/11/22 04:10:16 stevewilliams Exp $"
+#ident "$Id: realcb.c,v 1.4 2007/12/07 02:44:23 stevewilliams Exp $"
 #endif
 
 /*
@@ -42,7 +42,11 @@ static PLI_INT32 watchreal_cb(p_cb_data cb)
       return 0;
 }
 
+#ifdef IVERILOG_V0_8
+static PLI_INT32 my_watchreal_calltf(char *xx)
+#else
 static PLI_INT32 my_watchreal_calltf(PLI_BYTE8 *xx)
+#endif
 {
       struct t_cb_data cb;
       struct t_vpi_time time;
