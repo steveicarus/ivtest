@@ -20,8 +20,8 @@ Test Results:
                   always3.1.2B CO-PASSED-
                   always3.1.2C CO-PASSED-
                   always3.1.2D CO-PASSED-
-                  always3.1.2E CO-FAILED-
-                  always3.1.2F CO-FAILED-
+                  always3.1.2E CO-PASSED-
+                  always3.1.2F CO-PASSED-
                   always3.1.2G Sorry-Compiler Error-CO-FAILED-
                   always3.1.2H Sorry-Compiler Error-CO-FAILED-
                   always3.1.2I Sorry-Compiler Error-CO-FAILED-
@@ -510,7 +510,7 @@ Test Results:
                      function5 CO-PASSED-
                      function6 Ran-PASSED-
                      blankport Ran-PASSED-
-                        dcomp1 Ran-FAILED-
+                        dcomp1 Ran-PASSED-
                            sp2 Ran-PASSED-
                          const Ran-PASSED-
                         const2 Ran-PASSED-
@@ -566,7 +566,7 @@ Test Results:
                         shift3 Ran-FAILED-
                         shift4 Ran-PASSED-
                         shift5 Ran-FAILED-
-                         pr243 Ran-FAILED-
+                         pr243 Ran-PASSED-
                         dummy7 Ran-PASSED-
                         time6b Ran-PASSED-
                         time6c Ran-PASSED-
@@ -604,7 +604,7 @@ Test Results:
                          pr524 Ran-PASSED-
                          pr527 Ran-FAILED-
                          pr528 Ran-FAILED-
-                        pr528b Ran-FAILED-
+                        pr528b Ran-PASSED-
                          pr529 
                         pr530a Ran-PASSED-
                         pr530b Ran-PASSED-
@@ -631,7 +631,7 @@ Test Results:
                          pr584 Ran-PASSED-
                          pr585 Ran-PASSED-
                          pr587 Ran-FAILED-
-                         pr590 Ran-FAILED-
+                         pr590 Ran-PASSED-
                          pr594 Ran-PASSED-
                          pr596 Ran-PASSED-
                          pr602 Ran-PASSED-
@@ -735,7 +735,7 @@ Test Results:
                         pr809b Ran-PASSED-
                          pr810 Ran-PASSED-
                          pr812 Ran-PASSED-
-                         pr820 Ran-FAILED-
+                         pr820 Ran-PASSED-
                          pr823 Ran-PASSED-
                          pr841 Ran-PASSED-
                          pr842 Ran-PASSED-
@@ -749,7 +749,7 @@ Test Results:
                          pr905 Ran-PASSED-
                          pr910 Ran-PASSED-
                          pr913 Ran-PASSED-
-                         pr923 Ran-FAILED-
+                         pr923 Ran-PASSED-
                          pr938 Ran-PASSED-
                         pr938b Ran-PASSED-
                          pr941 Ran-PASSED-
@@ -948,8 +948,15 @@ Test Results:
                       long_div Parse Err-Assertion-Ran-FAILED-
            generate_multi_loop Compiler Error-Ran-FAILED-
                      pr1822658 Ran-PASSED-
+                     pr1823732 Ran-FAILED-
                      pr1828642 Compiler Error-Ran-FAILED-
                      pr1831724 Ran-FAILED-
         unnamed_generate_block Compiler Error-Ran-FAILED-
                      pr1833754 CE-PASSED-
-Tests passed: 786, failed: 188, Unhandled: 9 Unable: 3, Assert: 8, Parse Errs: 4
+                          sdf1 Ran-FAILED-
+                          sdf2 Ran-FAILED-
+                          sdf3 Ran-FAILED-
+                          sdf4 Ran-FAILED-
+               macro_with_args Compiler Error-Ran-FAILED-
+                        macro2 Compiler Error-Ran-FAILED-
+Tests passed: 794, failed: 189, Unhandled: 9 Unable: 3, Assert: 8, Parse Errs: 4
