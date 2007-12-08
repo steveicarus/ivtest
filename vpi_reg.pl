@@ -1,12 +1,13 @@
 #!/usr/bin/perl -s
+#
 # Script to handle regression for VPI routines
 #
-$| = 1;             # This turns off buffered I/O
+$| = 1;  # This turns off buffered I/O
 
-$regress_fn = "./vpi_regress.list";
+$regress_fn = "./vpi_regress.list";  # Default regression list.
 
+# Is there a command line argument (alternate regression list)?
 if($#ARGV != -1) {
-   # Got here because there is a command line argument.
    $regress_fn = $ARGV[0];
    if(!( -e $regress_fn)) {
        die "Error - Command line regression file $regress_fn doesn't exist.\n";
@@ -15,7 +16,8 @@ if($#ARGV != -1) {
        die "Error - Command line regression file $regress_fn is not a file.\n";
    }
    if(!( -r $regress_fn)) {
-       die "Error - Command line regression file $regress_fn is not readable.\n";
+       die "Error - Command line regression file $regress_fn is not ".
+           "readable.\n";
    }
 }
 
@@ -55,7 +57,8 @@ sub read_regression_list {
         if ($tname =~ /:/) {
             ($tver, $tname) = split(':', $tname);
             next if ($tver ne "v$ver");  # Skip if this is not our version.
-            # This test relies on something that is not currently implemented.
+            # This version of the program does not implement something
+            # required to run this test.
             if ($_[1] eq "NI") {
                 $ccode{$tname}    = "";
                 $goldfile{$tname} = "";
@@ -75,7 +78,8 @@ sub read_regression_list {
 #            print "Read $tname=$ccode{$tname},$goldfile{$tname},".
 #                  "$cargs{$tname}\n";
         }
-        # If the name exists this is a replacement so skip the old one.
+
+        # If the name exists this is a replacement so skip the original one.
         if (exists($nameidx{$tname})) {
             splice(@testlist, $nameidx{$tname}, 1, "");
         }
@@ -90,14 +94,16 @@ sub read_regression_list {
 #  the regression. It then checks that the output matched the gold file.
 #
 sub execute_regression {
-    my $tname, $number, $error, $not_impl, $cmd;
+    my $tname, $number, $passed, $failed, $not_impl, $cmd;
 
     $number = 0;
-    $error = 0;
+    $passed = 0;
+    $failed = 0;
     $not_impl = 0;
 
     foreach $tname (@testlist) {
-        next if ($tname eq "");
+        next if ($tname eq "");  # Skip test that have been replaced.
+
         $number++;
         print "$tname: ";
         if (-e "vpi_log/$tname.log") {
@@ -111,44 +117,50 @@ sub execute_regression {
             next;
         }
 
-        $cmd = "iverilog-vpi $cargs{$tname} vpi/$ccode{$tname} >".
-                " vpi_log/$tname.log ";
+        $cmd = "iverilog-vpi --name=$tname $cargs{$tname} ".
+               "vpi/$ccode{$tname} > vpi_log/$tname.log ";
         if (system("$cmd")) {
             print "Failed - iverilog-vpi failed.\n";
-            $error++;
+            $failed++;
             next;
         }
 
         $cmd = "iverilog -o vsim vpi/$tname.v >> vpi_log/$tname.log 2>&1";
         if (system("$cmd")) {
             print "Failed - iverilog failed.\n";
-            $error++;
+            $failed++;
             next;
         }
 
         $cmd = "vvp -M . -m $tname vsim >> vpi_log/$tname.log 2>&1";
         if (system("$cmd")) {
             print "Failed - vvp failed.\n";
-            $error++;
+            $failed++;
             next;
         }
 
         $cmd = "diff vpi_gold/$goldfile{$tname} vpi_log/$tname.log > dfile";
         if (system("$cmd")) {
             print "Failed - output does not match gold file.\n";
-            $error++;
+            $failed++;
             next;
         }
 
         print "Passed\n";
+        $passed++;
 
     } continue {
         # We have to use system and not unlink here since these files
         # were created by this process and it doesn't seem to know they
         # are not being used.
-        system("rm -f ./$tname.o ./$tname.vpi ./dfile ./vsim") and
-            die "Failed to remove temporary files.\n";
+        if ($tname ne "" and $ccode{$tname} ne "") {
+            my $doto = $ccode{$tname};
+            $doto =~ s/\.(c|cc|cpp)$/.o/;
+            system("rm -f ./$doto ./$tname.vpi ./dfile ./vsim") and
+                die "Failed to remove temporary files.\n";
+        }
     }
 
-    print "Tests: Total=$number, failed=$error, not implemented=$not_impl\n";
+    print "Test results: Total=$number, Passed=$passed, Failed=$failed,".
+          " Not Implemented=$not_impl\n";
 }

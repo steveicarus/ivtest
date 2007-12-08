@@ -1,6 +1,72 @@
+#==========
+# This file controls how the individual VPI tests are run. The verilog
+# file must be named <test_name>.v. The output log file is named
+# <test_name>.log. The verilog and C/C++ files are located in the
+# "vpi" directory and the gold files are located in the "vpi_gold"
+# directory. The NI (Not Implemented) type is only available for
+# version specific tests. It is ignored by the default case!
 #
+# The basic steps for each test are:
+#   iverilog-vpi --name <test_name> <compiler_options> <C/C++_file>
+#   iverilog -o sim_file <test_name>.v
+#   vvp -M . -m <test_name> sim_file
+#   diff <the output from the above commands> <gold log file>
+#   remove temporary files.
+#
+# The following are the recognized fields:
+#
+#ver:test name   type   C/C++ file    gold log file       compiler options
+#
+# The compiler option field is optional and when present will contain
+# all subsequent fields.
+#==========
+
+#==========
+# For version 0.8 do these instead of the default case.
+#
+# Version 0.8 defines some VPI calls differently than the standard.
+# The IVERILOG_V0_8 define is used to accommodate these differences.
+#
+# Specifically the calltf, compieltf and sizetf routines take a
+# (char *) argument not a (PLI_BYTE8 *). This difference only
+# produces a warning for C code, but is fatal for C++ code.
+# 
+#==========
+v0.8:hello_vpi   normal hello_vpi.c   hello.log           -DIVERILOG_V0_8
+v0.8:hello_tf    normal hello_tf.c    hello_tf.log        -DIVERILOG_V0_8
+v0.8:hello_poke  normal hello_poke.c  hello_poke.log      -DIVERILOG_V0_8
+# V0.8 does not trigger a to X event at T=0.
+v0.8:nulls1      normal nulls1.c      nulls1-v0.8.log     -DIVERILOG_V0_8
+v0.8:scanmem     normal scanmem.cc    scanmem.log         -DIVERILOG_V0_8
+v0.8:scanmem2    normal scanmem2.cc   scanmem2.log        -DIVERILOG_V0_8
+# V0.8 incorrectly uses 0 bits outside the vector range to determine
+# if X is printed. 
+v0.8:scanmem3    normal scanmem3.cc   scanmem3-v0.8.log   -DIVERILOG_V0_8
+v0.8:event1      normal event1.c      event1.log          -DIVERILOG_V0_8
+v0.8:pokereg     normal pokereg.cc    pokereg.log         -DIVERILOG_V0_8
+# This test has both the T=0 and X differences noted above.
+v0.8:memwide     normal memwide.cc    memwide-v0.8.log
+v0.8:scopes      normal scopes.c      scopes.log          -DIVERILOG_V0_8
+v0.8:by_name     normal by_name.c     by_name.log         -DIVERILOG_V0_8
+v0.8:realcb      normal realcb.c      realcb.log          -DIVERILOG_V0_8
+v0.8:pr686       normal pr686.c       pr686.log           -DIVERILOG_V0_8
+v0.8:pr723       normal pr723.c       pr723.log           -DIVERILOG_V0_8
+# V0.8 has some 32 bit time problems so this test fails.
+v0.8:realtime    normal realtime.c    realtime.log        -DIVERILOG_V0_8
+v0.8:realtime2   normal realtime2.c   realtime2.log       -DIVERILOG_V0_8
+# This has the same problem as the default case below.
+v0.8:memmon      normal memmon.c      memmon.log          -DIVERILOG_V0_8
+# From a VPI standpoint, parameters are not handled very well in V0.8.
+v0.8:listparams  normal listparams.c  listparams-v0.8.log -DIVERILOG_V0_8
+v0.8:pr1693971   normal pr1693971.c   pr1693971.log       -DIVERILOG_V0_8
+# V0.8 does not support vpiModPath!
+v0.8:spec_delays NI     spec_delays.c spec_delays.log     -DIVERILOG_V0_8
+
+# Add v0.8 overrides here.
+
+#==========
 # The default case.
-#
+#==========
 hello_vpi        normal hello_vpi.c   hello.log
 hello_tf         normal hello_tf.c    hello_tf.log
 hello_poke       normal hello_poke.c  hello_poke.log
@@ -28,32 +94,15 @@ getp             normal getp.c        getp.log
 putp             normal putp.c        putp.log
 putp2            normal putp2.c       putp2.log
 mipname          normal mipname.c     mipname.log
+# This currently (0.9.devel) fails because changing an individual
+# array word does not trigger an array callback. The cb_data also
+# looks to be a problem.
 memmon           normal memmon.c      memmon.log
 listparams       normal listparams.c  listparams.log
 pr1693971        normal pr1693971.c   pr1693971.log
 spec_delays      normal spec_delays.c spec_delays.log
 
-#
-# For version 0.8 do these instead of the default case.
-#
-v0.8:hello_vpi   normal hello_vpi.c   hello.log         -DIVERILOG_V0_8
-v0.8:hello_tf    normal hello_tf.c    hello_tf.log      -DIVERILOG_V0_8
-v0.8:hello_poke  normal hello_poke.c  hello_poke.log    -DIVERILOG_V0_8
-v0.8:nulls1      normal nulls1.c      nulls1-v0.8.log   -DIVERILOG_V0_8
-v0.8:scanmem     normal scanmem.cc    scanmem.log       -DIVERILOG_V0_8
-v0.8:scanmem2    normal scanmem2.cc   scanmem2.log      -DIVERILOG_V0_8
-v0.8:scanmem3    normal scanmem3.cc   scanmem3-v0.8.log -DIVERILOG_V0_8
-v0.8:event1      normal event1.c      event1.log        -DIVERILOG_V0_8
-v0.8:pokereg     normal pokereg.cc    pokereg.log       -DIVERILOG_V0_8
-v0.8:memwide     normal memwide.cc    memwide-v0.8.log
-v0.8:scopes      normal scopes.c      scopes.log        -DIVERILOG_V0_8
-v0.8:by_name     normal by_name.c     by_name.log       -DIVERILOG_V0_8
-v0.8:realcb      normal realcb.c      realcb.log        -DIVERILOG_V0_8
-v0.8:pr686       normal pr686.c       pr686.log         -DIVERILOG_V0_8
-v0.8:pr723       normal pr723.c       pr723.log         -DIVERILOG_V0_8
-v0.8:realtime    normal realtime.c    realtime.log      -DIVERILOG_V0_8
-v0.8:realtime2   normal realtime2.c   realtime2.log     -DIVERILOG_V0_8
-v0.8:memmon      normal memmon.c      memmon.log        -DIVERILOG_V0_8
-v0.8:listparams  normal listparams.c  listparams.log    -DIVERILOG_V0_8
-v0.8:pr1693971   normal pr1693971.c   pr1693971.log     -DIVERILOG_V0_8
-v0.8:spec_delays NI     spec_delays.c spec_delays.log   -DIVERILOG_V0_8
+# Add new tests here. If the test needs a compile option or a
+# different log file to run with an older versions or if it uses
+# something not implemented (NI) by other versions of the program
+# it will also need a version specific line(s) above.
