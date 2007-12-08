@@ -985,6 +985,7 @@ pr1805837	normal	ivltests diff=log/pr1805837.log:gold/pr1805837.gold
 urand	normal	ivltests diff=log/urand.log:gold/urand.gold
 urand_r	normal	ivltests diff=log/urand_r.log:gold/urand_r.gold
 fileio	normal	ivltests diff=log/fileio.log:gold/fileio.gold
+pr1812297	normal	ivltests
 pr1819452	normal	ivltests diff=log/pr1819452.log:gold/pr1819452.gold
 pr1820472	normal	ivltests diff=log/pr1820472.log:gold/pr1820472.gold
 long_div	normal	ivltests diff=log/long_div.log:gold/long_div.gold

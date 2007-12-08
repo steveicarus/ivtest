@@ -943,6 +943,7 @@ Test Results:
                          urand Ran-PASSED-
                        urand_r Ran-PASSED-
                         fileio Ran-PASSED-
+                     pr1812297 Ran-PASSED-
                      pr1819452 Ran-PASSED-
                      pr1820472 Ran-PASSED-
                       long_div Ran-PASSED-
@@ -959,4 +960,4 @@ Test Results:
                           sdf4 Ran-PASSED-
                macro_with_args Ran-PASSED-
                         macro2 Ran-PASSED-
-Tests passed: 900, failed: 65, Unhandled: 37 Unable: 27, Assert: 8, Parse Errs: 0
+Tests passed: 901, failed: 65, Unhandled: 37 Unable: 27, Assert: 8, Parse Errs: 0
