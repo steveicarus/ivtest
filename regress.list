@@ -1000,5 +1000,6 @@ sdf1	normal	ivltests diff=log/sdf1.log:gold/sdf1.gold
 sdf2	normal	ivltests diff=log/sdf2.log:gold/sdf1.gold
 sdf3	normal	ivltests diff=log/sdf3.log:gold/sdf1.gold
 sdf4	normal	ivltests diff=log/sdf4.log:gold/sdf1.gold
+sdf5	normal	ivltests diff=log/sdf5.log:gold/sdf5.gold
 macro_with_args	normal	ivltests diff=log/macro_with_args.log:gold/macro_with_args.gold
 macro2	normal	ivltests diff=log/macro2.log:gold/macro2.gold
