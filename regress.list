@@ -994,6 +994,7 @@ pr1822658	normal	ivltests
 pr1823732	normal	ivltests diff=log/pr1823732.log:gold/pr1823732.gold
 pr1828642	normal	ivltests diff=log/pr1828642.log:gold/pr1828642.gold
 pr1831724	normal	ivltests diff=log/pr1831724.log:gold/pr1831724.gold
+pr1841300	normal	ivltests diff=log/pr1841300.log:gold/pr1841300.gold
 pr1851310	normal	ivltests diff=log/pr1851310.log:gold/pr1851310.gold
 unnamed_generate_block	normal	ivltests diff=log/unnamed_generate_block.log:gold/unnamed_generate_block.gold
 pr1833754	CE	ivltests
