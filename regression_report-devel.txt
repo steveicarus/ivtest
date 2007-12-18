@@ -953,6 +953,7 @@ Test Results:
                      pr1828642 Ran-PASSED-
                      pr1831724 Ran-PASSED-
                      pr1841300 Ran-PASSED-
+                     pr1845683 Ran-PASSED-
                      pr1851310 Ran-PASSED-
         unnamed_generate_block Ran-PASSED-
                      pr1833754 CE-PASSED-
@@ -964,4 +965,4 @@ Test Results:
                           sdf6 Ran-PASSED-
                macro_with_args Ran-PASSED-
                         macro2 Ran-PASSED-
-Tests passed: 905, failed: 65, Unhandled: 37 Unable: 27, Assert: 8, Parse Errs: 0
+Tests passed: 906, failed: 65, Unhandled: 37 Unable: 27, Assert: 8, Parse Errs: 0
