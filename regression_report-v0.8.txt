@@ -589,7 +589,7 @@ Test Results:
                          pr183 Compiler Error-CO-FAILED-
                          pr245 Ran-PASSED-
                          pr377 Ran-FAILED-
-                         pr478 Compiler Error-
+                         pr478 Ran-PASSED-
                          pr487 Ran-FAILED-
                          pr492 Ran-PASSED-
                          pr498 Ran-PASSED-
@@ -875,7 +875,7 @@ Test Results:
                      pr1693921 Ran-PASSED-
                      pr1694413 Compiler Error-
                      pr1694427 Ran-PASSED-
-                     pr1695257 Compiler Error-CO-FAILED-
+                     pr1695257 CO-PASSED-
                      pr1695309 Compiler Error-
                      pr1695322 Compiler Error-
                      pr1695334 Ran-PASSED-
@@ -895,10 +895,10 @@ Test Results:
                      pr1702593 Assertion-Ran-FAILED-
                      pr1703346 Compiler Error-
                      pr1703959 Ran-PASSED-
-                    elsif_test Compiler Error-
+                    elsif_test Ran-PASSED-
                      pr1703120 Assertion-Ran-FAILED-
                      pr1704013 CE-FAILED-
-                     pr1716276 Compiler Error-
+                     pr1716276 Ran-PASSED-
                      pr1717361 Ran-PASSED-
                      pr1719055 Compiler Error-Ran-FAILED-
                      pr1735724 CE-PASSED-
@@ -943,6 +943,7 @@ Test Results:
                          urand Ran-FAILED-
                        urand_r Ran-FAILED-
                         fileio Ran-FAILED-
+                     pr1812297 Ran-PASSED-
                      pr1819452 Ran-FAILED-
                      pr1820472 Compiler Error-Ran-FAILED-
                       long_div Parse Err-Assertion-Ran-FAILED-
@@ -951,12 +952,18 @@ Test Results:
                      pr1823732 Ran-FAILED-
                      pr1828642 Compiler Error-Ran-FAILED-
                      pr1831724 Ran-FAILED-
+                     pr1841300 Ran-FAILED-
+                     pr1845683 Ran-FAILED-
+                     pr1851310 Assertion-Compiler Error-Ran-FAILED-
+                     pr1855504 Ran-PASSED-
         unnamed_generate_block Compiler Error-Ran-FAILED-
                      pr1833754 CE-PASSED-
                           sdf1 Ran-FAILED-
                           sdf2 Ran-FAILED-
                           sdf3 Ran-FAILED-
                           sdf4 Ran-FAILED-
+                          sdf5 Ran-FAILED-
+                          sdf6 Ran-FAILED-
                macro_with_args Compiler Error-Ran-FAILED-
                         macro2 Compiler Error-Ran-FAILED-
-Tests passed: 794, failed: 189, Unhandled: 9 Unable: 3, Assert: 8, Parse Errs: 4
+Tests passed: 800, failed: 190, Unhandled: 9 Unable: 3, Assert: 9, Parse Errs: 4
