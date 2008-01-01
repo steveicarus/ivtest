@@ -847,7 +847,7 @@ Test Results:
                      pr1634526 Compiler Error-Ran-FAILED-
                      pr1636409 Ran-FAILED-
                      pr1637208 Ran-PASSED-
-                     pr1638985 Assertion-Ran-FAILED-
+                     pr1638985 Ran-FAILED-
                      pr1639060 Ran-FAILED-
                      pr1639064 Assertion-Ran-FAILED-
                     pr1639064b Assertion-Ran-FAILED-
@@ -865,7 +865,7 @@ Test Results:
                     pr1675789b Compiler Error-
                      pr1676071 Compiler Error-
                      pr1676836 
-                     pr1682887 Compiler Error-
+                     pr1682887 Ran-PASSED-
                      pr1687193 Ran-FAILED-
                      pr1688717 Compiler Error-Ran-FAILED-
                      pr1690058 Compiler Error-
@@ -896,7 +896,7 @@ Test Results:
                      pr1703346 Compiler Error-
                      pr1703959 Ran-PASSED-
                     elsif_test Ran-PASSED-
-                     pr1703120 Assertion-Ran-FAILED-
+                     pr1703120 Ran-FAILED-
                      pr1704013 CE-FAILED-
                      pr1716276 Ran-PASSED-
                      pr1717361 Ran-PASSED-
@@ -966,4 +966,4 @@ Test Results:
                           sdf6 Ran-FAILED-
                macro_with_args Compiler Error-Ran-FAILED-
                         macro2 Compiler Error-Ran-FAILED-
-Tests passed: 800, failed: 190, Unhandled: 9 Unable: 3, Assert: 9, Parse Errs: 4
+Tests passed: 801, failed: 189, Unhandled: 9 Unable: 3, Assert: 7, Parse Errs: 4
