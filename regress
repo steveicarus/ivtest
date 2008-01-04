@@ -1,3 +1,3 @@
 #!/bin/csh
 limit coredumpsize 0
-./sregress.pl
+./vvp_reg.pl
