@@ -41,6 +41,9 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                  pr1861212a: Not Implemented.
                  pr1861212b: Not Implemented.
                  pr1861212c: Not Implemented.
+                 pr1864110a: Not Implemented.
+                 pr1864110b: Not Implemented.
+                 pr1864110c: Not Implemented.
               param_select3: Not Implemented.
                   pr1465769: Not Implemented.
                   pr1474316: Not Implemented.
@@ -968,8 +971,5 @@ test_mos_strength_reduction: Passed.
                   pr1841300: ==> Failed - output does not match gold file.
                   pr1845683: ==> Failed - output does not match gold file.
                   pr1855504: Passed.
-                 pr1864110a: ==> Failed - running iverilog.
-                 pr1864110b: ==> Failed - running iverilog.
-                 pr1864110c: ==> Failed - running iverilog.
 ======================================================================
-Test results: Total=971, Passed=800, Failed=67, Not Implemented=104
+Test results: Total=971, Passed=800, Failed=64, Not Implemented=107

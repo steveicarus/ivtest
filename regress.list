@@ -119,6 +119,9 @@ v0.8:tern8	NI
 v0.8:pr1861212a	NI
 v0.8:pr1861212b	NI
 v0.8:pr1861212c	NI
+v0.8:pr1864110a	NI
+v0.8:pr1864110b	NI
+v0.8:pr1864110c	NI
 
 # V0.8 does not support indexed part selects.
 v0.8:param_select3	NI
