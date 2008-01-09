@@ -34,7 +34,7 @@ module main ();
 	  end
 
 	array[2] = 8'bx0z0x0z0;
-	$writememb("writememb1.dat", array, 6, 1);
+	$writememb("work/writememb1.dat", array, 6, 1);
 	
 	for(count = 0; count <= 7; count = count + 1)
 	  begin
@@ -42,7 +42,7 @@ module main ();
 	  end
 	
 	error = 0;
-	$readmemb("writememb1.dat", array);
+	$readmemb("work/writememb1.dat", array);
 	
 	for(count = 0; count <= 3; count = count + 1)
 	  begin

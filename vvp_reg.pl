@@ -1,7 +1,8 @@
-#!/usr/bin/perl -s
-##!/utilities/perl/bin/perl -s
+#!/usr/bin/perl
 #
-# Script sregress.pl modified to handle vvp for Steve Williams
+# Script to handle regression for normal Verilog files.
+#
+# This script is based on code with the following Copyright.
 #
 # Copyright (c) 1999 Guy Hutchison (ghutchis@pacbell.net)
 #
@@ -19,175 +20,136 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program; if not, write to the Free Software
 #    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
-#
-# 3/25/2001  SDW   Modified sregress.pl script to run vvp.
-# 4/13/2001  SDW   Added CORE DUMP detection
-# $Log: vvp_reg.pl,v $
-# Revision 1.22  2007/12/06 02:31:09  stevewilliams
-#  Clean up work files (caryr)
-#
-# Revision 1.21  2007/11/22 03:43:35  stevewilliams
-#  Add -Ttyp flag to get rid of warnings.
-#
-# Revision 1.20  2007/11/16 03:40:47  stevewilliams
-#  Clean up some broken test invocations/add RE test type.
-#
-# Revision 1.19  2007/04/05 03:06:40  stevewilliams
-#  CE can take flags to pass to iverilog.
-#
-# Revision 1.18  2007/02/12 01:49:11  stevewilliams
-#  Pass -gno-specify to certain CO specify tests.
-#
-# Revision 1.17  2005/07/07 16:24:21  stevewilliams
-#  Allow -g2 and -g2x flags on command line.
-#
-# Revision 1.16  2002/08/18 17:00:33  ka6s
-# Changed arguments to cmp to "cmp -i $ignorebytes f1 f2" from "cmp f1 f2 $ignorebytes $ignorebytes"
-#
-# Revision 1.15  2002/08/10 14:58:17  ka6s
-# Added -S option detection. So normal,-S will cause a -S flag.
-#
-# Revision 1.14  2002/07/03 23:57:35  stevewilliams
-#  Clean up test temporary files.
-#
-# Revision 1.13  2002/01/06 17:01:10  ka6s
-# Added CE support.
-#
-# Revision 1.12  2001/10/08 22:14:42  sib4
-# Remove absolute path names for IVL executable
-#
-# Revision 1.11  2001/10/08 22:13:30  sib4
-# assert portability
-#
-# Revision 1.10  2001/10/08 22:11:50  sib4
-# diff=file:file:ignore
-#
-# Revision 1.9  2001/08/06 02:59:27  ka6s
-# Added test for PR126 - constant assign to bus part from memory
-#
-# Revision 1.8  2001/07/08 03:19:16  sib4
-# Add COMPERR check
-#
-# Revision 1.7  2001/06/26 00:41:41  sib4
-# Will we finally have that LF at the end
-#
-# Revision 1.6  2001/05/18 13:24:10  ka6s
-# Detect sorry as well as the others..
-#
-# Revision 1.5  2001/04/14 03:44:03  ka6s
-# Added what I THINK is working redirection. The Parse Err is showing up now!
-#
-# Revision 1.4  2001/04/14 03:33:02  ka6s
-# Fixed detection of Core dumps. Made sure I remove core before we run vvp.
-#
 
-#  Global setup and paths
-$| = 1;             # This turns off buffered I/O 
-$total_count = 0;
-$debug = 1;
+$| = 1;  # This turns off buffered I/O
 
-$num_opts = $#ARGV ;
+$report_fn = "./regression_report.txt";  # Results file.
 
-if($num_opts ne -1) {
-   # Got here cuz there is a command line option
-   $regress_fn = $ARGV[0];
-   if(!( -e "$regress_fn")) {
-       print("Error - Command line option file $num_opts doesn't exist.\n");   
-       exit(1);
-   }
-} else {
-   $regress_fn = "./regress.list";
+$regress_fn = "./regress.list";  # Default regression list.
+
+# Is there a command line argument (alternate regression list)?
+if ($#ARGV != -1) {
+    $regress_fn = $ARGV[0];
+    -e "$regress_fn" or
+        die "Error: command line regression file $regress_fn doesn't exist.\n";
+    -f "$regress_fn" or
+        die "Error: command line regression file $regress_fn is not a file.\n";
+    -r "$regress_fn" or
+        die "Error: command line regression file $regress_fn is not ".
+            "readable.\n";
+}
+if ($#ARGV > 0) {
+    warn "Warning: only using first argument to script.\n";
 }
 
-
-$logdir = "log";
-$bindir = "bin";  # not currently used
-$report_fn = "./regression_report.txt";
-
-$comp_name = "IVL" ;	# Change the name of the compiler in use here.
-                        # this may change to a command line option after
-		        		# I get things debugged!
-
-   $vername = "iverilog";	    # IVL's shell 
-   $versw   = "";			    # switches
-   $verout  = "-o simv -tvvp";	# vvp source output (for IVL ) 
-   #$redir = "&>";
-   $redir = "> ";
-
+#
 #  Main script
-
-print ("Reading/parsing test list\n");
+#
+open (REGRESS_RPT, ">$report_fn") or
+    die "Error: unable to open $report_fn for writing.\n";
+($ver) = `iverilog -V` =~ /^Icarus Verilog version (\d+\.\d+)/;
+&print_rpt("Running compiler/VVP tests for Icarus Verilog version: $ver.\n");
+&print_rpt("-" x 70 . "\n");
 &read_regression_list;
-&rmv_logs ;
 &execute_regression;
-print ("Checking logfiles\n");
-&check_results;
-
-#
-# Remove log files
-#
-
-sub rmv_logs {
- foreach (@testlist) {
-   $cmd = "rm -rf log/$_.log";
-   system("$cmd");
- }
-}
+close (REGRESS_RPT);
 
 #
 #  parses the regression list file
 #
-#  splits the data into a list of names (@testlist), and a
-#  number of hashes, indexed by name of test.  Hashes are
 #  (from left-to-right in regression file):
 #
-#    %testtype     type of test.  compile = compile only
-#                                 normal = compile & run, expect standard
-#                                     PASSED/FAILED message at EOT.
-#    %testpath     path to test, from root of test directory.  No
-#                  trailing slash on test path.
+#  test_name type,opt_ivl_args test_dir opt_module_name log/gold_file
 #
-#    %testmod = main module declaration (optional)
+#  type can be:
+#    normal 
+#    CO = compile only.
+#    CE = compile error.
+#    CN = compile null.
+#    RE = runtime error.
+#    NI = not implemented.
+#
+sub read_regression_list {
+    my ($line, @fields, $tname, $tver, %nameidx, $options);
+    open (REGRESS_LIST, "<$regress_fn") or
+        die "Error: unable to open $regress_fn for reading.\n";
 
-sub read_regression_list {    
-    open (REGRESS_LIST, "<$regress_fn");
-    local ($found, $testname);
+    while ($line = <REGRESS_LIST>) {
+        chomp $line;
+        next if ($line =~ /^\s*#/);  # Skip comments.
+        next if ($line =~ /^\s*$/);  # Skip blank lines.
 
-    while (<REGRESS_LIST>) {
-	chop;
-	if (!/^#/) {
-	    # strip out any comments later in the file
-	    s/#.*//g;
-	    $found = split;
-	    if ($found > 2) {
-         $total_count++;
-		$testname = $_[0];
-		$testtype{$testname} = $_[1];
-		$testpath{$testname} = $_[2];
+        $line =~ s/#.*$//;  # Strip in line comments.
+        $line =~ s/\s+$//;  # Strip trailing white space.
 
-        if($#_ eq 3)  {                    # Check for 4 fields
-           if(!($_ =~ /gold=/) && !($_ =~ /diff=/ )) {
-             $testmod{$testname} = $_[3];  # Module name, not gold
-             $opt{$testname} = "";         # or diff
-           } elsif ($_ =~ /gold=/) {
-             $testmod{$testname} = "" ;	   # It's a gold file
-             $opt{$testname} = $_[3] ; 
-           } elsif ($_ =~ /diff=/) {	   # It's a diff file
-             $testmod{$testname} = "";
-             $opt{$testname} = $_[3];     
-           }
-        } elsif ($#_ eq 4) {             # Check for 5 fields
-           $testmod{$testname} = $_[3];  # Module name - always in this case
-           if ($_ =~ /gold=/) {
-             $opt{$testname} = $_[4];                   
-           } elsif ($_ =~ /diff=/) {
-             $opt{$testname} = $_[4];                   
-           }
+        @fields = split(' ', $line);
+        if (@fields < 2) {
+            die "Error: $fields[0] must have at least 3 fields.\n";
         }
 
-		push (@testlist, $testname);
-	    }
-	  }
+        $tname = $fields[0];
+        if ($tname =~ /:/) {
+            ($tver, $tname) = split(":", $tname);
+            next if ($tver ne "v$ver");  # Skip if this is not our version.
+        } else {
+            next if (exists($testtype{$tname}));  # Skip if already defined.
+        }
+
+        # Get the test type and the iverilog argument(s). Separate the
+        # arguments with a space.
+        ($testtype{$tname},$args{$tname}) = split(',', $fields[1], 2);
+        $args{$tname} = "" if (!defined($args{$tname}));
+        if ($args{$tname} =~ ',') {
+            $args{$tname} = join(' ', split(',', $args{$tname}));
+        }
+
+        $srcpath{$tname} = $fields[2];
+        $srcpath{$tname} = "" if (!defined($srcpath{$tname}));
+
+        # The four field case.
+        if (@fields == 4)  {
+           if ($fields[3] =~ s/^diff=//) {
+               $testmod{$tname} = "" ;
+               ($diff{$tname}, $gold{$tname}, $offset{$tname}) =
+                   split(':', $fields[3]);
+               # Make sure this is numeric if it is not given.
+               if (!$offset{$tname}) {
+                   $offset{$tname} = 0;
+               }
+           } elsif ($fields[3] =~ s/^gold=//) {
+               $testmod{$tname} = "" ;
+               $diff{$tname} = "";
+               $gold{$tname} = "gold/$fields[3]";
+               $offset{$tname} = 0;
+           } else {
+               $testmod{$tname} = $fields[3];
+               $diff{$tname} = "";
+               $gold{$tname} = "";
+               $offset{$tname} = 0;
+           }
+        # The five field case.
+        } elsif (@fields == 5) {
+           $testmod{$tname} = $fields[3];
+           ($diff{$tname}, $gold{$tname}, $offset{$tname}) =
+               split(':', $fields[4]);
+           # Make sure this is numeric if it is not given.
+           $diff{$tname} =~ s/^diff=//;
+           if (!$offset{$tname}) {
+               $offset{$tname} = 0;
+           }
+        } else {
+           $testmod{$tname} = "";
+           $diff{$tname} = "";
+           $gold{$tname} = "";
+           $offset{$tname} = 0;
+        }
+
+        # If the name exists this is a replacement so skip the original one.
+        if (exists($nameidx{$tname})) {
+            splice(@testlist, $nameidx{$tname}, 1, "");
+        }
+        push (@testlist, $tname);
+        $nameidx{$tname} = @testlist - 1;
     }
 
     close (REGRESS_LIST);
@@ -195,327 +157,175 @@ sub read_regression_list {
 
 #
 #  execute_regression sequentially compiles and executes each test in
-#  the regression.  Regression is done as a two-pass run (execute, check
-#  results) so that at some point the execution part can be parallelized.
+#  the regression. It then checks that the output matches the gold file.
 #
-
 sub execute_regression {
-    local ($testname, $rv);
-    local ($bpath, $lpath, $vpath);
+    my ($tname, $total, $passed, $failed, $not_impl, $len, $cmd, $diff_file);
 
-    foreach $testname (@testlist) {
-   
-        #
-        # First lets clean up if its' IVL. We need to know if 
-        # these are generated on the current pass.
-        #
-
-        #
-        # This is REALLY only an IVL switch...
-        #
-        # vermod is used to declare the "main module"
-        #
-        if( $testmod{$testname} ne "") {
-           $vermod = "-s ".$testmod{$testname} ;
-        } else {
-           $vermod = " ";
-        }
-
-	print "Test $testname:";
-	if ($testpath{$testname} eq "") {
-	  $vpath = "./$testname.v";
-	} else {
-	  $vpath = "./$testpath{$testname}/$testname.v";
-	}
-
-	$lpath = "./$logdir/$testname.log";
-        system("rm -rf $lpath");  
-        system("rm -rf *.out");  
-
-        # Check here for "compile only" situation and set
-        # the switch appropriately.
-        #
-        # While we're in CO mode - take a snapshot of it. Note
-        # this puts a contraint on the order -never can have a CO
-        # as the FIRST test in the list for this to work. 
-        #
-
-        if($testtype{$testname} =~ /^CO/) {	# Capture ONLY
-        } else {
-            $versw = $old_versw ;			# the non-compile only
-        }									# command here.
-         
-        if(($testtype{$testname} =~ /^CO/) ||
-           ($testtype{$testname} eq "CN")) {
-             if($testtype{$testname} eq "CN") {
-                  $versw = "-t null";
-             } else {
-                  $versw = ""; 	 
-             }
-        } else { 
-          $versw = $old_versw ;	 # Restore non-compile only state
-        }
-
-        if($testtype{$testname} =~ /-S/) {
-            $versw = $versw." -S";
-        }
-         
-        if($testtype{$testname} =~ /-g2x/) {
-            $versw = $versw." -g2x";
-        } else {
-	     if($testtype{$testname} =~ /-g2/) {
-                  $versw = $versw." -g2";
-             } else {
-		if ($testtype{$testname} =~ /-gno-specify/) {
-			$versw = $versw." -gno-specify";
-		} else {
-		    if ($testtype{$testname} =~ /-Ttyp/) {
-			$versw = $versw." -Ttyp";
-		    }
-		}
-	     }
-        }
-         
-        #
-        # if we have a logfile - remove it first
-        #
-        if(-e "$lpath") {
-           system("rm $lpath");
-        }
-          
-        #
-        # Now build the command up
-        #
-	#	$cmd = "$vername $versw $vermod $verout $vpath &> $lpath ";
-		$cmd = "$vername $versw $vermod $verout $vpath $redir $lpath 2>&1 ";
-
-	print "$cmd\n";
-	$rc = system("$cmd");
-
-        # Note that with IVL we have to execute the code now
-        # that it's compiled - there is GOING to be switch in 
-        # the verilog switch that will make this unnecessary. 
-  
-        if(($rc == 0) && ($comp_name eq "IVL")) {
-              if( -e "simv") {
-                 if(!($testtype{$testname} =~ /^CO/ ) &&
-                    !($testtype{$testname} eq "CN" ) && 
-                    !($testtype{$testname} =~ /^CE/ )) {
-                   system ("rm -rf core");
-                   system ("vvp simv >> $lpath 2>&1 ");
-                 } else {
-                   
-                 }
-                 if( -e "core") {
-                    system ("echo CRASHED >> $lpath" );
-                 }
-              } elsif ( -e "core") {
-                  system ("echo CRASHED >> $lpath" );
-               
-              } elsif ($testtype{$testname} eq "CN" ) {
-                  # system ("echo PASSED >> $lpath" );
-              } else {
-                  system ("echo COMPERR >> $lpath" );
-              }
-        } else {
-              system ("echo COMPERR $rc >> $lpath" );
-        }
- 
-    }
-
-    system("rm -rf ./simv");	
-}
-
-sub check_results {
-    local ($testname, $rv);
-    local ($bpath, $lpath, $vpath);
-    local ($pass_count, $fail_count, $crash_count);
-    local ($result);
-
-    $pass_count  = 0;
-    $no_sorry  = 0;
-    $parse =0;
-    $no_run      = 0;
-    $crash_count = 0;
-    $comperr_cnt = 0;
-    $comp_err = 0;
-    $unhandled = 0;
-    $unable = 0;
-    $assertion = 0;
+    $total = 0;
     $passed = 0;
     $failed = 0;
+    $not_impl = 0;
+    $len = 0;
 
-    open (REPORT, ">$report_fn");
-
-    print REPORT "Test Results:\n";
-
-    foreach $testname (@testlist) {
-	$lpath = "$logdir/$testname.log";
-    
-    #
-    # This section is used to compare against GOLD FILES
-    # We compare the log file against a known GOOD result
-    #
-    # This section runs if gold=name is the 4th option
-    #
-     
-    $gold_file = "";
-    $gold_file = "";
-    $diff_file = "";
-    $optname = $opt{$testname} ;
-    if(($opt{$testname} ne "")  && ($optname  =~ /gold=/)){
-      $gold_file = $opt{$testname};
-      $gold_file =~ s/gold=//;		# remove gold= operator
-      system("rm -rf ./dfile");
-      system("diff $lpath ./gold/$gold_file > ./dfile ");
-      if( -z "dfile" ) {
-        system ("echo PASSED >> $lpath" );
-	system ("rm -f $testname.*");
-      } else {
-        system ("echo FAILED >> $lpath");
-      }
-    }
-    
-    $gold_file = "";
-    $diff_file = "";
-    #
-    # Now look for difference file requirements - use this for
-    # vcd's initially I guess. 
-    #
-    if(($opt{$testname} ne "")  && ($optname  =~ /diff=/)){
-      $diff_file = $optname ;
-      $diff_file =~ s/diff=//;
-      system("rm -rf ./dfile");	
-      ($out_file,$gold_file,$ignbytes) = split(/:/,$diff_file);
-      if( $ignbytes ne "" ) {
-        system("cmp -i $ignbytes $out_file $gold_file > ./dfile");
-      } else {
-        system("diff $out_file $gold_file > ./dfile");
-      }
-      if( -z "dfile" ) {
-        system ("echo PASSED >> $lpath" );
-	system ("rm -f $testname.*");
-      } else {
-        system ("echo FAILED >> $lpath");
-      }
-      system("rm -rf ./dfile");	
+    foreach $tname (@testlist) {
+        $len = length($tname) if (length($tname) > $len);
     }
 
-	# uncompress the log file, if a compressed log file exists
-	if (-f "$lpath.gz") { system "gunzip $lpath.gz"; }
+    foreach $tname (@testlist) {
+        next if ($tname eq "");  # Skip test that have been replaced.
 
-	# check the log file for the test status
-	if (-f $lpath) {
-		print ("Checking test $lpath\n");
-		$result = `tail -150 $lpath`;
-   
-        $err_flag = 0;
-
-		# First do analysis for all tests that SHOULD run
-
-        printf REPORT "%30s ",$testname;
-
-	if(	!($testtype{$testname} =~ /^CE/) &&  
-	  ($testtype{$testname} ne "CN") && ($testtype{$testname} ne "RE")) {
-	   # 
-	   # This section is true for all tests that execute - 
-	   # no matter the compiler.
-	   #
-            if ($result =~ "Unhandled")  {
-               $err_flag = 1;
-               printf REPORT "Unhandled-"; 
-               $unhandled++;
-            }
-            if ($result =~ "failing")  {
-               $err_flag = 1;
-               printf REPORT "synth failed-"; 
-            }
-
-            if ($result =~ "sorry")  {
-               $err_flag = 1;
-               printf REPORT "Sorry-"; 
-               $unhandled++;
-            }
-
-            if (($result =~ "parse") ||($result =~ "ERROR"))  {
-               $err_flag = 1;
-               printf REPORT "Parse Err-"; 
-               $parse++;
-            }
-
-            if ($result =~ "Unable" ) {
-               $err_flag = 1;
-               printf REPORT "Unable-"; 
-               $unable++;
-            }
-            
-            if ($result =~ "[Aa]ssertion" ) {
-               $err_flag = 1;
-               printf REPORT "Assertion-"; 
-               $assertion++;
-            }
-            if ($result =~ "CRASHED" ) {
-               $err_flag = 1;
-               printf REPORT "Ran-CORE DUMP-"; 
-               $failed++;
-            }
-            if ($result =~ "COMPERR" ) {
-               $err_flag = 1;
-               printf REPORT "Compiler Error-"; 
-               $comperr_cnt++;
-               $failed++;
-            }
-
-            if(! ($testtype{$testname} =~ /^CO/)) {
-              if ($result =~ "PASSED" ) {
-                 printf REPORT "Ran-PASSED-"; 
-                 $passed++;
-		 system ("rm -f $testname.*");
-              }
-
-              if ($result =~ "FAILED" ) {
-                 printf REPORT "Ran-FAILED-"; 
-                 $failed++;
-              }
-
-            } else {
-              if(-z $lpath) {
-                 printf REPORT "CO-PASSED-"; 
-                 $passed++;
-		 system ("rm -f $testname.*");
-                } else {
-                 printf REPORT "CO-FAILED-"; 
-                 $failed++;
-                }              
-            }
-          
-            printf REPORT "\n";
-        } elsif($testtype{$testname} =~ /^CE/) {
-            if($result =~ "COMPERR") {
-               printf REPORT "CE-PASSED-\n";
-               $passed++;
-	       system ("rm -f $testname.*");
-            } else {
-               printf REPORT "CE-FAILED-\n";
-               $failed++;
-            }
-        } elsif($testtype{$testname} eq "RE") {
-            if($result =~ "ERROR") {
-               printf REPORT "RE-PASSED-\n";
-               $passed++;
-	       system ("rm -f $testname.*");
-            } else {
-               printf REPORT "RE-FAILED-\n";
-               $failed++;
-            }
-	} else {
-            printf REPORT "\n";
+        $total++;
+        &print_rpt(sprintf("%${len}s: ", $tname));
+        if ($diff{$tname} ne "" and -e $diff{$tname}) {
+            unlink $diff{$tname} or
+                die "Error: unable to remove old diff file $diff{$tname}.\n";
         }
-      }
-    }
-    $total = $pass_count + $no_compile + $no_run + $crash_count;
-    print REPORT "Tests passed: $passed, failed: $failed, Unhandled: $unhandled Unable: $unable, Assert: $assertion, Parse Errs: $parse\n";
-    print         "Tests passed: $passed, failed: $failed, Unhandled: $unhandled Unable: $unable, Assert: $assertion  Parse Errs: $parse\n";
+        if (-e "log/$tname.log") {
+            unlink "log/$tname.log" or
+                die "Error: unable to remove old log file log/$tname.log.\n";
+        }
 
-    close (REPORT);
+        if ($testtype{$tname} eq "NI") {
+            &print_rpt("Not Implemented.\n");
+            $not_impl++;;
+            next;
+        }
+
+        #
+        # Build up the iverilog command line and run it.
+        #
+        $cmd = "iverilog -o vsim $args{$tname}";
+        $cmd .= " -s $testmod{$tname}" if ($testmod{$tname} ne "");
+        $cmd .= " -t null}" if ($testtype{$tname} eq "CN");
+        $cmd .= " ./$srcpath{$tname}/$tname.v > log/$tname.log 2>&1";
+#        print "$cmd\n";
+        if (system("$cmd")) {
+            if ($testtype{$tname} eq "CE") {
+                &print_rpt("Passed - CE.\n");
+                $passed++;
+                next;
+            }
+            &print_rpt("==> Failed - running iverilog.\n");
+            $failed++;
+            next;
+        }
+
+        if ($testtype{$tname} eq "CO") {
+            &print_rpt("Passed - CO.\n");
+            $passed++;
+            next;
+        }
+        if ($testtype{$tname} eq "CN") {
+            &print_rpt("Passed - CN.\n");
+            $passed++;
+            next;
+        }
+
+        $cmd = "vvp vsim >> log/$tname.log 2>&1";
+#        print "$cmd\n";
+        if (system("$cmd")) {
+            if ($testtype{$tname} eq "RE") {
+                &print_rpt("Passed - RE.\n");
+                $passed++;
+                next;
+            }
+            &print_rpt("==> Failed - running vvp.\n");
+            $failed++;
+            next;
+        }
+
+        if ($diff{$tname} ne "") {
+            $diff_file = $diff{$tname}
+        } else {
+            $diff_file = "log/$tname.log";
+        }
+#        print "diff $gold{$tname}, $diff_file, $offset{$tname}\n";
+        if (diff($gold{$tname}, $diff_file, $offset{$tname})) {
+            &print_rpt("==> Failed - output does not match gold file.\n");
+            $failed++;
+            next;
+        }
+
+        &print_rpt("Passed.\n");
+        $passed++;
+
+    } continue {
+        if ($tname ne "") {
+            system("rm -f ./vsim") and
+                die "Error: failed to remove temporary file.\n";
+        }
+    }
+
+    &print_rpt("=" x 70 . "\n");
+    &print_rpt("Test results: Total=$total, Passed=$passed, Failed=$failed,".
+               " Not Implemented=$not_impl\n");
+}
+
+#
+# Print the argument to both the normal output and the report file.
+#
+sub print_rpt {
+    print @_;
+    print REGRESS_RPT @_;
+}
+
+#
+# We only need a simple diff, but we need to strip \r at the end of line.
+#
+sub diff {
+    my ($gold, $log, $skip) = @_;
+    my ($diff, $gline, $lline);
+    $diff = 0;
+
+    #
+    # If we do not have a gold file then we just look for a log file line
+    # with just PASSED on it to indicate that the test worked correctly.
+    #
+    if ($gold eq "") {
+        open (LOG, "<$log") or
+            die "Error: unable to open $log for reading.\n";
+
+        $diff = 1;
+        # Loop on the log file lines looking for a "passed" by it self.
+        foreach $lline (<LOG>) {
+            if ($lline =~ /^\s*passed\s*$/i) {
+                $diff = 0;
+            }
+        }
+
+        close (LOG);
+    } else {
+        open (GOLD, "<$gold") or
+            die "Error: unable to open $gold for reading.\n";
+        open (LOG, "<$log") or
+            die "Error: unable to open $log for reading.\n";
+
+        # Loop on the gold file lines.
+        foreach $gline (<GOLD>) {
+            if (eof LOG) {
+                $diff = 1;
+                last;
+            }
+            $lline = <LOG>;
+            # Skip initial lines if needed.
+            if ($skip > 0) {
+                $skip--;
+                next;
+            }
+            $lline =~ s/\r\n$/\n/;  # Strip <CR> at the end of line.
+            if ($gline ne $lline) {
+                $diff = 1;
+                last;
+            }
+        }
+
+        # Check to see if the log file has extra lines.
+        $diff = 1 if (!$diff and !eof LOG);
+
+        close (LOG);
+        close (GOLD);
+    }
+
+    return $diff
 }

@@ -36,6 +36,7 @@ module test;
 	 $finish;
       end
       
-      $display("PASSED {carry,sum} === %b,%b", carry, sum);
+      $display("Correct results {carry,sum} === %b,%b", carry, sum);
+      $display("PASSED");
    end
 endmodule /* test */

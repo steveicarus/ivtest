@@ -153,7 +153,7 @@ initial begin
   end
 
   if (failed == 0) 
-      $display ("PASSED: notif1");
+      $display ("PASSED");
 end
 endmodule
 

@@ -202,7 +202,7 @@ initial begin
 
    // That's all.  Summarize the test.
    if (num_errors === 0) begin
-      $display ("\n\nPASSED. -  There were %0d Errors.", num_errors);
+      $display ("\n\nPASSED");
    end
    else begin
       $display ("\n\nFAILED - There were %0d Errors.", num_errors);

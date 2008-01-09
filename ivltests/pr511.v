@@ -289,7 +289,7 @@ module I54;
  wait ( I114 === 1'b0 );
  wait ( I124 === 1'b0 );
 
- $display( "PASSED." );
+ $display( "PASSED" );
  $finish;
 
  end

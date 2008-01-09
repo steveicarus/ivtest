@@ -61,8 +61,8 @@ module xnor_test;
 	end // for (large1 = 0; large1 < 1000; large1=large1+1)
       
      if (fail)
-	$display ("TEST FAILED");
-      else $display ("TEST PASSED");
+	$display ("FAILED");
+      else $display ("PASSED");
       $finish;
     end // initial begin
 

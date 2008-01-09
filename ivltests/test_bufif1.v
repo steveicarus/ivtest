@@ -152,7 +152,7 @@ initial begin
   end
 
   if (failed == 0) 
-      $display ("PASSED: bufif1");
+      $display ("PASSED");
 end
 endmodule
 

@@ -34,7 +34,7 @@ module main ();
 	     array[count] = 1 << count;
 	  end
 	
-	$writememh("writememh1.dat", array);
+	$writememh("work/writememh1.dat", array);
 	
 	for(count = 0; count <= 7; count = count + 1)
 	  begin
@@ -43,7 +43,7 @@ module main ();
 	
 	error = 0;
 	
-	$readmemh("writememh1.dat", array);
+	$readmemh("work/writememh1.dat", array);
 	
 	for(count = 0; count <= 7; count = count + 1)
 	  begin

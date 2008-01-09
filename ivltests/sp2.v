@@ -28,7 +28,7 @@ integer fp;
 initial
   begin
     // fails at runtime: "ERROR: $fopen parameter must be a constant"
-    fp = $fopen({fname,".inv"});
+    fp = $fopen({"work/",fname,".inv"});
     // this fails too
     //      fp = $fopen({"blurfl", ".inv"});
     $fdisplay(fp, "# captured from: %0s\n", source_id[8*80:8]);

@@ -158,7 +158,7 @@ initial begin
   end
 
   if (failed == 0) 
-      $display ("PASSED: rnmos");
+      $display ("PASSED");
 end
 endmodule
 

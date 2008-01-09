@@ -20,27 +20,199 @@
 # 
 # testname	testtype	directory
 #
-# Note that no  extension is required for the testname, and that the 
-# sregress.pl logic requires that the FIRST test in the list not be a
-# CO class test.
+# The <testname> is the verilog file name minus an extension. It may contain
+# an optional version prefix separated from the name with a ":". The test
+# suite will use a version specific test instead of the default case.
 #
-# Testtype can be one of
+# The <testtype> can be one of the following:
 #
-# normal:	Normal results expected, i.e it should compile an execute 
-#               to a PASSED
-# CO:		Compile only - Examine the logfile for any errors - shouldn't 
-#               be any.
-# CE:		Compile with Errors - We EXPECT errors - we're checking 
-#               illegal syntax
+# normal:  Normal results expected, i.e it should compile and execute 
+#          producing at least a single line with PASSED.
 #
-# RE:		Runtime with Errors - We EXPECT errors - we're checking 
-#               illegal syntax
+# CO:      Compile Only - Compile the file to the default output type.
+#
+# CN:      Compile Null - Compile with the null target. Similar to CO.
+#
+# CE:      Compile with Errors - We EXPECT errors - we're checking 
+#                                illegal syntax
+#
+# RE:      Runtime with Errors - We EXPECT errors - we're checking 
+#                                illegal syntax
+#
+# NI:      Not implemented. Only use for version specifc tests.
 # 
-# The third arguement is the directory, and forth optional is one of
-# modulename - Defines the top level module
-# gold=filename - Compare a gold file against the generated log file.
-# diff=filename1:filename2 - Compare the two files for equality.
+# <directory> is where the <testname>.v file is located.
 #
+# An optional fourth and fifth argument can be supplied.
+#
+# The fourth argument may be one of the following.
+#
+#   modulename - Defines the top level module
+#   gold=filename - Compare a gold file against the generated log file.
+#   diff=filename1:filename2:skip_ln - Compare the two files for equality.
+#                                      Skip the first <skip_ln> lines or none.
+#
+# If a <modulename> is given you can supply a fifth argument for the
+# gold or diff commands.
+#
+
+#==========
+# For version 0.8 do these instead of the default case.
+#==========
+# V0.8 does not support part/bit select of an array element.
+v0.8:pr1639971	NI
+v0.8:pr1719055	NI
+v0.8:pr1746401	NI
+
+# V0.8 does not find implicit nets correctly.
+v0.8:pr1421777	NI
+v0.8:pr1693890	NI
+
+# V0.8 does not support repeat event controls.
+v0.8:always3.1.1K	NI
+v0.8:always3.1.2G	NI
+v0.8:always3.1.2H	NI
+v0.8:always3.1.2I	NI
+
+# V0.8 does not support real functions.
+v0.8:pr978	NI
+v0.8:pr1628300	NI
+v0.8:pr1741212	NI
+
+# V0.8 does not support arrayed instances/nets.
+v0.8:pr1087	NI
+v0.8:pr1353345	NI	# Also passed parameter problem.
+v0.8:pr1353345b	NI	# Also passed parameter problem.
+v0.8:pr1581580	NI
+v0.8:pr1695322	NI
+v0.8:pr1703346	NI
+v0.8:pr1799904	NI
+v0.8:pr1820472	NI
+
+# V0.8 does not support the power operator.
+v0.8:pr1530426	NI
+v0.8:pr1634526	NI
+v0.8:pr1690058	NI
+v0.8:pr1694413	NI
+v0.8:pr1750870	NI
+
+# V0.8 cannot assign a real value in the declaration.
+v0.8:pr1701890	NI
+v0.8:pr1771903	NI
+
+# V0.8 does not support wide division or modulus.
+v0.8:pr993	NI
+v0.8:pr1489570	NI
+v0.8:pr1698499	NI
+v0.8:long_div	NI
+
+# V0.8 requires that delays in continuous assignments must be constant.
+v0.8:delay3	NI
+v0.8:delay4	NI
+v0.8:delay5	NI
+v0.8:real11	NI
+
+# V0.8 does not support primitive types (logic, bool, real).
+v0.8:bool1	NI
+v0.8:real8	NI
+v0.8:tern8	NI
+v0.8:pr1861212a	NI
+v0.8:pr1861212b	NI
+v0.8:pr1861212c	NI
+
+# V0.8 does not support indexed part selects.
+v0.8:param_select3	NI
+v0.8:pr1465769	NI
+v0.8:pr1474316	NI
+v0.8:pr1675789	NI
+v0.8:pr1675789b	NI
+v0.8:pr1688717	NI
+v0.8:pr1735822	NI
+v0.8:pr1745005	NI
+v0.8:select5	NI
+v0.8:select6	NI
+v0.8:select7	NI
+v0.8:select8	NI
+
+# V0.8 does not suppoort specify block delays.
+v0.8:pr1587669	NI
+v0.8:specify_01	NI
+v0.8:specify2	NI
+v0.8:specify3	NI
+v0.8:specify4	NI
+v0.8:specify5	NI
+
+# V0.8 does not support generate
+v0.8:generate_multi_loop	NI
+v0.8:genloop	NI
+v0.8:pr1565544	NI
+v0.8:pr1565699b	NI
+v0.8:pr1623097	NI
+v0.8:pr1676071	NI
+v0.8:pr1691599b	NI
+v0.8:pr1695309	NI
+v0.8:pr1740476b	NI
+v0.8:pr1755629	NI
+v0.8:pr1758122	NI
+v0.8:pr1828642	NI
+v0.8:pr1833754	NI
+v0.8:unnamed_generate_block	NI
+
+# V0.8 cannot convert bit based signals to a real value.
+v0.8:pr1639064	NI
+v0.8:pr1639064b	NI
+v0.8:pr1702593	NI
+
+# V0.8 does not support macros with arguments.
+v0.8:macro_with_args	NI
+v0.8:macro2	NI
+
+# Other functionality missing in V0.8.
+v0.8:cmos	NI	# CMOS gates not supported.
+v0.8:pr1449749a	NI	# integer parameters not supported.
+v0.8:pr1474283	NI	# ANSI style ports not supported.
+v0.8:pr1625912	NI	# Cannot find real variable in for loop.
+v0.8:pr1698659	NI	# Scope problems.
+v0.8:pr1765789	NI	# Addition width problems in concatenation.
+v0.8:pr1792734	NI	# 'dx, 'dz, 'd?, etc. not supported.
+v0.8:pr1851310	NI	# MUX size problem.
+v0.8:task_iotypes2	NI	# Port types are not supported (integer, etc.).
+
+# V0.8 does not support $scanf.
+v0.8:scanf	NI
+v0.8:scanf2	NI
+v0.8:scanf3	NI
+
+# V0.8 does not support $sdf_annotate.
+v0.8:sdf1	NI
+v0.8:sdf2	NI
+v0.8:sdf3	NI
+v0.8:sdf4	NI
+v0.8:sdf5	NI
+v0.8:sdf6	NI
+
+# Other system tasks missing in V0.8.
+v0.8:pr1491355	NI	# $realtobits not supported in continuous assignments.
+v0.8:fileio	NI	# $fopen{r,w,a) not supported.
+v0.8:pr1687193	NI	# $sscanf not supported.
+v0.8:pr1698820	NI	# $fwrite{b,h,o} not supported.
+v0.8:pr1819452	NI	# $feof, $ftell, $frewind and $fseek not supported.
+v0.8:swrite	NI      # $swrite not supported.
+v0.8:urand	NI	# $urandom not supported.
+v0.8:urand_r	NI	# $urandom_range not supported.
+
+# V0.8 does not support -gno-specify (it is implicit).
+v0.8:pr183	CO	ivltests
+v0.8:pr1467825	CO	ivltests
+
+# V0.8 does not have a T0 event for these tests.
+v0.8:pr377	normal  ivltests diff=log/pr377.log:gold/pr377-v0.8.gold
+v0.8:pr1002	normal  ivltests diff=log/pr1002.log:gold/pr1002-v0.8.gold
+v0.8:pr1002a	normal  ivltests diff=log/pr1002a.log:gold/pr1002a-v0.8.gold
+
+#==========
+# The default case.
+#==========
 always3.1.10A	CO	ivltests	# always -> event ; infinite loop
 always3.1.11A	normal	ivltests
 always3.1.11B	normal	ivltests
@@ -199,8 +371,6 @@ land5 normal,-S ivltests
 landor1 normal ivltests
 talu normal ivltests
 time2 normal ivltests  # Tests posedge vector uses vector[0]
-sdw_lvalconcat normal ivltests
-sdw_lvalconcat2 normal ivltests
 time1 normal ivltests
 vardly normal ivltests
 lh_varindx normal ivltests
@@ -318,7 +488,7 @@ cond_band	normal ivltests # Bitwise and in if condition
 cond_wide	normal ivltests # condition is a wide value
 cond_wide2	normal ivltests # condition is a wide value
 bufif		normal ivltests # Validate bufif0, bufif1
-pca1		normal ivltests # Procedural Continous Assignement in a mux 
+pca1		normal ivltests # Procedural Continuous Assignement in a mux 
 wildsense	normal ivltests # Wildcard sensitivity list.
 wildsense2	normal ivltests # Wildcard sensitivity list.
 idiv2		normal ivltests # Int div within an expression
@@ -519,7 +689,7 @@ p_monta normal ivltests
 memidx normal ivltests # PR 221
 memidxrng normal ivltests # PR 271 memory address range checks
 mem2port normal ivltests # memory ports with constant address
-vcd-dup normal ivltests diff=work/vcd-dup.vcd:gold/vcd-dup.vcd.gold:40
+vcd-dup normal ivltests diff=work/vcd-dup.vcd:gold/vcd-dup.vcd.gold:2
 resolv1 normal ivltests # PR#300
 pr307 normal ivltests # wide adds
 pr307a normal ivltests # wide adds
@@ -553,7 +723,7 @@ function5 CO ivltests # PR 184
 function6	normal	ivltests
 blankport normal ivltests main # PR 204 Stephan Boettcher - 
 dcomp1	normal	ivltests diff=log/dcomp1.log:gold/dcomp1.gold
-sp2     normal  ivltests diff=sp2.inv:gold/sp2.inv
+sp2     normal  ivltests diff=work/sp2.inv:gold/sp2.inv
 const   normal  ivltests # PR 122 - Steve Tell - const without length spec.
 const2	normal	ivltests # Some cases that the DCM module trips.
 const3	normal	ivltests

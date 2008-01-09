@@ -158,7 +158,7 @@ initial begin
   end
 
   if (failed == 0) 
-      $display ("PASSED: rpmos");
+      $display ("PASSED");
 end
 endmodule
 

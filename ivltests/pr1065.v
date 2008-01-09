@@ -17,7 +17,7 @@ module subtest1(file_name);
          $display ("Execution started.");
          $display ("%s",file_name);
 // I don't know if the following line conforms to spec or not.
-         outfile = $fopen(file_name);
+         outfile = $fopen({"work/",file_name});
          $display ("Execution finished.");
          $fdisplay (outfile, "Recorded data in %s",file_name);
          $fclose (outfile);

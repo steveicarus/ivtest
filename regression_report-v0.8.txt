@@ -1,969 +1,975 @@
-Test Results:
-                 always3.1.10A CO-PASSED-
-                 always3.1.11A Ran-PASSED-
-                 always3.1.11B Ran-PASSED-
-                 always3.1.12A Ran-PASSED-
-                 always3.1.12B Ran-PASSED-
-                 always3.1.12C Ran-PASSED-
-                  always3.1.1A CO-PASSED-
-                  always3.1.1B CO-PASSED-
-                  always3.1.1C Ran-PASSED-
-                  always3.1.1D Ran-PASSED-
-                  always3.1.1E Ran-PASSED-
-                  always3.1.1F Ran-PASSED-
-                  always3.1.1G CO-PASSED-
-                  always3.1.1H CO-PASSED-
-                  always3.1.1I CO-PASSED-
-                  always3.1.1J CO-PASSED-
-                  always3.1.1K Sorry-Compiler Error-CO-FAILED-
-                  always3.1.2A CO-PASSED-
-                  always3.1.2B CO-PASSED-
-                  always3.1.2C CO-PASSED-
-                  always3.1.2D CO-PASSED-
-                  always3.1.2E CO-PASSED-
-                  always3.1.2F CO-PASSED-
-                  always3.1.2G Sorry-Compiler Error-CO-FAILED-
-                  always3.1.2H Sorry-Compiler Error-CO-FAILED-
-                  always3.1.2I Sorry-Compiler Error-CO-FAILED-
-                  always3.1.3A CO-PASSED-
-                  always3.1.3B CO-PASSED-
-                 always3.1.3B2 Ran-PASSED-
-                  always3.1.3C CO-PASSED-
-                  always3.1.3D CO-PASSED-
-                 always3.1.3D2 Ran-PASSED-
-                  always3.1.3E CO-PASSED-
-                 always3.1.3E2 Ran-PASSED-
-                  always3.1.3F CO-PASSED-
-                 always3.1.3F2 Ran-PASSED-
-                  always3.1.3G CO-PASSED-
-                  always3.1.3H CO-PASSED-
-                  always3.1.3J CO-PASSED-
-                  always3.1.4A Ran-PASSED-
-                  always3.1.4B Ran-PASSED-
-                  always3.1.4C Ran-PASSED-
-                  always3.1.4D Ran-PASSED-
-                  always3.1.4E Ran-PASSED-
-                  always3.1.4F Ran-PASSED-
-                  always3.1.4G Ran-PASSED-
-                  always3.1.4H Ran-PASSED-
-                  always3.1.4I Ran-PASSED-
-                  always3.1.5A Ran-PASSED-
-                  always3.1.5B Ran-PASSED-
-                  always3.1.5C Ran-PASSED-
-                  always3.1.5D Ran-PASSED-
-                  always3.1.5E Ran-PASSED-
-                  always3.1.5F Ran-PASSED-
-                  always3.1.6A Ran-PASSED-
-                  always3.1.6B Ran-PASSED-
-                  always3.1.6C Ran-PASSED-
-                  always3.1.7A Ran-PASSED-
-                  always3.1.7B Ran-PASSED-
-                  always3.1.7C Ran-PASSED-
-                  always3.1.7D Ran-PASSED-
-                  always3.1.8A Ran-PASSED-
-                  always3.1.9A CO-PASSED-
-                  always3.1.9B CO-PASSED-
-                  always3.1.9C Ran-PASSED-
-                  always3.1.9D Ran-PASSED-
-                    assign3.2A Ran-PASSED-
-                    assign3.2B Ran-PASSED-
-                    assign3.2C Ran-PASSED-
-                    assign3.2D Ran-PASSED-
-                    assign3.2E CE-PASSED-
-                      case3.8A Ran-PASSED-
-                      case3.8B Ran-PASSED-
-                      case3.8C Ran-PASSED-
-                     casex3.9A Ran-PASSED-
-                     casex3.9B Ran-PASSED-
-                     casex3.9C Ran-PASSED-
-                     casex3.9D Ran-PASSED-
-                     casex3.9E Ran-PASSED-
-                    casez3.10A Ran-PASSED-
-                    casez3.10B Ran-PASSED-
-                    casez3.10C Ran-PASSED-
-                    casez3.10D Ran-PASSED-
-                    casez3.10E Ran-PASSED-
-                    contrib8.1 Ran-PASSED-
-                    contrib8.2 Ran-PASSED-
-                    contrib8.5 Ran-PASSED-
-                  deassign3.4A Ran-PASSED-
-                   defparam3.5 Ran-PASSED-
-                      defparam Ran-PASSED-
-                   disable3.6A Ran-PASSED-
-                   disable3.6B Ran-PASSED-
-                  disable_fork Ran-PASSED-
-                 function3.11B Ran-PASSED-
-                 function3.11C Ran-PASSED-
-                 function3.11D Ran-PASSED-
-                 function3.11F Ran-PASSED-
-                   module3.12A Ran-PASSED-
-                   module3.12B Ran-PASSED-
-                      ptest001 Ran-PASSED-
-                      ptest002 Ran-PASSED-
-                      ptest003 Ran-PASSED-
-                      ptest004 Ran-PASSED-
-                      ptest005 Ran-PASSED-
-                      ptest006 Ran-PASSED-
-                      ptest007 Ran-PASSED-
-                      ptest008 Ran-PASSED-
-                      ptest009 Ran-PASSED-
-                      ptest010 Ran-PASSED-
-                      ptest011 Ran-PASSED-
-                         qmark Ran-PASSED-
-                        qmark1 Ran-PASSED-
-                        qmark3 Ran-PASSED-
-                        qmark5 Ran-PASSED-
-                   sdw_always1 Ran-PASSED-
-                   sdw_always2 Ran-PASSED-
-                   sdw_always3 Ran-PASSED-
-                     sdw_array Ran-PASSED-
-                    sdw_assign Ran-PASSED-
-                      sdw_dsbl Ran-PASSED-
-                     sdw_force Ran-PASSED-
-                        force1 Ran-PASSED-
-                        force2 Ran-PASSED-
-                 sdw_function1 Ran-PASSED-
-                 sdw_function2 Ran-PASSED-
-                 sdw_function3 Ran-PASSED-
-                  sdw_instmod1 Ran-PASSED-
-                  sdw_instmod2 Ran-PASSED-
-                       sdw_int Ran-PASSED-
-                sdw_lvalconcat Ran-PASSED-
-               sdw_lvalconcat2 Ran-PASSED-
-                    sdw_param1 Ran-PASSED-
-                    sdw_param2 Ran-PASSED-
-                   sdw_release Ran-PASSED-
-                   sdw_stmt002 Ran-PASSED-
-                     sdw_task1 Ran-PASSED-
-                     sdw_task2 Ran-PASSED-
-                     task3.14A Ran-PASSED-
-                     task3.14B Ran-PASSED-
-                     task3.14C Ran-PASSED-
-                     task3.14D Ran-PASSED-
-                     task3.14E Ran-PASSED-
-                     task3.14F Ran-PASSED-
-                            z1 Ran-PASSED-
-                            z2 Ran-PASSED-
-                    contrib8.3 CE-PASSED-
-                    contrib8.4 Ran-PASSED-
-                    integer1lt Ran-PASSED-
-                    integer2le Ran-PASSED-
-                    integer3gt Ran-PASSED-
-                    integer4ge Ran-PASSED-
-                         land2 Ran-PASSED-
-                         land3 Ran-PASSED-
-                         land4 Ran-PASSED-
-                         land5 Ran-PASSED-
-                       landor1 Ran-PASSED-
-                          talu Ran-PASSED-
-                         time2 Ran-PASSED-
-                sdw_lvalconcat Ran-PASSED-
-               sdw_lvalconcat2 Ran-PASSED-
-                         time1 Ran-PASSED-
-                        vardly Ran-PASSED-
-                    lh_varindx Ran-PASSED-
-                  always3.1.6D Ran-PASSED-
-                         time3 Ran-PASSED-
-                         time4 Ran-PASSED-
-                         time5 Ran-PASSED-
-                         time6 Ran-PASSED-
-                         time7 Ran-PASSED-
-                         time8 Ran-PASSED-
-                    timescale1 Ran-PASSED-
-                    timescale2 Ran-PASSED-
-                      udp_bufg Ran-PASSED-
-                     udp_bufg2 Ran-PASSED-
-                      udp_jkff Ran-PASSED-
-                         udp_x Ran-PASSED-
-                        udp_bx Ran-PASSED-
-                     udp_sched Ran-PASSED-
-                       udp_dff Ran-PASSED-
-                      wireadd1 Ran-PASSED-
-                      wiremod1 Ran-PASSED-
-                        wiresl Ran-PASSED-
-                       wiresl2 Ran-PASSED-
-                        wiresr Ran-PASSED-
-                      wiresub1 Ran-PASSED-
-                      wirexor1 Ran-PASSED-
-                        wirele Ran-PASSED-
-                        wirege Ran-PASSED-
-                        wireeq Ran-PASSED-
-                        ga_and Ran-PASSED-
-                         ga_or Ran-PASSED-
-                        ga_xor Ran-PASSED-
-                       ga_xnor Ran-PASSED-
-                       ga_nand Ran-PASSED-
-                        ga_nor Ran-PASSED-
-                       andnot1 Ran-PASSED-
-                     constmult Ran-PASSED-
-                      constadd Ran-PASSED-
-                     constadd2 Ran-PASSED-
-                     constadd3 Ran-PASSED-
-                     consttern Ran-PASSED-
-                        qmark6 Ran-PASSED-
-                       muxtest Ran-PASSED-
-                          fifo Ran-PASSED-
-                     event3.15 Ran-PASSED-
-                        event2 Ran-PASSED-
-                        event3 Ran-PASSED-
-                     unary_and Ran-PASSED-
-                   unary_minus Ran-PASSED-
-                  unary_minus1 Ran-PASSED-
-                  unary_minus2 Ran-PASSED-
-                  unary_minus3 Ran-PASSED-
-                  unary_minus4 Ran-PASSED-
-                    unary_nand Ran-PASSED-
-                   unary_nand2 Ran-PASSED-
-                     unary_not Ran-PASSED-
-                      unary_or Ran-PASSED-
-                     unary_nor Ran-PASSED-
-                    unary_nor2 Ran-PASSED-
-                     unary_xor Ran-PASSED-
-                   unary_xnor1 Ran-PASSED-
-                   unary_xnor2 Ran-PASSED-
-                   binary_nand Ran-PASSED-
-                    binary_nor Ran-PASSED-
-                     rptconcat Ran-PASSED-
-                    rptconcat2 Ran-PASSED-
-                        gencrc Ran-PASSED-
-                        onehot Ran-PASSED-
-                         inout Ran-PASSED-
-                        inout2 Ran-PASSED-
-                      modparam Ran-PASSED-
-                       modulus Ran-PASSED-
-                      modulus2 Ran-PASSED-
-                         mult1 Ran-PASSED-
-                         mult2 Ran-PASSED-
-                     xnor_test Ran-PASSED-
-                    pullupdown Ran-PASSED-
-                   pullupdown2 Ran-PASSED-
-                   pullupdown3 Ran-PASSED-
-                drive_strength Ran-PASSED-
-               drive_strength1 Ran-PASSED-
-               drive_strength2 Ran-PASSED-
-               drive_strength3 Ran-PASSED-
-                 sdw_function4 Ran-PASSED-
-                 sdw_function5 Ran-PASSED-
-                     readmemh1 Ran-PASSED-
-                    readmemh1a Ran-PASSED-
-                     readmemh2 Ran-PASSED-
-                     readmemh3 Ran-PASSED-
-                     readmemh4 Ran-PASSED-
-                     readmemb1 Ran-PASSED-
-                     readmemb2 Ran-PASSED-
-                     readmemb3 Ran-PASSED-
-                          dff1 Ran-PASSED-
-                       con_tri Ran-PASSED-
-                          tri0 Ran-PASSED-
-                         tri0b Ran-PASSED-
-                          tri1 Ran-PASSED-
-                          tri2 Ran-PASSED-
-                        triand Ran-PASSED-
-                         trior Ran-PASSED-
-                         idiv1 Ran-PASSED-
-                     fork3.19A Ran-PASSED-
-                     fork3.19B Ran-PASSED-
-                        mult16 Ran-PASSED-
-                    event_list Ran-PASSED-
-                   event_list2 Ran-PASSED-
-                   event_list3 Ran-PASSED-
-                       posedge Ran-PASSED-
-                     nblkorder Ran-PASSED-
-                      nblkpush Ran-FAILED-
-                    task_inpad Ran-PASSED-
-                   task_omemw3 CO-PASSED-
-                     cond_band Ran-PASSED-
-                     cond_wide Ran-PASSED-
-                    cond_wide2 Ran-PASSED-
-                         bufif Ran-PASSED-
-                          pca1 Ran-PASSED-
-                     wildsense Ran-PASSED-
-                    wildsense2 Ran-PASSED-
-                         idiv2 Ran-PASSED-
-                         idiv3 Ran-PASSED-
-                   assign_mem1 Ran-PASSED-
-                   assign_mem2 Ran-PASSED-
-                       meminit Ran-PASSED-
-                      meminit2 Ran-PASSED-
-                          mem1 Ran-PASSED-
-                     task_noop Ran-PASSED-
-                    task_noop2 CO-PASSED-
-                   task_bypath Ran-PASSED-
-                  task_iotypes Ran-PASSED-
-                 task_iotypes2 Compiler Error-
-                        scope1 Ran-PASSED-
-                        scope2 Ran-PASSED-
-                       scope2b CE-PASSED-
-                        scope4 Ran-PASSED-
-                        scope5 Ran-PASSED-
-                    task-scope Ran-PASSED-
-                    assign_nb1 Ran-PASSED-
-                    assign_nb2 Ran-PASSED-
-                  assign_delay Ran-PASSED-
-                         delay Ran-PASSED-
-                        delay2 Ran-PASSED-
-                        delay3 Sorry-Compiler Error-
-                        delay4 Sorry-Compiler Error-
-                        delay5 Sorry-Compiler Error-
-               delay_assign_nb Ran-PASSED-
-              delay_assign_nb2 Ran-PASSED-
-                       ldelay1 Ran-PASSED-
-                       ldelay2 Ran-PASSED-
-                       ldelay3 Ran-PASSED-
-                       ldelay4 Ran-PASSED-
-                       ldelay5 Ran-PASSED-
-                      wireland Ran-PASSED-
-                  param_concat Ran-PASSED-
-                  param_select Ran-PASSED-
-                 param_select2 Ran-PASSED-
-                 param_select3 Compiler Error-
-                   param_times Ran-PASSED-
-                      case3.8D Ran-PASSED-
-                  function_exp Ran-PASSED-
-                     function1 Ran-PASSED-
-                     function2 Ran-PASSED-
-                     function3 Ran-PASSED-
-                     function4 CE-PASSED-
-                        ifdef1 Ran-PASSED-
-                        ifdef2 Ran-PASSED-
-                        ifdef3 Ran-PASSED-
-                        ifdef4 Ran-PASSED-
-                         else1 Ran-PASSED-
-                         else2 Ran-PASSED-
-                         else3 Ran-PASSED-
-                      include1 Ran-PASSED-
-                      include2 Ran-PASSED-
-                      include3 Ran-PASSED-
-                       define1 Ran-PASSED-
-                     fdisplay1 Ran-PASSED-
-                     fdisplay2 Ran-PASSED-
-                     fdisplay3 RE-PASSED-
-                        fopen1 Ran-PASSED-
-                        fopen2 Ran-PASSED-
-                         div16 Ran-PASSED-
-                         addsr Ran-PASSED-
-                         tern1 Ran-PASSED-
-                         tern2 CO-PASSED-
-                         tern3 Ran-PASSED-
-                         tern4 Ran-PASSED-
-                         tern5 Ran-PASSED-
-                         tern6 Ran-PASSED-
-                         tern7 Ran-PASSED-
-                         tern8 Compiler Error-
-                         tern9 Ran-PASSED-
-                        tern10 Ran-PASSED-
-                     readmemh5 CE-PASSED-
-                    port-test2 Ran-PASSED-
-                    port-test3 CE-PASSED-
-                  param_string Ran-PASSED-
-                      inertdly Ran-FAILED-
-                         galan Ran-PASSED-
-                           pic Ran-PASSED-
-                       initmod Ran-PASSED-
-                      initmod2 Ran-PASSED-
-                          bnot Ran-PASSED-
-                   stask_parm1 Ran-PASSED-
-                   stask_parm2 Ran-PASSED-
-                      task_mem Ran-PASSED-
-                   task_omemw2 Ran-PASSED-
-                   unary_lnot1 Ran-PASSED-
-                   unary_lnot2 Ran-PASSED-
-                   unary_lnot3 Ran-PASSED-
-                   lh_varindx2 Ran-PASSED-
-                   lh_varindx4 Ran-PASSED-
-                   lh_varindx5 Ran-PASSED-
-                     lh_catadd Ran-PASSED-
-                     shift_pad Ran-PASSED-
-                        format RE-PASSED-
-                      disp_dec Ran-PASSED-
-                     disp_dec2 Ran-PASSED-
-                     disp_parm Ran-PASSED-
-                     disp_part Ran-PASSED-
-                      shellho1 Ran-PASSED-
-                    test_width Ran-PASSED-
-                  test_disphob Ran-PASSED-
-                test_dispwided Ran-PASSED-
-                 test_extended Ran-PASSED-
-                      schedule Ran-FAILED-
-                   test_bufif0 Ran-PASSED-
-                   test_bufif1 Ran-PASSED-
-   test_mos_strength_reduction Ran-PASSED-
-                     test_nmos Ran-PASSED-
-                   test_notif0 Ran-PASSED-
-                   test_notif1 Ran-PASSED-
-                     test_pmos Ran-PASSED-
-                    test_rnmos Ran-PASSED-
-                    test_rpmos Ran-PASSED-
-                         cprop Ran-PASSED-
-                       supply1 Ran-PASSED-
-                       supply2 Ran-PASSED-
-                      for3.16A Ran-PASSED-
-                    force3.17A Ran-PASSED-
-                    force3.17B Ran-PASSED-
-                    force3.17C Ran-PASSED-
-                         wait1 Ran-PASSED-
-                         wait2 Ran-PASSED-
-                         wait3 Ran-PASSED-
-                       string1 Ran-PASSED-
-                       string2 Ran-PASSED-
-                       string3 Ran-PASSED-
-                        ga_mod Ran-PASSED-
-                       ga_mod1 Ran-PASSED-
-                       ga_mod2 Ran-PASSED-
-                       signed1 Ran-PASSED-
-                    param_expr Ran-PASSED-
-                     param_and Ran-PASSED-
-                    param_and2 Ran-PASSED-
-                    param_band Ran-PASSED-
-                     param_bor Ran-PASSED-
-                     param_eq3 Ran-PASSED-
-                    param_binv Ran-PASSED-
-                     param_add Ran-PASSED-
-                     param_mod Ran-PASSED-
-                    param_tern Ran-PASSED-
-                   param_tern2 Ran-PASSED-
-                   param_test1 Ran-PASSED-
-                   param_test2 Ran-PASSED-
-                   param_test3 CO-PASSED-
-                   param_test4 Ran-PASSED-
-                     param_vec Ran-PASSED-
-                    param_vec2 Ran-PASSED-
-                      integer5 Ran-FAILED-
-                       signed2 Ran-PASSED-
-                       signed3 Ran-PASSED-
-                       signed4 Ran-PASSED-
-                       signed5 Ran-PASSED-
-                       signed6 Ran-PASSED-
-                       signed7 Ran-PASSED-
-                       signed8 Ran-PASSED-
-                       signed9 Ran-PASSED-
-                      signed10 Ran-PASSED-
-                      signed11 Ran-PASSED-
-                      signed12 Ran-FAILED-
-                       repeat1 Ran-PASSED-
-                       repeat2 Ran-PASSED-
-                  decl_assign1 Ran-PASSED-
-                        vector Ran-PASSED-
-                          mcl1 Ran-PASSED-
-                          mcl2 Ran-PASSED-
-                      comp1000 Ran-FAILED-
-                      comp1001 Ran-FAILED-
-                      specify1 CO-PASSED-
-                      specify2 Ran-FAILED-
-                      specify3 Ran-FAILED-
-                      specify4 Ran-FAILED-
-                      specify5 Ran-FAILED-
-                  deposit_wire Ran-PASSED-
-                    specify_01 Ran-FAILED-
-                       deposit Ran-PASSED-
-                    assign_neq Ran-PASSED-
-                    assign_deq Ran-PASSED-
-                     assign_ge Ran-PASSED-
-                     assign_le Ran-PASSED-
-                        mangle Ran-PASSED-
-                      mangle_1 Ran-PASSED-
-                           rop Ran-PASSED-
-                    task_scope Ran-PASSED-
-                        hello1 Ran-PASSED-
-                     hierspace Ran-PASSED-
-                       dotinid Ran-PASSED-
-                           eeq Ran-PASSED-
-                      dumpvars Ran-PASSED-
-                 dangling_port Ran-PASSED-
-                       sysargs Ran-PASSED-
-                  many_drivers Ran-PASSED-
-                task_port_size Ran-PASSED-
-                       p_monta Ran-PASSED-
-                        memidx Ran-PASSED-
-                     memidxrng Ran-PASSED-
-                      mem2port Ran-PASSED-
-                       vcd-dup Ran-FAILED-
-                       resolv1 Ran-PASSED-
-                         pr307 Ran-PASSED-
-                        pr307a Ran-PASSED-
-                    memport_bs Ran-PASSED-
-                         pr224 Ran-PASSED-
-                        pr224a Ran-PASSED-
-                         pr298 Ran-PASSED-
-                    writememh1 Ran-PASSED-
-                    writememh2 Ran-PASSED-
-                    writememb1 Ran-PASSED-
-                    writememb2 Ran-PASSED-
-                     varlsfht1 Ran-PASSED-
-                     varlsfht2 Ran-PASSED-
-                      varlsfht Ran-PASSED-
-                     varrshft1 Ran-PASSED-
-                     varrshft2 Ran-PASSED-
-                      varrshft Ran-PASSED-
-                        select Ran-PASSED-
-                       select2 Ran-PASSED-
-                       select3 Ran-PASSED-
-                       select4 Ran-PASSED-
-                       select5 Compiler Error-
-                       select6 Compiler Error-
-                       select7 Compiler Error-
-                       select8 Compiler Error-
-                       monitor Ran-PASSED-
-                      monitor2 Ran-PASSED-
-                      monitor3 Ran-PASSED-
-                         fork1 Ran-PASSED-
-                     function5 CO-PASSED-
-                     function6 Ran-PASSED-
-                     blankport Ran-PASSED-
-                        dcomp1 Ran-PASSED-
-                           sp2 Ran-PASSED-
-                         const Ran-PASSED-
-                        const2 Ran-PASSED-
-                        const3 Ran-PASSED-
-                        const4 Ran-PASSED-
-                     memassign Ran-PASSED-
-                       string4 Ran-PASSED-
-                       string5 Ran-PASSED-
-                       string7 Ran-PASSED-
-                       string8 Ran-PASSED-
-                       string9 Ran-PASSED-
-                      string10 Ran-PASSED-
-                      string11 Ran-FAILED-
-                     lh_memcat Ran-PASSED-
-                    lh_memcat2 Ran-PASSED-
-                    lh_memcat3 Ran-PASSED-
-                         npmos Ran-PASSED-
-                        rnpmos Ran-PASSED-
-                        npmos2 Ran-PASSED-
-                       rnpmos2 Ran-PASSED-
-                         pr142 Ran-PASSED-
-                multiply_large Ran-PASSED-
-                         pr304 Ran-PASSED-
-                    mhead_task Ran-PASSED-
-                        bitsel Ran-PASSED-
-                       bitsel2 Ran-PASSED-
-                       bitsel3 Ran-PASSED-
-                       bitsel4 Ran-PASSED-
-                       bitsel5 Ran-PASSED-
-                       bitsel6 Ran-PASSED-
-                       bitsel7 Ran-PASSED-
-                       bitsel8 Ran-PASSED-
-                       bitsel9 Ran-PASSED-
-                      bitwidth Ran-PASSED-
-                     bitwidth2 Ran-PASSED-
-                     bitwidth3 Ran-FAILED-
-                         pr312 Ran-PASSED-
-                         pr355 Ran-PASSED-
-                       ram16x1 Ran-PASSED-
-                        sched1 Ran-PASSED-
-                        sched2 Ran-PASSED-
-                         pr273 Ran-PASSED-
-                       escape1 Ran-PASSED-
-                      escape2a CO-PASSED-
-                      escape2b CO-PASSED-
-                      escape2c CO-PASSED-
-                       escape3 Ran-PASSED-
-                       escape4 Ran-PASSED-
-                      escape4b Ran-PASSED-
-                         pr338 CO-PASSED-
-                        shift1 Ran-PASSED-
-                        shift2 Ran-PASSED-
-                        shift3 Ran-FAILED-
-                        shift4 Ran-PASSED-
-                        shift5 Ran-FAILED-
-                         pr243 Ran-PASSED-
-                        dummy7 Ran-PASSED-
-                        time6b Ran-PASSED-
-                        time6c Ran-PASSED-
-                      disblock Ran-PASSED-
-                     disblock2 Ran-PASSED-
-                      comment1 Ran-PASSED-
-                         pr136 Ran-PASSED-
-                   port-test4a CE-PASSED-
-                   port-test4b CE-PASSED-
-                    port-test5 Ran-PASSED-
-                    port-test6 Ran-PASSED-
-                    port-test7 Ran-PASSED-
-                         pr445 Ran-PASSED-
-                       big_int Ran-PASSED-
-                       concat1 Ran-PASSED-
-                       concat2 Ran-PASSED-
-                        extend Ran-FAILED-
-                     timeform1 Ran-PASSED-
-                     timeform2 Ran-PASSED-
-                         pr183 Compiler Error-CO-FAILED-
-                         pr245 Ran-PASSED-
-                         pr377 Ran-FAILED-
-                         pr478 Ran-PASSED-
-                         pr487 Ran-FAILED-
-                         pr492 Ran-PASSED-
-                         pr498 Ran-PASSED-
-                       addwide Ran-PASSED-
-                         pr508 Ran-PASSED-
-                         pr509 Ran-PASSED-
-                        pr509b Ran-PASSED-
-                         pr511 Ran-PASSED-
-                         pr513 Ran-PASSED-
-                         pr519 Ran-PASSED-
-                         pr522 Ran-PASSED-
-                         pr524 Ran-PASSED-
-                         pr527 Ran-FAILED-
-                         pr528 Ran-FAILED-
-                        pr528b Ran-PASSED-
-                         pr529 
-                        pr530a Ran-PASSED-
-                        pr530b Ran-PASSED-
-                        pr530c Ran-PASSED-
-                        pr531a Ran-PASSED-
-                        pr531b Ran-PASSED-
-                         pr532 Ran-PASSED-
-                        pr532b Ran-PASSED-
-                         pr533 Ran-PASSED-
-                         pr534 Ran-PASSED-
-                         pr538 Ran-PASSED-
-                         pr540 Ran-PASSED-
-                        pr540b Ran-PASSED-
-                        pr540c Ran-PASSED-
-                         pr541 Ran-PASSED-
-                         pr542 Ran-PASSED-
-                         pr544 Ran-PASSED-
-                         pr547 Ran-PASSED-
-                         pr564 Ran-FAILED-
-                         pr569 Ran-PASSED-
-                         pr572 Ran-PASSED-
-                        pr572b Ran-PASSED-
-                         pr578 Ran-PASSED-
-                         pr584 Ran-PASSED-
-                         pr585 Ran-PASSED-
-                         pr587 Ran-FAILED-
-                         pr590 Ran-PASSED-
-                         pr594 Ran-PASSED-
-                         pr596 Ran-PASSED-
-                         pr602 Ran-PASSED-
-                         pr622 Ran-PASSED-
-                         pr639 Ran-PASSED-
-                         case1 Ran-PASSED-
-                         case2 Ran-PASSED-
-                         case3 Ran-PASSED-
-                         case4 Ran-PASSED-
-                         case5 Ran-FAILED-
-                         case6 Ran-PASSED-
-                         case7 Ran-PASSED-
-                       condit1 Ran-PASSED-
-                      basicreg Ran-PASSED-
-                    basiclatch Ran-FAILED-
-                    basicstate Ran-PASSED-
-                   basicstate2 Ran-PASSED-
-                      multireg Ran-PASSED-
-                     basicexpr Ran-PASSED-
-                    basicexpr2 Ran-PASSED-
-                    basicexpr3 Ran-PASSED-
-                    basicexpr4 Ran-PASSED-
-                        shiftl Ran-PASSED-
-                   blocksynth1 Ran-PASSED-
-                   blocksynth2 Ran-PASSED-
-                   blocksynth3 Ran-PASSED-
-                  conditsynth1 Ran-PASSED-
-                  conditsynth2 Ran-PASSED-
-                  conditsynth3 Ran-PASSED-
-                    casesynth1 Ran-PASSED-
-                    casesynth2 Ran-PASSED-
-                    casesynth3 Ran-PASSED-
-                     lcatsynth Ran-PASSED-
-                      dffsynth Ran-FAILED-
-                     dffsynth2 Ran-PASSED-
-                     dffsynth3 Ran-PASSED-
-                     dffsynth4 Ran-PASSED-
-                   sqrt32synth Ran-PASSED-
-                        sqrt32 Ran-PASSED-
-                     memsynth1 Ran-PASSED-
-                     memsynth2 Ran-PASSED-
-                     memsynth3 Ran-PASSED-
-                     memsynth4 Ran-PASSED-
-                     memsynth5 Ran-PASSED-
-                     memsynth6 Ran-PASSED-
-                     memsynth7 Ran-PASSED-
-                     memsynth8 Ran-PASSED-
-                     memsynth9 Ran-PASSED-
-                   ufuncsynth1 Ran-PASSED-
-                      ssetclr1 Ran-PASSED-
-                      ssetclr2 Ran-PASSED-
-                      ssetclr3 Ran-PASSED-
-                  partselsynth Ran-PASSED-
-                  inside_synth Ran-PASSED-
-                 inside_synth2 Ran-PASSED-
-                 inside_synth3 Ran-PASSED-
-                     mix_reset Ran-PASSED-
-                   casex_synth Ran-PASSED-
-                     full_case Ran-PASSED-
-                        busbug Ran-PASSED-
-                          real Ran-PASSED-
-                         real2 Ran-PASSED-
-                         real3 Ran-PASSED-
-                         real4 Ran-PASSED-
-                         real5 Ran-PASSED-
-                         real6 Ran-PASSED-
-                         real7 Ran-PASSED-
-                         real8 Compiler Error-
-                         real9 Ran-PASSED-
-                        real10 Ran-PASSED-
-                        real11 Sorry-Compiler Error-
-                         bool1 Compiler Error-
-                    realtobits Ran-PASSED-
-                      negvalue Ran-PASSED-
-                         pr434 Ran-PASSED-
-                         pr556 Ran-PASSED-
-                         pr632 Ran-FAILED-
-                         pr617 Ran-PASSED-
-                         pr673 Ran-PASSED-
-                         pr675 Ran-PASSED-
-                         pr678 Ran-PASSED-
-                         pr685 Ran-PASSED-
-                         pr690 Ran-PASSED-
-                         pr693 Ran-PASSED-
-                         pr699 Ran-FAILED-
-                         pr704 Ran-PASSED-
-                         pr707 Ran-PASSED-
-                         pr708 Ran-PASSED-
-                         pr710 Ran-PASSED-
-                         pr718 Ran-PASSED-
-                         pr721 Ran-PASSED-
-                         pr722 Ran-PASSED-
-                         pr729 Ran-PASSED-
-                         pr734 Ran-PASSED-
-                         pr735 Ran-PASSED-
-                         pr748 Ran-PASSED-
-                         pr751 Ran-PASSED-
-                         pr757 Ran-PASSED-
-                         pr772 Ran-PASSED-
-                         pr809 Ran-PASSED-
-                        pr809b Ran-PASSED-
-                         pr810 Ran-PASSED-
-                         pr812 Ran-PASSED-
-                         pr820 Ran-PASSED-
-                         pr823 Ran-PASSED-
-                         pr841 Ran-PASSED-
-                         pr842 Ran-PASSED-
-                         pr848 Ran-PASSED-
-                         pr856 Ran-PASSED-
-                         pr859 Ran-PASSED-
-                         pr860 Ran-PASSED-
-                         pr872 Ran-PASSED-
-                         pr902 Ran-PASSED-
-                         pr903 Ran-PASSED-
-                         pr905 Ran-PASSED-
-                         pr910 Ran-PASSED-
-                         pr913 Ran-PASSED-
-                         pr923 Ran-PASSED-
-                         pr938 Ran-PASSED-
-                        pr938b Ran-PASSED-
-                         pr941 Ran-PASSED-
-                          prng Ran-PASSED-
-                          race Ran-PASSED-
-                         pr973 Ran-PASSED-
-                         pr978 Compiler Error-
-                         pr979 Ran-PASSED-
-                         pr985 Ran-PASSED-
-                         pr987 Ran-PASSED-
-                         pr990 Ran-FAILED-
-                         pr991 Ran-PASSED-
-                         pr993 Ran-PASSED-
-                         pr995 Ran-PASSED-
-                            eq Ran-PASSED-
-                          neq1 Ran-PASSED-
-                        pr1000 Ran-PASSED-
-                        pr1002 Ran-PASSED-Ran-FAILED-
-                       pr1002a Ran-PASSED-Ran-FAILED-
-                        pr1007 Ran-PASSED-
-                        pr1008 Ran-PASSED-
-                        pr1022 Ran-PASSED-
-                        pr1024 Ran-PASSED-
-                        pr1026 Ran-PASSED-
-                        pr1029 Ran-PASSED-
-                        pr1032 Ran-PASSED-
-                        pr1033 Ran-PASSED-
-                    assign_add Ran-PASSED-
-              credence20041209 Ran-PASSED-
-                        pr1065 Ran-PASSED-
-                        pr1072 Ran-PASSED-
-                        pr1077 Ran-PASSED-
-                        pr1087 Compiler Error-
-                        pr1101 Ran-PASSED-
-                        pr1115 Ran-FAILED-
-                     pr1367855 Ran-PASSED-
-                     pr1380261 Ran-FAILED-
-                     pr1444055 Ran-PASSED-
-                    pr1449749a Compiler Error-
-                     pr1353345 Compiler Error-
-                    pr1353345b Compiler Error-
-                     pr1388974 Ran-PASSED-
-                     pr1421777 Compiler Error-
-                     pr1465769 Compiler Error-
-                        types1 Ran-PASSED-
-                       genloop Compiler Error-
-                         scanf 
-                        scanf2 
-                        scanf3 
-                     pr1467825 Compiler Error-CO-FAILED-
-                     pr1455873 Ran-PASSED-
-                     pr1474283 Compiler Error-
-                     pr1474316 Compiler Error-
-                     pr1474318 Ran-PASSED-
-                     pr1476440 Ran-FAILED-
-                     pr1477190 Ran-PASSED-
-                     pr1478121 Ran-PASSED-
-                     pr1478988 Ran-PASSED-
-                     pr1489568 Ran-PASSED-
-                     pr1489570 Parse Err-Assertion-
-                     pr1491355 Sorry-Unable-Compiler Error-
-                     pr1492075 Ran-FAILED-
-                     pr1494799 Ran-FAILED-
-                     pr1508882 Ran-PASSED-
-                     pr1515168 Ran-FAILED-
-                     pr1520314 CO-PASSED-
-                     pr1522570 Ran-FAILED-
-                     pr1528093 Ran-FAILED-
-                     pr1530426 Compiler Error-
-                     pr1561597 Ran-PASSED-
-                     pr1565544 Compiler Error-
-                    pr1565699b Compiler Error-
-                     pr1570451 Ran-PASSED-
-                    pr1570451b Ran-PASSED-
-                     pr1570635 Parse Err-
-                    pr1570635b Ran-FAILED-
-                     pr1574175 Ran-PASSED-
-                     pr1581580 Compiler Error-
-                     pr1587634 CO-PASSED-
-                     pr1587669 Ran-FAILED-
-                     pr1589497 Ran-PASSED-
-                     pr1598445 Ran-PASSED-
-                     pr1601896 Ran-PASSED-
-                     pr1601898 Ran-PASSED-
-                     pr1603313 Ran-PASSED-
-                     pr1603918 Ran-PASSED-
-                     pr1609611 Ran-PASSED-
-                     pr1612693 Ran-PASSED-
-                     pr1623097 Compiler Error-Ran-FAILED-
-                     pr1625912 Compiler Error-
-                     pr1628288 Ran-PASSED-
-                     pr1628300 Compiler Error-Ran-FAILED-
-                     pr1629683 Ran-PASSED-
-                     pr1632861 Ran-FAILED-
-                     pr1634526 Compiler Error-Ran-FAILED-
-                     pr1636409 Ran-FAILED-
-                     pr1637208 Ran-PASSED-
-                     pr1638985 Ran-FAILED-
-                     pr1639060 Ran-FAILED-
-                     pr1639064 Assertion-Ran-FAILED-
-                    pr1639064b Assertion-Ran-FAILED-
-                     pr1639968 Ran-FAILED-
-                     pr1639971 Compiler Error-Ran-FAILED-
-                     pr1645277 Ran-PASSED-
-                     pr1645518 Ran-FAILED-
-                     pr1648365 Ran-FAILED-
-                     pr1650842 Ran-PASSED-
-                     pr1657307 Ran-PASSED-
-                     pr1661640 Ran-FAILED-
-                     pr1662508 Ran-PASSED-
-                     pr1664684 Ran-FAILED-
-                     pr1675789 Compiler Error-
-                    pr1675789b Compiler Error-
-                     pr1676071 Compiler Error-
-                     pr1676836 
-                     pr1682887 Ran-PASSED-
-                     pr1687193 Ran-FAILED-
-                     pr1688717 Compiler Error-Ran-FAILED-
-                     pr1690058 Compiler Error-
-                    pr1691599b Compiler Error-
-                     pr1691709 Ran-PASSED-
-                     pr1693890 Unable-Compiler Error-
-                     pr1693921 Ran-PASSED-
-                     pr1694413 Compiler Error-
-                     pr1694427 Ran-PASSED-
-                     pr1695257 CO-PASSED-
-                     pr1695309 Compiler Error-
-                     pr1695322 Compiler Error-
-                     pr1695334 Ran-PASSED-
-                     pr1696137 Ran-PASSED-
-                     pr1697250 Ran-PASSED-
-                     pr1697732 Ran-PASSED-
-                     pr1698499 Parse Err-Assertion-Ran-FAILED-
-                     pr1698658 Ran-FAILED-
-                     pr1698659 Unable-Compiler Error-Ran-FAILED-
-                     pr1698820 Ran-FAILED-
-                     pr1699444 Ran-PASSED-
-                     pr1699519 Ran-FAILED-
-                     pr1701855 Ran-FAILED-
-                     pr1701889 Ran-FAILED-
-                     pr1701890 Compiler Error-Ran-FAILED-
-                     pr1701921 Ran-PASSED-
-                     pr1702593 Assertion-Ran-FAILED-
-                     pr1703346 Compiler Error-
-                     pr1703959 Ran-PASSED-
-                    elsif_test Ran-PASSED-
-                     pr1703120 Ran-FAILED-
-                     pr1704013 CE-FAILED-
-                     pr1716276 Ran-PASSED-
-                     pr1717361 Ran-PASSED-
-                     pr1719055 Compiler Error-Ran-FAILED-
-                     pr1735724 CE-PASSED-
-                     pr1735822 Compiler Error-
-                     pr1735836 Ran-PASSED-
-                    pr1740476b Compiler Error-
-                     pr1741212 Compiler Error-Ran-FAILED-
-                     pr1742910 Ran-FAILED-
-                     pr1745005 Compiler Error-
-                     pr1746401 Compiler Error-
-                     pr1746848 Ran-PASSED-
-                     pr1750870 Compiler Error-
-                     pr1752353 Ran-PASSED-
-                    pr1752823a Ran-PASSED-
-                    pr1752823b Ran-FAILED-
-                     pr1755593 Ran-PASSED-
-                     pr1755629 Compiler Error-
-                     pr1758122 Compiler Error-Ran-FAILED-
-                     pr1758135 Ran-PASSED-
-                     pr1763333 CE-PASSED-
-                     pr1765789 Compiler Error-
-                     pr1770199 Ran-PASSED-
-                        swrite Compiler Error-Ran-FAILED-
-                     pr1771903 Compiler Error-Ran-FAILED-
-                     pr1776485 Ran-PASSED-
-                     pr1777103 Ran-FAILED-
-                     pr1784984 Ran-PASSED-
-                    pr1787394a Ran-FAILED-
-                    pr1787394b Ran-PASSED-
-                          cmos Compiler Error-Ran-FAILED-
-                     pr1792108 Ran-PASSED-
-                     pr1792152 Ran-FAILED-
-                     pr1792734 Compiler Error-Ran-FAILED-
-                     pr1793157 Ran-FAILED-
-                     pr1793749 Ran-FAILED-
-                    pr1793749b Ran-FAILED-
-                    pr1795005a Ran-PASSED-
-                    pr1795005b Ran-FAILED-
-                     pr1799904 Compiler Error-Ran-FAILED-
-                     pr1804877 Ran-PASSED-
-                     pr1805837 Ran-PASSED-
-                         urand Ran-FAILED-
-                       urand_r Ran-FAILED-
-                        fileio Ran-FAILED-
-                     pr1812297 Ran-PASSED-
-                     pr1819452 Ran-FAILED-
-                     pr1820472 Compiler Error-Ran-FAILED-
-                      long_div Parse Err-Assertion-Ran-FAILED-
-           generate_multi_loop Compiler Error-Ran-FAILED-
-                     pr1822658 Ran-PASSED-
-                     pr1823732 Ran-FAILED-
-                     pr1828642 Compiler Error-Ran-FAILED-
-                     pr1831724 Ran-FAILED-
-                     pr1841300 Ran-FAILED-
-                     pr1845683 Ran-FAILED-
-                     pr1851310 Assertion-Compiler Error-Ran-FAILED-
-                     pr1855504 Ran-PASSED-
-        unnamed_generate_block Compiler Error-Ran-FAILED-
-                     pr1833754 CE-PASSED-
-                          sdf1 Ran-FAILED-
-                          sdf2 Ran-FAILED-
-                          sdf3 Ran-FAILED-
-                          sdf4 Ran-FAILED-
-                          sdf5 Ran-FAILED-
-                          sdf6 Ran-FAILED-
-               macro_with_args Compiler Error-Ran-FAILED-
-                        macro2 Compiler Error-Ran-FAILED-
-Tests passed: 801, failed: 189, Unhandled: 9 Unable: 3, Assert: 7, Parse Errs: 4
+Running compiler/VVP tests for Icarus Verilog version: 0.8.
+----------------------------------------------------------------------
+                  pr1639971: Not Implemented.
+                  pr1719055: Not Implemented.
+                  pr1746401: Not Implemented.
+                  pr1421777: Not Implemented.
+                  pr1693890: Not Implemented.
+               always3.1.1K: Not Implemented.
+               always3.1.2G: Not Implemented.
+               always3.1.2H: Not Implemented.
+               always3.1.2I: Not Implemented.
+                      pr978: Not Implemented.
+                  pr1628300: Not Implemented.
+                  pr1741212: Not Implemented.
+                     pr1087: Not Implemented.
+                  pr1353345: Not Implemented.
+                 pr1353345b: Not Implemented.
+                  pr1581580: Not Implemented.
+                  pr1695322: Not Implemented.
+                  pr1703346: Not Implemented.
+                  pr1799904: Not Implemented.
+                  pr1820472: Not Implemented.
+                  pr1530426: Not Implemented.
+                  pr1634526: Not Implemented.
+                  pr1690058: Not Implemented.
+                  pr1694413: Not Implemented.
+                  pr1750870: Not Implemented.
+                  pr1701890: Not Implemented.
+                  pr1771903: Not Implemented.
+                      pr993: Not Implemented.
+                  pr1489570: Not Implemented.
+                  pr1698499: Not Implemented.
+                   long_div: Not Implemented.
+                     delay3: Not Implemented.
+                     delay4: Not Implemented.
+                     delay5: Not Implemented.
+                     real11: Not Implemented.
+                      bool1: Not Implemented.
+                      real8: Not Implemented.
+                      tern8: Not Implemented.
+                 pr1861212a: Not Implemented.
+                 pr1861212b: Not Implemented.
+                 pr1861212c: Not Implemented.
+              param_select3: Not Implemented.
+                  pr1465769: Not Implemented.
+                  pr1474316: Not Implemented.
+                  pr1675789: Not Implemented.
+                 pr1675789b: Not Implemented.
+                  pr1688717: Not Implemented.
+                  pr1735822: Not Implemented.
+                  pr1745005: Not Implemented.
+                    select5: Not Implemented.
+                    select6: Not Implemented.
+                    select7: Not Implemented.
+                    select8: Not Implemented.
+                  pr1587669: Not Implemented.
+                 specify_01: Not Implemented.
+                   specify2: Not Implemented.
+                   specify3: Not Implemented.
+                   specify4: Not Implemented.
+                   specify5: Not Implemented.
+        generate_multi_loop: Not Implemented.
+                    genloop: Not Implemented.
+                  pr1565544: Not Implemented.
+                 pr1565699b: Not Implemented.
+                  pr1623097: Not Implemented.
+                  pr1676071: Not Implemented.
+                 pr1691599b: Not Implemented.
+                  pr1695309: Not Implemented.
+                 pr1740476b: Not Implemented.
+                  pr1755629: Not Implemented.
+                  pr1758122: Not Implemented.
+                  pr1828642: Not Implemented.
+                  pr1833754: Not Implemented.
+     unnamed_generate_block: Not Implemented.
+                  pr1639064: Not Implemented.
+                 pr1639064b: Not Implemented.
+                  pr1702593: Not Implemented.
+            macro_with_args: Not Implemented.
+                     macro2: Not Implemented.
+                       cmos: Not Implemented.
+                 pr1449749a: Not Implemented.
+                  pr1474283: Not Implemented.
+                  pr1625912: Not Implemented.
+                  pr1698659: Not Implemented.
+                  pr1765789: Not Implemented.
+                  pr1792734: Not Implemented.
+                  pr1851310: Not Implemented.
+              task_iotypes2: Not Implemented.
+                      scanf: Not Implemented.
+                     scanf2: Not Implemented.
+                     scanf3: Not Implemented.
+                       sdf1: Not Implemented.
+                       sdf2: Not Implemented.
+                       sdf3: Not Implemented.
+                       sdf4: Not Implemented.
+                       sdf5: Not Implemented.
+                       sdf6: Not Implemented.
+                  pr1491355: Not Implemented.
+                     fileio: Not Implemented.
+                  pr1687193: Not Implemented.
+                  pr1698820: Not Implemented.
+                  pr1819452: Not Implemented.
+                     swrite: Not Implemented.
+                      urand: Not Implemented.
+                    urand_r: Not Implemented.
+                      pr183: Passed - CO.
+                  pr1467825: Passed - CO.
+                      pr377: Passed.
+                     pr1002: Passed.
+                    pr1002a: Passed.
+              always3.1.10A: Passed - CO.
+              always3.1.11A: Passed.
+              always3.1.11B: Passed.
+              always3.1.12A: Passed.
+              always3.1.12B: Passed.
+              always3.1.12C: Passed.
+               always3.1.1A: Passed - CO.
+               always3.1.1B: Passed - CO.
+               always3.1.1C: Passed.
+               always3.1.1D: Passed.
+               always3.1.1E: Passed.
+               always3.1.1F: Passed.
+               always3.1.1G: Passed - CO.
+               always3.1.1H: Passed - CO.
+               always3.1.1I: Passed - CO.
+               always3.1.1J: Passed - CO.
+               always3.1.2A: Passed - CO.
+               always3.1.2B: Passed - CO.
+               always3.1.2C: Passed - CO.
+               always3.1.2D: Passed - CO.
+               always3.1.2E: Passed - CO.
+               always3.1.2F: Passed - CO.
+               always3.1.3A: Passed - CO.
+               always3.1.3B: Passed - CO.
+              always3.1.3B2: Passed.
+               always3.1.3C: Passed - CO.
+               always3.1.3D: Passed - CO.
+              always3.1.3D2: Passed.
+               always3.1.3E: Passed - CO.
+              always3.1.3E2: Passed.
+               always3.1.3F: Passed - CO.
+              always3.1.3F2: Passed.
+               always3.1.3G: Passed - CO.
+               always3.1.3H: Passed - CO.
+               always3.1.3J: Passed - CO.
+               always3.1.4A: Passed.
+               always3.1.4B: Passed.
+               always3.1.4C: Passed.
+               always3.1.4D: Passed.
+               always3.1.4E: Passed.
+               always3.1.4F: Passed.
+               always3.1.4G: Passed.
+               always3.1.4H: Passed.
+               always3.1.4I: Passed.
+               always3.1.5A: Passed.
+               always3.1.5B: Passed.
+               always3.1.5C: Passed.
+               always3.1.5D: Passed.
+               always3.1.5E: Passed.
+               always3.1.5F: Passed.
+               always3.1.6A: Passed.
+               always3.1.6B: Passed.
+               always3.1.6C: Passed.
+               always3.1.7A: Passed.
+               always3.1.7B: Passed.
+               always3.1.7C: Passed.
+               always3.1.7D: Passed.
+               always3.1.8A: Passed.
+               always3.1.9A: Passed - CO.
+               always3.1.9B: Passed - CO.
+               always3.1.9C: Passed.
+               always3.1.9D: Passed.
+                 assign3.2A: Passed.
+                 assign3.2B: Passed.
+                 assign3.2C: Passed.
+                 assign3.2D: Passed.
+                 assign3.2E: Passed - CE.
+                   case3.8A: Passed.
+                   case3.8B: Passed.
+                   case3.8C: Passed.
+                  casex3.9A: Passed.
+                  casex3.9B: Passed.
+                  casex3.9C: Passed.
+                  casex3.9D: Passed.
+                  casex3.9E: Passed.
+                 casez3.10A: Passed.
+                 casez3.10B: Passed.
+                 casez3.10C: Passed.
+                 casez3.10D: Passed.
+                 casez3.10E: Passed.
+                 contrib8.1: Passed.
+                 contrib8.2: Passed.
+                 contrib8.5: Passed.
+               deassign3.4A: Passed.
+                defparam3.5: Passed.
+                   defparam: Passed.
+                disable3.6A: Passed.
+                disable3.6B: Passed.
+               disable_fork: Passed.
+              function3.11B: Passed.
+              function3.11C: Passed.
+              function3.11D: Passed.
+              function3.11F: Passed.
+                module3.12A: Passed.
+                module3.12B: Passed.
+                   ptest001: Passed.
+                   ptest002: Passed.
+                   ptest003: Passed.
+                   ptest004: Passed.
+                   ptest005: Passed.
+                   ptest006: Passed.
+                   ptest007: Passed.
+                   ptest008: Passed.
+                   ptest009: Passed.
+                   ptest010: Passed.
+                   ptest011: Passed.
+                      qmark: Passed.
+                     qmark1: Passed.
+                     qmark3: Passed.
+                     qmark5: Passed.
+                sdw_always1: Passed.
+                sdw_always2: Passed.
+                sdw_always3: Passed.
+                  sdw_array: Passed.
+                 sdw_assign: Passed.
+                   sdw_dsbl: Passed.
+                  sdw_force: Passed.
+                     force1: Passed.
+                     force2: Passed.
+              sdw_function1: Passed.
+              sdw_function2: Passed.
+              sdw_function3: Passed.
+               sdw_instmod1: Passed.
+               sdw_instmod2: Passed.
+                    sdw_int: Passed.
+             sdw_lvalconcat: Passed.
+            sdw_lvalconcat2: Passed.
+                 sdw_param1: Passed.
+                 sdw_param2: Passed.
+                sdw_release: Passed.
+                sdw_stmt002: Passed.
+                  sdw_task1: Passed.
+                  sdw_task2: Passed.
+                  task3.14A: Passed.
+                  task3.14B: Passed.
+                  task3.14C: Passed.
+                  task3.14D: Passed.
+                  task3.14E: Passed.
+                  task3.14F: Passed.
+                         z1: Passed.
+                         z2: Passed.
+                 contrib8.3: Passed - CE.
+                 contrib8.4: Passed.
+                 integer1lt: Passed.
+                 integer2le: Passed.
+                 integer3gt: Passed.
+                 integer4ge: Passed.
+                      land2: Passed.
+                      land3: Passed.
+                      land4: Passed.
+                      land5: Passed.
+                    landor1: Passed.
+                       talu: Passed.
+                      time2: Passed.
+                      time1: Passed.
+                     vardly: Passed.
+                 lh_varindx: Passed.
+               always3.1.6D: Passed.
+                      time3: Passed.
+                      time4: Passed.
+                      time5: Passed.
+                      time6: Passed.
+                      time7: Passed.
+                      time8: Passed.
+                 timescale1: Passed.
+                 timescale2: Passed.
+                   udp_bufg: Passed.
+                  udp_bufg2: Passed.
+                   udp_jkff: Passed.
+                      udp_x: Passed.
+                     udp_bx: Passed.
+                  udp_sched: Passed.
+                    udp_dff: Passed.
+                   wireadd1: Passed.
+                   wiremod1: Passed.
+                     wiresl: Passed.
+                    wiresl2: Passed.
+                     wiresr: Passed.
+                   wiresub1: Passed.
+                   wirexor1: Passed.
+                     wirele: Passed.
+                     wirege: Passed.
+                     wireeq: Passed.
+                     ga_and: Passed.
+                      ga_or: Passed.
+                     ga_xor: Passed.
+                    ga_xnor: Passed.
+                    ga_nand: Passed.
+                     ga_nor: Passed.
+                    andnot1: Passed.
+                  constmult: Passed.
+                   constadd: Passed.
+                  constadd2: Passed.
+                  constadd3: Passed.
+                  consttern: Passed.
+                     qmark6: Passed.
+                    muxtest: Passed.
+                       fifo: Passed.
+                  event3.15: Passed.
+                     event2: Passed.
+                     event3: Passed.
+                  unary_and: Passed.
+                unary_minus: Passed.
+               unary_minus1: Passed.
+               unary_minus2: Passed.
+               unary_minus3: Passed.
+               unary_minus4: Passed.
+                 unary_nand: Passed.
+                unary_nand2: Passed.
+                  unary_not: Passed.
+                   unary_or: Passed.
+                  unary_nor: Passed.
+                 unary_nor2: Passed.
+                  unary_xor: Passed.
+                unary_xnor1: Passed.
+                unary_xnor2: Passed.
+                binary_nand: Passed.
+                 binary_nor: Passed.
+                  rptconcat: Passed.
+                 rptconcat2: Passed.
+                     gencrc: Passed.
+                     onehot: Passed.
+                      inout: Passed.
+                     inout2: Passed.
+                   modparam: Passed.
+                    modulus: Passed.
+                   modulus2: Passed.
+                      mult1: Passed.
+                      mult2: Passed.
+                  xnor_test: Passed.
+                 pullupdown: Passed.
+                pullupdown2: Passed.
+                pullupdown3: Passed.
+             drive_strength: Passed.
+            drive_strength1: Passed.
+            drive_strength2: Passed.
+            drive_strength3: Passed.
+              sdw_function4: Passed.
+              sdw_function5: Passed.
+                  readmemh1: Passed.
+                 readmemh1a: Passed.
+                  readmemh2: Passed.
+                  readmemh3: Passed.
+                  readmemh4: Passed.
+                  readmemb1: Passed.
+                  readmemb2: Passed.
+                  readmemb3: Passed.
+                       dff1: Passed.
+                    con_tri: Passed.
+                       tri0: Passed.
+                      tri0b: Passed.
+                       tri1: Passed.
+                       tri2: Passed.
+                     triand: Passed.
+                      trior: Passed.
+                      idiv1: Passed.
+                  fork3.19A: Passed.
+                  fork3.19B: Passed.
+                     mult16: Passed.
+                 event_list: Passed.
+                event_list2: Passed.
+                event_list3: Passed.
+                    posedge: Passed.
+                  nblkorder: Passed.
+                   nblkpush: ==> Failed - output does not match gold file.
+                 task_inpad: Passed.
+                task_omemw3: Passed - CO.
+                  cond_band: Passed.
+                  cond_wide: Passed.
+                 cond_wide2: Passed.
+                      bufif: Passed.
+                       pca1: Passed.
+                  wildsense: Passed.
+                 wildsense2: Passed.
+                      idiv2: Passed.
+                      idiv3: Passed.
+                assign_mem1: Passed.
+                assign_mem2: Passed.
+                    meminit: Passed.
+                   meminit2: Passed.
+                       mem1: Passed.
+                  task_noop: Passed.
+                 task_noop2: Passed - CO.
+                task_bypath: Passed.
+               task_iotypes: Passed.
+                     scope1: Passed.
+                     scope2: Passed.
+                    scope2b: Passed - CE.
+                     scope4: Passed.
+                     scope5: Passed.
+                 task-scope: Passed.
+                 assign_nb1: Passed.
+                 assign_nb2: Passed.
+               assign_delay: Passed.
+                      delay: Passed.
+                     delay2: Passed.
+            delay_assign_nb: Passed.
+           delay_assign_nb2: Passed.
+                    ldelay1: Passed.
+                    ldelay2: Passed.
+                    ldelay3: Passed.
+                    ldelay4: Passed.
+                    ldelay5: Passed.
+                   wireland: Passed.
+               param_concat: Passed.
+               param_select: Passed.
+              param_select2: Passed.
+                param_times: Passed.
+                   case3.8D: Passed.
+               function_exp: Passed.
+                  function1: Passed.
+                  function2: Passed.
+                  function3: Passed.
+                  function4: Passed - CE.
+                     ifdef1: Passed.
+                     ifdef2: Passed.
+                     ifdef3: Passed.
+                     ifdef4: Passed.
+                      else1: Passed.
+                      else2: Passed.
+                      else3: Passed.
+                   include1: Passed.
+                   include2: Passed.
+                   include3: Passed.
+                    define1: Passed.
+                  fdisplay1: Passed.
+                  fdisplay2: Passed.
+                  fdisplay3: Passed.
+                     fopen1: Passed.
+                     fopen2: Passed.
+                      div16: Passed.
+                      addsr: Passed.
+                      tern1: Passed.
+                      tern2: Passed - CO.
+                      tern3: Passed.
+                      tern4: Passed.
+                      tern5: Passed.
+                      tern6: Passed.
+                      tern7: Passed.
+                      tern9: Passed.
+                     tern10: Passed.
+                  readmemh5: Passed - CE.
+                 port-test2: Passed.
+                 port-test3: Passed - CE.
+               param_string: Passed.
+                   inertdly: ==> Failed - output does not match gold file.
+                      galan: Passed.
+                        pic: Passed.
+                    initmod: Passed.
+                   initmod2: Passed.
+                       bnot: Passed.
+                stask_parm1: Passed.
+                stask_parm2: Passed.
+                   task_mem: Passed.
+                task_omemw2: Passed.
+                unary_lnot1: Passed.
+                unary_lnot2: Passed.
+                unary_lnot3: Passed.
+                lh_varindx2: Passed.
+                lh_varindx4: Passed.
+                lh_varindx5: Passed.
+                  lh_catadd: Passed.
+                  shift_pad: Passed.
+                     format: Passed.
+                   disp_dec: Passed.
+                  disp_dec2: Passed.
+                  disp_parm: Passed.
+                  disp_part: Passed.
+                   shellho1: Passed.
+                 test_width: Passed.
+               test_disphob: Passed.
+             test_dispwided: Passed.
+              test_extended: Passed.
+                   schedule: ==> Failed - output does not match gold file.
+                test_bufif0: Passed.
+                test_bufif1: Passed.
+test_mos_strength_reduction: Passed.
+                  test_nmos: Passed.
+                test_notif0: Passed.
+                test_notif1: Passed.
+                  test_pmos: Passed.
+                 test_rnmos: Passed.
+                 test_rpmos: Passed.
+                      cprop: Passed.
+                    supply1: Passed.
+                    supply2: Passed.
+                   for3.16A: Passed.
+                 force3.17A: Passed.
+                 force3.17B: Passed.
+                 force3.17C: Passed.
+                      wait1: Passed.
+                      wait2: Passed.
+                      wait3: Passed.
+                    string1: Passed.
+                    string2: Passed.
+                    string3: Passed.
+                     ga_mod: Passed.
+                    ga_mod1: Passed.
+                    ga_mod2: Passed.
+                    signed1: Passed.
+                 param_expr: Passed.
+                  param_and: Passed.
+                 param_and2: Passed.
+                 param_band: Passed.
+                  param_bor: Passed.
+                  param_eq3: Passed.
+                 param_binv: Passed.
+                  param_add: Passed.
+                  param_mod: Passed.
+                 param_tern: Passed.
+                param_tern2: Passed.
+                param_test1: Passed.
+                param_test2: Passed.
+                param_test3: Passed - CO.
+                param_test4: Passed.
+                  param_vec: Passed.
+                 param_vec2: Passed.
+                   integer5: ==> Failed - output does not match gold file.
+                    signed2: Passed.
+                    signed3: Passed.
+                    signed4: Passed.
+                    signed5: Passed.
+                    signed6: Passed.
+                    signed7: Passed.
+                    signed8: Passed.
+                    signed9: Passed.
+                   signed10: Passed.
+                   signed11: Passed.
+                   signed12: ==> Failed - output does not match gold file.
+                    repeat1: Passed.
+                    repeat2: Passed.
+               decl_assign1: Passed.
+                     vector: Passed.
+                       mcl1: Passed.
+                       mcl2: Passed.
+                   comp1000: ==> Failed - output does not match gold file.
+                   comp1001: ==> Failed - output does not match gold file.
+                   specify1: Passed - CO.
+               deposit_wire: Passed.
+                    deposit: Passed.
+                 assign_neq: Passed.
+                 assign_deq: Passed.
+                  assign_ge: Passed.
+                  assign_le: Passed.
+                     mangle: Passed.
+                   mangle_1: Passed.
+                        rop: Passed.
+                 task_scope: Passed.
+                     hello1: Passed.
+                  hierspace: Passed.
+                    dotinid: Passed.
+                        eeq: Passed.
+                   dumpvars: Passed.
+              dangling_port: Passed.
+                    sysargs: Passed.
+               many_drivers: Passed.
+             task_port_size: Passed.
+                    p_monta: Passed.
+                     memidx: Passed.
+                  memidxrng: Passed.
+                   mem2port: Passed.
+                    vcd-dup: ==> Failed - output does not match gold file.
+                    resolv1: Passed.
+                      pr307: Passed.
+                     pr307a: Passed.
+                 memport_bs: Passed.
+                      pr224: Passed.
+                     pr224a: Passed.
+                      pr298: Passed.
+                 writememh1: Passed.
+                 writememh2: Passed.
+                 writememb1: Passed.
+                 writememb2: Passed.
+                  varlsfht1: Passed.
+                  varlsfht2: Passed.
+                   varlsfht: Passed.
+                  varrshft1: Passed.
+                  varrshft2: Passed.
+                   varrshft: Passed.
+                     select: Passed.
+                    select2: Passed.
+                    select3: Passed.
+                    select4: Passed.
+                    monitor: Passed.
+                   monitor2: Passed.
+                   monitor3: Passed.
+                      fork1: Passed.
+                  function5: Passed - CO.
+                  function6: Passed.
+                  blankport: Passed.
+                     dcomp1: Passed.
+                        sp2: Passed.
+                      const: Passed.
+                     const2: Passed.
+                     const3: Passed.
+                     const4: Passed.
+                  memassign: Passed.
+                    string4: Passed.
+                    string5: Passed.
+                    string7: Passed.
+                    string8: Passed.
+                    string9: Passed.
+                   string10: Passed.
+                   string11: ==> Failed - output does not match gold file.
+                  lh_memcat: Passed.
+                 lh_memcat2: Passed.
+                 lh_memcat3: Passed.
+                      npmos: Passed.
+                     rnpmos: Passed.
+                     npmos2: Passed.
+                    rnpmos2: Passed.
+                      pr142: Passed.
+             multiply_large: Passed.
+                      pr304: Passed.
+                 mhead_task: Passed.
+                     bitsel: Passed.
+                    bitsel2: Passed.
+                    bitsel3: Passed.
+                    bitsel4: Passed.
+                    bitsel5: Passed.
+                    bitsel6: Passed.
+                    bitsel7: Passed.
+                    bitsel8: Passed.
+                    bitsel9: Passed.
+                   bitwidth: Passed.
+                  bitwidth2: Passed.
+                  bitwidth3: ==> Failed - output does not match gold file.
+                      pr312: Passed.
+                      pr355: Passed.
+                    ram16x1: Passed.
+                     sched1: Passed.
+                     sched2: Passed.
+                      pr273: Passed.
+                    escape1: Passed.
+                   escape2a: Passed - CO.
+                   escape2b: Passed - CO.
+                   escape2c: Passed - CO.
+                    escape3: Passed.
+                    escape4: Passed.
+                   escape4b: Passed.
+                      pr338: Passed - CO.
+                     shift1: Passed.
+                     shift2: Passed.
+                     shift3: ==> Failed - output does not match gold file.
+                     shift4: Passed.
+                     shift5: ==> Failed - output does not match gold file.
+                      pr243: Passed.
+                     dummy7: Passed.
+                     time6b: Passed.
+                     time6c: Passed.
+                   disblock: Passed.
+                  disblock2: Passed.
+                   comment1: Passed.
+                      pr136: Passed.
+                port-test4a: Passed - CE.
+                port-test4b: Passed - CE.
+                 port-test5: Passed.
+                 port-test6: Passed.
+                 port-test7: Passed.
+                      pr445: Passed.
+                    big_int: Passed.
+                    concat1: Passed.
+                    concat2: Passed.
+                     extend: ==> Failed - output does not match gold file.
+                  timeform1: Passed.
+                  timeform2: Passed.
+                      pr245: Passed.
+                      pr478: Passed.
+                      pr487: ==> Failed - output does not match gold file.
+                      pr492: Passed.
+                      pr498: Passed.
+                    addwide: Passed.
+                      pr508: Passed.
+                      pr509: Passed.
+                     pr509b: Passed.
+                      pr511: Passed.
+                      pr513: Passed.
+                      pr519: Passed.
+                      pr522: Passed.
+                      pr524: Passed.
+                      pr527: ==> Failed - output does not match gold file.
+                      pr528: ==> Failed - output does not match gold file.
+                     pr528b: Passed.
+                      pr529: ==> Failed - output does not match gold file.
+                     pr530a: Passed.
+                     pr530b: Passed.
+                     pr530c: Passed.
+                     pr531a: Passed.
+                     pr531b: Passed.
+                      pr532: Passed.
+                     pr532b: Passed.
+                      pr533: Passed.
+                      pr534: Passed.
+                      pr538: Passed.
+                      pr540: Passed.
+                     pr540b: Passed.
+                     pr540c: Passed.
+                      pr541: Passed.
+                      pr542: Passed.
+                      pr544: Passed.
+                      pr547: Passed.
+                      pr564: ==> Failed - output does not match gold file.
+                      pr569: Passed.
+                      pr572: Passed.
+                     pr572b: Passed.
+                      pr578: Passed.
+                      pr584: Passed.
+                      pr585: Passed.
+                      pr587: ==> Failed - output does not match gold file.
+                      pr590: Passed.
+                      pr594: Passed.
+                      pr596: Passed.
+                      pr602: Passed.
+                      pr622: Passed.
+                      pr639: Passed.
+                      case1: Passed.
+                      case2: Passed.
+                      case3: Passed.
+                      case4: Passed.
+                      case5: ==> Failed - output does not match gold file.
+                      case6: Passed.
+                      case7: Passed.
+                    condit1: Passed.
+                   basicreg: Passed.
+                 basiclatch: ==> Failed - output does not match gold file.
+                 basicstate: Passed.
+                basicstate2: Passed.
+                   multireg: Passed.
+                  basicexpr: Passed.
+                 basicexpr2: Passed.
+                 basicexpr3: Passed.
+                 basicexpr4: Passed.
+                     shiftl: Passed.
+                blocksynth1: Passed.
+                blocksynth2: Passed.
+                blocksynth3: Passed.
+               conditsynth1: Passed.
+               conditsynth2: Passed.
+               conditsynth3: Passed.
+                 casesynth1: Passed.
+                 casesynth2: Passed.
+                 casesynth3: Passed.
+                  lcatsynth: Passed.
+                   dffsynth: ==> Failed - output does not match gold file.
+                  dffsynth2: Passed.
+                  dffsynth3: Passed.
+                  dffsynth4: Passed.
+                sqrt32synth: Passed.
+                     sqrt32: Passed.
+                  memsynth1: Passed.
+                  memsynth2: Passed.
+                  memsynth3: Passed.
+                  memsynth4: Passed.
+                  memsynth5: Passed.
+                  memsynth6: Passed.
+                  memsynth7: Passed.
+                  memsynth8: Passed.
+                  memsynth9: Passed.
+                ufuncsynth1: Passed.
+                   ssetclr1: Passed.
+                   ssetclr2: Passed.
+                   ssetclr3: Passed.
+               partselsynth: Passed.
+               inside_synth: Passed.
+              inside_synth2: Passed.
+              inside_synth3: Passed.
+                  mix_reset: Passed.
+                casex_synth: Passed.
+                  full_case: Passed.
+                     busbug: Passed.
+                       real: Passed.
+                      real2: Passed.
+                      real3: Passed.
+                      real4: Passed.
+                      real5: Passed.
+                      real6: Passed.
+                      real7: Passed.
+                      real9: Passed.
+                     real10: Passed.
+                 realtobits: Passed.
+                   negvalue: Passed.
+                      pr434: Passed.
+                      pr556: Passed.
+                      pr632: ==> Failed - output does not match gold file.
+                      pr617: Passed.
+                      pr673: Passed.
+                      pr675: Passed.
+                      pr678: Passed.
+                      pr685: Passed.
+                      pr690: Passed.
+                      pr693: Passed.
+                      pr699: ==> Failed - output does not match gold file.
+                      pr704: Passed.
+                      pr707: Passed.
+                      pr708: Passed.
+                      pr710: Passed.
+                      pr718: Passed.
+                      pr721: Passed.
+                      pr722: Passed.
+                      pr729: Passed.
+                      pr734: Passed.
+                      pr735: Passed.
+                      pr748: Passed.
+                      pr751: Passed.
+                      pr757: Passed.
+                      pr772: Passed.
+                      pr809: Passed.
+                     pr809b: Passed.
+                      pr810: Passed.
+                      pr812: Passed.
+                      pr820: Passed.
+                      pr823: Passed.
+                      pr841: Passed.
+                      pr842: Passed.
+                      pr848: Passed.
+                      pr856: Passed.
+                      pr859: Passed.
+                      pr860: Passed.
+                      pr872: Passed.
+                      pr902: Passed.
+                      pr903: Passed.
+                      pr905: Passed.
+                      pr910: Passed.
+                      pr913: Passed.
+                      pr923: Passed.
+                      pr938: Passed.
+                     pr938b: Passed.
+                      pr941: Passed.
+                       prng: Passed.
+                       race: Passed.
+                      pr973: Passed.
+                      pr979: Passed.
+                      pr985: Passed.
+                      pr987: Passed.
+                      pr990: ==> Failed - output does not match gold file.
+                      pr991: Passed.
+                      pr995: Passed.
+                         eq: Passed.
+                       neq1: Passed.
+                     pr1000: Passed.
+                     pr1007: Passed.
+                     pr1008: Passed.
+                     pr1022: Passed.
+                     pr1024: Passed.
+                     pr1026: Passed.
+                     pr1029: Passed.
+                     pr1032: Passed.
+                     pr1033: Passed.
+                 assign_add: Passed.
+           credence20041209: Passed.
+                     pr1065: Passed.
+                     pr1072: Passed.
+                     pr1077: Passed.
+                     pr1101: Passed.
+                     pr1115: ==> Failed - output does not match gold file.
+                  pr1367855: Passed.
+                  pr1380261: ==> Failed - output does not match gold file.
+                  pr1444055: Passed.
+                  pr1388974: Passed.
+                     types1: Passed.
+                  pr1455873: Passed.
+                  pr1474318: Passed.
+                  pr1476440: ==> Failed - output does not match gold file.
+                  pr1477190: Passed.
+                  pr1478121: Passed.
+                  pr1478988: Passed.
+                  pr1489568: Passed.
+                  pr1492075: ==> Failed - output does not match gold file.
+                  pr1494799: ==> Failed - output does not match gold file.
+                  pr1508882: Passed.
+                  pr1515168: ==> Failed - output does not match gold file.
+                  pr1520314: Passed - CO.
+                  pr1522570: ==> Failed - output does not match gold file.
+                  pr1528093: ==> Failed - output does not match gold file.
+                  pr1561597: Passed.
+                  pr1570451: Passed.
+                 pr1570451b: Passed.
+                  pr1570635: ==> Failed - output does not match gold file.
+                 pr1570635b: ==> Failed - output does not match gold file.
+                  pr1574175: Passed.
+                  pr1587634: Passed - CO.
+                  pr1589497: Passed.
+                  pr1598445: Passed.
+                  pr1601896: Passed.
+                  pr1601898: Passed.
+                  pr1603313: Passed.
+                  pr1603918: Passed.
+                  pr1609611: Passed.
+                  pr1612693: Passed.
+                  pr1628288: Passed.
+                  pr1629683: Passed.
+                  pr1632861: ==> Failed - output does not match gold file.
+                  pr1636409: ==> Failed - output does not match gold file.
+                  pr1637208: Passed.
+                  pr1638985: ==> Failed - output does not match gold file.
+                  pr1639060: ==> Failed - output does not match gold file.
+                  pr1639968: ==> Failed - output does not match gold file.
+                  pr1645277: Passed.
+                  pr1645518: ==> Failed - output does not match gold file.
+                  pr1648365: ==> Failed - output does not match gold file.
+                  pr1650842: Passed.
+                  pr1657307: Passed.
+                  pr1661640: ==> Failed - output does not match gold file.
+                  pr1662508: Passed.
+                  pr1664684: ==> Failed - output does not match gold file.
+                  pr1676836: ==> Failed - output does not match gold file.
+                  pr1682887: Passed.
+                  pr1691709: Passed.
+                  pr1693921: Passed.
+                  pr1694427: Passed.
+                  pr1695257: Passed - CO.
+                  pr1695334: Passed.
+                  pr1696137: Passed.
+                  pr1697250: Passed.
+                  pr1697732: Passed.
+                  pr1698658: ==> Failed - output does not match gold file.
+                  pr1699444: Passed.
+                  pr1699519: ==> Failed - output does not match gold file.
+                  pr1701855: ==> Failed - output does not match gold file.
+                  pr1701889: ==> Failed - output does not match gold file.
+                  pr1701921: Passed.
+                  pr1703959: Passed.
+                 elsif_test: Passed.
+                  pr1703120: ==> Failed - output does not match gold file.
+                  pr1704013: ==> Failed - output does not match gold file.
+                  pr1716276: Passed.
+                  pr1717361: Passed.
+                  pr1735724: Passed - CE.
+                  pr1735836: Passed.
+                  pr1742910: ==> Failed - output does not match gold file.
+                  pr1746848: Passed.
+                  pr1752353: Passed.
+                 pr1752823a: Passed.
+                 pr1752823b: ==> Failed - output does not match gold file.
+                  pr1755593: Passed.
+                  pr1758135: Passed.
+                  pr1763333: Passed - CE.
+                  pr1770199: Passed.
+                  pr1776485: Passed.
+                  pr1777103: ==> Failed - output does not match gold file.
+                  pr1784984: Passed.
+                 pr1787394a: ==> Failed - output does not match gold file.
+                 pr1787394b: Passed.
+                  pr1792108: Passed.
+                  pr1792152: ==> Failed - output does not match gold file.
+                  pr1793157: ==> Failed - output does not match gold file.
+                  pr1793749: ==> Failed - output does not match gold file.
+                 pr1793749b: ==> Failed - output does not match gold file.
+                 pr1795005a: Passed.
+                 pr1795005b: ==> Failed - output does not match gold file.
+                  pr1804877: Passed.
+                  pr1805837: Passed.
+                  pr1812297: Passed.
+                  pr1822658: Passed.
+                  pr1823732: ==> Failed - output does not match gold file.
+                  pr1831724: ==> Failed - output does not match gold file.
+                  pr1841300: ==> Failed - output does not match gold file.
+                  pr1845683: ==> Failed - output does not match gold file.
+                  pr1855504: Passed.
+                 pr1864110a: ==> Failed - running iverilog.
+                 pr1864110b: ==> Failed - running iverilog.
+                 pr1864110c: ==> Failed - running iverilog.
+======================================================================
+Test results: Total=971, Passed=800, Failed=67, Not Implemented=104

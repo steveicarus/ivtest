@@ -56,7 +56,7 @@ initial begin
   end
 
   if ( ! failed )
-    $display ("PASSED: test_mos_strength_reduction:  case rpull");
+    $display ("PASSED");
 end
 endmodule
 

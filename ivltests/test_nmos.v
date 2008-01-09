@@ -159,7 +159,7 @@ initial begin
   end
 
   if (failed == 0) 
-      $display ("PASSED: nmos");
+      $display ("PASSED");
 
 end
 endmodule

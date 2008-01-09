@@ -75,7 +75,7 @@ module port_test;
 
 `ifdef TEST3
 	if (pass_3)
-	  $display("port_3 PASSED");
+	  $display("PASSED");
 `endif
 	
 	$finish;

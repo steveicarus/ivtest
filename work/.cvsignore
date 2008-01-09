@@ -1,4 +1,8 @@
 fopen2.out*
+fdisplay2.out
 *.vcd
 *.dump
 test.txt
+writemem*.dat
+sp2.inv
+BBCDBBCD
