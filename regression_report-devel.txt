@@ -971,5 +971,5 @@ Test Results:
                         macro2 Ran-PASSED-
                     pr1864110a Ran-PASSED-
                     pr1864110b Ran-PASSED-
-                    pr1864110c Ran-FAILED-
-Tests passed: 912, failed: 66, Unhandled: 37 Unable: 27, Assert: 8, Parse Errs: 0
+                    pr1864110c Ran-PASSED-
+Tests passed: 913, failed: 65, Unhandled: 37 Unable: 27, Assert: 8, Parse Errs: 0

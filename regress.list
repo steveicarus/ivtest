@@ -1013,4 +1013,4 @@ macro_with_args	normal	ivltests diff=log/macro_with_args.log:gold/macro_with_arg
 macro2	normal	ivltests diff=log/macro2.log:gold/macro2.gold
 pr1864110a	normal	ivltests diff=log/pr1864110a.log:gold/pr1864110a.gold
 pr1864110b	normal	ivltests diff=log/pr1864110b.log:gold/pr1864110b.gold
-pr1864110c	normal	ivltests diff=log/pr1864110c.log:gold/pr1864110b.gold
+pr1864110c	normal	ivltests diff=log/pr1864110c.log:gold/pr1864110c.gold
