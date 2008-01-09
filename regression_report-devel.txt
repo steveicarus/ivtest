@@ -969,4 +969,7 @@ Test Results:
                           sdf6 Ran-PASSED-
                macro_with_args Ran-PASSED-
                         macro2 Ran-PASSED-
-Tests passed: 910, failed: 65, Unhandled: 37 Unable: 27, Assert: 8, Parse Errs: 0
+                    pr1864110a Ran-PASSED-
+                    pr1864110b Ran-PASSED-
+                    pr1864110c Ran-FAILED-
+Tests passed: 912, failed: 66, Unhandled: 37 Unable: 27, Assert: 8, Parse Errs: 0
