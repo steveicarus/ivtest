@@ -122,6 +122,7 @@ v0.8:pr1861212c	NI
 v0.8:pr1864110a	NI
 v0.8:pr1864110b	NI
 v0.8:pr1864110c	NI
+v0.8:pr1864115	NI
 
 # V0.8 does not support indexed part selects.
 v0.8:param_select3	NI
@@ -1187,3 +1188,4 @@ macro2	normal	ivltests diff=log/macro2.log:gold/macro2.gold
 pr1864110a	normal	ivltests diff=log/pr1864110a.log:gold/pr1864110a.gold
 pr1864110b	normal	ivltests diff=log/pr1864110b.log:gold/pr1864110b.gold
 pr1864110c	normal	ivltests diff=log/pr1864110c.log:gold/pr1864110c.gold
+pr1864115	normal	ivltests diff=log/pr1864115.log:gold/pr1864115.gold
