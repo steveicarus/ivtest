@@ -2,6 +2,7 @@
 
 # include  <vpi_user.h>
 # include  <stdlib.h>
+# include  <string.h>
 # include  <assert.h>
 
 #ifdef IVERILOG_V0_8

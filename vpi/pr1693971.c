@@ -51,7 +51,7 @@ void PLIbook_pow_register()
   tf_data.tfname      = "$pow";
   tf_data.calltf      = PLIbook_PowCalltf;
   tf_data.compiletf   = PLIbook_PowCompiletf;
-  tf_data.sizetf      = NULL; //PLIbook_PowSizetf;
+  tf_data.sizetf      = PLIbook_PowSizetf;
   tf_data.user_data   = NULL;
   vpi_register_systf(&tf_data);
 

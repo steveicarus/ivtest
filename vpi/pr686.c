@@ -16,7 +16,7 @@
  *    along with this program; if not, write to the Free Software
  *    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
  */
-#ident "$Id: pr686.c,v 1.3 2007/12/07 02:44:23 stevewilliams Exp $"
+#ident "$Id: pr686.c,v 1.4 2008/01/15 23:45:50 stevewilliams Exp $"
 
 # include  "vpi_user.h"
 # include  <assert.h>
@@ -55,7 +55,6 @@ static PLI_INT32 test_next_calltf(PLI_BYTE8 *name)
 #endif
 {
       vpiHandle sys, argv, value;
-      s_vpi_value val;
 
       sys = vpi_handle(vpiSysTfCall, 0);
       assert(sys);

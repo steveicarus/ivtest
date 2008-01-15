@@ -49,6 +49,7 @@ static PLI_INT32 MemPeek(PLI_BYTE8 *)
     mod_h = vpi_scan(iterate);
 
     // Get memory
+    mem_h = NULL;
     iterate = vpi_iterate(vpiMemory, mod_h);
     if (iterate != NULL) {
         while ((handle = vpi_scan(iterate))) {
@@ -65,6 +66,7 @@ static PLI_INT32 MemPeek(PLI_BYTE8 *)
     }
 
     // Get value
+    orig = "";
     iterate = vpi_iterate(vpiMemoryWord, mem_h);
     while ((handle = vpi_scan(iterate))) {
 	switch (cnt % 4) {
@@ -113,6 +115,7 @@ static PLI_INT32 MemPoke(PLI_BYTE8 *)
     mod_h = vpi_scan(iterate);
 
     // Get memory
+    mem_h = NULL;
     iterate = vpi_iterate(vpiMemory, mod_h);
     if (iterate != NULL) {
         while ((handle = vpi_scan(iterate))) {
