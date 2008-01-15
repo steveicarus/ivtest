@@ -138,14 +138,6 @@ v0.8:select6	NI
 v0.8:select7	NI
 v0.8:select8	NI
 
-# V0.8 does not suppoort specify block delays.
-v0.8:pr1587669	NI
-v0.8:specify_01	NI
-v0.8:specify2	NI
-v0.8:specify3	NI
-v0.8:specify4	NI
-v0.8:specify5	NI
-
 # V0.8 does not support generate
 v0.8:generate_multi_loop	NI
 v0.8:genloop	NI
@@ -204,6 +196,14 @@ v0.8:pr1819452	NI	# $feof, $ftell, $frewind and $fseek not supported.
 v0.8:swrite	NI      # $swrite not supported.
 v0.8:urand	NI	# $urandom not supported.
 v0.8:urand_r	NI	# $urandom_range not supported.
+
+# V0.8 does not support specify block delays.
+v0.8:pr1587669	CO	ivltests
+v0.8:specify_01	CO	ivltests
+v0.8:specify2	CO	ivltests
+v0.8:specify3	CO	ivltests
+v0.8:specify4	CO	ivltests
+v0.8:specify5	CO	ivltests
 
 # V0.8 does not support -gno-specify (it is implicit).
 v0.8:pr183	CO	ivltests
