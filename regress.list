@@ -1195,3 +1195,5 @@ pr1867161a	normal	ivltests diff=log/pr1867161a.log:gold/pr1867161a.gold
 pr1867161b	normal	ivltests diff=log/pr1867161b.log:gold/pr1867161b.gold
 pr1867332	CO	ivltests
 pr1868792	normal	ivltests
+pr1868991a	normal	ivltests
+pr1868991b	CO	ivltests
