@@ -84,6 +84,9 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr1765789: Not Implemented.
                   pr1792734: Not Implemented.
                   pr1851310: Not Implemented.
+                  pr1869769: Not Implemented.
+                  pr1869772: Not Implemented.
+                  pr1869781: Not Implemented.
               task_iotypes2: Not Implemented.
                       scanf: Not Implemented.
                      scanf2: Not Implemented.
@@ -978,5 +981,7 @@ test_mos_strength_reduction: Passed.
                  pr1867161b: ==> Failed - output does not match gold file.
                   pr1867332: Passed - CO.
                   pr1868792: Passed.
+                 pr1868991a: Passed.
+                 pr1868991b: Passed - CO.
 ======================================================================
-Test results: Total=978, Passed=811, Failed=65, Not Implemented=102
+Test results: Total=983, Passed=813, Failed=65, Not Implemented=105

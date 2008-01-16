@@ -172,6 +172,9 @@ v0.8:pr1698659	NI	# Scope problems.
 v0.8:pr1765789	NI	# Addition width problems in concatenation.
 v0.8:pr1792734	NI	# 'dx, 'dz, 'd?, etc. not supported.
 v0.8:pr1851310	NI	# MUX size problem.
+v0.8:pr1869769	NI	# Real comparisons in continuous assignment.
+v0.8:pr1869772	NI	# Right shift as argument to user function.
+v0.8:pr1869781	NI	# Runtime is missing %assign/x0/d opcode.
 v0.8:task_iotypes2	NI	# Port types are not supported (integer, etc.).
 
 # V0.8 does not support $scanf.
