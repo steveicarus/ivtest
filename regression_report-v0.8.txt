@@ -57,12 +57,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                     select6: Not Implemented.
                     select7: Not Implemented.
                     select8: Not Implemented.
-                  pr1587669: Not Implemented.
-                 specify_01: Not Implemented.
-                   specify2: Not Implemented.
-                   specify3: Not Implemented.
-                   specify4: Not Implemented.
-                   specify5: Not Implemented.
         generate_multi_loop: Not Implemented.
                     genloop: Not Implemented.
                   pr1565544: Not Implemented.
@@ -108,6 +102,12 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                      swrite: Not Implemented.
                       urand: Not Implemented.
                     urand_r: Not Implemented.
+                  pr1587669: Passed - CO.
+                 specify_01: Passed - CO.
+                   specify2: Passed - CO.
+                   specify3: Passed - CO.
+                   specify4: Passed - CO.
+                   specify5: Passed - CO.
                       pr183: Passed - CO.
                   pr1467825: Passed - CO.
                       pr377: Passed.
@@ -972,5 +972,11 @@ test_mos_strength_reduction: Passed.
                   pr1841300: ==> Failed - output does not match gold file.
                   pr1845683: ==> Failed - output does not match gold file.
                   pr1855504: Passed.
+                  pr1866215: Passed.
+                 pr1866215b: Passed.
+                 pr1867161a: Passed.
+                 pr1867161b: ==> Failed - output does not match gold file.
+                  pr1867332: Passed - CO.
+                  pr1868792: Passed.
 ======================================================================
-Test results: Total=972, Passed=800, Failed=64, Not Implemented=108
+Test results: Total=978, Passed=811, Failed=65, Not Implemented=102
