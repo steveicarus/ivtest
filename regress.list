@@ -78,6 +78,7 @@ v0.8:always3.1.2I	NI
 v0.8:pr978	NI
 v0.8:pr1628300	NI
 v0.8:pr1741212	NI
+v0.8:ca_muly	NI
 
 # V0.8 does not support arrayed instances/nets.
 v0.8:pr1087	NI
@@ -1203,3 +1204,4 @@ pr1868991b	CO	ivltests
 pr1869769	normal	ivltests
 pr1869772	normal	ivltests
 pr1869781	normal	ivltests
+ca_mult		normal	ivltests diff=log/ca_mult.log:gold/ca_mult.gold
