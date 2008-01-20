@@ -7,5 +7,5 @@ module top;
   assign big = 1e20;
   assign prec = 0.123456789;
 
-  initial $display("big: %g, small: %g, precision: %g", big, sml, prec);
+  initial $display("big: %g, small: %g, precision: %0.11f", big, sml, prec);
 endmodule
