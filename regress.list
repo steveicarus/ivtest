@@ -78,7 +78,6 @@ v0.8:always3.1.2I	NI
 v0.8:pr978	NI
 v0.8:pr1628300	NI
 v0.8:pr1741212	NI
-v0.8:ca_muly	NI
 
 # V0.8 does not support arrayed instances/nets.
 v0.8:pr1087	NI
@@ -165,6 +164,7 @@ v0.8:macro_with_args	NI
 v0.8:macro2	NI
 
 # Other functionality missing in V0.8.
+v0.8:ca_mult	NI	# $rtoi in a continuous assignment.
 v0.8:cmos	NI	# CMOS gates not supported.
 v0.8:pr1449749a	NI	# integer parameters not supported.
 v0.8:pr1474283	NI	# ANSI style ports not supported.
