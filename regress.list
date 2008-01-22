@@ -1205,4 +1205,5 @@ pr1869769	normal	ivltests
 pr1869772	normal	ivltests
 pr1869781	normal	ivltests
 ca_mult		normal	ivltests diff=log/ca_mult.log:gold/ca_mult.gold
+pr1873146	normal	ivltests
 pr1873372	normal	ivltests diff=log/pr1873372.log:gold/pr1873372.gold
