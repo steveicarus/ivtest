@@ -11,7 +11,7 @@ module top;
 
   initial begin
     #0.9;
-    if (rmod != 0.0) begin
+    if (rmod == 1.0) begin
       pass = 1'b0;
       $display("Real: modulus value not delayed.");
     end

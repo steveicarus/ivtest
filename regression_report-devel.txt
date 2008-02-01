@@ -994,5 +994,7 @@ test_mos_strength_reduction: Passed.
          multi_driver_delay: Passed.
              real_pwr_in_ca: Passed.
              real_mod_in_ca: Passed.
+                     rl_pow: Passed.
+               real_op_fail: Passed - CE.
 ======================================================================
-Test results: Total=994, Passed=934, Failed=60, Not Implemented=0
+Test results: Total=996, Passed=936, Failed=60, Not Implemented=0

@@ -11,7 +11,7 @@ module top;
 
   initial begin
     #0.9;
-    if (rpow != 0.0) begin
+    if (rpow == 1.0) begin
       pass = 1'b0;
       $display("Real: power value not delayed.");
     end
