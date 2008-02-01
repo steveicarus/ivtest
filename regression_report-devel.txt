@@ -991,5 +991,8 @@ test_mos_strength_reduction: Passed.
                   pr1877740: Passed.
                   pr1879226: Passed.
                   pr1880003: Passed.
+         multi_driver_delay: Passed.
+             real_pwr_in_ca: Passed.
+             real_mod_in_ca: Passed.
 ======================================================================
-Test results: Total=991, Passed=931, Failed=60, Not Implemented=0
+Test results: Total=994, Passed=934, Failed=60, Not Implemented=0
