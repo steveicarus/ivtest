@@ -1215,3 +1215,5 @@ pr1880003	normal	ivltests
 multi_driver_delay	normal	ivltests
 real_pwr_in_ca	normal	ivltests
 real_mod_in_ca	normal	ivltests
+rl_pow	normal	ivltests
+real_op_fail	CE	ivltests
