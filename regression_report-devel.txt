@@ -996,5 +996,6 @@ test_mos_strength_reduction: Passed.
              real_mod_in_ca: Passed.
                      rl_pow: Passed.
                real_op_fail: Passed - CE.
+                  pr1883052: Passed.
 ======================================================================
-Test results: Total=996, Passed=936, Failed=60, Not Implemented=0
+Test results: Total=997, Passed=937, Failed=60, Not Implemented=0

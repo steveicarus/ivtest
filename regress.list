@@ -1217,3 +1217,4 @@ real_pwr_in_ca	normal	ivltests
 real_mod_in_ca	normal	ivltests
 rl_pow	normal	ivltests
 real_op_fail	CE	ivltests
+pr1883052	normal	ivltests
