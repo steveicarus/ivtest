@@ -1218,3 +1218,4 @@ real_mod_in_ca	normal	ivltests
 rl_pow	normal	ivltests
 real_op_fail	CE	ivltests
 pr1883052	normal	ivltests
+pr1885847	normal	ivltests diff=log/pr1885847.log:gold/pr1885847.gold
