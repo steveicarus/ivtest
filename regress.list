@@ -1222,3 +1222,4 @@ pr1883052	normal	ivltests
 pr1885847	normal	ivltests diff=log/pr1885847.log:gold/pr1885847.gold
 pr1887168	normal	ivltests diff=log/pr1887168.log:gold/pr1887168.gold
 pow_unsigned	normal	ivltests
+ca_pow_unsigned	normal	ivltests
