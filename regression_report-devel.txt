@@ -1002,5 +1002,6 @@ test_mos_strength_reduction: Passed.
                   pr1887168: Passed.
                pow_unsigned: Passed.
             ca_pow_unsigned: Passed.
+              generate_case: Passed.
 ======================================================================
-Test results: Total=1002, Passed=942, Failed=60, Not Implemented=0
+Test results: Total=1004, Passed=943, Failed=61, Not Implemented=0
