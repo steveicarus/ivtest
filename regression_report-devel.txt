@@ -998,10 +998,12 @@ test_mos_strength_reduction: Passed.
                      rl_pow: Passed.
                real_op_fail: Passed - CE.
                   pr1883052: Passed.
+                 pr1883052b: ==> Failed - output does not match gold file.
                   pr1885847: Passed.
                   pr1887168: Passed.
                pow_unsigned: Passed.
             ca_pow_unsigned: Passed.
+              ca_pow_signed: Passed.
               generate_case: Passed.
 ======================================================================
-Test results: Total=1004, Passed=943, Failed=61, Not Implemented=0
+Test results: Total=1005, Passed=944, Failed=61, Not Implemented=0
