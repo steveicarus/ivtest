@@ -1226,3 +1226,4 @@ pow_unsigned	normal	ivltests
 ca_pow_unsigned	normal	ivltests
 ca_pow_signed	normal	ivltests
 generate_case	normal	ivltests
+real_pulse_clean	normal	ivltests
