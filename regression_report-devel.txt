@@ -679,7 +679,7 @@ test_mos_strength_reduction: Passed.
                   memsynth7: ==> Failed - running iverilog.
                   memsynth8: Passed.
                   memsynth9: ==> Failed - running iverilog.
-                ufuncsynth1: ==> Failed - running iverilog.
+                ufuncsynth1: Passed.
                    ssetclr1: ==> Failed - running iverilog.
                    ssetclr2: ==> Failed - running iverilog.
                    ssetclr3: ==> Failed - running iverilog.
@@ -1006,5 +1006,6 @@ test_mos_strength_reduction: Passed.
               ca_pow_signed: Passed.
               generate_case: Passed.
            real_pulse_clean: Passed.
+                  pr1892959: Passed.
 ======================================================================
-Test results: Total=1006, Passed=946, Failed=60, Not Implemented=0
+Test results: Total=1007, Passed=948, Failed=59, Not Implemented=0
