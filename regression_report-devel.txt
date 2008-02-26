@@ -1004,9 +1004,10 @@ test_mos_strength_reduction: Passed.
                pow_unsigned: Passed.
             ca_pow_unsigned: Passed.
               ca_pow_signed: Passed.
+               ca_pow_synth: Passed.
               generate_case: Passed.
              generate_case2: Passed.
            real_pulse_clean: Passed.
                   pr1892959: Passed.
 ======================================================================
-Test results: Total=1008, Passed=949, Failed=59, Not Implemented=0
+Test results: Total=1009, Passed=950, Failed=59, Not Implemented=0
