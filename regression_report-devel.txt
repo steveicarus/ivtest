@@ -1009,5 +1009,6 @@ test_mos_strength_reduction: Passed.
              generate_case2: Passed.
            real_pulse_clean: Passed.
                   pr1892959: Passed.
+           compare_bool_reg: Passed.
 ======================================================================
-Test results: Total=1009, Passed=950, Failed=59, Not Implemented=0
+Test results: Total=1010, Passed=951, Failed=59, Not Implemented=0
