@@ -1231,3 +1231,4 @@ generate_case2	normal	ivltests
 real_pulse_clean	normal	ivltests
 pr1892959	normal	ivltests
 compare_bool_reg	normal	ivltests
+pr1903157	CO	ivltests
