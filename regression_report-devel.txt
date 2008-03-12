@@ -601,10 +601,10 @@ test_mos_strength_reduction: Passed.
                       pr519: Passed.
                       pr522: Passed.
                       pr524: Passed.
-                      pr527: ==> Failed - running iverilog.
+                      pr527: Passed.
                       pr528: Passed.
                      pr528b: Passed.
-                      pr529: ==> Failed - running iverilog.
+                      pr529: Passed.
                      pr530a: Passed.
                      pr530b: Passed.
                      pr530c: Passed.
@@ -951,6 +951,8 @@ test_mos_strength_reduction: Passed.
                   pr1823732: Passed.
                   pr1828642: Passed.
                   pr1831724: Passed.
+                 pr1832097a: Passed.
+                 pr1832097b: Passed.
                   pr1841300: Passed.
                   pr1845683: Passed.
                   pr1851310: Passed.
@@ -1016,4 +1018,4 @@ test_mos_strength_reduction: Passed.
                   pr1903520: Passed.
                   pr1907192: Passed.
 ======================================================================
-Test results: Total=1015, Passed=956, Failed=59, Not Implemented=0
+Test results: Total=1017, Passed=960, Failed=57, Not Implemented=0
