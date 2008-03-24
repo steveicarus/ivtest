@@ -897,6 +897,7 @@ test_mos_strength_reduction: Passed.
                  elsif_test: Passed.
                   pr1703120: Passed.
                   pr1704013: Passed - CE.
+                  pr1705027: Passed - CO.
                   pr1716276: Passed.
                   pr1717361: Passed.
                   pr1719055: Passed.
@@ -1023,5 +1024,6 @@ test_mos_strength_reduction: Passed.
                   pr1912112: Passed.
                   pr1912843: Passed.
                   pr1916261: Passed.
+                  pr1921332: Passed - CO.
 ======================================================================
-Test results: Total=1023, Passed=967, Failed=56, Not Implemented=0
+Test results: Total=1025, Passed=969, Failed=56, Not Implemented=0
