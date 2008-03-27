@@ -202,8 +202,14 @@ sub execute_regression {
 #        print "$cmd\n";
         if (system("$cmd")) {
             if ($testtype{$tname} eq "CE") {
-                &print_rpt("Passed - CE.\n");
-                $passed++;
+                # Check if the system command core dumped!
+                if ($? >> 8 & 128) {
+                    &print_rpt("==> Failed - CE (core dump).\n");
+                    $failed++;
+                } else {
+                    &print_rpt("Passed - CE.\n");
+                    $passed++;
+                }
                 next;
             }
             &print_rpt("==> Failed - running iverilog.\n");
@@ -226,8 +232,14 @@ sub execute_regression {
 #        print "$cmd\n";
         if (system("$cmd")) {
             if ($testtype{$tname} eq "RE") {
-                &print_rpt("Passed - RE.\n");
-                $passed++;
+                # Check if the system command core dumped!
+                if ($? >> 8 & 128) {
+                    &print_rpt("==> Failed - RE (core dump).\n");
+                    $failed++;
+                } else {
+                    &print_rpt("Passed - RE.\n");
+                    $passed++;
+                }
                 next;
             }
             &print_rpt("==> Failed - running vvp.\n");
