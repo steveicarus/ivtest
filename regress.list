@@ -1238,6 +1238,7 @@ pr1898293	normal	ivltests
 pr1898983	normal	ivltests diff=log/pr1898983.log:gold/pr1898983.gold
 compare_bool_reg	normal	ivltests
 pr1903157	CO	ivltests
+pr1903324	normal	ivltests
 pr1903343	normal	ivltests diff=log/pr1903343.log:gold/pr1903343.gold
 pr1903520	normal	ivltests
 pr1907192	normal	ivltests
