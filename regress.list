@@ -1172,6 +1172,7 @@ generate_multi_loop	normal	ivltests diff=log/generate_multi_loop.log:gold/genera
 pr1822658	normal	ivltests
 pr1823732	normal	ivltests diff=log/pr1823732.log:gold/pr1823732.gold
 pr1828642	normal	ivltests diff=log/pr1828642.log:gold/pr1828642.gold
+pr1830834	normal	ivltests diff=log/pr1830834.log:gold/pr1830834.gold
 pr1831724	normal	ivltests diff=log/pr1831724.log:gold/pr1831724.gold
 pr1832097a	normal	ivltests
 pr1832097b	normal	ivltests
@@ -1244,6 +1245,11 @@ pr1909940	normal	ivltests
 pr1909940b	normal	ivltests
 pr1912112	normal	ivltests diff=log/pr1912112.log:gold/pr1912112.gold
 pr1912843	normal	ivltests
+pr1913937	normal	ivltests
 pr1916261	normal	ivltests
 pr1921332	CO	ivltests
 pr1924845	normal	ivltests
+pr1925356	normal	ivltests
+pr1925360	normal	ivltests
+pr1925363a	CE	ivltests
+pr1925363b	CE	ivltests
