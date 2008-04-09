@@ -1248,6 +1248,7 @@ pr1912112	normal	ivltests diff=log/pr1912112.log:gold/pr1912112.gold
 pr1912843	normal	ivltests
 pr1913918a	normal	ivltests
 pr1913918b	normal	ivltests
+pr1913918c	normal	ivltests
 pr1913937	normal	ivltests
 pr1916261	normal	ivltests
 pr1921332	CO	ivltests
