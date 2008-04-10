@@ -1036,6 +1036,7 @@ test_mos_strength_reduction: Passed.
                   pr1925360: Passed.
                  pr1925363a: Passed - CE.
                  pr1925363b: Passed - CE.
+                  pr1932444: Passed.
                   pr1934744: Passed.
 ======================================================================
-Test results: Total=1037, Passed=981, Failed=56, Not Implemented=0
+Test results: Total=1038, Passed=982, Failed=56, Not Implemented=0
