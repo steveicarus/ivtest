@@ -1269,3 +1269,4 @@ force_release_reg_pv	normal	ivltests
 force_release_wire_pv	normal	ivltests
 force_release_wire8_pv	normal	ivltests
 pr1938138	CE	ivltests
+pr1939165	normal	ivltests
