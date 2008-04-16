@@ -74,6 +74,9 @@ v0.8:always3.1.2G	NI
 v0.8:always3.1.2H	NI
 v0.8:always3.1.2I	NI
 
+# assign/deassign of parts is a 0.9 extension
+v0.8:assign3.2E	NI
+
 # V0.8 does not support real functions.
 v0.8:pr978	NI
 v0.8:pr1628300	NI
@@ -291,7 +294,7 @@ assign3.2A	normal	ivltests
 assign3.2B	normal	ivltests
 assign3.2C	normal	ivltests
 assign3.2D	normal	ivltests
-assign3.2E	CE    	ivltests
+assign3.2E	normal	ivltests
 case3.8A	normal	ivltests
 case3.8B	normal	ivltests
 case3.8C	normal	ivltests
@@ -1261,3 +1264,8 @@ pr1932444	normal	ivltests
 pr1934744	normal	ivltests
 pr1936363	normal	ivltests diff=log/pr1936363.log:gold/pr1936363.gold
 multi_bit_strength	normal	ivltests diff=log/multi_bit_strength.log:gold/multi_bit_strength.gold
+assign_deassign_pv	normal	ivltests
+force_release_reg_pv	normal	ivltests
+force_release_wire_pv	normal	ivltests
+force_release_wire8_pv	normal	ivltests
+pr1938138	CE	ivltests

@@ -70,7 +70,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                  assign3.2B: Passed.
                  assign3.2C: Passed.
                  assign3.2D: Passed.
-                 assign3.2E: Passed - CE.
+                 assign3.2E: Passed.
                    case3.8A: Passed.
                    case3.8B: Passed.
                    case3.8C: Passed.
@@ -1040,5 +1040,10 @@ test_mos_strength_reduction: Passed.
                   pr1934744: Passed.
                   pr1936363: Passed.
          multi_bit_strength: Passed.
+         assign_deassign_pv: Passed.
+       force_release_reg_pv: Passed.
+      force_release_wire_pv: Passed.
+     force_release_wire8_pv: Passed.
+                  pr1938138: Passed - CE.
 ======================================================================
-Test results: Total=1040, Passed=984, Failed=56, Not Implemented=0
+Test results: Total=1045, Passed=989, Failed=56, Not Implemented=0
