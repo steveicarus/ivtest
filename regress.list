@@ -1260,3 +1260,4 @@ pr1925363b	CE	ivltests
 pr1932444	normal	ivltests
 pr1934744	normal	ivltests
 pr1936363	normal	ivltests diff=log/pr1936363.log:gold/pr1936363.gold
+multi_bit_strength	normal	ivltests diff=log/multi_bit_strength.log:gold/multi_bit_strength.gold
