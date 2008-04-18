@@ -28,7 +28,7 @@ initial
     if(value1 !== 4'hx)
   	$display("FAILED - always reg_lvalue = # delay_value constant"); 
     #15 ;
-    if(value1 != 4'h5)
+    if(value1 !== 4'h5)
   	$display("FAILED - always reg_lvalue = # delay_value constant"); 
     else
         begin
