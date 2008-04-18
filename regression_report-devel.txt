@@ -1046,5 +1046,9 @@ test_mos_strength_reduction: Passed.
      force_release_wire8_pv: Passed.
                   pr1938138: Passed - CE.
                   pr1939165: Passed.
+       real_assign_deassign: Passed.
+         real_reg_force_rel: Passed.
+        real_wire_force_rel: Passed.
+             real_force_rel: Passed.
 ======================================================================
-Test results: Total=1046, Passed=990, Failed=56, Not Implemented=0
+Test results: Total=1050, Passed=994, Failed=56, Not Implemented=0
