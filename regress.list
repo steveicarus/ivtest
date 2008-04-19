@@ -1275,3 +1275,4 @@ real_assign_deassign	normal	ivltests
 real_reg_force_rel	normal	ivltests
 real_wire_force_rel	normal	ivltests
 real_force_rel	normal	ivltests
+pr1946411	normal	ivltests
