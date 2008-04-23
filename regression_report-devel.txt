@@ -1,44 +1,44 @@
 Running compiler/VVP tests for Icarus Verilog version: 0.9.
 ----------------------------------------------------------------------
-              always3.1.10A: Passed - CO.
+              always3.1.10A: Passed - CE.
               always3.1.11A: Passed.
               always3.1.11B: Passed.
               always3.1.12A: Passed.
               always3.1.12B: Passed.
               always3.1.12C: Passed.
-               always3.1.1A: Passed - CO.
-               always3.1.1B: Passed - CO.
+               always3.1.1A: Passed - CE.
+               always3.1.1B: Passed - CE.
                always3.1.1C: Passed.
                always3.1.1D: Passed.
                always3.1.1E: Passed.
                always3.1.1F: Passed.
-               always3.1.1G: Passed - CO.
-               always3.1.1H: Passed - CO.
-               always3.1.1I: Passed - CO.
-               always3.1.1J: Passed - CO.
+               always3.1.1G: Passed.
+               always3.1.1H: Passed.
+               always3.1.1I: Passed.
+               always3.1.1J: Passed.
                always3.1.1K: ==> Failed - running iverilog.
-               always3.1.2A: Passed - CO.
-               always3.1.2B: Passed - CO.
-               always3.1.2C: Passed - CO.
-               always3.1.2D: Passed - CO.
-               always3.1.2E: Passed - CO.
-               always3.1.2F: Passed - CO.
+               always3.1.2A: Passed - CE.
+               always3.1.2B: Passed - CE.
+               always3.1.2C: Passed - CE.
+               always3.1.2D: Passed - CE.
+               always3.1.2E: Passed - CE.
+               always3.1.2F: Passed - CE.
                always3.1.2G: ==> Failed - running iverilog.
                always3.1.2H: ==> Failed - running iverilog.
                always3.1.2I: ==> Failed - running iverilog.
-               always3.1.3A: Passed - CO.
-               always3.1.3B: Passed - CO.
+               always3.1.3A: Passed - CE.
+               always3.1.3B: Passed - CE.
               always3.1.3B2: Passed.
-               always3.1.3C: Passed - CO.
-               always3.1.3D: Passed - CO.
+               always3.1.3C: Passed - CE.
+               always3.1.3D: Passed - CE.
               always3.1.3D2: Passed.
-               always3.1.3E: Passed - CO.
+               always3.1.3E: Passed - CE.
               always3.1.3E2: Passed.
-               always3.1.3F: Passed - CO.
+               always3.1.3F: Passed - CE.
               always3.1.3F2: Passed.
-               always3.1.3G: Passed - CO.
-               always3.1.3H: Passed - CO.
-               always3.1.3J: Passed - CO.
+               always3.1.3G: Passed - CE.
+               always3.1.3H: Passed - CE.
+               always3.1.3J: Passed - CE.
                always3.1.4A: Passed.
                always3.1.4B: Passed.
                always3.1.4C: Passed.
@@ -62,8 +62,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                always3.1.7C: Passed.
                always3.1.7D: Passed.
                always3.1.8A: Passed.
-               always3.1.9A: Passed - CO.
-               always3.1.9B: Passed - CO.
+               always3.1.9A: Passed - CE.
+               always3.1.9B: Passed - CE.
                always3.1.9C: Passed.
                always3.1.9D: Passed.
                  assign3.2A: Passed.
@@ -1053,5 +1053,6 @@ test_mos_strength_reduction: Passed.
              real_force_rel: Passed.
                   pr1946411: Passed.
                   pr1949025: Passed.
+                  pr1948110: Passed.
 ======================================================================
-Test results: Total=1053, Passed=997, Failed=56, Not Implemented=0
+Test results: Total=1054, Passed=998, Failed=56, Not Implemented=0
