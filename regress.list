@@ -1276,3 +1276,4 @@ real_reg_force_rel	normal	ivltests
 real_wire_force_rel	normal	ivltests
 real_force_rel	normal	ivltests
 pr1946411	normal	ivltests
+pr1949025	normal	ivltests diff=log/pr1949025.log:gold/pr1949025.gold
