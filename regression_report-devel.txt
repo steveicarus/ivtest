@@ -154,7 +154,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                       land2: Passed.
                       land3: Passed.
                       land4: Passed.
-                      land5: ==> Failed - output does not match gold file.
+                      land5: Passed.
                     landor1: Passed.
                        talu: Passed.
                       time2: Passed.
@@ -1054,5 +1054,6 @@ test_mos_strength_reduction: Passed.
                   pr1946411: Passed.
                   pr1949025: Passed.
                   pr1948110: Passed.
+                  pr1948342: Passed.
 ======================================================================
-Test results: Total=1054, Passed=998, Failed=56, Not Implemented=0
+Test results: Total=1055, Passed=1000, Failed=55, Not Implemented=0
