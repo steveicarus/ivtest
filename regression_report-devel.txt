@@ -972,6 +972,8 @@ test_mos_strength_reduction: Passed.
                        sdf6: Passed.
             macro_with_args: Passed.
                      macro2: Passed.
+                 pr1862744a: Passed.
+                 pr1862744b: Passed - CE.
                  pr1864110a: Passed.
                  pr1864110b: Passed.
                  pr1864110c: Passed.
@@ -1056,4 +1058,4 @@ test_mos_strength_reduction: Passed.
                   pr1948110: Passed.
                   pr1948342: Passed.
 ======================================================================
-Test results: Total=1055, Passed=1000, Failed=55, Not Implemented=0
+Test results: Total=1057, Passed=1002, Failed=55, Not Implemented=0

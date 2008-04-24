@@ -1196,6 +1196,8 @@ sdf5	normal	ivltests diff=log/sdf5.log:gold/sdf5.gold
 sdf6	normal	ivltests diff=log/sdf6.log:gold/sdf6.gold
 macro_with_args	normal	ivltests diff=log/macro_with_args.log:gold/macro_with_args.gold
 macro2	normal	ivltests diff=log/macro2.log:gold/macro2.gold
+pr1862744a	normal,-Winfloop	ivltests
+pr1862744b	CE,-Winfloop	ivltests diff=/log/pr1862744b.log:gold/pr1862744b.gold
 pr1864110a	normal	ivltests diff=log/pr1864110a.log:gold/pr1864110a.gold
 pr1864110b	normal	ivltests diff=log/pr1864110b.log:gold/pr1864110b.gold
 pr1864110c	normal	ivltests diff=log/pr1864110c.log:gold/pr1864110c.gold

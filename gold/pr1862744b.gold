@@ -1,0 +1,67 @@
+pr1862744b.v:12: error: always statement does not have any delay.
+pr1862744b.v:12:      : A runtime infinite loop will occur.
+pr1862744b.v:15: error: always statement does not have any delay.
+pr1862744b.v:15:      : A runtime infinite loop will occur.
+pr1862744b.v:18: warning: always statement may not have any delay.
+pr1862744b.v:18:        : A runtime infinite loop may be possible.
+pr1862744b.v:21: error: always statement does not have any delay.
+pr1862744b.v:21:      : A runtime infinite loop will occur.
+pr1862744b.v:24: error: always statement does not have any delay.
+pr1862744b.v:24:      : A runtime infinite loop will occur.
+pr1862744b.v:27: error: always statement does not have any delay.
+pr1862744b.v:27:      : A runtime infinite loop will occur.
+pr1862744b.v:30: warning: always statement may not have any delay.
+pr1862744b.v:30:        : A runtime infinite loop may be possible.
+pr1862744b.v:33: warning: always statement may not have any delay.
+pr1862744b.v:33:        : A runtime infinite loop may be possible.
+pr1862744b.v:36: warning: always statement may not have any delay.
+pr1862744b.v:36:        : A runtime infinite loop may be possible.
+pr1862744b.v:39: error: always statement does not have any delay.
+pr1862744b.v:39:      : A runtime infinite loop will occur.
+pr1862744b.v:42: error: always statement does not have any delay.
+pr1862744b.v:42:      : A runtime infinite loop will occur.
+pr1862744b.v:45: warning: always statement may not have any delay.
+pr1862744b.v:45:        : A runtime infinite loop may be possible.
+pr1862744b.v:48: error: always statement does not have any delay.
+pr1862744b.v:48:      : A runtime infinite loop will occur.
+pr1862744b.v:51: error: always statement does not have any delay.
+pr1862744b.v:51:      : A runtime infinite loop will occur.
+pr1862744b.v:54: warning: always statement may not have any delay.
+pr1862744b.v:54:        : A runtime infinite loop may be possible.
+pr1862744b.v:57: warning: condition expression of for-loop is constant.
+pr1862744b.v:57: error: always statement does not have any delay.
+pr1862744b.v:57:      : A runtime infinite loop will occur.
+pr1862744b.v:60: warning: condition expression of for-loop is constant.
+pr1862744b.v:60: error: always statement does not have any delay.
+pr1862744b.v:60:      : A runtime infinite loop will occur.
+pr1862744b.v:63: error: always statement does not have any delay.
+pr1862744b.v:63:      : A runtime infinite loop will occur.
+pr1862744b.v:66: error: always statement does not have any delay.
+pr1862744b.v:66:      : A runtime infinite loop will occur.
+pr1862744b.v:69: error: always statement does not have any delay.
+pr1862744b.v:69:      : A runtime infinite loop will occur.
+pr1862744b.v:72: warning: always statement may not have any delay.
+pr1862744b.v:72:        : A runtime infinite loop may be possible.
+pr1862744b.v:75: error: always statement does not have any delay.
+pr1862744b.v:75:      : A runtime infinite loop will occur.
+pr1862744b.v:78: error: always statement does not have any delay.
+pr1862744b.v:78:      : A runtime infinite loop will occur.
+pr1862744b.v:81: warning: always statement may not have any delay.
+pr1862744b.v:81:        : A runtime infinite loop may be possible.
+pr1862744b.v:84: error: always statement does not have any delay.
+pr1862744b.v:84:      : A runtime infinite loop will occur.
+pr1862744b.v:87: warning: always statement may not have any delay.
+pr1862744b.v:87:        : A runtime infinite loop may be possible.
+pr1862744b.v:90: warning: always statement may not have any delay.
+pr1862744b.v:90:        : A runtime infinite loop may be possible.
+pr1862744b.v:96: warning: always statement may not have any delay.
+pr1862744b.v:96:        : A runtime infinite loop may be possible.
+pr1862744b.v:103: error: always statement does not have any delay.
+pr1862744b.v:103:      : A runtime infinite loop will occur.
+pr1862744b.v:104: error: always statement does not have any delay.
+pr1862744b.v:104:      : A runtime infinite loop will occur.
+pr1862744b.v:105: warning: always statement may not have any delay.
+pr1862744b.v:105:        : A runtime infinite loop may be possible.
+pr1862744b.v:120: error: always statement does not have any delay.
+pr1862744b.v:120:      : A runtime infinite loop will occur.
+Elaboration failed
