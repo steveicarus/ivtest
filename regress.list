@@ -1219,6 +1219,7 @@ pr1873372	normal	ivltests diff=log/pr1873372.log:gold/pr1873372.gold
 pr1875866	normal	ivltests
 pr1875866b	normal	ivltests
 pr1877740	normal	ivltests
+pr1877743	normal	ivltests
 pr1878909	normal	ivltests
 pr1879226	normal	ivltests
 pr1880003	normal	ivltests
