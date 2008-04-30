@@ -1283,3 +1283,4 @@ pr1949025	normal	ivltests diff=log/pr1949025.log:gold/pr1949025.gold
 pr1948110	normal	ivltests
 pr1948342	normal	ivltests
 pr1950282	normal	ivltests
+test_va_math	normal,-mva_math	ivltests diff=log/test_va_math.log:gold/test_va_math.gold
