@@ -440,7 +440,7 @@ test_mos_strength_reduction: Passed.
                    signed11: Passed.
                    signed12: Passed.
                     repeat1: Passed.
-                    repeat2: Passed.
+                    repeat2: ==> Failed - running iverilog.
                decl_assign1: Passed.
                      vector: Passed.
                        mcl1: Passed.
@@ -1059,5 +1059,9 @@ test_mos_strength_reduction: Passed.
                   pr1948110: Passed.
                   pr1948342: Passed.
                   pr1950282: Passed.
+               test_va_math: ==> Failed - output does not match gold file.
+       concat_zero_wid_fail: Passed - CE.
+         repl_zero_wid_fail: Passed - CE.
+         repl_zero_wid_pass: Passed.
 ======================================================================
-Test results: Total=1059, Passed=1004, Failed=55, Not Implemented=0
+Test results: Total=1063, Passed=1006, Failed=57, Not Implemented=0
