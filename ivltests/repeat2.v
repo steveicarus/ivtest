@@ -22,7 +22,15 @@ module main;
    reg [3:0] test;
 
    initial begin
+/*    A zero count repeat by it self is not allowed by the standard,
       test = {0{1'b1}};
+      if (test !== 4'b0000) begin
+	 $display("FAILED -- {0{1'b1} == %b", test);
+	 $finish;
+      end
+
+      but it can be used in a valid concatenation (1364-2005). */
+      test = {{0{1'b1}}, 1'b0};
       if (test !== 4'b0000) begin
 	 $display("FAILED -- {0{1'b1} == %b", test);
 	 $finish;

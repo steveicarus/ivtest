@@ -440,7 +440,7 @@ test_mos_strength_reduction: Passed.
                    signed11: Passed.
                    signed12: Passed.
                     repeat1: Passed.
-                    repeat2: ==> Failed - running iverilog.
+                    repeat2: Passed.
                decl_assign1: Passed.
                      vector: Passed.
                        mcl1: Passed.
@@ -1064,4 +1064,4 @@ test_mos_strength_reduction: Passed.
          repl_zero_wid_fail: Passed - CE.
          repl_zero_wid_pass: Passed.
 ======================================================================
-Test results: Total=1063, Passed=1006, Failed=57, Not Implemented=0
+Test results: Total=1063, Passed=1007, Failed=56, Not Implemented=0
