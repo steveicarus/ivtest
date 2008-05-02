@@ -100,8 +100,8 @@ The tan of   0.0 is 0.000000.
 The tan of  -0.0 is -0.000000.
 The tan of  -1.0 is -1.557408.
 The tan of  -4.0 is -1.157821.
-The tan of  pi/2 is 1.63318e+16.
-The tan of -pi/2 is -1.63318e+16.
+The tan of  pi/2 is 1.633e+16.
+The tan of -pi/2 is -1.633e+16.
 The tan of   inf is nan.
 The tan of  -inf is nan.
 The tan of   nan is nan.

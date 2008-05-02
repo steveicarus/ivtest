@@ -238,8 +238,11 @@ module top;
       $display("The tan of  -0.0 is %f.", $tan(mzero));
       $display("The tan of  -1.0 is %f.", $tan(-1.0));
       $display("The tan of  -4.0 is %f.", $tan(-4.0));
-      $display("The tan of  pi/2 is %g.", $tan($asin(1.0)));
-      $display("The tan of -pi/2 is %g.", $tan($asin(-1.0)));
+      // The underlying math libraries can give different results for
+      // this corner case, so we can only use four significant digits
+      // for these two tests.
+      $display("The tan of  pi/2 is %.4g.", $tan($asin(1.0)));
+      $display("The tan of -pi/2 is %.4g.", $tan($asin(-1.0)));
       $display("The tan of   inf is %f.", $tan(inf));
       $display("The tan of  -inf is %f.", $tan(minf));
       $display("The tan of   nan is %f.", $tan(nan));
