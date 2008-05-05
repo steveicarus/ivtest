@@ -1288,3 +1288,4 @@ test_vams_math	normal,-gverilog-ams,-mva_math	ivltests diff=log/test_vams_math.l
 concat_zero_wid_fail	CE	ivltests
 repl_zero_wid_fail	CE	ivltests
 repl_zero_wid_pass	normal	ivltests
+vams_abs1	normal,-gverilog-ams	ivltests
