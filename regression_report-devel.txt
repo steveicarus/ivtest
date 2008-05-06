@@ -1059,9 +1059,12 @@ test_mos_strength_reduction: Passed.
                   pr1948110: Passed.
                   pr1948342: Passed.
                   pr1950282: Passed.
+                  pr1956211: Passed.
                test_va_math: Passed.
+             test_vams_math: ==> Failed - output does not match gold file.
        concat_zero_wid_fail: Passed - CE.
          repl_zero_wid_fail: Passed - CE.
          repl_zero_wid_pass: Passed.
+                  vams_abs1: ==> Failed - running iverilog.
 ======================================================================
-Test results: Total=1063, Passed=1008, Failed=55, Not Implemented=0
+Test results: Total=1066, Passed=1009, Failed=57, Not Implemented=0
