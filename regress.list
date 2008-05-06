@@ -1284,7 +1284,7 @@ pr1948110	normal	ivltests
 pr1948342	normal	ivltests
 pr1950282	normal	ivltests
 test_va_math	normal,-mva_math	ivltests diff=log/test_va_math.log:gold/test_va_math.gold
-test_vams_math	normal,-gverilog-ams,-mva_math	ivltests diff=log/test_vams_math.log:gold/test_va_math.gold
+test_vams_math	normal,-gverilog-ams	ivltests diff=log/test_vams_math.log:gold/test_va_math.gold
 concat_zero_wid_fail	CE	ivltests
 repl_zero_wid_fail	CE	ivltests
 repl_zero_wid_pass	normal	ivltests
