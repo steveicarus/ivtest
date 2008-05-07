@@ -1291,3 +1291,4 @@ concat_zero_wid_fail	CE	ivltests
 repl_zero_wid_fail	CE	ivltests
 repl_zero_wid_pass	normal	ivltests
 vams_abs1	normal,-gverilog-ams	ivltests
+vams_abs2	normal,-gverilog-ams	ivltests
