@@ -1069,4 +1069,4 @@ test_mos_strength_reduction: Passed.
                   vams_abs1: Passed.
                   vams_abs2: Passed.
 ======================================================================
-Test results: Total=1068, Passed=1011, Failed=57, Not Implemented=0
+Test results: Total=1068, Passed=1013, Failed=55, Not Implemented=0
