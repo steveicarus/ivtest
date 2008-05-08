@@ -174,7 +174,7 @@ module top;
       $display("--- Checking the ceil function ---");
       $display("The ceiling of  2.1 is %f.", ceil(2.1));
       $display("The ceiling of  0.5 is %f.", ceil(0.5));
-      $display("The ceiling of -0.5 is %f.", ceil(-0.5));
+      $display("The ceiling of -0.5 is %f.", ceil(-0.5) + 0.0);
       $display("The ceiling of -1.1 is %f.", ceil(-1.1));
       $display("The ceiling of  inf is %f.", ceil(inf));
       $display("The ceiling of -inf is %f.", ceil(minf));

@@ -174,7 +174,10 @@ module top;
       $display("--- Checking the $ceil function ---");
       $display("The ceiling of  2.1 is %f.", $ceil(2.1));
       $display("The ceiling of  0.5 is %f.", $ceil(0.5));
-      $display("The ceiling of -0.5 is %f.", $ceil(-0.5));
+      // Some C math libraries return -0.0 and some return 0.0.
+      // Both appear to be correct since the standard does not
+      // specify exactly what should be done so convert to 0.0.
+      $display("The ceiling of -0.5 is %f.", $ceil(-0.5)+0.0);
       $display("The ceiling of -1.1 is %f.", $ceil(-1.1));
       $display("The ceiling of  inf is %f.", $ceil(inf));
       $display("The ceiling of -inf is %f.", $ceil(minf));
@@ -238,7 +241,7 @@ module top;
       $display("The tan of  -0.0 is %f.", $tan(mzero));
       $display("The tan of  -1.0 is %f.", $tan(-1.0));
       $display("The tan of  -4.0 is %f.", $tan(-4.0));
-      // The underlying math libraries can give different results for
+      // The underlying C math libraries can give different results for
       // this corner case, so we can only use four significant digits
       // for these two tests.
       $display("The tan of  pi/2 is %.4g.", $tan($asin(1.0)));

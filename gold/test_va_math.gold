@@ -56,7 +56,7 @@ The absolute value of  nan is nan.
 --- Checking the $ceil function ---
 The ceiling of  2.1 is 3.000000.
 The ceiling of  0.5 is 1.000000.
-The ceiling of -0.5 is -0.000000.
+The ceiling of -0.5 is 0.000000.
 The ceiling of -1.1 is -1.000000.
 The ceiling of  inf is inf.
 The ceiling of -inf is -inf.
