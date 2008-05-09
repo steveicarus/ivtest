@@ -970,7 +970,7 @@ test_mos_strength_reduction: Passed.
                        sdf4: Passed.
                        sdf5: Passed.
                        sdf6: Passed.
-            macro_with_args: Passed.
+            macro_with_args: ==> Failed - output does not match gold file.
                      macro2: Passed.
                  pr1862744a: Passed.
                  pr1862744b: Passed - CE.
@@ -1069,5 +1069,6 @@ test_mos_strength_reduction: Passed.
                   vams_abs1: Passed.
                   vams_abs2: Passed.
                   pr1960558: Passed.
+                  pr1960575: Passed.
 ======================================================================
-Test results: Total=1069, Passed=1014, Failed=55, Not Implemented=0
+Test results: Total=1070, Passed=1014, Failed=56, Not Implemented=0
