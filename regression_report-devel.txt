@@ -1070,5 +1070,6 @@ test_mos_strength_reduction: Passed.
                   vams_abs2: Passed.
                   pr1960558: Passed.
                   pr1960575: Passed.
+                  pr1960596: Passed.
 ======================================================================
-Test results: Total=1070, Passed=1014, Failed=56, Not Implemented=0
+Test results: Total=1071, Passed=1015, Failed=56, Not Implemented=0
