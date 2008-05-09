@@ -1295,3 +1295,4 @@ vams_abs2	normal,-gverilog-ams	ivltests
 pr1960558	normal	ivltests diff=log/pr1960558.log:gold/pr1960558.gold
 pr1960575	normal	ivltests diff=log/pr1960575.log:gold/pr1960575.gold
 pr1960596	normal	ivltests diff=log/pr1960596.log:gold/pr1960596.gold
+pr1960619	normal	ivltests diff=log/pr1960619.log:gold/pr1960619.gold
