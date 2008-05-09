@@ -2,5 +2,5 @@
 `define test Hello `world
 
 module test;
-   initial $display("The \`test definition is: \`define `test");
+   initial $display("The `test definition is: `define %s", ``test);
 endmodule

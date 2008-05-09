@@ -45,7 +45,7 @@ initial begin
 
   $display("integer & real periods: 'd%0d 'd%0d",`PERIODI,`PERIODR);
   $display("integer & real periods (15.00, 15.20): 't%0t 't%0t",`PERIODI,`PERIODR);
-  $display("......... `PERIODR should be displayed as 15.20 in its timeformat.");
+  $display("......... %s should be displayed as 15.20 in its timeformat.", ``PERIODR);
   $display("integer & real periods: 'b%0b 'b%0b",`PERIODI,`PERIODR);
   $display("integer & real periods: 'h%0h 'h%0h",`PERIODI,`PERIODR);
 

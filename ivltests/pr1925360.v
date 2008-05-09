@@ -2,7 +2,7 @@
 
 module top;
 initial begin
-  if ("$display(in);" != "`MAC(in)")
+  if ("$display(in);" != ``MAC(in))
     $display("FAILED: expected \"display(in);\", got \"`MAC(in)\"");
   else $display("PASSED");
 end
