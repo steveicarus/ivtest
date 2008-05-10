@@ -1068,10 +1068,11 @@ test_mos_strength_reduction: Passed.
          repl_zero_wid_pass: Passed.
                   vams_abs1: Passed.
                   vams_abs2: Passed.
+                scaled_real: Passed.
                   pr1960558: Passed.
                   pr1960575: Passed.
                   pr1960596: Passed.
                   pr1960619: Passed.
                   pr1960633: Passed.
 ======================================================================
-Test results: Total=1073, Passed=1017, Failed=56, Not Implemented=0
+Test results: Total=1074, Passed=1018, Failed=56, Not Implemented=0
