@@ -3,13 +3,13 @@
 module macro_with_args();
 
 `define	forward_and_reverse(str1,str2,str3) /* comment */ \
-  $write(str1); /* comment */ \
-  $write(".."); /* comment */ \
-  $write(str3); /* comment */ \
-  $write(str2); /* comment */ \
-  $write(str3); /* comment */ \
-  $write(".."); /* comment */ \
-  $write(str1); /* comment */ \
+  $write("%0s", str1); /* comment */ \
+  $write("..");        /* comment */ \
+  $write("%0s", str3); /* comment */ \
+  $write("%0s", str2); /* comment */ \
+  $write("%0s", str3); /* comment */ \
+  $write("..");        /* comment */ \
+  $write("%0s", str1); /* comment */ \
   $write("\n")
 
 `define	sqr( x ) (x * x) // comment
@@ -35,16 +35,21 @@ module macro_with_args();
 
 integer	value;
 
+reg [79:0] astr, bstr, cstr;
+
 initial begin
   `forward_and_reverse("first"," first,last ","last");
 
+  $sformat(astr, "(a%s)", ``null1);
+  $sformat(bstr, " %s ", ``no_args);
+  $sformat(cstr, "(c%s)", ``null2);
   `forward_and_reverse  // comment
     (			// comment
-     "(a`null1)"	// comment
+     astr		// comment
     ,			// comment
-     " `no_args "	// comment
+     bstr		// comment
     ,			// comment
-     "(c`null2)"	// comment
+     cstr		// comment
     );			// comment
 
   value = `sumsqr(3,4);
