@@ -9,6 +9,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                always3.1.2G: Not Implemented.
                always3.1.2H: Not Implemented.
                always3.1.2I: Not Implemented.
+                 assign3.2E: Not Implemented.
                       pr978: Not Implemented.
                   pr1628300: Not Implemented.
                   pr1741212: Not Implemented.
@@ -76,6 +77,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr1702593: Not Implemented.
             macro_with_args: Not Implemented.
                      macro2: Not Implemented.
+                      pr622: Not Implemented.
                     ca_mult: Not Implemented.
                        cmos: Not Implemented.
                  pr1449749a: Not Implemented.
@@ -106,6 +108,11 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                      swrite: Not Implemented.
                       urand: Not Implemented.
                     urand_r: Not Implemented.
+               test_va_math: Not Implemented.
+             test_vams_math: Not Implemented.
+                  vams_abs1: Not Implemented.
+                  vams_abs2: Not Implemented.
+                scaled_real: Not Implemented.
                   pr1587669: Passed - CO.
                  specify_01: Passed - CO.
                    specify2: Passed - CO.
@@ -118,21 +125,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                      pr1002: Passed.
                     pr1002a: Passed.
               always3.1.10A: Passed - CO.
-              always3.1.11A: Passed.
-              always3.1.11B: Passed.
-              always3.1.12A: Passed.
-              always3.1.12B: Passed.
-              always3.1.12C: Passed.
                always3.1.1A: Passed - CO.
                always3.1.1B: Passed - CO.
-               always3.1.1C: Passed.
-               always3.1.1D: Passed.
-               always3.1.1E: Passed.
-               always3.1.1F: Passed.
-               always3.1.1G: Passed - CO.
-               always3.1.1H: Passed - CO.
-               always3.1.1I: Passed - CO.
-               always3.1.1J: Passed - CO.
                always3.1.2A: Passed - CO.
                always3.1.2B: Passed - CO.
                always3.1.2C: Passed - CO.
@@ -141,17 +135,33 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                always3.1.2F: Passed - CO.
                always3.1.3A: Passed - CO.
                always3.1.3B: Passed - CO.
-              always3.1.3B2: Passed.
+                 pr1862744b: Passed - CO.
                always3.1.3C: Passed - CO.
                always3.1.3D: Passed - CO.
-              always3.1.3D2: Passed.
                always3.1.3E: Passed - CO.
-              always3.1.3E2: Passed.
                always3.1.3F: Passed - CO.
-              always3.1.3F2: Passed.
                always3.1.3G: Passed - CO.
                always3.1.3H: Passed - CO.
                always3.1.3J: Passed - CO.
+               always3.1.9A: Passed - CO.
+               always3.1.9B: Passed - CO.
+              always3.1.11A: Passed.
+              always3.1.11B: Passed.
+              always3.1.12A: Passed.
+              always3.1.12B: Passed.
+              always3.1.12C: Passed.
+               always3.1.1C: Passed.
+               always3.1.1D: Passed.
+               always3.1.1E: Passed.
+               always3.1.1F: Passed.
+               always3.1.1G: Passed.
+               always3.1.1H: Passed.
+               always3.1.1I: Passed.
+               always3.1.1J: Passed.
+              always3.1.3B2: Passed.
+              always3.1.3D2: Passed.
+              always3.1.3E2: Passed.
+              always3.1.3F2: Passed.
                always3.1.4A: Passed.
                always3.1.4B: Passed.
                always3.1.4C: Passed.
@@ -175,15 +185,12 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                always3.1.7C: Passed.
                always3.1.7D: Passed.
                always3.1.8A: Passed.
-               always3.1.9A: Passed - CO.
-               always3.1.9B: Passed - CO.
                always3.1.9C: Passed.
                always3.1.9D: Passed.
                  assign3.2A: Passed.
                  assign3.2B: Passed.
                  assign3.2C: Passed.
                  assign3.2D: Passed.
-                 assign3.2E: Passed - CE.
                    case3.8A: Passed.
                    case3.8B: Passed.
                    case3.8C: Passed.
@@ -699,7 +706,7 @@ test_mos_strength_reduction: Passed.
                       pr524: Passed.
                       pr527: ==> Failed - output does not match gold file.
                       pr528: ==> Failed - output does not match gold file.
-                     pr528b: Passed.
+                     pr528b: ==> Failed - output does not match gold file.
                       pr529: ==> Failed - output does not match gold file.
                      pr530a: Passed.
                      pr530b: Passed.
@@ -730,8 +737,7 @@ test_mos_strength_reduction: Passed.
                       pr594: Passed.
                       pr596: Passed.
                       pr602: Passed.
-                      pr622: Passed.
-                      pr639: Passed.
+                      pr639: ==> Failed - running iverilog.
                       case1: Passed.
                       case2: Passed.
                       case3: Passed.
@@ -942,6 +948,7 @@ test_mos_strength_reduction: Passed.
                  elsif_test: Passed.
                   pr1703120: ==> Failed - output does not match gold file.
                   pr1704013: ==> Failed - output does not match gold file.
+                  pr1705027: Passed - CO.
                   pr1716276: Passed.
                   pr1717361: Passed.
                   pr1735724: Passed - CE.
@@ -972,10 +979,14 @@ test_mos_strength_reduction: Passed.
                   pr1812297: Passed.
                   pr1822658: Passed.
                   pr1823732: ==> Failed - output does not match gold file.
+                  pr1830834: ==> Failed - running iverilog.
                   pr1831724: ==> Failed - output does not match gold file.
+                 pr1832097a: ==> Failed - output does not match gold file.
+                 pr1832097b: ==> Failed - output does not match gold file.
                   pr1841300: ==> Failed - output does not match gold file.
                   pr1845683: ==> Failed - output does not match gold file.
                   pr1855504: Passed.
+                 pr1862744a: Passed.
                   pr1866215: Passed.
                  pr1866215b: Passed.
                  pr1867161a: Passed.
@@ -989,6 +1000,7 @@ test_mos_strength_reduction: Passed.
                   pr1875866: Passed.
                  pr1875866b: Passed.
                   pr1877740: ==> Failed - output does not match gold file.
+                  pr1877743: ==> Failed - running iverilog.
                   pr1878909: ==> Failed - running iverilog.
                   pr1879226: Passed.
                   pr1880003: ==> Failed - running iverilog.
@@ -1009,5 +1021,58 @@ test_mos_strength_reduction: Passed.
              generate_case2: ==> Failed - running iverilog.
            real_pulse_clean: ==> Failed - running iverilog.
                   pr1892959: Passed.
+                  pr1898293: ==> Failed - running iverilog.
+                  pr1898983: ==> Failed - output does not match gold file.
+           compare_bool_reg: ==> Failed - running iverilog.
+                  pr1901125: ==> Failed - running iverilog.
+                  pr1903157: ==> Failed - running iverilog.
+                  pr1903324: ==> Failed - running iverilog.
+                  pr1903343: ==> Failed - running iverilog.
+                  pr1903520: Passed.
+                  pr1907192: Passed.
+                  pr1909940: Passed.
+                 pr1909940b: Passed.
+                  pr1912112: ==> Failed - running iverilog.
+                  pr1912843: Passed.
+                 pr1913918a: Passed.
+                 pr1913918b: ==> Failed - running iverilog.
+                 pr1913918c: ==> Failed - output does not match gold file.
+                  pr1913937: Passed.
+                  pr1916261: ==> Failed - running iverilog.
+                  pr1921332: Passed - CO.
+                  pr1924845: ==> Failed - output does not match gold file.
+                  pr1925356: Passed.
+                  pr1925360: ==> Failed - running iverilog.
+                 pr1925363a: ==> Failed - output does not match gold file.
+                 pr1925363b: ==> Failed - output does not match gold file.
+                  pr1932444: ==> Failed - output does not match gold file.
+                  pr1934744: Passed.
+                  pr1936363: Passed.
+         multi_bit_strength: ==> Failed - running vvp.
+         assign_deassign_pv: ==> Failed - running iverilog.
+       force_release_reg_pv: ==> Failed - output does not match gold file.
+      force_release_wire_pv: ==> Failed - output does not match gold file.
+     force_release_wire8_pv: ==> Failed - output does not match gold file.
+                  pr1938138: Passed - CE.
+                  pr1939165: Passed.
+       real_assign_deassign: ==> Failed - running iverilog.
+         real_reg_force_rel: ==> Failed - running iverilog.
+        real_wire_force_rel: ==> Failed - running iverilog.
+             real_force_rel: ==> Failed - running iverilog.
+                  pr1946411: ==> Failed - running iverilog.
+                  pr1949025: ==> Failed - output does not match gold file.
+                  pr1948110: ==> Failed - running iverilog.
+                  pr1948342: Passed.
+                  pr1950282: ==> Failed - running iverilog.
+                  pr1956211: ==> Failed - running iverilog.
+                  pr1958801: Passed.
+       concat_zero_wid_fail: ==> Failed - output does not match gold file.
+         repl_zero_wid_fail: ==> Failed - output does not match gold file.
+         repl_zero_wid_pass: Passed.
+                  pr1960558: Passed.
+                  pr1960575: ==> Failed - output does not match gold file.
+                  pr1960596: ==> Failed - output does not match gold file.
+                  pr1960619: ==> Failed - output does not match gold file.
+                  pr1960633: ==> Failed - running iverilog.
 ======================================================================
-Test results: Total=1009, Passed=820, Failed=83, Not Implemented=106
+Test results: Total=1074, Passed=836, Failed=125, Not Implemented=113

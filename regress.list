@@ -39,7 +39,7 @@
 # RE:      Runtime with Errors - We EXPECT errors - we're checking 
 #                                illegal syntax
 #
-# NI:      Not implemented. Only use for version specifc tests.
+# NI:      Not implemented. Only use for version specific tests.
 # 
 # <directory> is where the <testname>.v file is located.
 #
@@ -166,6 +166,9 @@ v0.8:pr1702593	NI
 v0.8:macro_with_args	NI
 v0.8:macro2	NI
 
+# v0.8 does not support the macro stringify extension
+v0.8:pr622	NI
+
 # Other functionality missing in V0.8.
 v0.8:ca_mult	NI	# $rtoi in a continuous assignment.
 v0.8:cmos	NI	# CMOS gates not supported.
@@ -204,6 +207,16 @@ v0.8:swrite	NI      # $swrite not supported.
 v0.8:urand	NI	# $urandom not supported.
 v0.8:urand_r	NI	# $urandom_range not supported.
 
+# V0.8 does not have the VA math library installed by default.
+# Install the standalone library to get this functionality.
+v0.8:test_va_math	NI
+
+# V0.8 does not support VAMS.
+v0.8:test_vams_math	NI
+v0.8:vams_abs1	NI
+v0.8:vams_abs2	NI
+v0.8:scaled_real	NI
+
 # V0.8 does not support specify block delays.
 v0.8:pr1587669	CO	ivltests
 v0.8:specify_01	CO	ivltests
@@ -220,6 +233,31 @@ v0.8:pr1467825	CO	ivltests
 v0.8:pr377	normal  ivltests diff=log/pr377.log:gold/pr377-v0.8.gold
 v0.8:pr1002	normal  ivltests diff=log/pr1002.log:gold/pr1002-v0.8.gold
 v0.8:pr1002a	normal  ivltests diff=log/pr1002a.log:gold/pr1002a-v0.8.gold
+
+# V0.8 does not have the always infinite loop checks, so only compile these.
+v0.8:always3.1.10A	CO	ivltests
+v0.8:always3.1.1A	CO	ivltests
+v0.8:always3.1.1B	CO	ivltests
+v0.8:always3.1.2A	CO	ivltests
+v0.8:always3.1.2B	CO	ivltests
+v0.8:always3.1.2C	CO	ivltests
+v0.8:always3.1.2D	CO	ivltests
+v0.8:always3.1.2E	CO	ivltests
+v0.8:always3.1.2F	CO	ivltests
+v0.8:always3.1.3A	CO	ivltests
+v0.8:always3.1.3B	CO	ivltests
+v0.8:pr1862744b	CO	ivltests
+
+# V0.8 has a few other always infinite loop problems.
+v0.8:always3.1.3C	CO	ivltests
+v0.8:always3.1.3D	CO	ivltests
+v0.8:always3.1.3E	CO	ivltests
+v0.8:always3.1.3F	CO	ivltests
+v0.8:always3.1.3G	CO	ivltests
+v0.8:always3.1.3H	CO	ivltests
+v0.8:always3.1.3J	CO	ivltests
+v0.8:always3.1.9A	CO	ivltests
+v0.8:always3.1.9B	CO	ivltests
 
 #==========
 # The default case.
@@ -309,8 +347,8 @@ casez3.10C	normal	ivltests
 casez3.10D	normal	ivltests
 casez3.10E	normal	ivltests 		# Use ? and z in label
 contrib8.1	normal	ivltests
-contrib8.2	normal	ivltests test	# Add the 4th optional arguement -s test
-contrib8.5	normal	ivltests # Add the 4th optional arguement -s test
+contrib8.2	normal	ivltests test	# Add the 4th optional argument -s test
+contrib8.5	normal	ivltests # Add the 4th optional argument -s test
 deassign3.4A	normal	ivltests
 defparam3.5	normal	ivltests		# defparam(single)
 defparam    normal  ivltests main	# defparams with list
@@ -452,7 +490,7 @@ gencrc		normal contrib  # 32/16 bit crc
 onehot		normal contrib	# one hot design
 inout		normal ivltests # modname(a,a); inout a;
 inout2		normal ivltests
-modparam	normal ivltests top # Overide parameter via passed down value
+modparam	normal ivltests top # Override parameter via passed down value
 modulus		normal ivltests # wire % and reg % operators 
 modulus2	normal ivltests # reg % operators 
 mult1		normal ivltests # wire * and reg * operators 
@@ -475,15 +513,15 @@ readmemh4	normal ivltests # $readmemh - comments in data file
 readmemb1	normal ivltests # basic $readmemb - uses readmemh1.dat
 readmemb2	normal ivltests # $readmemb w/ short data file - readmemh2.dat
 readmemb3	normal ivltests # $readmemb 0-3 with long dfile - readmemh1.dat
-dff1		normal ivltests # Contrib by S Willaims
-con_tri		normal ivltests # Contrib by S Willaims
+dff1		normal ivltests # Contrib by S Williams
+con_tri		normal ivltests # Contrib by S Williams
 tri0		normal	ivltests
 tri0b		normal	ivltests
 tri1		normal	ivltests
 tri2		normal	ivltests
 triand		normal	ivltests
 trior		normal	ivltests
-idiv1		normal ivltests # Contrib by S Willaims
+idiv1		normal ivltests # Contrib by S Williams
 fork3.19A	normal ivltests # 
 fork3.19B   normal ivltests # 
 mult16		normal contrib mul16 # Contributed by Tom Coonan - has $random
@@ -499,7 +537,7 @@ cond_band	normal ivltests # Bitwise and in if condition
 cond_wide	normal ivltests # condition is a wide value
 cond_wide2	normal ivltests # condition is a wide value
 bufif		normal ivltests # Validate bufif0, bufif1
-pca1		normal ivltests # Procedural Continuous Assignement in a mux 
+pca1		normal ivltests # Procedural Continuous Assignment in a mux 
 wildsense	normal ivltests # Wildcard sensitivity list.
 wildsense2	normal ivltests # Wildcard sensitivity list.
 idiv2		normal ivltests # Int div within an expression
@@ -542,7 +580,7 @@ param_select2	normal	ivltests # bit and part select of parameters.
 param_select3	normal	ivltests # bit and part select of parameters.
 param_times	normal ivltests #  param has multiplication.
 case3.8D	 normal ivltests #  test case for x and z exact match in labels.  
-function_exp normal ivltests # Cntrib by steve williams
+function_exp normal ivltests # Contrib by S Williams
 function1	normal	ivltests diff=log/function1.log:gold/function1.gold
 function2	normal	ivltests
 function3	normal	ivltests
@@ -566,7 +604,7 @@ fopen2		normal  ivltests # Test basic fopen operation
 div16		normal	contrib test_div16 # Uses $random and divide operator (Tom Coonan)
 addsr		normal	ivltests # Finds problems with >> using different sizes
 tern1		normal	ivltests # Finds problems with ?: using different sizes
-tern2		CO	ivltests # make sure ?: is recognixed by -tnull
+tern2		CO	ivltests # make sure ?: is recognized by -tnull
 tern3		normal ivltests diff=log/tern3.log:gold/tern3.gold
 tern4		normal	ivltests
 tern5		normal ivltests diff=log/tern5.log:gold/tern5.gold
@@ -1069,7 +1107,7 @@ pr1629683	normal	ivltests diff=log/pr1629683.log:gold/pr1629683.gold
 pr1632861	normal	ivltests diff=log/pr1632861.log:gold/pr1632861.gold
 pr1634526	normal	ivltests diff=log/pr1634526.log:gold/pr1634526.gold
 pr1636409	normal	ivltests diff=log/pr1636409.log:gold/pr1636409.gold
-pr1637208	normai	ivltests
+pr1637208	normal	ivltests
 pr1638985	normal	ivltests diff=log/pr1638985.log:gold/pr1638985.gold
 pr1639060	normal	ivltests diff=log/pr1639060.log:gold/pr1639060.gold
 pr1639064	normal	ivltests diff=log/pr1639064.log:gold/pr1639064.gold
