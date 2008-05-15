@@ -23,18 +23,18 @@
 `include "constants.vams"
 
 module top;
-  real zero, mzero, inf, minf, nan;
+  real zero, mzero, pinf, minf, nan;
 
   initial begin
     // Define a few constants.
     zero = 0.0;
     mzero = -1.0 * zero;
-    inf = 1/0.0;
+    pinf = 1/0.0;
     minf = $ln(0);
     nan = $sqrt(-1.0);
 
     $display("Using +0 = %f, -0 = %f, nan = %f, inf = %f and -inf = %f.\n",
-             zero, mzero, nan, inf, minf);
+             zero, mzero, nan, pinf, minf);
 
     // Check that the comparisons used to detection a NaN work correctly.
     if (nan != nan) $display("NaN != comparison works correctly.");
@@ -102,7 +102,7 @@ module top;
       $display("The square root of  0.0 is %f.", sqrt(zero));
       $display("The square root of -0.0 is %f.", sqrt(mzero));
       $display("The square root of -1.0 is %f.", sqrt(-1.0));
-      $display("The square root of  inf is %f.", sqrt(inf));
+      $display("The square root of  inf is %f.", sqrt(pinf));
       $display("The square root of -inf is %f.", sqrt(minf));
       $display("The square root of  nan is %f.", sqrt(nan));
     end
@@ -118,7 +118,7 @@ module top;
       $display("The natural log of  0.0 is %f.", ln(zero));
       $display("The natural log of -0.0 is %f.", ln(mzero));
       $display("The natural log of -1.0 is %f.", ln(-1.0));
-      $display("The natural log of  inf is %f.", ln(inf));
+      $display("The natural log of  inf is %f.", ln(pinf));
       $display("The natural log of -inf is %f.", ln(minf));
       $display("The natural log of  nan is %f.", ln(nan));
     end
@@ -134,7 +134,7 @@ module top;
       $display("The log base 10 of  0.0 is %f.", log(zero));
       $display("The log base 10 of -0.0 is %f.", log(mzero));
       $display("The log base 10 of -1.0 is %f.", log(-1.0));
-      $display("The log base 10 of  inf is %f.", log(inf));
+      $display("The log base 10 of  inf is %f.", log(pinf));
       $display("The log base 10 of -inf is %f.", log(minf));
       $display("The log base 10 of  nan is %f.", log(nan));
     end
@@ -148,7 +148,7 @@ module top;
       $display("The exponential of  0.0 is %f.", exp(zero));
       $display("The exponential of -0.0 is %f.", exp(mzero));
       $display("The exponential of -1.0 is %f.", exp(-1.0));
-      $display("The exponential of  inf is %f.", exp(inf));
+      $display("The exponential of  inf is %f.", exp(pinf));
       $display("The exponential of -inf is %f.", exp(minf));
       $display("The exponential of  nan is %f.", exp(nan));
     end
@@ -162,7 +162,7 @@ module top;
       $display("The absolute value of  0.0 is %f.", abs(zero));
       $display("The absolute value of -0.0 is %f.", abs(mzero));
       $display("The absolute value of -1.0 is %f.", abs(-1.0));
-      $display("The absolute value of  inf is %f.", abs(inf));
+      $display("The absolute value of  inf is %f.", abs(pinf));
       $display("The absolute value of -inf is %f.", abs(minf));
       $display("The absolute value of  nan is %f.", abs(nan));
     end
@@ -176,7 +176,7 @@ module top;
       $display("The ceiling of  0.5 is %f.", ceil(0.5));
       $display("The ceiling of -0.5 is %f.", ceil(-0.5) + 0.0);
       $display("The ceiling of -1.1 is %f.", ceil(-1.1));
-      $display("The ceiling of  inf is %f.", ceil(inf));
+      $display("The ceiling of  inf is %f.", ceil(pinf));
       $display("The ceiling of -inf is %f.", ceil(minf));
       $display("The ceiling of  nan is %f.", ceil(nan));
     end
@@ -190,7 +190,7 @@ module top;
       $display("The floor of  0.5 is %f.", floor(0.5));
       $display("The floor of -0.5 is %f.", floor(-0.5));
       $display("The floor of -1.1 is %f.", floor(-1.1));
-      $display("The floor of  inf is %f.", floor(inf));
+      $display("The floor of  inf is %f.", floor(pinf));
       $display("The floor of -inf is %f.", floor(minf));
       $display("The floor of  nan is %f.", floor(nan));
     end
@@ -206,7 +206,7 @@ module top;
       $display("The sin of -0.0 is %f.", sin(mzero));
       $display("The sin of -1.0 is %f.", sin(-1.0));
       $display("The sin of -4.0 is %f.", sin(-4.0));
-      $display("The sin of  inf is %f.", sin(inf));
+      $display("The sin of  inf is %f.", sin(pinf));
       $display("The sin of -inf is %f.", sin(minf));
       $display("The sin of  nan is %f.", sin(nan));
     end
@@ -222,7 +222,7 @@ module top;
       $display("The cos of -0.0 is %f.", cos(mzero));
       $display("The cos of -1.0 is %f.", cos(-1.0));
       $display("The cos of -4.0 is %f.", cos(-4.0));
-      $display("The cos of  inf is %f.", cos(inf));
+      $display("The cos of  inf is %f.", cos(pinf));
       $display("The cos of -inf is %f.", cos(minf));
       $display("The cos of  nan is %f.", cos(nan));
     end
@@ -243,7 +243,7 @@ module top;
       // for these two tests.
       $display("The tan of  pi/2 is %.4g.", tan(asin(1.0)));
       $display("The tan of -pi/2 is %.4g.", tan(asin(-1.0)));
-      $display("The tan of   inf is %f.", tan(inf));
+      $display("The tan of   inf is %f.", tan(pinf));
       $display("The tan of  -inf is %f.", tan(minf));
       $display("The tan of   nan is %f.", tan(nan));
     end
@@ -261,7 +261,7 @@ module top;
       $display("The asin of -0.5 is %f.", asin(-0.5));
       $display("The asin of -1.0 is %f.", asin(-1.0));
       $display("The asin of -1.1 is %f.", asin(-1.1));
-      $display("The asin of  inf is %f.", asin(inf));
+      $display("The asin of  inf is %f.", asin(pinf));
       $display("The asin of -inf is %f.", asin(minf));
       $display("The asin of  nan is %f.", asin(nan));
     end
@@ -279,7 +279,7 @@ module top;
       $display("The acos of -0.5 is %f.", acos(-0.5));
       $display("The acos of -1.0 is %f.", acos(-1.0));
       $display("The acos of -1.1 is %f.", acos(-1.1));
-      $display("The acos of  inf is %f.", acos(inf));
+      $display("The acos of  inf is %f.", acos(pinf));
       $display("The acos of -inf is %f.", acos(minf));
       $display("The acos of  nan is %f.", acos(nan));
     end
@@ -295,7 +295,7 @@ module top;
       $display("The atan of -0.0 is %f.", atan(mzero));
       $display("The atan of -0.5 is %f.", atan(-0.5));
       $display("The atan of -2.0 is %f.", atan(-2.0));
-      $display("The atan of  inf is %f.", atan(inf));
+      $display("The atan of  inf is %f.", atan(pinf));
       $display("The atan of -inf is %f.", atan(minf));
       $display("The atan of  nan is %f.", atan(nan));
     end
@@ -313,7 +313,7 @@ module top;
       $display("The sinh of -0.5 is %f.", sinh(-0.5));
       $display("The sinh of -1.0 is %f.", sinh(-1.0));
       $display("The sinh of -2.0 is %f.", sinh(-2.0));
-      $display("The sinh of  inf is %f.", sinh(inf));
+      $display("The sinh of  inf is %f.", sinh(pinf));
       $display("The sinh of -inf is %f.", sinh(minf));
       $display("The sinh of  nan is %f.", sinh(nan));
     end
@@ -331,7 +331,7 @@ module top;
       $display("The cosh of -0.5 is %f.", cosh(-0.5));
       $display("The cosh of -1.0 is %f.", cosh(-1.0));
       $display("The cosh of -2.0 is %f.", cosh(-2.0));
-      $display("The cosh of  inf is %f.", cosh(inf));
+      $display("The cosh of  inf is %f.", cosh(pinf));
       $display("The cosh of -inf is %f.", cosh(minf));
       $display("The cosh of  nan is %f.", cosh(nan));
     end
@@ -349,7 +349,7 @@ module top;
       $display("The tanh of -0.5 is %f.", tanh(-0.5));
       $display("The tanh of -1.0 is %f.", tanh(-1.0));
       $display("The tanh of -2.0 is %f.", tanh(-2.0));
-      $display("The tanh of  inf is %f.", tanh(inf));
+      $display("The tanh of  inf is %f.", tanh(pinf));
       $display("The tanh of -inf is %f.", tanh(minf));
       $display("The tanh of  nan is %f.", tanh(nan));
     end
@@ -367,7 +367,7 @@ module top;
       $display("The asinh of -0.5 is %f.", asinh(-0.5));
       $display("The asinh of -1.0 is %f.", asinh(-1.0));
       $display("The asinh of -2.0 is %f.", asinh(-2.0));
-      $display("The asinh of  inf is %f.", asinh(inf));
+      $display("The asinh of  inf is %f.", asinh(pinf));
       $display("The asinh of -inf is %f.", asinh(minf));
       $display("The asinh of  nan is %f.", asinh(nan));
     end
@@ -385,7 +385,7 @@ module top;
       $display("The acosh of -0.5 is %f.", acosh(-0.5));
       $display("The acosh of -1.0 is %f.", acosh(-1.0));
       $display("The acosh of -2.0 is %f.", acosh(-2.0));
-      $display("The acosh of  inf is %f.", acosh(inf));
+      $display("The acosh of  inf is %f.", acosh(pinf));
       $display("The acosh of -inf is %f.", acosh(minf));
       $display("The acosh of  nan is %f.", acosh(nan));
     end
@@ -403,7 +403,7 @@ module top;
       $display("The atanh of -0.5 is %f.", atanh(-0.5));
       $display("The atanh of -1.0 is %f.", atanh(-1.0));
       $display("The atanh of -2.0 is %f.", atanh(-2.0));
-      $display("The atanh of  inf is %f.", atanh(inf));
+      $display("The atanh of  inf is %f.", atanh(pinf));
       $display("The atanh of -inf is %f.", atanh(minf));
       $display("The atanh of  nan is %f.", atanh(nan));
     end
@@ -417,8 +417,8 @@ module top;
       $display("The minimum of  2.0 and  1.0 is %f.", min(2.0, 1.0));
       $display("The minimum of  1.0 and -1.0 is %f.", min(1.0, -1.0));
       $display("The minimum of -1.0 and -2.0 is %f.", min(-1.0, -2.0));
-      $display("The minimum of  2.0 and  inf is %f.", min(2.0, inf));
-      $display("The minimum of  inf and  2.0 is %f.", min(inf, 2.0));
+      $display("The minimum of  2.0 and  inf is %f.", min(2.0, pinf));
+      $display("The minimum of  inf and  2.0 is %f.", min(pinf, 2.0));
       $display("The minimum of  2.0 and -inf is %f.", min(2.0, minf));
       $display("The minimum of -inf and  2.0 is %f.", min(minf, 2.0));
       $display("The minimum of  2.0 and  nan is %f.", min(2.0, nan));
@@ -434,8 +434,8 @@ module top;
       $display("The maximum of  2.0 and  1.0 is %f.", max(2.0, 1.0));
       $display("The maximum of  1.0 and -1.0 is %f.", max(1.0, -1.0));
       $display("The maximum of -1.0 and -2.0 is %f.", max(-1.0, -2.0));
-      $display("The maximum of  2.0 and  inf is %f.", max(2.0, inf));
-      $display("The maximum of  inf and  2.0 is %f.", max(inf, 2.0));
+      $display("The maximum of  2.0 and  inf is %f.", max(2.0, pinf));
+      $display("The maximum of  inf and  2.0 is %f.", max(pinf, 2.0));
       $display("The maximum of  2.0 and -inf is %f.", max(2.0, minf));
       $display("The maximum of -inf and  2.0 is %f.", max(minf, 2.0));
       $display("The maximum of  2.0 and  nan is %f.", max(2.0, nan));
@@ -459,16 +459,16 @@ module top;
       $display(" 2.0 to the power of  5000 is %f.", pow(2.0, 5000));
       $display("-2.0 to the power of  5001 is %f.", pow(-2.0, 5001));
       $display(" 2.0 to the power of -5000 is %f.", pow(2.0, -5000));
-      $display(" inf to the power of   0.0 is %f.", pow(inf, zero));
+      $display(" inf to the power of   0.0 is %f.", pow(pinf, zero));
       $display("-inf to the power of   0.0 is %f.", pow(minf, zero));
-      $display(" inf to the power of   1.0 is %f.", pow(inf, 1.0));
+      $display(" inf to the power of   1.0 is %f.", pow(pinf, 1.0));
       $display("-inf to the power of   1.0 is %f.", pow(minf, 1.0));
-      $display(" inf to the power of   2.0 is %f.", pow(inf, 2.0));
+      $display(" inf to the power of   2.0 is %f.", pow(pinf, 2.0));
       $display("-inf to the power of   2.0 is %f.", pow(minf, 2.0));
-      $display(" 1.0 to the power of   inf is %f.", pow(1.0, inf));
-      $display("-1.0 to the power of   inf is %f.", pow(-1.0, inf));
-      $display(" 0.5 to the power of   inf is %f.", pow(0.5, inf));
-      $display(" 2.0 to the power of   inf is %f.", pow(2.0, inf));
+      $display(" 1.0 to the power of   inf is %f.", pow(1.0, pinf));
+      $display("-1.0 to the power of   inf is %f.", pow(-1.0, pinf));
+      $display(" 0.5 to the power of   inf is %f.", pow(0.5, pinf));
+      $display(" 2.0 to the power of   inf is %f.", pow(2.0, pinf));
       $display(" 1.0 to the power of  -inf is %f.", pow(1.0, minf));
       $display("-1.0 to the power of  -inf is %f.", pow(-1.0, minf));
       $display(" 0.5 to the power of  -inf is %f.", pow(0.5, minf));
@@ -495,9 +495,9 @@ module top;
       $display("The atan of  0.0/-1.0 is %f.", atan2(zero, -1.0));
       $display("The atan of -1.0/ 0.0 is %f.", atan2(-1.0, zero));
       $display("The atan of -1.0/-1.0 is %f.", atan2(-1.0, -1.0));
-      $display("The atan of  inf/ 0.0 is %f.", atan2(inf, zero));
-      $display("The atan of  0.0/ inf is %f.", atan2(zero, inf));
-      $display("The atan of  inf/ inf is %f.", atan2(inf, inf));
+      $display("The atan of  inf/ 0.0 is %f.", atan2(pinf, zero));
+      $display("The atan of  0.0/ inf is %f.", atan2(zero, pinf));
+      $display("The atan of  inf/ inf is %f.", atan2(pinf, pinf));
       $display("The atan of -inf/ 0.0 is %f.", atan2(minf, zero));
       $display("The atan of  0.0/-inf is %f.", atan2(zero, minf));
       $display("The atan of -inf/-inf is %f.", atan2(minf, minf));
@@ -516,8 +516,8 @@ module top;
       $display("The distance to ( -2.0,  0.0) is %f.", hypot(-2.0, zero));
       $display("The distance to (  0.0,  2.0) is %f.", hypot(zero, 2.0));
       $display("The distance to (  0.0, -2.0) is %f.", hypot(zero, -2.0));
-      $display("The distance to (  inf,  0.0) is %f.", hypot(inf, zero));
-      $display("The distance to (  0.0,  inf) is %f.", hypot(zero, inf));
+      $display("The distance to (  inf,  0.0) is %f.", hypot(pinf, zero));
+      $display("The distance to (  0.0,  inf) is %f.", hypot(zero, pinf));
       $display("The distance to ( -inf,  0.0) is %f.", hypot(minf, zero));
       $display("The distance to (  nan,  0.0) is %f.", hypot(nan, zero));
       $display("The distance to (  0.0,  nan) is %f.", hypot(zero, nan));
