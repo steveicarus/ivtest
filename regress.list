@@ -216,6 +216,7 @@ v0.8:test_vams_math	NI
 v0.8:vams_abs1	NI
 v0.8:vams_abs2	NI
 v0.8:scaled_real	NI
+v0.8:value_range1	NI
 
 # V0.8 does not support specify block delays.
 v0.8:pr1587669	CO	ivltests
@@ -1340,3 +1341,4 @@ pr1960619	normal	ivltests diff=log/pr1960619.log:gold/pr1960619.gold
 pr1960633	normal	ivltests
 pr1963240	normal	ivltests diff=log/pr1963240.log:gold/pr1963240.gold
 pr1963962	normal	ivltests diff=log/pr1963962.log:gold/pr1963962.gold
+value_range1	normal,-gverilog-ams	ivltests
