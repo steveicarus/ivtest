@@ -1077,6 +1077,7 @@ test_mos_strength_reduction: Passed.
                   pr1960619: Passed.
                   pr1960633: Passed.
                   pr1963240: Passed.
+                  pr1963960: Passed.
                   pr1963962: Passed.
                value_range1: Passed.
 ======================================================================

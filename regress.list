@@ -1340,5 +1340,6 @@ pr1960596	normal	ivltests diff=log/pr1960596.log:gold/pr1960596.gold
 pr1960619	normal	ivltests diff=log/pr1960619.log:gold/pr1960619.gold
 pr1960633	normal	ivltests
 pr1963240	normal	ivltests diff=log/pr1963240.log:gold/pr1963240.gold
+pr1963960	normal	ivltests
 pr1963962	normal	ivltests diff=log/pr1963962.log:gold/pr1963962.gold
 value_range1	normal,-gverilog-ams	ivltests
