@@ -1080,5 +1080,7 @@ test_mos_strength_reduction: Passed.
                   pr1963960: Passed.
                   pr1963962: Passed.
                value_range1: Passed.
+               value_range2: Passed.
+               value_range3: Passed - CE.
 ======================================================================
-Test results: Total=1079, Passed=1024, Failed=55, Not Implemented=0
+Test results: Total=1082, Passed=1027, Failed=55, Not Implemented=0

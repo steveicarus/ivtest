@@ -1343,3 +1343,5 @@ pr1963240	normal	ivltests diff=log/pr1963240.log:gold/pr1963240.gold
 pr1963960	normal	ivltests
 pr1963962	normal	ivltests diff=log/pr1963962.log:gold/pr1963962.gold
 value_range1	normal,-gverilog-ams	ivltests
+value_range2	normal,-gverilog-ams	ivltests
+value_range3	CE,-gverilog-ams	ivltests
