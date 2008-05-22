@@ -113,6 +113,9 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   vams_abs1: Not Implemented.
                   vams_abs2: Not Implemented.
                 scaled_real: Not Implemented.
+               value_range1: Not Implemented.
+               value_range2: Not Implemented.
+               value_range3: Not Implemented.
                   pr1587669: Passed - CO.
                  specify_01: Passed - CO.
                    specify2: Passed - CO.
@@ -877,7 +880,7 @@ test_mos_strength_reduction: Passed.
                      pr1072: Passed.
                      pr1077: Passed.
                      pr1101: Passed.
-                     pr1115: ==> Failed - output does not match gold file.
+                     pr1115: Passed.
                   pr1367855: Passed.
                   pr1380261: ==> Failed - output does not match gold file.
                   pr1444055: Passed.
@@ -963,7 +966,7 @@ test_mos_strength_reduction: Passed.
                   pr1763333: Passed - CE.
                   pr1770199: Passed.
                   pr1776485: Passed.
-                  pr1777103: ==> Failed - output does not match gold file.
+                  pr1777103: Passed.
                   pr1784984: Passed.
                  pr1787394a: ==> Failed - output does not match gold file.
                  pr1787394b: Passed.
@@ -1069,10 +1072,17 @@ test_mos_strength_reduction: Passed.
        concat_zero_wid_fail: ==> Failed - output does not match gold file.
          repl_zero_wid_fail: ==> Failed - output does not match gold file.
          repl_zero_wid_pass: Passed.
+                  pr1960545: Passed.
+                  pr1960548: ==> Failed - output does not match gold file.
                   pr1960558: Passed.
                   pr1960575: ==> Failed - output does not match gold file.
                   pr1960596: ==> Failed - output does not match gold file.
                   pr1960619: ==> Failed - output does not match gold file.
                   pr1960633: ==> Failed - running iverilog.
+                  pr1963240: ==> Failed - output does not match gold file.
+                  pr1963960: ==> Failed - output does not match gold file.
+                  pr1963962: ==> Failed - output does not match gold file.
+                     array4: Passed.
+                     array5: Passed - CE.
 ======================================================================
-Test results: Total=1074, Passed=836, Failed=125, Not Implemented=113
+Test results: Total=1084, Passed=841, Failed=127, Not Implemented=116
