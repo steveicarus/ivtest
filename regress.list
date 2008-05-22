@@ -217,6 +217,8 @@ v0.8:vams_abs1	NI
 v0.8:vams_abs2	NI
 v0.8:scaled_real	NI
 v0.8:value_range1	NI
+v0.8:value_range2	NI
+v0.8:value_range3	NI
 
 # V0.8 does not support specify block delays.
 v0.8:pr1587669	CO	ivltests
