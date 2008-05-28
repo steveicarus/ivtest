@@ -1349,3 +1349,5 @@ value_range2	normal,-gverilog-ams	ivltests
 value_range3	CE,-gverilog-ams	ivltests
 array4	normal	ivltests
 array5	CE	ivltests
+pr1971662a	CE	ivltests
+pr1971662b	CE	ivltests

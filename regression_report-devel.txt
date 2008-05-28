@@ -715,7 +715,7 @@ test_mos_strength_reduction: Passed.
                       pr685: Passed.
                       pr690: Passed.
                       pr693: Passed.
-                      pr699: Passed.
+                      pr699: ==> Failed - output does not match gold file.
                       pr704: Passed.
                       pr707: Passed.
                       pr708: Passed.
@@ -1082,5 +1082,9 @@ test_mos_strength_reduction: Passed.
                value_range1: Passed.
                value_range2: Passed.
                value_range3: Passed - CE.
+                     array4: Passed.
+                     array5: Passed - CE.
+                 pr1971662a: Passed - CE.
+                 pr1971662b: Passed - CE.
 ======================================================================
-Test results: Total=1082, Passed=1027, Failed=55, Not Implemented=0
+Test results: Total=1086, Passed=1030, Failed=56, Not Implemented=0
