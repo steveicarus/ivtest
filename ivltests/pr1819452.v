@@ -3,7 +3,7 @@ module top;
   integer fd, pos, result;
 
   initial begin
-    fd = $fopen("ivltests/pr1819452.txt","r");
+    fd = $fopen("ivltests/pr1819452.txt","rb");
     result = $fgets(str, fd);
     while (!$feof(fd)) begin
       pos = $ftell(fd);
