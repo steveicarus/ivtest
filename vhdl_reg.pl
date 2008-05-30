@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 #
-# Script to handle regression for normal Verilog files.
+# Regression script for VHDL output. Based on vvp_reg.pl.
 #
 # This script is based on code with the following Copyright.
 #
@@ -33,9 +33,9 @@ use Environment;
 #  Main script
 #
 my $regress_fn = &get_regress_fn;
-&open_report_file;
+&open_report_file('vhdl_regression_report.txt');
 my $ver = &get_ivl_version;
-&print_rpt("Running compiler/VVP tests for Icarus Verilog version: $ver.\n");
+&print_rpt("Running VHDL tests for Icarus Verilog version: $ver.\n");
 &print_rpt("-" x 70 . "\n");
 &read_regression_list($regress_fn, $ver);
 &execute_regression;
@@ -47,13 +47,17 @@ my $ver = &get_ivl_version;
 #  the regression. It then checks that the output matches the gold file.
 #
 sub execute_regression {
-    my ($tname, $total, $passed, $failed, $not_impl, $len, $cmd, $diff_file);
+    my ($tname, $total, $passed, $failed, $not_impl, $len, 
+        $cmd, $diff_file, $outfile, $unit);
 
     $total = 0;
     $passed = 0;
     $failed = 0;
     $not_impl = 0;
     $len = 0;
+
+    # Check for the VHDL output directory
+    mkdir 'vhdl' unless (-d 'vhdl');
 
     foreach $tname (@testlist) {
         $len = length($tname) if (length($tname) > $len);
@@ -79,14 +83,16 @@ sub execute_regression {
             next;
         }
 
+        # Store all the output in the vhdl subdirectory for debugging
+        $outfile = "vhdl/$tname.vhd";
+
         #
         # Build up the iverilog command line and run it.
         #
-        $cmd = "iverilog -o vsim $args{$tname}";
+        $cmd = "iverilog -t vhdl -o $outfile $args{$tname}";
         $cmd .= " -s $testmod{$tname}" if ($testmod{$tname} ne "");
-        $cmd .= " -t null}" if ($testtype{$tname} eq "CN");
         $cmd .= " ./$srcpath{$tname}/$tname.v > log/$tname.log 2>&1";
-#        print "$cmd\n";
+        #print "$cmd\n";
         if (system("$cmd")) {
             if ($testtype{$tname} eq "CE") {
                 # Check if the system command core dumped!
@@ -104,36 +110,72 @@ sub execute_regression {
             next;
         }
 
+        #
+        # Compile the output with GHDL
+        #
+        $cmd = "(cd vhdl ; ghdl -a $tname.vhd) >> log/$tname.log 2>&1";
+        #print "$cmd\n";
+        if (system("$cmd")) {
+            if ($testtype{$tname} eq "CE") {
+                # Check if the system command core dumped!
+                if ($? >> 8 & 128) {
+                    &print_rpt("==> Failed - CE (core dump).\n");
+                    $failed++;
+                } else {
+                    &print_rpt("Passed - CE.\n");
+                    $passed++;
+                }
+                next;
+            }
+            &print_rpt("==> Failed - running ghdl.\n");
+            $failed++;
+            next;
+        }
+
+        # The CO test type now includes compilation of the VHDL
         if ($testtype{$tname} eq "CO") {
             &print_rpt("Passed - CO.\n");
             $passed++;
             next;
         }
-        if ($testtype{$tname} eq "CN") {
-            &print_rpt("Passed - CN.\n");
-            $passed++;
+
+        # Try to guess the name of the primary VHDL unit
+        # ghdl -f lists all the units in a file: take the first one
+        ($unit) = `ghdl -f $outfile` =~ /^entity (\w+)/;
+        unless ($unit) {
+            &print_rpt("==> Failed -- cannot determine primary VHDL unit.\n");
+            $failed++;
             next;
         }
+        #print "primary unit is $unit\n";           
 
-        $cmd = "vvp vsim >> log/$tname.log 2>&1";
-#        print "$cmd\n";
-        if (system("$cmd")) {
-            if ($testtype{$tname} eq "RE") {
-                # Check if the system command core dumped!
-                if ($? >> 8 & 128) {
-                    &print_rpt("==> Failed - RE (core dump).\n");
-                    $failed++;
-                } else {
-                    &print_rpt("Passed - RE.\n");
-                    $passed++;
-                }
-                next;
-            }
-            &print_rpt("==> Failed - running vvp.\n");
+        # Elaborate the primary unit to produce and executable
+        # Could elaborate and run in a single step, but this should
+        # provide better error detection.
+        $cmd = "(cd vhdl ; ghdl -e $unit) >> log/$tname.log 2>&1";
+        #print "$cmd\n";
+        if (system($cmd)) {
+            &print_rpt("==> Failed - running ghdl elaboration step.\n");
             $failed++;
             next;
         }
 
+        # Finally, run the exectutable
+        $cmd = "(cd vhdl ; ghdl -r $unit) >> log/$tname.log 2>&1";
+        #print "$cmd\n";
+        if (system($cmd)) {
+            if ($testtype{$tname} eq "RE") {
+                &print_rpt("Passed - RE.\n");
+                $passed++;
+                next;
+            }
+            else {
+                &print_rpt("==> Failed - simulating VHDL.\n");
+                $failed++;
+                next;
+            }
+        }
+        
         if ($diff{$tname} ne "") {
             $diff_file = $diff{$tname}
         } else {
@@ -151,8 +193,11 @@ sub execute_regression {
 
     } continue {
         if ($tname ne "") {
-            system("rm -f ./vsim") and
-                die "Error: failed to remove temporary file.\n";
+            # Remove GHDL temporary files
+            my $tmpfiles = './vhdl/*.o ./vhdl/work-obj93.cf';
+            $tmpfiles .= " ./vhdl/$unit" if $unit;
+            system("rm -f $tmpfiles") and
+                die "Error: failed to remove temporary files.\n";
         }
     }
 
