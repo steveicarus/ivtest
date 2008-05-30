@@ -808,6 +808,7 @@ bitsel6	normal	ivltests
 bitsel7	normal	ivltests
 bitsel8	normal	ivltests # pr615
 bitsel9	normal	ivltests # pr617
+bitsel10	normal	ivltests
 bitwidth	normal	ivltests
 bitwidth2	normal	ivltests
 bitwidth3	normal	ivltests
