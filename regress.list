@@ -493,6 +493,7 @@ gencrc		normal contrib  # 32/16 bit crc
 onehot		normal contrib	# one hot design
 inout		normal ivltests # modname(a,a); inout a;
 inout2		normal ivltests
+inout3		normal ivltests
 modparam	normal ivltests top # Override parameter via passed down value
 modulus		normal ivltests # wire % and reg % operators 
 modulus2	normal ivltests # reg % operators 

@@ -543,6 +543,7 @@ test_mos_strength_reduction: Passed.
                     bitsel7: Passed.
                     bitsel8: Passed.
                     bitsel9: Passed.
+                   bitsel10: Passed.
                    bitwidth: Passed.
                   bitwidth2: Passed.
                   bitwidth3: Passed.
@@ -1086,5 +1087,6 @@ test_mos_strength_reduction: Passed.
                      array5: Passed - CE.
                  pr1971662a: Passed - CE.
                  pr1971662b: Passed - CE.
+                    tranif1: Passed.
 ======================================================================
-Test results: Total=1086, Passed=1030, Failed=56, Not Implemented=0
+Test results: Total=1088, Passed=1031, Failed=57, Not Implemented=0
