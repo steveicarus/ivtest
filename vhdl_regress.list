@@ -1,1 +1,2 @@
 hello1	normal	ivltests
+mux2    normal  vhdl_tests gold=vhdl_mux2.gold
