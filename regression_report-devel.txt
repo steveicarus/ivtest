@@ -228,6 +228,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                      onehot: Passed.
                       inout: Passed.
                      inout2: Passed.
+                     inout3: Passed.
+                     inout4: Passed.
                    modparam: Passed.
                     modulus: Passed.
                    modulus2: Passed.
@@ -1088,5 +1090,6 @@ test_mos_strength_reduction: Passed.
                  pr1971662a: Passed - CE.
                  pr1971662b: Passed - CE.
                     tranif1: Passed.
+                   simparam: Passed.
 ======================================================================
-Test results: Total=1088, Passed=1031, Failed=57, Not Implemented=0
+Test results: Total=1091, Passed=1034, Failed=57, Not Implemented=0
