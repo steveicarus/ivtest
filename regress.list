@@ -1356,3 +1356,4 @@ pr1971662a	CE	ivltests
 pr1971662b	CE	ivltests
 tranif1		normal	ivltests
 simparam	normal	ivltests
+dump_memword	normal	ivltests diff=work/test.vcd:gold/dump_memword.vcd:2
