@@ -1,5 +1,5 @@
 $date
-	Wed Jun  4 09:06:49 2008
+	Wed Jun  4 10:37:42 2008
 $end
 $version
 	Icarus Verilog
@@ -8,7 +8,7 @@ $timescale
 	1s
 $end
 $scope module top $end
-$var reg 8 ! \arr[4] [0:0] $end
+$var reg 8 ! \arr[4] [7:0] $end
 $upscope $end
 $enddefinitions $end
 #0
