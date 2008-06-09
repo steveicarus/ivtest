@@ -1355,6 +1355,9 @@ array5	CE	ivltests
 pr1971662a	CE	ivltests
 pr1971662b	CE	ivltests
 pr1978358	normal	ivltests
+pr1978358b	normal	ivltests
+pr1978358c	normal	ivltests
+pr1978358d	normal	ivltests
 tranif1		normal	ivltests
 simparam	normal	ivltests
 dump_memword	normal	ivltests diff=work/test.vcd:gold/dump_memword.vcd:2
