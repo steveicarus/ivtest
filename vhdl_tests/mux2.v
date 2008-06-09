@@ -9,13 +9,13 @@ module testbench;
   mux2 uut(o, i0, i1, sel);
 
   initial begin
-    i0 = 1;
-    i1 = 0;
-    sel = 0;
+    i0 <= 1;
+    i1 <= 0;
+    sel <= 0;
     #1;
-    sel = 1;
+    sel <= 1;
     #1;
-    i1 = 1;
+    i1 <= 1;
     #1;
   end
 
