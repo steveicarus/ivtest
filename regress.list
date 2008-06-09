@@ -1361,4 +1361,5 @@ pr1978358c	normal	ivltests
 pr1978358d	normal	ivltests
 tranif1		normal	ivltests
 simparam	normal	ivltests
+pr1983762	normal	ivltests
 dump_memword	normal	ivltests diff=work/test.vcd:gold/dump_memword.vcd:2
