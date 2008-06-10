@@ -2,6 +2,7 @@ fopen2.out*
 fdisplay2.out
 *.vcd
 *.dump
+temp.txt
 test.txt
 writemem*.dat
 sp2.inv
