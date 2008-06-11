@@ -938,6 +938,7 @@ test_mos_strength_reduction: Passed.
                   pr1793157: Passed.
                   pr1793749: Passed.
                  pr1793749b: Passed.
+                  pr1794362: Passed.
                  pr1795005a: Passed.
                  pr1795005b: Passed.
                   pr1799904: Passed.
@@ -1096,6 +1097,7 @@ test_mos_strength_reduction: Passed.
                  pr1978358d: Passed.
                     tranif1: Passed.
                    simparam: Passed.
+                  pr1983762: Passed.
                dump_memword: Passed.
 ======================================================================
-Test results: Total=1097, Passed=1040, Failed=57, Not Implemented=0
+Test results: Total=1099, Passed=1042, Failed=57, Not Implemented=0
