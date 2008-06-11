@@ -1,5 +1,48 @@
 Running compiler/VVP tests for Icarus Verilog version: 0.9.
 ----------------------------------------------------------------------
+                      case1: Passed.
+                      case2: Passed.
+                      case4: Passed.
+                      case5: Passed.
+                      case6: Passed.
+                      case7: Passed.
+                    condit1: Passed.
+                 basiclatch: Passed.
+                 basicstate: Passed.
+                basicstate2: Passed.
+                   multireg: Passed.
+                blocksynth1: Passed.
+                blocksynth2: Passed.
+                blocksynth3: Passed.
+               conditsynth1: Passed.
+               conditsynth2: Passed.
+               conditsynth3: Passed.
+                 casesynth1: Passed.
+                 casesynth2: Passed.
+                 casesynth3: Passed.
+                  lcatsynth: Passed.
+                   dffsynth: Passed.
+                  dffsynth2: Passed.
+                  dffsynth3: Passed.
+                  dffsynth4: Passed.
+                sqrt32synth: Passed.
+                  memsynth1: Passed.
+                  memsynth2: Passed.
+                  memsynth3: Passed.
+                  memsynth4: Passed.
+                  memsynth5: Passed.
+                  memsynth6: Passed.
+                  memsynth7: Passed.
+                  memsynth9: Passed.
+                   ssetclr1: Passed.
+                   ssetclr2: Passed.
+                   ssetclr3: Passed.
+               inside_synth: Passed.
+              inside_synth2: Passed.
+              inside_synth3: Passed.
+                  mix_reset: Passed.
+                casex_synth: Passed.
+                  full_case: ==> Failed - running iverilog.
               always3.1.10A: Passed - CE.
               always3.1.11A: Passed.
               always3.1.11B: Passed.
@@ -639,60 +682,17 @@ test_mos_strength_reduction: Passed.
                       pr602: Passed.
                       pr622: Passed.
                       pr639: Passed.
-                      case1: ==> Failed - running iverilog.
-                      case2: ==> Failed - running iverilog.
                       case3: Passed.
-                      case4: ==> Failed - running iverilog.
-                      case5: ==> Failed - running iverilog.
-                      case6: ==> Failed - running iverilog.
-                      case7: ==> Failed - running iverilog.
-                    condit1: ==> Failed - running iverilog.
                    basicreg: Passed.
-                 basiclatch: ==> Failed - running iverilog.
-                 basicstate: ==> Failed - running iverilog.
-                basicstate2: ==> Failed - running iverilog.
-                   multireg: ==> Failed - running iverilog.
                   basicexpr: Passed.
                  basicexpr2: Passed.
                  basicexpr3: Passed.
                  basicexpr4: Passed.
                      shiftl: Passed.
-                blocksynth1: ==> Failed - running iverilog.
-                blocksynth2: ==> Failed - running iverilog.
-                blocksynth3: ==> Failed - running iverilog.
-               conditsynth1: ==> Failed - running iverilog.
-               conditsynth2: ==> Failed - running iverilog.
-               conditsynth3: ==> Failed - running iverilog.
-                 casesynth1: ==> Failed - running iverilog.
-                 casesynth2: ==> Failed - running iverilog.
-                 casesynth3: ==> Failed - running iverilog.
-                  lcatsynth: ==> Failed - running iverilog.
-                   dffsynth: ==> Failed - running iverilog.
-                  dffsynth2: ==> Failed - output does not match gold file.
-                  dffsynth3: ==> Failed - running iverilog.
-                  dffsynth4: ==> Failed - running iverilog.
-                sqrt32synth: ==> Failed - running iverilog.
                      sqrt32: Passed.
-                  memsynth1: ==> Failed - running iverilog.
-                  memsynth2: ==> Failed - running iverilog.
-                  memsynth3: ==> Failed - running iverilog.
-                  memsynth4: ==> Failed - running iverilog.
-                  memsynth5: ==> Failed - running iverilog.
-                  memsynth6: ==> Failed - running iverilog.
-                  memsynth7: ==> Failed - running iverilog.
                   memsynth8: Passed.
-                  memsynth9: ==> Failed - running iverilog.
                 ufuncsynth1: Passed.
-                   ssetclr1: ==> Failed - running iverilog.
-                   ssetclr2: ==> Failed - running iverilog.
-                   ssetclr3: ==> Failed - running iverilog.
                partselsynth: Passed.
-               inside_synth: ==> Failed - running iverilog.
-              inside_synth2: ==> Failed - running iverilog.
-              inside_synth3: ==> Failed - running iverilog.
-                  mix_reset: ==> Failed - running iverilog.
-                casex_synth: ==> Failed - running iverilog.
-                  full_case: ==> Failed - running iverilog.
                      busbug: Passed.
                        real: Passed.
                       real2: Passed.
@@ -1100,4 +1100,4 @@ test_mos_strength_reduction: Passed.
                   pr1983762: Passed.
                dump_memword: Passed.
 ======================================================================
-Test results: Total=1099, Passed=1043, Failed=56, Not Implemented=0
+Test results: Total=1099, Passed=1085, Failed=14, Not Implemented=0

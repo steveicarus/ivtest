@@ -263,6 +263,54 @@ v0.8:always3.1.9A	CO	ivltests
 v0.8:always3.1.9B	CO	ivltests
 
 #==========
+# v0.9 doesn't support synthesis. Might as well run them as
+# non-synthesis tests, though.
+#==========
+v0.9:case1	normal	ivltests
+v0.9:case2	normal	ivltests
+v0.9:case4	normal	ivltests
+v0.9:case5	normal	ivltests
+v0.9:case6	normal	ivltests
+v0.9:case7	normal	ivltests
+v0.9:condit1	normal	ivltests
+v0.9:basiclatch	normal	ivltests
+v0.9:basicstate	normal	ivltests
+v0.9:basicstate2	normal	ivltests
+v0.9:multireg	normal	ivltests
+v0.9:blocksynth1	normal	ivltests
+v0.9:blocksynth2	normal	ivltests
+v0.9:blocksynth3	normal	ivltests
+v0.9:conditsynth1	normal	ivltests
+v0.9:conditsynth2	normal	ivltests
+v0.9:conditsynth3	normal	ivltests
+v0.9:casesynth1	normal	ivltests
+v0.9:casesynth2	normal	ivltests
+v0.9:casesynth3	normal	ivltests
+v0.9:lcatsynth	normal	ivltests
+v0.9:dffsynth	normal	ivltests
+v0.9:dffsynth2	normal	ivltests
+v0.9:dffsynth3	normal	ivltests
+v0.9:dffsynth4	normal	ivltests
+v0.9:sqrt32synth	normal	ivltests
+v0.9:memsynth1	normal	ivltests
+v0.9:memsynth2	normal	ivltests
+v0.9:memsynth3	normal	ivltests
+v0.9:memsynth4	normal	ivltests
+v0.9:memsynth5	normal	ivltests
+v0.9:memsynth6	normal	ivltests
+v0.9:memsynth7	normal	ivltests
+v0.9:memsynth9	normal	ivltests
+v0.9:ssetclr1	normal	ivltests
+v0.9:ssetclr2	normal	ivltests
+v0.9:ssetclr3	normal	ivltests
+v0.9:inside_synth	normal	ivltests
+v0.9:inside_synth2	normal	ivltests
+v0.9:inside_synth3	normal	ivltests
+v0.9:mix_reset	normal	ivltests
+v0.9:casex_synth	normal	ivltests
+v0.9:full_case	normal	ivltests
+
+#==========
 # The default case.
 #==========
 always3.1.10A	CE	ivltests
