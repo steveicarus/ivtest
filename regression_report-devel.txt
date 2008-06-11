@@ -955,7 +955,7 @@ test_mos_strength_reduction: Passed.
                   pr1822658: Passed.
                   pr1823732: Passed.
                   pr1828642: Passed.
-                  pr1830834: ==> Failed - output does not match gold file.
+                  pr1830834: Passed.
                   pr1831724: Passed.
                  pr1832097a: Passed.
                  pr1832097b: Passed.
@@ -1100,4 +1100,4 @@ test_mos_strength_reduction: Passed.
                   pr1983762: Passed.
                dump_memword: Passed.
 ======================================================================
-Test results: Total=1099, Passed=1042, Failed=57, Not Implemented=0
+Test results: Total=1099, Passed=1043, Failed=56, Not Implemented=0
