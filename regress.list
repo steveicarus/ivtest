@@ -1418,3 +1418,4 @@ localparam_type	normal	ivltests diff=log/localparam_type.log:gold/parameter_type
 pr1990029	normal	ivltests
 pr1990164	normal	ivltests
 pr1992244	normal	ivltests
+pr1993479	normal	ivltests diff=log/pr1993479.log:gold/pr1993479.gold
