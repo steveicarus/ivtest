@@ -1081,6 +1081,7 @@ test_mos_strength_reduction: Passed.
                   pr1960575: Passed.
                   pr1960596: Passed.
                   pr1960619: Passed.
+                  pr1960625: Passed.
                   pr1960633: Passed.
                   pr1963240: Passed.
                   pr1963960: Passed.
@@ -1105,7 +1106,8 @@ test_mos_strength_reduction: Passed.
             localparam_type: Passed.
                   pr1990029: Passed.
                   pr1990164: Passed.
+                  pr1990269: Passed.
                   pr1992244: Passed.
                   pr1993479: Passed.
 ======================================================================
-Test results: Total=1107, Passed=1093, Failed=14, Not Implemented=0
+Test results: Total=1109, Passed=1095, Failed=14, Not Implemented=0

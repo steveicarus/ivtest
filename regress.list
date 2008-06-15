@@ -1394,6 +1394,7 @@ pr1960558	normal	ivltests diff=log/pr1960558.log:gold/pr1960558.gold
 pr1960575	normal	ivltests diff=log/pr1960575.log:gold/pr1960575.gold
 pr1960596	normal	ivltests diff=log/pr1960596.log:gold/pr1960596.gold
 pr1960619	normal	ivltests diff=log/pr1960619.log:gold/pr1960619.gold
+pr1960625	normal	ivltests
 pr1960633	normal	ivltests
 pr1963240	normal	ivltests diff=log/pr1963240.log:gold/pr1963240.gold
 pr1963960	normal	ivltests
@@ -1418,5 +1419,6 @@ parameter_type	normal	ivltests diff=log/parameter_type.log:gold/parameter_type.g
 localparam_type	normal	ivltests diff=log/localparam_type.log:gold/parameter_type.gold
 pr1990029	normal	ivltests
 pr1990164	normal	ivltests
+pr1990269	normal	ivltests
 pr1992244	normal	ivltests
 pr1993479	normal	ivltests diff=log/pr1993479.log:gold/pr1993479.gold
