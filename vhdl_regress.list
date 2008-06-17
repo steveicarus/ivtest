@@ -1,2 +1,4 @@
 hello1	normal	ivltests
 mux2    normal  vhdl_tests diff=log/mux2.log:vhdl_gold/mux2.gold
+dff     normal  vhdl_tests
+counter normal  vhdl_tests
