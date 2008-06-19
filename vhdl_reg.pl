@@ -170,9 +170,14 @@ sub execute_regression {
                 next;
             }
             else {
-                &print_rpt("==> Failed - simulating VHDL.\n");
-                $failed++;
-                next;
+                # If the log contains `SIMULATION FINISHED' then
+                # this is OK
+                $cmd = "grep -q 'SIMULATION FINISHED' log/$tname.log";
+                if (system($cmd)) {
+                    &print_rpt("==> Failed - simulating VHDL.\n");
+                    $failed++;
+                    next;
+                }
             }
         }
         

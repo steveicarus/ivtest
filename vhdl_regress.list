@@ -1,4 +1,11 @@
-hello1	normal	ivltests
-mux2    normal  vhdl_tests diff=log/mux2.log:vhdl_gold/mux2.gold
-dff     normal  vhdl_tests
-counter normal  vhdl_tests
+hello1	      normal	ivltests
+
+mux2          normal  vhdl_tests diff=log/mux2.log:vhdl_gold/mux2.gold
+dff           normal  vhdl_tests
+counter       normal  vhdl_tests
+assign        normal  vhdl_tests
+blocking      normal  vhdl_tests
+
+always3.1.1C  normal  ivltests
+condit1       normal  ivltests
+basiclatch    normal  ivltests
