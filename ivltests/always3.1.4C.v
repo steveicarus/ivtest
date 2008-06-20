@@ -22,23 +22,34 @@
 module main ; 
 
 reg [3:0] value1 ;
+reg err ;
 
 initial 
 	begin
+           err = 0;
            # 1;
-           if(value1 != 4'bxxxx)
-             $display("FAILED - 3.1.4C - initial value not xxxx;\n"); 
+           if(value1 !== 4'bxxxx)
+             begin
+               $display("FAILED - 3.1.4C - initial value not xxxx;\n"); 
+               err = 1;
+             end
            #10 ;
            if(value1 != 4'h5)
-             $display("FAILED - 3.1.4C - always # delay_value reg_lvalue = boolean_expr\n");
+             begin
+               $display("FAILED - 3.1.4C - always # delay_value reg_lvalue = boolean_expr\n");
+               err = 1;
+             end
            #10 ;
            if(value1 != 4'hA)
-             $display("FAILED - 3.1.4C - always # delay_value reg_lvalue = boolean_expr\n");
-           else
-              begin
-                 $display("PASSED\n");
-     	         $finish;                                                            
-              end
+             begin
+               $display("FAILED - 3.1.4C - always # delay_value reg_lvalue = boolean_expr\n");
+               err = 1;
+             end
+           
+           if (err == 0)
+             $display("PASSED\n");
+     	    
+           $finish;                                                            
            
         end
 
