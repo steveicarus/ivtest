@@ -1425,3 +1425,6 @@ pr1990269	normal	ivltests
 pr1992244	normal	ivltests
 pr1992729	normal	ivltests
 pr1993479	normal	ivltests diff=log/pr1993479.log:gold/pr1993479.gold
+cast_int	normal,-gverilog-ams	ivltests
+cast_real_signed	normal	ivltests
+cast_real_unsigned	normal	ivltests
