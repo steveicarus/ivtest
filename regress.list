@@ -1415,6 +1415,7 @@ tranif1		normal	ivltests
 simparam	normal	ivltests
 pr1983762	normal	ivltests
 pr1988302	normal	ivltests
+pr1988310	normal	ivltests
 dump_memword	normal	ivltests diff=work/test.vcd:gold/dump_memword.vcd:2
 parameter_type	normal	ivltests diff=log/parameter_type.log:gold/parameter_type.gold
 localparam_type	normal	ivltests diff=log/localparam_type.log:gold/parameter_type.gold

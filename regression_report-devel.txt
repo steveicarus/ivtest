@@ -1102,6 +1102,7 @@ test_mos_strength_reduction: Passed.
                    simparam: Passed.
                   pr1983762: Passed.
                   pr1988302: Passed.
+                  pr1988310: Passed.
                dump_memword: Passed.
              parameter_type: Passed.
             localparam_type: Passed.
@@ -1112,4 +1113,4 @@ test_mos_strength_reduction: Passed.
                   pr1992729: Passed.
                   pr1993479: Passed.
 ======================================================================
-Test results: Total=1111, Passed=1097, Failed=14, Not Implemented=0
+Test results: Total=1112, Passed=1098, Failed=14, Not Implemented=0
