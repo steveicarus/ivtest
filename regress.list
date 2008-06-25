@@ -126,6 +126,9 @@ v0.8:pr1864110a	NI
 v0.8:pr1864110b	NI
 v0.8:pr1864110c	NI
 v0.8:pr1864115	NI
+v0.8:cast_real_unsigned	NI
+v0.8:cast_real_signed	NI
+v0.8:cast_real_int	NI
 
 # V0.8 does not support indexed part selects.
 v0.8:param_select3	NI
@@ -1428,3 +1431,4 @@ pr1993479	normal	ivltests diff=log/pr1993479.log:gold/pr1993479.gold
 cast_int	normal,-gverilog-ams	ivltests
 cast_real_signed	normal	ivltests
 cast_real_unsigned	normal	ivltests
+pr2002443	CO,-E	ivltests
