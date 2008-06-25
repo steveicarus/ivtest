@@ -1115,5 +1115,6 @@ test_mos_strength_reduction: Passed.
                    cast_int: Passed.
            cast_real_signed: Passed.
          cast_real_unsigned: Passed.
+                  pr2002443: Passed - CO.
 ======================================================================
-Test results: Total=1115, Passed=1101, Failed=14, Not Implemented=0
+Test results: Total=1116, Passed=1102, Failed=14, Not Implemented=0
