@@ -792,7 +792,7 @@ test_mos_strength_reduction: Passed.
                   pr1444055: Passed.
                  pr1449749a: Passed.
                   pr1353345: Passed.
-                 pr1353345b: ==> Failed - running iverilog.
+                 pr1353345b: Passed.
                   pr1388974: Passed.
                   pr1421777: Passed.
                   pr1465769: Passed.
@@ -1117,4 +1117,4 @@ test_mos_strength_reduction: Passed.
          cast_real_unsigned: Passed.
                   pr2002443: Passed - CO.
 ======================================================================
-Test results: Total=1116, Passed=1102, Failed=14, Not Implemented=0
+Test results: Total=1116, Passed=1103, Failed=13, Not Implemented=0
