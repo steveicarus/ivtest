@@ -1433,3 +1433,6 @@ cast_real_signed	normal	ivltests
 cast_real_unsigned	normal	ivltests
 pr2002443	CO,-E	ivltests
 pr2011429	normal	ivltests
+pr2018235a	normal	ivltests
+pr2018235b	normal	ivltests
+pr2018305	normal	ivltests
