@@ -36,9 +36,9 @@ initial
              $display("FAILED - 3.1.4F - always # (mintypmax_dly)  reg_lvalue = boolean_expr\n");
            else
               begin
-                 $display("PASSED\n");
-     	         $finish;                                                            
+                 $display("PASSED\n");                                               
               end
+           $finish;             
            
         end
 

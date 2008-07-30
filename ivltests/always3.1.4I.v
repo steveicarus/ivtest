@@ -38,9 +38,9 @@ initial
              $display("FAILED - 3.1.4I - always @ (event_expression) reg_lvalue = boolean_expr;\n");
            else
               begin
-                 $display("PASSED\n");
-     	         $finish;                                                            
+                 $display("PASSED\n");                                                
               end
+           $finish;            
            
         end
 
