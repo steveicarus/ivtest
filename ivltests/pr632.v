@@ -5,7 +5,7 @@ reg [15:0] a1;
 
 initial
   begin
-    $monitor ("a1[0]=%b\n",a1);
+    $monitor ("a1[0]=%b",a1[0]);
     for (a1 = 16'h01; a1 != 16'h1f; a1 = a1 + 1)
         begin
            #1;
