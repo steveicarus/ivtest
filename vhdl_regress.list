@@ -9,3 +9,6 @@ blocking      normal  vhdl_tests
 always3.1.1C  normal  ivltests
 condit1       normal  ivltests
 basiclatch    normal  ivltests
+case1         normal  ivltests
+case2         normal  ivltests
+function1     normal  ivltests diff=log/function1.log:vhdl_gold/function1.gold
