@@ -13,4 +13,12 @@ basiclatch    normal  ivltests
 case1         normal  ivltests
 case2         normal  ivltests
 function1     normal  ivltests diff=log/function1.log:vhdl_gold/function1.gold
+tern1         normal  ivltests
 pr1903520     normal  ivltests
+
+bitsel        normal  ivltests diff=log/bitsel.log:vhdl_gold/bitsel.gold
+bitsel2       normal  ivltests
+bitsel3       normal  ivltests
+bitsel4       normal  ivltests
+bitsel5       normal  ivltests
+
