@@ -133,6 +133,9 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                deassign3.4A: Passed.
                 defparam3.5: Passed.
                    defparam: Passed.
+                  defparam2: Passed.
+                  defparam3: Passed.
+                  defparam4: Passed.
                 disable3.6A: Passed.
                 disable3.6B: Passed.
                disable_fork: Passed.
@@ -710,7 +713,7 @@ test_mos_strength_reduction: Passed.
                    negvalue: Passed.
                       pr434: Passed.
                       pr556: Passed.
-                      pr632: ==> Failed - output does not match gold file.
+                      pr632: Passed.
                       pr617: Passed.
                       pr673: Passed.
                       pr675: Passed.
@@ -1116,5 +1119,11 @@ test_mos_strength_reduction: Passed.
            cast_real_signed: Passed.
          cast_real_unsigned: Passed.
                   pr2002443: Passed - CO.
+                  pr2011429: Passed.
+                 pr2018235a: Passed.
+                 pr2018235b: Passed.
+                  pr2018305: Passed.
+                  pr2019553: Passed.
+                     macsub: Passed.
 ======================================================================
-Test results: Total=1116, Passed=1103, Failed=13, Not Implemented=0
+Test results: Total=1125, Passed=1113, Failed=12, Not Implemented=0

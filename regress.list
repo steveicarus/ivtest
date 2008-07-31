@@ -406,6 +406,9 @@ contrib8.5	normal	ivltests # Add the 4th optional argument -s test
 deassign3.4A	normal	ivltests
 defparam3.5	normal	ivltests		# defparam(single)
 defparam    normal  ivltests main	# defparams with list
+defparam2	normal	ivltests diff=log/defparam2.log:gold/defparam2.gold
+defparam3	normal	ivltests diff=log/defparam3.log:gold/defparam3.gold
+defparam4	normal	ivltests diff=log/defparam4.log:gold/defparam4.gold
 disable3.6A	normal	ivltests
 disable3.6B	normal	ivltests
 disable_fork	normal	ivltests
