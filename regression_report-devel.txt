@@ -1105,6 +1105,7 @@ test_mos_strength_reduction: Passed.
                     tranif1: Passed.
                    simparam: Passed.
                   pr1983762: Passed.
+                  pr1985582: Passed.
                   pr1988302: Passed.
                   pr1988310: Passed.
                dump_memword: Passed.
@@ -1127,4 +1128,4 @@ test_mos_strength_reduction: Passed.
                   pr2019553: Passed.
                      macsub: Passed.
 ======================================================================
-Test results: Total=1126, Passed=1114, Failed=12, Not Implemented=0
+Test results: Total=1127, Passed=1115, Failed=12, Not Implemented=0
