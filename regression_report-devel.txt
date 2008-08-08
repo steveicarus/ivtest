@@ -1129,5 +1129,6 @@ test_mos_strength_reduction: Passed.
                   pr2019553: Passed.
                      macsub: Passed.
                   pr2029336: Passed.
+                  pr2036953: Passed.
 ======================================================================
-Test results: Total=1129, Passed=1117, Failed=12, Not Implemented=0
+Test results: Total=1130, Passed=1118, Failed=12, Not Implemented=0
