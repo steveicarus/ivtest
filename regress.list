@@ -1448,3 +1448,4 @@ pr2029336	normal	ivltests diff=work/pr2029336.out:gold/pr2029336.gold
 pr2036953	normal	ivltests
 pr2038048	normal	ivltests
 pr2039632	CE	ivltests
+pr2039694	normal	ivltests diff=log/pr2039694.log:gold/pr2039694.gold
