@@ -6,15 +6,151 @@ counter       normal  vhdl_tests
 assign        normal  vhdl_tests
 blocking      normal  vhdl_tests
 constassign   normal  vhdl_tests
+readout       normal  vhdl_tests
 
-always3.1.1C  normal  ivltests
-condit1       normal  ivltests
-basiclatch    normal  ivltests
+partpv        CO      vhdl_tests
+
 case1         normal  ivltests
 case2         normal  ivltests
+case3         normal  ivltests
+case4         normal  ivltests
+case5         normal  ivltests
+case6         normal  ivltests
+case7         normal  ivltests
+
+casesynth1    normal  ivltests
+casesynth3    normal  ivltests
+
+dffsynth      normal  ivltests
+dffsynth2     normal  ivltests
+dffsynth4     normal  ivltests
+
+memsynth1     normal  ivltests
+memsynth2     normal  ivltests
+memsynth3     normal  ivltests
+memsynth4     normal  ivltests
+memsynth5     normal  ivltests
+memsynth7     normal  ivltests
+memsynth8     normal  ivltests
+memsynth9     normal  ivltests
+
+multireg      normal  ivltests
+condit1       normal  ivltests
+conditsynth1  normal  ivltests
+conditsynth2  normal  ivltests
+conditsynth3  normal  ivltests
+basiclatch    normal  ivltests
+basicstate    normal  ivltests
+basicstate2   normal  ivltests
+
+ssetclr1      normal  ivltests
+ssetclr2      normal  ivltests
+ssetclr3      normal  ivltests
+
+always3.1.11A normal  ivltests
+
+always3.1.1C  normal  ivltests
+always3.1.1D  normal  ivltests
+always3.1.1E  normal  ivltests
+always3.1.1F  normal  ivltests
+always3.1.1I  normal  ivltests
+always3.1.1J  normal  ivltests
+
+always3.1.4A  normal  ivltests
+always3.1.4B  normal  ivltests
+always3.1.4D  normal  ivltests
+always3.1.4E  normal  ivltests
+always3.1.4G  normal  ivltests
+
+always3.1.5A  normal  ivltests
+always3.1.5B  normal  ivltests
+always3.1.5C  normal  ivltests
+always3.1.5D  normal  ivltests
+always3.1.5E  normal  ivltests
+always3.1.5F  normal  ivltests
+
+always3.1.6D  normal  ivltests
+
+always3.1.7A  normal  ivltests
+always3.1.7B  normal  ivltests
+always3.1.7C  normal  ivltests
+always3.1.7D  normal  ivltests
+
+function3.11B normal  ivltests
+function3.11D normal  ivltests
+function3.11F normal  ivltests
+
+module3.12B   normal  ivltests
+
+ptest001      normal  ivltests
+ptest002      normal  ivltests
+ptest003      normal  ivltests
+ptest004      normal  ivltests
+ptest005      normal  ivltests
+ptest007      normal  ivltests
+ptest008      normal  ivltests
+ptest009      normal  ivltests
+ptest010      normal  ivltests
+
+qmark         normal  ivltests
+qmark1        normal  ivltests
+qmark3        normal  ivltests
+qmark5        normal  ivltests
+
+sdw_always1   normal  ivltests
+sdw_always2   normal  ivltests
+sdw_always3   normal  ivltests
+sdw_assign    normal  ivltests
+sdw_function1 normal  ivltests
+sdw_function2 noraml  ivltests
+sdw_int       normal  ivltests
+sdw_lvalconcat2 normal ivltests
+sdw_param1    normal  ivltests
+sdw_param2    normal  ivltests
+sdw_stmt002   normal  ivltests
+sdw_array     normal  ivltests
+sdw_instmod1  normal  ivltests
+sdw_instmod2  normal  ivltests
+
+z1            normal  ivltests
+z2            normal  ivltests
+landor1       normal  ivltests
+contrib8.4    normal  ivltests
+
+integer1lt    normal  ivltests
+integer2le    normal  ivltests
+integer3gt    normal  ivltests
+integer4ge    normal  ivltests
+
+time1         normal  ivltests
+time3         normal  ivltests
+time8         normal  ivltests
+
+wireadd1      normal  ivltests
+wiresl        normal  ivltests
+wiresr        normal  ivltests
+wiresub1      normal  ivltests
+wirexor1      normal  ivltests
+wirele        normal  ivltests
+wirege        normal  ivltests
+wireeq        normal  ivltests
+
+# ^^^ last one I checked
+
+# Out of order from here
+
 function1     normal  ivltests diff=log/function1.log:vhdl_gold/function1.gold
+
 tern1         normal  ivltests
+tern4         normal  ivltests
+
 pr1903520     normal  ivltests
+tri0          normal  ivltests
+tri0b         normal  ivltests
+tri1          normal  ivltests
+
+delay2        normal  ivltests
+delay3        normal  ivltests
 
 bitsel        normal  ivltests diff=log/bitsel.log:vhdl_gold/bitsel.gold
 bitsel2       normal  ivltests
@@ -22,3 +158,13 @@ bitsel3       normal  ivltests
 bitsel4       normal  ivltests
 bitsel5       normal  ivltests
 
+select        normal  ivltests
+
+unary_not     normal  ivltests
+unary_and     normal  ivltests
+unary_nand    normal  ivltests
+unary_nand2   normal  ivltests
+unary_or      normal  ivltests
+unary_nor     normal  ivltests
+unary_nor2    normal  ivltests
+unary_xor     normal  ivltests
