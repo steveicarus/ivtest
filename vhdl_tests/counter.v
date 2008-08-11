@@ -12,14 +12,14 @@ module testbench();
     enable <= 1;
     clk <= 0;
     clr <= 1;
-    #1;
+    #2;
     clr <= 0;
     #7;
     enable <= 0;
     if (q == 4'b0011)
       $display("PASSED");
     else
-      $display("FAILED -- counter not correct");
+      $display("FAILED -- counter not correct (%d)", q);
   end  
   
 endmodule // testbench
