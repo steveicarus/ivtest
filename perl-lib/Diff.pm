@@ -26,8 +26,10 @@ sub diff {
     # with just PASSED on it to indicate that the test worked correctly.
     #
     if ($gold eq "") {
-        open (LOG, "<$log") or
-            die "Error: unable to open $log for reading.\n";
+        open (LOG, "<$log") or do {
+            warn "Error: unable to open $log for reading.\n";
+            return 1;
+        };
 
         $diff = 1;
         # Loop on the log file lines looking for a "passed" by it self.
@@ -39,10 +41,14 @@ sub diff {
 
         close (LOG);
     } else {
-        open (GOLD, "<$gold") or
-            die "Error: unable to open $gold for reading.\n";
-        open (LOG, "<$log") or
-            die "Error: unable to open $log for reading.\n";
+        open (GOLD, "<$gold") or do {
+            warn "Error: unable to open $gold for reading.\n";
+            return 1;
+        };
+        open (LOG, "<$log") or do {
+            warn "Error: unable to open $log for reading.\n";
+            return 1;
+        };
 
         # Loop on the gold file lines.
         foreach $gline (<GOLD>) {
@@ -70,7 +76,7 @@ sub diff {
         close (GOLD);
     }
 
-    return $diff
+    return $diff;
 }
 
 1;  # Module loaded OK
