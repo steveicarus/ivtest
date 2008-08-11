@@ -1,5 +1,6 @@
 simv
 vsim
+pr2029336.out
 dfile
 *.vcd
 *.dump

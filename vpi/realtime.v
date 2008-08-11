@@ -4,10 +4,10 @@ module test;
 	// NOTE: These delays, when scaled to sim time,
 	// overflow 32bit deltas and cause vvp to fail.
 	#12345.6789;
-	$display("time = %0f", $time);
+	$display("time = %0f", $realtime);
 	$test(test);
 	#2345.67891;
-	$display("time = %0f", $time);
+	$display("time = %0f", $realtime);
 	$test(test);
     end
 endmodule
@@ -16,10 +16,10 @@ endmodule
 module test2;
     initial begin
 	#12345.6789;
-	$display("time = %0f", $time);
+	$display("time = %0f", $realtime);
 	$test(test2);
 	#2345.67891;
-	$display("time = %0f", $time);
+	$display("time = %0f", $realtime);
 	$test(test2);
     end
 endmodule
