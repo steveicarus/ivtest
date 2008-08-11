@@ -1,9 +1,10 @@
 simv
 vsim
-pr2029336.out
 dfile
 *.vcd
 *.dump
 *.o
 *.vpi
 regression_report.txt
+vhdl_regression_report.txt
+vhdl

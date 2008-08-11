@@ -1,5 +1,6 @@
 fopen2.out*
 fdisplay2.out
+pr2029336.out
 *.vcd
 *.dump
 temp.txt
