@@ -68,15 +68,15 @@ module top;
 
     in = 1.0/0.0;
     #1;
-    if (out !== 8'b11111111) begin
-      $display("Failed: +inf expected 8'b11111111, got %b", out);
+    if (out !== 8'bxxxxxxxx) begin
+      $display("Failed: +inf expected 8'bxxxxxxxx, got %b", out);
       pass = 1'b0;
     end
 
     in = -1.0/0.0;
     #1;
-    if (out !== 8'b00000000) begin
-      $display("Failed: -inf expected 8'b00000000, got %b", out);
+    if (out !== 8'bxxxxxxxx) begin
+      $display("Failed: -inf expected 8'bxxxxxxxx, got %b", out);
       pass = 1'b0;
     end
 
