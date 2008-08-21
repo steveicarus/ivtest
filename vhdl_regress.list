@@ -7,6 +7,7 @@ assign        normal  vhdl_tests
 blocking      normal  vhdl_tests
 constassign   normal  vhdl_tests
 readout       normal  vhdl_tests
+autof         normal  vhdl_tests
 
 partpv        CO      vhdl_tests
 
