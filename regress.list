@@ -1345,6 +1345,7 @@ generate_case	normal	ivltests
 generate_case2	normal	ivltests
 real_pulse_clean	normal	ivltests
 pr1892959	normal	ivltests
+pr1892959b	normal	ivltests
 pr1898293	normal	ivltests
 pr1898983	normal	ivltests diff=log/pr1898983.log:gold/pr1898983.gold
 compare_bool_reg	normal	ivltests
