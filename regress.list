@@ -187,10 +187,12 @@ v0.8:pr1869772	NI	# Right shift as argument to user function.
 v0.8:pr1869781	NI	# Runtime is missing %assign/x0/d opcode.
 v0.8:task_iotypes2	NI	# Port types are not supported (integer, etc.).
 
-# V0.8 does not support $scanf.
+# V0.8 does not support $sscanf/$fscanf.
 v0.8:scanf	NI
 v0.8:scanf2	NI
 v0.8:scanf3	NI
+v0.8:pr1687193	NI
+v0.8:pr1876798	NI
 
 # V0.8 does not support $sdf_annotate.
 v0.8:sdf1	NI
@@ -203,12 +205,13 @@ v0.8:sdf6	NI
 # Other system tasks missing in V0.8.
 v0.8:pr1491355	NI	# $realtobits not supported in continuous assignments.
 v0.8:fileio	NI	# $fopen{r,w,a) not supported.
-v0.8:pr1687193	NI	# $sscanf not supported.
 v0.8:pr1698820	NI	# $fwrite{b,h,o} not supported.
 v0.8:pr1819452	NI	# $feof, $ftell, $frewind and $fseek not supported.
 v0.8:swrite	NI      # $swrite not supported.
 v0.8:urand	NI	# $urandom not supported.
 v0.8:urand_r	NI	# $urandom_range not supported.
+v0.8:clog2	NI	# $clog2 not supported.
+v0.8:multi_bit_strength	NI	# $swrite not supported.
 
 # V0.8 does not have the VA math library installed by default.
 # Install the standalone library to get this functionality.
@@ -1453,5 +1456,6 @@ pr2039694	normal	ivltests diff=log/pr2039694.log:gold/pr2039694.gold
 pr2043324	normal	ivltests
 pr2043585	normal	ivltests diff=log/pr2043585.log:gold/pr2043585.gold
 pr2051694	CE	ivltests
+pr2051975	CE	ivltests
 pr2053944	normal	ivltests diff=log/pr2053944.log:gold/pr2053944.gold
 clog2	normal	ivltests
