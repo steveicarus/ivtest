@@ -1026,6 +1026,7 @@ test_mos_strength_reduction: Passed.
              generate_case2: Passed.
            real_pulse_clean: Passed.
                   pr1892959: Passed.
+                 pr1892959b: Passed.
                   pr1898293: Passed.
                   pr1898983: Passed.
            compare_bool_reg: Passed.
@@ -1124,6 +1125,7 @@ test_mos_strength_reduction: Passed.
                   pr2002443: Passed - CO.
                   pr2011429: Passed.
                   pr2013758: Passed.
+                  pr2014673: ==> Failed - output does not match gold file.
                  pr2018235a: Passed.
                  pr2018235b: Passed.
                   pr2018305: Passed.
@@ -1137,6 +1139,8 @@ test_mos_strength_reduction: Passed.
                   pr2043324: Passed.
                   pr2043585: Passed.
                   pr2051694: Passed - CE.
+                  pr2051975: Passed - CE.
                   pr2053944: Passed.
+                      clog2: Passed.
 ======================================================================
-Test results: Total=1138, Passed=1126, Failed=12, Not Implemented=0
+Test results: Total=1142, Passed=1129, Failed=13, Not Implemented=0
