@@ -611,7 +611,7 @@ test_mos_strength_reduction: Passed.
                       pr338: Passed - CO.
                      shift1: Passed.
                      shift2: Passed.
-                     shift3: ==> Failed - output does not match gold file.
+                     shift3: Passed.
                      shift4: Passed.
                      shift5: Passed.
                       pr243: Passed.
@@ -1146,4 +1146,4 @@ test_mos_strength_reduction: Passed.
                   pr2076363: Passed.
                   pr2076391: Passed.
 ======================================================================
-Test results: Total=1145, Passed=1132, Failed=13, Not Implemented=0
+Test results: Total=1145, Passed=1133, Failed=12, Not Implemented=0
