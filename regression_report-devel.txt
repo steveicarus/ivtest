@@ -1145,5 +1145,6 @@ test_mos_strength_reduction: Passed.
                       clog2: Passed.
                   pr2076363: Passed.
                   pr2076391: Passed.
+                  pr2076425: Passed.
 ======================================================================
-Test results: Total=1145, Passed=1133, Failed=12, Not Implemented=0
+Test results: Total=1146, Passed=1134, Failed=12, Not Implemented=0

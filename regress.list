@@ -1464,3 +1464,4 @@ pr2053944	normal	ivltests diff=log/pr2053944.log:gold/pr2053944.gold
 clog2	normal	ivltests
 pr2076363	normal	ivltests
 pr2076391	normal	ivltests diff=log/pr2076391.log:gold/pr2076391.gold
+pr2076425	normal	ivltests
