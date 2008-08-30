@@ -1,10 +1,10 @@
 /**********************************************************************
- * $pow example -- PLI application using VPI routines
+ * $my_pow example -- PLI application using VPI routines
  *
  * C source to calculate the result of a number to the power of an
  * exponent. The result is returned as a 32-bit integer.
  *
- * Usage: result = $pow(<base>,<exponent>);
+ * Usage: result = $my_pow(<base>,<exponent>);
  *
  * For the book, "The Verilog PLI Handbook" by Stuart Sutherland
  *  Copyright 1999 & 2001, Kluwer Academic Publishers, Norwell, MA, USA
@@ -37,7 +37,7 @@ static PLI_INT32 PLIbook_PowCompiletf(PLI_BYTE8 *user_data);
 static PLI_INT32 PLIbook_PowStartOfSim(s_cb_data *callback_data);
 
 /**********************************************************************
- * $pow Registration Data
+ * $my_pow Registration Data
  * (add this function name to the vlog_startup_routines array)
  *********************************************************************/
 void PLIbook_pow_register()
@@ -48,7 +48,7 @@ void PLIbook_pow_register()
 
   tf_data.type        = vpiSysFunc;
   tf_data.sysfunctype = vpiSysFuncSized;
-  tf_data.tfname      = "$pow";
+  tf_data.tfname      = "$my_pow";
   tf_data.calltf      = PLIbook_PowCalltf;
   tf_data.compiletf   = PLIbook_PowCompiletf;
   tf_data.sizetf      = PLIbook_PowSizetf;
@@ -74,8 +74,8 @@ static PLI_INT32 PLIbook_PowSizetf(char *user_data)
 static PLI_INT32 PLIbook_PowSizetf(PLI_BYTE8 *user_data)
 #endif
 {
-  vpi_printf("\n$pow PLI sizetf function.\n\n");
-  return(32);   /* $pow returns 32-bit values */
+  vpi_printf("\n$my_pow PLI sizetf function.\n\n");
+  return(32);   /* $my_pow returns 32-bit values */
 }
 
 /**********************************************************************
@@ -91,13 +91,13 @@ static PLI_INT32 PLIbook_PowCompiletf(PLI_BYTE8 *user_data)
   PLI_INT32 tfarg_type;
   int       err_flag = 0;
 
-  vpi_printf("\n$pow PLI compiletf function.\n\n");
+  vpi_printf("\n$my_pow PLI compiletf function.\n\n");
 
   do { /* group all tests, so can break out of group on error */
     systf_handle = vpi_handle(vpiSysTfCall, NULL);
     arg_itr = vpi_iterate(vpiArgument, systf_handle);
     if (arg_itr == NULL) {
-      vpi_printf("ERROR: $pow requires 2 arguments; has none\n");
+      vpi_printf("ERROR: $my_pow requires 2 arguments; has none\n");
       err_flag = 1;
       break;
     }
@@ -106,13 +106,13 @@ static PLI_INT32 PLIbook_PowCompiletf(PLI_BYTE8 *user_data)
     if ( (tfarg_type != vpiReg) &&
          (tfarg_type != vpiIntegerVar) &&
          (tfarg_type != vpiConstant)   ) {
-      vpi_printf("ERROR: $pow arg1 must be number, variable or net\n");
+      vpi_printf("ERROR: $my_pow arg1 must be number, variable or net\n");
       err_flag = 1;
       break;
     }
     arg_handle = vpi_scan(arg_itr);
     if (arg_handle == NULL) {
-      vpi_printf("ERROR: $pow requires 2nd argument\n");
+      vpi_printf("ERROR: $my_pow requires 2nd argument\n");
       err_flag = 1;
       break;
     }
@@ -120,12 +120,12 @@ static PLI_INT32 PLIbook_PowCompiletf(PLI_BYTE8 *user_data)
     if ( (tfarg_type != vpiReg) &&
          (tfarg_type != vpiIntegerVar) &&
          (tfarg_type != vpiConstant)   ) {
-      vpi_printf("ERROR: $pow arg2 must be number, variable or net\n");
+      vpi_printf("ERROR: $my_pow arg2 must be number, variable or net\n");
       err_flag = 1;
       break;
     }
     if (vpi_scan(arg_itr) != NULL) {
-      vpi_printf("ERROR: $pow requires 2 arguments; has too many\n");
+      vpi_printf("ERROR: $my_pow requires 2 arguments; has too many\n");
       vpi_free_object(arg_itr);
       err_flag = 1;
       break;
@@ -153,12 +153,12 @@ static PLI_INT32 PLIbook_PowCalltf(PLI_BYTE8 *user_data)
   PLI_INT32   base, exp;
   double      result;
 
-  vpi_printf("\n$pow PLI calltf function.\n\n");
+  vpi_printf("\n$my_pow PLI calltf function.\n\n");
 
   systf_handle = vpi_handle(vpiSysTfCall, NULL);
   arg_itr = vpi_iterate(vpiArgument, systf_handle);
   if (arg_itr == NULL) {
-    vpi_printf("ERROR: $pow failed to obtain systf arg handles\n");
+    vpi_printf("ERROR: $my_pow failed to obtain systf arg handles\n");
     return(0);
   }
 
@@ -177,7 +177,7 @@ static PLI_INT32 PLIbook_PowCalltf(PLI_BYTE8 *user_data)
   /* calculate result of base to power of exponent */
   result = pow( (double)base, (double)exp );
 
-  /* write result to simulation as return value $pow */
+  /* write result to simulation as return value $my_pow */
   value_s.value.integer = (PLI_INT32)result;
   vpi_put_value(systf_handle, &value_s, NULL, vpiNoDelay);
   return(0);
@@ -188,7 +188,7 @@ static PLI_INT32 PLIbook_PowCalltf(PLI_BYTE8 *user_data)
  *********************************************************************/
 static PLI_INT32 PLIbook_PowStartOfSim(s_cb_data *callback_data)
 {
-  vpi_printf("\n$pow StartOfSim callback.\n\n");
+  vpi_printf("\n$my_pow StartOfSim callback.\n\n");
   return(0);
 }
 /*********************************************************************/

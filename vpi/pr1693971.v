@@ -1,7 +1,7 @@
 /**********************************************************************
- * $pow example -- Verilog HDL test bench.
+ * $my_pow example -- Verilog HDL test bench.
  *
- * Verilog test bench to test the $pow PLI application.
+ * Verilog test bench to test the $my_pow PLI application.
  *
  * For the book, "The Verilog PLI Handbook" by Stuart Sutherland
  *  Copyright 1999 & 2001, Kluwer Academic Publishers, Norwell, MA, USA
@@ -20,19 +20,19 @@ module test;
       $display("Start simulation pow_test.v");
       a = 1;
       b = 0;
-      /* Test $pow with invalid arguments */
+      /* Test $my_pow with invalid arguments */
       /* These invalid calls will need to be commented out to use */
-      /* the valid calls to $pow in simulation */
-//      #1 result = $pow;
-//      #1 result = $pow();
-//      #1 result = $pow(1);
-//      #1 result = $pow(2,i1);
-//      #1 result = $pow(1,2,3);
+      /* the valid calls to $my_pow in simulation */
+//      #1 result = $my_pow;
+//      #1 result = $my_pow();
+//      #1 result = $my_pow(1);
+//      #1 result = $my_pow(2,i1);
+//      #1 result = $my_pow(1,2,3);
 
-      /* Test $pow with valid values */
-      #1 $display("$pow(2,3) returns %d", $pow(2,3));
-      #1 result = $pow(a,b);
-      #1 $display("$pow(a,b) returns %d (a=%d b=%d)", result, a, b);
+      /* Test $my_pow with valid values */
+      #1 $display("$my_pow(2,3) returns %d", $my_pow(2,3));
+      #1 result = $my_pow(a,b);
+      #1 $display("$my_pow(a,b) returns %d (a=%d b=%d)", result, a, b);
 //      #1 $stop;
       #1 $finish;
     end
