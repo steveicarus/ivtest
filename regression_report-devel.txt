@@ -1148,5 +1148,6 @@ test_mos_strength_reduction: Passed.
                   pr2076425: Passed.
                  v2005_math: Passed.
                     va_math: Passed.
+                  pr2085984: Passed.
 ======================================================================
-Test results: Total=1148, Passed=1136, Failed=12, Not Implemented=0
+Test results: Total=1149, Passed=1137, Failed=12, Not Implemented=0

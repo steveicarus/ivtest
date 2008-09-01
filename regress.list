@@ -1467,3 +1467,4 @@ pr2076391	normal	ivltests diff=log/pr2076391.log:gold/pr2076391.gold
 pr2076425	normal	ivltests
 v2005_math	normal	ivltests
 va_math	normal	ivltests
+pr2085984	normal	ivltests
