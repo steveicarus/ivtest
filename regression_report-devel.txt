@@ -59,7 +59,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                always3.1.1H: Passed.
                always3.1.1I: Passed.
                always3.1.1J: Passed.
-               always3.1.1K: ==> Failed - running iverilog.
+               always3.1.1K: Passed.
                always3.1.2A: Passed - CE.
                always3.1.2B: Passed - CE.
                always3.1.2C: Passed - CE.
@@ -1150,5 +1150,6 @@ test_mos_strength_reduction: Passed.
                     va_math: Passed.
                   pr2085984: Passed.
                   pr2091455: Passed.
+         blocking_repeat_ec: Passed.
 ======================================================================
-Test results: Total=1150, Passed=1138, Failed=12, Not Implemented=0
+Test results: Total=1151, Passed=1140, Failed=11, Not Implemented=0

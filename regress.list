@@ -335,7 +335,7 @@ always3.1.1G	normal	ivltests
 always3.1.1H	normal	ivltests
 always3.1.1I	normal	ivltests
 always3.1.1J	normal	ivltests
-always3.1.1K	CO	ivltests
+always3.1.1K	normal	ivltests
 always3.1.2A	CE	ivltests
 always3.1.2B	CE	ivltests
 always3.1.2C	CE	ivltests
@@ -1469,3 +1469,4 @@ v2005_math	normal	ivltests
 va_math	normal	ivltests
 pr2085984	normal	ivltests
 pr2091455	normal	ivltests diff=log/pr2091455.log:gold/pr2091455.gold
+blocking_repeat_ec	normal	ivltests
