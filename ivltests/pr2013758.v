@@ -5,8 +5,8 @@ module test;
 
    reg reset;
    initial begin
-      $dumpfile( "test.vcd" );
-      $dumpvars;
+//      $dumpfile( "test.vcd" );
+//      $dumpvars;
 
       reset = 0;
       #100;
