@@ -61,6 +61,8 @@ v0.8:listparams  normal listparams.c  listparams-v0.8.log -DIVERILOG_V0_8
 v0.8:pr1693971   normal pr1693971.c   pr1693971.log       -DIVERILOG_V0_8
 # V0.8 does not support vpiModPath!
 v0.8:spec_delays NI     spec_delays.c spec_delays.log     -DIVERILOG_V0_8
+# V0.8 does not support a callback using vpiScaledRealTime
+v0.8:pr2048463   NI     pr2048463.c   pr2048463.log       -DIVERILOG_V0_8
 
 # Add v0.8 overrides here.
 
@@ -101,6 +103,7 @@ memmon           normal memmon.c      memmon.log
 listparams       normal listparams.c  listparams.log
 pr1693971        normal pr1693971.c   pr1693971.log
 spec_delays      normal spec_delays.c spec_delays.log
+pr2048463        normal pr2048463.c   pr2048463.log
 
 # Add new tests here. If the test needs a compile option or a
 # different log file to run with an older versions or if it uses
