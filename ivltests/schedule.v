@@ -30,7 +30,7 @@ module main;
 
    wire test = a == 1'b1;
 
-   always wait (test) begin
+   always #1 wait (test) begin
       if (a !== 1'b1) begin
 	 $display("FAILED -- a == %b, test == %b", a, test);
 	 $finish;
@@ -42,8 +42,8 @@ module main;
    initial begin
       a = 0;
 
-      #1 a = 1;
-      #1 a = 0;
-      #1 $display("PASSED");
+      #10 a = 1;
+      #10 a = 0;
+      #10 $display("PASSED");
    end
 endmodule // main
