@@ -1470,3 +1470,4 @@ va_math	normal	ivltests
 pr2085984	normal	ivltests
 pr2091455	normal	ivltests diff=log/pr2091455.log:gold/pr2091455.gold
 blocking_repeat_ec	normal	ivltests
+nb_assign	normal	ivltests

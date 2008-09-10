@@ -524,7 +524,7 @@ test_mos_strength_reduction: Passed.
                      memidx: Passed.
                   memidxrng: Passed.
                    mem2port: Passed.
-                    vcd-dup: Passed.
+                    vcd-dup: ==> Failed - output does not match gold file.
                     resolv1: Passed.
                       pr307: Passed.
                      pr307a: Passed.
@@ -1005,7 +1005,7 @@ test_mos_strength_reduction: Passed.
                  pr1875866b: Passed.
                   pr1876798: Passed.
                   pr1877740: Passed.
-                  pr1877743: Passed.
+                  pr1877743: ==> Failed - output does not match gold file.
                   pr1878909: Passed.
                   pr1879226: Passed.
                   pr1880003: Passed.
@@ -1125,7 +1125,7 @@ test_mos_strength_reduction: Passed.
                   pr2002443: Passed - CO.
                   pr2011429: Passed.
                   pr2013758: Passed.
-                  pr2014673: ==> Failed - output does not match gold file.
+                  pr2014673: Passed.
                  pr2018235a: Passed.
                  pr2018235b: Passed.
                   pr2018305: Passed.
@@ -1151,5 +1151,6 @@ test_mos_strength_reduction: Passed.
                   pr2085984: Passed.
                   pr2091455: Passed.
          blocking_repeat_ec: Passed.
+                  nb_assign: Passed.
 ======================================================================
-Test results: Total=1151, Passed=1141, Failed=10, Not Implemented=0
+Test results: Total=1152, Passed=1141, Failed=11, Not Implemented=0
