@@ -1474,3 +1474,4 @@ nb_assign	normal	ivltests
 nb_delay	normal	ivltests
 nb_ec_real	normal	ivltests
 ca_var_delay	normal	ivltests
+pr2015466	normal	ivltests

@@ -1154,5 +1154,7 @@ test_mos_strength_reduction: Passed.
                   nb_assign: Passed.
                    nb_delay: Passed.
                  nb_ec_real: Passed.
+               ca_var_delay: ==> Failed - output does not match gold file.
+                  pr2015466: Passed.
 ======================================================================
-Test results: Total=1154, Passed=1146, Failed=8, Not Implemented=0
+Test results: Total=1156, Passed=1147, Failed=9, Not Implemented=0
