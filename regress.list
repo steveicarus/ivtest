@@ -342,9 +342,9 @@ always3.1.2C	CE	ivltests
 always3.1.2D	CE	ivltests
 always3.1.2E	CE,-Ttyp ivltests
 always3.1.2F	CE,-Ttyp ivltests
-always3.1.2G	CO	ivltests
-always3.1.2H	CO	ivltests
-always3.1.2I	CO	ivltests
+always3.1.2G	CE	ivltests
+always3.1.2H	CE	ivltests
+always3.1.2I	CE	ivltests
 always3.1.3A	CE	ivltests
 always3.1.3B	CE	ivltests
 always3.1.3B2	normal	ivltests
@@ -1471,3 +1471,5 @@ pr2085984	normal	ivltests
 pr2091455	normal	ivltests diff=log/pr2091455.log:gold/pr2091455.gold
 blocking_repeat_ec	normal	ivltests
 nb_assign	normal	ivltests
+nb_delay	normal	ivltests
+nb_ec_real	normal	ivltests
