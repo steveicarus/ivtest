@@ -1476,3 +1476,4 @@ nb_delay	normal	ivltests
 nb_ec_real	normal	ivltests
 ca_var_delay	normal	ivltests
 pr2109179	normal	ivltests
+delay_var	normal	ivltests diff=log/delay_var.log:gold/delay_var.gold
