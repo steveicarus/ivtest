@@ -1255,6 +1255,7 @@ pr1780480	normal	ivltests diff=log/pr1780480.log:gold/pr1780480.gold
 pr1784984	normal	ivltests
 pr1787394a	normal	ivltests diff=log/pr1787394a.log:gold/pr1787394a.gold
 pr1787394b	normal	ivltests diff=log/pr1787394b.log:gold/pr1787394a.gold
+pr1787423	normal	ivltests diff=log/pr1787423.log:gold/pr1787423.gold
 cmos	normal	ivltests diff=log/cmos.log:gold/cmos.gold
 pr1792108	normal	ivltests diff=log/pr1792108.log:gold/pr1792108.gold
 pr1792152	normal	ivltests diff=log/pr1792152.log:gold/pr1792152.gold
@@ -1477,3 +1478,4 @@ nb_ec_real	normal	ivltests
 ca_var_delay	normal	ivltests
 pr2109179	normal	ivltests
 delay_var	normal	ivltests diff=log/delay_var.log:gold/delay_var.gold
+no_timescale_in_module	CE	ivltests
