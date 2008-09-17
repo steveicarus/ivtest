@@ -1256,6 +1256,7 @@ pr1784984	normal	ivltests
 pr1787394a	normal	ivltests diff=log/pr1787394a.log:gold/pr1787394a.gold
 pr1787394b	normal	ivltests diff=log/pr1787394b.log:gold/pr1787394a.gold
 pr1787423	normal	ivltests diff=log/pr1787423.log:gold/pr1787423.gold
+pr1787423b	normal	ivltests
 cmos	normal	ivltests diff=log/cmos.log:gold/cmos.gold
 pr1792108	normal	ivltests diff=log/pr1792108.log:gold/pr1792108.gold
 pr1792152	normal	ivltests diff=log/pr1792152.log:gold/pr1792152.gold

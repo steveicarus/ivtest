@@ -937,6 +937,7 @@ test_mos_strength_reduction: Passed.
                  pr1787394a: Passed.
                  pr1787394b: Passed.
                   pr1787423: Passed.
+                 pr1787423b: Passed.
                        cmos: Passed.
                   pr1792108: Passed.
                   pr1792152: Passed.
@@ -1161,4 +1162,4 @@ test_mos_strength_reduction: Passed.
                   delay_var: Passed.
      no_timescale_in_module: Passed - CE.
 ======================================================================
-Test results: Total=1160, Passed=1152, Failed=8, Not Implemented=0
+Test results: Total=1161, Passed=1153, Failed=8, Not Implemented=0
