@@ -1165,5 +1165,6 @@ test_mos_strength_reduction: Passed.
                   pr2109179: Passed.
                   delay_var: Passed.
      no_timescale_in_module: Passed - CE.
+              scoped_events: Passed.
 ======================================================================
-Test results: Total=1165, Passed=1157, Failed=8, Not Implemented=0
+Test results: Total=1166, Passed=1158, Failed=8, Not Implemented=0
