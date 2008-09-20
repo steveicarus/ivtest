@@ -1477,6 +1477,7 @@ blocking_repeat_ec	normal	ivltests
 nb_assign	normal	ivltests
 nb_delay	normal	ivltests
 nb_ec_pv	normal	ivltests
+nb_ec_pv2	normal	ivltests
 nb_ec_real	normal	ivltests
 nb_ec_vector	normal	ivltests
 ca_var_delay	normal	ivltests

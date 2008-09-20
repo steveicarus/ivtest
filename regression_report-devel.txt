@@ -1157,10 +1157,13 @@ test_mos_strength_reduction: Passed.
          blocking_repeat_ec: Passed.
                   nb_assign: Passed.
                    nb_delay: Passed.
+                   nb_ec_pv: Passed.
+                  nb_ec_pv2: Passed.
                  nb_ec_real: Passed.
+               nb_ec_vector: Passed.
                ca_var_delay: Passed.
                   pr2109179: Passed.
                   delay_var: Passed.
      no_timescale_in_module: Passed - CE.
 ======================================================================
-Test results: Total=1162, Passed=1154, Failed=8, Not Implemented=0
+Test results: Total=1165, Passed=1157, Failed=8, Not Implemented=0
