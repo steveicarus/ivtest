@@ -1476,7 +1476,9 @@ pr2091455	normal	ivltests diff=log/pr2091455.log:gold/pr2091455.gold
 blocking_repeat_ec	normal	ivltests
 nb_assign	normal	ivltests
 nb_delay	normal	ivltests
+nb_ec_pv	normal	ivltests
 nb_ec_real	normal	ivltests
+nb_ec_vector	normal	ivltests
 ca_var_delay	normal	ivltests
 pr2109179	normal	ivltests
 delay_var	normal	ivltests diff=log/delay_var.log:gold/delay_var.gold
