@@ -1485,3 +1485,6 @@ pr2109179	normal	ivltests
 delay_var	normal	ivltests diff=log/delay_var.log:gold/delay_var.gold
 no_timescale_in_module	CE	ivltests
 scoped_events	normal	ivltests diff=log/scoped_events.log:gold/scoped_events.gold
+nb_array_pv	normal	ivltests
+nb_ec_array	normal	ivltests
+nb_ec_array_pv	normal	ivltests

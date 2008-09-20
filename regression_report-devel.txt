@@ -1166,5 +1166,8 @@ test_mos_strength_reduction: Passed.
                   delay_var: Passed.
      no_timescale_in_module: Passed - CE.
               scoped_events: Passed.
+                nb_array_pv: Passed.
+                nb_ec_array: Passed.
+             nb_ec_array_pv: Passed.
 ======================================================================
-Test results: Total=1166, Passed=1158, Failed=8, Not Implemented=0
+Test results: Total=1169, Passed=1161, Failed=8, Not Implemented=0
