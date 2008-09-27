@@ -1489,3 +1489,8 @@ nb_array_pv	normal	ivltests
 nb_ec_array	normal	ivltests
 nb_ec_array_pv	normal	ivltests
 pr2117473	normal	ivltests
+pr2117488	normal	ivltests
+automatic_task	normal	ivltests diff=log/automatic_task.log:gold/automatic_task.gold
+nested_func	normal	ivltests diff=log/nested_func.log:gold/nested_func.gold
+recursive_func	normal	ivltests diff=log/recursive_func.log:gold/recursive_func.gold
+recursive_task	normal	ivltests diff=log/recursive_task.log:gold/recursive_task.gold

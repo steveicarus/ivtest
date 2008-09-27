@@ -1170,5 +1170,10 @@ test_mos_strength_reduction: Passed.
                 nb_ec_array: Passed.
              nb_ec_array_pv: Passed.
                   pr2117473: Passed.
+                  pr2117488: ==> Failed - output does not match gold file.
+             automatic_task: Passed.
+                nested_func: Passed.
+             recursive_func: Passed.
+             recursive_task: Passed.
 ======================================================================
-Test results: Total=1170, Passed=1162, Failed=8, Not Implemented=0
+Test results: Total=1175, Passed=1166, Failed=9, Not Implemented=0
