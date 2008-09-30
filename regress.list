@@ -1495,3 +1495,4 @@ nested_func	normal	ivltests diff=log/nested_func.log:gold/nested_func.gold
 recursive_func	normal	ivltests diff=log/recursive_func.log:gold/recursive_func.gold
 recursive_task	normal	ivltests diff=log/recursive_task.log:gold/recursive_task.gold
 pr2119622	normal	ivltests diff=log/pr2119622.log:gold/pr2119622.gold
+pr2123190	normal	ivltests
