@@ -28,7 +28,7 @@ module top;
   end
 
   initial #1.1 $display("Should be 1.1: ", $realtime);  // This should be 1.1
-  initial #pdly $display("Should be 1.3: ", $realtime);  // This should be 1.2
+  initial #pdly $display("Should be 1.2: ", $realtime);  // This should be 1.2
   initial begin
     #0; // We need this so that rdly has a defined value.
     #rdly $display("Should be 1.3: ", $realtime);  // This should be 1.3
