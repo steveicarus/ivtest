@@ -1176,6 +1176,7 @@ test_mos_strength_reduction: Passed.
              recursive_func: Passed.
              recursive_task: Passed.
                   pr2119622: Passed.
+                  pr2121536: Passed.
                   pr2123158: Passed.
                   pr2123190: Passed.
                   pr2136787: Passed.
@@ -1184,4 +1185,4 @@ test_mos_strength_reduction: Passed.
                  pr2138979c: Passed.
                   pr2139593: Passed.
 ======================================================================
-Test results: Total=1183, Passed=1175, Failed=8, Not Implemented=0
+Test results: Total=1184, Passed=1176, Failed=8, Not Implemented=0
