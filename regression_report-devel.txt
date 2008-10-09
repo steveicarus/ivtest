@@ -1179,6 +1179,7 @@ test_mos_strength_reduction: Passed.
                   pr2121536: Passed.
                   pr2123158: Passed.
                   pr2123190: Passed.
+                  pr2132552: Passed.
                   pr2136787: Passed.
                   pr2138682: Passed.
                   pr2138979: Passed.
@@ -1186,5 +1187,25 @@ test_mos_strength_reduction: Passed.
                  pr2138979c: Passed.
                   pr2139593: Passed.
                   pr2146620: Passed.
+           check_constant_1: Passed - CE.
+           check_constant_2: Passed - CE.
+           check_constant_3: Passed - CE.
+           check_constant_4: Passed - CE.
+           check_constant_5: Passed - CE.
+           check_constant_6: Passed - CE.
+           check_constant_7: Passed - CE.
+           check_constant_8: Passed - CE.
+           check_constant_9: Passed - CE.
+          check_constant_10: Passed - CE.
+          check_constant_11: Passed - CE.
+          check_constant_12: Passed - CE.
+          check_constant_13: Passed - CE.
+          check_constant_14: Passed - CE.
+          check_constant_15: Passed - CE.
+          check_constant_16: Passed - CE.
+          check_constant_17: Passed - CE.
+          check_constant_18: Passed - CE.
+          check_constant_19: Passed - CE.
+          check_constant_20: Passed - CE.
 ======================================================================
-Test results: Total=1186, Passed=1178, Failed=8, Not Implemented=0
+Test results: Total=1207, Passed=1199, Failed=8, Not Implemented=0
