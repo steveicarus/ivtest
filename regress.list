@@ -1498,6 +1498,7 @@ pr2119622	normal	ivltests diff=log/pr2119622.log:gold/pr2119622.gold
 pr2121536	normal	ivltests
 pr2123158	normal	ivltests
 pr2123190	normal	ivltests
+pr2132552	normal	ivltests diff=log/pr2132552.log:gold/pr2132552.gold
 pr2136787	normal	ivltests diff=log/pr2136787.log:gold/pr2136787.gold
 pr2138682	normal	ivltests diff=log/pr2138682.log:gold/pr2138682.gold
 pr2138979	normal	ivltests
@@ -1505,3 +1506,23 @@ pr2138979b	normal	ivltests diff=log/pr2138979b.log:gold/pr2138979b.gold
 pr2138979c	normal	ivltests diff=log/pr2138979c.log:gold/pr2138979c.gold
 pr2139593	normal	ivltests
 pr2146620	normal	ivltests diff=log/pr2146620.log:gold/pr2146620.gold
+check_constant_1	CE ivltests
+check_constant_2	CE ivltests
+check_constant_3	CE ivltests
+check_constant_4	CE ivltests
+check_constant_5	CE ivltests
+check_constant_6	CE ivltests
+check_constant_7	CE ivltests
+check_constant_8	CE ivltests
+check_constant_9	CE ivltests
+check_constant_10	CE ivltests
+check_constant_11	CE ivltests
+check_constant_12	CE ivltests
+check_constant_13	CE ivltests
+check_constant_14	CE ivltests
+check_constant_15	CE ivltests
+check_constant_16	CE ivltests
+check_constant_17	CE ivltests
+check_constant_18	CE ivltests
+check_constant_19	CE ivltests
+check_constant_20	CE ivltests
