@@ -1188,6 +1188,8 @@ test_mos_strength_reduction: Passed.
                  pr2138979d: Passed.
                   pr2139593: Passed.
                   pr2146620: Passed.
+                 pr2146620b: Passed.
+                 pr2146620c: Passed.
                   pr2146824: Passed.
                   pr2148401: Passed.
                   pr2152011: Passed.
@@ -1213,4 +1215,4 @@ test_mos_strength_reduction: Passed.
           check_constant_20: Passed - CE.
                   pr2159630: Passed.
 ======================================================================
-Test results: Total=1212, Passed=1204, Failed=8, Not Implemented=0
+Test results: Total=1214, Passed=1206, Failed=8, Not Implemented=0
