@@ -1215,5 +1215,6 @@ test_mos_strength_reduction: Passed.
           check_constant_20: Passed - CE.
                   pr2159630: Passed.
                   pr2166188: Passed.
+                  pr2166311: Passed.
 ======================================================================
-Test results: Total=1215, Passed=1207, Failed=8, Not Implemented=0
+Test results: Total=1216, Passed=1208, Failed=8, Not Implemented=0
