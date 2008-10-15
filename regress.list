@@ -1533,3 +1533,4 @@ check_constant_18	CE ivltests
 check_constant_19	CE ivltests
 check_constant_20	CE ivltests
 pr2159630	normal	ivltests diff=log/pr2159630.log:gold/pr2159630.gold
+pr2166188	normal	ivltests
