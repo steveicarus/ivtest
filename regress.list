@@ -1496,6 +1496,7 @@ recursive_func	normal	ivltests diff=log/recursive_func.log:gold/recursive_func.g
 recursive_task	normal	ivltests diff=log/recursive_task.log:gold/recursive_task.gold
 pr2119622	normal	ivltests diff=log/pr2119622.log:gold/pr2119622.gold
 pr2121536	normal	ivltests
+pr2121536b	normal	ivltests
 pr2123158	normal	ivltests
 pr2123190	normal	ivltests
 pr2132552	normal	ivltests diff=log/pr2132552.log:gold/pr2132552.gold
