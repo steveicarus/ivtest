@@ -493,7 +493,7 @@ test_mos_strength_reduction: Passed.
                      vector: Passed.
                        mcl1: Passed.
                        mcl2: Passed.
-                   comp1000: ==> Failed - output does not match gold file.
+                   comp1000: Passed.
                    comp1001: ==> Failed - output does not match gold file.
                    specify1: Passed - CO.
                    specify2: Passed.
@@ -1222,4 +1222,4 @@ test_mos_strength_reduction: Passed.
                  pr2172606b: Passed.
                   pr2181249: Passed.
 ======================================================================
-Test results: Total=1221, Passed=1213, Failed=8, Not Implemented=0
+Test results: Total=1221, Passed=1214, Failed=7, Not Implemented=0
