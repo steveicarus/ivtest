@@ -1221,5 +1221,8 @@ test_mos_strength_reduction: Passed.
                   pr2172606: Passed.
                  pr2172606b: Passed.
                   pr2181249: Passed.
+              gen_case_opt1: Passed.
+              gen_case_opt2: Passed.
+              gen_case_opt3: Passed.
 ======================================================================
-Test results: Total=1221, Passed=1214, Failed=7, Not Implemented=0
+Test results: Total=1224, Passed=1217, Failed=7, Not Implemented=0

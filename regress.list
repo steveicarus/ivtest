@@ -1540,3 +1540,6 @@ pr2169870	normal	ivltests diff=log/pr2169870.log:gold/pr2169870.gold
 pr2172606	normal	ivltests
 pr2172606b	normal	ivltests
 pr2181249	normal	ivltests
+gen_case_opt1	normal	ivltests
+gen_case_opt2	normal	ivltests
+gen_case_opt3	normal	ivltests
