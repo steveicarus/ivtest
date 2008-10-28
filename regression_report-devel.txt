@@ -1225,5 +1225,6 @@ test_mos_strength_reduction: Passed.
               gen_case_opt2: Passed.
               gen_case_opt3: Passed.
                   pr2190323: Passed.
+            real_wire_array: Passed.
 ======================================================================
-Test results: Total=1225, Passed=1218, Failed=7, Not Implemented=0
+Test results: Total=1226, Passed=1219, Failed=7, Not Implemented=0
