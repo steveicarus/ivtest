@@ -1038,7 +1038,7 @@ test_mos_strength_reduction: Passed.
                   pr1901125: Passed.
                   pr1903157: Passed - CO.
                   pr1903324: Passed.
-                  pr1903343: Passed.
+                  pr1903343: ==> Failed - running iverilog.
                   pr1903520: Passed.
                   pr1907192: Passed.
                   pr1909940: Passed.
@@ -1173,7 +1173,9 @@ test_mos_strength_reduction: Passed.
              nb_ec_array_pv: Passed.
                   pr2117473: Passed.
                   pr2117488: Passed.
+           automatic_events: Passed.
              automatic_task: Passed.
+            automatic_task2: Passed.
                 nested_func: Passed.
              recursive_func: Passed.
              recursive_task: Passed.
@@ -1229,4 +1231,4 @@ test_mos_strength_reduction: Passed.
                   pr2190323: Passed.
             real_wire_array: Passed.
 ======================================================================
-Test results: Total=1228, Passed=1221, Failed=7, Not Implemented=0
+Test results: Total=1230, Passed=1222, Failed=8, Not Implemented=0
