@@ -495,6 +495,8 @@ test_mos_strength_reduction: Passed.
                        mcl2: Passed.
                    comp1000: Passed.
                    comp1001: ==> Failed - output does not match gold file.
+             comp1001_fail3: Passed.
+             comp1001_fail4: Passed.
                    specify1: Passed - CO.
                    specify2: Passed.
                    specify3: Passed.
@@ -1227,4 +1229,4 @@ test_mos_strength_reduction: Passed.
                   pr2190323: Passed.
             real_wire_array: Passed.
 ======================================================================
-Test results: Total=1226, Passed=1219, Failed=7, Not Implemented=0
+Test results: Total=1228, Passed=1221, Failed=7, Not Implemented=0
