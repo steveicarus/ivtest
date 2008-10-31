@@ -773,6 +773,7 @@ comp1000 normal ivltests diff=log/comp1000.log:gold/comp1000.gold
 comp1001 normal ivltests diff=log/comp1001.log:gold/comp1001.gold
 comp1001_fail3	normal ivltests
 comp1001_fail4	normal ivltests
+comp1001_fail5	normal ivltests
 specify1 CO	ivltests
 specify2 normal	ivltests
 specify3 normal ivltests diff=log/specify3.log:gold/specify3.gold
