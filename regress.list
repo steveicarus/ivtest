@@ -1550,3 +1550,4 @@ gen_case_opt2	normal	ivltests
 gen_case_opt3	normal	ivltests
 pr2190323	normal	ivltests
 real_wire_array	normal	ivltests
+pr2208681	normal	ivltests
