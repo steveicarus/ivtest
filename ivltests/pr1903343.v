@@ -6,7 +6,7 @@ module top;
 
   initial begin
     test_ok;
-    test_fail;
+//    test_fail;
     $display("Main: %3d", max);
   end
 
@@ -20,6 +20,9 @@ module top;
     end
   endtask
 
+/*
+ * This is invalid syntax! You can not do an assignment in a block
+ * level variable declaration (task, function, etc.).
   // And this is failing! It appears to be looking in the wrong scope.
   task test_fail;
     integer max = 2 ** 8;
@@ -28,5 +31,6 @@ module top;
       $display("Fail: %3d", max);
     end
   endtask
+ */
 
 endmodule

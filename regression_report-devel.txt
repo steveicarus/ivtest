@@ -527,7 +527,7 @@ test_mos_strength_reduction: Passed.
                      memidx: Passed.
                   memidxrng: Passed.
                    mem2port: Passed.
-                    vcd-dup: ==> Failed - output does not match gold file.
+                    vcd-dup: Passed.
                     resolv1: Passed.
                       pr307: Passed.
                      pr307a: Passed.
@@ -1039,7 +1039,7 @@ test_mos_strength_reduction: Passed.
                   pr1901125: Passed.
                   pr1903157: Passed - CO.
                   pr1903324: Passed.
-                  pr1903343: ==> Failed - running iverilog.
+                  pr1903343: Passed.
                   pr1903520: Passed.
                   pr1907192: Passed.
                   pr1909940: Passed.
@@ -1231,5 +1231,6 @@ test_mos_strength_reduction: Passed.
               gen_case_opt3: Passed.
                   pr2190323: Passed.
             real_wire_array: Passed.
+                  pr2208681: Passed.
 ======================================================================
-Test results: Total=1231, Passed=1224, Failed=7, Not Implemented=0
+Test results: Total=1232, Passed=1227, Failed=5, Not Implemented=0
