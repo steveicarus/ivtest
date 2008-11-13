@@ -1563,3 +1563,4 @@ pr2233192b	normal	ivltests
 pr2233192c	normal	ivltests
 pr2248925	normal	ivltests diff=log/pr2248925.log:gold/pr2248925.gold
 pr2270035	normal	ivltests
+pr2272468	normal	ivltests diff=log/pr2272468.log:gold/pr2272468.gold
