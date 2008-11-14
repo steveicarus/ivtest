@@ -13,9 +13,9 @@ Found:  in_0 currently at byte 5
 Found:  in_0 currently at byte 5
 Found:    10 currently at byte 56
 Found: in_10 currently at byte 56
-WARNING: ./ivltests/pr1819452.v line 34: invalid file descriptor (0xffffffff) given to $fseek.
+WARNING: ./ivltests/pr1819452.v:34: invalid file descriptor (0xffffffff) given to $fseek.
 Check fseek EOF = -1
-WARNING: ./ivltests/pr1819452.v line 37: invalid file descriptor (0xffffffff) given to $ftell.
+WARNING: ./ivltests/pr1819452.v:37: invalid file descriptor (0xffffffff) given to $ftell.
 Check ftell EOF = -1
-WARNING: ./ivltests/pr1819452.v line 40: invalid file descriptor (0xffffffff) given to $rewind.
+WARNING: ./ivltests/pr1819452.v:40: invalid file descriptor (0xffffffff) given to $rewind.
 Check rewind EOF = -1
