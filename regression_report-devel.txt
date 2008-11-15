@@ -1245,7 +1245,9 @@ test_mos_strength_reduction: Passed.
                  pr2233192b: Passed.
                  pr2233192c: Passed.
                   pr2248925: Passed.
+                  pr2257003: Passed.
+                 pr2257003b: Passed.
                   pr2270035: Passed.
                   pr2272468: Passed.
 ======================================================================
-Test results: Total=1247, Passed=1242, Failed=5, Not Implemented=0
+Test results: Total=1249, Passed=1244, Failed=5, Not Implemented=0
