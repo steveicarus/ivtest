@@ -63,6 +63,9 @@
 v0.8:pr1639971	NI
 v0.8:pr1719055	NI
 v0.8:pr1746401	NI
+v0.8:pr2038048	NI
+v0.8:pr2166311	NI
+v0.8:nb_array_pv	NI
 
 # V0.8 does not find implicit nets correctly.
 v0.8:pr1421777	NI
@@ -73,6 +76,13 @@ v0.8:always3.1.1K	NI
 v0.8:always3.1.2G	NI
 v0.8:always3.1.2H	NI
 v0.8:always3.1.2I	NI
+v0.8:blocking_repeat_ec	NI
+v0.8:nb_ec_pv	NI
+v0.8:nb_ec_pv2	NI
+v0.8:nb_ec_real	NI
+v0.8:nb_ec_vector	NI
+v0.8:nb_ec_array	NI
+v0.8:nb_ec_array_pv	NI
 
 # assign/deassign of parts is a 0.9 extension
 v0.8:assign3.2E	NI
@@ -91,6 +101,8 @@ v0.8:pr1695322	NI
 v0.8:pr1703346	NI
 v0.8:pr1799904	NI
 v0.8:pr1820472	NI
+v0.8:pr2076391	NI
+v0.8:defparam2	NI
 
 # V0.8 does not support the power operator.
 v0.8:pr1530426	NI
@@ -98,16 +110,27 @@ v0.8:pr1634526	NI
 v0.8:pr1690058	NI
 v0.8:pr1694413	NI
 v0.8:pr1750870	NI
+v0.8:ca_pow_unsigned	NI
+v0.8:ca_pow_signed	NI
+v0.8:ca_pow_synth	NI
+v0.8:pow_unsigned	NI
+v0.8:real_pwr_in_ca	NI
+v0.8:rl_pow	NI
 
 # V0.8 cannot assign a real value in the declaration.
 v0.8:pr1701890	NI
 v0.8:pr1771903	NI
+v0.8:nb_assign	NI
+v0.8:ca_var_delay	NI
+v0.8:delay_var	NI
 
 # V0.8 does not support wide division or modulus.
 v0.8:pr993	NI
 v0.8:pr1489570	NI
 v0.8:pr1698499	NI
 v0.8:long_div	NI
+v0.8:pr2233180c NI
+v0.8:pr2233192c NI
 
 # V0.8 requires that delays in continuous assignments must be constant.
 v0.8:delay3	NI
@@ -117,8 +140,11 @@ v0.8:real11	NI
 
 # V0.8 does not support primitive types (logic, bool, real).
 v0.8:bool1	NI
+v0.8:cast_real_unsigned	NI
+v0.8:cast_real_signed	NI
+v0.8:cast_real_int	NI
+v0.8:compare_bool_reg	NI
 v0.8:real8	NI
-v0.8:tern8	NI
 v0.8:pr1861212a	NI
 v0.8:pr1861212b	NI
 v0.8:pr1861212c	NI
@@ -126,9 +152,14 @@ v0.8:pr1864110a	NI
 v0.8:pr1864110b	NI
 v0.8:pr1864110c	NI
 v0.8:pr1864115	NI
-v0.8:cast_real_unsigned	NI
-v0.8:cast_real_signed	NI
-v0.8:cast_real_int	NI
+v0.8:pr2123158	NI
+v0.8:pr2123190	NI
+v0.8:real_wire_array    NI  # This is also an array!
+v0.8:tern8	NI
+
+# V0.8 does not support real arrays
+v0.8:pr2201909  NI
+v0.8:pr2201909b NI
 
 # V0.8 does not support indexed part selects.
 v0.8:param_select3	NI
@@ -139,12 +170,20 @@ v0.8:pr1675789b	NI
 v0.8:pr1688717	NI
 v0.8:pr1735822	NI
 v0.8:pr1745005	NI
+v0.8:pr2076363	NI
 v0.8:select5	NI
 v0.8:select6	NI
 v0.8:select7	NI
 v0.8:select8	NI
 
 # V0.8 does not support generate
+v0.8:defparam3	NI
+v0.8:defparam4	NI
+v0.8:generate_case	NI
+v0.8:generate_case2	NI
+v0.8:gen_case_opt1 NI
+v0.8:gen_case_opt2 NI
+v0.8:gen_case_opt3 NI
 v0.8:generate_multi_loop	NI
 v0.8:genloop	NI
 v0.8:pr1565544	NI
@@ -158,6 +197,17 @@ v0.8:pr1755629	NI
 v0.8:pr1758122	NI
 v0.8:pr1828642	NI
 v0.8:pr1833754	NI
+v0.8:pr1956211	NI
+v0.8:pr1960625	NI
+v0.8:pr1988302	NI
+v0.8:pr1988310	NI
+v0.8:pr2018235a	NI
+v0.8:pr2039632	NI
+v0.8:pr2091455	NI
+v0.8:pr2109179	NI
+v0.8:pr2138682	NI
+v0.8:pr2272468	NI
+v0.8:scoped_events	NI
 v0.8:unnamed_generate_block	NI
 
 # V0.8 cannot convert bit based signals to a real value.
@@ -168,6 +218,8 @@ v0.8:pr1702593	NI
 # V0.8 does not support macros with arguments.
 v0.8:macro_with_args	NI
 v0.8:macro2	NI
+v0.8:macsub	NI
+v0.8:pr2224845	NI
 
 # v0.8 does not support the macro stringify extension
 v0.8:pr622	NI
@@ -211,11 +263,15 @@ v0.8:swrite	NI      # $swrite not supported.
 v0.8:urand	NI	# $urandom not supported.
 v0.8:urand_r	NI	# $urandom_range not supported.
 v0.8:clog2	NI	# $clog2 not supported.
+v0.8:pr2139593	NI	# $clog2 not supported.
 v0.8:multi_bit_strength	NI	# $swrite not supported.
 
 # V0.8 does not have the VA math library installed by default.
 # Install the standalone library to get this functionality.
 v0.8:test_va_math	NI
+v0.8:v2005_math	NI
+v0.8:va_math	NI
+v0.8:pr2152011	NI
 
 # V0.8 does not support VAMS.
 v0.8:test_vams_math	NI
@@ -225,6 +281,18 @@ v0.8:scaled_real	NI
 v0.8:value_range1	NI
 v0.8:value_range2	NI
 v0.8:value_range3	NI
+v0.8:cast_int	NI
+v0.8:simparam	NI
+
+# V0.8 does not support automatic tasks or functions.
+v0.8:automatic_events	NI
+v0.8:automatic_task	NI
+v0.8:automatic_task2	NI
+v0.8:nested_func	NI
+v0.8:recursive_func	NI
+v0.8:recursive_task	NI
+v0.8:pr2169870	NI
+v0.8:pr2172606b	NI
 
 # V0.8 does not support specify block delays.
 v0.8:pr1587669	CO	ivltests
