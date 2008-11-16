@@ -1,0 +1,1 @@
+ERROR: ./ivltests/automatic_error12.v:9: $strobe arguments may not be automatically allocated variables.

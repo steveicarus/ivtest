@@ -1,0 +1,1 @@
+ERROR: ./ivltests/automatic_error11.v:8: $monitor arguments may not be automatically allocated variables.
