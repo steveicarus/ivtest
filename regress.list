@@ -1637,3 +1637,14 @@ pr2257003b	normal	ivltests
 pr2270035	normal	ivltests
 pr2276163	normal	ivltests
 pr2272468	normal	ivltests diff=log/pr2272468.log:gold/pr2272468.gold
+automatic_error1	CE	ivltests
+automatic_error2	CE	ivltests
+automatic_error3	CE	ivltests
+automatic_error4	CE	ivltests
+automatic_error5	CE	ivltests
+automatic_error6	CE	ivltests
+automatic_error7	CE	ivltests
+automatic_error8	CE	ivltests
+automatic_error9	CE	ivltests
+automatic_error10	CE	ivltests
+hier_ref_error	CE	ivltests
