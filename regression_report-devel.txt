@@ -1250,6 +1250,7 @@ test_mos_strength_reduction: Passed.
                  pr2257003b: Passed.
                   pr2270035: Passed.
                   pr2276163: Passed.
+                  pr2281479: Passed.
            automatic_error1: Passed - CE.
            automatic_error2: Passed - CE.
            automatic_error3: Passed - CE.
@@ -1268,4 +1269,4 @@ test_mos_strength_reduction: Passed.
                  pr2305307b: Passed.
                  pr2305307c: Passed.
 ======================================================================
-Test results: Total=1267, Passed=1262, Failed=5, Not Implemented=0
+Test results: Total=1268, Passed=1263, Failed=5, Not Implemented=0

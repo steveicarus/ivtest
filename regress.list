@@ -1637,6 +1637,7 @@ pr2257003	normal	ivltests
 pr2257003b	normal	ivltests
 pr2270035	normal	ivltests
 pr2276163	normal	ivltests
+pr2281479	normal	ivltests
 automatic_error1	CE	ivltests
 automatic_error2	CE	ivltests
 automatic_error3	CE	ivltests

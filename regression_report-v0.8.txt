@@ -3,12 +3,22 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr1639971: Not Implemented.
                   pr1719055: Not Implemented.
                   pr1746401: Not Implemented.
+                  pr2038048: Not Implemented.
+                  pr2166311: Not Implemented.
+                nb_array_pv: Not Implemented.
                   pr1421777: Not Implemented.
                   pr1693890: Not Implemented.
                always3.1.1K: Not Implemented.
                always3.1.2G: Not Implemented.
                always3.1.2H: Not Implemented.
                always3.1.2I: Not Implemented.
+         blocking_repeat_ec: Not Implemented.
+                   nb_ec_pv: Not Implemented.
+                  nb_ec_pv2: Not Implemented.
+                 nb_ec_real: Not Implemented.
+               nb_ec_vector: Not Implemented.
+                nb_ec_array: Not Implemented.
+             nb_ec_array_pv: Not Implemented.
                  assign3.2E: Not Implemented.
                       pr978: Not Implemented.
                   pr1628300: Not Implemented.
@@ -21,24 +31,40 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr1703346: Not Implemented.
                   pr1799904: Not Implemented.
                   pr1820472: Not Implemented.
+                  pr2076391: Not Implemented.
+                  defparam2: Not Implemented.
                   pr1530426: Not Implemented.
                   pr1634526: Not Implemented.
                   pr1690058: Not Implemented.
                   pr1694413: Not Implemented.
                   pr1750870: Not Implemented.
+            ca_pow_unsigned: Not Implemented.
+              ca_pow_signed: Not Implemented.
+               ca_pow_synth: Not Implemented.
+               pow_unsigned: Not Implemented.
+             real_pwr_in_ca: Not Implemented.
+                     rl_pow: Not Implemented.
                   pr1701890: Not Implemented.
                   pr1771903: Not Implemented.
+                  nb_assign: Not Implemented.
+               ca_var_delay: Not Implemented.
+                  delay_var: Not Implemented.
                       pr993: Not Implemented.
                   pr1489570: Not Implemented.
                   pr1698499: Not Implemented.
                    long_div: Not Implemented.
+                 pr2233180c: Not Implemented.
+                 pr2233192c: Not Implemented.
                      delay3: Not Implemented.
                      delay4: Not Implemented.
                      delay5: Not Implemented.
                      real11: Not Implemented.
                       bool1: Not Implemented.
+         cast_real_unsigned: Not Implemented.
+           cast_real_signed: Not Implemented.
+              cast_real_int: Not Implemented.
+           compare_bool_reg: Not Implemented.
                       real8: Not Implemented.
-                      tern8: Not Implemented.
                  pr1861212a: Not Implemented.
                  pr1861212b: Not Implemented.
                  pr1861212c: Not Implemented.
@@ -46,9 +72,12 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                  pr1864110b: Not Implemented.
                  pr1864110c: Not Implemented.
                   pr1864115: Not Implemented.
-         cast_real_unsigned: Not Implemented.
-           cast_real_signed: Not Implemented.
-              cast_real_int: Not Implemented.
+                  pr2123158: Not Implemented.
+                  pr2123190: Not Implemented.
+            real_wire_array: Not Implemented.
+                      tern8: Not Implemented.
+                  pr2201909: Not Implemented.
+                 pr2201909b: Not Implemented.
               param_select3: Not Implemented.
                   pr1465769: Not Implemented.
                   pr1474316: Not Implemented.
@@ -57,10 +86,18 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr1688717: Not Implemented.
                   pr1735822: Not Implemented.
                   pr1745005: Not Implemented.
+                  pr2076363: Not Implemented.
                     select5: Not Implemented.
                     select6: Not Implemented.
                     select7: Not Implemented.
                     select8: Not Implemented.
+                  defparam3: Not Implemented.
+                  defparam4: Not Implemented.
+              generate_case: Not Implemented.
+             generate_case2: Not Implemented.
+              gen_case_opt1: Not Implemented.
+              gen_case_opt2: Not Implemented.
+              gen_case_opt3: Not Implemented.
         generate_multi_loop: Not Implemented.
                     genloop: Not Implemented.
                   pr1565544: Not Implemented.
@@ -74,12 +111,25 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr1758122: Not Implemented.
                   pr1828642: Not Implemented.
                   pr1833754: Not Implemented.
+                  pr1956211: Not Implemented.
+                  pr1960625: Not Implemented.
+                  pr1988302: Not Implemented.
+                  pr1988310: Not Implemented.
+                 pr2018235a: Not Implemented.
+                  pr2039632: Not Implemented.
+                  pr2091455: Not Implemented.
+                  pr2109179: Not Implemented.
+                  pr2138682: Not Implemented.
+                  pr2272468: Not Implemented.
+              scoped_events: Not Implemented.
      unnamed_generate_block: Not Implemented.
                   pr1639064: Not Implemented.
                  pr1639064b: Not Implemented.
                   pr1702593: Not Implemented.
             macro_with_args: Not Implemented.
                      macro2: Not Implemented.
+                     macsub: Not Implemented.
+                  pr2224845: Not Implemented.
                       pr622: Not Implemented.
                     ca_mult: Not Implemented.
                        cmos: Not Implemented.
@@ -97,6 +147,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                       scanf: Not Implemented.
                      scanf2: Not Implemented.
                      scanf3: Not Implemented.
+                  pr1687193: Not Implemented.
+                  pr1876798: Not Implemented.
                        sdf1: Not Implemented.
                        sdf2: Not Implemented.
                        sdf3: Not Implemented.
@@ -105,13 +157,18 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                        sdf6: Not Implemented.
                   pr1491355: Not Implemented.
                      fileio: Not Implemented.
-                  pr1687193: Not Implemented.
                   pr1698820: Not Implemented.
                   pr1819452: Not Implemented.
                      swrite: Not Implemented.
                       urand: Not Implemented.
                     urand_r: Not Implemented.
+                      clog2: Not Implemented.
+                  pr2139593: Not Implemented.
+         multi_bit_strength: Not Implemented.
                test_va_math: Not Implemented.
+                 v2005_math: Not Implemented.
+                    va_math: Not Implemented.
+                  pr2152011: Not Implemented.
              test_vams_math: Not Implemented.
                   vams_abs1: Not Implemented.
                   vams_abs2: Not Implemented.
@@ -119,6 +176,16 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                value_range1: Not Implemented.
                value_range2: Not Implemented.
                value_range3: Not Implemented.
+                   cast_int: Not Implemented.
+                   simparam: Not Implemented.
+           automatic_events: Not Implemented.
+             automatic_task: Not Implemented.
+            automatic_task2: Not Implemented.
+                nested_func: Not Implemented.
+             recursive_func: Not Implemented.
+             recursive_task: Not Implemented.
+                  pr2169870: Not Implemented.
+                 pr2172606b: Not Implemented.
                   pr1587669: Passed - CO.
                  specify_01: Passed - CO.
                    specify2: Passed - CO.
@@ -505,7 +572,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                test_disphob: Passed.
              test_dispwided: Passed.
               test_extended: Passed.
-                   schedule: ==> Failed - output does not match gold file.
+                   schedule: Passed.
                 test_bufif0: Passed.
                 test_bufif1: Passed.
 test_mos_strength_reduction: Passed.
@@ -569,6 +636,9 @@ test_mos_strength_reduction: Passed.
                        mcl2: Passed.
                    comp1000: ==> Failed - output does not match gold file.
                    comp1001: ==> Failed - output does not match gold file.
+             comp1001_fail3: ==> Failed - output does not match gold file.
+             comp1001_fail4: ==> Failed - output does not match gold file.
+             comp1001_fail5: ==> Failed - output does not match gold file.
                    specify1: Passed - CO.
                deposit_wire: Passed.
                     deposit: Passed.
@@ -676,7 +746,7 @@ test_mos_strength_reduction: Passed.
                       pr338: Passed - CO.
                      shift1: Passed.
                      shift2: Passed.
-                     shift3: ==> Failed - output does not match gold file.
+                     shift3: Passed.
                      shift4: Passed.
                      shift5: ==> Failed - output does not match gold file.
                       pr243: Passed.
@@ -902,6 +972,7 @@ test_mos_strength_reduction: Passed.
                   pr1492075: ==> Failed - output does not match gold file.
                   pr1494799: ==> Failed - output does not match gold file.
                   pr1508882: Passed.
+                  pr1510724: Passed.
                   pr1515168: ==> Failed - output does not match gold file.
                   pr1520314: Passed - CO.
                   pr1522570: ==> Failed - output does not match gold file.
@@ -977,6 +1048,9 @@ test_mos_strength_reduction: Passed.
                   pr1784984: Passed.
                  pr1787394a: ==> Failed - output does not match gold file.
                  pr1787394b: Passed.
+                  pr1787423: ==> Failed - output does not match gold file.
+                 pr1787423b: ==> Failed - output does not match gold file.
+                 pr1787423c: ==> Failed - output does not match gold file.
                   pr1792108: Passed.
                   pr1792152: ==> Failed - output does not match gold file.
                   pr1793157: ==> Failed - output does not match gold file.
@@ -998,8 +1072,8 @@ test_mos_strength_reduction: Passed.
                   pr1845683: ==> Failed - output does not match gold file.
                   pr1855504: Passed.
                  pr1862744a: Passed.
-                  pr1866215: Passed.
-                 pr1866215b: Passed.
+                  pr1866215: ==> Failed - output does not match gold file.
+                 pr1866215b: ==> Failed - output does not match gold file.
                  pr1867161a: Passed.
                  pr1867161b: ==> Failed - output does not match gold file.
                   pr1867332: Passed - CO.
@@ -1010,32 +1084,23 @@ test_mos_strength_reduction: Passed.
                   pr1873372: ==> Failed - running iverilog.
                   pr1875866: Passed.
                  pr1875866b: Passed.
-                  pr1876798: ==> Failed - running vvp.
                   pr1877740: ==> Failed - output does not match gold file.
                   pr1877743: ==> Failed - running iverilog.
                   pr1878909: ==> Failed - running iverilog.
                   pr1879226: Passed.
                   pr1880003: ==> Failed - running iverilog.
          multi_driver_delay: ==> Failed - output does not match gold file.
-             real_pwr_in_ca: ==> Failed - running iverilog.
              real_mod_in_ca: ==> Failed - running iverilog.
-                     rl_pow: ==> Failed - running iverilog.
                real_op_fail: Passed - CE.
                   pr1883052: ==> Failed - output does not match gold file.
                  pr1883052b: ==> Failed - running iverilog.
                   pr1885847: Passed.
                   pr1887168: ==> Failed - running iverilog.
-               pow_unsigned: ==> Failed - running iverilog.
-            ca_pow_unsigned: ==> Failed - running iverilog.
-              ca_pow_signed: ==> Failed - running iverilog.
-               ca_pow_synth: ==> Failed - running iverilog.
-              generate_case: ==> Failed - running iverilog.
-             generate_case2: ==> Failed - running iverilog.
            real_pulse_clean: ==> Failed - running iverilog.
                   pr1892959: Passed.
+                 pr1892959b: Passed.
                   pr1898293: ==> Failed - running iverilog.
                   pr1898983: ==> Failed - output does not match gold file.
-           compare_bool_reg: ==> Failed - running iverilog.
                   pr1901125: ==> Failed - running iverilog.
                   pr1903157: ==> Failed - running iverilog.
                   pr1903324: ==> Failed - running iverilog.
@@ -1060,7 +1125,6 @@ test_mos_strength_reduction: Passed.
                   pr1932444: ==> Failed - output does not match gold file.
                   pr1934744: Passed.
                   pr1936363: Passed.
-         multi_bit_strength: ==> Failed - running vvp.
          assign_deassign_pv: ==> Failed - running iverilog.
        force_release_reg_pv: ==> Failed - output does not match gold file.
       force_release_wire_pv: ==> Failed - output does not match gold file.
@@ -1076,7 +1140,6 @@ test_mos_strength_reduction: Passed.
                   pr1948110: ==> Failed - running iverilog.
                   pr1948342: Passed.
                   pr1950282: ==> Failed - running iverilog.
-                  pr1956211: ==> Failed - running iverilog.
                   pr1958801: Passed.
        concat_zero_wid_fail: ==> Failed - output does not match gold file.
          repl_zero_wid_fail: ==> Failed - output does not match gold file.
@@ -1087,7 +1150,6 @@ test_mos_strength_reduction: Passed.
                   pr1960575: ==> Failed - output does not match gold file.
                   pr1960596: ==> Failed - output does not match gold file.
                   pr1960619: ==> Failed - output does not match gold file.
-                  pr1960625: ==> Failed - running iverilog.
                   pr1960633: ==> Failed - running iverilog.
                   pr1963240: ==> Failed - output does not match gold file.
                   pr1963960: ==> Failed - output does not match gold file.
@@ -1102,10 +1164,8 @@ test_mos_strength_reduction: Passed.
                  pr1978358c: ==> Failed - running iverilog.
                  pr1978358d: ==> Failed - running iverilog.
                     tranif1: ==> Failed - running iverilog.
-                   simparam: ==> Failed - running vvp.
                   pr1983762: ==> Failed - running iverilog.
-                  pr1988302: ==> Failed - running iverilog.
-                  pr1988310: ==> Failed - running iverilog.
+                  pr1985582: ==> Failed - output does not match gold file.
                dump_memword: ==> Failed - output does not match gold file.
              parameter_type: ==> Failed - running iverilog.
             localparam_type: ==> Failed - running iverilog.
@@ -1115,7 +1175,96 @@ test_mos_strength_reduction: Passed.
                   pr1992244: Passed.
                   pr1992729: ==> Failed - running iverilog.
                   pr1993479: ==> Failed - running iverilog.
-                   cast_int: ==> Failed - running iverilog.
+                  pr2001162: ==> Failed - output does not match gold file.
                   pr2002443: Passed - CO.
+                  pr2011429: Passed.
+                  pr2013758: ==> Failed - output does not match gold file.
+                  pr2014673: ==> Failed - output does not match gold file.
+                  pr2015466: Passed.
+                 pr2018235b: Passed.
+                  pr2018305: Passed.
+                  pr2019553: Passed.
+                  pr2029336: ==> Failed - output does not match gold file.
+                  pr2030767: Passed.
+                  pr2036953: Passed.
+                  pr2039694: Passed.
+                  pr2043324: ==> Failed - running iverilog.
+                  pr2043585: ==> Failed - output does not match gold file.
+                  pr2051694: ==> Failed - CE (core dump).
+                  pr2051975: Passed - CE.
+                  pr2053944: ==> Failed - output does not match gold file.
+                  pr2076425: Passed.
+                  pr2085984: Passed.
+                   nb_delay: ==> Failed - running iverilog.
+     no_timescale_in_module: ==> Failed - output does not match gold file.
+                  pr2117473: Passed.
+                  pr2117488: Passed.
+                  pr2119622: Passed.
+                  pr2121536: ==> Failed - output does not match gold file.
+                 pr2121536b: ==> Failed - output does not match gold file.
+                  pr2132552: Passed.
+                  pr2136787: ==> Failed - output does not match gold file.
+                  pr2138979: ==> Failed - output does not match gold file.
+                 pr2138979b: ==> Failed - output does not match gold file.
+                 pr2138979c: ==> Failed - output does not match gold file.
+                 pr2138979d: ==> Failed - output does not match gold file.
+                  pr2146620: Passed.
+                 pr2146620b: Passed.
+                 pr2146620c: Passed.
+                  pr2146824: ==> Failed - output does not match gold file.
+                  pr2148401: Passed.
+           check_constant_1: Passed - CE.
+           check_constant_2: Passed - CE.
+           check_constant_3: Passed - CE.
+           check_constant_4: Passed - CE.
+           check_constant_5: Passed - CE.
+           check_constant_6: Passed - CE.
+           check_constant_7: Passed - CE.
+           check_constant_8: Passed - CE.
+           check_constant_9: Passed - CE.
+          check_constant_10: Passed - CE.
+          check_constant_11: Passed - CE.
+          check_constant_12: Passed - CE.
+          check_constant_13: Passed - CE.
+          check_constant_14: Passed - CE.
+          check_constant_15: Passed - CE.
+          check_constant_16: Passed - CE.
+          check_constant_17: Passed - CE.
+          check_constant_18: Passed - CE.
+          check_constant_19: Passed - CE.
+          check_constant_20: Passed - CE.
+                  pr2159630: ==> Failed - output does not match gold file.
+                  pr2166188: ==> Failed - output does not match gold file.
+                  pr2172606: ==> Failed - output does not match gold file.
+                  pr2181249: Passed.
+                  pr2190323: Passed.
+                  pr2208681: Passed.
+                  pr2215342: ==> Failed - running iverilog.
+                  pr2219441: ==> Failed - running iverilog.
+                 pr2219441b: ==> Failed - running iverilog.
+                  pr2233180: Passed.
+                 pr2233180b: Passed.
+                  pr2233192: ==> Failed - output does not match gold file.
+                 pr2233192b: ==> Failed - output does not match gold file.
+                  pr2248925: Passed.
+                  pr2251119: Passed.
+                  pr2257003: ==> Failed - running iverilog.
+                 pr2257003b: ==> Failed - running iverilog.
+                  pr2270035: ==> Failed - running vvp.
+                  pr2276163: ==> Failed - running iverilog.
+           automatic_error1: Passed - CE.
+           automatic_error2: Passed - CE.
+           automatic_error3: Passed - CE.
+           automatic_error4: Passed - CE.
+           automatic_error5: Passed - CE.
+           automatic_error6: Passed - CE.
+           automatic_error7: Passed - CE.
+           automatic_error8: Passed - CE.
+           automatic_error9: Passed - CE.
+          automatic_error10: Passed - CE.
+          automatic_error11: ==> Failed - running iverilog.
+          automatic_error12: ==> Failed - running iverilog.
+          automatic_error13: ==> Failed - running iverilog.
+             hier_ref_error: Passed - CE.
 ======================================================================
-Test results: Total=1117, Passed=849, Failed=149, Not Implemented=119
+Test results: Total=1266, Passed=908, Failed=172, Not Implemented=186
