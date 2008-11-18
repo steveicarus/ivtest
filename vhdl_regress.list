@@ -188,6 +188,8 @@ unary_minus   normal  ivltests
 unary_minus3  normal  ivltests
 unary_minus4  normal  ivltests
 
+pr2281519     CO      vhdl_tests
+
 ga_and        normal  ivltests
 ga_or         normal  ivltests
 ga_xor        normal  ivltests
