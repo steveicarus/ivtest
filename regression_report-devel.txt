@@ -1264,5 +1264,8 @@ test_mos_strength_reduction: Passed.
           automatic_error12: Passed.
           automatic_error13: Passed.
              hier_ref_error: Passed - CE.
+                  pr2305307: Passed.
+                 pr2305307b: Passed.
+                 pr2305307c: Passed.
 ======================================================================
-Test results: Total=1264, Passed=1259, Failed=5, Not Implemented=0
+Test results: Total=1267, Passed=1262, Failed=5, Not Implemented=0
