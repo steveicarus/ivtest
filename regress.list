@@ -1651,3 +1651,6 @@ automatic_error11	normal	ivltests diff=log/automatic_error11.log:gold/automatic_
 automatic_error12	normal	ivltests diff=log/automatic_error12.log:gold/automatic_error12.gold
 automatic_error13	normal	ivltests diff=log/automatic_error13.log:gold/automatic_error13.gold
 hier_ref_error	CE	ivltests
+pr2305307	normal	ivltests
+pr2305307b	normal	ivltests
+pr2305307c	normal	ivltests
