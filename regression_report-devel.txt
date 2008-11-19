@@ -1081,6 +1081,7 @@ test_mos_strength_reduction: Passed.
                test_va_math: Passed.
              test_vams_math: Passed.
        concat_zero_wid_fail: Passed - CE.
+      concat_zero_wid_fail2: Passed.
          repl_zero_wid_fail: Passed - CE.
          repl_zero_wid_pass: Passed.
                   vams_abs1: Passed.
@@ -1269,5 +1270,6 @@ test_mos_strength_reduction: Passed.
                   pr2305307: Passed.
                  pr2305307b: Passed.
                  pr2305307c: Passed.
+                  pr2306259: Passed.
 ======================================================================
-Test results: Total=1269, Passed=1264, Failed=5, Not Implemented=0
+Test results: Total=1271, Passed=1266, Failed=5, Not Implemented=0
