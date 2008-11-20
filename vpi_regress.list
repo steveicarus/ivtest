@@ -109,3 +109,4 @@ pr2048463        normal pr2048463.c   pr2048463.log
 # different log file to run with an older versions or if it uses
 # something not implemented (NI) by other versions of the program
 # it will also need a version specific line(s) above.
+pr2314742	normal	pr2314742.c   pr2314742.gold
