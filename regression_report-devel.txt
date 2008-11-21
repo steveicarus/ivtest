@@ -1234,6 +1234,9 @@ test_mos_strength_reduction: Passed.
             real_wire_array: Passed.
                   pr2201909: Passed.
                  pr2201909b: Passed.
+                  pr2202706: Passed.
+                 pr2202706b: Passed.
+                 pr2202706c: Passed.
                   pr2208681: Passed.
                   pr2215342: Passed.
                   pr2219441: Passed.
@@ -1272,4 +1275,4 @@ test_mos_strength_reduction: Passed.
                  pr2305307c: Passed.
                   pr2306259: Passed.
 ======================================================================
-Test results: Total=1271, Passed=1266, Failed=5, Not Implemented=0
+Test results: Total=1274, Passed=1269, Failed=5, Not Implemented=0

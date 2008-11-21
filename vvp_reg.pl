@@ -117,7 +117,7 @@ sub execute_regression {
             next;
         }
 
-        $cmd = "vvp$sfx vsim >> log/$tname.log 2>&1";
+        $cmd = "vvp$sfx vsim $plargs{$tname} >> log/$tname.log 2>&1";
 #        print "$cmd\n";
         if (system("$cmd")) {
             if ($testtype{$tname} eq "RE") {

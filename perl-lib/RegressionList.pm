@@ -12,12 +12,12 @@ our $VERSION = '1.00';
 use base 'Exporter';
 
 our @EXPORT = qw(read_regression_list @testlist %srcpath %testtype
-                 %args %diff %gold %testmod %offset);
+                 %args %plargs %diff %gold %testmod %offset);
 
 # Properties of each test.
 # It may be nicer to have read_regression_list return an array
 # of hashes with these as keys.
-our (@testlist, %srcpath, %testtype, %args,
+our (@testlist, %srcpath, %testtype, %args, %plargs,
      %diff, %gold, %testmod, %offset) = ();
 
 #
@@ -75,7 +75,12 @@ sub read_regression_list {
         ($testtype{$tname},$args{$tname}) = split(',', $fields[1], 2);
         $args{$tname} = "" if (!defined($args{$tname}));
         if ($args{$tname} =~ ',') {
-            $args{$tname} = join(' ', split(',', $args{$tname}));
+            my @args = split(',', $args{$tname});
+            $plargs{$tname} = join(' ', grep(/^\+/, @args));
+            $args{$tname} = join(' ', grep(!/^\+/, @args));
+        } elsif ($args{$tname} =~ /^\+/) {
+            $plargs{$tname} = $args{$tname};
+            $args{$tname} = "";
         }
 
         $srcpath{$tname} = $fields[2];
