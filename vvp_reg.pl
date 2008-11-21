@@ -32,13 +32,14 @@ use Environment;
 #
 #  Main script
 #
+my $suffix = &get_suffix;
 my $regress_fn = &get_regress_fn;
 &open_report_file;
-my $ver = &get_ivl_version;
+my $ver = &get_ivl_version($suffix);
 &print_rpt("Running compiler/VVP tests for Icarus Verilog version: $ver.\n");
 &print_rpt("-" x 70 . "\n");
 &read_regression_list($regress_fn, $ver);
-&execute_regression;
+&execute_regression($suffix);
 &close_report_file;
 
 
@@ -47,6 +48,7 @@ my $ver = &get_ivl_version;
 #  the regression. It then checks that the output matches the gold file.
 #
 sub execute_regression {
+    my $sfx = shift(@_);
     my ($tname, $total, $passed, $failed, $not_impl, $len, $cmd, $diff_file);
 
     $total = 0;
@@ -82,7 +84,7 @@ sub execute_regression {
         #
         # Build up the iverilog command line and run it.
         #
-        $cmd = "iverilog -o vsim $args{$tname}";
+        $cmd = "iverilog$sfx -o vsim $args{$tname}";
         $cmd .= " -s $testmod{$tname}" if ($testmod{$tname} ne "");
         $cmd .= " -t null}" if ($testtype{$tname} eq "CN");
         $cmd .= " ./$srcpath{$tname}/$tname.v > log/$tname.log 2>&1";
@@ -115,7 +117,7 @@ sub execute_regression {
             next;
         }
 
-        $cmd = "vvp vsim >> log/$tname.log 2>&1";
+        $cmd = "vvp$sfx vsim >> log/$tname.log 2>&1";
 #        print "$cmd\n";
         if (system("$cmd")) {
             if ($testtype{$tname} eq "RE") {

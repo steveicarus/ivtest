@@ -4,6 +4,22 @@
 #
 $| = 1;  # This turns off buffered I/O
 
+# We support a --suffix= flag.
+use Getopt::Long;
+$sfx = "";  # Default suffix.
+if (!GetOptions("suffix=s" => \$sfx, "help" => \&usage)) {
+    die "Error: Invalid argument(s).\n";
+}
+
+sub usage {
+    warn "$0 usage:\n\n" .
+         "  --suffix=<suffix>  # The Icarus executables suffix, " .
+         "default \"\".\n" .
+         "  <regression file>  # The regression file, " .
+         "default \"./vpi_regress.list\".\n\n";
+    exit;
+}
+
 $regress_fn = "./vpi_regress.list";  # Default regression list.
 
 # Is there a command line argument (alternate regression list)?
@@ -16,15 +32,16 @@ if ($#ARGV != -1) {
     -r $regress_fn or
         die "Error: command line regression file $regress_fn is not ".
             "readable.\n";
-}
-if ($#ARGV > 0) {
-    warn "Warning: only using first argument to script.\n";
+
+    if ($#ARGV > 0) {
+        warn "Warning: only using first file argument to script.\n";
+    }
 }
 
 #
 #  Main script
 #
-($ver) = `iverilog -V` =~ /^Icarus Verilog version (\d+\.\d+)/;
+($ver) = `iverilog$sfx -V` =~ /^Icarus Verilog version (\d+\.\d+)/;
 print ("Running VPI tests for Icarus Verilog version: $ver.\n");
 print "-" x 70 . "\n";
 &read_regression_list;
@@ -130,7 +147,7 @@ sub execute_regression {
             next;
         }
 
-        $cmd = "iverilog-vpi --name=$tname $cargs{$tname} ".
+        $cmd = "iverilog-vpi$sfx --name=$tname $cargs{$tname} ".
                "vpi/$ccode{$tname} > vpi_log/$tname.log 2>&1";
         if (system("$cmd")) {
             print "==> Failed - running iverilog-vpi.\n";
@@ -138,14 +155,14 @@ sub execute_regression {
             next;
         }
 
-        $cmd = "iverilog -o vsim vpi/$tname.v >> vpi_log/$tname.log 2>&1";
+        $cmd = "iverilog$sfx -o vsim vpi/$tname.v >> vpi_log/$tname.log 2>&1";
         if (system("$cmd")) {
             print "==> Failed - running iverilog.\n";
             $failed++;
             next;
         }
 
-        $cmd = "vvp -M . -m $tname vsim >> vpi_log/$tname.log 2>&1";
+        $cmd = "vvp$sfx -M . -m $tname vsim >> vpi_log/$tname.log 2>&1";
         if (system("$cmd")) {
             print "==> Failed - running vvp.\n";
             $failed++;

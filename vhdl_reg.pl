@@ -32,13 +32,14 @@ use Environment;
 #
 #  Main script
 #
+my $suffix = &get_suffix;
 my $regress_fn = &get_regress_fn;
 &open_report_file('vhdl_regression_report.txt');
-my $ver = &get_ivl_version;
+my $ver = &get_ivl_version($suffix);
 &print_rpt("Running VHDL tests for Icarus Verilog version: $ver.\n");
 &print_rpt("-" x 70 . "\n");
 &read_regression_list($regress_fn, $ver);
-&execute_regression;
+&execute_regression($suffix);
 &close_report_file;
 
 
@@ -47,6 +48,7 @@ my $ver = &get_ivl_version;
 #  the regression. It then checks that the output matches the gold file.
 #
 sub execute_regression {
+    my $sfx = shift(@_);
     my ($tname, $total, $passed, $failed, $not_impl, $len, 
         $cmd, $diff_file, $outfile, $unit);
 
@@ -89,7 +91,7 @@ sub execute_regression {
         #
         # Build up the iverilog command line and run it.
         #
-        $cmd = "iverilog -t vhdl -o $outfile $args{$tname}";
+        $cmd = "iverilog$sfx -t vhdl -o $outfile $args{$tname}";
         $cmd .= " -s $testmod{$tname}" if ($testmod{$tname} ne "");
         $cmd .= " ./$srcpath{$tname}/$tname.v > log/$tname.log 2>&1";
         #print "$cmd\n";
