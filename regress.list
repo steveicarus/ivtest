@@ -877,12 +877,12 @@ comp1001_fail3	normal ivltests
 comp1001_fail4	normal ivltests
 comp1001_fail5	normal ivltests
 specify1 CO	ivltests
-specify2 normal	ivltests
-specify3 normal ivltests diff=log/specify3.log:gold/specify3.gold
-specify4 normal ivltests diff=log/specify4.log:gold/specify4.gold
-specify5 normal ivltests diff=log/specify5.log:gold/specify5.gold
+specify2 normal,-gspecify	ivltests
+specify3 normal,-gspecify ivltests diff=log/specify3.log:gold/specify3.gold
+specify4 normal,-gspecify ivltests diff=log/specify4.log:gold/specify4.gold
+specify5 normal,-gspecify ivltests diff=log/specify5.log:gold/specify5.gold
 deposit_wire	normal	ivltests
-specify_01 normal ivltests test # Yet another versio of specify
+specify_01 normal,-gspecify ivltests test # Yet another versio of specify
 deposit normal ivltests
 assign_neq normal ivltests # continuous assign with !=
 assign_deq normal ivltests # continuous assign with ==
@@ -1259,7 +1259,7 @@ pr1570635b	normal	ivltests
 pr1574175	normal	ivltests diff=log/pr1574175.log:gold/pr1574175.gold
 pr1581580	normal	ivltests
 pr1587634	CO,-Ttyp ivltests
-pr1587669	normal	ivltests diff=log/pr1587669.log:gold/pr1587669.gold
+pr1587669	normal,-gspecify	ivltests diff=log/pr1587669.log:gold/pr1587669.gold
 pr1589497	normal	ivltests diff=log/pr1589497.log:gold/pr1589497.gold
 pr1598445	normal	ivltests
 pr1601896	normal	ivltests
@@ -1400,12 +1400,12 @@ pr1861212b	normal	ivltests diff=log/pr1861212b.log:gold/pr1861212.gold
 pr1861212c	normal	ivltests diff=log/pr1861212c.log:gold/pr1861212.gold
 unnamed_generate_block	normal	ivltests diff=log/unnamed_generate_block.log:gold/unnamed_generate_block.gold
 pr1833754	CE	ivltests
-sdf1	normal	ivltests diff=log/sdf1.log:gold/sdf1.gold
-sdf2	normal	ivltests diff=log/sdf2.log:gold/sdf1.gold
-sdf3	normal	ivltests diff=log/sdf3.log:gold/sdf1.gold
-sdf4	normal	ivltests diff=log/sdf4.log:gold/sdf1.gold
-sdf5	normal	ivltests diff=log/sdf5.log:gold/sdf5.gold
-sdf6	normal	ivltests diff=log/sdf6.log:gold/sdf6.gold
+sdf1	normal,-gspecify	ivltests diff=log/sdf1.log:gold/sdf1.gold
+sdf2	normal,-gspecify	ivltests diff=log/sdf2.log:gold/sdf1.gold
+sdf3	normal,-gspecify	ivltests diff=log/sdf3.log:gold/sdf1.gold
+sdf4	normal,-gspecify	ivltests diff=log/sdf4.log:gold/sdf1.gold
+sdf5	normal,-gspecify	ivltests diff=log/sdf5.log:gold/sdf5.gold
+sdf6	normal,-gspecify	ivltests diff=log/sdf6.log:gold/sdf6.gold
 macro_with_args	normal	ivltests diff=log/macro_with_args.log:gold/macro_with_args.gold
 macro2	normal	ivltests diff=log/macro2.log:gold/macro2.gold
 pr1862744a	normal,-Winfloop	ivltests
