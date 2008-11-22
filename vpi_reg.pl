@@ -79,9 +79,21 @@ sub read_regression_list {
         if ($tname =~ /:/) {
             ($tver, $tname) = split(':', $tname);
             next if ($tver ne "v$ver");  # Skip if this is not our version.
+            # Get the test type and any iverilog arguments.
+            if ($fields[1] =~ ',') {
+                ($testtype, $args{$tname}) = split(',', $fields[1], 2);
+                # For now we just support args to iverilog.
+                if ($args{$tname} =~ ',') {
+                    $args{$tname} = join(' ', split(',', $args{$tname}));
+                }
+            } else {
+                $testtype = $fields[1];
+                $args{$tname} = "";
+            }
             # This version of the program does not implement something
             # required to run this test.
-            if ($fields[1] eq "NI") {
+            if ($testtype eq "NI") {
+                $args{$tname}    = "";
                 $ccode{$tname}    = "";
                 $goldfile{$tname} = "";
                 $cargs{$tname}    = "";
@@ -90,15 +102,25 @@ sub read_regression_list {
                 $goldfile{$tname} = $fields[3];
                 $cargs{$tname}    = $fields[4];
             }
-#            print "Read $tver:$tname=$ccode{$tname},$goldfile{$tname},".
-#                  "$cargs{$tname}\n";
+#            print "Read $tver:$tname=$ccode{$tname}, $goldfile{$tname}, ".
+#                  "$args{$tname}, $cargs{$tname}\n";
         } else {
-            next if (exists($ccode{$tname}));  # Skip if already defined.
+            next if (exists($ccode{$tname}));
+            # Get the test type and any iverilog arguments.
+            if ($fields[1] =~ ',') {
+                ($testtype, $args{$tname}) = split(',', $fields[1], 2);
+                # For now we just support args to iverilog.
+                if ($args{$tname} =~ ',') {
+                    $args{$tname} = join(' ', split(',', $args{$tname}));
+                }
+            } else {
+                $args{$tname} = "";
+            }
             $ccode{$tname}    = $fields[2];
             $goldfile{$tname} = $fields[3];
             $cargs{$tname}    = $fields[4];
-#            print "Read $tname=$ccode{$tname},$goldfile{$tname},".
-#                  "$cargs{$tname}\n";
+#            print "Read $tname=$ccode{$tname}, $goldfile{$tname}, ".
+#                  "$args{$tname}, $cargs{$tname}\n";
         }
         # If there wasn't a cargs field make it a null string.
         $cargs{$tname} = "" if (!defined($cargs{$tname}));
@@ -155,7 +177,8 @@ sub execute_regression {
             next;
         }
 
-        $cmd = "iverilog$sfx -o vsim vpi/$tname.v >> vpi_log/$tname.log 2>&1";
+        $cmd = "iverilog$sfx $args{$tname} -o vsim vpi/$tname.v >> ".
+               "vpi_log/$tname.log 2>&1";
         if (system("$cmd")) {
             print "==> Failed - running iverilog.\n";
             $failed++;

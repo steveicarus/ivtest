@@ -103,7 +103,7 @@ mipname          normal mipname.c     mipname.log
 memmon           normal memmon.c      memmon.log
 listparams       normal listparams.c  listparams.log
 pr1693971        normal pr1693971.c   pr1693971.log
-spec_delays      normal spec_delays.c spec_delays.log
+spec_delays      normal,-gspecify spec_delays.c spec_delays.log
 pr2048463        normal pr2048463.c   pr2048463.log
 
 # Add new tests here. If the test needs a compile option or a
