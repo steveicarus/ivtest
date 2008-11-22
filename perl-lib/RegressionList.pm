@@ -72,14 +72,21 @@ sub read_regression_list {
 
         # Get the test type and the iverilog argument(s). Separate the
         # arguments with a space.
-        ($testtype{$tname},$args{$tname}) = split(',', $fields[1], 2);
-        $args{$tname} = "" if (!defined($args{$tname}));
-        if ($args{$tname} =~ ',') {
-            my @args = split(',', $args{$tname});
-            $plargs{$tname} = join(' ', grep(/^\+/, @args));
-            $args{$tname} = join(' ', grep(!/^\+/, @args));
-        } elsif ($args{$tname} =~ /^\+/) {
-            $plargs{$tname} = $args{$tname};
+        if ($fields[1] =~ ',') {
+            ($testtype{$tname},$args{$tname}) = split(',', $fields[1], 2);
+            if ($args{$tname} =~ ',') {
+                my @args = split(',', $args{$tname});
+                $plargs{$tname} = join(' ', grep(/^\+/, @args));
+                $args{$tname} = join(' ', grep(!/^\+/, @args));
+            } elsif ($args{$tname} =~ /^\+/) {
+                $plargs{$tname} = $args{$tname};
+                $args{$tname} = "";
+            } else {
+                $plargs{$tname} = "";
+            }
+        } else {
+            $testtype{$tname} = $fields[1];
+            $plargs{$tname} = "";
             $args{$tname} = "";
         }
 
