@@ -106,7 +106,7 @@ static void xxx_register()
 {
   s_vpi_systf_data      tfdata;
 
-  fprintf(stderr, "+++ in XXX_REGISTER\n");
+  vpi_printf("+++ in XXX_REGISTER\n");
 
   tfdata.type           = vpiSysFunc;
 
