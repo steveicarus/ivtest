@@ -1274,5 +1274,7 @@ test_mos_strength_reduction: Passed.
                  pr2305307b: Passed.
                  pr2305307c: Passed.
                   pr2306259: Passed.
+                    analog1: ==> Failed - running iverilog.
+                    analog2: ==> Failed - running iverilog.
 ======================================================================
-Test results: Total=1274, Passed=1269, Failed=5, Not Implemented=0
+Test results: Total=1276, Passed=1269, Failed=7, Not Implemented=0

@@ -263,6 +263,10 @@ v0.8:pr622	NI
 v0.8:pr639	NI
 v0.8:pr1912112	NI
 
+# V0.8 does not support analog constructs
+v0.8:analog1	NI
+v0.8:analog2	NI
+
 # Other functionality missing in V0.8.
 v0.8:cmos	NI	# CMOS gates not supported.
 v0.8:dump_memword	NI	# Can not dump memory (array) words.
