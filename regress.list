@@ -86,6 +86,12 @@ v0.8:nb_ec_array_pv	NI
 
 # assign/deassign of parts is a 0.9 extension
 v0.8:assign3.2E	NI
+v0.8:assign_deassign_pv	NI
+
+# V0.8 does not support the force/release of signal parts.
+v0.8:force_release_reg_pv	NI
+v0.8:force_release_wire_pv	NI
+v0.8:force_release_wire8_pv	NI
 
 # V0.8 does not support real functions.
 v0.8:pr978	NI
@@ -102,6 +108,7 @@ v0.8:pr1695322	NI
 v0.8:pr1703346	NI
 v0.8:pr1799904	NI
 v0.8:pr1820472	NI
+v0.8:pr1878909	NI
 v0.8:pr2076391	NI
 v0.8:defparam2	NI
 
@@ -111,6 +118,8 @@ v0.8:pr1634526	NI
 v0.8:pr1690058	NI
 v0.8:pr1694413	NI
 v0.8:pr1750870	NI
+v0.8:pr1903157	NI
+v0.8:pr1903343	NI
 v0.8:ca_pow_unsigned	NI
 v0.8:ca_pow_signed	NI
 v0.8:ca_pow_synth	NI
@@ -121,15 +130,20 @@ v0.8:rl_pow	NI
 # V0.8 cannot assign a real value in the declaration.
 v0.8:pr1701890	NI
 v0.8:pr1771903	NI
+v0.8:real_assign_deassign	NI
+v0.8:real_force_rel	NI
+v0.8:real_reg_force_rel	NI
 v0.8:nb_assign	NI
 v0.8:ca_var_delay	NI
 v0.8:delay_var	NI
 
 # V0.8 does not support wide division or modulus.
+v0.8:long_div	NI
 v0.8:pr993	NI
 v0.8:pr1489570	NI
 v0.8:pr1698499	NI
-v0.8:long_div	NI
+v0.8:pr1887168	NI  # In verinum signed values use native long.
+v0.8:pr1960596	NI  # Same as above.
 v0.8:pr2233180c NI
 v0.8:pr2233192c NI
 
@@ -153,9 +167,15 @@ v0.8:pr1864110a	NI
 v0.8:pr1864110b	NI
 v0.8:pr1864110c	NI
 v0.8:pr1864115	NI
+v0.8:pr1873372	NI
+v0.8:pr1880003	NI
+v0.8:pr1898293	NI
 v0.8:pr2123158	NI
 v0.8:pr2123190	NI
-v0.8:real_wire_array    NI  # This is also an array!
+v0.8:real_mod_in_ca	NI  # Also real modulus.
+v0.8:real_pulse_clean	NI
+v0.8:real_wire_array    NI  # This is also an array.
+v0.8:real_wire_force_rel	NI
 v0.8:tern8	NI
 
 # V0.8 does not support real arrays
@@ -171,6 +191,7 @@ v0.8:pr1675789b	NI
 v0.8:pr1688717	NI
 v0.8:pr1735822	NI
 v0.8:pr1745005	NI
+v0.8:pr1830834	NI
 v0.8:pr1993479	NI
 v0.8:pr2076363	NI
 v0.8:select5	NI
@@ -179,6 +200,11 @@ v0.8:select7	NI
 v0.8:select8	NI
 
 # V0.8 does not support out of range part selects.
+v0.8:pr1960633	NI
+v0.8:pr1978358	NI
+v0.8:pr1978358b	NI
+v0.8:pr1978358c	NI
+v0.8:pr1978358d	NI  # Also indexed part selects.
 v0.8:pr1990029	NI
 v0.8:pr1990269	NI
 
@@ -223,38 +249,68 @@ v0.8:pr2306259	NI
 v0.8:pr1639064	NI
 v0.8:pr1639064b	NI
 v0.8:pr1702593	NI
+v0.8:pr1948110	NI  # Also assign to real may not work.
 
 # V0.8 does not support macros with arguments.
 v0.8:macro_with_args	NI
 v0.8:macro2	NI
 v0.8:macsub	NI
+v0.8:pr1925360	NI
 v0.8:pr2224845	NI
 
 # V0.8 does not support the macro stringify extension
 v0.8:pr622	NI
+v0.8:pr639	NI
+v0.8:pr1912112	NI
 
 # Other functionality missing in V0.8.
-v0.8:ca_mult	NI	# $rtoi in a continuous assignment.
 v0.8:cmos	NI	# CMOS gates not supported.
-v0.8:pr1625912	NI	# Cannot find real variable in for loop.
+v0.8:dump_memword	NI	# Can not dump memory (array) words.
+v0.8:nb_delay	NI	# No support for calculated non-blocking delays.
+v0.8:pr1625912	NI	# Can not find real variable in for loop.
 v0.8:pr1698659	NI	# Scope problems.
 v0.8:pr1765789	NI	# Addition width problems in concatenation.
-v0.8:pr1792734	NI	# 'dx, 'dz, 'd?, etc. not supported.
 v0.8:pr1851310	NI	# MUX size problem.
 v0.8:pr1869769	NI	# Real comparisons in continuous assignment.
 v0.8:pr1869772	NI	# Right shift as argument to user function.
 v0.8:pr1869781	NI	# Runtime is missing %assign/x0/d opcode.
-v0.8:task_iotypes2	NI	# Port types are not supported (integer, etc.).
+v0.8:pr1913918b	NI	# Parameter index problem.
+v0.8:pr1916261	NI	# Can not skip some errors in always false select.
+v0.8:pr1963962	NI	# $dumpfile() must be given an explicit string.
+v0.8:pr2202706	NI	# No support for wide put_value()
 v0.8:pr2215342	NI	# Current directory is not in include search path.
-v0.8:nb_delay	NI	# No support for calculated non-blocking delays.
+v0.8:task_iotypes2	NI	# Port types are not supported (integer, etc.).
+v0.8:tranif1	NI	# No support for the tranif1 gate.
+
+# V0.8 does not support $rtoi in a continuous assignment.
+v0.8:ca_mult	NI
+v0.8:pr1883052b	NI
+
+# V0.8 does not support a zero repeat.
+v0.8:repeat2	NI
+v0.8:repl_zero_wid_pass	NI
+
+# No support for 'dx, 'dz, d0, etc.
+v0.8:concat_zero_wid_fail2	NI
+v0.8:pr1792734	NI
+v0.8:pr2202706c	NI
+
+# V0.8 does not support monitorng parts of a word or array missing &PV, &A.
+v0.8:pr1780480	NI
 
 # V0.8 does not support typed parameters.
 v0.8:pr1449749a	NI
-v0.8:parameter_type	NI
+v0.8:pr1946411	NI
+v0.8:pr1983762	NI
 v0.8:localparam_type	NI
+v0.8:parameter_type	NI
 
 # V0.8 does not support ANSI style arguments,
 v0.8:pr1474283	NI
+v0.8:pr1877743	NI
+v0.8:pr1901125	NI
+v0.8:pr1903324	NI
+v0.8:pr1950282	NI
 v0.8:pr2043324	NI
 v0.8:pr2219441	NI
 v0.8:pr2219441b	NI
@@ -265,6 +321,7 @@ v0.8:scanf2	NI
 v0.8:scanf3	NI
 v0.8:pr1687193	NI
 v0.8:pr1876798	NI
+v0.8:pr2029336	NI
 
 # V0.8 does not support $sdf_annotate.
 v0.8:sdf1	NI
