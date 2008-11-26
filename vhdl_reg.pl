@@ -107,9 +107,21 @@ sub execute_regression {
                 }
                 next;
             }
-            &print_rpt("==> Failed - running iverilog.\n");
-            $failed++;
-            next;
+            
+            # Check the log file for an un-translatable construct error
+            # We report this separately so we can distinguish between
+            # expected and unexpected failures
+            $cmd = "grep -q -i -E '(no vhdl translation|cannot be translated)' log/$tname.log";
+            if (system($cmd) == 0) {
+                &print_rpt("==> Failed - No VHDL translation.\n");
+                $not_impl++;
+                next;
+            }
+            else {
+                &print_rpt("==> Failed - running iverilog.\n");
+                $failed++;
+                next;
+            }
         }
 
         #
