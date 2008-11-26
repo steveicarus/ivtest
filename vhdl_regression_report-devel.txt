@@ -17,9 +17,15 @@ Running VHDL tests for Icarus Verilog version: 0.9.
            case5: Passed.
            case6: Passed.
            case7: Passed.
+        case3.8A: Passed.
+        case3.8B: Passed.
+        case3.8C: Passed.
+        case3.8D: Passed.
      blocksynth1: Passed.
       casesynth1: Passed.
+      casesynth2: Passed.
       casesynth3: Passed.
+     casex_synth: Passed.
         dffsynth: Passed.
        dffsynth2: Passed.
        dffsynth4: Passed.
@@ -48,10 +54,7 @@ Running VHDL tests for Icarus Verilog version: 0.9.
     always3.1.1D: Passed.
     always3.1.1E: Passed.
     always3.1.1F: Passed.
-    always3.1.1I: Passed.
-    always3.1.1J: Passed.
     always3.1.4A: Passed.
-    always3.1.4B: Passed.
     always3.1.4D: Passed.
     always3.1.4E: Passed.
     always3.1.4G: Passed.
@@ -71,6 +74,7 @@ Running VHDL tests for Icarus Verilog version: 0.9.
    function3.11C: Passed.
    function3.11D: Passed.
    function3.11F: Passed.
+     module3.12A: Passed.
      module3.12B: Passed.
          muxtest: Passed.
         ptest001: Passed.
@@ -117,6 +121,7 @@ Running VHDL tests for Icarus Verilog version: 0.9.
               z2: Passed.
          landor1: Passed.
            land2: Passed.
+           land3: Passed.
       contrib8.1: Passed.
       contrib8.4: Passed.
             dff1: Passed.
@@ -144,6 +149,7 @@ Running VHDL tests for Icarus Verilog version: 0.9.
         constadd: Passed.
        constadd2: Passed.
        constadd3: Passed.
+       consttern: Passed.
             talu: Passed.
         udp_bufg: Passed.
        udp_bufg2: Passed.
@@ -158,6 +164,7 @@ Running VHDL tests for Icarus Verilog version: 0.9.
      unary_xnor1: Passed.
      unary_xnor2: Passed.
      unary_minus: Passed.
+    unary_minus2: Passed.
     unary_minus3: Passed.
     unary_minus4: Passed.
        pr2224949: Passed.
@@ -212,6 +219,7 @@ delay_assign_nb2: Passed.
     param_concat: Passed.
     param_select: Passed.
    param_select2: Passed.
+   param_select3: Passed.
      param_times: Passed.
        function1: Passed.
     function_exp: Passed.
@@ -222,6 +230,25 @@ delay_assign_nb2: Passed.
            tern7: Passed.
            tern9: Passed.
           tern10: Passed.
+            bnot: Passed.
+     stask_parm1: Passed.
+     task_omemw2: Passed.
+     lh_varindx2: Passed.
+     lh_varindx4: Passed.
+     lh_varindx5: Passed.
+       lh_catadd: Passed.
+         signed1: Passed.
+         signed2: Passed.
+         signed3: Passed.
+         signed4: Passed.
+         signed5: Passed.
+         signed6: Passed.
+         signed7: Passed.
+         signed9: Passed.
+        signed11: Passed.
+         repeat2: Passed.
+    decl_assign1: Passed.
+          shift2: Passed.
        pr1903520: Passed.
           bitsel: Passed.
          bitsel2: Passed.
@@ -230,4 +257,4 @@ delay_assign_nb2: Passed.
          bitsel5: Passed.
           select: Passed.
 ======================================================================
-Test results: Total=229, Passed=225, Failed=4, Not Implemented=0
+Test results: Total=256, Passed=252, Failed=4, Not Implemented=0

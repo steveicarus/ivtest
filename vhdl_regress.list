@@ -19,9 +19,16 @@ case5         normal  ivltests
 case6         normal  ivltests
 case7         normal  ivltests
 
+case3.8A      normal  ivltests
+case3.8B      normal  ivltests
+case3.8C      normal  ivltests
+case3.8D      normal  ivltests
+
 blocksynth1   normal  ivltests
 casesynth1    normal  ivltests
+casesynth2    normal  ivltests
 casesynth3    normal  ivltests
+casex_synth   normal  ivltests
 
 dffsynth      normal  ivltests
 dffsynth2     normal  ivltests
@@ -57,11 +64,8 @@ always3.1.1C  normal  ivltests
 always3.1.1D  normal  ivltests
 always3.1.1E  normal  ivltests
 always3.1.1F  normal  ivltests
-always3.1.1I  normal  ivltests
-always3.1.1J  normal  ivltests
 
 always3.1.4A  normal  ivltests
-always3.1.4B  normal  ivltests
 always3.1.4D  normal  ivltests
 always3.1.4E  normal  ivltests
 always3.1.4G  normal  ivltests
@@ -87,6 +91,7 @@ function3.11C normal  ivltests
 function3.11D normal  ivltests
 function3.11F normal  ivltests
 
+module3.12A   normal  ivltests
 module3.12B   normal  ivltests
 muxtest       normal  ivltests
 
@@ -138,6 +143,7 @@ z1            normal  ivltests
 z2            normal  ivltests
 landor1       normal  ivltests
 land2         normal  ivltests
+land3         normal  ivltests
 contrib8.1    normal  ivltests
 contrib8.4    normal  ivltests
 dff1          normal  ivltests
@@ -169,6 +175,7 @@ constmult     normal  ivltests
 constadd      normal  ivltests
 constadd2     normal  ivltests
 constadd3     normal  ivltests
+consttern     normal  ivltests
 talu          normal  ivltests
 
 udp_bufg      normal  ivltests
@@ -185,6 +192,7 @@ unary_xor     normal  ivltests
 unary_xnor1   normal  ivltests
 unary_xnor2   normal  ivltests
 unary_minus   normal  ivltests
+unary_minus2  normal  ivltests
 unary_minus3  normal  ivltests
 unary_minus4  normal  ivltests
 
@@ -247,6 +255,7 @@ wireland      normal  ivltests
 param_concat  normal  ivltests
 param_select  normal  ivltests
 param_select2 normal  ivltests
+param_select3 normal  ivltests
 param_times   normal  ivltests
 
 function1     normal  ivltests diff=log/function1.log:vhdl_gold/function1.gold
@@ -259,9 +268,30 @@ tern6         normal  ivltests
 tern7         normal  ivltests
 tern9         normal  ivltests
 tern10        normal  ivltests
+bnot          normal  ivltests
+stask_parm1   normal  ivltests
+task_omemw2   normal  ivltests
 
-# port-test3
-# ^^^ last one I checked
+lh_varindx2   normal  ivltests
+lh_varindx4   normal  ivltests
+lh_varindx5   normal  ivltests
+lh_catadd     normal  ivltests
+
+signed1       normal  ivltests
+signed2       normal  ivltests
+signed3       normal  ivltests
+signed4       noraml  ivltests diff=log/signed4.log:gold/signed4.gold
+signed5       normal  ivltests
+signed6       normal  ivltests
+signed7       normal  ivltests
+signed9       normal  ivltests
+signed11      normal  ivltests
+
+repeat2       normal  ivltests
+decl_assign1  normal  ivltests
+
+shift2        normal  ivltests
+
 
 # Out of order from here
 
