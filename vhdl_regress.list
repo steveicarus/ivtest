@@ -191,6 +191,8 @@ unary_minus4  normal  ivltests
 pr2224949     normal  ivltests
 pr2281479     normal  ivltests
 pr2281519     CO      vhdl_tests
+pr2147135a    CO      vhdl_tests
+pr2147135b    CO      vhdl_tests
 
 ga_and        normal  ivltests
 ga_or         normal  ivltests
