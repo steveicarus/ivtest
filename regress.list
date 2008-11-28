@@ -1758,3 +1758,5 @@ pr2305307c	normal	ivltests
 pr2306259	normal	ivltests
 analog1	normal,-gverilog-ams	ivltests
 analog2	normal,-gverilog-ams	ivltests
+pr2350934	normal	ivltests
+pr2350934b	normal	ivltests
