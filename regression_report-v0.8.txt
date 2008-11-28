@@ -166,6 +166,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                       pr622: Not Implemented.
                       pr639: Not Implemented.
                   pr1912112: Not Implemented.
+                    analog1: Not Implemented.
+                    analog2: Not Implemented.
                        cmos: Not Implemented.
                dump_memword: Not Implemented.
                    nb_delay: Not Implemented.
@@ -957,7 +959,7 @@ test_mos_strength_reduction: Passed.
                  realtobits: Passed.
                    negvalue: Passed.
                       pr434: Passed.
-                      pr556: Passed.
+                      pr556: ==> Failed - output does not match gold file.
                       pr632: ==> Failed - output does not match gold file.
                       pr617: Passed.
                       pr673: Passed.
@@ -1011,7 +1013,7 @@ test_mos_strength_reduction: Passed.
                       pr987: Passed.
                       pr990: ==> Failed - output does not match gold file.
                       pr991: Passed.
-                      pr995: Passed.
+                      pr995: ==> Failed - output does not match gold file.
                          eq: Passed.
                        neq1: Passed.
                      pr1000: Passed.
@@ -1033,7 +1035,7 @@ test_mos_strength_reduction: Passed.
                   pr1367855: Passed.
                   pr1380261: ==> Failed - output does not match gold file.
                   pr1444055: Passed.
-                  pr1388974: Passed.
+                  pr1388974: ==> Failed - output does not match gold file.
                      types1: Passed.
                   pr1455873: Passed.
                   pr1474318: Passed.
@@ -1117,7 +1119,7 @@ test_mos_strength_reduction: Passed.
                   pr1770199: Passed.
                   pr1776485: Passed.
                   pr1777103: Passed.
-                  pr1784984: Passed.
+                  pr1784984: ==> Failed - output does not match gold file.
                  pr1787394a: ==> Failed - output does not match gold file.
                  pr1787394b: Passed.
                   pr1787423: ==> Failed - output does not match gold file.
@@ -1156,7 +1158,7 @@ test_mos_strength_reduction: Passed.
                  pr1875866b: Passed.
                   pr1877740: ==> Failed - output does not match gold file.
                   pr1879226: Passed.
-         multi_driver_delay: ==> Failed - running iverilog.
+         multi_driver_delay: ==> Failed - output does not match gold file.
                real_op_fail: Passed - CE.
                   pr1883052: ==> Failed - output does not match gold file.
                   pr1885847: Passed.
@@ -1201,7 +1203,7 @@ test_mos_strength_reduction: Passed.
                   pr1985582: Passed.
                   pr1990164: Passed.
                   pr1992244: Passed.
-                  pr2001162: ==> Failed - output does not match gold file.
+                  pr2001162: Passed.
                   pr2002443: Passed - CO.
                   pr2011429: Passed.
                   pr2013758: ==> Failed - output does not match gold file.
@@ -1216,7 +1218,7 @@ test_mos_strength_reduction: Passed.
                   pr2043585: ==> Failed - output does not match gold file.
                   pr2051694: Passed - CE.
                   pr2051975: Passed - CE.
-                  pr2053944: ==> Failed - output does not match gold file.
+                  pr2053944: Passed.
                   pr2076425: Passed.
                   pr2085984: Passed.
      no_timescale_in_module: Passed - CE.
@@ -1230,7 +1232,7 @@ test_mos_strength_reduction: Passed.
                   pr2138979: ==> Failed - output does not match gold file.
                  pr2138979b: ==> Failed - output does not match gold file.
                  pr2138979c: ==> Failed - output does not match gold file.
-                 pr2138979d: ==> Failed - running iverilog.
+                 pr2138979d: ==> Failed - output does not match gold file.
                   pr2146620: Passed.
                  pr2146620b: Passed.
                  pr2146620c: Passed.
@@ -1256,9 +1258,9 @@ test_mos_strength_reduction: Passed.
           check_constant_18: Passed - CE.
           check_constant_19: Passed - CE.
           check_constant_20: Passed - CE.
-                  pr2159630: ==> Failed - output does not match gold file.
+                  pr2159630: Passed.
                   pr2166188: ==> Failed - output does not match gold file.
-                  pr2172606: ==> Failed - output does not match gold file.
+                  pr2172606: Passed.
                   pr2181249: Passed.
                   pr2190323: Passed.
                  pr2202706b: Passed.
@@ -1276,7 +1278,8 @@ test_mos_strength_reduction: Passed.
                   pr2305307: Passed.
                  pr2305307b: Passed.
                  pr2305307c: Passed.
-                    analog1: ==> Failed - running iverilog.
-                    analog2: ==> Failed - running iverilog.
+                  pr2350934: ==> Failed - running iverilog.
+                 pr2350934b: ==> Failed - running iverilog.
+                  pr2350988: ==> Failed - running iverilog.
 ======================================================================
-Test results: Total=1278, Passed=913, Failed=104, Not Implemented=261
+Test results: Total=1281, Passed=913, Failed=105, Not Implemented=263

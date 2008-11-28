@@ -124,6 +124,7 @@ v0.8:ca_pow_unsigned	NI
 v0.8:ca_pow_signed	NI
 v0.8:ca_pow_synth	NI
 v0.8:pow_unsigned	NI
+v0.8:pow_signed	NI
 v0.8:real_pwr_in_ca	NI
 v0.8:rl_pow	NI
 
@@ -1507,6 +1508,7 @@ pr1883052b	normal	ivltests
 pr1885847	normal	ivltests diff=log/pr1885847.log:gold/pr1885847.gold
 pr1887168	normal	ivltests diff=log/pr1887168.log:gold/pr1887168.gold
 pow_unsigned	normal	ivltests
+pow_signed	normal	ivltests
 ca_pow_unsigned	normal	ivltests
 ca_pow_signed	normal	ivltests
 ca_pow_synth	normal	ivltests

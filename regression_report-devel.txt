@@ -1025,6 +1025,7 @@ test_mos_strength_reduction: Passed.
                   pr1885847: Passed.
                   pr1887168: Passed.
                pow_unsigned: Passed.
+                 pow_signed: Passed.
             ca_pow_unsigned: Passed.
               ca_pow_signed: Passed.
                ca_pow_synth: Passed.
@@ -1280,4 +1281,4 @@ test_mos_strength_reduction: Passed.
                  pr2350934b: Passed.
                   pr2350988: Passed.
 ======================================================================
-Test results: Total=1279, Passed=1272, Failed=7, Not Implemented=0
+Test results: Total=1280, Passed=1273, Failed=7, Not Implemented=0
