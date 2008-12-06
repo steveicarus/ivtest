@@ -93,7 +93,7 @@ sub read_regression_list {
             # This version of the program does not implement something
             # required to run this test.
             if ($testtype eq "NI") {
-                $args{$tname}    = "";
+                $args{$tname}     = "";
                 $ccode{$tname}    = "";
                 $goldfile{$tname} = "";
                 $cargs{$tname}    = "";
@@ -105,7 +105,7 @@ sub read_regression_list {
 #            print "Read $tver:$tname=$ccode{$tname}, $goldfile{$tname}, ".
 #                  "$args{$tname}, $cargs{$tname}\n";
         } else {
-            next if (exists($ccode{$tname}));
+            next if (exists($ccode{$tname}));  # Skip if already defined.
             # Get the test type and any iverilog arguments.
             if ($fields[1] =~ ',') {
                 ($testtype, $args{$tname}) = split(',', $fields[1], 2);

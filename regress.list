@@ -39,6 +39,9 @@
 # RE:      Runtime with Errors - We EXPECT errors - we're checking 
 #                                illegal syntax
 #
+# EF:      Expected fail - We EXPECT this test to fail - only use
+#                          with older versions of Icarus.
+#
 # NI:      Not implemented. Only use for version specific tests.
 # 
 # <directory> is where the <testname>.v file is located.
@@ -120,6 +123,7 @@ v0.8:pr1694413	NI
 v0.8:pr1750870	NI
 v0.8:pr1903157	NI
 v0.8:pr1903343	NI
+v0.8:pr2352834	NI
 v0.8:ca_pow_unsigned	NI
 v0.8:ca_pow_signed	NI
 v0.8:ca_pow_synth	NI
@@ -195,6 +199,7 @@ v0.8:pr1745005	NI
 v0.8:pr1830834	NI
 v0.8:pr1993479	NI
 v0.8:pr2076363	NI
+v0.8:pr2358848	NI
 v0.8:select5	NI
 v0.8:select6	NI
 v0.8:select7	NI
@@ -242,6 +247,10 @@ v0.8:pr2138682	NI
 v0.8:pr2257003	NI
 v0.8:pr2257003b	NI
 v0.8:pr2272468	NI
+v0.8:pr2350934	NI
+v0.8:pr2350934b	NI
+v0.8:pr2350988	NI
+v0.8:pr2355304	NI
 v0.8:scoped_events	NI
 v0.8:unnamed_generate_block	NI
 v0.8:pr2306259	NI
@@ -431,6 +440,109 @@ v0.8:always3.1.3H	CO	ivltests
 v0.8:always3.1.3J	CO	ivltests
 v0.8:always3.1.9A	CO	ivltests
 v0.8:always3.1.9B	CO	ivltests
+
+# V0.8 has bugs that prevent these files from running correctly.
+# This list has not been completely audited to see if the bugs
+# are fixable. I have looked at most of the later ones (pr1823732
+# and after). 
+v0.8:nblkpush	EF ivltests
+v0.8:inertdly 	EF ivltests
+v0.8:integer5	EF ivltests
+v0.8:signed12	EF ivltests diff=log/signed12.log:gold/signed12.gold
+v0.8:comp1000	EF ivltests diff=log/comp1000.log:gold/comp1000.gold
+v0.8:comp1001	EF ivltests diff=log/comp1001.log:gold/comp1001.gold
+v0.8:comp1001_fail3	EF ivltests
+v0.8:comp1001_fail4	EF ivltests
+v0.8:comp1001_fail5	EF ivltests
+v0.8:vcd-dup	EF ivltests diff=work/vcd-dup.vcd:gold/vcd-dup.vcd.gold:2
+v0.8:string11	EF ivltests diff=log/string11.log:gold/string11.gold
+v0.8:bitwidth3	EF ivltests
+v0.8:shift5	EF ivltests diff=log/shift5.log:gold/shift5.gold
+v0.8:extend	EF ivltests
+v0.8:pr487	EF ivltests diff=log/pr487.log:gold/pr487.gold
+v0.8:pr527	EF ivltests diff=log/pr527.log:gold/pr527.gold
+v0.8:pr528	EF ivltests diff=log/pr528.log:gold/pr528.gold
+v0.8:pr528b	EF ivltests diff=log/pr528b.log:gold/pr528b.gold
+v0.8:pr529	EF ivltests
+v0.8:pr564	EF ivltests
+v0.8:pr587	EF ivltests
+v0.8:case5	EF,-S ivltests
+v0.8:basiclatch	EF,-S ivltests
+v0.8:dffsynth	EF,-S ivltests
+v0.8:pr632	EF ivltests diff=log/pr632.log:gold/pr632.gold
+v0.8:pr699	EF ivltests
+v0.8:pr990	EF ivltests
+v0.8:pr1380261	EF ivltests
+v0.8:pr1388974	EF ivltests
+v0.8:pr1476440	EF ivltests diff=log/pr1476440.log:gold/pr1476440.gold
+v0.8:pr1492075	EF ivltests diff=log/pr1492075.log:gold/pr1492075.gold
+v0.8:pr1494799	EF ivltests diff=log/pr1494799.log:gold/pr1494799.gold
+v0.8:pr1515168	EF ivltests
+v0.8:pr1522570	EF ivltests
+v0.8:pr1528093	EF ivltests
+v0.8:pr1570635	EF ivltests
+v0.8:pr1570635b	EF ivltests
+v0.8:pr1632861	EF ivltests diff=log/pr1632861.log:gold/pr1632861.gold
+v0.8:pr1636409	EF ivltests diff=log/pr1636409.log:gold/pr1636409.gold
+v0.8:pr1638985	EF ivltests diff=log/pr1638985.log:gold/pr1638985.gold
+v0.8:pr1639060	EF ivltests diff=log/pr1639060.log:gold/pr1639060.gold
+v0.8:pr1639968	EF ivltests diff=log/pr1639968.log:gold/pr1639968.gold
+v0.8:pr1645518	EF ivltests diff=log/pr1645518.log:gold/pr1645518.gold
+v0.8:pr1648365	EF ivltests diff=log/pr1648365.log:gold/pr1648365.gold
+v0.8:pr1661640	EF ivltests diff=log/pr1661640.log:gold/pr1661640.gold
+v0.8:pr1664684	EF ivltests diff=log/pr1664684.log:gold/pr1664684.gold
+v0.8:pr1676836	EF ivltests
+v0.8:pr1698658	EF ivltests diff=log/pr1698658.log:gold/pr1698658.gold
+v0.8:pr1699519	EF ivltests diff=log/pr1699519.log:gold/pr1699519.gold
+v0.8:pr1701855	EF ivltests diff=log/pr1701855.log:gold/pr1701855.gold
+v0.8:pr1701889	EF ivltests diff=log/pr1701889.log:gold/pr1701889.gold
+v0.8:pr1703120	EF ivltests diff=log/pr1703120.log:gold/pr1703120.gold
+v0.8:pr1704013	EF ivltests # V0.9 has this as a CE, but this will work.
+v0.8:pr1742910	EF ivltests
+v0.8:pr1752823b	EF ivltests diff=log/pr1752823b.log:gold/pr1752823b.gold
+v0.8:pr1784984	EF ivltests
+v0.8:pr1787394a	EF ivltests diff=log/pr1787394a.log:gold/pr1787394a.gold
+v0.8:pr1787423	EF ivltests diff=log/pr1787423.log:gold/pr1787423.gold
+v0.8:pr1787423b	EF ivltests
+v0.8:pr1787423c	EF ivltests
+v0.8:pr1792152	EF ivltests diff=log/pr1792152.log:gold/pr1792152.gold
+v0.8:pr1793157	EF ivltests diff=log/pr1793157.log:gold/pr1793157.gold
+v0.8:pr1793749	EF ivltests diff=log/pr1793749.log:gold/pr1793749.gold
+v0.8:pr1793749b	EF ivltests diff=log/pr1793749b.log:gold/pr1793749b.gold
+v0.8:pr1794362	EF ivltests
+v0.8:pr1795005b	EF ivltests diff=log/pr1795005b.log:gold/pr1795005b.gold
+v0.8:pr1823732	EF ivltests diff=log/pr1823732.log:gold/pr1823732.gold
+v0.8:pr1831724	EF ivltests diff=log/pr1831724.log:gold/pr1831724.gold
+v0.8:pr1832097a	EF ivltests
+v0.8:pr1832097b	EF ivltests
+v0.8:pr1841300	EF ivltests diff=log/pr1841300.log:gold/pr1841300.gold
+v0.8:pr1845683	EF ivltests diff=log/pr1845683.log:gold/pr1845683.gold
+v0.8:pr1866215	EF ivltests diff=log/pr1866215.log:gold/pr1866215.gold
+v0.8:pr1866215b	EF ivltests diff=log/pr1866215b.log:gold/pr1866215b.gold
+v0.8:pr1867161b	EF ivltests diff=log/pr1867161b.log:gold/pr1867161b.gold
+v0.8:pr1877740	EF ivltests
+v0.8:multi_driver_delay	EF ivltests
+v0.8:pr1883052	EF ivltests
+v0.8:pr1913918c	EF ivltests
+v0.8:pr1932444	EF ivltests
+v0.8:pr1960548	EF ivltests diff=log/pr1960548.log:gold/pr1960548.gold
+v0.8:pr1960619	EF ivltests diff=log/pr1960619.log:gold/pr1960619.gold
+v0.8:pr1963240	EF ivltests diff=log/pr1963240.log:gold/pr1963240.gold
+v0.8:pr2013758	EF ivltests
+v0.8:pr2014673	EF ivltests
+v0.8:pr2043585	EF ivltests diff=log/pr2043585.log:gold/pr2043585.gold
+v0.8:pr2121536	EF ivltests
+v0.8:pr2121536b	EF ivltests
+v0.8:pr2136787	EF ivltests diff=log/pr2136787.log:gold/pr2136787.gold
+v0.8:pr2138979	EF ivltests
+v0.8:pr2138979b	EF ivltests diff=log/pr2138979b.log:gold/pr2138979b.gold
+v0.8:pr2138979c	EF ivltests diff=log/pr2138979c.log:gold/pr2138979c.gold
+v0.8:pr2138979d	EF ivltests diff=log/pr2138979d.log:gold/pr2138979d.gold
+v0.8:pr2146824	EF ivltests diff=log/pr2146824.log:gold/pr2146824.gold
+v0.8:pr2166188	EF ivltests
+v0.8:pr2224949	EF ivltests
+v0.8:pr2233192	EF ivltests
+v0.8:pr2233192b	EF ivltests
 
 #==========
 # v0.9 doesn't support synthesis. Might as well run them as

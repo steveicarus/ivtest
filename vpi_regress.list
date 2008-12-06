@@ -97,17 +97,14 @@ getp             normal getp.c        getp.log
 putp             normal putp.c        putp.log
 putp2            normal putp2.c       putp2.log
 mipname          normal mipname.c     mipname.log
-# This currently (0.9.devel) fails because changing an individual
-# array word does not trigger an array callback. The cb_data also
-# looks to be a problem.
 memmon           normal memmon.c      memmon.log
 listparams       normal listparams.c  listparams.log
 pr1693971        normal pr1693971.c   pr1693971.log
 spec_delays      normal,-gspecify spec_delays.c spec_delays.log
 pr2048463        normal pr2048463.c   pr2048463.log
+pr2314742        normal pr2314742.c   pr2314742.gold
 
 # Add new tests here. If the test needs a compile option or a
 # different log file to run with an older versions or if it uses
 # something not implemented (NI) by other versions of the program
 # it will also need a version specific line(s) above.
-pr2314742	normal	pr2314742.c   pr2314742.gold

@@ -37,6 +37,7 @@ our (@testlist, %srcpath, %testtype, %args, %plargs,
 #    CE = compile error.
 #    CN = compile null.
 #    RE = runtime error.
+#    EF = expected fail.
 #    NI = not implemented.
 #
 sub read_regression_list {

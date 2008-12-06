@@ -49,12 +49,13 @@ my $ver = &get_ivl_version($suffix);
 #
 sub execute_regression {
     my $sfx = shift(@_);
-    my ($tname, $total, $passed, $failed, $not_impl, $len, 
-        $cmd, $diff_file, $outfile, $unit);
+    my ($tname, $total, $passed, $failed, $expected_fail, $not_impl,
+        $len, $cmd, $diff_file, $outfile, $unit);
 
     $total = 0;
     $passed = 0;
     $failed = 0;
+    $expected_fail = 0;
     $not_impl = 0;
     $len = 0;
 
@@ -202,6 +203,11 @@ sub execute_regression {
         }
 #        print "diff $gold{$tname}, $diff_file, $offset{$tname}\n";
         if (diff($gold{$tname}, $diff_file, $offset{$tname})) {
+            if ($testtype{$tname} eq "EF") {
+                &print_rpt("Passed - expected fail.\n");
+                $expected_fail++;
+                next;
+            }
             &print_rpt("==> Failed - output does not match gold file.\n");
             $failed++;
             next;
@@ -221,6 +227,6 @@ sub execute_regression {
     }
 
     &print_rpt("=" x 70 . "\n");
-    &print_rpt("Test results: Total=$total, Passed=$passed, Failed=$failed,".
-               " Not Implemented=$not_impl\n");
+    &print_rpt("Test results:\n  Total=$total, Passed=$passed, Failed=$failed,".
+               " Not Implemented=$not_impl, Expected Fail=$expected_fail\n");
 }
