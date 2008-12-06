@@ -46,10 +46,12 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr1750870: Not Implemented.
                   pr1903157: Not Implemented.
                   pr1903343: Not Implemented.
+                  pr2352834: Not Implemented.
             ca_pow_unsigned: Not Implemented.
               ca_pow_signed: Not Implemented.
                ca_pow_synth: Not Implemented.
                pow_unsigned: Not Implemented.
+                 pow_signed: Not Implemented.
              real_pwr_in_ca: Not Implemented.
                      rl_pow: Not Implemented.
                   pr1701890: Not Implemented.
@@ -108,6 +110,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr1830834: Not Implemented.
                   pr1993479: Not Implemented.
                   pr2076363: Not Implemented.
+                  pr2358848: Not Implemented.
                     select5: Not Implemented.
                     select6: Not Implemented.
                     select7: Not Implemented.
@@ -151,6 +154,10 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr2257003: Not Implemented.
                  pr2257003b: Not Implemented.
                   pr2272468: Not Implemented.
+                  pr2350934: Not Implemented.
+                 pr2350934b: Not Implemented.
+                  pr2350988: Not Implemented.
+                  pr2355304: Not Implemented.
               scoped_events: Not Implemented.
      unnamed_generate_block: Not Implemented.
                   pr2306259: Not Implemented.
@@ -295,6 +302,104 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                always3.1.3J: Passed - CO.
                always3.1.9A: Passed - CO.
                always3.1.9B: Passed - CO.
+                   nblkpush: Passed - expected fail.
+                   inertdly: Passed - expected fail.
+                   integer5: Passed - expected fail.
+                   signed12: Passed - expected fail.
+                   comp1000: Passed - expected fail.
+                   comp1001: Passed - expected fail.
+             comp1001_fail3: Passed - expected fail.
+             comp1001_fail4: Passed - expected fail.
+             comp1001_fail5: Passed - expected fail.
+                    vcd-dup: Passed - expected fail.
+                   string11: Passed - expected fail.
+                  bitwidth3: Passed - expected fail.
+                     shift5: Passed - expected fail.
+                     extend: Passed - expected fail.
+                      pr487: Passed - expected fail.
+                      pr527: Passed - expected fail.
+                      pr528: Passed - expected fail.
+                     pr528b: Passed - expected fail.
+                      pr529: Passed - expected fail.
+                      pr564: Passed - expected fail.
+                      pr587: Passed - expected fail.
+                      case5: Passed - expected fail.
+                 basiclatch: Passed - expected fail.
+                   dffsynth: Passed - expected fail.
+                      pr632: Passed - expected fail.
+                      pr699: Passed - expected fail.
+                      pr990: Passed - expected fail.
+                  pr1380261: Passed - expected fail.
+                  pr1388974: Passed - expected fail.
+                  pr1476440: Passed - expected fail.
+                  pr1492075: Passed - expected fail.
+                  pr1494799: Passed - expected fail.
+                  pr1515168: Passed - expected fail.
+                  pr1522570: Passed - expected fail.
+                  pr1528093: Passed - expected fail.
+                  pr1570635: Passed - expected fail.
+                 pr1570635b: Passed - expected fail.
+                  pr1632861: Passed - expected fail.
+                  pr1636409: Passed - expected fail.
+                  pr1638985: Passed - expected fail.
+                  pr1639060: Passed - expected fail.
+                  pr1639968: Passed - expected fail.
+                  pr1645518: Passed - expected fail.
+                  pr1648365: Passed - expected fail.
+                  pr1661640: Passed - expected fail.
+                  pr1664684: Passed - expected fail.
+                  pr1676836: Passed - expected fail.
+                  pr1698658: Passed - expected fail.
+                  pr1699519: Passed - expected fail.
+                  pr1701855: Passed - expected fail.
+                  pr1701889: Passed - expected fail.
+                  pr1703120: Passed - expected fail.
+                  pr1704013: Passed - expected fail.
+                  pr1742910: Passed - expected fail.
+                 pr1752823b: Passed - expected fail.
+                  pr1784984: Passed - expected fail.
+                 pr1787394a: Passed - expected fail.
+                  pr1787423: Passed - expected fail.
+                 pr1787423b: Passed - expected fail.
+                 pr1787423c: Passed - expected fail.
+                  pr1792152: Passed - expected fail.
+                  pr1793157: Passed - expected fail.
+                  pr1793749: Passed - expected fail.
+                 pr1793749b: Passed - expected fail.
+                  pr1794362: Passed - expected fail.
+                 pr1795005b: Passed - expected fail.
+                  pr1823732: Passed - expected fail.
+                  pr1831724: Passed - expected fail.
+                 pr1832097a: Passed - expected fail.
+                 pr1832097b: Passed - expected fail.
+                  pr1841300: Passed - expected fail.
+                  pr1845683: Passed - expected fail.
+                  pr1866215: Passed - expected fail.
+                 pr1866215b: Passed - expected fail.
+                 pr1867161b: Passed - expected fail.
+                  pr1877740: Passed - expected fail.
+         multi_driver_delay: Passed - expected fail.
+                  pr1883052: Passed - expected fail.
+                 pr1913918c: Passed - expected fail.
+                  pr1932444: Passed - expected fail.
+                  pr1960548: Passed - expected fail.
+                  pr1960619: Passed - expected fail.
+                  pr1963240: Passed - expected fail.
+                  pr2013758: Passed - expected fail.
+                  pr2014673: Passed - expected fail.
+                  pr2043585: Passed - expected fail.
+                  pr2121536: Passed - expected fail.
+                 pr2121536b: Passed - expected fail.
+                  pr2136787: Passed - expected fail.
+                  pr2138979: Passed - expected fail.
+                 pr2138979b: Passed - expected fail.
+                 pr2138979c: Passed - expected fail.
+                 pr2138979d: Passed - expected fail.
+                  pr2146824: Passed - expected fail.
+                  pr2166188: Passed - expected fail.
+                  pr2224949: Passed - expected fail.
+                  pr2233192: Passed - expected fail.
+                 pr2233192b: Passed - expected fail.
               always3.1.11A: Passed.
               always3.1.11B: Passed.
               always3.1.12A: Passed.
@@ -540,7 +645,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                 event_list3: Passed.
                     posedge: Passed.
                   nblkorder: Passed.
-                   nblkpush: ==> Failed - output does not match gold file.
                  task_inpad: Passed.
                 task_omemw3: Passed - CO.
                   cond_band: Passed.
@@ -621,7 +725,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                  port-test2: Passed.
                  port-test3: Passed - CE.
                param_string: Passed.
-                   inertdly: ==> Failed - output does not match gold file.
                       galan: Passed.
                         pic: Passed.
                     initmod: Passed.
@@ -693,7 +796,6 @@ test_mos_strength_reduction: Passed.
                 param_test4: Passed.
                   param_vec: Passed.
                  param_vec2: Passed.
-                   integer5: ==> Failed - output does not match gold file.
                     signed2: Passed.
                     signed3: Passed.
                     signed4: Passed.
@@ -704,17 +806,11 @@ test_mos_strength_reduction: Passed.
                     signed9: Passed.
                    signed10: Passed.
                    signed11: Passed.
-                   signed12: ==> Failed - output does not match gold file.
                     repeat1: Passed.
                decl_assign1: Passed.
                      vector: Passed.
                        mcl1: Passed.
                        mcl2: Passed.
-                   comp1000: ==> Failed - output does not match gold file.
-                   comp1001: ==> Failed - output does not match gold file.
-             comp1001_fail3: ==> Failed - output does not match gold file.
-             comp1001_fail4: ==> Failed - output does not match gold file.
-             comp1001_fail5: ==> Failed - output does not match gold file.
                    specify1: Passed - CO.
                deposit_wire: Passed.
                     deposit: Passed.
@@ -739,7 +835,6 @@ test_mos_strength_reduction: Passed.
                      memidx: Passed.
                   memidxrng: Passed.
                    mem2port: Passed.
-                    vcd-dup: ==> Failed - output does not match gold file.
                     resolv1: Passed.
                       pr307: Passed.
                      pr307a: Passed.
@@ -781,7 +876,6 @@ test_mos_strength_reduction: Passed.
                     string8: Passed.
                     string9: Passed.
                    string10: Passed.
-                   string11: ==> Failed - output does not match gold file.
                   lh_memcat: Passed.
                  lh_memcat2: Passed.
                  lh_memcat3: Passed.
@@ -805,7 +899,6 @@ test_mos_strength_reduction: Passed.
                    bitsel10: Passed.
                    bitwidth: Passed.
                   bitwidth2: Passed.
-                  bitwidth3: ==> Failed - output does not match gold file.
                       pr312: Passed.
                       pr355: Passed.
                     ram16x1: Passed.
@@ -824,7 +917,6 @@ test_mos_strength_reduction: Passed.
                      shift2: Passed.
                      shift3: Passed.
                      shift4: Passed.
-                     shift5: ==> Failed - output does not match gold file.
                       pr243: Passed.
                      dummy7: Passed.
                      time6b: Passed.
@@ -842,12 +934,10 @@ test_mos_strength_reduction: Passed.
                     big_int: Passed.
                     concat1: Passed.
                     concat2: Passed.
-                     extend: ==> Failed - output does not match gold file.
                   timeform1: Passed.
                   timeform2: Passed.
                       pr245: Passed.
                       pr478: Passed.
-                      pr487: ==> Failed - output does not match gold file.
                       pr492: Passed.
                       pr498: Passed.
                     addwide: Passed.
@@ -859,10 +949,6 @@ test_mos_strength_reduction: Passed.
                       pr519: Passed.
                       pr522: Passed.
                       pr524: Passed.
-                      pr527: ==> Failed - output does not match gold file.
-                      pr528: ==> Failed - output does not match gold file.
-                     pr528b: ==> Failed - output does not match gold file.
-                      pr529: ==> Failed - output does not match gold file.
                      pr530a: Passed.
                      pr530b: Passed.
                      pr530c: Passed.
@@ -880,14 +966,12 @@ test_mos_strength_reduction: Passed.
                       pr542: Passed.
                       pr544: Passed.
                       pr547: Passed.
-                      pr564: ==> Failed - output does not match gold file.
                       pr569: Passed.
                       pr572: Passed.
                      pr572b: Passed.
                       pr578: Passed.
                       pr584: Passed.
                       pr585: Passed.
-                      pr587: ==> Failed - output does not match gold file.
                       pr590: Passed.
                       pr594: Passed.
                       pr596: Passed.
@@ -896,12 +980,10 @@ test_mos_strength_reduction: Passed.
                       case2: Passed.
                       case3: Passed.
                       case4: Passed.
-                      case5: ==> Failed - output does not match gold file.
                       case6: Passed.
                       case7: Passed.
                     condit1: Passed.
                    basicreg: Passed.
-                 basiclatch: ==> Failed - output does not match gold file.
                  basicstate: Passed.
                 basicstate2: Passed.
                    multireg: Passed.
@@ -920,7 +1002,6 @@ test_mos_strength_reduction: Passed.
                  casesynth2: Passed.
                  casesynth3: Passed.
                   lcatsynth: Passed.
-                   dffsynth: ==> Failed - output does not match gold file.
                   dffsynth2: Passed.
                   dffsynth3: Passed.
                   dffsynth4: Passed.
@@ -960,7 +1041,6 @@ test_mos_strength_reduction: Passed.
                    negvalue: Passed.
                       pr434: Passed.
                       pr556: ==> Failed - output does not match gold file.
-                      pr632: ==> Failed - output does not match gold file.
                       pr617: Passed.
                       pr673: Passed.
                       pr675: Passed.
@@ -968,7 +1048,6 @@ test_mos_strength_reduction: Passed.
                       pr685: Passed.
                       pr690: Passed.
                       pr693: Passed.
-                      pr699: ==> Failed - output does not match gold file.
                       pr704: Passed.
                       pr707: Passed.
                       pr708: Passed.
@@ -1011,7 +1090,6 @@ test_mos_strength_reduction: Passed.
                       pr979: Passed.
                       pr985: Passed.
                       pr987: Passed.
-                      pr990: ==> Failed - output does not match gold file.
                       pr991: Passed.
                       pr995: ==> Failed - output does not match gold file.
                          eq: Passed.
@@ -1033,30 +1111,20 @@ test_mos_strength_reduction: Passed.
                      pr1101: Passed.
                      pr1115: Passed.
                   pr1367855: Passed.
-                  pr1380261: ==> Failed - output does not match gold file.
                   pr1444055: Passed.
-                  pr1388974: ==> Failed - output does not match gold file.
                      types1: Passed.
                   pr1455873: Passed.
                   pr1474318: Passed.
-                  pr1476440: ==> Failed - output does not match gold file.
                   pr1477190: Passed.
                   pr1478121: Passed.
                   pr1478988: Passed.
                   pr1489568: Passed.
-                  pr1492075: ==> Failed - output does not match gold file.
-                  pr1494799: ==> Failed - output does not match gold file.
                   pr1508882: Passed.
                   pr1510724: Passed.
-                  pr1515168: ==> Failed - output does not match gold file.
                   pr1520314: Passed - CO.
-                  pr1522570: ==> Failed - output does not match gold file.
-                  pr1528093: ==> Failed - output does not match gold file.
                   pr1561597: Passed.
                   pr1570451: Passed.
                  pr1570451b: Passed.
-                  pr1570635: ==> Failed - output does not match gold file.
-                 pr1570635b: ==> Failed - output does not match gold file.
                   pr1574175: Passed.
                   pr1587634: Passed - CO.
                   pr1589497: Passed.
@@ -1069,21 +1137,11 @@ test_mos_strength_reduction: Passed.
                   pr1612693: Passed.
                   pr1628288: Passed.
                   pr1629683: Passed.
-                  pr1632861: ==> Failed - output does not match gold file.
-                  pr1636409: ==> Failed - output does not match gold file.
                   pr1637208: Passed.
-                  pr1638985: ==> Failed - output does not match gold file.
-                  pr1639060: ==> Failed - output does not match gold file.
-                  pr1639968: ==> Failed - output does not match gold file.
                   pr1645277: Passed.
-                  pr1645518: ==> Failed - output does not match gold file.
-                  pr1648365: ==> Failed - output does not match gold file.
                   pr1650842: Passed.
                   pr1657307: Passed.
-                  pr1661640: ==> Failed - output does not match gold file.
                   pr1662508: Passed.
-                  pr1664684: ==> Failed - output does not match gold file.
-                  pr1676836: ==> Failed - output does not match gold file.
                   pr1682887: Passed.
                   pr1691709: Passed.
                   pr1693921: Passed.
@@ -1093,62 +1151,34 @@ test_mos_strength_reduction: Passed.
                   pr1696137: Passed.
                   pr1697250: Passed.
                   pr1697732: Passed.
-                  pr1698658: ==> Failed - output does not match gold file.
                   pr1699444: Passed.
-                  pr1699519: ==> Failed - output does not match gold file.
-                  pr1701855: ==> Failed - output does not match gold file.
-                  pr1701889: ==> Failed - output does not match gold file.
                   pr1701921: Passed.
                   pr1703959: Passed.
                  elsif_test: Passed.
-                  pr1703120: ==> Failed - output does not match gold file.
-                  pr1704013: ==> Failed - output does not match gold file.
                   pr1705027: Passed - CO.
                   pr1716276: Passed.
                   pr1717361: Passed.
                   pr1735724: Passed - CE.
                   pr1735836: Passed.
-                  pr1742910: ==> Failed - output does not match gold file.
                   pr1746848: Passed.
                   pr1752353: Passed.
                  pr1752823a: Passed.
-                 pr1752823b: ==> Failed - output does not match gold file.
                   pr1755593: Passed.
                   pr1758135: Passed.
                   pr1763333: Passed - CE.
                   pr1770199: Passed.
                   pr1776485: Passed.
                   pr1777103: Passed.
-                  pr1784984: ==> Failed - output does not match gold file.
-                 pr1787394a: ==> Failed - output does not match gold file.
                  pr1787394b: Passed.
-                  pr1787423: ==> Failed - output does not match gold file.
-                 pr1787423b: ==> Failed - output does not match gold file.
-                 pr1787423c: ==> Failed - output does not match gold file.
                   pr1792108: Passed.
-                  pr1792152: ==> Failed - output does not match gold file.
-                  pr1793157: ==> Failed - output does not match gold file.
-                  pr1793749: ==> Failed - output does not match gold file.
-                 pr1793749b: ==> Failed - output does not match gold file.
-                  pr1794362: ==> Failed - output does not match gold file.
                  pr1795005a: Passed.
-                 pr1795005b: ==> Failed - output does not match gold file.
                   pr1804877: Passed.
                   pr1805837: Passed.
                   pr1812297: Passed.
                   pr1822658: Passed.
-                  pr1823732: ==> Failed - output does not match gold file.
-                  pr1831724: ==> Failed - output does not match gold file.
-                 pr1832097a: ==> Failed - output does not match gold file.
-                 pr1832097b: ==> Failed - output does not match gold file.
-                  pr1841300: ==> Failed - output does not match gold file.
-                  pr1845683: ==> Failed - output does not match gold file.
                   pr1855504: Passed.
                  pr1862744a: Passed.
-                  pr1866215: ==> Failed - output does not match gold file.
-                 pr1866215b: ==> Failed - output does not match gold file.
                  pr1867161a: Passed.
-                 pr1867161b: ==> Failed - output does not match gold file.
                   pr1867332: Passed - CO.
                   pr1868792: Passed.
                  pr1868991a: Passed.
@@ -1156,44 +1186,36 @@ test_mos_strength_reduction: Passed.
                   pr1873146: Passed.
                   pr1875866: Passed.
                  pr1875866b: Passed.
-                  pr1877740: ==> Failed - output does not match gold file.
                   pr1879226: Passed.
-         multi_driver_delay: ==> Failed - output does not match gold file.
                real_op_fail: Passed - CE.
-                  pr1883052: ==> Failed - output does not match gold file.
                   pr1885847: Passed.
                   pr1892959: Passed.
                  pr1892959b: Passed.
-                  pr1898983: ==> Failed - output does not match gold file.
+                  pr1898983: Passed.
                   pr1903520: Passed.
                   pr1907192: Passed.
                   pr1909940: Passed.
                  pr1909940b: Passed.
                   pr1912843: Passed.
                  pr1913918a: Passed.
-                 pr1913918c: ==> Failed - output does not match gold file.
                   pr1913937: Passed.
                   pr1921332: Passed - CO.
                   pr1924845: Passed.
                   pr1925356: Passed.
                  pr1925363a: Passed - CE.
                  pr1925363b: Passed - CE.
-                  pr1932444: ==> Failed - output does not match gold file.
                   pr1934744: Passed.
                   pr1936363: Passed.
                   pr1938138: Passed - CE.
                   pr1939165: Passed.
-                  pr1949025: ==> Failed - output does not match gold file.
+                  pr1949025: Passed.
                   pr1948342: Passed.
                   pr1958801: Passed.
        concat_zero_wid_fail: Passed - CE.
          repl_zero_wid_fail: Passed - CE.
                   pr1960545: Passed.
-                  pr1960548: ==> Failed - output does not match gold file.
                   pr1960558: Passed.
                   pr1960575: Passed.
-                  pr1960619: ==> Failed - output does not match gold file.
-                  pr1963240: ==> Failed - output does not match gold file.
                   pr1963960: Passed.
                      array4: Passed.
                      array5: Passed - CE.
@@ -1206,8 +1228,6 @@ test_mos_strength_reduction: Passed.
                   pr2001162: Passed.
                   pr2002443: Passed - CO.
                   pr2011429: Passed.
-                  pr2013758: ==> Failed - output does not match gold file.
-                  pr2014673: ==> Failed - output does not match gold file.
                   pr2015466: Passed.
                  pr2018235b: Passed.
                   pr2018305: Passed.
@@ -1215,7 +1235,6 @@ test_mos_strength_reduction: Passed.
                   pr2030767: Passed.
                   pr2036953: Passed.
                   pr2039694: Passed.
-                  pr2043585: ==> Failed - output does not match gold file.
                   pr2051694: Passed - CE.
                   pr2051975: Passed - CE.
                   pr2053944: Passed.
@@ -1225,18 +1244,10 @@ test_mos_strength_reduction: Passed.
                   pr2117473: Passed.
                   pr2117488: Passed.
                   pr2119622: Passed.
-                  pr2121536: ==> Failed - output does not match gold file.
-                 pr2121536b: ==> Failed - output does not match gold file.
                   pr2132552: Passed.
-                  pr2136787: ==> Failed - output does not match gold file.
-                  pr2138979: ==> Failed - output does not match gold file.
-                 pr2138979b: ==> Failed - output does not match gold file.
-                 pr2138979c: ==> Failed - output does not match gold file.
-                 pr2138979d: ==> Failed - output does not match gold file.
                   pr2146620: Passed.
                  pr2146620b: Passed.
                  pr2146620c: Passed.
-                  pr2146824: ==> Failed - output does not match gold file.
                   pr2148401: Passed.
            check_constant_1: Passed - CE.
            check_constant_2: Passed - CE.
@@ -1259,17 +1270,13 @@ test_mos_strength_reduction: Passed.
           check_constant_19: Passed - CE.
           check_constant_20: Passed - CE.
                   pr2159630: Passed.
-                  pr2166188: ==> Failed - output does not match gold file.
                   pr2172606: Passed.
                   pr2181249: Passed.
                   pr2190323: Passed.
                  pr2202706b: Passed.
                   pr2208681: Passed.
-                  pr2224949: ==> Failed - output does not match gold file.
                   pr2233180: Passed.
                  pr2233180b: Passed.
-                  pr2233192: ==> Failed - output does not match gold file.
-                 pr2233192b: ==> Failed - output does not match gold file.
                   pr2248925: Passed.
                   pr2251119: Passed.
                   pr2270035: Passed.
@@ -1278,8 +1285,8 @@ test_mos_strength_reduction: Passed.
                   pr2305307: Passed.
                  pr2305307b: Passed.
                  pr2305307c: Passed.
-                  pr2350934: ==> Failed - running iverilog.
-                 pr2350934b: ==> Failed - running iverilog.
-                  pr2350988: ==> Failed - running iverilog.
+                 pr2355304b: Passed.
+                  pr2358264: Passed.
 ======================================================================
-Test results: Total=1281, Passed=913, Failed=105, Not Implemented=263
+Test results:
+  Total=1287, Passed=917, Failed=2, Not Implemented=270, Expected Fail=98
