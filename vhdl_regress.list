@@ -201,6 +201,7 @@ pr2281479     normal  ivltests
 pr2281519     CO      vhdl_tests
 pr2147135a    CO      vhdl_tests
 pr2147135b    CO      vhdl_tests
+pr2391405     CO      vhdl_tests
 
 ga_and        normal  ivltests
 ga_or         normal  ivltests
@@ -305,4 +306,3 @@ bitsel5       normal  ivltests
 
 select        normal  ivltests
 
-pr2391405     normal  vhdl_tests
