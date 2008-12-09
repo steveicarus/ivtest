@@ -466,9 +466,6 @@ v0.8:pr528b	EF ivltests diff=log/pr528b.log:gold/pr528b.gold
 v0.8:pr529	EF ivltests
 v0.8:pr564	EF ivltests
 v0.8:pr587	EF ivltests
-v0.8:case5	EF,-S ivltests
-v0.8:basiclatch	EF,-S ivltests
-v0.8:dffsynth	EF,-S ivltests
 v0.8:pr632	EF ivltests diff=log/pr632.log:gold/pr632.gold
 v0.8:pr699	EF ivltests
 v0.8:pr990	EF ivltests

@@ -323,14 +323,11 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                       pr529: Passed - expected fail.
                       pr564: Passed - expected fail.
                       pr587: Passed - expected fail.
-                      case5: Passed - expected fail.
-                 basiclatch: Passed - expected fail.
-                   dffsynth: Passed - expected fail.
                       pr632: Passed - expected fail.
                       pr699: Passed - expected fail.
                       pr990: Passed - expected fail.
                   pr1380261: Passed - expected fail.
-                  pr1388974: Passed - expected fail.
+                  pr1388974: Passed.
                   pr1476440: Passed - expected fail.
                   pr1492075: Passed - expected fail.
                   pr1494799: Passed - expected fail.
@@ -357,7 +354,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr1704013: Passed - expected fail.
                   pr1742910: Passed - expected fail.
                  pr1752823b: Passed - expected fail.
-                  pr1784984: Passed - expected fail.
+                  pr1784984: Passed.
                  pr1787394a: Passed - expected fail.
                   pr1787423: Passed - expected fail.
                  pr1787423b: Passed - expected fail.
@@ -980,10 +977,12 @@ test_mos_strength_reduction: Passed.
                       case2: Passed.
                       case3: Passed.
                       case4: Passed.
+                      case5: ==> Failed - output does not match gold file.
                       case6: Passed.
                       case7: Passed.
                     condit1: Passed.
                    basicreg: Passed.
+                 basiclatch: ==> Failed - output does not match gold file.
                  basicstate: Passed.
                 basicstate2: Passed.
                    multireg: Passed.
@@ -1002,6 +1001,7 @@ test_mos_strength_reduction: Passed.
                  casesynth2: Passed.
                  casesynth3: Passed.
                   lcatsynth: Passed.
+                   dffsynth: ==> Failed - output does not match gold file.
                   dffsynth2: Passed.
                   dffsynth3: Passed.
                   dffsynth4: Passed.
@@ -1040,7 +1040,7 @@ test_mos_strength_reduction: Passed.
                  realtobits: Passed.
                    negvalue: Passed.
                       pr434: Passed.
-                      pr556: ==> Failed - output does not match gold file.
+                      pr556: Passed.
                       pr617: Passed.
                       pr673: Passed.
                       pr675: Passed.
@@ -1091,7 +1091,7 @@ test_mos_strength_reduction: Passed.
                       pr985: Passed.
                       pr987: Passed.
                       pr991: Passed.
-                      pr995: ==> Failed - output does not match gold file.
+                      pr995: Passed.
                          eq: Passed.
                        neq1: Passed.
                      pr1000: Passed.
@@ -1289,4 +1289,4 @@ test_mos_strength_reduction: Passed.
                   pr2358264: Passed.
 ======================================================================
 Test results:
-  Total=1287, Passed=917, Failed=2, Not Implemented=270, Expected Fail=98
+  Total=1287, Passed=921, Failed=3, Not Implemented=270, Expected Fail=93
