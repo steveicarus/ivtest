@@ -5,7 +5,7 @@ module top;
   wire out, rout;
 
   assign out = ('d4 == in**2'd2);
-  assign out = (4.0 == rin**2);
+  assign rout = (4.0 == rin**2);
 
   initial begin
     in = 'd0; rin = 0.0;
