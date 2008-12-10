@@ -270,6 +270,9 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr2169870: Not Implemented.
                  pr2172606b: Not Implemented.
                   pr2276163: Not Implemented.
+                  pr1787423: Not Implemented.
+                 pr1787423b: Not Implemented.
+                 pr1787423c: Not Implemented.
                   pr1587669: Passed - CO.
                  specify_01: Passed - CO.
                    specify2: Passed - CO.
@@ -356,9 +359,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                  pr1752823b: Passed - expected fail.
                   pr1784984: Passed.
                  pr1787394a: Passed - expected fail.
-                  pr1787423: Passed - expected fail.
-                 pr1787423b: Passed - expected fail.
-                 pr1787423c: Passed - expected fail.
                   pr1792152: Passed - expected fail.
                   pr1793157: Passed - expected fail.
                   pr1793749: Passed - expected fail.
@@ -1287,6 +1287,9 @@ test_mos_strength_reduction: Passed.
                  pr2305307c: Passed.
                  pr2355304b: Passed.
                   pr2358264: Passed.
+                 pr2395378a: Passed - CE.
+                 pr2395378b: Passed - CE.
+                 pr2395378c: Passed - CE.
 ======================================================================
 Test results:
-  Total=1287, Passed=921, Failed=3, Not Implemented=270, Expected Fail=93
+  Total=1290, Passed=924, Failed=3, Not Implemented=273, Expected Fail=90

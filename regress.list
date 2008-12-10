@@ -399,6 +399,11 @@ v0.8:pr2169870	NI
 v0.8:pr2172606b	NI
 v0.8:pr2276163	NI
 
+# V0.8 does not support multiple output gates.
+v0.8:pr1787423	NI
+v0.8:pr1787423b	NI
+v0.8:pr1787423c	NI
+
 # V0.8 does not support specify block delays.
 v0.8:pr1587669	CO	ivltests
 v0.8:specify_01	CO	ivltests
@@ -499,9 +504,6 @@ v0.8:pr1742910	EF ivltests
 v0.8:pr1752823b	EF ivltests diff=log/pr1752823b.log:gold/pr1752823b.gold
 v0.8:pr1784984	EF ivltests
 v0.8:pr1787394a	EF ivltests diff=log/pr1787394a.log:gold/pr1787394a.gold
-v0.8:pr1787423	EF ivltests diff=log/pr1787423.log:gold/pr1787423.gold
-v0.8:pr1787423b	EF ivltests
-v0.8:pr1787423c	EF ivltests
 v0.8:pr1792152	EF ivltests diff=log/pr1792152.log:gold/pr1792152.gold
 v0.8:pr1793157	EF ivltests diff=log/pr1793157.log:gold/pr1793157.gold
 v0.8:pr1793749	EF ivltests diff=log/pr1793749.log:gold/pr1793749.gold
