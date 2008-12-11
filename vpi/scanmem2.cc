@@ -20,10 +20,11 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include "vpi_user.h"
 
 // A 76 bit value
-char *str[4] = {
+const char *str[4] = {
  "f00cafababedeabbeef",
  "70850123451113459662575",
  "17001453725653733652737357",
@@ -39,7 +40,7 @@ static PLI_INT32 MemPeek(PLI_BYTE8 *)
     vpiHandle	mod_h, mem_h, iterate, handle;
     s_vpi_value	value;
     int		cnt = 0;
-    char	*orig;
+    const char	*orig;
 
     vpi_printf("MemPeek Callback\n");
 
@@ -137,23 +138,24 @@ static PLI_INT32 MemPoke(PLI_BYTE8 *)
 	switch (cnt % 4) {
 	    case 0:
 		value.format=vpiHexStrVal;
-		value.value.str = str[0];
+		value.value.str = strdup(str[0]);
 		break;
 	    case 1:
 		value.format=vpiDecStrVal;
-		value.value.str = str[1];
+		value.value.str = strdup(str[1]);
 		break;
 	    case 2:
 		value.format=vpiOctStrVal;
-		value.value.str = str[2];
+		value.value.str = strdup(str[2]);
 		break;
 	    case 3:
 		value.format=vpiBinStrVal;
-		value.value.str = str[3];
+		value.value.str = strdup(str[3]);
 		break;
 	}
 	vpi_printf("%0d: %s\n", cnt, value.value.str);
 	vpi_put_value(handle, &value, NULL, vpiNoDelay);
+	free(value.value.str);
 	cnt++;
     }
 

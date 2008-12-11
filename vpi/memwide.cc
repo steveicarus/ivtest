@@ -29,8 +29,8 @@
 
 static s_vpi_time suppress_time = { vpiSuppressTime, 0, 0, 0 };
 
-static vpiHandle findReg(char *name_);
-static vpiHandle findMem(char *name_);
+static vpiHandle findReg(const char *name_);
+static vpiHandle findMem(const char *name_);
 
 static PLI_INT32
 CallbackPeek(s_cb_data * data)
@@ -82,7 +82,7 @@ CallbackPeek(s_cb_data * data)
 }
 
 static vpiHandle
-findReg(char *name_)
+findReg(const char *name_)
 {
 	vpiHandle mod_i, mod_h, reg_i, reg_h = NULL;
 	char full[8096];
@@ -110,7 +110,7 @@ findReg(char *name_)
 }
 
 static vpiHandle
-findMem(char *name_)
+findMem(const char *name_)
 {
     vpiHandle mod_i, mod_h, hand, mem_i, word_i, mem_h = NULL;
     char full[8096];

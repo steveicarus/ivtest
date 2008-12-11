@@ -17,7 +17,7 @@ static int return_32(int ud, int reason)
 }
 
 
-static s_tfcell veriusertfs[] = {
+s_tfcell veriusertfs[] = {
   {userfunction, 0, 0, return_32, pli_test, 0, "$pli_test", 1},
   /* all entry must be entered before this line */
   {0, 0, 0, 0, 0, 0, 0, 0}  /* this must be the last entry */

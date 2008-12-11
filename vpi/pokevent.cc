@@ -48,7 +48,7 @@ CallbackPeek(s_cb_data *data) {
 }
 
 static vpiHandle
-FindPoke(char *name)
+FindPoke(const char *name)
 {
     vpiHandle	module, iterate, handle, rtn = NULL;
 
@@ -73,7 +73,7 @@ FindPoke(char *name)
 }
 
 static void
-RegisterPeek(char *name, vpiHandle poke)
+RegisterPeek(const char *name, vpiHandle poke)
 {
     vpiHandle	module, iterate, handle;
     s_cb_data	vc_cb_data;

@@ -20,11 +20,12 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include "vpi_user.h"
 
 static struct str_s {
     int		format;
-    char	*str;
+    const char	*str;
 } words[8] = {
     {vpiBinStrVal, "x001x001"},
     {vpiOctStrVal, "0x2"},
@@ -153,9 +154,10 @@ static PLI_INT32 MemPoke(PLI_BYTE8 *)
 
     for (index = 0; index < 8; index++) {
 	value.format=words[index].format;
-	value.value.str=words[index].str;
+	value.value.str=strdup(words[index].str);
 	vpi_printf("%3d: %s\n", index, value.value.str);
 	vpi_put_value(word_h[index], &value, NULL, vpiNoDelay);
+	free(value.value.str);
     }
 
     return 0;
