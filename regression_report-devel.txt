@@ -911,6 +911,7 @@ test_mos_strength_reduction: Passed.
                   pr1716276: Passed.
                   pr1717361: Passed.
                   pr1719055: Passed.
+                  pr1723367: Passed.
                   pr1735724: Passed - CE.
                   pr1735822: Passed.
                   pr1735836: Passed.
@@ -1291,4 +1292,4 @@ test_mos_strength_reduction: Passed.
                   pr2395835: Passed.
 ======================================================================
 Test results:
-  Total=1289, Passed=1282, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=1290, Passed=1283, Failed=7, Not Implemented=0, Expected Fail=0

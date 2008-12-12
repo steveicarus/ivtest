@@ -1505,6 +1505,7 @@ pr1705027	CO	ivltests
 pr1716276	normal	ivltests
 pr1717361	normal	ivltests
 pr1719055	normal	ivltests diff=log/pr1719055.log:gold/pr1719055.gold
+pr1723367	normal,-gno-io-range-error	ivltests diff=log/pr1723367.log:gold/pr1723367.gold
 pr1735724	CE	ivltests
 pr1735822	normal	ivltests
 pr1735836	normal	ivltests diff=log/pr1735836.log:gold/pr1735836.gold
