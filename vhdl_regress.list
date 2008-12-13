@@ -202,6 +202,7 @@ pr2281519     CO      vhdl_tests
 pr2147135a    CO      vhdl_tests
 pr2147135b    CO      vhdl_tests
 pr2391405     CO      vhdl_tests
+pr2362426     normal  vhdl_tests
 
 ga_and        normal  ivltests
 ga_or         normal  ivltests
