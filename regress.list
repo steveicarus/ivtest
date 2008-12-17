@@ -1833,6 +1833,9 @@ pr2201909b	normal	ivltests
 pr2202706       normal,+option=0123456789abcdef ivltests
 pr2202706b      normal,+option  ivltests
 pr2202706c      normal,+hex=123456789abcdef_x_z,+oct=1234567_x_z,+bin=101_x_z,+dec=123456789_,+dec_x=x,+dec_z=z_,+neg=-1_00,+real=12.3456789,+neg_real=-23.456e+3,+real_inf=Inf,+bad_num=not_a_num,+warn_real=9.825units        ivltests
+pr2202846a	normal	ivltests
+pr2202846b	normal	ivltests
+pr2202846c	normal	ivltests
 pr2208681	normal	ivltests
 pr2215342	normal	ivltests
 pr2219441	normal	ivltests

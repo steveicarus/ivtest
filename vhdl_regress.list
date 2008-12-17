@@ -307,3 +307,6 @@ bitsel5       normal  ivltests
 
 select        normal  ivltests
 
+pr2202846a    normal  ivltests
+pr2202846b    normal  ivltests
+pr2202846c    normal  ivltests
