@@ -24,6 +24,12 @@ module top;
       pass = 1'b0;
     end
 
+    cond = 6'bxx_xxxx;
+    #1 if (result != 1) begin
+      $display("Failed case expr 1a test, got expr %0d", result);
+      pass = 1'b0;
+    end
+
     cond = 6'b10_zz10;
     #1 if (result != 2) begin
       $display("Failed case expr 2 test, got expr %0d", result);
@@ -36,9 +42,9 @@ module top;
       pass = 1'b0;
     end
 
-    cond = 6'bxx_xxxx;
+    cond = 6'b11_1111;
     #1 if (result != 4) begin
-      $display("Failed case expr 4 test, got expr %0d", result);
+      $display("Failed case expr 1a test, got expr %0d", result);
       pass = 1'b0;
     end
 

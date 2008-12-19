@@ -1241,7 +1241,7 @@ test_mos_strength_reduction: Passed.
                  pr2202706c: Passed.
                  pr2202846a: Passed.
                  pr2202846b: Passed.
-                 pr2202846c: ==> Failed - output does not match gold file.
+                 pr2202846c: Passed.
                   pr2208681: Passed.
                   pr2215342: Passed.
                   pr2219441: Passed.
@@ -1298,4 +1298,4 @@ test_mos_strength_reduction: Passed.
                  pr2425055c: Passed.
 ======================================================================
 Test results:
-  Total=1296, Passed=1288, Failed=8, Not Implemented=0, Expected Fail=0
+  Total=1296, Passed=1289, Failed=7, Not Implemented=0, Expected Fail=0
