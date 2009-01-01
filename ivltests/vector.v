@@ -51,19 +51,19 @@ always #10 begin
 end
 
 always @(foo40) begin
-	$write("foo40=%08d\n", foo40);
+	$write("foo40=%8d\n", foo40);
 end
 
 always @(foo04) begin
-	$write("               foo04=%08d\n", foo04);
+	$write("               foo04=%8d\n", foo04);
 end
 
 always @(foo51) begin
-	$write("                              foo51=%08d\n", foo51);
+	$write("                              foo51=%8d\n", foo51);
 end
 
 always @(foo15) begin
-	$write("                                             foo15=%08d\n", foo15);
+	$write("                                             foo15=%8d\n", foo15);
 end
 
 endmodule
