@@ -150,7 +150,7 @@ static PLI_INT32 PLIbook_PowCalltf(PLI_BYTE8 *user_data)
 {
   s_vpi_value value_s;
   vpiHandle   systf_handle, arg_itr, arg_handle;
-  PLI_INT32   base, exp;
+  PLI_INT32   base, expo;
   double      result;
 
   vpi_printf("\n$my_pow PLI calltf function.\n\n");
@@ -172,10 +172,10 @@ static PLI_INT32 PLIbook_PowCalltf(PLI_BYTE8 *user_data)
   arg_handle = vpi_scan(arg_itr);
   vpi_free_object(arg_itr); /* not calling scan until returns null */
   vpi_get_value(arg_handle, &value_s);
-  exp = value_s.value.integer;
+  expo = value_s.value.integer;
 
   /* calculate result of base to power of exponent */
-  result = pow( (double)base, (double)exp );
+  result = pow( (double)base, (double)expo );
 
   /* write result to simulation as return value $my_pow */
   value_s.value.integer = (PLI_INT32)result;
