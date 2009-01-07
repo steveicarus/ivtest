@@ -1904,4 +1904,5 @@ ca_time	normal	ivltests diff=log/ca_time.log:gold/ca_time.gold
 ca_func	normal,-gstrict-ca-eval	ivltests
 pr2470181a	normal	ivltests
 pr2470181b	normal	ivltests
+pr2476430	normal	ivltests
 pr2486350	mornal	ivltests diff=log/pr2486350.log:gold/pr2486350.gold

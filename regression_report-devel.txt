@@ -1310,7 +1310,8 @@ test_mos_strength_reduction: Passed.
                     ca_func: Passed.
                  pr2470181a: Passed.
                  pr2470181b: Passed.
+                  pr2476430: Passed.
                   pr2486350: Passed.
 ======================================================================
 Test results:
-  Total=1311, Passed=1304, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=1312, Passed=1305, Failed=7, Not Implemented=0, Expected Fail=0

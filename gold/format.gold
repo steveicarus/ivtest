@@ -2,6 +2,5 @@
 >  16<
 >010<
 > 010<
-  16, 
-ERROR: Missing Argument: %d
-
+WARNING: ./ivltests/format.v:12: missing argument for $display<%d>.
+  16, <%d>

@@ -1,10 +1,10 @@
-WARNING: %l currently unsupported $swrite<%l>.
-WARNING: %L currently unsupported $swrite<%L>.
-WARNING: $swrite returned a value with an embedded NULL (see %u/%z).
-WARNING: $swrite returned a value with an embedded NULL (see %u/%z).
-WARNING: $swrite returned a value with an embedded NULL (see %u/%z).
-WARNING: $swrite returned a value with an embedded NULL (see %u/%z).
-WARNING: $swrite returned a value with an embedded NULL (see %u/%z).
-WARNING: missing argument for $sformat<%s>.
-WARNING: $sformat has 1 extra argument(s).
+WARNING: ./ivltests/swrite.v:198: %l currently unsupported $swrite<%l>.
+WARNING: ./ivltests/swrite.v:200: %L currently unsupported $swrite<%L>.
+WARNING: ./ivltests/swrite.v:263: $swrite returned a value with an embedded NULL (see %u/%z).
+WARNING: ./ivltests/swrite.v:265: $swrite returned a value with an embedded NULL (see %u/%z).
+WARNING: ./ivltests/swrite.v:287: $swrite returned a value with an embedded NULL (see %u/%z).
+WARNING: ./ivltests/swrite.v:289: $swrite returned a value with an embedded NULL (see %u/%z).
+WARNING: ./ivltests/swrite.v:292: $swrite returned a value with an embedded NULL (see %u/%z).
+WARNING: ./ivltests/swrite.v:306: missing argument for $sformat<%s>.
+WARNING: ./ivltests/swrite.v:308: $sformat has 1 extra argument(s).
 All tests passed.

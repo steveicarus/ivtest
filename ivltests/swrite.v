@@ -28,7 +28,7 @@ module top;
       $display("Wanted :%s:", value);
 `ifdef DEBUG
       for (lp=0; lp<length; lp=lp+1) begin
-        $display("%d - %d", lp, result[lp*8 +: 8]);
+        $display("%d - %d, %d", lp, result[lp*8 +: 8], value[lp*8 +: 8]);
       end
 `endif
       failed = 1;
@@ -61,7 +61,7 @@ module top;
 
     // Basic variables and functions.
     $swrite(result, val);
-    check_result(result, "1000", "Decimal in $swrite failed!");
+    check_result(result, "       1000", "Decimal in $swrite failed!");
     $swriteb(result, val);
     check_result(result, "00000000000000000000001111101000",
                  "Decimal in $swriteb failed!");
@@ -74,22 +74,21 @@ module top;
     $swrite(result, "Normal string.");
     check_result(result, "Normal string.", "String in $swrite failed!");
     $swrite(result, tm);
-    check_result(result, "234567", "Time in $swrite failed!");
+    check_result(result, "              234567", "Time in $swrite failed!");
     $swrite(result, rtm);
     check_result(result, "2345.68", "Real time in $swrite failed!");
     $swrite(result, $time);
-    check_result(result, "        1000.0000 ps", "$time in $swrite failed!");
+    check_result(result, "                   1", "$time in $swrite failed!");
     $swrite(result, $stime);
-    check_result(result, "        1000.0000 ps", "$stime in $swrite failed!");
+    check_result(result, "                   1", "$stime in $swrite failed!");
     $swrite(result, $simtime);
-    check_result(result, "        1000.0000 ps", "$simtime in $swrite failed!");
+    check_result(result, "                1000", "$simtime in $swrite failed!");
     $swrite(result, $realtime);
-    check_result(result, "        1000.0000 ps",
-                 "$realtime in $swrite failed!");
+    check_result(result, "1.000", "$realtime in $swrite failed!");
 
     // %% and extra variables.
     $swrite(result, "%%",, val);
-    check_result(result, "% 1000", "% and value in $swrite failed!");
+    check_result(result, "%        1000", "% and value in $swrite failed!");
 
     // %b
     $swrite(result, "%b", net);
