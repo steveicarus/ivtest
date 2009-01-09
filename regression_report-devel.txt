@@ -1312,6 +1312,7 @@ test_mos_strength_reduction: Passed.
                  pr2470181b: Passed.
                   pr2476430: Passed.
                   pr2486350: Passed.
+         mixed_type_div_mod: Passed.
 ======================================================================
 Test results:
-  Total=1312, Passed=1305, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=1313, Passed=1306, Failed=7, Not Implemented=0, Expected Fail=0
