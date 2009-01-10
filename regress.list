@@ -1905,5 +1905,6 @@ ca_func	normal,-gstrict-ca-eval	ivltests
 pr2470181a	normal	ivltests
 pr2470181b	normal	ivltests
 pr2476430	normal	ivltests
-pr2486350	mornal	ivltests diff=log/pr2486350.log:gold/pr2486350.gold
+pr2486350	normal	ivltests diff=log/pr2486350.log:gold/pr2486350.gold
 mixed_type_div_mod	normal	ivltests
+stime	normal	ivltests diff=log/stime.log:gold/stime.gold
