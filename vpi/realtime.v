@@ -1,8 +1,6 @@
 `timescale 1 ms / 1 ps
 module test;
     initial begin
-	// NOTE: These delays, when scaled to sim time,
-	// overflow 32bit deltas and cause vvp to fail.
 	#12345.6789;
 	$display("time = %0f", $realtime);
 	$test(test);
