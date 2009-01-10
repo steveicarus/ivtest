@@ -21,7 +21,10 @@ module fdisplay3;
    
    initial begin
 
-      $display("expect compile or runtime error from bad $fdisplay args:");
+// This error is now caught at compile time so this message will not
+// be printed.
+//
+//      $display("expect compile or runtime error from bad $fdisplay args:");
       $fdisplay(fdisplay3, "bogus message");
       $finish;
     

@@ -385,6 +385,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                   fdisplay1: Passed.
                   fdisplay2: Passed.
                   fdisplay3: Passed.
+           fdisplay_fail_fd: Passed.
+          fdisplay_fail_mcd: Passed.
                      fopen1: Passed.
                      fopen2: Passed.
                       div16: Passed.
@@ -1317,4 +1319,4 @@ test_mos_strength_reduction: Passed.
                     abstime: Passed.
 ======================================================================
 Test results:
-  Total=1315, Passed=1308, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=1317, Passed=1310, Failed=7, Not Implemented=0, Expected Fail=0

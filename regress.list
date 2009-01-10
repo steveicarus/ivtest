@@ -936,6 +936,8 @@ define1		normal ivltests #  Use defined value for reg def and reg assign
 fdisplay1	normal	ivltests  gold=fdisplay1.gold	# 
 fdisplay2	normal  ivltests  diff=work/fdisplay2.out:gold/fdisplay2.out #
 fdisplay3	RE	ivltests  gold=fdisplay3.gold
+fdisplay_fail_fd	normal  ivltests diff=log/fdisplay_fail_fd.log:gold/fdisplay_fail_fd.gold
+fdisplay_fail_mcd	normal  ivltests diff=log/fdisplay_fail_mcd.log:gold/fdisplay_fail_mcd.gold
 fopen1		normal  ivltests # Test basic fopen operation	
 fopen2		normal  ivltests # Test basic fopen operation	
 div16		normal	contrib test_div16 # Uses $random and divide operator (Tom Coonan)
