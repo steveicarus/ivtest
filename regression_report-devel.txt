@@ -1317,4 +1317,4 @@ test_mos_strength_reduction: Passed.
                     abstime: Passed.
 ======================================================================
 Test results:
-  Total=1315, Passed=1307, Failed=8, Not Implemented=0, Expected Fail=0
+  Total=1315, Passed=1308, Failed=7, Not Implemented=0, Expected Fail=0

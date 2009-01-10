@@ -80,7 +80,7 @@ module top;
     $swrite(result, $time);
     check_result(result, "                   1", "$time in $swrite failed!");
     $swrite(result, $stime);
-    check_result(result, "                   1", "$stime in $swrite failed!");
+    check_result(result, "         1", "$stime in $swrite failed!");
     $swrite(result, $simtime);
     check_result(result, "                1000", "$simtime in $swrite failed!");
     $swrite(result, $realtime);
