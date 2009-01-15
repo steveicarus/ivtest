@@ -1317,6 +1317,7 @@ test_mos_strength_reduction: Passed.
          mixed_type_div_mod: Passed.
                       stime: Passed.
                     abstime: Passed.
+                  pr2503208: Passed.
 ======================================================================
 Test results:
-  Total=1317, Passed=1310, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=1318, Passed=1311, Failed=7, Not Implemented=0, Expected Fail=0
