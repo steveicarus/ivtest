@@ -44,6 +44,7 @@ PLI_INT32 CompileTF(PLI_BYTE8 *user_data)
 	// Get First Argument and Setup Value Change Callback
 	arg_i=vpi_iterate(vpiArgument,call_h);
 	arg_h=vpi_scan(arg_i);
+	vpi_free_object(arg_i);
 
 	cb_data.reason    = cbValueChange;
 	cb_data.cb_rtn    = ValueChange;

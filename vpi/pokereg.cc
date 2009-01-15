@@ -50,6 +50,7 @@ static PLI_INT32 RegPeek(PLI_BYTE8 *)
     iterate = vpi_iterate(vpiModule, NULL);
     if (iterate == NULL) return -1;
     mod_h = vpi_scan(iterate);
+    vpi_free_object(iterate);
 
     // Get register
     iterate = vpi_iterate(vpiReg, mod_h);
@@ -109,6 +110,7 @@ static PLI_INT32 RegPoke(PLI_BYTE8 *)
     iterate = vpi_iterate(vpiModule, NULL);
     if (iterate == NULL) return -1;
     mod_h = vpi_scan(iterate);
+    vpi_free_object(iterate);
 
     // Get register
     iterate = vpi_iterate(vpiReg, mod_h);

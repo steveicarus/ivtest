@@ -37,6 +37,12 @@ static PLI_INT32 callback(struct t_cb_data*cb)
       return 0;
 }
 
+static PLI_INT32 cleanup(struct t_cb_data*cb)
+{
+      free(cb->value);
+      return 0;
+}
+
 #ifdef IVERILOG_V0_8
 static PLI_INT32 memmonitor_calltf(char*name)
 #else
@@ -61,6 +67,10 @@ static PLI_INT32 memmonitor_calltf(PLI_BYTE8*name)
 	    cb_data.value->format = vpiBinStrVal;
 	    cb_data.value->value.str = 0;
 
+	    vpi_register_cb(&cb_data);
+
+	    cb_data.reason = cbEndOfSimulation;
+	    cb_data.cb_rtn = cleanup;
 	    vpi_register_cb(&cb_data);
       }
 

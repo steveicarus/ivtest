@@ -91,6 +91,7 @@ findReg(const char *name_)
 	mod_i = vpi_iterate(vpiModule, NULL);
 	if (mod_i != NULL) {
 		mod_h = vpi_scan(mod_i);
+		vpi_free_object(mod_i);
 
 		// find named event
 		reg_i = vpi_iterate(vpiReg, mod_h);
@@ -101,6 +102,7 @@ findReg(const char *name_)
 				    strcpy(full,vpi_get_str(vpiFullName,reg_h));
 				    vpi_printf("!!!C++:    %s fullname is %s\n",
 					vpi_get_str(vpiName,reg_h), full);
+				    vpi_free_object(reg_i);
 				    break;
 				}
 			}
@@ -112,11 +114,12 @@ findReg(const char *name_)
 static vpiHandle
 findMem(const char *name_)
 {
-    vpiHandle mod_i, mod_h, hand, mem_i, word_i, mem_h = NULL;
+    vpiHandle mod_i, mod_h, hand, mem_i, word_i, word_h, mem_h = NULL;
     char full[8096];
 
     mod_i = vpi_iterate(vpiModule, NULL);
     mod_h = vpi_scan(mod_i);
+    vpi_free_object(mod_i);
 
     mem_i = vpi_iterate(vpiMemory, mod_h);
     if (mem_i != NULL) {
@@ -126,6 +129,7 @@ findMem(const char *name_)
 		vpi_printf("!!!C++:    %s fullname is %s\n",
 		    vpi_get_str(vpiName,hand), full);
                 mem_h = hand;
+                vpi_free_object(mem_i);
                 break;
             }
         }
@@ -133,7 +137,9 @@ findMem(const char *name_)
 
     word_i = vpi_iterate(vpiMemoryWord, mem_h);
     vpi_scan(word_i);
-    return vpi_scan(word_i);
+    word_h = vpi_scan(word_i);
+    vpi_free_object(word_i);
+    return word_h;
 }
 
 static PLI_INT32 SetupTrigger(s_cb_data * cb_data)

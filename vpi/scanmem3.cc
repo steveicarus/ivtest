@@ -55,6 +55,7 @@ static PLI_INT32 MemPeek(PLI_BYTE8 *)
     iterate = vpi_iterate(vpiModule, NULL);
     if (iterate == NULL) return -1;
     mod_h = vpi_scan(iterate);
+    vpi_free_object(iterate);
 
     // Get memory
     mem_h = NULL;
@@ -62,12 +63,14 @@ static PLI_INT32 MemPeek(PLI_BYTE8 *)
     if (iterate != NULL) {
         while ((handle = vpi_scan(iterate))) {
             if (!strcmp("m_peek", vpi_get_str(vpiName, handle))) {
+		vpiHandle memw_iter = vpi_iterate(vpiMemoryWord, handle);
 		vpi_printf("  Found %s (%d deep x %d bits)\n", 
 		    vpi_get_str(vpiName, handle),
 		    vpi_get(vpiSize, handle),
-		    vpi_get(vpiSize,
-			vpi_scan(vpi_iterate(vpiMemoryWord, handle))));
+		    vpi_get(vpiSize, vpi_scan(memw_iter)));
+		vpi_free_object(memw_iter);
 		mem_h = handle;
+		vpi_free_object(iterate);
                 break;
             }
         }
@@ -122,6 +125,7 @@ static PLI_INT32 MemPoke(PLI_BYTE8 *)
     iterate = vpi_iterate(vpiModule, NULL);
     if (iterate == NULL) return -1;
     mod_h = vpi_scan(iterate);
+    vpi_free_object(iterate);
 
     // Get memory
     mem_h = NULL;
@@ -129,12 +133,14 @@ static PLI_INT32 MemPoke(PLI_BYTE8 *)
     if (iterate != NULL) {
         while ((handle = vpi_scan(iterate))) {
             if (!strcmp("m_poke", vpi_get_str(vpiName, handle))) {
+		vpiHandle memw_iter = vpi_iterate(vpiMemoryWord, handle);
 		vpi_printf("  Found %s (%d deep x %d bits)\n", 
 		    vpi_get_str(vpiName, handle),
 		    vpi_get(vpiSize, handle),
-		    vpi_get(vpiSize,
-			vpi_scan(vpi_iterate(vpiMemoryWord, handle))));
+		    vpi_get(vpiSize, vpi_scan(memw_iter)));
+		vpi_free_object(memw_iter);
 		mem_h = handle;
+		vpi_free_object(iterate);
                 break;
             }
         }

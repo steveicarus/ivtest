@@ -56,6 +56,7 @@ FindPoke(const char *name)
     iterate = vpi_iterate(vpiModule, NULL);
     if (iterate == NULL) return NULL;
     module = vpi_scan(iterate);
+    vpi_free_object(iterate);
 
     // find named event
     handle = NULL;
@@ -64,6 +65,7 @@ FindPoke(const char *name)
 	while ((handle = vpi_scan(iterate))) {
 	    if (!strcmp(name, vpi_get_str(vpiName, handle))) {
 		rtn = handle;
+		vpi_free_object(iterate);
 		break;
 	    }
 	}
@@ -83,6 +85,7 @@ RegisterPeek(const char *name, vpiHandle poke)
     iterate = vpi_iterate(vpiModule, NULL);
     if (iterate == NULL) return;
     module = vpi_scan(iterate);
+    vpi_free_object(iterate);
 
     // find named event
     handle = NULL;
@@ -90,6 +93,7 @@ RegisterPeek(const char *name, vpiHandle poke)
     if (iterate != NULL) {
 	while ((handle = vpi_scan(iterate))) {
 	    if (!strcmp(name, vpi_get_str(vpiName, handle))) {
+		vpi_free_object(iterate);
 		break;
 	    }
 	}

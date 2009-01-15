@@ -32,11 +32,12 @@ static PLI_INT32 calltf(char *data)
 static PLI_INT32 calltf(PLI_BYTE8 *data)
 #endif
 {
-    vpiHandle hand;
+    vpiHandle hand, iter;
     
     hand = vpi_handle(vpiSysTfCall, 0);
-    hand = vpi_iterate(vpiArgument, hand);
-    hand = vpi_scan(hand);
+    iter = vpi_iterate(vpiArgument, hand);
+    hand = vpi_scan(iter);
+    vpi_free_object(iter);
 
     vpi_printf("calltf from %s", vpi_get_str(vpiName, hand));
 
