@@ -315,5 +315,6 @@ pr2202846c    normal  ivltests
 pr2489116     normal  vhdl_tests
 pr2489237     CO      vhdl_tests
 pr2516774     normal  vhdl_tests
-pr2516774b    normal  vhdl_tests
+pr2516774b    CO      vhdl_tests
 pr2527366     CO      vhdl_tests
+pr2529315     CO      vhdl_tests
