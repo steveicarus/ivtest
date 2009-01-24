@@ -8,7 +8,7 @@ blocking      normal  vhdl_tests
 constassign   normal  vhdl_tests
 readout       normal  vhdl_tests
 autof         normal  vhdl_tests
-generics      normal  vhdl_tests
+#generics      normal  vhdl_tests
 
 partpv        CO      vhdl_tests
 
@@ -219,6 +219,9 @@ rptconcat2    normal  ivltests
 
 inout         normal  ivltests
 modparam      normal  ivltests
+port-test2    normal  ivltests
+scope2        normal  ivltests
+scope2b       normal  ivltests
 
 tri0          normal  ivltests
 tri0b         normal  ivltests
@@ -318,3 +321,5 @@ pr2516774     normal  vhdl_tests
 pr2516774b    CO      vhdl_tests
 pr2527366     CO      vhdl_tests
 pr2529315     CO      vhdl_tests
+pr2531370     CO      vhdl_tests
+pr2526768     normal  vhdl_tests
