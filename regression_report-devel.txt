@@ -1319,6 +1319,7 @@ test_mos_strength_reduction: Passed.
                       stime: Passed.
                     abstime: Passed.
                   pr2503208: Passed.
+                  pr2533175: Passed.
 ======================================================================
 Test results:
-  Total=1319, Passed=1312, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=1320, Passed=1313, Failed=7, Not Implemented=0, Expected Fail=0
