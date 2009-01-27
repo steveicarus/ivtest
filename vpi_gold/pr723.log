@@ -29,6 +29,10 @@ FP  08: /dev/null
 write to MCD 1
 write to FD 1
 Close some files
+WARNING: vpi/pr723.v:44: invalid file descriptor/MCD (0x2) given to $fclose.
+WARNING: vpi/pr723.v:45: invalid file descriptor/MCD (0x40000000) given to $fclose.
+WARNING: vpi/pr723.v:50: invalid file descriptor/MCD (0x80000003) given to $fclose.
+WARNING: vpi/pr723.v:53: invalid file descriptor/MCD (0x81ca1ca0) given to $fclose.
 MCD 01: stdout
 FP  00: stdin
 FP  01: stdout
