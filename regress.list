@@ -390,6 +390,7 @@ v0.8:automatic_error11	NI
 v0.8:automatic_error12	NI
 v0.8:automatic_error13	NI
 v0.8:automatic_events	NI
+v0.8:automatic_events2	NI
 v0.8:automatic_task	NI
 v0.8:automatic_task2	NI
 v0.8:nested_func	NI
@@ -1775,6 +1776,7 @@ nb_ec_array_pv	normal	ivltests
 pr2117473	normal	ivltests
 pr2117488	normal	ivltests
 automatic_events	normal	ivltests diff=log/automatic_events.log:gold/automatic_events.gold
+automatic_events2	normal	ivltests diff=log/automatic_events2.log:gold/automatic_events.gold
 automatic_task	normal	ivltests diff=log/automatic_task.log:gold/automatic_task.gold
 automatic_task2	normal	ivltests diff=log/automatic_task2.log:gold/automatic_task2.gold
 nested_func	normal	ivltests diff=log/nested_func.log:gold/nested_func.gold

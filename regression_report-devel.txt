@@ -1181,6 +1181,7 @@ test_mos_strength_reduction: Passed.
                   pr2117473: Passed.
                   pr2117488: Passed.
            automatic_events: Passed.
+          automatic_events2: Passed.
              automatic_task: Passed.
             automatic_task2: Passed.
                 nested_func: Passed.
@@ -1322,4 +1323,4 @@ test_mos_strength_reduction: Passed.
                   pr2533175: Passed.
 ======================================================================
 Test results:
-  Total=1320, Passed=1313, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=1321, Passed=1314, Failed=7, Not Implemented=0, Expected Fail=0
