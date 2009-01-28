@@ -146,12 +146,14 @@ landor1       normal  ivltests
 land2         normal  ivltests
 land3         normal  ivltests
 contrib8.1    normal  ivltests
+contrib8.2    normal  ivltests
 contrib8.4    normal  ivltests
 dff1          normal  ivltests
 fifo          normal  contrib
 gencrc        normal  contrib
 idiv2         normal  ivltests
 event_list2   normal  ivltests
+timescale1    normal  ivltests
 
 integer1lt    normal  ivltests
 integer2le    normal  ivltests
@@ -324,3 +326,4 @@ pr2529315     CO      vhdl_tests
 pr2529315b    CO      vhdl_tests
 pr2531370     CO      vhdl_tests
 pr2526768     normal  vhdl_tests
+pr2536040     CO      vhdl_tests
