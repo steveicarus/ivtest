@@ -1915,4 +1915,5 @@ mixed_type_div_mod	normal	ivltests
 stime	normal	ivltests diff=log/stime.log:gold/stime.gold
 abstime	normal	ivltests
 pr2503208	normal	ivltests
+pr2528915	CE	ivltests
 pr2533175	normal	ivltests
