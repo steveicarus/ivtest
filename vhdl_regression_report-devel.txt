@@ -123,12 +123,14 @@ Running VHDL tests for Icarus Verilog version: 0.9.
            land2: Passed.
            land3: Passed.
       contrib8.1: Passed.
+      contrib8.2: Passed.
       contrib8.4: Passed.
             dff1: Passed.
             fifo: Passed.
           gencrc: Passed.
            idiv2: Passed.
      event_list2: Passed.
+      timescale1: Passed.
       integer1lt: Passed.
       integer2le: Passed.
       integer3gt: Passed.
@@ -273,6 +275,7 @@ delay_assign_nb2: Passed.
       pr2529315b: Passed - CO.
        pr2531370: Passed - CO.
        pr2526768: Passed.
+       pr2536040: Passed - CO.
 ======================================================================
 Test results:
-  Total=273, Passed=270, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=276, Passed=273, Failed=3, Not Implemented=0, Expected Fail=0
