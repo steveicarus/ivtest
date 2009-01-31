@@ -60,6 +60,7 @@ ssetclr2      normal  ivltests
 ssetclr3      normal  ivltests
 
 always3.1.11A normal  ivltests
+always3.1.11B normal  ivltests
 
 always3.1.1C  normal  ivltests
 always3.1.1D  normal  ivltests
@@ -304,6 +305,7 @@ shift2        normal  ivltests
 # Out of order from here
 
 pr1903520     normal  ivltests
+pr142         normal  ivltests
 
 bitsel        normal  ivltests diff=log/bitsel.log:vhdl_gold/bitsel.gold
 bitsel2       normal  ivltests
@@ -327,3 +329,5 @@ pr2529315b    CO      vhdl_tests
 pr2531370     CO      vhdl_tests
 pr2526768     normal  vhdl_tests
 pr2536040     CO      vhdl_tests
+pr2541625     normal  vhdl_tests
+pr2534491     normal  vhdl_tests
