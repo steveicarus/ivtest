@@ -331,3 +331,6 @@ pr2526768     normal  vhdl_tests
 pr2536040     CO      vhdl_tests
 pr2541625     normal  vhdl_tests
 pr2534491     normal  vhdl_tests
+pr2554173     CO      vhdl_tests
+pr2555813     CO      vhdl_tests
+pr2554029     CO      vhdl_tests
