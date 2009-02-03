@@ -50,6 +50,7 @@ Running VHDL tests for Icarus Verilog version: 0.9.
         ssetclr2: Passed.
         ssetclr3: Passed.
    always3.1.11A: Passed.
+   always3.1.11B: Passed.
     always3.1.1C: Passed.
     always3.1.1D: Passed.
     always3.1.1E: Passed.
@@ -257,6 +258,7 @@ delay_assign_nb2: Passed.
     decl_assign1: Passed.
           shift2: Passed.
        pr1903520: Passed.
+           pr142: Passed.
           bitsel: Passed.
          bitsel2: Passed.
          bitsel3: Passed.
@@ -276,6 +278,11 @@ delay_assign_nb2: Passed.
        pr2531370: Passed - CO.
        pr2526768: Passed.
        pr2536040: Passed - CO.
+       pr2541625: Passed.
+       pr2534491: Passed.
+       pr2554173: Passed - CO.
+       pr2555813: Passed - CO.
+       pr2554029: Passed - CO.
 ======================================================================
 Test results:
-  Total=276, Passed=273, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=283, Passed=280, Failed=3, Not Implemented=0, Expected Fail=0
