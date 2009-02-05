@@ -30,6 +30,24 @@ PLI_INT32  PLIbook_MyMonitor_compiletf(PLI_BYTE8 *user_data);
 PLI_INT32  PLIbook_MyMonitor_callback(p_cb_data cb_data_p);
 
 
+/* To make this memory clean we need to keep a list of the allocated
+ * names so we can free them at EOS. */
+static char** name_list = 0;
+static unsigned name_count = 0;
+
+static PLI_INT32 sys_end_of_simulation(p_cb_data cb_data)
+{
+  unsigned idx;
+
+  for (idx = 0; idx < name_count; idx += 1) {
+    free(name_list[idx]);
+  }
+  free(name_list);
+  name_list = 0;
+  name_count = 0;
+
+  return 0;
+}
 
 /**********************************************************************
  * VPI Registration Data
@@ -37,6 +55,7 @@ PLI_INT32  PLIbook_MyMonitor_callback(p_cb_data cb_data_p);
 void PLIbook_MyMonitor_register()
 {
   s_vpi_systf_data tf_data;
+  s_cb_data    cb_data;
 
   tf_data.type        = vpiSysTask;
   tf_data.sysfunctype = 0;
@@ -46,6 +65,12 @@ void PLIbook_MyMonitor_register()
   tf_data.sizetf      = NULL;
   tf_data.user_data   = NULL;
   vpi_register_systf(&tf_data);
+
+  cb_data.reason = cbEndOfSimulation;
+  cb_data.time = 0;
+  cb_data.cb_rtn = sys_end_of_simulation;
+  cb_data.user_data = "system";
+  vpi_register_cb(&cb_data);
 }
 
 
@@ -148,6 +173,9 @@ PLI_INT32 PLIbook_MyMonitor_calltf(PLI_BYTE8 *user_data)
     strcpy((char *)net_name_keep, (char *)net_name_temp);
     cb_data_s.obj = net_h;
     cb_data_s.user_data = net_name_keep;
+    name_count += 1;
+    name_list = (char **)realloc(name_list, name_count*sizeof(char **));
+    name_list[name_count-1] = net_name_keep;
     cb_h = vpi_register_cb(&cb_data_s);
     vpi_free_object(cb_h); /* don't need callback handle */
   }
