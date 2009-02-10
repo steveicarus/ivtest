@@ -295,6 +295,7 @@ v0.8:pr2202706	NI	# No support for wide put_value()
 v0.8:pr2215342	NI	# Current directory is not in include search path.
 v0.8:task_iotypes2	NI	# Port types are not supported (integer, etc.).
 v0.8:tranif1	NI	# No support for the tranif1 gate.
+v0.8:pr2579479	NI	# No support for the tranif1 gate.
 
 # V0.8 does not support $rtoi in a continuous assignment.
 v0.8:ca_mult	NI
@@ -1842,7 +1843,7 @@ pr2202846a	normal	ivltests
 pr2202846b	normal	ivltests
 pr2202846c	normal	ivltests
 pr2208681	normal	ivltests
-pr2215342	normal	ivltests
+pr2215342	normal,-grelative-include	ivltests
 pr2219441	normal	ivltests
 pr2219441b	normal	ivltests
 pr2224845	normal	ivltests
@@ -1917,3 +1918,4 @@ abstime	normal	ivltests
 pr2503208	normal	ivltests
 pr2528915	CE	ivltests
 pr2533175	normal	ivltests
+pr2579479	normal	ivltests
