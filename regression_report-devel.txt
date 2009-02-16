@@ -1324,6 +1324,9 @@ test_mos_strength_reduction: Passed.
                   pr2528915: Passed - CE.
                   pr2533175: Passed.
                   pr2579479: Passed.
+               real_logical: Passed.
+            ca_real_logical: Passed.
+           real_invalid_ops: ==> Failed - running iverilog.
 ======================================================================
 Test results:
-  Total=1324, Passed=1317, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=1327, Passed=1319, Failed=8, Not Implemented=0, Expected Fail=0
