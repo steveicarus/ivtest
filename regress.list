@@ -1926,3 +1926,4 @@ ca_real_logical	normal	ivltests
 real_invalid_ops	CE	ivltests diff=log/real_invalid_ops.log:gold/real_invalid_ops.gold
 pr2580730	normal	ivltests diff=log/pr2580730.log:gold/pr2580730.gold
 pr2593733	normal	ivltests
+pr2605006	normal	ivltests

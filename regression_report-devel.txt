@@ -1329,6 +1329,7 @@ test_mos_strength_reduction: Passed.
            real_invalid_ops: Passed - CE.
                   pr2580730: Passed.
                   pr2593733: Passed.
+                  pr2605006: Passed.
 ======================================================================
 Test results:
-  Total=1329, Passed=1322, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=1330, Passed=1323, Failed=7, Not Implemented=0, Expected Fail=0
