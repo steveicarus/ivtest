@@ -282,7 +282,9 @@ delay_assign_nb2: Passed.
        pr2534491: Passed.
        pr2554173: Passed - CO.
        pr2555813: Passed - CO.
+      pr2555813b: Passed - CO.
        pr2554029: Passed - CO.
+       pr2554124: Passed - CO.
 ======================================================================
 Test results:
-  Total=283, Passed=280, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=285, Passed=282, Failed=3, Not Implemented=0, Expected Fail=0
