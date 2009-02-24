@@ -356,6 +356,7 @@ v0.8:swrite	NI      # $swrite not supported.
 v0.8:urand	NI	# $urandom not supported.
 v0.8:urand_r	NI	# $urandom_range not supported.
 v0.8:clog2	NI	# $clog2 not supported.
+v0.8:clog2-signal	NI	# $clog2 not supported.
 v0.8:pr2139593	NI	# $clog2 not supported.
 v0.8:multi_bit_strength	NI	# $swrite not supported.
 
@@ -1754,6 +1755,7 @@ pr2051694	CE	ivltests
 pr2051975	CE	ivltests
 pr2053944	normal	ivltests diff=log/pr2053944.log:gold/pr2053944.gold
 clog2	normal	ivltests
+clog2-signal	normal	ivltests
 pr2076363	normal	ivltests
 pr2076391	normal	ivltests diff=log/pr2076391.log:gold/pr2076391.gold
 pr2076425	normal	ivltests
