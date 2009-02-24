@@ -1931,3 +1931,4 @@ pr2593733	normal	ivltests
 pr2597278	normal	ivltests
 pr2597278b	CE	ivltests
 pr2605006	normal	ivltests
+ca_64delay	normal	ivltests diff=log/ca_64delay.log:gold/ca_64delay.gold
