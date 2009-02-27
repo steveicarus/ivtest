@@ -6,5 +6,6 @@ pr2029336.out
 temp.txt
 test.txt
 writemem*.dat
+writemem*.txt
 sp2.inv
 BBCDBBCD

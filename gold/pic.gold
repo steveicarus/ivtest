@@ -1,6 +1,6 @@
 Clearing SRAM.
 SYNTHETIC PIC 2.0.  This is TEST #9
-$readmemh(contrib/TEST9.ROM): address (0x200) out of range (0x0:0x1ff)
+WARNING: ./contrib/pic.v:2046: $readmemh(contrib/TEST9.ROM): Too many words in the file for the requested range [0:511].
                   50: portc changes to: 00
                   50: portb changes to: 00
                 1650: portb changes to: 07

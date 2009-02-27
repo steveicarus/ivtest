@@ -1,3 +1,4 @@
+WARNING: ./ivltests/mem1.v:42: $readmemb: Standard inconsistency, following 1364-2005.
 mem[          0] = 000100
 mem[          1] = 000200
 mem[          2] = 000400
