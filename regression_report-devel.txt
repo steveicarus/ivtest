@@ -809,6 +809,7 @@ test_mos_strength_reduction: Passed.
                       scanf: Passed.
                      scanf2: Passed.
                      scanf3: Passed.
+               scan-invalid: Passed.
                   pr1467825: Passed - CO.
                   pr1455873: Passed.
                   pr1474283: Passed.
@@ -1340,4 +1341,4 @@ test_mos_strength_reduction: Passed.
            writemem-invalid: Passed.
 ======================================================================
 Test results:
-  Total=1338, Passed=1331, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=1339, Passed=1332, Failed=7, Not Implemented=0, Expected Fail=0
