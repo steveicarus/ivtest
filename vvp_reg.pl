@@ -63,6 +63,14 @@ sub execute_regression {
         $len = length($tname) if (length($tname) > $len);
     }
 
+    # Make sure we have a log and work directory.
+    if (! -d 'log') {
+        mkdir 'log' or die "Error: unable to create log directory.\n";
+    }
+    if (! -d 'work') {
+        mkdir 'work' or die "Error: unable to create work directory.\n";
+    }
+
     foreach $tname (@testlist) {
         next if ($tname eq "");  # Skip test that have been replaced.
 

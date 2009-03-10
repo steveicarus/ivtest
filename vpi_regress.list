@@ -50,7 +50,7 @@ v0.8:scopes      normal scopes.c      scopes.log          -DIVERILOG_V0_8
 v0.8:by_name     normal by_name.c     by_name.log         -DIVERILOG_V0_8
 v0.8:realcb      normal realcb.c      realcb.log          -DIVERILOG_V0_8
 v0.8:pr686       normal pr686.c       pr686.log           -DIVERILOG_V0_8
-v0.8:pr723       normal pr723.c       pr723.log           -DIVERILOG_V0_8
+v0.8:pr723       normal pr723.c       pr723-v0.8.log      -DIVERILOG_V0_8
 # V0.8 has some 32 bit time problems so this test fails.
 v0.8:realtime    normal realtime.c    realtime.log        -DIVERILOG_V0_8
 v0.8:realtime2   normal realtime2.c   realtime2.log       -DIVERILOG_V0_8

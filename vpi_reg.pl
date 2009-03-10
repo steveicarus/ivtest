@@ -152,6 +152,11 @@ sub execute_regression {
         $len = length($tname) if (length($tname) > $len);
     }
 
+    # Make sure we have a log directory.
+    if (! -d 'vpi_log') {
+        mkdir 'vpi_log' or die "Error: unable to create vpi_log directory.\n";
+    }
+
     foreach $tname (@testlist) {
         next if ($tname eq "");  # Skip test that have been replaced.
 
