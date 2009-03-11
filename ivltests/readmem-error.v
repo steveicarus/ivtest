@@ -104,7 +104,7 @@ module top;
 
     $readmemb("ivltests/readmemb.txt", array3, -1, 7);
     for (idx = -1; idx < 7; idx = idx + 1) begin
-      if (array3[idx] !== idx + 2) begin
+      if ($signed(array3[idx]) !== idx + 2) begin
         $display("Failed: for index %0d of readmemb 9, expected %0d, got %0d",
                  idx, idx+1, array3[idx]);
       end
@@ -209,7 +209,7 @@ module top;
 
     $readmemh("ivltests/readmemh.txt", array3, -1, 7);
     for (idx = -1; idx < 7; idx = idx + 1) begin
-      if (array3[idx] !== idx + 2) begin
+      if ($signed(array3[idx]) !== idx + 2) begin
         $display("Failed: for index %0d of readmemh 9, expected %0d, got %0d",
                  idx, idx+1, array3[idx]);
       end

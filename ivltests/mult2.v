@@ -68,7 +68,7 @@ module main;
 	 #5 clk <= 1;
 	 #5 clk <= 0;
 
-	 if (p !== ($signed(a) * $signed(b))) begin
+	 if ($signed(p) !== ($signed(a) * $signed(b))) begin
 	    $display("FAILED == %h * %h --> %h", a, b, p);
 	    $finish;
 	 end
