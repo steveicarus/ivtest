@@ -106,7 +106,7 @@ module top;
     for (idx = -1; idx < 7; idx = idx + 1) begin
       if ($signed(array3[idx]) !== idx + 2) begin
         $display("Failed: for index %0d of readmemb 9, expected %0d, got %0d",
-                 idx, idx+1, array3[idx]);
+                 idx, idx+2, array3[idx]);
       end
     end
     if (array3[7] !== 8'bx) begin
@@ -211,7 +211,7 @@ module top;
     for (idx = -1; idx < 7; idx = idx + 1) begin
       if ($signed(array3[idx]) !== idx + 2) begin
         $display("Failed: for index %0d of readmemh 9, expected %0d, got %0d",
-                 idx, idx+1, array3[idx]);
+                 idx, idx+2, array3[idx]);
       end
     end
     if (array3[7] !== 8'bx) begin
