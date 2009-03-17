@@ -1341,6 +1341,7 @@ test_mos_strength_reduction: Passed.
            writemem-invalid: Passed.
             int_not_signext: Passed.
                   pr2673846: Passed.
+                  pr2688910: Passed.
 ======================================================================
 Test results:
-  Total=1341, Passed=1334, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=1342, Passed=1335, Failed=7, Not Implemented=0, Expected Fail=0

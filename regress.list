@@ -1940,3 +1940,4 @@ readmem-invalid	CE	ivltests diff=log/readmem-invalid.log:gold/readmem-invalid.go
 writemem-invalid CE	ivltests diff=log/writemem-invalid.log:gold/writemem-invalid.gold
 int_not_signext	normal	ivltests diff=log/int_not_signext.log:gold/int_not_signext.gold
 pr2673846	normal	ivltests
+pr2688910	normal	ivltests
