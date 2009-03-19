@@ -984,6 +984,7 @@ disp_dec   normal  ivltests diff=log/disp_dec.log:gold/disp_dec.gold
 disp_dec2  normal  ivltests diff=log/disp_dec2.log:gold/disp_dec2.gold
 disp_parm   	normal  ivltests diff=log/disp_parm.log:gold/disp_parm.gold
 disp_part   	normal  ivltests diff=log/disp_part.log:gold/disp_part.gold
+disp_leading_z  normal  ivltests diff=log/disp_leading_z.log:gold/disp_leading_z.gold
 shellho1	normal	ivltests top diff=log/shellho1.log:gold/shellho1.gold
 test_width	normal  ivltests diff=log/test_width.log:gold/test_width.gold
 test_disphob	normal  ivltests diff=log/test_disphob.log:gold/test_disphob.gold

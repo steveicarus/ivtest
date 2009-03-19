@@ -428,6 +428,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                   disp_dec2: Passed.
                   disp_parm: Passed.
                   disp_part: Passed.
+             disp_leading_z: Passed.
                    shellho1: Passed.
                  test_width: Passed.
                test_disphob: Passed.
@@ -1344,4 +1345,4 @@ test_mos_strength_reduction: Passed.
                   pr2688910: Passed.
 ======================================================================
 Test results:
-  Total=1342, Passed=1335, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=1343, Passed=1336, Failed=7, Not Implemented=0, Expected Fail=0
