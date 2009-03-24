@@ -600,6 +600,54 @@ v0.9:casex_synth	normal	ivltests
 v0.9:full_case	normal	ivltests
 
 #==========
+# At this time v0.10 doesn't support synthesis either.
+#==========
+v0.10:case1	normal	ivltests
+v0.10:case2	normal	ivltests
+v0.10:case4	normal	ivltests
+v0.10:case5	normal	ivltests
+v0.10:case6	normal	ivltests
+v0.10:case7	normal	ivltests
+v0.10:condit1	normal	ivltests
+v0.10:basiclatch	normal	ivltests
+v0.10:basicstate	normal	ivltests
+v0.10:basicstate2	normal	ivltests
+v0.10:multireg	normal	ivltests
+v0.10:blocksynth1	normal	ivltests
+v0.10:blocksynth2	normal	ivltests
+v0.10:blocksynth3	normal	ivltests
+v0.10:conditsynth1	normal	ivltests
+v0.10:conditsynth2	normal	ivltests
+v0.10:conditsynth3	normal	ivltests
+v0.10:casesynth1	normal	ivltests
+v0.10:casesynth2	normal	ivltests
+v0.10:casesynth3	normal	ivltests
+v0.10:lcatsynth	normal	ivltests
+v0.10:dffsynth	normal	ivltests
+v0.10:dffsynth2	normal	ivltests
+v0.10:dffsynth3	normal	ivltests
+v0.10:dffsynth4	normal	ivltests
+v0.10:sqrt32synth	normal	ivltests
+v0.10:memsynth1	normal	ivltests
+v0.10:memsynth2	normal	ivltests
+v0.10:memsynth3	normal	ivltests
+v0.10:memsynth4	normal	ivltests
+v0.10:memsynth5	normal	ivltests
+v0.10:memsynth6	normal	ivltests
+v0.10:memsynth7	normal	ivltests
+v0.10:memsynth9	normal	ivltests
+v0.10:ssetclr1	normal	ivltests
+v0.10:ssetclr2	normal	ivltests
+v0.10:ssetclr3	normal	ivltests
+v0.10:inside_synth	normal	ivltests
+v0.10:inside_synth	normal	ivltests
+v0.10:inside_synth2	normal	ivltests
+v0.10:inside_synth3	normal	ivltests
+v0.10:mix_reset	normal	ivltests
+v0.10:casex_synth	normal	ivltests
+v0.10:full_case	normal	ivltests
+
+#==========
 # The default case.
 #==========
 always3.1.10A	CE	ivltests

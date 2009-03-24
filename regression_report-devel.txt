@@ -1,4 +1,4 @@
-Running compiler/VVP tests for Icarus Verilog version: 0.9.
+Running compiler/VVP tests for Icarus Verilog version: 0.10.
 ----------------------------------------------------------------------
                       case1: Passed.
                       case2: Passed.
@@ -1343,6 +1343,8 @@ test_mos_strength_reduction: Passed.
             int_not_signext: Passed.
                   pr2673846: Passed.
                   pr2688910: Passed.
+                      fread: Passed.
+                fread-error: Passed.
 ======================================================================
 Test results:
-  Total=1343, Passed=1336, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=1345, Passed=1338, Failed=7, Not Implemented=0, Expected Fail=0
