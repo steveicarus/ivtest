@@ -360,6 +360,9 @@ v0.8:clog2	NI	# $clog2 not supported.
 v0.8:clog2-signal	NI	# $clog2 not supported.
 v0.8:pr2139593	NI	# $clog2 not supported.
 v0.8:multi_bit_strength	NI	# $swrite not supported.
+v0.8:abstime	NI	# $abstime not supported.
+v0.8:fread	NI	# $fread not supported.
+v0.8:fread-error	NI	# $sfread not supported.
 
 # V0.8 does not have the VA math library installed by default.
 # Install the standalone library to get this functionality.
@@ -1942,3 +1945,5 @@ writemem-invalid CE	ivltests diff=log/writemem-invalid.log:gold/writemem-invalid
 int_not_signext	normal	ivltests diff=log/int_not_signext.log:gold/int_not_signext.gold
 pr2673846	normal	ivltests
 pr2688910	normal	ivltests
+fread		normal	ivltests
+fread-error	normal	ivltests diff=log/fread-error.log:gold/fread-error.gold
