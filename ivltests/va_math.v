@@ -1,7 +1,8 @@
 module top;
   parameter pabsi = $abs(-1);
   parameter pabsr = $abs(-1.5);
-  parameter plog = $log(10);
+// $log is depricated!
+//  parameter plog = $log(10);
 
   parameter pmini = $min(1, 2);
   parameter pminra = $min(1, 2.5);
@@ -29,10 +30,13 @@ module top;
       $display("Failed with param. $abs (real), expected 1.5, got %f", pabsr);
       pass = 1'b0;
     end
+// $log is depricated!
+/*
     if (plog != 1.0) begin
       $display("Failed with param. $log, expected 1.0, got %d", plog);
       pass = 1'b0;
     end
+*/
 
     if (pmini != 1) begin
       $display("Failed with param. $min (int), expected 1, got %d", pmini);
@@ -79,11 +83,14 @@ module top;
       $display("Failed with $abs (real), expected 1.5, got %f", resr);
       pass = 1'b0;
     end
+// $log is depricated!
+/*
     resr = $log(10);
     if (resr != 1.0) begin
       $display("Failed with $log, expected 1.0, got %f", resr);
       pass = 1'b0;
     end
+*/
 
     resi = $min(1, 2);
     if (resi != 1) begin
@@ -120,12 +127,15 @@ module top;
       $display("Failed run time with $abs (real), expected 1.5 got %f", resr);
       pass = 1'b0;
     end
+// $log is depricated!
+/*
     rin = 10.0;
     resr = $log(rin);
     if (resr != 1.0) begin
       $display("Failed run time with $log, expected 1.0 got %f", resr);
       pass = 1'b0;
     end
+*/
 
     iin = 1;
     resi = $min(iin, 2);

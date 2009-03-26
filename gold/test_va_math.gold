@@ -24,7 +24,7 @@ The natural log of  inf is inf.
 The natural log of -inf is nan.
 The natural log of  nan is nan.
 
---- Checking the $log function ---
+--- Checking the $log10 function ---
 The log base 10 of 10.0 is 1.000000.
 The log base 10 of  1.0 is 0.000000.
 The log base 10 of  0.5 is -0.301030.

@@ -125,18 +125,19 @@ module top;
   endtask
 
   // Task to check the log base 10 function.
+  // This was originally $log, but that was deprecated in VAMS-2.3.
   task check_log;
     begin
-      $display("--- Checking the $log function ---");
-      $display("The log base 10 of 10.0 is %f.", $log(10.0));
-      $display("The log base 10 of  1.0 is %f.", $log(1.0));
-      $display("The log base 10 of  0.5 is %f.", $log(0.5));
-      $display("The log base 10 of  0.0 is %f.", $log(zero));
-      $display("The log base 10 of -0.0 is %f.", $log(mzero));
-      $display("The log base 10 of -1.0 is %f.", $log(-1.0));
-      $display("The log base 10 of  inf is %f.", $log(inf));
-      $display("The log base 10 of -inf is %f.", $log(minf));
-      $display("The log base 10 of  nan is %f.", $log(nan));
+      $display("--- Checking the $log10 function ---");
+      $display("The log base 10 of 10.0 is %f.", $log10(10.0));
+      $display("The log base 10 of  1.0 is %f.", $log10(1.0));
+      $display("The log base 10 of  0.5 is %f.", $log10(0.5));
+      $display("The log base 10 of  0.0 is %f.", $log10(zero));
+      $display("The log base 10 of -0.0 is %f.", $log10(mzero));
+      $display("The log base 10 of -1.0 is %f.", $log10(-1.0));
+      $display("The log base 10 of  inf is %f.", $log10(inf));
+      $display("The log base 10 of -inf is %f.", $log10(minf));
+      $display("The log base 10 of  nan is %f.", $log10(nan));
     end
   endtask
 
