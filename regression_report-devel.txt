@@ -1345,6 +1345,7 @@ test_mos_strength_reduction: Passed.
                   pr2688910: Passed.
                       fread: Passed.
                 fread-error: Passed.
+                  pr2715558: Passed.
 ======================================================================
 Test results:
-  Total=1345, Passed=1338, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=1346, Passed=1339, Failed=7, Not Implemented=0, Expected Fail=0
