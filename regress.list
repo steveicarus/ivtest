@@ -1996,6 +1996,7 @@ pr2688910	normal	ivltests
 fread		normal	ivltests
 fread-error	normal	ivltests diff=log/fread-error.log:gold/fread-error.gold
 pr2709097	normal	ivltests
+pr2715547	normal	ivltests
 pr2715558	normal	ivltests diff=log/pr2715558.log:gold/pr2715558.gold
 pr2722330a	normal	ivltests
 pr2722330b	normal	ivltests
