@@ -1352,9 +1352,12 @@ test_mos_strength_reduction: Passed.
                  pr2722330a: Passed.
                  pr2722330b: Passed.
                   pr2723712: Passed.
+                 pr2725700a: Passed.
+                 pr2725700b: Passed.
+                 pr2725700c: Passed.
         real_select_invalid: Passed - CE.
        real_concat_invalid1: Passed - CE.
        real_concat_invalid2: Passed - CE.
 ======================================================================
 Test results:
-  Total=1355, Passed=1348, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=1358, Passed=1351, Failed=7, Not Implemented=0, Expected Fail=0

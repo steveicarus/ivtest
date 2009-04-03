@@ -2002,6 +2002,9 @@ pr2715748  	normal	ivltests diff=log/pr2715748.log:gold/pr2715748.gold
 pr2722330a	normal	ivltests
 pr2722330b	normal	ivltests
 pr2723712	normal	ivltests
+pr2725700a	normal	ivltests
+pr2725700b	normal	ivltests
+pr2725700c	normal	ivltests
 real_select_invalid	CE	ivltests
 real_concat_invalid1	CE	ivltests
 real_concat_invalid2	CE	ivltests
