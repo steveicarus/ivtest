@@ -2009,3 +2009,4 @@ real_select_invalid	CE	ivltests
 real_concat_invalid1	CE	ivltests
 real_concat_invalid2	CE	ivltests
 pr2728032	normal	ivltests
+pr2728547	normal	ivltests
