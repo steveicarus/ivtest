@@ -1,6 +1,6 @@
 module test;
 
-    reg stat;
+    reg [0:0] stat;
     initial begin
         stat = 1'b0;
         // This should display (Start).
