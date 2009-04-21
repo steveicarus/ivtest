@@ -1324,6 +1324,8 @@ test_mos_strength_reduction: Passed.
                       stime: Passed.
                     abstime: Passed.
                   pr2503208: Passed.
+                 pr2509349a: Passed.
+                 pr2509349b: Passed.
                   pr2528915: Passed - CE.
                   pr2533175: Passed.
                   pr2579479: Passed.
@@ -1369,4 +1371,4 @@ test_mos_strength_reduction: Passed.
                   pr2745281: Passed.
 ======================================================================
 Test results:
-  Total=1367, Passed=1360, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=1369, Passed=1362, Failed=7, Not Implemented=0, Expected Fail=0
