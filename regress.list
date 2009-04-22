@@ -1677,6 +1677,7 @@ real_pwr_in_ca	normal	ivltests
 real_mod_in_ca	normal	ivltests
 rl_pow	normal	ivltests
 real_op_fail	CE	ivltests
+pr1833024	CE	ivltests diff-log/pr1833024.log:gold=pr1833024.gold
 pr1883052	normal	ivltests
 pr1883052b	normal	ivltests
 pr1885847	normal	ivltests diff=log/pr1885847.log:gold/pr1885847.gold
@@ -1983,6 +1984,9 @@ real_logical	normal	ivltests
 ca_real_logical	normal	ivltests
 real_invalid_ops	CE	ivltests diff=log/real_invalid_ops.log:gold/real_invalid_ops.gold
 pr2580730	normal	ivltests diff=log/pr2580730.log:gold/pr2580730.gold
+pr2590274a	normal	ivltests diff=log/pr2590274a.log:gold/pr2590274.gold
+pr2590274b	normal	ivltests diff=log/pr2590274b.log:gold/pr2590274.gold
+pr2590274c	normal,-gspecify	ivltests diff=log/pr2590274c.log:gold/pr2590274.gold
 pr2593733	normal	ivltests
 pr2597278	normal	ivltests
 pr2597278b	CE	ivltests
@@ -2019,3 +2023,6 @@ pr2728812a	normal	ivltests
 pr2728812b	CE,-pRECURSIVE_MOD_LIMIT=5	ivltests
 pr2728812c	CE	ivltests
 pr2745281	normal	ivltests
+indef_width_concat	CE	ivltests diff=log/indef_width_concat.log:gold/indef_width_concat.gold
+warn_opt_sys_tf	normal	ivltests diff=log/warn_opt_sys_tf.log:gold/warn_opt_sys_tf.gold
+array_dump	normal	ivltests diff=work/array_dump.vcd:gold/array_dump.vcd.gold:2
