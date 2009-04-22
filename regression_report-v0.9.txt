@@ -1027,6 +1027,7 @@ test_mos_strength_reduction: Passed.
              real_mod_in_ca: Passed.
                      rl_pow: Passed.
                real_op_fail: Passed - CE.
+                  pr1833024: Passed - CE.
                   pr1883052: Passed.
                  pr1883052b: Passed.
                   pr1885847: Passed.
@@ -1333,6 +1334,9 @@ test_mos_strength_reduction: Passed.
             ca_real_logical: Passed.
            real_invalid_ops: Passed - CE.
                   pr2580730: Passed.
+                 pr2590274a: Passed.
+                 pr2590274b: Passed.
+                 pr2590274c: Passed.
                   pr2593733: Passed.
                   pr2597278: Passed.
                  pr2597278b: Passed - CE.
@@ -1369,6 +1373,9 @@ test_mos_strength_reduction: Passed.
                  pr2728812b: Passed - CE.
                  pr2728812c: Passed - CE.
                   pr2745281: Passed.
+         indef_width_concat: Passed - CE.
+            warn_opt_sys_tf: Passed.
+                 array_dump: Passed.
 ======================================================================
 Test results:
-  Total=1369, Passed=1362, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=1376, Passed=1369, Failed=7, Not Implemented=0, Expected Fail=0
