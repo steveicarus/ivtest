@@ -6,7 +6,7 @@ wire [63:0] b;
 
 assign a = 3;
 
-am a(a, b);
+am dut(a, b);
 
 initial
 begin

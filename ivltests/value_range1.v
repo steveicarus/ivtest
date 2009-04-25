@@ -1,7 +1,7 @@
 
 // This program is about testing that the value ranges parse and work for
 // integer parameters.
-module test(input wire bar);
+module test(input wire in);
 
    parameter integer foo = 0 from [-10 : 10]  exclude [1:2);
    parameter integer bar = 0 from (-inf:0];
