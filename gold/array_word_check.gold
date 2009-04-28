@@ -1,0 +1,5 @@
+VCD info: dumpfile work/dup.vcd opened for output.
+VCD warning: dumping array word top.array[0] will conflict with an escaped identifier.
+VCD warning: dumping array word top.array[1] will conflict with an escaped identifier.
+VCD warning: skipping signal top.array[0], it was previously included.
+VCD warning: skipping signal top.array[1], it was previously included.
