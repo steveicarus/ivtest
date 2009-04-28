@@ -72,6 +72,7 @@ sub execute_regression {
     }
 
     foreach $tname (@testlist) {
+        my ($pass_type);
         next if ($tname eq "");  # Skip test that have been replaced.
 
         $total++;
@@ -94,6 +95,7 @@ sub execute_regression {
         #
         # Build up the iverilog command line and run it.
         #
+        $pass_type = 0;
         $cmd = "iverilog$sfx -o vsim $args{$tname}";
         $cmd .= " -s $testmod{$tname}" if ($testmod{$tname} ne "");
         $cmd .= " -t null}" if ($testtype{$tname} eq "CN");
@@ -105,15 +107,15 @@ sub execute_regression {
                 if ($? >> 8 & 128) {
                     &print_rpt("==> Failed - CE (core dump).\n");
                     $failed++;
+                    next;
                 } else {
-                    &print_rpt("Passed - CE.\n");
-                    $passed++;
+                    $pass_type = 1;
                 }
+            } else {
+                &print_rpt("==> Failed - running iverilog.\n");
+                $failed++;
                 next;
             }
-            &print_rpt("==> Failed - running iverilog.\n");
-            $failed++;
-            next;
         }
 
         if ($testtype{$tname} eq "CO") {
@@ -129,26 +131,35 @@ sub execute_regression {
 
         $cmd = "vvp$sfx vsim $plargs{$tname} >> log/$tname.log 2>&1";
 #        print "$cmd\n";
-        if (system("$cmd")) {
+        if ($pass_type == 0 and system("$cmd")) {
             if ($testtype{$tname} eq "RE") {
                 # Check if the system command core dumped!
                 if ($? >> 8 & 128) {
                     &print_rpt("==> Failed - RE (core dump).\n");
                     $failed++;
+                    next;
                 } else {
-                    &print_rpt("Passed - RE.\n");
-                    $passed++;
+                    $pass_type = 2;
                 }
+            } else {
+                &print_rpt("==> Failed - running vvp.\n");
+                $failed++;
                 next;
             }
-            &print_rpt("==> Failed - running vvp.\n");
-            $failed++;
-            next;
         }
 
         if ($diff{$tname} ne "") {
             $diff_file = $diff{$tname}
         } else {
+            if ($pass_type == 1) {
+                &print_rpt("Passed - CE.\n");
+                $passed++;
+                next;
+            } elsif ($pass_type == 2) {
+                &print_rpt("Passed - RE.\n");
+                $passed++;
+                next;
+            }
             $diff_file = "log/$tname.log";
         }
 #        print "diff $gold{$tname}, $diff_file, $offset{$tname}\n";
@@ -158,12 +169,24 @@ sub execute_regression {
                 $expected_fail++;
                 next;
             }
-            &print_rpt("==> Failed - output does not match gold file.\n");
+            &print_rpt("==> Failed -");
+            if ($pass_type == 1) {
+                &print_rpt(" CE -");
+            } elsif ($pass_type == 2) {
+                &print_rpt(" RE -");
+            }
+            &print_rpt(" output does not match gold file.\n");
             $failed++;
             next;
         }
 
-        &print_rpt("Passed.\n");
+        if ($pass_type == 1) {
+            &print_rpt("Passed - CE.\n");
+        } elsif ($pass_type == 2) {
+            &print_rpt("Passed - RE.\n");
+        } else {
+            &print_rpt("Passed.\n");
+        }
         $passed++;
 
     } continue {

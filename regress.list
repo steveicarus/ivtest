@@ -1562,10 +1562,10 @@ pr1703959	normal	ivltests
 elsif_test	normal	ivltests
 pr1703120	normal	ivltests diff=log/pr1703120.log:gold/pr1703120.gold
 pr1704013	CE	ivltests
-pr1704726a	CE	ivltests diff=log/pr1704726a.log:gold/pr1704725a.gold
+pr1704726a	CE	ivltests diff=log/pr1704726a.log:gold/pr1704726a.gold
 pr1704726b	normal	ivltests
-pr1704726c	CE	ivltests diff=log/pr1704726c.log:gold/pr1704725c.gold
-pr1704726d	CE	ivltests diff=log/pr1704726d.log:gold/pr1704725d.gold
+pr1704726c	CE	ivltests diff=log/pr1704726c.log:gold/pr1704726c.gold
+pr1704726d	CE	ivltests diff=log/pr1704726d.log:gold/pr1704726d.gold
 pr1705027	CO	ivltests
 pr1716276	normal	ivltests
 pr1717361	normal	ivltests
@@ -1649,7 +1649,7 @@ sdf7	normal,-gspecify	ivltests diff=log/sdf7.log:gold/sdf7.gold
 macro_with_args	normal	ivltests diff=log/macro_with_args.log:gold/macro_with_args.gold
 macro2	normal	ivltests diff=log/macro2.log:gold/macro2.gold
 pr1862744a	normal,-Winfloop	ivltests
-pr1862744b	CE,-Winfloop	ivltests diff=/log/pr1862744b.log:gold/pr1862744b.gold
+pr1862744b	CE,-Winfloop	ivltests diff=log/pr1862744b.log:gold/pr1862744b.gold
 pr1864110a	normal	ivltests diff=log/pr1864110a.log:gold/pr1864110a.gold
 pr1864110b	normal	ivltests diff=log/pr1864110b.log:gold/pr1864110b.gold
 pr1864110c	normal	ivltests diff=log/pr1864110c.log:gold/pr1864110c.gold
@@ -1681,7 +1681,7 @@ real_pwr_in_ca	normal	ivltests
 real_mod_in_ca	normal	ivltests
 rl_pow	normal	ivltests
 real_op_fail	CE	ivltests
-pr1833024	CE	ivltests diff-log/pr1833024.log:gold=pr1833024.gold
+pr1833024	CE	ivltests diff=log/pr1833024.log:gold/pr1833024.gold
 pr1883052	normal	ivltests
 pr1883052b	normal	ivltests
 pr1885847	normal	ivltests diff=log/pr1885847.log:gold/pr1885847.gold
