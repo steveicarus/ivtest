@@ -1,0 +1,12 @@
+pr1704726a.v:8: error: duplicate definition for parameter 'name_pp' in 'top'.
+pr1704726a.v:11: error: parameter and localparam in 'top' have the same name 'name_pl'.
+pr1704726a.v:14: error: localparam and parameter in 'top' have the same name 'name_lp'.
+pr1704726a.v:17: error: duplicate definition for localparam 'name_ll' in 'top'.
+pr1704726a.v:26: error: duplicate definition for task 'name_tt' in 'top'.
+pr1704726a.v:36: error: duplicate  definition for task 'name_tt' in 'top' (generate).
+pr1704726a.v:32: warning: Anachronistic use of named begin/end to surround generate schemes.
+pr1704726a.v:50: error: duplicate definition for function 'name_ff' in 'top'.
+pr1704726a.v:62: error: duplicate definition for function 'name_ff' in 'top' (generate).
+pr1704726a.v:57: warning: Anachronistic use of named begin/end to surround generate schemes.
+pr1704726a.v:74: error: duplicate definition for named event 'name_ee' in 'top'.
+pr1704726a.v:80: error: duplicate definition for specparam 'name_ss' in 'top'.

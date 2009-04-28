@@ -1,0 +1,55 @@
+pr1704726c.v:417: warning: Anachronistic use of named begin/end to surround generate schemes.
+pr1704726c.v:427: warning: Anachronistic use of named begin/end to surround generate schemes.
+pr1704726c.v:438: warning: Anachronistic use of named begin/end to surround generate schemes.
+pr1704726c.v:446: warning: Anachronistic use of named begin/end to surround generate schemes.
+pr1704726c.v:456: warning: Anachronistic use of named begin/end to surround generate schemes.
+pr1704726c.v:464: warning: Anachronistic use of named begin/end to surround generate schemes.
+pr1704726c.v:471: warning: Anachronistic use of named begin/end to surround generate schemes.
+pr1704726c.v:476: warning: Anachronistic use of named begin/end to surround generate schemes.
+pr1704726c.v:22: error: task and parameter in 'top' have the same name 'name_t'.
+pr1704726c.v:33: error: function and parameter in 'top' have the same name 'name_f'.
+pr1704726c.v:42: error: function and task in 'top' have the same name 'name_ft'.
+pr1704726c.v:54: error: module <test> instance and parameter in 'top' have the same name 'name_i'.
+pr1704726c.v:60: error: module <test> instance and task in 'top' have the same name 'name_it'.
+pr1704726c.v:67: error: module <test> instance and function in 'top' have the same name 'name_if'.
+pr1704726c.v:71: error: module <test> instance and module <test> instance in 'top' have the same name 'name_ii'.
+pr1704726c.v:77: error: named block and parameter in 'top' have the same name 'name_b'.
+pr1704726c.v:85: error: named block and task in 'top' have the same name 'name_bt'.
+pr1704726c.v:94: error: named block and function in 'top' have the same name 'name_bf'.
+pr1704726c.v:100: error: named block and module <test> instance in 'top' have the same name 'name_bi'.
+pr1704726c.v:108: error: named block and sequential block in 'top' have the same name 'name_bb'.
+pr1704726c.v:116: error: named event and parameter in 'top' have the same name 'name_e'.
+pr1704726c.v:139: error: named event and sequential block in 'top' have the same name 'name_eb'.
+pr1704726c.v:129: error: named event and function in 'top' have the same name 'name_ef'.
+pr1704726c.v:133: error: named event and module <test> instance in 'top' have the same name 'name_ei'.
+pr1704726c.v:122: error: named event and task in 'top' have the same name 'name_et'.
+pr1704726c.v:153: error: genvar and parameter in 'top' have the same name 'name_v'.
+pr1704726c.v:170: error: generate "loop" and parameter in 'top' have the same name 'name_gl'.
+pr1704726c.v:180: error: generate "loop" and task in 'top' have the same name 'name_glt'.
+pr1704726c.v:191: error: generate "loop" and function in 'top' have the same name 'name_glf'.
+pr1704726c.v:199: error: generate "loop" and module <test> instance in 'top' have the same name 'name_gli'.
+pr1704726c.v:209: error: generate "loop" and sequential block in 'top' have the same name 'name_glb'.
+pr1704726c.v:217: error: generate "loop" and named event in 'top' have the same name 'name_gle'.
+pr1704726c.v:229: error: generate "loop" and generate block in 'top' have the same name 'name_glgl'.
+pr1704726c.v:239: error: generate "if" and parameter in 'top' have the same name 'name_gi'.
+pr1704726c.v:249: error: generate "if" and task in 'top' have the same name 'name_git'.
+pr1704726c.v:260: error: generate "if" and function in 'top' have the same name 'name_gif'.
+pr1704726c.v:268: error: generate "if" and module <test> instance in 'top' have the same name 'name_gii'.
+pr1704726c.v:278: error: generate "if" and sequential block in 'top' have the same name 'name_gib'.
+pr1704726c.v:286: error: generate "if" and named event in 'top' have the same name 'name_gie'.
+pr1704726c.v:298: error: generate "if" and generate block in 'top' have the same name 'name_gigi'.
+pr1704726c.v:308: error: generate "case" and parameter in 'top' have the same name 'name_gc'.
+pr1704726c.v:323: error: generate "case" and task in 'top' have the same name 'name_gct'.
+pr1704726c.v:339: error: generate "case" and function in 'top' have the same name 'name_gcf'.
+pr1704726c.v:352: error: generate "case" and module <test> instance in 'top' have the same name 'name_gci'.
+pr1704726c.v:367: error: generate "case" and sequential block in 'top' have the same name 'name_gcb'.
+pr1704726c.v:380: error: generate "case" and named event in 'top' have the same name 'name_gce'.
+pr1704726c.v:402: error: generate "case" and generate block in 'top' have the same name 'name_gcgc'.
+pr1704726c.v:417: error: generate "block" and parameter in 'top' have the same name 'name_gb'.
+pr1704726c.v:427: error: generate "block" and task in 'top' have the same name 'name_gbt'.
+pr1704726c.v:438: error: generate "block" and function in 'top' have the same name 'name_gbf'.
+pr1704726c.v:446: error: generate "block" and module <test> instance in 'top' have the same name 'name_gbi'.
+pr1704726c.v:456: error: generate "block" and sequential block in 'top' have the same name 'name_gbb'.
+pr1704726c.v:464: error: generate "block" and named event in 'top' have the same name 'name_gbe'.
+pr1704726c.v:476: error: generate "block" and generate block in 'top' have the same name 'name_gbgb'.
+47 error(s) during elaboration.
