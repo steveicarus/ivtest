@@ -2031,3 +2031,4 @@ indef_width_concat	CE	ivltests diff=log/indef_width_concat.log:gold/indef_width_
 warn_opt_sys_tf	normal	ivltests diff=log/warn_opt_sys_tf.log:gold/warn_opt_sys_tf.gold
 array_dump	normal	ivltests diff=work/array_dump.vcd:gold/array_dump.vcd.gold:2
 array_word_width	normal	ivltests diff=log/array_word_width.log:gold/array_word_width.gold
+pr2781595	normal	ivltests
