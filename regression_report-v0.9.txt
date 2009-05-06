@@ -912,6 +912,10 @@ test_mos_strength_reduction: Passed.
                  elsif_test: Passed.
                   pr1703120: Passed.
                   pr1704013: Passed - CE.
+                 pr1704726a: Passed - CE.
+                 pr1704726b: Passed.
+                 pr1704726c: Passed - CE.
+                 pr1704726d: Passed - CE.
                   pr1705027: Passed - CO.
                   pr1716276: Passed.
                   pr1717361: Passed.
@@ -1376,6 +1380,9 @@ test_mos_strength_reduction: Passed.
          indef_width_concat: Passed - CE.
             warn_opt_sys_tf: Passed.
                  array_dump: Passed.
+           array_word_width: Passed.
+           array_word_check: Passed.
+                  pr2781595: Passed.
 ======================================================================
 Test results:
-  Total=1376, Passed=1369, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=1383, Passed=1376, Failed=7, Not Implemented=0, Expected Fail=0
