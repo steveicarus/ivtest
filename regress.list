@@ -2033,3 +2033,4 @@ array_dump	normal	ivltests diff=work/array_dump.vcd:gold/array_dump.vcd.gold:2
 array_word_width	normal	ivltests diff=log/array_word_width.log:gold/array_word_width.gold
 array_word_check	normal	ivltests diff=log/array_word_check.log:gold/array_word_check.gold
 pr2781595	normal	ivltests
+pr2788686	normal	ivltests
