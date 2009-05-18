@@ -2036,4 +2036,5 @@ pr2781595	normal	ivltests
 pr2788686	normal	ivltests
 macro_str_esc	normal	ivltests diff=log/macro_str_esc.log:gold/macro_str_esc.gold
 pr2790236	normal	ivltests
+pr2792883	CE	ivltests
 pr2792897	normal	ivltests
