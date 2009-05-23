@@ -1388,6 +1388,9 @@ test_mos_strength_reduction: Passed.
                   pr2790236: Passed.
                   pr2792883: Passed - CE.
                   pr2792897: Passed.
+                  pr2794144: Passed - CE.
+                   resetall: Passed.
+                  resetall2: Passed.
 ======================================================================
 Test results:
-  Total=1388, Passed=1381, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=1391, Passed=1384, Failed=7, Not Implemented=0, Expected Fail=0
