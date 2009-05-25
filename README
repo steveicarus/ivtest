@@ -19,9 +19,10 @@ or if perl is located in /usr/bin
 
 The output from these tests are displayed on the screen
 and are also placed in the regression_report.txt file.
-The expected output for V0.9.devel is located in the
-regression_report-devel.txt file. The expected output
-for V0.8.? is located in regression_report-v0.8.txt.
+The expected output for the current development release
+is located in the regression_report-devel.txt file. The
+expected output for stable (released) versions can be
+found in files named regression_report-v<version>.txt.
 
 The results from individual tests can be found in the
 log directory and gold files, when needed, are in the
@@ -44,9 +45,9 @@ or if perl is located in /usr/bin
 
 ./vpi_reg.pl
 
-All these tests should pass for V0.9.devel. V0.8.? is
-expected to fail for realtime (64 bit time issue) and
-memmon (no full array call backs).
+All these tests should pass for V0.10.devel and V0.9.?.
+V0.8.? is expected to fail for realtime (64 bit time
+issue) and memmon (no full array call backs).
 
 The individual test results are found in the vpi_log
 directory and the gold files are in the vpi_gold
@@ -69,9 +70,9 @@ or if perl is located in /usr/bin
 
 ./vhdl_reg.pl
 
-The expected output for V0.9.devel is located in the
-vhdl_regression_report-devel.txt file. V0.8 does not
-support converting Verilog to VHDL.
+The expected output for V0.10.devel and V0.9 is located
+in the vhdl_regression_report-devel.txt file. V0.8 does
+not support converting Verilog to VHDL.
 
 
 ####################
