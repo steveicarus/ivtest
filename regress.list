@@ -2042,3 +2042,4 @@ pr2794144	CE	ivltests diff=log/pr2794144.log:gold/pr2794144.gold
 pr2792897	normal	ivltests
 resetall	normal,-Wtimescale ivltests diff=log/resetall.log:gold/resetall.gold
 resetall2	normal,-Wtimescale ivltests diff=log/resetall2.log:gold/resetall2.gold
+def_nettype	normal	ivltests
