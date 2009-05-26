@@ -1,4 +1,4 @@
-`timescale 1u/100n
+`timescale 1us/100ns
 
 module top;
   reg pass = 1'b1;

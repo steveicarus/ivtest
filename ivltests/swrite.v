@@ -1,4 +1,4 @@
-`timescale 1n/1p
+`timescale 1ns/1ps
 
 //`define DEBUG
 module top;
