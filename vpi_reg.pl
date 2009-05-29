@@ -4,10 +4,13 @@
 #
 $| = 1;  # This turns off buffered I/O
 
-# We support a --suffix= flag.
+# We support a --suffix= and --with-valgrind flags.
 use Getopt::Long;
 $sfx = "";  # Default suffix.
-if (!GetOptions("suffix=s" => \$sfx, "help" => \&usage)) {
+$with_valg = 0;  # Default valgrind usage (keep this off).
+if (!GetOptions("suffix=s" => \$sfx,
+                "with-valgrind" => \$with_valg,
+                "help" => \&usage)) {
     die "Error: Invalid argument(s).\n";
 }
 
@@ -15,6 +18,8 @@ sub usage {
     warn "$0 usage:\n\n" .
          "  --suffix=<suffix>  # The Icarus executables suffix, " .
          "default \"\".\n" .
+         "  --with-valgrind    # Run the test suite with valgrind, " .
+         "default \"off\".\n" .
          "  <regression file>  # The regression file, " .
          "default \"./vpi_regress.list\".\n\n";
     exit;
@@ -42,8 +47,9 @@ if ($#ARGV != -1) {
 #  Main script
 #
 ($ver) = `iverilog$sfx -V` =~ /^Icarus Verilog version (\d+\.\d+)/;
-print ("Running VPI tests for Icarus Verilog version: $ver.\n");
-print "-" x 70 . "\n";
+my $msg = $with_valg ? " (with valgrind)" : "";
+print ("Running VPI tests for Icarus Verilog version: $ver$msg.\n");
+print "-" x 76 . "\n";
 &read_regression_list;
 &execute_regression;
 
@@ -174,7 +180,7 @@ sub execute_regression {
             next;
         }
 
-        $cmd = "iverilog-vpi$sfx --name=$tname $cargs{$tname} ".
+        $cmd = "iverilog-vpi$sfx --name=$tname $cargs{$tname} " .
                "vpi/$ccode{$tname} > vpi_log/$tname.log 2>&1";
         if (system("$cmd")) {
             print "==> Failed - running iverilog-vpi.\n";
@@ -182,15 +188,18 @@ sub execute_regression {
             next;
         }
 
-        $cmd = "iverilog$sfx $args{$tname} -o vsim vpi/$tname.v >> ".
-               "vpi_log/$tname.log 2>&1";
+        $cmd = $with_valg ? "valgrind --trace-children=yes " : "";
+        $cmd .= "iverilog$sfx $args{$tname} -o vsim vpi/$tname.v >> " .
+                "vpi_log/$tname.log 2>&1";
         if (system("$cmd")) {
             print "==> Failed - running iverilog.\n";
             $failed++;
             next;
         }
 
-        $cmd = "vvp$sfx -M . -m $tname vsim >> vpi_log/$tname.log 2>&1";
+        $cmd = $with_valg ? "valgrind --leak-check=full " .
+                            "--show-reachable=yes " : "";
+        $cmd .= "vvp$sfx -M . -m $tname vsim >> vpi_log/$tname.log 2>&1";
         if (system("$cmd")) {
             print "==> Failed - running vvp.\n";
             $failed++;
@@ -218,7 +227,7 @@ sub execute_regression {
         }
     }
 
-    print "=" x 70 . "\n";
+    print "=" x 76 . "\n";
     print "Test results: Total=$total, Passed=$passed, Failed=$failed,".
           " Not Implemented=$not_impl\n";
 }
@@ -241,6 +250,10 @@ sub diff {
             last;
         }
         $lline = <LOG>;
+        # Skip lines from valgrind ==\d+==
+        while ($lline =~ m/^==\d+==/) {
+            $lline = <LOG>;
+        }
         $lline =~ s/\r\n$/\n/;  # Strip <CR> at the end of line.
         if ($gline ne $lline) {
             $diff = 1;
@@ -249,7 +262,10 @@ sub diff {
     }
 
     # Check to see if the log file has extra lines.
-    $diff = 1 if (!$diff and !eof LOG);
+    while (!eof LOG and !$diff) {
+        $lline = <LOG>;
+        $diff = 1 if ($lline !~ m/^==\d+==/);
+    }
 
     close (LOG);
     close (GOLD);

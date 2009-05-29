@@ -1,5 +1,6 @@
 #
 # Module for comparing expected and actual output of tests.
+# It knows how to skip valgrind output ^==\d+==
 #
 
 package Diff;
@@ -14,7 +15,8 @@ use base 'Exporter';
 our @EXPORT = qw(diff);
 
 #
-# We only need a simple diff, but we need to strip \r at the end of line.
+# We only need a simple diff, but we need to strip \r at the end of line
+# and we need to ignore the valgrind output.
 #
 sub diff {
     my ($gold, $log, $skip) = @_;
@@ -57,6 +59,10 @@ sub diff {
                 last;
             }
             $lline = <LOG>;
+            # Skip lines from valgrind ^==\d+==
+            while ($lline =~ m/^==\d+==/) {
+                $lline = <LOG>;
+            }
             # Skip initial lines if needed.
             if ($skip > 0) {
                 $skip--;
@@ -70,7 +76,10 @@ sub diff {
         }
 
         # Check to see if the log file has extra lines.
-        $diff = 1 if (!$diff and !eof LOG);
+        while (!eof LOG and !$diff) {
+            $lline = <LOG>;
+            $diff = 1 if ($lline !~ m/^==\d+==/);
+        }
 
         close (LOG);
         close (GOLD);

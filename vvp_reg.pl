@@ -32,14 +32,16 @@ use Environment;
 #
 #  Main script
 #
-my $suffix = &get_suffix;
+my ($suffix, $with_valg) = &get_args;
 my $regress_fn = &get_regress_fn;
 &open_report_file;
 my $ver = &get_ivl_version($suffix);
-&print_rpt("Running compiler/VVP tests for Icarus Verilog version: $ver.\n");
-&print_rpt("-" x 70 . "\n");
+my $msg = $with_valg ? " (with valgrind)" : "";
+&print_rpt("Running compiler/VVP tests for Icarus Verilog " .
+           "version: $ver$msg.\n");
+&print_rpt("-" x 76 . "\n");
 &read_regression_list($regress_fn, $ver);
-&execute_regression($suffix);
+&execute_regression($suffix, $with_valg);
 &close_report_file;
 
 
@@ -49,6 +51,7 @@ my $ver = &get_ivl_version($suffix);
 #
 sub execute_regression {
     my $sfx = shift(@_);
+    my $with_valg = shift(@_);
     my ($tname, $total, $passed, $failed, $expected_fail, $not_impl,
         $len, $cmd, $diff_file);
 
@@ -96,7 +99,8 @@ sub execute_regression {
         # Build up the iverilog command line and run it.
         #
         $pass_type = 0;
-        $cmd = "iverilog$sfx -o vsim $args{$tname}";
+        $cmd = $with_valg ? "valgrind --trace-children=yes " : "";
+        $cmd .= "iverilog$sfx -o vsim $args{$tname}";
         $cmd .= " -s $testmod{$tname}" if ($testmod{$tname} ne "");
         $cmd .= " -t null}" if ($testtype{$tname} eq "CN");
         $cmd .= " ./$srcpath{$tname}/$tname.v > log/$tname.log 2>&1";
@@ -129,7 +133,9 @@ sub execute_regression {
             next;
         }
 
-        $cmd = "vvp$sfx vsim $plargs{$tname} >> log/$tname.log 2>&1";
+        $cmd = $with_valg ? "valgrind --leak-check=full " .
+                            "--show-reachable=yes " : "";
+        $cmd .= "vvp$sfx vsim $plargs{$tname} >> log/$tname.log 2>&1";
 #        print "$cmd\n";
         if ($pass_type == 0 and system("$cmd")) {
             if ($testtype{$tname} eq "RE") {
@@ -196,7 +202,7 @@ sub execute_regression {
         }
     }
 
-    &print_rpt("=" x 70 . "\n");
+    &print_rpt("=" x 76 . "\n");
     &print_rpt("Test results:\n  Total=$total, Passed=$passed, Failed=$failed,".
                " Not Implemented=$not_impl, Expected Fail=$expected_fail\n");
 }

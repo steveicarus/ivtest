@@ -11,32 +11,39 @@ our $VERSION = '1.01';
 
 use base 'Exporter';
 
-our @EXPORT = qw(get_suffix get_regress_fn get_ivl_version);
+our @EXPORT = qw(get_args get_regress_fn get_ivl_version);
 
 use constant DEF_REGRESS_FN => './regress.list';  # Default regression list.
-
 use constant DEF_SUFFIX => '';  # Default suffix.
+use constant DEF_WITH_VALG => 0;  # Default valgrind usage (keep this off).
+
 use Getopt::Long;
 
 #
 # Get the executable/etc. suffix.
 #
-sub get_suffix {
+sub get_args {
     my $suffix = DEF_SUFFIX;
+    my $with_valg = DEF_WITH_VALG;
 
-    if (!GetOptions("suffix=s" => \$suffix, "help" => \&usage)) {
+    if (!GetOptions("suffix=s" => \$suffix,
+                    "with-valgrind" => \$with_valg,
+                    "help" => \&usage)) {
         die "Error: Invalid argument(s).\n";
     }
 
-    return $suffix;
+    return ($suffix, $with_valg);
 }
 
 sub usage {
     my $def_sfx = DEF_SUFFIX;
     my $def_reg_fn = DEF_REGRESS_FN;
+    my $def_with_valg = DEF_WITH_VALG ? "on" : "off";
     warn "$0 usage:\n\n" .
          "  --suffix=<suffix>  # The Icarus executable suffix, " .
          "default \"$def_sfx\".\n" .
+         "  --with-valgrind    # Run the test suite with valgrind, " .
+         "default \"$def_with_valg\".\n" .
          "  <regression file>  # The regression file, " .
          "default \"$def_reg_fn\".\n\n";
     exit;
