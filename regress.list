@@ -458,7 +458,6 @@ v0.8:always3.1.9B	CO	ivltests
 # This list has not been completely audited to see if the bugs
 # are fixable. I have looked at most of the later ones (pr1823732
 # and after). 
-v0.8:nblkpush	EF ivltests
 v0.8:inertdly 	EF ivltests
 v0.8:integer5	EF ivltests
 v0.8:signed12	EF ivltests diff=log/signed12.log:gold/signed12.gold
@@ -923,7 +922,6 @@ event_list2	normal ivltests # Contrib by S Williams
 event_list3	normal ivltests diff=log/event_list3.log:gold/event_list3.gold
 posedge		normal ivltests # Contrib by S Williams
 nblkorder	normal ivltests # Validates Non-blocking order determinism
-nblkpush	normal ivltests # test if non-blocking assignments propagate
 task_inpad	normal ivltests # Validates input of task should pad w/ 0
 task_omemw3	CO		 ivltests # Pass bit selected from vector to task
 cond_band	normal ivltests # Bitwise and in if condition
