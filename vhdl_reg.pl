@@ -32,14 +32,15 @@ use Environment;
 #
 #  Main script
 #
-my $suffix = &get_suffix;
+my ($suffix, $with_valg) = &get_args;
 my $regress_fn = &get_regress_fn;
 &open_report_file('vhdl_regression_report.txt');
 my $ver = &get_ivl_version($suffix);
-&print_rpt("Running VHDL tests for Icarus Verilog version: $ver.\n");
+my $msg = $with_valg ? " (with valgrind)" : "";
+&print_rpt("Running VHDL tests for Icarus Verilog version: $ver$msg.\n");
 &print_rpt("-" x 70 . "\n");
 &read_regression_list($regress_fn, $ver);
-&execute_regression($suffix);
+&execute_regression($suffix, $with_valg);
 &close_report_file;
 
 
@@ -49,6 +50,7 @@ my $ver = &get_ivl_version($suffix);
 #
 sub execute_regression {
     my $sfx = shift(@_);
+    my $with_valg = shift(@_);
     my ($tname, $total, $passed, $failed, $expected_fail, $not_impl,
         $len, $cmd, $diff_file, $outfile, $unit);
 
@@ -82,7 +84,7 @@ sub execute_regression {
 
         if ($testtype{$tname} eq "NI") {
             &print_rpt("Not Implemented.\n");
-            $not_impl++;;
+            $not_impl++;
             next;
         }
 
@@ -92,7 +94,8 @@ sub execute_regression {
         #
         # Build up the iverilog command line and run it.
         #
-        $cmd = "iverilog$sfx -t vhdl -o $outfile $args{$tname}";
+        $cmd = $with_valg ? "valgrind --trace-children=yes " : "";
+        $cmd .= "iverilog$sfx -t vhdl -o $outfile $args{$tname}";
         $cmd .= " -s $testmod{$tname}" if ($testmod{$tname} ne "");
         $cmd .= " ./$srcpath{$tname}/$tname.v > log/$tname.log 2>&1";
         #print "$cmd\n";

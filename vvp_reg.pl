@@ -91,7 +91,7 @@ sub execute_regression {
 
         if ($testtype{$tname} eq "NI") {
             &print_rpt("Not Implemented.\n");
-            $not_impl++;;
+            $not_impl++;
             next;
         }
 
