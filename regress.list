@@ -2042,3 +2042,4 @@ resetall	normal,-Wtimescale ivltests diff=log/resetall.log:gold/resetall.gold
 resetall2	normal,-Wtimescale ivltests diff=log/resetall2.log:gold/resetall2.gold
 def_nettype	normal	ivltests
 uncon_drive	normal	ivltests
+pr2801134	normal	ivltests
