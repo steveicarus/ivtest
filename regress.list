@@ -1584,7 +1584,7 @@ pr1752823a	normal	ivltests diff=log/pr1752823a.log:gold/pr1752823a.gold
 pr1752823b	normal	ivltests diff=log/pr1752823b.log:gold/pr1752823b.gold
 pr1755593	normal	ivltests
 pr1755629	normal	ivltests
-pr1758122	normal	ivltests diff=log/pr1758122.log:gold/pr1758122.gold
+pr1758122	normal,-g2001-noconfig	ivltests diff=log/pr1758122.log:gold/pr1758122.gold
 pr1758135	normal	ivltests diff=log/pr1758135.log:gold/pr1758135.gold
 pr1763333	CE	ivltests
 pr1765789	normal	ivltests
@@ -2044,3 +2044,4 @@ def_nettype	normal	ivltests
 uncon_drive	normal	ivltests
 pr2801134	normal	ivltests
 pr2801662	normal	ivltests
+pr2806449	normal	ivltests
