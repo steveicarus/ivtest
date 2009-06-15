@@ -5,9 +5,8 @@ module top;
     a = 64'h7fe8000000000000;
     // This used to fail because we printed floating point using
     // the default buffer which was only 256 bytes long. To fix
-    // this the default size was changed to 512 bytes which can
-    // under very contrived formats still fail (%6.300f, %6.600e,
-    // etc.) so don't do that.
+    // this the default size was changed to 512 bytes and this is
+    // increased when needed (%400.300f, etc.).
     $display("%6.3f", $bitstoreal(a));
     $display("PASSED");
   end
