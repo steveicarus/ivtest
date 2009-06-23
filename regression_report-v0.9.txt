@@ -1,5 +1,5 @@
 Running compiler/VVP tests for Icarus Verilog version: 0.9.
-----------------------------------------------------------------------
+----------------------------------------------------------------------------
                       case1: Passed.
                       case2: Passed.
                       case4: Passed.
@@ -316,7 +316,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                 event_list3: Passed.
                     posedge: Passed.
                   nblkorder: Passed.
-                   nblkpush: ==> Failed - output does not match gold file.
                  task_inpad: Passed.
                 task_omemw3: Passed - CO.
                   cond_band: Passed.
@@ -1391,6 +1390,13 @@ test_mos_strength_reduction: Passed.
                   pr2794144: Passed - CE.
                    resetall: Passed.
                   resetall2: Passed.
-======================================================================
+                def_nettype: Passed.
+                uncon_drive: Passed.
+                  pr2801134: Passed.
+                  pr2801662: Passed.
+                  pr2806449: Passed.
+                  pr2806474: Passed.
+                 real_array: Passed.
+============================================================================
 Test results:
-  Total=1391, Passed=1384, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=1397, Passed=1391, Failed=6, Not Implemented=0, Expected Fail=0
