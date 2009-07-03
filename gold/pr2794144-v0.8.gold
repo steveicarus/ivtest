@@ -1,0 +1,6 @@
+./ivltests/pr2794144.v:8: syntax error
+./ivltests/pr2794144.v:8: error: malformed statement
+./ivltests/pr2794144.v:9: syntax error
+./ivltests/pr2794144.v:9: error: malformed statement
+./ivltests/pr2794144.v:10: syntax error
+./ivltests/pr2794144.v:10: error: malformed statement

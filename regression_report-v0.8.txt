@@ -1,11 +1,13 @@
 Running compiler/VVP tests for Icarus Verilog version: 0.8.
-----------------------------------------------------------------------
+----------------------------------------------------------------------------
+                nb_array_pv: Not Implemented.
                   pr1639971: Not Implemented.
                   pr1719055: Not Implemented.
                   pr1746401: Not Implemented.
                   pr2038048: Not Implemented.
                   pr2166311: Not Implemented.
-                nb_array_pv: Not Implemented.
+                  pr2605006: Not Implemented.
+                  pr2715547: Not Implemented.
                   pr1421777: Not Implemented.
                   pr1693890: Not Implemented.
                always3.1.1K: Not Implemented.
@@ -13,12 +15,13 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                always3.1.2H: Not Implemented.
                always3.1.2I: Not Implemented.
          blocking_repeat_ec: Not Implemented.
+                nb_ec_array: Not Implemented.
+             nb_ec_array_pv: Not Implemented.
                    nb_ec_pv: Not Implemented.
                   nb_ec_pv2: Not Implemented.
                  nb_ec_real: Not Implemented.
                nb_ec_vector: Not Implemented.
-                nb_ec_array: Not Implemented.
-             nb_ec_array_pv: Not Implemented.
+                  pr2788686: Not Implemented.
                  assign3.2E: Not Implemented.
          assign_deassign_pv: Not Implemented.
        force_release_reg_pv: Not Implemented.
@@ -27,7 +30,9 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                       pr978: Not Implemented.
                   pr1628300: Not Implemented.
                   pr1741212: Not Implemented.
+                  pr1985582: Not Implemented.
                   pr1992729: Not Implemented.
+                  defparam2: Not Implemented.
                      pr1087: Not Implemented.
                   pr1353345: Not Implemented.
                  pr1353345b: Not Implemented.
@@ -38,7 +43,11 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr1820472: Not Implemented.
                   pr1878909: Not Implemented.
                   pr2076391: Not Implemented.
-                  defparam2: Not Implemented.
+            ca_pow_unsigned: Not Implemented.
+              ca_pow_signed: Not Implemented.
+               ca_pow_synth: Not Implemented.
+               pow_unsigned: Not Implemented.
+                 pow_signed: Not Implemented.
                   pr1530426: Not Implemented.
                   pr1634526: Not Implemented.
                   pr1690058: Not Implemented.
@@ -47,21 +56,20 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr1903157: Not Implemented.
                   pr1903343: Not Implemented.
                   pr2352834: Not Implemented.
-            ca_pow_unsigned: Not Implemented.
-              ca_pow_signed: Not Implemented.
-               ca_pow_synth: Not Implemented.
-               pow_unsigned: Not Implemented.
-                 pow_signed: Not Implemented.
+                  pr2673846: Not Implemented.
              real_pwr_in_ca: Not Implemented.
                      rl_pow: Not Implemented.
+               ca_var_delay: Not Implemented.
+                  delay_var: Not Implemented.
+                  nb_assign: Not Implemented.
                   pr1701890: Not Implemented.
                   pr1771903: Not Implemented.
+                  pr2453002: Not Implemented.
+                 pr2453002b: Not Implemented.
+                  pr2806474: Not Implemented.
        real_assign_deassign: Not Implemented.
              real_force_rel: Not Implemented.
          real_reg_force_rel: Not Implemented.
-                  nb_assign: Not Implemented.
-               ca_var_delay: Not Implemented.
-                  delay_var: Not Implemented.
                    long_div: Not Implemented.
                       pr993: Not Implemented.
                   pr1489570: Not Implemented.
@@ -73,13 +81,15 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                      delay3: Not Implemented.
                      delay4: Not Implemented.
                      delay5: Not Implemented.
+                  pr2728032: Not Implemented.
                      real11: Not Implemented.
                       bool1: Not Implemented.
+                 ca_64delay: Not Implemented.
+                    ca_time: Not Implemented.
          cast_real_unsigned: Not Implemented.
            cast_real_signed: Not Implemented.
               cast_real_int: Not Implemented.
            compare_bool_reg: Not Implemented.
-                      real8: Not Implemented.
                  pr1861212a: Not Implemented.
                  pr1861212b: Not Implemented.
                  pr1861212c: Not Implemented.
@@ -92,13 +102,18 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr1898293: Not Implemented.
                   pr2123158: Not Implemented.
                   pr2123190: Not Implemented.
+                  pr2456943: Not Implemented.
+                      real8: Not Implemented.
              real_mod_in_ca: Not Implemented.
            real_pulse_clean: Not Implemented.
             real_wire_array: Not Implemented.
         real_wire_force_rel: Not Implemented.
                       tern8: Not Implemented.
+                 pr1701855b: Not Implemented.
                   pr2201909: Not Implemented.
                  pr2201909b: Not Implemented.
+                  pr2715748: Not Implemented.
+                 real_array: Not Implemented.
               param_select3: Not Implemented.
                   pr1465769: Not Implemented.
                   pr1474316: Not Implemented.
@@ -111,6 +126,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr1993479: Not Implemented.
                   pr2076363: Not Implemented.
                   pr2358848: Not Implemented.
+                  pr2450244: Not Implemented.
+                 pr2725700c: Not Implemented.
                     select5: Not Implemented.
                     select6: Not Implemented.
                     select7: Not Implemented.
@@ -137,6 +154,10 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr1676071: Not Implemented.
                  pr1691599b: Not Implemented.
                   pr1695309: Not Implemented.
+                 pr1704726a: Not Implemented.
+                 pr1704726b: Not Implemented.
+                 pr1704726c: Not Implemented.
+                 pr1704726d: Not Implemented.
                  pr1740476b: Not Implemented.
                   pr1755629: Not Implemented.
                   pr1758122: Not Implemented.
@@ -154,13 +175,14 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr2257003: Not Implemented.
                  pr2257003b: Not Implemented.
                   pr2272468: Not Implemented.
+                  pr2306259: Not Implemented.
                   pr2350934: Not Implemented.
                  pr2350934b: Not Implemented.
                   pr2350988: Not Implemented.
                   pr2355304: Not Implemented.
               scoped_events: Not Implemented.
      unnamed_generate_block: Not Implemented.
-                  pr2306259: Not Implemented.
+         mixed_type_div_mod: Not Implemented.
                   pr1639064: Not Implemented.
                  pr1639064b: Not Implemented.
                   pr1702593: Not Implemented.
@@ -170,11 +192,15 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                      macsub: Not Implemented.
                   pr1925360: Not Implemented.
                   pr2224845: Not Implemented.
+                  pr2745281: Not Implemented.
                       pr622: Not Implemented.
                       pr639: Not Implemented.
                   pr1912112: Not Implemented.
+              macro_str_esc: Not Implemented.
                     analog1: Not Implemented.
                     analog2: Not Implemented.
+                 array_dump: Not Implemented.
+           array_word_check: Not Implemented.
                        cmos: Not Implemented.
                dump_memword: Not Implemented.
                    nb_delay: Not Implemented.
@@ -189,22 +215,38 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr1916261: Not Implemented.
                   pr1963962: Not Implemented.
                   pr2202706: Not Implemented.
+                 pr2202846c: Not Implemented.
                   pr2215342: Not Implemented.
+                  pr2580730: Not Implemented.
+                  pr2715558: Not Implemented.
+                  pr2721213: Not Implemented.
+                  pr2790236: Not Implemented.
+           real_invalid_ops: Not Implemented.
               task_iotypes2: Not Implemented.
+                uncon_drive: Not Implemented.
+                 pr2722330a: Not Implemented.
+                 pr2722330b: Not Implemented.
+                  pr1833024: Not Implemented.
+                  pr2579479: Not Implemented.
                     tranif1: Not Implemented.
+                   resetall: Not Implemented.
+                  resetall2: Not Implemented.
                     ca_mult: Not Implemented.
                  pr1883052b: Not Implemented.
+                  pr2688910: Not Implemented.
                     repeat2: Not Implemented.
          repl_zero_wid_pass: Not Implemented.
       concat_zero_wid_fail2: Not Implemented.
                   pr1792734: Not Implemented.
                  pr2202706c: Not Implemented.
+                  pr2434688: Not Implemented.
+                 pr2434688b: Not Implemented.
                   pr1780480: Not Implemented.
+            localparam_type: Not Implemented.
+             parameter_type: Not Implemented.
                  pr1449749a: Not Implemented.
                   pr1946411: Not Implemented.
                   pr1983762: Not Implemented.
-            localparam_type: Not Implemented.
-             parameter_type: Not Implemented.
                   pr1474283: Not Implemented.
                   pr1877743: Not Implemented.
                   pr1901125: Not Implemented.
@@ -213,41 +255,58 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr2043324: Not Implemented.
                   pr2219441: Not Implemented.
                  pr2219441b: Not Implemented.
-                      scanf: Not Implemented.
-                     scanf2: Not Implemented.
-                     scanf3: Not Implemented.
                   pr1687193: Not Implemented.
                   pr1876798: Not Implemented.
                   pr2029336: Not Implemented.
+                  pr2728547: Not Implemented.
+                      scanf: Not Implemented.
+               scan-invalid: Not Implemented.
+                     scanf2: Not Implemented.
+                     scanf3: Not Implemented.
                        sdf1: Not Implemented.
                        sdf2: Not Implemented.
                        sdf3: Not Implemented.
                        sdf4: Not Implemented.
                        sdf5: Not Implemented.
                        sdf6: Not Implemented.
-                  pr1491355: Not Implemented.
+                       sdf7: Not Implemented.
+                    abstime: Not Implemented.
+                      clog2: Not Implemented.
+               clog2-signal: Not Implemented.
                      fileio: Not Implemented.
+                      fread: Not Implemented.
+                fread-error: Not Implemented.
+         multi_bit_strength: Not Implemented.
+                  pr1491355: Not Implemented.
                   pr1698820: Not Implemented.
                   pr1819452: Not Implemented.
+                  pr2139593: Not Implemented.
+                  pr2476430: Not Implemented.
+                 pr2509349a: Not Implemented.
+                 pr2509349b: Not Implemented.
+                 pr2590274a: Not Implemented.
+                 pr2590274b: Not Implemented.
+                 pr2590274c: Not Implemented.
+                 pr2728812a: Not Implemented.
+                  pr2792897: Not Implemented.
                      swrite: Not Implemented.
                       urand: Not Implemented.
                     urand_r: Not Implemented.
-                      clog2: Not Implemented.
-                  pr2139593: Not Implemented.
-         multi_bit_strength: Not Implemented.
+            ca_real_logical: Not Implemented.
+                  pr2152011: Not Implemented.
+               real_logical: Not Implemented.
                test_va_math: Not Implemented.
                  v2005_math: Not Implemented.
                     va_math: Not Implemented.
-                  pr2152011: Not Implemented.
-             test_vams_math: Not Implemented.
-                  vams_abs1: Not Implemented.
-                  vams_abs2: Not Implemented.
+                   cast_int: Not Implemented.
                 scaled_real: Not Implemented.
+                   simparam: Not Implemented.
+             test_vams_math: Not Implemented.
                value_range1: Not Implemented.
                value_range2: Not Implemented.
                value_range3: Not Implemented.
-                   cast_int: Not Implemented.
-                   simparam: Not Implemented.
+                  vams_abs1: Not Implemented.
+                  vams_abs2: Not Implemented.
            automatic_error1: Not Implemented.
            automatic_error2: Not Implemented.
            automatic_error3: Not Implemented.
@@ -262,8 +321,10 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
           automatic_error12: Not Implemented.
           automatic_error13: Not Implemented.
            automatic_events: Not Implemented.
+          automatic_events2: Not Implemented.
              automatic_task: Not Implemented.
             automatic_task2: Not Implemented.
+                def_nettype: Not Implemented.
                 nested_func: Not Implemented.
              recursive_func: Not Implemented.
              recursive_task: Not Implemented.
@@ -273,6 +334,11 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr1787423: Not Implemented.
                  pr1787423b: Not Implemented.
                  pr1787423c: Not Implemented.
+                 pr2470181a: Not Implemented.
+                 pr2470181b: Not Implemented.
+              readmem-error: Not Implemented.
+            readmem-invalid: Not Implemented.
+           writemem-invalid: Not Implemented.
                   pr1587669: Passed - CO.
                  specify_01: Passed - CO.
                    specify2: Passed - CO.
@@ -284,6 +350,19 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                       pr377: Passed.
                      pr1002: Passed.
                     pr1002a: Passed.
+                  pr2794144: Passed - CE.
+         indef_width_concat: Passed - CE.
+                      delay: Passed.
+                  fdisplay3: Passed.
+           fdisplay_fail_fd: Passed.
+          fdisplay_fail_mcd: Passed.
+                     format: Passed.
+              test_extended: Passed.
+                       mem1: Passed.
+                        pic: Passed.
+                  pr1723367: Passed.
+                      pr751: Passed.
+            warn_opt_sys_tf: Passed - RE.
               always3.1.10A: Passed - CO.
                always3.1.1A: Passed - CO.
                always3.1.1B: Passed - CO.
@@ -305,20 +384,18 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                always3.1.3J: Passed - CO.
                always3.1.9A: Passed - CO.
                always3.1.9B: Passed - CO.
-                   nblkpush: Passed - expected fail.
+                  bitwidth3: Passed - expected fail.
+                    ca_func: Passed - expected fail.
+                     extend: Passed - expected fail.
                    inertdly: Passed - expected fail.
                    integer5: Passed - expected fail.
-                   signed12: Passed - expected fail.
                    comp1000: Passed - expected fail.
                    comp1001: Passed - expected fail.
              comp1001_fail3: Passed - expected fail.
              comp1001_fail4: Passed - expected fail.
              comp1001_fail5: Passed - expected fail.
-                    vcd-dup: Passed - expected fail.
-                   string11: Passed - expected fail.
-                  bitwidth3: Passed - expected fail.
-                     shift5: Passed - expected fail.
-                     extend: Passed - expected fail.
+            int_not_signext: Passed - expected fail.
+         multi_driver_delay: Passed - expected fail.
                       pr487: Passed - expected fail.
                       pr527: Passed - expected fail.
                       pr528: Passed - expected fail.
@@ -330,7 +407,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                       pr699: Passed - expected fail.
                       pr990: Passed - expected fail.
                   pr1380261: Passed - expected fail.
-                  pr1388974: Passed.
+                  pr1388974: Passed - expected fail.
                   pr1476440: Passed - expected fail.
                   pr1492075: Passed - expected fail.
                   pr1494799: Passed - expected fail.
@@ -357,7 +434,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr1704013: Passed - expected fail.
                   pr1742910: Passed - expected fail.
                  pr1752823b: Passed - expected fail.
-                  pr1784984: Passed.
+                  pr1784984: Passed - expected fail.
                  pr1787394a: Passed - expected fail.
                   pr1792152: Passed - expected fail.
                   pr1793157: Passed - expected fail.
@@ -375,7 +452,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                  pr1866215b: Passed - expected fail.
                  pr1867161b: Passed - expected fail.
                   pr1877740: Passed - expected fail.
-         multi_driver_delay: Passed - expected fail.
                   pr1883052: Passed - expected fail.
                  pr1913918c: Passed - expected fail.
                   pr1932444: Passed - expected fail.
@@ -397,6 +473,18 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr2224949: Passed - expected fail.
                   pr2233192: Passed - expected fail.
                  pr2233192b: Passed - expected fail.
+                 pr2425055b: Passed - expected fail.
+                 pr2428890b: Passed - expected fail.
+                 pr2428890c: Passed - expected fail.
+                  pr2486350: Passed - expected fail.
+                 pr2722339a: Passed - expected fail.
+                 pr2722339b: Passed - expected fail.
+             writemem-error: Passed - expected fail.
+                     shift5: Passed - expected fail.
+                   signed12: Passed - expected fail.
+                      stime: Passed - expected fail.
+                   string11: Passed - expected fail.
+                    vcd-dup: Passed - expected fail.
               always3.1.11A: Passed.
               always3.1.11B: Passed.
               always3.1.12A: Passed.
@@ -657,7 +745,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                 assign_mem2: Passed.
                     meminit: Passed.
                    meminit2: Passed.
-                       mem1: Passed.
                   task_noop: Passed.
                  task_noop2: Passed - CO.
                 task_bypath: Passed.
@@ -671,7 +758,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                  assign_nb1: Passed.
                  assign_nb2: Passed.
                assign_delay: Passed.
-                      delay: Passed.
                      delay2: Passed.
             delay_assign_nb: Passed.
            delay_assign_nb2: Passed.
@@ -704,7 +790,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                     define1: Passed.
                   fdisplay1: Passed.
                   fdisplay2: Passed.
-                  fdisplay3: Passed.
                      fopen1: Passed.
                      fopen2: Passed.
                       div16: Passed.
@@ -723,7 +808,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                  port-test3: Passed - CE.
                param_string: Passed.
                       galan: Passed.
-                        pic: Passed.
                     initmod: Passed.
                    initmod2: Passed.
                        bnot: Passed.
@@ -739,16 +823,15 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                 lh_varindx5: Passed.
                   lh_catadd: Passed.
                   shift_pad: Passed.
-                     format: Passed.
                    disp_dec: Passed.
                   disp_dec2: Passed.
                   disp_parm: Passed.
                   disp_part: Passed.
+             disp_leading_z: Passed.
                    shellho1: Passed.
                  test_width: Passed.
                test_disphob: Passed.
              test_dispwided: Passed.
-              test_extended: Passed.
                    schedule: Passed.
                 test_bufif0: Passed.
                 test_bufif1: Passed.
@@ -803,6 +886,7 @@ test_mos_strength_reduction: Passed.
                     signed9: Passed.
                    signed10: Passed.
                    signed11: Passed.
+                   signed13: Passed.
                     repeat1: Passed.
                decl_assign1: Passed.
                      vector: Passed.
@@ -1059,7 +1143,6 @@ test_mos_strength_reduction: Passed.
                       pr734: Passed.
                       pr735: Passed.
                       pr748: Passed.
-                      pr751: Passed.
                       pr757: Passed.
                       pr772: Passed.
                       pr809: Passed.
@@ -1222,7 +1305,6 @@ test_mos_strength_reduction: Passed.
                      array6: Passed.
                  pr1971662a: Passed - CE.
                  pr1971662b: Passed - CE.
-                  pr1985582: Passed.
                   pr1990164: Passed.
                   pr1992244: Passed.
                   pr2001162: Passed.
@@ -1274,6 +1356,8 @@ test_mos_strength_reduction: Passed.
                   pr2181249: Passed.
                   pr2190323: Passed.
                  pr2202706b: Passed.
+                 pr2202846a: Passed.
+                 pr2202846b: Passed.
                   pr2208681: Passed.
                   pr2233180: Passed.
                  pr2233180b: Passed.
@@ -1290,6 +1374,32 @@ test_mos_strength_reduction: Passed.
                  pr2395378a: Passed - CE.
                  pr2395378b: Passed - CE.
                  pr2395378c: Passed - CE.
-======================================================================
+                  pr2395835: Passed.
+                 pr2425055a: Passed.
+                 pr2425055c: Passed.
+                  pr2428890: Passed.
+                  pr2459681: Passed.
+                  pr2503208: Passed.
+                  pr2528915: Passed - CE.
+                  pr2533175: Passed.
+                  pr2593733: Passed.
+                  pr2597278: Passed.
+                 pr2597278b: Passed - CE.
+                  pr2709097: Passed.
+                  pr2723712: Passed.
+                 pr2725700a: Passed.
+                 pr2725700b: Passed.
+        real_select_invalid: Passed - CE.
+       real_concat_invalid1: Passed - CE.
+       real_concat_invalid2: Passed - CE.
+                 pr2728812b: Passed - CE.
+                 pr2728812c: Passed - CE.
+           array_word_width: Passed.
+                  pr2781595: Passed.
+                  pr2792883: Passed - CE.
+                  pr2801134: Passed.
+                  pr2801662: Passed.
+                  pr2806449: Passed.
+============================================================================
 Test results:
-  Total=1290, Passed=924, Failed=3, Not Implemented=273, Expected Fail=90
+  Total=1400, Passed=957, Failed=3, Not Implemented=339, Expected Fail=101

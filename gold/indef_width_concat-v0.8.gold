@@ -1,0 +1,3 @@
+./ivltests/indef_width_concat.v:4: error: operand of concatenation has indefinite width: <pval='sd1>
+./ivltests/indef_width_concat.v:4: error: operand of concatenation has indefinite width: 'sd2
+2 error(s) during elaboration.
