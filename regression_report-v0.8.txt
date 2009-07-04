@@ -180,6 +180,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                  pr2350934b: Not Implemented.
                   pr2350988: Not Implemented.
                   pr2355304: Not Implemented.
+                 pr2815398a: Not Implemented.
+                 pr2815398b: Not Implemented.
               scoped_events: Not Implemented.
      unnamed_generate_block: Not Implemented.
          mixed_type_div_mod: Not Implemented.
