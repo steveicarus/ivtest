@@ -1404,4 +1404,4 @@ test_mos_strength_reduction: Passed.
                   pr2806449: Passed.
 ============================================================================
 Test results:
-  Total=1400, Passed=957, Failed=3, Not Implemented=339, Expected Fail=101
+  Total=1402, Passed=957, Failed=3, Not Implemented=341, Expected Fail=101
