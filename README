@@ -30,6 +30,12 @@ gold directory. The source files can be found in the
 ivltests and contrib directories. The list of tests
 and how they are run is in the regress.list file.
 
+To check a specific suffixed version of Icarus Verilog
+use the --suffix=<suffix> flag to tell the script which
+version to run e.g.(--suffix=-0.9 will test iverilog-0.9,
+etc.). You can also run the test with valgrind (very very
+slow) by giving the script the --with-valgrind flag.
+
 
 ####################
 #
@@ -54,6 +60,9 @@ directory and the gold files are in the vpi_gold
 directory. The source files are in the vpi directory.
 The vpi_regress.list file has the tests to perform.
 
+This script also takes the --suffix=<suffix> and the
+--with-valgrind flags described above.
+
 
 ####################
 #
@@ -73,6 +82,9 @@ or if perl is located in /usr/bin
 The expected output for V0.10.devel and V0.9 is located
 in the vhdl_regression_report-devel.txt file. V0.8 does
 not support converting Verilog to VHDL.
+
+This script also takes the --suffix=<suffix> and the
+--with-valgrind flags described above.
 
 
 ####################
