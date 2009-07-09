@@ -2157,3 +2157,4 @@ pr2806474	normal	ivltests
 real_array	normal	ivltests
 pr2815398a	normal	ivltests diff=log/pr2815398a.log:gold/pr2815398a.gold
 pr2815398b	normal	ivltests diff=log/pr2815398b.log:gold/pr2815398b.gold
+pr2818823	normal	ivltests
