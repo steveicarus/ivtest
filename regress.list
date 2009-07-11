@@ -2158,3 +2158,5 @@ real_array	normal	ivltests
 pr2815398a	normal	ivltests diff=log/pr2815398a.log:gold/pr2815398a.gold
 pr2815398b	normal	ivltests diff=log/pr2815398b.log:gold/pr2815398b.gold
 pr2818823	normal	ivltests
+sv_timeunit_prec	normal,-gsystem-verilog	ivltests
+sv_timeunit_prec_fail	CE,-gsystem-verilog	ivltests diff=log/sv_timeunit_prec_fail.log:gold/sv_timeunit_prec_fail.gold

@@ -1,0 +1,18 @@
+./ivltests/sv_timeunit_prec_fail.v:75: error: repeat timeunit does not match the initial module timeunit declaration.
+./ivltests/sv_timeunit_prec_fail.v:81: error: repeat timeprecision does not match the initial module timeprecision declaration.
+./ivltests/sv_timeunit_prec_fail.v:87: error: repeat timeunit found and the initial module timeunit is missing.
+./ivltests/sv_timeunit_prec_fail.v:93: error: repeat timeprecision found and the initial module timeprecision is missing.
+./ivltests/sv_timeunit_prec_fail.v:100: error: repeat timeprecision found and the initial module timeprecision is missing.
+./ivltests/sv_timeunit_prec_fail.v:107: error: repeat timeunit found and the initial module timeunit is missing.
+./ivltests/sv_timeunit_prec_fail.v:151: Invalid timeunit constant (1st digit).
+./ivltests/sv_timeunit_prec_fail.v:152: Invalid timeprecision constant (1st digit).
+./ivltests/sv_timeunit_prec_fail.v:154: Invalid timeunit constant (number of zeros).
+./ivltests/sv_timeunit_prec_fail.v:155: Invalid timeprecision constant (number of zeros).
+./ivltests/sv_timeunit_prec_fail.v:157: Invalid timeunit scale '2s'.
+./ivltests/sv_timeunit_prec_fail.v:158: Invalid timeprecision scale '2s'.
+./ivltests/sv_timeunit_prec_fail.v:161: Invalid timeunit constant ('_' is not supported).
+./ivltests/sv_timeunit_prec_fail.v:162: Invalid timeprecision constant ('_' is not supported).
+./ivltests/sv_timeunit_prec_fail.v:170: error: a timeprecision is missing or is too large!
+./ivltests/sv_timeunit_prec_fail.v:177: error: a timeprecision is missing or is too large!
+./ivltests/sv_timeunit_prec_fail.v:183: error: a timeprecision is missing or is too large!
+./ivltests/sv_timeunit_prec_fail.v:189: error: a timeprecision is missing or is too large!
