@@ -929,6 +929,7 @@ time7	normal	ivltests   #	gold=time7.gold
 time8	normal	ivltests
 timescale1	normal ivltests
 timescale2	normal ivltests
+timescale3	CE ivltests
 udp_bufg normal ivltests
 udp_bufg2 normal ivltests
 udp_jkff normal	ivltests
