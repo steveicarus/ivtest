@@ -1351,7 +1351,7 @@ pr445	normal	ivltests
 big_int	normal	ivltests # PR#405
 concat1	normal	ivltests # PR#327,372
 concat2	normal	ivltests # PR#282
-concat2	normal	ivltests
+concat3	normal	ivltests
 extend	normal	ivltests
 timeform1	normal	ivltests diff=log/timeform1.log:gold/timeform1.gold
 timeform2	normal	ivltests diff=log/timeform2.log:gold/timeform2.gold
