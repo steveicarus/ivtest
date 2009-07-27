@@ -1950,6 +1950,7 @@ pr2117473	normal	ivltests
 pr2117488	normal	ivltests
 automatic_events	normal	ivltests diff=log/automatic_events.log:gold/automatic_events.gold
 automatic_events2	normal	ivltests diff=log/automatic_events2.log:gold/automatic_events.gold
+automatic_events3	normal	ivltests diff=log/automatic_events3.log:gold/automatic_events3.gold
 automatic_task	normal	ivltests diff=log/automatic_task.log:gold/automatic_task.gold
 automatic_task2	normal	ivltests diff=log/automatic_task2.log:gold/automatic_task2.gold
 nested_func	normal	ivltests diff=log/nested_func.log:gold/nested_func.gold
