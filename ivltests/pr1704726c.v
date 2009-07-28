@@ -1,6 +1,9 @@
 module top;
   parameter parm = 1;
 
+  parameter name_v = 1; // genvar
+  localparam name_lpv = 0; // genvar
+
   parameter name_t = 1; // task
   parameter name_f = 1; // function
   parameter name_i = 1; // module instance
@@ -10,10 +13,31 @@ module top;
   parameter name_gc = 1; // generate block case
   parameter name_gb = 1; // generate block
   parameter name_e = 1; // named event
-  parameter name_v = 1; // genvar
   parameter name_s = 1; // signal
 
   wire [1:0] out;
+
+  /***********
+   * Check genvars
+   ***********/
+  // Check genvar/parameter name issues.
+  genvar name_v;
+  generate 
+    for (name_v = 0; name_v < 2; name_v = name_v + 1) begin
+      assign out[name_v] = name_v;
+    end
+  endgenerate
+
+  // Check genvar/localparam name issues.
+  genvar name_lpv;
+  generate 
+    for (name_lpv = 0; name_lpv < 2; name_lpv = name_lpv + 1) begin
+      assign out[name_lpv] = name_lpv;
+    end
+  endgenerate
+
+  // Check genvar/genvar name issues.
+  // This is in a different file since this fails during parsing.
 
   /***********
    * Check tasks.
@@ -25,6 +49,17 @@ module top;
 
   // Check task/task name issues.
   // This is in a different file since this fails during parsing.
+
+  // Check task/genvar name issues.
+  genvar name_tv;
+  generate 
+    for (name_tv = 0; name_tv < 2; name_tv = name_tv + 1) begin
+      assign out[name_tv] = name_tv;
+    end
+  endgenerate
+  task name_tv;
+    $display("FAILED in task name_tv");
+   endtask
 
   /***********
    * Check functions.
@@ -47,6 +82,18 @@ module top;
   // Check function/function name issues.
   // This is in a different file since this fails during parsing.
 
+  // Check function/genvar name issues.
+  genvar name_fv;
+  generate 
+    for (name_fv = 0; name_fv < 2; name_fv = name_fv + 1) begin
+      assign out[name_fv] = name_fv;
+    end
+  endgenerate
+  function name_fv;
+    input in;
+    name_fv = in;
+  endfunction
+
   /***********
    * Check module instances.
    ***********/
@@ -65,6 +112,15 @@ module top;
     name_if = in;
   endfunction
   test name_if(out[0]);
+
+  // Check module instance/genvar name issues.
+  genvar name_iv;
+  generate 
+    for (name_iv = 0; name_iv < 2; name_iv = name_iv + 1) begin
+      assign out[name_iv] = name_iv;
+    end
+  endgenerate
+  test name_iv(out[1]);
 
   // Check module instance/module instance name issues.
   test name_ii(out[0]);
@@ -93,6 +149,17 @@ module top;
   endfunction
   initial begin: name_bf
     $display("FAILED in name_bf");
+  end
+
+  // Check named block/genvar name issues.
+  genvar name_bv;
+  generate 
+    for (name_bv = 0; name_bv < 2; name_bv = name_bv + 1) begin
+      assign out[name_bv] = name_bv;
+    end
+  endgenerate
+  initial begin: name_bv
+    $display("FAILED in name_bv");
   end
 
   // Check named block/module instance name issues.
@@ -128,6 +195,15 @@ module top;
   endfunction
   event name_ef;
 
+  // Check named event/genvar name issues.
+  genvar name_ev;
+  generate 
+    for (name_ev = 0; name_ev < 2; name_ev = name_ev + 1) begin
+      assign out[name_ev] = name_ev;
+    end
+  endgenerate
+  event name_ev;
+
   // Check named event/module instance name issues.
   test name_ei(out[0]);
   event name_ei;
@@ -140,26 +216,6 @@ module top;
 
   // Check named event/named event name issues.
   // This is in a different file since this fails during parsing.
-
-  /***********
-   * Check genvars
-   *
-   * Because Icarus does not currently use the genvar information
-   * we need to have a for loop which implicitly creates the genvar.
-   ***********/
-  genvar name_v;
-  // Check genvar/parameter name issues.
-  generate
-    for (name_v = 0; name_v < 2; name_v = name_v + 1) begin
-      assign out[name_v] = name_v;
-    end
-  endgenerate
-
-// ---> MISSING CHECK
-// genvars are not finished in Icarus. They are added implicitly not
-// explicitly. We need to add them explicitly and then check the
-// name space before we can add the rest of the checks.
-
 
   /***********
    * Check generate loop blocks
@@ -189,6 +245,19 @@ module top;
   endfunction
   generate
     for (i = 0; i < 2; i = i + 1) begin: name_glf
+      assign out[i] = i;
+    end
+  endgenerate
+
+  // Check generate loop/genvar name issues.
+  genvar name_glv;
+  generate 
+    for (name_glv = 0; name_glv < 2; name_glv = name_glv + 1) begin
+      assign out[name_glv] = name_glv;
+    end
+  endgenerate
+  generate
+    for (i = 0; i < 2; i = i + 1) begin: name_glv
       assign out[i] = i;
     end
   endgenerate
@@ -258,6 +327,19 @@ module top;
   endfunction
   generate
     if (parm == 1) begin: name_gif
+      assign out[1] = 1;
+    end
+  endgenerate
+
+  // Check generate if/genvar name issues.
+  genvar name_giv;
+  generate 
+    for (name_giv = 0; name_giv < 2; name_giv = name_giv + 1) begin
+      assign out[name_giv] = name_giv;
+    end
+  endgenerate
+  generate
+    if (parm == 1) begin: name_giv
       assign out[1] = 1;
     end
   endgenerate
@@ -341,6 +423,24 @@ module top;
         assign out[1] = 1;
       end
       default: begin: name_gcf
+        assign out[1] = 0;
+      end
+    endcase
+  endgenerate
+
+  // Check generate case/genvar name issues.
+  genvar name_gcv;
+  generate 
+    for (name_gcv = 0; name_gcv < 2; name_gcv = name_gcv + 1) begin
+      assign out[name_gcv] = name_gcv;
+    end
+  endgenerate
+  generate
+    case (parm)
+      1: begin: name_gcv
+        assign out[1] = 1;
+      end
+      default: begin: name_gcv
         assign out[1] = 0;
       end
     endcase
@@ -436,6 +536,19 @@ module top;
   endfunction
   generate
     begin: name_gbf
+      assign out[0] = 0;
+    end
+  endgenerate
+
+  // Check generate block/genvar name issues.
+  genvar name_gbv;
+  generate 
+    for (name_gbv = 0; name_gbv < 2; name_gbv = name_gbv + 1) begin
+      assign out[name_gbv] = name_gbv;
+    end
+  endgenerate
+  generate
+    begin: name_gbv
       assign out[0] = 0;
     end
   endgenerate

@@ -11,10 +11,10 @@ reg  [W-1:0]	B[1:D];
 wire [W-1:0]	Y[1:D];
 
 generate
-  genvar	i;
+  genvar	j;
 
-  for (i = 1; i <= D; i = i + 1) begin:sum
-    adder #(W) instance(A[i], B[i], Y[i]);
+  for (j = 1; j <= D; j = j + 1) begin:sum
+    adder #(W) instance(A[j], B[j], Y[j]);
   end
 endgenerate
 

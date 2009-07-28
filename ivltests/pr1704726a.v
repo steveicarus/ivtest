@@ -17,6 +17,13 @@ module top;
   localparam name_ll = 0;
 
   /***********
+   * Check genvars.
+   ***********/
+  // Check genvar/genvar name issues.
+  genvar name_vv;
+  genvar name_vv;
+
+  /***********
    * Check tasks.
    ***********/
   // Check task/task name issues.

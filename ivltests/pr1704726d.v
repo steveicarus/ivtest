@@ -11,9 +11,18 @@ module top;
   // Check signal/parameter name issues.
   wire name0_s;
 
+  // Check signal/genvar name issues.
+  genvar name0_v;
+  generate 
+    for (name0_v = 0; name0_v < 2; name0_v = name0_v + 1) begin
+      assign out[name0_v] = name0_v;
+    end
+  endgenerate
+  wire name0_v;
+
   // Check signal/task name issues.
   task name1_st;
-    $display("FAILED in task name2_st");
+    $display("FAILED in task name1_st");
   endtask
   wire name1_st;
 
