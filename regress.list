@@ -107,6 +107,7 @@ v0.8:pr1985582	NI
 v0.8:pr1992729	NI
 
 # V0.8 does not support arrayed instances/nets.
+v0.8:array_word_width2	NI
 v0.8:defparam2	NI
 v0.8:pr1087	NI
 v0.8:pr1353345	NI	# Also passed parameter problem.
@@ -134,6 +135,7 @@ v0.8:pr1903157	NI
 v0.8:pr1903343	NI
 v0.8:pr2352834	NI
 v0.8:pr2673846	NI
+v0.8:pr2823711	NI
 v0.8:real_pwr_in_ca	NI
 v0.8:rl_pow	NI
 
@@ -273,6 +275,7 @@ v0.8:pr2350934	NI
 v0.8:pr2350934b	NI
 v0.8:pr2350988	NI
 v0.8:pr2355304	NI
+v0.8:pr2809288	NI
 v0.8:pr2815398a	NI
 v0.8:pr2815398b	NI
 v0.8:scoped_events	NI
@@ -328,6 +331,7 @@ v0.8:pr2721213	NI	# No support for a task with no arguments?
 v0.8:pr2790236	NI	# No support for output reg.
 v0.8:real_invalid_ops	NI	# No checks for invalid real operators, etc.
 v0.8:task_iotypes2	NI	# Port types are not supported (integer, etc.).
+v0.8:timescale3	NI	# No check for out of order timescale directive.
 v0.8:uncon_drive	NI	# No support for unconnected drive.
 
 # V0.8 has problems with >>> and parameters.
@@ -348,6 +352,8 @@ v0.8:ca_mult	NI
 v0.8:pr1883052b	NI
 
 # V0.8 does not support a zero repeat.
+v0.8:concat3	NI
+v0.8:concat4	NI
 v0.8:pr2688910	NI
 v0.8:repeat2	NI
 v0.8:repl_zero_wid_pass	NI
@@ -384,6 +390,7 @@ v0.8:pr1687193	NI
 v0.8:pr1876798	NI
 v0.8:pr2029336	NI
 v0.8:pr2728547	NI
+v0.8:pr2824189	NI
 v0.8:scanf	NI
 v0.8:scan-invalid	NI
 v0.8:scanf2	NI
@@ -458,6 +465,7 @@ v0.8:automatic_error12	NI
 v0.8:automatic_error13	NI
 v0.8:automatic_events	NI
 v0.8:automatic_events2	NI
+v0.8:automatic_events3	NI
 v0.8:automatic_task	NI
 v0.8:automatic_task2	NI
 v0.8:def_nettype	NI
@@ -480,6 +488,10 @@ v0.8:readmem-error	NI
 v0.8:readmem-invalid	NI
 v0.8:writemem-invalid	NI
 
+# V0.8 does not support SystemVerilog
+v0.8:sv_timeunit_prec	NI
+v0.8:sv_timeunit_prec_fail	NI
+
 # V0.8 does not support specify block delays.
 v0.8:pr1587669	CO	ivltests
 v0.8:specify_01	CO	ivltests
@@ -496,6 +508,9 @@ v0.8:pr1467825	CO	ivltests
 v0.8:pr377	normal  ivltests diff=log/pr377.log:gold/pr377-v0.8.gold
 v0.8:pr1002	normal  ivltests diff=log/pr1002.log:gold/pr1002-v0.8.gold
 v0.8:pr1002a	normal  ivltests diff=log/pr1002a.log:gold/pr1002a-v0.8.gold
+
+# V0.8 does not get the line number correct, but does fail.
+v0.8:pr2823414	CE
 
 # V0.8 does not have the nice new error messages.
 v0.8:pr2794144	CE	ivltests diff=log/pr2794144.log:gold/pr2794144-v0.8.gold
