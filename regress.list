@@ -672,6 +672,10 @@ v0.8:stime	EF ivltests
 v0.8:string11	EF ivltests diff=log/string11.log:gold/string11.gold
 v0.8:vcd-dup	EF ivltests diff=work/vcd-dup.vcd:gold/vcd-dup.vcd.gold:2
 
+# V0.9 does not support SystemVerilog
+v0.9:sv_timeunit_prec	NI
+v0.9:sv_timeunit_prec_fail	NI
+
 #==========
 # v0.9 doesn't support synthesis. Might as well run them as
 # non-synthesis tests, though.
