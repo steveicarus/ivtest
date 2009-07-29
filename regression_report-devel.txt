@@ -216,6 +216,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.10.
                       time8: Passed.
                  timescale1: Passed.
                  timescale2: Passed.
+                 timescale3: Passed - CE.
                    udp_bufg: Passed.
                   udp_bufg2: Passed.
                    udp_jkff: Passed.
@@ -637,6 +638,8 @@ test_mos_strength_reduction: Passed.
                     big_int: Passed.
                     concat1: Passed.
                     concat2: Passed.
+                    concat3: Passed.
+                    concat4: Passed.
                      extend: Passed.
                   timeform1: Passed.
                   timeform2: Passed.
@@ -1191,6 +1194,7 @@ test_mos_strength_reduction: Passed.
                   pr2117488: Passed.
            automatic_events: Passed.
           automatic_events2: Passed.
+          automatic_events3: Passed.
              automatic_task: Passed.
             automatic_task2: Passed.
                 nested_func: Passed.
@@ -1381,6 +1385,7 @@ test_mos_strength_reduction: Passed.
             warn_opt_sys_tf: Passed.
                  array_dump: Passed.
            array_word_width: Passed.
+          array_word_width2: Passed.
            array_word_check: Passed.
                   pr2781595: Passed.
                   pr2788686: Passed.
@@ -1397,9 +1402,16 @@ test_mos_strength_reduction: Passed.
                   pr2801662: Passed.
                   pr2806449: Passed.
                   pr2806474: Passed.
+                  pr2809288: Passed - CE.
                  real_array: Passed.
                  pr2815398a: Passed.
                  pr2815398b: Passed.
+                  pr2818823: Passed.
+           sv_timeunit_prec: Passed.
+      sv_timeunit_prec_fail: Passed - CE.
+                  pr2823414: Passed - CE.
+                  pr2823711: Passed.
+                  pr2824189: Passed.
 ============================================================================
 Test results:
-  Total=1400, Passed=1394, Failed=6, Not Implemented=0, Expected Fail=0
+  Total=1412, Passed=1406, Failed=6, Not Implemented=0, Expected Fail=0
