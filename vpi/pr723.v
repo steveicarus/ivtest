@@ -56,7 +56,6 @@ module test;
         $test;
 
         // access to null MCD/FD's
-        // The first one will now fail at run time!
         $fdisplay(32'h4000_0000, "write to NULL MCD");
         $fdisplay(32'h8000_000f, "write to NULL FD");
     end

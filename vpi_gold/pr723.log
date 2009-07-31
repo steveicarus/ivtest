@@ -37,4 +37,5 @@ MCD 01: stdout
 FP  00: stdin
 FP  01: stdout
 FP  02: stderr
-ERROR: vpi/pr723.v:60: invalid file descriptor/MCD (0x40000000) given to $fdisplay.
+WARNING: vpi/pr723.v:59: invalid file descriptor/MCD (0x40000000) given to $fdisplay.
+WARNING: vpi/pr723.v:60: invalid file descriptor/MCD (0x8000000f) given to $fdisplay.
