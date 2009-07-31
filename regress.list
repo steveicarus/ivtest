@@ -425,6 +425,8 @@ v0.8:pr2590274b	NI	# $abstime not supported.
 v0.8:pr2590274c	NI	# $abstime not supported.
 v0.8:pr2728812a	NI	# $clog2 not supported.
 v0.8:pr2792897	NI	# $format not supported.
+v0.8:pr2800985a	NI	# $ferror not supported.
+v0.8:pr2800985b	NI	# $ferror not supported.
 v0.8:swrite	NI      # $swrite not supported.
 v0.8:urand	NI	# $urandom not supported.
 v0.8:urand_r	NI	# $urandom_range not supported.
