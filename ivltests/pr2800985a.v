@@ -63,6 +63,10 @@ module top;
     $display("  $ferror returned: %0d, '%0s'", errno, result);
     check_error;
 
+/*
+ * These do not work when the user has root privileges, so we need to
+ * just skip them.
+ *
     $display("Opening a file that we should not be able to write to.");
     bfd = $fopen("/FileDoesNotExist", "w");
     $display("  $fopen returned: %h", bfd);
@@ -76,6 +80,7 @@ module top;
     errno = $ferror(mcd, result);
     $display("  $ferror returned: %0d, '%0s'", errno, result);
     check_error;
+*/
 
     $display("Opening a directory we should not be able to write.");
     bfd = $fopen("/", "w");
