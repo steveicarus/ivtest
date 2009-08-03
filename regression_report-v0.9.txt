@@ -1,5 +1,7 @@
 Running compiler/VVP tests for Icarus Verilog version: 0.9.
 ----------------------------------------------------------------------------
+           sv_timeunit_prec: Not Implemented.
+      sv_timeunit_prec_fail: Not Implemented.
                       case1: Passed.
                       case2: Passed.
                       case4: Passed.
@@ -216,6 +218,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                       time8: Passed.
                  timescale1: Passed.
                  timescale2: Passed.
+                 timescale3: Passed - CE.
                    udp_bufg: Passed.
                   udp_bufg2: Passed.
                    udp_jkff: Passed.
@@ -489,6 +492,7 @@ test_mos_strength_reduction: Passed.
                    signed10: Passed.
                    signed11: Passed.
                    signed12: Passed.
+                   signed13: Passed.
                     repeat1: Passed.
                     repeat2: Passed.
                decl_assign1: Passed.
@@ -636,6 +640,8 @@ test_mos_strength_reduction: Passed.
                     big_int: Passed.
                     concat1: Passed.
                     concat2: Passed.
+                    concat3: Passed.
+                    concat4: Passed.
                      extend: Passed.
                   timeform1: Passed.
                   timeform2: Passed.
@@ -1190,6 +1196,7 @@ test_mos_strength_reduction: Passed.
                   pr2117488: Passed.
            automatic_events: Passed.
           automatic_events2: Passed.
+          automatic_events3: Passed.
              automatic_task: Passed.
             automatic_task2: Passed.
                 nested_func: Passed.
@@ -1380,6 +1387,7 @@ test_mos_strength_reduction: Passed.
             warn_opt_sys_tf: Passed.
                  array_dump: Passed.
            array_word_width: Passed.
+          array_word_width2: Passed.
            array_word_check: Passed.
                   pr2781595: Passed.
                   pr2788686: Passed.
@@ -1392,11 +1400,20 @@ test_mos_strength_reduction: Passed.
                   resetall2: Passed.
                 def_nettype: Passed.
                 uncon_drive: Passed.
+                 pr2800985a: Passed.
+                 pr2800985b: Passed.
                   pr2801134: Passed.
                   pr2801662: Passed.
                   pr2806449: Passed.
                   pr2806474: Passed.
+                  pr2809288: Passed - CE.
                  real_array: Passed.
+                 pr2815398a: Passed.
+                 pr2815398b: ==> Failed - output does not match gold file.
+                  pr2818823: Passed.
+                  pr2823414: Passed - CE.
+                  pr2823711: Passed.
+                  pr2824189: Passed.
 ============================================================================
 Test results:
-  Total=1397, Passed=1391, Failed=6, Not Implemented=0, Expected Fail=0
+  Total=1414, Passed=1405, Failed=7, Not Implemented=2, Expected Fail=0
