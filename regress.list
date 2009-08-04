@@ -2193,3 +2193,4 @@ pr2823414	CE	ivltests diff=log/pr2823414.log:gold/pr2823414.gold
 pr2823711	normal	ivltests
 pr2824189	normal	ivltests
 udp_delay_fail	CE	ivltests
+udp_eval_arg	normal	ivltests
