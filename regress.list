@@ -2194,3 +2194,4 @@ pr2823711	normal	ivltests
 pr2824189	normal	ivltests
 udp_delay_fail	CE	ivltests
 udp_eval_arg	normal	ivltests
+cmdline_parm1	normal,-Pmain.foo=2	ivltests
