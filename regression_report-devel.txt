@@ -1398,6 +1398,8 @@ test_mos_strength_reduction: Passed.
                   resetall2: Passed.
                 def_nettype: Passed.
                 uncon_drive: Passed.
+                 pr2800985a: Passed.
+                 pr2800985b: Passed.
                   pr2801134: Passed.
                   pr2801662: Passed.
                   pr2806449: Passed.
@@ -1412,6 +1414,8 @@ test_mos_strength_reduction: Passed.
                   pr2823414: Passed - CE.
                   pr2823711: Passed.
                   pr2824189: Passed.
+             udp_delay_fail: Passed - CE.
+               udp_eval_arg: Passed.
 ============================================================================
 Test results:
-  Total=1412, Passed=1406, Failed=6, Not Implemented=0, Expected Fail=0
+  Total=1416, Passed=1410, Failed=6, Not Implemented=0, Expected Fail=0
