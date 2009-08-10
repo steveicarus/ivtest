@@ -575,7 +575,6 @@ v0.8:always3.1.9B	CO	ivltests
 v0.8:bitwidth3	EF ivltests
 v0.8:ca_func	EF ivltests
 v0.8:extend	EF ivltests
-v0.8:inertdly 	EF ivltests
 v0.8:integer5	EF ivltests
 v0.8:comp1000	EF ivltests diff=log/comp1000.log:gold/comp1000.gold
 v0.8:comp1001	EF ivltests diff=log/comp1001.log:gold/comp1001.gold
@@ -1139,7 +1138,6 @@ readmemh5	CE		ivltests # Should be error for readmemh(romimg,rom[0:7])
 port-test2	normal  ivltests # Port declaration syntax checks
 port-test3	CE  ivltests # Port declaration syntax checks
 param_string normal ivltests # parameter storing a string.
-inertdly 	normal ivltests 	# Test for inertial delay
 galan       normal ivltests 	# Ternary test with varying size lhs vs rhs 
 pic     normal  contrib pictest diff=log/pic.log:gold/pic.gold
 initmod		normal	ivltests diff=log/initmod.log:gold/initmod.gold
