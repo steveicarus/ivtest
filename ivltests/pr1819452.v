@@ -39,5 +39,7 @@ module top;
 
     result = $rewind(32'hffffffff);
     $display("Check rewind EOF = %0d", result);
+
+    $fclose(fd);
   end
 endmodule

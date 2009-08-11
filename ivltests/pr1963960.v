@@ -53,6 +53,8 @@ module top;
       $finish;
     end
 
+    $fclose(fd);
+
     $display("PASSED");
   end
 endmodule
