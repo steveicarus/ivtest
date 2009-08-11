@@ -309,6 +309,7 @@ v0.8:analog2	NI
 # Other functionality missing in V0.8.
 v0.8:array_dump	NI	# No support for dumping array words.
 v0.8:array_word_check	NI	# No support for dumping array words.
+v0.8:cmdline_parm1	NI	# No support for command line parameters.
 v0.8:cmos	NI	# CMOS gates not supported.
 v0.8:dump_memword	NI	# Can not dump memory (array) words.
 v0.8:nb_delay	NI	# No support for calculated non-blocking delays.
@@ -332,6 +333,7 @@ v0.8:pr2790236	NI	# No support for output reg.
 v0.8:real_invalid_ops	NI	# No checks for invalid real operators, etc.
 v0.8:task_iotypes2	NI	# Port types are not supported (integer, etc.).
 v0.8:timescale3	NI	# No check for out of order timescale directive.
+v0.8:udp_delay_fail	NI	# No UDP delay count check.
 v0.8:uncon_drive	NI	# No support for unconnected drive.
 
 # V0.8 has problems with >>> and parameters.
@@ -501,6 +503,7 @@ v0.8:specify2	CO	ivltests
 v0.8:specify3	CO	ivltests
 v0.8:specify4	CO	ivltests
 v0.8:specify5	CO	ivltests
+v0.8:pr2829776b	CO	ivltests
 
 # V0.8 does not support -gno-specify (it is implicit).
 v0.8:pr183	CO	ivltests
@@ -666,6 +669,7 @@ v0.8:pr2428890c	EF ivltests
 v0.8:pr2486350	EF ivltests
 v0.8:pr2722339a	EF	ivltests
 v0.8:pr2722339b	EF	ivltests
+v0.8:pr2829776	EF	ivltests
 v0.8:writemem-error	EF ivltests diff=log/writemem-error.log:gold/writemem-error.gold
 v0.8:shift5	EF ivltests diff=log/shift5.log:gold/shift5.gold
 v0.8:signed12	EF ivltests diff=log/signed12.log:gold/signed12.gold
