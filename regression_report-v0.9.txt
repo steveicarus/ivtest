@@ -1419,7 +1419,7 @@ test_mos_strength_reduction: Passed.
                   pr2829776: Passed.
                  pr2829776b: Passed.
                      memref: Passed.
-                  pr2837451: ==> Failed - running vvp.
+                  pr2837451: ==> Failed - output does not match gold file.
 ============================================================================
 Test results:
   Total=1420, Passed=1410, Failed=8, Not Implemented=2, Expected Fail=0
