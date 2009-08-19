@@ -407,7 +407,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                  port-test2: Passed.
                  port-test3: Passed - CE.
                param_string: Passed.
-                   inertdly: ==> Failed - output does not match gold file.
                       galan: Passed.
                         pic: Passed.
                     initmod: Passed.
@@ -1414,6 +1413,13 @@ test_mos_strength_reduction: Passed.
                   pr2823414: Passed - CE.
                   pr2823711: Passed.
                   pr2824189: Passed.
+             udp_delay_fail: Passed - CE.
+               udp_eval_arg: Passed.
+              cmdline_parm1: ==> Failed - running iverilog.
+                  pr2829776: Passed.
+                 pr2829776b: Passed.
+                     memref: Passed.
+                  pr2837451: ==> Failed - running vvp.
 ============================================================================
 Test results:
-  Total=1414, Passed=1405, Failed=7, Not Implemented=2, Expected Fail=0
+  Total=1420, Passed=1410, Failed=8, Not Implemented=2, Expected Fail=0
