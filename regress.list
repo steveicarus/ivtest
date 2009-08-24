@@ -677,9 +677,20 @@ v0.8:stime	EF ivltests
 v0.8:string11	EF ivltests diff=log/string11.log:gold/string11.gold
 v0.8:vcd-dup	EF ivltests diff=work/vcd-dup.vcd:gold/vcd-dup.vcd.gold:2
 
+#==========
+#  Things not supported by V0.9.
+#==========
+
 # V0.9 does not support SystemVerilog
 v0.9:sv_timeunit_prec	NI
 v0.9:sv_timeunit_prec_fail	NI
+
+# V0.9 does not support command line parameters.
+v0.9:cmdline_parm1	NI
+
+# V0.9 does not support these analog constructs.
+v0.9:analog1	NI
+v0.9:analog2	NI
 
 #==========
 # v0.9 doesn't support synthesis. Might as well run them as
