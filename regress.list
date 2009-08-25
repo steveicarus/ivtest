@@ -2212,4 +2212,6 @@ pr2829776	normal	ivltests
 pr2829776b	normal,-gspecify	ivltests
 memref		normal	ivltests
 pr2837451	normal	ivltests
+pr2842185	normal	ivltests
 pr2842621	normal	ivltests diff=log/pr2842621.log:gold/pr2842621.gold
+genvar_scopes	normal	ivltests
