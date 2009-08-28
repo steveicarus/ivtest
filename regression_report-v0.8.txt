@@ -150,6 +150,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
               gen_case_opt3: Not Implemented.
         generate_multi_loop: Not Implemented.
                     genloop: Not Implemented.
+              genvar_scopes: Not Implemented.
                   pr1565544: Not Implemented.
                  pr1565699b: Not Implemented.
                   pr1623097: Not Implemented.
@@ -185,6 +186,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr2809288: Not Implemented.
                  pr2815398a: Not Implemented.
                  pr2815398b: Not Implemented.
+                  pr2842185: Not Implemented.
               scoped_events: Not Implemented.
      unnamed_generate_block: Not Implemented.
          mixed_type_div_mod: Not Implemented.
@@ -206,6 +208,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                     analog2: Not Implemented.
                  array_dump: Not Implemented.
            array_word_check: Not Implemented.
+              cmdline_parm1: Not Implemented.
                        cmos: Not Implemented.
                dump_memword: Not Implemented.
                    nb_delay: Not Implemented.
@@ -229,6 +232,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
            real_invalid_ops: Not Implemented.
               task_iotypes2: Not Implemented.
                  timescale3: Not Implemented.
+             udp_delay_fail: Not Implemented.
                 uncon_drive: Not Implemented.
                  pr2722330a: Not Implemented.
                  pr2722330b: Not Implemented.
@@ -298,6 +302,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                  pr2590274c: Not Implemented.
                  pr2728812a: Not Implemented.
                   pr2792897: Not Implemented.
+                 pr2800985a: Not Implemented.
+                 pr2800985b: Not Implemented.
                      swrite: Not Implemented.
                       urand: Not Implemented.
                     urand_r: Not Implemented.
@@ -357,6 +363,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                    specify3: Passed - CO.
                    specify4: Passed - CO.
                    specify5: Passed - CO.
+                 pr2829776b: Passed - CO.
                       pr183: Passed - CO.
                   pr1467825: Passed - CO.
                       pr377: Passed.
@@ -376,6 +383,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr1723367: Passed.
                       pr751: Passed.
             warn_opt_sys_tf: Passed - RE.
+                  pr2842621: Passed.
               always3.1.10A: Passed - CO.
                always3.1.1A: Passed - CO.
                always3.1.1B: Passed - CO.
@@ -400,7 +408,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   bitwidth3: Passed - expected fail.
                     ca_func: Passed - expected fail.
                      extend: Passed - expected fail.
-                   inertdly: Passed - expected fail.
                    integer5: Passed - expected fail.
                    comp1000: Passed - expected fail.
                    comp1001: Passed - expected fail.
@@ -492,6 +499,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr2486350: Passed - expected fail.
                  pr2722339a: Passed - expected fail.
                  pr2722339b: Passed - expected fail.
+                  pr2829776: Passed - expected fail.
              writemem-error: Passed - expected fail.
                      shift5: Passed - expected fail.
                    signed12: Passed - expected fail.
@@ -1414,6 +1422,9 @@ test_mos_strength_reduction: Passed.
                   pr2801662: Passed.
                   pr2806449: Passed.
                   pr2818823: Passed.
+               udp_eval_arg: Passed.
+                     memref: Passed.
+                  pr2837451: Passed.
 ============================================================================
 Test results:
-  Total=1414, Passed=959, Failed=3, Not Implemented=351, Expected Fail=101
+  Total=1425, Passed=964, Failed=3, Not Implemented=357, Expected Fail=101

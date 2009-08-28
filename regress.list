@@ -243,6 +243,7 @@ v0.8:gen_case_opt2 NI
 v0.8:gen_case_opt3 NI
 v0.8:generate_multi_loop	NI
 v0.8:genloop	NI
+v0.8:genvar_scopes	NI
 v0.8:pr1565544	NI
 v0.8:pr1565699b	NI
 v0.8:pr1623097	NI
@@ -278,6 +279,7 @@ v0.8:pr2355304	NI
 v0.8:pr2809288	NI
 v0.8:pr2815398a	NI
 v0.8:pr2815398b	NI
+v0.8:pr2842185	NI
 v0.8:scoped_events	NI
 v0.8:unnamed_generate_block	NI
 
@@ -545,6 +547,9 @@ v0.8:pr751	normal  ivltests diff=log/pr751.log:gold/pr751-v0.8.gold
 
 # V0.8 has no special warnings for the optional system tasks/functions.
 v0.8:warn_opt_sys_tf	RE	ivltests diff=log/warn_opt_sys_tf.log:gold/warn_opt_sys_tf-v0.8.gold
+
+# V0.8 has a slight display difference.
+v0.8:pr2842621	normal	ivltests diff=log/pr2842621.log:gold/pr2842621-v0.8.gold
 
 # V0.8 does not have the always infinite loop checks, so only compile these.
 v0.8:always3.1.10A	CO	ivltests
