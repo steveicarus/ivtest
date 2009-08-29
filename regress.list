@@ -198,6 +198,7 @@ v0.8:real_wire_force_rel	NI
 v0.8:tern8	NI
 
 # V0.8 does not support real arrays
+v0.8:array_select	NI
 v0.8:pr1701855b	NI
 v0.8:pr2201909	NI
 v0.8:pr2201909b	NI
@@ -218,6 +219,8 @@ v0.8:pr1993479	NI
 v0.8:pr2076363	NI
 v0.8:pr2358848	NI
 v0.8:pr2450244	NI
+v0.8:pr2835632a	NI
+v0.8:pr2835632b	NI
 v0.8:pr2725700c	NI
 v0.8:select5	NI
 v0.8:select6	NI
@@ -2217,6 +2220,9 @@ pr2829776	normal	ivltests
 pr2829776b	normal,-gspecify	ivltests
 memref		normal	ivltests
 pr2837451	normal	ivltests
+pr2835632a	normal	ivltests
+pr2835632b	normal	ivltests
 pr2842185	normal	ivltests
 pr2842621	normal	ivltests diff=log/pr2842621.log:gold/pr2842621.gold
 genvar_scopes	normal	ivltests
+array_select	normal	ivltests
