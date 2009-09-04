@@ -204,6 +204,7 @@ v0.8:pr2201909	NI
 v0.8:pr2201909b	NI
 v0.8:pr2715748	NI
 v0.8:real_array	NI
+v0.8:real_array_nb	NI
 
 # V0.8 does not support indexed part selects.
 v0.8:param_select3	NI
@@ -699,6 +700,9 @@ v0.9:cmdline_parm1	NI
 # V0.9 does not support these analog constructs.
 v0.9:analog1	NI
 v0.9:analog2	NI
+
+# V0.9 does not support non-blocking assignment to real array words.
+v0.9:real_array_nb	NI
 
 #==========
 # v0.9 doesn't support synthesis. Might as well run them as
