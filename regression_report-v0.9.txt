@@ -2,6 +2,9 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
 ----------------------------------------------------------------------------
            sv_timeunit_prec: Not Implemented.
       sv_timeunit_prec_fail: Not Implemented.
+              cmdline_parm1: Not Implemented.
+                    analog1: Not Implemented.
+                    analog2: Not Implemented.
                       case1: Passed.
                       case2: Passed.
                       case4: Passed.
@@ -1297,8 +1300,6 @@ test_mos_strength_reduction: Passed.
                  pr2305307b: Passed.
                  pr2305307c: Passed.
                   pr2306259: Passed.
-                    analog1: ==> Failed - running iverilog.
-                    analog2: ==> Failed - running iverilog.
                   pr2350934: Passed.
                  pr2350934b: Passed.
                   pr2350988: Passed.
@@ -1415,11 +1416,17 @@ test_mos_strength_reduction: Passed.
                   pr2824189: Passed.
              udp_delay_fail: Passed - CE.
                udp_eval_arg: Passed.
-              cmdline_parm1: ==> Failed - running iverilog.
                   pr2829776: Passed.
                  pr2829776b: Passed.
                      memref: Passed.
-                  pr2837451: ==> Failed - output does not match gold file.
+                  pr2837451: Passed.
+                 pr2835632a: Passed.
+                 pr2835632b: ==> Failed - running vvp.
+                  pr2842185: Passed.
+                  pr2842621: Passed.
+              genvar_scopes: Passed.
+               array_select: Passed.
+              real_array_nb: ==> Failed - running iverilog.
 ============================================================================
 Test results:
-  Total=1420, Passed=1410, Failed=8, Not Implemented=2, Expected Fail=0
+  Total=1427, Passed=1416, Failed=6, Not Implemented=5, Expected Fail=0
