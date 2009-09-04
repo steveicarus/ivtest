@@ -198,11 +198,13 @@ v0.8:real_wire_force_rel	NI
 v0.8:tern8	NI
 
 # V0.8 does not support real arrays
+v0.8:array_select	NI
 v0.8:pr1701855b	NI
 v0.8:pr2201909	NI
 v0.8:pr2201909b	NI
 v0.8:pr2715748	NI
 v0.8:real_array	NI
+v0.8:real_array_nb	NI
 
 # V0.8 does not support indexed part selects.
 v0.8:param_select3	NI
@@ -218,6 +220,8 @@ v0.8:pr1993479	NI
 v0.8:pr2076363	NI
 v0.8:pr2358848	NI
 v0.8:pr2450244	NI
+v0.8:pr2835632a	NI
+v0.8:pr2835632b	NI
 v0.8:pr2725700c	NI
 v0.8:select5	NI
 v0.8:select6	NI
@@ -243,6 +247,7 @@ v0.8:gen_case_opt2 NI
 v0.8:gen_case_opt3 NI
 v0.8:generate_multi_loop	NI
 v0.8:genloop	NI
+v0.8:genvar_scopes	NI
 v0.8:pr1565544	NI
 v0.8:pr1565699b	NI
 v0.8:pr1623097	NI
@@ -278,6 +283,7 @@ v0.8:pr2355304	NI
 v0.8:pr2809288	NI
 v0.8:pr2815398a	NI
 v0.8:pr2815398b	NI
+v0.8:pr2842185	NI
 v0.8:scoped_events	NI
 v0.8:unnamed_generate_block	NI
 
@@ -546,6 +552,9 @@ v0.8:pr751	normal  ivltests diff=log/pr751.log:gold/pr751-v0.8.gold
 # V0.8 has no special warnings for the optional system tasks/functions.
 v0.8:warn_opt_sys_tf	RE	ivltests diff=log/warn_opt_sys_tf.log:gold/warn_opt_sys_tf-v0.8.gold
 
+# V0.8 has a slight display difference.
+v0.8:pr2842621	normal	ivltests diff=log/pr2842621.log:gold/pr2842621-v0.8.gold
+
 # V0.8 does not have the always infinite loop checks, so only compile these.
 v0.8:always3.1.10A	CO	ivltests
 v0.8:always3.1.1A	CO	ivltests
@@ -691,6 +700,9 @@ v0.9:cmdline_parm1	NI
 # V0.9 does not support these analog constructs.
 v0.9:analog1	NI
 v0.9:analog2	NI
+
+# V0.9 does not support non-blocking assignment to real array words.
+v0.9:real_array_nb	NI
 
 #==========
 # v0.9 doesn't support synthesis. Might as well run them as
@@ -2212,6 +2224,10 @@ pr2829776	normal	ivltests
 pr2829776b	normal,-gspecify	ivltests
 memref		normal	ivltests
 pr2837451	normal	ivltests
+pr2835632a	normal	ivltests
+pr2835632b	normal	ivltests
 pr2842185	normal	ivltests
 pr2842621	normal	ivltests diff=log/pr2842621.log:gold/pr2842621.gold
 genvar_scopes	normal	ivltests
+array_select	normal	ivltests
+real_array_nb	normal	ivltests
