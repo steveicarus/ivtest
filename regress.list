@@ -1546,7 +1546,7 @@ pr729		normal  ivltests diff=log/pr729.log:gold/pr729.gold
 pr734		normal	ivltests
 pr735		normal	ivltests
 pr748		normal	ivltests
-pr751		normal  ivltests diff=log/pr751.log:gold/pr751.gold
+pr751		normal,-Wsensitivity-entire-vector ivltests diff=log/pr751.log:gold/pr751.gold
 pr757		normal	ivltests
 pr772		normal	ivltests
 pr809		normal	ivltests
@@ -1966,7 +1966,7 @@ pr2038048	normal	ivltests
 pr2039632	CE	ivltests
 pr2039694	normal	ivltests diff=log/pr2039694.log:gold/pr2039694.gold
 pr2043324	normal	ivltests
-pr2043585	normal	ivltests diff=log/pr2043585.log:gold/pr2043585.gold
+pr2043585	normal,-Wsensitivity-entire-array ivltests diff=log/pr2043585.log:gold/pr2043585.gold
 pr2051694	CE	ivltests
 pr2051975	CE	ivltests
 pr2053944	normal	ivltests diff=log/pr2053944.log:gold/pr2053944.gold
