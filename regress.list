@@ -2231,3 +2231,4 @@ pr2842621	normal	ivltests diff=log/pr2842621.log:gold/pr2842621.gold
 genvar_scopes	normal	ivltests
 array_select	normal	ivltests
 real_array_nb	normal	ivltests
+pv_undef_sig_sel	normal	ivltests
