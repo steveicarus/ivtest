@@ -199,6 +199,7 @@ v0.8:tern8	NI
 
 # V0.8 does not support real arrays
 v0.8:array_select	NI
+v0.8:array_select_a	NI
 v0.8:pr1701855b	NI
 v0.8:pr2201909	NI
 v0.8:pr2201909b	NI
@@ -2233,3 +2234,4 @@ genvar_scopes	normal	ivltests
 array_select	normal	ivltests
 real_array_nb	normal	ivltests
 pv_undef_sig_sel	normal	ivltests
+array_select_a	normal	ivltests
