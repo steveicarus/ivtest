@@ -111,11 +111,13 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
             real_wire_array: Not Implemented.
         real_wire_force_rel: Not Implemented.
                       tern8: Not Implemented.
+               array_select: Not Implemented.
                  pr1701855b: Not Implemented.
                   pr2201909: Not Implemented.
                  pr2201909b: Not Implemented.
                   pr2715748: Not Implemented.
                  real_array: Not Implemented.
+              real_array_nb: Not Implemented.
               param_select3: Not Implemented.
                   pr1465769: Not Implemented.
                   pr1474316: Not Implemented.
@@ -129,6 +131,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr2076363: Not Implemented.
                   pr2358848: Not Implemented.
                   pr2450244: Not Implemented.
+                 pr2835632a: Not Implemented.
+                 pr2835632b: Not Implemented.
                  pr2725700c: Not Implemented.
                     select5: Not Implemented.
                     select6: Not Implemented.
@@ -304,6 +308,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr2792897: Not Implemented.
                  pr2800985a: Not Implemented.
                  pr2800985b: Not Implemented.
+           pv_undef_sig_sel: Not Implemented.
                      swrite: Not Implemented.
                       urand: Not Implemented.
                     urand_r: Not Implemented.
@@ -1427,4 +1432,4 @@ test_mos_strength_reduction: Passed.
                   pr2837451: Passed.
 ============================================================================
 Test results:
-  Total=1425, Passed=964, Failed=3, Not Implemented=357, Expected Fail=101
+  Total=1430, Passed=964, Failed=3, Not Implemented=362, Expected Fail=101
