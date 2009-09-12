@@ -2235,3 +2235,4 @@ array_select	normal	ivltests
 real_array_nb	normal	ivltests
 pv_undef_sig_sel	normal	ivltests
 array_select_a	normal	ivltests
+pr2848986	CE	ivltests diff=log/pr2848986.log:gold/pr2848986.gold
