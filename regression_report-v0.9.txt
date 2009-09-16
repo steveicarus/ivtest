@@ -1422,11 +1422,15 @@ test_mos_strength_reduction: Passed.
                      memref: Passed.
                   pr2837451: Passed.
                  pr2835632a: Passed.
-                 pr2835632b: ==> Failed - running vvp.
+                 pr2835632b: Passed.
                   pr2842185: Passed.
                   pr2842621: Passed.
               genvar_scopes: Passed.
                array_select: Passed.
+           pv_undef_sig_sel: Passed.
+             array_select_a: ==> Failed - output does not match gold file.
+                  pr2848986: Passed - CE.
+                  pr2859628: Passed.
 ============================================================================
 Test results:
-  Total=1427, Passed=1416, Failed=5, Not Implemented=6, Expected Fail=0
+  Total=1431, Passed=1420, Failed=5, Not Implemented=6, Expected Fail=0
