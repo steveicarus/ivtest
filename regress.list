@@ -706,6 +706,10 @@ v0.9:analog2	NI
 # V0.9 does not support non-blocking assignment to real array words.
 v0.9:real_array_nb	NI
 
+# V0.9 does not support a signed result from thread space so this is
+# expected to fail.
+v0.9:signed_pv	EF	ivltests
+
 #==========
 # v0.9 doesn't support synthesis. Might as well run them as
 # non-synthesis tests, though.
@@ -2237,3 +2241,4 @@ pv_undef_sig_sel	normal	ivltests
 array_select_a	normal	ivltests
 pr2848986	CE	ivltests diff=log/pr2848986.log:gold/pr2848986.gold
 pr2859628	normal	ivltests diff=work/pr2859628.vcd:gold/pr2859628.vcd.gold:2
+signed_pv	normal	ivltests
