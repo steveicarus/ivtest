@@ -709,6 +709,7 @@ v0.9:real_array_nb	NI
 # V0.9 does not support a signed result from thread space so this is
 # expected to fail.
 v0.9:signed_pv	EF	ivltests
+v0.9:signed_a	EF	ivltests
 
 #==========
 # v0.9 doesn't support synthesis. Might as well run them as
