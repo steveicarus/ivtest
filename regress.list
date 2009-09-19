@@ -208,6 +208,7 @@ v0.8:real_array	NI
 v0.8:real_array_nb	NI
 
 # V0.8 does not support indexed part selects.
+v0.8:force_lval_part	NI
 v0.8:param_select3	NI
 v0.8:pr1465769	NI
 v0.8:pr1474316	NI
@@ -228,6 +229,8 @@ v0.8:select5	NI
 v0.8:select6	NI
 v0.8:select7	NI
 v0.8:select8	NI
+v0.8:signed_part	NI
+v0.8:signed_pv	NI
 
 # V0.8 does not support out of range part selects.
 v0.8:pr1960633	NI
@@ -678,15 +681,18 @@ v0.8:pr2425055b	EF ivltests
 v0.8:pr2428890b	EF ivltests
 v0.8:pr2428890c	EF ivltests
 v0.8:pr2486350	EF ivltests
-v0.8:pr2722339a	EF	ivltests
-v0.8:pr2722339b	EF	ivltests
-v0.8:pr2829776	EF	ivltests
-v0.8:writemem-error	EF ivltests diff=log/writemem-error.log:gold/writemem-error.gold
+v0.8:pr2722339a	EF ivltests
+v0.8:pr2722339b	EF ivltests
+v0.8:pr2829776	EF ivltests
+v0.8:pr2848986	EF ivltests diff=log/pr2848986.log:gold/pr2848986.gold
+v0.8:pr2859628	EF ivltests diff=work/pr2859628.vcd:gold/pr2859628.vcd.gold:2
 v0.8:shift5	EF ivltests diff=log/shift5.log:gold/shift5.gold
 v0.8:signed12	EF ivltests diff=log/signed12.log:gold/signed12.gold
+v0.8:signed_a	EF ivltests
 v0.8:stime	EF ivltests
 v0.8:string11	EF ivltests diff=log/string11.log:gold/string11.gold
 v0.8:vcd-dup	EF ivltests diff=work/vcd-dup.vcd:gold/vcd-dup.vcd.gold:2
+v0.8:writemem-error	EF ivltests diff=log/writemem-error.log:gold/writemem-error.gold
 
 #==========
 #  Things not supported by V0.9.
