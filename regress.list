@@ -706,10 +706,11 @@ v0.9:analog2	NI
 # V0.9 does not support non-blocking assignment to real array words.
 v0.9:real_array_nb	NI
 
-# V0.9 does not support a signed result from thread space so this is
-# expected to fail.
+# V0.9 does not support a signed result from thread space or a
+# functor so these are expected to fail under V0.9.
 v0.9:signed_pv	EF	ivltests
 v0.9:signed_a	EF	ivltests
+v0.9:signed_part	EF	ivltests
 
 #==========
 # v0.9 doesn't support synthesis. Might as well run them as
@@ -2245,3 +2246,4 @@ pr2859628	normal	ivltests diff=work/pr2859628.vcd:gold/pr2859628.vcd.gold:2
 signed_pv	normal	ivltests
 signed_a	normal	ivltests
 force_lval_part	normal	ivltests
+signed_part	normal	ivltests
