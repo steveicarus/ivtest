@@ -1431,6 +1431,10 @@ test_mos_strength_reduction: Passed.
              array_select_a: Passed.
                   pr2848986: Passed - CE.
                   pr2859628: Passed.
+                  signed_pv: Passed.
+                   signed_a: Passed.
+            force_lval_part: Passed.
+                signed_part: Passed.
 ============================================================================
 Test results:
-  Total=1431, Passed=1426, Failed=5, Not Implemented=0, Expected Fail=0
+  Total=1435, Passed=1430, Failed=5, Not Implemented=0, Expected Fail=0
