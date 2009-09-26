@@ -2249,6 +2249,7 @@ pv_undef_sig_sel	normal	ivltests
 array_select_a	normal	ivltests
 pr2848986	CE	ivltests diff=log/pr2848986.log:gold/pr2848986.gold
 pr2859628	normal	ivltests diff=work/pr2859628.vcd:gold/pr2859628.vcd.gold:2
+pr2849783	normal	ivltests
 signed_pv	normal	ivltests
 signed_a	normal	ivltests
 force_lval_part	normal	ivltests

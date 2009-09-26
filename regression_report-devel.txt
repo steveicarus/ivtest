@@ -508,7 +508,7 @@ test_mos_strength_reduction: Passed.
                    specify5: Passed.
                deposit_wire: Passed.
                  specify_01: Passed.
-                    deposit: ==> Failed - output does not match gold file.
+                    deposit: Passed.
                  assign_neq: Passed.
                  assign_deq: Passed.
                   assign_ge: Passed.
@@ -530,7 +530,7 @@ test_mos_strength_reduction: Passed.
                      memidx: Passed.
                   memidxrng: Passed.
                    mem2port: Passed.
-                    vcd-dup: Passed.
+                    vcd-dup: ==> Failed - output does not match gold file.
                     resolv1: Passed.
                       pr307: Passed.
                      pr307a: Passed.
@@ -729,7 +729,7 @@ test_mos_strength_reduction: Passed.
                       pr685: Passed.
                       pr690: Passed.
                       pr693: Passed.
-                      pr699: ==> Failed - output does not match gold file.
+                      pr699: Passed.
                       pr704: Passed.
                       pr707: Passed.
                       pr708: Passed.
@@ -1431,10 +1431,11 @@ test_mos_strength_reduction: Passed.
              array_select_a: Passed.
                   pr2848986: Passed - CE.
                   pr2859628: Passed.
+                  pr2849783: Passed.
                   signed_pv: Passed.
                    signed_a: Passed.
             force_lval_part: Passed.
                 signed_part: Passed.
 ============================================================================
 Test results:
-  Total=1435, Passed=1430, Failed=5, Not Implemented=0, Expected Fail=0
+  Total=1436, Passed=1432, Failed=4, Not Implemented=0, Expected Fail=0
