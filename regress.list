@@ -718,6 +718,9 @@ v0.9:signed_pv	EF	ivltests
 v0.9:signed_a	EF	ivltests
 v0.9:signed_part	EF	ivltests
 
+# V0.9 does not have the net rework code.
+v0.9:deposit	EF	ivltests
+
 #==========
 # v0.9 doesn't support synthesis. Might as well run them as
 # non-synthesis tests, though.
@@ -2254,3 +2257,4 @@ signed_pv	normal	ivltests
 signed_a	normal	ivltests
 force_lval_part	normal	ivltests
 signed_part	normal	ivltests
+pr2865563	normal	ivltests
