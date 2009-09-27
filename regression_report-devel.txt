@@ -1436,6 +1436,7 @@ test_mos_strength_reduction: Passed.
                    signed_a: Passed.
             force_lval_part: Passed.
                 signed_part: Passed.
+                  pr2865563: Passed.
 ============================================================================
 Test results:
-  Total=1436, Passed=1432, Failed=4, Not Implemented=0, Expected Fail=0
+  Total=1437, Passed=1433, Failed=4, Not Implemented=0, Expected Fail=0
