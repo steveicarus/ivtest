@@ -721,6 +721,11 @@ v0.9:signed_part	EF	ivltests
 # V0.9 does not have the net rework code.
 v0.9:deposit	EF	ivltests
 
+# V0.9 has a different net order so V0.9 does not match development.
+# we plan to add a real vcd diff that will make this order independent,
+# but until then we need different gold files.
+v0.9:vcd-dup normal ivltests diff=work/vcd-dup.vcd:gold/vcd-dup.vcd-v0.9.gold:2
+
 #==========
 # v0.9 doesn't support synthesis. Might as well run them as
 # non-synthesis tests, though.
