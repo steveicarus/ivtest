@@ -721,6 +721,11 @@ v0.9:signed_part	EF	ivltests
 # V0.9 does not have the net rework code.
 v0.9:deposit	EF	ivltests
 
+# V0.9 has a different net order so V0.9 does not match development.
+# we plan to add a real vcd diff that will make this order independent,
+# but until then we need different gold files.
+v0.9:vcd-dup normal ivltests diff=work/vcd-dup.vcd:gold/vcd-dup.vcd-v0.9.gold:2
+
 #==========
 # v0.9 doesn't support synthesis. Might as well run them as
 # non-synthesis tests, though.
@@ -1550,6 +1555,7 @@ pr685		normal,-S ivltests
 pr690		normal	ivltests
 pr693		normal  ivltests diff=log/pr693.log:gold/pr693.gold
 pr699		normal	ivltests
+pr699b		normal	ivltests
 pr704		normal	ivltests # Uses ivltests/pr704.hex
 pr707		normal	ivltests
 pr708		normal	ivltests
@@ -2251,6 +2257,7 @@ real_array_nb	normal	ivltests
 pv_undef_sig_sel	normal	ivltests
 array_select_a	normal	ivltests
 pr2848986	CE	ivltests diff=log/pr2848986.log:gold/pr2848986.gold
+pr2849783	normal	ivltests
 pr2859628	normal	ivltests diff=work/pr2859628.vcd:gold/pr2859628.vcd.gold:2
 pr2849783	normal	ivltests
 signed_pv	normal	ivltests
