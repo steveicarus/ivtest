@@ -59,6 +59,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr2352834: Not Implemented.
                   pr2673846: Not Implemented.
                   pr2823711: Not Implemented.
+                  pr2865563: Not Implemented.
              real_pwr_in_ca: Not Implemented.
                      rl_pow: Not Implemented.
                ca_var_delay: Not Implemented.
@@ -112,12 +113,14 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
         real_wire_force_rel: Not Implemented.
                       tern8: Not Implemented.
                array_select: Not Implemented.
+             array_select_a: Not Implemented.
                  pr1701855b: Not Implemented.
                   pr2201909: Not Implemented.
                  pr2201909b: Not Implemented.
                   pr2715748: Not Implemented.
                  real_array: Not Implemented.
               real_array_nb: Not Implemented.
+            force_lval_part: Not Implemented.
               param_select3: Not Implemented.
                   pr1465769: Not Implemented.
                   pr1474316: Not Implemented.
@@ -138,6 +141,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                     select6: Not Implemented.
                     select7: Not Implemented.
                     select8: Not Implemented.
+                signed_part: Not Implemented.
+                  signed_pv: Not Implemented.
                   pr1960633: Not Implemented.
                   pr1978358: Not Implemented.
                  pr1978358b: Not Implemented.
@@ -430,6 +435,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                       pr587: Passed - expected fail.
                       pr632: Passed - expected fail.
                       pr699: Passed - expected fail.
+                     pr699b: Passed - expected fail.
                       pr990: Passed - expected fail.
                   pr1380261: Passed - expected fail.
                   pr1388974: Passed - expected fail.
@@ -505,12 +511,16 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                  pr2722339a: Passed - expected fail.
                  pr2722339b: Passed - expected fail.
                   pr2829776: Passed - expected fail.
-             writemem-error: Passed - expected fail.
+                  pr2848986: Passed - expected fail.
+                  pr2849783: Passed - expected fail.
+                  pr2859628: Passed - expected fail.
                      shift5: Passed - expected fail.
                    signed12: Passed - expected fail.
+                   signed_a: Passed - expected fail.
                       stime: Passed - expected fail.
                    string11: Passed - expected fail.
                     vcd-dup: Passed - expected fail.
+             writemem-error: Passed - expected fail.
               always3.1.11A: Passed.
               always3.1.11B: Passed.
               always3.1.12A: Passed.
@@ -1432,4 +1442,4 @@ test_mos_strength_reduction: Passed.
                   pr2837451: Passed.
 ============================================================================
 Test results:
-  Total=1430, Passed=964, Failed=3, Not Implemented=362, Expected Fail=101
+  Total=1440, Passed=964, Failed=3, Not Implemented=367, Expected Fail=106
