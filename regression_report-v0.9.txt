@@ -6,6 +6,11 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                     analog1: Not Implemented.
                     analog2: Not Implemented.
               real_array_nb: Not Implemented.
+                  signed_pv: Passed - expected fail.
+                   signed_a: Passed - expected fail.
+                signed_part: Passed - expected fail.
+                    deposit: Passed - expected fail.
+                    vcd-dup: Passed.
                       case1: Passed.
                       case2: Passed.
                       case4: Passed.
@@ -514,7 +519,6 @@ test_mos_strength_reduction: Passed.
                    specify5: Passed.
                deposit_wire: Passed.
                  specify_01: Passed.
-                    deposit: ==> Failed - output does not match gold file.
                  assign_neq: Passed.
                  assign_deq: Passed.
                   assign_ge: Passed.
@@ -536,7 +540,6 @@ test_mos_strength_reduction: Passed.
                      memidx: Passed.
                   memidxrng: Passed.
                    mem2port: Passed.
-                    vcd-dup: Passed.
                     resolv1: Passed.
                       pr307: Passed.
                      pr307a: Passed.
@@ -736,6 +739,7 @@ test_mos_strength_reduction: Passed.
                       pr690: Passed.
                       pr693: Passed.
                       pr699: ==> Failed - output does not match gold file.
+                     pr699b: ==> Failed - output does not match gold file.
                       pr704: Passed.
                       pr707: Passed.
                       pr708: Passed.
@@ -1428,9 +1432,12 @@ test_mos_strength_reduction: Passed.
               genvar_scopes: Passed.
                array_select: Passed.
            pv_undef_sig_sel: Passed.
-             array_select_a: ==> Failed - output does not match gold file.
+             array_select_a: Passed.
                   pr2848986: Passed - CE.
+                  pr2849783: ==> Failed - output does not match gold file.
                   pr2859628: Passed.
+            force_lval_part: Passed.
+                  pr2865563: Passed.
 ============================================================================
 Test results:
-  Total=1431, Passed=1420, Failed=5, Not Implemented=6, Expected Fail=0
+  Total=1438, Passed=1423, Failed=5, Not Implemented=6, Expected Fail=4
