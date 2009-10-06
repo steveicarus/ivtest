@@ -730,7 +730,7 @@ test_mos_strength_reduction: Passed.
                       pr690: Passed.
                       pr693: Passed.
                       pr699: Passed.
-                     pr699b: ==> Failed - output does not match gold file.
+                     pr699b: Passed.
                       pr704: Passed.
                       pr707: Passed.
                       pr708: Passed.
@@ -1440,4 +1440,4 @@ test_mos_strength_reduction: Passed.
                   pr2865563: Passed.
 ============================================================================
 Test results:
-  Total=1438, Passed=1434, Failed=4, Not Implemented=0, Expected Fail=0
+  Total=1438, Passed=1435, Failed=3, Not Implemented=0, Expected Fail=0
