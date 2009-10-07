@@ -2249,6 +2249,7 @@ cmdline_parm1	normal,-Pmain.foo=2	ivltests
 pr2829776	normal	ivltests
 pr2829776b	normal,-gspecify	ivltests
 memref		normal	ivltests
+pr2834340	normal	ivltests
 pr2837451	normal	ivltests
 pr2835632a	normal	ivltests
 pr2835632b	normal	ivltests
