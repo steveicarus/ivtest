@@ -354,6 +354,8 @@ v0.8:pr2722330b	NI
 # V0.8 does not support tran or tranif gates.
 v0.8:pr1833024	NI
 v0.8:pr2579479	NI
+v0.8:pr2834340	NI
+v0.8:pr2834340b	NI
 v0.8:tranif1	NI
 
 # V0.8 does not support the `resetall directive
