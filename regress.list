@@ -2275,3 +2275,4 @@ signed_a	normal	ivltests
 force_lval_part	normal	ivltests
 signed_part	normal	ivltests
 pr2865563	normal	ivltests
+pr2877555	normal	ivltests
