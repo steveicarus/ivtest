@@ -10,6 +10,9 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                    signed_a: Passed - expected fail.
                 signed_part: Passed - expected fail.
                     deposit: Passed - expected fail.
+                      pr699: Passed - expected fail.
+                     pr699b: Passed - expected fail.
+                  pr2849783: Passed - expected fail.
                     vcd-dup: Passed.
                       case1: Passed.
                       case2: Passed.
@@ -738,8 +741,6 @@ test_mos_strength_reduction: Passed.
                       pr685: Passed.
                       pr690: Passed.
                       pr693: Passed.
-                      pr699: ==> Failed - output does not match gold file.
-                     pr699b: ==> Failed - output does not match gold file.
                       pr704: Passed.
                       pr707: Passed.
                       pr708: Passed.
@@ -1424,6 +1425,9 @@ test_mos_strength_reduction: Passed.
                   pr2829776: Passed.
                  pr2829776b: Passed.
                      memref: Passed.
+                  pr2832234: ==> Failed - output does not match gold file.
+                  pr2834340: ==> Failed - running vvp.
+                 pr2834340b: ==> Failed - running vvp.
                   pr2837451: Passed.
                  pr2835632a: Passed.
                  pr2835632b: Passed.
@@ -1434,10 +1438,11 @@ test_mos_strength_reduction: Passed.
            pv_undef_sig_sel: Passed.
              array_select_a: Passed.
                   pr2848986: Passed - CE.
-                  pr2849783: ==> Failed - output does not match gold file.
                   pr2859628: Passed.
             force_lval_part: Passed.
                   pr2865563: Passed.
+                  pr2877555: Passed.
+                  pr2877564: Passed - CE.
 ============================================================================
 Test results:
-  Total=1438, Passed=1423, Failed=5, Not Implemented=6, Expected Fail=4
+  Total=1443, Passed=1425, Failed=5, Not Implemented=6, Expected Fail=7
