@@ -354,6 +354,8 @@ v0.8:pr2722330b	NI
 # V0.8 does not support tran or tranif gates.
 v0.8:pr1833024	NI
 v0.8:pr2579479	NI
+v0.8:pr2834340	NI
+v0.8:pr2834340b	NI
 v0.8:tranif1	NI
 
 # V0.8 does not support the `resetall directive
@@ -2254,6 +2256,7 @@ pr2829776b	normal,-gspecify	ivltests
 memref		normal	ivltests
 pr2832234	normal	ivltests
 pr2834340	normal	ivltests
+pr2834340b	normal	ivltests
 pr2837451	normal	ivltests
 pr2835632a	normal	ivltests
 pr2835632b	normal	ivltests
@@ -2273,3 +2276,5 @@ signed_a	normal	ivltests
 force_lval_part	normal	ivltests
 signed_part	normal	ivltests
 pr2865563	normal	ivltests
+pr2877555	normal	ivltests
+pr2877564	CE	ivltests diff=log/pr2877564.log:gold/pr2877564.gold
