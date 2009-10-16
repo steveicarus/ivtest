@@ -250,8 +250,8 @@ sub diff {
             last;
         }
         $lline = <LOG>;
-        # Skip lines from valgrind ==\d+==
-        while ($lline =~ m/^==\d+==/) {
+        # Skip lines from valgrind ^==\d+== or ^**\d+**
+        while ($lline =~ m/^(==|\*\*)\d+(==|\*\*)/) {
             $lline = <LOG>;
         }
         $lline =~ s/\r\n$/\n/;  # Strip <CR> at the end of line.
@@ -264,7 +264,7 @@ sub diff {
     # Check to see if the log file has extra lines.
     while (!eof LOG and !$diff) {
         $lline = <LOG>;
-        $diff = 1 if ($lline !~ m/^==\d+==/);
+        $diff = 1 if ($lline !~ m/^(==|\*\*)\d+(==|\*\*)/);
     }
 
     close (LOG);

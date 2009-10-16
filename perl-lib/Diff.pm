@@ -1,6 +1,6 @@
 #
 # Module for comparing expected and actual output of tests.
-# It knows how to skip valgrind output ^==\d+==
+# It knows how to skip valgrind output ^==\d+== or ^**\d+**
 #
 
 package Diff;
@@ -59,8 +59,8 @@ sub diff {
                 last;
             }
             $lline = <LOG>;
-            # Skip lines from valgrind ^==\d+==
-            while ($lline =~ m/^==\d+==/) {
+            # Skip lines from valgrind ^==\d+== or ^**\d+**
+            while ($lline =~ m/^(==|\*\*)\d+(==|\*\*)/) {
                 $lline = <LOG>;
             }
             # Skip initial lines if needed.
@@ -78,7 +78,7 @@ sub diff {
         # Check to see if the log file has extra lines.
         while (!eof LOG and !$diff) {
             $lline = <LOG>;
-            $diff = 1 if ($lline !~ m/^==\d+==/);
+            $diff = 1 if ($lline !~ m/^(==|\*\*)\d+(==|\*\*)/);
         }
 
         close (LOG);
