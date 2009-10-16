@@ -1,5 +1,5 @@
 $date
-	Mon Sep 28 13:54:46 2009
+	Fri Oct 16 08:46:35 2009
 $end
 $version
 	Icarus Verilog
@@ -16,16 +16,16 @@ $var reg 1 % b2 $end
 $scope module m1 $end
 $var wire 1 # a $end
 $var wire 1 $ b $end
+$var wire 1 " c $end
 $var wire 1 & c2 $end
 $var wire 1 ' c1 $end
-$var wire 1 " c $end
 $upscope $end
 $scope module m2 $end
 $var wire 1 # a $end
 $var wire 1 % b $end
+$var wire 1 ! c $end
 $var wire 1 ( c2 $end
 $var wire 1 ) c1 $end
-$var wire 1 ! c $end
 $upscope $end
 $scope task set $end
 $var reg 3 * bits [2:0] $end
@@ -47,8 +47,8 @@ $var wire 1 ' c $end
 $upscope $end
 $scope module mm2 $end
 $var wire 1 . a $end
-$var wire 1 / c1 $end
 $var wire 1 & c $end
+$var wire 1 / c1 $end
 $upscope $end
 $upscope $end
 $upscope $end
