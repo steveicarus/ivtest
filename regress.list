@@ -727,6 +727,7 @@ v0.9:signed_part	EF	ivltests
 v0.9:deposit	EF	ivltests
 v0.9:pr699	EF ivltests
 v0.9:pr699b	EF ivltests
+v0.9:pr2832234	EF ivltests
 v0.9:pr2849783	EF ivltests
 
 # V0.9 has a different net order so V0.9 does not match development.
