@@ -1416,7 +1416,7 @@ test_mos_strength_reduction: Passed.
                   pr2809288: Passed - CE.
                  real_array: Passed.
                  pr2815398a: Passed.
-                 pr2815398b: ==> Failed - output does not match gold file.
+                 pr2815398b: Passed.
                   pr2818823: Passed.
                   pr2823414: Passed - CE.
                   pr2823711: Passed.
@@ -1445,4 +1445,4 @@ test_mos_strength_reduction: Passed.
                   pr2877564: Passed - CE.
 ============================================================================
 Test results:
-  Total=1443, Passed=1427, Failed=2, Not Implemented=6, Expected Fail=8
+  Total=1443, Passed=1428, Failed=1, Not Implemented=6, Expected Fail=8
