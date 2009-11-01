@@ -107,6 +107,7 @@ spec_delays      normal,-gspecify spec_delays.c spec_delays.log
 pr2048463        normal pr2048463.c   pr2048463.log
 pr2314742        normal pr2314742.c   pr2314742.gold
 celldefine       normal celldefine.c  celldefine.gold
+start_of_simtime1	normal start_of_simtime1.c	start_of_simtime1.log
 
 # Add new tests here. If the test needs a compile option or a
 # different log file to run with an older versions or if it uses
