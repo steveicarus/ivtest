@@ -13,14 +13,14 @@ module top;
 
   wire [6:0] #1 res = in + fix;
 
-  always @(*) $display("%0t: %d %d %d %d", $time, $signed(in), $signed(base),
+  always @(*) $display("%0d: %d %d %d %d", $time, $signed(in), $signed(base),
                        $signed(fix), $signed(res));
   // It appears that the final calculation event is being lost for fix == -1.
   initial begin
     lp = -7;
     #5 lp = -5;
     #1 lp = -6;
-    #5 if (res !== -7) $display("FAILED (res=%0d)", $signed(res));
+    #5 if ($signed(res) !== -7) $display("FAILED");
     else $display("PASSED");
   end
 endmodule

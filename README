@@ -107,7 +107,7 @@ pr1873372  - MinGW has three digit exponents
 test_va_math  - infinity and NaN display, missing -0
 test_vams_math  - infinity and NaN display, missing -0
 ca_time  - %#g of 0.0 gives six decimal digits
-pr2509249a  - MinGW can not find /tmp
+pr2509349a  - MinGW can not find /tmp
 pr2590274a  - MinGW has three digit exponents
 pr2590274b  - MinGW has three digit exponents
 pr2590274c  - MinGW has three digit exponents
