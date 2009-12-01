@@ -1,38 +1,77 @@
-/*
- * Verify that the continuous assignments support a delay that is
- * greater than 32 bits. The top delays are in seconds and the
- * other delays are in ps. The second delays all require more
- * than 32 bits to work correctly.
- */
-
 `timescale 1s/1s
-module gt32b;
-  wire real #1 rlval = 1.0;
-  wire #2 rval = 1'b1;
 
-  initial begin
-    $timeformat(-12, 0, " ps", 16);
-  end
+module test(outp, outm, outl, in);
+  output outp, outm, outl;
+  input in;
 
-  always @(rlval) begin
-    $display("rl:gt32b- %t", $realtime);
-  end
+  // Check a primitive.
+  assign #1 outp = ~in;
 
-  always @(rval) begin
-    $display("rg:gt32b- %t", $realtime);
-  end
+  // Check a multiplexer.
+  assign #1 outm = in ? in : 1'b0;
+
+  // Check a LPM.
+  assign #1 outl = in === 1'b1;
 endmodule
 
-`timescale 1ps/1ps
-module ls32b;
-  wire real #1 rlval = 1.0;
-  wire #2 rval = 1'b1;
+// This is not exactly the same as the original code, but it is effectively
+// the same and should test the same things that were failing.
+`timescale 1ns/100ps
 
-  always @(rlval) begin
-    $display("rl:ls32b- %t", $realtime);
-  end
+module top;
+  reg in, passed;
+  wire outp, outm, outl;
 
-  always @(rval) begin
-    $display("rg:ls32b- %t", $realtime);
+  test dut(outp, outm, outl, in);
+
+  initial begin
+    passed = 1'b1;
+
+    #1100000000;
+    if (outp !== 1'bx) begin
+      $display("Failed initial prim. check, expected 1'bx, got %b.", outp);
+      passed = 1'b0;
+    end
+    if (outm !== 1'bx) begin
+      $display("Failed initial mux. check, expected 1'bx, got %b.", outm);
+      passed = 1'b0;
+    end
+    if (outl !== 1'b0) begin
+      $display("Failed initial LPM check, expected 1'b0, got %b.", outl);
+      passed = 1'b0;
+    end
+
+    in = 0;
+    #1100000000;
+    if (outp !== 1'b1) begin
+      $display("Failed in=0 prim. check, expected 1'b1, got %b.", outp);
+      passed = 1'b0;
+    end
+    if (outm !== 1'b0) begin
+      $display("Failed in=0 mux. check, expected 1'b0, got %b.", outm);
+      passed = 1'b0;
+    end
+    if (outl !== 1'b0) begin
+      $display("Failed in=0 LPM check, expected 1'b0, got %b.", outl);
+      passed = 1'b0;
+    end
+
+    in = 1;
+    #1100000000;
+    if (outp !== 1'b0) begin
+      $display("Failed in=1 prim. check, expected 1'b0, got %b.", outp);
+      passed = 1'b0;
+    end
+    if (outm !== 1'b1) begin
+      $display("Failed in=1 mux. check, expected 1'b1, got %b.", outm);
+      passed = 1'b0;
+    end
+    if (outl !== 1'b1) begin
+      $display("Failed in=1 LPM check, expected 1'b1, got %b.", outl);
+      passed = 1'b0;
+    end
+
+    if (passed) $display("PASSED");
+
   end
 endmodule

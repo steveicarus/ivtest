@@ -2279,7 +2279,7 @@ signed_part	normal	ivltests
 pr2865563	normal	ivltests
 pr2877555	normal	ivltests
 pr2877564	CE	ivltests diff=log/pr2877564.log:gold/pr2877564.gold
-pr2883958	normal	ivltests diff=log/pr2883958.log:gold/pr2883958.gold
+pr2883958	normal	ivltests
 pr2885048	normal	ivltests
 pr2890322	normal	ivltests
 pr2901556	normal	ivltests
