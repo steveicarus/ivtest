@@ -54,19 +54,19 @@ static PLI_INT32 RegPeek(PLI_BYTE8 *)
 
     // Get register
     iterate = vpi_iterate(vpiReg, mod_h);
-    if (iterate != NULL) {
-        while ((handle = vpi_scan(iterate))) {
-            if (!strcmp("r_peek_1", vpi_get_str(vpiName, handle))) {
-		reg_h[0] = handle;
-            } else if (!strcmp("r_peek_2", vpi_get_str(vpiName, handle))) {
-		reg_h[1] = handle;
-            } else if (!strcmp("r_peek_3", vpi_get_str(vpiName, handle))) {
-		reg_h[2] = handle;
-            } else if (!strcmp("r_peek_4", vpi_get_str(vpiName, handle))) {
-		reg_h[3] = handle;
-            } else if (!strcmp("r_peek_5", vpi_get_str(vpiName, handle))) {
-		reg_h[4] = handle;
-	    }
+    if (iterate == NULL) return -1;
+    for (index = 0; index < 5; index++) reg_h[index] = NULL;
+    while ((handle = vpi_scan(iterate))) {
+        if (!strcmp("r_peek_1", vpi_get_str(vpiName, handle))) {
+	    reg_h[0] = handle;
+        } else if (!strcmp("r_peek_2", vpi_get_str(vpiName, handle))) {
+	    reg_h[1] = handle;
+        } else if (!strcmp("r_peek_3", vpi_get_str(vpiName, handle))) {
+	    reg_h[2] = handle;
+        } else if (!strcmp("r_peek_4", vpi_get_str(vpiName, handle))) {
+	    reg_h[3] = handle;
+        } else if (!strcmp("r_peek_5", vpi_get_str(vpiName, handle))) {
+	    reg_h[4] = handle;
         }
     }
 
@@ -114,19 +114,19 @@ static PLI_INT32 RegPoke(PLI_BYTE8 *)
 
     // Get register
     iterate = vpi_iterate(vpiReg, mod_h);
-    if (iterate != NULL) {
-        while ((handle = vpi_scan(iterate))) {
-            if (!strcmp("r_poke_1", vpi_get_str(vpiName, handle))) {
-		reg_h[0] = handle;
-            } else if (!strcmp("r_poke_2", vpi_get_str(vpiName, handle))) {
-		reg_h[1] = handle;
-            } else if (!strcmp("r_poke_3", vpi_get_str(vpiName, handle))) {
-		reg_h[2] = handle;
-            } else if (!strcmp("r_poke_4", vpi_get_str(vpiName, handle))) {
-		reg_h[3] = handle;
-            } else if (!strcmp("r_poke_5", vpi_get_str(vpiName, handle))) {
-		reg_h[4] = handle;
-	    }
+    if (iterate == NULL) return -1;
+    for (index = 0; index < 5; index++) reg_h[index] = NULL;
+    while ((handle = vpi_scan(iterate))) {
+        if (!strcmp("r_poke_1", vpi_get_str(vpiName, handle))) {
+            reg_h[0] = handle;
+        } else if (!strcmp("r_poke_2", vpi_get_str(vpiName, handle))) {
+            reg_h[1] = handle;
+        } else if (!strcmp("r_poke_3", vpi_get_str(vpiName, handle))) {
+            reg_h[2] = handle;
+        } else if (!strcmp("r_poke_4", vpi_get_str(vpiName, handle))) {
+            reg_h[3] = handle;
+        } else if (!strcmp("r_poke_5", vpi_get_str(vpiName, handle))) {
+            reg_h[4] = handle;
         }
     }
 

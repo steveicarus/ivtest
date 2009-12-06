@@ -16,7 +16,6 @@
  *    along with this program; if not, write to the Free Software
  *    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
  */
-#ident "$Id: pr686.c,v 1.4 2008/01/15 23:45:50 stevewilliams Exp $"
 
 # include  "vpi_user.h"
 # include  <assert.h>

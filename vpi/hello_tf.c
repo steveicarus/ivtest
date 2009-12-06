@@ -16,10 +16,6 @@
  *    along with this program; if not, write to the Free Software
  *    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
  */
-#ident "$Id: hello_tf.c,v 1.3 2007/12/07 02:44:23 stevewilliams Exp $"
-
-/*
- */
 
 # include  <vpi_user.h>
 # include  <veriuser.h>
@@ -44,7 +40,6 @@ static void my_hello_register()
       tf_data.compiletf = 0;
       tf_data.sizetf    = 0;
       vpi_register_systf(&tf_data);
-
 }
 
 /*

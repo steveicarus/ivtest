@@ -25,7 +25,6 @@
  *    binary (compiled) form. If you have not received it, contact
  *    Picture Elements, Inc., 777 Panoramic Way, Berkeley, CA 94704.
  */
-#ident "$Id: putp2.c,v 1.2 2008/01/15 23:45:50 stevewilliams Exp $"
 
 #include "veriuser.h"
 
@@ -59,14 +58,3 @@ static void veriusertfs_register(void)
 }
 
 void (*vlog_startup_routines[])() = { &veriusertfs_register, 0 };
-
-/*
- * $Log: putp2.c,v $
- * Revision 1.2  2008/01/15 23:45:50  stevewilliams
- *  Fix -Wall compile warnings for vpi tests. (Cary R)
- *
- * Revision 1.1  2003/06/26 03:21:33  stevewilliams
- *  Add putp2 test
- *
- */
-

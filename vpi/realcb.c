@@ -16,9 +16,6 @@
  *    along with this program; if not, write to the Free Software
  *    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
  */
-#ifdef HAVE_CVS_IDENT
-#ident "$Id: realcb.c,v 1.4 2007/12/07 02:44:23 stevewilliams Exp $"
-#endif
 
 /*
  * This program tests change callbacks on real variables.
@@ -87,7 +84,6 @@ static void my_watchreal_register()
       tf_data.compiletf = 0;
       tf_data.sizetf    = 0;
       vpi_register_systf(&tf_data);
-
 }
 
 void (*vlog_startup_routines[])() = {
