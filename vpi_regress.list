@@ -67,6 +67,8 @@ v0.8:pr2314742	normal	pr2314742.c   pr2314742.gold      -DIVERILOG_V0_8
 # V0.8, V0.9 do not support vpiCellInstance
 v0.8:celldefine	 NI	celldefine.c  celldefine.gold
 v0.9:celldefine	 NI	celldefine.c  celldefine.gold
+# V0.8 does not support a callback using vpiAtStartOfSimTime
+v0.8:start_of_simtime1	NI start_of_simtime1.c	start_of_simtime1.log
 
 # Add v0.8 overrides here.
 

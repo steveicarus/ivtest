@@ -90,7 +90,7 @@ v0.8:nb_ec_real	NI
 v0.8:nb_ec_vector	NI
 v0.8:pr2788686	NI
 
-# assign/deassign of parts is a 0.9 extension
+# assign/deassign of parts is a 0.9+ extension
 v0.8:assign3.2E	NI
 v0.8:assign_deassign_pv	NI
 
@@ -137,6 +137,8 @@ v0.8:pr2352834	NI
 v0.8:pr2673846	NI
 v0.8:pr2823711	NI
 v0.8:pr2865563	NI
+v0.8:pr2909386a	NI
+v0.8:pr2909386b	NI
 v0.8:real_pwr_in_ca	NI
 v0.8:rl_pow	NI
 
@@ -341,6 +343,7 @@ v0.8:pr2580730	NI	# No support for real in @()
 v0.8:pr2715558	NI	# No support for CA strength resolution.
 v0.8:pr2721213	NI	# No support for a task with no arguments?
 v0.8:pr2790236	NI	# No support for output reg.
+v0.8:pr2883958	NI	# No support for greater than 32 bit delays in a CA.
 v0.8:real_invalid_ops	NI	# No checks for invalid real operators, etc.
 v0.8:task_iotypes2	NI	# Port types are not supported (integer, etc.).
 v0.8:timescale3	NI	# No check for out of order timescale directive.
@@ -355,6 +358,7 @@ v0.8:pr2722330b	NI
 v0.8:pr1833024	NI
 v0.8:pr2579479	NI
 v0.8:pr2834340	NI
+v0.8:pr2832234	NI
 v0.8:pr2834340b	NI
 v0.8:tranif1	NI
 
@@ -442,6 +446,7 @@ v0.8:pr2728812a	NI	# $clog2 not supported.
 v0.8:pr2792897	NI	# $format not supported.
 v0.8:pr2800985a	NI	# $ferror not supported.
 v0.8:pr2800985b	NI	# $ferror not supported.
+v0.8:pr2877555	NI	# $clog2 not supported.
 v0.8:pv_undef_sig_sel	NI	# $sformt not supported.
 v0.8:swrite	NI      # $swrite not supported.
 v0.8:urand	NI	# $urandom not supported.
@@ -562,6 +567,7 @@ v0.8:warn_opt_sys_tf	RE	ivltests diff=log/warn_opt_sys_tf.log:gold/warn_opt_sys_
 
 # V0.8 has a slight display difference.
 v0.8:pr2842621	normal	ivltests diff=log/pr2842621.log:gold/pr2842621-v0.8.gold
+v0.8:pr2877564	CE	ivltests diff=log/pr2877564.log:gold/pr2877564-v0.8.gold
 
 # V0.8 does not have the always infinite loop checks, so only compile these.
 v0.8:always3.1.10A	CO	ivltests
