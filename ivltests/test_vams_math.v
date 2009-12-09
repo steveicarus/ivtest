@@ -2,7 +2,7 @@
  *  Verilog-A math library test code for Icarus Verilog.
  *  http://www.icarus.com/eda/verilog/
  *
- *  Copyright (C) 2007-2008  Cary R. (cygcary@yahoo.com)
+ *  Copyright (C) 2007-2009  Cary R. (cygcary@yahoo.com)
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -19,6 +19,16 @@
  *  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
+/*
+ * As of Dec. 2009 some systems have started returning the sign of
+ * a NaN, because of this we can for some conditions get -nan. This
+ * will cause mismatches with the gold file. Alan M. Feldstein
+ * suggested on the iverilog-devel mailing list that we use fabs
+ * (abs()) since C99 speifies that it will remove the sign of the
+ * NaN. This appears to work, so I wrapped all functions that we
+ * expect to return NaN with a call to abs().
+ */
+
 // Get the Verilog-A constants.
 `include "constants.vams"
 
@@ -30,8 +40,8 @@ module top;
     zero = 0.0;
     mzero = -1.0 * zero;
     pinf = 1/0.0;
-    minf = $ln(0);
-    nan = $sqrt(-1.0);
+    minf = ln(0);
+    nan = abs(sqrt(-1.0));
 
     $display("Using +0 = %f, -0 = %f, nan = %f, inf = %f and -inf = %f.\n",
              zero, mzero, nan, pinf, minf);
@@ -101,10 +111,10 @@ module top;
       $display("The square root of  1.0 is %f.", sqrt(1.0));
       $display("The square root of  0.0 is %f.", sqrt(zero));
       $display("The square root of -0.0 is %f.", sqrt(mzero));
-      $display("The square root of -1.0 is %f.", sqrt(-1.0));
+      $display("The square root of -1.0 is %f.", abs(sqrt(-1.0)));
       $display("The square root of  inf is %f.", sqrt(pinf));
-      $display("The square root of -inf is %f.", sqrt(minf));
-      $display("The square root of  nan is %f.", sqrt(nan));
+      $display("The square root of -inf is %f.", abs(sqrt(minf)));
+      $display("The square root of  nan is %f.", abs(sqrt(nan)));
     end
   endtask
 
@@ -117,10 +127,10 @@ module top;
       $display("The natural log of  0.5 is %f.", ln(0.5));
       $display("The natural log of  0.0 is %f.", ln(zero));
       $display("The natural log of -0.0 is %f.", ln(mzero));
-      $display("The natural log of -1.0 is %f.", ln(-1.0));
+      $display("The natural log of -1.0 is %f.", abs(ln(-1.0)));
       $display("The natural log of  inf is %f.", ln(pinf));
-      $display("The natural log of -inf is %f.", ln(minf));
-      $display("The natural log of  nan is %f.", ln(nan));
+      $display("The natural log of -inf is %f.", abs(ln(minf)));
+      $display("The natural log of  nan is %f.", abs(ln(nan)));
     end
   endtask
 
@@ -133,10 +143,10 @@ module top;
       $display("The log base 10 of  0.5 is %f.", log(0.5));
       $display("The log base 10 of  0.0 is %f.", log(zero));
       $display("The log base 10 of -0.0 is %f.", log(mzero));
-      $display("The log base 10 of -1.0 is %f.", log(-1.0));
+      $display("The log base 10 of -1.0 is %f.", abs(log(-1.0)));
       $display("The log base 10 of  inf is %f.", log(pinf));
-      $display("The log base 10 of -inf is %f.", log(minf));
-      $display("The log base 10 of  nan is %f.", log(nan));
+      $display("The log base 10 of -inf is %f.", abs(log(minf)));
+      $display("The log base 10 of  nan is %f.", abs(log(nan)));
     end
   endtask
 
@@ -150,7 +160,7 @@ module top;
       $display("The exponential of -1.0 is %f.", exp(-1.0));
       $display("The exponential of  inf is %f.", exp(pinf));
       $display("The exponential of -inf is %f.", exp(minf));
-      $display("The exponential of  nan is %f.", exp(nan));
+      $display("The exponential of  nan is %f.", abs(exp(nan)));
     end
   endtask
 
@@ -178,7 +188,7 @@ module top;
       $display("The ceiling of -1.1 is %f.", ceil(-1.1));
       $display("The ceiling of  inf is %f.", ceil(pinf));
       $display("The ceiling of -inf is %f.", ceil(minf));
-      $display("The ceiling of  nan is %f.", ceil(nan));
+      $display("The ceiling of  nan is %f.", abs(ceil(nan)));
     end
   endtask
 
@@ -192,7 +202,7 @@ module top;
       $display("The floor of -1.1 is %f.", floor(-1.1));
       $display("The floor of  inf is %f.", floor(pinf));
       $display("The floor of -inf is %f.", floor(minf));
-      $display("The floor of  nan is %f.", floor(nan));
+      $display("The floor of  nan is %f.", abs(floor(nan)));
     end
   endtask
 
@@ -206,9 +216,9 @@ module top;
       $display("The sin of -0.0 is %f.", sin(mzero));
       $display("The sin of -1.0 is %f.", sin(-1.0));
       $display("The sin of -4.0 is %f.", sin(-4.0));
-      $display("The sin of  inf is %f.", sin(pinf));
-      $display("The sin of -inf is %f.", sin(minf));
-      $display("The sin of  nan is %f.", sin(nan));
+      $display("The sin of  inf is %f.", abs(sin(pinf)));
+      $display("The sin of -inf is %f.", abs(sin(minf)));
+      $display("The sin of  nan is %f.", abs(sin(nan)));
     end
   endtask
 
@@ -222,9 +232,9 @@ module top;
       $display("The cos of -0.0 is %f.", cos(mzero));
       $display("The cos of -1.0 is %f.", cos(-1.0));
       $display("The cos of -4.0 is %f.", cos(-4.0));
-      $display("The cos of  inf is %f.", cos(pinf));
-      $display("The cos of -inf is %f.", cos(minf));
-      $display("The cos of  nan is %f.", cos(nan));
+      $display("The cos of  inf is %f.", abs(cos(pinf)));
+      $display("The cos of -inf is %f.", abs(cos(minf)));
+      $display("The cos of  nan is %f.", abs(cos(nan)));
     end
   endtask
 
@@ -243,9 +253,9 @@ module top;
       // for these two tests.
       $display("The tan of  pi/2 is %.4g.", tan(asin(1.0)));
       $display("The tan of -pi/2 is %.4g.", tan(asin(-1.0)));
-      $display("The tan of   inf is %f.", tan(pinf));
-      $display("The tan of  -inf is %f.", tan(minf));
-      $display("The tan of   nan is %f.", tan(nan));
+      $display("The tan of   inf is %f.", abs(tan(pinf)));
+      $display("The tan of  -inf is %f.", abs(tan(minf)));
+      $display("The tan of   nan is %f.", abs(tan(nan)));
     end
   endtask
 
@@ -253,17 +263,17 @@ module top;
   task check_asin;
     begin
       $display("--- Checking the asin function ---");
-      $display("The asin of  1.1 is %f.", asin(1.1));
+      $display("The asin of  1.1 is %f.", abs(asin(1.1)));
       $display("The asin of  1.0 is %f.", asin(1.0));
       $display("The asin of  0.5 is %f.", asin(0.5));
       $display("The asin of  0.0 is %f.", asin(zero));
       $display("The asin of -0.0 is %f.", asin(mzero));
       $display("The asin of -0.5 is %f.", asin(-0.5));
       $display("The asin of -1.0 is %f.", asin(-1.0));
-      $display("The asin of -1.1 is %f.", asin(-1.1));
-      $display("The asin of  inf is %f.", asin(pinf));
-      $display("The asin of -inf is %f.", asin(minf));
-      $display("The asin of  nan is %f.", asin(nan));
+      $display("The asin of -1.1 is %f.", abs(asin(-1.1)));
+      $display("The asin of  inf is %f.", abs(asin(pinf)));
+      $display("The asin of -inf is %f.", abs(asin(minf)));
+      $display("The asin of  nan is %f.", abs(asin(nan)));
     end
   endtask
 
@@ -271,17 +281,17 @@ module top;
   task check_acos;
     begin
       $display("--- Checking the acos function ---");
-      $display("The acos of  1.1 is %f.", acos(1.1));
+      $display("The acos of  1.1 is %f.", abs(acos(1.1)));
       $display("The acos of  1.0 is %f.", acos(1.0));
       $display("The acos of  0.5 is %f.", acos(0.5));
       $display("The acos of  0.0 is %f.", acos(zero));
       $display("The acos of -0.0 is %f.", acos(mzero));
       $display("The acos of -0.5 is %f.", acos(-0.5));
       $display("The acos of -1.0 is %f.", acos(-1.0));
-      $display("The acos of -1.1 is %f.", acos(-1.1));
-      $display("The acos of  inf is %f.", acos(pinf));
-      $display("The acos of -inf is %f.", acos(minf));
-      $display("The acos of  nan is %f.", acos(nan));
+      $display("The acos of -1.1 is %f.", abs(acos(-1.1)));
+      $display("The acos of  inf is %f.", abs(acos(pinf)));
+      $display("The acos of -inf is %f.", abs(acos(minf)));
+      $display("The acos of  nan is %f.", abs(acos(nan)));
     end
   endtask
 
@@ -297,7 +307,7 @@ module top;
       $display("The atan of -2.0 is %f.", atan(-2.0));
       $display("The atan of  inf is %f.", atan(pinf));
       $display("The atan of -inf is %f.", atan(minf));
-      $display("The atan of  nan is %f.", atan(nan));
+      $display("The atan of  nan is %f.", abs(atan(nan)));
     end
   endtask
 
@@ -315,7 +325,7 @@ module top;
       $display("The sinh of -2.0 is %f.", sinh(-2.0));
       $display("The sinh of  inf is %f.", sinh(pinf));
       $display("The sinh of -inf is %f.", sinh(minf));
-      $display("The sinh of  nan is %f.", sinh(nan));
+      $display("The sinh of  nan is %f.", abs(sinh(nan)));
     end
   endtask
 
@@ -333,7 +343,7 @@ module top;
       $display("The cosh of -2.0 is %f.", cosh(-2.0));
       $display("The cosh of  inf is %f.", cosh(pinf));
       $display("The cosh of -inf is %f.", cosh(minf));
-      $display("The cosh of  nan is %f.", cosh(nan));
+      $display("The cosh of  nan is %f.", abs(cosh(nan)));
     end
   endtask
 
@@ -351,7 +361,7 @@ module top;
       $display("The tanh of -2.0 is %f.", tanh(-2.0));
       $display("The tanh of  inf is %f.", tanh(pinf));
       $display("The tanh of -inf is %f.", tanh(minf));
-      $display("The tanh of  nan is %f.", tanh(nan));
+      $display("The tanh of  nan is %f.", abs(tanh(nan)));
     end
   endtask
 
@@ -369,7 +379,7 @@ module top;
       $display("The asinh of -2.0 is %f.", asinh(-2.0));
       $display("The asinh of  inf is %f.", asinh(pinf));
       $display("The asinh of -inf is %f.", asinh(minf));
-      $display("The asinh of  nan is %f.", asinh(nan));
+      $display("The asinh of  nan is %f.", abs(asinh(nan)));
     end
   endtask
 
@@ -379,15 +389,15 @@ module top;
       $display("--- Checking the acosh function ---");
       $display("The acosh of  2.0 is %f.", acosh(2.0));
       $display("The acosh of  1.0 is %f.", acosh(1.0));
-      $display("The acosh of  0.5 is %f.", acosh(0.5));
-      $display("The acosh of  0   is %f.", acosh(zero));
-      $display("The acosh of -0   is %f.", acosh(mzero));
-      $display("The acosh of -0.5 is %f.", acosh(-0.5));
-      $display("The acosh of -1.0 is %f.", acosh(-1.0));
-      $display("The acosh of -2.0 is %f.", acosh(-2.0));
+      $display("The acosh of  0.5 is %f.", abs(acosh(0.5)));
+      $display("The acosh of  0   is %f.", abs(acosh(zero)));
+      $display("The acosh of -0   is %f.", abs(acosh(mzero)));
+      $display("The acosh of -0.5 is %f.", abs(acosh(-0.5)));
+      $display("The acosh of -1.0 is %f.", abs(acosh(-1.0)));
+      $display("The acosh of -2.0 is %f.", abs(acosh(-2.0)));
       $display("The acosh of  inf is %f.", acosh(pinf));
-      $display("The acosh of -inf is %f.", acosh(minf));
-      $display("The acosh of  nan is %f.", acosh(nan));
+      $display("The acosh of -inf is %f.", abs(acosh(minf)));
+      $display("The acosh of  nan is %f.", abs(acosh(nan)));
     end
   endtask
 
@@ -395,17 +405,17 @@ module top;
   task check_atanh;
     begin
       $display("--- Checking the atanh function ---");
-      $display("The atanh of  2.0 is %f.", atanh(2.0));
+      $display("The atanh of  2.0 is %f.", abs(atanh(2.0)));
       $display("The atanh of  1.0 is %f.", atanh(1.0));
       $display("The atanh of  0.5 is %f.", atanh(0.5));
       $display("The atanh of  0.0 is %f.", atanh(zero));
       $display("The atanh of -0.0 is %f.", atanh(mzero));
       $display("The atanh of -0.5 is %f.", atanh(-0.5));
       $display("The atanh of -1.0 is %f.", atanh(-1.0));
-      $display("The atanh of -2.0 is %f.", atanh(-2.0));
-      $display("The atanh of  inf is %f.", atanh(pinf));
-      $display("The atanh of -inf is %f.", atanh(minf));
-      $display("The atanh of  nan is %f.", atanh(nan));
+      $display("The atanh of -2.0 is %f.", abs(atanh(-2.0)));
+      $display("The atanh of  inf is %f.", abs(atanh(pinf)));
+      $display("The atanh of -inf is %f.", abs(atanh(minf)));
+      $display("The atanh of  nan is %f.", abs(atanh(nan)));
     end
   endtask
 
@@ -473,11 +483,11 @@ module top;
       $display("-1.0 to the power of  -inf is %f.", pow(-1.0, minf));
       $display(" 0.5 to the power of  -inf is %f.", pow(0.5, minf));
       $display(" 2.0 to the power of  -inf is %f.", pow(2.0, minf));
-      $display("-1.0 to the power of  -1/3 is %f.", pow(-1.0, -1.0/3.0));
+      $display("-1.0 to the power of  -1/3 is %f.", abs(pow(-1.0, -1.0/3.0)));
       $display(" 1.0 to the power of   nan is %f.", pow(1.0, nan));
-      $display(" nan to the power of   1.0 is %f.", pow(nan, 1.0));
+      $display(" nan to the power of   1.0 is %f.", abs(pow(nan, 1.0)));
       $display(" nan to the power of   0.0 is %f.", pow(nan, zero));
-      $display(" nan to the power of   nan is %f.", pow(nan, nan));
+      $display(" nan to the power of   nan is %f.", abs(pow(nan, nan)));
     end
   endtask
 
@@ -501,9 +511,9 @@ module top;
       $display("The atan of -inf/ 0.0 is %f.", atan2(minf, zero));
       $display("The atan of  0.0/-inf is %f.", atan2(zero, minf));
       $display("The atan of -inf/-inf is %f.", atan2(minf, minf));
-      $display("The atan of  nan/ 0.0 is %f.", atan2(nan, zero));
-      $display("The atan of  nan/ 1.0 is %f.", atan2(nan, 1.0));
-      $display("The atan of  1.0/ nan is %f.", atan2(1.0, nan));
+      $display("The atan of  nan/ 0.0 is %f.", abs(atan2(nan, zero)));
+      $display("The atan of  nan/ 1.0 is %f.", abs(atan2(nan, 1.0)));
+      $display("The atan of  1.0/ nan is %f.", abs(atan2(1.0, nan)));
     end
   endtask
 
@@ -519,8 +529,8 @@ module top;
       $display("The distance to (  inf,  0.0) is %f.", hypot(pinf, zero));
       $display("The distance to (  0.0,  inf) is %f.", hypot(zero, pinf));
       $display("The distance to ( -inf,  0.0) is %f.", hypot(minf, zero));
-      $display("The distance to (  nan,  0.0) is %f.", hypot(nan, zero));
-      $display("The distance to (  0.0,  nan) is %f.", hypot(zero, nan));
+      $display("The distance to (  nan,  0.0) is %f.", abs(hypot(nan, zero)));
+      $display("The distance to (  0.0,  nan) is %f.", abs(hypot(zero, nan)));
     end
   endtask
 
