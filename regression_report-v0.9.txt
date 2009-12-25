@@ -14,6 +14,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                      pr699b: Passed - expected fail.
                   pr2832234: Passed - expected fail.
                   pr2849783: Passed - expected fail.
+                  pr2913404: Passed - CO.
                     vcd-dup: Passed.
                       case1: Passed.
                       case2: Passed.
@@ -1450,6 +1451,10 @@ test_mos_strength_reduction: Passed.
                  pr2909386a: Passed.
                  pr2909386b: Passed.
                   pr2909414: Passed.
+                  pr2909555: Passed.
+                  pr2913416: Passed.
+                 pr2913438a: Passed.
+                 pr2913438b: Passed.
 ============================================================================
 Test results:
-  Total=1450, Passed=1435, Failed=1, Not Implemented=6, Expected Fail=8
+  Total=1455, Passed=1440, Failed=1, Not Implemented=6, Expected Fail=8

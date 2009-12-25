@@ -736,6 +736,8 @@ v0.9:pr699b	EF ivltests
 v0.9:pr2832234	EF ivltests
 v0.9:pr2849783	EF ivltests
 
+v0.9:pr2913404	CO ivltests
+
 # V0.9 has a different net order so V0.9 does not match development.
 # we plan to add a real vcd diff that will make this order independent,
 # but until then we need different gold files.
@@ -1550,6 +1552,7 @@ real2		normal  ivltests
 real3		normal  ivltests
 real4		normal  ivltests
 real5		normal	ivltests diff=log/real5.log:gold/real5.gold
+v0.9:real5	normal	ivltests diff=log/real5.log:gold/real5-v0.9.gold
 real6		normal  ivltests
 real7		normal  ivltests
 real8		normal  ivltests
