@@ -139,6 +139,7 @@ v0.8:pr2823711	NI
 v0.8:pr2865563	NI
 v0.8:pr2909386a	NI
 v0.8:pr2909386b	NI
+v0.8:pr2913404	NI
 v0.8:real_pwr_in_ca	NI
 v0.8:rl_pow	NI
 
@@ -291,6 +292,7 @@ v0.8:pr2809288	NI
 v0.8:pr2815398a	NI
 v0.8:pr2815398b	NI
 v0.8:pr2842185	NI
+v0.8:pr2909414	NI
 v0.8:scoped_events	NI
 v0.8:unnamed_generate_block	NI
 
@@ -697,6 +699,9 @@ v0.8:pr2829776	EF ivltests
 v0.8:pr2848986	EF ivltests diff=log/pr2848986.log:gold/pr2848986.gold
 v0.8:pr2849783	EF ivltests
 v0.8:pr2859628	EF ivltests diff=work/pr2859628.vcd:gold/pr2859628.vcd.gold:2
+v0.8:pr2909555	EF ivltests
+v0.8:pr2913416	EF ivltests
+v0.8:pr2913438a	EF ivltests
 v0.8:shift5	EF ivltests diff=log/shift5.log:gold/shift5.gold
 v0.8:signed12	EF ivltests diff=log/signed12.log:gold/signed12.gold
 v0.8:signed_a	EF ivltests
