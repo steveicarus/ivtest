@@ -1308,7 +1308,7 @@ specify3 normal,-gspecify ivltests diff=log/specify3.log:gold/specify3.gold
 specify4 normal,-gspecify ivltests diff=log/specify4.log:gold/specify4.gold
 specify5 normal,-gspecify ivltests diff=log/specify5.log:gold/specify5.gold
 deposit_wire	normal	ivltests
-specify_01 normal,-gspecify ivltests test # Yet another versio of specify
+specify_01 normal,-gspecify ivltests test # Yet another version of specify
 deposit normal ivltests
 assign_neq normal ivltests # continuous assign with !=
 assign_deq normal ivltests # continuous assign with ==
