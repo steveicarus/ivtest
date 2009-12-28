@@ -139,6 +139,7 @@ v0.8:pr2823711	NI
 v0.8:pr2865563	NI
 v0.8:pr2909386a	NI
 v0.8:pr2909386b	NI
+v0.8:pr2913404	NI
 v0.8:real_pwr_in_ca	NI
 v0.8:rl_pow	NI
 
@@ -291,6 +292,7 @@ v0.8:pr2809288	NI
 v0.8:pr2815398a	NI
 v0.8:pr2815398b	NI
 v0.8:pr2842185	NI
+v0.8:pr2909414	NI
 v0.8:scoped_events	NI
 v0.8:unnamed_generate_block	NI
 
@@ -697,6 +699,9 @@ v0.8:pr2829776	EF ivltests
 v0.8:pr2848986	EF ivltests diff=log/pr2848986.log:gold/pr2848986.gold
 v0.8:pr2849783	EF ivltests
 v0.8:pr2859628	EF ivltests diff=work/pr2859628.vcd:gold/pr2859628.vcd.gold:2
+v0.8:pr2909555	EF ivltests
+v0.8:pr2913416	EF ivltests
+v0.8:pr2913438a	EF ivltests
 v0.8:shift5	EF ivltests diff=log/shift5.log:gold/shift5.gold
 v0.8:signed12	EF ivltests diff=log/signed12.log:gold/signed12.gold
 v0.8:signed_a	EF ivltests
@@ -735,6 +740,10 @@ v0.9:pr699	EF ivltests
 v0.9:pr699b	EF ivltests
 v0.9:pr2832234	EF ivltests
 v0.9:pr2849783	EF ivltests
+
+# V0.9 can not correctly convert some large (63/64 bit) binary values to real.
+v0.9:pr2913404	CO ivltests
+v0.9:real5	normal	ivltests diff=log/real5.log:gold/real5-v0.9.gold
 
 # V0.9 has a different net order so V0.9 does not match development.
 # we plan to add a real vcd diff that will make this order independent,
@@ -1304,7 +1313,7 @@ specify3 normal,-gspecify ivltests diff=log/specify3.log:gold/specify3.gold
 specify4 normal,-gspecify ivltests diff=log/specify4.log:gold/specify4.gold
 specify5 normal,-gspecify ivltests diff=log/specify5.log:gold/specify5.gold
 deposit_wire	normal	ivltests
-specify_01 normal,-gspecify ivltests test # Yet another versio of specify
+specify_01 normal,-gspecify ivltests test # Yet another version of specify
 deposit normal ivltests
 assign_neq normal ivltests # continuous assign with !=
 assign_deq normal ivltests # continuous assign with ==
@@ -2293,7 +2302,9 @@ pr2909386a	normal	ivltests
 pr2909386b	normal	ivltests
 pr2909414	normal	ivltests
 pr2909555	normal	ivltests
+pr2913404	normal	ivltests
 pr2913416	normal	ivltests
 pr2913438a	normal	ivltests
 pr2913438b	normal	ivltests
 cast_large_real	normal	ivltests
+pr2918095	normal	ivltests

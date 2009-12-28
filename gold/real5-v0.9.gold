@@ -1,0 +1,3 @@
+./ivltests/real5.v:7: tgt-vvp warning: V0.9 may give incorrect results when casting an unsigned value greater than 63 bits to a real value.
+./ivltests/real5.v:7: tgt-vvp warning: V0.9 may give incorrect results when casting an unsigned value greater than 63 bits to a real value.
+max foo period( posedge FOOCLK:0.050ns, 40000 : 0.000ns );

@@ -46,7 +46,9 @@ v0.8:event1      normal event1.c      event1.log          -DIVERILOG_V0_8
 v0.8:pokereg     normal pokereg.cc    pokereg.log         -DIVERILOG_V0_8
 # This test has both the T=0 and X differences noted above.
 v0.8:memwide     normal memwide.cc    memwide-v0.8.log
-v0.8:scopes      normal scopes.c      scopes.log          -DIVERILOG_V0_8
+# V0.8 and V0.9 have a different order than later versions.
+v0.8:scopes      normal scopes.c      scopes-v0.9.log     -DIVERILOG_V0_8
+v0.9:scopes      normal scopes.c      scopes-v0.9.log
 v0.8:by_name     normal by_name.c     by_name.log         -DIVERILOG_V0_8
 v0.8:realcb      normal realcb.c      realcb.log          -DIVERILOG_V0_8
 v0.8:pr686       normal pr686.c       pr686.log           -DIVERILOG_V0_8
