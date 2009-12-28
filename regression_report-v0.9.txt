@@ -1455,8 +1455,7 @@ test_mos_strength_reduction: Passed.
                   pr2913416: Passed.
                  pr2913438a: Passed.
                  pr2913438b: Passed.
-            cast_large_real: ==> Failed - output does not match gold file.
                   pr2918095: Passed.
 ============================================================================
 Test results:
-  Total=1457, Passed=1441, Failed=2, Not Implemented=6, Expected Fail=8
+  Total=1456, Passed=1441, Failed=1, Not Implemented=6, Expected Fail=8
