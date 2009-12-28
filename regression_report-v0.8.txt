@@ -527,6 +527,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr2909555: Passed - expected fail.
                   pr2913416: Passed - expected fail.
                  pr2913438a: Passed - expected fail.
+                  pr2918095: Passed - expected fail.
                      shift5: Passed - expected fail.
                    signed12: Passed - expected fail.
                    signed_a: Passed - expected fail.
@@ -1459,4 +1460,4 @@ test_mos_strength_reduction: Passed.
                  pr2913438b: Passed.
 ============================================================================
 Test results:
-  Total=1457, Passed=969, Failed=3, Not Implemented=376, Expected Fail=109
+  Total=1458, Passed=969, Failed=3, Not Implemented=376, Expected Fail=110
