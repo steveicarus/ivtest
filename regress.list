@@ -517,6 +517,11 @@ v0.8:writemem-invalid	NI
 v0.8:sv_timeunit_prec	NI
 v0.8:sv_timeunit_prec_fail	NI
 
+# V0.8 does not support +timescale in a command file.
+v0.8:pr1403406	NI
+v0.8:pr1403406a	NI
+v0.8:pr1403406b	NI
+
 # V0.8 does not support specify block delays.
 v0.8:pr1587669	CO	ivltests
 v0.8:specify_01	CO	ivltests
@@ -1664,6 +1669,9 @@ scanf		normal	ivltests
 scanf2		normal	ivltests
 scanf3		normal	ivltests
 scan-invalid	normal	ivltests diff=log/scan-invalid.log:gold/scan-invalid.gold
+pr1403406	normal	ivltests diff=log/pr1403406.log:gold/pr1403406.gold
+pr1403406a	normal,-fivltests/pr1403406-1.cf ivltests diff=log/pr1403406a.log:gold/pr1403406a.gold
+pr1403406b	normal,-fivltests/pr1403406-1.cf,-fivltests/pr1403406-2.cf ivltests diff=log/pr1403406b.log:gold/pr1403406b.gold
 pr1467825	CO,-gno-specify	ivltests
 pr1455873	normal	ivltests
 pr1474283	normal	ivltests
