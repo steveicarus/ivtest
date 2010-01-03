@@ -4,7 +4,10 @@ module top;
   initial begin
     ver = $simparam("simulatorVersion");
     subver = $simparam("simulatorSubversion");
-    $swrite(simp_str, "%0.2f.%0.0f", ver, subver);
+    // For 0.9 only use one digit.
+    if (ver > 0.89) $swrite(simp_str, "%0.1f.%0.0f", ver, subver);
+    // For the rest 0.10 and above use two digits.
+    else $swrite(simp_str, "%0.2f.%0.0f", ver, subver);
     $get_version(info_str);
     if (simp_str !== info_str) begin
       $display("FAILED");
