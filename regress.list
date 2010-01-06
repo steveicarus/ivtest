@@ -233,6 +233,7 @@ v0.8:select5	NI
 v0.8:select6	NI
 v0.8:select7	NI
 v0.8:select8	NI
+v0.8:select_padding	NI
 v0.8:signed_part	NI
 v0.8:signed_pv	NI
 
@@ -2316,3 +2317,4 @@ pr2913416	normal	ivltests
 pr2913438a	normal	ivltests
 pr2913438b	normal	ivltests
 pr2918095	normal	ivltests
+select_padding	normal	ivltests
