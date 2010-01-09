@@ -1463,8 +1463,12 @@ test_mos_strength_reduction: Passed.
              select_padding: Passed.
             sel_rval_bit_ob: Passed.
            sel_rval_part_ob: Passed.
+                  pr2922063: Passed.
+                 pr2922063a: Passed.
+                 pr2922063b: Passed.
+                  pr2924354: Passed.
                   pr2929913: Passed.
                   pr2930506: Passed.
 ============================================================================
 Test results:
-  Total=1465, Passed=1462, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1469, Passed=1466, Failed=3, Not Implemented=0, Expected Fail=0

@@ -11,7 +11,7 @@ module x;
    wire 	     a = |bar0_low;
    wire [31:0] 	     e = ad_in_d[31:bar0_low];
    wire 	     b = (base_address0==e);
-   wire 	     d = b && c;
+   wire 	     d = b;
 
    assign 	     hit_bar[0] = a ? d : 0;
 

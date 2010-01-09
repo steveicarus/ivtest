@@ -120,6 +120,12 @@ sub execute_regression {
                 $failed++;
                 next;
             }
+        } else {
+            if ($testtype{$tname} eq "CE") {
+                &print_rpt("==> Failed - CE (no error reported).\n");
+                $failed++;
+                next;
+            }
         }
 
         if ($testtype{$tname} eq "CO") {

@@ -1159,7 +1159,7 @@ task_iotypes	normal ivltests # task ports with types.
 task_iotypes2	normal ivltests # task ports with types.
 scope1   	normal ivltests # scope of var into a task
 scope2   	normal ivltests # scope of var stops at module boundaries
-scope2b   	CE,-g2 ivltests # broken version of scope2
+scope2b   	CE,-g1 ivltests # broken version of scope2
 scope4		normal ivltests
 scope5		normal ivltests
 task-scope	normal ivltests
@@ -2218,8 +2218,8 @@ pr2605006	normal	ivltests
 ca_64delay	normal	ivltests diff=log/ca_64delay.log:gold/ca_64delay.gold
 readmem-error	normal	ivltests diff=log/readmem-error.log:gold/readmem-error.gold
 writemem-error	normal	ivltests diff=log/writemem-error.log:gold/writemem-error.gold
-readmem-invalid	CE	ivltests diff=log/readmem-invalid.log:gold/readmem-invalid.gold
-writemem-invalid CE	ivltests diff=log/writemem-invalid.log:gold/writemem-invalid.gold
+readmem-invalid	normal	ivltests diff=log/readmem-invalid.log:gold/readmem-invalid.gold
+writemem-invalid normal	ivltests diff=log/writemem-invalid.log:gold/writemem-invalid.gold
 int_not_signext	normal	ivltests diff=log/int_not_signext.log:gold/int_not_signext.gold
 pr2673846	normal	ivltests
 pr2688910	normal	ivltests
