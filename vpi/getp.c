@@ -7,8 +7,8 @@ calltf(int ud, int reason)
     PLI_BYTE8 *inst = tf_getinstance();
 
     for (i = 1; i < 5; i++) {
-	io_printf("tf_getp(%d)\t\t-> %d\n", i, tf_getp(i));
-	io_printf("tf_igetp(%d,inst)\t-> %d\n", i, tf_igetp(i,inst));
+	io_printf("tf_getp(%d)\t\t-> %d\n", i, (int)tf_getp(i));
+	io_printf("tf_igetp(%d,inst)\t-> %d\n", i, (int)tf_igetp(i,inst));
 	io_printf("tf_getrealp(%d)\t\t-> %f\n", i, tf_getrealp(i));
 	io_printf("tf_igetrealp(%d,inst)\t-> %f\n",
 	    i, tf_igetrealp(i,inst));

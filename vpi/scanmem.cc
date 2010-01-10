@@ -48,8 +48,8 @@ static PLI_INT32 MemPeek(PLI_BYTE8 *)
 		vpiHandle memw_iter = vpi_iterate(vpiMemoryWord, handle);
 		vpi_printf("  Found %s (%d deep x %d bits)\n", 
 		    vpi_get_str(vpiName, handle),
-		    vpi_get(vpiSize, handle),
-		    vpi_get(vpiSize, vpi_scan(memw_iter)));
+		    (int)vpi_get(vpiSize, handle),
+		    (int)vpi_get(vpiSize, vpi_scan(memw_iter)));
 		vpi_free_object(memw_iter);
 		mem_h = handle;
 		vpi_free_object(iterate);
@@ -106,8 +106,8 @@ static PLI_INT32 MemPoke(PLI_BYTE8 *)
 		vpiHandle memw_iter = vpi_iterate(vpiMemoryWord, handle);
 		vpi_printf("  Found %s (%d deep x %d bits)\n", 
 		    vpi_get_str(vpiName, handle),
-		    vpi_get(vpiSize, handle),
-		    vpi_get(vpiSize, vpi_scan(memw_iter)));
+		    (int)vpi_get(vpiSize, handle),
+		    (int)vpi_get(vpiSize, vpi_scan(memw_iter)));
 		vpi_free_object(memw_iter);
 		mem_h = handle;
 		vpi_free_object(iterate);

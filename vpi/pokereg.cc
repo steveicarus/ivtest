@@ -139,7 +139,7 @@ static PLI_INT32 RegPoke(PLI_BYTE8 *)
 	} else {
 	    value.format=vpiIntVal;
 	    value.value.integer = 69;
-	    vpi_printf("%3d: %d\n", index, value.value.integer);
+	    vpi_printf("%3d: %d\n", index, (int)value.value.integer);
 	}
 	vpi_put_value(reg_h[index], &value, NULL, vpiNoDelay);
 	if (index < 4) free(value.value.str);

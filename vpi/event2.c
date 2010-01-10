@@ -39,7 +39,7 @@ Callback(s_cb_data *data)
 
     if (count>1) {
 	vpi_printf("vpi_remove_cb returned %d @ %.1f\n",
-	    vpi_remove_cb(Handle), t.real);
+	    (int)vpi_remove_cb(Handle), t.real);
     }
 
     count++;

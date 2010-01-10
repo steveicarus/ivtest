@@ -26,7 +26,7 @@ static void RecurseScope(vpiHandle handle, int depth)
 	    case vpiFunction: vpi_printf("vpiFunction\n"); break;
 	    case vpiNamedBegin: vpi_printf("vpiNamedBegin\n"); break;
 	    case vpiNamedFork: vpi_printf("vpiNamedFork\n"); break;
-	    default: vpi_printf("unknown (%d)\n", vpi_get(vpiType,hand)); break;
+	    default: vpi_printf("unknown (%d)\n", (int)vpi_get(vpiType,hand)); break;
 	}
 	RecurseScope(hand, depth + 2);
     }

@@ -27,7 +27,7 @@ ValueChange(p_cb_data cb_data)
 {
 	static s_vpi_time get_time = { vpiSimTime, 0, 0, 0 };
   vpi_get_time(NULL,&get_time);
-	vpi_printf("%6d: Value Change\n",get_time.low);
+	vpi_printf("%6d: Value Change\n", (int)get_time.low);
 	return(0);
 }
 

@@ -58,7 +58,7 @@ static void FindHandleByName()
 	hand = vpi_handle_by_name(s[i], NULL);
 	if (hand)
 	    vpi_printf("Found name = %s, type = %d\n",
-		vpi_get_str(vpiName, hand), vpi_get(vpiType, hand));
+		vpi_get_str(vpiName, hand), (int)vpi_get(vpiType, hand));
 	else
 	    vpi_printf("*** Not found ***\n");
     }

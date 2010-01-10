@@ -52,7 +52,7 @@ CallbackPeek(s_cb_data * data)
 		vpi_get_value(handle,&value);
 
 		for(unsigned i=0;(i*32)<size;i++) {
-			vpi_printf("Vec %d) %08x %08x\n",i,value.value.vector[i].aval,value.value.vector[i].bval);
+			vpi_printf("Vec %d) %08x %08x\n",i,(int)value.value.vector[i].aval,(int)value.value.vector[i].bval);
 		}
 	} else {
 		vpi_printf("***ERROR: can't find register - big_reg\n");
@@ -72,7 +72,7 @@ CallbackPeek(s_cb_data * data)
 		vpi_get_value(handle,&value);
 
 		for(unsigned i=0;(i*32)<size;i++) {
-			vpi_printf("Vec %d) %08x %08x\n",i,value.value.vector[i].aval,value.value.vector[i].bval);
+			vpi_printf("Vec %d) %08x %08x\n",i,(int)value.value.vector[i].aval,(int)value.value.vector[i].bval);
 		}
 	} else {
 		vpi_printf("***ERROR: can't find register - big_reg\n");

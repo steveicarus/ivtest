@@ -44,7 +44,7 @@ static PLI_INT32 CompileTF(PLI_BYTE8 *x)
 	    else
 		first = 0;
 	    vpi_printf("%s [type = %d]",
-		vpi_get_str(vpiFullName, arg), vpi_get(vpiType, arg));
+		vpi_get_str(vpiFullName, arg), (int)vpi_get(vpiType, arg));
 	    if (vpi_get(vpiType, arg) == vpiNamedEvent) num++;
 	}
 	vpi_printf(")\n");

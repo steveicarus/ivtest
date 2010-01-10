@@ -33,7 +33,7 @@ static PLI_INT32 memmonitor_compiletf(PLI_BYTE8*name)
 static PLI_INT32 callback(struct t_cb_data*cb)
 {
       vpi_printf("ValueChange: index=%d, value=%s\n",
-		 cb->index, cb->value->value.str);
+		 (int)cb->index, cb->value->value.str);
       return 0;
 }
 

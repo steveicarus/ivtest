@@ -32,9 +32,9 @@ static PLI_INT32 next_sim_time_callback(struct t_cb_data*cb)
       tim.type = vpiSimTime;
       vpi_get_time(obj, &tim);
 
-      vpi_printf("Callback time=%d %s=%d\n", tim.low,
+      vpi_printf("Callback time=%d %s=%d\n", (int)tim.low,
 		 vpi_get_str(vpiName, obj),
-		 val.value.integer);
+		 (int)val.value.integer);
       return 0;
 }
 

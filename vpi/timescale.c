@@ -11,31 +11,31 @@ mytest(int ud, int reason)
     io_printf("Module %s\n", name);
 
     lt = tf_gettime();
-    io_printf("\ttf_gettime()\t\t\t-> %d\n", lt);
+    io_printf("\ttf_gettime()\t\t\t-> %d\n", (int)lt);
 
     cp = tf_strgettime();
     io_printf("\ttf_strgettime()\t\t\t-> %s\n", cp);
 
     lt = tf_getlongtime(&ht);
-    io_printf("\ttf_getlongtime()\t\t-> %d/%d\n", ht, lt);
+    io_printf("\ttf_getlongtime()\t\t-> %d/%d\n", (int)ht, (int)lt);
 
     lt = tf_igetlongtime(&ht, inst);
-    io_printf("\ttf_igetlongtime(inst)\t\t-> %d/%d\n", ht, lt);
+    io_printf("\ttf_igetlongtime(inst)\t\t-> %d/%d\n", (int)ht, (int)lt);
     
     lt = tf_gettimeprecision();
-    io_printf("\ttf_gettimeprecision()\t\t-> %d\n", lt);
+    io_printf("\ttf_gettimeprecision()\t\t-> %d\n", (int)lt);
 
     lt = tf_igettimeprecision(inst);
-    io_printf("\ttf_igettimeprecision(inst)\t-> %d\n", lt);
+    io_printf("\ttf_igettimeprecision(inst)\t-> %d\n", (int)lt);
     
     lt = tf_gettimeunit();
-    io_printf("\ttf_gettimeunit()\t\t-> %d\n", lt);
+    io_printf("\ttf_gettimeunit()\t\t-> %d\n", (int)lt);
 
     lt = tf_igettimeunit(inst);
-    io_printf("\ttf_gettimeunit(inst)\t\t-> %d\n", lt);
+    io_printf("\ttf_gettimeunit(inst)\t\t-> %d\n", (int)lt);
 
     lt = tf_igettimeunit(0);
-    io_printf("\ttf_gettimeunit(0)\t\t-> %d\n", lt);
+    io_printf("\ttf_gettimeunit(0)\t\t-> %d\n", (int)lt);
 
     return 0;
 }

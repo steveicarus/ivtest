@@ -80,18 +80,18 @@ static PLI_INT32 dump_specify_calltf(PLI_BYTE8*name)
 		  delays.plusere_flag = 0;
 		  vpi_get_delays(item, &delays);
 		  vpi_printf("**        (%d,%d,%d, %d,%d,%d, %d,%d,%d, %d,%d,%d)\n",
-			     delay_times[0].low,
-			     delay_times[1].low,
-			     delay_times[2].low,
-			     delay_times[3].low,
-			     delay_times[4].low,
-			     delay_times[5].low,
-			     delay_times[6].low,
-			     delay_times[7].low,
-			     delay_times[8].low,
-			     delay_times[9].low,
-			     delay_times[10].low,
-			     delay_times[11].low);
+			     (int)delay_times[0].low,
+			     (int)delay_times[1].low,
+			     (int)delay_times[2].low,
+			     (int)delay_times[3].low,
+			     (int)delay_times[4].low,
+			     (int)delay_times[5].low,
+			     (int)delay_times[6].low,
+			     (int)delay_times[7].low,
+			     (int)delay_times[8].low,
+			     (int)delay_times[9].low,
+			     (int)delay_times[10].low,
+			     (int)delay_times[11].low);
 
 		  delays.da = delay_times;
 		  delays.no_of_delays = 12;
