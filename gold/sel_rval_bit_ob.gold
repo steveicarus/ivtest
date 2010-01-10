@@ -1,0 +1,107 @@
+./ivltests/sel_rval_bit_ob.v:57: warning: Constant bit select [-1] is before pvar0[<inf>:0].
+./ivltests/sel_rval_bit_ob.v:57:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:62: warning: Constant undefined bit select [1'bx] for parameter 'pvar0'.
+./ivltests/sel_rval_bit_ob.v:62:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:67: warning: Constant undefined bit select [1'bz] for parameter 'pvar0'.
+./ivltests/sel_rval_bit_ob.v:67:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:84: warning: Constant bit select [-1] is before pvar1[<inf>:0].
+./ivltests/sel_rval_bit_ob.v:84:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:89: warning: Constant undefined bit select [1'bx] for parameter 'pvar1'.
+./ivltests/sel_rval_bit_ob.v:89:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:94: warning: Constant undefined bit select [1'bz] for parameter 'pvar1'.
+./ivltests/sel_rval_bit_ob.v:94:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:111: warning: Constant bit select [-1] is before pvar2[<inf>:0].
+./ivltests/sel_rval_bit_ob.v:111:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:116: warning: Constant undefined bit select [1'bx] for parameter 'pvar2'.
+./ivltests/sel_rval_bit_ob.v:116:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:121: warning: Constant undefined bit select [1'bz] for parameter 'pvar2'.
+./ivltests/sel_rval_bit_ob.v:121:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:128: warning: Constant bit select [4] is after pvar3[3:0].
+./ivltests/sel_rval_bit_ob.v:128:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:133: warning: Constant bit select [-1] is before pvar3[3:0].
+./ivltests/sel_rval_bit_ob.v:133:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:138: warning: Constant undefined bit select [1'bx] for parameter 'pvar3'.
+./ivltests/sel_rval_bit_ob.v:138:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:143: warning: Constant undefined bit select [1'bz] for parameter 'pvar3'.
+./ivltests/sel_rval_bit_ob.v:143:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:150: warning: Constant bit select [5] is after pvar4[4:1].
+./ivltests/sel_rval_bit_ob.v:150:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:155: warning: Constant bit select [0] is before pvar4[4:1].
+./ivltests/sel_rval_bit_ob.v:155:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:160: warning: Constant undefined bit select [1'bx] for parameter 'pvar4'.
+./ivltests/sel_rval_bit_ob.v:160:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:165: warning: Constant undefined bit select [1'bz] for parameter 'pvar4'.
+./ivltests/sel_rval_bit_ob.v:165:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:172: warning: Constant bit select [0] is after pvar5[1:4].
+./ivltests/sel_rval_bit_ob.v:172:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:177: warning: Constant bit select [5] is before pvar5[1:4].
+./ivltests/sel_rval_bit_ob.v:177:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:182: warning: Constant undefined bit select [1'bx] for parameter 'pvar5'.
+./ivltests/sel_rval_bit_ob.v:182:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:187: warning: Constant undefined bit select [1'bz] for parameter 'pvar5'.
+./ivltests/sel_rval_bit_ob.v:187:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:195: warning: Constant bit select [5] is after vector rvar[4:1].
+./ivltests/sel_rval_bit_ob.v:195:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:200: warning: Constant bit select [0] is before vector rvar[4:1].
+./ivltests/sel_rval_bit_ob.v:200:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:205: warning: Constant bit select [1'bx] is undefined for vector 'rvar'.
+./ivltests/sel_rval_bit_ob.v:205:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:210: warning: Constant bit select [1'bz] is undefined for vector 'rvar'.
+./ivltests/sel_rval_bit_ob.v:210:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:217: warning: Constant bit select [0] is after vector rvar2[1:4].
+./ivltests/sel_rval_bit_ob.v:217:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:222: warning: Constant bit select [5] is before vector rvar2[1:4].
+./ivltests/sel_rval_bit_ob.v:222:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:227: warning: Constant bit select [1'bx] is undefined for vector 'rvar2'.
+./ivltests/sel_rval_bit_ob.v:227:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:232: warning: Constant bit select [1'bz] is undefined for vector 'rvar2'.
+./ivltests/sel_rval_bit_ob.v:232:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:240: warning: Constant bit select [5] is after array word ravar[][4:1].
+./ivltests/sel_rval_bit_ob.v:240:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:245: warning: Constant bit select [0] is before array word ravar[][4:1].
+./ivltests/sel_rval_bit_ob.v:245:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:250: warning: Constant bit select [1'bx] is undefined for array word 'ravar[]'.
+./ivltests/sel_rval_bit_ob.v:250:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:255: warning: Constant bit select [1'bz] is undefined for array word 'ravar[]'.
+./ivltests/sel_rval_bit_ob.v:255:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:262: warning: Constant bit select [0] is after array word ravar2[][1:4].
+./ivltests/sel_rval_bit_ob.v:262:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:267: warning: Constant bit select [5] is before array word ravar2[][1:4].
+./ivltests/sel_rval_bit_ob.v:267:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:272: warning: Constant bit select [1'bx] is undefined for array word 'ravar2[]'.
+./ivltests/sel_rval_bit_ob.v:272:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:277: warning: Constant bit select [1'bz] is undefined for array word 'ravar2[]'.
+./ivltests/sel_rval_bit_ob.v:277:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:285: warning: Constant bit select [5] is after vector wvar[4:1].
+./ivltests/sel_rval_bit_ob.v:285:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:290: warning: Constant bit select [0] is before vector wvar[4:1].
+./ivltests/sel_rval_bit_ob.v:290:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:295: warning: Constant bit select [1'bx] is undefined for vector 'wvar'.
+./ivltests/sel_rval_bit_ob.v:295:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:300: warning: Constant bit select [1'bz] is undefined for vector 'wvar'.
+./ivltests/sel_rval_bit_ob.v:300:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:307: warning: Constant bit select [0] is after vector wvar2[1:4].
+./ivltests/sel_rval_bit_ob.v:307:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:312: warning: Constant bit select [5] is before vector wvar2[1:4].
+./ivltests/sel_rval_bit_ob.v:312:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:317: warning: Constant bit select [1'bx] is undefined for vector 'wvar2'.
+./ivltests/sel_rval_bit_ob.v:317:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:322: warning: Constant bit select [1'bz] is undefined for vector 'wvar2'.
+./ivltests/sel_rval_bit_ob.v:322:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:330: warning: Constant bit select [5] is after array word wavar[][4:1].
+./ivltests/sel_rval_bit_ob.v:330:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:335: warning: Constant bit select [0] is before array word wavar[][4:1].
+./ivltests/sel_rval_bit_ob.v:335:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:340: warning: Constant bit select [1'bx] is undefined for array word 'wavar[]'.
+./ivltests/sel_rval_bit_ob.v:340:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:345: warning: Constant bit select [1'bz] is undefined for array word 'wavar[]'.
+./ivltests/sel_rval_bit_ob.v:345:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:352: warning: Constant bit select [0] is after array word wavar2[][1:4].
+./ivltests/sel_rval_bit_ob.v:352:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:357: warning: Constant bit select [5] is before array word wavar2[][1:4].
+./ivltests/sel_rval_bit_ob.v:357:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:363: warning: Constant bit select [1'bx] is undefined for array word 'wavar2[]'.
+./ivltests/sel_rval_bit_ob.v:363:        : Replacing select with a constant 1'bx.
+./ivltests/sel_rval_bit_ob.v:369: warning: Constant bit select [1'bz] is undefined for array word 'wavar2[]'.
+./ivltests/sel_rval_bit_ob.v:369:        : Replacing select with a constant 1'bx.
+PASSED

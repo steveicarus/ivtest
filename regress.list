@@ -2318,3 +2318,5 @@ pr2913438a	normal	ivltests
 pr2913438b	normal	ivltests
 pr2918095	normal	ivltests
 select_padding	normal	ivltests
+sel_rval_bit_ob	normal,-Wselect-range	ivltests diff=log/sel_rval_bit_ob.log:gold/sel_rval_bit_ob.gold
+sel_rval_part_ob	normal,-Wselect-range	ivltests diff=log/sel_rval_part_ob.log:gold/sel_rval_part_ob.gold
