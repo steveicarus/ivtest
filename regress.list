@@ -413,6 +413,7 @@ v0.8:pr1876798	NI
 v0.8:pr2029336	NI
 v0.8:pr2728547	NI
 v0.8:pr2824189	NI
+v0.8:pr2930506	NI
 v0.8:scanf	NI
 v0.8:scan-invalid	NI
 v0.8:scanf2	NI
@@ -2320,3 +2321,4 @@ pr2918095	normal	ivltests
 select_padding	normal	ivltests
 sel_rval_bit_ob	normal,-Wselect-range	ivltests diff=log/sel_rval_bit_ob.log:gold/sel_rval_bit_ob.gold
 sel_rval_part_ob	normal,-Wselect-range	ivltests diff=log/sel_rval_part_ob.log:gold/sel_rval_part_ob.gold
+pr2930506	normal	ivltests
