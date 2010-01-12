@@ -119,6 +119,8 @@ v0.8:pr1799904	NI
 v0.8:pr1820472	NI
 v0.8:pr1878909	NI
 v0.8:pr2076391	NI
+v0.8:sel_rval_bit_ob	NI
+v0.8:sel_rval_part_ob	NI
 
 # V0.8 does not support the power operator.
 v0.8:ca_pow_unsigned	NI
