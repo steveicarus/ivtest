@@ -119,6 +119,8 @@ v0.8:pr1799904	NI
 v0.8:pr1820472	NI
 v0.8:pr1878909	NI
 v0.8:pr2076391	NI
+v0.8:sel_rval_bit_ob	NI
+v0.8:sel_rval_part_ob	NI
 
 # V0.8 does not support the power operator.
 v0.8:ca_pow_unsigned	NI
@@ -573,6 +575,9 @@ v0.8:pr751	normal  ivltests diff=log/pr751.log:gold/pr751-v0.8.gold
 
 # V0.8 has no special warnings for the optional system tasks/functions.
 v0.8:warn_opt_sys_tf	RE	ivltests diff=log/warn_opt_sys_tf.log:gold/warn_opt_sys_tf-v0.8.gold
+
+# V0.8 always displays an out of bound bit warning.
+v0.8:pr547		normal	ivltests diff=log/pr547.log:gold/pr547-v0.8.gold
 
 # V0.8 has a slight display difference.
 v0.8:pr2842621	normal	ivltests diff=log/pr2842621.log:gold/pr2842621-v0.8.gold
