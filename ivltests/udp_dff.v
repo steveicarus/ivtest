@@ -7,9 +7,9 @@
 
 module test;
 
-   dff d1 (.Q(qq), .C(clk), .D(dd));
    reg dd, clk;
    wire qq;
+   dff d1 (.Q(qq), .C(clk), .D(dd));
 
    initial begin
       dd = 1'b0;

@@ -2057,6 +2057,7 @@ automatic_events2	normal	ivltests diff=log/automatic_events2.log:gold/automatic_
 automatic_events3	normal	ivltests diff=log/automatic_events3.log:gold/automatic_events3.gold
 automatic_task	normal	ivltests diff=log/automatic_task.log:gold/automatic_task.gold
 automatic_task2	normal	ivltests diff=log/automatic_task2.log:gold/automatic_task2.gold
+automatic_task3	normal	ivltests diff=log/automatic_task3.log:gold/automatic_task3.gold
 nested_func	normal	ivltests diff=log/nested_func.log:gold/nested_func.gold
 recursive_func	normal	ivltests diff=log/recursive_func.log:gold/recursive_func.gold
 recursive_task	normal	ivltests diff=log/recursive_task.log:gold/recursive_task.gold
@@ -2321,4 +2322,6 @@ pr2918095	normal	ivltests
 select_padding	normal	ivltests
 sel_rval_bit_ob	normal,-Wselect-range	ivltests diff=log/sel_rval_bit_ob.log:gold/sel_rval_bit_ob.gold
 sel_rval_part_ob	normal,-Wselect-range	ivltests diff=log/sel_rval_part_ob.log:gold/sel_rval_part_ob.gold
+pr2924354	normal	ivltests diff=log/pr2924354.log:gold/pr2924354.gold
+pr2929913	normal	ivltests
 pr2930506	normal	ivltests
