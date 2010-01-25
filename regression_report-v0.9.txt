@@ -826,6 +826,9 @@ test_mos_strength_reduction: Passed.
                      scanf2: Passed.
                      scanf3: Passed.
                scan-invalid: Passed.
+                  pr1403406: Passed.
+                 pr1403406a: Passed.
+                 pr1403406b: Passed.
                   pr1467825: Passed - CO.
                   pr1455873: Passed.
                   pr1474283: Passed.
@@ -1209,6 +1212,7 @@ test_mos_strength_reduction: Passed.
           automatic_events3: Passed.
              automatic_task: Passed.
             automatic_task2: Passed.
+            automatic_task3: Passed.
                 nested_func: Passed.
              recursive_func: Passed.
              recursive_task: Passed.
@@ -1456,6 +1460,15 @@ test_mos_strength_reduction: Passed.
                  pr2913438a: Passed.
                  pr2913438b: Passed.
                   pr2918095: Passed.
+             select_padding: Passed.
+            sel_rval_bit_ob: Passed.
+           sel_rval_part_ob: Passed.
+                  pr2922063: Passed.
+                 pr2922063a: Passed.
+                 pr2922063b: Passed.
+                  pr2924354: ==> Failed - output does not match gold file.
+                  pr2929913: Passed.
+                  pr2930506: Passed.
 ============================================================================
 Test results:
-  Total=1456, Passed=1440, Failed=1, Not Implemented=6, Expected Fail=9
+  Total=1469, Passed=1452, Failed=2, Not Implemented=6, Expected Fail=9
