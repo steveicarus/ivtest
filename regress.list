@@ -96,6 +96,9 @@ vstd:pr2352834	EF ivltests
 # The for loop index in a sensitivity list is not working correctly at T0.
 vstd:pr1026	EF ivltests
 
+# Problems with assigning to an out of bounds array.
+vstd:pr2815398b	CE ivltests
+
 #------------------------------------
 # Acceptable, but different behavior.
 #------------------------------------
@@ -108,42 +111,56 @@ vstd:always3.1.9C	EF ivltests
 vstd:mem1		EF ivltests
 vstd:fdisplay_fail_fd	EF ivltests
 vstd:fdisplay_fail_mcd	EF ivltests
+vstd:fread-error	EF ivltests
 vstd:pic		EF contrib pictest diff=log/pic.log:gold/pic.gold
 vstd:pr751	normal  ivltests diff=log/pr751.log:gold/pr751_std.gold
 vstd:pr987	normal  ivltests diff=log/pr987.log:gold/pr987_std.gold
+vstd:pr2800985a		EF ivltests
+vstd:pr2800985b		EF ivltests
+vstd:readmem-error	EF ivltests
+vstd:readmem-invalid	CE ivltests
+vstd:scan-invalid	EF ivltests
+vstd:sel_rval_bit_ob	normal ivltests
+vstd:writemem-error	EF ivltests
+vstd:writemem-invalid	CE ivltests
 # spacing differences are also OK
 vstd:pr812	normal  ivltests diff=log/pr812.log:gold/pr812_std.gold
+vstd:resetall2	normal  ivltests diff=log/resetall2.log:gold/resetall2_std.gold
 # and extra leading zeros
 vstd:pr905	normal  ivltests diff=log/pr905.log:gold/pr905_std.gold
 vstd:pr985	normal  ivltests diff=log/pr985.log:gold/pr985_std.gold
 
 # $timeformat is ignored if there is no timescale.
-vstd:pr530a	EF ivltests
+vstd:pr530a		EF ivltests
+
+# The SV random functions return different results. Is this OK?
+vstd:urand		EF ivltests diff=log/urand.log:gold/urand.gold
+vstd:urand_r		EF ivltests diff=log/urand_r.log:gold/urand_r.gold
 
 # Some out of bounds selects can fail.
-vstd:pr2166311	NI
-vstd:pr2835632a	NI
+vstd:pr2166311		NI
+vstd:pr2835632a		NI
 
 # A 'bx or 'bz in a part select gives odd messages, but failing is OK.
 vstd:sel_rval_part_ob	NI
-vstd:pr2434688	NI
-vstd:pr2434688b	NI
+vstd:pr2434688		NI
+vstd:pr2434688b		NI
 
 # No support for $fflush with a zero mcd.
-vstd:pr2842621	NI
+vstd:pr2842621		NI
 
 # Icarus prints a string parameter as a string others don't.
 vstd:param_string	EF ivltests
 
 # 'bx/'bz at T0 or ending timepoint missing.
-vstd:pr528		normal ivltests diff=log/pr528.log:gold/pr528_std.gold
+vstd:pr528	normal ivltests diff=log/pr528.log:gold/pr528_std.gold
 vstd:pr528b	normal ivltests diff=log/pr528b.log:gold/pr528b_std.gold
-vstd:pr590		normal ivltests diff=log/pr590.log:gold/pr590_std.gold
-vstd:pr923		normal ivltests diff=log/pr923.log:gold/pr923_std.gold
+vstd:pr590	normal ivltests diff=log/pr590.log:gold/pr590_std.gold
+vstd:pr923	normal ivltests diff=log/pr923.log:gold/pr923_std.gold
 
 # No -0 support.
-vstd:pr1752823a	EF ivltests
-vstd:pr1752823b	EF ivltests
+vstd:pr1752823a		EF ivltests
+vstd:pr1752823b		EF ivltests
 
 # Missing T0 event and space difference in %d.
 vstd:pr1002	normal ivltests diff=log/pr1002.log:gold/pr1002_std.gold
@@ -156,112 +173,112 @@ vstd:pr584 	normal ivltests diff=log/pr584.log:gold/pr584_std.gold
 #-------------------------------
 
 # No support of left aligned formats, etc.
-vstd:pr2476430	NI
+vstd:pr2476430		NI
 
 # No support for the M_* defines add a fake include file to make it work?
 vstd:test_va_math	NI
 vstd:test_vams_math	NI
 
 # No $sizeof
-vstd:concat1	NI
-vstd:concat2	NI
+vstd:concat1		NI
+vstd:concat2		NI
 
 # No $abstime
-vstd:abstime	NI
-vstd:pr2590274a	NI
-vstd:pr2590274b	NI
-vstd:pr2590274c	NI
+vstd:abstime		NI
+vstd:pr2590274a		NI
+vstd:pr2590274b		NI
+vstd:pr2590274c		NI
 
 # No $simtime
 vstd:time6		NI
 # not checked yet. Can some of these be recoded to use a standard function?
 vstd:blocking_repeat_ec	NI
-vstd:ca_time	NI
+vstd:ca_time		NI
 vstd:nb_array_pv	NI
 vstd:nb_ec_array_pv	NI
 vstd:nb_ec_array	NI
-vstd:nb_ec_pv	NI
-vstd:nb_ec_pv2	NI
-vstd:nb_ec_real	NI
+vstd:nb_ec_pv		NI
+vstd:nb_ec_pv2		NI
+vstd:nb_ec_real		NI
 vstd:nb_ec_vector	NI
 vstd:pr534		NI
 vstd:pr639		NI
-vstd:pr2486350	NI
+vstd:pr2486350		NI
 vstd:stime		NI
-vstd:swrite	NI
+vstd:swrite		NI
 
 # No support for $simparam.
-vstd:simparam	NI
+vstd:simparam		NI
 
 # No support for $is_signed.
-vstd:pr1494799	NI
-vstd:pr2428890c	NI
+vstd:pr1494799		NI
+vstd:pr2428890c		NI
 
 # No support for $bits.
-vstd:bitwidth3	NI
-#vstd:clog2	NI
-vstd:param_vec2	NI
-vstd:param_vec	NI
+vstd:bitwidth3		NI
+#vstd:clog2		NI
+vstd:param_vec2		NI
+vstd:param_vec		NI
 vstd:pr498		NI
 vstd:pr721		NI
-vstd:pr809b	NI
+vstd:pr809b		NI
 vstd:pr809		NI
 vstd:pr979		NI
-vstd:pr1000	NI
-vstd:pr1609611	NI
-vstd:pr1750870	NI
-vstd:pr1765789	NI
-vstd:pr1771903	NI
-vstd:pr1793749	NI
-vstd:pr1861212b	NI
+vstd:pr1000		NI
+vstd:pr1609611		NI
+vstd:pr1750870		NI
+vstd:pr1765789		NI
+vstd:pr1771903		NI
+vstd:pr1793749		NI
+vstd:pr1861212b		NI
 #vstd:pr1864110c	NI
-vstd:pr1864115	NI
-vstd:pr2806449	NI
-vstd:pr2877555	NI
+vstd:pr1864115		NI
+vstd:pr2806449		NI
+vstd:pr2877555		NI
 vstd:real4		NI
 vstd:tern3		NI
 #vstd:v2005_math	NI
 
 # No support for math functions. These are really 1364-2005 bugs.
 vstd:ca_real_logical	NI
-vstd:cast_int	NI
+vstd:cast_int		NI
 vstd:clog2-signal	NI
-vstd:pr2139593	NI
-vstd:pr2152011	NI
+vstd:pr2139593		NI
+vstd:pr2152011		NI
 vstd:real_logical	NI
-vstd:va_math	NI
+vstd:va_math		NI
 
 # The optional system functions are not supported.
 vstd:warn_opt_sys_tf	NI
 
 # Some $printtimescale differences (NULL port, selects, etc.).
-vstd:pr1701855	NI
-vstd:pr1701855b	NI
+vstd:pr1701855		NI
+vstd:pr1701855b		NI
 
 # No support for wire real. Is there some way to add these?
-vstd:ca_64delay	NI
+vstd:ca_64delay		NI
 vstd:cast_real_signed	NI
 vstd:cast_real_unsigned	NI
-vstd:ca_time	NI
+vstd:ca_time		NI
 vstd:ca_var_delay	NI
 vstd:clog2		NI
-vstd:pr1861212c	NI
-vstd:pr1861212d	NI
-vstd:pr1864110a	NI
-vstd:pr1864110b	NI
-vstd:pr1864110c	NI
-vstd:pr1864115	NI
-vstd:pr1873372	NI
-vstd:pr1880003	NI
-vstd:pr1898293	NI
-vstd:pr2123158	NI
-vstd:pr2123190	NI
-vstd:pr2453002b	NI
-vstd:pr2456943	NI
-vstd:pr2715748	NI
-vstd:pr2806474	NI
+vstd:pr1861212c		NI
+vstd:pr1861212d		NI
+vstd:pr1864110a		NI
+vstd:pr1864110b		NI
+vstd:pr1864110c		NI
+vstd:pr1864115		NI
+vstd:pr1873372		NI
+vstd:pr1880003		NI
+vstd:pr1898293		NI
+vstd:pr2123158		NI
+vstd:pr2123190		NI
+vstd:pr2453002b		NI
+vstd:pr2456943		NI
+vstd:pr2715748		NI
+vstd:pr2806474		NI
 vstd:real8		NI
-vstd:real_array	NI
+vstd:real_array		NI
 vstd:real_concat_invalid1	NI
 vstd:real_mod_in_ca	NI
 vstd:real_op_fail	NI
@@ -271,66 +288,71 @@ vstd:real_select_invalid	NI
 vstd:real_wire_array	NI
 vstd:real_wire_force_rel	NI
 vstd:tern8		NI
-vstd:v2005_math	NI
+vstd:v2005_math		NI
 # or reg real
-vstd:pr1861212a	NI
+vstd:pr1861212a		NI
 
 # No support for Icarus escaped defines ``
 vstd:macro_with_args	NI
 vstd:macro_str_esc	NI
 vstd:pr622		NI
-vstd:pr1741212	NI
-vstd:pr1912112	NI
-vstd:pr1925360	NI
-vstd:pr1925360	NI
+vstd:pr1741212		NI
+vstd:pr1912112		NI
+vstd:pr1925360		NI
+vstd:pr1925360		NI
 
 # No support for `ifdef, etc. without an identifier.
-vstd:elsif_test	NI
+vstd:elsif_test		NI
 
 # If a module has a `timescale then all must have a `timescale.
 vstd:pr434		NI
-vstd:pr1403406	NI
-vstd:pr1403406a	NI
-vstd:pr1403406b	NI
-vstd:resetall	NI
+vstd:pr1403406		NI
+vstd:pr1403406a		NI
+vstd:pr1403406b		NI
+vstd:resetall		NI
 
 # No support for relative include file paths
-vstd:pr2215342	NI
+vstd:pr2215342		NI
 
 # Cannot force/assign part of a variable, but you can do this on a net.
-vstd:pr1832097b	NI
+vstd:pr1832097b		NI
 vstd:assign_deassign_pv	NI
 vstd:force_lval_part	NI
 vstd:force_release_reg_pv	NI
-vstd:pr2943394	NI
+vstd:pr2943394		NI
 
 # No support for a time with a width.
 vstd:automatic_events3	NI
 vstd:pr243		NI
 vstd:pr245		NI
-vstd:pr1985582	NI
+vstd:pr1985582		NI
+vstd:pr2815398a		NI
+# but these can be tested without a width. This one also has a missing EOS call.
+vstd:pr243_std		normal	ivltests diff=log/pr243_std.log:gold/pr243_std.gold
+# and this one has different formatting.
+vstd:pr1985582_std	normal	ivltests diff=log/pr1985582_std.log:gold/pr1985582_std.gold
 
 # No support for real modulus.
 vstd:mixed_type_div_mod	NI
-vstd:pr1528093	NI
+vstd:pr1528093		NI
 
 # No support for the fileio routines ($fopen{r,w,a}).
-vstd:fileio	NI
+vstd:fileio		NI
 
 # .<port>(net) connections for UDP instantiations (see udp_dff_std).
-vstd:udp_dff	NI
-vstd:pr938b	NI
+vstd:udp_dff		NI
+vstd:pr938b		NI
 
 # Binary ~& and ~|.
 vstd:binary_nand	NI
 vstd:binary_nor	NI
 
 # No support for VAMS
-vstd:analog1	NI
-vstd:analog2	NI
-vstd:vams_abs1	NI
+vstd:analog1		NI
+vstd:analog2		NI
+vstd:vams_abs1		NI
 # also reg/wire real.
-vstd:vams_abs2	NI
+vstd:vams_abs2		NI
 vstd:scaled_real	NI
 vstd:value_range1	NI
 vstd:value_range2	NI
@@ -1733,7 +1755,6 @@ shift3	normal	ivltests
 shift4	normal	ivltests
 shift5	normal	ivltests diff=log/shift5.log:gold/shift5.gold
 pr243	normal	ivltests diff=log/pr243.log:gold/pr243.gold
-pr243_std	normal	ivltests diff=log/pr243_std.log:gold/pr243_std.gold
 dummy7	normal	ivltests diff=log/dummy7.log:gold/dummy7.gold
 time6b  normal  ivltests # Rewrote time6 to pass with XL
 time6c  normal  ivltests diff=log/time6c.log:gold/time6c.gold
@@ -2291,7 +2312,6 @@ tranif1		normal	ivltests
 simparam	normal	ivltests
 pr1983762	normal	ivltests
 pr1985582	normal	ivltests diff=log/pr1985582.log:gold/pr1985582.gold
-pr1985582_std	normal	ivltests diff=log/pr1985582_std.log:gold/pr1985582_std.gold
 pr1988302	normal	ivltests
 pr1988310	normal	ivltests
 dump_memword	normal	ivltests diff=work/test.vcd:gold/dump_memword.vcd:2
@@ -2572,6 +2592,7 @@ pr2806474	normal	ivltests
 pr2809288	CE	ivltests diff=log/pr2809288.log:gold/pr2809288.gold
 real_array	normal	ivltests
 pr2815398a	normal	ivltests diff=log/pr2815398a.log:gold/pr2815398a.gold
+pr2815398a_std	normal	ivltests
 pr2815398b	normal	ivltests diff=log/pr2815398b.log:gold/pr2815398b.gold
 pr2818823	normal	ivltests
 sv_timeunit_prec	normal,-g2009	ivltests

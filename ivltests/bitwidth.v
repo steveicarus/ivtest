@@ -28,13 +28,13 @@ module main;
 
    initial begin
       C = 0;
-      #0 if (A !== 32'h0) begin
+      #1 if (A !== 32'h0) begin
 	 $display("FAILED -- A === %h", A);
 	 $finish;
       end
 
       C = -1;
-      #0 if (A !== 32'h00_00_ff_ff) begin
+      #1 if (A !== 32'h00_00_ff_ff) begin
 	 $display("FAILED -- A == %h instead of 0000ffff", A);
 	 $finish;
       end

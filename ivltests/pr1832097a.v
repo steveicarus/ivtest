@@ -4,6 +4,7 @@ module test;
   wire [3:0] bus = in;
 
   initial begin
+    #1;  // Need some delay for the calculations to run.
     if (bus !== 4'b0) begin
       $display("FAILED: initial value, got %b, expected 0000.", bus);
       fail = 1;

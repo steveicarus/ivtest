@@ -9,6 +9,7 @@ module top;
   initial begin
     iindex[0] = -1;
     rindex[0] = -1;
+    #1;
     $display("iindex[0] = %0d", iindex[0]);
     $display("rindex[0] = %0d", rindex[0]);
     $display("windex[0] = %0d", windex[0]);

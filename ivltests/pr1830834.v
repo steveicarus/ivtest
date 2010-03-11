@@ -11,6 +11,7 @@ module test;
     in[1] = 6'b110001;
 
     j = 1;
+    #1; // Need some delay for the calculations to run.
     $display("out: %b, in[%0d] %b:", out, j, in[j]);
     $display("out[3:0]: %b, in[%0d] %b:", out[j*1-1 +: 4], j, in[j]);
 

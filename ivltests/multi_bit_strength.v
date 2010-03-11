@@ -8,6 +8,7 @@ module top;
   assign (pull1, strong0) net = 4'b0110;
 
   initial begin
+    #1;
     $swrite(result, "%v", net);
     $display("All three lines should match:");
     $display("-----------------------------");

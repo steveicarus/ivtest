@@ -18,7 +18,7 @@ module foo ();
   assign rst2 = (2**(CP_SUM_BIT_WIDTH-1)) / CLOCK_FREQUENCY;
 
   initial
-    if (rst == rst2) $display("PASSED");
+    #1 if (rst == rst2) $display("PASSED");
     else $display("FAILED");
 
 endmodule // foo

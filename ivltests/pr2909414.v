@@ -20,6 +20,7 @@ Sub2 SubMod2(Value);
 defparam SubMod2.Width = 8;
 
 initial begin
+  #1;
   $display("Value = %h", Value);
   if (Value === 8'hff)
     $display("PASSED");
