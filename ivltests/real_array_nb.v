@@ -36,7 +36,7 @@ module top;
     end
 
     count = 0;
-    rarr[idx] <= repeat(count) @(posedge evt) 0.0;
+    rarr[idx] <= repeat(count) @(evt) 0.0;
     #0.1;
     if (rarr[3] != 3.0) begin
       $display("FAILED negative index 3, expected 3.0, got %f", rarr[3]);
@@ -83,7 +83,7 @@ module top;
     end
 
     // Check a zero count event non-blocking assignment.
-    rarr[1] <= repeat(count) @(posedge evt) 5.0;
+    rarr[1] <= repeat(count) @(evt) 5.0;
     #0.1;
     if (rarr[1] != 5.0) begin
       $display("FAILED NB EC count=0, expected 5.0, got %f", rarr[1]);
@@ -91,7 +91,7 @@ module top;
     end
 
     // Check for an event non-blocking assignment.
-    rarr[1] <= @(posedge evt) 6.0;
+    rarr[1] <= @(evt) 6.0;
     fork
       #1 ->evt;
       begin
