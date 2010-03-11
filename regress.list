@@ -2344,3 +2344,4 @@ pr2924354	normal	ivltests diff=log/pr2924354.log:gold/pr2924354.gold
 pr2929913	normal	ivltests
 pr2930506	normal	ivltests
 pr2943394	normal	ivltests
+pr2951657	normal	ivltests
