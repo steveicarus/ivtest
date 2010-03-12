@@ -10,14 +10,14 @@ module top;
 
   initial begin
     #0.9;
-    if (icon !== 'bz) begin
+    if (icon !== 4'bx) begin
       pass = 1'b0;
-      $display("concatenation value not delayed, expected 'bz got %b.", icon);
+      $display("concatenation value not delayed, expected 'bx got %b.", icon);
     end
 
     #0.1;
     #0;
-    if (icon !== 5) begin
+    if (icon !== 4'd5) begin
       pass = 1'b0;
       $display("concatenation value not correct, expected 'd5 got %d.", icon);
     end

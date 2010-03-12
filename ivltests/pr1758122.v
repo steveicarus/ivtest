@@ -25,6 +25,7 @@ initial begin
     A[i] = i - 1;
     B[i] = i + 1;
   end
+  #1;
   for (i = 1; i <= D; i = i + 1) begin
     $display("%d + %d = %d", A[i-1], B[i-1], Y[i-1]);
   end

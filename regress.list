@@ -99,6 +99,18 @@ vstd:pr1026	EF ivltests
 # Problems with assigning to an out of bounds array.
 vstd:pr2815398b	CE ivltests
 
+# Problems taking a part select on an overridden parameter.
+vstd:sp2	EF ivltests
+
+# I believe these should be accepted, but they need to be checked.
+vstd:pr1723367.	CE ivltests
+
+# I'm not sure which simulator has teh bug. More research is needed.
+vstd:pr1742910	EF ivltests
+
+# A partially out of bounds write should still write the in bounds bits.
+vstd:pr1990269	EF ivltests
+
 #------------------------------------
 # Acceptable, but different behavior.
 #------------------------------------
@@ -108,13 +120,14 @@ vstd:pr2815398b	CE ivltests
 vstd:always3.1.9C	EF ivltests
 
 # The warning messages are different. Need tool specific file.
+vstd:array_word_check	EF ivltests
 vstd:mem1		EF ivltests
 vstd:fdisplay_fail_fd	EF ivltests
 vstd:fdisplay_fail_mcd	EF ivltests
 vstd:fread-error	EF ivltests
 vstd:pic		EF contrib pictest diff=log/pic.log:gold/pic.gold
-vstd:pr751	normal  ivltests diff=log/pr751.log:gold/pr751_std.gold
-vstd:pr987	normal  ivltests diff=log/pr987.log:gold/pr987_std.gold
+vstd:pr751	normal ivltests diff=log/pr751.log:gold/pr751_std.gold
+vstd:pr987	normal ivltests diff=log/pr987.log:gold/pr987_std.gold
 vstd:pr2800985a		EF ivltests
 vstd:pr2800985b		EF ivltests
 vstd:readmem-error	EF ivltests
@@ -124,11 +137,15 @@ vstd:sel_rval_bit_ob	normal ivltests
 vstd:writemem-error	EF ivltests
 vstd:writemem-invalid	CE ivltests
 # spacing differences are also OK
-vstd:pr812	normal  ivltests diff=log/pr812.log:gold/pr812_std.gold
-vstd:resetall2	normal  ivltests diff=log/resetall2.log:gold/resetall2_std.gold
+vstd:pr812	normal ivltests diff=log/pr812.log:gold/pr812_std.gold
+vstd:resetall2	normal ivltests diff=log/resetall2.log:gold/resetall2_std.gold
+vstd:pr1645277	normal ivltests diff=log/pr1645277.log:gold/pr1645277_std.gold
+vstd:pr1792152	normal ivltests diff=log/pr1792152.log:gold/pr1792152_std.gold
+# This has a trialing space is that OK?
+vstd:pr1661640	normal ivltests diff=log/pr1661640.log:gold/pr1661640_std.gold
 # and extra leading zeros
-vstd:pr905	normal  ivltests diff=log/pr905.log:gold/pr905_std.gold
-vstd:pr985	normal  ivltests diff=log/pr985.log:gold/pr985_std.gold
+vstd:pr905	normal ivltests diff=log/pr905.log:gold/pr905_std.gold
+vstd:pr985	normal ivltests diff=log/pr985.log:gold/pr985_std.gold
 
 # $timeformat is ignored if there is no timescale.
 vstd:pr530a		EF ivltests
@@ -137,7 +154,11 @@ vstd:pr530a		EF ivltests
 vstd:urand		EF ivltests diff=log/urand.log:gold/urand.gold
 vstd:urand_r		EF ivltests diff=log/urand_r.log:gold/urand_r.gold
 
-# Some out of bounds selects can fail.
+# Some out of bounds selects can fail. Though you should still get the
+# in bounds bits. Some of these do not do that!
+vstd:pr1960633		EF ivltests
+vstd:pr1978358d		EF ivltests
+vstd:pr1993479		EF ivltests
 vstd:pr2166311		NI
 vstd:pr2835632a		NI
 
@@ -153,14 +174,41 @@ vstd:pr2842621		NI
 vstd:param_string	EF ivltests
 
 # 'bx/'bz at T0 or ending timepoint missing.
+vstd:multi_driver_delay		EF ivltests
+vstd:multi_driver_delay_std	normal ivltests
 vstd:pr528	normal ivltests diff=log/pr528.log:gold/pr528_std.gold
 vstd:pr528b	normal ivltests diff=log/pr528b.log:gold/pr528b_std.gold
 vstd:pr590	normal ivltests diff=log/pr590.log:gold/pr590_std.gold
 vstd:pr923	normal ivltests diff=log/pr923.log:gold/pr923_std.gold
+vstd:pr1645518	normal ivltests diff=log/pr1645518.log:gold/pr1645518_std.gold
+vstd:pr1787423b		EF ivltests
+vstd:pr1787423b_std	normal ivltests
+vstd:pr1877743		EF ivltests
+vstd:pr1877743_std	normal ivltests
+vstd:pr1883052		EF ivltests
+vstd:pr1883052_std	normal ivltests
+vstd:pr1883052b		EF ivltests
+vstd:pr1883052b_std	normal ivltests
+vstd:sdf1	normal ivltests diff=log/sdf1.log:gold/sdf1_std.gold
+vstd:sdf2	normal ivltests diff=log/sdf2.log:gold/sdf1_std.gold
+vstd:sdf3	normal ivltests diff=log/sdf3.log:gold/sdf1_std.gold
+vstd:sdf4	normal ivltests diff=log/sdf4.log:gold/sdf1_std.gold
+vstd:sdf7	normal ivltests diff=log/sdf7.log:gold/sdf7_std.gold
+vstd:specify5	normal ivltests diff=log/specify5.log:gold/specify5_std.gold
 
 # No -0 support.
 vstd:pr1752823a		EF ivltests
 vstd:pr1752823b		EF ivltests
+# numeric display differences no trailing zeros, etc.
+vstd:localparam_type	normal ivltests diff=log/localparam_type.log:gold/parameter_type_std.gold
+vstd:parameter_type	normal ivltests diff=log/parameter_type.log:gold/parameter_type_std.gold
+vstd:nested_func	normal ivltests diff=log/nested_func.log:gold/nested_func_std.gold
+vstd:pr1628300	normal	ivltests diff=log/pr1628300.log:gold/pr1628300_std.gold
+vstd:pr1701890	normal ivltests diff=log/pr1701890.log:gold/pr1701890_std.gold
+vstd:pr2039694	normal ivltests diff=log/pr2039694.log:gold/pr2039694_std.gold
+vstd:pr2251119	normal ivltests diff=log/pr2251119.log:gold/pr2251119_std.gold
+vstd:pr2792897		EF ivltests
+vstd:pr2792897_std	normal ivltests
 
 # Missing T0 event and space difference in %d.
 vstd:pr1002	normal ivltests diff=log/pr1002.log:gold/pr1002_std.gold
@@ -178,6 +226,9 @@ vstd:pr2476430		NI
 # No support for the M_* defines add a fake include file to make it work?
 vstd:test_va_math	NI
 vstd:test_vams_math	NI
+
+# $sscanf can not get the value from a parameter.
+vstd:pr2728547		NI
 
 # No $sizeof
 vstd:concat1		NI
@@ -209,6 +260,10 @@ vstd:swrite		NI
 
 # No support for $simparam.
 vstd:simparam		NI
+
+# No support for $readmempath.
+vstd:pr2509349a		NI
+vstd:pr2509349b		NI
 
 # No support for $is_signed.
 vstd:pr1494799		NI
@@ -245,6 +300,7 @@ vstd:cast_int		NI
 vstd:clog2-signal	NI
 vstd:pr2139593		NI
 vstd:pr2152011		NI
+vstd:pr2728812a		NI
 vstd:real_logical	NI
 vstd:va_math		NI
 
@@ -314,6 +370,17 @@ vstd:resetall		NI
 # No support for relative include file paths
 vstd:pr2215342		NI
 
+# No support for extra paramater being passed to a module. Is this a bug?
+vstd:param_test3	NI
+
+# Icarus allows missing parameters, should this generate a warning/error?
+vstd:pr1716276		CE ivltests
+
+# Icarus allows a reg as the output path connection. Is this a bug?
+vstd:sdf5		NI
+vstd:sdf6		NI
+vstd:specify4		NI
+
 # Cannot force/assign part of a variable, but you can do this on a net.
 vstd:pr1832097b		NI
 vstd:assign_deassign_pv	NI
@@ -330,11 +397,17 @@ vstd:pr2815398a		NI
 # but these can be tested without a width. This one also has a missing EOS call.
 vstd:pr243_std		normal	ivltests diff=log/pr243_std.log:gold/pr243_std.gold
 # and this one has different formatting.
-vstd:pr1985582_std	normal	ivltests diff=log/pr1985582_std.log:gold/pr1985582_std.gold
+vstd:pr1985582_std	normal ivltests diff=log/pr1985582_std.log:gold/pr1985582_std.gold
 
 # No support for real modulus.
 vstd:mixed_type_div_mod	NI
 vstd:pr1528093		NI
+
+# No support for divide by zero to get inf.
+vstd:pr1703120		CE
+
+# Icarus does not truncate results in a self determined context.
+vstd:pr1639064b		EF ivltests diff=log/pr1639064b.log:gold/pr1639064b.gold
 
 # No support for the fileio routines ($fopen{r,w,a}).
 vstd:fileio		NI
