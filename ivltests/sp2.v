@@ -38,10 +38,10 @@ endmodule
 module main;
 parameter fname = "PhCount.unnamed";
 
-integer clk;
+reg clk;
 reg a,b,c;
 					 
-write_sp_vectors #("sp2", "foo") v0 (Clk,a, b, c);
+write_sp_vectors #("sp2", "foo") v0 (clk,a, b, c);
 
 initial
   begin

@@ -31,6 +31,7 @@ module test ();
 
     // Verify that a force will propagate.
     z = 1.0;
+    #1;
     if (f != 1.0) begin
       $display("Failed force propagation, expected 1.0, got %f", f);
       pass = 1'b0;

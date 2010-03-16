@@ -8,13 +8,13 @@ assign a[3-:2] = b;
 initial begin
    b = 2'b01;
    #1 if (a !== 4'b0101) begin
-      $display("FAILED -- b=%b, a=%b");
+      $display("FAILED -- b=%b, a=%b", b, a);
       $finish;
    end
 
    b=2'b10;
    #1 if (a !== 4'b1010) begin
-      $display("FAILED -- b=%b, a=%b");
+      $display("FAILED -- b=%b, a=%b", b, a);
       $finish;
    end
 

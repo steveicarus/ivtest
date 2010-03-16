@@ -27,11 +27,11 @@ module main;
 
    integer q;
    reg [7:1] x;
+   reg 	     PCLK = 1;
    always @(posedge PCLK)
      for (q=1; q<=7; q=q+1)
        x[q] <= #1 a[q] & b[q];
 
-   reg 	     PCLK = 1;
    always #5 PCLK = !PCLK;
 
    initial begin

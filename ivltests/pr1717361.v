@@ -1,5 +1,7 @@
 module adding;
 
+reg signed [20:0] s3, s4;
+reg signed [21:0] t1, t2;
 reg clk;
 initial begin
 	clk=0;
@@ -19,8 +21,6 @@ initial begin
 	$display("%s", (t1==t2) ? "PASSED" : "FAIL");
 end
 
-reg signed [20:0] s3, s4;
-reg signed [21:0] t1, t2;
 always @(posedge clk) begin
 	t1 <= s3 + 2*s4;
 	t2 <= s3 + s4*2;

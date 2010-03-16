@@ -59,6 +59,384 @@
 # gold or diff commands.
 #
 
+#---------------------------------------------------------
+# I believe the following are bugs in the other simulator.
+#---------------------------------------------------------
+
+# An assign should allow a concatentation of bit selects (1364-2005, 9.3.1).
+vstd:assign3.2E	NI
+
+# 1364-2005 defined 0**<negative> to be 'bx not 0
+vstd:pr2909386a	EF ivltests
+vstd:pr2909386b	EF ivltests
+
+# It appears that the power operator is not working correctly.
+vstd:pr2865563	EF ivltests
+
+# Problems with +: and a negative index, returns 'bx.
+vstd:signed_part	EF ivltests
+vstd:signed_pv	EF ivltests
+# also problems at the positive ends.
+vstd:pr2835632b	EF ivltests
+
+# Problems with partially out of bound part selects, returns 'bx.
+vstd:pr1978358	EF ivltests
+vstd:pr1978358b	EF ivltests
+vstd:pr1978358c	EF ivltests
+
+# It does not support constants greater than 32 bits! Will 'd fix these?
+vstd:ca_pow_unsigned	EF ivltests
+vstd:pow_unsigned	EF ivltests
+vstd:pr903		EF ivltests
+vstd:pr1388974	EF ivltests
+vstd:pr2030767	EF ivltests
+vstd:pr2352834	EF ivltests
+vstd:pr2352834	EF ivltests
+
+# The for loop index in a sensitivity list is not working correctly at T0.
+vstd:pr1026	EF ivltests
+
+# Problems with assigning to an out of bounds array.
+vstd:pr2815398b	CE ivltests
+
+# Problems taking a part select on an overridden parameter.
+vstd:sp2	EF ivltests
+
+# I believe these should be accepted, but they need to be checked.
+vstd:pr1723367.	CE ivltests
+
+# I'm not sure which simulator has teh bug. More research is needed.
+vstd:pr1742910	EF ivltests
+
+# A partially out of bounds write should still write the in bounds bits.
+vstd:pr1990269	EF ivltests
+
+#------------------------------------
+# Acceptable, but different behavior.
+#------------------------------------
+
+# The behavior of scheduled, but not executed nonblocking assignments is
+# undefined if the enclosing block is disabled (1364-2005, 10.3).
+vstd:always3.1.9C	EF ivltests
+
+# The warning messages are different. Need tool specific file.
+vstd:array_word_check	EF ivltests
+vstd:mem1		EF ivltests
+vstd:fdisplay_fail_fd	EF ivltests
+vstd:fdisplay_fail_mcd	EF ivltests
+vstd:fread-error	EF ivltests
+vstd:pic		EF contrib pictest diff=log/pic.log:gold/pic.gold
+vstd:pr751	normal ivltests diff=log/pr751.log:gold/pr751_std.gold
+vstd:pr987	normal ivltests diff=log/pr987.log:gold/pr987_std.gold
+vstd:pr2800985a		EF ivltests
+vstd:pr2800985b		EF ivltests
+vstd:readmem-error	EF ivltests
+vstd:readmem-invalid	CE ivltests
+vstd:scan-invalid	EF ivltests
+vstd:sel_rval_bit_ob	normal ivltests
+vstd:writemem-error	EF ivltests
+vstd:writemem-invalid	CE ivltests
+# spacing differences are also OK
+vstd:pr812	normal ivltests diff=log/pr812.log:gold/pr812_std.gold
+vstd:resetall2	normal ivltests diff=log/resetall2.log:gold/resetall2_std.gold
+vstd:pr1645277	normal ivltests diff=log/pr1645277.log:gold/pr1645277_std.gold
+vstd:pr1792152	normal ivltests diff=log/pr1792152.log:gold/pr1792152_std.gold
+# This has a trialing space is that OK?
+vstd:pr1661640	normal ivltests diff=log/pr1661640.log:gold/pr1661640_std.gold
+# and extra leading zeros
+vstd:pr905	normal ivltests diff=log/pr905.log:gold/pr905_std.gold
+vstd:pr985	normal ivltests diff=log/pr985.log:gold/pr985_std.gold
+
+# $timeformat is ignored if there is no timescale.
+vstd:pr530a		EF ivltests
+
+# The SV random functions return different results. Is this OK?
+vstd:urand		EF ivltests diff=log/urand.log:gold/urand.gold
+vstd:urand_r		EF ivltests diff=log/urand_r.log:gold/urand_r.gold
+
+# Some out of bounds selects can fail. Though you should still get the
+# in bounds bits. Some of these do not do that!
+vstd:pr1960633		EF ivltests
+vstd:pr1978358d		EF ivltests
+vstd:pr1993479		EF ivltests
+vstd:pr2166311		NI
+vstd:pr2835632a		NI
+
+# A 'bx or 'bz in a part select gives odd messages, but failing is OK.
+vstd:sel_rval_part_ob	NI
+vstd:pr2434688		NI
+vstd:pr2434688b		NI
+
+# No support for $fflush with a zero mcd.
+vstd:pr2842621		NI
+
+# Icarus prints a string parameter as a string others don't.
+vstd:param_string	EF ivltests
+
+# 'bx/'bz at T0 or ending timepoint missing.
+vstd:multi_driver_delay		EF ivltests
+vstd:multi_driver_delay_std	normal ivltests
+vstd:pr528	normal ivltests diff=log/pr528.log:gold/pr528_std.gold
+vstd:pr528b	normal ivltests diff=log/pr528b.log:gold/pr528b_std.gold
+vstd:pr590	normal ivltests diff=log/pr590.log:gold/pr590_std.gold
+vstd:pr923	normal ivltests diff=log/pr923.log:gold/pr923_std.gold
+vstd:pr1645518	normal ivltests diff=log/pr1645518.log:gold/pr1645518_std.gold
+vstd:pr1787423b		EF ivltests
+vstd:pr1787423b_std	normal ivltests
+vstd:pr1877743		EF ivltests
+vstd:pr1877743_std	normal ivltests
+vstd:pr1883052		EF ivltests
+vstd:pr1883052_std	normal ivltests
+vstd:pr1883052b		EF ivltests
+vstd:pr1883052b_std	normal ivltests
+vstd:sdf1	normal ivltests diff=log/sdf1.log:gold/sdf1_std.gold
+vstd:sdf2	normal ivltests diff=log/sdf2.log:gold/sdf1_std.gold
+vstd:sdf3	normal ivltests diff=log/sdf3.log:gold/sdf1_std.gold
+vstd:sdf4	normal ivltests diff=log/sdf4.log:gold/sdf1_std.gold
+vstd:sdf7	normal ivltests diff=log/sdf7.log:gold/sdf7_std.gold
+vstd:specify5	normal ivltests diff=log/specify5.log:gold/specify5_std.gold
+
+# No -0 support.
+vstd:pr1752823a		EF ivltests
+vstd:pr1752823b		EF ivltests
+# numeric display differences no trailing zeros, etc.
+vstd:localparam_type	normal ivltests diff=log/localparam_type.log:gold/parameter_type_std.gold
+vstd:parameter_type	normal ivltests diff=log/parameter_type.log:gold/parameter_type_std.gold
+vstd:nested_func	normal ivltests diff=log/nested_func.log:gold/nested_func_std.gold
+vstd:pr1628300	normal	ivltests diff=log/pr1628300.log:gold/pr1628300_std.gold
+vstd:pr1701890	normal ivltests diff=log/pr1701890.log:gold/pr1701890_std.gold
+vstd:pr2039694	normal ivltests diff=log/pr2039694.log:gold/pr2039694_std.gold
+vstd:pr2251119	normal ivltests diff=log/pr2251119.log:gold/pr2251119_std.gold
+vstd:pr2792897		EF ivltests
+vstd:pr2792897_std	normal ivltests
+
+# Missing T0 event and space difference in %d.
+vstd:pr1002	normal ivltests diff=log/pr1002.log:gold/pr1002_std.gold
+# only the space difference here.
+vstd:pr1002a	normal ivltests diff=log/pr1002a.log:gold/pr1002a_std.gold
+vstd:pr584 	normal ivltests diff=log/pr584.log:gold/pr584_std.gold
+
+#-------------------------------
+# Unsupported Icarus extensions.
+#-------------------------------
+
+# No support of left aligned formats, etc.
+vstd:pr2476430		NI
+
+# No support for the M_* defines add a fake include file to make it work?
+vstd:test_va_math	NI
+vstd:test_vams_math	NI
+
+# $sscanf can not get the value from a parameter.
+vstd:pr2728547		NI
+
+# No $sizeof
+vstd:concat1		NI
+vstd:concat2		NI
+
+# No $abstime
+vstd:abstime		NI
+vstd:pr2590274a		NI
+vstd:pr2590274b		NI
+vstd:pr2590274c		NI
+
+# No $simtime
+vstd:time6		NI
+# not checked yet. Can some of these be recoded to use a standard function?
+vstd:blocking_repeat_ec	NI
+vstd:ca_time		NI
+vstd:nb_array_pv	NI
+vstd:nb_ec_array_pv	NI
+vstd:nb_ec_array	NI
+vstd:nb_ec_pv		NI
+vstd:nb_ec_pv2		NI
+vstd:nb_ec_real		NI
+vstd:nb_ec_vector	NI
+vstd:pr534		NI
+vstd:pr639		NI
+vstd:pr2486350		NI
+vstd:stime		NI
+vstd:swrite		NI
+
+# No support for $simparam.
+vstd:simparam		NI
+
+# No support for $readmempath.
+vstd:pr2509349a		NI
+vstd:pr2509349b		NI
+
+# No support for $is_signed.
+vstd:pr1494799		NI
+vstd:pr2428890c		NI
+
+# No support for $bits.
+vstd:bitwidth3		NI
+#vstd:clog2		NI
+vstd:param_vec2		NI
+vstd:param_vec		NI
+vstd:pr498		NI
+vstd:pr721		NI
+vstd:pr809b		NI
+vstd:pr809		NI
+vstd:pr979		NI
+vstd:pr1000		NI
+vstd:pr1609611		NI
+vstd:pr1750870		NI
+vstd:pr1765789		NI
+vstd:pr1771903		NI
+vstd:pr1793749		NI
+vstd:pr1861212b		NI
+#vstd:pr1864110c	NI
+vstd:pr1864115		NI
+vstd:pr2806449		NI
+vstd:pr2877555		NI
+vstd:real4		NI
+vstd:tern3		NI
+#vstd:v2005_math	NI
+
+# No support for math functions. These are really 1364-2005 bugs.
+vstd:ca_real_logical	NI
+vstd:cast_int		NI
+vstd:clog2-signal	NI
+vstd:pr2139593		NI
+vstd:pr2152011		NI
+vstd:pr2728812a		NI
+vstd:real_logical	NI
+vstd:va_math		NI
+
+# The optional system functions are not supported.
+vstd:warn_opt_sys_tf	NI
+
+# Some $printtimescale differences (NULL port, selects, etc.).
+vstd:pr1701855		NI
+vstd:pr1701855b		NI
+
+# No support for wire real. Is there some way to add these?
+vstd:ca_64delay		NI
+vstd:cast_real_signed	NI
+vstd:cast_real_unsigned	NI
+vstd:ca_time		NI
+vstd:ca_var_delay	NI
+vstd:clog2		NI
+vstd:pr1861212c		NI
+vstd:pr1861212d		NI
+vstd:pr1864110a		NI
+vstd:pr1864110b		NI
+vstd:pr1864110c		NI
+vstd:pr1864115		NI
+vstd:pr1873372		NI
+vstd:pr1880003		NI
+vstd:pr1898293		NI
+vstd:pr2123158		NI
+vstd:pr2123190		NI
+vstd:pr2453002b		NI
+vstd:pr2456943		NI
+vstd:pr2715748		NI
+vstd:pr2806474		NI
+vstd:real8		NI
+vstd:real_array		NI
+vstd:real_concat_invalid1	NI
+vstd:real_mod_in_ca	NI
+vstd:real_op_fail	NI
+vstd:real_pulse_clean	NI
+vstd:real_pwr_in_ca	NI
+vstd:real_select_invalid	NI
+vstd:real_wire_array	NI
+vstd:real_wire_force_rel	NI
+vstd:tern8		NI
+vstd:v2005_math		NI
+# or reg real
+vstd:pr1861212a		NI
+
+# No support for Icarus escaped defines ``
+vstd:macro_with_args	NI
+vstd:macro_str_esc	NI
+vstd:pr622		NI
+vstd:pr1741212		NI
+vstd:pr1912112		NI
+vstd:pr1925360		NI
+vstd:pr1925360		NI
+
+# No support for `ifdef, etc. without an identifier.
+vstd:elsif_test		NI
+
+# If a module has a `timescale then all must have a `timescale.
+vstd:pr434		NI
+vstd:pr1403406		NI
+vstd:pr1403406a		NI
+vstd:pr1403406b		NI
+vstd:resetall		NI
+
+# No support for relative include file paths
+vstd:pr2215342		NI
+
+# No support for extra paramater being passed to a module. Is this a bug?
+vstd:param_test3	NI
+
+# Icarus allows missing parameters, should this generate a warning/error?
+vstd:pr1716276		CE ivltests
+
+# Icarus allows a reg as the output path connection. Is this a bug?
+vstd:sdf5		NI
+vstd:sdf6		NI
+vstd:specify4		NI
+
+# Cannot force/assign part of a variable, but you can do this on a net.
+vstd:pr1832097b		NI
+vstd:assign_deassign_pv	NI
+vstd:force_lval_part	NI
+vstd:force_release_reg_pv	NI
+vstd:pr2943394		NI
+
+# No support for a time with a width.
+vstd:automatic_events3	NI
+vstd:pr243		NI
+vstd:pr245		NI
+vstd:pr1985582		NI
+vstd:pr2815398a		NI
+# but these can be tested without a width. This one also has a missing EOS call.
+vstd:pr243_std		normal	ivltests diff=log/pr243_std.log:gold/pr243_std.gold
+# and this one has different formatting.
+vstd:pr1985582_std	normal ivltests diff=log/pr1985582_std.log:gold/pr1985582_std.gold
+
+# No support for real modulus.
+vstd:mixed_type_div_mod	NI
+vstd:pr1528093		NI
+
+# No support for divide by zero to get inf.
+vstd:pr1703120		CE
+
+# Icarus does not truncate results in a self determined context.
+vstd:pr1639064b		EF ivltests diff=log/pr1639064b.log:gold/pr1639064b.gold
+
+# No support for the fileio routines ($fopen{r,w,a}).
+vstd:fileio		NI
+
+# .<port>(net) connections for UDP instantiations (see udp_dff_std).
+vstd:udp_dff		NI
+vstd:pr938b		NI
+
+# Binary ~& and ~|.
+vstd:binary_nand	NI
+vstd:binary_nor	NI
+
+# No support for VAMS
+vstd:analog1		NI
+vstd:analog2		NI
+vstd:vams_abs1		NI
+# also reg/wire real.
+vstd:vams_abs2		NI
+vstd:scaled_real	NI
+vstd:value_range1	NI
+vstd:value_range2	NI
+
+# The bool type
+vstd:bool1		NI
+vstd:compare_bool_reg	NI
+
+# No support for comamnd line parameters.
+vstd:cmdline_parm1	NI
+
 #==========
 # For version 0.8 do these instead of the default case.
 #==========
@@ -1052,6 +1430,7 @@ udp_x	normal	ivltests
 udp_bx	normal	ivltests gold=udp_bx.gold
 udp_sched	normal	ivltests
 udp_dff	normal	ivltests
+udp_dff_std	normal	ivltests
 wireadd1 normal ivltests
 wiremod1 normal ivltests
 wiresl normal ivltests
@@ -1472,6 +1851,7 @@ timeform1	normal	ivltests diff=log/timeform1.log:gold/timeform1.gold
 timeform2	normal	ivltests diff=log/timeform2.log:gold/timeform2.gold
 pr183		CO,-gno-specify	ivltests
 pr245		normal	ivltests diff=log/pr245.log:gold/pr245.gold
+pr245_std	normal	ivltests diff=log/pr245_std.log:gold/pr245.gold
 pr377		normal	ivltests diff=log/pr377.log:gold/pr377.gold
 pr478		normal	ivltests
 pr487		normal	ivltests diff=log/pr487.log:gold/pr487.gold
@@ -1637,6 +2017,7 @@ pr913		normal	ivltests
 pr923		normal  ivltests diff=log/pr923.log:gold/pr923.gold
 pr938		normal  ivltests diff=log/pr938.log:gold/pr938.gold
 pr938b		normal  ivltests diff=log/pr938b.log:gold/pr938.gold
+pr938b_std	normal  ivltests diff=log/pr938b_std.log:gold/pr938.gold
 pr941		normal	ivltests
 prng		normal	ivltests
 race		normal	ivltests
@@ -2069,6 +2450,7 @@ pr2117488	normal	ivltests
 automatic_events	normal	ivltests diff=log/automatic_events.log:gold/automatic_events.gold
 automatic_events2	normal	ivltests diff=log/automatic_events2.log:gold/automatic_events.gold
 automatic_events3	normal	ivltests diff=log/automatic_events3.log:gold/automatic_events3.gold
+automatic_events3_std	normal	ivltests diff=log/automatic_events3_std.log:gold/automatic_events3_std.gold
 automatic_task	normal	ivltests diff=log/automatic_task.log:gold/automatic_task.gold
 automatic_task2	normal	ivltests diff=log/automatic_task2.log:gold/automatic_task2.gold
 automatic_task3	normal	ivltests diff=log/automatic_task3.log:gold/automatic_task3.gold
@@ -2283,6 +2665,7 @@ pr2806474	normal	ivltests
 pr2809288	CE	ivltests diff=log/pr2809288.log:gold/pr2809288.gold
 real_array	normal	ivltests
 pr2815398a	normal	ivltests diff=log/pr2815398a.log:gold/pr2815398a.gold
+pr2815398a_std	normal	ivltests
 pr2815398b	normal	ivltests diff=log/pr2815398b.log:gold/pr2815398b.gold
 pr2818823	normal	ivltests
 sv_timeunit_prec	normal,-g2009	ivltests
@@ -2304,6 +2687,7 @@ pr2835632a	normal	ivltests
 pr2835632b	normal	ivltests
 pr2842185	normal	ivltests
 pr2842621	normal	ivltests diff=log/pr2842621.log:gold/pr2842621.gold
+pr2842621_std	normal	ivltests
 genvar_scopes	normal	ivltests
 array_select	normal	ivltests
 real_array_nb	normal	ivltests
@@ -2346,3 +2730,6 @@ pr2930506	normal	ivltests
 pr2937417	normal	ivltests
 pr2943394	normal	ivltests
 pr2951657	normal	ivltests
+pr2969724	normal	ivltests
+named_event_no_edges	CE	ivltests
+fatal_et_al	normal	ivltests diff=log/fatal_et_al.log:gold/fatal_et_al.gold

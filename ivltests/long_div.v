@@ -13,6 +13,7 @@ module test();
     b = 'h1;
     a_l = 'h1;
     b_l = 'h1;
+    #1; // Need some delay for the calculations to run.
 //    b_l = 'h0; // This will now fail with an error.
     $display("Using normal math routines.");
     $display("Result:  %0d\nModulus: %h", result, mod);

@@ -1,8 +1,10 @@
  
 module kk_timing (A, B, C, D, E, F);
 
- input A, B, C, D, E, F;
- wire A, B, C, D, E, F;
+ input A, B, D, E, F;
+ output C;
+ wire A, B, D, E, F;
+ reg C;
  wire [1:0] BL;
  wire [1:0] BL_X;
 

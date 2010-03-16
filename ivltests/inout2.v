@@ -8,8 +8,8 @@
  */
 module main;
 
-   wire [1:0] a = drv;
    reg [1:0]  drv = 2'b0z;
+   wire [1:0] a = drv;
    reg 	      en;
 
    bi dut0(a[0], en);

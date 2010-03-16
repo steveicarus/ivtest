@@ -32,6 +32,7 @@ module main;
      begin
         line = 8'h30;
 
+        #1; // Need some delay for the assignments to run.
 	got1 = { (b[3:0] == line[7:4]), (a[3:0] == line[3:0]) };
 	got2 = test(a, b, line);
 

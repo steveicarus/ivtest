@@ -75,6 +75,7 @@ module BENCH ();
 	reg clock, reset;
 
 	integer count;
+        integer errors;
 
 	wire_test_case usingwire (array_out1, clock, reset);
 	always_test_case usingalways (array_out2, clock, reset);
@@ -104,7 +105,6 @@ module BENCH ();
 		endcase
 	end
 
-   integer errors;
    initial errors = 0;
    
    always @(negedge clock)

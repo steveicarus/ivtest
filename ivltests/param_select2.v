@@ -25,11 +25,11 @@ module main;
 
    parameter value = 2'b10;
    parameter x = 0;
+   parameter y = 1;
    parameter pa = value[0];
    parameter pb = value[1];
    parameter px = value[x];
    parameter py = value[y];
-   parameter y = 1;
 
    initial begin
 

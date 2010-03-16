@@ -9,19 +9,19 @@ module top;
 
   initial begin
     in = 'd0; rin = 0.0;
-    if (out != 1'b0 && rout != 1'b0) begin
+    #1 if (out != 1'b0 && rout != 1'b0) begin
       $display("FAILED 0/0.0 check");
       pass = 1'b0;
     end
 
     #1 in = 'd1; rin = 1.0;
-    if (out != 1'b0 && rout != 1'b0) begin
+    #1 if (out != 1'b0 && rout != 1'b0) begin
       $display("FAILED 1/1.0 check");
       pass = 1'b0;
     end
 
     #1 in = 'd2; rin = 2.0;
-    if (out != 1'b1 && rout != 1'b1) begin
+    #1 if (out != 1'b1 && rout != 1'b1) begin
       $display("FAILED 2/2.0 check");
       pass = 1'b0;
     end

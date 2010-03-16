@@ -17,6 +17,7 @@ module test;
     in[2][3:2] = 2'b01;
     in[j+2][3:2] = 2'b10;
 
+    #1;
     $display("out[0]: %b", out[0]);
     $display("out[1]: %b", out[1]);
     $display("out[2]: %b", out[2]);

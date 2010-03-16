@@ -15,19 +15,19 @@ module top;
   initial begin
     rl1 = 0.0;
     rl2 = 0.0;
-    if ({eq,ne,gt,ge,lt,le} != 6'b100101) begin
+    #1 if ({eq,ne,gt,ge,lt,le} != 6'b100101) begin
       $display("Failed: expected %b, received %b", 6'b100101,
                {eq,ne,gt,ge,lt,le});
       passed = 1'b0;
     end
     #1 rl2 = -1.0;
-    if ({eq,ne,gt,ge,lt,le} != 6'b010011) begin
+    #1 if ({eq,ne,gt,ge,lt,le} != 6'b010011) begin
       $display("Failed: expected %b, received %b", 6'b010011,
                {eq,ne,gt,ge,lt,le});
       passed = 1'b0;
     end
     #1 rl2 = 1.0;
-    if ({eq,ne,gt,ge,lt,le} != 6'b011100) begin
+    #1 if ({eq,ne,gt,ge,lt,le} != 6'b011100) begin
       $display("Failed: expected %b, received %b", 6'b001100,
                {eq,ne,gt,ge,lt,le});
       passed = 1'b0;

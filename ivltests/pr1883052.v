@@ -12,7 +12,7 @@ module top;
     #0.9;
     if (icon !== 'bz) begin
       pass = 1'b0;
-      $display("concatenation value not delayed, expected 'bx got %b.", icon);
+      $display("concatenation value not delayed, expected 'bz got %b.", icon);
     end
 
     #0.1;
