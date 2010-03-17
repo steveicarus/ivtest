@@ -2732,3 +2732,4 @@ pr2951657	normal	ivltests
 pr2969724	normal	ivltests
 named_event_no_edges	CE	ivltests
 fatal_et_al	normal	ivltests diff=log/fatal_et_al.log:gold/fatal_et_al.gold
+pr2971207	normal	ivltests
