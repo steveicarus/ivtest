@@ -105,7 +105,7 @@ vstd:sp2	EF ivltests
 # I believe these should be accepted, but they need to be checked.
 vstd:pr1723367.	CE ivltests
 
-# I'm not sure which simulator has teh bug. More research is needed.
+# I'm not sure which simulator has the bug. More research is needed.
 vstd:pr1742910	EF ivltests
 
 # A partially out of bounds write should still write the in bounds bits.
@@ -269,7 +269,7 @@ vstd:pr2509349b		NI
 vstd:pr1494799		NI
 vstd:pr2428890c		NI
 
-# No support for $bits.
+# No support for $bits. Try with SV flag.
 vstd:bitwidth3		NI
 #vstd:clog2		NI
 vstd:param_vec2		NI
@@ -758,6 +758,8 @@ v0.8:pr1883052b	NI
 v0.8:concat3	NI
 v0.8:concat4	NI
 v0.8:pr2688910	NI
+v0.8:pr2974216	NI
+v0.8:pr2974216b	NI
 v0.8:repeat2	NI
 v0.8:repl_zero_wid_pass	NI
 
@@ -2740,3 +2742,5 @@ pr2969724	normal	ivltests
 named_event_no_edges	CE	ivltests
 fatal_et_al	normal	ivltests diff=log/fatal_et_al.log:gold/fatal_et_al.gold
 pr2971207	normal	ivltests
+pr2974216	normal	ivltests
+pr2974216b	normal	ivltests
