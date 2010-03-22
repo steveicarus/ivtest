@@ -472,10 +472,11 @@ v0.8:pr2788686	NI
 v0.8:assign3.2E	NI
 v0.8:assign_deassign_pv	NI
 
-# V0.8 does not support the force/release of signal parts.
+# V0.8 does not support the force/release of signal parts or reals.
 v0.8:force_release_reg_pv	NI
 v0.8:force_release_wire_pv	NI
 v0.8:force_release_wire8_pv	NI
+v0.8:pr2943394	NI
 
 # V0.8 does not support real functions.
 v0.8:pr978	NI
@@ -520,6 +521,7 @@ v0.8:pr2865563	NI
 v0.8:pr2909386a	NI
 v0.8:pr2909386b	NI
 v0.8:pr2913404	NI
+v0.8:pr2913927	NI	# Also indexed part selects.
 v0.8:real_pwr_in_ca	NI
 v0.8:rl_pow	NI
 
@@ -671,6 +673,7 @@ v0.8:pr2350988	NI
 v0.8:pr2355304	NI
 v0.8:pr2809288	NI
 v0.8:pr2815398a	NI
+v0.8:pr2815398a_std	NI
 v0.8:pr2815398b	NI
 v0.8:pr2842185	NI
 v0.8:pr2909414	NI
@@ -728,6 +731,7 @@ v0.8:pr2715558	NI	# No support for CA strength resolution.
 v0.8:pr2721213	NI	# No support for a task with no arguments?
 v0.8:pr2790236	NI	# No support for output reg.
 v0.8:pr2883958	NI	# No support for greater than 32 bit delays in a CA.
+v0.8:named_event_no_edges	NI	# No check for pos/negedge on events.
 v0.8:real_invalid_ops	NI	# No checks for invalid real operators, etc.
 v0.8:task_iotypes2	NI	# Port types are not supported (integer, etc.).
 v0.8:timescale3	NI	# No check for out of order timescale directive.
@@ -744,6 +748,7 @@ v0.8:pr2579479	NI
 v0.8:pr2834340	NI
 v0.8:pr2832234	NI
 v0.8:pr2834340b	NI
+v0.8:pr2937417	NI
 v0.8:tranif1	NI
 
 # V0.8 does not support the `resetall directive
@@ -837,6 +842,7 @@ v0.8:pr2792897	NI	# $format not supported.
 v0.8:pr2800985a	NI	# $ferror not supported.
 v0.8:pr2800985b	NI	# $ferror not supported.
 v0.8:pr2877555	NI	# $clog2 not supported.
+v0.8:pr2971207	NI      # $swrite not supported.
 v0.8:pv_undef_sig_sel	NI	# $sformt not supported.
 v0.8:swrite	NI      # $swrite not supported.
 v0.8:urand	NI	# $urandom not supported.
@@ -879,6 +885,7 @@ v0.8:automatic_error13	NI
 v0.8:automatic_events	NI
 v0.8:automatic_events2	NI
 v0.8:automatic_events3	NI
+v0.8:automatic_events3_std	NI
 v0.8:automatic_task	NI
 v0.8:automatic_task2	NI
 v0.8:automatic_task3	NI
@@ -904,6 +911,7 @@ v0.8:readmem-invalid	NI
 v0.8:writemem-invalid	NI
 
 # V0.8 does not support SystemVerilog
+v0.8:fatal_et_al	NI
 v0.8:sv_timeunit_prec	NI
 v0.8:sv_timeunit_prec_fail	NI
 
@@ -1104,6 +1112,7 @@ v0.8:pr2918095	EF ivltests
 v0.8:pr2922063	EF ivltests
 v0.8:pr2922063a	EF ivltests
 v0.8:pr2922063b	EF ivltests
+v0.8:pr2969724	EF ivltests
 v0.8:shift5	EF ivltests diff=log/shift5.log:gold/shift5.gold
 v0.8:signed12	EF ivltests diff=log/signed12.log:gold/signed12.gold
 v0.8:signed_a	EF ivltests
