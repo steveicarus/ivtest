@@ -1005,6 +1005,9 @@ test_mos_strength_reduction: Passed.
                        sdf5: Passed.
                        sdf6: Passed.
                        sdf7: Passed.
+                sdf_del_min: Passed.
+                sdf_del_typ: Passed.
+                sdf_del_max: Passed.
             macro_with_args: Passed.
                      macro2: Passed.
                  pr1862744a: Passed.
@@ -1483,6 +1486,8 @@ test_mos_strength_reduction: Passed.
        named_event_no_edges: Passed - CE.
                 fatal_et_al: Passed.
                   pr2971207: Passed.
+                  pr2974216: Passed.
+                 pr2974216b: Passed.
 ============================================================================
 Test results:
-  Total=1483, Passed=1480, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1488, Passed=1485, Failed=3, Not Implemented=0, Expected Fail=0
