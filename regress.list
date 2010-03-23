@@ -1126,6 +1126,7 @@ v0.8:writemem-error	EF ivltests diff=log/writemem-error.log:gold/writemem-error.
 #==========
 
 # V0.9 does not support SystemVerilog
+v0.9:fatal_et_al	NI
 v0.9:sv_timeunit_prec	NI
 v0.9:sv_timeunit_prec_fail	NI
 
@@ -1151,6 +1152,16 @@ v0.9:pr699	EF ivltests
 v0.9:pr699b	EF ivltests
 v0.9:pr2832234	EF ivltests
 v0.9:pr2849783	EF ivltests
+
+# V0.9 does not have working run time selects of constant values.
+v0.9:pr2913927	EF ivltests
+
+# V0.9 does not have the reworked tran functionality.
+v0.9:pr2937417	EF ivltests
+
+# V0.9 does not have the ability to select the SDF delays you always get typ.
+v0.9:sdf_del_min	EF ivltests
+v0.9:sdf_del_max	EF ivltests
 
 # V0.9 does not have scope rework patch.
 v0.9:pr2924354	EF ivltests diff=log/pr2924354.log:gold/pr2924354.gold
