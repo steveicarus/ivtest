@@ -2764,3 +2764,4 @@ fatal_et_al	normal	ivltests diff=log/fatal_et_al.log:gold/fatal_et_al.gold
 pr2971207	normal	ivltests
 pr2974216	normal	ivltests
 pr2974216b	normal	ivltests
+pr2976242	normal	ivltests
