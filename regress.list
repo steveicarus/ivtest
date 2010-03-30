@@ -794,6 +794,7 @@ v0.8:pr1950282	NI
 v0.8:pr2043324	NI
 v0.8:pr2219441	NI
 v0.8:pr2219441b	NI
+v0.8:pr2976242	NI
 
 # V0.8 does not support $sscanf/$fscanf.
 v0.8:pr1687193	NI
@@ -808,6 +809,7 @@ v0.8:scanf2	NI
 v0.8:scanf3	NI
 
 # V0.8 does not support $sdf_annotate.
+v0.8:pr2972866	NI
 v0.8:sdf1	NI
 v0.8:sdf2	NI
 v0.8:sdf3	NI
@@ -2762,6 +2764,7 @@ pr2969724	normal	ivltests
 named_event_no_edges	CE	ivltests
 fatal_et_al	normal	ivltests diff=log/fatal_et_al.log:gold/fatal_et_al.gold
 pr2971207	normal	ivltests
+pr2972866	normal,-Tmax,-gspecify	ivltests diff=log/pr2972866.log:gold/pr2972866.gold
 pr2974216	normal	ivltests
 pr2974216b	normal	ivltests
 pr2976242	normal	ivltests

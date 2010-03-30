@@ -295,6 +295,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr2043324: Not Implemented.
                   pr2219441: Not Implemented.
                  pr2219441b: Not Implemented.
+                  pr2976242: Not Implemented.
                   pr1687193: Not Implemented.
                   pr1876798: Not Implemented.
                   pr2029336: Not Implemented.
@@ -305,6 +306,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                scan-invalid: Not Implemented.
                      scanf2: Not Implemented.
                      scanf3: Not Implemented.
+                  pr2972866: Not Implemented.
                        sdf1: Not Implemented.
                        sdf2: Not Implemented.
                        sdf3: Not Implemented.
@@ -1492,4 +1494,4 @@ test_mos_strength_reduction: Passed.
                   pr2951657: Passed.
 ============================================================================
 Test results:
-  Total=1490, Passed=974, Failed=3, Not Implemented=399, Expected Fail=114
+  Total=1492, Passed=974, Failed=3, Not Implemented=401, Expected Fail=114

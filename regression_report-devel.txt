@@ -1486,8 +1486,10 @@ test_mos_strength_reduction: Passed.
        named_event_no_edges: Passed - CE.
                 fatal_et_al: Passed.
                   pr2971207: Passed.
+                  pr2972866: Passed.
                   pr2974216: Passed.
                  pr2974216b: Passed.
+                  pr2976242: Passed.
 ============================================================================
 Test results:
-  Total=1488, Passed=1485, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1490, Passed=1487, Failed=3, Not Implemented=0, Expected Fail=0
