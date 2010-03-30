@@ -1,4 +1,4 @@
-Running VHDL tests for Icarus Verilog version: 0.9.
+Running VHDL tests for Icarus Verilog version: 0.10.
 ----------------------------------------------------------------------
           hello1: Passed.
             mux2: Passed.
@@ -271,7 +271,7 @@ delay_assign_nb2: Passed.
        pr2489116: Passed.
        pr2489237: Passed - CO.
        pr2516774: Passed.
-      pr2516774b: Passed - CO.
+      pr2516774b: ==> Failed - running ghdl.
        pr2527366: Passed - CO.
        pr2529315: Passed - CO.
       pr2529315b: Passed - CO.
@@ -285,6 +285,7 @@ delay_assign_nb2: Passed.
       pr2555813b: Passed - CO.
        pr2554029: Passed - CO.
        pr2554124: Passed - CO.
+      simple_gen: Passed.
 ======================================================================
 Test results:
-  Total=285, Passed=282, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=286, Passed=282, Failed=4, Not Implemented=0, Expected Fail=0
