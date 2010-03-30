@@ -1,5 +1,6 @@
 Running compiler/VVP tests for Icarus Verilog version: 0.9.
 ----------------------------------------------------------------------------
+                fatal_et_al: Not Implemented.
            sv_timeunit_prec: Not Implemented.
       sv_timeunit_prec_fail: Not Implemented.
               cmdline_parm1: Not Implemented.
@@ -14,6 +15,10 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                      pr699b: Passed - expected fail.
                   pr2832234: Passed - expected fail.
                   pr2849783: Passed - expected fail.
+                  pr2913927: Passed - expected fail.
+                  pr2937417: Passed - expected fail.
+                sdf_del_min: Passed - expected fail.
+                sdf_del_max: Passed - expected fail.
                   pr2924354: Passed - expected fail.
                   pr2913404: Passed - expected fail.
                       real5: Passed.
@@ -242,6 +247,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                      udp_bx: Passed.
                   udp_sched: Passed.
                     udp_dff: Passed.
+                udp_dff_std: Passed.
                    wireadd1: Passed.
                    wiremod1: Passed.
                      wiresl: Passed.
@@ -660,7 +666,8 @@ test_mos_strength_reduction: Passed.
                   timeform2: Passed.
                       pr183: Passed - CO.
                       pr245: Passed.
-                      pr377: Passed.
+                  pr245_std: Passed.
+                      pr377: ==> Failed - output does not match gold file.
                       pr478: Passed.
                       pr487: Passed.
                       pr492: Passed.
@@ -779,6 +786,7 @@ test_mos_strength_reduction: Passed.
                       pr923: Passed.
                       pr938: Passed.
                      pr938b: Passed.
+                 pr938b_std: Passed.
                       pr941: Passed.
                        prng: Passed.
                        race: Passed.
@@ -794,7 +802,7 @@ test_mos_strength_reduction: Passed.
                          eq: Passed.
                        neq1: Passed.
                      pr1000: Passed.
-                     pr1002: Passed.
+                     pr1002: ==> Failed - output does not match gold file.
                     pr1002a: Passed.
                      pr1007: Passed.
                      pr1008: Passed.
@@ -1015,6 +1023,7 @@ test_mos_strength_reduction: Passed.
                        sdf5: Passed.
                        sdf6: Passed.
                        sdf7: Passed.
+                sdf_del_typ: Passed.
             macro_with_args: Passed.
                      macro2: Passed.
                  pr1862744a: Passed.
@@ -1211,6 +1220,7 @@ test_mos_strength_reduction: Passed.
            automatic_events: Passed.
           automatic_events2: Passed.
           automatic_events3: Passed.
+      automatic_events3_std: Passed.
              automatic_task: Passed.
             automatic_task2: Passed.
             automatic_task3: Passed.
@@ -1422,6 +1432,7 @@ test_mos_strength_reduction: Passed.
                   pr2809288: Passed - CE.
                  real_array: Passed.
                  pr2815398a: Passed.
+             pr2815398a_std: Passed.
                  pr2815398b: Passed.
                   pr2818823: Passed.
                   pr2823414: Passed - CE.
@@ -1439,6 +1450,7 @@ test_mos_strength_reduction: Passed.
                  pr2835632b: Passed.
                   pr2842185: Passed.
                   pr2842621: Passed.
+              pr2842621_std: Passed.
               genvar_scopes: Passed.
                array_select: Passed.
            pv_undef_sig_sel: Passed.
@@ -1470,6 +1482,14 @@ test_mos_strength_reduction: Passed.
                   pr2929913: Passed.
                   pr2930506: Passed.
                   pr2943394: Passed.
+                  pr2951657: ==> Failed - output does not match gold file.
+                  pr2969724: Passed.
+       named_event_no_edges: Passed - CE.
+                  pr2971207: Passed.
+                  pr2972866: ==> Failed - output does not match gold file.
+                  pr2974216: Passed.
+                 pr2974216b: Passed.
+                  pr2976242: ==> Failed - running iverilog.
 ============================================================================
 Test results:
-  Total=1470, Passed=1453, Failed=1, Not Implemented=6, Expected Fail=10
+  Total=1490, Passed=1463, Failed=6, Not Implemented=7, Expected Fail=14
