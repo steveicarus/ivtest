@@ -16,6 +16,7 @@ regression_report.txt
 vhdl_regression_report.txt
 
 # These should be cleaned up, but ignore them as well.
+*~
 *.o
 *.vpi
 src/vcddiff
