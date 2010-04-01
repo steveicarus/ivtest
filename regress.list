@@ -1169,6 +1169,9 @@ v0.9:sdf_del_max	EF ivltests
 # V0.9 does not have scope rework patch.
 v0.9:pr2924354	EF ivltests diff=log/pr2924354.log:gold/pr2924354.gold
 
+# V0.9 does not have the modpath source patch.
+v0.9:sdf8	EF,-gspecify	ivltests diff=log/sdf8.log:gold/sdf8.gold
+
 # V0.9 can not correctly convert some large (63/64+ bit) binary values to real.
 v0.9:pr2913404	EF ivltests
 v0.9:real5	normal	ivltests diff=log/real5.log:gold/real5-v0.9.gold
