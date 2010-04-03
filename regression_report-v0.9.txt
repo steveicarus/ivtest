@@ -20,6 +20,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                 sdf_del_min: Passed - expected fail.
                 sdf_del_max: Passed - expected fail.
                   pr2924354: Passed - expected fail.
+                       sdf8: Passed - expected fail.
                   pr2913404: Passed - expected fail.
                       real5: Passed.
                     vcd-dup: Passed.
@@ -667,7 +668,7 @@ test_mos_strength_reduction: Passed.
                       pr183: Passed - CO.
                       pr245: Passed.
                   pr245_std: Passed.
-                      pr377: ==> Failed - output does not match gold file.
+                      pr377: Passed.
                       pr478: Passed.
                       pr487: Passed.
                       pr492: Passed.

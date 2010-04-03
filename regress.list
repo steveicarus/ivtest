@@ -817,6 +817,7 @@ v0.8:sdf4	NI
 v0.8:sdf5	NI
 v0.8:sdf6	NI
 v0.8:sdf7	NI
+v0.8:sdf8	NI
 v0.8:sdf_del_min	NI
 v0.8:sdf_del_typ	NI
 v0.8:sdf_del_max	NI
@@ -1167,6 +1168,9 @@ v0.9:sdf_del_max	EF ivltests
 
 # V0.9 does not have scope rework patch.
 v0.9:pr2924354	EF ivltests diff=log/pr2924354.log:gold/pr2924354.gold
+
+# V0.9 does not have the modpath source patch.
+v0.9:sdf8	EF,-gspecify	ivltests diff=log/sdf8.log:gold/sdf8.gold
 
 # V0.9 can not correctly convert some large (63/64+ bit) binary values to real.
 v0.9:pr2913404	EF ivltests
@@ -2281,6 +2285,7 @@ sdf4	normal,-gspecify	ivltests diff=log/sdf4.log:gold/sdf1.gold
 sdf5	normal,-gspecify	ivltests diff=log/sdf5.log:gold/sdf5.gold
 sdf6	normal,-gspecify	ivltests diff=log/sdf6.log:gold/sdf6.gold
 sdf7	normal,-gspecify	ivltests diff=log/sdf7.log:gold/sdf7.gold
+sdf8	normal,-gspecify	ivltests diff=log/sdf8.log:gold/sdf8.gold
 sdf_del_min	normal,-gspecify,-Tmin	ivltests
 sdf_del_typ	normal,-gspecify,-Ttyp	ivltests
 sdf_del_max	normal,-gspecify,-Tmax	ivltests
