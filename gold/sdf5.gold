@@ -1,5 +1,4 @@
-                   0 D=0, Q=z, clk=0
-                   1 D=0, Q=x, clk=0
+                   0 D=0, Q=x, clk=0
                   10 D=0, Q=x, clk=1
                   13 D=0, Q=0, clk=1
                   20 D=1, Q=0, clk=0

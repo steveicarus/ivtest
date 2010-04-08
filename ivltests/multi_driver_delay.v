@@ -15,23 +15,23 @@ module top;
 
   initial begin
     #0.9;
-    if (icon !== 'bz) begin
+    if (icon !== 3'bx) begin
       pass = 1'b0;
-      $display("Failed: concatenation is not delayed, expected 'bz got %b.", icon);
+      $display("Failed: concatenation is not delayed, expected 3'bx got %b.", icon);
     end
-    if (irep !== 'bz) begin
+    if (irep !== 3'bx) begin
       pass = 1'b0;
-      $display("Failed: replication is not delayed, expected 'bz got %b.", irep);
+      $display("Failed: replication is not delayed, expected 3'bx got %b.", irep);
     end
     #0.1;
     #0;
-    if (icon !== 'd5) begin
+    if (icon !== 3'd5) begin
       pass = 1'b0;
-      $display("Failed: concatenation has incorrect value, expected 'd5 got %b.", icon);
+      $display("Failed: concatenation has incorrect value, expected 3'd5 got %b.", icon);
     end
-    if (irep !== 'd7) begin
+    if (irep !== 3'd7) begin
       pass = 1'b0;
-      $display("Failed: replication has incorrect value, expected 'd7 got %b.", irep);
+      $display("Failed: replication has incorrect value, expected 3'd7 got %b.", irep);
     end
     if (pass) $display("PASSED");
   end

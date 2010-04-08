@@ -1,5 +1,4 @@
-time=0: em=z, pz=0, p=00000
-time=1000: em=x, pz=0, p=00000
+time=0: em=x, pz=0, p=00000
 time=1000: em=1, pz=0, p=00000
 time=10000: em=1, pz=0, p=00001
 time=11000: em=0, pz=0, p=00001

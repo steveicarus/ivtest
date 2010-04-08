@@ -21,23 +21,23 @@ module top;
   initial begin
 //    $monitor($realtime,, iconstp,, iconstm,, istring,, iufunc,, isfunc);
     #0.9;
-    if (iconstp !== 'bz) begin
+    if (iconstp !== 4'bx) begin
       pass = 1'b0;
       $display("Integer: constant (positive) value not delayed.");
     end
-    if (iconstm !== 'bz) begin
+    if (iconstm !== 4'bx) begin
       pass = 1'b0;
       $display("Integer: constant (negative) value not delayed.");
     end
-    if (istring !== 'bz) begin
+    if (istring !== 8'bx) begin
       pass = 1'b0;
       $display("Integer: string value not delayed.");
     end
-    if (isfunc !== 'bz) begin
+    if (isfunc !== 4'bx) begin
       pass = 1'b0;
       $display("Integer: system function value not delayed.");
     end
-    if (iufunc !== 'bz) begin
+    if (iufunc !== 4'bx) begin
       pass = 1'b0;
       $display("Integer: user function value not delayed.");
     end
