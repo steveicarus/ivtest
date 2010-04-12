@@ -803,7 +803,7 @@ test_mos_strength_reduction: Passed.
                          eq: Passed.
                        neq1: Passed.
                      pr1000: Passed.
-                     pr1002: Passed.
+                     pr1002: ==> Failed - output does not match gold file.
                     pr1002a: Passed.
                      pr1007: Passed.
                      pr1008: Passed.
@@ -1483,11 +1483,14 @@ test_mos_strength_reduction: Passed.
                   pr2929913: Passed.
                   pr2930506: Passed.
                   pr2943394: Passed.
+                  pr2951657: ==> Failed - output does not match gold file.
                   pr2969724: Passed.
        named_event_no_edges: Passed - CE.
                   pr2971207: Passed.
+                  pr2972866: ==> Failed - output does not match gold file.
                   pr2974216: Passed.
                  pr2974216b: Passed.
+                  pr2976242: ==> Failed - running iverilog.
 ============================================================================
 Test results:
-  Total=1488, Passed=1465, Failed=1, Not Implemented=7, Expected Fail=15
+  Total=1490, Passed=1463, Failed=6, Not Implemented=7, Expected Fail=14
