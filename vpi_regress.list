@@ -73,6 +73,7 @@ v0.9:celldefine	 NI	celldefine.c  celldefine.gold
 v0.8:start_of_simtime1	NI start_of_simtime1.c	start_of_simtime1.log
 v0.8:check_version	NI check_version.c	check_version.gold
 v0.8:pr2966059	NI pr2966059.c	pr2966059.gold
+v0.8:pr2971220	NI pr2971220.c	pr2971220.gold
 
 # Add v0.8 overrides here.
 
@@ -116,6 +117,7 @@ celldefine       normal celldefine.c  celldefine.gold
 start_of_simtime1	normal start_of_simtime1.c	start_of_simtime1.log
 check_version	 normal	check_version.c	check_version.gold
 pr2966059        normal pr2966059.c   pr2966059.gold
+pr2971220        normal pr2971220.c   pr2971220.gold
 
 # Add new tests here. If the test needs a compile option or a
 # different log file to run with an older versions or if it uses
