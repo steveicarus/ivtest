@@ -16,21 +16,21 @@ module main;
 
    initial begin
       #5 ;
-      if (U[0].a !== 2'd0) begin
-	 $display("FAILED -- U[0].a = %d", U[0].a);
+      if (U[0].V.a !== 2'd0) begin
+	 $display("FAILED -- U[0].V.a = %d", U[0].V.a);
 	 $finish;
       end
-      if (U[2].a !== 2'd0) begin
-	 $display("FAILED -- U[2].a = %d", U[2].a);
+      if (U[2].V.a !== 2'd0) begin
+	 $display("FAILED -- U[2].V.a = %d", U[2].V.a);
 	 $finish;
       end
       #10 ;
-      if (U[0].a !== 2'd0) begin
-	 $display("FAILED -- U[0].a = %d", U[0].a);
+      if (U[0].V.a !== 2'd0) begin
+	 $display("FAILED -- U[0].V.a = %d", U[0].V.a);
 	 $finish;
       end
-      if (U[2].a !== 2'd2) begin
-	 $display("FAILED -- U[2].a = %d", U[2].a);
+      if (U[2].V.a !== 2'd2) begin
+	 $display("FAILED -- U[2].V.a = %d", U[2].V.a);
 	 $finish;
       end
       $display("PASSED");

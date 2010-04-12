@@ -657,6 +657,7 @@ v0.8:pr1833754	NI
 v0.8:pr1956211	NI
 v0.8:pr1960625	NI
 v0.8:pr1988302	NI
+v0.8:pr1988302b	NI
 v0.8:pr1988310	NI
 v0.8:pr2018235a	NI
 v0.8:pr2039632	NI
@@ -2421,6 +2422,7 @@ simparam	normal	ivltests
 pr1983762	normal	ivltests
 pr1985582	normal	ivltests diff=log/pr1985582.log:gold/pr1985582.gold
 pr1988302	normal	ivltests
+pr1988302b	CE	ivltests
 pr1988310	normal	ivltests
 dump_memword	normal	ivltests diff=work/test.vcd:gold/dump_memword.vcd:2
 parameter_type	normal	ivltests diff=log/parameter_type.log:gold/parameter_type.gold
