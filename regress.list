@@ -2775,3 +2775,4 @@ pr2972866	normal,-Tmax,-gspecify	ivltests diff=log/pr2972866.log:gold/pr2972866.
 pr2974216	normal	ivltests
 pr2974216b	normal	ivltests
 pr2976242	normal	ivltests
+pr2986528	normal	ivltests
