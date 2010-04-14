@@ -1,7 +1,22 @@
-`timescale 1s / 1s
+timeunit 10us;
+timeprecision 10us;
 
-timeunit 100us;
-timeprecision 1us;
+module fast_g (out);
+   output out;
+   reg 	  out;
+
+   initial begin
+      #0 out = 0;
+      #1 out = 1; // 10us
+   end
+
+endmodule // fast_g
+
+`timescale 100us / 1us
+
+// These will be ignored since a `timescale was already given.
+timeunit 1s;
+timeprecision 1s;
 
 module slow (out);
    output out;
@@ -29,7 +44,7 @@ module fast (out);
 endmodule // fast
 
 
-module sas(out);
+module saf(out);
    output out;
    reg 	  out;
 
@@ -38,16 +53,17 @@ module sas(out);
       #1 out = 1; // 100us
    end
 
-endmodule // sas
+endmodule // saf
 
 `timescale 1us / 1us
 module main;
    reg pass;
-   wire slow, fast,sas;
+   wire slow, fast, fast_g, saf;
 
    slow m1 (slow);
-   fast m2 (fast);
-   sas m3 (sas);
+   fast_g m2 (fast_g);
+   fast m3 (fast);
+   saf m4 (saf);
 
    initial begin
       pass = 1'b1;
@@ -56,13 +72,19 @@ module main;
 	   $display("FAILED: slow at 9us, expected 1'b0, got %b.", slow);
 	   pass = 1'b0;
 	end
-	if (sas !== 1'b0) begin
-	   $display("FAILED: sas at 9us, expected 1'b0, got %b.", sas);
+
+	if (saf !== 1'b0) begin
+	   $display("FAILED: saf at 9us, expected 1'b0, got %b.", saf);
 	   pass = 1'b0;
 	end
 
         if (fast !== 1'b0) begin
 	   $display("FAILED: fast at 9us, expected 1'b0, got %b.", fast);
+	   pass = 1'b0;
+	end
+
+        if (fast_g !== 1'b0) begin
+	   $display("FAILED: fast_g at 9us, expected 1'b0, got %b.", fast_g);
 	   pass = 1'b0;
 	end
 
@@ -72,13 +94,18 @@ module main;
 	   pass = 1'b0;
 	end
 
-	if (sas !== 1'b0) begin
-	   $display("FAILED: sas at 11us, expected 1'b0, got %b.", sas);
+	if (saf !== 1'b0) begin
+	   $display("FAILED: saf at 11us, expected 1'b0, got %b.", saf);
 	   pass = 1'b0;
 	end
 
         if (fast !== 1'b1) begin
 	   $display("FAILED: fast at 11us, expected 1'b1, got %b.", fast);
+	   pass = 1'b0;
+	end
+
+        if (fast_g !== 1'b1) begin
+	   $display("FAILED: fast_g at 11us, expected 1'b1, got %b.", fast_g);
 	   pass = 1'b0;
 	end
 
@@ -88,13 +115,18 @@ module main;
 	   pass = 1'b0;
 	end
 
-	if (sas !== 1'b0) begin
-	   $display("FAILED: sas at 99us, expected 1'b0, got %b.", sas);
+	if (saf !== 1'b0) begin
+	   $display("FAILED: saf at 99us, expected 1'b0, got %b.", saf);
 	   pass = 1'b0;
 	end
 
         if (fast !== 1'b1) begin
 	   $display("FAILED: fast at 99us, expected 1'b1, got %b.", fast);
+	   pass = 1'b0;
+	end
+
+        if (fast_g !== 1'b1) begin
+	   $display("FAILED: fast_g at 99us, expected 1'b1, got %b.", fast_g);
 	   pass = 1'b0;
 	end
 
@@ -104,8 +136,8 @@ module main;
 	   pass = 1'b0;
 	end
 	
-	if (sas !== 1'b1) begin
-	   $display("FAILED: sas at 101us, expected 1'b1, got %b.", sas);
+	if (saf !== 1'b1) begin
+	   $display("FAILED: saf at 101us, expected 1'b1, got %b.", saf);
 	   pass = 1'b0;
 	end
 
@@ -114,8 +146,12 @@ module main;
 	   pass = 1'b0;
 	end
 
+        if (fast_g !== 1'b1) begin
+	   $display("FAILED: fast_g at 101us, expected 1'b1, got %b.", fast_g);
+	   pass = 1'b0;
+	end
+
       if (pass) $display("PASSED");
 
    end // initial begin
 endmodule // main
-
