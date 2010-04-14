@@ -1141,6 +1141,7 @@ test_mos_strength_reduction: Passed.
                   pr1983762: Passed.
                   pr1985582: Passed.
                   pr1988302: Passed.
+                 pr1988302b: Passed - CE.
                   pr1988310: Passed.
                dump_memword: Passed.
              parameter_type: Passed.
@@ -1488,9 +1489,13 @@ test_mos_strength_reduction: Passed.
                 fatal_et_al: Passed.
                   pr2971207: Passed.
                   pr2972866: Passed.
+                  pr2973532: Passed.
+                  pr2974051: Passed.
                   pr2974216: Passed.
                  pr2974216b: Passed.
+                  pr2974294: Passed.
                   pr2976242: Passed.
+                  pr2986528: Passed.
 ============================================================================
 Test results:
-  Total=1491, Passed=1488, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1496, Passed=1493, Failed=3, Not Implemented=0, Expected Fail=0
