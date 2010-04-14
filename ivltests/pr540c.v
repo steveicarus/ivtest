@@ -28,6 +28,7 @@ module top;
   always @(cmd) begin: command_block
     fork
       begin
+        #0; // avoid fork race
 	disable command_block_reset;
       end
       begin: command_block_reset

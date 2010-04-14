@@ -15,7 +15,7 @@ module submodule();
 parameter	P3	= 1;
 
 initial begin
-  $display("P3 = %d", P3);
+  $display("P3 = %0d", P3);
 end
 
 endmodule

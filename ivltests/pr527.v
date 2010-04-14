@@ -61,6 +61,7 @@ module top ();
     $display("junkbus changes to 3 at T=17 and remains 3 from then on");
     $display("");
     for(ii = 0; ii < 20; ii = ii + 1) begin
+      #0; // avoid race
       // junk
       if((ii == 1) && (junk !== 1)) fail = 1;
       if((ii > 2) && (ii < 12) && (junk !== 0)) fail = 1;
@@ -79,4 +80,3 @@ module top ();
   end
 
 endmodule
-

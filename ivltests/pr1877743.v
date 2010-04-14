@@ -7,7 +7,7 @@ module top;
 
   initial begin
     // The initial value propagates in 1.6 nS.
-    #1.59 check_result(1'bz, 1'bx, 1);
+    #1.59 check_result(1'bx, 1'bx, 1);
 
     #1 a = 0; b = 0; ci = 0; // 1.7
     #1.69 check_result(1'bx, 1'b0, 2);

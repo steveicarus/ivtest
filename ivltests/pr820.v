@@ -16,7 +16,7 @@ module main();
     waddr = 4'd0;
     raddr = 4'd14;
     wdata = 0;
-    #3000;
+    #3001;
     $finish();
   end
 
@@ -65,7 +65,6 @@ module clk_reset_gen(clk, reset);
   reg reset;
   initial begin
     reset = 1;
-    clk = 1;
     #5;
     clk = 0;
     #5;
@@ -76,4 +75,3 @@ module clk_reset_gen(clk, reset);
     forever #5 clk = ~clk;
   end
 endmodule
-

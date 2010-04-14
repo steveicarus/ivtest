@@ -5,7 +5,7 @@ module top;
   wire out;
 
   initial begin
-    $monitor($realtime,, out,, clk);
+    $monitor("%f %b %b", $realtime, out, clk);
     pass = 1'b1;
     $sdf_annotate("ivltests/pr2972866.sdf", dut);
     clk = 1'b0;

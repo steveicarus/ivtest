@@ -1,7 +1,7 @@
 `timescale 1ns/1ps
 
 module top;
-  parameter length = 16;
+  parameter length = 17;
   reg [length*8-1:0] result;
   wire [3:0] net;
 

@@ -13,8 +13,9 @@ module top;
   genvar i;
 
   initial begin
+    #0; // avoid time-0 race
     clk = 0; data = 4'b1111; clear = 4'b1111;
-   $monitor($time,,"clk=%b, data=%b, clear=%b, state=%b",
+    $monitor($time,,"clk=%b, data=%b, clear=%b, state=%b",
 	    clk, data, clear, state);
 
     #10 clear = 4'b0000;

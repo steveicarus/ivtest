@@ -11,5 +11,5 @@ module tester;
     always  #5000 clk = ~ clk;
 
     initial $monitor( "%T %b %b %b", $time, clk, clko1, clko2 );
-    initial #50000 $finish;
+    initial #50001 $finish;
 endmodule

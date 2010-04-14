@@ -22,8 +22,10 @@ module test;
     $display("out[1]: %b", out[1]);
     $display("out[2]: %b", out[2]);
     $display("out[3]: %b", out[3]);
-    for (j=0; j<4; j=j+1) 
+    for (j=0; j<4; j=j+1) begin
+      #0; // wait for change to propagate
       $display("out[1]-%0d: %b", j, out[1]);
+    end
   end
 
 endmodule

@@ -5,9 +5,10 @@ module ivitest;
 reg clock_1x, clock_2x;
 
 initial begin
+    #0; //avoid time-0 race
     clock_1x = 0;
     clock_2x = 0;
-   $monitor($time,,"w0=%h, w1=%h", w0, w1);
+    $monitor($time,,"w0=%h, w1=%h", w0, w1);
     #1;
     forever begin
         clock_1x = !clock_1x;

@@ -16,12 +16,12 @@ module dcomp;
       phdelay = 0;
        #2000;
        phdelay = 13;
-       #2000;
+       #2001;
        $finish;
    end // initial begin
      
    reg       internal_Clk, Clk;
-   initial internal_Clk = 0;
+   initial internal_Clk <= 0;
    always #(clk_period/2) internal_Clk = ~internal_Clk;
   
    always @(internal_Clk) begin
@@ -40,5 +40,3 @@ module dcomp;
    end // always @ (internal_Clk)
    
 endmodule // dcomp
-
-

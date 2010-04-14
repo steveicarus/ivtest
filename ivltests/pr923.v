@@ -60,7 +60,7 @@ reg p1,p2;
   initial
   begin
     $monitor("%t p1=%b p2=%v",$time,p1,p2);
-    #100 $finish;
+    #101 $finish;
   end
 
 
@@ -85,4 +85,3 @@ reg p1,p2;
   endtask
 
 endmodule
-

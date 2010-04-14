@@ -14,6 +14,7 @@ module fail ();
       while (p < 5'b11111)
 	#10 p = p+1;
 
+      #1; // avoid final race
       $finish;
    end
 

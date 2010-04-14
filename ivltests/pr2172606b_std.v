@@ -11,6 +11,7 @@ module top;
   task automatic check;
     input bit, in_1, in_0;
     input [63:0] comment;
+    reg z2x;
     begin
       if (sel === 1'b1) begin
         if (bit !== in_1) begin
@@ -25,11 +26,10 @@ module top;
           passed = 1'b0;
         end
       end else begin
-        // This is technically incorrect for 1'bz inputs. The standard
-        // states that we should produce 1'bx for that case (idiotic)!
-        if (in_0 === in_1 && in_0 !== bit) begin
+        z2x = (in_0 === 1'bz) ? 1'bx : in_0;
+        if (in_0 === in_1 && bit !== z2x) begin
           $display("FAILED: %0s sel = 1'bx/z & ins = %b, expected 1'b%b, got %b",
-                   comment, in_0, in_0, bit);
+                   comment, in_0, z2x, bit);
           passed = 1'b0;
         end else if (in_0 !== in_1 && bit !== 1'bx) begin
           $display("FAILED: %0s sel = 1'bx/z & %b %b, expected 1'bx, got %b",
