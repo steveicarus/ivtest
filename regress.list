@@ -17,7 +17,7 @@
 #    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 #
 # Format of the file
-# 
+#
 # testname	testtype	directory
 #
 # The <testname> is the verilog file name minus an extension. It may contain
@@ -26,24 +26,24 @@
 #
 # The <testtype> can be one of the following:
 #
-# normal:  Normal results expected, i.e it should compile and execute 
+# normal:  Normal results expected, i.e it should compile and execute
 #          producing at least a single line with PASSED.
 #
 # CO:      Compile Only - Compile the file to the default output type.
 #
 # CN:      Compile Null - Compile with the null target. Similar to CO.
 #
-# CE:      Compile with Errors - We EXPECT errors - we're checking 
+# CE:      Compile with Errors - We EXPECT errors - we're checking
 #                                illegal syntax
 #
-# RE:      Runtime with Errors - We EXPECT errors - we're checking 
+# RE:      Runtime with Errors - We EXPECT errors - we're checking
 #                                illegal syntax
 #
 # EF:      Expected fail - We EXPECT this test to fail - only use
 #                          with older versions of Icarus.
 #
 # NI:      Not implemented. Only use for version specific tests.
-# 
+#
 # <directory> is where the <testname>.v file is located.
 #
 # An optional fourth and fifth argument can be supplied.
@@ -67,82 +67,82 @@
 vstd:assign3.2E		NI
 
 # 1364-2005 defined 0**<negative> to be 'bx not 0
-vstd:pr2909386a		EF ivltests
-vstd:pr2909386b		EF ivltests
+vstd:pr2909386a		EF	ivltests
+vstd:pr2909386b		EF	ivltests
 
 # It appears that the power operator is not working correctly.
-vstd:pr2865563		EF ivltests
+vstd:pr2865563		EF	ivltests
 
 # Problems with +: and a negative index, returns 'bx.
-vstd:signed_part	EF ivltests
-vstd:signed_pv		EF ivltests
+vstd:signed_part	EF	ivltests
+vstd:signed_pv		EF	ivltests
 # also problems at the positive ends.
-vstd:pr2835632b		EF ivltests
+vstd:pr2835632b		EF	ivltests
 
 # Problems with partially out of bound part selects, returns 'bx.
-vstd:pr1978358		EF ivltests
-vstd:pr1978358b		EF ivltests
-vstd:pr1978358c		EF ivltests
+vstd:pr1978358		EF	ivltests
+vstd:pr1978358b		EF	ivltests
+vstd:pr1978358c		EF	ivltests
 
 # It does not support constants greater than 32 bits! Will 'd fix these?
-vstd:ca_pow_unsigned	EF ivltests
-vstd:pow_unsigned	EF ivltests
-vstd:pr903		EF ivltests
-vstd:pr1388974		EF ivltests
-vstd:pr2030767		EF ivltests
-vstd:pr2352834		EF ivltests
-vstd:pr2352834		EF ivltests
+vstd:ca_pow_unsigned	EF	ivltests
+vstd:pow_unsigned	EF	ivltests
+vstd:pr903		EF	ivltests
+vstd:pr1388974		EF	ivltests
+vstd:pr2030767		EF	ivltests
+vstd:pr2352834		EF	ivltests
+vstd:pr2352834		EF	ivltests
 
 # The for loop index in a sensitivity list is not working correctly at T0.
-vstd:pr1026		EF ivltests
+vstd:pr1026		EF	ivltests
 
 # Problems with assigning to an out of bounds array.
-vstd:pr2815398b		CE ivltests
+vstd:pr2815398b		CE	ivltests
 
 # Problems taking a part select on an overridden parameter.
-vstd:sp2		EF ivltests
+vstd:sp2		EF	ivltests
 
 # I believe these should be accepted, but they need to be checked.
-vstd:pr1723367		CE ivltests
+vstd:pr1723367		CE	ivltests
 
 # I'm not sure which simulator has the bug. More research is needed.
-vstd:pr1742910		EF ivltests
+vstd:pr1742910		EF	ivltests
 
 # A partially out of bounds write should still write the in bounds bits.
-vstd:pr1990269		EF ivltests
+vstd:pr1990269		EF	ivltests
 # and should write the correct bits!
-vstd:pr1990029		EF ivltests
+vstd:pr1990029		EF	ivltests
 
 # Variables declared in automatic tasks are not allowed to be traced by
 # system tasks such as $monitor or $dumpvars
-vstd:automatic_error11	EF ivltests
-vstd:automatic_error12	EF ivltests
-vstd:automatic_error13	EF ivltests
-    
+vstd:automatic_error11	EF	ivltests
+vstd:automatic_error12	EF	ivltests
+vstd:automatic_error13	EF	ivltests
+
 # A zero replication of a system/user function call should call the function.
-vstd:concat3		EF ivltests
-vstd:concat4		EF ivltests
+vstd:concat3		EF	ivltests
+vstd:concat4		EF	ivltests
 
 # Problems with zero replication
-vstd:repl_zero_wid_pass	EF ivltests
-vstd:pr2688910		EF ivltests
+vstd:repl_zero_wid_pass	EF	ivltests
+vstd:pr2688910		EF	ivltests
 
 # For port size mismatches, excess bits are undriven. I think this is wrong,
 # but what do other simulators do?
-vstd:pr1866215		EF ivltests
-vstd:pr1866215b		EF ivltests
-vstd:pr2121536		EF ivltests
-vstd:pr2121536b		EF ivltests
-vstd:pr2224949		EF ivltests
+vstd:pr1866215		EF	ivltests
+vstd:pr1866215b		EF	ivltests
+vstd:pr2121536		EF	ivltests
+vstd:pr2121536b		EF	ivltests
+vstd:pr2224949		EF	ivltests
 
 # Multiple problems with $fread
-vstd:fread		EF ivltests
+vstd:fread		EF	ivltests
 
 # $sscanf doesn't round a value read using the %t format
-vstd:scanf2		EF ivltests
+vstd:scanf2		EF	ivltests
 
 # $value$plusargs does not support 'x', 'z', or '_' in values.
-vstd:pr2202706c		EF ivltests
+vstd:pr2202706c		EF	ivltests
 
 #------------------------------------
 # Acceptable, but different behavior.
@@ -150,49 +150,49 @@ vstd:pr2202706c		EF ivltests
 
 # The behavior of scheduled, but not executed nonblocking assignments is
 # undefined if the enclosing block is disabled (1364-2005, 10.3).
-vstd:always3.1.9C	EF ivltests
+vstd:always3.1.9C	EF	ivltests
 
 # The warning messages are different. Need tool specific file.
-vstd:array_word_check	EF ivltests
-vstd:mem1		EF ivltests
-vstd:fdisplay_fail_fd	EF ivltests
-vstd:fdisplay_fail_mcd	EF ivltests
-vstd:fread-error	EF ivltests
-vstd:pic		EF contrib pictest diff=log/pic.log:gold/pic.gold
-vstd:pr751		normal ivltests diff=log/pr751.log:gold/pr751_std.gold
-vstd:pr987		normal ivltests diff=log/pr987.log:gold/pr987_std.gold
-vstd:pr2800985a		EF ivltests
-vstd:pr2800985b		EF ivltests
-vstd:readmem-error	EF ivltests
-vstd:readmem-invalid	CE ivltests
-vstd:scan-invalid	EF ivltests
-vstd:sel_rval_bit_ob	normal ivltests
-vstd:writemem-error	EF ivltests
-vstd:writemem-invalid	CE ivltests
-vstd:pr2043585		normal ivltests diff=log/pr2043585.log:gold/pr2043585_std.gold
+vstd:array_word_check	EF	ivltests
+vstd:mem1		EF	ivltests
+vstd:fdisplay_fail_fd	EF	ivltests
+vstd:fdisplay_fail_mcd	EF	ivltests
+vstd:fread-error	EF	ivltests
+vstd:pic		EF	contrib  pictest diff=log/pic.log:gold/pic.gold
+vstd:pr751		normal	ivltests diff=log/pr751.log:gold/pr751_std.gold
+vstd:pr987		normal	ivltests diff=log/pr987.log:gold/pr987_std.gold
+vstd:pr2800985a		EF	ivltests
+vstd:pr2800985b		EF	ivltests
+vstd:readmem-error	EF	ivltests
+vstd:readmem-invalid	CE	ivltests
+vstd:scan-invalid	EF	ivltests
+vstd:sel_rval_bit_ob	normal	ivltests
+vstd:writemem-error	EF	ivltests
+vstd:writemem-invalid	CE	ivltests
+vstd:pr2043585		normal	ivltests diff=log/pr2043585.log:gold/pr2043585_std.gold
 # spacing differences are also OK
-vstd:pr812		normal ivltests diff=log/pr812.log:gold/pr812_std.gold
-vstd:resetall2		normal ivltests diff=log/resetall2.log:gold/resetall2_std.gold
-vstd:pr1645277		normal ivltests diff=log/pr1645277.log:gold/pr1645277_std.gold
-vstd:pr1792152		normal ivltests diff=log/pr1792152.log:gold/pr1792152_std.gold
+vstd:pr812		normal	ivltests diff=log/pr812.log:gold/pr812_std.gold
+vstd:resetall2		normal	ivltests diff=log/resetall2.log:gold/resetall2_std.gold
+vstd:pr1645277		normal	ivltests diff=log/pr1645277.log:gold/pr1645277_std.gold
+vstd:pr1792152		normal	ivltests diff=log/pr1792152.log:gold/pr1792152_std.gold
 # This has a trialing space is that OK?
-vstd:pr1661640		normal ivltests diff=log/pr1661640.log:gold/pr1661640_std.gold
+vstd:pr1661640		normal	ivltests diff=log/pr1661640.log:gold/pr1661640_std.gold
 # and extra leading zeros
-vstd:pr905		normal ivltests diff=log/pr905.log:gold/pr905_std.gold
-vstd:pr985		normal ivltests diff=log/pr985.log:gold/pr985_std.gold
+vstd:pr905		normal	ivltests diff=log/pr905.log:gold/pr905_std.gold
+vstd:pr985		normal	ivltests diff=log/pr985.log:gold/pr985_std.gold
 
 # $timeformat is ignored if there is no timescale.
-vstd:pr530a		EF ivltests
+vstd:pr530a		EF	ivltests
 
 # The SV random functions return different results. Is this OK?
-vstd:urand		EF ivltests diff=log/urand.log:gold/urand.gold
-vstd:urand_r		EF ivltests diff=log/urand_r.log:gold/urand_r.gold
+vstd:urand		EF	ivltests diff=log/urand.log:gold/urand.gold
+vstd:urand_r		EF	ivltests diff=log/urand_r.log:gold/urand_r.gold
 
 # Some out of bounds selects can fail. Though you should still get the
 # in bounds bits. Some of these do not do that!
-vstd:pr1960633		EF ivltests
-vstd:pr1978358d		EF ivltests
-vstd:pr1993479		EF ivltests
+vstd:pr1960633		EF	ivltests
+vstd:pr1978358d		EF	ivltests
+vstd:pr1993479		EF	ivltests
 vstd:pr2166311		NI
 vstd:pr2835632a		NI
 
@@ -205,50 +205,50 @@ vstd:pr2434688b		NI
 vstd:pr2842621		NI
 
 # Icarus prints a string parameter as a string others don't.
-vstd:param_string	EF ivltests
+vstd:param_string	EF	ivltests
 
 # pullup and pulldown have a T0 propagation delay. Is this a bug?
-vstd:pr1787423b		EF ivltests
-vstd:pr1787423b_std	normal ivltests
+vstd:pr1787423b		EF	ivltests
+vstd:pr1787423b_std	normal	ivltests
 
 # No -0 support.
-vstd:pr1752823a		EF ivltests
-vstd:pr1752823b		EF ivltests
+vstd:pr1752823a		EF	ivltests
+vstd:pr1752823b		EF	ivltests
 # numeric display differences no trailing zeros, etc.
-vstd:localparam_type	normal ivltests diff=log/localparam_type.log:gold/parameter_type_std.gold
-vstd:parameter_type	normal ivltests diff=log/parameter_type.log:gold/parameter_type_std.gold
-vstd:nested_func	normal ivltests diff=log/nested_func.log:gold/nested_func_std.gold
+vstd:localparam_type	normal	ivltests diff=log/localparam_type.log:gold/parameter_type_std.gold
+vstd:parameter_type	normal	ivltests diff=log/parameter_type.log:gold/parameter_type_std.gold
+vstd:nested_func	normal	ivltests diff=log/nested_func.log:gold/nested_func_std.gold
 vstd:pr1628300		normal	ivltests diff=log/pr1628300.log:gold/pr1628300_std.gold
-vstd:pr1701890		normal ivltests diff=log/pr1701890.log:gold/pr1701890_std.gold
-vstd:pr2039694		normal ivltests diff=log/pr2039694.log:gold/pr2039694_std.gold
-vstd:pr2251119		normal ivltests diff=log/pr2251119.log:gold/pr2251119_std.gold
-vstd:pr2792897		EF ivltests
-vstd:pr2792897_std	normal ivltests
+vstd:pr1701890		normal	ivltests diff=log/pr1701890.log:gold/pr1701890_std.gold
+vstd:pr2039694		normal	ivltests diff=log/pr2039694.log:gold/pr2039694_std.gold
+vstd:pr2251119		normal	ivltests diff=log/pr2251119.log:gold/pr2251119_std.gold
+vstd:pr2792897		EF	ivltests
+vstd:pr2792897_std	normal	ivltests
 
 # Missing T0 event and space difference in %d.
-vstd:pr1002		normal ivltests diff=log/pr1002.log:gold/pr1002_std.gold
+vstd:pr1002		normal	ivltests diff=log/pr1002.log:gold/pr1002_std.gold
 # only the space difference here.
-vstd:pr1002a		normal ivltests diff=log/pr1002a.log:gold/pr1002a_std.gold
-vstd:pr584 		normal ivltests diff=log/pr584.log:gold/pr584_std.gold
+vstd:pr1002a		normal	ivltests diff=log/pr1002a.log:gold/pr1002a_std.gold
+vstd:pr584		normal	ivltests diff=log/pr584.log:gold/pr584_std.gold
 
 # Icarus allows connection to a module port that has no internal connection,
 # whilst the other simulator does not. The standard doesn't have much to
 # say about this.
-vstd:pr1723367		CE ivltests
+vstd:pr1723367		CE	ivltests
 
 # The standard only defines the %v format for scalar nets.
-vstd:multi_bit_strength	normal ivltests diff=log/multi_bit_strength.log:gold/multi_bit_strength_std.gold
+vstd:multi_bit_strength	normal	ivltests diff=log/multi_bit_strength.log:gold/multi_bit_strength_std.gold
 
 # Need an intelligent VCD diff utility for these to pass.
-vstd:vcd-dup		EF ivltests
-vstd:dump_memword	EF ivltests
+vstd:vcd-dup		EF	ivltests
+vstd:dump_memword	EF	ivltests
 
 # Icarus reports the name of the VCD file being used, other simulators don't.
 vstd:pr1963962		NI
 
 # This test contains a race, but the bug it is testing for requires two
 # tasks to call the same function in the same delta cycle.
-vstd:pr2001162		normal ivltests diff=log/pr2001162.log:gold/pr2001162_std.gold
+vstd:pr2001162		normal	ivltests diff=log/pr2001162.log:gold/pr2001162_std.gold
 
 # The large delay is not supported, also display differences:
 vstd:delay_var		NI
@@ -256,7 +256,7 @@ vstd:delay_var		NI
 #-------------------------------
 # Icarus limitations.
 #-------------------------------
-  
+
 # Limited support for event expressions in automatic scopes
 vstd:automatic_error4	NI
 
@@ -418,7 +418,7 @@ vstd:pr2215342		NI
 vstd:param_test3	NI
 
 # Icarus allows missing parameters, should this generate a warning/error?
-vstd:pr1716276		CE ivltests
+vstd:pr1716276		CE	ivltests
 
 # Icarus allows a reg as the output path connection. Is this a bug?
 vstd:sdf5		NI
@@ -441,7 +441,7 @@ vstd:pr2815398a		NI
 # but these can be tested without a width. This one also has a missing EOS call.
 vstd:pr243_std		normal	ivltests diff=log/pr243_std.log:gold/pr243_std.gold
 # and this one has different formatting.
-vstd:pr1985582_std	normal ivltests diff=log/pr1985582_std.log:gold/pr1985582_std.gold
+vstd:pr1985582_std	normal	ivltests diff=log/pr1985582_std.log:gold/pr1985582_std.gold
 
 # No support for a string with a width. Also gives different warning messages.
 vstd:pr1819452		NI
@@ -454,7 +454,7 @@ vstd:pr1528093		NI
 vstd:pr1703120		CE
 
 # Icarus does not truncate results in a self determined context.
-vstd:pr1639064b		EF ivltests diff=log/pr1639064b.log:gold/pr1639064b.gold
+vstd:pr1639064b		EF	ivltests diff=log/pr1639064b.log:gold/pr1639064b.gold
 
 # No support for the fileio routines ($fopen{r,w,a}).
 vstd:fileio		NI
@@ -507,12 +507,12 @@ vstd:unnamed_generate_block	NI
 
 # Icarus still allows (implicit) declaration after use in some
 # circumstances.
-vstd:pr1909940		CE ivltests
-vstd:pr1909940b		CE ivltests
+vstd:pr1909940		CE	ivltests
+vstd:pr1909940b		CE	ivltests
 
 # This is flagged as a deliberate deviation from the standard.
 vstd:pr2172606b		NI
-vstd:pr2172606b_std	normal ivltests
+vstd:pr2172606b_std	normal	ivltests
 
 #-------------------------------
 # Not applicable
@@ -573,8 +573,8 @@ v0.8:pr1992729	NI
 v0.8:array_word_width2	NI
 v0.8:defparam2	NI
 v0.8:pr1087	NI
-v0.8:pr1353345	NI	# Also passed parameter problem.
-v0.8:pr1353345b	NI	# Also passed parameter problem.
+v0.8:pr1353345	NI # Also passed parameter problem.
+v0.8:pr1353345b	NI # Also passed parameter problem.
 v0.8:pr1581580	NI
 v0.8:pr1695322	NI
 v0.8:pr1703346	NI
@@ -605,7 +605,7 @@ v0.8:pr2865563	NI
 v0.8:pr2909386a	NI
 v0.8:pr2909386b	NI
 v0.8:pr2913404	NI
-v0.8:pr2913927	NI	# Also indexed part selects.
+v0.8:pr2913927	NI # Also indexed part selects.
 v0.8:real_pwr_in_ca	NI
 v0.8:rl_pow	NI
 
@@ -627,8 +627,8 @@ v0.8:long_div	NI
 v0.8:pr993	NI
 v0.8:pr1489570	NI
 v0.8:pr1698499	NI
-v0.8:pr1887168	NI  # In verinum signed values use native long.
-v0.8:pr1960596	NI  # Same as above.
+v0.8:pr1887168	NI # In verinum signed values use native long.
+v0.8:pr1960596	NI # Same as above.
 v0.8:pr2233180c NI
 v0.8:pr2233192c NI
 
@@ -661,9 +661,9 @@ v0.8:pr2123158	NI
 v0.8:pr2123190	NI
 v0.8:pr2456943	NI
 v0.8:real8	NI
-v0.8:real_mod_in_ca	NI  # Also real modulus.
+v0.8:real_mod_in_ca	NI # Also real modulus.
 v0.8:real_pulse_clean	NI
-v0.8:real_wire_array    NI  # This is also an array.
+v0.8:real_wire_array	NI # This is also an array.
 v0.8:real_wire_force_rel	NI
 v0.8:tern8	NI
 
@@ -708,7 +708,7 @@ v0.8:pr1960633	NI
 v0.8:pr1978358	NI
 v0.8:pr1978358b	NI
 v0.8:pr1978358c	NI
-v0.8:pr1978358d	NI  # Also indexed part selects.
+v0.8:pr1978358d	NI # Also indexed part selects.
 v0.8:pr1990029	NI
 v0.8:pr1990269	NI
 
@@ -771,7 +771,7 @@ v0.8:mixed_type_div_mod	NI
 v0.8:pr1639064	NI
 v0.8:pr1639064b	NI
 v0.8:pr1702593	NI
-v0.8:pr1948110	NI  # Also assign to real may not work.
+v0.8:pr1948110	NI # Also assign to real may not work.
 
 # V0.8 does not support macros with arguments.
 v0.8:macro_with_args	NI
@@ -792,36 +792,36 @@ v0.8:analog1	NI
 v0.8:analog2	NI
 
 # Other functionality missing in V0.8.
-v0.8:array_dump	NI	# No support for dumping array words.
-v0.8:array_word_check	NI	# No support for dumping array words.
-v0.8:cmdline_parm1	NI	# No support for command line parameters.
-v0.8:cmos	NI	# CMOS gates not supported.
-v0.8:dump_memword	NI	# Can not dump memory (array) words.
-v0.8:nb_delay	NI	# No support for calculated non-blocking delays.
-v0.8:pr1625912	NI	# Can not find real variable in for loop.
-v0.8:pr1698659	NI	# Scope problems.
-v0.8:pr1765789	NI	# Addition width problems in concatenation.
-v0.8:pr1851310	NI	# MUX size problem.
-v0.8:pr1869769	NI	# Real comparisons in continuous assignment.
-v0.8:pr1869772	NI	# Right shift as argument to user function.
-v0.8:pr1869781	NI	# Runtime is missing %assign/x0/d opcode.
-v0.8:pr1913918b	NI	# Parameter index problem.
-v0.8:pr1916261	NI	# Can not skip some errors in always false select.
-v0.8:pr1963962	NI	# $dumpfile() must be given an explicit string.
-v0.8:pr2202706	NI	# No support for wide put_value()
-v0.8:pr2202846c	NI	# No support for const part selects before, after vec.
-v0.8:pr2215342	NI	# Current directory is not in include search path.
-v0.8:pr2580730	NI	# No support for real in @()
-v0.8:pr2715558	NI	# No support for CA strength resolution.
-v0.8:pr2721213	NI	# No support for a task with no arguments?
-v0.8:pr2790236	NI	# No support for output reg.
-v0.8:pr2883958	NI	# No support for greater than 32 bit delays in a CA.
-v0.8:named_event_no_edges	NI	# No check for pos/negedge on events.
-v0.8:real_invalid_ops	NI	# No checks for invalid real operators, etc.
-v0.8:task_iotypes2	NI	# Port types are not supported (integer, etc.).
-v0.8:timescale3	NI	# No check for out of order timescale directive.
-v0.8:udp_delay_fail	NI	# No UDP delay count check.
-v0.8:uncon_drive	NI	# No support for unconnected drive.
+v0.8:array_dump		NI # No support for dumping array words.
+v0.8:array_word_check	NI # No support for dumping array words.
+v0.8:cmdline_parm1	NI # No support for command line parameters.
+v0.8:cmos		NI # CMOS gates not supported.
+v0.8:dump_memword	NI # Can not dump memory (array) words.
+v0.8:nb_delay		NI # No support for calculated non-blocking delays.
+v0.8:pr1625912		NI # Can not find real variable in for loop.
+v0.8:pr1698659		NI # Scope problems.
+v0.8:pr1765789		NI # Addition width problems in concatenation.
+v0.8:pr1851310		NI # MUX size problem.
+v0.8:pr1869769		NI # Real comparisons in continuous assignment.
+v0.8:pr1869772		NI # Right shift as argument to user function.
+v0.8:pr1869781		NI # Runtime is missing %assign/x0/d opcode.
+v0.8:pr1913918b		NI # Parameter index problem.
+v0.8:pr1916261		NI # Can not skip some errors in always false select.
+v0.8:pr1963962		NI # $dumpfile() must be given an explicit string.
+v0.8:pr2202706		NI # No support for wide put_value()
+v0.8:pr2202846c		NI # No support for const part selects before/after vec.
+v0.8:pr2215342		NI # Current directory is not in include search path.
+v0.8:pr2580730		NI # No support for real in @()
+v0.8:pr2715558		NI # No support for CA strength resolution.
+v0.8:pr2721213		NI # No support for a task with no arguments?
+v0.8:pr2790236		NI # No support for output reg.
+v0.8:pr2883958		NI # No support for greater than 32 bit delays in a CA.
+v0.8:named_event_no_edges	NI # No check for pos/negedge on events.
+v0.8:real_invalid_ops	NI # No checks for invalid real operators, etc.
+v0.8:task_iotypes2	NI # Port types are not supported (integer, etc.).
+v0.8:timescale3		NI # No check for out of order timescale directive.
+v0.8:udp_delay_fail	NI # No UDP delay count check.
+v0.8:uncon_drive	NI # No support for unconnected drive.
 
 # V0.8 has problems with >>> and parameters.
 v0.8:pr2722330a	NI
@@ -908,33 +908,33 @@ v0.8:sdf_del_typ	NI
 v0.8:sdf_del_max	NI
 
 # Other system tasks missing in V0.8.
-v0.8:abstime	NI	# $abstime not supported.
-v0.8:clog2	NI	# $clog2 not supported.
-v0.8:clog2-signal	NI	# $clog2 not supported.
-v0.8:fileio	NI	# $fopen{r,w,a) not supported.
-v0.8:fread	NI	# $fread not supported.
-v0.8:fread-error	NI	# $sfread not supported.
-v0.8:multi_bit_strength	NI	# $swrite not supported.
-v0.8:pr1491355	NI	# $realtobits not supported in continuous assignments.
-v0.8:pr1698820	NI	# $fwrite{b,h,o} not supported.
-v0.8:pr1819452	NI	# $feof, $ftell, $frewind and $fseek not supported.
-v0.8:pr2139593	NI	# $clog2 not supported.
-v0.8:pr2476430	NI	# $format not supported.
-v0.8:pr2509349a	NI	# $readmempath not supported.
-v0.8:pr2509349b	NI	# $readmempath not supported.
-v0.8:pr2590274a	NI	# $abstime not supported.
-v0.8:pr2590274b	NI	# $abstime not supported.
-v0.8:pr2590274c	NI	# $abstime not supported.
-v0.8:pr2728812a	NI	# $clog2 not supported.
-v0.8:pr2792897	NI	# $format not supported.
-v0.8:pr2800985a	NI	# $ferror not supported.
-v0.8:pr2800985b	NI	# $ferror not supported.
-v0.8:pr2877555	NI	# $clog2 not supported.
-v0.8:pr2971207	NI      # $swrite not supported.
-v0.8:pv_undef_sig_sel	NI	# $sformt not supported.
-v0.8:swrite	NI      # $swrite not supported.
-v0.8:urand	NI	# $urandom not supported.
-v0.8:urand_r	NI	# $urandom_range not supported.
+v0.8:abstime	NI # $abstime not supported.
+v0.8:clog2	NI # $clog2 not supported.
+v0.8:clog2-signal	NI # $clog2 not supported.
+v0.8:fileio	NI # $fopen{r,w,a) not supported.
+v0.8:fread	NI # $fread not supported.
+v0.8:fread-error	NI # $sfread not supported.
+v0.8:multi_bit_strength	NI # $swrite not supported.
+v0.8:pr1491355	NI # $realtobits not supported in continuous assignments.
+v0.8:pr1698820	NI # $fwrite{b,h,o} not supported.
+v0.8:pr1819452	NI # $feof, $ftell, $frewind and $fseek not supported.
+v0.8:pr2139593	NI # $clog2 not supported.
+v0.8:pr2476430	NI # $format not supported.
+v0.8:pr2509349a	NI # $readmempath not supported.
+v0.8:pr2509349b	NI # $readmempath not supported.
+v0.8:pr2590274a	NI # $abstime not supported.
+v0.8:pr2590274b	NI # $abstime not supported.
+v0.8:pr2590274c	NI # $abstime not supported.
+v0.8:pr2728812a	NI # $clog2 not supported.
+v0.8:pr2792897	NI # $format not supported.
+v0.8:pr2800985a	NI # $ferror not supported.
+v0.8:pr2800985b	NI # $ferror not supported.
+v0.8:pr2877555	NI # $clog2 not supported.
+v0.8:pr2971207	NI # $swrite not supported.
+v0.8:pv_undef_sig_sel	NI # $sformt not supported.
+v0.8:swrite	NI # $swrite not supported.
+v0.8:urand	NI # $urandom not supported.
+v0.8:urand_r	NI # $urandom_range not supported.
 
 # V0.8 does not have the VA math library installed by default.
 # Install the standalone library to get this functionality.
@@ -1022,9 +1022,9 @@ v0.8:pr183	CO	ivltests
 v0.8:pr1467825	CO	ivltests
 
 # V0.8 does not have a T0 event for these tests.
-v0.8:pr377	normal  ivltests diff=log/pr377.log:gold/pr377-v0.8.gold
-v0.8:pr1002	normal  ivltests diff=log/pr1002.log:gold/pr1002-v0.8.gold
-v0.8:pr1002a	normal  ivltests diff=log/pr1002a.log:gold/pr1002a-v0.8.gold
+v0.8:pr377	normal	ivltests diff=log/pr377.log:gold/pr377-v0.8.gold
+v0.8:pr1002	normal	ivltests diff=log/pr1002.log:gold/pr1002-v0.8.gold
+v0.8:pr1002a	normal	ivltests diff=log/pr1002a.log:gold/pr1002a-v0.8.gold
 
 # V0.8 does not get the line number correct, but does fail.
 v0.8:pr2823414	CE
@@ -1036,24 +1036,24 @@ v0.8:pr2794144	CE	ivltests diff=log/pr2794144.log:gold/pr2794144-v0.8.gold
 v0.8:indef_width_concat	CE	ivltests diff=log/indef_width_concat.log:gold/indef_width_concat-v0.8.gold
 
 # V0.8 does not have the display code rework fd warnings, leading zero, etc.
-v0.8:delay	normal ivltests diff=log/delay.log:gold/delay-v0.8.gold
-v0.8:fdisplay3	RE ivltests gold=fdisplay3-v0.8.gold
-v0.8:fdisplay_fail_fd	normal ivltests diff=log/fdisplay_fail_fd.log:gold/fdisplay_fail_fd-v0.8.gold
-v0.8:fdisplay_fail_mcd	normal ivltests diff=log/fdisplay_fail_mcd.log:gold/fdisplay_fail_mcd-v0.8.gold
-v0.8:format     RE ivltests diff=log/format.log:gold/format-v0.8.gold
-v0.8:test_extended	normal ivltests diff=log/test_extended.log:gold/test_extended-v0.8.gold
+v0.8:delay	normal	ivltests diff=log/delay.log:gold/delay-v0.8.gold
+v0.8:fdisplay3	RE	ivltests gold=fdisplay3-v0.8.gold
+v0.8:fdisplay_fail_fd	normal	ivltests diff=log/fdisplay_fail_fd.log:gold/fdisplay_fail_fd-v0.8.gold
+v0.8:fdisplay_fail_mcd	normal	ivltests diff=log/fdisplay_fail_mcd.log:gold/fdisplay_fail_mcd-v0.8.gold
+v0.8:format	RE	ivltests diff=log/format.log:gold/format-v0.8.gold
+v0.8:test_extended	normal	ivltests diff=log/test_extended.log:gold/test_extended-v0.8.gold
 
 # V0.8 does not have the standard inconsistency warning and other $readmem
 # message updates.
-v0.8:mem1	normal ivltests gold=mem1-v0.8.gold
-v0.8:pic	normal contrib pictest diff=log/pic.log:gold/pic-v0.8.gold
+v0.8:mem1	normal	ivltests gold=mem1-v0.8.gold
+v0.8:pic	normal	contrib  pictest diff=log/pic.log:gold/pic-v0.8.gold
 
 # V0.8 does not need the -gno-io-range-error flag and does not have the
 # warning messages.
-v0.8:pr1723367	normal ivltests diff=log/pr1723367.log:gold/pr1723367-v0.8.gold
+v0.8:pr1723367	normal	ivltests diff=log/pr1723367.log:gold/pr1723367-v0.8.gold
 
 # V0.8 does not have a warning for @* and selects.
-v0.8:pr751	normal  ivltests diff=log/pr751.log:gold/pr751-v0.8.gold
+v0.8:pr751	normal	ivltests diff=log/pr751.log:gold/pr751-v0.8.gold
 
 # V0.8 has no special warnings for the optional system tasks/functions.
 v0.8:warn_opt_sys_tf	RE	ivltests diff=log/warn_opt_sys_tf.log:gold/warn_opt_sys_tf-v0.8.gold
@@ -1093,124 +1093,124 @@ v0.8:always3.1.9B	CO	ivltests
 # V0.8 has bugs that prevent these files from running correctly.
 # This list has not been completely audited to see if the bugs
 # are fixable. I have looked at most of the later ones (pr1823732
-# and after, except for the ones added after 0.8.7 was released). 
-v0.8:bitwidth3	EF ivltests
-v0.8:ca_func	EF ivltests
-v0.8:extend	EF ivltests
-v0.8:integer5	EF ivltests
-v0.8:comp1000	EF ivltests diff=log/comp1000.log:gold/comp1000.gold
-v0.8:comp1001	EF ivltests diff=log/comp1001.log:gold/comp1001.gold
-v0.8:comp1001_fail3	EF ivltests
-v0.8:comp1001_fail4	EF ivltests
-v0.8:comp1001_fail5	EF ivltests
-v0.8:int_not_signext	EF ivltests diff=log/int_not_signext.log:gold/int_not_signext.gold
-v0.8:multi_driver_delay	EF ivltests
-v0.8:pr487	EF ivltests diff=log/pr487.log:gold/pr487.gold
-v0.8:pr527	EF ivltests diff=log/pr527.log:gold/pr527.gold
-v0.8:pr528	EF ivltests diff=log/pr528.log:gold/pr528.gold
-v0.8:pr528b	EF ivltests diff=log/pr528b.log:gold/pr528b.gold
-v0.8:pr529	EF ivltests
-v0.8:pr564	EF ivltests
-v0.8:pr587	EF ivltests
-v0.8:pr632	EF ivltests diff=log/pr632.log:gold/pr632.gold
-v0.8:pr699	EF ivltests
-v0.8:pr699b	EF ivltests
-v0.8:pr990	EF ivltests
-v0.8:pr1380261	EF ivltests
-v0.8:pr1388974	EF ivltests
-v0.8:pr1476440	EF ivltests diff=log/pr1476440.log:gold/pr1476440.gold
-v0.8:pr1492075	EF ivltests diff=log/pr1492075.log:gold/pr1492075.gold
-v0.8:pr1494799	EF ivltests diff=log/pr1494799.log:gold/pr1494799.gold
-v0.8:pr1515168	EF ivltests
-v0.8:pr1522570	EF ivltests
-v0.8:pr1528093	EF ivltests
-v0.8:pr1570635	EF ivltests
-v0.8:pr1570635b	EF ivltests
-v0.8:pr1632861	EF ivltests diff=log/pr1632861.log:gold/pr1632861.gold
-v0.8:pr1636409	EF ivltests diff=log/pr1636409.log:gold/pr1636409.gold
-v0.8:pr1638985	EF ivltests diff=log/pr1638985.log:gold/pr1638985.gold
-v0.8:pr1639060	EF ivltests diff=log/pr1639060.log:gold/pr1639060.gold
-v0.8:pr1639968	EF ivltests diff=log/pr1639968.log:gold/pr1639968.gold
-v0.8:pr1645518	EF ivltests diff=log/pr1645518.log:gold/pr1645518.gold
-v0.8:pr1648365	EF ivltests diff=log/pr1648365.log:gold/pr1648365.gold
-v0.8:pr1661640	EF ivltests diff=log/pr1661640.log:gold/pr1661640.gold
-v0.8:pr1664684	EF ivltests diff=log/pr1664684.log:gold/pr1664684.gold
-v0.8:pr1676836	EF ivltests
-v0.8:pr1698658	EF ivltests diff=log/pr1698658.log:gold/pr1698658.gold
-v0.8:pr1699519	EF ivltests diff=log/pr1699519.log:gold/pr1699519.gold
-v0.8:pr1701855	EF ivltests diff=log/pr1701855.log:gold/pr1701855.gold
-v0.8:pr1701889	EF ivltests diff=log/pr1701889.log:gold/pr1701889.gold
-v0.8:pr1703120	EF ivltests diff=log/pr1703120.log:gold/pr1703120.gold
-v0.8:pr1704013	EF ivltests # V0.9 has this as a CE, but this will work.
-v0.8:pr1742910	EF ivltests
-v0.8:pr1752823b	EF ivltests diff=log/pr1752823b.log:gold/pr1752823b.gold
-v0.8:pr1784984	EF ivltests
-v0.8:pr1787394a	EF ivltests diff=log/pr1787394a.log:gold/pr1787394a.gold
-v0.8:pr1792152	EF ivltests diff=log/pr1792152.log:gold/pr1792152.gold
-v0.8:pr1793157	EF ivltests diff=log/pr1793157.log:gold/pr1793157.gold
-v0.8:pr1793749	EF ivltests diff=log/pr1793749.log:gold/pr1793749.gold
-v0.8:pr1793749b	EF ivltests diff=log/pr1793749b.log:gold/pr1793749b.gold
-v0.8:pr1794362	EF ivltests
-v0.8:pr1795005b	EF ivltests diff=log/pr1795005b.log:gold/pr1795005b.gold
-v0.8:pr1823732	EF ivltests diff=log/pr1823732.log:gold/pr1823732.gold
-v0.8:pr1831724	EF ivltests diff=log/pr1831724.log:gold/pr1831724.gold
-v0.8:pr1832097a	EF ivltests
-v0.8:pr1832097b	EF ivltests
-v0.8:pr1841300	EF ivltests diff=log/pr1841300.log:gold/pr1841300.gold
-v0.8:pr1845683	EF ivltests diff=log/pr1845683.log:gold/pr1845683.gold
-v0.8:pr1866215	EF ivltests diff=log/pr1866215.log:gold/pr1866215.gold
-v0.8:pr1866215b	EF ivltests diff=log/pr1866215b.log:gold/pr1866215b.gold
-v0.8:pr1867161b	EF ivltests diff=log/pr1867161b.log:gold/pr1867161b.gold
-v0.8:pr1877740	EF ivltests
-v0.8:pr1883052	EF ivltests
-v0.8:pr1913918c	EF ivltests
-v0.8:pr1932444	EF ivltests
-v0.8:pr1960548	EF ivltests diff=log/pr1960548.log:gold/pr1960548.gold
-v0.8:pr1960619	EF ivltests diff=log/pr1960619.log:gold/pr1960619.gold
-v0.8:pr1963240	EF ivltests diff=log/pr1963240.log:gold/pr1963240.gold
-v0.8:pr2013758	EF ivltests
-v0.8:pr2014673	EF ivltests
-v0.8:pr2043585	EF ivltests diff=log/pr2043585.log:gold/pr2043585.gold
-v0.8:pr2121536	EF ivltests
-v0.8:pr2121536b	EF ivltests
-v0.8:pr2136787	EF ivltests diff=log/pr2136787.log:gold/pr2136787.gold
-v0.8:pr2138979	EF ivltests
-v0.8:pr2138979b	EF ivltests diff=log/pr2138979b.log:gold/pr2138979b.gold
-v0.8:pr2138979c	EF ivltests diff=log/pr2138979c.log:gold/pr2138979c.gold
-v0.8:pr2138979d	EF ivltests diff=log/pr2138979d.log:gold/pr2138979d.gold
-v0.8:pr2146824	EF ivltests diff=log/pr2146824.log:gold/pr2146824.gold
-v0.8:pr2166188	EF ivltests
-v0.8:pr2224949	EF ivltests
-v0.8:pr2233192	EF ivltests
-v0.8:pr2233192b	EF ivltests
-v0.8:pr2425055b	EF ivltests
-v0.8:pr2428890b	EF ivltests
-v0.8:pr2428890c	EF ivltests
-v0.8:pr2486350	EF ivltests
-v0.8:pr2722339a	EF ivltests
-v0.8:pr2722339b	EF ivltests
-v0.8:pr2829776	EF ivltests
-v0.8:pr2848986	EF ivltests diff=log/pr2848986.log:gold/pr2848986.gold
-v0.8:pr2849783	EF ivltests
-v0.8:pr2859628	EF ivltests diff=work/pr2859628.vcd:gold/pr2859628.vcd.gold:2
-v0.8:pr2909555	EF ivltests
-v0.8:pr2913416	EF ivltests
-v0.8:pr2913438a	EF ivltests
-v0.8:pr2918095	EF ivltests
-v0.8:pr2922063	EF ivltests
-v0.8:pr2922063a	EF ivltests
-v0.8:pr2922063b	EF ivltests
-v0.8:pr2969724	EF ivltests
-v0.8:shift5	EF ivltests diff=log/shift5.log:gold/shift5.gold
-v0.8:signed12	EF ivltests diff=log/signed12.log:gold/signed12.gold
-v0.8:signed_a	EF ivltests
-v0.8:stime	EF ivltests
-v0.8:string11	EF ivltests diff=log/string11.log:gold/string11.gold
-v0.8:vcd-dup	EF ivltests diff=work/vcd-dup.vcd:gold/vcd-dup.vcd.gold:2
-v0.8:writemem-error	EF ivltests diff=log/writemem-error.log:gold/writemem-error.gold
+# and after, except for the ones added after 0.8.7 was released).
+v0.8:bitwidth3	EF	ivltests
+v0.8:ca_func	EF	ivltests
+v0.8:extend	EF	ivltests
+v0.8:integer5	EF	ivltests
+v0.8:comp1000	EF	ivltests diff=log/comp1000.log:gold/comp1000.gold
+v0.8:comp1001	EF	ivltests diff=log/comp1001.log:gold/comp1001.gold
+v0.8:comp1001_fail3	EF	ivltests
+v0.8:comp1001_fail4	EF	ivltests
+v0.8:comp1001_fail5	EF	ivltests
+v0.8:int_not_signext	EF	ivltests diff=log/int_not_signext.log:gold/int_not_signext.gold
+v0.8:multi_driver_delay	EF	ivltests
+v0.8:pr487	EF	ivltests diff=log/pr487.log:gold/pr487.gold
+v0.8:pr527	EF	ivltests diff=log/pr527.log:gold/pr527.gold
+v0.8:pr528	EF	ivltests diff=log/pr528.log:gold/pr528.gold
+v0.8:pr528b	EF	ivltests diff=log/pr528b.log:gold/pr528b.gold
+v0.8:pr529	EF	ivltests
+v0.8:pr564	EF	ivltests
+v0.8:pr587	EF	ivltests
+v0.8:pr632	EF	ivltests diff=log/pr632.log:gold/pr632.gold
+v0.8:pr699	EF	ivltests
+v0.8:pr699b	EF	ivltests
+v0.8:pr990	EF	ivltests
+v0.8:pr1380261	EF	ivltests
+v0.8:pr1388974	EF	ivltests
+v0.8:pr1476440	EF	ivltests diff=log/pr1476440.log:gold/pr1476440.gold
+v0.8:pr1492075	EF	ivltests diff=log/pr1492075.log:gold/pr1492075.gold
+v0.8:pr1494799	EF	ivltests diff=log/pr1494799.log:gold/pr1494799.gold
+v0.8:pr1515168	EF	ivltests
+v0.8:pr1522570	EF	ivltests
+v0.8:pr1528093	EF	ivltests
+v0.8:pr1570635	EF	ivltests
+v0.8:pr1570635b	EF	ivltests
+v0.8:pr1632861	EF	ivltests diff=log/pr1632861.log:gold/pr1632861.gold
+v0.8:pr1636409	EF	ivltests diff=log/pr1636409.log:gold/pr1636409.gold
+v0.8:pr1638985	EF	ivltests diff=log/pr1638985.log:gold/pr1638985.gold
+v0.8:pr1639060	EF	ivltests diff=log/pr1639060.log:gold/pr1639060.gold
+v0.8:pr1639968	EF	ivltests diff=log/pr1639968.log:gold/pr1639968.gold
+v0.8:pr1645518	EF	ivltests diff=log/pr1645518.log:gold/pr1645518.gold
+v0.8:pr1648365	EF	ivltests diff=log/pr1648365.log:gold/pr1648365.gold
+v0.8:pr1661640	EF	ivltests diff=log/pr1661640.log:gold/pr1661640.gold
+v0.8:pr1664684	EF	ivltests diff=log/pr1664684.log:gold/pr1664684.gold
+v0.8:pr1676836	EF	ivltests
+v0.8:pr1698658	EF	ivltests diff=log/pr1698658.log:gold/pr1698658.gold
+v0.8:pr1699519	EF	ivltests diff=log/pr1699519.log:gold/pr1699519.gold
+v0.8:pr1701855	EF	ivltests diff=log/pr1701855.log:gold/pr1701855.gold
+v0.8:pr1701889	EF	ivltests diff=log/pr1701889.log:gold/pr1701889.gold
+v0.8:pr1703120	EF	ivltests diff=log/pr1703120.log:gold/pr1703120.gold
+v0.8:pr1704013	EF	ivltests # V0.9 has this as a CE, but this will work.
+v0.8:pr1742910	EF	ivltests
+v0.8:pr1752823b	EF	ivltests diff=log/pr1752823b.log:gold/pr1752823b.gold
+v0.8:pr1784984	EF	ivltests
+v0.8:pr1787394a	EF	ivltests diff=log/pr1787394a.log:gold/pr1787394a.gold
+v0.8:pr1792152	EF	ivltests diff=log/pr1792152.log:gold/pr1792152.gold
+v0.8:pr1793157	EF	ivltests diff=log/pr1793157.log:gold/pr1793157.gold
+v0.8:pr1793749	EF	ivltests diff=log/pr1793749.log:gold/pr1793749.gold
+v0.8:pr1793749b	EF	ivltests diff=log/pr1793749b.log:gold/pr1793749b.gold
+v0.8:pr1794362	EF	ivltests
+v0.8:pr1795005b	EF	ivltests diff=log/pr1795005b.log:gold/pr1795005b.gold
+v0.8:pr1823732	EF	ivltests diff=log/pr1823732.log:gold/pr1823732.gold
+v0.8:pr1831724	EF	ivltests diff=log/pr1831724.log:gold/pr1831724.gold
+v0.8:pr1832097a	EF	ivltests
+v0.8:pr1832097b	EF	ivltests
+v0.8:pr1841300	EF	ivltests diff=log/pr1841300.log:gold/pr1841300.gold
+v0.8:pr1845683	EF	ivltests diff=log/pr1845683.log:gold/pr1845683.gold
+v0.8:pr1866215	EF	ivltests diff=log/pr1866215.log:gold/pr1866215.gold
+v0.8:pr1866215b	EF	ivltests diff=log/pr1866215b.log:gold/pr1866215b.gold
+v0.8:pr1867161b	EF	ivltests diff=log/pr1867161b.log:gold/pr1867161b.gold
+v0.8:pr1877740	EF	ivltests
+v0.8:pr1883052	EF	ivltests
+v0.8:pr1913918c	EF	ivltests
+v0.8:pr1932444	EF	ivltests
+v0.8:pr1960548	EF	ivltests diff=log/pr1960548.log:gold/pr1960548.gold
+v0.8:pr1960619	EF	ivltests diff=log/pr1960619.log:gold/pr1960619.gold
+v0.8:pr1963240	EF	ivltests diff=log/pr1963240.log:gold/pr1963240.gold
+v0.8:pr2013758	EF	ivltests
+v0.8:pr2014673	EF	ivltests
+v0.8:pr2043585	EF	ivltests diff=log/pr2043585.log:gold/pr2043585.gold
+v0.8:pr2121536	EF	ivltests
+v0.8:pr2121536b	EF	ivltests
+v0.8:pr2136787	EF	ivltests diff=log/pr2136787.log:gold/pr2136787.gold
+v0.8:pr2138979	EF	ivltests
+v0.8:pr2138979b	EF	ivltests diff=log/pr2138979b.log:gold/pr2138979b.gold
+v0.8:pr2138979c	EF	ivltests diff=log/pr2138979c.log:gold/pr2138979c.gold
+v0.8:pr2138979d	EF	ivltests diff=log/pr2138979d.log:gold/pr2138979d.gold
+v0.8:pr2146824	EF	ivltests diff=log/pr2146824.log:gold/pr2146824.gold
+v0.8:pr2166188	EF	ivltests
+v0.8:pr2224949	EF	ivltests
+v0.8:pr2233192	EF	ivltests
+v0.8:pr2233192b	EF	ivltests
+v0.8:pr2425055b	EF	ivltests
+v0.8:pr2428890b	EF	ivltests
+v0.8:pr2428890c	EF	ivltests
+v0.8:pr2486350	EF	ivltests
+v0.8:pr2722339a	EF	ivltests
+v0.8:pr2722339b	EF	ivltests
+v0.8:pr2829776	EF	ivltests
+v0.8:pr2848986	EF	ivltests diff=log/pr2848986.log:gold/pr2848986.gold
+v0.8:pr2849783	EF	ivltests
+v0.8:pr2859628	EF	ivltests diff=work/pr2859628.vcd:gold/pr2859628.vcd.gold:2
+v0.8:pr2909555	EF	ivltests
+v0.8:pr2913416	EF	ivltests
+v0.8:pr2913438a	EF	ivltests
+v0.8:pr2918095	EF	ivltests
+v0.8:pr2922063	EF	ivltests
+v0.8:pr2922063a	EF	ivltests
+v0.8:pr2922063b	EF	ivltests
+v0.8:pr2969724	EF	ivltests
+v0.8:shift5	EF	ivltests diff=log/shift5.log:gold/shift5.gold
+v0.8:signed12	EF	ivltests diff=log/signed12.log:gold/signed12.gold
+v0.8:signed_a	EF	ivltests
+v0.8:stime	EF	ivltests
+v0.8:string11	EF	ivltests diff=log/string11.log:gold/string11.gold
+v0.8:vcd-dup	EF	ivltests diff=work/vcd-dup.vcd:gold/vcd-dup.vcd.gold:2
+v0.8:writemem-error	EF	ivltests diff=log/writemem-error.log:gold/writemem-error.gold
 
 #==========
-#  Things not supported by V0.9.
+# Things not supported by V0.9.
 #==========
 
 # V0.9 does not support SystemVerilog
@@ -1236,26 +1236,26 @@ v0.9:signed_part	EF	ivltests
 
 # V0.9 does not have the net rework code.
 v0.9:deposit	EF	ivltests
-v0.9:pr699	EF ivltests
-v0.9:pr699b	EF ivltests
-v0.9:pr2832234	EF ivltests
-v0.9:pr2849783	EF ivltests
+v0.9:pr699	EF	ivltests
+v0.9:pr699b	EF	ivltests
+v0.9:pr2832234	EF	ivltests
+v0.9:pr2849783	EF	ivltests
 
 # V0.9 does not have working run time selects of constant values.
-v0.9:pr2913927	EF ivltests
+v0.9:pr2913927	EF	ivltests
 
 # V0.9 does not have the reworked tran functionality.
-v0.9:pr2937417	EF ivltests
+v0.9:pr2937417	EF	ivltests
 
 # V0.9 does not have the ability to select the SDF delays you always get typ.
-v0.9:sdf_del_min	EF ivltests
-v0.9:sdf_del_max	EF ivltests
+v0.9:sdf_del_min	EF	ivltests
+v0.9:sdf_del_max	EF	ivltests
 
 # V0.9 does not have scope rework patch.
-v0.9:pr2924354	EF ivltests diff=log/pr2924354.log:gold/pr2924354.gold
+v0.9:pr2924354	EF	ivltests diff=log/pr2924354.log:gold/pr2924354.gold
 
 # V0.9 does not have the modpath source patch.
-v0.9:sdf8	EF,-gspecify	ivltests diff=log/sdf8.log:gold/sdf8.gold
+v0.9:sdf8	EF,-gspecify  ivltests diff=log/sdf8.log:gold/sdf8.gold
 
 # V0.9 can not correctly convert some large (63/64+ bit) binary values to real.
 v0.9:pr2913404	EF ivltests
@@ -1264,7 +1264,7 @@ v0.9:real5	normal	ivltests diff=log/real5.log:gold/real5-v0.9.gold
 # V0.9 has a different net order so V0.9 does not match development.
 # we plan to add a real vcd diff that will make this order independent,
 # but until then we need different gold files.
-v0.9:vcd-dup normal ivltests diff=work/vcd-dup.vcd:gold/vcd-dup.vcd-v0.9.gold:2
+v0.9:vcd-dup	normal	ivltests diff=work/vcd-dup.vcd:gold/vcd-dup.vcd-v0.9.gold:2
 
 #==========
 # v0.9 doesn't support synthesis. Might as well run them as
@@ -1368,8 +1368,8 @@ v0.10:full_case	normal	ivltests
 always3.1.10A	CE	ivltests
 always3.1.11A	normal	ivltests
 always3.1.11B	normal	ivltests
-always3.1.12A	normal	ivltests	# always fork join
-always3.1.12B	normal	ivltests	# always fork: block_id join
+always3.1.12A	normal	ivltests # always fork join
+always3.1.12B	normal	ivltests # always fork: block_id join
 always3.1.12C	normal	ivltests
 always3.1.1A	CE	ivltests
 always3.1.1B	CE	ivltests
@@ -1428,9 +1428,9 @@ always3.1.7C	normal	ivltests
 always3.1.7D	normal	ivltests
 always3.1.8A	normal	ivltests
 always3.1.9A	CE	ivltests
-always3.1.9B	CE    	ivltests
-always3.1.9C	normal	ivltests	# always #1 disable taskname
-always3.1.9D	normal  ivltests	# always #1 disable blockid
+always3.1.9B	CE	ivltests
+always3.1.9C	normal	ivltests # always #1 disable taskname
+always3.1.9D	normal	ivltests # always #1 disable blockid
 assign3.2A	normal	ivltests
 assign3.2B	normal	ivltests
 assign3.2C	normal	ivltests
@@ -1448,13 +1448,13 @@ casez3.10A	normal	ivltests
 casez3.10B	normal	ivltests
 casez3.10C	normal	ivltests
 casez3.10D	normal	ivltests
-casez3.10E	normal	ivltests 		# Use ? and z in label
+casez3.10E	normal	ivltests # Use ? and z in label
 contrib8.1	normal	ivltests
-contrib8.2	normal	ivltests test	# Add the 4th optional argument -s test
+contrib8.2	normal	ivltests test # Add the 4th optional argument -s test
 contrib8.5	normal	ivltests # Add the 4th optional argument -s test
 deassign3.4A	normal	ivltests
-defparam3.5	normal	ivltests		# defparam(single)
-defparam    normal  ivltests main	# defparams with list
+defparam3.5	normal	ivltests # defparam(single)
+defparam	normal	ivltests main # defparams with list
 defparam2	normal	ivltests diff=log/defparam2.log:gold/defparam2.gold
 defparam3	normal	ivltests diff=log/defparam3.log:gold/defparam3.gold
 defparam4	normal	ivltests diff=log/defparam4.log:gold/defparam4.gold
@@ -1478,10 +1478,10 @@ ptest008	normal	ivltests
 ptest009	normal	ivltests
 ptest010	normal	ivltests
 ptest011	normal	ivltests
-qmark	normal	ivltests
-qmark1	normal	ivltests
-qmark3	normal	ivltests
-qmark5	normal	ivltests
+qmark		normal	ivltests
+qmark1		normal	ivltests
+qmark3		normal	ivltests
+qmark5		normal	ivltests
 sdw_always1	normal	ivltests
 sdw_always2	normal	ivltests
 sdw_always3	normal	ivltests
@@ -1511,251 +1511,251 @@ task3.14C	normal	ivltests
 task3.14D	normal	ivltests
 task3.14E	normal	ivltests
 task3.14F	normal	ivltests
-z1	normal	ivltests foo
-z2	normal	ivltests foo
+z1		normal	ivltests foo
+z2		normal	ivltests foo
 contrib8.3	CE	ivltests
-contrib8.4  normal  ivltests
-integer1lt  normal ivltests
-integer2le  normal ivltests
-integer3gt  normal ivltests
-integer4ge  normal ivltests
-land2 normal ivltests
-land3 normal ivltests
-land4 normal ivltests diff=log/land4.log:gold/land4.gold
-land5 normal,-S ivltests
-landor1 normal ivltests
-talu normal ivltests
-time2 normal ivltests  # Tests posedge vector uses vector[0]
-time1 normal ivltests
-vardly normal ivltests
-lh_varindx normal ivltests
-always3.1.6D normal ivltests
-time3 normal ivltests
-time4 normal ivltests
-time5 normal ivltests
-time6	normal	ivltests
-time7	normal	ivltests   #	gold=time7.gold
-time8	normal	ivltests
-timescale1	normal ivltests
-timescale2	normal ivltests
-timescale3	CE ivltests
-udp_bufg normal ivltests
-udp_bufg2 normal ivltests
-udp_jkff normal	ivltests
-udp_x	normal	ivltests
-udp_bx	normal	ivltests gold=udp_bx.gold
+contrib8.4	normal	ivltests
+integer1lt	normal	ivltests
+integer2le	normal	ivltests
+integer3gt	normal	ivltests
+integer4ge	normal	ivltests
+land2		normal	ivltests
+land3		normal	ivltests
+land4		normal	ivltests diff=log/land4.log:gold/land4.gold
+land5		normal,-S	ivltests
+landor1		normal	ivltests
+talu		normal	ivltests
+time2		normal	ivltests # Tests posedge vector uses vector[0]
+time1		normal	ivltests
+vardly		normal	ivltests
+lh_varindx	normal	ivltests
+always3.1.6D	normal	ivltests
+time3		normal	ivltests
+time4		normal	ivltests
+time5		normal	ivltests
+time6		normal	ivltests
+time7		normal	ivltests # gold=time7.gold
+time8		normal	ivltests
+timescale1	normal	ivltests
+timescale2	normal	ivltests
+timescale3	CE	ivltests
+udp_bufg	normal	ivltests
+udp_bufg2	normal	ivltests
+udp_jkff	normal	ivltests
+udp_x		normal	ivltests
+udp_bx		normal	ivltests gold=udp_bx.gold
 udp_sched	normal	ivltests
-udp_dff	normal	ivltests
+udp_dff		normal	ivltests
 udp_dff_std	normal	ivltests
-wireadd1 normal ivltests
-wiremod1 normal ivltests
-wiresl normal ivltests
-wiresl2 normal ivltests gold=wiresl2.gold
-wiresr normal ivltests
-wiresub1 normal ivltests
-wirexor1 normal ivltests
-wirele normal ivltests
-wirege normal ivltests
-wireeq normal ivltests
-ga_and normal ivltests
-ga_or normal ivltests
-ga_xor normal ivltests
-ga_xnor normal ivltests
-ga_nand normal ivltests
-ga_nor normal ivltests
-andnot1 normal ivltests
-constmult normal ivltests
-constadd normal ivltests
-constadd2 normal ivltests
-constadd3 normal ivltests
-consttern normal ivltests
-qmark6  normal ivltests
-muxtest normal ivltests	# Validates that X sel and inputs same, output not X
-fifo	normal contrib
-event3.15	normal ivltests # Validate event lists, and -> operator.
-event2		normal ivltests
-event3		normal ivltests diff=log/event3.log:gold/event3.gold
-unary_and	normal ivltests # Unary And &(vect)
-unary_minus	normal ivltests # Unary minus -(vect)
-unary_minus1	normal ivltests # From 272 directly.
-unary_minus2	normal ivltests
-unary_minus3	normal ivltests
-unary_minus4	normal ivltests
-unary_nand	normal ivltests # Unary nand ~&(vect)
-unary_nand2	normal ivltests # Unary nand ~&(vect)
-unary_not	normal ivltests # Unary not ~
-unary_or 	normal ivltests # Unary or  |(vect)
-unary_nor	normal ivltests # Unary nor ~|(vect)
-unary_nor2	normal ivltests # Unary nor ~|(vect)
-unary_xor 	normal ivltests # Unary or  ^(vect)
-unary_xnor1	normal ivltests # Unary xnor ~^(vect)
-unary_xnor2	normal ivltests # Unary xnor ^~(vect)
-binary_nand	normal ivltests # Binary nand (~&)
-binary_nor	normal ivltests # Binary nor  (~|)
-rptconcat	normal ivltests # Repeat concatenation operation.
-rptconcat2	normal ivltests # Repeat concatenation operation.
-gencrc		normal contrib  # 32/16 bit crc 
-onehot		normal contrib	# one hot design
-inout		normal ivltests # modname(a,a); inout a;
-inout2		normal ivltests
-inout3		normal ivltests
-inout4		normal ivltests
-modparam	normal ivltests top # Override parameter via passed down value
-modulus		normal ivltests # wire % and reg % operators 
-modulus2	normal ivltests # reg % operators 
-mult1		normal ivltests # wire * and reg * operators 
-mult2		normal ivltests # wire * and reg * operators 
-xnor_test	normal ivltests # ~^ in an IF()
-pullupdown	normal ivltests # Contributed test
-pullupdown2	normal ivltests # Contributed test
-pullupdown3	normal ivltests # Contributed test
-drive_strength	normal ivltests # Contributed test
-drive_strength1	normal ivltests #
-drive_strength2 normal ivltests diff=log/drive_strength2.log:gold/drive_strength2.gold 
-drive_strength3	normal ivltests #
-sdw_function4	normal ivltests # function with if from George Gallant bug rpt
-sdw_function5	normal ivltests # function with if from George Gallant bug rpt
-readmemh1	normal ivltests # basic $readmemh - uses readmemh1.dat
-readmemh1a	normal ivltests # basic $readmemh with @addr - uses readmemh1a.dat
-readmemh2	normal ivltests # $readmemh w/ short data file - readmemh2.dat
-readmemh3	normal ivltests # $readmemh 0-3 with long dfile - readmemh1.dat
-readmemh4	normal ivltests # $readmemh - comments in data file 
-readmemb1	normal ivltests # basic $readmemb - uses readmemh1.dat
-readmemb2	normal ivltests # $readmemb w/ short data file - readmemh2.dat
-readmemb3	normal ivltests # $readmemb 0-3 with long dfile - readmemh1.dat
-dff1		normal ivltests # Contrib by S Williams
-con_tri		normal ivltests # Contrib by S Williams
+wireadd1	normal	ivltests
+wiremod1	normal	ivltests
+wiresl		normal	ivltests
+wiresl2		normal	ivltests gold=wiresl2.gold
+wiresr		normal	ivltests
+wiresub1	normal	ivltests
+wirexor1	normal	ivltests
+wirele		normal	ivltests
+wirege		normal	ivltests
+wireeq		normal	ivltests
+ga_and		normal	ivltests
+ga_or		normal	ivltests
+ga_xor		normal	ivltests
+ga_xnor		normal	ivltests
+ga_nand		normal	ivltests
+ga_nor		normal	ivltests
+andnot1		normal	ivltests
+constmult	normal	ivltests
+constadd	normal	ivltests
+constadd2	normal	ivltests
+constadd3	normal	ivltests
+consttern	normal	ivltests
+qmark6		normal	ivltests
+muxtest normal ivltests # Validates that X sel and inputs same, output not X
+fifo		normal	contrib
+event3.15	normal	ivltests # Validate event lists, and -> operator.
+event2		normal	ivltests
+event3		normal	ivltests diff=log/event3.log:gold/event3.gold
+unary_and	normal	ivltests # Unary And &(vect)
+unary_minus	normal	ivltests # Unary minus -(vect)
+unary_minus1	normal	ivltests # From 272 directly.
+unary_minus2	normal	ivltests
+unary_minus3	normal	ivltests
+unary_minus4	normal	ivltests
+unary_nand	normal	ivltests # Unary nand ~&(vect)
+unary_nand2	normal	ivltests # Unary nand ~&(vect)
+unary_not	normal	ivltests # Unary not ~
+unary_or	normal	ivltests # Unary or  |(vect)
+unary_nor	normal	ivltests # Unary nor ~|(vect)
+unary_nor2	normal	ivltests # Unary nor ~|(vect)
+unary_xor	normal	ivltests # Unary or  ^(vect)
+unary_xnor1	normal	ivltests # Unary xnor ~^(vect)
+unary_xnor2	normal	ivltests # Unary xnor ^~(vect)
+binary_nand	normal	ivltests # Binary nand (~&)
+binary_nor	normal	ivltests # Binary nor  (~|)
+rptconcat	normal	ivltests # Repeat concatenation operation.
+rptconcat2	normal	ivltests # Repeat concatenation operation.
+gencrc		normal	contrib  # 32/16 bit crc
+onehot		normal	contrib  # one hot design
+inout		normal	ivltests # modname(a,a); inout a;
+inout2		normal	ivltests
+inout3		normal	ivltests
+inout4		normal	ivltests
+modparam	normal	ivltests top # Override parameter via passed down value
+modulus		normal	ivltests # wire % and reg % operators
+modulus2	normal	ivltests # reg % operators
+mult1		normal	ivltests # wire * and reg * operators
+mult2		normal	ivltests # wire * and reg * operators
+xnor_test	normal	ivltests # ~^ in an IF()
+pullupdown	normal	ivltests # Contributed test
+pullupdown2	normal	ivltests # Contributed test
+pullupdown3	normal	ivltests # Contributed test
+drive_strength	normal	ivltests # Contributed test
+drive_strength1	normal	ivltests #
+drive_strength2 normal	ivltests diff=log/drive_strength2.log:gold/drive_strength2.gold
+drive_strength3	normal	ivltests #
+sdw_function4	normal	ivltests # function with if from George Gallant bug rpt
+sdw_function5	normal	ivltests # function with if from George Gallant bug rpt
+readmemh1	normal	ivltests # basic $readmemh - uses readmemh1.dat
+readmemh1a	normal	ivltests # basic $readmemh with @addr - uses readmemh1a.dat
+readmemh2	normal	ivltests # $readmemh w/ short data file - readmemh2.dat
+readmemh3	normal	ivltests # $readmemh 0-3 with long dfile - readmemh1.dat
+readmemh4	normal	ivltests # $readmemh - comments in data file
+readmemb1	normal	ivltests # basic $readmemb - uses readmemh1.dat
+readmemb2	normal	ivltests # $readmemb w/ short data file - readmemh2.dat
+readmemb3	normal	ivltests # $readmemb 0-3 with long dfile - readmemh1.dat
+dff1		normal	ivltests # Contrib by S Williams
+con_tri		normal	ivltests # Contrib by S Williams
 tri0		normal	ivltests
 tri0b		normal	ivltests
 tri1		normal	ivltests
 tri2		normal	ivltests
 triand		normal	ivltests
 trior		normal	ivltests
-idiv1		normal ivltests # Contrib by S Williams
-fork3.19A	normal ivltests # 
-fork3.19B   normal ivltests # 
-mult16		normal contrib mul16 # Contributed by Tom Coonan - has $random
-event_list	normal ivltests # Contrib by S Williams
-event_list2	normal ivltests # Contrib by S Williams
-event_list3	normal ivltests diff=log/event_list3.log:gold/event_list3.gold
-posedge		normal ivltests # Contrib by S Williams
-nblkorder	normal ivltests # Validates Non-blocking order determinism
-task_inpad	normal ivltests # Validates input of task should pad w/ 0
-task_omemw3	CO		 ivltests # Pass bit selected from vector to task
-cond_band	normal ivltests # Bitwise and in if condition
-cond_wide	normal ivltests # condition is a wide value
-cond_wide2	normal ivltests # condition is a wide value
-bufif		normal ivltests # Validate bufif0, bufif1
-pca1		normal ivltests # Procedural Continuous Assignment in a mux 
-wildsense	normal ivltests # Wildcard sensitivity list.
-wildsense2	normal ivltests # Wildcard sensitivity list.
-idiv2		normal ivltests # Int div within an expression
-idiv3		normal ivltests diff=log/idiv3.log:gold/idiv3.gold
-assign_mem1	normal ivltests #
-assign_mem2	normal ivltests # Const prop/dead signal elimination
+idiv1		normal	ivltests # Contrib by S Williams
+fork3.19A	normal	ivltests #
+fork3.19B	normal	ivltests #
+mult16		normal	contrib  mul16 # Contributed by Tom Coonan - has $random
+event_list	normal	ivltests # Contrib by S Williams
+event_list2	normal	ivltests # Contrib by S Williams
+event_list3	normal	ivltests diff=log/event_list3.log:gold/event_list3.gold
+posedge		normal	ivltests # Contrib by S Williams
+nblkorder	normal	ivltests # Validates Non-blocking order determinism
+task_inpad	normal	ivltests # Validates input of task should pad w/ 0
+task_omemw3	CO	ivltests # Pass bit selected from vector to task
+cond_band	normal	ivltests # Bitwise and in if condition
+cond_wide	normal	ivltests # condition is a wide value
+cond_wide2	normal	ivltests # condition is a wide value
+bufif		normal	ivltests # Validate bufif0, bufif1
+pca1		normal	ivltests # Procedural Continuous Assignment in a mux
+wildsense	normal	ivltests # Wildcard sensitivity list.
+wildsense2	normal	ivltests # Wildcard sensitivity list.
+idiv2		normal	ivltests # Int div within an expression
+idiv3		normal	ivltests diff=log/idiv3.log:gold/idiv3.gold
+assign_mem1	normal	ivltests #
+assign_mem2	normal	ivltests # Const prop/dead signal elimination
 meminit		normal	ivltests
 meminit2	normal	ivltests
 mem1		normal	ivltests	gold=mem1.gold
-task_noop	normal ivltests # Task with no contents.
+task_noop	normal	ivltests # Task with no contents.
 task_noop2	CO	ivltests # Task *really* with no contents.
-task_bypath	normal ivltests # task enabled by complete path name.
-task_iotypes	normal ivltests # task ports with types.
-task_iotypes2	normal ivltests # task ports with types.
-scope1   	normal ivltests # scope of var into a task
-scope2   	normal ivltests # scope of var stops at module boundaries
-scope2b   	CE,-g1 ivltests # broken version of scope2
-scope4		normal ivltests
-scope5		normal ivltests
-task-scope	normal ivltests
-assign_nb1  normal ivltests # Assign a constant to a single bit array (pmonta)
-assign_nb2  normal ivltests # Assign a constant to a single bit array (pmonta)
-assign_delay	normal ivltests # continuous assign with a delay
-delay		normal ivltests diff=log/delay.log:gold/delay.gold
-delay2	normal ivltests
-delay3	normal ivltests
-delay4	normal ivltests
-delay5	normal ivltests
-delay_assign_nb	normal ivltests
+task_bypath	normal	ivltests # task enabled by complete path name.
+task_iotypes	normal	ivltests # task ports with types.
+task_iotypes2	normal	ivltests # task ports with types.
+scope1		normal	ivltests # scope of var into a task
+scope2		normal	ivltests # scope of var stops at module boundaries
+scope2b		CE,-g1	ivltests # broken version of scope2
+scope4		normal	ivltests
+scope5		normal	ivltests
+task-scope	normal	ivltests
+assign_nb1   normal  ivltests # Assign a constant to a single bit array (pmonta)
+assign_nb2   normal  ivltests # Assign a constant to a single bit array (pmonta)
+assign_delay	normal	ivltests # continuous assign with a delay
+delay		normal	ivltests diff=log/delay.log:gold/delay.gold
+delay2		normal	ivltests
+delay3		normal	ivltests
+delay4		normal	ivltests
+delay5		normal	ivltests
+delay_assign_nb	normal	ivltests
 delay_assign_nb2	normal ivltests
-ldelay1	normal ivltests
-ldelay2	normal ivltests
-ldelay3	normal ivltests
-ldelay4	normal ivltests
-ldelay5	normal ivltests
-wireland	normal ivltests # assign a && (b ? 0 : 1) (pmonta)
-param_concat normal ivltests #  param has concat value (pmonta)
+ldelay1		normal	ivltests
+ldelay2		normal	ivltests
+ldelay3		normal	ivltests
+ldelay4		normal	ivltests
+ldelay5		normal	ivltests
+wireland	normal	ivltests # assign a && (b ? 0 : 1) (pmonta)
+param_concat	normal	ivltests # param has concat value (pmonta)
 param_select	normal	ivltests # bit and part select of parameters.
 param_select2	normal	ivltests # bit and part select of parameters.
 param_select3	normal	ivltests # bit and part select of parameters.
-param_times	normal ivltests #  param has multiplication.
-case3.8D	 normal ivltests #  test case for x and z exact match in labels.  
-function_exp normal ivltests # Contrib by S Williams
+param_times	normal	ivltests # param has multiplication.
+case3.8D	normal	ivltests # test case for x and z exact match in labels.
+function_exp	normal	ivltests # Contrib by S Williams
 function1	normal	ivltests diff=log/function1.log:gold/function1.gold
 function2	normal	ivltests
 function3	normal	ivltests
 function4	CE	ivltests # Functions must have at least one argument
-ifdef1		 normal ivltests #  ifdef with no define
-ifdef2		 normal ivltests #  ifdef with define
-ifdef3		 normal ivltests #  compound ifdef with 1 define
-ifdef4		 normal ivltests #  compound ifdef with 2 defines
-else1		 normal ivltests #  ifdef with else
-else2		 normal ivltests #  compound ifdef with else
-else3		 normal ivltests #  compound ifdef compound else
-include1	normal ivltests #  include file 1 level deep
-include2	normal ivltests #  include file 2 levels deep
-include3	normal ivltests #  include file 3 levels deep
-define1		normal ivltests #  Use defined value for reg def and reg assign
-fdisplay1	normal	ivltests  gold=fdisplay1.gold	# 
-fdisplay2	normal  ivltests  diff=work/fdisplay2.out:gold/fdisplay2.out #
-fdisplay3	RE	ivltests  gold=fdisplay3.gold
-fdisplay_fail_fd	normal  ivltests diff=log/fdisplay_fail_fd.log:gold/fdisplay_fail_fd.gold
-fdisplay_fail_mcd	normal  ivltests diff=log/fdisplay_fail_mcd.log:gold/fdisplay_fail_mcd.gold
-fopen1		normal  ivltests # Test basic fopen operation	
-fopen2		normal  ivltests # Test basic fopen operation	
-div16		normal	contrib test_div16 # Uses $random and divide operator (Tom Coonan)
+ifdef1		normal	ivltests # ifdef with no define
+ifdef2		normal	ivltests # ifdef with define
+ifdef3		normal	ivltests # compound ifdef with 1 define
+ifdef4		normal	ivltests # compound ifdef with 2 defines
+else1		normal	ivltests # ifdef with else
+else2		normal	ivltests # compound ifdef with else
+else3		normal	ivltests # compound ifdef compound else
+include1	normal	ivltests # include file 1 level deep
+include2	normal	ivltests # include file 2 levels deep
+include3	normal	ivltests # include file 3 levels deep
+define1		normal	ivltests # Use defined value for reg def and reg assign
+fdisplay1	normal	ivltests gold=fdisplay1.gold #
+fdisplay2	normal	ivltests diff=work/fdisplay2.out:gold/fdisplay2.out #
+fdisplay3	RE	ivltests gold=fdisplay3.gold
+fdisplay_fail_fd	normal	ivltests diff=log/fdisplay_fail_fd.log:gold/fdisplay_fail_fd.gold
+fdisplay_fail_mcd	normal	ivltests diff=log/fdisplay_fail_mcd.log:gold/fdisplay_fail_mcd.gold
+fopen1		normal	ivltests # Test basic fopen operation
+fopen2		normal	ivltests # Test basic fopen operation
+div16		normal	contrib  test_div16 # Uses $random and divide operator (Tom Coonan)
 addsr		normal	ivltests # Finds problems with >> using different sizes
 tern1		normal	ivltests # Finds problems with ?: using different sizes
 tern2		CO	ivltests # make sure ?: is recognized by -tnull
-tern3		normal ivltests diff=log/tern3.log:gold/tern3.gold
+tern3		normal	ivltests diff=log/tern3.log:gold/tern3.gold
 tern4		normal	ivltests
-tern5		normal ivltests diff=log/tern5.log:gold/tern5.gold
+tern5		normal	ivltests diff=log/tern5.log:gold/tern5.gold
 tern6		normal	ivltests
 tern7		normal	ivltests
 tern8		normal	ivltests
 tern9		normal	ivltests
 tern10		normal	ivltests
-readmemh5	CE		ivltests # Should be error for readmemh(romimg,rom[0:7])
-port-test2	normal  ivltests # Port declaration syntax checks
-port-test3	CE  ivltests # Port declaration syntax checks
-param_string normal ivltests # parameter storing a string.
-galan       normal ivltests 	# Ternary test with varying size lhs vs rhs 
-pic     normal  contrib pictest diff=log/pic.log:gold/pic.gold
+readmemh5	CE	ivltests # Should be error for readmemh(romimg,rom[0:7])
+port-test2	normal	ivltests # Port declaration syntax checks
+port-test3	CE	ivltests # Port declaration syntax checks
+param_string	normal	ivltests # parameter storing a string.
+galan		normal	ivltests # Ternary test with varying size lhs vs rhs
+pic		normal	contrib  pictest diff=log/pic.log:gold/pic.gold
 initmod		normal	ivltests diff=log/initmod.log:gold/initmod.gold
-initmod2      normal  ivltests diff=log/initmod2.log:gold/initmod2.gold
-bnot		normal	ivltests	# test triggered an overzealous assert in vvm
-stask_parm1		normal	ivltests	# 
-stask_parm2	normal	ivltests	gold=stask_parm2.gold
-task_mem 		normal	ivltests	# 
-task_omemw2     normal	ivltests	# 
-unary_lnot1      normal	ivltests	# 
-unary_lnot2      normal	ivltests	# 
-unary_lnot3      normal	ivltests	# 
-lh_varindx2      normal	ivltests	# 
-lh_varindx4      normal	ivltests	# 
-lh_varindx5      normal	ivltests	# 
-lh_catadd      normal	ivltests	# 
+initmod2	normal	ivltests diff=log/initmod2.log:gold/initmod2.gold
+bnot		normal	ivltests # test triggered an overzealous assert in vvm
+stask_parm1	normal	ivltests #
+stask_parm2	normal	ivltests gold=stask_parm2.gold
+task_mem	normal	ivltests #
+task_omemw2	normal	ivltests #
+unary_lnot1	normal	ivltests #
+unary_lnot2	normal	ivltests #
+unary_lnot3	normal	ivltests #
+lh_varindx2	normal	ivltests #
+lh_varindx4	normal	ivltests #
+lh_varindx5	normal	ivltests #
+lh_catadd	normal	ivltests #
 shift_pad	normal	ivltests
-format     RE  ivltests diff=log/format.log:gold/format.gold
-disp_dec   normal  ivltests diff=log/disp_dec.log:gold/disp_dec.gold
-disp_dec2  normal  ivltests diff=log/disp_dec2.log:gold/disp_dec2.gold
-disp_parm   	normal  ivltests diff=log/disp_parm.log:gold/disp_parm.gold
-disp_part   	normal  ivltests diff=log/disp_part.log:gold/disp_part.gold
-disp_leading_z  normal  ivltests diff=log/disp_leading_z.log:gold/disp_leading_z.gold
+format		RE	ivltests diff=log/format.log:gold/format.gold
+disp_dec	normal	ivltests diff=log/disp_dec.log:gold/disp_dec.gold
+disp_dec2	normal	ivltests diff=log/disp_dec2.log:gold/disp_dec2.gold
+disp_parm	normal	ivltests diff=log/disp_parm.log:gold/disp_parm.gold
+disp_part	normal	ivltests diff=log/disp_part.log:gold/disp_part.gold
+disp_leading_z	normal	ivltests diff=log/disp_leading_z.log:gold/disp_leading_z.gold
 shellho1	normal	ivltests top diff=log/shellho1.log:gold/shellho1.gold
-test_width	normal  ivltests diff=log/test_width.log:gold/test_width.gold
-test_disphob	normal  ivltests diff=log/test_disphob.log:gold/test_disphob.gold
-test_dispwided	normal  ivltests diff=log/test_dispwided.log:gold/test_dispwided.gold
-test_extended	normal  ivltests diff=log/test_extended.log:gold/test_extended.gold
+test_width	normal	ivltests diff=log/test_width.log:gold/test_width.gold
+test_disphob	normal	ivltests diff=log/test_disphob.log:gold/test_disphob.gold
+test_dispwided	normal	ivltests diff=log/test_dispwided.log:gold/test_dispwided.gold
+test_extended	normal	ivltests diff=log/test_extended.log:gold/test_extended.gold
 schedule	normal	ivltests
 test_bufif0	normal	ivltests
 test_bufif1	normal	ivltests
@@ -1769,203 +1769,203 @@ test_rpmos	normal	ivltests
 cprop		normal	ivltests
 supply1		normal	ivltests
 supply2		normal	ivltests
-for3.16A    normal  ivltests
-force3.17A  normal  ivltests
-force3.17B  normal  ivltests
-force3.17C  normal  ivltests
-wait1        normal  ivltests
-wait2        normal  ivltests
+for3.16A	normal	ivltests
+force3.17A	normal	ivltests
+force3.17B	normal	ivltests
+force3.17C	normal	ivltests
+wait1		normal	ivltests
+wait2		normal	ivltests
 wait3		normal	ivltests diff=log/wait3.log:gold/wait3.gold
 string1		normal	ivltests
 string2		normal	ivltests
 string3		normal	ivltests
-ga_mod		normal  ivltests main
-ga_mod1		normal  ivltests main
-ga_mod2		normal  ivltests main
+ga_mod		normal	ivltests main
+ga_mod1		normal	ivltests main
+ga_mod2		normal	ivltests main
 signed1		normal	ivltests
-param_expr  normal  ivltests # & in param declar
-param_and   normal  ivltests # bitwise &
-param_and2  normal  ivltests # logical && in param declar
-param_band  normal  ivltests # Bitwise and in param declar
-param_bor  normal  ivltests  # Bitwise OR in param declar
-param_eq3  normal  ivltests  # Bit equiv in param declar
-param_binv normal  ivltests  # Bit vector inv in param declar
-param_add  normal  ivltests  # Addition in param declar
-param_mod  normal  ivltests  # Modulus in param declar
-param_tern normal  ivltests
-param_tern2 normal  ivltests
-param_test1 normal ivltests diff=log/param_test1.log:gold/param_test1.gold
-param_test2 normal ivltests diff=log/param_test2.log:gold/param_test2.gold
-param_test3 CO	ivltests # PR#293
+param_expr	normal	ivltests # & in param declar
+param_and	normal	ivltests # bitwise &
+param_and2	normal	ivltests # logical && in param declar
+param_band	normal	ivltests # Bitwise and in param declar
+param_bor	normal	ivltests # Bitwise OR in param declar
+param_eq3	normal	ivltests # Bit equiv in param declar
+param_binv	normal	ivltests # Bit vector inv in param declar
+param_add	normal	ivltests # Addition in param declar
+param_mod	normal	ivltests # Modulus in param declar
+param_tern	normal	ivltests
+param_tern2	normal	ivltests
+param_test1	normal	ivltests diff=log/param_test1.log:gold/param_test1.gold
+param_test2	normal	ivltests diff=log/param_test2.log:gold/param_test2.gold
+param_test3	CO	ivltests # PR#293
 param_test4	normal	ivltests
 param_vec	normal	ivltests
 param_vec2	normal	ivltests
-integer5  normal  ivltests  # 
-signed2  normal  ivltests  # 
-signed3  normal  ivltests  # 
-signed4  normal  ivltests diff=log/signed4.log:gold/signed4.gold
-signed5  normal  ivltests
-signed6  normal  ivltests
-signed7  normal  ivltests
-signed8  normal  ivltests
-signed9  normal  ivltests
-signed10 normal  ivltests diff=log/signed10.log:gold/signed10.gold
-signed11 normal  ivltests
-signed12 normal  ivltests diff=log/signed12.log:gold/signed12.gold
-signed13 normal  ivltests
-repeat1  normal  ivltests
-repeat2  normal  ivltests
+integer5	normal	ivltests #
+signed2		normal	ivltests #
+signed3		normal	ivltests #
+signed4		normal	ivltests diff=log/signed4.log:gold/signed4.gold
+signed5		normal	ivltests
+signed6		normal	ivltests
+signed7		normal	ivltests
+signed8		normal	ivltests
+signed9		normal	ivltests
+signed10	normal	ivltests diff=log/signed10.log:gold/signed10.gold
+signed11	normal	ivltests
+signed12	normal	ivltests diff=log/signed12.log:gold/signed12.gold
+signed13	normal	ivltests
+repeat1		normal	ivltests
+repeat2		normal	ivltests
 decl_assign1	normal	ivltests
-vector   normal  ivltests diff=log/vector.log:gold/vector.gold
-mcl1	 normal  ivltests diff=log/mcl1.log:gold/mcl1.gold
-mcl2	 normal  ivltests diff=log/mcl2.log:gold/mcl2.gold
-comp1000 normal ivltests diff=log/comp1000.log:gold/comp1000.gold
-comp1001 normal ivltests diff=log/comp1001.log:gold/comp1001.gold
-comp1001_fail3	normal ivltests
-comp1001_fail4	normal ivltests
-comp1001_fail5	normal ivltests
-specify1 CO	ivltests
-specify2 normal,-gspecify	ivltests
-specify3 normal,-gspecify ivltests diff=log/specify3.log:gold/specify3.gold
-specify4 normal,-gspecify ivltests diff=log/specify4.log:gold/specify4.gold
-specify5 normal,-gspecify ivltests diff=log/specify5.log:gold/specify5.gold
+vector		normal	ivltests diff=log/vector.log:gold/vector.gold
+mcl1		normal	ivltests diff=log/mcl1.log:gold/mcl1.gold
+mcl2		normal	ivltests diff=log/mcl2.log:gold/mcl2.gold
+comp1000	normal	ivltests diff=log/comp1000.log:gold/comp1000.gold
+comp1001	normal	ivltests diff=log/comp1001.log:gold/comp1001.gold
+comp1001_fail3	normal	ivltests
+comp1001_fail4	normal	ivltests
+comp1001_fail5	normal	ivltests
+specify1	CO	ivltests
+specify2	normal,-gspecify	ivltests
+specify3     normal,-gspecify  ivltests diff=log/specify3.log:gold/specify3.gold
+specify4     normal,-gspecify  ivltests diff=log/specify4.log:gold/specify4.gold
+specify5     normal,-gspecify  ivltests diff=log/specify5.log:gold/specify5.gold
 deposit_wire	normal	ivltests
-specify_01 normal,-gspecify ivltests test # Yet another version of specify
-deposit normal ivltests
-assign_neq normal ivltests # continuous assign with !=
-assign_deq normal ivltests # continuous assign with ==
-assign_ge normal ivltests # continuous assign with >=
-assign_le normal ivltests # continuous assign with <=
-mangle normal ivltests    # 
-mangle_1 normal ivltests  # 
-rop normal ivltests       # 
-task_scope normal ivltests # 
-hello1	normal	ivltests
-hierspace normal ivltests # whitespace.around .dots. in. hierarchical .names
-dotinid normal ivltests   # escaped names with . dots
-eeq normal ivltests       # === and !== in structural context
-dumpvars normal ivltests # PR#174: dumpvars non-hierarchical arguments
-dangling_port normal ivltests # PR#209: dangling port optimization (VVP) 
-sysargs normal ivltests # VVP postponed $syscall argument lookup 
-many_drivers normal ivltests # net with many drivers
-task_port_size normal ivltests # truncate task port connections
-p_monta normal ivltests 
-memidx normal ivltests # PR 221
-memidxrng normal ivltests # PR 271 memory address range checks
-mem2port normal ivltests # memory ports with constant address
-vcd-dup normal ivltests diff=work/vcd-dup.vcd:gold/vcd-dup.vcd.gold:2
-resolv1 normal ivltests # PR#300
-pr307 normal ivltests # wide adds
-pr307a normal ivltests # wide adds
-memport_bs normal ivltests # PR#303
-pr224 normal ivltests  # reg [3:0] ack; ... @(posedge ack)
-pr224a normal ivltests # reg [3:0] ack; ... @(posedge ack[p])
-pr298  normal ivltests diff=log/pr298.log:gold/pr298.gold
-writememh1 normal ivltests # pr#334
-writememh2 normal ivltests # pr#400
-writememb1 normal ivltests # pr#400
-writememb2 normal ivltests # pr#400
-varlsfht1 normal ivltests # variable << in always
-varlsfht2 normal ivltests # variable << in function
-varlsfht normal ivltests  # variable << in wire
-varrshft1 normal ivltests # variable >> in always
-varrshft2 normal ivltests # variable >> in function
-varrshft normal ivltests  # variable >> in wire
-select	normal	ivltests # structural word select
-select2	normal	ivltests # structural bit select
-select3 normal	ivltests diff=log/select3.log:gold/select3.gold
-select4	normal	ivltests # structural bit select
-select5	normal	ivltests # structural bit select
-select6	normal	ivltests
-select7	normal	ivltests
-select8	normal	ivltests
+specify_01	normal,-gspecify  ivltests test # Yet another version of specify
+deposit		normal	ivltests
+assign_neq	normal	ivltests # continuous assign with !=
+assign_deq	normal	ivltests # continuous assign with ==
+assign_ge	normal	ivltests # continuous assign with >=
+assign_le	normal	ivltests # continuous assign with <=
+mangle		normal	ivltests #
+mangle_1	normal	ivltests #
+rop		normal	ivltests #
+task_scope	normal	ivltests #
+hello1		normal	ivltests
+hierspace    normal  ivltests # whitespace.around .dots. in. hierarchical .names
+dotinid		normal	ivltests # escaped names with . dots
+eeq		normal	ivltests # === and !== in structural context
+dumpvars	normal	ivltests # PR#174: dumpvars non-hierarchical arguments
+dangling_port	normal	ivltests # PR#209: dangling port optimization (VVP)
+sysargs		normal	ivltests # VVP postponed $syscall argument lookup
+many_drivers	normal	ivltests # net with many drivers
+task_port_size	normal	ivltests # truncate task port connections
+p_monta		normal	ivltests
+memidx		normal	ivltests # PR 221
+memidxrng	normal	ivltests # PR 271 memory address range checks
+mem2port	normal	ivltests # memory ports with constant address
+vcd-dup		normal	ivltests diff=work/vcd-dup.vcd:gold/vcd-dup.vcd.gold:2
+resolv1		normal	ivltests # PR#300
+pr307		normal	ivltests # wide adds
+pr307a		normal	ivltests # wide adds
+memport_bs	normal	ivltests # PR#303
+pr224		normal	ivltests # reg [3:0] ack; ... @(posedge ack)
+pr224a		normal	ivltests # reg [3:0] ack; ... @(posedge ack[p])
+pr298		normal	ivltests diff=log/pr298.log:gold/pr298.gold
+writememh1	normal	ivltests # pr#334
+writememh2	normal	ivltests # pr#400
+writememb1	normal	ivltests # pr#400
+writememb2	normal	ivltests # pr#400
+varlsfht1	normal	ivltests # variable << in always
+varlsfht2	normal	ivltests # variable << in function
+varlsfht	normal	ivltests # variable << in wire
+varrshft1	normal	ivltests # variable >> in always
+varrshft2	normal	ivltests # variable >> in function
+varrshft	normal	ivltests # variable >> in wire
+select		normal	ivltests # structural word select
+select2		normal	ivltests # structural bit select
+select3		normal	ivltests diff=log/select3.log:gold/select3.gold
+select4		normal	ivltests # structural bit select
+select5		normal	ivltests # structural bit select
+select6		normal	ivltests
+select7		normal	ivltests
+select8		normal	ivltests
 monitor		normal	ivltests diff=log/monitor.log:gold/monitor.gold
 monitor2	normal	ivltests diff=log/monitor2.log:gold/monitor2.gold
 monitor3	normal	ivltests diff=log/monitor3.log:gold/monitor3.gold
-fork1   normal  ivltests # Validate 3 way fork with simple assignments.
-function5 CO ivltests # PR 184 
+fork1		normal	ivltests # Validate 3 way fork with simple assignments.
+function5	CO	ivltests # PR 184
 function6	normal	ivltests
-blankport normal ivltests main # PR 204 Stephan Boettcher - 
-dcomp1	normal	ivltests diff=log/dcomp1.log:gold/dcomp1.gold
-sp2     normal  ivltests diff=work/sp2.inv:gold/sp2.inv
-const   normal  ivltests # PR 122 - Steve Tell - const without length spec.
-const2	normal	ivltests # Some cases that the DCM module trips.
-const3	normal	ivltests
-const4	normal	ivltests
+blankport	normal	ivltests main # PR 204 Stephan Boettcher -
+dcomp1		normal	ivltests diff=log/dcomp1.log:gold/dcomp1.gold
+sp2		normal	ivltests diff=work/sp2.inv:gold/sp2.inv
+const	     normal  ivltests # PR 122 - Steve Tell - const without length spec.
+const2		normal	ivltests # Some cases that the DCM module trips.
+const3		normal	ivltests
+const4		normal	ivltests
 memassign normal ivltests # PR 126 - daavid Leask - assign bus part fm memory item
-string4 normal ivltests diff=log/string4.log:gold/string4.gold
-string5 normal ivltests diff=log/string5.log:gold/string5.gold
-string7 normal ivltests diff=log/string7.log:gold/string7.gold
-string8 normal ivltests diff=log/string8.log:gold/string8.gold
-string9 normal ivltests diff=log/string9.log:gold/string9.gold
-string10 normal ivltests diff=log/string10.log:gold/string10.gold
-string11 normal ivltests diff=log/string11.log:gold/string11.gold
-lh_memcat normal ivltests diff=log/lh_memcat.log:gold/lh_memcat.gold
-lh_memcat2 normal ivltests
-lh_memcat3 normal ivltests
-npmos	normal	ivltests
-rnpmos	normal	ivltests
-npmos2	normal	ivltests
-rnpmos2	normal	ivltests
-pr142   normal  ivltests # Test for PR142
-multiply_large normal ivltests # Takes care of PR222
-pr304	normal	ivltests # test for PR304
-mhead_task normal ivltests # Verify hierarchical task name in another mod.
-bitsel	normal	ivltests diff=log/bitsel.log:gold/bitsel.gold
-bitsel2	normal	ivltests
-bitsel3	normal	ivltests
-bitsel4	normal	ivltests
-bitsel5	normal	ivltests
-bitsel6	normal	ivltests
-bitsel7	normal	ivltests
-bitsel8	normal	ivltests # pr615
-bitsel9	normal	ivltests # pr617
+string4		normal	ivltests diff=log/string4.log:gold/string4.gold
+string5		normal	ivltests diff=log/string5.log:gold/string5.gold
+string7		normal	ivltests diff=log/string7.log:gold/string7.gold
+string8		normal	ivltests diff=log/string8.log:gold/string8.gold
+string9		normal	ivltests diff=log/string9.log:gold/string9.gold
+string10	normal	ivltests diff=log/string10.log:gold/string10.gold
+string11	normal	ivltests diff=log/string11.log:gold/string11.gold
+lh_memcat	normal	ivltests diff=log/lh_memcat.log:gold/lh_memcat.gold
+lh_memcat2	normal	ivltests
+lh_memcat3	normal	ivltests
+npmos		normal	ivltests
+rnpmos		normal	ivltests
+npmos2		normal	ivltests
+rnpmos2		normal	ivltests
+pr142		normal	ivltests # Test for PR142
+multiply_large	normal	ivltests # Takes care of PR222
+pr304		normal	ivltests # test for PR304
+mhead_task	normal	ivltests # Verify hierarchical task name in another mod.
+bitsel		normal	ivltests diff=log/bitsel.log:gold/bitsel.gold
+bitsel2		normal	ivltests
+bitsel3		normal	ivltests
+bitsel4		normal	ivltests
+bitsel5		normal	ivltests
+bitsel6		normal	ivltests
+bitsel7		normal	ivltests
+bitsel8		normal	ivltests # pr615
+bitsel9		normal	ivltests # pr617
 bitsel10	normal	ivltests
 bitwidth	normal	ivltests
 bitwidth2	normal	ivltests
 bitwidth3	normal	ivltests
-pr312	normal	ivltests
-pr355	normal	ivltests
-ram16x1 normal ivltests # Sitting here for a long time?
-sched1  normal ivltests # 
-sched2  normal ivltests # 
-pr273   normal ivltests # Non-constant bit select in ordered list.
-escape1 normal ivltests # \$modulename in defparam and if()
-escape2a CO	ivltests
-escape2b CO	ivltests
-escape2c CO	ivltests
-escape3	normal	ivltests
-escape4	normal	ivltests
+pr312		normal	ivltests
+pr355		normal	ivltests
+ram16x1		normal	ivltests # Sitting here for a long time?
+sched1		normal	ivltests #
+sched2		normal	ivltests #
+pr273		normal	ivltests # Non-constant bit select in ordered list.
+escape1		normal	ivltests # \$modulename in defparam and if()
+escape2a	CO	ivltests
+escape2b	CO	ivltests
+escape2c	CO	ivltests
+escape3		normal	ivltests
+escape4		normal	ivltests
 escape4b	normal	ivltests
-pr338   CO ivltests # pr 338 - constant zz see also constadd2.v
-shift1	normal	ivltests diff=log/shift1.log:gold/shift1.gold
-shift2	normal	ivltests
-shift3	normal	ivltests
-shift4	normal	ivltests
-shift5	normal	ivltests diff=log/shift5.log:gold/shift5.gold
-pr243	normal	ivltests diff=log/pr243.log:gold/pr243.gold
-dummy7	normal	ivltests diff=log/dummy7.log:gold/dummy7.gold
-time6b  normal  ivltests # Rewrote time6 to pass with XL
-time6c  normal  ivltests diff=log/time6c.log:gold/time6c.gold
-disblock normal ivltests # PR280
-disblock2 normal	ivltests diff=log/disblock2.log:gold/disblock2.gold
+pr338		CO	ivltests # pr 338 - constant zz see also constadd2.v
+shift1		normal	ivltests diff=log/shift1.log:gold/shift1.gold
+shift2		normal	ivltests
+shift3		normal	ivltests
+shift4		normal	ivltests
+shift5		normal	ivltests diff=log/shift5.log:gold/shift5.gold
+pr243		normal	ivltests diff=log/pr243.log:gold/pr243.gold
+dummy7		normal	ivltests diff=log/dummy7.log:gold/dummy7.gold
+time6b		normal	ivltests # Rewrote time6 to pass with XL
+time6c		normal	ivltests diff=log/time6c.log:gold/time6c.gold
+disblock	normal	ivltests # PR280
+disblock2	normal	ivltests diff=log/disblock2.log:gold/disblock2.gold
 comment1	normal	ivltests # PR410/411
-pr136    normal  ivltests # PR136 param foo_size 8 * 4
-port-test4a	CE	ivltests # Port declaration input duplication checks (PR394)
-port-test4b	CE	ivltests # Port declaration output duplication checks (PR394)
+pr136		normal	ivltests # PR136 param foo_size 8 * 4
+port-test4a   CE  ivltests # Port declaration input duplication checks (PR394)
+port-test4b   CE  ivltests # Port declaration output duplication checks (PR394)
 port-test5	normal	ivltests # demonstrates 2001 module port syntax
 port-test6	normal	ivltests # demonstrates 2001 module port syntax
 port-test7	normal	ivltests # demonstrates 2001 module port syntax
-pr445	normal	ivltests
-big_int	normal	ivltests # PR#405
-concat1	normal	ivltests # PR#327,372
-concat2	normal	ivltests # PR#282
-concat3	normal	ivltests
-concat4	normal	ivltests
-extend	normal	ivltests
+pr445		normal	ivltests
+big_int		normal	ivltests # PR#405
+concat1		normal	ivltests # PR#327,372
+concat2		normal	ivltests # PR#282
+concat3		normal	ivltests
+concat4		normal	ivltests
+extend		normal	ivltests
 timeform1	normal	ivltests diff=log/timeform1.log:gold/timeform1.gold
 timeform2	normal	ivltests diff=log/timeform2.log:gold/timeform2.gold
-pr183		CO,-gno-specify	ivltests
+pr183		CO,-gno-specify  ivltests
 pr245		normal	ivltests diff=log/pr245.log:gold/pr245.gold
 pr245_std	normal	ivltests diff=log/pr245_std.log:gold/pr245.gold
 pr377		normal	ivltests diff=log/pr377.log:gold/pr377.gold
@@ -1979,7 +1979,7 @@ pr509		normal	ivltests
 pr509b		normal	ivltests
 pr511		normal	ivltests
 pr513		normal	ivltests
-pr519		normal,-S ivltests
+pr519		normal,-S  ivltests
 pr522		normal	ivltests diff=log/pr522.log:gold/pr522.gold
 pr524		normal	ivltests diff=log/pr524.log:gold/pr524.gold
 pr527		normal	ivltests diff=log/pr527.log:gold/pr527.gold
@@ -2017,85 +2017,85 @@ pr596		normal	ivltests diff=log/pr596.log:gold/pr596.gold
 pr602		normal	ivltests
 pr622		normal	ivltests diff=log/pr622.log:gold/pr622.gold
 pr639		normal	ivltests diff=log/pr639.log:gold/pr639.gold
-case1           normal,-S ivltests # First Synth test
-case2           normal,-S ivltests # First Synth test
-case3           normal,-S ivltests # First Synth test
-case4           normal,-S ivltests # First Synth test
-case5           normal,-S ivltests # First Synth test
-case6           normal,-S ivltests # First Synth test
-case7           normal,-S ivltests # First Synth test
-condit1         normal,-S ivltests # First Synth test
-basicreg        normal,-S ivltests # First Synth test
-basiclatch      normal,-S ivltests # First Synth test
-basicstate      normal,-S ivltests # First Synth test
-basicstate2     normal,-S ivltests # First Synth test
-multireg        normal,-S ivltests # First Synth test
-basicexpr       normal,-S ivltests # First Synth test
-basicexpr2      normal,-S ivltests # First Synth test
-basicexpr3      normal,-S ivltests # First Synth test
-basicexpr4      normal,-S ivltests # First Synth test
-shiftl		normal,-S ivltests
-blocksynth1	normal,-S ivltests
-blocksynth2	normal,-S ivltests
-blocksynth3	normal,-S ivltests
-conditsynth1	normal,-S ivltests
-conditsynth2	normal,-S ivltests
-conditsynth3	normal,-S ivltests
-casesynth1	normal,-S ivltests
-casesynth2	normal,-S ivltests
-casesynth3	normal,-S ivltests
-lcatsynth	normal,-S ivltests
-dffsynth	normal,-S ivltests
-dffsynth2	normal,-S ivltests
-dffsynth3	normal,-S ivltests
-dffsynth4	normal,-S ivltests
-sqrt32synth	normal,-S ivltests
+case1		normal,-S  ivltests # First Synth test
+case2		normal,-S  ivltests # First Synth test
+case3		normal,-S  ivltests # First Synth test
+case4		normal,-S  ivltests # First Synth test
+case5		normal,-S  ivltests # First Synth test
+case6		normal,-S  ivltests # First Synth test
+case7		normal,-S  ivltests # First Synth test
+condit1		normal,-S  ivltests # First Synth test
+basicreg	normal,-S  ivltests # First Synth test
+basiclatch	normal,-S  ivltests # First Synth test
+basicstate	normal,-S  ivltests # First Synth test
+basicstate2	normal,-S  ivltests # First Synth test
+multireg	normal,-S  ivltests # First Synth test
+basicexpr	normal,-S  ivltests # First Synth test
+basicexpr2	normal,-S  ivltests # First Synth test
+basicexpr3	normal,-S  ivltests # First Synth test
+basicexpr4	normal,-S  ivltests # First Synth test
+shiftl		normal,-S  ivltests
+blocksynth1	normal,-S  ivltests
+blocksynth2	normal,-S  ivltests
+blocksynth3	normal,-S  ivltests
+conditsynth1	normal,-S  ivltests
+conditsynth2	normal,-S  ivltests
+conditsynth3	normal,-S  ivltests
+casesynth1	normal,-S  ivltests
+casesynth2	normal,-S  ivltests
+casesynth3	normal,-S  ivltests
+lcatsynth	normal,-S  ivltests
+dffsynth	normal,-S  ivltests
+dffsynth2	normal,-S  ivltests
+dffsynth3	normal,-S  ivltests
+dffsynth4	normal,-S  ivltests
+sqrt32synth	normal,-S  ivltests
 sqrt32		normal	ivltests
-memsynth1	normal,-S ivltests
-memsynth2	normal,-S ivltests
-memsynth3	normal,-S ivltests
-memsynth4	normal,-S ivltests
-memsynth5	normal,-S ivltests
-memsynth6	normal,-S ivltests
-memsynth7	normal,-S ivltests
-memsynth8	normal,-S ivltests
-memsynth9	normal,-S ivltests
-ufuncsynth1	normal,-S ivltests
-ssetclr1	normal,-S ivltests
-ssetclr2	normal,-S ivltests
-ssetclr3	normal,-S ivltests
-partselsynth	normal,-S ivltests
-inside_synth	normal,-S ivltests
-inside_synth2	normal,-S ivltests
-inside_synth3	normal,-S ivltests
-mix_reset	normal,-S ivltests
-casex_synth	normal,-S ivltests
-full_case	normal,-S ivltests
+memsynth1	normal,-S  ivltests
+memsynth2	normal,-S  ivltests
+memsynth3	normal,-S  ivltests
+memsynth4	normal,-S  ivltests
+memsynth5	normal,-S  ivltests
+memsynth6	normal,-S  ivltests
+memsynth7	normal,-S  ivltests
+memsynth8	normal,-S  ivltests
+memsynth9	normal,-S  ivltests
+ufuncsynth1	normal,-S  ivltests
+ssetclr1	normal,-S  ivltests
+ssetclr2	normal,-S  ivltests
+ssetclr3	normal,-S  ivltests
+partselsynth	normal,-S  ivltests
+inside_synth	normal,-S  ivltests
+inside_synth2	normal,-S  ivltests
+inside_synth3	normal,-S  ivltests
+mix_reset	normal,-S  ivltests
+casex_synth	normal,-S  ivltests
+full_case	normal,-S  ivltests
 busbug		normal	ivltests diff=log/busbug.log:gold/busbug.gold
-real		normal  ivltests
-real2		normal  ivltests
-real3		normal  ivltests
-real4		normal  ivltests
+real		normal	ivltests
+real2		normal	ivltests
+real3		normal	ivltests
+real4		normal	ivltests
 real5		normal	ivltests diff=log/real5.log:gold/real5.gold
-real6		normal  ivltests
-real7		normal  ivltests
-real8		normal  ivltests
-real9		normal  ivltests
-real10		normal  ivltests
-real11		normal  ivltests
+real6		normal	ivltests
+real7		normal	ivltests
+real8		normal	ivltests
+real9		normal	ivltests
+real10		normal	ivltests
+real11		normal	ivltests
 bool1		normal	ivltests
 realtobits	normal	ivltests
 negvalue	normal	ivltests diff=log/negvalue.log:gold/negvalue.gold
 pr434		normal	ivltests diff=log/pr434.log:gold/pr434.gold
 pr556		normal	ivltests diff=log/pr556.log:gold/pr556.gold
 pr632		normal	ivltests diff=log/pr632.log:gold/pr632.gold
-pr617		normal	ivltests 
+pr617		normal	ivltests
 pr673		normal	ivltests diff=log/pr673.log:gold/pr673.gold
 pr675		normal	ivltests
 pr678		normal	ivltests
-pr685		normal,-S ivltests
+pr685		normal,-S  ivltests
 pr690		normal	ivltests
-pr693		normal  ivltests diff=log/pr693.log:gold/pr693.gold
+pr693		normal	ivltests diff=log/pr693.log:gold/pr693.gold
 pr699		normal	ivltests
 pr699b		normal	ivltests
 pr704		normal	ivltests # Uses ivltests/pr704.hex
@@ -2105,18 +2105,18 @@ pr710		normal	ivltests
 pr718		normal	ivltests
 pr721		normal	ivltests
 pr722		normal	ivltests
-pr729		normal  ivltests diff=log/pr729.log:gold/pr729.gold
+pr729		normal	ivltests diff=log/pr729.log:gold/pr729.gold
 pr734		normal	ivltests
 pr735		normal	ivltests
 pr748		normal	ivltests
-pr751		normal,-Wsensitivity-entire-vector ivltests diff=log/pr751.log:gold/pr751.gold
+pr751		normal,-Wsensitivity-entire-vector  ivltests diff=log/pr751.log:gold/pr751.gold
 pr757		normal	ivltests
 pr772		normal	ivltests
 pr809		normal	ivltests
 pr809b		normal	ivltests
 pr810		normal	ivltests
-pr812		normal  ivltests diff=log/pr812.log:gold/pr812.gold
-pr820		normal  ivltests diff=log/pr820.log:gold/pr820.gold
+pr812		normal	ivltests diff=log/pr812.log:gold/pr812.gold
+pr820		normal	ivltests diff=log/pr820.log:gold/pr820.gold
 pr823		normal	ivltests
 pr841		normal	ivltests
 pr842		normal	ivltests
@@ -2125,51 +2125,51 @@ pr856		normal	ivltests
 pr859		normal	ivltests
 pr860		normal	ivltests
 pr872		normal	ivltests
-pr902		normal  ivltests diff=log/pr902.log:gold/pr902.gold
+pr902		normal	ivltests diff=log/pr902.log:gold/pr902.gold
 pr903		normal	ivltests
-pr905		normal  ivltests diff=log/pr905.log:gold/pr905.gold
-pr910		normal  ivltests diff=log/pr910.log:gold/pr910.gold
+pr905		normal	ivltests diff=log/pr905.log:gold/pr905.gold
+pr910		normal	ivltests diff=log/pr910.log:gold/pr910.gold
 pr913		normal	ivltests
-pr923		normal  ivltests diff=log/pr923.log:gold/pr923.gold
-pr938		normal  ivltests diff=log/pr938.log:gold/pr938.gold
-pr938b		normal  ivltests diff=log/pr938b.log:gold/pr938.gold
-pr938b_std	normal  ivltests diff=log/pr938b_std.log:gold/pr938.gold
+pr923		normal	ivltests diff=log/pr923.log:gold/pr923.gold
+pr938		normal	ivltests diff=log/pr938.log:gold/pr938.gold
+pr938b		normal	ivltests diff=log/pr938b.log:gold/pr938.gold
+pr938b_std	normal	ivltests diff=log/pr938b_std.log:gold/pr938.gold
 pr941		normal	ivltests
 prng		normal	ivltests
 race		normal	ivltests
-pr973		normal  ivltests
-pr978		normal  ivltests
-pr979		normal  ivltests diff=log/pr979.log:gold/pr979.gold
-pr985		normal  ivltests diff=log/pr985.log:gold/pr985.gold
-pr987		normal  ivltests diff=log/pr987.log:gold/pr987.gold
+pr973		normal	ivltests
+pr978		normal	ivltests
+pr979		normal	ivltests diff=log/pr979.log:gold/pr979.gold
+pr985		normal	ivltests diff=log/pr985.log:gold/pr985.gold
+pr987		normal	ivltests diff=log/pr987.log:gold/pr987.gold
 pr990		normal	ivltests
-pr991		normal  ivltests diff=log/pr991.log:gold/pr991.gold
-pr993		normal  ivltests diff=log/pr993.log:gold/pr993.gold
-pr995		normal  ivltests diff=log/pr995.log:gold/pr995.gold
-eq		normal  ivltests
-neq1		normal  ivltests diff=log/neq1.log:gold/neq1.gold
-pr1000		normal  ivltests
-pr1002		normal  ivltests diff=log/pr1002.log:gold/pr1002.gold
-pr1002a		normal  ivltests diff=log/pr1002a.log:gold/pr1002a.gold
-pr1007		normal  ivltests
-pr1008		normal  ivltests diff=log/pr1008.log:gold/pr1008.gold
-pr1022		normal  ivltests
-pr1024		normal  ivltests
-pr1026		normal  ivltests diff=log/pr1026.log:gold/pr1026.gold
-pr1029		normal  ivltests
-pr1032		normal  ivltests
-pr1033		normal  ivltests diff=log/pr1033.log:gold/pr1033.gold
+pr991		normal	ivltests diff=log/pr991.log:gold/pr991.gold
+pr993		normal	ivltests diff=log/pr993.log:gold/pr993.gold
+pr995		normal	ivltests diff=log/pr995.log:gold/pr995.gold
+eq		normal	ivltests
+neq1		normal	ivltests diff=log/neq1.log:gold/neq1.gold
+pr1000		normal	ivltests
+pr1002		normal	ivltests diff=log/pr1002.log:gold/pr1002.gold
+pr1002a		normal	ivltests diff=log/pr1002a.log:gold/pr1002a.gold
+pr1007		normal	ivltests
+pr1008		normal	ivltests diff=log/pr1008.log:gold/pr1008.gold
+pr1022		normal	ivltests
+pr1024		normal	ivltests
+pr1026		normal	ivltests diff=log/pr1026.log:gold/pr1026.gold
+pr1029		normal	ivltests
+pr1032		normal	ivltests
+pr1033		normal	ivltests diff=log/pr1033.log:gold/pr1033.gold
 assign_add	normal	ivltests
-credence20041209 normal ivltests
+credence20041209	normal	ivltests
 pr1065		normal	ivltests diff=log/pr1065.log:gold/pr1065.gold
 pr1072		normal	ivltests
-pr1077		normal,-g2	ivltests diff=log/pr1077.log:gold/pr1077.gold
+pr1077		normal,-g2  ivltests diff=log/pr1077.log:gold/pr1077.gold
 pr1087		normal	ivltests
 pr1101		normal	ivltests
 pr1115		normal	ivltests
 pr1367855	normal	ivltests
-pr1380261	normal  ivltests
-pr1444055	normal  ivltests
+pr1380261	normal	ivltests
+pr1444055	normal	ivltests
 pr1449749a	normal	ivltests
 pr1353345	normal	ivltests
 pr1353345b	normal	ivltests
@@ -2183,8 +2183,8 @@ scanf2		normal	ivltests
 scanf3		normal	ivltests
 scan-invalid	normal	ivltests diff=log/scan-invalid.log:gold/scan-invalid.gold
 pr1403406	normal	ivltests diff=log/pr1403406.log:gold/pr1403406.gold
-pr1403406a	normal,-fivltests/pr1403406-1.cf ivltests diff=log/pr1403406a.log:gold/pr1403406a.gold
-pr1403406b	normal,-fivltests/pr1403406-1.cf,-fivltests/pr1403406-2.cf ivltests diff=log/pr1403406b.log:gold/pr1403406b.gold
+pr1403406a	normal,-fivltests/pr1403406-1.cf  ivltests diff=log/pr1403406a.log:gold/pr1403406a.gold
+pr1403406b	normal,-fivltests/pr1403406-1.cf,-fivltests/pr1403406-2.cf  ivltests diff=log/pr1403406b.log:gold/pr1403406b.gold
 pr1467825	CO,-gno-specify	ivltests
 pr1455873	normal	ivltests
 pr1474283	normal	ivltests
@@ -2216,7 +2216,7 @@ pr1570635b	normal	ivltests
 pr1574175	normal	ivltests diff=log/pr1574175.log:gold/pr1574175.gold
 pr1581580	normal	ivltests
 pr1587634	CO,-Ttyp ivltests
-pr1587669	normal,-gspecify	ivltests diff=log/pr1587669.log:gold/pr1587669.gold
+pr1587669	normal,-gspecify  ivltests diff=log/pr1587669.log:gold/pr1587669.gold
 pr1589497	normal	ivltests diff=log/pr1589497.log:gold/pr1589497.gold
 pr1598445	normal	ivltests
 pr1601896	normal	ivltests
@@ -2315,7 +2315,7 @@ pr1758135	normal	ivltests diff=log/pr1758135.log:gold/pr1758135.gold
 pr1763333	CE	ivltests
 pr1765789	normal	ivltests
 pr1770199	normal	ivltests diff=log/pr1770199.log:gold/pr1770199.gold
-swrite	normal	ivltests diff=log/swrite.log:gold/swrite.gold
+swrite		normal	ivltests diff=log/swrite.log:gold/swrite.gold
 pr1771903	normal	ivltests diff=log/pr1771903.log:gold/pr1771903.gold
 pr1776485	normal	ivltests
 pr1777103	normal	ivltests
@@ -2326,7 +2326,7 @@ pr1787394b	normal	ivltests diff=log/pr1787394b.log:gold/pr1787394a.gold
 pr1787423	normal	ivltests diff=log/pr1787423.log:gold/pr1787423.gold
 pr1787423b	normal	ivltests
 pr1787423c	normal	ivltests
-cmos	normal	ivltests diff=log/cmos.log:gold/cmos.gold
+cmos		normal	ivltests diff=log/cmos.log:gold/cmos.gold
 pr1792108	normal	ivltests diff=log/pr1792108.log:gold/pr1792108.gold
 pr1792152	normal	ivltests diff=log/pr1792152.log:gold/pr1792152.gold
 pr1792734	normal	ivltests diff=log/pr1792734.log:gold/pr1792734.gold
@@ -2339,9 +2339,9 @@ pr1795005b	normal	ivltests diff=log/pr1795005b.log:gold/pr1795005b.gold
 pr1799904	normal	ivltests diff=log/pr1799904.log:gold/pr1799904.gold
 pr1804877	normal	ivltests diff=log/pr1804877.log:gold/pr1804877.gold
 pr1805837	normal	ivltests diff=log/pr1805837.log:gold/pr1805837.gold
-urand	normal	ivltests diff=log/urand.log:gold/urand.gold
-urand_r	normal	ivltests diff=log/urand_r.log:gold/urand_r.gold
-fileio	normal	ivltests diff=log/fileio.log:gold/fileio.gold
+urand		normal	ivltests diff=log/urand.log:gold/urand.gold
+urand_r		normal	ivltests diff=log/urand_r.log:gold/urand_r.gold
+fileio		normal	ivltests diff=log/fileio.log:gold/fileio.gold
 pr1812297	normal	ivltests
 pr1819452	normal	ivltests diff=log/pr1819452.log:gold/pr1819452.gold
 pr1820472	normal	ivltests diff=log/pr1820472.log:gold/pr1820472.gold
@@ -2363,21 +2363,21 @@ pr1861212b	normal	ivltests diff=log/pr1861212b.log:gold/pr1861212.gold
 pr1861212c	normal	ivltests diff=log/pr1861212c.log:gold/pr1861212.gold
 unnamed_generate_block	normal	ivltests diff=log/unnamed_generate_block.log:gold/unnamed_generate_block.gold
 pr1833754	CE	ivltests
-sdf1	normal,-gspecify	ivltests diff=log/sdf1.log:gold/sdf1.gold
-sdf2	normal,-gspecify	ivltests diff=log/sdf2.log:gold/sdf1.gold
-sdf3	normal,-gspecify	ivltests diff=log/sdf3.log:gold/sdf1.gold
-sdf4	normal,-gspecify	ivltests diff=log/sdf4.log:gold/sdf1.gold
-sdf5	normal,-gspecify	ivltests diff=log/sdf5.log:gold/sdf5.gold
-sdf6	normal,-gspecify	ivltests diff=log/sdf6.log:gold/sdf6.gold
-sdf7	normal,-gspecify	ivltests diff=log/sdf7.log:gold/sdf7.gold
-sdf8	normal,-gspecify	ivltests diff=log/sdf8.log:gold/sdf8.gold
+sdf1		normal,-gspecify  ivltests diff=log/sdf1.log:gold/sdf1.gold
+sdf2		normal,-gspecify  ivltests diff=log/sdf2.log:gold/sdf1.gold
+sdf3		normal,-gspecify  ivltests diff=log/sdf3.log:gold/sdf1.gold
+sdf4		normal,-gspecify  ivltests diff=log/sdf4.log:gold/sdf1.gold
+sdf5		normal,-gspecify  ivltests diff=log/sdf5.log:gold/sdf5.gold
+sdf6		normal,-gspecify  ivltests diff=log/sdf6.log:gold/sdf6.gold
+sdf7		normal,-gspecify  ivltests diff=log/sdf7.log:gold/sdf7.gold
+sdf8		normal,-gspecify  ivltests diff=log/sdf8.log:gold/sdf8.gold
 sdf_del_min	normal,-gspecify,-Tmin	ivltests
 sdf_del_typ	normal,-gspecify,-Ttyp	ivltests
 sdf_del_max	normal,-gspecify,-Tmax	ivltests
 macro_with_args	normal	ivltests diff=log/macro_with_args.log:gold/macro_with_args.gold
-macro2	normal	ivltests diff=log/macro2.log:gold/macro2.gold
-pr1862744a	normal,-Winfloop	ivltests
-pr1862744b	CE,-Winfloop	ivltests diff=log/pr1862744b.log:gold/pr1862744b.gold
+macro2		normal	ivltests diff=log/macro2.log:gold/macro2.gold
+pr1862744a	normal,-Winfloop  ivltests
+pr1862744b	CE,-Winfloop  ivltests diff=log/pr1862744b.log:gold/pr1862744b.gold
 pr1864110a	normal	ivltests diff=log/pr1864110a.log:gold/pr1864110a.gold
 pr1864110b	normal	ivltests diff=log/pr1864110b.log:gold/pr1864110b.gold
 pr1864110c	normal	ivltests diff=log/pr1864110c.log:gold/pr1864110c.gold
@@ -2400,7 +2400,7 @@ pr1875866	normal	ivltests
 pr1875866b	normal	ivltests
 pr1876798	normal	ivltests diff=log/pr1876798.log:gold/pr1876798.gold
 pr1877740	normal	ivltests
-pr1877743	normal,-gspecify    ivltests
+pr1877743	normal,-gspecify  ivltests
 pr1878909	normal	ivltests
 pr1879226	normal	ivltests
 pr1880003	normal	ivltests
@@ -2469,15 +2469,15 @@ pr1948342	normal	ivltests
 pr1950282	normal	ivltests
 pr1956211	normal	ivltests
 pr1958801	normal	ivltests
-test_va_math	normal,-mva_math	ivltests diff=log/test_va_math.log:gold/test_va_math.gold
-test_vams_math	normal,-gverilog-ams	ivltests diff=log/test_vams_math.log:gold/test_vams_math.gold
+test_va_math	normal,-mva_math  ivltests diff=log/test_va_math.log:gold/test_va_math.gold
+test_vams_math	normal,-gverilog-ams  ivltests diff=log/test_vams_math.log:gold/test_vams_math.gold
 concat_zero_wid_fail	CE	ivltests
 concat_zero_wid_fail2	normal	ivltests
 repl_zero_wid_fail	CE	ivltests
 repl_zero_wid_pass	normal	ivltests
-vams_abs1	normal,-gverilog-ams	ivltests
-vams_abs2	normal,-gverilog-ams	ivltests
-scaled_real	normal,-gverilog-ams	ivltests
+vams_abs1	normal,-gverilog-ams  ivltests
+vams_abs2	normal,-gverilog-ams  ivltests
+scaled_real	normal,-gverilog-ams  ivltests
 pr1960545	normal	ivltests diff=log/pr1960545.log:gold/pr1960545.gold
 pr1960548	normal	ivltests diff=log/pr1960548.log:gold/pr1960548.gold
 pr1960558	normal	ivltests diff=log/pr1960558.log:gold/pr1960558.gold
@@ -2489,12 +2489,12 @@ pr1960633	normal	ivltests
 pr1963240	normal	ivltests diff=log/pr1963240.log:gold/pr1963240.gold
 pr1963960	normal	ivltests
 pr1963962	normal	ivltests diff=log/pr1963962.log:gold/pr1963962.gold
-value_range1	normal,-gverilog-ams	ivltests
-value_range2	normal,-gverilog-ams	ivltests
-value_range3	CE,-gverilog-ams	ivltests
-array4	normal	ivltests
-array5	CE	ivltests
-array6	normal	ivltests
+value_range1	normal,-gverilog-ams  ivltests
+value_range2	normal,-gverilog-ams  ivltests
+value_range3	CE,-gverilog-ams  ivltests
+array4		normal	ivltests
+array5		CE	ivltests
+array6		normal	ivltests
 pr1971662a	CE	ivltests
 pr1971662b	CE	ivltests
 pr1978358	normal	ivltests
@@ -2631,14 +2631,14 @@ pr2190323	normal	ivltests
 real_wire_array	normal	ivltests
 pr2201909	normal	ivltests
 pr2201909b	normal	ivltests
-pr2202706       normal,+option=0123456789abcdef ivltests
-pr2202706b      normal,+option  ivltests
-pr2202706c      normal,+hex=123456789abcdef_x_z,+oct=1234567_x_z,+bin=101_x_z,+dec=123456789_,+dec_x=x,+dec_z=z_,+neg=-1_00,+real=12.3456789,+neg_real=-23.456e+3,+real_inf=Inf,+bad_num=not_a_num,+warn_real=9.825units        ivltests
+pr2202706	normal,+option=0123456789abcdef  ivltests
+pr2202706b	normal,+option  ivltests
+pr2202706c	normal,+hex=123456789abcdef_x_z,+oct=1234567_x_z,+bin=101_x_z,+dec=123456789_,+dec_x=x,+dec_z=z_,+neg=-1_00,+real=12.3456789,+neg_real=-23.456e+3,+real_inf=Inf,+bad_num=not_a_num,+warn_real=9.825units  ivltests
 pr2202846a	normal	ivltests
 pr2202846b	normal	ivltests
 pr2202846c	normal	ivltests
 pr2208681	normal	ivltests
-pr2215342	normal,-grelative-include	ivltests
+pr2215342	normal,-grelative-include  ivltests
 pr2219441	normal	ivltests
 pr2219441b	normal	ivltests
 pr2224845	normal	ivltests
@@ -2674,8 +2674,8 @@ pr2305307	normal	ivltests
 pr2305307b	normal	ivltests
 pr2305307c	normal	ivltests
 pr2306259	normal	ivltests
-analog1	normal,-gverilog-ams	ivltests
-analog2	normal,-gverilog-ams	ivltests
+analog1	normal,-gverilog-ams  ivltests
+analog2	normal,-gverilog-ams  ivltests
 pr2350934	normal	ivltests
 pr2350934b	normal	ivltests
 pr2350988	normal	ivltests
@@ -2701,15 +2701,15 @@ pr2453002	normal	ivltests
 pr2453002b	normal	ivltests
 pr2456943	normal	ivltests
 pr2459681	normal	ivltests
-ca_time	normal	ivltests diff=log/ca_time.log:gold/ca_time.gold
-ca_func	normal,-gstrict-ca-eval	ivltests
+ca_time		normal	ivltests diff=log/ca_time.log:gold/ca_time.gold
+ca_func		normal,-gstrict-ca-eval  ivltests
 pr2470181a	normal	ivltests
 pr2470181b	normal	ivltests
 pr2476430	normal	ivltests
 pr2486350	normal	ivltests diff=log/pr2486350.log:gold/pr2486350.gold
 mixed_type_div_mod	normal	ivltests
-stime	normal	ivltests diff=log/stime.log:gold/stime.gold
-abstime	normal	ivltests
+stime		normal	ivltests diff=log/stime.log:gold/stime.gold
+abstime		normal	ivltests
 pr2503208	normal	ivltests
 pr2509349a	normal	ivltests diff=log/pr2509349a.log:gold/pr2509349a.gold
 pr2509349b	normal	ivltests diff=log/pr2509349b.log:gold/pr2509349b.gold
@@ -2722,7 +2722,7 @@ real_invalid_ops	CE	ivltests diff=log/real_invalid_ops.log:gold/real_invalid_ops
 pr2580730	normal	ivltests diff=log/pr2580730.log:gold/pr2580730.gold
 pr2590274a	normal	ivltests diff=log/pr2590274a.log:gold/pr2590274.gold
 pr2590274b	normal	ivltests diff=log/pr2590274b.log:gold/pr2590274.gold
-pr2590274c	normal,-gspecify	ivltests diff=log/pr2590274c.log:gold/pr2590274.gold
+pr2590274c	normal,-gspecify  ivltests diff=log/pr2590274c.log:gold/pr2590274.gold
 pr2593733	normal	ivltests
 pr2597278	normal	ivltests
 pr2597278b	CE	ivltests
@@ -2740,7 +2740,7 @@ fread-error	normal	ivltests diff=log/fread-error.log:gold/fread-error.gold
 pr2709097	normal	ivltests
 pr2715547	normal	ivltests
 pr2715558	normal	ivltests diff=log/pr2715558.log:gold/pr2715558.gold
-pr2715748  	normal	ivltests diff=log/pr2715748.log:gold/pr2715748.gold
+pr2715748	normal	ivltests diff=log/pr2715748.log:gold/pr2715748.gold
 pr2721213	normal	ivltests
 pr2722330a	normal	ivltests
 pr2722330b	normal	ivltests
@@ -2756,7 +2756,7 @@ real_concat_invalid2	CE	ivltests
 pr2728032	normal	ivltests
 pr2728547	normal	ivltests
 pr2728812a	normal	ivltests
-pr2728812b	CE,-pRECURSIVE_MOD_LIMIT=5	ivltests
+pr2728812b	CE,-pRECURSIVE_MOD_LIMIT=5  ivltests
 pr2728812c	CE	ivltests
 pr2745281	normal	ivltests
 indef_width_concat	CE	ivltests diff=log/indef_width_concat.log:gold/indef_width_concat.gold
@@ -2773,8 +2773,8 @@ pr2792883	CE	ivltests
 pr2792897	normal	ivltests
 pr2794144	CE	ivltests diff=log/pr2794144.log:gold/pr2794144.gold
 pr2792897	normal	ivltests
-resetall	normal,-Wtimescale ivltests diff=log/resetall.log:gold/resetall.gold
-resetall2	normal,-Wtimescale ivltests diff=log/resetall2.log:gold/resetall2.gold
+resetall	normal,-Wtimescale  ivltests diff=log/resetall.log:gold/resetall.gold
+resetall2	normal,-Wtimescale  ivltests diff=log/resetall2.log:gold/resetall2.gold
 def_nettype	normal	ivltests
 uncon_drive	normal	ivltests
 pr2800985a	normal	ivltests
@@ -2789,16 +2789,16 @@ pr2815398a	normal	ivltests diff=log/pr2815398a.log:gold/pr2815398a.gold
 pr2815398a_std	normal	ivltests
 pr2815398b	normal	ivltests diff=log/pr2815398b.log:gold/pr2815398b.gold
 pr2818823	normal	ivltests
-sv_timeunit_prec	normal,-g2009	ivltests
-sv_timeunit_prec_fail	CE,-g2009	ivltests diff=log/sv_timeunit_prec_fail.log:gold/sv_timeunit_prec_fail.gold
+sv_timeunit_prec	normal,-g2009  ivltests
+sv_timeunit_prec_fail	CE,-g2009  ivltests diff=log/sv_timeunit_prec_fail.log:gold/sv_timeunit_prec_fail.gold
 pr2823414	CE	ivltests diff=log/pr2823414.log:gold/pr2823414.gold
 pr2823711	normal	ivltests
 pr2824189	normal	ivltests
 udp_delay_fail	CE	ivltests
 udp_eval_arg	normal	ivltests
-cmdline_parm1	normal,-Pmain.foo=2	ivltests
+cmdline_parm1	normal,-Pmain.foo=2  ivltests
 pr2829776	normal	ivltests
-pr2829776b	normal,-gspecify	ivltests
+pr2829776b	normal,-gspecify  ivltests
 memref		normal	ivltests
 pr2832234	normal	ivltests
 pr2834340	normal	ivltests
@@ -2840,8 +2840,8 @@ pr2913438b	normal	ivltests
 pr2913927	normal	ivltests
 pr2918095	normal	ivltests
 select_padding	normal	ivltests
-sel_rval_bit_ob	normal,-Wselect-range	ivltests diff=log/sel_rval_bit_ob.log:gold/sel_rval_bit_ob.gold
-sel_rval_part_ob	normal,-Wselect-range	ivltests diff=log/sel_rval_part_ob.log:gold/sel_rval_part_ob.gold
+sel_rval_bit_ob	normal,-Wselect-range  ivltests diff=log/sel_rval_bit_ob.log:gold/sel_rval_bit_ob.gold
+sel_rval_part_ob	normal,-Wselect-range  ivltests diff=log/sel_rval_part_ob.log:gold/sel_rval_part_ob.gold
 pr2922063	normal	ivltests
 pr2922063a	normal	ivltests
 pr2922063b	normal	ivltests
