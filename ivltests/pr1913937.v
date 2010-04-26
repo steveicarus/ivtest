@@ -19,14 +19,14 @@ module test ();
 
    initial begin
       #1;
-      if (a != 2'b00) begin
-          $display("FAILED: cont. assign, expected 2'b00, got %b", a);
+      if (a !== 2'b01) begin
+          $display("FAILED: cont. assign, expected 2'b01, got %b", a);
           pass = 1'b0;
       end
 
       ra = |((c & ~(1'b1<<9'h00)) & b);
-      if (ra != 2'b00) begin
-          $display("FAILED: proc. assign, expected 2'b00, got %b", ra);
+      if (ra !== 2'b01) begin
+          $display("FAILED: proc. assign, expected 2'b01, got %b", ra);
           pass = 1'b0;
       end
 
