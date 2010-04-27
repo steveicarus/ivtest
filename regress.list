@@ -880,6 +880,8 @@ v0.8:pr2043324	NI
 v0.8:pr2219441	NI
 v0.8:pr2219441b	NI
 v0.8:pr2976242	NI
+v0.8:pr2976242b	NI
+v0.8:pr2976242c	NI
 
 # V0.8 does not support $sscanf/$fscanf.
 v0.8:pr1687193	NI
@@ -2862,6 +2864,8 @@ pr2974216	normal	ivltests
 pr2974216b	normal	ivltests
 pr2974294	normal	ivltests
 pr2976242	normal	ivltests
+pr2976242b	normal	ivltests
+pr2976242c	CE	ivltests diff=log/pr2976242c.log:gold/pr2976242c.gold
 pr2985542	normal	ivltests
 pr2986528	normal	ivltests
 pr2991457	normal	ivltests
