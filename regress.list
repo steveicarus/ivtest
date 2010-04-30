@@ -2868,3 +2868,4 @@ pr2976242b	normal	ivltests
 pr2976242c	CE	ivltests diff=log/pr2976242c.log:gold/pr2976242c.gold
 pr2985542	normal	ivltests
 pr2986528	normal	ivltests
+pr2994193	normal	ivltests
