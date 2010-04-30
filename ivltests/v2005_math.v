@@ -285,7 +285,7 @@ module top;
     /* Test the CA statements and the vpi implementation. */
 
     rin = -1;
-    #1 if (out !== 'bx) begin
+    #1 if (out !== 8'bx) begin
       $display("Failed CA (int) with -1.0, expected 'bx, got %d", out);
       pass = 1'b0;
     end
