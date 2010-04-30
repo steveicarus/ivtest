@@ -25,7 +25,7 @@ static PLI_INT32 number_compiletf(PLI_BYTE8 *x)
       vpi_printf("vpi_get_value (%s):\n", name ? name : "<N/A>");
       var.format = vpiObjTypeVal;
       vpi_get_value(arg, &var);
-      vpi_printf("  format = %d\n", var.format);
+      vpi_printf("  format = %d\n", (int) var.format);
       var.format = vpiDecStrVal;
       vpi_get_value(arg, &var);
       vpi_printf("   value = %s\n", var.value.str);
