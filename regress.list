@@ -2871,3 +2871,4 @@ pr2986528	normal	ivltests
 pr2991457	normal	ivltests
 pr2991457b	normal	ivltests
 pr2994193	normal	ivltests
+repeat_expr_probe	normal	ivltests
