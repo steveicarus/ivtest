@@ -1502,6 +1502,7 @@ test_mos_strength_reduction: Passed.
                   pr2991457: Passed.
                  pr2991457b: Passed.
                   pr2994193: Passed.
+          repeat_expr_probe: Passed.
 ============================================================================
 Test results:
-  Total=1502, Passed=1500, Failed=2, Not Implemented=0, Expected Fail=0
+  Total=1503, Passed=1501, Failed=2, Not Implemented=0, Expected Fail=0
