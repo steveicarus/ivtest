@@ -32,7 +32,7 @@ static s_vpi_time suppress_time = { vpiSuppressTime, 0, 0, 0 };
 static vpiHandle findReg(const char *name_);
 static vpiHandle findMem(const char *name_);
 
-static PLI_INT32
+extern "C" PLI_INT32
 CallbackPeek(s_cb_data * data)
 {
 	vpiHandle handle;
@@ -142,7 +142,7 @@ findMem(const char *name_)
     return word_h;
 }
 
-static PLI_INT32 SetupTrigger(s_cb_data * cb_data)
+extern "C" PLI_INT32 SetupTrigger(s_cb_data * cb_data)
 {
 	s_cb_data vc_cb_data;
 	vpiHandle handle;
@@ -165,7 +165,7 @@ static PLI_INT32 SetupTrigger(s_cb_data * cb_data)
 	return (0);
 }
 
-static void my_Register(void)
+extern "C" void my_Register(void)
 {
 	s_cb_data cb_data;
 	cb_data.time = &suppress_time;
@@ -180,5 +180,8 @@ static void my_Register(void)
 	vpi_register_cb(&cb_data);
 }
 
+#ifdef __SUNPRO_CC
+extern "C"
+#endif
 void (*vlog_startup_routines[]) () = {
 my_Register, 0};

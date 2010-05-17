@@ -27,7 +27,7 @@
 #include <stdlib.h>
 #include "vpi_user.h"
 
-static PLI_INT32
+extern "C" PLI_INT32
 CallbackPeek(s_cb_data *data) {
 
     static s_vpi_time	zero_delay = { vpiNoDelay, 0, 0, 0 };
@@ -109,14 +109,14 @@ RegisterPeek(const char *name, vpiHandle poke)
     vpi_register_cb(&vc_cb_data);
 }
 
-static PLI_INT32
+extern "C" PLI_INT32
 EndofCompile(s_cb_data * cb_data)
 {
     RegisterPeek("e_Peek", FindPoke("r_Poke"));
     return 0;
 }
 
-static void my_Register(void)
+extern "C" void my_Register(void)
 {
         s_cb_data cb_data;
 
@@ -131,6 +131,9 @@ static void my_Register(void)
         vpi_register_cb(&cb_data);
 }
 
+#ifdef __SUNPRO_CC
+extern "C"
+#endif
 void (*vlog_startup_routines[]) () = {
   my_Register,
   0
