@@ -813,6 +813,7 @@ v0.8:pr2202846c		NI # No support for const part selects before/after vec.
 v0.8:pr2215342		NI # Current directory is not in include search path.
 v0.8:pr2580730		NI # No support for real in @()
 v0.8:pr2715558		NI # No support for CA strength resolution.
+v0.8:pr2715558b		NI # No support for CA strength resolution.
 v0.8:pr2721213		NI # No support for a task with no arguments?
 v0.8:pr2790236		NI # No support for output reg.
 v0.8:pr2883958		NI # No support for greater than 32 bit delays in a CA.
@@ -2742,6 +2743,7 @@ fread-error	normal	ivltests diff=log/fread-error.log:gold/fread-error.gold
 pr2709097	normal	ivltests
 pr2715547	normal	ivltests
 pr2715558	normal	ivltests diff=log/pr2715558.log:gold/pr2715558.gold
+pr2715558b	normal	ivltests diff=log/pr2715558b.log:gold/pr2715558b.gold
 pr2715748	normal	ivltests diff=log/pr2715748.log:gold/pr2715748.gold
 pr2721213	normal	ivltests
 pr2722330a	normal	ivltests

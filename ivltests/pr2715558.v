@@ -1,4 +1,7 @@
 
+// NOTE: This test program is WRONG, in that it ignores the fact
+// that continuous assigns drive with their own strength and drop
+// any strength that the r-value may have.
 
 module strength();
 
