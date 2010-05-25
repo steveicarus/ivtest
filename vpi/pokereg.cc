@@ -34,9 +34,9 @@ static struct str_s {
 };
 
 #ifdef IVERILOG_V0_8
-static PLI_INT32 RegPeek(char *)
+extern "C" PLI_INT32 RegPeek(char *)
 #else
-static PLI_INT32 RegPeek(PLI_BYTE8 *)
+extern "C" PLI_INT32 RegPeek(PLI_BYTE8 *)
 #endif
 {
     vpiHandle	mod_h, iterate, handle;
@@ -94,9 +94,9 @@ static PLI_INT32 RegPeek(PLI_BYTE8 *)
 }
 
 #ifdef IVERILOG_V0_8
-static PLI_INT32 RegPoke(char *)
+extern "C" PLI_INT32 RegPoke(char *)
 #else
-static PLI_INT32 RegPoke(PLI_BYTE8 *)
+extern "C" PLI_INT32 RegPoke(PLI_BYTE8 *)
 #endif
 {
     vpiHandle	mod_h, iterate, handle;
@@ -148,7 +148,7 @@ static PLI_INT32 RegPoke(PLI_BYTE8 *)
     return 0;
 }
 
-static void
+extern "C" void
 RegisterCallbacks(void)
 {
     s_vpi_systf_data tf_data;
@@ -167,6 +167,9 @@ RegisterCallbacks(void)
     vpi_register_systf(&tf_data);
 }
 
+#ifdef __SUNPRO_CC
+extern "C"
+#endif
 void (*vlog_startup_routines[])() =
 {
     RegisterCallbacks,
