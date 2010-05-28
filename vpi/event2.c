@@ -52,12 +52,12 @@ CallbackRegister(s_cb_data *data)
 {
     vpiHandle hand;
     s_cb_data cb_data;
-    s_vpi_time time = { vpiSimTime, 0, 0, 0 };
+    s_vpi_time timerec = { vpiSimTime, 0, 0, 0 };
 
     hand = vpi_handle_by_name("test.e", 0);
     assert(hand);
 
-    cb_data.time = &time;
+    cb_data.time = &timerec;
     cb_data.value = 0;
     cb_data.user_data = (char *)hand;
     cb_data.obj = hand;
@@ -73,9 +73,9 @@ static void
 VPIRegister(void)
 {
     s_cb_data cb_data;
-    s_vpi_time time = { vpiSuppressTime, 0, 0, 0 };
+    s_vpi_time timerec = { vpiSuppressTime, 0, 0, 0 };
 
-    cb_data.time = &time;
+    cb_data.time = &timerec;
     cb_data.value = 0;
     cb_data.user_data = 0;
     cb_data.obj = 0;

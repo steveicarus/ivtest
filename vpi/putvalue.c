@@ -28,7 +28,7 @@ static PLI_INT32
 EndOfCompile(s_cb_data *data)
 {
     vpiHandle hand;
-    s_vpi_time time = { vpiSimTime, 0, 0, 0 };
+    s_vpi_time timerec = { vpiSimTime, 0, 0, 0 };
     s_vpi_value val;
     int i;
 
@@ -44,18 +44,18 @@ EndOfCompile(s_cb_data *data)
 
 	if (i < 3) {
 	    // delay 10+i time units
-	    time.low = 1000 * (i + 1);
+	    timerec.low = 1000 * (i + 1);
 	} else {
-	    time.type = vpiScaledRealTime;
-	    time.low = 0;
-	    time.real = 10000.0 * (i+1);
+	    timerec.type = vpiScaledRealTime;
+	    timerec.low = 0;
+	    timerec.real = 10000.0 * (i+1);
 	}
 
 	// Toggle state
 	val.value.integer ^= 1;
 
 	// Put new state
-	vpi_put_value(hand, &val, &time, vpiPureTransportDelay);
+	vpi_put_value(hand, &val, &timerec, vpiPureTransportDelay);
     }
 
     return 0;
@@ -66,9 +66,9 @@ static void
 VPIRegister(void)
 {
     s_cb_data cb_data;
-    s_vpi_time time = { vpiSuppressTime, 0, 0, 0 };
+    s_vpi_time timerec = { vpiSuppressTime, 0, 0, 0 };
 
-    cb_data.time = &time;
+    cb_data.time = &timerec;
     cb_data.value = 0;
     cb_data.user_data = 0;
     cb_data.obj = 0;

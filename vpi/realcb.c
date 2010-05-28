@@ -46,16 +46,16 @@ static PLI_INT32 my_watchreal_calltf(PLI_BYTE8 *xx)
 #endif
 {
       struct t_cb_data cb;
-      struct t_vpi_time time;
+      struct t_vpi_time timerec;
 
       vpiHandle sys = vpi_handle(vpiSysTfCall, 0);
       vpiHandle argv = vpi_iterate(vpiArgument, sys);
 
       vpiHandle arg;
 
-      time.type = vpiSimTime;
-      time.low = 0;
-      time.high = 0;
+      timerec.type = vpiSimTime;
+      timerec.low = 0;
+      timerec.high = 0;
 
       while (0 != (arg = vpi_scan(argv))) {
 
@@ -63,7 +63,7 @@ static PLI_INT32 my_watchreal_calltf(PLI_BYTE8 *xx)
 
 	    cb.reason = cbValueChange;
 	    cb.cb_rtn = watchreal_cb;
-	    cb.time = &time;
+	    cb.time = &timerec;
 	    cb.obj = arg;
 	    cb.value = 0;
 	    cb.user_data = (char*)arg;
