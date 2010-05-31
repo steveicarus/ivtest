@@ -5,13 +5,12 @@ module top;
 
   initial begin
     // $monitor(bf1, bf2,, nt1, nt2,, pd1, pd2,, pu1, pu2,, in);
-    #1;
-    if (bf1 !== 1'bx && bf2 !== 1'bx) begin
-      $display("Buffer failed, expected 2'bxx, got %b%b", bf1, bf2);
+    if (bf1 !== 1'bz && bf2 !== 1'bz) begin
+      $display("Buffer failed, expected 2'bzz, got %b%b", bf1, bf2);
       pass = 1'b0;
     end
-    if (nt1 !== 1'bx && nt2 !== 1'bx) begin
-      $display("Inverter (not) failed, expected 2'bxx, got %b%b", nt1, nt2);
+    if (nt1 !== 1'bz && nt2 !== 1'bz) begin
+      $display("Inverter (not) failed, expected 2'bzz, got %b%b", nt1, nt2);
       pass = 1'b0;
     end
     if (pd1 !== 1'b0 && pd2 !== 1'b0) begin
