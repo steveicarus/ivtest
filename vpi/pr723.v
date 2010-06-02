@@ -25,6 +25,8 @@ module test;
 
         // Show what's open
         $test;
+        // Different systems have different buffer sizes so flush here.
+        $fflush;
 
         // access some of the files
         $fdisplay(1, "write to MCD 1");
