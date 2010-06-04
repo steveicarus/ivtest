@@ -764,6 +764,7 @@ v0.8:pr2815398b	NI
 v0.8:pr2842185	NI
 v0.8:pr2909414	NI
 v0.8:pr2924354	NI
+v0.8:pr3011327	NI
 v0.8:scoped_events	NI
 v0.8:unnamed_generate_block	NI
 
@@ -2929,3 +2930,4 @@ pr2994193	normal	ivltests
 repeat_expr_probe	normal	ivltests
 delayed_comp_reduct	normal	ivltests
 pr2998515	normal	ivltests
+pr3011327	normal	ivltests
