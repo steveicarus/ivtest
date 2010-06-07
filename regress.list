@@ -2931,3 +2931,4 @@ repeat_expr_probe	normal	ivltests
 delayed_comp_reduct	normal	ivltests
 pr2998515	normal	ivltests
 pr3011327	normal	ivltests
+pr3012758	normal	ivltests
