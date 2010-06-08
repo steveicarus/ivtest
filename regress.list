@@ -2932,3 +2932,4 @@ delayed_comp_reduct	normal	ivltests
 pr2998515	normal	ivltests
 pr3011327	normal	ivltests
 pr3012758	normal	ivltests
+sys_func_task_error	RE	ivltests diff=log/sys_func_task_error.log:gold/sys_func_task_error.gold
