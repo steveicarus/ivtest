@@ -2933,3 +2933,4 @@ pr2998515	normal	ivltests
 pr3011327	normal	ivltests
 pr3012758	normal	ivltests
 sys_func_task_error	RE	ivltests diff=log/sys_func_task_error.log:gold/sys_func_task_error.gold
+pr3015421	CE	ivltests diff=log/pr3015421.log:gold/pr3015421.gold
