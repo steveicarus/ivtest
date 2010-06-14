@@ -209,6 +209,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr2842185: Not Implemented.
                   pr2909414: Not Implemented.
                   pr2924354: Not Implemented.
+                  pr3011327: Not Implemented.
               scoped_events: Not Implemented.
      unnamed_generate_block: Not Implemented.
          mixed_type_div_mod: Not Implemented.
@@ -421,6 +422,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr2823414: Passed - CE.
                   pr2794144: Passed - CE.
          indef_width_concat: Passed - CE.
+        sys_func_task_error: Passed - RE.
+                  pr3015421: Passed - CE.
                       delay: Passed.
                   fdisplay3: Passed.
            fdisplay_fail_fd: Passed.
@@ -1509,6 +1512,7 @@ test_mos_strength_reduction: Passed.
           repeat_expr_probe: Passed.
         delayed_comp_reduct: Passed.
                   pr2998515: Passed.
+                  pr3012758: Passed.
 ============================================================================
 Test results:
-  Total=1509, Passed=984, Failed=3, Not Implemented=408, Expected Fail=114
+  Total=1513, Passed=987, Failed=3, Not Implemented=409, Expected Fail=114

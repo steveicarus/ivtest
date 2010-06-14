@@ -1038,6 +1038,8 @@ v0.8:pr2794144	CE	ivltests diff=log/pr2794144.log:gold/pr2794144-v0.8.gold
 
 # V0.8 has different messages and one is missing.
 v0.8:indef_width_concat	CE	ivltests diff=log/indef_width_concat.log:gold/indef_width_concat-v0.8.gold
+v0.8:sys_func_task_error	RE	ivltests diff=log/sys_func_task_error.log:gold/sys_func_task_error-v0.8.gold
+v0.8:pr3015421	CE	ivltests diff=log/pr3015421.log:gold/pr3015421-v0.8.gold
 
 # V0.8 does not have the display code rework fd warnings, leading zero, etc.
 v0.8:delay	normal	ivltests diff=log/delay.log:gold/delay-v0.8.gold
