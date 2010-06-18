@@ -1508,6 +1508,10 @@ test_mos_strength_reduction: Passed.
           repeat_expr_probe: Passed.
         delayed_comp_reduct: Passed.
                   pr2998515: Passed.
+                  pr3011327: Passed.
+                  pr3012758: Passed.
+        sys_func_task_error: Passed - RE.
+                  pr3015421: ==> Failed - CE (core dump).
 ============================================================================
 Test results:
-  Total=1508, Passed=1505, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1512, Passed=1508, Failed=4, Not Implemented=0, Expected Fail=0

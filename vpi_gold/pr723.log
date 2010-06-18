@@ -1,6 +1,5 @@
 Compiling vpi/pr723.c...
 Making pr723.vpi from  pr723.o...
-write to FD 2
 Open some files
 open MCD      returned 00000002
 open MCD      returned 00000004
@@ -26,16 +25,17 @@ FP  05: /dev/null
 FP  06: /dev/null
 FP  07: /dev/null
 FP  08: /dev/null
+write to FD 2
 write to MCD 1
 write to FD 1
 Close some files
-WARNING: vpi/pr723.v:44: invalid file descriptor/MCD (0x2) given to $fclose.
-WARNING: vpi/pr723.v:45: invalid file descriptor/MCD (0x40000000) given to $fclose.
-WARNING: vpi/pr723.v:50: invalid file descriptor/MCD (0x80000003) given to $fclose.
-WARNING: vpi/pr723.v:53: invalid file descriptor/MCD (0x81ca1ca0) given to $fclose.
+WARNING: vpi/pr723.v:46: invalid file descriptor/MCD (0x2) given to $fclose.
+WARNING: vpi/pr723.v:47: invalid file descriptor/MCD (0x40000000) given to $fclose.
+WARNING: vpi/pr723.v:52: invalid file descriptor/MCD (0x80000003) given to $fclose.
+WARNING: vpi/pr723.v:55: invalid file descriptor/MCD (0x81ca1ca0) given to $fclose.
 MCD 01: stdout
 FP  00: stdin
 FP  01: stdout
 FP  02: stderr
-WARNING: vpi/pr723.v:59: invalid file descriptor/MCD (0x40000000) given to $fdisplay.
-WARNING: vpi/pr723.v:60: invalid file descriptor/MCD (0x8000000f) given to $fdisplay.
+WARNING: vpi/pr723.v:61: invalid file descriptor/MCD (0x40000000) given to $fdisplay.
+WARNING: vpi/pr723.v:62: invalid file descriptor/MCD (0x8000000f) given to $fdisplay.

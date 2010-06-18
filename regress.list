@@ -631,6 +631,7 @@ v0.8:pr1887168	NI # In verinum signed values use native long.
 v0.8:pr1960596	NI # Same as above.
 v0.8:pr2233180c NI
 v0.8:pr2233192c NI
+v0.8:pr2986528	NI
 
 # V0.8 requires that delays in continuous assignments must be constant.
 v0.8:delay3	NI
@@ -763,6 +764,7 @@ v0.8:pr2815398b	NI
 v0.8:pr2842185	NI
 v0.8:pr2909414	NI
 v0.8:pr2924354	NI
+v0.8:pr3011327	NI
 v0.8:scoped_events	NI
 v0.8:unnamed_generate_block	NI
 
@@ -835,6 +837,8 @@ v0.8:pr2834340	NI
 v0.8:pr2832234	NI
 v0.8:pr2834340b	NI
 v0.8:pr2937417	NI
+v0.8:pr2937417b	NI
+v0.8:pr2937417c	NI
 v0.8:tranif1	NI
 
 # V0.8 does not support the `resetall directive
@@ -1025,8 +1029,6 @@ v0.8:pr183	CO	ivltests
 v0.8:pr1467825	CO	ivltests
 
 # V0.8 does not have a T0 event for these tests.
-v0.8:pr377	normal	ivltests diff=log/pr377.log:gold/pr377-v0.8.gold
-v0.8:pr1002	normal	ivltests diff=log/pr1002.log:gold/pr1002-v0.8.gold
 v0.8:pr1002a	normal	ivltests diff=log/pr1002a.log:gold/pr1002a-v0.8.gold
 
 # V0.8 does not get the line number correct, but does fail.
@@ -1037,6 +1039,8 @@ v0.8:pr2794144	CE	ivltests diff=log/pr2794144.log:gold/pr2794144-v0.8.gold
 
 # V0.8 has different messages and one is missing.
 v0.8:indef_width_concat	CE	ivltests diff=log/indef_width_concat.log:gold/indef_width_concat-v0.8.gold
+v0.8:sys_func_task_error	RE	ivltests diff=log/sys_func_task_error.log:gold/sys_func_task_error-v0.8.gold
+v0.8:pr3015421	CE	ivltests diff=log/pr3015421.log:gold/pr3015421-v0.8.gold
 
 # V0.8 does not have the display code rework fd warnings, leading zero, etc.
 v0.8:delay	normal	ivltests diff=log/delay.log:gold/delay-v0.8.gold
@@ -1167,6 +1171,7 @@ v0.8:pr1867161b	EF	ivltests diff=log/pr1867161b.log:gold/pr1867161b.gold
 v0.8:pr1877740	EF	ivltests
 v0.8:pr1883052	EF	ivltests
 v0.8:pr1913918c	EF	ivltests
+v0.8:pr1913937	EF	ivltests
 v0.8:pr1932444	EF	ivltests
 v0.8:pr1960548	EF	ivltests diff=log/pr1960548.log:gold/pr1960548.gold
 v0.8:pr1960619	EF	ivltests diff=log/pr1960619.log:gold/pr1960619.gold
@@ -1204,6 +1209,9 @@ v0.8:pr2922063	EF	ivltests
 v0.8:pr2922063a	EF	ivltests
 v0.8:pr2922063b	EF	ivltests
 v0.8:pr2969724	EF	ivltests
+v0.8:pr2985542	EF	ivltests
+v0.8:pr2991457	EF	ivltests
+v0.8:pr2991457b	EF	ivltests
 v0.8:shift5	EF	ivltests diff=log/shift5.log:gold/shift5.gold
 v0.8:signed12	EF	ivltests diff=log/signed12.log:gold/signed12.gold
 v0.8:signed_a	EF	ivltests
@@ -1249,6 +1257,8 @@ v0.9:pr2913927	EF	ivltests
 
 # V0.9 does not have the reworked tran functionality.
 v0.9:pr2937417	EF	ivltests
+v0.9:pr2937417b	EF	ivltests
+v0.9:pr2937417c	EF	ivltests
 
 # V0.9 does not have the ability to select the SDF delays you always get typ.
 v0.9:sdf_del_min	EF	ivltests
@@ -1269,8 +1279,54 @@ v0.9:real5	normal	ivltests diff=log/real5.log:gold/real5-v0.9.gold
 # but until then we need different gold files.
 v0.9:vcd-dup	normal	ivltests diff=work/vcd-dup.vcd:gold/vcd-dup.vcd-v0.9.gold:2
 
+# V0.9 does not support passing the min/typ/max flag information to the
+# $sdf_annotate routine.
+v0.9:pr2972866	EF	ivltests
+
 #==========
-# v0.9 doesn't support synthesis. Might as well run them as
+# V0.9 has different T0 values for nets (z vs x). No transitions to x at T0.
+#==========
+v0.9:specify5	normal,-gspecify  ivltests diff=log/specify5.log:gold/specify5-v0.9.gold
+v0.9:pr377	normal	ivltests diff=log/pr377.log:gold/pr377-v0.9.gold
+v0.9:pr528	normal	ivltests diff=log/pr528.log:gold/pr528-v0.9.gold
+v0.9:pr528b	normal	ivltests diff=log/pr528b.log:gold/pr528b-v0.9.gold
+v0.9:pr1587669	normal,-gspecify  ivltests diff=log/pr1587669.log:gold/pr1587669-v0.9.gold
+v0.9:pr1645518	normal	ivltests diff=log/pr1645518.log:gold/pr1645518-v0.9.gold
+v0.9:pr1648365	normal	ivltests diff=log/pr1648365.log:gold/pr1648365-v0.9.gold
+v0.9:pr1787423b		EF	ivltests
+v0.9:pr1787423b-v0.9	normal	ivltests
+v0.9:sdf1	normal,-gspecify  ivltests diff=log/sdf1.log:gold/sdf1-v0.9.gold
+v0.9:sdf2	normal,-gspecify  ivltests diff=log/sdf2.log:gold/sdf1-v0.9.gold
+v0.9:sdf3	normal,-gspecify  ivltests diff=log/sdf3.log:gold/sdf1-v0.9.gold
+v0.9:sdf4	normal,-gspecify  ivltests diff=log/sdf4.log:gold/sdf1-v0.9.gold
+v0.9:sdf5	normal,-gspecify  ivltests diff=log/sdf5.log:gold/sdf5-v0.9.gold
+v0.9:sdf6	normal,-gspecify  ivltests diff=log/sdf6.log:gold/sdf6-v0.9.gold
+v0.9:sdf7	normal,-gspecify  ivltests diff=log/sdf7.log:gold/sdf7-v0.9.gold
+v0.9:multi_driver_delay		EF	ivltests
+v0.9:multi_driver_delay-v0.9	normal	ivltests
+v0.9:pr1883052		EF	ivltests
+v0.9:pr1883052-v0.9	normal	ivltests
+v0.9:pr1883052b		EF	ivltests
+v0.9:pr1883052b-v0.9	normal	ivltests
+v0.9:delay_var	normal	ivltests diff=log/delay_var.log:gold/delay_var-v0.9.gold
+
+# V0.9 does not have the patches applied to make these work correctly. We
+# should see if some of these can be applied. If they are applied then we
+# need to remove the appropriate line. Each of these needs a description
+# and some of them should likely be NI.
+v0.9:pr1002	EF	ivltests diff=log/pr1002.log:gold/pr1002.gold
+v0.9:pr1913937	EF	ivltests
+v0.9:pr2951657	EF	ivltests
+v0.9:pr2973532	CO	ivltests
+v0.9:pr2974051	CO	ivltests
+v0.9:pr2974294	EF	ivltests
+v0.9:pr2976242	CE	ivltests
+v0.9:pr2976242b	CE	ivltests
+v0.9:pr2976242c	CE	ivltests
+v0.9:pr2985542	EF	ivltests
+
+#==========
+# V0.9 doesn't support synthesis. Might as well run them as
 # non-synthesis tests, though.
 #==========
 v0.9:case1	normal	ivltests
@@ -2878,3 +2934,7 @@ pr2994193	normal	ivltests
 repeat_expr_probe	normal	ivltests
 delayed_comp_reduct	normal	ivltests
 pr2998515	normal	ivltests
+pr3011327	normal	ivltests
+pr3012758	normal	ivltests
+sys_func_task_error	RE	ivltests diff=log/sys_func_task_error.log:gold/sys_func_task_error.gold
+pr3015421	CE	ivltests diff=log/pr3015421.log:gold/pr3015421.gold

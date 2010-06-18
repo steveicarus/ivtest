@@ -62,18 +62,25 @@ v0.8:memmon      normal memmon.c      memmon.log          -DIVERILOG_V0_8
 v0.8:listparams  normal listparams.c  listparams-v0.8.log -DIVERILOG_V0_8
 v0.8:pr1693971   normal pr1693971.c   pr1693971.log       -DIVERILOG_V0_8
 # V0.8 does not support vpiModPath!
-v0.8:spec_delays NI     spec_delays.c spec_delays.log     -DIVERILOG_V0_8
+v0.8:spec_delays NI     spec_delays.c spec_delays.log
+# V0.9 has different T0 values for nets z vs x.
+v0.9:spec_delays normal,-gspecify spec_delays.c spec_delays-v0.9.log
 # V0.8 does not support a callback using vpiScaledRealTime
-v0.8:pr2048463   NI     pr2048463.c   pr2048463.log       -DIVERILOG_V0_8
-v0.8:pr2314742	normal	pr2314742.c   pr2314742.gold      -DIVERILOG_V0_8
+v0.8:pr2048463   NI     pr2048463.c   pr2048463.log
+# V0.9 starts at Z so has a to X transition.
+v0.9:pr2048463   normal pr2048463.c   pr2048463-v0.9.log
+v0.8:pr2314742   normal	pr2314742.c   pr2314742.gold      -DIVERILOG_V0_8
 # V0.8, V0.9 do not support vpiCellInstance
 v0.8:celldefine	 NI	celldefine.c  celldefine.gold
 v0.9:celldefine	 NI	celldefine.c  celldefine.gold
 # V0.8 does not support a callback using vpiAtStartOfSimTime
 v0.8:start_of_simtime1	NI start_of_simtime1.c	start_of_simtime1.log
 v0.8:check_version	NI check_version.c	check_version.gold
-v0.8:pr2966059	NI pr2966059.c	pr2966059.gold
-v0.8:pr2971220	NI pr2971220.c	pr2971220.gold
+v0.8:pr2966059   NI pr2966059.c	pr2966059.gold
+v0.8:pr2971220   NI pr2971220.c	pr2971220.gold
+# V0.8, V0.9 do not support vpi_get_systf_info(), etc.
+v0.8:pr2971220   NI pr2971220.c   pr2971220.gold
+v0.9:pr2971220   NI pr2971220.c   pr2971220.gold
 
 # Add v0.8 overrides here.
 
