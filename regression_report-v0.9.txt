@@ -1403,7 +1403,8 @@ test_mos_strength_reduction: Passed.
                 fread-error: Passed.
                   pr2709097: Passed.
                   pr2715547: Passed.
-                  pr2715558: Passed.
+                  pr2715558: ==> Failed - output does not match gold file.
+                 pr2715558b: Passed.
                   pr2715748: Passed.
                   pr2721213: Passed.
                  pr2722330a: Passed.
@@ -1511,6 +1512,11 @@ test_mos_strength_reduction: Passed.
           repeat_expr_probe: Passed.
         delayed_comp_reduct: Passed.
                   pr2998515: Passed.
+                  pr3011327: Passed.
+                  pr3012758: Passed.
+        sys_func_task_error: Passed - RE.
+                  pr3015421: Passed - CE.
+                  pr3024131: Passed.
 ============================================================================
 Test results:
-  Total=1511, Passed=1476, Failed=1, Not Implemented=7, Expected Fail=27
+  Total=1517, Passed=1481, Failed=2, Not Implemented=7, Expected Fail=27

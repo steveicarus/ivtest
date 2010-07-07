@@ -1512,6 +1512,7 @@ test_mos_strength_reduction: Passed.
                   pr3012758: Passed.
         sys_func_task_error: Passed - RE.
                   pr3015421: Passed - CE.
+                  pr3024131: Passed.
 ============================================================================
 Test results:
-  Total=1512, Passed=1509, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1513, Passed=1510, Failed=3, Not Implemented=0, Expected Fail=0
