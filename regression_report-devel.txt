@@ -1514,6 +1514,7 @@ test_mos_strength_reduction: Passed.
                   pr3015421: Passed - CE.
                   pr3022502: Passed.
                   pr3024131: Passed.
+      verify_two_var_delays: Passed.
 ============================================================================
 Test results:
-  Total=1514, Passed=1512, Failed=2, Not Implemented=0, Expected Fail=0
+  Total=1515, Passed=1513, Failed=2, Not Implemented=0, Expected Fail=0
