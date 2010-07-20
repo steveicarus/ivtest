@@ -887,6 +887,7 @@ v0.8:pr2219441b	NI
 v0.8:pr2976242	NI
 v0.8:pr2976242b	NI
 v0.8:pr2976242c	NI
+v0.8:verify_two_var_delays	NI	ivltests
 
 # V0.8 does not support $sscanf/$fscanf.
 v0.8:pr1687193	NI
@@ -1282,6 +1283,9 @@ v0.9:vcd-dup	normal	ivltests diff=work/vcd-dup.vcd:gold/vcd-dup.vcd-v0.9.gold:2
 # V0.9 does not support passing the min/typ/max flag information to the
 # $sdf_annotate routine.
 v0.9:pr2972866	EF	ivltests
+
+# V0.9 does not support two variable delays (only 1 or three).
+v0.9:verify_two_var_delays	NI	ivltests
 
 #==========
 # V0.9 has different T0 values for nets (z vs x). No transitions to x at T0.
@@ -2941,3 +2945,4 @@ sys_func_task_error	RE	ivltests diff=log/sys_func_task_error.log:gold/sys_func_t
 pr3015421	CE	ivltests diff=log/pr3015421.log:gold/pr3015421.gold
 pr3022502	normal	ivltests
 pr3024131	normal	ivltests
+verify_two_var_delays	normal	ivltests
