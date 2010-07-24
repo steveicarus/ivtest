@@ -633,12 +633,13 @@ v0.8:pr2233180c NI
 v0.8:pr2233192c NI
 v0.8:pr2986528	NI
 
-# V0.8 requires that delays in continuous assignments must be constant.
+# V0.8 requires that delays in continuous assignments, etc. must be constant.
 v0.8:delay3	NI
 v0.8:delay4	NI
 v0.8:delay5	NI
 v0.8:pr2728032	NI
 v0.8:real11	NI
+v0.8:real_delay	NI
 
 # V0.8 does not support primitive types (logic, bool, real).
 v0.8:bool1	NI
@@ -1239,6 +1240,9 @@ v0.9:analog2	NI
 
 # V0.9 does not support non-blocking assignment to real array words.
 v0.9:real_array_nb	NI
+
+# V0.9 does not support two variable delays or UDPs with variable delays.
+v0.9:real_delay	NI
 
 # V0.9 does not support a signed result from thread space or a
 # functor so these are expected to fail under V0.9.
@@ -2946,3 +2950,4 @@ pr3015421	CE	ivltests diff=log/pr3015421.log:gold/pr3015421.gold
 pr3022502	normal	ivltests
 pr3024131	normal	ivltests
 verify_two_var_delays	normal	ivltests
+real_delay	normal,-gspecify	ivltests diff=log/real_delay.log:gold/real_delay.gold
