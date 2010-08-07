@@ -2951,3 +2951,4 @@ pr3022502	normal	ivltests
 pr3024131	normal	ivltests
 verify_two_var_delays	normal	ivltests
 real_delay	normal,-gspecify	ivltests diff=log/real_delay.log:gold/real_delay.gold
+pr3039548	normal	ivltests diff=log/pr3039548.log:gold/pr3039548.gold
