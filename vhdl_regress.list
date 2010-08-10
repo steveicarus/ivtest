@@ -338,3 +338,4 @@ pr2554029     CO      vhdl_tests
 pr2554124     CO      vhdl_tests
 simple_gen	  normal	vhdl_tests diff=log/simple_gen.log:vhdl_gold/simple_gen.gold
 pr2911213     normal  vhdl_tests
+reserved      normal  vhdl_tests
