@@ -840,6 +840,7 @@ v0.8:pr2834340b	NI
 v0.8:pr2937417	NI
 v0.8:pr2937417b	NI
 v0.8:pr2937417c	NI
+v0.8:pr2941939	NI
 v0.8:tranif1	NI
 
 # V0.8 does not support the `resetall directive
@@ -1214,6 +1215,8 @@ v0.8:pr2969724	EF	ivltests
 v0.8:pr2985542	EF	ivltests
 v0.8:pr2991457	EF	ivltests
 v0.8:pr2991457b	EF	ivltests
+v0.8:pr3022502	EF	ivltests
+v0.8:pr3039548	CE	ivltests
 v0.8:shift5	EF	ivltests diff=log/shift5.log:gold/shift5.gold
 v0.8:signed12	EF	ivltests diff=log/signed12.log:gold/signed12.gold
 v0.8:signed_a	EF	ivltests
@@ -1244,6 +1247,9 @@ v0.9:real_array_nb	NI
 # V0.9 does not support two variable delays or UDPs with variable delays.
 v0.9:real_delay	NI
 
+# V0.9 does not support two variable delays (only 1 or three).
+v0.9:verify_two_var_delays	NI	ivltests
+
 # V0.9 does not support a signed result from thread space or a
 # functor so these are expected to fail under V0.9.
 v0.9:signed_pv	EF	ivltests
@@ -1264,6 +1270,7 @@ v0.9:pr2913927	EF	ivltests
 v0.9:pr2937417	EF	ivltests
 v0.9:pr2937417b	EF	ivltests
 v0.9:pr2937417c	EF	ivltests
+v0.9:pr2941939	EF	ivltests
 
 # V0.9 does not have the ability to select the SDF delays you always get typ.
 v0.9:sdf_del_min	EF	ivltests
@@ -1288,8 +1295,8 @@ v0.9:vcd-dup	normal	ivltests diff=work/vcd-dup.vcd:gold/vcd-dup.vcd-v0.9.gold:2
 # $sdf_annotate routine.
 v0.9:pr2972866	EF	ivltests
 
-# V0.9 does not support two variable delays (only 1 or three).
-v0.9:verify_two_var_delays	NI	ivltests
+# V0.9 does not support the CAs have their own driver functionality.
+v0.9:pr2715558	EF	ivltests diff=log/pr2715558.log:gold/pr2715558.gold
 
 #==========
 # V0.9 has different T0 values for nets (z vs x). No transitions to x at T0.

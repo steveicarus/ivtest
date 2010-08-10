@@ -94,6 +94,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                      delay5: Not Implemented.
                   pr2728032: Not Implemented.
                      real11: Not Implemented.
+                 real_delay: Not Implemented.
                       bool1: Not Implemented.
                  ca_64delay: Not Implemented.
                     ca_time: Not Implemented.
@@ -250,6 +251,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr2215342: Not Implemented.
                   pr2580730: Not Implemented.
                   pr2715558: Not Implemented.
+                 pr2715558b: Not Implemented.
                   pr2721213: Not Implemented.
                   pr2790236: Not Implemented.
                   pr2883958: Not Implemented.
@@ -269,6 +271,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr2937417: Not Implemented.
                  pr2937417b: Not Implemented.
                  pr2937417c: Not Implemented.
+                  pr2941939: Not Implemented.
                     tranif1: Not Implemented.
                    resetall: Not Implemented.
                   resetall2: Not Implemented.
@@ -303,6 +306,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr2976242: Not Implemented.
                  pr2976242b: Not Implemented.
                  pr2976242c: Not Implemented.
+      verify_two_var_delays: Not Implemented.
                   pr1687193: Not Implemented.
                   pr1876798: Not Implemented.
                   pr2029336: Not Implemented.
@@ -570,6 +574,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr2985542: Passed - expected fail.
                   pr2991457: Passed - expected fail.
                  pr2991457b: Passed - expected fail.
+                  pr3022502: Passed - expected fail.
+                  pr3039548: Passed - CE.
                      shift5: Passed - expected fail.
                    signed12: Passed - expected fail.
                    signed_a: Passed - expected fail.
@@ -1513,6 +1519,7 @@ test_mos_strength_reduction: Passed.
         delayed_comp_reduct: Passed.
                   pr2998515: Passed.
                   pr3012758: Passed.
+                  pr3024131: Passed.
 ============================================================================
 Test results:
-  Total=1513, Passed=987, Failed=3, Not Implemented=409, Expected Fail=114
+  Total=1520, Passed=989, Failed=3, Not Implemented=413, Expected Fail=115
