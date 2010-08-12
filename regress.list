@@ -1019,6 +1019,10 @@ v0.8:pr1403406	NI
 v0.8:pr1403406a	NI
 v0.8:pr1403406b	NI
 
+# v0.8 does not support uwire.
+v0.8:uwire	NI
+v0.8:uwire_fail	NI
+
 # V0.8 does not support specify block delays.
 v0.8:pr1587669	CO	ivltests
 v0.8:specify_01	CO	ivltests
@@ -1343,6 +1347,10 @@ v0.9:pr2976242	CE	ivltests
 v0.9:pr2976242b	CE	ivltests
 v0.9:pr2976242c	CE	ivltests
 v0.9:pr2985542	EF	ivltests
+
+# v0.9 does not support the uwire check and always prints a warning message.
+v0.9:uwire	normal	ivltests diff=log/uwire.log:gold/uwire-v0.9.gold
+v0.9:uwire_fail	normal	ivltests diff=log/uwire_fail.log:gold/uwire_fail-v0.9.gold
 
 #==========
 # V0.9 doesn't support synthesis. Might as well run them as
@@ -2964,3 +2972,5 @@ pr3024131	normal	ivltests
 verify_two_var_delays	normal	ivltests
 real_delay	normal,-gspecify	ivltests diff=log/real_delay.log:gold/real_delay.gold
 pr3039548	normal	ivltests diff=log/pr3039548.log:gold/pr3039548.gold
+uwire		normal	ivltests
+uwire_fail	CE	ivltests diff=log/uwire_fail.log:gold/uwire_fail.gold

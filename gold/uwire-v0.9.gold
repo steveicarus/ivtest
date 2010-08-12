@@ -1,0 +1,3 @@
+./ivltests/uwire.v:3: warning: uwire is not currently supported, converting it to a wire!
+./ivltests/uwire.v:3: warning: uwire is not currently supported, converting it to a wire!
+PASSED
