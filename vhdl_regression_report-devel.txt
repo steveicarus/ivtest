@@ -271,7 +271,7 @@ delay_assign_nb2: Passed.
        pr2489116: Passed.
        pr2489237: Passed - CO.
        pr2516774: Passed.
-      pr2516774b: ==> Failed - running ghdl.
+      pr2516774b: Passed - CO.
        pr2527366: Passed - CO.
        pr2529315: Passed - CO.
       pr2529315b: Passed - CO.
@@ -286,6 +286,8 @@ delay_assign_nb2: Passed.
        pr2554029: Passed - CO.
        pr2554124: Passed - CO.
       simple_gen: Passed.
+       pr2911213: Passed.
+        reserved: Passed.
 ======================================================================
 Test results:
-  Total=286, Passed=282, Failed=4, Not Implemented=0, Expected Fail=0
+  Total=288, Passed=285, Failed=3, Not Implemented=0, Expected Fail=0
