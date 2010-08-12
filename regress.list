@@ -1012,6 +1012,7 @@ v0.8:writemem-invalid	NI
 v0.8:fatal_et_al	NI
 v0.8:sv_timeunit_prec	NI
 v0.8:sv_timeunit_prec_fail	NI
+v0.8:sys_func_as_task	NI
 
 # V0.8 does not support +timescale in a command file.
 v0.8:pr1403406	NI
@@ -1249,6 +1250,9 @@ v0.9:real_delay	NI
 
 # V0.9 does not support two variable delays (only 1 or three).
 v0.9:verify_two_var_delays	NI	ivltests
+
+# V0.9 does not support calling a system function as a task (SystemVerilog).
+v0.9:sys_func_as_task	NI
 
 # V0.9 does not support a signed result from thread space or a
 # functor so these are expected to fail under V0.9.
@@ -2953,6 +2957,7 @@ pr2998515	normal	ivltests
 pr3011327	normal	ivltests
 pr3012758	normal	ivltests
 sys_func_task_error	RE	ivltests diff=log/sys_func_task_error.log:gold/sys_func_task_error.gold
+sys_func_as_task	normal,-g2009	ivltests diff=log/sys_func_as_task.log:gold/sys_func_as_task.gold
 pr3015421	CE	ivltests diff=log/pr3015421.log:gold/pr3015421.gold
 pr3022502	normal	ivltests
 pr3024131	normal	ivltests
