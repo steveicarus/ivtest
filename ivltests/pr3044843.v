@@ -10,6 +10,3 @@ module top;
     else $display("PASSED");
   end
 endmodule
-
-
- 	  	 
