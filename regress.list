@@ -697,6 +697,7 @@ v0.8:pr2450244	NI
 v0.8:pr2835632a	NI
 v0.8:pr2835632b	NI
 v0.8:pr2725700c	NI
+v0.8:pr3044843	NI
 v0.8:select5	NI
 v0.8:select6	NI
 v0.8:select7	NI
@@ -2974,3 +2975,4 @@ real_delay	normal,-gspecify	ivltests diff=log/real_delay.log:gold/real_delay.gol
 pr3039548	normal	ivltests diff=log/pr3039548.log:gold/pr3039548.gold
 uwire		normal	ivltests
 uwire_fail	CE	ivltests diff=log/uwire_fail.log:gold/uwire_fail.gold
+pr3044843	normal	ivltests
