@@ -55,13 +55,13 @@ initial
  begin
     error = 0;
     val1 = 32'h11223344;
-    if(out1 != 32'h11223344)
+    #1 if(out1 != 32'h11223344)
       begin
         $display("FAILED - module 3.12A - Ordered module port list failed");
         error = 1;
       end 
     val2 = 32'h44332211;
-    if(out2 != 32'h44332211)
+    #1 if(out2 != 32'h44332211)
       begin
         $display("FAILED -module 3.12A -named module port list (.x(a)) failed");
         error = 1;
