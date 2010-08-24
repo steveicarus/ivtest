@@ -314,6 +314,7 @@ bitsel4       normal  ivltests
 bitsel5       normal  ivltests
 
 select        normal  ivltests
+uwire         normal  ivltests
 
 pr2202846a    normal  ivltests
 pr2202846b    normal  ivltests
