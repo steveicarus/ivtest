@@ -265,6 +265,7 @@ delay_assign_nb2: Passed.
          bitsel4: Passed.
          bitsel5: Passed.
           select: Passed.
+           uwire: Passed.
       pr2202846a: Passed.
       pr2202846b: Passed.
       pr2202846c: Passed.
@@ -290,4 +291,4 @@ delay_assign_nb2: Passed.
         reserved: Passed.
 ======================================================================
 Test results:
-  Total=288, Passed=285, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=289, Passed=286, Failed=3, Not Implemented=0, Expected Fail=0
