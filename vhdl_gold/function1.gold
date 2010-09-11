@@ -1,2 +1,2 @@
-8 = sum(3, 5)
-PASSED
+function1.vhd:37:5:@0ms:(report note): 8 = sum(3, 5)
+function1.vhd:38:5:@0ms:(report note): PASSED

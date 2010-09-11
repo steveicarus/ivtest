@@ -289,7 +289,7 @@ lh_catadd     normal  ivltests
 signed1       normal  ivltests
 signed2       normal  ivltests
 signed3       normal  ivltests
-signed4       noraml  ivltests diff=log/signed4.log:gold/signed4.gold
+signed4       noraml  ivltests diff=log/signed4.log:vhdl_gold/signed4.gold
 signed5       normal  ivltests
 signed6       normal  ivltests
 signed7       normal  ivltests
