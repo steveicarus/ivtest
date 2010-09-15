@@ -2982,3 +2982,5 @@ pr3061015a	CE	ivltests
 pr3061015b	CE	ivltests
 pr3061015c	CE	ivltests
 pr3064375	normal	ivltests diff=log/pr3064375.log:gold/pr3064375.gold
+no_if_statement	CE	ivltests
+pr3064511	normal	ivltests
