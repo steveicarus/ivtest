@@ -2981,6 +2981,12 @@ uwire		normal	ivltests
 uwire_fail	CE	ivltests diff=log/uwire_fail.log:gold/uwire_fail.gold
 pr3044843	normal	ivltests
 ca_force	normal	ivltests
+pr3054101a	normal	ivltests diff=log/pr3054101a.log:gold/pr3054101a.gold
+pr3054101b	normal	ivltests diff=log/pr3054101b.log:gold/pr3054101a.gold
+pr3054101c	normal	ivltests diff=log/pr3054101c.log:gold/pr3054101c.gold
+pr3054101d	normal	ivltests diff=log/pr3054101d.log:gold/pr3054101c.gold
+pr3054101e	normal	ivltests diff=log/pr3054101e.log:gold/pr3054101e.gold
+pr3054101f	normal	ivltests diff=log/pr3054101f.log:gold/pr3054101e.gold
 pr3061015a	CE	ivltests
 pr3061015b	CE	ivltests
 pr3061015c	CE	ivltests
