@@ -698,6 +698,10 @@ v0.8:pr2835632a	NI
 v0.8:pr2835632b	NI
 v0.8:pr2725700c	NI
 v0.8:pr3044843	NI
+v0.8:pr3054101c	NI
+v0.8:pr3054101d	NI
+v0.8:pr3054101e	NI
+v0.8:pr3054101f	NI
 v0.8:select5	NI
 v0.8:select6	NI
 v0.8:select7	NI
@@ -1005,6 +1009,8 @@ v0.8:pr1787423c	NI
 # These crash under V0.8.
 v0.8:pr2470181a	NI
 v0.8:pr2470181b	NI
+v0.8:pr3054101a	NI
+v0.8:pr3054101b	NI
 v0.8:readmem-error	NI
 v0.8:readmem-invalid	NI
 v0.8:writemem-invalid	NI
@@ -1263,10 +1269,8 @@ v0.9:verify_two_var_delays	NI	ivltests
 v0.9:sys_func_as_task	NI
 
 # V0.9 does not support a signed result from thread space or a
-# functor so these are expected to fail under V0.9.
-v0.9:signed_pv	EF	ivltests
+# functor so this is expected to fail under V0.9.
 v0.9:signed_a	EF	ivltests
-v0.9:signed_part	EF	ivltests
 
 # V0.9 does not have the net rework code.
 v0.9:deposit	EF	ivltests
