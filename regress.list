@@ -582,6 +582,8 @@ v0.8:pr1799904	NI
 v0.8:pr1820472	NI
 v0.8:pr1878909	NI
 v0.8:pr2076391	NI
+v0.8:pr3054101g	NI
+v0.8:pr3054101h	NI
 v0.8:sel_rval_bit_ob	NI
 v0.8:sel_rval_part_ob	NI
 
@@ -1267,10 +1269,6 @@ v0.9:verify_two_var_delays	NI	ivltests
 
 # V0.9 does not support calling a system function as a task (SystemVerilog).
 v0.9:sys_func_as_task	NI
-
-# V0.9 does not support a signed result from thread space or a
-# functor so this is expected to fail under V0.9.
-v0.9:signed_a	EF	ivltests
 
 # V0.9 does not have the net rework code.
 v0.9:deposit	EF	ivltests
@@ -2991,6 +2989,8 @@ pr3054101c	normal	ivltests diff=log/pr3054101c.log:gold/pr3054101c.gold
 pr3054101d	normal	ivltests diff=log/pr3054101d.log:gold/pr3054101c.gold
 pr3054101e	normal	ivltests diff=log/pr3054101e.log:gold/pr3054101e.gold
 pr3054101f	normal	ivltests diff=log/pr3054101f.log:gold/pr3054101e.gold
+pr3054101g	normal	ivltests diff=log/pr3054101g.log:gold/pr3054101g.gold
+pr3054101h	normal	ivltests diff=log/pr3054101h.log:gold/pr3054101g.gold
 pr3061015a	CE	ivltests
 pr3061015b	CE	ivltests
 pr3061015c	CE	ivltests
