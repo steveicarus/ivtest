@@ -45,6 +45,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr1820472: Not Implemented.
                   pr1878909: Not Implemented.
                   pr2076391: Not Implemented.
+                 pr3054101g: Not Implemented.
+                 pr3054101h: Not Implemented.
             sel_rval_bit_ob: Not Implemented.
            sel_rval_part_ob: Not Implemented.
             ca_pow_unsigned: Not Implemented.
@@ -147,6 +149,10 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                  pr2835632b: Not Implemented.
                  pr2725700c: Not Implemented.
                   pr3044843: Not Implemented.
+                 pr3054101c: Not Implemented.
+                 pr3054101d: Not Implemented.
+                 pr3054101e: Not Implemented.
+                 pr3054101f: Not Implemented.
                     select5: Not Implemented.
                     select6: Not Implemented.
                     select7: Not Implemented.
@@ -405,6 +411,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                  pr1787423c: Not Implemented.
                  pr2470181a: Not Implemented.
                  pr2470181b: Not Implemented.
+                 pr3054101a: Not Implemented.
+                 pr3054101b: Not Implemented.
               readmem-error: Not Implemented.
             readmem-invalid: Not Implemented.
            writemem-invalid: Not Implemented.
@@ -1534,4 +1542,4 @@ test_mos_strength_reduction: Passed.
                   pr3064375: Passed.
 ============================================================================
 Test results:
-  Total=1532, Passed=995, Failed=3, Not Implemented=417, Expected Fail=117
+  Total=1540, Passed=995, Failed=3, Not Implemented=425, Expected Fail=117
