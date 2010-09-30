@@ -45,6 +45,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr1820472: Not Implemented.
                   pr1878909: Not Implemented.
                   pr2076391: Not Implemented.
+                 pr3054101g: Not Implemented.
+                 pr3054101h: Not Implemented.
             sel_rval_bit_ob: Not Implemented.
            sel_rval_part_ob: Not Implemented.
             ca_pow_unsigned: Not Implemented.
@@ -146,6 +148,11 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                  pr2835632a: Not Implemented.
                  pr2835632b: Not Implemented.
                  pr2725700c: Not Implemented.
+                  pr3044843: Not Implemented.
+                 pr3054101c: Not Implemented.
+                 pr3054101d: Not Implemented.
+                 pr3054101e: Not Implemented.
+                 pr3054101f: Not Implemented.
                     select5: Not Implemented.
                     select6: Not Implemented.
                     select7: Not Implemented.
@@ -404,15 +411,20 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                  pr1787423c: Not Implemented.
                  pr2470181a: Not Implemented.
                  pr2470181b: Not Implemented.
+                 pr3054101a: Not Implemented.
+                 pr3054101b: Not Implemented.
               readmem-error: Not Implemented.
             readmem-invalid: Not Implemented.
            writemem-invalid: Not Implemented.
                 fatal_et_al: Not Implemented.
            sv_timeunit_prec: Not Implemented.
       sv_timeunit_prec_fail: Not Implemented.
+           sys_func_as_task: Not Implemented.
                   pr1403406: Not Implemented.
                  pr1403406a: Not Implemented.
                  pr1403406b: Not Implemented.
+                      uwire: Not Implemented.
+                 uwire_fail: Not Implemented.
                   pr1587669: Passed - CO.
                  specify_01: Passed - CO.
                    specify2: Passed - CO.
@@ -453,6 +465,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                always3.1.2F: Passed - CO.
                always3.1.3A: Passed - CO.
                always3.1.3B: Passed - CO.
+            no_if_statement: Passed - CO.
                  pr1862744b: Passed - CO.
                always3.1.3C: Passed - CO.
                always3.1.3D: Passed - CO.
@@ -464,15 +477,16 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                always3.1.9A: Passed - CO.
                always3.1.9B: Passed - CO.
                   bitwidth3: Passed - expected fail.
+                   ca_force: Passed - expected fail.
                     ca_func: Passed - expected fail.
-                     extend: Passed - expected fail.
-                   integer5: Passed - expected fail.
                    comp1000: Passed - expected fail.
                    comp1001: Passed - expected fail.
              comp1001_fail3: Passed - expected fail.
              comp1001_fail4: Passed - expected fail.
              comp1001_fail5: Passed - expected fail.
+                     extend: Passed - expected fail.
             int_not_signext: Passed - expected fail.
+                   integer5: Passed - expected fail.
          multi_driver_delay: Passed - expected fail.
                       pr487: Passed - expected fail.
                       pr527: Passed - expected fail.
@@ -576,6 +590,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                  pr2991457b: Passed - expected fail.
                   pr3022502: Passed - expected fail.
                   pr3039548: Passed - CE.
+                  pr3064511: Passed - expected fail.
                      shift5: Passed - expected fail.
                    signed12: Passed - expected fail.
                    signed_a: Passed - expected fail.
@@ -1514,12 +1529,17 @@ test_mos_strength_reduction: Passed.
                   pr2973532: Passed.
                   pr2974051: Passed.
                   pr2974294: Passed.
+                  pr2986497: Passed - CO.
                   pr2994193: Passed.
           repeat_expr_probe: Passed.
         delayed_comp_reduct: Passed.
                   pr2998515: Passed.
                   pr3012758: Passed.
                   pr3024131: Passed.
+                 pr3061015a: Passed - CE.
+                 pr3061015b: Passed - CE.
+                 pr3061015c: Passed - CE.
+                  pr3064375: Passed.
 ============================================================================
 Test results:
-  Total=1520, Passed=989, Failed=3, Not Implemented=413, Expected Fail=115
+  Total=1540, Passed=995, Failed=3, Not Implemented=425, Expected Fail=117

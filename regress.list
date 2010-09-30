@@ -582,6 +582,8 @@ v0.8:pr1799904	NI
 v0.8:pr1820472	NI
 v0.8:pr1878909	NI
 v0.8:pr2076391	NI
+v0.8:pr3054101g	NI
+v0.8:pr3054101h	NI
 v0.8:sel_rval_bit_ob	NI
 v0.8:sel_rval_part_ob	NI
 
@@ -698,6 +700,10 @@ v0.8:pr2835632a	NI
 v0.8:pr2835632b	NI
 v0.8:pr2725700c	NI
 v0.8:pr3044843	NI
+v0.8:pr3054101c	NI
+v0.8:pr3054101d	NI
+v0.8:pr3054101e	NI
+v0.8:pr3054101f	NI
 v0.8:select5	NI
 v0.8:select6	NI
 v0.8:select7	NI
@@ -1005,6 +1011,8 @@ v0.8:pr1787423c	NI
 # These crash under V0.8.
 v0.8:pr2470181a	NI
 v0.8:pr2470181b	NI
+v0.8:pr3054101a	NI
+v0.8:pr3054101b	NI
 v0.8:readmem-error	NI
 v0.8:readmem-invalid	NI
 v0.8:writemem-invalid	NI
@@ -1093,6 +1101,7 @@ v0.8:always3.1.2E	CO	ivltests
 v0.8:always3.1.2F	CO	ivltests
 v0.8:always3.1.3A	CO	ivltests
 v0.8:always3.1.3B	CO	ivltests
+v0.8:no_if_statement	CO	ivltests
 v0.8:pr1862744b	CO	ivltests
 
 # V0.8 has a few other always infinite loop problems.
@@ -1111,15 +1120,16 @@ v0.8:always3.1.9B	CO	ivltests
 # are fixable. I have looked at most of the later ones (pr1823732
 # and after, except for the ones added after 0.8.7 was released).
 v0.8:bitwidth3	EF	ivltests
+v0.8:ca_force	EF	ivltests
 v0.8:ca_func	EF	ivltests
-v0.8:extend	EF	ivltests
-v0.8:integer5	EF	ivltests
 v0.8:comp1000	EF	ivltests diff=log/comp1000.log:gold/comp1000.gold
 v0.8:comp1001	EF	ivltests diff=log/comp1001.log:gold/comp1001.gold
 v0.8:comp1001_fail3	EF	ivltests
 v0.8:comp1001_fail4	EF	ivltests
 v0.8:comp1001_fail5	EF	ivltests
+v0.8:extend	EF	ivltests
 v0.8:int_not_signext	EF	ivltests diff=log/int_not_signext.log:gold/int_not_signext.gold
+v0.8:integer5	EF	ivltests
 v0.8:multi_driver_delay	EF	ivltests
 v0.8:pr487	EF	ivltests diff=log/pr487.log:gold/pr487.gold
 v0.8:pr527	EF	ivltests diff=log/pr527.log:gold/pr527.gold
@@ -1223,6 +1233,7 @@ v0.8:pr2991457	EF	ivltests
 v0.8:pr2991457b	EF	ivltests
 v0.8:pr3022502	EF	ivltests
 v0.8:pr3039548	CE	ivltests
+v0.8:pr3064511	EF	ivltests
 v0.8:shift5	EF	ivltests diff=log/shift5.log:gold/shift5.gold
 v0.8:signed12	EF	ivltests diff=log/signed12.log:gold/signed12.gold
 v0.8:signed_a	EF	ivltests
@@ -1258,12 +1269,6 @@ v0.9:verify_two_var_delays	NI	ivltests
 
 # V0.9 does not support calling a system function as a task (SystemVerilog).
 v0.9:sys_func_as_task	NI
-
-# V0.9 does not support a signed result from thread space or a
-# functor so these are expected to fail under V0.9.
-v0.9:signed_pv	EF	ivltests
-v0.9:signed_a	EF	ivltests
-v0.9:signed_part	EF	ivltests
 
 # V0.9 does not have the net rework code.
 v0.9:deposit	EF	ivltests
@@ -2977,3 +2982,18 @@ pr3039548	normal	ivltests diff=log/pr3039548.log:gold/pr3039548.gold
 uwire		normal	ivltests
 uwire_fail	CE	ivltests diff=log/uwire_fail.log:gold/uwire_fail.gold
 pr3044843	normal	ivltests
+ca_force	normal	ivltests
+pr3054101a	normal	ivltests diff=log/pr3054101a.log:gold/pr3054101a.gold
+pr3054101b	normal	ivltests diff=log/pr3054101b.log:gold/pr3054101a.gold
+pr3054101c	normal	ivltests diff=log/pr3054101c.log:gold/pr3054101c.gold
+pr3054101d	normal	ivltests diff=log/pr3054101d.log:gold/pr3054101c.gold
+pr3054101e	normal	ivltests diff=log/pr3054101e.log:gold/pr3054101e.gold
+pr3054101f	normal	ivltests diff=log/pr3054101f.log:gold/pr3054101e.gold
+pr3054101g	normal	ivltests diff=log/pr3054101g.log:gold/pr3054101g.gold
+pr3054101h	normal	ivltests diff=log/pr3054101h.log:gold/pr3054101g.gold
+pr3061015a	CE	ivltests
+pr3061015b	CE	ivltests
+pr3061015c	CE	ivltests
+pr3064375	normal	ivltests diff=log/pr3064375.log:gold/pr3064375.gold
+no_if_statement	CE	ivltests
+pr3064511	normal	ivltests

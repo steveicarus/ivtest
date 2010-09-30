@@ -10,9 +10,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                  real_delay: Not Implemented.
       verify_two_var_delays: Not Implemented.
            sys_func_as_task: Not Implemented.
-                  signed_pv: Passed - expected fail.
-                   signed_a: Passed - expected fail.
-                signed_part: Passed - expected fail.
                     deposit: Passed - expected fail.
                       pr699: Passed - expected fail.
                      pr699b: Passed - expected fail.
@@ -1481,7 +1478,10 @@ test_mos_strength_reduction: Passed.
              array_select_a: Passed.
                   pr2848986: Passed - CE.
                   pr2859628: Passed.
+                  signed_pv: Passed.
+                   signed_a: Passed.
             force_lval_part: Passed.
+                signed_part: Passed.
                   pr2865563: Passed.
                   pr2877555: Passed.
                   pr2877564: Passed - CE.
@@ -1527,6 +1527,21 @@ test_mos_strength_reduction: Passed.
                   pr3024131: Passed.
                   pr3039548: Passed.
                   pr3044843: Passed.
+                   ca_force: Passed.
+                 pr3054101a: Passed.
+                 pr3054101b: Passed.
+                 pr3054101c: Passed.
+                 pr3054101d: Passed.
+                 pr3054101e: Passed.
+                 pr3054101f: Passed.
+                 pr3054101g: Passed.
+                 pr3054101h: Passed.
+                 pr3061015a: Passed - CE.
+                 pr3061015b: Passed - CE.
+                 pr3061015c: Passed - CE.
+                  pr3064375: Passed.
+            no_if_statement: Passed - CE.
+                  pr3064511: Passed.
 ============================================================================
 Test results:
-  Total=1527, Passed=1487, Failed=1, Not Implemented=10, Expected Fail=29
+  Total=1542, Passed=1505, Failed=1, Not Implemented=10, Expected Fail=26
