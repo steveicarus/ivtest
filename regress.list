@@ -1234,6 +1234,7 @@ v0.8:pr2991457b	EF	ivltests
 v0.8:pr3022502	EF	ivltests
 v0.8:pr3039548	CE	ivltests
 v0.8:pr3064511	EF	ivltests
+v0.8:pr3077640	EF	ivltests
 v0.8:shift5	EF	ivltests diff=log/shift5.log:gold/shift5.gold
 v0.8:signed12	EF	ivltests diff=log/signed12.log:gold/signed12.gold
 v0.8:signed_a	EF	ivltests
@@ -2997,3 +2998,4 @@ pr3061015c	CE	ivltests
 pr3064375	normal	ivltests diff=log/pr3064375.log:gold/pr3064375.gold
 no_if_statement	CE	ivltests
 pr3064511	normal	ivltests
+pr3077640	normal	ivltests
