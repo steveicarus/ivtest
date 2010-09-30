@@ -12,15 +12,24 @@ module top();
 
   initial begin
     #2;
-    $display("c1 value: %d", v1);
-    $display("c2 value: %d", v2);
-    $display("c3 value: %d", v3);
+    $display("c1 reg value: %d", v1);
+    $display("c2 reg value: %d", v2);
+    $display("c3 reg value: %d", v3);
+    $display("c1 wire value: %d", w1);
+    $display("c2 wire value: %d", w2);
+    $display("c3 wire value: %d", w3);
     if (v1 !== 6)
       $display("FAILED - v1 !== 6");
     else if (v2 !== 44)
       $display("FAILED - v2 !== 44");
-    else if (v3 !== 3)
-      $display("FAILED - v3 !== 3");
+    else if (v3 !== 12)
+      $display("FAILED - v3 !== 12");
+    else if (w1 !== 7)
+      $display("FAILED - v1 !== 7");
+    else if (w2 !== 45)
+      $display("FAILED - v2 !== 45");
+    else if (w3 !== 13)
+      $display("FAILED - v3 !== 13");
     else
       $display("PASSED");
   end
@@ -31,9 +40,9 @@ module child(value, value_w);
   output [7:0] value, value_w;
   reg [7:0]    value;
   
-  parameter MY_VALUE = 3;
+  parameter MY_VALUE = 12;
 
-  assign value_w = MY_VALUE;
+  assign value_w = MY_VALUE + 1;
 
   // Make a non-trivial process
   initial begin

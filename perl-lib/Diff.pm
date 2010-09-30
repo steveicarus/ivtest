@@ -35,8 +35,13 @@ sub diff {
 
         $diff = 1;
         # Loop on the log file lines looking for a "passed" by it self.
+        # For VHDL tests we need to ignore time, filename, severity, etc.
+        # that GHDL prints for report statments
         foreach $lline (<LOG>) {
             if ($lline =~ /^\s*passed\s*$/i) {
+                $diff = 0;
+            }
+            elsif ($lline =~ /@\d+\w+:\(report note\): passed\s*$/i) {
                 $diff = 0;
             }
         }
