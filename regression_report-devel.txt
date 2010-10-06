@@ -1538,6 +1538,8 @@ test_mos_strength_reduction: Passed.
                   pr3064375: Passed.
             no_if_statement: Passed - CE.
                   pr3064511: Passed.
+                  pr3077640: Passed.
+                  pr3078759: Passed - CO.
 ============================================================================
 Test results:
-  Total=1538, Passed=1536, Failed=2, Not Implemented=0, Expected Fail=0
+  Total=1540, Passed=1538, Failed=2, Not Implemented=0, Expected Fail=0
