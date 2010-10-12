@@ -33,7 +33,7 @@ static vpiHandle findReg(const char *name_);
 static vpiHandle findMem(const char *name_);
 
 extern "C" PLI_INT32
-CallbackPeek(s_cb_data * /*data*/)
+CallbackPeek(s_cb_data * data)
 {
 	vpiHandle handle;
 
@@ -112,7 +112,7 @@ findReg(const char *name_)
 }
 
 static vpiHandle
-findMem(const char * /*name_*/)
+findMem(const char *name_)
 {
     vpiHandle mod_i, mod_h, hand, mem_i, word_i, word_h, mem_h = NULL;
     char full[8096];
@@ -142,7 +142,7 @@ findMem(const char * /*name_*/)
     return word_h;
 }
 
-extern "C" PLI_INT32 SetupTrigger(s_cb_data * /*cb_data*/)
+extern "C" PLI_INT32 SetupTrigger(s_cb_data * cb_data)
 {
 	s_cb_data vc_cb_data;
 	vpiHandle handle;
