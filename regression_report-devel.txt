@@ -1540,6 +1540,24 @@ test_mos_strength_reduction: Passed.
                   pr3064511: Passed.
                   pr3077640: Passed.
                   pr3078759: Passed - CO.
+                       bits: Passed.
+                 ibyte_test: Passed.
+                  iint_test: Passed.
+              ilongint_test: Passed.
+             ishortint_test: Passed.
+                     iuint1: Passed.
+                 sbyte_test: Passed.
+                simple_byte: Passed.
+                 simple_int: Passed.
+             simple_longint: Passed.
+            simple_shortint: Passed.
+                  sint_test: Passed.
+              slongint_test: Passed.
+             sshortint_test: Passed.
+                 ubyte_test: Passed.
+                  uint_test: Passed.
+              ulongint_test: Passed.
+             ushortint_test: Passed.
 ============================================================================
 Test results:
-  Total=1540, Passed=1538, Failed=2, Not Implemented=0, Expected Fail=0
+  Total=1558, Passed=1556, Failed=2, Not Implemented=0, Expected Fail=0

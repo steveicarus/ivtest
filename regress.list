@@ -1409,6 +1409,25 @@ v0.9:mix_reset	normal	ivltests
 v0.9:casex_synth	normal	ivltests
 v0.9:full_case	normal	ivltests
 
+v0.9:bits		NI
+v0.9:ibyte_test	NI
+v0.9:iint_test	NI
+v0.9:ilongint_tst	NI
+v0.9:ishortint_test	NI
+v0.9:iuint1		NI
+v0.9:sbyte_test	NI
+v0.9:simple_byte	NI
+v0.9:simple_int	NI
+v0.9:simple_longint	NI
+v0.9:simple_shortint	NI
+v0.9:sint_test	NI
+v0.9:slongint_test	NI
+v0.9:sshortint_test	NI
+v0.9:ubyte_test	NI
+v0.9:uint_test	NI
+v0.9:ulongint_test	NI
+v0.9:ushortint_test	NI
+
 #==========
 # At this time v0.10 doesn't support synthesis either.
 #==========
@@ -3002,3 +3021,21 @@ no_if_statement	CE	ivltests
 pr3064511	normal	ivltests
 pr3077640	normal	ivltests
 pr3078759	CO,-gspecify	ivltests
+bits		normal,-g2009	ivltests
+ibyte_test	normal,-g2009	ivltests
+iint_test	normal,-g2009	ivltests
+ilongint_test	normal,-g2009	ivltests
+ishortint_test	normal,-g2009	ivltests
+iuint1		normal,-g2009	ivltests
+sbyte_test	normal,-g2009	ivltests
+simple_byte	normal,-g2009	ivltests
+simple_int	normal,-g2009	ivltests
+simple_longint	normal,-g2009	ivltests
+simple_shortint	normal,-g2009	ivltests
+sint_test	normal,-g2009	ivltests
+slongint_test	normal,-g2009	ivltests
+sshortint_test	normal,-g2009	ivltests
+ubyte_test	normal,-g2009	ivltests
+uint_test	normal,-g2009	ivltests
+ulongint_test	normal,-g2009	ivltests
+ushortint_test	normal,-g2009	ivltests

@@ -1,2 +1,2 @@
-./ivltests/uwire_fail.v:2: vvp.tgt error: uwire "two" must have a single driver, found (2).
-error: Code generation had 1 error(s).
+./ivltests/uwire_fail.v:5: error: Unresolved net two cannot have multiple drivers.
+1 error(s) during elaboration.
