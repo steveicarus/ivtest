@@ -1412,7 +1412,7 @@ v0.9:full_case	normal	ivltests
 v0.9:bits		NI
 v0.9:ibyte_test	NI
 v0.9:iint_test	NI
-v0.9:ilongint_tst	NI
+v0.9:ilongint_test	NI
 v0.9:ishortint_test	NI
 v0.9:iuint1		NI
 v0.9:sbyte_test	NI
