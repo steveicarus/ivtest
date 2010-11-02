@@ -3039,3 +3039,4 @@ ubyte_test	normal,-g2009	ivltests
 uint_test	normal,-g2009	ivltests
 ulongint_test	normal,-g2009	ivltests
 ushortint_test	normal,-g2009	ivltests
+signed_equality	normal	ivltests
