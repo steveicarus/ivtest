@@ -1253,6 +1253,24 @@ v0.8:writemem-error	EF	ivltests diff=log/writemem-error.log:gold/writemem-error.
 v0.9:fatal_et_al	NI
 v0.9:sv_timeunit_prec	NI
 v0.9:sv_timeunit_prec_fail	NI
+v0.9:bits	NI
+v0.9:ibyte_test	NI
+v0.9:iint_test	NI
+v0.9:ilongint_test	NI
+v0.9:ishortint_test	NI
+v0.9:iuint1		NI
+v0.9:sbyte_test	NI
+v0.9:simple_byte	NI
+v0.9:simple_int	NI
+v0.9:simple_longint	NI
+v0.9:simple_shortint	NI
+v0.9:sint_test	NI
+v0.9:slongint_test	NI
+v0.9:sshortint_test	NI
+v0.9:ubyte_test	NI
+v0.9:uint_test	NI
+v0.9:ulongint_test	NI
+v0.9:ushortint_test	NI
 
 # V0.9 does not support command line parameters.
 v0.9:cmdline_parm1	NI
@@ -1408,25 +1426,6 @@ v0.9:inside_synth3	normal	ivltests
 v0.9:mix_reset	normal	ivltests
 v0.9:casex_synth	normal	ivltests
 v0.9:full_case	normal	ivltests
-
-v0.9:bits		NI
-v0.9:ibyte_test	NI
-v0.9:iint_test	NI
-v0.9:ilongint_test	NI
-v0.9:ishortint_test	NI
-v0.9:iuint1		NI
-v0.9:sbyte_test	NI
-v0.9:simple_byte	NI
-v0.9:simple_int	NI
-v0.9:simple_longint	NI
-v0.9:simple_shortint	NI
-v0.9:sint_test	NI
-v0.9:slongint_test	NI
-v0.9:sshortint_test	NI
-v0.9:ubyte_test	NI
-v0.9:uint_test	NI
-v0.9:ulongint_test	NI
-v0.9:ushortint_test	NI
 
 #==========
 # At this time v0.10 doesn't support synthesis either.

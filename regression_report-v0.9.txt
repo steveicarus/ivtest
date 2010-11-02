@@ -3,6 +3,24 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                 fatal_et_al: Not Implemented.
            sv_timeunit_prec: Not Implemented.
       sv_timeunit_prec_fail: Not Implemented.
+                       bits: Not Implemented.
+                 ibyte_test: Not Implemented.
+                  iint_test: Not Implemented.
+              ilongint_test: Not Implemented.
+             ishortint_test: Not Implemented.
+                     iuint1: Not Implemented.
+                 sbyte_test: Not Implemented.
+                simple_byte: Not Implemented.
+                 simple_int: Not Implemented.
+             simple_longint: Not Implemented.
+            simple_shortint: Not Implemented.
+                  sint_test: Not Implemented.
+              slongint_test: Not Implemented.
+             sshortint_test: Not Implemented.
+                 ubyte_test: Not Implemented.
+                  uint_test: Not Implemented.
+              ulongint_test: Not Implemented.
+             ushortint_test: Not Implemented.
               cmdline_parm1: Not Implemented.
                     analog1: Not Implemented.
                     analog2: Not Implemented.
@@ -1544,6 +1562,7 @@ test_mos_strength_reduction: Passed.
                   pr3064511: Passed.
                   pr3077640: Passed.
                   pr3078759: Passed - CO.
+            signed_equality: Passed.
 ============================================================================
 Test results:
-  Total=1544, Passed=1507, Failed=1, Not Implemented=10, Expected Fail=26
+  Total=1563, Passed=1508, Failed=1, Not Implemented=28, Expected Fail=26
