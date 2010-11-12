@@ -896,7 +896,7 @@ v0.8:pr2219441b	NI
 v0.8:pr2976242	NI
 v0.8:pr2976242b	NI
 v0.8:pr2976242c	NI
-v0.8:verify_two_var_delays	NI	ivltests
+v0.8:verify_two_var_delays	NI
 
 # V0.8 does not support $sscanf/$fscanf.
 v0.8:pr1687193	NI
@@ -948,6 +948,7 @@ v0.8:pr2800985a	NI # $ferror not supported.
 v0.8:pr2800985b	NI # $ferror not supported.
 v0.8:pr2877555	NI # $clog2 not supported.
 v0.8:pr2971207	NI # $swrite not supported.
+v0.8:pr3098439	NI # $format not supported.
 v0.8:pv_undef_sig_sel	NI # $sformt not supported.
 v0.8:swrite	NI # $swrite not supported.
 v0.8:urand	NI # $urandom not supported.
@@ -1305,7 +1306,7 @@ v0.9:real_array_nb	NI
 v0.9:real_delay	NI
 
 # V0.9 does not support two variable delays (only 1 or three).
-v0.9:verify_two_var_delays	NI	ivltests
+v0.9:verify_two_var_delays	NI
 
 # V0.9 does not support calling a system function as a task (SystemVerilog).
 v0.9:sys_func_as_task	NI
