@@ -1018,10 +1018,28 @@ v0.8:readmem-invalid	NI
 v0.8:writemem-invalid	NI
 
 # V0.8 does not support SystemVerilog
+v0.8:bits	NI
 v0.8:fatal_et_al	NI
+v0.8:ibyte_test	NI
+v0.8:iint_test	NI
+v0.8:ilongint_test	NI
+v0.8:ishortint_test	NI
+v0.8:iuint1	NI
+v0.8:sbyte_test	NI
+v0.8:simple_byte	NI
+v0.8:simple_int	NI
+v0.8:simple_longint	NI
+v0.8:simple_shortint	NI
+v0.8:sint_test	NI
+v0.8:slongint_test	NI
+v0.8:sshortint_test	NI
 v0.8:sv_timeunit_prec	NI
 v0.8:sv_timeunit_prec_fail	NI
 v0.8:sys_func_as_task	NI
+v0.8:ubyte_test	NI
+v0.8:uint_test	NI
+v0.8:ulongint_test	NI
+v0.8:ushortint_test	NI
 
 # V0.8 does not support +timescale in a command file.
 v0.8:pr1403406	NI
@@ -1238,8 +1256,9 @@ v0.8:pr3039548	CE	ivltests
 v0.8:pr3064511	EF	ivltests
 v0.8:pr3077640	EF	ivltests
 v0.8:shift5	EF	ivltests diff=log/shift5.log:gold/shift5.gold
-v0.8:signed12	EF	ivltests diff=log/signed12.log:gold/signed12.gold
 v0.8:signed_a	EF	ivltests
+v0.8:signed_equality	EF	ivltests
+v0.8:signed12	EF	ivltests diff=log/signed12.log:gold/signed12.gold
 v0.8:stime	EF	ivltests
 v0.8:string11	EF	ivltests diff=log/string11.log:gold/string11.gold
 v0.8:vcd-dup	EF	ivltests diff=work/vcd-dup.vcd:gold/vcd-dup.vcd.gold:2
