@@ -3064,3 +3064,4 @@ ushortint_test	normal,-g2009	ivltests
 signed_equality	normal	ivltests
 pr3098439	normal	ivltests
 stask_sens_null_arg	normal	ivltests
+pr3112073a	CE	ivltests
