@@ -1009,6 +1009,7 @@ test_mos_strength_reduction: Passed.
                 sdf_del_min: Passed.
                 sdf_del_typ: Passed.
                 sdf_del_max: Passed.
+                 sdf_esc_id: Passed.
             macro_with_args: Passed.
                      macro2: Passed.
                  pr1862744a: Passed.
@@ -1559,6 +1560,9 @@ test_mos_strength_reduction: Passed.
               ulongint_test: Passed.
              ushortint_test: Passed.
             signed_equality: Passed.
+                  pr3098439: ==> Failed - output does not match gold file.
+        stask_sens_null_arg: Passed.
+                 pr3112073a: Passed - CE.
 ============================================================================
 Test results:
-  Total=1559, Passed=1557, Failed=2, Not Implemented=0, Expected Fail=0
+  Total=1563, Passed=1560, Failed=3, Not Implemented=0, Expected Fail=0

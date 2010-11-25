@@ -63,6 +63,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                        sdf5: Passed.
                        sdf6: Passed.
                        sdf7: Passed.
+                 sdf_esc_id: Passed.
          multi_driver_delay: Passed - expected fail.
     multi_driver_delay-v0.9: Passed.
                   pr1883052: Passed - expected fail.
@@ -1563,6 +1564,9 @@ test_mos_strength_reduction: Passed.
                   pr3077640: Passed.
                   pr3078759: Passed - CO.
             signed_equality: Passed.
+                  pr3098439: ==> Failed - output does not match gold file.
+        stask_sens_null_arg: Passed.
+                 pr3112073a: Passed - CE.
 ============================================================================
 Test results:
-  Total=1563, Passed=1508, Failed=1, Not Implemented=28, Expected Fail=26
+  Total=1567, Passed=1511, Failed=2, Not Implemented=28, Expected Fail=26
