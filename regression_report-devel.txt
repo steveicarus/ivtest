@@ -1570,6 +1570,7 @@ test_mos_strength_reduction: Passed.
             enum_value_expr: Passed.
                 enum_values: Passed.
              first_last_num: Passed.
+                      undef: Passed.
 ============================================================================
 Test results:
-  Total=1570, Passed=1567, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1571, Passed=1568, Failed=3, Not Implemented=0, Expected Fail=0
