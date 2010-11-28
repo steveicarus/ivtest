@@ -1,4 +1,4 @@
-`define TBMESS(str) $display("MSG: %m - %s", str );
+`define TBMESS(str) $display("PAS%s", str );
 
  // 1364-2001 S19.3 "The text macro facility is not affected by the compiler
  // directive `resetall."
@@ -6,6 +6,6 @@
 
 module main;
 
-initial `TBMESS("This is the message for this example.")
+initial `TBMESS("SED")
 
 endmodule

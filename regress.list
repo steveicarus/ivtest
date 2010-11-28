@@ -2526,7 +2526,7 @@ sdf_del_typ	normal,-gspecify,-Ttyp	ivltests
 sdf_del_max	normal,-gspecify,-Tmax	ivltests
 sdf_esc_id	normal,-gspecify  ivltests diff=log/sdf_esc_id.log:gold/sdf1.gold
 macro_with_args	normal	ivltests diff=log/macro_with_args.log:gold/macro_with_args.gold
-macro2		normal	ivltests diff=log/macro2.log:gold/macro2.gold
+macro2		normal	ivltests
 pr1862744a	normal,-Winfloop  ivltests
 pr1862744b	CE,-Winfloop  ivltests diff=log/pr1862744b.log:gold/pr1862744b.gold
 pr1864110a	normal	ivltests diff=log/pr1864110a.log:gold/pr1864110a.gold
