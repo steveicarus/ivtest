@@ -3089,3 +3089,5 @@ enum_values	normal,-g2009	ivltests
 first_last_num	normal,-g2009	ivltests
 def_nettype_none	CE	ivltests gold=def_nettype_none.gold
 undef		normal	ivltests gold=undef.gold
+fileline	normal  ivltests gold=fileline.gold
+fileline2	normal  ivltests gold=fileline2.gold
