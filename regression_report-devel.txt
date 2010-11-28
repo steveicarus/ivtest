@@ -1563,6 +1563,13 @@ test_mos_strength_reduction: Passed.
                   pr3098439: ==> Failed - output does not match gold file.
         stask_sens_null_arg: Passed.
                  pr3112073a: Passed - CE.
+            enum_base_range: Passed.
+           enum_elem_ranges: Passed.
+                  enum_next: Passed.
+                 enum_test1: Passed.
+            enum_value_expr: Passed.
+                enum_values: Passed.
+             first_last_num: Passed.
 ============================================================================
 Test results:
-  Total=1563, Passed=1560, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1570, Passed=1567, Failed=3, Not Implemented=0, Expected Fail=0

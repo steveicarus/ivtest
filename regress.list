@@ -1042,6 +1042,13 @@ v0.8:ubyte_test	NI
 v0.8:uint_test	NI
 v0.8:ulongint_test	NI
 v0.8:ushortint_test	NI
+v0.8:enum_base_range	NI
+v0.8:enum_elem_ranges	NI
+v0.8:enum_next	NI
+v0.8:enum_test1	NI
+v0.8:enum_value_expr	NI
+v0.8:enum_values	NI
+v0.8:first_last_num	NI
 
 # V0.8 does not support +timescale in a command file.
 v0.8:pr1403406	NI
@@ -1292,6 +1299,13 @@ v0.9:ubyte_test	NI
 v0.9:uint_test	NI
 v0.9:ulongint_test	NI
 v0.9:ushortint_test	NI
+v0.9:enum_base_range	NI
+v0.9:enum_elem_ranges	NI
+v0.9:enum_next	NI
+v0.9:enum_test1	NI
+v0.9:enum_value_expr	NI
+v0.9:enum_values	NI
+v0.9:first_last_num	NI
 
 # V0.9 does not support command line parameters.
 v0.9:cmdline_parm1	NI
@@ -3065,3 +3079,10 @@ signed_equality	normal	ivltests
 pr3098439	normal	ivltests
 stask_sens_null_arg	normal	ivltests
 pr3112073a	CE	ivltests
+enum_base_range	normal,-g2009	ivltests
+enum_elem_ranges	normal,-g2009	ivltests
+enum_next	normal,-g2009	ivltests
+enum_test1	normal,-g2009	ivltests
+enum_value_expr	normal,-g2009	ivltests
+enum_values	normal,-g2009	ivltests
+first_last_num	normal,-g2009	ivltests
