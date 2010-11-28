@@ -3086,3 +3086,4 @@ enum_test1	normal,-g2009	ivltests
 enum_value_expr	normal,-g2009	ivltests
 enum_values	normal,-g2009	ivltests
 first_last_num	normal,-g2009	ivltests
+undef	normal	ivltests gold=undef.gold
