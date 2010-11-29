@@ -1117,6 +1117,7 @@ v0.8:pr547		normal	ivltests diff=log/pr547.log:gold/pr547-v0.8.gold
 # V0.8 has a slight display difference.
 v0.8:pr2842621	normal	ivltests diff=log/pr2842621.log:gold/pr2842621-v0.8.gold
 v0.8:pr2877564	CE	ivltests diff=log/pr2877564.log:gold/pr2877564-v0.8.gold
+v0.8:undef	normal	ivltests gold=undef-v0.8.gold
 
 # V0.8 does not have the always infinite loop checks, so only compile these.
 v0.8:always3.1.10A	CO	ivltests
@@ -3087,4 +3088,4 @@ enum_value_expr	normal,-g2009	ivltests
 enum_values	normal,-g2009	ivltests
 first_last_num	normal,-g2009	ivltests
 def_nettype_none	CE	ivltests gold=def_nettype_none.gold
-undef	normal	ivltests gold=undef.gold
+undef		normal	ivltests gold=undef.gold
