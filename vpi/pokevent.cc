@@ -110,7 +110,7 @@ RegisterPeek(const char *name, vpiHandle poke)
 }
 
 extern "C" PLI_INT32
-EndofCompile(s_cb_data * cb_data)
+EndofCompile(s_cb_data * /*cb_data*/)
 {
     RegisterPeek("e_Peek", FindPoke("r_Poke"));
     return 0;

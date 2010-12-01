@@ -7,6 +7,9 @@ integer x;
 integer xel;
 
 `define A(j) (jel == 1 && j == 2)
+`define B(j) (jel \
+ == 1 && \
+ j == 2)
 
 initial
 begin
@@ -15,7 +18,7 @@ begin
 	x = 2;
 	xel = 3;
 
-	if(`A(x))
+	if(`A(x) && `B(x))
 		$display("PASSED");
 	else
 		$display("FAILED");

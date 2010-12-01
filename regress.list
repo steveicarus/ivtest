@@ -582,6 +582,8 @@ v0.8:pr1799904	NI
 v0.8:pr1820472	NI
 v0.8:pr1878909	NI
 v0.8:pr2076391	NI
+v0.8:pr3054101g	NI
+v0.8:pr3054101h	NI
 v0.8:sel_rval_bit_ob	NI
 v0.8:sel_rval_part_ob	NI
 
@@ -698,6 +700,10 @@ v0.8:pr2835632a	NI
 v0.8:pr2835632b	NI
 v0.8:pr2725700c	NI
 v0.8:pr3044843	NI
+v0.8:pr3054101c	NI
+v0.8:pr3054101d	NI
+v0.8:pr3054101e	NI
+v0.8:pr3054101f	NI
 v0.8:select5	NI
 v0.8:select6	NI
 v0.8:select7	NI
@@ -890,7 +896,7 @@ v0.8:pr2219441b	NI
 v0.8:pr2976242	NI
 v0.8:pr2976242b	NI
 v0.8:pr2976242c	NI
-v0.8:verify_two_var_delays	NI	ivltests
+v0.8:verify_two_var_delays	NI
 
 # V0.8 does not support $sscanf/$fscanf.
 v0.8:pr1687193	NI
@@ -917,6 +923,7 @@ v0.8:sdf8	NI
 v0.8:sdf_del_min	NI
 v0.8:sdf_del_typ	NI
 v0.8:sdf_del_max	NI
+v0.8:sdf_esc_id	NI
 
 # Other system tasks missing in V0.8.
 v0.8:abstime	NI # $abstime not supported.
@@ -942,6 +949,7 @@ v0.8:pr2800985a	NI # $ferror not supported.
 v0.8:pr2800985b	NI # $ferror not supported.
 v0.8:pr2877555	NI # $clog2 not supported.
 v0.8:pr2971207	NI # $swrite not supported.
+v0.8:pr3098439	NI # $format not supported.
 v0.8:pv_undef_sig_sel	NI # $sformt not supported.
 v0.8:swrite	NI # $swrite not supported.
 v0.8:urand	NI # $urandom not supported.
@@ -1005,22 +1013,49 @@ v0.8:pr1787423c	NI
 # These crash under V0.8.
 v0.8:pr2470181a	NI
 v0.8:pr2470181b	NI
+v0.8:pr3054101a	NI
+v0.8:pr3054101b	NI
 v0.8:readmem-error	NI
 v0.8:readmem-invalid	NI
 v0.8:writemem-invalid	NI
 
 # V0.8 does not support SystemVerilog
+v0.8:bits	NI
 v0.8:fatal_et_al	NI
+v0.8:ibyte_test	NI
+v0.8:iint_test	NI
+v0.8:ilongint_test	NI
+v0.8:ishortint_test	NI
+v0.8:iuint1	NI
+v0.8:sbyte_test	NI
+v0.8:simple_byte	NI
+v0.8:simple_int	NI
+v0.8:simple_longint	NI
+v0.8:simple_shortint	NI
+v0.8:sint_test	NI
+v0.8:slongint_test	NI
+v0.8:sshortint_test	NI
 v0.8:sv_timeunit_prec	NI
 v0.8:sv_timeunit_prec_fail	NI
 v0.8:sys_func_as_task	NI
+v0.8:ubyte_test	NI
+v0.8:uint_test	NI
+v0.8:ulongint_test	NI
+v0.8:ushortint_test	NI
+v0.8:enum_base_range	NI
+v0.8:enum_elem_ranges	NI
+v0.8:enum_next	NI
+v0.8:enum_test1	NI
+v0.8:enum_value_expr	NI
+v0.8:enum_values	NI
+v0.8:first_last_num	NI
 
 # V0.8 does not support +timescale in a command file.
 v0.8:pr1403406	NI
 v0.8:pr1403406a	NI
 v0.8:pr1403406b	NI
 
-# v0.8 does not support uwire.
+# V0.8 does not support uwire.
 v0.8:uwire	NI
 v0.8:uwire_fail	NI
 
@@ -1036,6 +1071,8 @@ v0.8:pr2829776b	CO	ivltests
 # V0.8 does not support -gno-specify (it is implicit).
 v0.8:pr183	CO	ivltests
 v0.8:pr1467825	CO	ivltests
+# or -gspecify.
+v0.8:pr3078759	CO	ivltests
 
 # V0.8 does not have a T0 event for these tests.
 v0.8:pr1002a	normal	ivltests diff=log/pr1002a.log:gold/pr1002a-v0.8.gold
@@ -1080,6 +1117,7 @@ v0.8:pr547		normal	ivltests diff=log/pr547.log:gold/pr547-v0.8.gold
 # V0.8 has a slight display difference.
 v0.8:pr2842621	normal	ivltests diff=log/pr2842621.log:gold/pr2842621-v0.8.gold
 v0.8:pr2877564	CE	ivltests diff=log/pr2877564.log:gold/pr2877564-v0.8.gold
+v0.8:undef	normal	ivltests gold=undef-v0.8.gold
 
 # V0.8 does not have the always infinite loop checks, so only compile these.
 v0.8:always3.1.10A	CO	ivltests
@@ -1093,6 +1131,7 @@ v0.8:always3.1.2E	CO	ivltests
 v0.8:always3.1.2F	CO	ivltests
 v0.8:always3.1.3A	CO	ivltests
 v0.8:always3.1.3B	CO	ivltests
+v0.8:no_if_statement	CO	ivltests
 v0.8:pr1862744b	CO	ivltests
 
 # V0.8 has a few other always infinite loop problems.
@@ -1111,15 +1150,16 @@ v0.8:always3.1.9B	CO	ivltests
 # are fixable. I have looked at most of the later ones (pr1823732
 # and after, except for the ones added after 0.8.7 was released).
 v0.8:bitwidth3	EF	ivltests
+v0.8:ca_force	EF	ivltests
 v0.8:ca_func	EF	ivltests
-v0.8:extend	EF	ivltests
-v0.8:integer5	EF	ivltests
 v0.8:comp1000	EF	ivltests diff=log/comp1000.log:gold/comp1000.gold
 v0.8:comp1001	EF	ivltests diff=log/comp1001.log:gold/comp1001.gold
 v0.8:comp1001_fail3	EF	ivltests
 v0.8:comp1001_fail4	EF	ivltests
 v0.8:comp1001_fail5	EF	ivltests
+v0.8:extend	EF	ivltests
 v0.8:int_not_signext	EF	ivltests diff=log/int_not_signext.log:gold/int_not_signext.gold
+v0.8:integer5	EF	ivltests
 v0.8:multi_driver_delay	EF	ivltests
 v0.8:pr487	EF	ivltests diff=log/pr487.log:gold/pr487.gold
 v0.8:pr527	EF	ivltests diff=log/pr527.log:gold/pr527.gold
@@ -1223,9 +1263,12 @@ v0.8:pr2991457	EF	ivltests
 v0.8:pr2991457b	EF	ivltests
 v0.8:pr3022502	EF	ivltests
 v0.8:pr3039548	CE	ivltests
+v0.8:pr3064511	EF	ivltests
+v0.8:pr3077640	EF	ivltests
 v0.8:shift5	EF	ivltests diff=log/shift5.log:gold/shift5.gold
-v0.8:signed12	EF	ivltests diff=log/signed12.log:gold/signed12.gold
 v0.8:signed_a	EF	ivltests
+v0.8:signed_equality	EF	ivltests
+v0.8:signed12	EF	ivltests diff=log/signed12.log:gold/signed12.gold
 v0.8:stime	EF	ivltests
 v0.8:string11	EF	ivltests diff=log/string11.log:gold/string11.gold
 v0.8:vcd-dup	EF	ivltests diff=work/vcd-dup.vcd:gold/vcd-dup.vcd.gold:2
@@ -1239,6 +1282,31 @@ v0.8:writemem-error	EF	ivltests diff=log/writemem-error.log:gold/writemem-error.
 v0.9:fatal_et_al	NI
 v0.9:sv_timeunit_prec	NI
 v0.9:sv_timeunit_prec_fail	NI
+v0.9:bits	NI
+v0.9:ibyte_test	NI
+v0.9:iint_test	NI
+v0.9:ilongint_test	NI
+v0.9:ishortint_test	NI
+v0.9:iuint1		NI
+v0.9:sbyte_test	NI
+v0.9:simple_byte	NI
+v0.9:simple_int	NI
+v0.9:simple_longint	NI
+v0.9:simple_shortint	NI
+v0.9:sint_test	NI
+v0.9:slongint_test	NI
+v0.9:sshortint_test	NI
+v0.9:ubyte_test	NI
+v0.9:uint_test	NI
+v0.9:ulongint_test	NI
+v0.9:ushortint_test	NI
+v0.9:enum_base_range	NI
+v0.9:enum_elem_ranges	NI
+v0.9:enum_next	NI
+v0.9:enum_test1	NI
+v0.9:enum_value_expr	NI
+v0.9:enum_values	NI
+v0.9:first_last_num	NI
 
 # V0.9 does not support command line parameters.
 v0.9:cmdline_parm1	NI
@@ -1254,16 +1322,10 @@ v0.9:real_array_nb	NI
 v0.9:real_delay	NI
 
 # V0.9 does not support two variable delays (only 1 or three).
-v0.9:verify_two_var_delays	NI	ivltests
+v0.9:verify_two_var_delays	NI
 
 # V0.9 does not support calling a system function as a task (SystemVerilog).
 v0.9:sys_func_as_task	NI
-
-# V0.9 does not support a signed result from thread space or a
-# functor so these are expected to fail under V0.9.
-v0.9:signed_pv	EF	ivltests
-v0.9:signed_a	EF	ivltests
-v0.9:signed_part	EF	ivltests
 
 # V0.9 does not have the net rework code.
 v0.9:deposit	EF	ivltests
@@ -1326,6 +1388,7 @@ v0.9:sdf4	normal,-gspecify  ivltests diff=log/sdf4.log:gold/sdf1-v0.9.gold
 v0.9:sdf5	normal,-gspecify  ivltests diff=log/sdf5.log:gold/sdf5-v0.9.gold
 v0.9:sdf6	normal,-gspecify  ivltests diff=log/sdf6.log:gold/sdf6-v0.9.gold
 v0.9:sdf7	normal,-gspecify  ivltests diff=log/sdf7.log:gold/sdf7-v0.9.gold
+v0.9:sdf_esc_id	normal,-gspecify  ivltests diff=log/sdf_esc_id.log:gold/sdf1-v0.9.gold
 v0.9:multi_driver_delay		EF	ivltests
 v0.9:multi_driver_delay-v0.9	normal	ivltests
 v0.9:pr1883052		EF	ivltests
@@ -2461,6 +2524,7 @@ sdf8		normal,-gspecify  ivltests diff=log/sdf8.log:gold/sdf8.gold
 sdf_del_min	normal,-gspecify,-Tmin	ivltests
 sdf_del_typ	normal,-gspecify,-Ttyp	ivltests
 sdf_del_max	normal,-gspecify,-Tmax	ivltests
+sdf_esc_id	normal,-gspecify  ivltests diff=log/sdf_esc_id.log:gold/sdf1.gold
 macro_with_args	normal	ivltests diff=log/macro_with_args.log:gold/macro_with_args.gold
 macro2		normal	ivltests diff=log/macro2.log:gold/macro2.gold
 pr1862744a	normal,-Winfloop  ivltests
@@ -2977,3 +3041,51 @@ pr3039548	normal	ivltests diff=log/pr3039548.log:gold/pr3039548.gold
 uwire		normal	ivltests
 uwire_fail	CE	ivltests diff=log/uwire_fail.log:gold/uwire_fail.gold
 pr3044843	normal	ivltests
+ca_force	normal	ivltests
+pr3054101a	normal	ivltests diff=log/pr3054101a.log:gold/pr3054101a.gold
+pr3054101b	normal	ivltests diff=log/pr3054101b.log:gold/pr3054101a.gold
+pr3054101c	normal	ivltests diff=log/pr3054101c.log:gold/pr3054101c.gold
+pr3054101d	normal	ivltests diff=log/pr3054101d.log:gold/pr3054101c.gold
+pr3054101e	normal	ivltests diff=log/pr3054101e.log:gold/pr3054101e.gold
+pr3054101f	normal	ivltests diff=log/pr3054101f.log:gold/pr3054101e.gold
+pr3054101g	normal	ivltests diff=log/pr3054101g.log:gold/pr3054101g.gold
+pr3054101h	normal	ivltests diff=log/pr3054101h.log:gold/pr3054101g.gold
+pr3061015a	CE	ivltests
+pr3061015b	CE	ivltests
+pr3061015c	CE	ivltests
+pr3064375	normal	ivltests diff=log/pr3064375.log:gold/pr3064375.gold
+no_if_statement	CE	ivltests
+pr3064511	normal	ivltests
+pr3077640	normal	ivltests
+pr3078759	CO,-gspecify	ivltests
+bits		normal,-g2009	ivltests
+ibyte_test	normal,-g2009	ivltests
+iint_test	normal,-g2009	ivltests
+ilongint_test	normal,-g2009	ivltests
+ishortint_test	normal,-g2009	ivltests
+iuint1		normal,-g2009	ivltests
+sbyte_test	normal,-g2009	ivltests
+simple_byte	normal,-g2009	ivltests
+simple_int	normal,-g2009	ivltests
+simple_longint	normal,-g2009	ivltests
+simple_shortint	normal,-g2009	ivltests
+sint_test	normal,-g2009	ivltests
+slongint_test	normal,-g2009	ivltests
+sshortint_test	normal,-g2009	ivltests
+ubyte_test	normal,-g2009	ivltests
+uint_test	normal,-g2009	ivltests
+ulongint_test	normal,-g2009	ivltests
+ushortint_test	normal,-g2009	ivltests
+signed_equality	normal	ivltests
+pr3098439	normal	ivltests
+stask_sens_null_arg	normal	ivltests
+pr3112073a	CE	ivltests
+enum_base_range	normal,-g2009	ivltests
+enum_elem_ranges	normal,-g2009	ivltests
+enum_next	normal,-g2009	ivltests
+enum_test1	normal,-g2009	ivltests
+enum_value_expr	normal,-g2009	ivltests
+enum_values	normal,-g2009	ivltests
+first_last_num	normal,-g2009	ivltests
+def_nettype_none	CE	ivltests gold=def_nettype_none.gold
+undef		normal	ivltests gold=undef.gold
