@@ -21,6 +21,15 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                   uint_test: Not Implemented.
               ulongint_test: Not Implemented.
              ushortint_test: Not Implemented.
+            enum_base_range: Not Implemented.
+           enum_elem_ranges: Not Implemented.
+                  enum_next: Not Implemented.
+                 enum_test1: Not Implemented.
+            enum_value_expr: Not Implemented.
+                enum_values: Not Implemented.
+                   fileline: Not Implemented.
+                  fileline2: Not Implemented.
+             first_last_num: Not Implemented.
               cmdline_parm1: Not Implemented.
                     analog1: Not Implemented.
                     analog2: Not Implemented.
@@ -1567,6 +1576,8 @@ test_mos_strength_reduction: Passed.
                   pr3098439: ==> Failed - output does not match gold file.
         stask_sens_null_arg: Passed.
                  pr3112073a: Passed - CE.
+           def_nettype_none: Passed - CE.
+                      undef: Passed.
 ============================================================================
 Test results:
-  Total=1567, Passed=1511, Failed=2, Not Implemented=28, Expected Fail=26
+  Total=1578, Passed=1513, Failed=2, Not Implemented=37, Expected Fail=26

@@ -1048,6 +1048,8 @@ v0.8:enum_next	NI
 v0.8:enum_test1	NI
 v0.8:enum_value_expr	NI
 v0.8:enum_values	NI
+v0.8:fileline	NI
+v0.8:fileline2	NI
 v0.8:first_last_num	NI
 
 # V0.8 does not support +timescale in a command file.
@@ -1306,6 +1308,8 @@ v0.9:enum_next	NI
 v0.9:enum_test1	NI
 v0.9:enum_value_expr	NI
 v0.9:enum_values	NI
+v0.9:fileline	NI
+v0.9:fileline2	NI
 v0.9:first_last_num	NI
 
 # V0.9 does not support command line parameters.

@@ -336,6 +336,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                 sdf_del_min: Not Implemented.
                 sdf_del_typ: Not Implemented.
                 sdf_del_max: Not Implemented.
+                 sdf_esc_id: Not Implemented.
                     abstime: Not Implemented.
                       clog2: Not Implemented.
                clog2-signal: Not Implemented.
@@ -439,6 +440,15 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   uint_test: Not Implemented.
               ulongint_test: Not Implemented.
              ushortint_test: Not Implemented.
+            enum_base_range: Not Implemented.
+           enum_elem_ranges: Not Implemented.
+                  enum_next: Not Implemented.
+                 enum_test1: Not Implemented.
+            enum_value_expr: Not Implemented.
+                enum_values: Not Implemented.
+                   fileline: Not Implemented.
+                  fileline2: Not Implemented.
+             first_last_num: Not Implemented.
                   pr1403406: Not Implemented.
                  pr1403406a: Not Implemented.
                  pr1403406b: Not Implemented.
@@ -474,6 +484,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                       pr547: Passed.
                   pr2842621: Passed.
                   pr2877564: Passed - CE.
+                      undef: Passed.
               always3.1.10A: Passed - CO.
                always3.1.1A: Passed - CO.
                always3.1.1B: Passed - CO.
@@ -1562,6 +1573,9 @@ test_mos_strength_reduction: Passed.
                  pr3061015b: Passed - CE.
                  pr3061015c: Passed - CE.
                   pr3064375: Passed.
+        stask_sens_null_arg: Passed.
+                 pr3112073a: Passed - CE.
+           def_nettype_none: Passed - CE.
 ============================================================================
 Test results:
-  Total=1562, Passed=996, Failed=3, Not Implemented=444, Expected Fail=119
+  Total=1576, Passed=1000, Failed=3, Not Implemented=454, Expected Fail=119
