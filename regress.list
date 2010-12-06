@@ -3095,3 +3095,5 @@ def_nettype_none	CE	ivltests gold=def_nettype_none.gold
 undef		normal	ivltests gold=undef.gold
 fileline	normal  ivltests gold=fileline.gold
 fileline2	normal  ivltests gold=fileline2.gold
+param-width-ivl	normal	ivltests gold=param-width-ivl.gold
+param-width-std	normal,-gstrict-expr-width	ivltests gold=param-width-std.gold
