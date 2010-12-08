@@ -519,6 +519,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
             int_not_signext: Passed - expected fail.
                    integer5: Passed - expected fail.
          multi_driver_delay: Passed - expected fail.
+            param-width-ivl: Passed - expected fail.
+            param-width-std: Passed - expected fail.
                       pr487: Passed - expected fail.
                       pr527: Passed - expected fail.
                       pr528: Passed.
@@ -1578,4 +1580,4 @@ test_mos_strength_reduction: Passed.
            def_nettype_none: Passed - CE.
 ============================================================================
 Test results:
-  Total=1576, Passed=1000, Failed=3, Not Implemented=454, Expected Fail=119
+  Total=1578, Passed=1000, Failed=3, Not Implemented=454, Expected Fail=121

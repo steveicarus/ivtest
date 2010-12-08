@@ -1163,6 +1163,8 @@ v0.8:extend	EF	ivltests
 v0.8:int_not_signext	EF	ivltests diff=log/int_not_signext.log:gold/int_not_signext.gold
 v0.8:integer5	EF	ivltests
 v0.8:multi_driver_delay	EF	ivltests
+v0.8:param-width-ivl	EF	ivltests gold=param-width-ivl.gold
+v0.8:param-width-std	EF	ivltests gold=param-width-std.gold
 v0.8:pr487	EF	ivltests diff=log/pr487.log:gold/pr487.gold
 v0.8:pr527	EF	ivltests diff=log/pr527.log:gold/pr527.gold
 v0.8:pr528	EF	ivltests diff=log/pr528.log:gold/pr528.gold
