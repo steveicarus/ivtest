@@ -56,6 +56,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                     vcd-dup: Passed.
                   pr2972866: Passed - expected fail.
                   pr2715558: Passed - expected fail.
+            param-width-std: Passed - expected fail.
+                  pr2877564: Passed - CE.
                    specify5: Passed.
                       pr377: Passed.
                       pr528: Passed.
@@ -1512,7 +1514,6 @@ test_mos_strength_reduction: Passed.
                 signed_part: Passed.
                   pr2865563: Passed.
                   pr2877555: Passed.
-                  pr2877564: Passed - CE.
                   pr2883958: Passed.
                   pr2885048: Passed.
                   pr2890322: Passed.
@@ -1578,6 +1579,7 @@ test_mos_strength_reduction: Passed.
                  pr3112073a: Passed - CE.
            def_nettype_none: Passed - CE.
                       undef: Passed.
+            param-width-ivl: Passed.
 ============================================================================
 Test results:
-  Total=1578, Passed=1513, Failed=2, Not Implemented=37, Expected Fail=26
+  Total=1580, Passed=1514, Failed=2, Not Implemented=37, Expected Fail=27

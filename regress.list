@@ -1373,6 +1373,12 @@ v0.9:pr2972866	EF	ivltests
 # V0.9 does not support the CAs have their own driver functionality.
 v0.9:pr2715558	EF	ivltests diff=log/pr2715558.log:gold/pr2715558.gold
 
+# V0.9 does not support the -gstrict-expr-width option
+param-width-std	EF	ivltests gold=param-width-std.gold
+
+# V0.9 has a slightly different message
+v0.9:pr2877564	CE	ivltests diff=log/pr2877564.log:gold/pr2877564-v0.9.gold
+
 #==========
 # V0.9 has different T0 values for nets (z vs x). No transitions to x at T0.
 #==========
