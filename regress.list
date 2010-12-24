@@ -1436,6 +1436,7 @@ v0.9:case1	normal	ivltests
 v0.9:case2	normal	ivltests
 v0.9:case4	normal	ivltests
 v0.9:case5	normal	ivltests
+v0.9:case5-syn-fail	normal	ivltests
 v0.9:case6	normal	ivltests
 v0.9:case7	normal	ivltests
 v0.9:condit1	normal	ivltests
@@ -1483,6 +1484,7 @@ v0.10:case1	normal	ivltests
 v0.10:case2	normal	ivltests
 v0.10:case4	normal	ivltests
 v0.10:case5	normal	ivltests
+v0.10:case5-syn-fail	normal	ivltests
 v0.10:case6	normal	ivltests
 v0.10:case7	normal	ivltests
 v0.10:condit1	normal	ivltests
@@ -2184,6 +2186,7 @@ case2		normal,-S  ivltests # First Synth test
 case3		normal,-S  ivltests # First Synth test
 case4		normal,-S  ivltests # First Synth test
 case5		normal,-S  ivltests # First Synth test
+case5-syn-fail	CE,-S      ivltests # First Synth test
 case6		normal,-S  ivltests # First Synth test
 case7		normal,-S  ivltests # First Synth test
 condit1		normal,-S  ivltests # First Synth test

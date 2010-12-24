@@ -57,7 +57,7 @@ v0.8:pr723       normal pr723.c       pr723-v0.8.log      -DIVERILOG_V0_8
 v0.8:realtime    normal realtime.c    realtime.log        -DIVERILOG_V0_8
 v0.8:realtime2   normal realtime2.c   realtime2.log       -DIVERILOG_V0_8
 # V0.8 does not support whole array callbacks so this test fails.
-v0.8:memmon      normal memmon.c      memmon.log          -DIVERILOG_V0_8
+v0.8:memmon      NI     memmon.c      memmon.log
 # From a VPI standpoint, parameters are not handled very well in V0.8.
 v0.8:listparams  normal listparams.c  listparams-v0.8.log -DIVERILOG_V0_8
 v0.8:pr1693971   normal pr1693971.c   pr1693971.log       -DIVERILOG_V0_8
