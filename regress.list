@@ -2957,8 +2957,8 @@ pr2815398a	normal	ivltests diff=log/pr2815398a.log:gold/pr2815398a.gold
 pr2815398a_std	normal	ivltests
 pr2815398b	normal	ivltests diff=log/pr2815398b.log:gold/pr2815398b.gold
 pr2818823	normal	ivltests
-sv_timeunit_prec	normal,-g2009  ivltests
-sv_timeunit_prec_fail	CE,-g2009  ivltests diff=log/sv_timeunit_prec_fail.log:gold/sv_timeunit_prec_fail.gold
+sv_timeunit_prec	normal,-g2005-sv  ivltests
+sv_timeunit_prec_fail	CE,-g2005-sv  ivltests diff=log/sv_timeunit_prec_fail.log:gold/sv_timeunit_prec_fail.gold
 pr2823414	CE	ivltests diff=log/pr2823414.log:gold/pr2823414.gold
 pr2823711	normal	ivltests
 pr2824189	normal	ivltests
@@ -3046,7 +3046,7 @@ pr2998515	normal	ivltests
 pr3011327	normal	ivltests
 pr3012758	normal	ivltests
 sys_func_task_error	RE	ivltests diff=log/sys_func_task_error.log:gold/sys_func_task_error.gold
-sys_func_as_task	normal,-g2009	ivltests diff=log/sys_func_as_task.log:gold/sys_func_as_task.gold
+sys_func_as_task	normal,-g2005-sv	ivltests diff=log/sys_func_as_task.log:gold/sys_func_as_task.gold
 pr3015421	CE	ivltests diff=log/pr3015421.log:gold/pr3015421.gold
 pr3022502	normal	ivltests
 pr3024131	normal	ivltests
@@ -3073,35 +3073,35 @@ no_if_statement	CE	ivltests
 pr3064511	normal	ivltests
 pr3077640	normal	ivltests
 pr3078759	CO,-gspecify	ivltests
-bits		normal,-g2009	ivltests
-ibyte_test	normal,-g2009	ivltests
-iint_test	normal,-g2009	ivltests
-ilongint_test	normal,-g2009	ivltests
-ishortint_test	normal,-g2009	ivltests
-iuint1		normal,-g2009	ivltests
-sbyte_test	normal,-g2009	ivltests
-simple_byte	normal,-g2009	ivltests
-simple_int	normal,-g2009	ivltests
-simple_longint	normal,-g2009	ivltests
-simple_shortint	normal,-g2009	ivltests
-sint_test	normal,-g2009	ivltests
-slongint_test	normal,-g2009	ivltests
-sshortint_test	normal,-g2009	ivltests
-ubyte_test	normal,-g2009	ivltests
-uint_test	normal,-g2009	ivltests
-ulongint_test	normal,-g2009	ivltests
-ushortint_test	normal,-g2009	ivltests
+bits		normal,-g2005-sv	ivltests
+ibyte_test	normal,-g2005-sv	ivltests
+iint_test	normal,-g2005-sv	ivltests
+ilongint_test	normal,-g2005-sv	ivltests
+ishortint_test	normal,-g2005-sv	ivltests
+iuint1		normal,-g2005-sv	ivltests
+sbyte_test	normal,-g2005-sv	ivltests
+simple_byte	normal,-g2005-sv	ivltests
+simple_int	normal,-g2005-sv	ivltests
+simple_longint	normal,-g2005-sv	ivltests
+simple_shortint	normal,-g2005-sv	ivltests
+sint_test	normal,-g2005-sv	ivltests
+slongint_test	normal,-g2005-sv	ivltests
+sshortint_test	normal,-g2005-sv	ivltests
+ubyte_test	normal,-g2005-sv	ivltests
+uint_test	normal,-g2005-sv	ivltests
+ulongint_test	normal,-g2005-sv	ivltests
+ushortint_test	normal,-g2005-sv	ivltests
 signed_equality	normal	ivltests
 pr3098439	normal	ivltests
 stask_sens_null_arg	normal	ivltests
 pr3112073a	CE	ivltests
-enum_base_range	normal,-g2009	ivltests
-enum_elem_ranges	normal,-g2009	ivltests
-enum_next	normal,-g2009	ivltests
-enum_test1	normal,-g2009	ivltests
-enum_value_expr	normal,-g2009	ivltests
-enum_values	normal,-g2009	ivltests
-first_last_num	normal,-g2009	ivltests
+enum_base_range	normal,-g2005-sv	ivltests
+enum_elem_ranges	normal,-g2005-sv	ivltests
+enum_next	normal,-g2005-sv	ivltests
+enum_test1	normal,-g2005-sv	ivltests
+enum_value_expr	normal,-g2005-sv	ivltests
+enum_values	normal,-g2005-sv	ivltests
+first_last_num	normal,-g2005-sv	ivltests
 def_nettype_none	CE	ivltests gold=def_nettype_none.gold
 undef		normal	ivltests gold=undef.gold
 fileline	normal  ivltests gold=fileline.gold
