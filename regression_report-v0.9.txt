@@ -98,6 +98,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                       case2: Passed.
                       case4: Passed.
                       case5: Passed.
+             case5-syn-fail: Passed.
                       case6: Passed.
                       case7: Passed.
                     condit1: Passed.
@@ -1582,4 +1583,4 @@ test_mos_strength_reduction: Passed.
             param-width-ivl: Passed.
 ============================================================================
 Test results:
-  Total=1580, Passed=1514, Failed=2, Not Implemented=37, Expected Fail=27
+  Total=1581, Passed=1515, Failed=2, Not Implemented=37, Expected Fail=27

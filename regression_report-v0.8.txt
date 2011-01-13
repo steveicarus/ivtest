@@ -1211,12 +1211,13 @@ test_mos_strength_reduction: Passed.
                       case2: Passed.
                       case3: Passed.
                       case4: Passed.
-                      case5: ==> Failed - output does not match gold file.
+                      case5: Passed.
+             case5-syn-fail: Passed - CE.
                       case6: Passed.
                       case7: Passed.
                     condit1: Passed.
                    basicreg: Passed.
-                 basiclatch: ==> Failed - output does not match gold file.
+                 basiclatch: Passed.
                  basicstate: Passed.
                 basicstate2: Passed.
                    multireg: Passed.
@@ -1235,7 +1236,7 @@ test_mos_strength_reduction: Passed.
                  casesynth2: Passed.
                  casesynth3: Passed.
                   lcatsynth: Passed.
-                   dffsynth: ==> Failed - output does not match gold file.
+                   dffsynth: Passed.
                   dffsynth2: Passed.
                   dffsynth3: Passed.
                   dffsynth4: Passed.
@@ -1580,4 +1581,4 @@ test_mos_strength_reduction: Passed.
            def_nettype_none: Passed - CE.
 ============================================================================
 Test results:
-  Total=1578, Passed=1000, Failed=3, Not Implemented=454, Expected Fail=121
+  Total=1579, Passed=1004, Failed=0, Not Implemented=454, Expected Fail=121
