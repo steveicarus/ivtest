@@ -63,6 +63,7 @@ module top;
       // Check that after the parameter is 1'bx.
       if (mone[idx] !== 1'bx) begin
         $display("  Failed: after bit must be 1'bx, got %b", mone[idx]);
+        pass = 1'b0;
       end
     end else begin
       $display("The size of a decimal -1 parameter is unlimited.");
@@ -85,10 +86,12 @@ module top;
       pass = 1'b0;
     end
 
-    // Check to see if a parameter can be more than 32 bits (I expect 48 bits).
+    // Check to see if a parameter can be more than 32 bits (I expect
+    // unlimited or 48 bits). If they exist the first 48 bits must be 1
+    // any remaining bits are 0.
     begin: loop_big
       for (idx = 0; idx < max; idx = idx + 1) begin
-        if (big[idx] !== 1) disable loop_big;
+        if (big[idx] !== (idx < 48)) disable loop_big;
       end
     end
     if (idx != max) begin
@@ -96,11 +99,16 @@ module top;
       // Check that after the parameter is 1'bx.
       if (big[idx] !== 1'bx) begin
         $display("  Failed: after bit must be 1'bx, got %b", big[idx]);
+        pass = 1'b0;
       end
     end else begin
       $display("The size of a big decimal parameter is unlimited.");
     end
     // An unsized parameter must be at least 32 bits.
+    if (idx < 48) begin
+      $display("  Warning: 48 bit unsized parameter was truncated to %0d bits",
+               idx);
+    end
     if (idx < 32) begin
       $display("  Failed: unsized parameter must be >= 32 bits, got %0d.", idx);
       pass = 1'b0;
@@ -136,6 +144,7 @@ module top;
       // Check that after the parameter is 1'bx.
       if (zero[idx+:1] !== 1'bx) begin
         $display("  Failed: after bit must be 1'bx, got %b", zero[idx+:1]);
+        pass = 1'b0;
       end
     end else begin
       $display("The size of a decimal 0 parameter is unlimited.");
@@ -169,6 +178,7 @@ module top;
       // Check that after the parameter is 1'bx.
       if (mone[idx+:1] !== 1'bx) begin
         $display("  Failed: after bit must be 1'bx, got %b", mone[idx+:1]);
+        pass = 1'b0;
       end
     end else begin
       $display("The size of a decimal -1 parameter is unlimited.");
@@ -191,10 +201,12 @@ module top;
       pass = 1'b0;
     end
 
-    // Check to see if a parameter can be more than 32 bits (I expect 48 bits).
+    // Check to see if a parameter can be more than 32 bits (I expect
+    // unlimited or 48 bits). If they exist the first 48 bits must be 1
+    // any remaining bits are 0.
     begin: loop_big2
       for (idx = 0; idx < max; idx = idx + 1) begin
-        if (big[idx+:1] !== 1) disable loop_big2;
+        if (big[idx+:1] !== (idx < 48)) disable loop_big2;
       end
     end
     if (idx != max) begin
@@ -202,11 +214,16 @@ module top;
       // Check that after the parameter is 1'bx.
       if (big[idx+:1] !== 1'bx) begin
         $display("Failed: after bit must be 1'bx, got %b", big[idx+:1]);
+        pass = 1'b0;
       end
     end else begin
       $display("The size of a big decimal parameter is unlimited.");
     end
     // An unsized parameter must be at least 32 bits.
+    if (idx < 48) begin
+      $display("  Warning: 48 bit unsized parameter was truncated to %0d bits",
+               idx);
+    end
     if (idx < 32) begin
       $display("  Failed: unsized parameter must be >= 32 bits, got %0d.", idx);
       pass = 1'b0;
