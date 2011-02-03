@@ -36,7 +36,7 @@ module top;
       end
     end else if ((in === 1'bz && outif0 !== 1'bx) ||
              (in !== 1'bz && outif0 !== in)) begin
-      $display("in (%b) !== outif0 (%b) at %.1f", in, out, $realtime);
+      $display("in (%b) !== outif0 (%b) at %.1f", in, outif0, $realtime);
       pass = 1'b0;
     end
     diff = $realtime - (base + delay);
