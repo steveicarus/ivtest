@@ -3108,3 +3108,8 @@ fileline	normal  ivltests gold=fileline.gold
 fileline2	normal  ivltests gold=fileline2.gold
 param-width-ivl	normal	ivltests gold=param-width-ivl.gold
 param-width-std	normal,-gstrict-expr-width	ivltests gold=param-width-std.gold
+
+# Icarus Verilog 0.10 supports Verilog/SystemVerilog/VHDL mixed simulation.
+# These are some tests of the VHDL part of that.
+vhdl_and_gate	normal,-g2005-sv,ivltests/vhdl_and_gate.vhd	ivltests
+vhdl_expr1	normal,-g2005-sv,ivltests/vhdl_expr1.vhd	ivltests
