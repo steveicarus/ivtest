@@ -16,8 +16,8 @@ module ms_add (input byte signed a, b, output byte signed sc, ss);
 endmodule 
 
 module main;
-  parameter N_REPS = 100;                 // repetition with random numbers
-  parameter XZ_REPS = 1000;               // repetition with 'x 'z values
+  parameter N_REPS = 500;               // repetition with random numbers
+  parameter XZ_REPS = 500;              // repetition with 'x 'z values
   parameter MAX = 'h7f;
   parameter LEN = 8;
   // variables used as golden references

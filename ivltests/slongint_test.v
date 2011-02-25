@@ -17,8 +17,8 @@ module ms_add (input longint signed a, b, output longint signed sc, ss);
 endmodule 
 
 module main;
-  parameter N_REPS = 100;                 // repetition with random numbers
-  parameter XZ_REPS = 200;               // repetition with 'x 'z values
+  parameter N_REPS = 500;               // repetition with random numbers
+  parameter XZ_REPS = 500;              // repetition with 'x 'z values
   parameter MAX8 = 'h7f;
   parameter MAX16 = 'h7fff;
   parameter LEN = 64;

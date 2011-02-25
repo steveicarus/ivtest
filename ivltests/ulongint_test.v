@@ -17,8 +17,8 @@ module mu_add (input longint unsigned a, b, output longint unsigned sc, ss);
 endmodule 
 
 module main;
-  parameter N_REPS = 100;                 // repetition with random numbers
-  parameter XZ_REPS = 200;               // repetition with 'x 'z values
+  parameter N_REPS = 500;                 // repetition with random numbers
+  parameter XZ_REPS = 500;                // repetition with 'x 'z values
   parameter MAX8 = 256;
   parameter MAX16 = 65536;
   parameter LEN = 64;
