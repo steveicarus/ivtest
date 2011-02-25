@@ -1519,7 +1519,6 @@ v0.10:ssetclr1	normal	ivltests
 v0.10:ssetclr2	normal	ivltests
 v0.10:ssetclr3	normal	ivltests
 v0.10:inside_synth	normal	ivltests
-v0.10:inside_synth	normal	ivltests
 v0.10:inside_synth2	normal	ivltests
 v0.10:inside_synth3	normal	ivltests
 v0.10:mix_reset	normal	ivltests
@@ -3108,3 +3107,4 @@ fileline	normal  ivltests gold=fileline.gold
 fileline2	normal  ivltests gold=fileline2.gold
 param-width-ivl	normal	ivltests gold=param-width-ivl.gold
 param-width-std	normal,-gstrict-expr-width	ivltests gold=param-width-std.gold
+pr3190948	normal  ivltests
