@@ -3107,4 +3107,5 @@ fileline	normal  ivltests gold=fileline.gold
 fileline2	normal  ivltests gold=fileline2.gold
 param-width-ivl	normal	ivltests gold=param-width-ivl.gold
 param-width-std	normal,-gstrict-expr-width	ivltests gold=param-width-std.gold
+pr3190941	CE	ivltests diff=log/pr3190941.log:gold/pr3190941.gold
 pr3190948	normal  ivltests
