@@ -9,7 +9,7 @@
 1.0/real zero is inf.
 
 --- Printing as integer ---
-1/0 is x (Should be x)
+1/0 is  x (Should be x)
 1/0.0 is inf
 1.0/0 is inf
 1.0/0.0 is inf

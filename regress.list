@@ -1378,6 +1378,19 @@ v0.9:pr2715558	EF	ivltests diff=log/pr2715558.log:gold/pr2715558.gold
 # V0.9 does not support the -gstrict-expr-width option
 v0.9:param-width-std	EF	ivltests gold=param-width-std.gold
 
+# V0.9 does not have the expression elaboration rework code
+# This gives display differences in the following tests.
+v0.9:indef_width_concat	CE	  ivltests diff=log/indef_width_concat.log:gold/indef_width_concat-v0.9.gold
+v0.9:real_invalid_ops	CE	  ivltests diff=log/real_invalid_ops.log:gold/real_invalid_ops-v0.9.gold
+v0.9:pr1703120	normal	ivltests diff=log/pr1703120.log:gold/pr1703120-v0.9.gold
+# and the following tests will fail
+v0.9:pr3098439	EF	ivltests
+v0.9:pr3098439a	EF	ivltests
+v0.9:pr3098439b	EF	ivltests
+v0.9:pr3103880	EF	ivltests
+v0.9:pr3104254	EF	ivltests
+v0.9:pr3149494	EF	ivltests gold=pr3149494.gold
+
 # V0.9 has a slightly different message
 v0.9:pr2877564	CE	ivltests diff=log/pr2877564.log:gold/pr2877564-v0.9.gold
 
@@ -3092,6 +3105,10 @@ ulongint_test	normal,-g2005-sv	ivltests
 ushortint_test	normal,-g2005-sv	ivltests
 signed_equality	normal	ivltests
 pr3098439	normal	ivltests
+pr3098439a	normal	ivltests
+pr3098439b	normal	ivltests
+pr3103880	normal	ivltests
+pr3104254	normal	ivltests
 stask_sens_null_arg	normal	ivltests
 pr3112073a	CE	ivltests
 enum_base_range	normal,-g2005-sv	ivltests
@@ -3107,5 +3124,6 @@ fileline	normal  ivltests gold=fileline.gold
 fileline2	normal  ivltests gold=fileline2.gold
 param-width-ivl	normal	ivltests gold=param-width-ivl.gold
 param-width-std	normal,-gstrict-expr-width	ivltests gold=param-width-std.gold
+pr3149494	normal	ivltests gold=pr3149494.gold
 pr3190941	CE	ivltests diff=log/pr3190941.log:gold/pr3190941.gold
 pr3190948	normal  ivltests

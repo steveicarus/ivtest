@@ -255,7 +255,7 @@ module main;
       end
     # 1;
     // signed small number to unsigned shorint
-    for (i = 0; i < (1<<LEN/2); i = i+1)
+    for (i = 0; i < N_REPS; i = i+1)
       begin
         #1;
         slice = $random % 'h7fff_ffff;

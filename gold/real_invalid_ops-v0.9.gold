@@ -39,9 +39,9 @@
 ./ivltests/real_invalid_ops.v:28: error: >>> operator may not have REAL operands.
 ./ivltests/real_invalid_ops.v:28: error: Unable to elaborate r-value: (var1)>>>(var2)
 ./ivltests/real_invalid_ops.v:30: error: Concatenation operand can not be real: var1
+./ivltests/real_invalid_ops.v:30: error: Concatenation may not have zero width in this context.
 ./ivltests/real_invalid_ops.v:30: error: Unable to elaborate r-value: {var1}
 ./ivltests/real_invalid_ops.v:31: error: Concatenation repeat expression can not be REAL.
-./ivltests/real_invalid_ops.v:31: error: Concatenation operand can not be real: var1
 ./ivltests/real_invalid_ops.v:31: error: Unable to elaborate r-value: {var2{var1}}
 ./ivltests/real_invalid_ops.v:40: error: & operator may not have a REAL operand.
 ./ivltests/real_invalid_ops.v:41: error: | operator may not have a REAL operand.
@@ -65,5 +65,4 @@
 ./ivltests/real_invalid_ops.v:62: error: >>> operator may not have REAL operands.
 ./ivltests/real_invalid_ops.v:64: error: Concatenation operand can not be real: var1
 ./ivltests/real_invalid_ops.v:65: error: Concatenation repeat expression can not be REAL.
-./ivltests/real_invalid_ops.v:65: error: Concatenation operand can not be real: var1
-68 error(s) during elaboration.
+67 error(s) during elaboration.
