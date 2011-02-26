@@ -3112,4 +3112,25 @@ param-width-std	normal,-gstrict-expr-width	ivltests gold=param-width-std.gold
 # Icarus Verilog 0.10 supports Verilog/SystemVerilog/VHDL mixed simulation.
 # These are some tests of the VHDL part of that.
 vhdl_and_gate	normal,-g2005-sv,ivltests/vhdl_and_gate.vhd	ivltests
+vhdl_and23_bit	normal,-g2005-sv,ivltests/vhdl_and23_bit.vhd	ivltests
+vhdl_andg_bit	normal,-g2005-sv,ivltests/vhdl_andg_bit.vhd	ivltests
+vhdl_andg_stdlogic	normal,-g2005-sv,ivltests/vhdl_andg_stdlogic.vhd	ivltests
 vhdl_expr1	normal,-g2005-sv,ivltests/vhdl_expr1.vhd	ivltests
+vhdl_nandg_bit	normal,-g2005-sv,ivltests/vhdl_nandg_bit.vhd	ivltests
+vhdl_nandg_stdlogic	normal,-g2005-sv,ivltests/vhdl_nandg_stdlogic.vhd	ivltests
+vhdl_notg_bit	normal,-g2005-sv,ivltests/vhdl_notg_bit.vhd	ivltests
+vhdl_notg_stdlogic	normal,-g2005-sv,ivltests/vhdl_notg_stdlogic.vhd	ivltests
+vhdl_org_bit	normal,-g2005-sv,ivltests/vhdl_org_bit.vhd	ivltests
+vhdl_org_stdlogic	normal,-g2005-sv,ivltests/vhdl_org_stdlogic.vhd	ivltests
+vhdl_xnorg_bit	normal,-g2005-sv,ivltests/vhdl_xnorg_bit.vhd	ivltests
+vhdl_xnorg_stdlogic	normal,-g2005-sv,ivltests/vhdl_xnorg_stdlogic.vhd	ivltests
+vhdl_xorg_bit	normal,-g2005-sv,ivltests/vhdl_xorg_bit.vhd	ivltests
+vhdl_xorg_stdlogic	normal,-g2005-sv,ivltests/vhdl_xorg_stdlogic.vhd	ivltests
+vhdl_sadd23_bit	normal,-g2005-sv,ivltests/vhdl_sadd23_bit.vhd	ivltests
+vhdl_uadd23_bit	normal,-g2005-sv,ivltests/vhdl_uadd23_bit.vhd	ivltests
+vhdl_sdiv23_bit	normal,-g2005-sv,ivltests/vhdl_sdiv23_bit.vhd	ivltests
+vhdl_udiv23_bit	normal,-g2005-sv,ivltests/vhdl_udiv23_bit.vhd	ivltests
+vhdl_ssub23_bit	normal,-g2005-sv,ivltests/vhdl_ssub23_bit.vhd	ivltests
+vhdl_usub23_bit	normal,-g2005-sv,ivltests/vhdl_usub23_bit.vhd	ivltests
+vhdl_smul23_bit	normal,-g2005-sv,ivltests/vhdl_smul23_bit.vhd	ivltests
+vhdl_umul23_bit	normal,-g2005-sv,ivltests/vhdl_umul23_bit.vhd	ivltests
