@@ -3150,3 +3150,11 @@ vhdl_usub23_bit	normal,-g2005-sv,ivltests/vhdl_usub23_bit.vhd	ivltests
 vhdl_smul23_bit	normal,-g2005-sv,ivltests/vhdl_smul23_bit.vhd	ivltests
 vhdl_umul23_bit	normal,-g2005-sv,ivltests/vhdl_umul23_bit.vhd	ivltests
 vhdl_rand23_bit	normal,-g2005-sv,ivltests/vhdl_rand23_bit.vhd	ivltests
+vhdl_sadd23_stdlogic	normal,-g2005-sv,ivltests/vhdl_sadd23_stdlogic.vhd	ivltests
+vhdl_uadd23_stdlogic	normal,-g2005-sv,ivltests/vhdl_uadd23_stdlogic.vhd	ivltests
+vhdl_sdiv23_stdlogic	normal,-g2005-sv,ivltests/vhdl_sdiv23_stdlogic.vhd	ivltests
+vhdl_udiv23_stdlogic	normal,-g2005-sv,ivltests/vhdl_udiv23_stdlogic.vhd	ivltests
+vhdl_ssub23_stdlogic	normal,-g2005-sv,ivltests/vhdl_ssub23_stdlogic.vhd	ivltests
+vhdl_usub23_stdlogic	normal,-g2005-sv,ivltests/vhdl_usub23_stdlogic.vhd	ivltests
+vhdl_smul23_stdlogic	normal,-g2005-sv,ivltests/vhdl_smul23_stdlogic.vhd	ivltests
+vhdl_umul23_stdlogic	normal,-g2005-sv,ivltests/vhdl_umul23_stdlogic.vhd	ivltests
