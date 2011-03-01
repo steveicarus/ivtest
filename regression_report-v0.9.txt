@@ -1581,6 +1581,8 @@ test_mos_strength_reduction: Passed.
            def_nettype_none: Passed - CE.
                       undef: Passed.
             param-width-ivl: Passed.
+                  pr3190941: Passed - CE.
+                  pr3190948: Passed.
 ============================================================================
 Test results:
-  Total=1581, Passed=1515, Failed=2, Not Implemented=37, Expected Fail=27
+  Total=1583, Passed=1517, Failed=2, Not Implemented=37, Expected Fail=27

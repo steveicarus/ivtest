@@ -1577,6 +1577,8 @@ test_mos_strength_reduction: Passed.
                   fileline2: ==> Failed - output does not match gold file.
             param-width-ivl: Passed.
             param-width-std: Passed.
+                  pr3190941: Passed - CE.
+                  pr3190948: Passed.
 ============================================================================
 Test results:
-  Total=1577, Passed=1573, Failed=4, Not Implemented=0, Expected Fail=0
+  Total=1579, Passed=1575, Failed=4, Not Implemented=0, Expected Fail=0
