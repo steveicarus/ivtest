@@ -1561,7 +1561,11 @@ test_mos_strength_reduction: Passed.
               ulongint_test: Passed.
              ushortint_test: Passed.
             signed_equality: Passed.
-                  pr3098439: ==> Failed - output does not match gold file.
+                  pr3098439: Passed.
+                 pr3098439a: Passed.
+                 pr3098439b: Passed.
+                  pr3103880: Passed.
+                  pr3104254: Passed.
         stask_sens_null_arg: Passed.
                  pr3112073a: Passed - CE.
             enum_base_range: Passed.
@@ -1577,8 +1581,9 @@ test_mos_strength_reduction: Passed.
                   fileline2: ==> Failed - output does not match gold file.
             param-width-ivl: Passed.
             param-width-std: Passed.
+                  pr3149494: Passed.
                   pr3190941: Passed - CE.
                   pr3190948: Passed.
 ============================================================================
 Test results:
-  Total=1579, Passed=1575, Failed=4, Not Implemented=0, Expected Fail=0
+  Total=1584, Passed=1581, Failed=3, Not Implemented=0, Expected Fail=0
