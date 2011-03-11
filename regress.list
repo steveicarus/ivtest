@@ -950,6 +950,9 @@ v0.8:pr2800985b	NI # $ferror not supported.
 v0.8:pr2877555	NI # $clog2 not supported.
 v0.8:pr2971207	NI # $swrite not supported.
 v0.8:pr3098439	NI # $format not supported.
+v0.8:pr3098439a	NI # $format not supported.
+v0.8:pr3098439b	NI # $format not supported.
+v0.8:pr3103880	NI # $format not supported.
 v0.8:pv_undef_sig_sel	NI # $sformt not supported.
 v0.8:swrite	NI # $swrite not supported.
 v0.8:urand	NI # $urandom not supported.
@@ -1113,6 +1116,9 @@ v0.8:pr751	normal	ivltests diff=log/pr751.log:gold/pr751-v0.8.gold
 # V0.8 has no special warnings for the optional system tasks/functions.
 v0.8:warn_opt_sys_tf	RE	ivltests diff=log/warn_opt_sys_tf.log:gold/warn_opt_sys_tf-v0.8.gold
 
+# V0.8 does not support multiple attributes
+v0.8:pr3190948	NI	ivltests
+
 # V0.8 always displays an out of bound bit warning.
 v0.8:pr547		normal	ivltests diff=log/pr547.log:gold/pr547-v0.8.gold
 
@@ -1120,6 +1126,7 @@ v0.8:pr547		normal	ivltests diff=log/pr547.log:gold/pr547-v0.8.gold
 v0.8:pr2842621	normal	ivltests diff=log/pr2842621.log:gold/pr2842621-v0.8.gold
 v0.8:pr2877564	CE	ivltests diff=log/pr2877564.log:gold/pr2877564-v0.8.gold
 v0.8:undef	normal	ivltests gold=undef-v0.8.gold
+v0.8:pr3190941	CE	ivltests diff=log/pr3190941.log:gold/pr3190941-v0.8.gold
 
 # V0.8 does not have the always infinite loop checks, so only compile these.
 v0.8:always3.1.10A	CO	ivltests
@@ -1269,6 +1276,8 @@ v0.8:pr3022502	EF	ivltests
 v0.8:pr3039548	CE	ivltests
 v0.8:pr3064511	EF	ivltests
 v0.8:pr3077640	EF	ivltests
+v0.8:pr3104254	EF	ivltests
+v0.8:pr3149494	EF	ivltests gold=pr3149494.gold
 v0.8:shift5	EF	ivltests diff=log/shift5.log:gold/shift5.gold
 v0.8:signed_a	EF	ivltests
 v0.8:signed_equality	EF	ivltests
