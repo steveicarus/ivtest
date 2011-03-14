@@ -3130,3 +3130,4 @@ pr3190948	normal  ivltests
 pr3197861	normal  ivltests
 pr3197917	normal	ivltests
 undefined_shift	normal	ivltests
+pr3194155	normal	ivltests diff=log/pr3194155.log:gold/pr3194155.gold
