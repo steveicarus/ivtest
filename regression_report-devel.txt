@@ -1586,6 +1586,7 @@ test_mos_strength_reduction: Passed.
                   pr3190948: Passed.
                   pr3197861: Passed.
                   pr3197917: Passed.
+            undefined_shift: Passed.
 ============================================================================
 Test results:
-  Total=1586, Passed=1583, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1587, Passed=1584, Failed=3, Not Implemented=0, Expected Fail=0

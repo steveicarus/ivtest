@@ -3129,3 +3129,4 @@ pr3190941	CE	ivltests diff=log/pr3190941.log:gold/pr3190941.gold
 pr3190948	normal  ivltests
 pr3197861	normal  ivltests
 pr3197917	normal	ivltests
+undefined_shift	normal	ivltests
