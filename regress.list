@@ -1022,7 +1022,7 @@ v0.8:readmem-error	NI
 v0.8:readmem-invalid	NI
 v0.8:writemem-invalid	NI
 
-# V0.8 does not support SystemVerilog
+# V0.8 does not support SystemVerilog or VHDL
 v0.8:bits	NI
 v0.8:fatal_et_al	NI
 v0.8:ibyte_test	NI
@@ -1054,6 +1054,53 @@ v0.8:enum_values	NI
 v0.8:fileline	NI
 v0.8:fileline2	NI
 v0.8:first_last_num	NI
+v0.8:vhdl_and_gate	NI
+v0.8:vhdl_and104_stdlogic	NI
+v0.8:vhdl_and23_bit	NI
+v0.8:vhdl_andg_bit	NI
+v0.8:vhdl_andg_stdlogic	NI
+v0.8:vhdl_expr1	NI
+v0.8:vhdl_nandg_bit	NI
+v0.8:vhdl_nandg_stdlogic	NI
+v0.8:vhdl_nand104_stdlogic	NI
+v0.8:vhdl_nand23_bit	NI
+v0.8:vhdl_norg_bit	NI
+v0.8:vhdl_norg_stdlogic	NI
+v0.8:vhdl_nor104_stdlogic	NI
+v0.8:vhdl_nor23_bit	NI
+v0.8:vhdl_notg_bit	NI
+v0.8:vhdl_notg_stdlogic	NI
+v0.8:vhdl_not104_stdlogic	NI
+v0.8:vhdl_not23_bit	NI
+v0.8:vhdl_org_bit	NI
+v0.8:vhdl_org_stdlogic	NI
+v0.8:vhdl_or104_stdlogic	NI
+v0.8:vhdl_or23_bit	NI
+v0.8:vhdl_xnorg_bit	NI
+v0.8:vhdl_xnorg_stdlogic	NI
+v0.8:vhdl_xnor104_stdlogic	NI
+v0.8:vhdl_xnor23_bit	NI
+v0.8:vhdl_xorg_bit	NI
+v0.8:vhdl_xorg_stdlogic	NI
+v0.8:vhdl_xnor104_stdlogic	NI
+v0.8:vhdl_xor23_bit	NI
+v0.8:vhdl_sadd23_bit	NI
+v0.8:vhdl_uadd23_bit	NI
+v0.8:vhdl_sdiv23_bit	NI
+v0.8:vhdl_udiv23_bit	NI
+v0.8:vhdl_ssub23_bit	NI
+v0.8:vhdl_usub23_bit	NI
+v0.8:vhdl_smul23_bit	NI
+v0.8:vhdl_umul23_bit	NI
+v0.8:vhdl_rand23_bit	NI
+v0.8:vhdl_sadd23_stdlogic	NI
+v0.8:vhdl_uadd23_stdlogic	NI
+v0.8:vhdl_sdiv23_stdlogic	NI
+v0.8:vhdl_udiv23_stdlogic	NI
+v0.8:vhdl_ssub23_stdlogic	NI
+v0.8:vhdl_usub23_stdlogic	NI
+v0.8:vhdl_smul23_stdlogic	NI
+v0.8:vhdl_umul23_stdlogic	NI
 
 # V0.8 does not support +timescale in a command file.
 v0.8:pr1403406	NI
@@ -1117,7 +1164,7 @@ v0.8:pr751	normal	ivltests diff=log/pr751.log:gold/pr751-v0.8.gold
 v0.8:warn_opt_sys_tf	RE	ivltests diff=log/warn_opt_sys_tf.log:gold/warn_opt_sys_tf-v0.8.gold
 
 # V0.8 does not support multiple attributes
-v0.8:pr3190948	NI	ivltests
+v0.8:pr3190948	NI
 
 # V0.8 always displays an out of bound bit warning.
 v0.8:pr547		normal	ivltests diff=log/pr547.log:gold/pr547-v0.8.gold
@@ -1278,12 +1325,14 @@ v0.8:pr3064511	EF	ivltests
 v0.8:pr3077640	EF	ivltests
 v0.8:pr3104254	EF	ivltests
 v0.8:pr3149494	EF	ivltests gold=pr3149494.gold
+v0.8:pr3194155	NI
 v0.8:shift5	EF	ivltests diff=log/shift5.log:gold/shift5.gold
 v0.8:signed_a	EF	ivltests
 v0.8:signed_equality	EF	ivltests
 v0.8:signed12	EF	ivltests diff=log/signed12.log:gold/signed12.gold
 v0.8:stime	EF	ivltests
 v0.8:string11	EF	ivltests diff=log/string11.log:gold/string11.gold
+v0.8:undefined_shift	NI
 v0.8:vcd-dup	EF	ivltests diff=work/vcd-dup.vcd:gold/vcd-dup.vcd.gold:2
 v0.8:writemem-error	EF	ivltests diff=log/writemem-error.log:gold/writemem-error.gold
 
@@ -1291,7 +1340,7 @@ v0.8:writemem-error	EF	ivltests diff=log/writemem-error.log:gold/writemem-error.
 # Things not supported by V0.9.
 #==========
 
-# V0.9 does not support SystemVerilog
+# V0.9 does not support SystemVerilog or VHDL
 v0.9:fatal_et_al	NI
 v0.9:sv_timeunit_prec	NI
 v0.9:sv_timeunit_prec_fail	NI
@@ -1322,6 +1371,53 @@ v0.9:enum_values	NI
 v0.9:fileline	NI
 v0.9:fileline2	NI
 v0.9:first_last_num	NI
+v0.9:vhdl_and_gate	NI
+v0.9:vhdl_and104_stdlogic	NI
+v0.9:vhdl_and23_bit	NI
+v0.9:vhdl_andg_bit	NI
+v0.9:vhdl_andg_stdlogic	NI
+v0.9:vhdl_expr1	NI
+v0.9:vhdl_nandg_bit	NI
+v0.9:vhdl_nandg_stdlogic	NI
+v0.9:vhdl_nand104_stdlogic	NI
+v0.9:vhdl_nand23_bit	NI
+v0.9:vhdl_norg_bit	NI
+v0.9:vhdl_norg_stdlogic	NI
+v0.9:vhdl_nor104_stdlogic	NI
+v0.9:vhdl_nor23_bit	NI
+v0.9:vhdl_notg_bit	NI
+v0.9:vhdl_notg_stdlogic	NI
+v0.9:vhdl_not104_stdlogic	NI
+v0.9:vhdl_not23_bit	NI
+v0.9:vhdl_org_bit	NI
+v0.9:vhdl_org_stdlogic	NI
+v0.9:vhdl_or104_stdlogic	NI
+v0.9:vhdl_or23_bit	NI
+v0.9:vhdl_xnorg_bit	NI
+v0.9:vhdl_xnorg_stdlogic	NI
+v0.9:vhdl_xnor104_stdlogic	NI
+v0.9:vhdl_xnor23_bit	NI
+v0.9:vhdl_xorg_bit	NI
+v0.9:vhdl_xorg_stdlogic	NI
+v0.9:vhdl_xnor104_stdlogic	NI
+v0.9:vhdl_xor23_bit	NI
+v0.9:vhdl_sadd23_bit	NI
+v0.9:vhdl_uadd23_bit	NI
+v0.9:vhdl_sdiv23_bit	NI
+v0.9:vhdl_udiv23_bit	NI
+v0.9:vhdl_ssub23_bit	NI
+v0.9:vhdl_usub23_bit	NI
+v0.9:vhdl_smul23_bit	NI
+v0.9:vhdl_umul23_bit	NI
+v0.9:vhdl_rand23_bit	NI
+v0.9:vhdl_sadd23_stdlogic	NI
+v0.9:vhdl_uadd23_stdlogic	NI
+v0.9:vhdl_sdiv23_stdlogic	NI
+v0.9:vhdl_udiv23_stdlogic	NI
+v0.9:vhdl_ssub23_stdlogic	NI
+v0.9:vhdl_usub23_stdlogic	NI
+v0.9:vhdl_smul23_stdlogic	NI
+v0.9:vhdl_umul23_stdlogic	NI
 
 # V0.9 does not support command line parameters.
 v0.9:cmdline_parm1	NI

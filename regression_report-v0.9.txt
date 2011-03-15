@@ -30,6 +30,52 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                    fileline: Not Implemented.
                   fileline2: Not Implemented.
              first_last_num: Not Implemented.
+              vhdl_and_gate: Not Implemented.
+       vhdl_and104_stdlogic: Not Implemented.
+             vhdl_and23_bit: Not Implemented.
+              vhdl_andg_bit: Not Implemented.
+         vhdl_andg_stdlogic: Not Implemented.
+                 vhdl_expr1: Not Implemented.
+             vhdl_nandg_bit: Not Implemented.
+        vhdl_nandg_stdlogic: Not Implemented.
+      vhdl_nand104_stdlogic: Not Implemented.
+            vhdl_nand23_bit: Not Implemented.
+              vhdl_norg_bit: Not Implemented.
+         vhdl_norg_stdlogic: Not Implemented.
+       vhdl_nor104_stdlogic: Not Implemented.
+             vhdl_nor23_bit: Not Implemented.
+              vhdl_notg_bit: Not Implemented.
+         vhdl_notg_stdlogic: Not Implemented.
+       vhdl_not104_stdlogic: Not Implemented.
+             vhdl_not23_bit: Not Implemented.
+               vhdl_org_bit: Not Implemented.
+          vhdl_org_stdlogic: Not Implemented.
+        vhdl_or104_stdlogic: Not Implemented.
+              vhdl_or23_bit: Not Implemented.
+             vhdl_xnorg_bit: Not Implemented.
+        vhdl_xnorg_stdlogic: Not Implemented.
+            vhdl_xnor23_bit: Not Implemented.
+              vhdl_xorg_bit: Not Implemented.
+         vhdl_xorg_stdlogic: Not Implemented.
+      vhdl_xnor104_stdlogic: Not Implemented.
+             vhdl_xor23_bit: Not Implemented.
+            vhdl_sadd23_bit: Not Implemented.
+            vhdl_uadd23_bit: Not Implemented.
+            vhdl_sdiv23_bit: Not Implemented.
+            vhdl_udiv23_bit: Not Implemented.
+            vhdl_ssub23_bit: Not Implemented.
+            vhdl_usub23_bit: Not Implemented.
+            vhdl_smul23_bit: Not Implemented.
+            vhdl_umul23_bit: Not Implemented.
+            vhdl_rand23_bit: Not Implemented.
+       vhdl_sadd23_stdlogic: Not Implemented.
+       vhdl_uadd23_stdlogic: Not Implemented.
+       vhdl_sdiv23_stdlogic: Not Implemented.
+       vhdl_udiv23_stdlogic: Not Implemented.
+       vhdl_ssub23_stdlogic: Not Implemented.
+       vhdl_usub23_stdlogic: Not Implemented.
+       vhdl_smul23_stdlogic: Not Implemented.
+       vhdl_umul23_stdlogic: Not Implemented.
               cmdline_parm1: Not Implemented.
                     analog1: Not Implemented.
                     analog2: Not Implemented.
