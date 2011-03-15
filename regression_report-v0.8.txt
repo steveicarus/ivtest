@@ -361,6 +361,9 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr2877555: Not Implemented.
                   pr2971207: Not Implemented.
                   pr3098439: Not Implemented.
+                 pr3098439a: Not Implemented.
+                 pr3098439b: Not Implemented.
+                  pr3103880: Not Implemented.
            pv_undef_sig_sel: Not Implemented.
                      swrite: Not Implemented.
                       urand: Not Implemented.
@@ -481,10 +484,12 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr1723367: Passed.
                       pr751: Passed.
             warn_opt_sys_tf: Passed - RE.
+                  pr3190948: Not Implemented.
                       pr547: Passed.
                   pr2842621: Passed.
                   pr2877564: Passed - CE.
                       undef: Passed.
+                  pr3190941: Passed - CE.
               always3.1.10A: Passed - CO.
                always3.1.1A: Passed - CO.
                always3.1.1B: Passed - CO.
@@ -625,6 +630,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr3039548: Passed - CE.
                   pr3064511: Passed - expected fail.
                   pr3077640: Passed - expected fail.
+                  pr3104254: Passed - expected fail.
+                  pr3149494: Passed - expected fail.
                      shift5: Passed - expected fail.
                    signed_a: Passed - expected fail.
             signed_equality: Passed - expected fail.
@@ -1579,6 +1586,7 @@ test_mos_strength_reduction: Passed.
         stask_sens_null_arg: Passed.
                  pr3112073a: Passed - CE.
            def_nettype_none: Passed - CE.
+                  pr3197917: Passed.
 ============================================================================
 Test results:
-  Total=1579, Passed=1004, Failed=0, Not Implemented=454, Expected Fail=121
+  Total=1587, Passed=1006, Failed=0, Not Implemented=458, Expected Fail=123

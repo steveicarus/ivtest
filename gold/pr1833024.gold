@@ -40,28 +40,28 @@
 ./ivltests/pr1833024.v:34: internal error: Port expression too complicated for elaboration.
 ./ivltests/pr1833024.v:35: error: can not select part of scalar: wsbstr
 ./ivltests/pr1833024.v:35: error: Output port expression must support continuous assignment.
-./ivltests/pr1833024.v:35:      : Port of submod2 is arg1
+./ivltests/pr1833024.v:35:      : Port arg1 of submod2 is connected to wsbstr['sd0]
 ./ivltests/pr1833024.v:35: error: can not select part of scalar: wspstr
 ./ivltests/pr1833024.v:35: error: Output port expression must support continuous assignment.
-./ivltests/pr1833024.v:35:      : Port of submod2 is arg2
+./ivltests/pr1833024.v:35:      : Port arg2 of submod2 is connected to wspstr['sd0:'sd0]
 ./ivltests/pr1833024.v:35: error: can not select part of scalar: wsuptr
 ./ivltests/pr1833024.v:35: error: Output port expression must support continuous assignment.
-./ivltests/pr1833024.v:35:      : Port of submod2 is arg3
+./ivltests/pr1833024.v:35:      : Port arg3 of submod2 is connected to wsuptr['sd0+:'sd1]
 ./ivltests/pr1833024.v:35: error: can not select part of scalar: wsdotr
 ./ivltests/pr1833024.v:35: error: Output port expression must support continuous assignment.
-./ivltests/pr1833024.v:35:      : Port of submod2 is arg4
+./ivltests/pr1833024.v:35:      : Port arg4 of submod2 is connected to wsdotr['sd0-:'sd1]
 ./ivltests/pr1833024.v:36: error: can not select part of scalar: wsbstr
 ./ivltests/pr1833024.v:36: error: Inout port expression must support continuous assignment.
-./ivltests/pr1833024.v:36:      : Port of submod3 is arg1
+./ivltests/pr1833024.v:36:      : Port arg1 of submod3 is connected to wsbstr['sd0]
 ./ivltests/pr1833024.v:36: error: can not select part of scalar: wspstr
 ./ivltests/pr1833024.v:36: error: Inout port expression must support continuous assignment.
-./ivltests/pr1833024.v:36:      : Port of submod3 is arg2
+./ivltests/pr1833024.v:36:      : Port arg2 of submod3 is connected to wspstr['sd0:'sd0]
 ./ivltests/pr1833024.v:36: error: can not select part of scalar: wsuptr
 ./ivltests/pr1833024.v:36: error: Inout port expression must support continuous assignment.
-./ivltests/pr1833024.v:36:      : Port of submod3 is arg3
+./ivltests/pr1833024.v:36:      : Port arg3 of submod3 is connected to wsuptr['sd0+:'sd1]
 ./ivltests/pr1833024.v:36: error: can not select part of scalar: wsdotr
 ./ivltests/pr1833024.v:36: error: Inout port expression must support continuous assignment.
-./ivltests/pr1833024.v:36:      : Port of submod3 is arg4
+./ivltests/pr1833024.v:36:      : Port arg4 of submod3 is connected to wsdotr['sd0-:'sd1]
 ./ivltests/pr1833024.v:50: error: can not select part of scalar: svar
 ./ivltests/pr1833024.v:51: error: can not select part of scalar: svar
 ./ivltests/pr1833024.v:52: error: can not select part of scalar: svar

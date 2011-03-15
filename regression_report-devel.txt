@@ -1561,7 +1561,11 @@ test_mos_strength_reduction: Passed.
               ulongint_test: Passed.
              ushortint_test: Passed.
             signed_equality: Passed.
-                  pr3098439: ==> Failed - output does not match gold file.
+                  pr3098439: Passed.
+                 pr3098439a: Passed.
+                 pr3098439b: Passed.
+                  pr3103880: Passed.
+                  pr3104254: Passed.
         stask_sens_null_arg: Passed.
                  pr3112073a: Passed - CE.
             enum_base_range: Passed.
@@ -1577,6 +1581,59 @@ test_mos_strength_reduction: Passed.
                   fileline2: ==> Failed - output does not match gold file.
             param-width-ivl: Passed.
             param-width-std: Passed.
+                  pr3149494: Passed.
+                  pr3190941: Passed - CE.
+                  pr3190948: Passed.
+                  pr3197861: Passed.
+                  pr3197917: Passed.
+            undefined_shift: Passed.
+                  pr3194155: Passed.
+              vhdl_and_gate: Passed.
+       vhdl_and104_stdlogic: Passed.
+             vhdl_and23_bit: Passed.
+              vhdl_andg_bit: Passed.
+         vhdl_andg_stdlogic: Passed.
+                 vhdl_expr1: Passed.
+             vhdl_nandg_bit: Passed.
+        vhdl_nandg_stdlogic: Passed.
+      vhdl_nand104_stdlogic: Passed.
+            vhdl_nand23_bit: Passed.
+              vhdl_norg_bit: Passed.
+         vhdl_norg_stdlogic: Passed.
+       vhdl_nor104_stdlogic: Passed.
+             vhdl_nor23_bit: Passed.
+              vhdl_notg_bit: Passed.
+         vhdl_notg_stdlogic: Passed.
+       vhdl_not104_stdlogic: Passed.
+             vhdl_not23_bit: Passed.
+               vhdl_org_bit: Passed.
+          vhdl_org_stdlogic: Passed.
+        vhdl_or104_stdlogic: Passed.
+              vhdl_or23_bit: Passed.
+             vhdl_xnorg_bit: Passed.
+        vhdl_xnorg_stdlogic: Passed.
+      vhdl_xnor104_stdlogic: Passed.
+            vhdl_xnor23_bit: Passed.
+              vhdl_xorg_bit: Passed.
+         vhdl_xorg_stdlogic: Passed.
+             vhdl_xor23_bit: Passed.
+            vhdl_sadd23_bit: Passed.
+            vhdl_uadd23_bit: Passed.
+            vhdl_sdiv23_bit: Passed.
+            vhdl_udiv23_bit: Passed.
+            vhdl_ssub23_bit: Passed.
+            vhdl_usub23_bit: Passed.
+            vhdl_smul23_bit: Passed.
+            vhdl_umul23_bit: Passed.
+            vhdl_rand23_bit: Passed.
+       vhdl_sadd23_stdlogic: Passed.
+       vhdl_uadd23_stdlogic: Passed.
+       vhdl_sdiv23_stdlogic: Passed.
+       vhdl_udiv23_stdlogic: Passed.
+       vhdl_ssub23_stdlogic: Passed.
+       vhdl_usub23_stdlogic: Passed.
+       vhdl_smul23_stdlogic: Passed.
+       vhdl_umul23_stdlogic: Passed.
 ============================================================================
 Test results:
-  Total=1577, Passed=1573, Failed=4, Not Implemented=0, Expected Fail=0
+  Total=1634, Passed=1631, Failed=3, Not Implemented=0, Expected Fail=0
