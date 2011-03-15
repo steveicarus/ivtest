@@ -57,6 +57,15 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                   pr2972866: Passed - expected fail.
                   pr2715558: Passed - expected fail.
             param-width-std: Passed - expected fail.
+         indef_width_concat: Passed - CE.
+           real_invalid_ops: Passed - CE.
+                  pr1703120: Passed.
+                  pr3098439: Passed - expected fail.
+                 pr3098439a: Passed - expected fail.
+                 pr3098439b: Passed - expected fail.
+                  pr3103880: Passed - expected fail.
+                  pr3104254: Passed - expected fail.
+                  pr3149494: Passed - expected fail.
                   pr2877564: Passed - CE.
                    specify5: Passed.
                       pr377: Passed.
@@ -1001,7 +1010,6 @@ test_mos_strength_reduction: Passed.
                   pr1703346: Passed.
                   pr1703959: Passed.
                  elsif_test: Passed.
-                  pr1703120: Passed.
                   pr1704013: Passed - CE.
                  pr1704726a: Passed - CE.
                  pr1704726b: Passed.
@@ -1089,7 +1097,7 @@ test_mos_strength_reduction: Passed.
                  pr1864110c: Passed.
                   pr1864115: Passed.
                   pr1866215: Passed.
-                 pr1866215b: Passed.
+                 pr1866215b: ==> Failed - output does not match gold file.
                  pr1867161a: Passed.
                  pr1867161b: Passed.
                   pr1867332: Passed - CO.
@@ -1417,7 +1425,6 @@ test_mos_strength_reduction: Passed.
                   pr2579479: Passed.
                real_logical: Passed.
             ca_real_logical: Passed.
-           real_invalid_ops: Passed - CE.
                   pr2580730: Passed.
                  pr2590274a: Passed.
                  pr2590274b: Passed.
@@ -1458,7 +1465,6 @@ test_mos_strength_reduction: Passed.
                  pr2728812b: Passed - CE.
                  pr2728812c: Passed - CE.
                   pr2745281: Passed.
-         indef_width_concat: Passed - CE.
             warn_opt_sys_tf: Passed.
                  array_dump: Passed.
            array_word_width: Passed.
@@ -1575,7 +1581,6 @@ test_mos_strength_reduction: Passed.
                   pr3077640: Passed.
                   pr3078759: Passed - CO.
             signed_equality: Passed.
-                  pr3098439: ==> Failed - output does not match gold file.
         stask_sens_null_arg: Passed.
                  pr3112073a: Passed - CE.
            def_nettype_none: Passed - CE.
@@ -1583,6 +1588,10 @@ test_mos_strength_reduction: Passed.
             param-width-ivl: Passed.
                   pr3190941: Passed - CE.
                   pr3190948: Passed.
+                  pr3197861: Passed.
+                  pr3197917: Passed.
+            undefined_shift: Passed.
+                  pr3194155: Passed.
 ============================================================================
 Test results:
-  Total=1583, Passed=1517, Failed=2, Not Implemented=37, Expected Fail=27
+  Total=1592, Passed=1520, Failed=2, Not Implemented=37, Expected Fail=33
