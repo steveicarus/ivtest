@@ -15,8 +15,8 @@ endmodule // fast_g
 `timescale 100us / 1us
 
 // These will be ignored since a `timescale was already given.
-timeunit 1s;
-timeprecision 1s;
+timeunit 10us;
+timeprecision 10us;
 
 module slow (out);
    output out;

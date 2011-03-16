@@ -5,6 +5,7 @@ module main;
    wire [3:0] c = 4'b1111;
 
    initial begin
+      #0; // avoid time-0 race
       $display("%b",  ((c & ~(1'b1<<9'h00)) & b)); // s.b. 1110
       $display("%b", |((c & ~(1'b1<<9'h00)) & b)); // s.b. 1
 

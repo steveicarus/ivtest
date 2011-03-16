@@ -57,6 +57,7 @@ module main;
 	 $finish;
       end
 
+      #0; // allow CAs to propagate
       $display("wire_sum = %0d", wire_sum);
       $display("wire_sums = %0d", wire_sums);
 

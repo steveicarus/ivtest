@@ -79,10 +79,18 @@ vstd:signed_pv		EF	ivltests
 # also problems at the positive ends.
 vstd:pr2835632b		EF	ivltests
 
+# Problems with out of bounds bit selects when ranges contain
+# negative values.
+vstd:pr3054101b		EF	ivltests
+
 # Problems with partially out of bound part selects, returns 'bx.
 vstd:pr1978358		EF	ivltests
 vstd:pr1978358b		EF	ivltests
 vstd:pr1978358c		EF	ivltests
+vstd:pr3054101c		EF	ivltests
+vstd:pr3054101d		EF	ivltests
+vstd:pr3054101e		EF	ivltests
+vstd:pr3054101f		EF	ivltests
 
 # It does not support constants greater than 32 bits! Will 'd fix these?
 vstd:ca_pow_unsigned	EF	ivltests
@@ -144,6 +152,9 @@ vstd:scanf2		EF	ivltests
 # $value$plusargs does not support 'x', 'z', or '_' in values.
 vstd:pr2202706c		EF	ivltests
 
+# Problem with shift with undefined shift value
+vstd:undefined_shift	EF	ivltests
+
 #------------------------------------
 # Acceptable, but different behavior.
 #------------------------------------
@@ -169,6 +180,7 @@ vstd:scan-invalid	EF	ivltests
 vstd:sel_rval_bit_ob	normal	ivltests
 vstd:writemem-error	EF	ivltests
 vstd:writemem-invalid	CE	ivltests
+vstd:undef		CE	ivltests
 vstd:pr2043585		normal	ivltests diff=log/pr2043585.log:gold/pr2043585_std.gold
 # spacing differences are also OK
 vstd:pr812		normal	ivltests diff=log/pr812.log:gold/pr812_std.gold
@@ -252,6 +264,31 @@ vstd:pr2001162		normal	ivltests diff=log/pr2001162.log:gold/pr2001162_std.gold
 
 # The large delay is not supported, also display differences:
 vstd:delay_var		NI
+
+# Icarus gives a warning when an input port is coerced to inout.
+vstd:pr3194155		normal	ivltests diff=log/pr3194155.log:gold/pr3194155_std.gold
+
+# The IEEE numeric_bit package generates a divide-by-zero assertion failure
+# at time-0 when these tests are run. I can't find any way to disable this.
+vstd:vhdl_sdiv23_bit	CE
+vstd:vhdl_udiv23_bit	CE
+
+#-------------------------------
+# Other simulator limitations.
+#-------------------------------
+
+# uwire only appeared in the 2005 standard, so not all simulators support it.
+vstd:uwire		NI
+
+# Calling a system function as a task without casting to void is not
+# supported.
+vstd:sys_func_as_task	NI
+
+# No support for enumeration ranges
+vstd:enum_base_range	NI
+vstd:enum_elem_ranges	NI
+vstd:enum_test1		NI
+vstd:enum_value_expr	NI
 
 #-------------------------------
 # Icarus limitations.
@@ -377,6 +414,7 @@ vstd:pr2453002b		NI
 vstd:pr2456943		NI
 vstd:pr2715748		NI
 vstd:pr2806474		NI
+vstd:pr2976242b		NI
 vstd:real8		NI
 vstd:real_array		NI
 vstd:real_concat_invalid1	NI
@@ -500,6 +538,13 @@ vstd:pr2976242		NI
 # Icarus allows hierarchical references to unnamed generate blocks.
 # We should add a warning about this, as it's not strictly allowed.
 vstd:unnamed_generate_block	NI
+
+# No support for `__FILE__ and `__LINE__
+vstd:fileline		NI
+vstd:fileline2		NI
+
+# No support for forced lossless parameter expressions
+vstd:param-width-ivl	NI
 
 #-------------------------------
 # Icarus bugs.
