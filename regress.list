@@ -3331,3 +3331,4 @@ vhdl_ssub23_stdlogic	normal,-g2005-sv,ivltests/vhdl_ssub23_stdlogic.vhd	ivltests
 vhdl_usub23_stdlogic	normal,-g2005-sv,ivltests/vhdl_usub23_stdlogic.vhd	ivltests
 vhdl_smul23_stdlogic	normal,-g2005-sv,ivltests/vhdl_smul23_stdlogic.vhd	ivltests
 vhdl_umul23_stdlogic	normal,-g2005-sv,ivltests/vhdl_umul23_stdlogic.vhd	ivltests
+vhdl_signals	normal,-g2005-sv,ivltests/vhdl_signals.vhd	ivltests
