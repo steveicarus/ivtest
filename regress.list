@@ -878,6 +878,7 @@ v0.8:task_iotypes2	NI # Port types are not supported (integer, etc.).
 v0.8:timescale3		NI # No check for out of order timescale directive.
 v0.8:udp_delay_fail	NI # No UDP delay count check.
 v0.8:uncon_drive	NI # No support for unconnected drive.
+v0.8:sv-constants	NI # No support for system verilog
 
 # V0.8 has problems with >>> and parameters.
 v0.8:pr2722330a	NI
@@ -1590,6 +1591,9 @@ v0.9:pr2985542	EF	ivltests
 # v0.9 does not support the uwire check and always prints a warning message.
 v0.9:uwire	normal	ivltests diff=log/uwire.log:gold/uwire-v0.9.gold
 v0.9:uwire_fail	normal	ivltests diff=log/uwire_fail.log:gold/uwire_fail-v0.9.gold
+
+# v0.9 does not support some System Verilog
+v0.9:sv-constants	NI # No support for system verilog
 
 #==========
 # V0.9 doesn't support synthesis. Might as well run them as
@@ -3281,6 +3285,7 @@ pr3197861	normal  ivltests
 pr3197917	normal	ivltests
 undefined_shift	normal	ivltests
 pr3194155	normal	ivltests diff=log/pr3194155.log:gold/pr3194155.gold
+sv-constants	normal,-g2005-sv ivltests
 
 # Icarus Verilog 0.10 supports Verilog/SystemVerilog/VHDL mixed simulation.
 # These are some tests of the VHDL part of that.

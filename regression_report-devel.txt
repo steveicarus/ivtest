@@ -1588,6 +1588,7 @@ test_mos_strength_reduction: Passed.
                   pr3197917: Passed.
             undefined_shift: Passed.
                   pr3194155: Passed.
+               sv-constants: Passed.
               vhdl_and_gate: Passed.
        vhdl_and104_stdlogic: Passed.
              vhdl_and23_bit: Passed.
@@ -1637,4 +1638,4 @@ test_mos_strength_reduction: Passed.
                vhdl_signals: Passed.
 ============================================================================
 Test results:
-  Total=1635, Passed=1632, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1636, Passed=1633, Failed=3, Not Implemented=0, Expected Fail=0
