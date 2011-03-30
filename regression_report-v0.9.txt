@@ -1,6 +1,7 @@
 Running compiler/VVP tests for Icarus Verilog version: 0.9.
 ----------------------------------------------------------------------------
                 fatal_et_al: Not Implemented.
+               sv-constants: Not Implemented.
            sv_timeunit_prec: Not Implemented.
       sv_timeunit_prec_fail: Not Implemented.
                        bits: Not Implemented.
@@ -76,6 +77,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
        vhdl_usub23_stdlogic: Not Implemented.
        vhdl_smul23_stdlogic: Not Implemented.
        vhdl_umul23_stdlogic: Not Implemented.
+               vhdl_signals: Not Implemented.
               cmdline_parm1: Not Implemented.
                     analog1: Not Implemented.
                     analog2: Not Implemented.
@@ -1640,4 +1642,4 @@ test_mos_strength_reduction: Passed.
                   pr3194155: Passed.
 ============================================================================
 Test results:
-  Total=1638, Passed=1521, Failed=1, Not Implemented=83, Expected Fail=33
+  Total=1640, Passed=1521, Failed=1, Not Implemented=85, Expected Fail=33

@@ -436,6 +436,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   sint_test: Not Implemented.
               slongint_test: Not Implemented.
              sshortint_test: Not Implemented.
+               sv-constants: Not Implemented.
            sv_timeunit_prec: Not Implemented.
       sv_timeunit_prec_fail: Not Implemented.
            sys_func_as_task: Not Implemented.
@@ -498,6 +499,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
        vhdl_usub23_stdlogic: Not Implemented.
        vhdl_smul23_stdlogic: Not Implemented.
        vhdl_umul23_stdlogic: Not Implemented.
+               vhdl_signals: Not Implemented.
                   pr1403406: Not Implemented.
                  pr1403406a: Not Implemented.
                  pr1403406b: Not Implemented.
@@ -1638,4 +1640,4 @@ test_mos_strength_reduction: Passed.
                   pr3197917: Passed.
 ============================================================================
 Test results:
-  Total=1636, Passed=1007, Failed=0, Not Implemented=506, Expected Fail=123
+  Total=1638, Passed=1007, Failed=0, Not Implemented=508, Expected Fail=123
