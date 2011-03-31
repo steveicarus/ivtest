@@ -102,7 +102,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                     ca_time: Not Implemented.
          cast_real_unsigned: Not Implemented.
            cast_real_signed: Not Implemented.
-              cast_real_int: Not Implemented.
            compare_bool_reg: Not Implemented.
                  pr1861212a: Not Implemented.
                  pr1861212b: Not Implemented.
@@ -204,7 +203,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr2138682: Not Implemented.
                   pr2257003: Not Implemented.
                  pr2257003b: Not Implemented.
-                  pr2272468: Not Implemented.
                   pr2306259: Not Implemented.
                   pr2350934: Not Implemented.
                  pr2350934b: Not Implemented.
@@ -1640,4 +1638,4 @@ test_mos_strength_reduction: Passed.
                   pr3197917: Passed.
 ============================================================================
 Test results:
-  Total=1638, Passed=1007, Failed=0, Not Implemented=508, Expected Fail=123
+  Total=1636, Passed=1007, Failed=0, Not Implemented=506, Expected Fail=123
