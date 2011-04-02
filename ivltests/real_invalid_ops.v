@@ -28,7 +28,7 @@ module top;
   wire r_ars = var1 >>> var2;
 
   wire r_con = {var1};
-  wire r_rep = {var2{var1}};
+  wire r_rep = {2.0{var1}};
 
   initial begin
     var1 = 1.0;
@@ -62,7 +62,7 @@ module top;
     bvar = var1 >>> var2;
 
     bvar = {var1};
-    bvar = {var2{var1}};
+    bvar = {2.0{var1}};
 
     $display("Failed");
   end

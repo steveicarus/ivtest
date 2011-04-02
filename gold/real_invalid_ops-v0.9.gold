@@ -42,7 +42,7 @@
 ./ivltests/real_invalid_ops.v:30: error: Concatenation may not have zero width in this context.
 ./ivltests/real_invalid_ops.v:30: error: Unable to elaborate r-value: {var1}
 ./ivltests/real_invalid_ops.v:31: error: Concatenation repeat expression can not be REAL.
-./ivltests/real_invalid_ops.v:31: error: Unable to elaborate r-value: {var2{var1}}
+./ivltests/real_invalid_ops.v:31: error: Unable to elaborate r-value: {2.00000{var1}}
 ./ivltests/real_invalid_ops.v:40: error: & operator may not have a REAL operand.
 ./ivltests/real_invalid_ops.v:41: error: | operator may not have a REAL operand.
 ./ivltests/real_invalid_ops.v:42: error: ^ operator may not have a REAL operand.
