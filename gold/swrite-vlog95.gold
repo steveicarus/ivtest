@@ -1,0 +1,10 @@
+WARNING: vlog95.v:172: %l currently unsupported $swrite<%l>.
+WARNING: vlog95.v:174: %L currently unsupported $swrite<%L>.
+WARNING: vlog95.v:224: $swrite returned a value with an embedded NULL (see %u/%z).
+WARNING: vlog95.v:226: $swrite returned a value with an embedded NULL (see %u/%z).
+WARNING: vlog95.v:242: $swrite returned a value with an embedded NULL (see %u/%z).
+WARNING: vlog95.v:244: $swrite returned a value with an embedded NULL (see %u/%z).
+WARNING: vlog95.v:246: $swrite returned a value with an embedded NULL (see %u/%z).
+WARNING: vlog95.v:256: missing argument for $sformat<%s>.
+WARNING: vlog95.v:258: $sformat has 1 extra argument(s).
+All tests passed.

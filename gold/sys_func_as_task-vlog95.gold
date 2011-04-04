@@ -1,0 +1,3 @@
+vlog95.v:16: Warning: Calling system function $sscanf() as a task.
+vlog95.v:16:          The functions return value will be ignored.
+PASSED

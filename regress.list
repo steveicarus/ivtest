@@ -1700,6 +1700,393 @@ v0.10:casex_synth	normal	ivltests
 v0.10:full_case	normal	ivltests
 
 #==========
+# These are not supported by the Verilog 95 converter.
+#==========
+
+# At this time v0.10 (-tvlog95) doesn't support synthesis either.
+vlog95:case1	normal	ivltests
+vlog95:case2	normal	ivltests
+vlog95:case4	normal	ivltests
+vlog95:case5	normal	ivltests
+vlog95:case5-syn-fail	normal	ivltests
+vlog95:case6	normal	ivltests
+vlog95:case7	normal	ivltests
+vlog95:condit1	normal	ivltests
+vlog95:basiclatch	normal	ivltests
+vlog95:basicstate	normal	ivltests
+vlog95:basicstate2	normal	ivltests
+vlog95:multireg	normal	ivltests
+vlog95:blocksynth1	normal	ivltests
+vlog95:blocksynth2	normal	ivltests
+vlog95:blocksynth3	normal	ivltests
+vlog95:conditsynth1	normal	ivltests
+vlog95:conditsynth2	normal	ivltests
+vlog95:conditsynth3	normal	ivltests
+vlog95:casesynth1	normal	ivltests
+vlog95:casesynth2	normal	ivltests
+vlog95:casesynth3	normal	ivltests
+vlog95:lcatsynth	normal	ivltests
+vlog95:dffsynth	normal	ivltests
+vlog95:dffsynth2	normal	ivltests
+vlog95:dffsynth3	normal	ivltests
+vlog95:dffsynth4	normal	ivltests
+vlog95:sqrt32synth	normal	ivltests
+vlog95:memsynth1	normal	ivltests
+vlog95:memsynth2	normal	ivltests
+vlog95:memsynth3	normal	ivltests
+vlog95:memsynth4	normal	ivltests
+vlog95:memsynth5	normal	ivltests
+vlog95:memsynth6	normal	ivltests
+vlog95:memsynth7	normal	ivltests
+vlog95:memsynth9	normal	ivltests
+vlog95:ssetclr1	normal	ivltests
+vlog95:ssetclr2	normal	ivltests
+vlog95:ssetclr3	normal	ivltests
+vlog95:inside_synth	normal	ivltests
+vlog95:inside_synth2	normal	ivltests
+vlog95:inside_synth3	normal	ivltests
+vlog95:mix_reset	normal	ivltests
+vlog95:casex_synth	normal	ivltests
+vlog95:full_case	normal	ivltests
+
+# Verilog 95 does not support automatic tasks or functions.
+vlog95:automatic_error11	NI	ivltests
+vlog95:automatic_error12	NI	ivltests
+vlog95:automatic_error13	NI	ivltests
+vlog95:automatic_events	NI	ivltests
+vlog95:automatic_events2	NI	ivltests
+vlog95:automatic_events3	NI	ivltests
+vlog95:automatic_events3_std	NI	ivltests
+vlog95:automatic_task	NI	ivltests
+vlog95:automatic_task2	NI	ivltests
+vlog95:automatic_task3	NI	ivltests
+vlog95:def_nettype	NI	ivltests
+vlog95:nested_func	NI	ivltests
+vlog95:pr2169870	NI	ivltests
+vlog95:pr2172606b	NI	ivltests
+vlog95:pr2276163	NI	ivltests
+vlog95:pr2929913	NI	ivltests
+vlog95:recursive_func	NI	ivltests
+vlog95:recursive_task	NI	ivltests  # Also signed
+
+# Verilog 95 does not support signed.
+vlog95:array6	CE	ivltests
+vlog95:array_select	CE	ivltests # Also net array
+vlog95:bits	CE	ivltests
+vlog95:ca_mult	CE	ivltests
+vlog95:cast_int	CE	ivltests
+vlog95:cast_real_signed	CE	ivltests  # Also real net
+vlog95:enum_elem_ranges	CE	ivltests
+vlog95:enum_next	CE	ivltests
+vlog95:enum_test1	CE	ivltests
+vlog95:enum_value_expr	CE	ivltests
+vlog95:enum_values	CE	ivltests
+vlog95:extend	CE	ivltests
+vlog95:first_last_num	CE	ivltests
+vlog95:iuint1	CE	ivltests
+vlog95:pr1002	CE	ivltests  # Also >>>
+vlog95:pr1002a	CE	ivltests
+vlog95:pr1033	CE	ivltests
+vlog95:pr1380261	CE	ivltests
+vlog95:pr1494799	CE	ivltests  # Also >>>
+vlog95:pr1522570	CE	ivltests  # Also >>>
+vlog95:pr1589497	CE	ivltests
+vlog95:pr1603313	CE	ivltests
+vlog95:pr1717361	CE	ivltests
+vlog95:pr1719055	CE	ivltests
+vlog95:pr1845683	CE	ivltests
+vlog95:pr1879226	CE	ivltests  # Also >>>
+vlog95:pr1883052	CE	ivltests
+vlog95:pr1883052b	CE	ivltests
+vlog95:pr1950282	CE	ivltests
+vlog95:pr1958801	CE	ivltests
+vlog95:pr1990164	CE	ivltests
+vlog95:pr1993479	CE	ivltests
+vlog95:pr2030767	CE	ivltests
+vlog95:pr2076391	CE	ivltests
+vlog95:pr2117473	CE	ivltests
+vlog95:pr2121536	CE	ivltests
+vlog95:pr2121536b	CE	ivltests
+vlog95:pr2152011	CE	ivltests
+vlog95:pr2159630	CE	ivltests
+vlog95:pr2233180	CE	ivltests
+vlog95:pr2233180b	CE	ivltests
+vlog95:pr2233180c	CE	ivltests
+vlog95:pr2233192	CE	ivltests
+vlog95:pr2233192b	CE	ivltests
+vlog95:pr2233192c	CE	ivltests
+vlog95:pr2352834	CE	ivltests  # Also big int
+vlog95:pr2425055b	CE	ivltests  # Also >>>
+vlog95:pr2425055c	CE	ivltests  # Also >>>
+vlog95:pr2722330b	CE	ivltests  # Also >>>
+vlog95:pr2722339a	CE	ivltests
+vlog95:pr2722339b	CE	ivltests
+vlog95:pr2901556	CE	ivltests  # Also >>>
+vlog95:pr2909386b	CE	ivltests
+vlog95:pr2909555	CE	ivltests
+vlog95:pr2913404	CE	ivltests  # Also big int
+vlog95:pr2913416	CE	ivltests
+vlog95:pr2913438b	CE	ivltests
+vlog95:pr2922063b	CE	ivltests  # Also >>>
+vlog95:pr2986528	CE	ivltests
+vlog95:pr2998515	CE	ivltests
+vlog95:pr3054101d	CE	ivltests
+vlog95:pr3077640	CE	ivltests
+vlog95:pr3104254	CE	ivltests
+vlog95:pr748	CE	ivltests
+vlog95:real_array_nb	CE	ivltests  # Also array
+vlog95:sbyte_test	CE	ivltests
+vlog95:shift2	CE	ivltests  # Also >>>
+vlog95:shift3	CE	ivltests  # Also >>>
+vlog95:shift4	CE	ivltests  # Also >>>
+vlog95:shift5	CE	ivltests  # Also >>>
+vlog95:signed1	CE	ivltests
+vlog95:signed4	CE	ivltests
+vlog95:signed6	CE	ivltests
+vlog95:signed7	CE	ivltests
+vlog95:signed8	CE	ivltests
+vlog95:signed9	CE	ivltests
+vlog95:signed10	CE	ivltests
+vlog95:signed12	CE	ivltests
+vlog95:signed_a	CE	ivltests
+vlog95:signed_part	CE	ivltests
+vlog95:signed_pv	CE	ivltests
+vlog95:simple_byte	CE	ivltests
+vlog95:simple_int	CE	ivltests
+vlog95:simple_longint	CE	ivltests
+vlog95:simple_shortint	CE	ivltests
+vlog95:sint_test	CE	ivltests
+vlog95:slongint_test	CE	ivltests
+vlog95:sshortint_test	CE	ivltests
+vlog95:test_dispwided	CE	ivltests
+vlog95:ubyte_test	CE	ivltests
+vlog95:uint_test	CE	ivltests
+vlog95:ulongint_test	CE	ivltests
+vlog95:undefined_shift	CE	ivltests
+vlog95:ushortint_test	CE	ivltests
+vlog95:vams_abs1	CE	ivltests
+vlog95:vams_abs2	CE	ivltests
+vlog95:vhdl_sadd23_bit	CE	ivltests
+vlog95:vhdl_sdiv23_bit	CE	ivltests
+vlog95:vhdl_ssub23_bit	CE	ivltests
+vlog95:vhdl_smul23_bit	CE	ivltests
+vlog95:vhdl_sadd23_stdlogic	CE	ivltests
+vlog95:vhdl_sdiv23_stdlogic	CE	ivltests
+vlog95:vhdl_ssub23_stdlogic	CE	ivltests
+vlog95:vhdl_smul23_stdlogic	CE	ivltests
+# Also $signed()
+vlog95:concat3		EF	ivltests
+vlog95:mult2		NI	ivltests  # Also bad select from port.
+vlog95:pr757		EF	ivltests
+vlog95:pr1698499	EF	ivltests gold=pr1698499.gold
+vlog95:pr1793749	EF	ivltests gold=pr1793749.gold
+vlog95:pr1793749b	EF	ivltests gold=pr1793749b.gold
+vlog95:pr1823732	CE	ivltests  # Also >>>
+vlog95:pr1841300	EF	ivltests gold=pr1841300.gold
+vlog95:pr1960619	EF	ivltests gold=pr1960619.gold
+vlog95:pr1963240	EF	ivltests gold=pr1963240.gold
+vlog95:pr2136787	EF	ivltests gold=pr2136787.gold
+vlog95:pr2138979	EF	ivltests
+vlog95:pr2138979b	EF	ivltests
+vlog95:pr2138979c	EF	ivltests gold=pr2138979c.gold
+vlog95:pr2138979d	EF	ivltests
+vlog95:pr2922063	CE	ivltests  # Also >>>
+vlog95:pr2922063a	CE	ivltests  # Also >>>
+vlog95:select_padding	EF	ivltests
+vlog95:signed5		EF	ivltests
+
+# Verilog 95 does not support the >>> operator.
+vlog95:pr2722330a	CE	ivltests  # Also >>>
+
+# Support for greater than 32 bit integer constants is an Icarus extension.
+vlog95:big_int		CE	ivltests
+vlog95:pr2673846	CE	ivltests
+vlog95:pr2029336	CE	ivltests
+
+# Verilog 95 only supports a register array.
+vlog95:array_select_a	CE	ivltests
+vlog95:array_word_width2	CE	ivltests
+vlog95:ca_64delay	CE	ivltests  # Also real net
+vlog95:check_constant_8	CE	ivltests
+vlog95:check_constant_9	CE	ivltests
+vlog95:check_constant_10	CE	ivltests
+vlog95:check_constant_11	CE	ivltests
+vlog95:check_constant_16	CE	ivltests
+vlog95:check_constant_17	CE	ivltests
+vlog95:genvar_scopes	CE	ivltests
+vlog95:meminit2		CE	ivltests
+vlog95:pr1565544	CE	ivltests
+vlog95:pr1695322	CE	ivltests
+vlog95:pr1701855b	CE	ivltests
+vlog95:pr1703346	CE	ivltests
+vlog95:pr1740476b	CE	ivltests
+vlog95:pr1758122	CE	ivltests
+vlog95:pr1799904	CE	ivltests
+vlog95:pr1820472	CE	ivltests
+vlog95:pr1868792	CE	ivltests
+vlog95:pr1876798	CE	ivltests
+vlog95:pr1903324	CE	ivltests
+vlog95:pr2011429	CE	ivltests
+vlog95:pr2201909	CE	ivltests
+vlog95:pr2201909b	CE	ivltests
+vlog95:pr2166311	CE	ivltests
+vlog95:pr2715748	CE	ivltests  # Also real net
+vlog95:pr2815398b	CE	ivltests
+vlog95:pr3054101g	CE	ivltests
+vlog95:pr3054101h	CE	ivltests
+vlog95:real_array	CE	ivltests
+vlog95:real_array_nb	CE	ivltests
+vlog95:scan-invalid	CE	ivltests
+vlog95:sel_rval_bit_ob	CE	ivltests
+vlog95:sel_rval_part_ob	CE	ivltests
+
+# Verilog 95 does not support real nets.
+vlog95:cast_real_unsigned	NI	ivltests
+vlog95:ca_time		NI	ivltests
+vlog95:ca_var_delay	NI	ivltests
+vlog95:clog2		NI	ivltests  # Also big int
+vlog95:pr1861212c	NI	ivltests
+vlog95:pr1864110a	NI	ivltests
+vlog95:pr1864110b	NI	ivltests
+vlog95:pr1864110c	NI	ivltests
+vlog95:pr1864115	NI	ivltests
+vlog95:pr1873372	NI	ivltests
+vlog95:pr1880003	NI	ivltests
+vlog95:pr1898293	NI	ivltests
+vlog95:pr2123158	NI	ivltests
+vlog95:pr2123190	NI	ivltests
+vlog95:pr2453002b	NI	ivltests
+vlog95:pr2456943	NI	ivltests
+vlog95:pr2806474	NI	ivltests
+vlog95:pr2976242	NI	ivltests
+vlog95:pr2976242b	NI	ivltests
+vlog95:real8		NI	ivltests
+vlog95:real_array	NI	ivltests
+vlog95:real_mod_in_ca	NI	ivltests
+vlog95:real_pulse_clean	NI	ivltests
+vlog95:real_pwr_in_ca	NI	ivltests
+vlog95:real_wire_array	NI	ivltests
+vlog95:real_wire_force_rel	NI	ivltests
+vlog95:tern8	NI	ivltests
+vlog95:v2005_math	NI	ivltests
+
+# Real modulus is an Icarus extension.
+vlog95:pr1528093	NI	ivltests
+
+# No support for converting most Verilog-A constructs
+vlog95:analog1		NI	ivltests
+vlog95:analog2		NI	ivltests
+vlog95:cast_int		NI	ivltests
+vlog95:test_vams_math	NI	ivltests
+vlog95:vams_abs1	NI	ivltests
+vlog95:vams_abs2	NI	ivltests
+
+# No support for general power conversion.
+vlog95:ca_pow_signed	NI	ivltests
+vlog95:ca_pow_unsigned	NI	ivltests
+vlog95:pow_signed	NI	ivltests
+vlog95:ca_pow_synth	NI	ivltests
+vlog95:pow_unsigned	NI	ivltests
+vlog95:pr2823711	NI	ivltests
+vlog95:rl_pow		NI	ivltests
+
+# These tests have different output because of file name/line, etc. differences.
+vlog95:fatal_et_al	normal	ivltests gold=fatal_et_al-vlog95.gold
+vlog95:fdisplay3	RE	ivltests gold=fdisplay3-vlog95.gold
+vlog95:fdisplay_fail_fd	normal	ivltests gold=fdisplay_fail_fd-vlog95.gold
+vlog95:fdisplay_fail_mcd	normal	ivltests gold=fdisplay_fail_mcd-vlog95.gold
+vlog95:format		RE	ivltests gold=format-vlog95.gold
+vlog95:fread-error	normal	ivltests gold=fread-error-vlog95.gold
+vlog95:localparam_type	normal	ivltests gold=parameter_type-vlog95.gold
+vlog95:parameter_type	normal	ivltests gold=parameter_type-vlog95.gold
+vlog95:mem1		normal	ivltests gold=mem1-vlog95.gold
+vlog95:pr1403406b	normal,-fivltests/pr1403406-1.cf,-fivltests/pr1403406-2.cf  ivltests gold=pr1403406b-vlog95.gold
+vlog95:pr1819452	normal	ivltests gold=pr1819452-vlog95.gold
+vlog95:pr1866215b	normal	ivltests gold=pr1866215b-vlog95.gold
+vlog95:pr2509349a	normal	ivltests gold=pr2509349a-vlog95.gold
+vlog95:pr2509349b	normal	ivltests gold=pr2509349b-vlog95.gold
+vlog95:pr2800985b	normal	ivltests gold=pr2800985b-vlog95.gold
+vlog95:readmem-error	normal	ivltests gold=readmem-error-vlog95.gold
+vlog95:readmem-invalid	normal	ivltests gold=readmem-invalid-vlog95.gold
+vlog95:swrite		normal	ivltests gold=swrite-vlog95.gold
+vlog95:sys_func_task_error	RE	ivltests gold=sys_func_task_error-vlog95.gold
+vlog95:sys_func_as_task	normal,-g2005-sv	ivltests gold=sys_func_as_task-vlog95.gold
+vlog95:warn_opt_sys_tf	normal	ivltests gold=warn_opt_sys_tf-vlog95.gold
+vlog95:writemem-error	normal	ivltests gold=writemem-error-vlog95.gold
+vlog95:writemem-invalid normal	ivltests gold=writemem-invalid-vlog95.gold
+
+# These tests have generate scopes that are not currently supported.
+vlog95:defparam3	CE	ivltests
+vlog95:defparam4	CE	ivltests
+vlog95:gen_case_opt1	CE	ivltests
+vlog95:gen_case_opt2	CE	ivltests
+vlog95:gen_case_opt3	CE	ivltests
+vlog95:genloop		NI	ivltests  # This currently has an assert.
+vlog95:generate_case	CE	ivltests
+vlog95:generate_case2	CE	ivltests
+vlog95:generate_multi_loop	CE	ivltests
+vlog95:pr1565699b	CE	ivltests
+vlog95:pr1623097	CE	ivltests
+vlog95:pr1676071	NI	ivltests  # This also core dumps
+vlog95:pr1691599b	CE	ivltests
+vlog95:pr1695309	CE	ivltests
+vlog95:pr1704726a	CE	ivltests
+vlog95:pr1704726b	CE	ivltests
+vlog95:pr1704726c	CE	ivltests
+vlog95:pr1704726d	CE	ivltests
+vlog95:pr1755629	CE	ivltests
+vlog95:pr1828642	CE	ivltests
+vlog95:pr1833754	CE	ivltests
+vlog95:pr1956211	CE	ivltests
+vlog95:pr1960625	CE	ivltests
+vlog95:pr1988302b	CE	ivltests
+vlog95:pr1988302	CE	ivltests
+vlog95:pr1988310	CE	ivltests
+vlog95:pr2018235a	CE	ivltests
+vlog95:pr2039632	CE	ivltests
+vlog95:pr2091455	CE	ivltests
+vlog95:pr2109179	CE	ivltests
+vlog95:pr2138682	CE	ivltests
+vlog95:pr2257003b	CE	ivltests
+vlog95:pr2257003	CE	ivltests
+vlog95:pr2306259	CE	ivltests
+vlog95:pr2350934b	CE	ivltests
+vlog95:pr2350934	CE	ivltests
+vlog95:pr2350988	CE	ivltests
+vlog95:pr2355304	CE	ivltests
+vlog95:pr2728812a	CE	ivltests
+vlog95:pr2728812b	CE,-pRECURSIVE_MOD_LIMIT=5  ivltests
+vlog95:pr2809288	CE	ivltests
+vlog95:pr2815398a_std	CE	ivltests
+vlog95:pr2815398a	CE	ivltests
+vlog95:pr2909414	CE	ivltests
+vlog95:pr2924354	CE	ivltests
+vlog95:pr3011327	CE	ivltests
+vlog95:scoped_events	CE	ivltests
+vlog95:unnamed_generate_block	CE	ivltests
+
+# We currently don't support indexed part selects with a non-zero base.
+vlog95:pr2835632b	CE	ivltests
+vlog95:pr3054101c	EF	ivltests gold=pr3054101c.gold
+vlog95:pr3054101e	CE	ivltests
+vlog95:pr3054101f	CE	ivltests
+
+# Currently no support for tran_VP.
+vlog95:bitsel10		CE	ivltests
+vlog95:inout2		CE	ivltests
+vlog95:inout3		CE	ivltests
+vlog95:inout4		CE	ivltests
+vlog95:pr1478121	CE	ivltests
+vlog95:pr2219441	CE	ivltests
+vlog95:tri2		CE	ivltests
+
+# No support for the SystemVerilog data types.
+vlog95:ibyte_test	EF,-g2005-sv	ivltests
+vlog95:iint_test	EF,-g2005-sv	ivltests
+vlog95:ilongint_test	EF,-g2005-sv	ivltests
+vlog95:ishortint_test	EF,-g2005-sv	ivltests
+
+#==========
 # The default case.
 #==========
 always3.1.10A	CE	ivltests
