@@ -1149,6 +1149,7 @@ v0.8:vhdl_usub23_stdlogic	NI
 v0.8:vhdl_smul23_stdlogic	NI
 v0.8:vhdl_umul23_stdlogic	NI
 v0.8:vhdl_fa4_test1	NI
+v0.8:vhdl_fa4_test2	NI
 
 # V0.8 does not support +timescale in a command file.
 v0.8:pr1403406	NI
@@ -1467,6 +1468,7 @@ v0.9:vhdl_usub23_stdlogic	NI
 v0.9:vhdl_smul23_stdlogic	NI
 v0.9:vhdl_umul23_stdlogic	NI
 v0.9:vhdl_fa4_test1	NI
+v0.9:vhdl_fa4_test2	NI
 
 # V0.9 does not support command line parameters.
 v0.9:cmdline_parm1	NI
@@ -3343,3 +3345,4 @@ vhdl_smul23_stdlogic	normal,-g2005-sv,ivltests/vhdl_smul23_stdlogic.vhd	ivltests
 vhdl_umul23_stdlogic	normal,-g2005-sv,ivltests/vhdl_umul23_stdlogic.vhd	ivltests
 vhdl_signals	normal,-g2005-sv,ivltests/vhdl_signals.vhd	ivltests
 vhdl_fa4_test1	normal,-g2005-sv,ivltests/vhdl_fa4_test1.vhd	ivltests
+vhdl_fa4_test2	normal,-g2005-sv,ivltests/vhdl_fa4_test1.vhd	ivltests
