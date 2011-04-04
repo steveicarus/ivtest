@@ -102,7 +102,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                     ca_time: Not Implemented.
          cast_real_unsigned: Not Implemented.
            cast_real_signed: Not Implemented.
-              cast_real_int: Not Implemented.
            compare_bool_reg: Not Implemented.
                  pr1861212a: Not Implemented.
                  pr1861212b: Not Implemented.
@@ -204,7 +203,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr2138682: Not Implemented.
                   pr2257003: Not Implemented.
                  pr2257003b: Not Implemented.
-                  pr2272468: Not Implemented.
                   pr2306259: Not Implemented.
                   pr2350934: Not Implemented.
                  pr2350934b: Not Implemented.
@@ -436,6 +434,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   sint_test: Not Implemented.
               slongint_test: Not Implemented.
              sshortint_test: Not Implemented.
+               sv-constants: Not Implemented.
            sv_timeunit_prec: Not Implemented.
       sv_timeunit_prec_fail: Not Implemented.
            sys_func_as_task: Not Implemented.
@@ -498,6 +497,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
        vhdl_usub23_stdlogic: Not Implemented.
        vhdl_smul23_stdlogic: Not Implemented.
        vhdl_umul23_stdlogic: Not Implemented.
+               vhdl_signals: Not Implemented.
                   pr1403406: Not Implemented.
                  pr1403406a: Not Implemented.
                  pr1403406b: Not Implemented.
