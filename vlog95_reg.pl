@@ -102,11 +102,12 @@ sub execute_regression {
         #
         $pass_type = 0;
         $cmd = $with_valg ? "valgrind --trace-children=yes " : "";
-        $cmd .= "iverilog$sfx -o vlog95.v $args{$tname}";
+        $cmd .= "iverilog$sfx -o vlog95.v";
         $cmd .= " -s $testmod{$tname}" if ($testmod{$tname} ne "");
         $cmd .= $testtype{$tname} eq "CN" ? " -t null" : " -t vlog95";
 # Add -pallowsigned=1 here to allow signed, etc. to not be an error.
-        $cmd .= " -pfileline=1 -pspacing=4";
+        $cmd .= " -pfileline=1 -pspacing=4" if ($testtype{$tname} ne "CN");
+        $cmd .= " $args{$tname}";
         $cmd .= " ./$srcpath{$tname}/$tname.v > log/$tname.log 2>&1";
 #        print "$cmd\n";
         if (system("$cmd")) {

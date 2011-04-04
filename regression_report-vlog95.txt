@@ -789,7 +789,7 @@ test_mos_strength_reduction: Passed.
                    specify5: ==> Failed - output does not match gold file.
                deposit_wire: Passed.
                  specify_01: ==> Failed - output does not match gold file.
-                    deposit: ==> Failed - running iverilog.
+                    deposit: ==> Failed - running iverilog (translated).
                  assign_neq: Passed.
                  assign_deq: Passed.
                   assign_ge: Passed.
@@ -1597,6 +1597,7 @@ test_mos_strength_reduction: Passed.
                   pr3197917: ==> Failed - running iverilog (translated).
                   pr3194155: ==> Failed - running iverilog.
                sv-constants: Passed.
+               sv-2val-nets: ==> Failed - running iverilog (translated).
               vhdl_and_gate: Passed.
        vhdl_and104_stdlogic: Passed.
              vhdl_and23_bit: Passed.
@@ -1636,6 +1637,8 @@ test_mos_strength_reduction: Passed.
        vhdl_usub23_stdlogic: Passed.
        vhdl_umul23_stdlogic: ==> Failed - running iverilog (translated).
                vhdl_signals: ==> Failed - running iverilog (translated).
+             vhdl_fa4_test1: ==> Failed - running iverilog (translated).
+             vhdl_fa4_test2: ==> Failed - running iverilog (translated).
 ============================================================================
 Test results:
-  Total=1636, Passed=1465, Failed=88, Not Implemented=63, Expected Fail=20
+  Total=1639, Passed=1465, Failed=91, Not Implemented=63, Expected Fail=20
