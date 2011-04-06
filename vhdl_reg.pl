@@ -179,7 +179,7 @@ sub execute_regression {
         }
 
         # Finally, run the exectutable
-        $cmd = "(cd vhdl ; ghdl -r $unit) >> log/$tname.log 2>&1";
+        $cmd = "(cd vhdl ; ghdl -r $unit --stop-delta=10000) >> log/$tname.log 2>&1";
         #print "$cmd\n";
         if (system($cmd)) {
             if ($testtype{$tname} eq "RE") {
