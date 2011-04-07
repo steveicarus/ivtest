@@ -1,0 +1,17 @@
+vlog95.v:14: SORRY: $countdrivers() is not available in Icarus verilog.
+vlog95.v:15: SORRY: $getpattern() is not available in Icarus verilog.
+vlog95.v:16: SORRY: $input() is not available in Icarus verilog.
+vlog95.v:17: SORRY: $key() is not available in Icarus verilog.
+vlog95.v:18: SORRY: $nokey() is not available in Icarus verilog.
+vlog95.v:19: SORRY: $list() is not available in Icarus verilog.
+vlog95.v:20: SORRY: $log() is not available in Icarus verilog.
+vlog95.v:21: SORRY: $nolog() is not available in Icarus verilog.
+vlog95.v:22: SORRY: $save() is not available in Icarus verilog.
+vlog95.v:23: SORRY: $restart() is not available in Icarus verilog.
+vlog95.v:24: SORRY: $incsave() is not available in Icarus verilog.
+vlog95.v:25: SORRY: $scale() is not available in Icarus verilog.
+vlog95.v:26: SORRY: $scope() is not available in Icarus verilog.
+vlog95.v:27: SORRY: $showscopes() is not available in Icarus verilog.
+vlog95.v:28: SORRY: $showvars() is not available in Icarus verilog.
+vlog95.v:29: SORRY: $sreadmemb() is not available in Icarus verilog.
+vlog95.v:30: SORRY: $sreadmemh() is not available in Icarus verilog.

@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 #
-# Regression script for VHDL output. Based on vvp_reg.pl.
+# Script to handle regression for normal Verilog files.
 #
 # This script is based on code with the following Copyright.
 #
@@ -34,11 +34,14 @@ use Environment;
 #
 my ($suffix, $with_valg) = &get_args;
 my $regress_fn = &get_regress_fn;
-&open_report_file('vhdl_regression_report.txt');
+&open_report_file;
 my $ver = &get_ivl_version($suffix);
 my $msg = $with_valg ? " (with valgrind)" : "";
-&print_rpt("Running VHDL tests for Icarus Verilog version: $ver$msg.\n");
-&print_rpt("-" x 70 . "\n");
+&print_rpt("Running vlog95 compiler/VVP tests for Icarus Verilog " .
+           "version: $ver$msg.\n");
+&print_rpt("-" x 76 . "\n");
+# Override the regression list version to be (v)log95
+$ver = "log95";
 &read_regression_list($regress_fn, $ver);
 &execute_regression($suffix, $with_valg);
 &close_report_file;
@@ -52,7 +55,7 @@ sub execute_regression {
     my $sfx = shift(@_);
     my $with_valg = shift(@_);
     my ($tname, $total, $passed, $failed, $expected_fail, $not_impl,
-        $len, $cmd, $diff_file, $outfile, $unit);
+        $len, $cmd, $diff_file);
 
     $total = 0;
     $passed = 0;
@@ -61,14 +64,20 @@ sub execute_regression {
     $not_impl = 0;
     $len = 0;
 
-    # Check for the VHDL output directory
-    mkdir 'vhdl' unless (-d 'vhdl');
-
     foreach $tname (@testlist) {
         $len = length($tname) if (length($tname) > $len);
     }
 
+    # Make sure we have a log and work directory.
+    if (! -d 'log') {
+        mkdir 'log' or die "Error: unable to create log directory.\n";
+    }
+    if (! -d 'work') {
+        mkdir 'work' or die "Error: unable to create work directory.\n";
+    }
+
     foreach $tname (@testlist) {
+        my ($pass_type);
         next if ($tname eq "");  # Skip test that have been replaced.
 
         $total++;
@@ -88,120 +97,99 @@ sub execute_regression {
             next;
         }
 
-        # Store all the output in the vhdl subdirectory for debugging
-        $outfile = "vhdl/$tname.vhd";
-
         #
         # Build up the iverilog command line and run it.
         #
+        $pass_type = 0;
         $cmd = $with_valg ? "valgrind --trace-children=yes " : "";
-        $cmd .= "iverilog$sfx -t vhdl -o $outfile $args{$tname}";
+        $cmd .= "iverilog$sfx -o vlog95.v";
         $cmd .= " -s $testmod{$tname}" if ($testmod{$tname} ne "");
+        $cmd .= $testtype{$tname} eq "CN" ? " -t null" : " -t vlog95";
+# Add -pallowsigned=1 here to allow signed, etc. to not be an error.
+        $cmd .= " -pfileline=1 -pspacing=4" if ($testtype{$tname} ne "CN");
+        $cmd .= " $args{$tname}";
         $cmd .= " ./$srcpath{$tname}/$tname.v > log/$tname.log 2>&1";
-        #print "$cmd\n";
+#        print "$cmd\n";
         if (system("$cmd")) {
             if ($testtype{$tname} eq "CE") {
                 # Check if the system command core dumped!
                 if ($? >> 8 & 128) {
                     &print_rpt("==> Failed - CE (core dump).\n");
                     $failed++;
+                    next;
                 } else {
-                    &print_rpt("Passed - CE.\n");
-                    $passed++;
+                    $pass_type = 1;
                 }
-                next;
-            }
-            
-            # Check the log file for an un-translatable construct error
-            # We report this separately so we can distinguish between
-            # expected and unexpected failures
-            $cmd = "grep -q -i -E '(no vhdl translation|cannot be translated)' log/$tname.log";
-            if (system($cmd) == 0) {
-                &print_rpt("==> Failed - No VHDL translation.\n");
-                $not_impl++;
-                next;
-            }
-            else {
+            } else {
                 &print_rpt("==> Failed - running iverilog.\n");
+                $failed++;
+                next;
+            }
+        } else {
+            if ($testtype{$tname} eq "CE") {
+                &print_rpt("==> Failed - CE (no error reported).\n");
                 $failed++;
                 next;
             }
         }
 
-        #
-        # Compile the output with GHDL
-        #
-        $cmd = "(cd vhdl ; ghdl -a $tname.vhd) >> log/$tname.log 2>&1";
-        #print "$cmd\n";
-        if (system("$cmd")) {
-            if ($testtype{$tname} eq "CE") {
-                # Check if the system command core dumped!
-                if ($? >> 8 & 128) {
-                    &print_rpt("==> Failed - CE (core dump).\n");
-                    $failed++;
-                } else {
-                    &print_rpt("Passed - CE.\n");
-                    $passed++;
-                }
-                next;
-            }
-            &print_rpt("==> Failed - running ghdl.\n");
-            $failed++;
-            next;
-        }
-
-        # The CO test type now includes compilation of the VHDL
         if ($testtype{$tname} eq "CO") {
             &print_rpt("Passed - CO.\n");
             $passed++;
             next;
         }
-
-        # Try to guess the name of the primary VHDL unit
-        # ghdl -f lists all the units in a file: take the first one
-        ($unit) = `ghdl -f $outfile` =~ /^entity (\w+)/;
-        unless ($unit) {
-            &print_rpt("==> Failed -- cannot determine primary VHDL unit.\n");
-            $failed++;
-            next;
-        }
-        #print "primary unit is $unit\n";           
-
-        # Elaborate the primary unit to produce and executable
-        # Could elaborate and run in a single step, but this should
-        # provide better error detection.
-        $cmd = "(cd vhdl ; ghdl -e $unit) >> log/$tname.log 2>&1";
-        #print "$cmd\n";
-        if (system($cmd)) {
-            &print_rpt("==> Failed - running ghdl elaboration step.\n");
-            $failed++;
+        if ($testtype{$tname} eq "CN") {
+            &print_rpt("Passed - CN.\n");
+            $passed++;
             next;
         }
 
-        # Finally, run the exectutable
-        $cmd = "(cd vhdl ; ghdl -r $unit --stop-delta=10000) >> log/$tname.log 2>&1";
-        #print "$cmd\n";
-        if (system($cmd)) {
+        # Run the translated Verilog code. All compile errors should
+        # already be handled. Remove the -S flag if it exists along
+        # with any included VHDL file(s)
+        $args{$tname} =~ s/-S//;
+        $args{$tname} =~ s/\S+\.vhd//g;
+        $cmd = "iverilog$sfx -o vsim $args{$tname}";
+        $cmd .= " -s $testmod{$tname}" if ($testmod{$tname} ne "");
+        $cmd .= " vlog95.v >> log/$tname.log 2>&1";
+#        print "$cmd\n";
+        if ($pass_type == 0 and system("$cmd")) {
+            &print_rpt("==> Failed - running iverilog (translated).\n");
+            $failed++;
+            next;
+        }
+
+        $cmd = "vvp$sfx vsim $plargs{$tname} >> log/$tname.log 2>&1";
+#        print "$cmd\n";
+        if ($pass_type == 0 and system("$cmd")) {
             if ($testtype{$tname} eq "RE") {
+                # Check if the system command core dumped!
+                if ($? >> 8 & 128) {
+                    &print_rpt("==> Failed - RE (core dump).\n");
+                    $failed++;
+                    next;
+                } else {
+                    $pass_type = 2;
+                }
+            } else {
+                &print_rpt("==> Failed - running vvp.\n");
+                $failed++;
+                next;
+            }
+        }
+
+        if ($diff{$tname} ne "") {
+            $diff_file = $diff{$tname}
+        } else {
+            if ($pass_type == 1) {
+                &print_rpt("Passed - CE.\n");
+                $passed++;
+                next;
+            } elsif ($pass_type == 2) {
                 &print_rpt("Passed - RE.\n");
                 $passed++;
                 next;
             }
-            else {
-                # If the log contains `SIMULATION FINISHED' then
-                # this is OK
-                $cmd = "grep -q 'SIMULATION FINISHED' log/$tname.log";
-                if (system($cmd)) {
-                    &print_rpt("==> Failed - simulating VHDL.\n");
-                    $failed++;
-                    next;
-                }
-            }
-        }
-        
-        if ($diff{$tname} ne "") {
-            $diff_file = $diff{$tname}
-        } else {
             $diff_file = "log/$tname.log";
         }
 #        print "diff $gold{$tname}, $diff_file, $offset{$tname}\n";
@@ -211,25 +199,34 @@ sub execute_regression {
                 $expected_fail++;
                 next;
             }
-            &print_rpt("==> Failed - output does not match gold file.\n");
+            &print_rpt("==> Failed -");
+            if ($pass_type == 1) {
+                &print_rpt(" CE -");
+            } elsif ($pass_type == 2) {
+                &print_rpt(" RE -");
+            }
+            &print_rpt(" output does not match gold file.\n");
             $failed++;
             next;
         }
 
-        &print_rpt("Passed.\n");
+        if ($pass_type == 1) {
+            &print_rpt("Passed - CE.\n");
+        } elsif ($pass_type == 2) {
+            &print_rpt("Passed - RE.\n");
+        } else {
+            &print_rpt("Passed.\n");
+        }
         $passed++;
 
     } continue {
         if ($tname ne "") {
-            # Remove GHDL temporary files
-            my $tmpfiles = './vhdl/*.o ./vhdl/work-obj93.cf';
-            $tmpfiles .= " ./vhdl/$unit" if $unit;
-            system("rm -f $tmpfiles") and
-                die "Error: failed to remove temporary files.\n";
+            system("rm -f ./vlog95.v ./vsim") and
+                die "Error: failed to remove temporary file.\n";
         }
     }
 
-    &print_rpt("=" x 70 . "\n");
+    &print_rpt("=" x 76 . "\n");
     &print_rpt("Test results:\n  Total=$total, Passed=$passed, Failed=$failed,".
                " Not Implemented=$not_impl, Expected Fail=$expected_fail\n");
 }
