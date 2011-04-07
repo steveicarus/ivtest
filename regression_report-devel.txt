@@ -1590,6 +1590,7 @@ test_mos_strength_reduction: Passed.
                   pr3194155: Passed.
                sv-constants: Passed.
                sv-2val-nets: Passed.
+                  pr3270320: Passed - CE.
               vhdl_and_gate: Passed.
        vhdl_and104_stdlogic: Passed.
              vhdl_and23_bit: Passed.
@@ -1641,4 +1642,4 @@ test_mos_strength_reduction: Passed.
              vhdl_fa4_test2: Passed.
 ============================================================================
 Test results:
-  Total=1639, Passed=1636, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1640, Passed=1637, Failed=3, Not Implemented=0, Expected Fail=0

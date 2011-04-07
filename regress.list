@@ -3681,6 +3681,8 @@ undefined_shift	normal	ivltests
 pr3194155	normal	ivltests diff=log/pr3194155.log:gold/pr3194155.gold
 sv-constants	normal,-g2005-sv ivltests
 sv-2val-nets	normal,-g2009	 ivltests
+pr3270320	CE		 ivltests
+v0.9:pr3270320	NI		 ivltests
 
 # Icarus Verilog 0.10 supports Verilog/SystemVerilog/VHDL mixed simulation.
 # These are some tests of the VHDL part of that.
