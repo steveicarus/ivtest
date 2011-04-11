@@ -1645,6 +1645,9 @@ test_mos_strength_reduction: Passed.
                   pr3197917: Passed.
             undefined_shift: Passed.
                   pr3194155: Passed.
+                  pow-const: Passed.
+                   pow-proc: Passed.
+                     pow-ca: Passed.
 ============================================================================
 Test results:
-  Total=1645, Passed=1521, Failed=1, Not Implemented=90, Expected Fail=33
+  Total=1648, Passed=1524, Failed=1, Not Implemented=90, Expected Fail=33

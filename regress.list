@@ -638,6 +638,9 @@ v0.8:ca_pow_signed	NI
 v0.8:ca_pow_synth	NI
 v0.8:pow_unsigned	NI
 v0.8:pow_signed	NI
+v0.8:pow-ca	NI
+v0.8:pow-const	NI
+v0.8:pow-proc	NI
 v0.8:pr1530426	NI
 v0.8:pr1634526	NI
 v0.8:pr1690058	NI
@@ -3736,4 +3739,7 @@ vhdl_umul23_stdlogic	normal,-g2005-sv,ivltests/vhdl_umul23_stdlogic.vhd	ivltests
 vhdl_signals	normal,-g2005-sv,ivltests/vhdl_signals.vhd	ivltests
 vhdl_fa4_test1	normal,-g2005-sv,ivltests/vhdl_fa4_test1.vhd	ivltests
 vhdl_fa4_test2	normal,-g2005-sv,ivltests/vhdl_fa4_test1.vhd	ivltests
-queue	normal	ivltests
+queue		normal	ivltests
+pow-const	normal	ivltests
+pow-proc	normal	ivltests
+pow-ca		normal	ivltests

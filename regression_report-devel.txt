@@ -1641,6 +1641,9 @@ test_mos_strength_reduction: Passed.
              vhdl_fa4_test1: Passed.
              vhdl_fa4_test2: Passed.
                       queue: Passed.
+                  pow-const: Passed.
+                   pow-proc: Passed.
+                     pow-ca: Passed.
 ============================================================================
 Test results:
-  Total=1641, Passed=1638, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1644, Passed=1641, Failed=3, Not Implemented=0, Expected Fail=0

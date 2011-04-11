@@ -54,6 +54,9 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                ca_pow_synth: Not Implemented.
                pow_unsigned: Not Implemented.
                  pow_signed: Not Implemented.
+                     pow-ca: Not Implemented.
+                  pow-const: Not Implemented.
+                   pow-proc: Not Implemented.
                   pr1530426: Not Implemented.
                   pr1634526: Not Implemented.
                   pr1690058: Not Implemented.
@@ -1643,4 +1646,4 @@ test_mos_strength_reduction: Passed.
                   pr3197917: Passed.
 ============================================================================
 Test results:
-  Total=1641, Passed=1007, Failed=0, Not Implemented=511, Expected Fail=123
+  Total=1644, Passed=1007, Failed=0, Not Implemented=514, Expected Fail=123
