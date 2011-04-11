@@ -997,6 +997,7 @@ v0.8:pr3098439a	NI # $format not supported.
 v0.8:pr3098439b	NI # $format not supported.
 v0.8:pr3103880	NI # $format not supported.
 v0.8:pv_undef_sig_sel	NI # $sformt not supported.
+v0.8:queue	NI # $q_* (stochastic routines) not supported.
 v0.8:swrite	NI # $swrite not supported.
 v0.8:urand	NI # $urandom not supported.
 v0.8:urand_r	NI # $urandom_range not supported.
@@ -1390,10 +1391,17 @@ v0.8:writemem-error	EF	ivltests diff=log/writemem-error.log:gold/writemem-error.
 #==========
 
 # V0.9 does not support SystemVerilog or VHDL
-v0.9:fatal_et_al	NI
-v0.9:sv_timeunit_prec	NI
-v0.9:sv_timeunit_prec_fail	NI
 v0.9:bits	NI
+v0.9:enum_base_range	NI
+v0.9:enum_elem_ranges	NI
+v0.9:enum_next	NI
+v0.9:enum_test1	NI
+v0.9:enum_value_expr	NI
+v0.9:enum_values	NI
+v0.9:fatal_et_al	NI
+v0.9:fileline	NI
+v0.9:fileline2	NI
+v0.9:first_last_num	NI
 v0.9:ibyte_test	NI
 v0.9:iint_test	NI
 v0.9:ilongint_test	NI
@@ -1407,19 +1415,15 @@ v0.9:simple_shortint	NI
 v0.9:sint_test	NI
 v0.9:slongint_test	NI
 v0.9:sshortint_test	NI
+v0.9:sv-2val-nets	NI
+v0.9:sv-constants	NI
+v0.9:sv_timeunit_prec	NI
+v0.9:sv_timeunit_prec_fail	NI
+v0.9:sys_func_as_task	NI
 v0.9:ubyte_test	NI
 v0.9:uint_test	NI
 v0.9:ulongint_test	NI
 v0.9:ushortint_test	NI
-v0.9:enum_base_range	NI
-v0.9:enum_elem_ranges	NI
-v0.9:enum_next	NI
-v0.9:enum_test1	NI
-v0.9:enum_value_expr	NI
-v0.9:enum_values	NI
-v0.9:fileline	NI
-v0.9:fileline2	NI
-v0.9:first_last_num	NI
 v0.9:vhdl_and_gate	NI
 v0.9:vhdl_and104_stdlogic	NI
 v0.9:vhdl_and23_bit	NI
@@ -1486,9 +1490,6 @@ v0.9:real_delay	NI
 
 # V0.9 does not support two variable delays (only 1 or three).
 v0.9:verify_two_var_delays	NI
-
-# V0.9 does not support calling a system function as a task (SystemVerilog).
-v0.9:sys_func_as_task	NI
 
 # V0.9 does not have the net rework code.
 v0.9:deposit	EF	ivltests
@@ -1599,9 +1600,8 @@ v0.9:pr3270320	NI	ivltests
 v0.9:uwire	normal	ivltests diff=log/uwire.log:gold/uwire-v0.9.gold
 v0.9:uwire_fail	normal	ivltests diff=log/uwire_fail.log:gold/uwire_fail-v0.9.gold
 
-# v0.9 does not support some System Verilog
-v0.9:sv-constants	NI
-v0.9:sv-2val-nets	NI
+# For now V0.9 does not support the queue routines.
+v0.9:queue	NI
 
 #==========
 # V0.9 doesn't support synthesis. Might as well run them as
@@ -3736,3 +3736,4 @@ vhdl_umul23_stdlogic	normal,-g2005-sv,ivltests/vhdl_umul23_stdlogic.vhd	ivltests
 vhdl_signals	normal,-g2005-sv,ivltests/vhdl_signals.vhd	ivltests
 vhdl_fa4_test1	normal,-g2005-sv,ivltests/vhdl_fa4_test1.vhd	ivltests
 vhdl_fa4_test2	normal,-g2005-sv,ivltests/vhdl_fa4_test1.vhd	ivltests
+queue	normal	ivltests

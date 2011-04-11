@@ -1,9 +1,16 @@
 Running compiler/VVP tests for Icarus Verilog version: 0.9.
 ----------------------------------------------------------------------------
-                fatal_et_al: Not Implemented.
-           sv_timeunit_prec: Not Implemented.
-      sv_timeunit_prec_fail: Not Implemented.
                        bits: Not Implemented.
+            enum_base_range: Not Implemented.
+           enum_elem_ranges: Not Implemented.
+                  enum_next: Not Implemented.
+                 enum_test1: Not Implemented.
+            enum_value_expr: Not Implemented.
+                enum_values: Not Implemented.
+                fatal_et_al: Not Implemented.
+                   fileline: Not Implemented.
+                  fileline2: Not Implemented.
+             first_last_num: Not Implemented.
                  ibyte_test: Not Implemented.
                   iint_test: Not Implemented.
               ilongint_test: Not Implemented.
@@ -17,19 +24,15 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                   sint_test: Not Implemented.
               slongint_test: Not Implemented.
              sshortint_test: Not Implemented.
+               sv-2val-nets: Not Implemented.
+               sv-constants: Not Implemented.
+           sv_timeunit_prec: Not Implemented.
+      sv_timeunit_prec_fail: Not Implemented.
+           sys_func_as_task: Not Implemented.
                  ubyte_test: Not Implemented.
                   uint_test: Not Implemented.
               ulongint_test: Not Implemented.
              ushortint_test: Not Implemented.
-            enum_base_range: Not Implemented.
-           enum_elem_ranges: Not Implemented.
-                  enum_next: Not Implemented.
-                 enum_test1: Not Implemented.
-            enum_value_expr: Not Implemented.
-                enum_values: Not Implemented.
-                   fileline: Not Implemented.
-                  fileline2: Not Implemented.
-             first_last_num: Not Implemented.
               vhdl_and_gate: Not Implemented.
        vhdl_and104_stdlogic: Not Implemented.
              vhdl_and23_bit: Not Implemented.
@@ -85,7 +88,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
               real_array_nb: Not Implemented.
                  real_delay: Not Implemented.
       verify_two_var_delays: Not Implemented.
-           sys_func_as_task: Not Implemented.
                     deposit: Passed - expected fail.
                       pr699: Passed - expected fail.
                      pr699b: Passed - expected fail.
@@ -153,8 +155,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                   pr3270320: Not Implemented.
                       uwire: Passed.
                  uwire_fail: Passed.
-               sv-constants: Not Implemented.
-               sv-2val-nets: Not Implemented.
+                      queue: Not Implemented.
                       case1: Passed.
                       case2: Passed.
                       case4: Passed.
@@ -1646,4 +1647,4 @@ test_mos_strength_reduction: Passed.
                   pr3194155: Passed.
 ============================================================================
 Test results:
-  Total=1644, Passed=1521, Failed=1, Not Implemented=89, Expected Fail=33
+  Total=1645, Passed=1521, Failed=1, Not Implemented=90, Expected Fail=33
