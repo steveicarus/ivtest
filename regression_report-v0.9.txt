@@ -81,6 +81,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
        vhdl_umul23_stdlogic: Not Implemented.
              vhdl_fa4_test1: Not Implemented.
              vhdl_fa4_test2: Not Implemented.
+             vhdl_fa4_test3: Not Implemented.
                vhdl_signals: Not Implemented.
               cmdline_parm1: Not Implemented.
                     analog1: Not Implemented.
@@ -117,6 +118,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                   pr3103880: Passed - expected fail.
                   pr3104254: Passed - expected fail.
                   pr3149494: Passed - expected fail.
+                  pr3284821: Passed - expected fail.
                   pr2877564: Passed - CE.
                    specify5: Passed.
                       pr377: Passed.
@@ -155,7 +157,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                   pr3270320: Not Implemented.
                       uwire: Passed.
                  uwire_fail: Passed.
-                      queue: Not Implemented.
                       case1: Passed.
                       case2: Passed.
                       case4: Passed.
@@ -1645,9 +1646,12 @@ test_mos_strength_reduction: Passed.
                   pr3197917: Passed.
             undefined_shift: Passed.
                   pr3194155: Passed.
+                      queue: Passed.
+                 queue_fail: Passed.
+                 queue_stat: Passed.
                   pow-const: Passed.
                    pow-proc: Passed.
                      pow-ca: Passed.
 ============================================================================
 Test results:
-  Total=1648, Passed=1524, Failed=1, Not Implemented=90, Expected Fail=33
+  Total=1652, Passed=1527, Failed=1, Not Implemented=90, Expected Fail=34

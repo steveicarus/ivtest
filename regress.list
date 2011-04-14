@@ -1001,6 +1001,8 @@ v0.8:pr3098439b	NI # $format not supported.
 v0.8:pr3103880	NI # $format not supported.
 v0.8:pv_undef_sig_sel	NI # $sformt not supported.
 v0.8:queue	NI # $q_* (stochastic routines) not supported.
+v0.8:queue_fail	NI # $q_* (stochastic routines) not supported.
+v0.8:queue_stat	NI # $q_* (stochastic routines) not supported.
 v0.8:swrite	NI # $swrite not supported.
 v0.8:urand	NI # $urandom not supported.
 v0.8:urand_r	NI # $urandom_range not supported.
@@ -1389,6 +1391,7 @@ v0.8:string11	EF	ivltests diff=log/string11.log:gold/string11.gold
 v0.8:undefined_shift	NI
 v0.8:vcd-dup	EF	ivltests diff=work/vcd-dup.vcd:gold/vcd-dup.vcd.gold:2
 v0.8:writemem-error	EF	ivltests diff=log/writemem-error.log:gold/writemem-error.gold
+v0.8:pr3284821	EF	ivltests
 
 #==========
 # Things not supported by V0.9.
@@ -1553,6 +1556,7 @@ v0.9:pr3098439b	EF	ivltests
 v0.9:pr3103880	EF	ivltests
 v0.9:pr3104254	EF	ivltests
 v0.9:pr3149494	EF	ivltests gold=pr3149494.gold
+v0.9:pr3284821	EF	ivltests
 
 # V0.9 has a slightly different message
 v0.9:pr2877564	CE	ivltests diff=log/pr2877564.log:gold/pr2877564-v0.9.gold
@@ -1604,9 +1608,6 @@ v0.9:pr3270320	NI	ivltests
 # v0.9 does not support the uwire check and always prints a warning message.
 v0.9:uwire	normal	ivltests diff=log/uwire.log:gold/uwire-v0.9.gold
 v0.9:uwire_fail	normal	ivltests diff=log/uwire_fail.log:gold/uwire_fail-v0.9.gold
-
-# For now V0.9 does not support the queue routines.
-v0.9:queue	NI
 
 #==========
 # V0.9 doesn't support synthesis. Might as well run them as
@@ -3743,6 +3744,8 @@ vhdl_fa4_test1	normal,-g2005-sv,ivltests/vhdl_fa4_test1.vhd	ivltests
 vhdl_fa4_test2	normal,-g2005-sv,ivltests/vhdl_fa4_test2.vhd	ivltests
 vhdl_fa4_test3	normal,-g2005-sv,ivltests/vhdl_fa4_test3.vhd	ivltests
 queue		normal	ivltests
+queue_fail	normal	ivltests diff=log/queue_fail.log:gold/queue_fail.gold
+queue_stat	normal	ivltests diff=log/queue_stat.log:gold/queue_stat.gold
 pow-const	normal	ivltests
 pow-proc	normal	ivltests
 pow-ca		normal	ivltests
