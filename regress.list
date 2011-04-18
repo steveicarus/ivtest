@@ -1791,6 +1791,8 @@ vlog95:enum_values	CE	ivltests
 vlog95:extend	CE	ivltests
 vlog95:first_last_num	CE	ivltests
 vlog95:iuint1	CE	ivltests
+vlog95:pow-ca	CE  # Also general **
+vlog95:pow-proc	CE  # Also general **
 vlog95:pr1002	CE	ivltests  # Also >>>
 vlog95:pr1002a	CE	ivltests
 vlog95:pr1033	CE	ivltests
@@ -1840,6 +1842,7 @@ vlog95:pr2998515	CE	ivltests
 vlog95:pr3054101d	CE	ivltests
 vlog95:pr3077640	CE	ivltests
 vlog95:pr3104254	CE	ivltests
+vlog95:pr3284821	CE	ivltests
 vlog95:pr748	CE	ivltests
 vlog95:real_array_nb	CE	ivltests  # Also array
 vlog95:sbyte_test	CE	ivltests
@@ -2013,6 +2016,7 @@ vlog95:pr1866215b	normal	ivltests gold=pr1866215b-vlog95.gold
 vlog95:pr2509349a	normal	ivltests gold=pr2509349a-vlog95.gold
 vlog95:pr2509349b	normal	ivltests gold=pr2509349b-vlog95.gold
 vlog95:pr2800985b	normal	ivltests gold=pr2800985b-vlog95.gold
+vlog95:queue_fail	normal	ivltests gold=queue_fail-vlog95.gold
 vlog95:readmem-error	normal	ivltests gold=readmem-error-vlog95.gold
 vlog95:readmem-invalid	normal	ivltests gold=readmem-invalid-vlog95.gold
 vlog95:swrite		normal	ivltests gold=swrite-vlog95.gold

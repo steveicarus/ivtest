@@ -75,6 +75,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                      extend: Passed - CE.
              first_last_num: Passed - CE.
                      iuint1: Passed - CE.
+                     pow-ca: Passed - CE.
+                   pow-proc: Passed - CE.
                      pr1002: Passed - CE.
                     pr1002a: Passed - CE.
                      pr1033: Passed - CE.
@@ -124,6 +126,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  pr3054101d: Passed - CE.
                   pr3077640: Passed - CE.
                   pr3104254: Passed - CE.
+                  pr3284821: Passed - CE.
                       pr748: Passed - CE.
                  sbyte_test: Passed - CE.
                      shift2: Passed - CE.
@@ -276,6 +279,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  pr2509349a: Passed.
                  pr2509349b: Passed.
                  pr2800985b: Passed.
+                 queue_fail: Passed.
               readmem-error: Passed.
             readmem-invalid: Passed.
                      swrite: Passed.
@@ -446,7 +450,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
               function3.11D: Passed.
               function3.11F: Passed.
                 module3.12A: Passed.
-                module3.12B: ==> Failed - running iverilog (translated).
+                module3.12B: Passed.
                    ptest001: Passed.
                    ptest002: Passed.
                    ptest003: Passed.
@@ -1598,6 +1602,7 @@ test_mos_strength_reduction: Passed.
                   pr3194155: ==> Failed - running iverilog.
                sv-constants: Passed.
                sv-2val-nets: ==> Failed - running iverilog (translated).
+                  pr3270320: Passed - CE.
               vhdl_and_gate: Passed.
        vhdl_and104_stdlogic: Passed.
              vhdl_and23_bit: Passed.
@@ -1639,6 +1644,10 @@ test_mos_strength_reduction: Passed.
                vhdl_signals: ==> Failed - running iverilog (translated).
              vhdl_fa4_test1: ==> Failed - running iverilog (translated).
              vhdl_fa4_test2: ==> Failed - running iverilog (translated).
+             vhdl_fa4_test3: ==> Failed - running iverilog (translated).
+                      queue: Passed.
+                 queue_stat: Passed.
+                  pow-const: Passed.
 ============================================================================
 Test results:
-  Total=1639, Passed=1465, Failed=91, Not Implemented=63, Expected Fail=20
+  Total=1648, Passed=1474, Failed=91, Not Implemented=63, Expected Fail=20
