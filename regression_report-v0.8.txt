@@ -576,6 +576,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
              comp1001_fail3: Passed - expected fail.
              comp1001_fail4: Passed - expected fail.
              comp1001_fail5: Passed - expected fail.
+              eofmt_percent: Passed - expected fail.
                      extend: Passed - expected fail.
             int_not_signext: Passed - expected fail.
                    integer5: Passed - expected fail.
@@ -690,6 +691,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr3149494: Passed - expected fail.
                   pr3194155: Not Implemented.
                   pr3270320: Not Implemented.
+                  pr3284821: Passed - expected fail.
                      shift5: Passed - expected fail.
                    signed_a: Passed - expected fail.
             signed_equality: Passed - expected fail.
@@ -699,7 +701,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
             undefined_shift: Not Implemented.
                     vcd-dup: Passed - expected fail.
              writemem-error: Passed - expected fail.
-                  pr3284821: Passed - expected fail.
               always3.1.11A: Passed.
               always3.1.11B: Passed.
               always3.1.12A: Passed.
@@ -1650,4 +1651,4 @@ test_mos_strength_reduction: Passed.
                   pr3197917: Passed.
 ============================================================================
 Test results:
-  Total=1648, Passed=1007, Failed=0, Not Implemented=517, Expected Fail=124
+  Total=1649, Passed=1007, Failed=0, Not Implemented=517, Expected Fail=125
