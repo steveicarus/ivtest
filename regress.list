@@ -1268,6 +1268,7 @@ v0.8:comp1001	EF	ivltests diff=log/comp1001.log:gold/comp1001.gold
 v0.8:comp1001_fail3	EF	ivltests
 v0.8:comp1001_fail4	EF	ivltests
 v0.8:comp1001_fail5	EF	ivltests
+v0.8:eofmt_percent	EF	ivltests diff=log/eofmt_percent.log:gold/eofmt_percent.gold
 v0.8:extend	EF	ivltests
 v0.8:int_not_signext	EF	ivltests diff=log/int_not_signext.log:gold/int_not_signext.gold
 v0.8:integer5	EF	ivltests
@@ -1382,6 +1383,7 @@ v0.8:pr3104254	EF	ivltests
 v0.8:pr3149494	EF	ivltests gold=pr3149494.gold
 v0.8:pr3194155	NI
 v0.8:pr3270320	NI	ivltests
+v0.8:pr3284821	EF	ivltests
 v0.8:shift5	EF	ivltests diff=log/shift5.log:gold/shift5.gold
 v0.8:signed_a	EF	ivltests
 v0.8:signed_equality	EF	ivltests
@@ -1391,7 +1393,6 @@ v0.8:string11	EF	ivltests diff=log/string11.log:gold/string11.gold
 v0.8:undefined_shift	NI
 v0.8:vcd-dup	EF	ivltests diff=work/vcd-dup.vcd:gold/vcd-dup.vcd.gold:2
 v0.8:writemem-error	EF	ivltests diff=log/writemem-error.log:gold/writemem-error.gold
-v0.8:pr3284821	EF	ivltests
 
 #==========
 # Things not supported by V0.9.
@@ -3754,3 +3755,4 @@ pow-const	normal	ivltests
 pow-proc	normal	ivltests
 pow-ca		normal	ivltests
 pr3284821	normal	ivltests
+eofmt_percent	normal	ivltests diff=log/eofmt_percent.log:gold/eofmt_percent.gold
