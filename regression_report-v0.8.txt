@@ -367,6 +367,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr3103880: Not Implemented.
            pv_undef_sig_sel: Not Implemented.
                       queue: Not Implemented.
+                 queue_fail: Not Implemented.
+                 queue_stat: Not Implemented.
                      swrite: Not Implemented.
                       urand: Not Implemented.
                     urand_r: Not Implemented.
@@ -504,6 +506,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
        vhdl_umul23_stdlogic: Not Implemented.
              vhdl_fa4_test1: Not Implemented.
              vhdl_fa4_test2: Not Implemented.
+             vhdl_fa4_test3: Not Implemented.
                vhdl_signals: Not Implemented.
                   pr1403406: Not Implemented.
                  pr1403406a: Not Implemented.
@@ -573,6 +576,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
              comp1001_fail3: Passed - expected fail.
              comp1001_fail4: Passed - expected fail.
              comp1001_fail5: Passed - expected fail.
+              eofmt_percent: Passed - expected fail.
                      extend: Passed - expected fail.
             int_not_signext: Passed - expected fail.
                    integer5: Passed - expected fail.
@@ -687,6 +691,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr3149494: Passed - expected fail.
                   pr3194155: Not Implemented.
                   pr3270320: Not Implemented.
+                  pr3284821: Passed - expected fail.
                      shift5: Passed - expected fail.
                    signed_a: Passed - expected fail.
             signed_equality: Passed - expected fail.
@@ -1646,4 +1651,4 @@ test_mos_strength_reduction: Passed.
                   pr3197917: Passed.
 ============================================================================
 Test results:
-  Total=1644, Passed=1007, Failed=0, Not Implemented=514, Expected Fail=123
+  Total=1649, Passed=1007, Failed=0, Not Implemented=517, Expected Fail=125
