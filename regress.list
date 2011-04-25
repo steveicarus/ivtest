@@ -3756,3 +3756,4 @@ pow-proc	normal	ivltests
 pow-ca		normal	ivltests
 pr3284821	normal	ivltests
 eofmt_percent	normal	ivltests diff=log/eofmt_percent.log:gold/eofmt_percent.gold
+pr3292735	normal	ivltests
