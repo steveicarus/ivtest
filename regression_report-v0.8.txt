@@ -1649,6 +1649,7 @@ test_mos_strength_reduction: Passed.
            def_nettype_none: Passed - CE.
                   pr3197861: Passed.
                   pr3197917: Passed.
+                  pr3292735: Passed.
 ============================================================================
 Test results:
-  Total=1649, Passed=1007, Failed=0, Not Implemented=517, Expected Fail=125
+  Total=1650, Passed=1008, Failed=0, Not Implemented=517, Expected Fail=125

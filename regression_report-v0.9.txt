@@ -1653,6 +1653,7 @@ test_mos_strength_reduction: Passed.
                    pow-proc: Passed.
                      pow-ca: Passed.
               eofmt_percent: Passed.
+                  pr3292735: Passed.
 ============================================================================
 Test results:
-  Total=1653, Passed=1528, Failed=1, Not Implemented=90, Expected Fail=34
+  Total=1654, Passed=1529, Failed=1, Not Implemented=90, Expected Fail=34
