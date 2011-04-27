@@ -82,6 +82,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
              vhdl_fa4_test1: Not Implemented.
              vhdl_fa4_test2: Not Implemented.
              vhdl_fa4_test3: Not Implemented.
+             vhdl_fa4_test4: Not Implemented.
                vhdl_signals: Not Implemented.
               cmdline_parm1: Not Implemented.
                     analog1: Not Implemented.
@@ -1655,4 +1656,4 @@ test_mos_strength_reduction: Passed.
               eofmt_percent: Passed.
 ============================================================================
 Test results:
-  Total=1653, Passed=1528, Failed=1, Not Implemented=90, Expected Fail=34
+  Total=1654, Passed=1528, Failed=1, Not Implemented=91, Expected Fail=34
