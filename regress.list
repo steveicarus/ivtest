@@ -1155,6 +1155,7 @@ v0.8:vhdl_umul23_stdlogic	NI
 v0.8:vhdl_fa4_test1	NI
 v0.8:vhdl_fa4_test2	NI
 v0.8:vhdl_fa4_test3	NI
+v0.8:vhdl_fa4_test4	NI
 v0.8:vhdl_signals	NI
 
 # V0.8 does not support +timescale in a command file.
@@ -1483,6 +1484,7 @@ v0.9:vhdl_umul23_stdlogic	NI
 v0.9:vhdl_fa4_test1	NI
 v0.9:vhdl_fa4_test2	NI
 v0.9:vhdl_fa4_test3	NI
+v0.9:vhdl_fa4_test4	NI
 v0.9:vhdl_signals	NI
 
 # V0.9 does not support command line parameters.
@@ -3750,6 +3752,7 @@ vhdl_signals	normal,-g2005-sv,ivltests/vhdl_signals.vhd	ivltests
 vhdl_fa4_test1	normal,-g2005-sv,ivltests/vhdl_fa4_test1.vhd	ivltests
 vhdl_fa4_test2	normal,-g2005-sv,ivltests/vhdl_fa4_test2.vhd	ivltests
 vhdl_fa4_test3	normal,-g2005-sv,ivltests/vhdl_fa4_test3.vhd	ivltests
+vhdl_fa4_test4	normal,-g2005-sv,ivltests/vhdl_fa4_test4.vhd	ivltests
 queue		normal	ivltests
 queue_fail	normal	ivltests diff=log/queue_fail.log:gold/queue_fail.gold
 queue_stat	normal	ivltests diff=log/queue_stat.log:gold/queue_stat.gold
@@ -3759,4 +3762,5 @@ pow-ca		normal	ivltests
 pr3284821	normal	ivltests
 eofmt_percent	normal	ivltests diff=log/eofmt_percent.log:gold/eofmt_percent.gold
 pr3292735	normal	ivltests
+pr3306516	normal,-gspecify	ivltests
 pr3309391	normal	ivltests
