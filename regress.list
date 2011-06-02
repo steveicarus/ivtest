@@ -1385,6 +1385,7 @@ v0.8:pr3149494	EF	ivltests gold=pr3149494.gold
 v0.8:pr3194155	NI
 v0.8:pr3270320	NI	ivltests
 v0.8:pr3284821	EF	ivltests
+v0.8:pr3306516	NI	ivltests
 v0.8:pr3309391	NI	ivltests
 v0.8:shift5	EF	ivltests diff=log/shift5.log:gold/shift5.gold
 v0.8:signed_a	EF	ivltests
