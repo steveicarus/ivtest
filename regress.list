@@ -3762,3 +3762,4 @@ pr3284821	normal	ivltests
 eofmt_percent	normal	ivltests diff=log/eofmt_percent.log:gold/eofmt_percent.gold
 pr3292735	normal	ivltests
 pr3306516	normal,-gspecify	ivltests
+vhdl_sa1_test1	normal,-g2005-sv,ivltests/vhdl_sa1_test1.vhd	ivltests
