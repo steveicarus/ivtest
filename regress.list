@@ -1157,6 +1157,7 @@ v0.8:vhdl_fa4_test2	NI
 v0.8:vhdl_fa4_test3	NI
 v0.8:vhdl_fa4_test4	NI
 v0.8:vhdl_signals	NI
+v0.8:vhdl_sa1_test1	NI
 
 # V0.8 does not support +timescale in a command file.
 v0.8:pr1403406	NI
@@ -1487,6 +1488,7 @@ v0.9:vhdl_fa4_test2	NI
 v0.9:vhdl_fa4_test3	NI
 v0.9:vhdl_fa4_test4	NI
 v0.9:vhdl_signals	NI
+v0.9:vhdl_sa1_test1	NI
 
 # V0.9 does not support command line parameters.
 v0.9:cmdline_parm1	NI
