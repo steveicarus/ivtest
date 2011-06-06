@@ -509,6 +509,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
              vhdl_fa4_test3: Not Implemented.
              vhdl_fa4_test4: Not Implemented.
                vhdl_signals: Not Implemented.
+             vhdl_sa1_test1: Not Implemented.
                   pr1403406: Not Implemented.
                  pr1403406a: Not Implemented.
                  pr1403406b: Not Implemented.
@@ -579,6 +580,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
              comp1001_fail5: Passed - expected fail.
               eofmt_percent: Passed - expected fail.
                      extend: Passed - expected fail.
+              gate_connect1: Not Implemented.
+              gate_connect2: Not Implemented.
             int_not_signext: Passed - expected fail.
                    integer5: Passed - expected fail.
          multi_driver_delay: Passed - expected fail.
@@ -1655,4 +1658,4 @@ test_mos_strength_reduction: Passed.
                   pr3292735: Passed.
 ============================================================================
 Test results:
-  Total=1653, Passed=1008, Failed=0, Not Implemented=520, Expected Fail=125
+  Total=1656, Passed=1008, Failed=0, Not Implemented=523, Expected Fail=125

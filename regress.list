@@ -1272,6 +1272,8 @@ v0.8:comp1001_fail4	EF	ivltests
 v0.8:comp1001_fail5	EF	ivltests
 v0.8:eofmt_percent	EF	ivltests diff=log/eofmt_percent.log:gold/eofmt_percent.gold
 v0.8:extend	EF	ivltests
+v0.8:gate_connect1	NI	ivltests
+v0.8:gate_connect2	NI	ivltests
 v0.8:int_not_signext	EF	ivltests diff=log/int_not_signext.log:gold/int_not_signext.gold
 v0.8:integer5	EF	ivltests
 v0.8:multi_driver_delay	EF	ivltests
@@ -3767,6 +3769,6 @@ eofmt_percent	normal	ivltests diff=log/eofmt_percent.log:gold/eofmt_percent.gold
 pr3292735	normal	ivltests
 pr3306516	normal,-gspecify	ivltests
 vhdl_sa1_test1	normal,-g2005-sv,ivltests/vhdl_sa1_test1.vhd	ivltests
-gate_connect1	normal  ivltests
-gate_connect2	CE      ivltests diff=log/gate_connect2.log:gold/gate_connect2.gold
+gate_connect1	normal	ivltests
+gate_connect2	CE	ivltests diff=log/gate_connect2.log:gold/gate_connect2.gold
 pr3309391	normal	ivltests
