@@ -1651,6 +1651,10 @@ test_mos_strength_reduction: Passed.
                   pr3284821: Passed.
               eofmt_percent: Passed.
                   pr3292735: Passed.
+                 pr3296466a: Passed.
+                 pr3296466b: Passed.
+                 pr3296466c: Passed.
+                 pr3296466d: Passed.
                   pr3306516: Passed.
              vhdl_sa1_test1: Passed.
               gate_connect1: Passed.
@@ -1658,4 +1662,4 @@ test_mos_strength_reduction: Passed.
                   pr3309391: Passed.
 ============================================================================
 Test results:
-  Total=1656, Passed=1653, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1660, Passed=1657, Failed=3, Not Implemented=0, Expected Fail=0
