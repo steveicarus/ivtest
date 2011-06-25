@@ -1660,6 +1660,7 @@ test_mos_strength_reduction: Passed.
               gate_connect1: Passed.
               gate_connect2: Passed - CE.
                   pr3309391: Passed.
+                 ivlh_event: Passed.
 ============================================================================
 Test results:
-  Total=1660, Passed=1657, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1661, Passed=1658, Failed=3, Not Implemented=0, Expected Fail=0
