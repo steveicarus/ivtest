@@ -1159,6 +1159,7 @@ v0.8:vhdl_fa4_test4	NI
 v0.8:vhdl_signals	NI
 v0.8:vhdl_sa1_test1	NI
 v0.8:vhdl_sa1_test2	NI
+v0.8:vhdl_sa1_test3	NI
 
 # V0.8 does not support +timescale in a command file.
 v0.8:pr1403406	NI
@@ -1493,6 +1494,7 @@ v0.9:vhdl_fa4_test4	NI
 v0.9:vhdl_signals	NI
 v0.9:vhdl_sa1_test1	NI
 v0.9:vhdl_sa1_test2	NI
+v0.9:vhdl_sa1_test3	NI
 
 # v0.9 does not have the vhdl_sys module
 v0.9:ivlh_event		NI
@@ -3783,3 +3785,4 @@ gate_connect2	CE	ivltests diff=log/gate_connect2.log:gold/gate_connect2.gold
 pr3309391	normal	ivltests
 ivlh_event	normal,-mvhdl_sys	ivltests	diff=log/ivlh_event.log:gold/ivlh_event.gold
 vhdl_sa1_test2	normal,-g2005-sv,ivltests/vhdl_sa1_test2.vhd	ivltests
+vhdl_sa1_test3	normal,-g2005-sv,-mvhdl_sys,ivltests/vhdl_sa1_test3.vhd	ivltests
