@@ -1543,6 +1543,7 @@ test_mos_strength_reduction: Passed.
                   pr3077640: Passed.
                   pr3078759: Passed - CO.
                        bits: Passed.
+                      bits2: Passed.
                  ibyte_test: Passed.
                   iint_test: Passed.
               ilongint_test: Passed.
@@ -1663,6 +1664,7 @@ test_mos_strength_reduction: Passed.
                  ivlh_event: Passed.
              vhdl_sa1_test2: Passed.
              vhdl_sa1_test3: Passed.
+                  ibit_test: Passed.
 ============================================================================
 Test results:
-  Total=1663, Passed=1660, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1665, Passed=1662, Failed=3, Not Implemented=0, Expected Fail=0

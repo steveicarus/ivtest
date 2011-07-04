@@ -1077,6 +1077,7 @@ v0.8:writemem-invalid	NI
 
 # V0.8 does not support SystemVerilog or VHDL
 v0.8:bits	NI
+v0.8:bits2	NI
 v0.8:fatal_et_al	NI
 v0.8:ibyte_test	NI
 v0.8:iint_test	NI
@@ -1412,6 +1413,7 @@ v0.8:writemem-error	EF	ivltests diff=log/writemem-error.log:gold/writemem-error.
 
 # V0.9 does not support SystemVerilog or VHDL
 v0.9:bits	NI
+v0.9:bits2	NI
 v0.9:enum_base_range	NI
 v0.9:enum_elem_ranges	NI
 v0.9:enum_next	NI
@@ -1800,6 +1802,7 @@ vlog95:recursive_task	NI	ivltests  # Also signed
 vlog95:array6	CE	ivltests
 vlog95:array_select	CE	ivltests # Also net array
 vlog95:bits	CE	ivltests
+vlog95:bits2	CE	ivltests
 vlog95:ca_mult	CE	ivltests
 vlog95:cast_int	CE	ivltests
 vlog95:cast_real_signed	CE	ivltests  # Also real net
@@ -3666,6 +3669,7 @@ pr3064511	normal	ivltests
 pr3077640	normal	ivltests
 pr3078759	CO,-gspecify	ivltests
 bits		normal,-g2005-sv	ivltests
+bits2		normal,-g2005-sv	ivltests
 ibyte_test	normal,-g2005-sv	ivltests
 iint_test	normal,-g2005-sv	ivltests
 ilongint_test	normal,-g2005-sv	ivltests
@@ -3790,3 +3794,4 @@ pr3309391	normal	ivltests
 ivlh_event	normal,-mvhdl_sys	ivltests	diff=log/ivlh_event.log:gold/ivlh_event.gold
 vhdl_sa1_test2	normal,-g2005-sv,ivltests/vhdl_sa1_test2.vhd	ivltests
 vhdl_sa1_test3	normal,-g2005-sv,-mvhdl_sys,ivltests/vhdl_sa1_test3.vhd	ivltests
+ibit_test	normal,-g2005-sv	ivltests
