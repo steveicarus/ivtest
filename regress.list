@@ -1166,6 +1166,9 @@ v0.8:vhdl_sa1_test1	NI
 v0.8:vhdl_sa1_test2	NI
 v0.8:vhdl_sa1_test3	NI
 
+# v0.8 does not have the vhdl_sys module
+v0.8:ivlh_event	NI
+
 # V0.8 does not support +timescale in a command file.
 v0.8:pr1403406	NI
 v0.8:pr1403406a	NI
@@ -1503,7 +1506,7 @@ v0.9:vhdl_sa1_test2	NI
 v0.9:vhdl_sa1_test3	NI
 
 # v0.9 does not have the vhdl_sys module
-v0.9:ivlh_event		NI
+v0.9:ivlh_event	NI
 
 # V0.9 does not support command line parameters.
 v0.9:cmdline_parm1	NI
