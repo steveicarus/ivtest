@@ -3798,3 +3798,5 @@ ivlh_event	normal,-mvhdl_sys	ivltests	diff=log/ivlh_event.log:gold/ivlh_event.go
 vhdl_sa1_test2	normal,-g2005-sv,ivltests/vhdl_sa1_test2.vhd	ivltests
 vhdl_sa1_test3	normal,-g2005-sv,-mvhdl_sys,ivltests/vhdl_sa1_test3.vhd	ivltests
 ibit_test	normal,-g2005-sv	ivltests
+bitp1	normal,-g2005-sv	ivltests
+logp2	normal,-g2005-sv	ivltests
