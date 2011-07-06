@@ -429,13 +429,17 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
               readmem-error: Not Implemented.
             readmem-invalid: Not Implemented.
            writemem-invalid: Not Implemented.
+                      bitp1: Not Implemented.
                        bits: Not Implemented.
+                      bits2: Not Implemented.
                 fatal_et_al: Not Implemented.
+                  ibit_test: Not Implemented.
                  ibyte_test: Not Implemented.
                   iint_test: Not Implemented.
               ilongint_test: Not Implemented.
              ishortint_test: Not Implemented.
                      iuint1: Not Implemented.
+                      logp2: Not Implemented.
                  sbyte_test: Not Implemented.
                 simple_byte: Not Implemented.
                  simple_int: Not Implemented.
@@ -1665,4 +1669,4 @@ test_mos_strength_reduction: Passed.
                   pr3292735: Passed.
 ============================================================================
 Test results:
-  Total=1663, Passed=1008, Failed=0, Not Implemented=530, Expected Fail=125
+  Total=1667, Passed=1008, Failed=0, Not Implemented=534, Expected Fail=125

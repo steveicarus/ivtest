@@ -1076,14 +1076,17 @@ v0.8:readmem-invalid	NI
 v0.8:writemem-invalid	NI
 
 # V0.8 does not support SystemVerilog or VHDL
+v0.8:bitp1	NI
 v0.8:bits	NI
 v0.8:bits2	NI
 v0.8:fatal_et_al	NI
+v0.8:ibit_test	NI
 v0.8:ibyte_test	NI
 v0.8:iint_test	NI
 v0.8:ilongint_test	NI
 v0.8:ishortint_test	NI
 v0.8:iuint1	NI
+v0.8:logp2	NI
 v0.8:sbyte_test	NI
 v0.8:simple_byte	NI
 v0.8:simple_int	NI
@@ -1415,6 +1418,7 @@ v0.8:writemem-error	EF	ivltests diff=log/writemem-error.log:gold/writemem-error.
 #==========
 
 # V0.9 does not support SystemVerilog or VHDL
+v0.9:bitp1	NI
 v0.9:bits	NI
 v0.9:bits2	NI
 v0.9:enum_base_range	NI
@@ -1427,11 +1431,13 @@ v0.9:fatal_et_al	NI
 v0.9:fileline	NI
 v0.9:fileline2	NI
 v0.9:first_last_num	NI
+v0.9:ibit_test	NI
 v0.9:ibyte_test	NI
 v0.9:iint_test	NI
 v0.9:ilongint_test	NI
 v0.9:ishortint_test	NI
 v0.9:iuint1		NI
+v0.9:logp2	NI
 v0.9:sbyte_test	NI
 v0.9:simple_byte	NI
 v0.9:simple_int	NI
