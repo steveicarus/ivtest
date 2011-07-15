@@ -3800,3 +3800,7 @@ vhdl_sa1_test3	normal,-g2005-sv,-mvhdl_sys,ivltests/vhdl_sa1_test3.vhd	ivltests
 ibit_test	normal,-g2005-sv	ivltests
 bitp1	normal,-g2005-sv	ivltests
 logp2	normal,-g2005-sv	ivltests
+clkgen_bit	normal,-g2009	ivltests
+clkgen_logic	normal,-g2009	ivltests
+clkgen_net	normal,-g2009	ivltests
+clkgen_reg	normal,-g2009	ivltests
