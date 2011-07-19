@@ -1,0 +1,5 @@
+<>:0: error: Enumeration name some0 cannot have a value equal to 'sd100.
+<>:0: error: Enumeration name some1 cannot have a value equal to 'sd101.
+<>:0: error: Enumeration name some2 cannot have a value equal to 'sd102.
+<>:0: error: Enumeration name some3 cannot have a value equal to 'sd103.
+5 error(s) during elaboration.

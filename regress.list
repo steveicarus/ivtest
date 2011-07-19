@@ -1079,6 +1079,10 @@ v0.8:writemem-invalid	NI
 v0.8:bitp1	NI
 v0.8:bits	NI
 v0.8:bits2	NI
+v0.8:clkgen_bit	NI
+v0.8:clkgen_logic	NI
+v0.8:clkgen_net	NI
+v0.8:clkgen_reg	NI
 v0.8:fatal_et_al	NI
 v0.8:ibit_test	NI
 v0.8:ibyte_test	NI
@@ -1087,6 +1091,9 @@ v0.8:ilongint_test	NI
 v0.8:ishortint_test	NI
 v0.8:iuint1	NI
 v0.8:logp2	NI
+v0.8:pr3366217a	NI
+v0.8:pr3366217b	NI
+v0.8:pr3366217c	NI
 v0.8:sbyte_test	NI
 v0.8:simple_byte	NI
 v0.8:simple_int	NI
@@ -1421,6 +1428,10 @@ v0.8:writemem-error	EF	ivltests diff=log/writemem-error.log:gold/writemem-error.
 v0.9:bitp1	NI
 v0.9:bits	NI
 v0.9:bits2	NI
+v0.9:clkgen_bit	NI
+v0.9:clkgen_logic	NI
+v0.9:clkgen_net	NI
+v0.9:clkgen_reg	NI
 v0.9:enum_base_range	NI
 v0.9:enum_elem_ranges	NI
 v0.9:enum_next	NI
@@ -1438,6 +1449,9 @@ v0.9:ilongint_test	NI
 v0.9:ishortint_test	NI
 v0.9:iuint1		NI
 v0.9:logp2	NI
+v0.9:pr3366217a	NI
+v0.9:pr3366217b	NI
+v0.9:pr3366217c	NI
 v0.9:sbyte_test	NI
 v0.9:simple_byte	NI
 v0.9:simple_int	NI
@@ -3810,3 +3824,6 @@ clkgen_bit	normal,-g2009	ivltests
 clkgen_logic	normal,-g2009	ivltests
 clkgen_net	normal,-g2009	ivltests
 clkgen_reg	normal,-g2009	ivltests
+pr3366217a	CE,-g2005-sv	ivltests diff=log/pr3366217a.log:gold/pr3366217a.gold
+pr3366217b	CE,-g2005-sv	ivltests diff=log/pr3366217b.log:gold/pr3366217b.gold
+pr3366217c	CE,-g2005-sv	ivltests diff=log/pr3366217c.log:gold/pr3366217c.gold

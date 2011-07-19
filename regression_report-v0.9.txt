@@ -3,6 +3,10 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                       bitp1: Not Implemented.
                        bits: Not Implemented.
                       bits2: Not Implemented.
+                 clkgen_bit: Not Implemented.
+               clkgen_logic: Not Implemented.
+                 clkgen_net: Not Implemented.
+                 clkgen_reg: Not Implemented.
             enum_base_range: Not Implemented.
            enum_elem_ranges: Not Implemented.
                   enum_next: Not Implemented.
@@ -20,6 +24,9 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
              ishortint_test: Not Implemented.
                      iuint1: Not Implemented.
                       logp2: Not Implemented.
+                 pr3366217a: Not Implemented.
+                 pr3366217b: Not Implemented.
+                 pr3366217c: Not Implemented.
                  sbyte_test: Not Implemented.
                 simple_byte: Not Implemented.
                  simple_int: Not Implemented.
@@ -1673,4 +1680,4 @@ test_mos_strength_reduction: Passed.
                   pr3309391: Passed.
 ============================================================================
 Test results:
-  Total=1671, Passed=1537, Failed=1, Not Implemented=99, Expected Fail=34
+  Total=1678, Passed=1537, Failed=1, Not Implemented=106, Expected Fail=34

@@ -432,6 +432,10 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                       bitp1: Not Implemented.
                        bits: Not Implemented.
                       bits2: Not Implemented.
+                 clkgen_bit: Not Implemented.
+               clkgen_logic: Not Implemented.
+                 clkgen_net: Not Implemented.
+                 clkgen_reg: Not Implemented.
                 fatal_et_al: Not Implemented.
                   ibit_test: Not Implemented.
                  ibyte_test: Not Implemented.
@@ -440,6 +444,9 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
              ishortint_test: Not Implemented.
                      iuint1: Not Implemented.
                       logp2: Not Implemented.
+                 pr3366217a: Not Implemented.
+                 pr3366217b: Not Implemented.
+                 pr3366217c: Not Implemented.
                  sbyte_test: Not Implemented.
                 simple_byte: Not Implemented.
                  simple_int: Not Implemented.
@@ -1669,4 +1676,4 @@ test_mos_strength_reduction: Passed.
                   pr3292735: Passed.
 ============================================================================
 Test results:
-  Total=1667, Passed=1008, Failed=0, Not Implemented=534, Expected Fail=125
+  Total=1674, Passed=1008, Failed=0, Not Implemented=541, Expected Fail=125
