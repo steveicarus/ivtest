@@ -447,6 +447,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                  pr3366217a: Not Implemented.
                  pr3366217b: Not Implemented.
                  pr3366217c: Not Implemented.
+                 pr3366217d: Not Implemented.
+                 pr3366217e: Not Implemented.
                  sbyte_test: Not Implemented.
                 simple_byte: Not Implemented.
                  simple_int: Not Implemented.
@@ -527,6 +529,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
              vhdl_sa1_test1: Not Implemented.
              vhdl_sa1_test2: Not Implemented.
              vhdl_sa1_test3: Not Implemented.
+               test_inc_dec: Not Implemented.
+              test_tliteral: Not Implemented.
                  ivlh_event: Not Implemented.
                   pr1403406: Not Implemented.
                  pr1403406a: Not Implemented.
@@ -1676,4 +1680,4 @@ test_mos_strength_reduction: Passed.
                   pr3292735: Passed.
 ============================================================================
 Test results:
-  Total=1674, Passed=1008, Failed=0, Not Implemented=541, Expected Fail=125
+  Total=1678, Passed=1008, Failed=0, Not Implemented=545, Expected Fail=125

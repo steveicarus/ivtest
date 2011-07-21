@@ -1674,8 +1674,10 @@ test_mos_strength_reduction: Passed.
                  pr3366217a: Passed - CE.
                  pr3366217b: Passed - CE.
                  pr3366217c: Passed - CE.
+                 pr3366217d: Passed - CE.
+                 pr3366217e: Passed.
                test_inc_dec: Passed.
               test_tliteral: Passed.
 ============================================================================
 Test results:
-  Total=1676, Passed=1673, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1678, Passed=1675, Failed=3, Not Implemented=0, Expected Fail=0
