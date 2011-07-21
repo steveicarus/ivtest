@@ -1175,6 +1175,8 @@ v0.8:vhdl_signals	NI
 v0.8:vhdl_sa1_test1	NI
 v0.8:vhdl_sa1_test2	NI
 v0.8:vhdl_sa1_test3	NI
+v0.8:test_inc_dec	NI
+v0.8:test_tliteral	NI
 
 # v0.8 does not have the vhdl_sys module
 v0.8:ivlh_event	NI
@@ -1524,6 +1526,8 @@ v0.9:vhdl_signals	NI
 v0.9:vhdl_sa1_test1	NI
 v0.9:vhdl_sa1_test2	NI
 v0.9:vhdl_sa1_test3	NI
+v0.9:test_inc_dec	NI
+v0.9:test_tliteral	NI
 
 # v0.9 does not have the vhdl_sys module
 v0.9:ivlh_event	NI
@@ -3827,3 +3831,5 @@ clkgen_reg	normal,-g2009	ivltests
 pr3366217a	CE,-g2005-sv	ivltests diff=log/pr3366217a.log:gold/pr3366217a.gold
 pr3366217b	CE,-g2005-sv	ivltests diff=log/pr3366217b.log:gold/pr3366217b.gold
 pr3366217c	CE,-g2005-sv	ivltests diff=log/pr3366217c.log:gold/pr3366217c.gold
+test_inc_dec	normal,-g2009	ivltests
+test_tliteral	normal,-g2009	ivltests
