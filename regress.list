@@ -1179,6 +1179,7 @@ v0.8:vhdl_sa1_test2	NI
 v0.8:vhdl_sa1_test3	NI
 v0.8:test_inc_dec	NI
 v0.8:test_tliteral	NI
+v0.8:work7		NI
 
 # v0.8 does not have the vhdl_sys module
 v0.8:ivlh_event	NI
@@ -1532,6 +1533,7 @@ v0.9:vhdl_sa1_test2	NI
 v0.9:vhdl_sa1_test3	NI
 v0.9:test_inc_dec	NI
 v0.9:test_tliteral	NI
+v0.9:work7		NI
 
 # v0.9 does not have the vhdl_sys module
 v0.9:ivlh_event	NI
@@ -3839,3 +3841,4 @@ pr3366217d	CE,-g2005-sv	ivltests diff=log/pr3366217d.log:gold/pr3366217d.gold
 pr3366217e	normal,-g2005-sv	ivltests
 test_inc_dec	normal,-g2009	ivltests
 test_tliteral	normal,-g2009	ivltests
+work7		normal,-g2009,-fivltests/work7.cfg	ivltests
