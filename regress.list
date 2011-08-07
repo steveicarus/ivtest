@@ -3845,3 +3845,5 @@ test_inc_dec	normal,-g2009	ivltests
 test_tliteral	normal,-g2009	ivltests
 work7		normal,-g2009,-fivltests/work7.cfg	ivltests
 work7b		normal,-g2009,-fivltests/work7b.cfg	ivltests
+pr3368642	normal		ivltests
+v0.9:pr3368642	EF		ivltests

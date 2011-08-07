@@ -1680,6 +1680,7 @@ test_mos_strength_reduction: Passed.
               test_tliteral: Passed.
                       work7: Passed.
                      work7b: Passed.
+                  pr3368642: Passed.
 ============================================================================
 Test results:
-  Total=1680, Passed=1677, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1681, Passed=1678, Failed=3, Not Implemented=0, Expected Fail=0
