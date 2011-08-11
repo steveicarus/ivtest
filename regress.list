@@ -1181,6 +1181,7 @@ v0.8:test_inc_dec	NI
 v0.8:test_tliteral	NI
 v0.8:work7		NI
 v0.8:work7b		NI
+v0.8:final		NI
 
 # v0.8 does not have the vhdl_sys module
 v0.8:ivlh_event	NI
@@ -1536,6 +1537,7 @@ v0.9:test_inc_dec	NI
 v0.9:test_tliteral	NI
 v0.9:work7		NI
 v0.9:work7b		NI
+v0.9:final		NI
 
 # v0.9 does not have the vhdl_sys module
 v0.9:ivlh_event	NI
@@ -2155,6 +2157,9 @@ vlog95:ibyte_test	EF,-g2005-sv	ivltests
 vlog95:iint_test	EF,-g2005-sv	ivltests
 vlog95:ilongint_test	EF,-g2005-sv	ivltests
 vlog95:ishortint_test	EF,-g2005-sv	ivltests
+
+# No support for these SystemVerilog features
+vlog95:final		NI
 
 #==========
 # The default case.
@@ -3847,3 +3852,4 @@ work7		normal,-g2009,-fivltests/work7.cfg	ivltests
 work7b		normal,-g2009,-fivltests/work7b.cfg	ivltests
 pr3368642	normal		ivltests
 v0.9:pr3368642	EF		ivltests
+final           normal,-g2005-sv	ivltests gold=final.gold

@@ -82,6 +82,10 @@ v0.8:pr2971220   NI pr2971220.c	pr2971220.gold
 v0.8:pr2971220   NI pr2971220.c   pr2971220.gold
 v0.9:pr2971220   NI pr2971220.c   pr2971220.gold
 
+# V0.8, V0.9 do not support final blocks.
+v0.8:final       NI final.c final.gold
+v0.9:final       NI final.c final.gold
+
 # Add v0.8 overrides here.
 
 #==========
@@ -125,6 +129,7 @@ start_of_simtime1	normal start_of_simtime1.c	start_of_simtime1.log
 check_version	 normal	check_version.c	check_version.gold
 pr2966059        normal pr2966059.c   pr2966059.gold
 pr2971220        normal pr2971220.c   pr2971220.gold
+final            normal,-g2009 final.c final.gold
 
 # Add new tests here. If the test needs a compile option or a
 # different log file to run with an older versions or if it uses
