@@ -1177,6 +1177,7 @@ v0.8:vhdl_signals	NI
 v0.8:vhdl_sa1_test1	NI
 v0.8:vhdl_sa1_test2	NI
 v0.8:vhdl_sa1_test3	NI
+v0.8:vhdl_test1		NI
 v0.8:test_inc_dec	NI
 v0.8:test_tliteral	NI
 v0.8:work7		NI
@@ -1533,6 +1534,7 @@ v0.9:vhdl_signals	NI
 v0.9:vhdl_sa1_test1	NI
 v0.9:vhdl_sa1_test2	NI
 v0.9:vhdl_sa1_test3	NI
+v0.9:vhdl_test1		NI
 v0.9:test_inc_dec	NI
 v0.9:test_tliteral	NI
 v0.9:work7		NI
@@ -3834,6 +3836,7 @@ pr3309391	normal	ivltests
 ivlh_event	normal,-mvhdl_sys	ivltests	diff=log/ivlh_event.log:gold/ivlh_event.gold
 vhdl_sa1_test2	normal,-g2005-sv,ivltests/vhdl_sa1_test2.vhd	ivltests
 vhdl_sa1_test3	normal,-g2005-sv,-mvhdl_sys,ivltests/vhdl_sa1_test3.vhd	ivltests
+vhdl_test1	normal,-g2005-sv,ivltests/vhdl_test1.vhd	ivltests
 ibit_test	normal,-g2005-sv	ivltests
 bitp1	normal,-g2005-sv	ivltests
 logp2	normal,-g2005-sv	ivltests
