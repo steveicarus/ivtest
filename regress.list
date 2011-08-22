@@ -1182,6 +1182,7 @@ v0.8:test_tliteral	NI
 v0.8:work7		NI
 v0.8:work7b		NI
 v0.8:final		NI
+v0.8:plus_5		NI
 
 # v0.8 does not have the vhdl_sys module
 v0.8:ivlh_event	NI
@@ -1538,6 +1539,7 @@ v0.9:test_tliteral	NI
 v0.9:work7		NI
 v0.9:work7b		NI
 v0.9:final		NI
+v0.9:plus_5		NI
 
 # v0.9 does not have the vhdl_sys module
 v0.9:ivlh_event	NI
@@ -3853,3 +3855,4 @@ work7b		normal,-g2009,-fivltests/work7b.cfg	ivltests
 pr3368642	normal		ivltests
 v0.9:pr3368642	EF		ivltests
 final           normal,-g2005-sv	ivltests gold=final.gold
+plus_5		normal,-g2009		ivltests
