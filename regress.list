@@ -1083,7 +1083,17 @@ v0.8:clkgen_bit	NI
 v0.8:clkgen_logic	NI
 v0.8:clkgen_net	NI
 v0.8:clkgen_reg	NI
+v0.8:enum_base_range	NI
+v0.8:enum_elem_ranges	NI
+v0.8:enum_next	NI
+v0.8:enum_test1	NI
+v0.8:enum_value_expr	NI
+v0.8:enum_values	NI
 v0.8:fatal_et_al	NI
+v0.8:fileline	NI
+v0.8:fileline2	NI
+v0.8:final		NI
+v0.8:first_last_num	NI
 v0.8:ibit_test	NI
 v0.8:ibyte_test	NI
 v0.8:iint_test	NI
@@ -1091,6 +1101,7 @@ v0.8:ilongint_test	NI
 v0.8:ishortint_test	NI
 v0.8:iuint1	NI
 v0.8:logp2	NI
+v0.8:plus_5		NI
 v0.8:pr3366217a	NI
 v0.8:pr3366217b	NI
 v0.8:pr3366217c	NI
@@ -1109,20 +1120,13 @@ v0.8:sv-constants	NI
 v0.8:sv_timeunit_prec	NI
 v0.8:sv_timeunit_prec_fail	NI
 v0.8:sys_func_as_task	NI
+v0.8:test_inc_dec	NI
+v0.8:test_tliteral	NI
 v0.8:two_state_display	NI
 v0.8:ubyte_test	NI
 v0.8:uint_test	NI
 v0.8:ulongint_test	NI
 v0.8:ushortint_test	NI
-v0.8:enum_base_range	NI
-v0.8:enum_elem_ranges	NI
-v0.8:enum_next	NI
-v0.8:enum_test1	NI
-v0.8:enum_value_expr	NI
-v0.8:enum_values	NI
-v0.8:fileline	NI
-v0.8:fileline2	NI
-v0.8:first_last_num	NI
 v0.8:vhdl_and_gate	NI
 v0.8:vhdl_and104_stdlogic	NI
 v0.8:vhdl_and23_bit	NI
@@ -1178,12 +1182,8 @@ v0.8:vhdl_signals	NI
 v0.8:vhdl_sa1_test1	NI
 v0.8:vhdl_sa1_test2	NI
 v0.8:vhdl_sa1_test3	NI
-v0.8:test_inc_dec	NI
-v0.8:test_tliteral	NI
 v0.8:work7		NI
 v0.8:work7b		NI
-v0.8:final		NI
-v0.8:plus_5		NI
 
 # v0.8 does not have the vhdl_sys module
 v0.8:ivlh_event	NI
@@ -1451,6 +1451,7 @@ v0.9:enum_values	NI
 v0.9:fatal_et_al	NI
 v0.9:fileline	NI
 v0.9:fileline2	NI
+v0.9:final		NI
 v0.9:first_last_num	NI
 v0.9:ibit_test	NI
 v0.9:ibyte_test	NI
@@ -1459,6 +1460,7 @@ v0.9:ilongint_test	NI
 v0.9:ishortint_test	NI
 v0.9:iuint1		NI
 v0.9:logp2	NI
+v0.9:plus_5		NI
 v0.9:pr3366217a	NI
 v0.9:pr3366217b	NI
 v0.9:pr3366217c	NI
@@ -1477,6 +1479,8 @@ v0.9:sv-constants	NI
 v0.9:sv_timeunit_prec	NI
 v0.9:sv_timeunit_prec_fail	NI
 v0.9:sys_func_as_task	NI
+v0.9:test_inc_dec	NI
+v0.9:test_tliteral	NI
 v0.9:two_state_display	NI
 v0.9:ubyte_test	NI
 v0.9:uint_test	NI
@@ -1537,12 +1541,8 @@ v0.9:vhdl_signals	NI
 v0.9:vhdl_sa1_test1	NI
 v0.9:vhdl_sa1_test2	NI
 v0.9:vhdl_sa1_test3	NI
-v0.9:test_inc_dec	NI
-v0.9:test_tliteral	NI
 v0.9:work7		NI
 v0.9:work7b		NI
-v0.9:final		NI
-v0.9:plus_5		NI
 
 # v0.9 does not have the vhdl_sys module
 v0.9:ivlh_event	NI
