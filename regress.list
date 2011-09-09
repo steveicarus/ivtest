@@ -1109,6 +1109,7 @@ v0.8:sv-constants	NI
 v0.8:sv_timeunit_prec	NI
 v0.8:sv_timeunit_prec_fail	NI
 v0.8:sys_func_as_task	NI
+v0.8:two_state_display	NI
 v0.8:ubyte_test	NI
 v0.8:uint_test	NI
 v0.8:ulongint_test	NI
@@ -1476,6 +1477,7 @@ v0.9:sv-constants	NI
 v0.9:sv_timeunit_prec	NI
 v0.9:sv_timeunit_prec_fail	NI
 v0.9:sys_func_as_task	NI
+v0.9:two_state_display	NI
 v0.9:ubyte_test	NI
 v0.9:uint_test	NI
 v0.9:ulongint_test	NI
@@ -3857,3 +3859,4 @@ work7b		normal,-g2009,-fivltests/work7b.cfg	ivltests
 pr3368642	normal		ivltests
 final           normal,-g2005-sv	ivltests gold=final.gold
 plus_5		normal,-g2009		ivltests
+two_state_display	normal,-g2005-sv	ivltests gold=two_state_display.gold
