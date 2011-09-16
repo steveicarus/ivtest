@@ -819,6 +819,7 @@ v0.8:pr2842185	NI
 v0.8:pr2909414	NI
 v0.8:pr2924354	NI
 v0.8:pr3011327	NI
+v0.8:pr3409749	NI
 v0.8:scoped_events	NI
 v0.8:unnamed_generate_block	NI
 
@@ -3860,3 +3861,4 @@ pr3368642	normal		ivltests
 final           normal,-g2005-sv	ivltests gold=final.gold
 plus_5		normal,-g2009		ivltests
 two_state_display	normal,-g2005-sv	ivltests gold=two_state_display.gold
+pr3409749	normal		ivltests
