@@ -1181,6 +1181,7 @@ v0.8:vhdl_test1		NI
 v0.8:vhdl_test2		NI
 v0.8:vhdl_test3		NI
 v0.8:vhdl_test4		NI
+v0.8:vhdl_test5		NI
 v0.8:test_inc_dec	NI
 v0.8:test_tliteral	NI
 v0.8:work7		NI
@@ -1541,6 +1542,7 @@ v0.9:vhdl_test1		NI
 v0.9:vhdl_test2		NI
 v0.9:vhdl_test3		NI
 v0.9:vhdl_test4		NI
+v0.9:vhdl_test5		NI
 v0.9:test_inc_dec	NI
 v0.9:test_tliteral	NI
 v0.9:work7		NI
@@ -3846,6 +3848,7 @@ vhdl_test1	normal,-g2005-sv,ivltests/vhdl_test1.vhd	ivltests
 vhdl_test2	normal,-g2005-sv,ivltests/vhdl_test2.vhd	ivltests
 vhdl_test3	normal,-g2005-sv,ivltests/vhdl_test3.vhd	ivltests	diff=log/vhdl_test3.log:gold/vhdl_test3.gold
 vhdl_test4	normal,-g2005-sv,ivltests/vhdl_test4.vhd	ivltests
+vhdl_test5	normal,-g2005-sv,ivltests/vhdl_test5.vhd	ivltests
 ibit_test	normal,-g2005-sv	ivltests
 bitp1	normal,-g2005-sv	ivltests
 logp2	normal,-g2005-sv	ivltests
