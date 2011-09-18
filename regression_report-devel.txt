@@ -1684,6 +1684,7 @@ test_mos_strength_reduction: Passed.
                       final: Passed.
                      plus_5: Passed.
           two_state_display: Passed.
+                  pr3409749: Passed.
 ============================================================================
 Test results:
-  Total=1684, Passed=1681, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1685, Passed=1682, Failed=3, Not Implemented=0, Expected Fail=0
