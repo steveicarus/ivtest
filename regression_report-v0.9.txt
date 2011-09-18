@@ -1688,6 +1688,7 @@ test_mos_strength_reduction: Passed.
               gate_connect1: Passed.
               gate_connect2: Passed - CE.
                   pr3309391: Passed.
+                  pr3409749: Passed.
 ============================================================================
 Test results:
-  Total=1688, Passed=1537, Failed=1, Not Implemented=115, Expected Fail=35
+  Total=1689, Passed=1538, Failed=1, Not Implemented=115, Expected Fail=35
