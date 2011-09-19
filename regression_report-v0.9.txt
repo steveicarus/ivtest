@@ -16,7 +16,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                 fatal_et_al: Not Implemented.
                    fileline: Not Implemented.
                   fileline2: Not Implemented.
-                      final: Not Implemented.
              first_last_num: Not Implemented.
                   ibit_test: Not Implemented.
                  ibyte_test: Not Implemented.
@@ -44,8 +43,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
            sv_timeunit_prec: Not Implemented.
       sv_timeunit_prec_fail: Not Implemented.
            sys_func_as_task: Not Implemented.
-               test_inc_dec: Not Implemented.
-              test_tliteral: Not Implemented.
           two_state_display: Not Implemented.
                  ubyte_test: Not Implemented.
                   uint_test: Not Implemented.
@@ -105,8 +102,21 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
              vhdl_sa1_test1: Not Implemented.
              vhdl_sa1_test2: Not Implemented.
              vhdl_sa1_test3: Not Implemented.
+                 vhdl_test1: Not Implemented.
+                 vhdl_test2: Not Implemented.
+                 vhdl_test3: Not Implemented.
+                 vhdl_test4: Not Implemented.
+                 vhdl_test5: Not Implemented.
+                 vhdl_test6: Not Implemented.
+                 vhdl_test7: Not Implemented.
+                 vhdl_test8: Not Implemented.
+                 vhdl_test9: Not Implemented.
+               test_inc_dec: Not Implemented.
+              test_tliteral: Not Implemented.
                       work7: Not Implemented.
                      work7b: Not Implemented.
+                      final: Not Implemented.
+                  size_cast: Not Implemented.
                  ivlh_event: Not Implemented.
               cmdline_parm1: Not Implemented.
                     analog1: Not Implemented.
@@ -183,6 +193,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                   pr3368642: Passed - expected fail.
                       uwire: Passed.
                  uwire_fail: Passed.
+                  pr3015421: Passed - CE.
                       case1: Passed.
                       case2: Passed.
                       case4: Passed.
@@ -1638,7 +1649,6 @@ test_mos_strength_reduction: Passed.
                   pr3011327: Passed.
                   pr3012758: Passed.
         sys_func_task_error: Passed - RE.
-                  pr3015421: Passed - CE.
                   pr3022502: Passed.
                   pr3024131: Passed.
                   pr3039548: Passed.
@@ -1691,4 +1701,4 @@ test_mos_strength_reduction: Passed.
                   pr3409749: Passed.
 ============================================================================
 Test results:
-  Total=1689, Passed=1538, Failed=1, Not Implemented=115, Expected Fail=35
+  Total=1699, Passed=1538, Failed=1, Not Implemented=125, Expected Fail=35

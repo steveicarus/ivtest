@@ -1701,6 +1701,9 @@ v0.9:pr3368642	EF	ivltests
 v0.9:uwire	normal	ivltests diff=log/uwire.log:gold/uwire-v0.9.gold
 v0.9:uwire_fail	normal	ivltests diff=log/uwire_fail.log:gold/uwire_fail-v0.9.gold
 
+# v0.9 produces differnt output/warnings for these tests.
+v0.9:pr3015421	CE	ivltests diff=log/pr3015421.log:gold/pr3015421-v0.9.gold
+
 #==========
 # V0.9 doesn't support synthesis. Might as well run them as
 # non-synthesis tests, though.
