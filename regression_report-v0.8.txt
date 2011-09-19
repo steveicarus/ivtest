@@ -219,6 +219,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr2909414: Not Implemented.
                   pr2924354: Not Implemented.
                   pr3011327: Not Implemented.
+                  pr3409749: Not Implemented.
               scoped_events: Not Implemented.
      unnamed_generate_block: Not Implemented.
          mixed_type_div_mod: Not Implemented.
@@ -445,7 +446,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                 fatal_et_al: Not Implemented.
                    fileline: Not Implemented.
                   fileline2: Not Implemented.
-                      final: Not Implemented.
              first_last_num: Not Implemented.
                   ibit_test: Not Implemented.
                  ibyte_test: Not Implemented.
@@ -473,8 +473,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
            sv_timeunit_prec: Not Implemented.
       sv_timeunit_prec_fail: Not Implemented.
            sys_func_as_task: Not Implemented.
-               test_inc_dec: Not Implemented.
-              test_tliteral: Not Implemented.
           two_state_display: Not Implemented.
                  ubyte_test: Not Implemented.
                   uint_test: Not Implemented.
@@ -534,8 +532,21 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
              vhdl_sa1_test1: Not Implemented.
              vhdl_sa1_test2: Not Implemented.
              vhdl_sa1_test3: Not Implemented.
+                 vhdl_test1: Not Implemented.
+                 vhdl_test2: Not Implemented.
+                 vhdl_test3: Not Implemented.
+                 vhdl_test4: Not Implemented.
+                 vhdl_test5: Not Implemented.
+                 vhdl_test6: Not Implemented.
+                 vhdl_test7: Not Implemented.
+                 vhdl_test8: Not Implemented.
+                 vhdl_test9: Not Implemented.
+               test_inc_dec: Not Implemented.
+              test_tliteral: Not Implemented.
                       work7: Not Implemented.
                      work7b: Not Implemented.
+                      final: Not Implemented.
+                  size_cast: Not Implemented.
                  ivlh_event: Not Implemented.
                   pr1403406: Not Implemented.
                  pr1403406a: Not Implemented.
@@ -1686,4 +1697,4 @@ test_mos_strength_reduction: Passed.
                   pr3292735: Passed.
 ============================================================================
 Test results:
-  Total=1684, Passed=1008, Failed=0, Not Implemented=550, Expected Fail=126
+  Total=1695, Passed=1008, Failed=0, Not Implemented=561, Expected Fail=126
