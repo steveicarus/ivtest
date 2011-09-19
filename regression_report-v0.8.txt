@@ -436,7 +436,17 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                clkgen_logic: Not Implemented.
                  clkgen_net: Not Implemented.
                  clkgen_reg: Not Implemented.
+            enum_base_range: Not Implemented.
+           enum_elem_ranges: Not Implemented.
+                  enum_next: Not Implemented.
+                 enum_test1: Not Implemented.
+            enum_value_expr: Not Implemented.
+                enum_values: Not Implemented.
                 fatal_et_al: Not Implemented.
+                   fileline: Not Implemented.
+                  fileline2: Not Implemented.
+                      final: Not Implemented.
+             first_last_num: Not Implemented.
                   ibit_test: Not Implemented.
                  ibyte_test: Not Implemented.
                   iint_test: Not Implemented.
@@ -444,6 +454,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
              ishortint_test: Not Implemented.
                      iuint1: Not Implemented.
                       logp2: Not Implemented.
+                     plus_5: Not Implemented.
                  pr3366217a: Not Implemented.
                  pr3366217b: Not Implemented.
                  pr3366217c: Not Implemented.
@@ -462,19 +473,13 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
            sv_timeunit_prec: Not Implemented.
       sv_timeunit_prec_fail: Not Implemented.
            sys_func_as_task: Not Implemented.
+               test_inc_dec: Not Implemented.
+              test_tliteral: Not Implemented.
+          two_state_display: Not Implemented.
                  ubyte_test: Not Implemented.
                   uint_test: Not Implemented.
               ulongint_test: Not Implemented.
              ushortint_test: Not Implemented.
-            enum_base_range: Not Implemented.
-           enum_elem_ranges: Not Implemented.
-                  enum_next: Not Implemented.
-                 enum_test1: Not Implemented.
-            enum_value_expr: Not Implemented.
-                enum_values: Not Implemented.
-                   fileline: Not Implemented.
-                  fileline2: Not Implemented.
-             first_last_num: Not Implemented.
               vhdl_and_gate: Not Implemented.
        vhdl_and104_stdlogic: Not Implemented.
              vhdl_and23_bit: Not Implemented.
@@ -529,8 +534,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
              vhdl_sa1_test1: Not Implemented.
              vhdl_sa1_test2: Not Implemented.
              vhdl_sa1_test3: Not Implemented.
-               test_inc_dec: Not Implemented.
-              test_tliteral: Not Implemented.
+                      work7: Not Implemented.
+                     work7b: Not Implemented.
                  ivlh_event: Not Implemented.
                   pr1403406: Not Implemented.
                  pr1403406a: Not Implemented.
@@ -720,6 +725,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr3284821: Passed - expected fail.
                   pr3306516: Not Implemented.
                   pr3309391: Not Implemented.
+                  pr3368642: Passed - expected fail.
                      shift5: Passed - expected fail.
                    signed_a: Passed - expected fail.
             signed_equality: Passed - expected fail.
@@ -1680,4 +1686,4 @@ test_mos_strength_reduction: Passed.
                   pr3292735: Passed.
 ============================================================================
 Test results:
-  Total=1678, Passed=1008, Failed=0, Not Implemented=545, Expected Fail=125
+  Total=1684, Passed=1008, Failed=0, Not Implemented=550, Expected Fail=126

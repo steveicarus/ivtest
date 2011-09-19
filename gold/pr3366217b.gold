@@ -1,2 +1,2 @@
-<>:0: error: Enumeration name nega cannot have a value equal to 'sd-1.
+./ivltests/pr3366217b.v:3: error: Enumeration name nega cannot have a value equal to 'sd-1.
 2 error(s) during elaboration.

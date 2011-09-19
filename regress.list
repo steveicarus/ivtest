@@ -819,6 +819,7 @@ v0.8:pr2842185	NI
 v0.8:pr2909414	NI
 v0.8:pr2924354	NI
 v0.8:pr3011327	NI
+v0.8:pr3409749	NI
 v0.8:scoped_events	NI
 v0.8:unnamed_generate_block	NI
 
@@ -1083,7 +1084,17 @@ v0.8:clkgen_bit	NI
 v0.8:clkgen_logic	NI
 v0.8:clkgen_net	NI
 v0.8:clkgen_reg	NI
+v0.8:enum_base_range	NI
+v0.8:enum_elem_ranges	NI
+v0.8:enum_next	NI
+v0.8:enum_test1	NI
+v0.8:enum_value_expr	NI
+v0.8:enum_values	NI
 v0.8:fatal_et_al	NI
+v0.8:fileline	NI
+v0.8:fileline2	NI
+v0.8:final		NI
+v0.8:first_last_num	NI
 v0.8:ibit_test	NI
 v0.8:ibyte_test	NI
 v0.8:iint_test	NI
@@ -1091,6 +1102,7 @@ v0.8:ilongint_test	NI
 v0.8:ishortint_test	NI
 v0.8:iuint1	NI
 v0.8:logp2	NI
+v0.8:plus_5		NI
 v0.8:pr3366217a	NI
 v0.8:pr3366217b	NI
 v0.8:pr3366217c	NI
@@ -1109,19 +1121,13 @@ v0.8:sv-constants	NI
 v0.8:sv_timeunit_prec	NI
 v0.8:sv_timeunit_prec_fail	NI
 v0.8:sys_func_as_task	NI
+v0.8:test_inc_dec	NI
+v0.8:test_tliteral	NI
+v0.8:two_state_display	NI
 v0.8:ubyte_test	NI
 v0.8:uint_test	NI
 v0.8:ulongint_test	NI
 v0.8:ushortint_test	NI
-v0.8:enum_base_range	NI
-v0.8:enum_elem_ranges	NI
-v0.8:enum_next	NI
-v0.8:enum_test1	NI
-v0.8:enum_value_expr	NI
-v0.8:enum_values	NI
-v0.8:fileline	NI
-v0.8:fileline2	NI
-v0.8:first_last_num	NI
 v0.8:vhdl_and_gate	NI
 v0.8:vhdl_and104_stdlogic	NI
 v0.8:vhdl_and23_bit	NI
@@ -1427,6 +1433,7 @@ v0.8:pr3270320	NI	ivltests
 v0.8:pr3284821	EF	ivltests
 v0.8:pr3306516	NI	ivltests
 v0.8:pr3309391	NI	ivltests
+v0.8:pr3368642	EF	ivltests
 v0.8:shift5	EF	ivltests diff=log/shift5.log:gold/shift5.gold
 v0.8:signed_a	EF	ivltests
 v0.8:signed_equality	EF	ivltests
@@ -1458,6 +1465,7 @@ v0.9:enum_values	NI
 v0.9:fatal_et_al	NI
 v0.9:fileline	NI
 v0.9:fileline2	NI
+v0.9:final		NI
 v0.9:first_last_num	NI
 v0.9:ibit_test	NI
 v0.9:ibyte_test	NI
@@ -1466,6 +1474,7 @@ v0.9:ilongint_test	NI
 v0.9:ishortint_test	NI
 v0.9:iuint1		NI
 v0.9:logp2	NI
+v0.9:plus_5		NI
 v0.9:pr3366217a	NI
 v0.9:pr3366217b	NI
 v0.9:pr3366217c	NI
@@ -1484,6 +1493,9 @@ v0.9:sv-constants	NI
 v0.9:sv_timeunit_prec	NI
 v0.9:sv_timeunit_prec_fail	NI
 v0.9:sys_func_as_task	NI
+v0.9:test_inc_dec	NI
+v0.9:test_tliteral	NI
+v0.9:two_state_display	NI
 v0.9:ubyte_test	NI
 v0.9:uint_test	NI
 v0.9:ulongint_test	NI
@@ -1683,6 +1695,7 @@ v0.9:pr2976242b	CE	ivltests
 v0.9:pr2976242c	CE	ivltests
 v0.9:pr2985542	EF	ivltests
 v0.9:pr3270320	NI	ivltests
+v0.9:pr3368642	EF	ivltests
 
 # v0.9 does not support the uwire check and always prints a warning message.
 v0.9:uwire	normal	ivltests diff=log/uwire.log:gold/uwire-v0.9.gold
@@ -3880,6 +3893,8 @@ test_tliteral	normal,-g2009	ivltests
 work7		normal,-g2009,-fivltests/work7.cfg	ivltests
 work7b		normal,-g2009,-fivltests/work7b.cfg	ivltests
 pr3368642	normal		ivltests
-v0.9:pr3368642	EF		ivltests
 final           normal,-g2005-sv	ivltests gold=final.gold
 size_cast	normal,-g2009	ivltests
+plus_5		normal,-g2009		ivltests
+two_state_display	normal,-g2005-sv	ivltests gold=two_state_display.gold
+pr3409749	normal		ivltests
