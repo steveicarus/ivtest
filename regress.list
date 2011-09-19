@@ -1185,11 +1185,13 @@ v0.8:vhdl_test5		NI
 v0.8:vhdl_test6		NI
 v0.8:vhdl_test7		NI
 v0.8:vhdl_test8		NI
+v0.8:vhdl_test9		NI
 v0.8:test_inc_dec	NI
 v0.8:test_tliteral	NI
 v0.8:work7		NI
 v0.8:work7b		NI
 v0.8:final		NI
+v0.8:size_cast		NI
 
 # v0.8 does not have the vhdl_sys module
 v0.8:ivlh_event	NI
@@ -1549,11 +1551,13 @@ v0.9:vhdl_test5		NI
 v0.9:vhdl_test6		NI
 v0.9:vhdl_test7		NI
 v0.9:vhdl_test8		NI
+v0.9:vhdl_test9		NI
 v0.9:test_inc_dec	NI
 v0.9:test_tliteral	NI
 v0.9:work7		NI
 v0.9:work7b		NI
 v0.9:final		NI
+v0.9:size_cast		NI
 
 # v0.9 does not have the vhdl_sys module
 v0.9:ivlh_event	NI
@@ -3858,6 +3862,7 @@ vhdl_test5	normal,-g2005-sv,ivltests/vhdl_test5.vhd	ivltests
 vhdl_test6	normal,-g2005-sv,ivltests/vhdl_test6.vhd	ivltests
 vhdl_test7	normal,-g2005-sv,ivltests/vhdl_test7.vhd	ivltests
 vhdl_test8	normal,-g2005-sv,ivltests/vhdl_test8.vhd	ivltests
+vhdl_test9	normal,-g2005-sv,ivltests/vhdl_test9.vhd	ivltests
 ibit_test	normal,-g2005-sv	ivltests
 bitp1	normal,-g2005-sv	ivltests
 logp2	normal,-g2005-sv	ivltests
@@ -3877,3 +3882,4 @@ work7b		normal,-g2009,-fivltests/work7b.cfg	ivltests
 pr3368642	normal		ivltests
 v0.9:pr3368642	EF		ivltests
 final           normal,-g2005-sv	ivltests gold=final.gold
+size_cast	normal,-g2009	ivltests
