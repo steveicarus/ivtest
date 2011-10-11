@@ -1,5 +1,7 @@
 #include "veriuser.h"
 
+extern PLI_INT32 tf_getlongsimtime(PLI_INT32 *high);
+
 static int
 mytest(int ud, int reason)
 {
@@ -22,6 +24,9 @@ mytest(int ud, int reason)
     lt = tf_igetlongtime(&ht, inst);
     io_printf("\ttf_igetlongtime(inst)\t\t-> %d/%d\n", (int)ht, (int)lt);
     
+    lt = tf_getlongsimtime(&ht);
+    io_printf("\ttf_getlongsimtime()\t\t-> %d/%d\n", (int)ht, (int)lt);
+
     lt = tf_gettimeprecision();
     io_printf("\ttf_gettimeprecision()\t\t-> %d\n", (int)lt);
 
