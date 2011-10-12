@@ -462,6 +462,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                  pr3366217e: Not Implemented.
                  pr3366217f: Not Implemented.
                  pr3366217g: Not Implemented.
+                 pr3366217h: Not Implemented.
+                 pr3366217i: Not Implemented.
                  sbyte_test: Not Implemented.
                 simple_byte: Not Implemented.
                  simple_int: Not Implemented.
@@ -1699,4 +1701,4 @@ test_mos_strength_reduction: Passed.
                   pr3292735: Passed.
 ============================================================================
 Test results:
-  Total=1697, Passed=1008, Failed=0, Not Implemented=563, Expected Fail=126
+  Total=1699, Passed=1008, Failed=0, Not Implemented=565, Expected Fail=126
