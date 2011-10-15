@@ -1110,6 +1110,8 @@ v0.8:pr3366217d	NI
 v0.8:pr3366217e	NI
 v0.8:pr3366217f	NI
 v0.8:pr3366217g	NI
+v0.8:pr3366217h	NI
+v0.8:pr3366217i	NI
 v0.8:sbyte_test	NI
 v0.8:simple_byte	NI
 v0.8:simple_int	NI
@@ -1484,6 +1486,8 @@ v0.9:pr3366217d	NI
 v0.9:pr3366217e	NI
 v0.9:pr3366217f	NI
 v0.9:pr3366217g	NI
+v0.9:pr3366217h	NI
+v0.9:pr3366217i	NI
 v0.9:sbyte_test	NI
 v0.9:simple_byte	NI
 v0.9:simple_int	NI
@@ -3897,6 +3901,8 @@ pr3366217d	CE,-g2005-sv	ivltests diff=log/pr3366217d.log:gold/pr3366217d.gold
 pr3366217e	normal,-g2005-sv	ivltests
 pr3366217f	normal,-g2005-sv	ivltests diff=log/pr3366217f.log:gold/pr3366217f.gold
 pr3366217g	CE,-g2005-sv	ivltests diff=log/pr3366217g.log:gold/pr3366217g.gold
+pr3366217h	normal,-g2005-sv	ivltests
+pr3366217i	normal,-g2005-sv	ivltests
 test_inc_dec	normal,-g2009	ivltests
 test_tliteral	normal,-g2009	ivltests
 work7		normal,-g2009,-fivltests/work7.cfg	ivltests
