@@ -7,7 +7,7 @@ module test;
 	// $dumpvars;
 	#0;
 	r_Poke = 0;
-	#50 $finish;
+	#51 $finish;
     end
 
     always @(r_Poke) begin

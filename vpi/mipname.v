@@ -1,13 +1,13 @@
 module test3;
-    initial $mytest;
+    initial #1 $mytest;
 endmodule
 
 module test2;
-    initial $mytest;
+    initial #2 $mytest;
     test3 t3();
 endmodule
 
 module test;
-    initial $mytest;
+    initial #3 $mytest;
     test2 t2();
 endmodule

@@ -21,7 +21,9 @@ module test;
   
   initial
     begin
-      #0 a = 0; b = 0; ci = 0;
+      #0 a = 0;
+      #0 b = 0;
+      #0 ci = 0;
       #10 a = 1;
       #10 a = 0;
       #10 b = 1;
@@ -47,12 +49,13 @@ module addbit (a, b, ci, sum, co);
   assign n3 = n1 & ci;
   assign co = n2 | n3;
 */
-  xor    (n1, a, b);
-  xor    (sum, n1, ci);
-  and    (n2, a, b);
-  and    (n3, n1, ci);
-  or     (co, n2, n3);
+  // Gate delays are used to ensure the signal changes occur in a
+  // defined order.
+  xor    #1 (n1, a, b);
+  and    #2 (n2, a, b);
+  and    #3 (n3, n1, ci);
+  xor    #4 (sum, n1, ci);
+  or     #4 (co, n2, n3);
 
 endmodule
 /*********************************************************************/
-

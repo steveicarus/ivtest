@@ -21,12 +21,12 @@ module test;
 	reg foo;
 
 	initial begin
-		foo=0;
+		#0 foo=0;
 		forever #10 foo=~foo;
 	end
 
 	initial begin
-		#100 $finish;
+		#101 $finish;
 	end
 
 	initial

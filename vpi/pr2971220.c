@@ -8,10 +8,9 @@
  */
 
 /*
- * Set the following when compiling if the call handle is supported:
- *   SYSTF_INFO_SUPPORTS_CALLH
+ * Set the following when compiling if the call handle is not supported:
+ *   SYSTF_INFO_CALLH_NOT_SUPPORTED
  */
-#define SYSTF_INFO_SUPPORTS_CALLH
 
 static vpiHandle registered_task_as;
 static vpiHandle registered_func_as;
@@ -90,7 +89,9 @@ static PLI_INT32 sys_check_sys_task_calltf(PLI_BYTE8 *name)
 	    } else {
 		  vpi_printf("passed.\n");
 	    }
-#ifdef SYSTF_INFO_SUPPORTS_CALLH
+#ifdef SYSTF_INFO_CALLH_NOT_SUPPORTED
+	    vpi_printf("  vpi_get_systf_info (callh): not supported.\n");
+#else
 	      /* This is not supported by all simulators. */
 	    vpi_get_systf_info(callh, &tf_data);
 	    vpi_printf("  vpi_get_systf_info (callh): ");
@@ -158,7 +159,9 @@ static PLI_INT32 sys_check_sys_func_calltf(PLI_BYTE8 *name)
 	    } else {
 		  vpi_printf("passed.\n");
 	    }
-#ifdef SYSTF_INFO_SUPPORTS_CALLH
+#ifdef SYSTF_INFO_CALLH_NOT_SUPPORTED
+	    vpi_printf("  vpi_get_systf_info (callh): not supported.\n");
+#else
 	      /* This is not supported by all simulators. */
 	    vpi_get_systf_info(callh, &tf_data);
 	    vpi_printf("  vpi_get_systf_info (callh): ");

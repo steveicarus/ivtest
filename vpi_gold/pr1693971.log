@@ -10,11 +10,5 @@ $my_pow PLI compiletf function.
 $my_pow StartOfSim callback.
 
 Start simulation pow_test.v
-
-$my_pow PLI calltf function.
-
 $my_pow(2,3) returns          8
-
-$my_pow PLI calltf function.
-
 $my_pow(a,b) returns          1 (a=1 b=0)

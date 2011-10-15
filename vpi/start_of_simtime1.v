@@ -1,3 +1,7 @@
+// When registering a simulation time callback, some simulators interpret
+// the specified time value as relative to the current simulation time. To
+// support this case, define the macro CB_TIME_IS_RELATIVE when compiling
+// this module.
 
 module main;
 
@@ -7,6 +11,9 @@ module main;
       val = 0;
       #1 $poke_at_simtime(val, 1, 10);
 
+`ifdef CB_TIME_IS_RELATIVE
+      #1;
+`endif
       #8 if (val !== 0) begin
 	 $display("FAILED -- val==%0d before delayed poke", val);
 	 $finish;
