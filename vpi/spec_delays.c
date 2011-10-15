@@ -61,16 +61,18 @@ static PLI_INT32 dump_specify_calltf(PLI_BYTE8*name)
 	    struct t_vpi_time delay_times[12];
 	    struct t_vpi_delay delays;
 	    for (item = vpi_scan(argv); item; item = vpi_scan(argv)) {
-		  vpiHandle in_term = vpi_handle(vpiModPathIn, item);
-		  vpiHandle in_expr = in_term? vpi_handle(vpiExpr, in_term): 0;
-		  vpiHandle out_term = vpi_handle(vpiModPathOut, item);
-		  vpiHandle out_expr = vpi_handle(vpiExpr, out_term);
-		  char*in_str = in_expr? strdup(vpi_get_str(vpiName, in_expr)) : 0;
-		  vpi_printf("**    got path: %s --> %s\n",
-			     in_str? in_str : "?",
-			     vpi_get_str(vpiName, out_expr));
-
-		  if (in_str) free(in_str);
+		  vpiHandle in_argv = vpi_iterate(vpiModPathIn, item);
+		  vpiHandle in_term = in_argv ? vpi_scan(in_argv) : 0;
+		  vpiHandle in_expr = in_term ? vpi_handle(vpiExpr, in_term) : 0;
+		  if (in_argv) vpi_free_object(in_argv);
+		  vpiHandle out_argv = vpi_iterate(vpiModPathOut, item);
+		  vpiHandle out_term = out_argv ? vpi_scan(out_argv) : 0;
+		  vpiHandle out_expr = out_term ? vpi_handle(vpiExpr, out_term) : 0;
+		  if (out_argv) vpi_free_object(out_argv);
+		  vpi_printf("**    got path: %s ",
+			     in_expr  ? vpi_get_str(vpiName, in_expr)  : "?");
+		  vpi_printf("--> %s\n",
+			     out_expr ? vpi_get_str(vpiName, out_expr) : "?");
 
 		  delays.da = delay_times;
 		  delays.no_of_delays = 12;
