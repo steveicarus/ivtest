@@ -50,7 +50,7 @@ CallbackPeek(s_cb_data *data) {
 static vpiHandle
 FindPoke(const char *name)
 {
-    vpiHandle	module, iterate, handle, rtn = NULL;
+    vpiHandle	module, iterate, handle;
 
     // get top module handle
     iterate = vpi_iterate(vpiModule, NULL);
@@ -64,7 +64,6 @@ FindPoke(const char *name)
     if (iterate != NULL) {
 	while ((handle = vpi_scan(iterate))) {
 	    if (!strcmp(name, vpi_get_str(vpiName, handle))) {
-		rtn = handle;
 		vpi_free_object(iterate);
 		break;
 	    }
