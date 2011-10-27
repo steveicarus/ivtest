@@ -81,6 +81,8 @@ v0.8:pr2971220   NI pr2971220.c	pr2971220.gold
 # V0.8, V0.9 do not support vpi_get_systf_info(), etc.
 v0.8:pr2971220   NI pr2971220.c   pr2971220.gold
 v0.9:pr2971220   NI pr2971220.c   pr2971220.gold
+# V0.8 does not have the updated definition for getlongsimtime().
+v0.8:timescale        normal timescale.c   timescale-v0.8.log
 
 # V0.8, V0.9 do not support final blocks.
 v0.8:final       NI final.c final.gold
