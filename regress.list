@@ -3911,3 +3911,4 @@ test_mux2to1	normal,-g2009,ivltests/mux2to1.vhd	ivltests
 test_dec2to4	normal,-g2009,ivltests/dec2to4.vhd	ivltests
 test_enumsystem	normal,-g2009,ivltests/enumsystem.vhd	ivltests
 test_timebase	normal,-g2009,ivltests/timebase.vhd	ivltests
+test_system	normal,-g2009,ivltests/system.vhd	ivltests
