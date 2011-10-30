@@ -3912,3 +3912,4 @@ test_dec2to4	normal,-g2009,ivltests/dec2to4.vhd	ivltests
 test_enumsystem	normal,-g2009,ivltests/enumsystem.vhd	ivltests
 test_timebase	normal,-g2009,ivltests/timebase.vhd	ivltests
 test_system	normal,-g2009,ivltests/system.vhd	ivltests
+test_signal_init_assign	normal,-g2009,ivltests/signal_init_assign.vhd	ivltests
