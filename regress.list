@@ -960,6 +960,7 @@ v0.8:scanf	NI
 v0.8:scan-invalid	NI
 v0.8:scanf2	NI
 v0.8:scanf3	NI
+v0.8:scanf4	NI
 
 # V0.8 does not support $sdf_annotate.
 v0.8:pr2972866	NI
@@ -3025,6 +3026,7 @@ genloop		normal	ivltests
 scanf		normal	ivltests
 scanf2		normal	ivltests
 scanf3		normal	ivltests
+scanf4		normal	ivltests
 scan-invalid	normal	ivltests diff=log/scan-invalid.log:gold/scan-invalid.gold
 pr1403406	normal	ivltests diff=log/pr1403406.log:gold/pr1403406.gold
 pr1403406a	normal,-fivltests/pr1403406-1.cf  ivltests diff=log/pr1403406a.log:gold/pr1403406a.gold

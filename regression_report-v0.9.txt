@@ -1005,6 +1005,7 @@ test_mos_strength_reduction: Passed.
                       scanf: Passed.
                      scanf2: Passed.
                      scanf3: Passed.
+                     scanf4: Passed.
                scan-invalid: Passed.
                   pr1403406: Passed.
                  pr1403406a: Passed.
@@ -1705,4 +1706,4 @@ test_mos_strength_reduction: Passed.
                   pr3409749: Passed.
 ============================================================================
 Test results:
-  Total=1703, Passed=1538, Failed=1, Not Implemented=129, Expected Fail=35
+  Total=1704, Passed=1539, Failed=1, Not Implemented=129, Expected Fail=35
