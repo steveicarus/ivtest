@@ -16,7 +16,7 @@ Module usns
 	tf_strgettime()			-> 123000
 	tf_getlongtime()		-> 0/123
 	tf_igetlongtime(inst)		-> 0/123
-	tf_getlongsimtime()		-> 0/123000
+	tf_getlongsimtime()		-> 0/123
 	tf_gettimeprecision()		-> -9
 	tf_igettimeprecision(inst)	-> -9
 	tf_gettimeunit()		-> -6

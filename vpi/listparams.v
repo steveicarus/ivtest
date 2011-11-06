@@ -18,7 +18,7 @@
 
 module main;
 
-   parameter foo = 5;
+   parameter foo = 4'b0101;
    parameter str = "String Text";
 
    initial begin

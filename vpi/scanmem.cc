@@ -87,7 +87,6 @@ extern "C" PLI_INT32 MemPoke(PLI_BYTE8 *)
 {
     vpiHandle	mod_h, mem_h, iterate, handle;
     s_vpi_value	value;
-    int		cnt = 1;
 
     vpi_printf("MemPoke Callback\n");
 
@@ -119,8 +118,9 @@ extern "C" PLI_INT32 MemPoke(PLI_BYTE8 *)
     // Poke memory using integers
     iterate = vpi_iterate(vpiMemoryWord, mem_h);
     while ((handle = vpi_scan(iterate))) {
-	value.format=vpiIntVal;
-	value.value.integer = REP4(cnt); cnt++;
+	value.format = vpiIntVal;
+	vpi_get_value(vpi_handle(vpiIndex, handle), &value);
+	value.value.integer = REP4(1 + value.value.integer);
 	if (vpi_get(vpiSize, handle) < 32) {
 	    value.value.integer &= ~((1 << vpi_get(vpiSize, handle)) - 1);
 	}

@@ -31,9 +31,11 @@ module test;
         // access some of the files
         $fdisplay(1, "write to MCD 1");
         $fdisplay(2, "write to MCD 2");
+        $fflush;
         $fdisplay(32'h8000_0000, "write to FD 0"); // stdin so invisible
         $fdisplay(32'h8000_0001, "write to FD 1");
-        $fdisplay(32'h8000_0002, "write to FD 2");
+        $fdisplay(32'h8000_0002, "write to FD 2"); // stderr is normally unbuffered
+                                                   // so will appear before stdout
 
         // close all the stuff we opened
         $display("Close some files");
