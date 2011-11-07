@@ -330,6 +330,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                scan-invalid: Not Implemented.
                      scanf2: Not Implemented.
                      scanf3: Not Implemented.
+                     scanf4: Not Implemented.
                   pr2972866: Not Implemented.
                        sdf1: Not Implemented.
                        sdf2: Not Implemented.
@@ -346,6 +347,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                     abstime: Not Implemented.
                       clog2: Not Implemented.
                clog2-signal: Not Implemented.
+              delayed_sfunc: Not Implemented.
                      fileio: Not Implemented.
                       fread: Not Implemented.
                 fread-error: Not Implemented.
@@ -563,6 +565,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                    specify3: Passed - CO.
                    specify4: Passed - CO.
                    specify5: Passed - CO.
+               par_mismatch: Passed - CO.
                  pr2829776b: Passed - CO.
                       pr183: Passed - CO.
                   pr1467825: Passed - CO.
@@ -1701,4 +1704,4 @@ test_mos_strength_reduction: Passed.
                   pr3292735: Passed.
 ============================================================================
 Test results:
-  Total=1699, Passed=1008, Failed=0, Not Implemented=565, Expected Fail=126
+  Total=1702, Passed=1009, Failed=0, Not Implemented=567, Expected Fail=126

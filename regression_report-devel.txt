@@ -1709,6 +1709,8 @@ test_mos_strength_reduction: Passed.
                 test_forgen: Passed.
                   test_gxor: Passed.
                test_varray1: Passed.
+              delayed_sfunc: Passed.
+               par_mismatch: Passed - CE.
 ============================================================================
 Test results:
-  Total=1709, Passed=1706, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1711, Passed=1708, Failed=3, Not Implemented=0, Expected Fail=0

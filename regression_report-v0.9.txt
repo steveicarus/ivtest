@@ -159,6 +159,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                   pr3149494: Passed - expected fail.
                   pr3284821: Passed - expected fail.
                   pr2877564: Passed - CE.
+              delayed_sfunc: Passed.
                    specify5: Passed.
                       pr377: Passed.
                       pr528: Passed.
@@ -1704,6 +1705,7 @@ test_mos_strength_reduction: Passed.
               gate_connect2: Passed - CE.
                   pr3309391: Passed.
                   pr3409749: Passed.
+               par_mismatch: Passed - CE.
 ============================================================================
 Test results:
-  Total=1704, Passed=1539, Failed=1, Not Implemented=129, Expected Fail=35
+  Total=1706, Passed=1541, Failed=1, Not Implemented=129, Expected Fail=35
