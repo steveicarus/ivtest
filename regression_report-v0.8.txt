@@ -551,6 +551,15 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
               test_tliteral: Not Implemented.
                       work7: Not Implemented.
                      work7b: Not Implemented.
+               test_mux2to1: Not Implemented.
+               test_dec2to4: Not Implemented.
+            test_enumsystem: Not Implemented.
+              test_timebase: Not Implemented.
+                test_system: Not Implemented.
+    test_signal_init_assign: Not Implemented.
+                test_forgen: Not Implemented.
+                  test_gxor: Not Implemented.
+               test_varray1: Not Implemented.
                       final: Not Implemented.
                   size_cast: Not Implemented.
                  ivlh_event: Not Implemented.
@@ -1704,4 +1713,4 @@ test_mos_strength_reduction: Passed.
                   pr3292735: Passed.
 ============================================================================
 Test results:
-  Total=1702, Passed=1009, Failed=0, Not Implemented=567, Expected Fail=126
+  Total=1711, Passed=1009, Failed=0, Not Implemented=576, Expected Fail=126
