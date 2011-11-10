@@ -981,6 +981,7 @@ v0.8:sdf_esc_id	NI
 v0.8:abstime	NI # $abstime not supported.
 v0.8:clog2	NI # $clog2 not supported.
 v0.8:clog2-signal	NI # $clog2 not supported.
+v0.8:delayed_sfunc	NI # $clog2, specify block delays not supported.
 v0.8:fileio	NI # $fopen{r,w,a) not supported.
 v0.8:fread	NI # $fread not supported.
 v0.8:fread-error	NI # $sfread not supported.
@@ -1234,6 +1235,7 @@ v0.8:specify2	CO	ivltests
 v0.8:specify3	CO	ivltests
 v0.8:specify4	CO	ivltests
 v0.8:specify5	CO	ivltests
+v0.8:par_mismatch	CO	ivltests
 v0.8:pr2829776b	CO	ivltests
 
 # V0.8 does not support -gno-specify (it is implicit).
@@ -1684,6 +1686,7 @@ v0.9:pr2877564	CE	ivltests diff=log/pr2877564.log:gold/pr2877564-v0.9.gold
 #==========
 # V0.9 has different T0 values for nets (z vs x). No transitions to x at T0.
 #==========
+v0.9:delayed_sfunc	normale,-gspecify	ivltests diff=log/delayed_sfunc.log:gold/delayed_sfunc-v0.9.gold
 v0.9:specify5	normal,-gspecify  ivltests diff=log/specify5.log:gold/specify5-v0.9.gold
 v0.9:pr377	normal	ivltests diff=log/pr377.log:gold/pr377-v0.9.gold
 v0.9:pr528	normal	ivltests diff=log/pr528.log:gold/pr528-v0.9.gold
@@ -3944,3 +3947,5 @@ test_signal_init_assign	normal,-g2009,ivltests/signal_init_assign.vhd	ivltests
 test_forgen	normal,-g2009,ivltests/forgen.vhd	ivltests
 test_gxor	normal,-g2009,ivltests/gxor.vhd	ivltests
 test_varray1	normal,-g2009,ivltests/varray1.vhd	ivltests
+delayed_sfunc	normale,-gspecify	ivltests diff=log/delayed_sfunc.log:gold/delayed_sfunc.gold
+par_mismatch	CE,-gspecify	ivltests

@@ -330,6 +330,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                scan-invalid: Not Implemented.
                      scanf2: Not Implemented.
                      scanf3: Not Implemented.
+                     scanf4: Not Implemented.
                   pr2972866: Not Implemented.
                        sdf1: Not Implemented.
                        sdf2: Not Implemented.
@@ -346,6 +347,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                     abstime: Not Implemented.
                       clog2: Not Implemented.
                clog2-signal: Not Implemented.
+              delayed_sfunc: Not Implemented.
                      fileio: Not Implemented.
                       fread: Not Implemented.
                 fread-error: Not Implemented.
@@ -549,6 +551,15 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
               test_tliteral: Not Implemented.
                       work7: Not Implemented.
                      work7b: Not Implemented.
+               test_mux2to1: Not Implemented.
+               test_dec2to4: Not Implemented.
+            test_enumsystem: Not Implemented.
+              test_timebase: Not Implemented.
+                test_system: Not Implemented.
+    test_signal_init_assign: Not Implemented.
+                test_forgen: Not Implemented.
+                  test_gxor: Not Implemented.
+               test_varray1: Not Implemented.
                       final: Not Implemented.
                   size_cast: Not Implemented.
                  ivlh_event: Not Implemented.
@@ -563,6 +574,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                    specify3: Passed - CO.
                    specify4: Passed - CO.
                    specify5: Passed - CO.
+               par_mismatch: Passed - CO.
                  pr2829776b: Passed - CO.
                       pr183: Passed - CO.
                   pr1467825: Passed - CO.
@@ -1701,4 +1713,4 @@ test_mos_strength_reduction: Passed.
                   pr3292735: Passed.
 ============================================================================
 Test results:
-  Total=1699, Passed=1008, Failed=0, Not Implemented=565, Expected Fail=126
+  Total=1711, Passed=1009, Failed=0, Not Implemented=576, Expected Fail=126
