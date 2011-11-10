@@ -15,6 +15,9 @@ entity test is
 
 end test;
 
+library ieee;
+use ieee.std_logic_1164.all;
+
 entity reg_xor is
   port (clk : in std_logic;   
         src0, src1 : in  std_logic;
@@ -37,8 +40,9 @@ begin
 end operation;
 
 architecture operation of reg_xor is
-  signal tmp : std_logic := src0 xor src1;
+  signal tmp : std_logic;
 begin
+  tmp <= src0 xor src1;
   step: process (clk)
   begin  -- process step
     if  clk'event and clk = '1' then  -- rising clock edge

@@ -20,6 +20,8 @@ end component;
 
 end package;
 
+library ieee;
+use ieee.std_logic_1164.all;
 use work.diq_pkg.all;
 
 entity diq_array is
@@ -64,6 +66,9 @@ xout <= x_path(size);
 lout <= l_int(size);
 end systolic;
 
+library ieee;
+use ieee.std_logic_1164.all;
+use work.diq_pkg.all;
 
 entity diq is
 generic (n: integer := 8);
@@ -137,7 +142,9 @@ end diq_wordlevel;
 
 
 
-
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
 
 entity Inc_Synth is
 	generic (n: integer := 8);
@@ -152,6 +159,10 @@ begin
 cx <= ('0' & a) +  '1';
 sum <= cx (n-1 downto 0);
 end compact_inc;
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
 
 entity Add_Synth is
 	generic (n: integer := 8);

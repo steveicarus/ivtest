@@ -13,12 +13,12 @@ entity test is
 end test;
 
 architecture operation of test is
-  signal tmp : std_logic := PARM xor src;
+  signal tmp : std_logic := PARM;
 begin
   step: process (clk)
   begin  -- process step
     if  clk'event and clk = '1' then  -- rising clock edge
-      dst <= tmp;
+      dst <= tmp xor src;
     end if;
   end process step;
 end operation;

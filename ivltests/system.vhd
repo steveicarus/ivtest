@@ -16,6 +16,8 @@ port (clk, reset: in std_logic;
 	  y: out std_logic_vector (10 downto 0) );
 end Const_system;
 
+library ieee;
+use ieee.std_logic_1164.all;
 
 entity Add is
 	generic (n: integer := 8);
@@ -24,12 +26,18 @@ entity Add is
 		  cin: in std_logic );
 end Add;
 
+library ieee;
+use ieee.std_logic_1164.all;
+
 entity Inc is
 	generic (n: integer := 8);
 	port (a: in std_logic_vector (n-1 downto 0);
 		  sum: out std_logic_vector (n-1 downto 0)
 		  );
 end Inc;
+
+library ieee;
+use ieee.std_logic_1164.all;
 
 entity Reg_N is
 	generic (n: integer := 4);
@@ -110,6 +118,9 @@ RegY: Reg_N generic map (n => 11)
 
 end System_rtl;
 
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
 
 architecture Add_rtl of Add is
 signal cx: std_logic_vector (n downto 0);
@@ -118,12 +129,19 @@ cx <= ('0' & a) + ('0' & b) + cin;
 sum <= cx (n-1 downto 0);
 end Add_rtl;
 
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
 architecture Inc_rtl of Inc is
 signal cx: std_logic_vector (n downto 0);
 begin
 cx <= ('0' & a) +  '1';
 sum <= cx (n-1 downto 0);
 end Inc_rtl;
+
+library ieee;
+use ieee.std_logic_1164.all;
 
 architecture Reg_rtl of Reg_N is
 begin
