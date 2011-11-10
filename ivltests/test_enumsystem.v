@@ -36,6 +36,7 @@ end
   
 task mycheck;
   forever begin
+    #1;
     if (en == 0) begin
       if (y !== 4'b0000) begin
         $display ("ERROR");
@@ -43,6 +44,7 @@ task mycheck;
       end
     end
     else begin
+      #2; 
        case (count)
           0: if (y !== 4'b1000) begin
                $display("ERROR");
@@ -60,8 +62,8 @@ task mycheck;
                $display("ERROR");
                $finish;
              end
-          default: if (y !== 4'b1111) begin
-                     $display("ERROR");
+          default: if (y !== 4'b1111 && en == 1) begin
+                     $display("ERROR here, en = %d", en);
                      $finish;
                    end 
       endcase
@@ -93,7 +95,7 @@ initial forever #(T) clk = !clk;
   
 stim stim (.clk(clk), .reset(reset), .en(en), .count(count) );
 enumsystem duv (.clk(clk), .reset(reset), .en(en), .y(y) );
-scoreboard check (.en(en), .count(count), .y(y) );
+scoreboard check (.en(en), .reset(reset), .count(count), .y(y) );
 
 initial begin
     #S;
