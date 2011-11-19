@@ -1711,6 +1711,9 @@ test_mos_strength_reduction: Passed.
                test_varray1: Passed.
               delayed_sfunc: Passed.
                par_mismatch: Passed - CE.
+                 pr3437290a: Passed.
+                 pr3437290b: Passed.
+                 pr3437290c: Passed.
 ============================================================================
 Test results:
-  Total=1711, Passed=1708, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1714, Passed=1711, Failed=3, Not Implemented=0, Expected Fail=0

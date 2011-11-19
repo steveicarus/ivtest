@@ -3949,3 +3949,6 @@ test_gxor	normal,-g2009,ivltests/gxor.vhd	ivltests
 test_varray1	normal,-g2009,ivltests/varray1.vhd	ivltests
 delayed_sfunc	normale,-gspecify	ivltests diff=log/delayed_sfunc.log:gold/delayed_sfunc.gold
 par_mismatch	CE,-gspecify	ivltests
+pr3437290a	normal		ivltests
+pr3437290b	normal		ivltests
+pr3437290c	normal		ivltests

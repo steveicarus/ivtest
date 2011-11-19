@@ -1715,6 +1715,9 @@ test_mos_strength_reduction: Passed.
                   pr3309391: Passed.
                   pr3409749: Passed.
                par_mismatch: Passed - CE.
+                 pr3437290a: Passed.
+                 pr3437290b: Passed.
+                 pr3437290c: Passed.
 ============================================================================
 Test results:
-  Total=1715, Passed=1541, Failed=1, Not Implemented=138, Expected Fail=35
+  Total=1718, Passed=1544, Failed=1, Not Implemented=138, Expected Fail=35
