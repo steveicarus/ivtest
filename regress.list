@@ -3952,3 +3952,4 @@ par_mismatch	CE,-gspecify	ivltests
 pr3437290a	normal		ivltests
 pr3437290b	normal		ivltests
 pr3437290c	normal		ivltests
+block_only_with_var_def	normal	ivltests
