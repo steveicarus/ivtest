@@ -220,6 +220,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr2924354: Not Implemented.
                   pr3011327: Not Implemented.
                   pr3409749: Not Implemented.
+                 pr3437290b: Not Implemented.
               scoped_events: Not Implemented.
      unnamed_generate_block: Not Implemented.
          mixed_type_div_mod: Not Implemented.
@@ -762,6 +763,9 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
             undefined_shift: Not Implemented.
                     vcd-dup: Passed - expected fail.
              writemem-error: Passed - expected fail.
+    block_only_with_var_def: Passed - CE.
+                 pr3437290a: Passed - expected fail.
+                 pr3437290c: Passed - expected fail.
               always3.1.11A: Passed.
               always3.1.11B: Passed.
               always3.1.12A: Passed.
@@ -1713,4 +1717,4 @@ test_mos_strength_reduction: Passed.
                   pr3292735: Passed.
 ============================================================================
 Test results:
-  Total=1711, Passed=1009, Failed=0, Not Implemented=576, Expected Fail=126
+  Total=1715, Passed=1010, Failed=0, Not Implemented=577, Expected Fail=128

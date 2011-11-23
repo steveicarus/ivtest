@@ -820,6 +820,7 @@ v0.8:pr2909414	NI
 v0.8:pr2924354	NI
 v0.8:pr3011327	NI
 v0.8:pr3409749	NI
+v0.8:pr3437290b	NI
 v0.8:scoped_events	NI
 v0.8:unnamed_generate_block	NI
 
@@ -1461,6 +1462,11 @@ v0.8:string11	EF	ivltests diff=log/string11.log:gold/string11.gold
 v0.8:undefined_shift	NI
 v0.8:vcd-dup	EF	ivltests diff=work/vcd-dup.vcd:gold/vcd-dup.vcd.gold:2
 v0.8:writemem-error	EF	ivltests diff=log/writemem-error.log:gold/writemem-error.gold
+# Patches for these could be back ported if needed, but since we are not
+# actively supporting V0.8 this has not been done.
+v0.8:block_only_with_var_def	CE	ivltests
+v0.8:pr3437290a	EF		ivltests
+v0.8:pr3437290c	EF		ivltests
 
 #==========
 # Things not supported by V0.9.
