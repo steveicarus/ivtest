@@ -1719,6 +1719,7 @@ test_mos_strength_reduction: Passed.
                  pr3437290b: Passed.
                  pr3437290c: Passed.
     block_only_with_var_def: Passed.
+                  pr3441576: Passed.
 ============================================================================
 Test results:
-  Total=1719, Passed=1545, Failed=1, Not Implemented=138, Expected Fail=35
+  Total=1720, Passed=1546, Failed=1, Not Implemented=138, Expected Fail=35
