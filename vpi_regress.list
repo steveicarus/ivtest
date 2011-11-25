@@ -152,7 +152,7 @@ pr2314742        normal pr2314742.c   pr2314742.gold
 celldefine       normal celldefine.c  celldefine.gold
 start_of_simtime1	normal start_of_simtime1.c	start_of_simtime1.log
 check_version	 normal	check_version.c	check_version.gold
-pr2966059        normal pr2966059.c   pr2966059.gold
+pr2966059        normal,-gno-xtypes pr2966059.c   pr2966059.gold
 pr2971220        normal pr2971220.c   pr2971220.gold
 final            normal,-g2009 final.c final.gold
 
