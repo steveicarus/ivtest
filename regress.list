@@ -820,6 +820,7 @@ v0.8:pr2909414	NI
 v0.8:pr2924354	NI
 v0.8:pr3011327	NI
 v0.8:pr3409749	NI
+v0.8:pr3437290b	NI
 v0.8:scoped_events	NI
 v0.8:unnamed_generate_block	NI
 
@@ -1033,6 +1034,7 @@ v0.8:value_range2	NI
 v0.8:value_range3	NI
 v0.8:vams_abs1	NI
 v0.8:vams_abs2	NI
+v0.8:wreal	NI
 
 # V0.8 does not support automatic tasks or functions.
 v0.8:automatic_error1	NI
@@ -1453,6 +1455,7 @@ v0.8:pr3284821	EF	ivltests
 v0.8:pr3306516	NI	ivltests
 v0.8:pr3309391	NI	ivltests
 v0.8:pr3368642	EF	ivltests
+v0.8:pr3441576	NI
 v0.8:shift5	EF	ivltests diff=log/shift5.log:gold/shift5.gold
 v0.8:signed_a	EF	ivltests
 v0.8:signed_equality	EF	ivltests
@@ -1462,6 +1465,11 @@ v0.8:string11	EF	ivltests diff=log/string11.log:gold/string11.gold
 v0.8:undefined_shift	NI
 v0.8:vcd-dup	EF	ivltests diff=work/vcd-dup.vcd:gold/vcd-dup.vcd.gold:2
 v0.8:writemem-error	EF	ivltests diff=log/writemem-error.log:gold/writemem-error.gold
+# Patches for these could be back ported if needed, but since we are not
+# actively supporting V0.8 this has not been done.
+v0.8:block_only_with_var_def	CE	ivltests
+v0.8:pr3437290a	EF		ivltests
+v0.8:pr3437290c	EF		ivltests
 
 #==========
 # Things not supported by V0.9.
@@ -1737,6 +1745,9 @@ v0.9:uwire_fail	normal	ivltests diff=log/uwire_fail.log:gold/uwire_fail-v0.9.gol
 
 # v0.9 produces differnt output/warnings for these tests.
 v0.9:pr3015421	CE	ivltests diff=log/pr3015421.log:gold/pr3015421-v0.9.gold
+
+# Does not currently support wreal from Verilog-AMS
+v0.9:wreal	NI
 
 #==========
 # V0.9 doesn't support synthesis. Might as well run them as
@@ -3952,6 +3963,9 @@ test_gxor	normal,-g2009,ivltests/gxor.vhd	ivltests
 test_varray1	normal,-g2009,ivltests/varray1.vhd	ivltests
 delayed_sfunc	normale,-gspecify	ivltests diff=log/delayed_sfunc.log:gold/delayed_sfunc.gold
 par_mismatch	CE,-gspecify	ivltests
-pr3437290a	normal		ivltests
-pr3437290b	normal		ivltests
-pr3437290c	normal		ivltests
+pr3437290a	normal	ivltests
+pr3437290b	normal	ivltests
+pr3437290c	normal	ivltests
+block_only_with_var_def	normal	ivltests
+pr3441576	normalv	ivltests diff=log/pr3441576.log:gold/pr3441576.gold
+wreal	normal,-gverilog-ams	ivltests
