@@ -1681,6 +1681,7 @@ test_mos_strength_reduction: Passed.
                clkgen_logic: Passed.
                  clkgen_net: Passed.
                  clkgen_reg: Passed.
+                  pr3366114: Passed.
                  pr3366217a: Passed - CE.
                  pr3366217b: Passed - CE.
                  pr3366217c: Passed - CE.
@@ -1716,4 +1717,4 @@ test_mos_strength_reduction: Passed.
                  pr3437290c: Passed.
 ============================================================================
 Test results:
-  Total=1714, Passed=1711, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1715, Passed=1712, Failed=3, Not Implemented=0, Expected Fail=0

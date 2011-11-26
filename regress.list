@@ -1105,6 +1105,7 @@ v0.8:ishortint_test	NI
 v0.8:iuint1	NI
 v0.8:logp2	NI
 v0.8:plus_5		NI
+v0.8:pr3388114 NI
 v0.8:pr3366217a	NI
 v0.8:pr3366217b	NI
 v0.8:pr3366217c	NI
@@ -1493,6 +1494,7 @@ v0.9:ishortint_test	NI
 v0.9:iuint1		NI
 v0.9:logp2	NI
 v0.9:plus_5		NI
+v0.9:pr3366114	NI
 v0.9:pr3366217a	NI
 v0.9:pr3366217b	NI
 v0.9:pr3366217c	NI
@@ -3919,6 +3921,7 @@ clkgen_bit	normal,-g2009	ivltests
 clkgen_logic	normal,-g2009	ivltests
 clkgen_net	normal,-g2009	ivltests
 clkgen_reg	normal,-g2009	ivltests
+pr3366114	normal,-g2009	ivltests
 pr3366217a	CE,-g2005-sv	ivltests diff=log/pr3366217a.log:gold/pr3366217a.gold
 pr3366217b	CE,-g2005-sv	ivltests diff=log/pr3366217b.log:gold/pr3366217b.gold
 pr3366217c	CE,-g2005-sv	ivltests diff=log/pr3366217c.log:gold/pr3366217c.gold

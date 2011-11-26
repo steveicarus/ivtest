@@ -25,6 +25,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                      iuint1: Not Implemented.
                       logp2: Not Implemented.
                      plus_5: Not Implemented.
+                  pr3366114: Not Implemented.
                  pr3366217a: Not Implemented.
                  pr3366217b: Not Implemented.
                  pr3366217c: Not Implemented.
@@ -1720,4 +1721,4 @@ test_mos_strength_reduction: Passed.
                  pr3437290c: Passed.
 ============================================================================
 Test results:
-  Total=1718, Passed=1544, Failed=1, Not Implemented=138, Expected Fail=35
+  Total=1719, Passed=1544, Failed=1, Not Implemented=139, Expected Fail=35
