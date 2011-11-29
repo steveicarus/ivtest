@@ -1202,6 +1202,10 @@ v0.8:vhdl_test7		NI
 v0.8:vhdl_test8		NI
 v0.8:vhdl_test9		NI
 v0.8:test_inc_dec	NI
+v0.8:pr3390385		NI
+v0.8:pr3390385b		NI
+v0.8:pr3390385c		NI
+v0.8:pr3390385d		NI
 v0.8:test_tliteral	NI
 v0.8:work7		NI
 v0.8:work7b		NI
@@ -1526,6 +1530,10 @@ v0.9:sv_timeunit_prec	NI
 v0.9:sv_timeunit_prec_fail	NI
 v0.9:sys_func_as_task	NI
 v0.9:test_inc_dec	NI
+v0.9:pr3390385		NI
+v0.9:pr3390385b		NI
+v0.9:pr3390385c		NI
+v0.9:pr3390385d		NI
 v0.9:test_tliteral	NI
 v0.9:two_state_display	NI
 v0.9:ubyte_test	NI
@@ -1596,7 +1604,6 @@ v0.9:vhdl_test6		NI
 v0.9:vhdl_test7		NI
 v0.9:vhdl_test8		NI
 v0.9:vhdl_test9		NI
-v0.9:test_inc_dec	NI
 v0.9:test_tliteral	NI
 v0.9:work7		NI
 v0.9:work7b		NI
@@ -3951,6 +3958,10 @@ final           normal,-g2005-sv	ivltests gold=final.gold
 size_cast	normal,-g2009	ivltests
 plus_5		normal,-g2009		ivltests
 two_state_display	normal,-g2005-sv	ivltests gold=two_state_display.gold
+pr3390385	normal,-g2009		ivltests
+pr3390385b	normal,-g2009		ivltests
+pr3390385c	normal,-g2009		ivltests
+pr3390385d	normal,-g2009		ivltests
 pr3409749	normal		ivltests
 test_mux2to1	normal,-g2009,ivltests/mux2to1.vhd	ivltests
 test_dec2to4	normal,-g2009,ivltests/dec2to4.vhd	ivltests
