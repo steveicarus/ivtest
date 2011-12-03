@@ -932,6 +932,8 @@ v0.8:pr1780480	NI
 # V0.8 does not support typed parameters.
 v0.8:localparam_type	NI
 v0.8:parameter_type	NI
+v0.8:localparam_type2	NI
+v0.8:parameter_type2	NI
 v0.8:pr1449749a	NI
 v0.8:pr1946411	NI
 v0.8:pr1983762	NI
@@ -3394,6 +3396,8 @@ pr1988310	normal	ivltests
 dump_memword	normal	ivltests diff=work/test.vcd:gold/dump_memword.vcd:2
 parameter_type	normal	ivltests diff=log/parameter_type.log:gold/parameter_type.gold
 localparam_type	normal	ivltests diff=log/localparam_type.log:gold/parameter_type.gold
+parameter_type2	normal,-g2009	ivltests
+localparam_type2	normal,-g2009	ivltests
 pr1990029	normal	ivltests
 pr1990164	normal	ivltests
 pr1990269	normal	ivltests
