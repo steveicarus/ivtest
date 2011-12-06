@@ -1149,6 +1149,8 @@ test_mos_strength_reduction: Passed.
                dump_memword: Passed.
              parameter_type: Passed.
             localparam_type: Passed.
+            parameter_type2: Passed.
+           localparam_type2: Passed.
                   pr1990029: Passed.
                   pr1990164: Passed.
                   pr1990269: Passed.
@@ -1725,4 +1727,4 @@ test_mos_strength_reduction: Passed.
                   pr3445452: Passed.
 ============================================================================
 Test results:
-  Total=1723, Passed=1720, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1725, Passed=1722, Failed=3, Not Implemented=0, Expected Fail=0
