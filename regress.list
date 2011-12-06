@@ -3965,11 +3965,12 @@ test_signal_init_assign	normal,-g2009,ivltests/signal_init_assign.vhd	ivltests
 test_forgen	normal,-g2009,ivltests/forgen.vhd	ivltests
 test_gxor	normal,-g2009,ivltests/gxor.vhd	ivltests
 test_varray1	normal,-g2009,ivltests/varray1.vhd	ivltests
-delayed_sfunc	normale,-gspecify	ivltests diff=log/delayed_sfunc.log:gold/delayed_sfunc.gold
+delayed_sfunc	normal,-gspecify	ivltests diff=log/delayed_sfunc.log:gold/delayed_sfunc.gold
 par_mismatch	CE,-gspecify	ivltests
 pr3437290a	normal	ivltests
 pr3437290b	normal	ivltests
 pr3437290c	normal	ivltests
 block_only_with_var_def	normal	ivltests
-pr3441576	normalv	ivltests diff=log/pr3441576.log:gold/pr3441576.gold
+pr3441576	normal	ivltests diff=log/pr3441576.log:gold/pr3441576.gold
 wreal	normal,-gverilog-ams	ivltests
+pr3445452	normal	ivltests
