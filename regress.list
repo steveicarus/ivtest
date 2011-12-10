@@ -3978,3 +3978,4 @@ block_only_with_var_def	normal	ivltests
 pr3441576	normal	ivltests diff=log/pr3441576.log:gold/pr3441576.gold
 wreal	normal,-gverilog-ams	ivltests
 pr3445452	normal	ivltests
+pr3452808	normal	ivltests
