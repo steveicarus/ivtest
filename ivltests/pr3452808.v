@@ -16,14 +16,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
- * 
+ *
  ***********************************************************************
- * 
+ *
  * This is a testbench exercising gate-level modelling of DTL gates,
  * distilled down (as a test-case) from a much larger design.
  * The gates can only pull down strongly to ground and have a weak
  * pull-up.
- * 
+ *
  **********************************************************************/
 
 `timescale 1 ns / 100 ps
@@ -38,11 +38,11 @@ module sr_latch (p, n);
 
    inout p;
    inout n;
-      
+
    dtl_inv u_p1
      ( .in1 ( n ) ,
        .op  ( p ) );
-   
+
    dtl_inv u_n1
      ( .in1 ( p ) ,
        .op  ( n ) );
@@ -55,21 +55,21 @@ module dut (pp, nn);
    inout [1:0] nn;
 
    sr_latch u_l1 (pp[0], nn[0]);
-   
+
 endmodule // dut
 
-   
+
 module top;
 
    reg pass;
    reg x;
-   
+
    wire [1:0] pp;
    wire [1:0] nn;
 
    dtl_inv u_pp0(.in1(~x), .op(pp[0]));
    dtl_inv u_nn0(.in1( x), .op(nn[0]));
-   
+
    dut u_d1 (pp, nn);
 
    initial begin
@@ -104,7 +104,7 @@ module top;
       end
 
       if (pass) $display("PASSED");
-      
+
    end
 
 endmodule // top
