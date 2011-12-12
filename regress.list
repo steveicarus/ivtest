@@ -1751,6 +1751,10 @@ v0.9:pr3015421	CE	ivltests diff=log/pr3015421.log:gold/pr3015421-v0.9.gold
 # Does not currently support wreal from Verilog-AMS
 v0.9:wreal	NI
 
+# These tests use the SV $bits function, but v0.9 doesn't recognise -g2009
+v0.9:parameter_type2	normal	ivltests
+v0.9:localparam_type2	normal	ivltests
+
 #==========
 # V0.9 doesn't support synthesis. Might as well run them as
 # non-synthesis tests, though.
