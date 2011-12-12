@@ -15,6 +15,11 @@ parameter signed [2:0] s3vm1 = -4'sd1;
 parameter signed [3:0] s4vm1 = -4'sd1;
 parameter signed [4:0] s5vm1 = -4'sd1;
 
+parameter signed       snrm1 = -1.0;
+parameter signed [2:0] s3rm1 = -1.0;
+parameter signed [3:0] s4rm1 = -1.0;
+parameter signed [4:0] s5rm1 = -1.0;
+
 parameter              nnv1  = 4'd1;
 parameter        [2:0] u3v1  = 4'd1;
 parameter        [3:0] u4v1  = 4'd1;
@@ -29,6 +34,11 @@ parameter              nnvm1 = -4'sd1;
 parameter        [2:0] u3vm1 = -4'sd1;
 parameter        [3:0] u4vm1 = -4'sd1;
 parameter        [4:0] u5vm1 = -4'sd1;
+
+parameter              nnrm1 = -1.0;
+parameter        [2:0] u3rm1 = -1.0;
+parameter        [3:0] u4rm1 = -1.0;
+parameter        [4:0] u5rm1 = -1.0;
 
 reg fail = 0;
 
@@ -74,6 +84,19 @@ initial begin
   $display("s5vm1 : %2d (%0d`b%b) %c", s5vm1, $bits(s5vm1), s5vm1, match ? " " : "*");
   fail = fail || !match;
 
+  match = (snrm1 == -1);
+  $display("snrm1 : %4.1f %c", snrm1, match ? " " : "*");
+  fail = fail || !match;
+  match = ($bits(s3rm1) == 3) && (s3rm1 === -1);
+  $display("s3rm1 : %2d (%0d`b%b) %c", s3rm1, $bits(s3rm1), s3rm1, match ? " " : "*");
+  fail = fail || !match;
+  match = ($bits(s4rm1) == 4) && (s4rm1 === -1);
+  $display("s4rm1 : %2d (%0d`b%b) %c", s4rm1, $bits(s4rm1), s4rm1, match ? " " : "*");
+  fail = fail || !match;
+  match = ($bits(s5rm1) == 5) && (s5rm1 === -1);
+  $display("s5rm1 : %2d (%0d`b%b) %c", s5rm1, $bits(s5rm1), s5rm1, match ? " " : "*");
+  fail = fail || !match;
+
   match = ($bits(nnv1) == 4) && (nnv1 === 1);
   $display("nnv1  : %2d (%0d`b%b) %c", nnv1, $bits(nnv1), nnv1, match ? " " : "*");
   fail = fail || !match;
@@ -111,6 +134,19 @@ initial begin
   fail = fail || !match;
   match = ($bits(u5vm1) == 5) && (u5vm1 === 31);
   $display("u5vm1 : %2d (%0d`b%b) %c", u5vm1, $bits(u5vm1), u5vm1, match ? " " : "*");
+  fail = fail || !match;
+
+  match = (nnrm1 == -1.0);
+  $display("nnrm1 : %4.1f %c", nnrm1, match ? " " : "*");
+  fail = fail || !match;
+  match = ($bits(u3rm1) == 3) && (u3rm1 === 7);
+  $display("u3rm1 : %2d (%0d`b%b) %c", u3rm1, $bits(u3rm1), u3rm1, match ? " " : "*");
+  fail = fail || !match;
+  match = ($bits(u4rm1) == 4) && (u4rm1 === 15);
+  $display("u4rm1 : %2d (%0d`b%b) %c", u4rm1, $bits(u4rm1), u4rm1, match ? " " : "*");
+  fail = fail || !match;
+  match = ($bits(u5rm1) == 5) && (u5rm1 === 31);
+  $display("u5rm1 : %2d (%0d`b%b) %c", u5rm1, $bits(u5rm1), u5rm1, match ? " " : "*");
   fail = fail || !match;
 
   if (fail)
