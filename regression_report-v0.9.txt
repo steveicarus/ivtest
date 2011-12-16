@@ -214,6 +214,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                  uwire_fail: Passed.
                   pr3015421: Passed - CE.
                       wreal: Not Implemented.
+            parameter_type2: Passed.
+           localparam_type2: Passed.
                       case1: Passed.
                       case2: Passed.
                       case4: Passed.
@@ -1730,4 +1732,4 @@ test_mos_strength_reduction: Passed.
                   pr3452808: Passed.
 ============================================================================
 Test results:
-  Total=1728, Passed=1548, Failed=1, Not Implemented=144, Expected Fail=35
+  Total=1730, Passed=1550, Failed=1, Not Implemented=144, Expected Fail=35
