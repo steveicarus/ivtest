@@ -1123,6 +1123,7 @@ v0.8:pr3390385		NI
 v0.8:pr3390385b		NI
 v0.8:pr3390385c		NI
 v0.8:pr3390385d		NI
+v0.8:pr3462145		NI
 v0.8:sbyte_test	NI
 v0.8:simple_byte	NI
 v0.8:simple_int	NI
@@ -1517,6 +1518,7 @@ v0.9:pr3390385		NI
 v0.9:pr3390385b		NI
 v0.9:pr3390385c		NI
 v0.9:pr3390385d		NI
+v0.9:pr3462145		NI
 v0.9:sbyte_test	NI
 v0.9:simple_byte	NI
 v0.9:simple_int	NI
@@ -3983,3 +3985,4 @@ pr3441576	normal	ivltests diff=log/pr3441576.log:gold/pr3441576.gold
 wreal	normal,-gverilog-ams	ivltests
 pr3445452	normal	ivltests
 pr3452808	normal	ivltests
+pr3462145	normal,-g2009	ivltests
