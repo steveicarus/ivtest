@@ -1726,6 +1726,7 @@ test_mos_strength_reduction: Passed.
                       wreal: Passed.
                   pr3445452: Passed.
                   pr3452808: Passed.
+                  pr3462145: Passed.
 ============================================================================
 Test results:
-  Total=1726, Passed=1723, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1727, Passed=1724, Failed=3, Not Implemented=0, Expected Fail=0
