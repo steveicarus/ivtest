@@ -5,6 +5,7 @@
 # The following files will be ignored by git.
 
 # The log and work directories
+ivl_vhdl_work/
 log/
 work/
 vpi_log/

@@ -146,9 +146,10 @@ sub execute_regression {
 
         # Run the translated Verilog code. All compile errors should
         # already be handled. Remove the -S flag if it exists along
-        # with any included VHDL file(s)
+        # with any included VHDL file(s) and any -f arguments.
         $args{$tname} =~ s/-S//;
         $args{$tname} =~ s/\S+\.vhd//g;
+        $args{$tname} =~ s/-f\S+//g;
         $cmd = "iverilog$sfx -o vsim $args{$tname}";
         $cmd .= " -s $testmod{$tname}" if ($testmod{$tname} ne "");
         $cmd .= " vlog95.v >> log/$tname.log 2>&1";

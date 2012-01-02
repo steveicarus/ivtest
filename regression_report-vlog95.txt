@@ -64,7 +64,9 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
              recursive_task: Not Implemented.
                      array6: Passed - CE.
                array_select: Passed - CE.
+                      bitp1: Passed - CE.
                        bits: Passed - CE.
+                      bits2: Passed - CE.
                     ca_mult: Passed - CE.
            cast_real_signed: Passed - CE.
            enum_elem_ranges: Passed - CE.
@@ -75,6 +77,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                      extend: Passed - CE.
              first_last_num: Passed - CE.
                      iuint1: Passed - CE.
+                      logp2: Passed - CE.
+                     plus_5: Passed - CE.
                      pow-ca: Passed - CE.
                    pow-proc: Passed - CE.
                      pr1002: Passed - CE.
@@ -98,8 +102,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   pr2030767: Passed - CE.
                   pr2076391: Passed - CE.
                   pr2117473: Passed - CE.
-                  pr2121536: Passed - CE.
-                 pr2121536b: Passed - CE.
+                  pr2121536: Not Implemented.
+                 pr2121536b: Not Implemented.
                   pr2152011: Passed - CE.
                   pr2159630: Passed - CE.
                   pr2233180: Passed - CE.
@@ -153,6 +157,11 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
               slongint_test: Passed - CE.
              sshortint_test: Passed - CE.
              test_dispwided: Passed - CE.
+            test_enumsystem: Passed - CE.
+               test_inc_dec: Passed - CE.
+                test_system: Passed - CE.
+              test_tliteral: Passed - CE.
+          two_state_display: Passed - CE.
                  ubyte_test: Passed - CE.
                   uint_test: Passed - CE.
               ulongint_test: Passed - CE.
@@ -201,6 +210,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
               genvar_scopes: Passed - CE.
                    meminit2: Passed - CE.
                   pr1565544: Passed - CE.
+                  pr1657307: Passed - CE.
                   pr1695322: Passed - CE.
                  pr1701855b: Passed - CE.
                   pr1703346: Passed - CE.
@@ -223,10 +233,12 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                scan-invalid: Passed - CE.
             sel_rval_bit_ob: Passed - CE.
            sel_rval_part_ob: Passed - CE.
+               test_varray1: Passed - CE.
          cast_real_unsigned: Not Implemented.
                     ca_time: Not Implemented.
                ca_var_delay: Not Implemented.
                       clog2: Not Implemented.
+              delayed_sfunc: Not Implemented.
                  pr1861212c: Not Implemented.
                  pr1864110a: Not Implemented.
                  pr1864110b: Not Implemented.
@@ -251,6 +263,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
         real_wire_force_rel: Not Implemented.
                       tern8: Not Implemented.
                  v2005_math: Not Implemented.
+                      wreal: Not Implemented.
                   pr1528093: Not Implemented.
                     analog1: Not Implemented.
                     analog2: Not Implemented.
@@ -274,9 +287,9 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
             localparam_type: Passed.
              parameter_type: Passed.
                        mem1: Passed.
-                 pr1403406b: Passed.
+                        pic: Passed.
+                      pr910: Passed.
                   pr1819452: Passed.
-                 pr1866215b: Passed.
                  pr2509349a: Passed.
                  pr2509349b: Passed.
                  pr2800985b: Passed.
@@ -335,23 +348,83 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   pr2909414: Passed - CE.
                   pr2924354: Passed - CE.
                   pr3011327: Passed - CE.
+                  pr3409749: Passed - CE.
+                 pr3437290b: Passed - CE.
               scoped_events: Passed - CE.
+                test_forgen: Passed - CE.
+                  test_gxor: Passed - CE.
      unnamed_generate_block: Passed - CE.
+                    bitsel6: Passed - CE.
+                    bitsel7: Passed - CE.
+                  pr1745005: Passed - CE.
+                 pr2725700c: Passed - CE.
                  pr2835632b: Passed - CE.
-                 pr3054101c: Passed - expected fail.
+                 pr3054101a: Passed - CE.
+                 pr3054101b: Passed - CE.
+                 pr3054101c: Passed - CE.
                  pr3054101e: Passed - CE.
                  pr3054101f: Passed - CE.
                    bitsel10: Passed - CE.
+                      inout: Not Implemented.
                      inout2: Passed - CE.
                      inout3: Passed - CE.
                      inout4: Passed - CE.
+                  pr1444055: Passed - CE.
                   pr1478121: Passed - CE.
                   pr2219441: Passed - CE.
+                  pr3194155: Not Implemented.
+                 pr3296466a: Passed - CE.
+                 pr3296466b: Passed - CE.
+                 pr3296466d: Passed - CE.
+                  pr3452808: Not Implemented.
                        tri2: Passed - CE.
+                  ibit_test: Passed - expected fail.
                  ibyte_test: Passed - expected fail.
                   iint_test: Passed - expected fail.
               ilongint_test: Passed - expected fail.
              ishortint_test: Passed - expected fail.
+                      final: Not Implemented.
+                 pr3366217e: Not Implemented.
+                 pr3366217f: Not Implemented.
+                 pr3366217h: Not Implemented.
+                 pr3366217i: Not Implemented.
+                  pr3390385: Passed - CE.
+                 pr3390385b: Passed - CE.
+                 pr3390385c: Passed - CE.
+                 pr3390385d: Passed - CE.
+                  pr3462145: Passed - CE.
+                 vhdl_test5: Not Implemented.
+                 vhdl_test6: Not Implemented.
+                 vhdl_test7: Not Implemented.
+                 vhdl_test8: Not Implemented.
+                 vhdl_test9: Not Implemented.
+                  pr1587669: Passed - expected fail.
+                  pr1877743: Passed - expected fail.
+                 pr2590274c: Passed - expected fail.
+                 pr2829776b: Passed - expected fail.
+                  pr2972866: Passed - expected fail.
+                 real_delay: Passed - expected fail.
+                   specify2: Passed - expected fail.
+                   specify3: Passed - expected fail.
+                   specify4: Passed - expected fail.
+                   specify5: Passed - expected fail.
+                 specify_01: Passed - expected fail.
+                       sdf1: Passed - expected fail.
+                       sdf2: Passed - expected fail.
+                       sdf3: Passed - expected fail.
+                       sdf4: Passed - expected fail.
+                       sdf5: Passed - expected fail.
+                       sdf6: Passed - expected fail.
+                       sdf7: Passed - expected fail.
+                       sdf8: Passed - expected fail.
+                sdf_del_min: Passed - expected fail.
+                sdf_del_typ: Passed - expected fail.
+                sdf_del_max: Passed - expected fail.
+                 sdf_esc_id: Passed - expected fail.
+                  basicexpr: Not Implemented.
+                     shiftl: Not Implemented.
+                ufuncsynth1: Not Implemented.
+                      pr685: Not Implemented.
               always3.1.10A: Passed - CE.
               always3.1.11A: Passed.
               always3.1.11B: Passed.
@@ -437,12 +510,12 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  casez3.10D: Passed.
                  casez3.10E: Passed.
                  contrib8.1: Passed.
-                 contrib8.2: ==> Failed - running iverilog (translated).
+                 contrib8.2: Passed.
                  contrib8.5: Passed.
                deassign3.4A: Passed.
                 defparam3.5: Passed.
                    defparam: Passed.
-                  defparam2: ==> Failed - running iverilog (translated).
+                  defparam2: Passed.
                 disable3.6A: Passed.
                 disable3.6B: Passed.
                disable_fork: Passed.
@@ -510,7 +583,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                       land5: Passed.
                     landor1: Passed.
                        talu: Passed.
-                      time2: ==> Failed - running iverilog (translated).
+                      time2: Passed.
                       time1: Passed.
                      vardly: Passed.
                  lh_varindx: Passed.
@@ -581,7 +654,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  rptconcat2: Passed.
                      gencrc: Passed.
                      onehot: Passed.
-                      inout: ==> Failed - running iverilog (translated).
                    modparam: Passed.
                     modulus: Passed.
                    modulus2: Passed.
@@ -659,7 +731,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                     ldelay2: Passed.
                     ldelay3: Passed.
                     ldelay4: Passed.
-                    ldelay5: ==> Failed - running iverilog.
+                    ldelay5: Passed.
                    wireland: Passed.
                param_concat: Passed.
                param_select: Passed.
@@ -703,8 +775,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  port-test3: Passed - CE.
                param_string: Passed.
                       galan: Passed.
-                        pic: ==> Failed - running iverilog (translated).
-                    initmod: ==> Failed - running iverilog (translated).
+                    initmod: Passed.
                    initmod2: Passed.
                        bnot: Passed.
                 stask_parm1: Passed.
@@ -751,9 +822,9 @@ test_mos_strength_reduction: Passed.
                     string1: Passed.
                     string2: Passed.
                     string3: Passed.
-                     ga_mod: ==> Failed - running iverilog (translated).
-                    ga_mod1: ==> Failed - running iverilog (translated).
-                    ga_mod2: ==> Failed - running iverilog (translated).
+                     ga_mod: Passed.
+                    ga_mod1: Passed.
+                    ga_mod2: Passed.
                  param_expr: Passed.
                   param_and: Passed.
                  param_and2: Passed.
@@ -781,20 +852,15 @@ test_mos_strength_reduction: Passed.
                decl_assign1: Passed.
                      vector: Passed.
                        mcl1: Passed.
-                       mcl2: ==> Failed - output does not match gold file.
+                       mcl2: Passed.
                    comp1000: Passed.
                    comp1001: Passed.
              comp1001_fail3: Passed.
              comp1001_fail4: Passed.
              comp1001_fail5: Passed.
                    specify1: Passed - CO.
-                   specify2: ==> Failed - output does not match gold file.
-                   specify3: ==> Failed - output does not match gold file.
-                   specify4: ==> Failed - output does not match gold file.
-                   specify5: ==> Failed - output does not match gold file.
                deposit_wire: Passed.
-                 specify_01: ==> Failed - output does not match gold file.
-                    deposit: ==> Failed - running iverilog (translated).
+                    deposit: Passed.
                  assign_neq: Passed.
                  assign_deq: Passed.
                   assign_ge: Passed.
@@ -813,16 +879,16 @@ test_mos_strength_reduction: Passed.
                many_drivers: Passed.
              task_port_size: Passed.
                     p_monta: Passed.
-                     memidx: ==> Failed - running iverilog (translated).
+                     memidx: Passed.
                   memidxrng: Passed.
-                   mem2port: ==> Failed - output does not match gold file.
+                   mem2port: Passed.
                     vcd-dup: Passed.
                     resolv1: Passed.
                       pr307: Passed.
                      pr307a: Passed.
                  memport_bs: Passed.
                       pr224: Passed.
-                     pr224a: ==> Failed - running iverilog (translated).
+                     pr224a: Passed.
                       pr298: Passed.
                  writememh1: Passed.
                  writememh2: Passed.
@@ -836,7 +902,7 @@ test_mos_strength_reduction: Passed.
                    varrshft: Passed.
                      select: Passed.
                     select2: Passed.
-                    select3: ==> Failed - running iverilog.
+                    select3: Passed.
                     select4: Passed.
                     select5: Passed.
                     select6: Passed.
@@ -879,8 +945,6 @@ test_mos_strength_reduction: Passed.
                     bitsel3: Passed.
                     bitsel4: Passed.
                     bitsel5: Passed.
-                    bitsel6: ==> Failed - running iverilog.
-                    bitsel7: ==> Failed - running iverilog.
                     bitsel8: Passed.
                     bitsel9: Passed.
                    bitwidth: Passed.
@@ -940,7 +1004,7 @@ test_mos_strength_reduction: Passed.
                       pr527: Passed.
                       pr528: Passed.
                      pr528b: Passed.
-                      pr529: ==> Failed - output does not match gold file.
+                      pr529: Passed.
                      pr530a: Passed.
                      pr530b: Passed.
                      pr530c: Passed.
@@ -965,7 +1029,7 @@ test_mos_strength_reduction: Passed.
                       pr578: Passed.
                       pr584: Passed.
                       pr585: Passed.
-                      pr587: ==> Failed - output does not match gold file.
+                      pr587: Passed.
                       pr590: Passed.
                       pr594: Passed.
                       pr596: Passed.
@@ -974,14 +1038,11 @@ test_mos_strength_reduction: Passed.
                       pr639: Passed.
                       case3: Passed.
                    basicreg: Passed.
-                  basicexpr: ==> Failed - running iverilog (translated).
                  basicexpr2: Passed.
                  basicexpr3: Passed.
                  basicexpr4: Passed.
-                     shiftl: ==> Failed - running iverilog (translated).
                      sqrt32: Passed.
                   memsynth8: Passed.
-                ufuncsynth1: ==> Failed - running iverilog (translated).
                partselsynth: ==> Failed - running iverilog (translated).
                      busbug: Passed.
                        real: Passed.
@@ -1004,7 +1065,6 @@ test_mos_strength_reduction: Passed.
                       pr673: Passed.
                       pr675: Passed.
                       pr678: Passed.
-                      pr685: ==> Failed - running iverilog (translated).
                       pr690: Passed.
                       pr693: Passed.
                       pr699: Passed.
@@ -1027,7 +1087,7 @@ test_mos_strength_reduction: Passed.
                       pr812: Passed.
                       pr820: Passed.
                       pr823: Passed.
-                      pr841: ==> Failed - running iverilog.
+                      pr841: Passed.
                       pr842: Passed.
                       pr848: Passed.
                       pr856: Passed.
@@ -1037,7 +1097,6 @@ test_mos_strength_reduction: Passed.
                       pr902: Passed.
                       pr903: Passed.
                       pr905: Passed.
-                      pr910: ==> Failed - output does not match gold file.
                       pr913: Passed.
                       pr923: Passed.
                       pr938: Passed.
@@ -1070,23 +1129,24 @@ test_mos_strength_reduction: Passed.
                      pr1065: Passed.
                      pr1072: Passed.
                      pr1077: Passed.
-                     pr1087: ==> Failed - running iverilog (translated).
+                     pr1087: Passed.
                      pr1101: Passed.
                      pr1115: Passed.
                   pr1367855: Passed.
-                  pr1444055: ==> Failed - running iverilog.
                  pr1449749a: Passed.
-                  pr1353345: ==> Failed - running iverilog (translated).
-                 pr1353345b: ==> Failed - running iverilog (translated).
+                  pr1353345: Passed.
+                 pr1353345b: Passed.
                   pr1388974: Passed.
-                  pr1421777: ==> Failed - running iverilog (translated).
+                  pr1421777: Passed.
                   pr1465769: Passed.
                      types1: Passed.
                       scanf: Passed.
                      scanf2: Passed.
                      scanf3: Passed.
+                     scanf4: Passed.
                   pr1403406: Passed.
                  pr1403406a: Passed.
+                 pr1403406b: Passed.
                   pr1467825: Passed - CO.
                   pr1455873: Passed.
                   pr1474283: Passed.
@@ -1105,14 +1165,13 @@ test_mos_strength_reduction: Passed.
                   pr1520314: Passed - CO.
                   pr1530426: Passed.
                   pr1561597: Passed.
-                  pr1570451: ==> Failed - running iverilog (translated).
-                 pr1570451b: ==> Failed - running iverilog (translated).
+                  pr1570451: Passed.
+                 pr1570451b: Passed.
                   pr1570635: Passed.
                  pr1570635b: Passed.
                   pr1574175: Passed.
-                  pr1581580: ==> Failed - running iverilog (translated).
+                  pr1581580: Passed.
                   pr1587634: Passed - CO.
-                  pr1587669: ==> Failed - running iverilog (translated).
                   pr1598445: Passed.
                   pr1601896: Passed.
                   pr1601898: Passed.
@@ -1134,10 +1193,9 @@ test_mos_strength_reduction: Passed.
                   pr1639968: Passed.
                   pr1639971: Passed.
                   pr1645277: Passed.
-                  pr1645518: ==> Failed - running iverilog.
+                  pr1645518: Passed.
                   pr1648365: Passed.
                   pr1650842: Passed.
-                  pr1657307: ==> Failed - running iverilog.
                   pr1661640: Passed.
                   pr1662508: Passed.
                   pr1664684: Passed.
@@ -1168,7 +1226,7 @@ test_mos_strength_reduction: Passed.
                   pr1701890: Passed.
                   pr1701921: Passed.
                   pr1702593: Passed.
-                  pr1703959: ==> Failed - running iverilog.
+                  pr1703959: Passed.
                  elsif_test: Passed.
                   pr1703120: Passed.
                   pr1704013: Passed - CE.
@@ -1180,11 +1238,10 @@ test_mos_strength_reduction: Passed.
                   pr1735836: Passed.
                   pr1741212: Passed.
                   pr1742910: Passed.
-                  pr1745005: ==> Failed - running iverilog.
                   pr1746401: Passed.
                   pr1746848: Passed.
                   pr1750870: Passed.
-                  pr1752353: ==> Failed - running iverilog (translated).
+                  pr1752353: Passed.
                  pr1752823a: Passed.
                  pr1752823b: Passed.
                   pr1755593: Passed.
@@ -1193,7 +1250,7 @@ test_mos_strength_reduction: Passed.
                   pr1765789: Passed.
                   pr1770199: Passed.
                   pr1771903: Passed.
-                  pr1776485: ==> Failed - running iverilog (translated).
+                  pr1776485: Passed.
                   pr1777103: Passed.
                   pr1780480: Passed.
                   pr1784984: Passed.
@@ -1225,24 +1282,13 @@ test_mos_strength_reduction: Passed.
                   pr1851310: Passed.
                   pr1855504: Passed.
                  pr1861212a: Passed.
-                 pr1861212b: ==> Failed - running iverilog (translated).
-                       sdf1: ==> Failed - output does not match gold file.
-                       sdf2: ==> Failed - output does not match gold file.
-                       sdf3: ==> Failed - output does not match gold file.
-                       sdf4: ==> Failed - output does not match gold file.
-                       sdf5: ==> Failed - output does not match gold file.
-                       sdf6: ==> Failed - output does not match gold file.
-                       sdf7: ==> Failed - output does not match gold file.
-                       sdf8: ==> Failed - output does not match gold file.
-                sdf_del_min: ==> Failed - output does not match gold file.
-                sdf_del_typ: ==> Failed - output does not match gold file.
-                sdf_del_max: ==> Failed - output does not match gold file.
-                 sdf_esc_id: ==> Failed - output does not match gold file.
+                 pr1861212b: Passed.
             macro_with_args: Passed.
                      macro2: Passed.
                  pr1862744a: Passed.
                  pr1862744b: Passed - CE.
-                  pr1866215: ==> Failed - running iverilog (translated).
+                  pr1866215: Passed.
+                 pr1866215b: Passed.
                  pr1867161a: Passed.
                  pr1867161b: Passed.
                   pr1867332: Passed - CO.
@@ -1255,8 +1301,7 @@ test_mos_strength_reduction: Passed.
                   pr1875866: Passed.
                  pr1875866b: Passed.
                   pr1877740: Passed.
-                  pr1877743: ==> Failed - output does not match gold file.
-                  pr1878909: ==> Failed - running iverilog (translated).
+                  pr1878909: Passed.
          multi_driver_delay: Passed.
                real_op_fail: Passed - CE.
                   pr1833024: Passed - CE.
@@ -1264,7 +1309,7 @@ test_mos_strength_reduction: Passed.
                   pr1887168: Passed.
                   pr1892959: Passed.
                  pr1892959b: Passed.
-                  pr1898983: ==> Failed - running iverilog (translated).
+                  pr1898983: Passed.
            compare_bool_reg: Passed.
                   pr1901125: Passed.
                   pr1903157: Passed - CO.
@@ -1333,6 +1378,8 @@ test_mos_strength_reduction: Passed.
                   pr1983762: Passed.
                   pr1985582: Passed.
                dump_memword: Passed.
+            parameter_type2: Passed.
+           localparam_type2: Passed.
                   pr1990029: Passed.
                   pr1990269: Passed.
                   pr1992244: Passed.
@@ -1358,7 +1405,7 @@ test_mos_strength_reduction: Passed.
                   pr2076363: Passed.
                   pr2076425: Passed.
                     va_math: Passed.
-                  pr2085984: ==> Failed - running iverilog (translated).
+                  pr2085984: Passed.
          blocking_repeat_ec: Passed.
                   nb_assign: Passed.
                    nb_delay: Passed.
@@ -1406,9 +1453,9 @@ test_mos_strength_reduction: Passed.
                  pr2202846c: Passed.
                   pr2208681: Passed.
                   pr2215342: Passed.
-                 pr2219441b: ==> Failed - running iverilog (translated).
+                 pr2219441b: Passed.
                   pr2224845: Passed.
-                  pr2224949: ==> Failed - running iverilog (translated).
+                  pr2224949: Passed.
                   pr2248925: Passed.
                   pr2251119: Passed.
                   pr2270035: Passed.
@@ -1427,7 +1474,7 @@ test_mos_strength_reduction: Passed.
                   pr2305307: Passed.
                  pr2305307b: Passed.
                  pr2305307c: Passed.
-                 pr2355304b: ==> Failed - running iverilog (translated).
+                 pr2355304b: Passed.
                   pr2358264: Passed.
                   pr2358848: Passed.
                  pr2395378a: Passed - CE.
@@ -1462,7 +1509,6 @@ test_mos_strength_reduction: Passed.
                   pr2580730: Passed.
                  pr2590274a: Passed.
                  pr2590274b: Passed.
-                 pr2590274c: ==> Failed - output does not match gold file.
                   pr2593733: Passed.
                   pr2597278: Passed.
                  pr2597278b: Passed - CE.
@@ -1478,7 +1524,6 @@ test_mos_strength_reduction: Passed.
                   pr2723712: Passed.
                  pr2725700a: Passed.
                  pr2725700b: Passed.
-                 pr2725700c: ==> Failed - running iverilog.
         real_select_invalid: Passed - CE.
        real_concat_invalid1: Passed - CE.
        real_concat_invalid2: Passed - CE.
@@ -1513,7 +1558,6 @@ test_mos_strength_reduction: Passed.
                udp_eval_arg: Passed.
               cmdline_parm1: Passed.
                   pr2829776: Passed.
-                 pr2829776b: ==> Failed - output does not match gold file.
                      memref: Passed.
                   pr2832234: Passed.
                   pr2834340: Passed.
@@ -1543,11 +1587,10 @@ test_mos_strength_reduction: Passed.
                  pr2937417b: Passed.
                  pr2937417c: Passed.
                   pr2943394: Passed.
-                  pr2951657: ==> Failed - running iverilog (translated).
+                  pr2951657: Passed.
                   pr2969724: Passed.
        named_event_no_edges: Passed - CE.
                   pr2971207: Passed.
-                  pr2972866: ==> Failed - output does not match gold file.
                   pr2973532: Passed.
                   pr2974051: Passed.
                   pr2974216: Passed.
@@ -1566,14 +1609,11 @@ test_mos_strength_reduction: Passed.
                   pr3022502: Passed.
                   pr3024131: Passed.
       verify_two_var_delays: Passed.
-                 real_delay: ==> Failed - output does not match gold file.
                   pr3039548: Passed.
                       uwire: Passed.
                  uwire_fail: Passed - CE.
                   pr3044843: Passed.
                    ca_force: Passed.
-                 pr3054101a: ==> Failed - output does not match gold file.
-                 pr3054101b: ==> Failed - output does not match gold file.
                  pr3061015a: Passed - CE.
                  pr3061015b: Passed - CE.
                  pr3061015c: Passed - CE.
@@ -1599,10 +1639,9 @@ test_mos_strength_reduction: Passed.
                   pr3190941: Passed - CE.
                   pr3190948: Passed.
                   pr3197861: Passed.
-                  pr3197917: ==> Failed - running iverilog (translated).
-                  pr3194155: ==> Failed - running iverilog.
+                  pr3197917: Passed.
                sv-constants: Passed.
-               sv-2val-nets: ==> Failed - running iverilog (translated).
+               sv-2val-nets: Passed.
                   pr3270320: Passed - CE.
               vhdl_and_gate: Passed.
        vhdl_and104_stdlogic: Passed.
@@ -1636,20 +1675,58 @@ test_mos_strength_reduction: Passed.
             vhdl_uadd23_bit: Passed.
             vhdl_udiv23_bit: Passed.
             vhdl_usub23_bit: Passed.
-            vhdl_umul23_bit: ==> Failed - running iverilog (translated).
+            vhdl_umul23_bit: Passed.
             vhdl_rand23_bit: Passed.
        vhdl_uadd23_stdlogic: Passed.
        vhdl_udiv23_stdlogic: Passed.
        vhdl_usub23_stdlogic: Passed.
-       vhdl_umul23_stdlogic: ==> Failed - running iverilog (translated).
-               vhdl_signals: ==> Failed - running iverilog (translated).
-             vhdl_fa4_test1: ==> Failed - running iverilog (translated).
-             vhdl_fa4_test2: ==> Failed - running iverilog (translated).
-             vhdl_fa4_test3: ==> Failed - running iverilog (translated).
+       vhdl_umul23_stdlogic: Passed.
+               vhdl_signals: Passed.
+             vhdl_fa4_test1: Passed.
+             vhdl_fa4_test2: Passed.
+             vhdl_fa4_test3: Passed.
+             vhdl_fa4_test4: Passed.
                       queue: Passed.
                  queue_stat: Passed.
                   pow-const: Passed.
               eofmt_percent: Passed.
+                 pr3296466c: Passed.
+                  pr3306516: Passed.
+             vhdl_sa1_test1: Passed.
+              gate_connect1: Passed.
+              gate_connect2: Passed - CE.
+                  pr3309391: Passed.
+                 ivlh_event: Passed.
+             vhdl_sa1_test2: Passed.
+             vhdl_sa1_test3: Passed.
+                 vhdl_test1: Passed.
+                 vhdl_test2: Passed.
+                 vhdl_test3: Passed.
+                 vhdl_test4: Passed.
+                 clkgen_bit: Passed.
+               clkgen_logic: Passed.
+                 clkgen_net: Passed.
+                 clkgen_reg: Passed.
+                  pr3366114: Passed.
+                 pr3366217a: Passed - CE.
+                 pr3366217b: Passed - CE.
+                 pr3366217c: Passed - CE.
+                 pr3366217d: Passed - CE.
+                 pr3366217g: Passed - CE.
+                      work7: Passed.
+                     work7b: Passed.
+                  pr3368642: Passed.
+                  size_cast: Passed.
+               test_mux2to1: Passed.
+               test_dec2to4: Passed.
+              test_timebase: Passed.
+    test_signal_init_assign: Passed.
+               par_mismatch: Passed - CE.
+                 pr3437290a: Passed.
+                 pr3437290c: Passed.
+    block_only_with_var_def: Passed.
+                  pr3441576: Passed.
+                  pr3445452: Passed.
 ============================================================================
 Test results:
-  Total=1650, Passed=1476, Failed=91, Not Implemented=63, Expected Fail=20
+  Total=1727, Passed=1593, Failed=7, Not Implemented=84, Expected Fail=43

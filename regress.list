@@ -1927,6 +1927,7 @@ vlog95:recursive_task	NI	ivltests  # Also signed
 # Verilog 95 does not support signed.
 vlog95:array6	CE	ivltests
 vlog95:array_select	CE	ivltests # Also net array
+vlog95:bitp1	CE	ivltests
 vlog95:bits	CE	ivltests
 vlog95:bits2	CE	ivltests
 vlog95:ca_mult	CE	ivltests
@@ -1940,6 +1941,8 @@ vlog95:enum_values	CE	ivltests
 vlog95:extend	CE	ivltests
 vlog95:first_last_num	CE	ivltests
 vlog95:iuint1	CE	ivltests
+vlog95:logp2	CE	ivltests
+vlog95:plus_5	CE	ivltests  # Also other operators
 vlog95:pow-ca	CE  # Also general **
 vlog95:pow-proc	CE  # Also general **
 vlog95:pr1002	CE	ivltests  # Also >>>
@@ -1963,8 +1966,8 @@ vlog95:pr1993479	CE	ivltests
 vlog95:pr2030767	CE	ivltests
 vlog95:pr2076391	CE	ivltests
 vlog95:pr2117473	CE	ivltests
-vlog95:pr2121536	CE	ivltests
-vlog95:pr2121536b	CE	ivltests
+vlog95:pr2121536	NI	ivltests  # Assert
+vlog95:pr2121536b	NI	ivltests  # Assert
 vlog95:pr2152011	CE	ivltests
 vlog95:pr2159630	CE	ivltests
 vlog95:pr2233180	CE	ivltests
@@ -2019,6 +2022,11 @@ vlog95:sint_test	CE	ivltests
 vlog95:slongint_test	CE	ivltests
 vlog95:sshortint_test	CE	ivltests
 vlog95:test_dispwided	CE	ivltests
+vlog95:test_enumsystem	CE	ivltests
+vlog95:test_inc_dec	CE	ivltests  # Also >>>
+vlog95:test_system	CE	ivltests
+vlog95:test_tliteral	CE	ivltests
+vlog95:two_state_display	CE	ivltests
 vlog95:ubyte_test	CE	ivltests
 vlog95:uint_test	CE	ivltests
 vlog95:ulongint_test	CE	ivltests
@@ -2076,6 +2084,7 @@ vlog95:check_constant_17	CE	ivltests
 vlog95:genvar_scopes	CE	ivltests
 vlog95:meminit2		CE	ivltests
 vlog95:pr1565544	CE	ivltests
+vlog95:pr1657307	CE	ivltests
 vlog95:pr1695322	CE	ivltests
 vlog95:pr1701855b	CE	ivltests
 vlog95:pr1703346	CE	ivltests
@@ -2099,12 +2108,14 @@ vlog95:real_array_nb	CE	ivltests
 vlog95:scan-invalid	CE	ivltests
 vlog95:sel_rval_bit_ob	CE	ivltests
 vlog95:sel_rval_part_ob	CE	ivltests
+vlog95:test_varray1	CE	ivltests  # Also signed
 
 # Verilog 95 does not support real nets.
 vlog95:cast_real_unsigned	NI	ivltests
 vlog95:ca_time		NI	ivltests
 vlog95:ca_var_delay	NI	ivltests
 vlog95:clog2		NI	ivltests  # Also big int
+vlog95:delayed_sfunc	NI	ivltests
 vlog95:pr1861212c	NI	ivltests
 vlog95:pr1864110a	NI	ivltests
 vlog95:pr1864110b	NI	ivltests
@@ -2129,6 +2140,7 @@ vlog95:real_wire_array	NI	ivltests
 vlog95:real_wire_force_rel	NI	ivltests
 vlog95:tern8	NI	ivltests
 vlog95:v2005_math	NI	ivltests
+vlog95:wreal	NI	ivltests
 
 # Real modulus is an Icarus extension.
 vlog95:pr1528093	NI	ivltests
@@ -2160,9 +2172,9 @@ vlog95:fread-error	normal	ivltests gold=fread-error-vlog95.gold
 vlog95:localparam_type	normal	ivltests gold=parameter_type-vlog95.gold
 vlog95:parameter_type	normal	ivltests gold=parameter_type-vlog95.gold
 vlog95:mem1		normal	ivltests gold=mem1-vlog95.gold
-vlog95:pr1403406b	normal,-fivltests/pr1403406-1.cf,-fivltests/pr1403406-2.cf  ivltests gold=pr1403406b-vlog95.gold
+vlog95:pic		normal	contrib  pictest diff=log/pic.log:gold/pic-vlog95.gold
+vlog95:pr910		normal	ivltests diff=log/pr910.log:gold/pr910-vlog95.gold
 vlog95:pr1819452	normal	ivltests gold=pr1819452-vlog95.gold
-vlog95:pr1866215b	normal	ivltests gold=pr1866215b-vlog95.gold
 vlog95:pr2509349a	normal	ivltests gold=pr2509349a-vlog95.gold
 vlog95:pr2509349b	normal	ivltests gold=pr2509349b-vlog95.gold
 vlog95:pr2800985b	normal	ivltests gold=pr2800985b-vlog95.gold
@@ -2223,25 +2235,43 @@ vlog95:pr2815398a	CE	ivltests
 vlog95:pr2909414	CE	ivltests
 vlog95:pr2924354	CE	ivltests
 vlog95:pr3011327	CE	ivltests
+vlog95:pr3409749	CE	ivltests
+vlog95:pr3437290b	CE	ivltests
 vlog95:scoped_events	CE	ivltests
+vlog95:test_forgen	CE	ivltests
+vlog95:test_gxor	CE	ivltests  # Also signed
 vlog95:unnamed_generate_block	CE	ivltests
 
-# We currently don't support indexed part selects with a non-zero base.
+# We currently don't support part selects in a CA with a non-zero base.
+vlog95:bitsel6	CE	ivltests
+vlog95:bitsel7	CE	ivltests
+vlog95:pr1745005	CE	ivltests
+vlog95:pr2725700c	CE	ivltests
 vlog95:pr2835632b	CE	ivltests
-vlog95:pr3054101c	EF	ivltests gold=pr3054101c.gold
+vlog95:pr3054101a	CE	ivltests
+vlog95:pr3054101b	CE	ivltests
+vlog95:pr3054101c	CE	ivltests
 vlog95:pr3054101e	CE	ivltests
 vlog95:pr3054101f	CE	ivltests
 
-# Currently no support for tran_VP.
+# Currently no support for tran_VP (inout ports).
 vlog95:bitsel10		CE	ivltests
+vlog95:inout		NI	ivltests
 vlog95:inout2		CE	ivltests
 vlog95:inout3		CE	ivltests
 vlog95:inout4		CE	ivltests
+vlog95:pr1444055	CE	ivltests
 vlog95:pr1478121	CE	ivltests
 vlog95:pr2219441	CE	ivltests
+vlog95:pr3194155	NI	ivltests  # Assert
+vlog95:pr3296466a	CE	ivltests
+vlog95:pr3296466b	CE	ivltests
+vlog95:pr3296466d	CE	ivltests
+vlog95:pr3452808	NI	ivltests  # Seg. faults
 vlog95:tri2		CE	ivltests
 
 # No support for the SystemVerilog data types.
+vlog95:ibit_test	EF,-g2005-sv	ivltests
 vlog95:ibyte_test	EF,-g2005-sv	ivltests
 vlog95:iint_test	EF,-g2005-sv	ivltests
 vlog95:ilongint_test	EF,-g2005-sv	ivltests
@@ -2249,6 +2279,52 @@ vlog95:ishortint_test	EF,-g2005-sv	ivltests
 
 # No support for these SystemVerilog features
 vlog95:final		NI
+vlog95:pr3366217e	NI  # Just signed
+vlog95:pr3366217f	NI
+vlog95:pr3366217h	NI
+vlog95:pr3366217i	NI
+vlog95:pr3390385	CE,-g2009	ivltests  # ++
+vlog95:pr3390385b	CE,-g2009	ivltests  # ++
+vlog95:pr3390385c	CE,-g2009	ivltests  # ++
+vlog95:pr3390385d	CE,-g2009	ivltests  # ++
+vlog95:pr3462145	CE,-g2009	ivltests  # ++
+vlog95:vhdl_test5	NI
+vlog95:vhdl_test6	NI
+vlog95:vhdl_test7	NI
+vlog95:vhdl_test8	NI
+vlog95:vhdl_test9	NI
+
+# Currently no support for specify blocks.
+vlog95:pr1587669	EF,-gspecify  ivltests diff=log/pr1587669.log:gold/pr1587669.gold
+vlog95:pr1877743	EF,-gspecify  ivltests
+vlog95:pr2590274c	EF,-gspecify  ivltests diff=log/pr2590274c.log:gold/pr2590274.gold
+vlog95:pr2829776b	EF,-gspecify  ivltests
+vlog95:pr2972866	EF,-Tmax,-gspecify	ivltests diff=log/pr2972866.log:gold/pr2972866.gold
+vlog95:real_delay	EF,-gspecify	ivltests diff=log/real_delay.log:gold/real_delay.gold
+vlog95:specify2	EF,-gspecify	ivltests
+vlog95:specify3	EF,-gspecify	ivltests diff=log/specify3.log:gold/specify3.gold
+vlog95:specify4	EF,-gspecify	ivltests diff=log/specify4.log:gold/specify4.gold
+vlog95:specify5	EF,-gspecify	ivltests diff=log/specify5.log:gold/specify5.gold
+vlog95:specify_01	EF,-gspecify  ivltests test
+vlog95:sdf1	EF,-gspecify  ivltests diff=log/sdf1.log:gold/sdf1.gold
+vlog95:sdf2	EF,-gspecify  ivltests diff=log/sdf2.log:gold/sdf1.gold
+vlog95:sdf3	EF,-gspecify  ivltests diff=log/sdf3.log:gold/sdf1.gold
+vlog95:sdf4	EF,-gspecify  ivltests diff=log/sdf4.log:gold/sdf1.gold
+vlog95:sdf5	EF,-gspecify  ivltests diff=log/sdf5.log:gold/sdf5.gold
+vlog95:sdf6	EF,-gspecify  ivltests diff=log/sdf6.log:gold/sdf6.gold
+vlog95:sdf7	EF,-gspecify  ivltests diff=log/sdf7.log:gold/sdf7.gold
+vlog95:sdf8	EF,-gspecify  ivltests diff=log/sdf8.log:gold/sdf8.gold
+vlog95:sdf_del_min	EF,-gspecify,-Tmin	ivltests
+vlog95:sdf_del_typ	EF,-gspecify,-Ttyp	ivltests
+vlog95:sdf_del_max	EF,-gspecify,-Tmax	ivltests
+vlog95:sdf_esc_id	EF,-gspecify  ivltests diff=log/sdf_esc_id.log:gold/sdf1.gold
+
+# The Icarus compiler does not support arrayed UDP instance. These are
+# created in the synthesis process.
+vlog95:basicexpr	NI
+vlog95:shiftl		NI
+vlog95:ufuncsynth1	NI
+vlog95:pr685		NI
 
 #==========
 # The default case.
