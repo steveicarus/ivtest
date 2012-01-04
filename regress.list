@@ -1040,6 +1040,8 @@ v0.8:vams_abs2	NI
 v0.8:wreal	NI
 v0.8:struct1	NI
 v0.8:struct2	NI
+v0.8:struct3	NI
+v0.8:struct4	NI
 
 # V0.8 does not support automatic tasks or functions.
 v0.8:automatic_error1	NI
@@ -1633,6 +1635,8 @@ v0.9:final		NI
 v0.9:size_cast		NI
 v0.9:struct1		NI
 v0.9:struct2		NI
+v0.9:struct3		NI
+v0.9:struct4		NI
 
 # v0.9 does not have the vhdl_sys module
 v0.9:ivlh_event	NI
@@ -4087,3 +4091,5 @@ int_param	normal,-g2009	ivltests
 pr3477107	normal	ivltests
 struct1	normal,-g2009	ivltests
 struct2	normal,-g2009	ivltests
+struct3	normal,-g2009	ivltests
+struct4	normal,-g2009	ivltests
