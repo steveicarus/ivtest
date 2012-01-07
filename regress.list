@@ -4062,3 +4062,4 @@ wreal	normal,-gverilog-ams	ivltests
 pr3445452	normal	ivltests
 pr3452808	normal	ivltests
 pr3462145	normal,-g2009	ivltests
+pr3465541	normal	ivltests
