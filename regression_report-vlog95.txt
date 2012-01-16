@@ -76,6 +76,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                 enum_values: Passed - CE.
                      extend: Passed - CE.
              first_last_num: Passed - CE.
+                  int_param: Passed - CE.
                      iuint1: Passed - CE.
                       logp2: Passed - CE.
                      plus_5: Passed - CE.
@@ -1730,4 +1731,4 @@ test_mos_strength_reduction: Passed.
                   pr3465541: Passed.
 ============================================================================
 Test results:
-  Total=1728, Passed=1594, Failed=7, Not Implemented=84, Expected Fail=43
+  Total=1729, Passed=1595, Failed=7, Not Implemented=84, Expected Fail=43

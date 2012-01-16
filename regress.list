@@ -1942,6 +1942,7 @@ vlog95:enum_value_expr	CE	ivltests
 vlog95:enum_values	CE	ivltests
 vlog95:extend	CE	ivltests
 vlog95:first_last_num	CE	ivltests
+vlog95:int_param	CE	ivltests
 vlog95:iuint1	CE	ivltests
 vlog95:logp2	CE	ivltests
 vlog95:plus_5	CE	ivltests  # Also other operators
