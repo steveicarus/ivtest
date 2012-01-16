@@ -1220,6 +1220,7 @@ v0.8:vhdl_test8		NI
 v0.8:vhdl_test9		NI
 v0.8:work7		NI
 v0.8:work7b		NI
+v0.8:int_param		NI
 
 # v0.8 does not have the vhdl_sys module
 v0.8:ivlh_event	NI
@@ -1615,6 +1616,7 @@ v0.9:vhdl_test8		NI
 v0.9:vhdl_test9		NI
 v0.9:work7		NI
 v0.9:work7b		NI
+v0.9:int_param		NI
 
 # v0.9 does not have the vhdl_sys module
 v0.9:ivlh_event	NI
@@ -4063,3 +4065,4 @@ pr3445452	normal	ivltests
 pr3452808	normal	ivltests
 pr3462145	normal,-g2009	ivltests
 pr3465541	normal	ivltests
+int_param	normal,-g2009	ivltests
