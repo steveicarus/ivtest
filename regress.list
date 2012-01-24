@@ -1009,6 +1009,7 @@ v0.8:pr3098439	NI # $format not supported.
 v0.8:pr3098439a	NI # $format not supported.
 v0.8:pr3098439b	NI # $format not supported.
 v0.8:pr3103880	NI # $format not supported.
+v0.8:pr3477107	NI # $swrite not supported.
 v0.8:pv_undef_sig_sel	NI # $sformt not supported.
 v0.8:queue	NI # $q_* (stochastic routines) not supported.
 v0.8:queue_fail	NI # $q_* (stochastic routines) not supported.
@@ -4067,3 +4068,4 @@ pr3452808	normal	ivltests
 pr3462145	normal,-g2009	ivltests
 pr3465541	normal	ivltests
 int_param	normal,-g2009	ivltests
+pr3477107	normal	ivltests
