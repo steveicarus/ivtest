@@ -1408,6 +1408,7 @@ test_mos_strength_reduction: Passed.
           array_word_width2: Passed.
            array_word_check: Passed.
                   pr2781595: Passed.
+                  pr2785294: Passed.
                   pr2788686: Passed.
               macro_str_esc: Passed.
                   pr2790236: Passed.
@@ -1732,4 +1733,4 @@ test_mos_strength_reduction: Passed.
                   pr3477107: Passed.
 ============================================================================
 Test results:
-  Total=1730, Passed=1727, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1731, Passed=1728, Failed=3, Not Implemented=0, Expected Fail=0

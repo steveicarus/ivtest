@@ -3741,6 +3741,7 @@ array_word_width	normal	ivltests diff=log/array_word_width.log:gold/array_word_w
 array_word_width2	normal	ivltests
 array_word_check	normal	ivltests diff=log/array_word_check.log:gold/array_word_check.gold
 pr2781595	normal	ivltests
+pr2785294	normal	ivltests diff=log/pr2785294.log:gold/pr2785294.gold
 pr2788686	normal	ivltests
 macro_str_esc	normal	ivltests diff=log/macro_str_esc.log:gold/macro_str_esc.gold
 pr2790236	normal	ivltests
