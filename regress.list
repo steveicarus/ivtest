@@ -1735,6 +1735,7 @@ v0.9:delay_var	normal	ivltests diff=log/delay_var.log:gold/delay_var-v0.9.gold
 # and some of them should likely be NI.
 v0.9:pr1002	EF	ivltests diff=log/pr1002.log:gold/pr1002.gold
 v0.9:pr1913937	EF	ivltests
+v0.9:pr2785294	EF	ivltests
 v0.9:pr2951657	EF	ivltests
 v0.9:pr2973532	CO	ivltests
 v0.9:pr2974051	CO	ivltests
