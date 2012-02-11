@@ -928,6 +928,7 @@ v0.8:pr2434688b	NI
 
 # V0.8 does not support monitorng parts of a word or array missing &PV, &A.
 v0.8:pr1780480	NI
+v0.8:pr2785294	NI
 
 # V0.8 does not support typed parameters.
 v0.8:localparam_type	NI
