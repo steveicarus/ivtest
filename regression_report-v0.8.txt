@@ -304,6 +304,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   pr2434688: Not Implemented.
                  pr2434688b: Not Implemented.
                   pr1780480: Not Implemented.
+                  pr2785294: Not Implemented.
             localparam_type: Not Implemented.
              parameter_type: Not Implemented.
            localparam_type2: Not Implemented.
@@ -375,6 +376,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                  pr3098439a: Not Implemented.
                  pr3098439b: Not Implemented.
                   pr3103880: Not Implemented.
+                  pr3477107: Not Implemented.
            pv_undef_sig_sel: Not Implemented.
                       queue: Not Implemented.
                  queue_fail: Not Implemented.
@@ -1731,4 +1733,4 @@ test_mos_strength_reduction: Passed.
                   pr3465541: Passed.
 ============================================================================
 Test results:
-  Total=1729, Passed=1013, Failed=0, Not Implemented=588, Expected Fail=128
+  Total=1731, Passed=1013, Failed=0, Not Implemented=590, Expected Fail=128
