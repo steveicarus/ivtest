@@ -1,13 +1,13 @@
 
 module main;
 
-   // Declare work1 as a VARIABLE
+   // Declare word1 as a VARIABLE
    struct packed {
       logic [7:0] high;
       logic [7:0] low;
    } word1;
 
-   // Declare work2 as a VARIABLE
+   // Declare word2 as a VARIABLE
    struct packed {
       logic [7:0] high;
       logic [7:0] low;

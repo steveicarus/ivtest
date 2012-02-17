@@ -6,10 +6,10 @@ module main;
       logic [7:0] low;
    } word_t;
 
-   // Declare work1 as a VARIABLE
+   // Declare word1 as a VARIABLE
    word_t word1;
 
-   // Declare work2 as a VARIABLE
+   // Declare word2 as a VARIABLE
    word_t word2;
 
    always @(word1) begin
