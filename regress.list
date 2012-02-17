@@ -1039,6 +1039,14 @@ v0.8:value_range3	NI
 v0.8:vams_abs1	NI
 v0.8:vams_abs2	NI
 v0.8:wreal	NI
+v0.8:struct1	NI
+v0.8:struct2	NI
+v0.8:struct3	NI
+v0.8:struct3b	NI
+v0.8:struct4	NI
+v0.8:struct5	NI
+v0.8:struct6	NI
+v0.8:packeda	NI
 
 # V0.8 does not support automatic tasks or functions.
 v0.8:automatic_error1	NI
@@ -1619,6 +1627,25 @@ v0.9:vhdl_test9		NI
 v0.9:work7		NI
 v0.9:work7b		NI
 v0.9:int_param		NI
+v0.9:test_mux2to1	NI
+v0.9:test_dec2to4	NI
+v0.9:test_enumsystem	NI
+v0.9:test_timebase	NI
+v0.9:test_system	NI
+v0.9:test_signal_init_assign	NI
+v0.9:test_forgen	NI
+v0.9:test_gxor		NI
+v0.9:test_varray1	NI
+v0.9:final		NI
+v0.9:size_cast		NI
+v0.9:struct1		NI
+v0.9:struct2		NI
+v0.9:struct3		NI
+v0.9:struct3b		NI
+v0.9:struct4		NI
+v0.9:struct5		NI
+v0.9:struct6		NI
+v0.9:packeda		NI
 
 # v0.9 does not have the vhdl_sys module
 v0.9:ivlh_event	NI
@@ -3864,6 +3891,7 @@ verify_two_var_delays	normal	ivltests
 real_delay	normal,-gspecify	ivltests diff=log/real_delay.log:gold/real_delay.gold
 pr3039548	normal	ivltests diff=log/pr3039548.log:gold/pr3039548.gold
 uwire		normal	ivltests
+uwire2		normal	ivltests
 uwire_fail	CE	ivltests diff=log/uwire_fail.log:gold/uwire_fail.gold
 pr3044843	normal	ivltests
 ca_force	normal	ivltests
@@ -4072,3 +4100,11 @@ pr3462145	normal,-g2009	ivltests
 pr3465541	normal	ivltests
 int_param	normal,-g2009	ivltests
 pr3477107	normal	ivltests
+struct1	normal,-g2009	ivltests
+struct2	normal,-g2009	ivltests
+struct3	normal,-g2009	ivltests
+struct3b	normal,-g2009	ivltests
+struct4	normal,-g2009	ivltests
+struct5	normal,-g2009	ivltests
+struct6	normal,-g2009	ivltests
+packeda	normal,-g2009	ivltests
