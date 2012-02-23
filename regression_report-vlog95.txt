@@ -79,6 +79,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   int_param: Passed - CE.
                      iuint1: Passed - CE.
                       logp2: Passed - CE.
+                    packeda: Not Implemented.
                      plus_5: Passed - CE.
                      pow-ca: Passed - CE.
                    pow-proc: Passed - CE.
@@ -1613,6 +1614,7 @@ test_mos_strength_reduction: Passed.
       verify_two_var_delays: Passed.
                   pr3039548: Passed.
                       uwire: Passed.
+                     uwire2: Passed.
                  uwire_fail: Passed - CE.
                   pr3044843: Passed.
                    ca_force: Passed.
@@ -1731,6 +1733,13 @@ test_mos_strength_reduction: Passed.
                   pr3445452: Passed.
                   pr3465541: Passed.
                   pr3477107: Passed.
+                    struct1: Passed.
+                    struct2: Passed.
+                    struct3: Passed.
+                   struct3b: Passed.
+                    struct4: Passed.
+                    struct5: Passed.
+                    struct6: Passed.
 ============================================================================
 Test results:
-  Total=1731, Passed=1597, Failed=7, Not Implemented=84, Expected Fail=43
+  Total=1740, Passed=1605, Failed=7, Not Implemented=85, Expected Fail=43
