@@ -1242,6 +1242,7 @@ v0.8:pr1403406b	NI
 
 # V0.8 does not support uwire.
 v0.8:uwire	NI
+v0.8:uwire2	NI
 v0.8:uwire_fail	NI
 
 # V0.8 does not support specify block delays.
