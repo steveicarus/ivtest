@@ -16,7 +16,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                 fatal_et_al: Not Implemented.
                    fileline: Not Implemented.
                   fileline2: Not Implemented.
-                      final: Not Implemented.
              first_last_num: Not Implemented.
                   ibit_test: Not Implemented.
                  ibyte_test: Not Implemented.
@@ -47,7 +46,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
              simple_longint: Not Implemented.
             simple_shortint: Not Implemented.
                   sint_test: Not Implemented.
-                  size_cast: Not Implemented.
               slongint_test: Not Implemented.
              sshortint_test: Not Implemented.
                sv-2val-nets: Not Implemented.
@@ -55,17 +53,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
            sv_timeunit_prec: Not Implemented.
       sv_timeunit_prec_fail: Not Implemented.
            sys_func_as_task: Not Implemented.
-               test_dec2to4: Not Implemented.
-            test_enumsystem: Not Implemented.
-                test_forgen: Not Implemented.
-                  test_gxor: Not Implemented.
                test_inc_dec: Not Implemented.
-               test_mux2to1: Not Implemented.
-    test_signal_init_assign: Not Implemented.
-                test_system: Not Implemented.
-              test_timebase: Not Implemented.
               test_tliteral: Not Implemented.
-               test_varray1: Not Implemented.
           two_state_display: Not Implemented.
                  ubyte_test: Not Implemented.
                   uint_test: Not Implemented.
@@ -137,6 +126,25 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                       work7: Not Implemented.
                      work7b: Not Implemented.
                   int_param: Not Implemented.
+               test_mux2to1: Not Implemented.
+               test_dec2to4: Not Implemented.
+            test_enumsystem: Not Implemented.
+              test_timebase: Not Implemented.
+                test_system: Not Implemented.
+    test_signal_init_assign: Not Implemented.
+                test_forgen: Not Implemented.
+                  test_gxor: Not Implemented.
+               test_varray1: Not Implemented.
+                      final: Not Implemented.
+                  size_cast: Not Implemented.
+                    struct1: Not Implemented.
+                    struct2: Not Implemented.
+                    struct3: Not Implemented.
+                   struct3b: Not Implemented.
+                    struct4: Not Implemented.
+                    struct5: Not Implemented.
+                    struct6: Not Implemented.
+                    packeda: Not Implemented.
                  ivlh_event: Not Implemented.
               cmdline_parm1: Not Implemented.
                     analog1: Not Implemented.
@@ -1678,6 +1686,7 @@ test_mos_strength_reduction: Passed.
                   pr3022502: Passed.
                   pr3024131: Passed.
                   pr3039548: Passed.
+                     uwire2: Passed.
                   pr3044843: Passed.
                    ca_force: Passed.
                  pr3054101a: Passed.
@@ -1737,4 +1746,4 @@ test_mos_strength_reduction: Passed.
                   pr3477107: Passed.
 ============================================================================
 Test results:
-  Total=1735, Passed=1552, Failed=1, Not Implemented=146, Expected Fail=36
+  Total=1744, Passed=1553, Failed=1, Not Implemented=154, Expected Fail=36
