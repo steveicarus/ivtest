@@ -901,6 +901,7 @@ v0.8:pr3296466b	NI
 v0.8:pr3296466c	NI
 v0.8:pr3296466d	NI
 v0.8:tranif1	NI
+v0.8:pr3499807	NI
 
 # V0.8 does not support the `resetall directive
 v0.8:resetall	NI
@@ -1681,7 +1682,9 @@ v0.9:pr2913927	EF	ivltests
 v0.9:pr2937417	EF	ivltests
 v0.9:pr2937417b	EF	ivltests
 v0.9:pr2937417c	EF	ivltests
-v0.9:pr2941939	EF	ivltests
+# and does not support tranif delays
+v0.9:pr2941939	CE	ivltests
+v0.9:pr3499807	CE	ivltests
 
 # V0.9 does not have the ability to select the SDF delays you always get typ.
 v0.9:sdf_del_min	EF	ivltests
@@ -4110,3 +4113,4 @@ struct4	normal,-g2009	ivltests
 struct5	normal,-g2009	ivltests
 struct6	normal,-g2009	ivltests
 packeda	normal,-g2009	ivltests
+pr3499807	normal	ivltests diff=log/pr3499807.log:gold/pr3499807.gold
