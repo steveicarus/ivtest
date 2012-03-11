@@ -519,6 +519,7 @@ test_mos_strength_reduction: Passed.
                    mangle_1: Passed.
                         rop: Passed.
                  task_scope: Passed.
+                task_scope2: Passed.
                      hello1: Passed.
                   hierspace: Passed.
                     dotinid: Passed.
@@ -1740,6 +1741,8 @@ test_mos_strength_reduction: Passed.
                     struct5: Passed.
                     struct6: Passed.
                     packeda: Passed.
+               inc_dec_stmt: Passed.
+           task_init_assign: Passed.
 ============================================================================
 Test results:
-  Total=1740, Passed=1737, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1743, Passed=1740, Failed=3, Not Implemented=0, Expected Fail=0
