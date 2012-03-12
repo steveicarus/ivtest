@@ -1740,6 +1740,7 @@ test_mos_strength_reduction: Passed.
                     struct4: Passed.
                     struct5: Passed.
                     struct6: Passed.
+                  pr3499807: Passed.
 ============================================================================
 Test results:
-  Total=1740, Passed=1605, Failed=7, Not Implemented=85, Expected Fail=43
+  Total=1741, Passed=1606, Failed=7, Not Implemented=85, Expected Fail=43
