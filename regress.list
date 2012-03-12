@@ -1243,6 +1243,7 @@ v0.8:pr1403406b	NI
 
 # V0.8 does not support uwire.
 v0.8:uwire	NI
+v0.8:uwire2	NI
 v0.8:uwire_fail	NI
 
 # V0.8 does not support specify block delays.
@@ -1978,6 +1979,7 @@ vlog95:first_last_num	CE	ivltests
 vlog95:int_param	CE	ivltests
 vlog95:iuint1	CE	ivltests
 vlog95:logp2	CE	ivltests
+vlog95:packeda	NI  # Can likely change to CE once assert is fixed.
 vlog95:plus_5	CE	ivltests  # Also other operators
 vlog95:pow-ca	CE  # Also general **
 vlog95:pow-proc	CE  # Also general **

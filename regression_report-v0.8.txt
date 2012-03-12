@@ -400,6 +400,14 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                   vams_abs1: Not Implemented.
                   vams_abs2: Not Implemented.
                       wreal: Not Implemented.
+                    struct1: Not Implemented.
+                    struct2: Not Implemented.
+                    struct3: Not Implemented.
+                   struct3b: Not Implemented.
+                    struct4: Not Implemented.
+                    struct5: Not Implemented.
+                    struct6: Not Implemented.
+                    packeda: Not Implemented.
            automatic_error1: Not Implemented.
            automatic_error2: Not Implemented.
            automatic_error3: Not Implemented.
@@ -580,6 +588,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                  pr1403406a: Not Implemented.
                  pr1403406b: Not Implemented.
                       uwire: Not Implemented.
+                     uwire2: Not Implemented.
                  uwire_fail: Not Implemented.
                   pr1587669: Passed - CO.
                  specify_01: Passed - CO.
@@ -1733,4 +1742,4 @@ test_mos_strength_reduction: Passed.
                   pr3465541: Passed.
 ============================================================================
 Test results:
-  Total=1731, Passed=1013, Failed=0, Not Implemented=590, Expected Fail=128
+  Total=1740, Passed=1013, Failed=0, Not Implemented=599, Expected Fail=128
