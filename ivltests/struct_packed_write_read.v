@@ -70,7 +70,7 @@ module test;
       if (word_sp0      !== 16'bxxxxxxxx_xxxxxxxx) begin $display("FAILED -- word_sp0      = 'b%b", word_sp0     ); $finish; end
       if (word_sp1      !== 16'bxxxx1111_1111xxxx) begin $display("FAILED -- word_sp1      = 'b%b", word_sp1     ); $finish; end
       if (word_sp2      !== 16'bxxxx1111_1111xxxx) begin $display("FAILED -- word_sp2      = 'b%b", word_sp2     ); $finish; end
-      if (word_sp3      !== 16'bxxxx1111_1111xxxx) begin $display("FAILED -- word_sp3      = 'b%b", word_sp3     ); $finish; end
+      if (word_sp3      !== 16'bxxxx0111_1111xxxx) begin $display("FAILED -- word_sp3      = 'b%b", word_sp3     ); $finish; end
 
       $display("PASSED");
    end
