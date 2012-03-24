@@ -1165,6 +1165,7 @@ v0.8:test_signal_init_assign	NI
 v0.8:test_system	NI
 v0.8:test_timebase	NI
 v0.8:test_varray1	NI
+v0.8:test_when_else	NI
 v0.8:test_tliteral	NI
 v0.8:two_state_display	NI
 v0.8:ubyte_test	NI
@@ -1566,7 +1567,6 @@ v0.9:test_signal_init_assign	NI
 v0.9:test_system	NI
 v0.9:test_timebase	NI
 v0.9:test_tliteral	NI
-v0.9:test_varray1	NI
 v0.9:two_state_display	NI
 v0.9:ubyte_test	NI
 v0.9:uint_test	NI
@@ -1648,6 +1648,7 @@ v0.9:test_signal_init_assign	NI
 v0.9:test_forgen	NI
 v0.9:test_gxor		NI
 v0.9:test_varray1	NI
+v0.9:test_when_else	NI
 v0.9:final		NI
 v0.9:size_cast		NI
 v0.9:struct1		NI
@@ -4150,3 +4151,4 @@ v0.9:specparam1	NI	ivltests
 v0.9:specparam2	NI	ivltests
 pr3527022	normal	ivltests
 pr3527694	normal	ivltests diff=log/pr3527694.log:gold/pr3527694.gold
+test_when_else	normal,-g2009,ivltests/when_else.vhd	ivltests
