@@ -8,7 +8,7 @@ module test;
       logic [7:0] low;
    } word_t;
 
-   // Declare word1/2/3 as a VARIABLE
+   // Declare word* as a VARIABLE
    word_t word_se0, word_se1, word_se2, word_se3;
    word_t word_sw0, word_sw1, word_sw2, word_sw3;
    word_t word_sp0, word_sp1, word_sp2, word_sp3;
