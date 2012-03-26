@@ -1049,6 +1049,7 @@ v0.8:struct3b	NI
 v0.8:struct4	NI
 v0.8:struct5	NI
 v0.8:struct6	NI
+v0.8:struct7	NI
 v0.8:packeda	NI
 v0.8:inc_dec_stmt NI
 v0.8:task_scope2 NI
@@ -1658,6 +1659,7 @@ v0.9:struct3b		NI
 v0.9:struct4		NI
 v0.9:struct5		NI
 v0.9:struct6		NI
+v0.9:struct7		NI
 v0.9:packeda		NI
 v0.9:inc_dec_stmt	NI
 v0.9:task_scope2	NI
@@ -4134,6 +4136,7 @@ struct3b	normal,-g2009	ivltests
 struct4	normal,-g2009	ivltests
 struct5	normal,-g2009	ivltests
 struct6	normal,-g2009	ivltests
+struct7	normal,-g2009	ivltests
 packeda	normal,-g2009	ivltests
 pr3499807	normal	ivltests diff=log/pr3499807.log:gold/pr3499807.gold
 switch_primitives	normal	ivltests diff=log/switch_primitives.log:gold/switch_primitives.gold
