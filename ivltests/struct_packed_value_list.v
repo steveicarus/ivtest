@@ -21,7 +21,6 @@ module test;
    assign word3 = '{default:13};
    assign word4 = '{high:8'haa, default:1};
    assign word5 = '{high:9'h000, low:9'h1ff};
-   assign word5 = '{low:9'h133};
 
    initial begin
       #1;
@@ -32,7 +31,6 @@ module test;
       if (word3 !== 16'b00001101_00001101) begin $display("FAILED -- word3 = 'b%b", word3); err=err+1; end
       if (word4 !== 16'b10101010_00000001) begin $display("FAILED -- word4 = 'b%b", word4); err=err+1; end
       if (word5 !== 16'b00000000_11111111) begin $display("FAILED -- word5 = 'b%b", word5); err=err+1; end
-      if (word5 !== 16'bxxxxxxxx_00110011) begin $display("FAILED -- word5 = 'b%b", word5); err=err+1; end
 
       if (err)  $finish();
       else      $display("PASSED");
