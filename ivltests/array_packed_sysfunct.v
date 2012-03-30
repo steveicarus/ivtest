@@ -1,5 +1,5 @@
 
-// This tests assigning value lists to packed structures
+// This tests system functions operationg on packed arrays
 
 module test ();
 
@@ -13,7 +13,7 @@ module test ();
    endfunction
 
    // 2D packed arrays
-   logic [WA-1:0] [WB-1:0] [WC-1:0] array_bg;  // big endian array
+   logic [WA-1:0] [WB-1:0] [WC-1:0] array_bg;  // big    endian array
    logic [0:WA-1] [0:WB-1] [0:WC-1] array_lt;  // little endian array
 
    // error counter

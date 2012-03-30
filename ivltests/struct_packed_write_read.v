@@ -1,5 +1,5 @@
 
-// This tests unalligned access to packed structures
+// This tests unalligned write/read access to packed structures
 
 module test;
 

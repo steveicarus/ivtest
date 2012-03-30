@@ -1,17 +1,17 @@
 
-// This tests unalligned access to packed arrays
+// This tests unalligned write/read access to packed arrays
 
 module test ();
 
    // parameters for array sizes
-   localparam WA = 4;  // address dimension size
-   localparam WB = 4;  // bit     dimension size
+   localparam WA = 4;
+   localparam WB = 4;
 
    // 2D packed array parameters
 //   localparam [WA-1:0] [WB-1:0] param_bg = {WA*WB{1'b1}};
 
    // 2D packed arrays
-   logic        [WA-1:0] [WB-1:0] array_bg0, array_bg1, array_bg2, array_bg3, array_bg4, array_bg5, array_bg6, array_bg7, array_bg8, array_bg9;  // big endian array
+   logic        [WA-1:0] [WB-1:0] array_bg0, array_bg1, array_bg2, array_bg3, array_bg4, array_bg5, array_bg6, array_bg7, array_bg8, array_bg9;  // big    endian array
    logic        [0:WA-1] [0:WB-1] array_lt0, array_lt1, array_lt2, array_lt3, array_lt4, array_lt5, array_lt6, array_lt7, array_lt8, array_lt9;  // little endian array
    logic                [WA*WB:0] array_1d0, array_1d1, array_1d2, array_1d3, array_1d4, array_1d5, array_1d6, array_1d7, array_1d8, array_1d9;  // 1D array
    logic signed [WA-1:0] [WB-1:0] array_sg0, array_sg1, array_sg2, array_sg3, array_sg4, array_sg5, array_sg6, array_sg7, array_sg8, array_sg9;  // signed big endian array

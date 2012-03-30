@@ -1,14 +1,14 @@
 
-// This tests assigning value lists to packed structures
+// This tests assigning value lists to packed arrays
 
 module test ();
 
    // parameters for array sizes
-   localparam WA = 4;  // address dimension size
-   localparam WB = 4;  // bit     dimension size
+   localparam WA = 4;
+   localparam WB = 4;
 
    // 2D packed arrays
-   logic [WA-1:0] [WB-1:0] array_bg0, array_bg1, array_bg2, array_bg3, array_bg4, array_bg5, array_bg6, array_bg7, array_bg8, array_bg9;  // big endian array
+   logic [WA-1:0] [WB-1:0] array_bg0, array_bg1, array_bg2, array_bg3, array_bg4, array_bg5, array_bg6, array_bg7, array_bg8, array_bg9;  // big    endian array
    logic [0:WA-1] [0:WB-1] array_lt0, array_lt1, array_lt2, array_lt3, array_lt4, array_lt5, array_lt6, array_lt7, array_lt8, array_lt9;  // little endian array
 
    // error counter
