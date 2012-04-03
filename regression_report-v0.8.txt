@@ -287,6 +287,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.8.
                  pr3296466c: Not Implemented.
                  pr3296466d: Not Implemented.
                     tranif1: Not Implemented.
+                  pr3499807: Not Implemented.
                    resetall: Not Implemented.
                   resetall2: Not Implemented.
                     ca_mult: Not Implemented.
@@ -1742,4 +1743,4 @@ test_mos_strength_reduction: Passed.
                   pr3465541: Passed.
 ============================================================================
 Test results:
-  Total=1740, Passed=1013, Failed=0, Not Implemented=599, Expected Fail=128
+  Total=1741, Passed=1013, Failed=0, Not Implemented=600, Expected Fail=128
