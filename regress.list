@@ -1048,6 +1048,9 @@ v0.8:struct4	NI
 v0.8:struct5	NI
 v0.8:struct6	NI
 v0.8:packeda	NI
+v0.8:inc_dec_stmt NI
+v0.8:task_scope2 NI
+v0.8:task_init_assign NI
 
 # V0.8 does not support automatic tasks or functions.
 v0.8:automatic_error1	NI
@@ -1648,6 +1651,9 @@ v0.9:struct4		NI
 v0.9:struct5		NI
 v0.9:struct6		NI
 v0.9:packeda		NI
+v0.9:inc_dec_stmt	NI
+v0.9:task_scope2	NI
+v0.9:task_init_assign	NI
 
 # v0.9 does not have the vhdl_sys module
 v0.9:ivlh_event	NI
@@ -2842,6 +2848,7 @@ mangle		normal	ivltests #
 mangle_1	normal	ivltests #
 rop		normal	ivltests #
 task_scope	normal	ivltests #
+task_scope2	normal,-g2009	ivltests #
 hello1		normal	ivltests
 hierspace    normal  ivltests # whitespace.around .dots. in. hierarchical .names
 dotinid		normal	ivltests # escaped names with . dots
@@ -4114,3 +4121,5 @@ struct5	normal,-g2009	ivltests
 struct6	normal,-g2009	ivltests
 packeda	normal,-g2009	ivltests
 pr3499807	normal	ivltests diff=log/pr3499807.log:gold/pr3499807.gold
+inc_dec_stmt	normal,-g2009	ivltests
+task_init_assign	normal,-g2009	ivltests
