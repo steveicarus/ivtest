@@ -11,303 +11,302 @@ module test ();
 //   localparam [WA-1:0] [WB-1:0] param_bg = {WA*WB{1'b1}};
 
    // 2D packed arrays
-   logic        [WA-1:0] [WB-1:0] array_bg0, array_bg1, array_bg2, array_bg3, array_bg4, array_bg5, array_bg6, array_bg7, array_bg8, array_bg9;  // big    endian array
-   logic        [0:WA-1] [0:WB-1] array_lt0, array_lt1, array_lt2, array_lt3, array_lt4, array_lt5, array_lt6, array_lt7, array_lt8, array_lt9;  // little endian array
-   logic                [WA*WB:0] array_1d0, array_1d1, array_1d2, array_1d3, array_1d4, array_1d5, array_1d6, array_1d7, array_1d8, array_1d9;  // 1D array
-   logic signed [WA-1:0] [WB-1:0] array_sg0, array_sg1, array_sg2, array_sg3, array_sg4, array_sg5, array_sg6, array_sg7, array_sg8, array_sg9;  // signed big endian array
+   logic        [WA-1:0] [WB-1:0] abg0, abg1, abg2, abg3, abg4, abg5, abg6, abg7, abg8, abg9;  // big    endian array
+   logic        [0:WA-1] [0:WB-1] alt0, alt1, alt2, alt3, alt4, alt5, alt6, alt7, alt8, alt9;  // little endian array
+   logic                [WA*WB:0] a1d0, a1d1, a1d2, a1d3, a1d4, a1d5, a1d6, a1d7, a1d8, a1d9;  // 1D array
+   logic signed [WA-1:0] [WB-1:0] asg0, asg1, asg2, asg3, asg4, asg5, asg6, asg7, asg8, asg9;  // signed big endian array
 
    // error counter
-   int err = 0;
+   bit pass = 1;
 
    initial begin
       // test write to array LHS=RHS
-      array_bg0 = {WA*WB{1'bx}};
-      array_bg1 = {WA*WB{1'bx}};  array_bg1                            = {WA  *WB  +0{1'b1}};
-      array_bg2 = {WA*WB{1'bx}};  array_bg2 [WA/2-1:0   ]              = {WA/2*WB  +0{1'b1}};
-      array_bg3 = {WA*WB{1'bx}};  array_bg3 [WA  -1:WA/2]              = {WA/2*WB  +0{1'b1}};
-      array_bg4 = {WA*WB{1'bx}};  array_bg4 [       0   ]              = {1   *WB  +0{1'b1}};
-      array_bg5 = {WA*WB{1'bx}};  array_bg5 [WA  -1     ]              = {1   *WB  +0{1'b1}};
-      array_bg6 = {WA*WB{1'bx}};  array_bg6 [       0   ][WB/2-1:0   ] = {1   *WB/2+0{1'b1}};
-      array_bg7 = {WA*WB{1'bx}};  array_bg7 [WA  -1     ][WB  -1:WB/2] = {1   *WB/2+0{1'b1}};
-      array_bg8 = {WA*WB{1'bx}};  array_bg8 [       0   ][       0   ] = {1   *1   +0{1'b1}};
-      array_bg9 = {WA*WB{1'bx}};  array_bg9 [WA  -1     ][WB  -1     ] = {1   *1   +0{1'b1}};
+      abg0 = {WA*WB{1'bx}};
+      abg1 = {WA*WB{1'bx}};  abg1                            = {WA  *WB  +0{1'b1}};
+      abg2 = {WA*WB{1'bx}};  abg2 [WA/2-1:0   ]              = {WA/2*WB  +0{1'b1}};
+      abg3 = {WA*WB{1'bx}};  abg3 [WA  -1:WA/2]              = {WA/2*WB  +0{1'b1}};
+      abg4 = {WA*WB{1'bx}};  abg4 [       0   ]              = {1   *WB  +0{1'b1}};
+      abg5 = {WA*WB{1'bx}};  abg5 [WA  -1     ]              = {1   *WB  +0{1'b1}};
+      abg6 = {WA*WB{1'bx}};  abg6 [       0   ][WB/2-1:0   ] = {1   *WB/2+0{1'b1}};
+      abg7 = {WA*WB{1'bx}};  abg7 [WA  -1     ][WB  -1:WB/2] = {1   *WB/2+0{1'b1}};
+      abg8 = {WA*WB{1'bx}};  abg8 [       0   ][       0   ] = {1   *1   +0{1'b1}};
+      abg9 = {WA*WB{1'bx}};  abg9 [WA  -1     ][WB  -1     ] = {1   *1   +0{1'b1}};
       // check
-      if (array_bg0 !== 16'bxxxx_xxxx_xxxx_xxxx) begin $display("FAILED -- LHS=RHS -- array_bg0 = 'b%b", array_bg0); err=err+1; end
-      if (array_bg1 !== 16'b1111_1111_1111_1111) begin $display("FAILED -- LHS=RHS -- array_bg1 = 'b%b", array_bg1); err=err+1; end
-      if (array_bg2 !== 16'bxxxx_xxxx_1111_1111) begin $display("FAILED -- LHS=RHS -- array_bg2 = 'b%b", array_bg2); err=err+1; end
-      if (array_bg3 !== 16'b1111_1111_xxxx_xxxx) begin $display("FAILED -- LHS=RHS -- array_bg3 = 'b%b", array_bg3); err=err+1; end
-      if (array_bg4 !== 16'bxxxx_xxxx_xxxx_1111) begin $display("FAILED -- LHS=RHS -- array_bg4 = 'b%b", array_bg4); err=err+1; end
-      if (array_bg5 !== 16'b1111_xxxx_xxxx_xxxx) begin $display("FAILED -- LHS=RHS -- array_bg5 = 'b%b", array_bg5); err=err+1; end
-      if (array_bg6 !== 16'bxxxx_xxxx_xxxx_xx11) begin $display("FAILED -- LHS=RHS -- array_bg6 = 'b%b", array_bg6); err=err+1; end
-      if (array_bg7 !== 16'b11xx_xxxx_xxxx_xxxx) begin $display("FAILED -- LHS=RHS -- array_bg7 = 'b%b", array_bg7); err=err+1; end
-      if (array_bg8 !== 16'bxxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- LHS=RHS -- array_bg8 = 'b%b", array_bg8); err=err+1; end
-      if (array_bg9 !== 16'b1xxx_xxxx_xxxx_xxxx) begin $display("FAILED -- LHS=RHS -- array_bg9 = 'b%b", array_bg9); err=err+1; end
+      if (abg0 !== 16'bxxxx_xxxx_xxxx_xxxx) begin $display("FAILED -- L=R -- abg0 = 'b%b", abg0); pass=0; end
+      if (abg1 !== 16'b1111_1111_1111_1111) begin $display("FAILED -- L=R -- abg1 = 'b%b", abg1); pass=0; end
+      if (abg2 !== 16'bxxxx_xxxx_1111_1111) begin $display("FAILED -- L=R -- abg2 = 'b%b", abg2); pass=0; end
+      if (abg3 !== 16'b1111_1111_xxxx_xxxx) begin $display("FAILED -- L=R -- abg3 = 'b%b", abg3); pass=0; end
+      if (abg4 !== 16'bxxxx_xxxx_xxxx_1111) begin $display("FAILED -- L=R -- abg4 = 'b%b", abg4); pass=0; end
+      if (abg5 !== 16'b1111_xxxx_xxxx_xxxx) begin $display("FAILED -- L=R -- abg5 = 'b%b", abg5); pass=0; end
+      if (abg6 !== 16'bxxxx_xxxx_xxxx_xx11) begin $display("FAILED -- L=R -- abg6 = 'b%b", abg6); pass=0; end
+      if (abg7 !== 16'b11xx_xxxx_xxxx_xxxx) begin $display("FAILED -- L=R -- abg7 = 'b%b", abg7); pass=0; end
+      if (abg8 !== 16'bxxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- L=R -- abg8 = 'b%b", abg8); pass=0; end
+      if (abg9 !== 16'b1xxx_xxxx_xxxx_xxxx) begin $display("FAILED -- L=R -- abg9 = 'b%b", abg9); pass=0; end
 
       // test write to array LHS<RHS
-      array_bg0 = {WA*WB{1'bx}};
-      array_bg1 = {WA*WB{1'bx}};  array_bg1                            = {WA  *WB  +1{1'b1}};
-      array_bg2 = {WA*WB{1'bx}};  array_bg2 [WA/2-1:0   ]              = {WA/2*WB  +1{1'b1}};
-      array_bg3 = {WA*WB{1'bx}};  array_bg3 [WA  -1:WA/2]              = {WA/2*WB  +1{1'b1}};
-      array_bg4 = {WA*WB{1'bx}};  array_bg4 [       0   ]              = {1   *WB  +1{1'b1}};
-      array_bg5 = {WA*WB{1'bx}};  array_bg5 [WA  -1     ]              = {1   *WB  +1{1'b1}};
-      array_bg6 = {WA*WB{1'bx}};  array_bg6 [       0   ][WB/2-1:0   ] = {1   *WB/2+1{1'b1}};
-      array_bg7 = {WA*WB{1'bx}};  array_bg7 [WA  -1     ][WB  -1:WB/2] = {1   *WB/2+1{1'b1}};
-      array_bg8 = {WA*WB{1'bx}};  array_bg8 [       0   ][       0   ] = {1   *1   +1{1'b1}};
-      array_bg9 = {WA*WB{1'bx}};  array_bg9 [WA  -1     ][WB  -1     ] = {1   *1   +1{1'b1}};
+      abg0 = {WA*WB{1'bx}};
+      abg1 = {WA*WB{1'bx}};  abg1                            = {WA  *WB  +1{1'b1}};
+      abg2 = {WA*WB{1'bx}};  abg2 [WA/2-1:0   ]              = {WA/2*WB  +1{1'b1}};
+      abg3 = {WA*WB{1'bx}};  abg3 [WA  -1:WA/2]              = {WA/2*WB  +1{1'b1}};
+      abg4 = {WA*WB{1'bx}};  abg4 [       0   ]              = {1   *WB  +1{1'b1}};
+      abg5 = {WA*WB{1'bx}};  abg5 [WA  -1     ]              = {1   *WB  +1{1'b1}};
+      abg6 = {WA*WB{1'bx}};  abg6 [       0   ][WB/2-1:0   ] = {1   *WB/2+1{1'b1}};
+      abg7 = {WA*WB{1'bx}};  abg7 [WA  -1     ][WB  -1:WB/2] = {1   *WB/2+1{1'b1}};
+      abg8 = {WA*WB{1'bx}};  abg8 [       0   ][       0   ] = {1   *1   +1{1'b1}};
+      abg9 = {WA*WB{1'bx}};  abg9 [WA  -1     ][WB  -1     ] = {1   *1   +1{1'b1}};
       // check
-      if (array_bg0 !== 16'bxxxx_xxxx_xxxx_xxxx) begin $display("FAILED -- LHS<RHS -- array_bg0 = 'b%b", array_bg0); err=err+1; end
-      if (array_bg1 !== 16'b1111_1111_1111_1111) begin $display("FAILED -- LHS<RHS -- array_bg1 = 'b%b", array_bg1); err=err+1; end
-      if (array_bg2 !== 16'bxxxx_xxxx_1111_1111) begin $display("FAILED -- LHS<RHS -- array_bg2 = 'b%b", array_bg2); err=err+1; end
-      if (array_bg3 !== 16'b1111_1111_xxxx_xxxx) begin $display("FAILED -- LHS<RHS -- array_bg3 = 'b%b", array_bg3); err=err+1; end
-      if (array_bg4 !== 16'bxxxx_xxxx_xxxx_1111) begin $display("FAILED -- LHS<RHS -- array_bg4 = 'b%b", array_bg4); err=err+1; end
-      if (array_bg5 !== 16'b1111_xxxx_xxxx_xxxx) begin $display("FAILED -- LHS<RHS -- array_bg5 = 'b%b", array_bg5); err=err+1; end
-      if (array_bg6 !== 16'bxxxx_xxxx_xxxx_xx11) begin $display("FAILED -- LHS<RHS -- array_bg6 = 'b%b", array_bg6); err=err+1; end
-      if (array_bg7 !== 16'b11xx_xxxx_xxxx_xxxx) begin $display("FAILED -- LHS<RHS -- array_bg7 = 'b%b", array_bg7); err=err+1; end
-      if (array_bg8 !== 16'bxxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- LHS<RHS -- array_bg8 = 'b%b", array_bg8); err=err+1; end
-      if (array_bg9 !== 16'b1xxx_xxxx_xxxx_xxxx) begin $display("FAILED -- LHS<RHS -- array_bg9 = 'b%b", array_bg9); err=err+1; end
+      if (abg0 !== 16'bxxxx_xxxx_xxxx_xxxx) begin $display("FAILED -- L<R -- abg0 = 'b%b", abg0); pass=0; end
+      if (abg1 !== 16'b1111_1111_1111_1111) begin $display("FAILED -- L<R -- abg1 = 'b%b", abg1); pass=0; end
+      if (abg2 !== 16'bxxxx_xxxx_1111_1111) begin $display("FAILED -- L<R -- abg2 = 'b%b", abg2); pass=0; end
+      if (abg3 !== 16'b1111_1111_xxxx_xxxx) begin $display("FAILED -- L<R -- abg3 = 'b%b", abg3); pass=0; end
+      if (abg4 !== 16'bxxxx_xxxx_xxxx_1111) begin $display("FAILED -- L<R -- abg4 = 'b%b", abg4); pass=0; end
+      if (abg5 !== 16'b1111_xxxx_xxxx_xxxx) begin $display("FAILED -- L<R -- abg5 = 'b%b", abg5); pass=0; end
+      if (abg6 !== 16'bxxxx_xxxx_xxxx_xx11) begin $display("FAILED -- L<R -- abg6 = 'b%b", abg6); pass=0; end
+      if (abg7 !== 16'b11xx_xxxx_xxxx_xxxx) begin $display("FAILED -- L<R -- abg7 = 'b%b", abg7); pass=0; end
+      if (abg8 !== 16'bxxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- L<R -- abg8 = 'b%b", abg8); pass=0; end
+      if (abg9 !== 16'b1xxx_xxxx_xxxx_xxxx) begin $display("FAILED -- L<R -- abg9 = 'b%b", abg9); pass=0; end
 
       // test write to array LHS>RHS
-      array_bg0 = {WA*WB{1'bx}};
-      array_bg1 = {WA*WB{1'bx}};  array_bg1                            = {WA  *WB  -1{1'b1}};
-      array_bg2 = {WA*WB{1'bx}};  array_bg2 [WA/2-1:0   ]              = {WA/2*WB  -1{1'b1}};
-      array_bg3 = {WA*WB{1'bx}};  array_bg3 [WA  -1:WA/2]              = {WA/2*WB  -1{1'b1}};
-      array_bg4 = {WA*WB{1'bx}};  array_bg4 [       0   ]              = {1   *WB  -1{1'b1}};
-      array_bg5 = {WA*WB{1'bx}};  array_bg5 [WA  -1     ]              = {1   *WB  -1{1'b1}};
-      array_bg6 = {WA*WB{1'bx}};  array_bg6 [       0   ][WB/2-1:0   ] = {1   *WB/2-1{1'b1}};
-      array_bg7 = {WA*WB{1'bx}};  array_bg7 [WA  -1     ][WB  -1:WB/2] = {1   *WB/2-1{1'b1}};
-    //array_bg8 = {WA*WB{1'bx}};  array_bg8 [       0   ][       0   ] = {1   *1   -1{1'b1}};
-    //array_bg9 = {WA*WB{1'bx}};  array_bg9 [WA  -1     ][WB  -1     ] = {1   *1   -1{1'b1}};
+      abg0 = {WA*WB{1'bx}};
+      abg1 = {WA*WB{1'bx}};  abg1                            = {WA  *WB  -1{1'b1}};
+      abg2 = {WA*WB{1'bx}};  abg2 [WA/2-1:0   ]              = {WA/2*WB  -1{1'b1}};
+      abg3 = {WA*WB{1'bx}};  abg3 [WA  -1:WA/2]              = {WA/2*WB  -1{1'b1}};
+      abg4 = {WA*WB{1'bx}};  abg4 [       0   ]              = {1   *WB  -1{1'b1}};
+      abg5 = {WA*WB{1'bx}};  abg5 [WA  -1     ]              = {1   *WB  -1{1'b1}};
+      abg6 = {WA*WB{1'bx}};  abg6 [       0   ][WB/2-1:0   ] = {1   *WB/2-1{1'b1}};
+      abg7 = {WA*WB{1'bx}};  abg7 [WA  -1     ][WB  -1:WB/2] = {1   *WB/2-1{1'b1}};
+    //abg8 = {WA*WB{1'bx}};  abg8 [       0   ][       0   ] = {1   *1   -1{1'b1}};
+    //abg9 = {WA*WB{1'bx}};  abg9 [WA  -1     ][WB  -1     ] = {1   *1   -1{1'b1}};
       // check
-      if (array_bg0 !== 16'bxxxx_xxxx_xxxx_xxxx) begin $display("FAILED -- LHS>RHS -- array_bg0 = 'b%b", array_bg0); err=err+1; end
-      if (array_bg1 !== 16'b0111_1111_1111_1111) begin $display("FAILED -- LHS>RHS -- array_bg1 = 'b%b", array_bg1); err=err+1; end
-      if (array_bg2 !== 16'bxxxx_xxxx_0111_1111) begin $display("FAILED -- LHS>RHS -- array_bg2 = 'b%b", array_bg2); err=err+1; end
-      if (array_bg3 !== 16'b0111_1111_xxxx_xxxx) begin $display("FAILED -- LHS>RHS -- array_bg3 = 'b%b", array_bg3); err=err+1; end
-      if (array_bg4 !== 16'bxxxx_xxxx_xxxx_0111) begin $display("FAILED -- LHS>RHS -- array_bg4 = 'b%b", array_bg4); err=err+1; end
-      if (array_bg5 !== 16'b0111_xxxx_xxxx_xxxx) begin $display("FAILED -- LHS>RHS -- array_bg5 = 'b%b", array_bg5); err=err+1; end
-      if (array_bg6 !== 16'bxxxx_xxxx_xxxx_xx01) begin $display("FAILED -- LHS>RHS -- array_bg6 = 'b%b", array_bg6); err=err+1; end
-      if (array_bg7 !== 16'b01xx_xxxx_xxxx_xxxx) begin $display("FAILED -- LHS>RHS -- array_bg7 = 'b%b", array_bg7); err=err+1; end
-    //if (array_bg8 !== 16'bxxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- LHS>RHS -- array_bg8 = 'b%b", array_bg8); err=err+1; end
-    //if (array_bg9 !== 16'b1xxx_xxxx_xxxx_xxxx) begin $display("FAILED -- LHS>RHS -- array_bg9 = 'b%b", array_bg9); err=err+1; end
+      if (abg0 !== 16'bxxxx_xxxx_xxxx_xxxx) begin $display("FAILED -- L>R -- abg0 = 'b%b", abg0); pass=0; end
+      if (abg1 !== 16'b0111_1111_1111_1111) begin $display("FAILED -- L>R -- abg1 = 'b%b", abg1); pass=0; end
+      if (abg2 !== 16'bxxxx_xxxx_0111_1111) begin $display("FAILED -- L>R -- abg2 = 'b%b", abg2); pass=0; end
+      if (abg3 !== 16'b0111_1111_xxxx_xxxx) begin $display("FAILED -- L>R -- abg3 = 'b%b", abg3); pass=0; end
+      if (abg4 !== 16'bxxxx_xxxx_xxxx_0111) begin $display("FAILED -- L>R -- abg4 = 'b%b", abg4); pass=0; end
+      if (abg5 !== 16'b0111_xxxx_xxxx_xxxx) begin $display("FAILED -- L>R -- abg5 = 'b%b", abg5); pass=0; end
+      if (abg6 !== 16'bxxxx_xxxx_xxxx_xx01) begin $display("FAILED -- L>R -- abg6 = 'b%b", abg6); pass=0; end
+      if (abg7 !== 16'b01xx_xxxx_xxxx_xxxx) begin $display("FAILED -- L>R -- abg7 = 'b%b", abg7); pass=0; end
+    //if (abg8 !== 16'bxxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- L>R -- abg8 = 'b%b", abg8); pass=0; end
+    //if (abg9 !== 16'b1xxx_xxxx_xxxx_xxxx) begin $display("FAILED -- L>R -- abg9 = 'b%b", abg9); pass=0; end
 
       // test write to array LHS=RHS
-      array_lt0 = {WA*WB{1'bx}};
-      array_lt1 = {WA*WB{1'bx}};  array_lt1                            = {WA  *WB  +0{1'b1}};
-      array_lt2 = {WA*WB{1'bx}};  array_lt2 [0   :WA/2-1]              = {WA/2*WB  +0{1'b1}};
-      array_lt3 = {WA*WB{1'bx}};  array_lt3 [WA/2:WA  -1]              = {WA/2*WB  +0{1'b1}};
-      array_lt4 = {WA*WB{1'bx}};  array_lt4 [0          ]              = {1   *WB  +0{1'b1}};
-      array_lt5 = {WA*WB{1'bx}};  array_lt5 [     WA  -1]              = {1   *WB  +0{1'b1}};
-      array_lt6 = {WA*WB{1'bx}};  array_lt6 [0          ][0   :WB/2-1] = {1   *WB/2+0{1'b1}};
-      array_lt7 = {WA*WB{1'bx}};  array_lt7 [     WA  -1][WB/2:WB  -1] = {1   *WB/2+0{1'b1}};
-      array_lt8 = {WA*WB{1'bx}};  array_lt8 [0          ][0          ] = {1   *1   +0{1'b1}};
-      array_lt9 = {WA*WB{1'bx}};  array_lt9 [     WA  -1][     WB  -1] = {1   *1   +0{1'b1}};
+      alt0 = {WA*WB{1'bx}};
+      alt1 = {WA*WB{1'bx}};  alt1                            = {WA  *WB  +0{1'b1}};
+      alt2 = {WA*WB{1'bx}};  alt2 [0   :WA/2-1]              = {WA/2*WB  +0{1'b1}};
+      alt3 = {WA*WB{1'bx}};  alt3 [WA/2:WA  -1]              = {WA/2*WB  +0{1'b1}};
+      alt4 = {WA*WB{1'bx}};  alt4 [0          ]              = {1   *WB  +0{1'b1}};
+      alt5 = {WA*WB{1'bx}};  alt5 [     WA  -1]              = {1   *WB  +0{1'b1}};
+      alt6 = {WA*WB{1'bx}};  alt6 [0          ][0   :WB/2-1] = {1   *WB/2+0{1'b1}};
+      alt7 = {WA*WB{1'bx}};  alt7 [     WA  -1][WB/2:WB  -1] = {1   *WB/2+0{1'b1}};
+      alt8 = {WA*WB{1'bx}};  alt8 [0          ][0          ] = {1   *1   +0{1'b1}};
+      alt9 = {WA*WB{1'bx}};  alt9 [     WA  -1][     WB  -1] = {1   *1   +0{1'b1}};
       // check
-      if (array_lt0 !== 16'bxxxx_xxxx_xxxx_xxxx) begin $display("FAILED -- LHS=RHS -- array_lt0 = 'b%b", array_lt0); err=err+1; end
-      if (array_lt1 !== 16'b1111_1111_1111_1111) begin $display("FAILED -- LHS=RHS -- array_lt1 = 'b%b", array_lt1); err=err+1; end
-      if (array_lt2 !== 16'b1111_1111_xxxx_xxxx) begin $display("FAILED -- LHS=RHS -- array_lt2 = 'b%b", array_lt2); err=err+1; end
-      if (array_lt3 !== 16'bxxxx_xxxx_1111_1111) begin $display("FAILED -- LHS=RHS -- array_lt3 = 'b%b", array_lt3); err=err+1; end
-      if (array_lt4 !== 16'b1111_xxxx_xxxx_xxxx) begin $display("FAILED -- LHS=RHS -- array_lt4 = 'b%b", array_lt4); err=err+1; end
-      if (array_lt5 !== 16'bxxxx_xxxx_xxxx_1111) begin $display("FAILED -- LHS=RHS -- array_lt5 = 'b%b", array_lt5); err=err+1; end
-      if (array_lt6 !== 16'b11xx_xxxx_xxxx_xxxx) begin $display("FAILED -- LHS=RHS -- array_lt6 = 'b%b", array_lt6); err=err+1; end
-      if (array_lt7 !== 16'bxxxx_xxxx_xxxx_xx11) begin $display("FAILED -- LHS=RHS -- array_lt7 = 'b%b", array_lt7); err=err+1; end
-      if (array_lt8 !== 16'b1xxx_xxxx_xxxx_xxxx) begin $display("FAILED -- LHS=RHS -- array_lt8 = 'b%b", array_lt8); err=err+1; end
-      if (array_lt9 !== 16'bxxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- LHS=RHS -- array_lt9 = 'b%b", array_lt9); err=err+1; end
+      if (alt0 !== 16'bxxxx_xxxx_xxxx_xxxx) begin $display("FAILED -- L=R -- alt0 = 'b%b", alt0); pass=0; end
+      if (alt1 !== 16'b1111_1111_1111_1111) begin $display("FAILED -- L=R -- alt1 = 'b%b", alt1); pass=0; end
+      if (alt2 !== 16'b1111_1111_xxxx_xxxx) begin $display("FAILED -- L=R -- alt2 = 'b%b", alt2); pass=0; end
+      if (alt3 !== 16'bxxxx_xxxx_1111_1111) begin $display("FAILED -- L=R -- alt3 = 'b%b", alt3); pass=0; end
+      if (alt4 !== 16'b1111_xxxx_xxxx_xxxx) begin $display("FAILED -- L=R -- alt4 = 'b%b", alt4); pass=0; end
+      if (alt5 !== 16'bxxxx_xxxx_xxxx_1111) begin $display("FAILED -- L=R -- alt5 = 'b%b", alt5); pass=0; end
+      if (alt6 !== 16'b11xx_xxxx_xxxx_xxxx) begin $display("FAILED -- L=R -- alt6 = 'b%b", alt6); pass=0; end
+      if (alt7 !== 16'bxxxx_xxxx_xxxx_xx11) begin $display("FAILED -- L=R -- alt7 = 'b%b", alt7); pass=0; end
+      if (alt8 !== 16'b1xxx_xxxx_xxxx_xxxx) begin $display("FAILED -- L=R -- alt8 = 'b%b", alt8); pass=0; end
+      if (alt9 !== 16'bxxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- L=R -- alt9 = 'b%b", alt9); pass=0; end
 
       // test write to array LHS<RHS
-      array_lt0 = {WA*WB{1'bx}};
-      array_lt1 = {WA*WB{1'bx}};  array_lt1                            = {WA  *WB  +1{1'b1}};
-      array_lt2 = {WA*WB{1'bx}};  array_lt2 [0   :WA/2-1]              = {WA/2*WB  +1{1'b1}};
-      array_lt3 = {WA*WB{1'bx}};  array_lt3 [WA/2:WA  -1]              = {WA/2*WB  +1{1'b1}};
-      array_lt4 = {WA*WB{1'bx}};  array_lt4 [0          ]              = {1   *WB  +1{1'b1}};
-      array_lt5 = {WA*WB{1'bx}};  array_lt5 [     WA  -1]              = {1   *WB  +1{1'b1}};
-      array_lt6 = {WA*WB{1'bx}};  array_lt6 [0          ][0   :WB/2-1] = {1   *WB/2+1{1'b1}};
-      array_lt7 = {WA*WB{1'bx}};  array_lt7 [     WA  -1][WB/2:WB  -1] = {1   *WB/2+1{1'b1}};
-      array_lt8 = {WA*WB{1'bx}};  array_lt8 [0          ][0          ] = {1   *1   +1{1'b1}};
-      array_lt9 = {WA*WB{1'bx}};  array_lt9 [     WA  -1][     WB  -1] = {1   *1   +1{1'b1}};
+      alt0 = {WA*WB{1'bx}};
+      alt1 = {WA*WB{1'bx}};  alt1                            = {WA  *WB  +1{1'b1}};
+      alt2 = {WA*WB{1'bx}};  alt2 [0   :WA/2-1]              = {WA/2*WB  +1{1'b1}};
+      alt3 = {WA*WB{1'bx}};  alt3 [WA/2:WA  -1]              = {WA/2*WB  +1{1'b1}};
+      alt4 = {WA*WB{1'bx}};  alt4 [0          ]              = {1   *WB  +1{1'b1}};
+      alt5 = {WA*WB{1'bx}};  alt5 [     WA  -1]              = {1   *WB  +1{1'b1}};
+      alt6 = {WA*WB{1'bx}};  alt6 [0          ][0   :WB/2-1] = {1   *WB/2+1{1'b1}};
+      alt7 = {WA*WB{1'bx}};  alt7 [     WA  -1][WB/2:WB  -1] = {1   *WB/2+1{1'b1}};
+      alt8 = {WA*WB{1'bx}};  alt8 [0          ][0          ] = {1   *1   +1{1'b1}};
+      alt9 = {WA*WB{1'bx}};  alt9 [     WA  -1][     WB  -1] = {1   *1   +1{1'b1}};
       // check
-      if (array_lt0 !== 16'bxxxx_xxxx_xxxx_xxxx) begin $display("FAILED -- LHS<RHS -- array_lt0 = 'b%b", array_lt0); err=err+1; end
-      if (array_lt1 !== 16'b1111_1111_1111_1111) begin $display("FAILED -- LHS<RHS -- array_lt1 = 'b%b", array_lt1); err=err+1; end
-      if (array_lt2 !== 16'b1111_1111_xxxx_xxxx) begin $display("FAILED -- LHS<RHS -- array_lt2 = 'b%b", array_lt2); err=err+1; end
-      if (array_lt3 !== 16'bxxxx_xxxx_1111_1111) begin $display("FAILED -- LHS<RHS -- array_lt3 = 'b%b", array_lt3); err=err+1; end
-      if (array_lt4 !== 16'b1111_xxxx_xxxx_xxxx) begin $display("FAILED -- LHS<RHS -- array_lt4 = 'b%b", array_lt4); err=err+1; end
-      if (array_lt5 !== 16'bxxxx_xxxx_xxxx_1111) begin $display("FAILED -- LHS<RHS -- array_lt5 = 'b%b", array_lt5); err=err+1; end
-      if (array_lt6 !== 16'b11xx_xxxx_xxxx_xxxx) begin $display("FAILED -- LHS<RHS -- array_lt6 = 'b%b", array_lt6); err=err+1; end
-      if (array_lt7 !== 16'bxxxx_xxxx_xxxx_xx11) begin $display("FAILED -- LHS<RHS -- array_lt7 = 'b%b", array_lt7); err=err+1; end
-      if (array_lt8 !== 16'b1xxx_xxxx_xxxx_xxxx) begin $display("FAILED -- LHS<RHS -- array_lt8 = 'b%b", array_lt8); err=err+1; end
-      if (array_lt9 !== 16'bxxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- LHS<RHS -- array_lt9 = 'b%b", array_lt9); err=err+1; end
+      if (alt0 !== 16'bxxxx_xxxx_xxxx_xxxx) begin $display("FAILED -- L<R -- alt0 = 'b%b", alt0); pass=0; end
+      if (alt1 !== 16'b1111_1111_1111_1111) begin $display("FAILED -- L<R -- alt1 = 'b%b", alt1); pass=0; end
+      if (alt2 !== 16'b1111_1111_xxxx_xxxx) begin $display("FAILED -- L<R -- alt2 = 'b%b", alt2); pass=0; end
+      if (alt3 !== 16'bxxxx_xxxx_1111_1111) begin $display("FAILED -- L<R -- alt3 = 'b%b", alt3); pass=0; end
+      if (alt4 !== 16'b1111_xxxx_xxxx_xxxx) begin $display("FAILED -- L<R -- alt4 = 'b%b", alt4); pass=0; end
+      if (alt5 !== 16'bxxxx_xxxx_xxxx_1111) begin $display("FAILED -- L<R -- alt5 = 'b%b", alt5); pass=0; end
+      if (alt6 !== 16'b11xx_xxxx_xxxx_xxxx) begin $display("FAILED -- L<R -- alt6 = 'b%b", alt6); pass=0; end
+      if (alt7 !== 16'bxxxx_xxxx_xxxx_xx11) begin $display("FAILED -- L<R -- alt7 = 'b%b", alt7); pass=0; end
+      if (alt8 !== 16'b1xxx_xxxx_xxxx_xxxx) begin $display("FAILED -- L<R -- alt8 = 'b%b", alt8); pass=0; end
+      if (alt9 !== 16'bxxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- L<R -- alt9 = 'b%b", alt9); pass=0; end
 
       // test write to array LHS>RHS
-      array_lt0 = {WA*WB{1'bx}};
-      array_lt1 = {WA*WB{1'bx}};  array_lt1                            = {WA  *WB  -1{1'b1}};
-      array_lt2 = {WA*WB{1'bx}};  array_lt2 [0   :WA/2-1]              = {WA/2*WB  -1{1'b1}};
-      array_lt3 = {WA*WB{1'bx}};  array_lt3 [WA/2:WA  -1]              = {WA/2*WB  -1{1'b1}};
-      array_lt4 = {WA*WB{1'bx}};  array_lt4 [0          ]              = {1   *WB  -1{1'b1}};
-      array_lt5 = {WA*WB{1'bx}};  array_lt5 [     WA  -1]              = {1   *WB  -1{1'b1}};
-      array_lt6 = {WA*WB{1'bx}};  array_lt6 [0          ][0   :WB/2-1] = {1   *WB/2-1{1'b1}};
-      array_lt7 = {WA*WB{1'bx}};  array_lt7 [     WA  -1][WB/2:WB  -1] = {1   *WB/2-1{1'b1}};
-    //array_lt8 = {WA*WB{1'bx}};  array_lt8 [0          ][0          ] = {1   *1   -1{1'b1}};
-    //array_lt9 = {WA*WB{1'bx}};  array_lt9 [     WA  -1][     WB  -1] = {1   *1   -1{1'b1}};
+      alt0 = {WA*WB{1'bx}};
+      alt1 = {WA*WB{1'bx}};  alt1                            = {WA  *WB  -1{1'b1}};
+      alt2 = {WA*WB{1'bx}};  alt2 [0   :WA/2-1]              = {WA/2*WB  -1{1'b1}};
+      alt3 = {WA*WB{1'bx}};  alt3 [WA/2:WA  -1]              = {WA/2*WB  -1{1'b1}};
+      alt4 = {WA*WB{1'bx}};  alt4 [0          ]              = {1   *WB  -1{1'b1}};
+      alt5 = {WA*WB{1'bx}};  alt5 [     WA  -1]              = {1   *WB  -1{1'b1}};
+      alt6 = {WA*WB{1'bx}};  alt6 [0          ][0   :WB/2-1] = {1   *WB/2-1{1'b1}};
+      alt7 = {WA*WB{1'bx}};  alt7 [     WA  -1][WB/2:WB  -1] = {1   *WB/2-1{1'b1}};
+    //alt8 = {WA*WB{1'bx}};  alt8 [0          ][0          ] = {1   *1   -1{1'b1}};
+    //alt9 = {WA*WB{1'bx}};  alt9 [     WA  -1][     WB  -1] = {1   *1   -1{1'b1}};
       // check
-      if (array_lt0 !== 16'bxxxx_xxxx_xxxx_xxxx) begin $display("FAILED -- LHS>RHS -- array_lt0 = 'b%b", array_lt0); err=err+1; end
-      if (array_lt1 !== 16'b0111_1111_1111_1111) begin $display("FAILED -- LHS>RHS -- array_lt1 = 'b%b", array_lt1); err=err+1; end
-      if (array_lt2 !== 16'b0111_1111_xxxx_xxxx) begin $display("FAILED -- LHS>RHS -- array_lt2 = 'b%b", array_lt2); err=err+1; end
-      if (array_lt3 !== 16'bxxxx_xxxx_0111_1111) begin $display("FAILED -- LHS>RHS -- array_lt3 = 'b%b", array_lt3); err=err+1; end
-      if (array_lt4 !== 16'b0111_xxxx_xxxx_xxxx) begin $display("FAILED -- LHS>RHS -- array_lt4 = 'b%b", array_lt4); err=err+1; end
-      if (array_lt5 !== 16'bxxxx_xxxx_xxxx_0111) begin $display("FAILED -- LHS>RHS -- array_lt5 = 'b%b", array_lt5); err=err+1; end
-      if (array_lt6 !== 16'b01xx_xxxx_xxxx_xxxx) begin $display("FAILED -- LHS>RHS -- array_lt6 = 'b%b", array_lt6); err=err+1; end
-      if (array_lt7 !== 16'bxxxx_xxxx_xxxx_xx01) begin $display("FAILED -- LHS>RHS -- array_lt7 = 'b%b", array_lt7); err=err+1; end
-    //if (array_lt8 !== 16'b1xxx_xxxx_xxxx_xxxx) begin $display("FAILED -- LHS>RHS -- array_lt8 = 'b%b", array_lt8); err=err+1; end
-    //if (array_lt9 !== 16'bxxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- LHS>RHS -- array_lt9 = 'b%b", array_lt9); err=err+1; end
+      if (alt0 !== 16'bxxxx_xxxx_xxxx_xxxx) begin $display("FAILED -- L>R -- alt0 = 'b%b", alt0); pass=0; end
+      if (alt1 !== 16'b0111_1111_1111_1111) begin $display("FAILED -- L>R -- alt1 = 'b%b", alt1); pass=0; end
+      if (alt2 !== 16'b0111_1111_xxxx_xxxx) begin $display("FAILED -- L>R -- alt2 = 'b%b", alt2); pass=0; end
+      if (alt3 !== 16'bxxxx_xxxx_0111_1111) begin $display("FAILED -- L>R -- alt3 = 'b%b", alt3); pass=0; end
+      if (alt4 !== 16'b0111_xxxx_xxxx_xxxx) begin $display("FAILED -- L>R -- alt4 = 'b%b", alt4); pass=0; end
+      if (alt5 !== 16'bxxxx_xxxx_xxxx_0111) begin $display("FAILED -- L>R -- alt5 = 'b%b", alt5); pass=0; end
+      if (alt6 !== 16'b01xx_xxxx_xxxx_xxxx) begin $display("FAILED -- L>R -- alt6 = 'b%b", alt6); pass=0; end
+      if (alt7 !== 16'bxxxx_xxxx_xxxx_xx01) begin $display("FAILED -- L>R -- alt7 = 'b%b", alt7); pass=0; end
+    //if (alt8 !== 16'b1xxx_xxxx_xxxx_xxxx) begin $display("FAILED -- L>R -- alt8 = 'b%b", alt8); pass=0; end
+    //if (alt9 !== 16'bxxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- L>R -- alt9 = 'b%b", alt9); pass=0; end
 
       // assign a constant value to the array
-      array_bg1 = {WA*WB{1'b1}};
-      array_bg2 = {WA*WB{1'b1}};
-      array_bg3 = {WA*WB{1'b1}};
-      array_bg4 = {WA*WB{1'b1}};
-      array_bg5 = {WA*WB{1'b1}};
-      array_bg6 = {WA*WB{1'b1}};
-      array_bg7 = {WA*WB{1'b1}};
-      array_bg8 = {WA*WB{1'b1}};
-      array_bg9 = {WA*WB{1'b1}};
+      abg1 = {WA*WB{1'b1}};
+      abg2 = {WA*WB{1'b1}};
+      abg3 = {WA*WB{1'b1}};
+      abg4 = {WA*WB{1'b1}};
+      abg5 = {WA*WB{1'b1}};
+      abg6 = {WA*WB{1'b1}};
+      abg7 = {WA*WB{1'b1}};
+      abg8 = {WA*WB{1'b1}};
+      abg9 = {WA*WB{1'b1}};
 
       // test read from array LHS=RHS
-      array_1d1 = {WA*WB+1{1'bx}};  array_1d1[WA  *WB  -1+0:0] = array_bg1                           ;
-      array_1d2 = {WA*WB+1{1'bx}};  array_1d2[WA/2*WB  -1+0:0] = array_bg2 [WA/2-1:0   ]             ;
-      array_1d3 = {WA*WB+1{1'bx}};  array_1d3[WA/2*WB  -1+0:0] = array_bg3 [WA  -1:WA/2]             ;
-      array_1d4 = {WA*WB+1{1'bx}};  array_1d4[1   *WB  -1+0:0] = array_bg4 [       0   ]             ;
-      array_1d5 = {WA*WB+1{1'bx}};  array_1d5[1   *WB  -1+0:0] = array_bg5 [WA  -1     ]             ;
-      array_1d6 = {WA*WB+1{1'bx}};  array_1d6[1   *WB/2-1+0:0] = array_bg6 [       0   ][WB/2-1:0   ];
-      array_1d7 = {WA*WB+1{1'bx}};  array_1d7[1   *WB/2-1+0:0] = array_bg7 [WA  -1     ][WB  -1:WB/2];
-      array_1d8 = {WA*WB+1{1'bx}};  array_1d8[1   *1   -1+0:0] = array_bg8 [       0   ][       0   ];
-      array_1d9 = {WA*WB+1{1'bx}};  array_1d9[1   *1   -1+0:0] = array_bg9 [WA  -1     ][WB  -1     ];
+      a1d1 = {WA*WB+1{1'bx}};  a1d1[WA  *WB  -1+0:0] = abg1                           ;
+      a1d2 = {WA*WB+1{1'bx}};  a1d2[WA/2*WB  -1+0:0] = abg2 [WA/2-1:0   ]             ;
+      a1d3 = {WA*WB+1{1'bx}};  a1d3[WA/2*WB  -1+0:0] = abg3 [WA  -1:WA/2]             ;
+      a1d4 = {WA*WB+1{1'bx}};  a1d4[1   *WB  -1+0:0] = abg4 [       0   ]             ;
+      a1d5 = {WA*WB+1{1'bx}};  a1d5[1   *WB  -1+0:0] = abg5 [WA  -1     ]             ;
+      a1d6 = {WA*WB+1{1'bx}};  a1d6[1   *WB/2-1+0:0] = abg6 [       0   ][WB/2-1:0   ];
+      a1d7 = {WA*WB+1{1'bx}};  a1d7[1   *WB/2-1+0:0] = abg7 [WA  -1     ][WB  -1:WB/2];
+      a1d8 = {WA*WB+1{1'bx}};  a1d8[1   *1   -1+0:0] = abg8 [       0   ][       0   ];
+      a1d9 = {WA*WB+1{1'bx}};  a1d9[1   *1   -1+0:0] = abg9 [WA  -1     ][WB  -1     ];
       // check
-      if (array_1d1 !== 17'bx_1111_1111_1111_1111) begin $display("FAILED -- LHS=RHS BE -- array_1d1 = 'b%b", array_1d1); err=err+1; end
-      if (array_1d2 !== 17'bx_xxxx_xxxx_1111_1111) begin $display("FAILED -- LHS=RHS BE -- array_1d2 = 'b%b", array_1d2); err=err+1; end
-      if (array_1d3 !== 17'bx_xxxx_xxxx_1111_1111) begin $display("FAILED -- LHS=RHS BE -- array_1d3 = 'b%b", array_1d3); err=err+1; end
-      if (array_1d4 !== 17'bx_xxxx_xxxx_xxxx_1111) begin $display("FAILED -- LHS=RHS BE -- array_1d4 = 'b%b", array_1d4); err=err+1; end
-      if (array_1d5 !== 17'bx_xxxx_xxxx_xxxx_1111) begin $display("FAILED -- LHS=RHS BE -- array_1d5 = 'b%b", array_1d5); err=err+1; end
-      if (array_1d6 !== 17'bx_xxxx_xxxx_xxxx_xx11) begin $display("FAILED -- LHS=RHS BE -- array_1d6 = 'b%b", array_1d6); err=err+1; end
-      if (array_1d7 !== 17'bx_xxxx_xxxx_xxxx_xx11) begin $display("FAILED -- LHS=RHS BE -- array_1d7 = 'b%b", array_1d7); err=err+1; end
-      if (array_1d8 !== 17'bx_xxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- LHS=RHS BE -- array_1d8 = 'b%b", array_1d8); err=err+1; end
-      if (array_1d9 !== 17'bx_xxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- LHS=RHS BE -- array_1d9 = 'b%b", array_1d9); err=err+1; end
+      if (a1d1 !== 17'bx_1111_1111_1111_1111) begin $display("FAILED -- L=R BE -- a1d1 = 'b%b", a1d1); pass=0; end
+      if (a1d2 !== 17'bx_xxxx_xxxx_1111_1111) begin $display("FAILED -- L=R BE -- a1d2 = 'b%b", a1d2); pass=0; end
+      if (a1d3 !== 17'bx_xxxx_xxxx_1111_1111) begin $display("FAILED -- L=R BE -- a1d3 = 'b%b", a1d3); pass=0; end
+      if (a1d4 !== 17'bx_xxxx_xxxx_xxxx_1111) begin $display("FAILED -- L=R BE -- a1d4 = 'b%b", a1d4); pass=0; end
+      if (a1d5 !== 17'bx_xxxx_xxxx_xxxx_1111) begin $display("FAILED -- L=R BE -- a1d5 = 'b%b", a1d5); pass=0; end
+      if (a1d6 !== 17'bx_xxxx_xxxx_xxxx_xx11) begin $display("FAILED -- L=R BE -- a1d6 = 'b%b", a1d6); pass=0; end
+      if (a1d7 !== 17'bx_xxxx_xxxx_xxxx_xx11) begin $display("FAILED -- L=R BE -- a1d7 = 'b%b", a1d7); pass=0; end
+      if (a1d8 !== 17'bx_xxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- L=R BE -- a1d8 = 'b%b", a1d8); pass=0; end
+      if (a1d9 !== 17'bx_xxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- L=R BE -- a1d9 = 'b%b", a1d9); pass=0; end
 
       // test read from array LHS>RHS
-      array_1d1 = {WA*WB+1{1'bx}};  array_1d1[WA  *WB  -1+1:0] = array_bg1                           ;
-      array_1d2 = {WA*WB+1{1'bx}};  array_1d2[WA/2*WB  -1+1:0] = array_bg2 [WA/2-1:0   ]             ;
-      array_1d3 = {WA*WB+1{1'bx}};  array_1d3[WA/2*WB  -1+1:0] = array_bg3 [WA  -1:WA/2]             ;
-      array_1d4 = {WA*WB+1{1'bx}};  array_1d4[1   *WB  -1+1:0] = array_bg4 [       0   ]             ;
-      array_1d5 = {WA*WB+1{1'bx}};  array_1d5[1   *WB  -1+1:0] = array_bg5 [WA  -1     ]             ;
-      array_1d6 = {WA*WB+1{1'bx}};  array_1d6[1   *WB/2-1+1:0] = array_bg6 [       0   ][WB/2-1:0   ];
-      array_1d7 = {WA*WB+1{1'bx}};  array_1d7[1   *WB/2-1+1:0] = array_bg7 [WA  -1     ][WB  -1:WB/2];
-      array_1d8 = {WA*WB+1{1'bx}};  array_1d8[1   *1   -1+1:0] = array_bg8 [       0   ][       0   ];
-      array_1d9 = {WA*WB+1{1'bx}};  array_1d9[1   *1   -1+1:0] = array_bg9 [WA  -1     ][WB  -1     ];
+      a1d1 = {WA*WB+1{1'bx}};  a1d1[WA  *WB  -1+1:0] = abg1                           ;
+      a1d2 = {WA*WB+1{1'bx}};  a1d2[WA/2*WB  -1+1:0] = abg2 [WA/2-1:0   ]             ;
+      a1d3 = {WA*WB+1{1'bx}};  a1d3[WA/2*WB  -1+1:0] = abg3 [WA  -1:WA/2]             ;
+      a1d4 = {WA*WB+1{1'bx}};  a1d4[1   *WB  -1+1:0] = abg4 [       0   ]             ;
+      a1d5 = {WA*WB+1{1'bx}};  a1d5[1   *WB  -1+1:0] = abg5 [WA  -1     ]             ;
+      a1d6 = {WA*WB+1{1'bx}};  a1d6[1   *WB/2-1+1:0] = abg6 [       0   ][WB/2-1:0   ];
+      a1d7 = {WA*WB+1{1'bx}};  a1d7[1   *WB/2-1+1:0] = abg7 [WA  -1     ][WB  -1:WB/2];
+      a1d8 = {WA*WB+1{1'bx}};  a1d8[1   *1   -1+1:0] = abg8 [       0   ][       0   ];
+      a1d9 = {WA*WB+1{1'bx}};  a1d9[1   *1   -1+1:0] = abg9 [WA  -1     ][WB  -1     ];
       // check
-      if (array_1d1 !== 17'b0_1111_1111_1111_1111) begin $display("FAILED -- LHS>RHS BE -- array_1d1 = 'b%b", array_1d1); err=err+1; end
-      if (array_1d2 !== 17'bx_xxxx_xxx0_1111_1111) begin $display("FAILED -- LHS>RHS BE -- array_1d2 = 'b%b", array_1d2); err=err+1; end
-      if (array_1d3 !== 17'bx_xxxx_xxx0_1111_1111) begin $display("FAILED -- LHS>RHS BE -- array_1d3 = 'b%b", array_1d3); err=err+1; end
-      if (array_1d4 !== 17'bx_xxxx_xxxx_xxx0_1111) begin $display("FAILED -- LHS>RHS BE -- array_1d4 = 'b%b", array_1d4); err=err+1; end
-      if (array_1d5 !== 17'bx_xxxx_xxxx_xxx0_1111) begin $display("FAILED -- LHS>RHS BE -- array_1d5 = 'b%b", array_1d5); err=err+1; end
-      if (array_1d6 !== 17'bx_xxxx_xxxx_xxxx_x011) begin $display("FAILED -- LHS>RHS BE -- array_1d6 = 'b%b", array_1d6); err=err+1; end
-      if (array_1d7 !== 17'bx_xxxx_xxxx_xxxx_x011) begin $display("FAILED -- LHS>RHS BE -- array_1d7 = 'b%b", array_1d7); err=err+1; end
-      if (array_1d8 !== 17'bx_xxxx_xxxx_xxxx_xx01) begin $display("FAILED -- LHS>RHS BE -- array_1d8 = 'b%b", array_1d8); err=err+1; end
-      if (array_1d9 !== 17'bx_xxxx_xxxx_xxxx_xx01) begin $display("FAILED -- LHS>RHS BE -- array_1d9 = 'b%b", array_1d9); err=err+1; end
+      if (a1d1 !== 17'b0_1111_1111_1111_1111) begin $display("FAILED -- L>R BE -- a1d1 = 'b%b", a1d1); pass=0; end
+      if (a1d2 !== 17'bx_xxxx_xxx0_1111_1111) begin $display("FAILED -- L>R BE -- a1d2 = 'b%b", a1d2); pass=0; end
+      if (a1d3 !== 17'bx_xxxx_xxx0_1111_1111) begin $display("FAILED -- L>R BE -- a1d3 = 'b%b", a1d3); pass=0; end
+      if (a1d4 !== 17'bx_xxxx_xxxx_xxx0_1111) begin $display("FAILED -- L>R BE -- a1d4 = 'b%b", a1d4); pass=0; end
+      if (a1d5 !== 17'bx_xxxx_xxxx_xxx0_1111) begin $display("FAILED -- L>R BE -- a1d5 = 'b%b", a1d5); pass=0; end
+      if (a1d6 !== 17'bx_xxxx_xxxx_xxxx_x011) begin $display("FAILED -- L>R BE -- a1d6 = 'b%b", a1d6); pass=0; end
+      if (a1d7 !== 17'bx_xxxx_xxxx_xxxx_x011) begin $display("FAILED -- L>R BE -- a1d7 = 'b%b", a1d7); pass=0; end
+      if (a1d8 !== 17'bx_xxxx_xxxx_xxxx_xx01) begin $display("FAILED -- L>R BE -- a1d8 = 'b%b", a1d8); pass=0; end
+      if (a1d9 !== 17'bx_xxxx_xxxx_xxxx_xx01) begin $display("FAILED -- L>R BE -- a1d9 = 'b%b", a1d9); pass=0; end
 
       // test read from array LHS<RHS
-      array_1d1 = {WA*WB+1{1'bx}};  array_1d1[WA  *WB  -1-1:0] = array_bg1                           ;
-      array_1d2 = {WA*WB+1{1'bx}};  array_1d2[WA/2*WB  -1-1:0] = array_bg2 [WA/2-1:0   ]             ;
-      array_1d3 = {WA*WB+1{1'bx}};  array_1d3[WA/2*WB  -1-1:0] = array_bg3 [WA  -1:WA/2]             ;
-      array_1d4 = {WA*WB+1{1'bx}};  array_1d4[1   *WB  -1-1:0] = array_bg4 [       0   ]             ;
-      array_1d5 = {WA*WB+1{1'bx}};  array_1d5[1   *WB  -1-1:0] = array_bg5 [WA  -1     ]             ;
-      array_1d6 = {WA*WB+1{1'bx}};  array_1d6[1   *WB/2-1-1:0] = array_bg6 [       0   ][WB/2-1:0   ];
-      array_1d7 = {WA*WB+1{1'bx}};  array_1d7[1   *WB/2-1-1:0] = array_bg7 [WA  -1     ][WB  -1:WB/2];
-    //array_1d8 = {WA*WB+1{1'bx}};  array_1d8[1   *1   -1-1:0] = array_bg8 [       0   ][       0   ];
-    //array_1d9 = {WA*WB+1{1'bx}};  array_1d9[1   *1   -1-1:0] = array_bg9 [WA  -1     ][WB  -1     ];
+      a1d1 = {WA*WB+1{1'bx}};  a1d1[WA  *WB  -1-1:0] = abg1                           ;
+      a1d2 = {WA*WB+1{1'bx}};  a1d2[WA/2*WB  -1-1:0] = abg2 [WA/2-1:0   ]             ;
+      a1d3 = {WA*WB+1{1'bx}};  a1d3[WA/2*WB  -1-1:0] = abg3 [WA  -1:WA/2]             ;
+      a1d4 = {WA*WB+1{1'bx}};  a1d4[1   *WB  -1-1:0] = abg4 [       0   ]             ;
+      a1d5 = {WA*WB+1{1'bx}};  a1d5[1   *WB  -1-1:0] = abg5 [WA  -1     ]             ;
+      a1d6 = {WA*WB+1{1'bx}};  a1d6[1   *WB/2-1-1:0] = abg6 [       0   ][WB/2-1:0   ];
+      a1d7 = {WA*WB+1{1'bx}};  a1d7[1   *WB/2-1-1:0] = abg7 [WA  -1     ][WB  -1:WB/2];
+    //a1d8 = {WA*WB+1{1'bx}};  a1d8[1   *1   -1-1:0] = abg8 [       0   ][       0   ];
+    //a1d9 = {WA*WB+1{1'bx}};  a1d9[1   *1   -1-1:0] = abg9 [WA  -1     ][WB  -1     ];
       // check
-      if (array_1d1 !== 17'bx_x111_1111_1111_1111) begin $display("FAILED -- LHS<RHS BE -- array_1d1 = 'b%b", array_1d1); err=err+1; end
-      if (array_1d2 !== 17'bx_xxxx_xxxx_x111_1111) begin $display("FAILED -- LHS<RHS BE -- array_1d2 = 'b%b", array_1d2); err=err+1; end
-      if (array_1d3 !== 17'bx_xxxx_xxxx_x111_1111) begin $display("FAILED -- LHS<RHS BE -- array_1d3 = 'b%b", array_1d3); err=err+1; end
-      if (array_1d4 !== 17'bx_xxxx_xxxx_xxxx_x111) begin $display("FAILED -- LHS<RHS BE -- array_1d4 = 'b%b", array_1d4); err=err+1; end
-      if (array_1d5 !== 17'bx_xxxx_xxxx_xxxx_x111) begin $display("FAILED -- LHS<RHS BE -- array_1d5 = 'b%b", array_1d5); err=err+1; end
-      if (array_1d6 !== 17'bx_xxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- LHS<RHS BE -- array_1d6 = 'b%b", array_1d6); err=err+1; end
-      if (array_1d7 !== 17'bx_xxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- LHS<RHS BE -- array_1d7 = 'b%b", array_1d7); err=err+1; end
-    //if (array_1d8 !== 17'bx_xxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- LHS<RHS BE -- array_1d8 = 'b%b", array_1d8); err=err+1; end
-    //if (array_1d9 !== 17'bx_xxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- LHS<RHS BE -- array_1d9 = 'b%b", array_1d9); err=err+1; end
+      if (a1d1 !== 17'bx_x111_1111_1111_1111) begin $display("FAILED -- L<R BE -- a1d1 = 'b%b", a1d1); pass=0; end
+      if (a1d2 !== 17'bx_xxxx_xxxx_x111_1111) begin $display("FAILED -- L<R BE -- a1d2 = 'b%b", a1d2); pass=0; end
+      if (a1d3 !== 17'bx_xxxx_xxxx_x111_1111) begin $display("FAILED -- L<R BE -- a1d3 = 'b%b", a1d3); pass=0; end
+      if (a1d4 !== 17'bx_xxxx_xxxx_xxxx_x111) begin $display("FAILED -- L<R BE -- a1d4 = 'b%b", a1d4); pass=0; end
+      if (a1d5 !== 17'bx_xxxx_xxxx_xxxx_x111) begin $display("FAILED -- L<R BE -- a1d5 = 'b%b", a1d5); pass=0; end
+      if (a1d6 !== 17'bx_xxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- L<R BE -- a1d6 = 'b%b", a1d6); pass=0; end
+      if (a1d7 !== 17'bx_xxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- L<R BE -- a1d7 = 'b%b", a1d7); pass=0; end
+    //if (a1d8 !== 17'bx_xxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- L<R BE -- a1d8 = 'b%b", a1d8); pass=0; end
+    //if (a1d9 !== 17'bx_xxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- L<R BE -- a1d9 = 'b%b", a1d9); pass=0; end
 
       // assign a constant value to the array
-      array_lt1 = {WA*WB{1'b1}};
-      array_lt2 = {WA*WB{1'b1}};
-      array_lt3 = {WA*WB{1'b1}};
-      array_lt4 = {WA*WB{1'b1}};
-      array_lt5 = {WA*WB{1'b1}};
-      array_lt6 = {WA*WB{1'b1}};
-      array_lt7 = {WA*WB{1'b1}};
-      array_lt8 = {WA*WB{1'b1}};
-      array_lt9 = {WA*WB{1'b1}};
+      alt1 = {WA*WB{1'b1}};
+      alt2 = {WA*WB{1'b1}};
+      alt3 = {WA*WB{1'b1}};
+      alt4 = {WA*WB{1'b1}};
+      alt5 = {WA*WB{1'b1}};
+      alt6 = {WA*WB{1'b1}};
+      alt7 = {WA*WB{1'b1}};
+      alt8 = {WA*WB{1'b1}};
+      alt9 = {WA*WB{1'b1}};
 
       // test read from array LHS=RHS
-      array_1d1 = {WA*WB+1{1'bx}};  array_1d1[WA  *WB  -1+0:0] = array_lt1                           ;
-      array_1d2 = {WA*WB+1{1'bx}};  array_1d2[WA/2*WB  -1+0:0] = array_lt2 [0   :WA/2-1]             ;
-      array_1d3 = {WA*WB+1{1'bx}};  array_1d3[WA/2*WB  -1+0:0] = array_lt3 [WA/2:WA  -1]             ;
-      array_1d4 = {WA*WB+1{1'bx}};  array_1d4[1   *WB  -1+0:0] = array_lt4 [0          ]             ;
-      array_1d5 = {WA*WB+1{1'bx}};  array_1d5[1   *WB  -1+0:0] = array_lt5 [     WA  -1]             ;
-      array_1d6 = {WA*WB+1{1'bx}};  array_1d6[1   *WB/2-1+0:0] = array_lt6 [0          ][0   :WB/2-1];
-      array_1d7 = {WA*WB+1{1'bx}};  array_1d7[1   *WB/2-1+0:0] = array_lt7 [     WA  -1][WB/2:WB  -1];
-      array_1d8 = {WA*WB+1{1'bx}};  array_1d8[1   *1   -1+0:0] = array_lt8 [0          ][0          ];
-      array_1d9 = {WA*WB+1{1'bx}};  array_1d9[1   *1   -1+0:0] = array_lt9 [     WA  -1][     WB  -1];
+      a1d1 = {WA*WB+1{1'bx}};  a1d1[WA  *WB  -1+0:0] = alt1                           ;
+      a1d2 = {WA*WB+1{1'bx}};  a1d2[WA/2*WB  -1+0:0] = alt2 [0   :WA/2-1]             ;
+      a1d3 = {WA*WB+1{1'bx}};  a1d3[WA/2*WB  -1+0:0] = alt3 [WA/2:WA  -1]             ;
+      a1d4 = {WA*WB+1{1'bx}};  a1d4[1   *WB  -1+0:0] = alt4 [0          ]             ;
+      a1d5 = {WA*WB+1{1'bx}};  a1d5[1   *WB  -1+0:0] = alt5 [     WA  -1]             ;
+      a1d6 = {WA*WB+1{1'bx}};  a1d6[1   *WB/2-1+0:0] = alt6 [0          ][0   :WB/2-1];
+      a1d7 = {WA*WB+1{1'bx}};  a1d7[1   *WB/2-1+0:0] = alt7 [     WA  -1][WB/2:WB  -1];
+      a1d8 = {WA*WB+1{1'bx}};  a1d8[1   *1   -1+0:0] = alt8 [0          ][0          ];
+      a1d9 = {WA*WB+1{1'bx}};  a1d9[1   *1   -1+0:0] = alt9 [     WA  -1][     WB  -1];
       // check
-      if (array_1d1 !== 17'bx_1111_1111_1111_1111) begin $display("FAILED -- LHS=RHS LE -- array_1d1 = 'b%b", array_1d1); err=err+1; end
-      if (array_1d2 !== 17'bx_xxxx_xxxx_1111_1111) begin $display("FAILED -- LHS=RHS LE -- array_1d2 = 'b%b", array_1d2); err=err+1; end
-      if (array_1d3 !== 17'bx_xxxx_xxxx_1111_1111) begin $display("FAILED -- LHS=RHS LE -- array_1d3 = 'b%b", array_1d3); err=err+1; end
-      if (array_1d4 !== 17'bx_xxxx_xxxx_xxxx_1111) begin $display("FAILED -- LHS=RHS LE -- array_1d4 = 'b%b", array_1d4); err=err+1; end
-      if (array_1d5 !== 17'bx_xxxx_xxxx_xxxx_1111) begin $display("FAILED -- LHS=RHS LE -- array_1d5 = 'b%b", array_1d5); err=err+1; end
-      if (array_1d6 !== 17'bx_xxxx_xxxx_xxxx_xx11) begin $display("FAILED -- LHS=RHS LE -- array_1d6 = 'b%b", array_1d6); err=err+1; end
-      if (array_1d7 !== 17'bx_xxxx_xxxx_xxxx_xx11) begin $display("FAILED -- LHS=RHS LE -- array_1d7 = 'b%b", array_1d7); err=err+1; end
-      if (array_1d8 !== 17'bx_xxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- LHS=RHS LE -- array_1d8 = 'b%b", array_1d8); err=err+1; end
-      if (array_1d9 !== 17'bx_xxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- LHS=RHS LE -- array_1d9 = 'b%b", array_1d9); err=err+1; end
+      if (a1d1 !== 17'bx_1111_1111_1111_1111) begin $display("FAILED -- L=R LE -- a1d1 = 'b%b", a1d1); pass=0; end
+      if (a1d2 !== 17'bx_xxxx_xxxx_1111_1111) begin $display("FAILED -- L=R LE -- a1d2 = 'b%b", a1d2); pass=0; end
+      if (a1d3 !== 17'bx_xxxx_xxxx_1111_1111) begin $display("FAILED -- L=R LE -- a1d3 = 'b%b", a1d3); pass=0; end
+      if (a1d4 !== 17'bx_xxxx_xxxx_xxxx_1111) begin $display("FAILED -- L=R LE -- a1d4 = 'b%b", a1d4); pass=0; end
+      if (a1d5 !== 17'bx_xxxx_xxxx_xxxx_1111) begin $display("FAILED -- L=R LE -- a1d5 = 'b%b", a1d5); pass=0; end
+      if (a1d6 !== 17'bx_xxxx_xxxx_xxxx_xx11) begin $display("FAILED -- L=R LE -- a1d6 = 'b%b", a1d6); pass=0; end
+      if (a1d7 !== 17'bx_xxxx_xxxx_xxxx_xx11) begin $display("FAILED -- L=R LE -- a1d7 = 'b%b", a1d7); pass=0; end
+      if (a1d8 !== 17'bx_xxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- L=R LE -- a1d8 = 'b%b", a1d8); pass=0; end
+      if (a1d9 !== 17'bx_xxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- L=R LE -- a1d9 = 'b%b", a1d9); pass=0; end
 
       // test read from array LHS>RHS
-      array_1d1 = {WA*WB+1{1'bx}};  array_1d1[WA  *WB  -1+1:0] = array_lt1                           ;
-      array_1d2 = {WA*WB+1{1'bx}};  array_1d2[WA/2*WB  -1+1:0] = array_lt2 [0   :WA/2-1]             ;
-      array_1d3 = {WA*WB+1{1'bx}};  array_1d3[WA/2*WB  -1+1:0] = array_lt3 [WA/2:WA  -1]             ;
-      array_1d4 = {WA*WB+1{1'bx}};  array_1d4[1   *WB  -1+1:0] = array_lt4 [0          ]             ;
-      array_1d5 = {WA*WB+1{1'bx}};  array_1d5[1   *WB  -1+1:0] = array_lt5 [     WA  -1]             ;
-      array_1d6 = {WA*WB+1{1'bx}};  array_1d6[1   *WB/2-1+1:0] = array_lt6 [0          ][0   :WB/2-1];
-      array_1d7 = {WA*WB+1{1'bx}};  array_1d7[1   *WB/2-1+1:0] = array_lt7 [     WA  -1][WB/2:WB  -1];
-      array_1d8 = {WA*WB+1{1'bx}};  array_1d8[1   *1   -1+1:0] = array_lt8 [0          ][0          ];
-      array_1d9 = {WA*WB+1{1'bx}};  array_1d9[1   *1   -1+1:0] = array_lt9 [     WA  -1][     WB  -1];
+      a1d1 = {WA*WB+1{1'bx}};  a1d1[WA  *WB  -1+1:0] = alt1                           ;
+      a1d2 = {WA*WB+1{1'bx}};  a1d2[WA/2*WB  -1+1:0] = alt2 [0   :WA/2-1]             ;
+      a1d3 = {WA*WB+1{1'bx}};  a1d3[WA/2*WB  -1+1:0] = alt3 [WA/2:WA  -1]             ;
+      a1d4 = {WA*WB+1{1'bx}};  a1d4[1   *WB  -1+1:0] = alt4 [0          ]             ;
+      a1d5 = {WA*WB+1{1'bx}};  a1d5[1   *WB  -1+1:0] = alt5 [     WA  -1]             ;
+      a1d6 = {WA*WB+1{1'bx}};  a1d6[1   *WB/2-1+1:0] = alt6 [0          ][0   :WB/2-1];
+      a1d7 = {WA*WB+1{1'bx}};  a1d7[1   *WB/2-1+1:0] = alt7 [     WA  -1][WB/2:WB  -1];
+      a1d8 = {WA*WB+1{1'bx}};  a1d8[1   *1   -1+1:0] = alt8 [0          ][0          ];
+      a1d9 = {WA*WB+1{1'bx}};  a1d9[1   *1   -1+1:0] = alt9 [     WA  -1][     WB  -1];
       // check
-      if (array_1d1 !== 17'b0_1111_1111_1111_1111) begin $display("FAILED -- LHS>RHS LE -- array_1d1 = 'b%b", array_1d1); err=err+1; end
-      if (array_1d2 !== 17'bx_xxxx_xxx0_1111_1111) begin $display("FAILED -- LHS>RHS LE -- array_1d2 = 'b%b", array_1d2); err=err+1; end
-      if (array_1d3 !== 17'bx_xxxx_xxx0_1111_1111) begin $display("FAILED -- LHS>RHS LE -- array_1d3 = 'b%b", array_1d3); err=err+1; end
-      if (array_1d4 !== 17'bx_xxxx_xxxx_xxx0_1111) begin $display("FAILED -- LHS>RHS LE -- array_1d4 = 'b%b", array_1d4); err=err+1; end
-      if (array_1d5 !== 17'bx_xxxx_xxxx_xxx0_1111) begin $display("FAILED -- LHS>RHS LE -- array_1d5 = 'b%b", array_1d5); err=err+1; end
-      if (array_1d6 !== 17'bx_xxxx_xxxx_xxxx_x011) begin $display("FAILED -- LHS>RHS LE -- array_1d6 = 'b%b", array_1d6); err=err+1; end
-      if (array_1d7 !== 17'bx_xxxx_xxxx_xxxx_x011) begin $display("FAILED -- LHS>RHS LE -- array_1d7 = 'b%b", array_1d7); err=err+1; end
-      if (array_1d8 !== 17'bx_xxxx_xxxx_xxxx_xx01) begin $display("FAILED -- LHS>RHS LE -- array_1d8 = 'b%b", array_1d8); err=err+1; end
-      if (array_1d9 !== 17'bx_xxxx_xxxx_xxxx_xx01) begin $display("FAILED -- LHS>RHS LE -- array_1d9 = 'b%b", array_1d9); err=err+1; end
+      if (a1d1 !== 17'b0_1111_1111_1111_1111) begin $display("FAILED -- L>R LE -- a1d1 = 'b%b", a1d1); pass=0; end
+      if (a1d2 !== 17'bx_xxxx_xxx0_1111_1111) begin $display("FAILED -- L>R LE -- a1d2 = 'b%b", a1d2); pass=0; end
+      if (a1d3 !== 17'bx_xxxx_xxx0_1111_1111) begin $display("FAILED -- L>R LE -- a1d3 = 'b%b", a1d3); pass=0; end
+      if (a1d4 !== 17'bx_xxxx_xxxx_xxx0_1111) begin $display("FAILED -- L>R LE -- a1d4 = 'b%b", a1d4); pass=0; end
+      if (a1d5 !== 17'bx_xxxx_xxxx_xxx0_1111) begin $display("FAILED -- L>R LE -- a1d5 = 'b%b", a1d5); pass=0; end
+      if (a1d6 !== 17'bx_xxxx_xxxx_xxxx_x011) begin $display("FAILED -- L>R LE -- a1d6 = 'b%b", a1d6); pass=0; end
+      if (a1d7 !== 17'bx_xxxx_xxxx_xxxx_x011) begin $display("FAILED -- L>R LE -- a1d7 = 'b%b", a1d7); pass=0; end
+      if (a1d8 !== 17'bx_xxxx_xxxx_xxxx_xx01) begin $display("FAILED -- L>R LE -- a1d8 = 'b%b", a1d8); pass=0; end
+      if (a1d9 !== 17'bx_xxxx_xxxx_xxxx_xx01) begin $display("FAILED -- L>R LE -- a1d9 = 'b%b", a1d9); pass=0; end
 
       // test read from array LHS<RHS
-      array_1d1 = {WA*WB+1{1'bx}};  array_1d1[WA  *WB  -1-1:0] = array_lt1                           ;
-      array_1d2 = {WA*WB+1{1'bx}};  array_1d2[WA/2*WB  -1-1:0] = array_lt2 [0   :WA/2-1]             ;
-      array_1d3 = {WA*WB+1{1'bx}};  array_1d3[WA/2*WB  -1-1:0] = array_lt3 [WA/2:WA  -1]             ;
-      array_1d4 = {WA*WB+1{1'bx}};  array_1d4[1   *WB  -1-1:0] = array_lt4 [0          ]             ;
-      array_1d5 = {WA*WB+1{1'bx}};  array_1d5[1   *WB  -1-1:0] = array_lt5 [     WA  -1]             ;
-      array_1d6 = {WA*WB+1{1'bx}};  array_1d6[1   *WB/2-1-1:0] = array_lt6 [0          ][0   :WB/2-1];
-      array_1d7 = {WA*WB+1{1'bx}};  array_1d7[1   *WB/2-1-1:0] = array_lt7 [     WA  -1][WB/2:WB  -1];
-    //array_1d8 = {WA*WB+1{1'bx}};  array_1d8[1   *1   -1-1:0] = array_lt8 [0          ][0          ];
-    //array_1d9 = {WA*WB+1{1'bx}};  array_1d9[1   *1   -1-1:0] = array_lt9 [     WA  -1][     WB  -1];
+      a1d1 = {WA*WB+1{1'bx}};  a1d1[WA  *WB  -1-1:0] = alt1                           ;
+      a1d2 = {WA*WB+1{1'bx}};  a1d2[WA/2*WB  -1-1:0] = alt2 [0   :WA/2-1]             ;
+      a1d3 = {WA*WB+1{1'bx}};  a1d3[WA/2*WB  -1-1:0] = alt3 [WA/2:WA  -1]             ;
+      a1d4 = {WA*WB+1{1'bx}};  a1d4[1   *WB  -1-1:0] = alt4 [0          ]             ;
+      a1d5 = {WA*WB+1{1'bx}};  a1d5[1   *WB  -1-1:0] = alt5 [     WA  -1]             ;
+      a1d6 = {WA*WB+1{1'bx}};  a1d6[1   *WB/2-1-1:0] = alt6 [0          ][0   :WB/2-1];
+      a1d7 = {WA*WB+1{1'bx}};  a1d7[1   *WB/2-1-1:0] = alt7 [     WA  -1][WB/2:WB  -1];
+    //a1d8 = {WA*WB+1{1'bx}};  a1d8[1   *1   -1-1:0] = alt8 [0          ][0          ];
+    //a1d9 = {WA*WB+1{1'bx}};  a1d9[1   *1   -1-1:0] = alt9 [     WA  -1][     WB  -1];
       // check
-      if (array_1d1 !== 17'bx_x111_1111_1111_1111) begin $display("FAILED -- LHS<RHS LE -- array_1d1 = 'b%b", array_1d1); err=err+1; end
-      if (array_1d2 !== 17'bx_xxxx_xxxx_x111_1111) begin $display("FAILED -- LHS<RHS LE -- array_1d2 = 'b%b", array_1d2); err=err+1; end
-      if (array_1d3 !== 17'bx_xxxx_xxxx_x111_1111) begin $display("FAILED -- LHS<RHS LE -- array_1d3 = 'b%b", array_1d3); err=err+1; end
-      if (array_1d4 !== 17'bx_xxxx_xxxx_xxxx_x111) begin $display("FAILED -- LHS<RHS LE -- array_1d4 = 'b%b", array_1d4); err=err+1; end
-      if (array_1d5 !== 17'bx_xxxx_xxxx_xxxx_x111) begin $display("FAILED -- LHS<RHS LE -- array_1d5 = 'b%b", array_1d5); err=err+1; end
-      if (array_1d6 !== 17'bx_xxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- LHS<RHS LE -- array_1d6 = 'b%b", array_1d6); err=err+1; end
-      if (array_1d7 !== 17'bx_xxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- LHS<RHS LE -- array_1d7 = 'b%b", array_1d7); err=err+1; end
-    //if (array_1d8 !== 17'bx_xxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- LHS<RHS LE -- array_1d8 = 'b%b", array_1d8); err=err+1; end
-    //if (array_1d9 !== 17'bx_xxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- LHS<RHS LE -- array_1d9 = 'b%b", array_1d9); err=err+1; end
+      if (a1d1 !== 17'bx_x111_1111_1111_1111) begin $display("FAILED -- L<R LE -- a1d1 = 'b%b", a1d1); pass=0; end
+      if (a1d2 !== 17'bx_xxxx_xxxx_x111_1111) begin $display("FAILED -- L<R LE -- a1d2 = 'b%b", a1d2); pass=0; end
+      if (a1d3 !== 17'bx_xxxx_xxxx_x111_1111) begin $display("FAILED -- L<R LE -- a1d3 = 'b%b", a1d3); pass=0; end
+      if (a1d4 !== 17'bx_xxxx_xxxx_xxxx_x111) begin $display("FAILED -- L<R LE -- a1d4 = 'b%b", a1d4); pass=0; end
+      if (a1d5 !== 17'bx_xxxx_xxxx_xxxx_x111) begin $display("FAILED -- L<R LE -- a1d5 = 'b%b", a1d5); pass=0; end
+      if (a1d6 !== 17'bx_xxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- L<R LE -- a1d6 = 'b%b", a1d6); pass=0; end
+      if (a1d7 !== 17'bx_xxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- L<R LE -- a1d7 = 'b%b", a1d7); pass=0; end
+    //if (a1d8 !== 17'bx_xxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- L<R LE -- a1d8 = 'b%b", a1d8); pass=0; end
+    //if (a1d9 !== 17'bx_xxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- L<R LE -- a1d9 = 'b%b", a1d9); pass=0; end
 
-      if (err)  $finish();
-      else      $display("PASSED");
+      if (pass) $display("PASSED");
    end
 
 endmodule // test
