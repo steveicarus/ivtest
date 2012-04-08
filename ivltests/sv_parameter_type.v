@@ -37,7 +37,7 @@ module test ();
    // finish report
    initial begin
       // some unnecessary delay
-      while (!cnt);
+      wait (cnt);
 
       // check if variable sizes are correct
       if (siz_bit  !=  1)  begin $display("FAILED -- siz_bit  = %0d", siz_bit ); err=1; end
@@ -47,6 +47,7 @@ module test ();
       if (siz_ar2d != 16)  begin $display("FAILED -- siz_ar2d = %0d", siz_ar2d); err=1; end
 
       if (!err) $display("PASSED");
+      $finish();
    end
 
    // instances with various types
