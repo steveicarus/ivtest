@@ -1,5 +1,7 @@
-
 // This tests system functions available for packed structures
+//
+// This file ONLY is placed into the Public Domain, for any use,
+// without warranty, 2012 by Iztok Jeras.
 
 module test;
 

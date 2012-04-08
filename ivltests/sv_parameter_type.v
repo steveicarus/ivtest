@@ -56,7 +56,7 @@ module test ();
    mod_typ #(.TYP (bit [23:0]    )) mod_ar1d (clk, cnt_ar1d[24-1:0], siz_ar1d);
    mod_typ #(.TYP (bit [3:0][3:0])) mod_ar2d (clk, cnt_ar2d[16-1:0], siz_ar2d);
 
-endmodule
+endmodule // test
 
 
 module mod_typ #(

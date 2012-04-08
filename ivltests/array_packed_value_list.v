@@ -1,5 +1,7 @@
-
 // This tests assigning value lists to packed arrays
+//
+// This file ONLY is placed into the Public Domain, for any use,
+// without warranty, 2012 by Iztok Jeras.
 
 module test ();
 

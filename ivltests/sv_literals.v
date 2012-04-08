@@ -1,5 +1,7 @@
-
-// This tests assigning value lists to packed arrays
+// This tests literal values, from verilog 2001 and SystemVerilog
+//
+// This file ONLY is placed into the Public Domain, for any use,
+// without warranty, 2012 by Iztok Jeras.
 
 module test ();
 
@@ -73,7 +75,7 @@ module test ();
 //    lv = 'dzz;  if (lv !== 16'bzzzz_zzzz_zzzz_zzzz) begin $display("FAILED -- lv = 'b%b != 'dzz", lv); err=1; end
 
 
-//    the first set of this should be illegal but is accepted in icarus
+//    the first set of this should be illegal but is accepted in Icarus Verilog
 //
 //    // unsized literals without base (single character)
 //    lv = 15'0;    if (lv !== 16'b0000_0000_0000_0000) begin $display("FAILED -- lv = 'b%b != 15'0",   lv); err=1; end

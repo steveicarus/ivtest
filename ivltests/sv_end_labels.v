@@ -1,5 +1,7 @@
-
-// This tests end labes
+// This tests end labes (test should pass compilation)
+//
+// This file ONLY is placed into the Public Domain, for any use,
+// without warranty, 2012 by Iztok Jeras.
 
 module test ();
 
