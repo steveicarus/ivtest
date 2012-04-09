@@ -65,7 +65,7 @@ module test ();
       .cnt  (cnt_drn)
    );
 
-endmodule : t
+endmodule
 
 
 // interface definition
@@ -104,7 +104,7 @@ interface handshake #(
    if (rst) cnt <= '0;
    else     cnt <= cnt + inc;
 
-endinterface : handshake
+endinterface
 
 
 // source module
@@ -136,7 +136,7 @@ module source #(
    // request signal
    assign inf.req = rnd[0];
 
-endmodule : source
+endmodule
 
 
 // drain module
@@ -168,4 +168,4 @@ module drain #(
    // grant signal
    assign inf.grt = rnd[0];
 
-endmodule : drain
+endmodule
