@@ -76,6 +76,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                 enum_values: Passed - CE.
                      extend: Passed - CE.
              first_last_num: Passed - CE.
+               inc_dec_stmt: Passed - CE.
                   int_param: Passed - CE.
                      iuint1: Passed - CE.
                       logp2: Passed - CE.
@@ -871,6 +872,7 @@ test_mos_strength_reduction: Passed.
                    mangle_1: Passed.
                         rop: Passed.
                  task_scope: Passed.
+                task_scope2: Passed.
                      hello1: Passed.
                   hierspace: Passed.
                     dotinid: Passed.
@@ -1741,6 +1743,8 @@ test_mos_strength_reduction: Passed.
                     struct5: Passed.
                     struct6: Passed.
                   pr3499807: Passed.
+           task_init_assign: ==> Failed - output does not match gold file.
+                  pr3515542: Passed - CE.
 ============================================================================
 Test results:
-  Total=1741, Passed=1606, Failed=7, Not Implemented=85, Expected Fail=43
+  Total=1745, Passed=1609, Failed=8, Not Implemented=85, Expected Fail=43

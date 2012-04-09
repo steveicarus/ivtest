@@ -1138,6 +1138,7 @@ v0.8:pr3390385b		NI
 v0.8:pr3390385c		NI
 v0.8:pr3390385d		NI
 v0.8:pr3462145		NI
+v0.8:pr3515542	NI
 v0.8:sbyte_test	NI
 v0.8:simple_byte	NI
 v0.8:simple_int	NI
@@ -1535,6 +1536,7 @@ v0.9:pr3390385b		NI
 v0.9:pr3390385c		NI
 v0.9:pr3390385d		NI
 v0.9:pr3462145		NI
+v0.9:pr3515542	NI
 v0.9:sbyte_test	NI
 v0.9:simple_byte	NI
 v0.9:simple_int	NI
@@ -1982,6 +1984,7 @@ vlog95:enum_value_expr	CE	ivltests
 vlog95:enum_values	CE	ivltests
 vlog95:extend	CE	ivltests
 vlog95:first_last_num	CE	ivltests
+vlog95:inc_dec_stmt	CE	ivltests
 vlog95:int_param	CE	ivltests
 vlog95:iuint1	CE	ivltests
 vlog95:logp2	CE	ivltests
@@ -4123,3 +4126,4 @@ packeda	normal,-g2009	ivltests
 pr3499807	normal	ivltests diff=log/pr3499807.log:gold/pr3499807.gold
 inc_dec_stmt	normal,-g2009	ivltests
 task_init_assign	normal,-g2009	ivltests
+pr3515542	CE,-g2005-sv	ivltests diff=log/pr3515542.log:gold/pr3515542.gold
