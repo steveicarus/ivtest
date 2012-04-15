@@ -66,3 +66,10 @@ struct_packed_sysfunct   normal,-g2009   ivltests
 array_packed_write_read  normal,-g2009   ivltests
 array_packed_value_list  normal,-g2009   ivltests
 array_packed_sysfunct    normal,-g2009   ivltests
+
+sv_end_labels            normal,-g2009   ivltests
+sv_end_labels_bad        normal,-g2009   ivltests  # should fail
+sv_literals              normal,-g2009   ivltests
+sv_parameter_type        normal,-g2009   ivltests
+casting                  normal,-g2009   ivltests
+interface                normal,-g2009   ivltests
