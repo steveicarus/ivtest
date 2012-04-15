@@ -53,7 +53,7 @@ module test ();
    // import only p2_* from p2
    import p2::p2_prmt;
    import p2::p2_type;
-   import p2::p2_type;
+   import p2::p2_func;
    // import nothing from p3
 
    // declare a set of variables
@@ -66,17 +66,17 @@ module test ();
 
    initial begin
       // test parameters
-      if (    p1_prmt !== 10+1) begin $display("FAILED --     p1_prmt = %d != 10+1",     p1_prmt); err=1; end
-      if (    p2_prmt !== 20+2) begin $display("FAILED --     p2_prmt = %d != 20+2",     p2_prmt); err=1; end
-      if (p3::p3_prmt !== 30+3) begin $display("FAILED -- p3::p3_prmt = %d != 30+3", p3::p3_prmt); err=1; end
+      if (    p1_prmt !== 100+10+1) begin $display("FAILED --     p1_prmt = %d != 100+10+1",     p1_prmt); err=1; end
+      if (    p2_prmt !== 100+20+2) begin $display("FAILED --     p2_prmt = %d != 100+20+2",     p2_prmt); err=1; end
+      if (p3::p3_prmt !== 100+30+3) begin $display("FAILED -- p3::p3_prmt = %d != 100+30+3", p3::p3_prmt); err=1; end
       // test variable bit sizes
       if ($bits(p1_var) !== 10+1) begin $display("FAILED -- lv = %d != 10+1", $bits(p1_var)); err=1; end
       if ($bits(p2_var) !== 20+2) begin $display("FAILED -- lv = %d != 20+2", $bits(p2_var)); err=1; end
       if ($bits(p3_var) !== 30+3) begin $display("FAILED -- lv = %d != 30+3", $bits(p3_var)); err=1; end
       // test functions
-      if (    p1_func_(1000) !== 1000+10+1) begin $display("FAILED --     p1_func_(1000) = %d != 1000+10+1",     p1_func_(1000)); err=1; end
-      if (    p2_func_(1000) !== 1000+20+2) begin $display("FAILED --     p2_func_(1000) = %d != 1000+20+2",     p2_func_(1000)); err=1; end
-      if (p3::p3_func_(1000) !== 1000+30+3) begin $display("FAILED -- p3::p3_func_(1000) = %d != 1000+30+3", p3::p3_func_(1000)); err=1; end
+      if (    p1_func(1000) !== 1000+10+1) begin $display("FAILED --     p1_func(1000) = %d != 1000+10+1",     p1_func(1000)); err=1; end
+      if (    p2_func(1000) !== 1000+20+2) begin $display("FAILED --     p2_func(1000) = %d != 1000+20+2",     p2_func(1000)); err=1; end
+      if (p3::p3_func(1000) !== 1000+30+3) begin $display("FAILED -- p3::p3_func(1000) = %d != 1000+30+3", p3::p3_func(1000)); err=1; end
 
       if (!err) $display("PASSED");
    end
