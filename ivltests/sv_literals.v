@@ -137,27 +137,27 @@ module test ();
 
       // unsized binary literals single character
       lsv = 'sb0;     if (lsv !== 16'b0000_0000_0000_0000) begin $display("FAILED -- lsv = 'b%b != 'sb0",    lsv); err=1; end
-      lsv = 'sb1;     if (lsv !== 16'b1111_1111_1111_1111) begin $display("FAILED -- lsv = 'b%b != 'sb1",    lsv); err=1; end
+      lsv = 'sb1;     if (lsv !== 16'b0000_0000_0000_0001) begin $display("FAILED -- lsv = 'b%b != 'sb1",    lsv); err=1; end
       lsv = 'sbx;     if (lsv !== 16'bxxxx_xxxx_xxxx_xxxx) begin $display("FAILED -- lsv = 'b%b != 'sbx",    lsv); err=1; end
       lsv = 'sbz;     if (lsv !== 16'bzzzz_zzzz_zzzz_zzzz) begin $display("FAILED -- lsv = 'b%b != 'sbz",    lsv); err=1; end
       // unsized binary literals two characters
       lsv = 'sb00;    if (lsv !== 16'b0000_0000_0000_0000) begin $display("FAILED -- lsv = 'b%b != 'sb00",   lsv); err=1; end
-      lsv = 'sb11;    if (lsv !== 16'b1111_1111_1111_1111) begin $display("FAILED -- lsv = 'b%b != 'sb11",   lsv); err=1; end
+      lsv = 'sb11;    if (lsv !== 16'b0000_0000_0000_0011) begin $display("FAILED -- lsv = 'b%b != 'sb11",   lsv); err=1; end
       lsv = 'sbxx;    if (lsv !== 16'bxxxx_xxxx_xxxx_xxxx) begin $display("FAILED -- lsv = 'b%b != 'sbxx",   lsv); err=1; end
       lsv = 'sbzz;    if (lsv !== 16'bzzzz_zzzz_zzzz_zzzz) begin $display("FAILED -- lsv = 'b%b != 'sbzz",   lsv); err=1; end
-      lsv = 'sb1x;    if (lsv !== 16'b1111_1111_1111_111x) begin $display("FAILED -- lsv = 'b%b != 'sb1x",   lsv); err=1; end
-      lsv = 'sb1z;    if (lsv !== 16'b1111_1111_1111_111z) begin $display("FAILED -- lsv = 'b%b != 'sb1z",   lsv); err=1; end
+      lsv = 'sb1x;    if (lsv !== 16'b0000_0000_0000_001x) begin $display("FAILED -- lsv = 'b%b != 'sb1x",   lsv); err=1; end
+      lsv = 'sb1z;    if (lsv !== 16'b0000_0000_0000_001z) begin $display("FAILED -- lsv = 'b%b != 'sb1z",   lsv); err=1; end
       lsv = 'sbx1;    if (lsv !== 16'bxxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- lsv = 'b%b != 'sbx1",   lsv); err=1; end
       lsv = 'sbz1;    if (lsv !== 16'bzzzz_zzzz_zzzz_zzz1) begin $display("FAILED -- lsv = 'b%b != 'sbz1",   lsv); err=1; end
 
       // unsized binary literals single character
       lsv = 'so0;     if (lsv !== 16'b0000_0000_0000_0000) begin $display("FAILED -- lsv = 'b%b != 'so0",    lsv); err=1; end
-      lsv = 'so5;     if (lsv !== 16'b1111_1111_1111_1101) begin $display("FAILED -- lsv = 'b%b != 'so5",    lsv); err=1; end
+      lsv = 'so5;     if (lsv !== 16'b0000_0000_0000_0101) begin $display("FAILED -- lsv = 'b%b != 'so5",    lsv); err=1; end
       lsv = 'sox;     if (lsv !== 16'bxxxx_xxxx_xxxx_xxxx) begin $display("FAILED -- lsv = 'b%b != 'sox",    lsv); err=1; end
       lsv = 'soz;     if (lsv !== 16'bzzzz_zzzz_zzzz_zzzz) begin $display("FAILED -- lsv = 'b%b != 'soz",    lsv); err=1; end
       // unsized binary literals two characters
       lsv = 'so00;    if (lsv !== 16'b0000_0000_0000_0000) begin $display("FAILED -- lsv = 'b%b != 'so00",   lsv); err=1; end
-      lsv = 'so55;    if (lsv !== 16'b1111_1111_1110_1101) begin $display("FAILED -- lsv = 'b%b != 'so55",   lsv); err=1; end
+      lsv = 'so55;    if (lsv !== 16'b0000_0000_0010_1101) begin $display("FAILED -- lsv = 'b%b != 'so55",   lsv); err=1; end
       lsv = 'soxx;    if (lsv !== 16'bxxxx_xxxx_xxxx_xxxx) begin $display("FAILED -- lsv = 'b%b != 'soxx",   lsv); err=1; end
       lsv = 'sozz;    if (lsv !== 16'bzzzz_zzzz_zzzz_zzzz) begin $display("FAILED -- lsv = 'b%b != 'sozz",   lsv); err=1; end
       lsv = 'so5x;    if (lsv !== 16'b0000_0000_0010_1xxx) begin $display("FAILED -- lsv = 'b%b != 'so5x",   lsv); err=1; end
@@ -167,12 +167,12 @@ module test ();
 
       // unsized binary literals single character
       lsv = 'sh0;     if (lsv !== 16'b0000_0000_0000_0000) begin $display("FAILED -- lsv = 'b%b != 'sh0",    lsv); err=1; end
-      lsv = 'sh9;     if (lsv !== 16'b1111_1111_1111_1001) begin $display("FAILED -- lsv = 'b%b != 'sh9",    lsv); err=1; end
+      lsv = 'sh9;     if (lsv !== 16'b0000_0000_0000_1001) begin $display("FAILED -- lsv = 'b%b != 'sh9",    lsv); err=1; end
       lsv = 'shx;     if (lsv !== 16'bxxxx_xxxx_xxxx_xxxx) begin $display("FAILED -- lsv = 'b%b != 'shx",    lsv); err=1; end
       lsv = 'shz;     if (lsv !== 16'bzzzz_zzzz_zzzz_zzzz) begin $display("FAILED -- lsv = 'b%b != 'shz",    lsv); err=1; end
       // unsized binary literals two characters
       lsv = 'sh00;    if (lsv !== 16'b0000_0000_0000_0000) begin $display("FAILED -- lsv = 'b%b != 'sh00",   lsv); err=1; end
-      lsv = 'sh99;    if (lsv !== 16'b1111_1111_1001_1001) begin $display("FAILED -- lsv = 'b%b != 'sh99",   lsv); err=1; end
+      lsv = 'sh99;    if (lsv !== 16'b0000_0000_1001_1001) begin $display("FAILED -- lsv = 'b%b != 'sh99",   lsv); err=1; end
       lsv = 'shxx;    if (lsv !== 16'bxxxx_xxxx_xxxx_xxxx) begin $display("FAILED -- lsv = 'b%b != 'shxx",   lsv); err=1; end
       lsv = 'shzz;    if (lsv !== 16'bzzzz_zzzz_zzzz_zzzz) begin $display("FAILED -- lsv = 'b%b != 'shzz",   lsv); err=1; end
       lsv = 'sh9x;    if (lsv !== 16'b0000_0000_1001_xxxx) begin $display("FAILED -- lsv = 'b%b != 'sh9x",   lsv); err=1; end
@@ -195,58 +195,58 @@ module test ();
       // unsized binary literals single character
       lsv = 15'sb0;   if (lsv !== 16'b0000_0000_0000_0000) begin $display("FAILED -- lsv = 'b%b != 15'sb0",  lsv); err=1; end
       lsv = 15'sb1;   if (lsv !== 16'b0000_0000_0000_0001) begin $display("FAILED -- lsv = 'b%b != 15'sb1",  lsv); err=1; end
-      lsv = 15'sbx;   if (lsv !== 16'b0xxx_xxxx_xxxx_xxxx) begin $display("FAILED -- lsv = 'b%b != 15'sbx",  lsv); err=1; end
-      lsv = 15'sbz;   if (lsv !== 16'b0zzz_zzzz_zzzz_zzzz) begin $display("FAILED -- lsv = 'b%b != 15'sbz",  lsv); err=1; end
+      lsv = 15'sbx;   if (lsv !== 16'bxxxx_xxxx_xxxx_xxxx) begin $display("FAILED -- lsv = 'b%b != 15'sbx",  lsv); err=1; end
+      lsv = 15'sbz;   if (lsv !== 16'bzzzz_zzzz_zzzz_zzzz) begin $display("FAILED -- lsv = 'b%b != 15'sbz",  lsv); err=1; end
       // unsized binary literals two characters
       lsv = 15'sb00;  if (lsv !== 16'b0000_0000_0000_0000) begin $display("FAILED -- lsv = 'b%b != 15'sb00", lsv); err=1; end
       lsv = 15'sb11;  if (lsv !== 16'b0000_0000_0000_0011) begin $display("FAILED -- lsv = 'b%b != 15'sb11", lsv); err=1; end
-      lsv = 15'sbxx;  if (lsv !== 16'b0xxx_xxxx_xxxx_xxxx) begin $display("FAILED -- lsv = 'b%b != 15'sbxx", lsv); err=1; end
-      lsv = 15'sbzz;  if (lsv !== 16'b0zzz_zzzz_zzzz_zzzz) begin $display("FAILED -- lsv = 'b%b != 15'sbzz", lsv); err=1; end
+      lsv = 15'sbxx;  if (lsv !== 16'bxxxx_xxxx_xxxx_xxxx) begin $display("FAILED -- lsv = 'b%b != 15'sbxx", lsv); err=1; end
+      lsv = 15'sbzz;  if (lsv !== 16'bzzzz_zzzz_zzzz_zzzz) begin $display("FAILED -- lsv = 'b%b != 15'sbzz", lsv); err=1; end
       lsv = 15'sb1x;  if (lsv !== 16'b0000_0000_0000_001x) begin $display("FAILED -- lsv = 'b%b != 15'sb1x", lsv); err=1; end
       lsv = 15'sb1z;  if (lsv !== 16'b0000_0000_0000_001z) begin $display("FAILED -- lsv = 'b%b != 15'sb1z", lsv); err=1; end
-      lsv = 15'sbx1;  if (lsv !== 16'b0xxx_xxxx_xxxx_xxx1) begin $display("FAILED -- lsv = 'b%b != 15'sbx1", lsv); err=1; end
-      lsv = 15'sbz1;  if (lsv !== 16'b0zzz_zzzz_zzzz_zzz1) begin $display("FAILED -- lsv = 'b%b != 15'sbz1", lsv); err=1; end
+      lsv = 15'sbx1;  if (lsv !== 16'bxxxx_xxxx_xxxx_xxx1) begin $display("FAILED -- lsv = 'b%b != 15'sbx1", lsv); err=1; end
+      lsv = 15'sbz1;  if (lsv !== 16'bzzzz_zzzz_zzzz_zzz1) begin $display("FAILED -- lsv = 'b%b != 15'sbz1", lsv); err=1; end
 
       // unsized binary literals single character
       lsv = 15'so0;   if (lsv !== 16'b0000_0000_0000_0000) begin $display("FAILED -- lsv = 'b%b != 15'so0",  lsv); err=1; end
       lsv = 15'so5;   if (lsv !== 16'b0000_0000_0000_0101) begin $display("FAILED -- lsv = 'b%b != 15'so5",  lsv); err=1; end
-      lsv = 15'sox;   if (lsv !== 16'b0xxx_xxxx_xxxx_xxxx) begin $display("FAILED -- lsv = 'b%b != 15'sox",  lsv); err=1; end
-      lsv = 15'soz;   if (lsv !== 16'b0zzz_zzzz_zzzz_zzzz) begin $display("FAILED -- lsv = 'b%b != 15'soz",  lsv); err=1; end
+      lsv = 15'sox;   if (lsv !== 16'bxxxx_xxxx_xxxx_xxxx) begin $display("FAILED -- lsv = 'b%b != 15'sox",  lsv); err=1; end
+      lsv = 15'soz;   if (lsv !== 16'bzzzz_zzzz_zzzz_zzzz) begin $display("FAILED -- lsv = 'b%b != 15'soz",  lsv); err=1; end
       // unsized binary literals two characters
       lsv = 15'so00;  if (lsv !== 16'b0000_0000_0000_0000) begin $display("FAILED -- lsv = 'b%b != 15'so00", lsv); err=1; end
       lsv = 15'so55;  if (lsv !== 16'b0000_0000_0010_1101) begin $display("FAILED -- lsv = 'b%b != 15'so55", lsv); err=1; end
-      lsv = 15'soxx;  if (lsv !== 16'b0xxx_xxxx_xxxx_xxxx) begin $display("FAILED -- lsv = 'b%b != 15'soxx", lsv); err=1; end
-      lsv = 15'sozz;  if (lsv !== 16'b0zzz_zzzz_zzzz_zzzz) begin $display("FAILED -- lsv = 'b%b != 15'sozz", lsv); err=1; end
+      lsv = 15'soxx;  if (lsv !== 16'bxxxx_xxxx_xxxx_xxxx) begin $display("FAILED -- lsv = 'b%b != 15'soxx", lsv); err=1; end
+      lsv = 15'sozz;  if (lsv !== 16'bzzzz_zzzz_zzzz_zzzz) begin $display("FAILED -- lsv = 'b%b != 15'sozz", lsv); err=1; end
       lsv = 15'so5x;  if (lsv !== 16'b0000_0000_0010_1xxx) begin $display("FAILED -- lsv = 'b%b != 15'so5x", lsv); err=1; end
       lsv = 15'so5z;  if (lsv !== 16'b0000_0000_0010_1zzz) begin $display("FAILED -- lsv = 'b%b != 15'so5z", lsv); err=1; end
-      lsv = 15'sox5;  if (lsv !== 16'b0xxx_xxxx_xxxx_x101) begin $display("FAILED -- lsv = 'b%b != 15'sox5", lsv); err=1; end
-      lsv = 15'soz5;  if (lsv !== 16'b0zzz_zzzz_zzzz_z101) begin $display("FAILED -- lsv = 'b%b != 15'soz5", lsv); err=1; end
+      lsv = 15'sox5;  if (lsv !== 16'bxxxx_xxxx_xxxx_x101) begin $display("FAILED -- lsv = 'b%b != 15'sox5", lsv); err=1; end
+      lsv = 15'soz5;  if (lsv !== 16'bzzzz_zzzz_zzzz_z101) begin $display("FAILED -- lsv = 'b%b != 15'soz5", lsv); err=1; end
 
       // unsized binary literals single character
       lsv = 15'sh0;   if (lsv !== 16'b0000_0000_0000_0000) begin $display("FAILED -- lsv = 'b%b != 15'sh0",  lsv); err=1; end
       lsv = 15'sh9;   if (lsv !== 16'b0000_0000_0000_1001) begin $display("FAILED -- lsv = 'b%b != 15'sh9",  lsv); err=1; end
-      lsv = 15'shx;   if (lsv !== 16'b0xxx_xxxx_xxxx_xxxx) begin $display("FAILED -- lsv = 'b%b != 15'shx",  lsv); err=1; end
-      lsv = 15'shz;   if (lsv !== 16'b0zzz_zzzz_zzzz_zzzz) begin $display("FAILED -- lsv = 'b%b != 15'shz",  lsv); err=1; end
+      lsv = 15'shx;   if (lsv !== 16'bxxxx_xxxx_xxxx_xxxx) begin $display("FAILED -- lsv = 'b%b != 15'shx",  lsv); err=1; end
+      lsv = 15'shz;   if (lsv !== 16'bzzzz_zzzz_zzzz_zzzz) begin $display("FAILED -- lsv = 'b%b != 15'shz",  lsv); err=1; end
       // unsized binary literals two characters
       lsv = 15'sh00;  if (lsv !== 16'b0000_0000_0000_0000) begin $display("FAILED -- lsv = 'b%b != 15'sh00", lsv); err=1; end
       lsv = 15'sh99;  if (lsv !== 16'b0000_0000_1001_1001) begin $display("FAILED -- lsv = 'b%b != 15'sh99", lsv); err=1; end
-      lsv = 15'shxx;  if (lsv !== 16'b0xxx_xxxx_xxxx_xxxx) begin $display("FAILED -- lsv = 'b%b != 15'shxx", lsv); err=1; end
-      lsv = 15'shzz;  if (lsv !== 16'b0zzz_zzzz_zzzz_zzzz) begin $display("FAILED -- lsv = 'b%b != 15'shzz", lsv); err=1; end
+      lsv = 15'shxx;  if (lsv !== 16'bxxxx_xxxx_xxxx_xxxx) begin $display("FAILED -- lsv = 'b%b != 15'shxx", lsv); err=1; end
+      lsv = 15'shzz;  if (lsv !== 16'bzzzz_zzzz_zzzz_zzzz) begin $display("FAILED -- lsv = 'b%b != 15'shzz", lsv); err=1; end
       lsv = 15'sh9x;  if (lsv !== 16'b0000_0000_1001_xxxx) begin $display("FAILED -- lsv = 'b%b != 15'sh9x", lsv); err=1; end
       lsv = 15'sh9z;  if (lsv !== 16'b0000_0000_1001_zzzz) begin $display("FAILED -- lsv = 'b%b != 15'sh9z", lsv); err=1; end
-      lsv = 15'shx9;  if (lsv !== 16'b0xxx_xxxx_xxxx_1001) begin $display("FAILED -- lsv = 'b%b != 15'shx9", lsv); err=1; end
-      lsv = 15'shz9;  if (lsv !== 16'b0zzz_zzzz_zzzz_1001) begin $display("FAILED -- lsv = 'b%b != 15'shz9", lsv); err=1; end
+      lsv = 15'shx9;  if (lsv !== 16'bxxxx_xxxx_xxxx_1001) begin $display("FAILED -- lsv = 'b%b != 15'shx9", lsv); err=1; end
+      lsv = 15'shz9;  if (lsv !== 16'bzzzz_zzzz_zzzz_1001) begin $display("FAILED -- lsv = 'b%b != 15'shz9", lsv); err=1; end
 
       // unsized binary literals single character
       lsv = 15'sd0;   if (lsv !== 16'b0000_0000_0000_0000) begin $display("FAILED -- lsv = 'b%b != 15'sd0",  lsv); err=1; end
       lsv = 15'sd9;   if (lsv !== 16'b0000_0000_0000_1001) begin $display("FAILED -- lsv = 'b%b != 15'sd9",  lsv); err=1; end
-      lsv = 15'sdx;   if (lsv !== 16'b0xxx_xxxx_xxxx_xxxx) begin $display("FAILED -- lsv = 'b%b != 15'sdx",  lsv); err=1; end
-      lsv = 15'sdz;   if (lsv !== 16'b0zzz_zzzz_zzzz_zzzz) begin $display("FAILED -- lsv = 'b%b != 15'sdz",  lsv); err=1; end
+      lsv = 15'sdx;   if (lsv !== 16'bxxxx_xxxx_xxxx_xxxx) begin $display("FAILED -- lsv = 'b%b != 15'sdx",  lsv); err=1; end
+      lsv = 15'sdz;   if (lsv !== 16'bzzzz_zzzz_zzzz_zzzz) begin $display("FAILED -- lsv = 'b%b != 15'sdz",  lsv); err=1; end
       // unsized binary literals two characters
       lsv = 15'sd00;  if (lsv !== 16'b0000_0000_0000_0000) begin $display("FAILED -- lsv = 'b%b != 15'sd00", lsv); err=1; end
       lsv = 15'sd99;  if (lsv !== 16'b0000_0000_0110_0011) begin $display("FAILED -- lsv = 'b%b != 15'sd99", lsv); err=1; end
-//    lsv = 15'sdxx;  if (lsv !== 16'b0xxx_xxxx_xxxx_xxxx) begin $display("FAILED -- lsv = 'b%b != 15'sdxx", lsv); err=1; end
-//    lsv = 15'sdzz;  if (lsv !== 16'b0zzz_zzzz_zzzz_zzzz) begin $display("FAILED -- lsv = 'b%b != 15'sdzz", lsv); err=1; end
+//    lsv = 15'sdxx;  if (lsv !== 16'bxxxx_xxxx_xxxx_xxxx) begin $display("FAILED -- lsv = 'b%b != 15'sdxx", lsv); err=1; end
+//    lsv = 15'sdzz;  if (lsv !== 16'bzzzz_zzzz_zzzz_zzzz) begin $display("FAILED -- lsv = 'b%b != 15'sdzz", lsv); err=1; end
 
       if (!err) $display("PASSED");
    end
