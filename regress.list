@@ -1899,6 +1899,7 @@ v0.10:inside_synth3	normal	ivltests
 v0.10:mix_reset	normal	ivltests
 v0.10:casex_synth	normal	ivltests
 v0.10:full_case	normal	ivltests
+v0.10:full_case2	normal	ivltests
 
 #==========
 # These are not supported by the Verilog 95 converter.
