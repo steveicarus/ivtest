@@ -902,6 +902,7 @@ v0.8:pr3296466c	NI
 v0.8:pr3296466d	NI
 v0.8:tranif1	NI
 v0.8:pr3499807	NI
+v0.8:switch_primitives	NI
 
 # V0.8 does not support the `resetall directive
 v0.8:resetall	NI
@@ -1690,6 +1691,7 @@ v0.9:pr2913927	EF	ivltests
 v0.9:pr2937417	EF	ivltests
 v0.9:pr2937417b	EF	ivltests
 v0.9:pr2937417c	EF	ivltests
+v0.9:switch_primitives	EF	ivltests
 # and does not support tranif delays
 v0.9:pr2941939	CE	ivltests
 v0.9:pr3499807	CE	ivltests
@@ -4124,6 +4126,7 @@ struct5	normal,-g2009	ivltests
 struct6	normal,-g2009	ivltests
 packeda	normal,-g2009	ivltests
 pr3499807	normal	ivltests diff=log/pr3499807.log:gold/pr3499807.gold
+switch_primitives	normal	ivltests diff=log/switch_primitives.log:gold/switch_primitives.gold
 inc_dec_stmt	normal,-g2009	ivltests
 task_init_assign	normal,-g2009	ivltests
 pr3515542	CE,-g2005-sv	ivltests diff=log/pr3515542.log:gold/pr3515542.gold

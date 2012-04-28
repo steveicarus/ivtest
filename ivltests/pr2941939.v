@@ -14,7 +14,7 @@ module top;
   initial begin
     $monitor($realtime,, y,, a);
     pass = 1'b1;
-    p = 1'bz;
+    p = 1'bx;
     a <= 1'b0;
     repeat (2) #10 a = ~a;
 
