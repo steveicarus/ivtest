@@ -1742,7 +1742,10 @@ test_mos_strength_reduction: Passed.
                     struct4: Passed.
                     struct5: Passed.
                     struct6: Passed.
+                    struct7: Passed.
+                    struct8: Passed.
                     packeda: Passed.
+                   packeda2: Passed.
                   pr3499807: Passed.
           switch_primitives: Passed.
                inc_dec_stmt: Passed.
@@ -1757,6 +1760,7 @@ test_mos_strength_reduction: Passed.
                  specparam2: Passed.
                   pr3527022: Passed.
                   pr3527694: Passed.
+             test_when_else: Passed.
 ============================================================================
 Test results:
-  Total=1757, Passed=1754, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1761, Passed=1758, Failed=3, Not Implemented=0, Expected Fail=0
