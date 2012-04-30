@@ -1491,6 +1491,9 @@ v0.8:block_only_with_var_def	CE	ivltests
 v0.8:pr3437290a	EF		ivltests
 v0.8:pr3437290c	EF		ivltests
 
+v0.8:struct_packed_sysfunct	NI
+v0.8:sv_end_labels_bad		NI
+
 #==========
 # Things not supported by V0.9.
 #==========
@@ -1802,6 +1805,9 @@ v0.9:wreal	NI
 # These tests use the SV $bits function, but v0.9 doesn't recognise -g2009
 v0.9:parameter_type2	normal	ivltests
 v0.9:localparam_type2	normal	ivltests
+
+v0.9:struct_packed_sysfunct	NI
+v0.9:sv_end_labels_bad		NI
 
 #==========
 # V0.9 doesn't support synthesis. Might as well run them as
@@ -4131,3 +4137,5 @@ switch_primitives	normal	ivltests diff=log/switch_primitives.log:gold/switch_pri
 inc_dec_stmt	normal,-g2009	ivltests
 task_init_assign	normal,-g2009	ivltests
 pr3515542	CE,-g2005-sv	ivltests diff=log/pr3515542.log:gold/pr3515542.gold
+struct_packed_sysfunct		normal,-g2009   ivltests
+sv_end_labels_bad		CE,-g2009   ivltests  # should fail
