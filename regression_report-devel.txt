@@ -1061,6 +1061,7 @@ test_mos_strength_reduction: Passed.
                ca_pow_synth: Passed.
               generate_case: Passed.
              generate_case2: Passed.
+             generate_case3: Passed.
            real_pulse_clean: Passed.
                   pr1892959: Passed.
                  pr1892959b: Passed.
@@ -1749,6 +1750,8 @@ test_mos_strength_reduction: Passed.
                   pr3515542: Passed - CE.
      struct_packed_sysfunct: Passed.
           sv_end_labels_bad: Passed - CE.
+               complex_lidx: Passed.
+                  pr3522653: Passed.
 ============================================================================
 Test results:
-  Total=1749, Passed=1746, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1752, Passed=1749, Failed=3, Not Implemented=0, Expected Fail=0

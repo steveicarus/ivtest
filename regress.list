@@ -773,6 +773,7 @@ v0.8:defparam3	NI
 v0.8:defparam4	NI
 v0.8:generate_case	NI
 v0.8:generate_case2	NI
+v0.8:generate_case3	NI
 v0.8:gen_case_opt1 NI
 v0.8:gen_case_opt2 NI
 v0.8:gen_case_opt3 NI
@@ -3445,6 +3446,7 @@ ca_pow_signed	normal	ivltests
 ca_pow_synth	normal	ivltests
 generate_case	normal	ivltests
 generate_case2	normal	ivltests
+generate_case3	normal	ivltests
 real_pulse_clean	normal	ivltests
 pr1892959	normal	ivltests
 pr1892959b	normal	ivltests
@@ -4139,3 +4141,5 @@ task_init_assign	normal,-g2009	ivltests
 pr3515542	CE,-g2005-sv	ivltests diff=log/pr3515542.log:gold/pr3515542.gold
 struct_packed_sysfunct		normal,-g2009   ivltests
 sv_end_labels_bad		CE,-g2009   ivltests  # should fail
+complex_lidx	normal	ivltests
+pr3522653	normal	ivltests diff=log/pr3522653.log:gold/pr3522653.gold
