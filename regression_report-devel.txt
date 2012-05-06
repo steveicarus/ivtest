@@ -1762,6 +1762,10 @@ test_mos_strength_reduction: Passed.
                   pr3527022: Passed.
                   pr3527694: Passed.
              test_when_else: Passed.
+              program_hello: Passed.
+             program_hello2: Passed - CE.
+                   program2: Passed.
+                  program2b: Passed - CE.
 ============================================================================
 Test results:
-  Total=1762, Passed=1759, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1766, Passed=1763, Failed=3, Not Implemented=0, Expected Fail=0
