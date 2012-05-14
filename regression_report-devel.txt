@@ -1766,6 +1766,10 @@ test_mos_strength_reduction: Passed.
              program_hello2: Passed - CE.
                    program2: Passed.
                   program2b: Passed - CE.
+                   program3: Passed.
+                  program3a: Passed - CE.
+                  program3b: Passed - CE.
+                   program4: Passed.
 ============================================================================
 Test results:
-  Total=1766, Passed=1763, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1770, Passed=1767, Failed=3, Not Implemented=0, Expected Fail=0
