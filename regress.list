@@ -1064,6 +1064,8 @@ v0.8:program3 NI
 v0.8:program3a NI
 v0.8:program3b NI
 v0.8:program4 NI
+v0.8:program5a NI
+v0.8:program5b NI
 
 # V0.8 does not support automatic tasks or functions.
 v0.8:automatic_error1	NI
@@ -1684,6 +1686,8 @@ v0.9:program3	NI
 v0.9:program3a	NI
 v0.9:program3b	NI
 v0.9:program4	NI
+v0.9:program5a	NI
+v0.9:program5b	NI
 
 # v0.9 does not have the vhdl_sys module
 v0.9:ivlh_event	NI
@@ -4186,3 +4190,5 @@ program3	normal,-g2009	ivltests
 program3a	CE,-g2009	ivltests
 program3b	CE,-g2009	ivltests
 program4	normal,-g2009	ivltests
+program5a	CE,-g2009	ivltests
+program5b	CE,-g2009	ivltests
