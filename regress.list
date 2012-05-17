@@ -4144,3 +4144,5 @@ sv_end_labels_bad		CE,-g2009   ivltests  # should fail
 complex_lidx	normal	ivltests
 pr3522653	normal	ivltests diff=log/pr3522653.log:gold/pr3522653.gold
 attrib	normal	ivltests
+specparam1	normal	ivltests
+specparam2	normal	ivltests

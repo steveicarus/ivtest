@@ -1753,6 +1753,8 @@ test_mos_strength_reduction: Passed.
                complex_lidx: Passed.
                   pr3522653: Passed.
                      attrib: Passed.
+                 specparam1: Passed.
+                 specparam2: Passed.
 ============================================================================
 Test results:
-  Total=1753, Passed=1750, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1755, Passed=1752, Failed=3, Not Implemented=0, Expected Fail=0
