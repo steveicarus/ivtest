@@ -1755,6 +1755,7 @@ test_mos_strength_reduction: Passed.
                      attrib: Passed.
                  specparam1: Passed.
                  specparam2: Passed.
+                  pr3527694: Passed.
 ============================================================================
 Test results:
-  Total=1755, Passed=1752, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1756, Passed=1753, Failed=3, Not Implemented=0, Expected Fail=0
