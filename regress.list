@@ -4146,4 +4146,5 @@ pr3522653	normal	ivltests diff=log/pr3522653.log:gold/pr3522653.gold
 attrib	normal	ivltests
 specparam1	normal	ivltests
 specparam2	normal	ivltests
+pr3527022	normal	ivltests
 pr3527694	normal	ivltests diff=log/pr3527694.log:gold/pr3527694.gold
