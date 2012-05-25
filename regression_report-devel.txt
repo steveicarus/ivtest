@@ -1136,6 +1136,7 @@ test_mos_strength_reduction: Passed.
                      array4: Passed.
                      array5: Passed - CE.
                      array6: Passed.
+                     array7: Passed.
                  pr1971662a: Passed - CE.
                  pr1971662b: Passed - CE.
                   pr1978358: Passed.
@@ -1763,4 +1764,4 @@ test_mos_strength_reduction: Passed.
              test_when_else: Passed.
 ============================================================================
 Test results:
-  Total=1761, Passed=1758, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1762, Passed=1759, Failed=3, Not Implemented=0, Expected Fail=0
