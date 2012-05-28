@@ -1772,6 +1772,8 @@ test_mos_strength_reduction: Passed.
                    program4: Passed.
                   program5a: Passed - CE.
                   program5b: Passed - CE.
+              fork_join_any: Passed.
+             fork_join_none: Passed.
 ============================================================================
 Test results:
-  Total=1772, Passed=1769, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1774, Passed=1771, Failed=3, Not Implemented=0, Expected Fail=0
