@@ -566,6 +566,9 @@ test_mos_strength_reduction: Passed.
                       fork1: Passed.
                   function5: Passed - CO.
                   function6: Passed.
+                  function7: Passed.
+                  function8: Passed.
+                  function9: Passed.
                   blankport: Passed.
                      dcomp1: Passed.
                         sp2: Passed.
@@ -1764,4 +1767,4 @@ test_mos_strength_reduction: Passed.
              test_when_else: Passed.
 ============================================================================
 Test results:
-  Total=1762, Passed=1759, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1765, Passed=1762, Failed=3, Not Implemented=0, Expected Fail=0
