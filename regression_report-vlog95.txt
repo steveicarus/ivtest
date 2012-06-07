@@ -305,6 +305,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
             warn_opt_sys_tf: Passed.
              writemem-error: Passed.
            writemem-invalid: Passed.
+               complex_lidx: Passed - CE.
                   defparam3: Passed - CE.
                   defparam4: Passed - CE.
               gen_case_opt1: Passed - CE.
@@ -313,6 +314,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                     genloop: Not Implemented.
               generate_case: Passed - CE.
              generate_case2: Passed - CE.
+             generate_case3: Passed - CE.
         generate_multi_loop: Passed - CE.
                  pr1565699b: Passed - CE.
                   pr1623097: Passed - CE.
@@ -353,6 +355,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   pr3011327: Passed - CE.
                   pr3409749: Passed - CE.
                  pr3437290b: Passed - CE.
+                  pr3527694: Passed - CE.
               scoped_events: Passed - CE.
                 test_forgen: Passed - CE.
                   test_gxor: Passed - CE.
@@ -918,6 +921,9 @@ test_mos_strength_reduction: Passed.
                       fork1: Passed.
                   function5: Passed - CO.
                   function6: Passed.
+                  function7: Passed.
+                  function8: Passed.
+                  function9: Passed.
                   blankport: Passed.
                      dcomp1: Passed.
                         sp2: Passed.
@@ -1371,6 +1377,7 @@ test_mos_strength_reduction: Passed.
                value_range3: Passed - CE.
                      array4: Passed.
                      array5: Passed - CE.
+                     array7: Passed.
                  pr1971662a: Passed - CE.
                  pr1971662b: Passed - CE.
                   pr1978358: Passed.
@@ -1713,7 +1720,7 @@ test_mos_strength_reduction: Passed.
                clkgen_logic: Passed.
                  clkgen_net: Passed.
                  clkgen_reg: Passed.
-                  pr3366114: Passed.
+                  pr3366114: ==> Failed - running iverilog.
                  pr3366217a: Passed - CE.
                  pr3366217b: Passed - CE.
                  pr3366217c: Passed - CE.
@@ -1742,9 +1749,21 @@ test_mos_strength_reduction: Passed.
                     struct4: Passed.
                     struct5: Passed.
                     struct6: Passed.
+                    struct7: ==> Failed - running iverilog.
+                    struct8: Passed.
+                   packeda2: ==> Failed - running iverilog.
                   pr3499807: Passed.
+          switch_primitives: Passed.
            task_init_assign: ==> Failed - output does not match gold file.
                   pr3515542: Passed - CE.
+     struct_packed_sysfunct: Passed.
+          sv_end_labels_bad: Passed - CE.
+                  pr3522653: ==> Failed - output does not match gold file.
+                     attrib: Passed.
+                 specparam1: Passed.
+                 specparam2: Passed.
+                  pr3527022: Passed.
+             test_when_else: Passed.
 ============================================================================
 Test results:
-  Total=1745, Passed=1609, Failed=8, Not Implemented=85, Expected Fail=43
+  Total=1764, Passed=1624, Failed=12, Not Implemented=85, Expected Fail=43

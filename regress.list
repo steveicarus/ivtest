@@ -2277,6 +2277,7 @@ vlog95:writemem-error	normal	ivltests gold=writemem-error-vlog95.gold
 vlog95:writemem-invalid normal	ivltests gold=writemem-invalid-vlog95.gold
 
 # These tests have generate scopes that are not currently supported.
+vlog95:complex_lidx	CE	ivltests
 vlog95:defparam3	CE	ivltests
 vlog95:defparam4	CE	ivltests
 vlog95:gen_case_opt1	CE	ivltests
@@ -2285,6 +2286,7 @@ vlog95:gen_case_opt3	CE	ivltests
 vlog95:genloop		NI	ivltests  # This currently has an assert.
 vlog95:generate_case	CE	ivltests
 vlog95:generate_case2	CE	ivltests
+vlog95:generate_case3	CE	ivltests
 vlog95:generate_multi_loop	CE	ivltests
 vlog95:pr1565699b	CE	ivltests
 vlog95:pr1623097	CE	ivltests
@@ -2325,6 +2327,7 @@ vlog95:pr2924354	CE	ivltests
 vlog95:pr3011327	CE	ivltests
 vlog95:pr3409749	CE	ivltests
 vlog95:pr3437290b	CE	ivltests
+vlog95:pr3527694	CE	ivltests
 vlog95:scoped_events	CE	ivltests
 vlog95:test_forgen	CE	ivltests
 vlog95:test_gxor	CE	ivltests  # Also signed
