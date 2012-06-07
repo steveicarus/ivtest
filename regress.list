@@ -4204,3 +4204,5 @@ program5a	CE,-g2009	ivltests
 program5b	CE,-g2009	ivltests
 fork_join_any	normal,-g2009	ivltests
 fork_join_none	normal,-g2009	ivltests
+constfunc1	normal	ivltests
+constfunc2	normal	ivltests
