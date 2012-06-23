@@ -1068,6 +1068,8 @@ v0.8:program5a NI
 v0.8:program5b NI
 v0.8:fork_join_any NI
 v0.8:fork_join_none NI
+v0.8:sv_string1	NI
+v0.8:sv_string2	NI
 
 # V0.8 does not support automatic tasks or functions.
 v0.8:automatic_error1	NI
@@ -1692,6 +1694,8 @@ v0.9:program5a	NI
 v0.9:program5b	NI
 v0.9:fork_join_any	NI
 v0.9:fork_join_none	NI
+v0.9:sv_string1	NI
+v0.9:sv_string2	NI
 
 # v0.9 does not have the vhdl_sys module
 v0.9:ivlh_event	NI
@@ -4209,3 +4213,5 @@ constfunc2	normal	ivltests
 pr3534422	normal	ivltests
 pr3534333	normal	ivltests
 pr3539372	normal	ivltests
+sv_string1	normal,-g2009	ivltests
+sv_string2	normal,-g2009	ivltests
