@@ -4206,3 +4206,4 @@ fork_join_any	normal,-g2009	ivltests
 fork_join_none	normal,-g2009	ivltests
 constfunc1	normal	ivltests
 constfunc2	normal	ivltests
+pr3534422	normal	ivltests
