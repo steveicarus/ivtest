@@ -1780,6 +1780,7 @@ test_mos_strength_reduction: Passed.
                  constfunc1: Passed.
                  constfunc2: Passed.
                   pr3534422: Passed.
+                  pr3534333: Passed.
 ============================================================================
 Test results:
-  Total=1780, Passed=1777, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1781, Passed=1778, Failed=3, Not Implemented=0, Expected Fail=0
