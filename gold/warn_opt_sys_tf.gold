@@ -1,4 +1,3 @@
-SORRY: ./ivltests/warn_opt_sys_tf.v:6: $countdrivers() is not available in Icarus verilog.
 SORRY: ./ivltests/warn_opt_sys_tf.v:7: $getpattern() is not available in Icarus verilog.
 SORRY: ./ivltests/warn_opt_sys_tf.v:8: $input() is not available in Icarus verilog.
 SORRY: ./ivltests/warn_opt_sys_tf.v:9: $key() is not available in Icarus verilog.

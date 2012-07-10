@@ -988,6 +988,8 @@ v0.8:sdf_esc_id	NI
 v0.8:abstime	NI # $abstime not supported.
 v0.8:clog2	NI # $clog2 not supported.
 v0.8:clog2-signal	NI # $clog2 not supported.
+v0.8:countdrivers1	NI # $countdrivers not supported.
+v0.8:countdrivers2	NI # $countdrivers not supported.
 v0.8:delayed_sfunc	NI # $clog2, specify block delays not supported.
 v0.8:fileio	NI # $fopen{r,w,a) not supported.
 v0.8:fread	NI # $fread not supported.
@@ -1840,6 +1842,10 @@ v0.9:localparam_type2	normal	ivltests
 
 v0.9:struct_packed_sysfunct	NI
 v0.9:sv_end_labels_bad		NI
+
+# v0.9 does not support $countdrivers
+v0.9:countdrivers1	NI
+v0.9:countdrivers2	NI
 
 #==========
 # V0.9 doesn't support synthesis. Might as well run them as
@@ -4206,6 +4212,8 @@ fork_join_any	normal,-g2009	ivltests
 fork_join_none	normal,-g2009	ivltests
 constfunc1	normal	ivltests
 constfunc2	normal	ivltests
+countdrivers1	normal	ivltests
+countdrivers2	normal	ivltests
 pr3534422	normal	ivltests
 pr3534333	normal	ivltests
 pr3539372	normal	ivltests

@@ -3,7 +3,7 @@ module top;
   integer res;
 
   initial begin
-    res = $countdrivers;
+    // $countdrivers is now implemented
     res = $getpattern;
     $input;
     $key;
