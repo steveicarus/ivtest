@@ -1073,6 +1073,7 @@ v0.8:sv_string2	NI
 v0.8:sv_string3	NI
 v0.8:sv_string4	NI
 v0.8:sv_string5	NI
+v0.8:sv_darray1	NI
 
 # V0.8 does not support automatic tasks or functions.
 v0.8:automatic_error1	NI
@@ -1702,6 +1703,7 @@ v0.9:sv_string2	NI
 v0.9:sv_string3	NI
 v0.9:sv_string4	NI
 v0.9:sv_string5	NI
+v0.9:sv_darray1	NI
 
 # v0.9 does not have the vhdl_sys module
 v0.9:ivlh_event	NI
@@ -4224,3 +4226,4 @@ sv_string2	normal,-g2009	ivltests
 sv_string3	normal,-g2009	ivltests
 sv_string4	normal,-g2009	ivltests
 sv_string5	normal,-g2009	ivltests
+sv_darray1	normal,-g2009	ivltests
