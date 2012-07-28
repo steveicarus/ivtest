@@ -4226,3 +4226,5 @@ countdrivers5	normal	ivltests
 pr3534422	normal	ivltests
 pr3534333	normal	ivltests
 pr3539372	normal	ivltests
+udp_real_delay	normal	ivltests
+pr3549328	CE	ivltests

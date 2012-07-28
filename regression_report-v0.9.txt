@@ -40,6 +40,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                  pr3390385c: Not Implemented.
                  pr3390385d: Not Implemented.
                   pr3462145: Not Implemented.
+                  pr3515542: Not Implemented.
                  sbyte_test: Not Implemented.
                 simple_byte: Not Implemented.
                  simple_int: Not Implemented.
@@ -135,6 +136,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                 test_forgen: Not Implemented.
                   test_gxor: Not Implemented.
                test_varray1: Not Implemented.
+             test_when_else: Not Implemented.
                       final: Not Implemented.
                   size_cast: Not Implemented.
                     struct1: Not Implemented.
@@ -144,7 +146,25 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                     struct4: Not Implemented.
                     struct5: Not Implemented.
                     struct6: Not Implemented.
+                    struct7: Not Implemented.
+                    struct8: Not Implemented.
                     packeda: Not Implemented.
+                   packeda2: Not Implemented.
+               inc_dec_stmt: Not Implemented.
+                task_scope2: Not Implemented.
+           task_init_assign: Not Implemented.
+              program_hello: Not Implemented.
+             program_hello2: Not Implemented.
+                   program2: Not Implemented.
+                  program2b: Not Implemented.
+                   program3: Not Implemented.
+                  program3a: Not Implemented.
+                  program3b: Not Implemented.
+                   program4: Not Implemented.
+                  program5a: Not Implemented.
+                  program5b: Not Implemented.
+              fork_join_any: Not Implemented.
+             fork_join_none: Not Implemented.
                  ivlh_event: Not Implemented.
               cmdline_parm1: Not Implemented.
                     analog1: Not Implemented.
@@ -161,6 +181,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                   pr2937417: Passed - expected fail.
                  pr2937417b: Passed - expected fail.
                  pr2937417c: Passed - expected fail.
+          switch_primitives: Passed - expected fail.
                   pr2941939: Passed - CE.
                   pr3499807: Passed - CE.
                 sdf_del_min: Passed - expected fail.
@@ -228,6 +249,13 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                       wreal: Not Implemented.
             parameter_type2: Passed.
            localparam_type2: Passed.
+     struct_packed_sysfunct: Not Implemented.
+          sv_end_labels_bad: Not Implemented.
+              countdrivers1: Not Implemented.
+              countdrivers2: Not Implemented.
+              countdrivers3: Not Implemented.
+              countdrivers4: Not Implemented.
+              countdrivers5: Not Implemented.
                       case1: Passed.
                       case2: Passed.
                       case4: Passed.
@@ -789,6 +817,9 @@ test_mos_strength_reduction: Passed.
                       fork1: Passed.
                   function5: Passed - CO.
                   function6: Passed.
+                  function7: ==> Failed - running iverilog.
+                  function8: ==> Failed - running iverilog.
+                  function9: ==> Failed - running iverilog.
                   blankport: Passed.
                      dcomp1: Passed.
                         sp2: Passed.
@@ -1258,6 +1289,7 @@ test_mos_strength_reduction: Passed.
                ca_pow_synth: Passed.
               generate_case: Passed.
              generate_case2: Passed.
+             generate_case3: ==> Failed - output does not match gold file.
            real_pulse_clean: Passed.
                   pr1892959: Passed.
                  pr1892959b: Passed.
@@ -1331,6 +1363,7 @@ test_mos_strength_reduction: Passed.
                      array4: Passed.
                      array5: Passed - CE.
                      array6: Passed.
+                     array7: ==> Failed - running iverilog.
                  pr1971662a: Passed - CE.
                  pr1971662b: Passed - CE.
                   pr1978358: Passed.
@@ -1745,6 +1778,20 @@ test_mos_strength_reduction: Passed.
                   pr3452808: Passed.
                   pr3465541: Passed.
                   pr3477107: Passed.
+               complex_lidx: ==> Failed - running iverilog.
+                  pr3522653: Passed.
+                     attrib: Passed.
+                 specparam1: Not Implemented.
+                 specparam2: Not Implemented.
+                  pr3527022: Passed.
+                  pr3527694: ==> Failed - output does not match gold file.
+                 constfunc1: ==> Failed - running iverilog.
+                 constfunc2: ==> Failed - running iverilog.
+                  pr3534422: Passed.
+                  pr3534333: ==> Failed - running iverilog.
+                  pr3539372: Passed.
+             udp_real_delay: Passed.
+                  pr3549328: Passed - CE.
 ============================================================================
 Test results:
-  Total=1745, Passed=1555, Failed=1, Not Implemented=154, Expected Fail=35
+  Total=1792, Passed=1562, Failed=11, Not Implemented=183, Expected Fail=36
