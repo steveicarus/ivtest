@@ -1789,6 +1789,12 @@ test_mos_strength_reduction: Passed.
                   pr3539372: Passed.
              udp_real_delay: Passed.
                   pr3549328: Passed - CE.
+                 sv_string1: Passed.
+                 sv_string2: Passed.
+                 sv_string3: Passed.
+                 sv_string4: Passed.
+                 sv_string5: Passed.
+                 sv_darray1: Passed.
 ============================================================================
 Test results:
-  Total=1789, Passed=1786, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1795, Passed=1792, Failed=3, Not Implemented=0, Expected Fail=0
