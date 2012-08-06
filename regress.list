@@ -2372,6 +2372,7 @@ vlog95:pr3054101f	CE	ivltests
 
 # Currently no support for tran_VP (inout ports).
 vlog95:bitsel10		CE	ivltests
+vlog95:countdrivers3	CE	ivltests
 vlog95:inout		NI	ivltests
 vlog95:inout2		CE	ivltests
 vlog95:inout3		CE	ivltests
