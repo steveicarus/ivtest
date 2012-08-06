@@ -2352,6 +2352,7 @@ vlog95:pr3011327	CE	ivltests
 vlog95:pr3409749	CE	ivltests
 vlog95:pr3437290b	CE	ivltests
 vlog95:pr3527694	CE	ivltests
+vlog95:pr3534422	CE	ivltests
 vlog95:scoped_events	CE	ivltests
 vlog95:test_forgen	CE	ivltests
 vlog95:test_gxor	CE	ivltests  # Also signed
@@ -2393,7 +2394,8 @@ vlog95:ilongint_test	EF,-g2005-sv	ivltests
 vlog95:ishortint_test	EF,-g2005-sv	ivltests
 
 # No support for these SystemVerilog features
-vlog95:final		NI
+vlog95:fork_join_any	NI
+vlog95:fork_join_none	NI
 vlog95:pr3366217e	NI  # Just signed
 vlog95:pr3366217f	NI
 vlog95:pr3366217h	NI
@@ -2408,6 +2410,16 @@ vlog95:vhdl_test6	NI
 vlog95:vhdl_test7	NI
 vlog95:vhdl_test8	NI
 vlog95:vhdl_test9	NI
+
+# Currently no support for SystemVerilog final blocks.
+vlog95:final		NI
+vlog95:program_hello	NI
+vlog95:program_hello2	NI
+vlog95:program2		NI
+vlog95:program2b	NI
+vlog95:program3		NI
+vlog95:program4		NI
+vlog95:program5b	NI
 
 # Currently no support for specify blocks.
 vlog95:pr1587669	EF,-gspecify  ivltests diff=log/pr1587669.log:gold/pr1587669.gold
