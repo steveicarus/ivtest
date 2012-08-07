@@ -2394,6 +2394,13 @@ vlog95:iint_test	EF,-g2005-sv	ivltests
 vlog95:ilongint_test	EF,-g2005-sv	ivltests
 vlog95:ishortint_test	EF,-g2005-sv	ivltests
 
+# No support for the SystemVerilog string data type.
+vlog95:sv_string1	NI
+vlog95:sv_string2	NI
+vlog95:sv_string3	NI
+vlog95:sv_string4	NI
+vlog95:sv_string5	NI
+
 # No support for these SystemVerilog features
 vlog95:fork_join_any	NI
 vlog95:fork_join_none	NI
