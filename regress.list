@@ -822,6 +822,7 @@ v0.8:pr2924354	NI
 v0.8:pr3011327	NI
 v0.8:pr3409749	NI
 v0.8:pr3437290b	NI
+v0.8:pr3557493	NI
 v0.8:scoped_events	NI
 v0.8:unnamed_generate_block	NI
 
@@ -2353,6 +2354,7 @@ vlog95:pr3409749	CE	ivltests
 vlog95:pr3437290b	CE	ivltests
 vlog95:pr3527694	CE	ivltests
 vlog95:pr3534422	CE	ivltests
+vlog95:pr3557493	CE	ivltests
 vlog95:scoped_events	CE	ivltests
 vlog95:test_forgen	CE	ivltests
 vlog95:test_gxor	CE	ivltests  # Also signed
@@ -4266,3 +4268,4 @@ sv_string3	normal,-g2009	ivltests
 sv_string4	normal,-g2009	ivltests
 sv_string5	normal,-g2009	ivltests
 sv_darray1	normal,-g2009	ivltests
+pr3557493	normal	ivltests
