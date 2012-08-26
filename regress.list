@@ -1080,6 +1080,7 @@ v0.8:sv_string3	NI
 v0.8:sv_string4	NI
 v0.8:sv_string5	NI
 v0.8:sv_darray1	NI
+v0.8:struct_packed_array	NI
 
 # V0.8 does not support automatic tasks or functions.
 v0.8:automatic_error1	NI
@@ -1710,6 +1711,7 @@ v0.9:sv_string3	NI
 v0.9:sv_string4	NI
 v0.9:sv_string5	NI
 v0.9:sv_darray1	NI
+v0.9:struct_packed_array	NI
 
 # v0.9 does not have the vhdl_sys module
 v0.9:ivlh_event	NI
@@ -4269,3 +4271,4 @@ sv_string4	normal,-g2009	ivltests
 sv_string5	normal,-g2009	ivltests
 sv_darray1	normal,-g2009	ivltests
 pr3557493	normal	ivltests
+struct_packed_array	normal,-g2009	ivltests
