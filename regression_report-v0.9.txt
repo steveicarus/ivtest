@@ -165,6 +165,12 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                   program5b: Not Implemented.
               fork_join_any: Not Implemented.
              fork_join_none: Not Implemented.
+                 sv_string1: Not Implemented.
+                 sv_string2: Not Implemented.
+                 sv_string3: Not Implemented.
+                 sv_string4: Not Implemented.
+                 sv_string5: Not Implemented.
+                 sv_darray1: Not Implemented.
                  ivlh_event: Not Implemented.
               cmdline_parm1: Not Implemented.
                     analog1: Not Implemented.
@@ -1792,6 +1798,8 @@ test_mos_strength_reduction: Passed.
                   pr3539372: Passed.
              udp_real_delay: Passed.
                   pr3549328: Passed - CE.
+                  pr3557493: Passed.
+                  pr3561350: Passed.
 ============================================================================
 Test results:
-  Total=1792, Passed=1562, Failed=11, Not Implemented=183, Expected Fail=36
+  Total=1800, Passed=1564, Failed=11, Not Implemented=189, Expected Fail=36
