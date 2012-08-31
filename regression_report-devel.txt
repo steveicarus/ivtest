@@ -1797,6 +1797,7 @@ test_mos_strength_reduction: Passed.
                  sv_darray1: Passed.
                   pr3557493: Passed.
                   pr3561350: Passed.
+                  pr3563412: Passed.
 ============================================================================
 Test results:
-  Total=1797, Passed=1794, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1798, Passed=1795, Failed=3, Not Implemented=0, Expected Fail=0

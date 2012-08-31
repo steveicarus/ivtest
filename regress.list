@@ -4270,3 +4270,4 @@ sv_string5	normal,-g2009	ivltests
 sv_darray1	normal,-g2009	ivltests
 pr3557493	normal	ivltests
 pr3561350	normal	ivltests
+pr3563412	normal	ivltests
