@@ -408,6 +408,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  pr3390385c: Passed - CE.
                  pr3390385d: Passed - CE.
                   pr3462145: Passed - CE.
+                 sv_darray1: Not Implemented.
                  vhdl_test5: Not Implemented.
                  vhdl_test6: Not Implemented.
                  vhdl_test7: Not Implemented.
@@ -1794,6 +1795,8 @@ test_mos_strength_reduction: Passed.
                   pr3539372: Passed.
              udp_real_delay: Passed.
                   pr3549328: Passed - CE.
+                  pr3561350: Passed.
+                  pr3563412: Passed.
 ============================================================================
 Test results:
-  Total=1794, Passed=1641, Failed=11, Not Implemented=99, Expected Fail=43
+  Total=1797, Passed=1643, Failed=11, Not Implemented=100, Expected Fail=43
