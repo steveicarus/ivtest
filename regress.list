@@ -2285,6 +2285,7 @@ vlog95:fdisplay_fail_fd	normal	ivltests gold=fdisplay_fail_fd-vlog95.gold
 vlog95:fdisplay_fail_mcd	normal	ivltests gold=fdisplay_fail_mcd-vlog95.gold
 vlog95:format		RE	ivltests gold=format-vlog95.gold
 vlog95:fread-error	normal	ivltests gold=fread-error-vlog95.gold
+vlog95:fscanf_z_warn	normal	ivltests diff=log/fscanf_z_warn.log:gold/fscanf_z_warn-vlog95.gold
 vlog95:localparam_type	normal	ivltests gold=parameter_type-vlog95.gold
 vlog95:parameter_type	normal	ivltests gold=parameter_type-vlog95.gold
 vlog95:mem1		normal	ivltests gold=mem1-vlog95.gold
