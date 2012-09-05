@@ -287,6 +287,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
           fdisplay_fail_mcd: Passed.
                      format: Passed.
                 fread-error: Passed.
+              fscanf_u_warn: Passed.
               fscanf_z_warn: Passed.
             localparam_type: Passed.
              parameter_type: Passed.
@@ -1800,6 +1801,8 @@ test_mos_strength_reduction: Passed.
                   pr3563412: Passed.
                    sscanf_z: Passed.
                    fscanf_z: Passed.
+                   sscanf_u: Passed.
+                   fscanf_u: Passed.
 ============================================================================
 Test results:
-  Total=1800, Passed=1646, Failed=11, Not Implemented=100, Expected Fail=43
+  Total=1803, Passed=1649, Failed=11, Not Implemented=100, Expected Fail=43

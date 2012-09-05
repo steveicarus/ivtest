@@ -958,6 +958,8 @@ v0.8:pr2976242c	NI
 v0.8:verify_two_var_delays	NI
 
 # V0.8 does not support $sscanf/$fscanf.
+v0.8:fscanf_u	NI
+v0.8:fscanf_u_warn	NI
 v0.8:fscanf_z	NI
 v0.8:fscanf_z_warn	NI
 v0.8:pr1687193	NI
@@ -971,6 +973,7 @@ v0.8:scan-invalid	NI
 v0.8:scanf2	NI
 v0.8:scanf3	NI
 v0.8:scanf4	NI
+v0.8:sscanf_u	NI
 v0.8:sscanf_z	NI
 
 # V0.8 does not support $sdf_annotate.
@@ -2285,6 +2288,7 @@ vlog95:fdisplay_fail_fd	normal	ivltests gold=fdisplay_fail_fd-vlog95.gold
 vlog95:fdisplay_fail_mcd	normal	ivltests gold=fdisplay_fail_mcd-vlog95.gold
 vlog95:format		RE	ivltests gold=format-vlog95.gold
 vlog95:fread-error	normal	ivltests gold=fread-error-vlog95.gold
+vlog95:fscanf_u_warn	normal	ivltests diff=log/fscanf_u_warn.log:gold/fscanf_u_warn-vlog95.gold
 vlog95:fscanf_z_warn	normal	ivltests diff=log/fscanf_z_warn.log:gold/fscanf_z_warn-vlog95.gold
 vlog95:localparam_type	normal	ivltests gold=parameter_type-vlog95.gold
 vlog95:parameter_type	normal	ivltests gold=parameter_type-vlog95.gold
@@ -4279,3 +4283,6 @@ pr3563412	normal	ivltests
 sscanf_z	normal	ivltests
 fscanf_z	normal	ivltests
 fscanf_z_warn	normal	ivltests diff=log/fscanf_z_warn.log:gold/fscanf_z_warn.gold
+sscanf_u	normal	ivltests
+fscanf_u	normal	ivltests
+fscanf_u_warn	normal	ivltests diff=log/fscanf_u_warn.log:gold/fscanf_u_warn.gold
