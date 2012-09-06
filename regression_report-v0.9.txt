@@ -262,6 +262,13 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
               countdrivers3: Not Implemented.
               countdrivers4: Not Implemented.
               countdrivers5: Not Implemented.
+                  function7: Not Implemented.
+                  function8: Not Implemented.
+                  function9: Not Implemented.
+                     array7: Not Implemented.
+               complex_lidx: Not Implemented.
+                 constfunc1: Not Implemented.
+                 constfunc2: Not Implemented.
                       case1: Passed.
                       case2: Passed.
                       case4: Passed.
@@ -823,9 +830,6 @@ test_mos_strength_reduction: Passed.
                       fork1: Passed.
                   function5: Passed - CO.
                   function6: Passed.
-                  function7: ==> Failed - running iverilog.
-                  function8: ==> Failed - running iverilog.
-                  function9: ==> Failed - running iverilog.
                   blankport: Passed.
                      dcomp1: Passed.
                         sp2: Passed.
@@ -1369,7 +1373,6 @@ test_mos_strength_reduction: Passed.
                      array4: Passed.
                      array5: Passed - CE.
                      array6: Passed.
-                     array7: ==> Failed - running iverilog.
                  pr1971662a: Passed - CE.
                  pr1971662b: Passed - CE.
                   pr1978358: Passed.
@@ -1784,15 +1787,12 @@ test_mos_strength_reduction: Passed.
                   pr3452808: Passed.
                   pr3465541: Passed.
                   pr3477107: Passed.
-               complex_lidx: ==> Failed - running iverilog.
                   pr3522653: Passed.
                      attrib: Passed.
                  specparam1: Not Implemented.
                  specparam2: Not Implemented.
                   pr3527022: Passed.
                   pr3527694: ==> Failed - output does not match gold file.
-                 constfunc1: ==> Failed - running iverilog.
-                 constfunc2: ==> Failed - running iverilog.
                   pr3534422: Passed.
                   pr3534333: ==> Failed - running iverilog.
                   pr3539372: Passed.
@@ -1801,6 +1801,12 @@ test_mos_strength_reduction: Passed.
                   pr3557493: Passed.
                   pr3561350: Passed.
                   pr3563412: Passed.
+                   sscanf_z: Passed.
+                   fscanf_z: Passed.
+              fscanf_z_warn: Passed.
+                   sscanf_u: Passed.
+                   fscanf_u: Passed.
+              fscanf_u_warn: Passed.
 ============================================================================
 Test results:
-  Total=1801, Passed=1565, Failed=11, Not Implemented=189, Expected Fail=36
+  Total=1807, Passed=1571, Failed=4, Not Implemented=196, Expected Fail=36

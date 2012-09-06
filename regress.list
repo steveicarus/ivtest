@@ -1872,6 +1872,14 @@ v0.9:countdrivers3	NI
 v0.9:countdrivers4	NI
 v0.9:countdrivers5	NI
 
+v0.9:function7		NI
+v0.9:function8		NI
+v0.9:function9		NI
+v0.9:array7		NI
+v0.9:complex_lidx	NI
+v0.9:constfunc1		NI
+v0.9:constfunc2		NI
+
 #==========
 # V0.9 doesn't support synthesis. Might as well run them as
 # non-synthesis tests, though.
