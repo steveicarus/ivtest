@@ -16,14 +16,21 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                 fatal_et_al: Not Implemented.
                    fileline: Not Implemented.
                   fileline2: Not Implemented.
+                      final: Not Implemented.
              first_last_num: Not Implemented.
+              fork_join_any: Not Implemented.
+             fork_join_none: Not Implemented.
                   ibit_test: Not Implemented.
                  ibyte_test: Not Implemented.
                   iint_test: Not Implemented.
               ilongint_test: Not Implemented.
+                  int_param: Not Implemented.
+               inc_dec_stmt: Not Implemented.
              ishortint_test: Not Implemented.
                      iuint1: Not Implemented.
                       logp2: Not Implemented.
+                    packeda: Not Implemented.
+                   packeda2: Not Implemented.
                      plus_5: Not Implemented.
                   pr3366114: Not Implemented.
                  pr3366217a: Not Implemented.
@@ -41,21 +48,60 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                  pr3390385d: Not Implemented.
                   pr3462145: Not Implemented.
                   pr3515542: Not Implemented.
+                  pr3534333: Not Implemented.
+              program_hello: Not Implemented.
+             program_hello2: Not Implemented.
+                   program2: Not Implemented.
+                  program2b: Not Implemented.
+                   program3: Not Implemented.
+                  program3a: Not Implemented.
+                  program3b: Not Implemented.
+                   program4: Not Implemented.
+                  program5a: Not Implemented.
+                  program5b: Not Implemented.
                  sbyte_test: Not Implemented.
                 simple_byte: Not Implemented.
                  simple_int: Not Implemented.
              simple_longint: Not Implemented.
             simple_shortint: Not Implemented.
                   sint_test: Not Implemented.
+                  size_cast: Not Implemented.
               slongint_test: Not Implemented.
              sshortint_test: Not Implemented.
+                    struct1: Not Implemented.
+                    struct2: Not Implemented.
+                    struct3: Not Implemented.
+                   struct3b: Not Implemented.
+                    struct4: Not Implemented.
+                    struct5: Not Implemented.
+                    struct6: Not Implemented.
+                    struct7: Not Implemented.
+                    struct8: Not Implemented.
                sv-2val-nets: Not Implemented.
                sv-constants: Not Implemented.
+                 sv_darray1: Not Implemented.
+                 sv_string1: Not Implemented.
+                 sv_string2: Not Implemented.
+                 sv_string3: Not Implemented.
+                 sv_string4: Not Implemented.
+                 sv_string5: Not Implemented.
            sv_timeunit_prec: Not Implemented.
       sv_timeunit_prec_fail: Not Implemented.
            sys_func_as_task: Not Implemented.
+           task_init_assign: Not Implemented.
+                task_scope2: Not Implemented.
+               test_dec2to4: Not Implemented.
+            test_enumsystem: Not Implemented.
+                test_forgen: Not Implemented.
+                  test_gxor: Not Implemented.
                test_inc_dec: Not Implemented.
+               test_mux2to1: Not Implemented.
+    test_signal_init_assign: Not Implemented.
+                test_system: Not Implemented.
+              test_timebase: Not Implemented.
               test_tliteral: Not Implemented.
+               test_varray1: Not Implemented.
+             test_when_else: Not Implemented.
           two_state_display: Not Implemented.
                  ubyte_test: Not Implemented.
                   uint_test: Not Implemented.
@@ -126,51 +172,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                  vhdl_test9: Not Implemented.
                       work7: Not Implemented.
                      work7b: Not Implemented.
-                  int_param: Not Implemented.
-               test_mux2to1: Not Implemented.
-               test_dec2to4: Not Implemented.
-            test_enumsystem: Not Implemented.
-              test_timebase: Not Implemented.
-                test_system: Not Implemented.
-    test_signal_init_assign: Not Implemented.
-                test_forgen: Not Implemented.
-                  test_gxor: Not Implemented.
-               test_varray1: Not Implemented.
-             test_when_else: Not Implemented.
-                      final: Not Implemented.
-                  size_cast: Not Implemented.
-                    struct1: Not Implemented.
-                    struct2: Not Implemented.
-                    struct3: Not Implemented.
-                   struct3b: Not Implemented.
-                    struct4: Not Implemented.
-                    struct5: Not Implemented.
-                    struct6: Not Implemented.
-                    struct7: Not Implemented.
-                    struct8: Not Implemented.
-                    packeda: Not Implemented.
-                   packeda2: Not Implemented.
-               inc_dec_stmt: Not Implemented.
-                task_scope2: Not Implemented.
-           task_init_assign: Not Implemented.
-              program_hello: Not Implemented.
-             program_hello2: Not Implemented.
-                   program2: Not Implemented.
-                  program2b: Not Implemented.
-                   program3: Not Implemented.
-                  program3a: Not Implemented.
-                  program3b: Not Implemented.
-                   program4: Not Implemented.
-                  program5a: Not Implemented.
-                  program5b: Not Implemented.
-              fork_join_any: Not Implemented.
-             fork_join_none: Not Implemented.
-                 sv_string1: Not Implemented.
-                 sv_string2: Not Implemented.
-                 sv_string3: Not Implemented.
-                 sv_string4: Not Implemented.
-                 sv_string5: Not Implemented.
-                 sv_darray1: Not Implemented.
                  ivlh_event: Not Implemented.
               cmdline_parm1: Not Implemented.
                     analog1: Not Implemented.
@@ -194,6 +195,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                 sdf_del_max: Passed - expected fail.
                   pr2924354: Passed - expected fail.
                        sdf8: Passed - expected fail.
+                 specparam1: Not Implemented.
+                 specparam2: Not Implemented.
                   pr2913404: Passed - expected fail.
                       real5: Passed.
                     vcd-dup: Passed.
@@ -236,6 +239,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                  pr1883052b: Passed - expected fail.
             pr1883052b-v0.9: Passed.
                   delay_var: Passed.
+               complex_lidx: Not Implemented.
+             generate_case3: Passed - expected fail.
                      pr1002: Passed - expected fail.
                   pr1913937: Passed - expected fail.
                   pr2785294: Passed - expected fail.
@@ -249,6 +254,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                   pr2985542: Passed - expected fail.
                   pr3270320: Not Implemented.
                   pr3368642: Passed - expected fail.
+                  pr3527694: Passed - expected fail.
                       uwire: Passed.
                  uwire_fail: Passed.
                   pr3015421: Passed - CE.
@@ -262,13 +268,13 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
               countdrivers3: Not Implemented.
               countdrivers4: Not Implemented.
               countdrivers5: Not Implemented.
+                 constfunc1: Not Implemented.
+                 constfunc2: Not Implemented.
                   function7: Not Implemented.
                   function8: Not Implemented.
                   function9: Not Implemented.
                      array7: Not Implemented.
-               complex_lidx: Not Implemented.
-                 constfunc1: Not Implemented.
-                 constfunc2: Not Implemented.
+                  pr1877743: Passed - expected fail.
                       case1: Passed.
                       case2: Passed.
                       case4: Passed.
@@ -1281,7 +1287,6 @@ test_mos_strength_reduction: Passed.
                  pr1875866b: Passed.
                   pr1876798: Passed.
                   pr1877740: Passed.
-                  pr1877743: ==> Failed - output does not match gold file.
                   pr1878909: Passed.
                   pr1879226: Passed.
                   pr1880003: Passed.
@@ -1299,7 +1304,6 @@ test_mos_strength_reduction: Passed.
                ca_pow_synth: Passed.
               generate_case: Passed.
              generate_case2: Passed.
-             generate_case3: ==> Failed - output does not match gold file.
            real_pulse_clean: Passed.
                   pr1892959: Passed.
                  pr1892959b: Passed.
@@ -1789,12 +1793,8 @@ test_mos_strength_reduction: Passed.
                   pr3477107: Passed.
                   pr3522653: Passed.
                      attrib: Passed.
-                 specparam1: Not Implemented.
-                 specparam2: Not Implemented.
                   pr3527022: Passed.
-                  pr3527694: ==> Failed - output does not match gold file.
                   pr3534422: Passed.
-                  pr3534333: ==> Failed - running iverilog.
                   pr3539372: Passed.
              udp_real_delay: Passed.
                   pr3549328: Passed - CE.
@@ -1809,4 +1809,4 @@ test_mos_strength_reduction: Passed.
               fscanf_u_warn: Passed.
 ============================================================================
 Test results:
-  Total=1807, Passed=1571, Failed=4, Not Implemented=196, Expected Fail=36
+  Total=1807, Passed=1571, Failed=0, Not Implemented=197, Expected Fail=39

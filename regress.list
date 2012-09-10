@@ -1552,13 +1552,19 @@ v0.9:fileline	NI
 v0.9:fileline2	NI
 v0.9:final		NI
 v0.9:first_last_num	NI
+v0.9:fork_join_any	NI
+v0.9:fork_join_none	NI
 v0.9:ibit_test	NI
 v0.9:ibyte_test	NI
 v0.9:iint_test	NI
 v0.9:ilongint_test	NI
+v0.9:int_param		NI
+v0.9:inc_dec_stmt	NI
 v0.9:ishortint_test	NI
 v0.9:iuint1		NI
 v0.9:logp2	NI
+v0.9:packeda		NI
+v0.9:packeda2		NI
 v0.9:plus_5		NI
 v0.9:pr3366114	NI
 v0.9:pr3366217a	NI
@@ -1576,6 +1582,17 @@ v0.9:pr3390385c		NI
 v0.9:pr3390385d		NI
 v0.9:pr3462145		NI
 v0.9:pr3515542	NI
+v0.9:pr3534333	NI
+v0.9:program_hello	NI
+v0.9:program_hello2	NI
+v0.9:program2	NI
+v0.9:program2b	NI
+v0.9:program3	NI
+v0.9:program3a	NI
+v0.9:program3b	NI
+v0.9:program4	NI
+v0.9:program5a	NI
+v0.9:program5b	NI
 v0.9:sbyte_test	NI
 v0.9:simple_byte	NI
 v0.9:simple_int	NI
@@ -1585,11 +1602,28 @@ v0.9:sint_test	NI
 v0.9:size_cast		NI
 v0.9:slongint_test	NI
 v0.9:sshortint_test	NI
+v0.9:struct1		NI
+v0.9:struct2		NI
+v0.9:struct3		NI
+v0.9:struct3b		NI
+v0.9:struct4		NI
+v0.9:struct5		NI
+v0.9:struct6		NI
+v0.9:struct7		NI
+v0.9:struct8		NI
 v0.9:sv-2val-nets	NI
 v0.9:sv-constants	NI
+v0.9:sv_darray1	NI
+v0.9:sv_string1	NI
+v0.9:sv_string2	NI
+v0.9:sv_string3	NI
+v0.9:sv_string4	NI
+v0.9:sv_string5	NI
 v0.9:sv_timeunit_prec	NI
 v0.9:sv_timeunit_prec_fail	NI
 v0.9:sys_func_as_task	NI
+v0.9:task_init_assign	NI
+v0.9:task_scope2	NI
 v0.9:test_dec2to4	NI
 v0.9:test_enumsystem	NI
 v0.9:test_forgen	NI
@@ -1600,6 +1634,8 @@ v0.9:test_signal_init_assign	NI
 v0.9:test_system	NI
 v0.9:test_timebase	NI
 v0.9:test_tliteral	NI
+v0.9:test_varray1	NI
+v0.9:test_when_else	NI
 v0.9:two_state_display	NI
 v0.9:ubyte_test	NI
 v0.9:uint_test	NI
@@ -1671,51 +1707,6 @@ v0.9:vhdl_test8		NI
 v0.9:vhdl_test9		NI
 v0.9:work7		NI
 v0.9:work7b		NI
-v0.9:int_param		NI
-v0.9:test_mux2to1	NI
-v0.9:test_dec2to4	NI
-v0.9:test_enumsystem	NI
-v0.9:test_timebase	NI
-v0.9:test_system	NI
-v0.9:test_signal_init_assign	NI
-v0.9:test_forgen	NI
-v0.9:test_gxor		NI
-v0.9:test_varray1	NI
-v0.9:test_when_else	NI
-v0.9:final		NI
-v0.9:size_cast		NI
-v0.9:struct1		NI
-v0.9:struct2		NI
-v0.9:struct3		NI
-v0.9:struct3b		NI
-v0.9:struct4		NI
-v0.9:struct5		NI
-v0.9:struct6		NI
-v0.9:struct7		NI
-v0.9:struct8		NI
-v0.9:packeda		NI
-v0.9:packeda2		NI
-v0.9:inc_dec_stmt	NI
-v0.9:task_scope2	NI
-v0.9:task_init_assign	NI
-v0.9:program_hello	NI
-v0.9:program_hello2	NI
-v0.9:program2	NI
-v0.9:program2b	NI
-v0.9:program3	NI
-v0.9:program3a	NI
-v0.9:program3b	NI
-v0.9:program4	NI
-v0.9:program5a	NI
-v0.9:program5b	NI
-v0.9:fork_join_any	NI
-v0.9:fork_join_none	NI
-v0.9:sv_string1	NI
-v0.9:sv_string2	NI
-v0.9:sv_string3	NI
-v0.9:sv_string4	NI
-v0.9:sv_string5	NI
-v0.9:sv_darray1	NI
 
 # v0.9 does not have the vhdl_sys module
 v0.9:ivlh_event	NI
@@ -1764,6 +1755,11 @@ v0.9:pr2924354	EF	ivltests diff=log/pr2924354.log:gold/pr2924354.gold
 
 # V0.9 does not have the modpath source patch.
 v0.9:sdf8	EF,-gspecify  ivltests diff=log/sdf8.log:gold/sdf8.gold
+
+# V0.9 does not have support for declaring specparams outside of the
+# specify block
+v0.9:specparam1	NI	ivltests
+v0.9:specparam2	NI	ivltests
 
 # V0.9 can not correctly convert some large (63/64+ bit) binary values to real.
 v0.9:pr2913404	EF ivltests
@@ -1834,6 +1830,8 @@ v0.9:delay_var	normal	ivltests diff=log/delay_var.log:gold/delay_var-v0.9.gold
 # should see if some of these can be applied. If they are applied then we
 # need to remove the appropriate line. Each of these needs a description
 # and some of them should likely be NI.
+v0.9:complex_lidx	NI
+v0.9:generate_case3	EF	ivltests
 v0.9:pr1002	EF	ivltests diff=log/pr1002.log:gold/pr1002.gold
 v0.9:pr1913937	EF	ivltests
 v0.9:pr2785294	EF	ivltests
@@ -1847,6 +1845,7 @@ v0.9:pr2976242c	CE	ivltests
 v0.9:pr2985542	EF	ivltests
 v0.9:pr3270320	NI	ivltests
 v0.9:pr3368642	EF	ivltests
+v0.9:pr3527694	EF	ivltests diff=log/pr3527694.log:gold/pr3527694.gold
 
 # v0.9 does not support the uwire check and always prints a warning message.
 v0.9:uwire	normal	ivltests diff=log/uwire.log:gold/uwire-v0.9.gold
@@ -1865,20 +1864,29 @@ v0.9:localparam_type2	normal	ivltests
 v0.9:struct_packed_sysfunct	NI
 v0.9:sv_end_labels_bad		NI
 
-# v0.9 does not support $countdrivers
+# V0.9 does not support $countdrivers
 v0.9:countdrivers1	NI
 v0.9:countdrivers2	NI
 v0.9:countdrivers3	NI
 v0.9:countdrivers4	NI
 v0.9:countdrivers5	NI
 
+# V0.9 does not support constant functions
+v0.9:constfunc1		NI
+v0.9:constfunc2		NI
 v0.9:function7		NI
 v0.9:function8		NI
 v0.9:function9		NI
+
+# V0.9 does not support multi-dimensional arrays.
 v0.9:array7		NI
-v0.9:complex_lidx	NI
-v0.9:constfunc1		NI
-v0.9:constfunc2		NI
+
+# This test fails because the conditional expression needs to be pulled on
+# demand. Just allowing the expression to propagate causes a timing race
+# where the expression can change value after the event has occurred. Fixing
+# this requires the run-time expression rework that is planned to be added
+# to development.
+v0.9:pr1877743	EF,-gspecify  ivltests
 
 #==========
 # V0.9 doesn't support synthesis. Might as well run them as
@@ -4250,8 +4258,6 @@ pr3522653	normal	ivltests diff=log/pr3522653.log:gold/pr3522653.gold
 attrib	normal	ivltests
 specparam1	normal	ivltests
 specparam2	normal	ivltests
-v0.9:specparam1	NI	ivltests
-v0.9:specparam2	NI	ivltests
 pr3527022	normal	ivltests
 pr3527694	normal	ivltests diff=log/pr3527694.log:gold/pr3527694.gold
 test_when_else	normal,-g2009,ivltests/when_else.vhd	ivltests
