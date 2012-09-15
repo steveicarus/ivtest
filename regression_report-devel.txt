@@ -1804,6 +1804,9 @@ test_mos_strength_reduction: Passed.
                    sscanf_u: Passed.
                    fscanf_u: Passed.
               fscanf_u_warn: Passed.
+        struct_packed_array: Passed.
+       struct_packed_array2: Passed.
+          vhdl_struct_array: Passed.
 ============================================================================
 Test results:
-  Total=1804, Passed=1801, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1807, Passed=1804, Failed=3, Not Implemented=0, Expected Fail=0

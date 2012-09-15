@@ -1086,6 +1086,9 @@ v0.8:sv_string3	NI
 v0.8:sv_string4	NI
 v0.8:sv_string5	NI
 v0.8:sv_darray1	NI
+v0.8:struct_packed_array	NI
+v0.8:struct_packed_array2	NI
+v0.8:vhdl_struct_array	NI
 
 # V0.8 does not support automatic tasks or functions.
 v0.8:automatic_error1	NI
@@ -1707,6 +1710,54 @@ v0.9:vhdl_test8		NI
 v0.9:vhdl_test9		NI
 v0.9:work7		NI
 v0.9:work7b		NI
+v0.9:int_param		NI
+v0.9:test_mux2to1	NI
+v0.9:test_dec2to4	NI
+v0.9:test_enumsystem	NI
+v0.9:test_timebase	NI
+v0.9:test_system	NI
+v0.9:test_signal_init_assign	NI
+v0.9:test_forgen	NI
+v0.9:test_gxor		NI
+v0.9:test_varray1	NI
+v0.9:test_when_else	NI
+v0.9:final		NI
+v0.9:size_cast		NI
+v0.9:struct1		NI
+v0.9:struct2		NI
+v0.9:struct3		NI
+v0.9:struct3b		NI
+v0.9:struct4		NI
+v0.9:struct5		NI
+v0.9:struct6		NI
+v0.9:struct7		NI
+v0.9:struct8		NI
+v0.9:packeda		NI
+v0.9:packeda2		NI
+v0.9:inc_dec_stmt	NI
+v0.9:task_scope2	NI
+v0.9:task_init_assign	NI
+v0.9:program_hello	NI
+v0.9:program_hello2	NI
+v0.9:program2	NI
+v0.9:program2b	NI
+v0.9:program3	NI
+v0.9:program3a	NI
+v0.9:program3b	NI
+v0.9:program4	NI
+v0.9:program5a	NI
+v0.9:program5b	NI
+v0.9:fork_join_any	NI
+v0.9:fork_join_none	NI
+v0.9:sv_string1	NI
+v0.9:sv_string2	NI
+v0.9:sv_string3	NI
+v0.9:sv_string4	NI
+v0.9:sv_string5	NI
+v0.9:sv_darray1	NI
+v0.9:struct_packed_array	NI
+v0.9:struct_packed_array2	NI
+v0.9:vhdl_struct_array	NI
 
 # v0.9 does not have the vhdl_sys module
 v0.9:ivlh_event	NI
@@ -4300,3 +4351,6 @@ fscanf_z_warn	normal	ivltests diff=log/fscanf_z_warn.log:gold/fscanf_z_warn.gold
 sscanf_u	normal	ivltests
 fscanf_u	normal	ivltests
 fscanf_u_warn	normal	ivltests diff=log/fscanf_u_warn.log:gold/fscanf_u_warn.gold
+struct_packed_array	normal,-g2009	ivltests
+struct_packed_array2	normal,-g2009	ivltests
+vhdl_struct_array	normal,-g2005-sv,ivltests/vhdl_struct_array.vhd	ivltests
