@@ -1,4 +1,3 @@
-
 /*
  * Copyright (c) 2000 Peter monta (pmonta@pacbell.net)
  *
@@ -26,7 +25,7 @@ module main;
 
   assign y = a && (b ? 0 : 1);
 
-  initial 
+  initial
     begin
        error = 0;
        #1 ; // get passed the time 0 race problems ;-)
@@ -37,7 +36,7 @@ module main;
          begin
            $display("FAILED");
            error = 1;
-         end   
+         end
        #1 ;
        b = 0;
        #1 ;
@@ -45,7 +44,7 @@ module main;
          begin
            $display("FAILED");
            error = 1;
-         end   
+         end
        if(error === 0)
          $display("PASSED");
     end

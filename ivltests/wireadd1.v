@@ -49,7 +49,7 @@ for ( var1 = 4'b0; var1 != 4'hf; var1 = var1 + 1)
                error = 1;
         #1;
      end
-if(error == 0) 
+if(error == 0)
   $display("PASSED");
 else
   $display("FAILED");

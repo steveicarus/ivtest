@@ -21,12 +21,12 @@
 //
 // D: First do the declaration, and assignment of bit wide arrays
 // D: and 16 bit wide 4 deep arrays.  Then assign values and validate
-// D: the assignment worked. 
+// D: the assignment worked.
 
 module main();
 
-reg 		mem_1 [1:0];	// Define 2 locations, each 1 bit in depth
-reg [15:0] 	mem_2 [3:0];	// Define a 16 bit wide array - 4 in depth
+reg		mem_1 [1:0];	// Define 2 locations, each 1 bit in depth
+reg [15:0]	mem_2 [3:0];	// Define a 16 bit wide array - 4 in depth
 reg [15:0]	work16;
 reg		work1;
 
@@ -34,59 +34,59 @@ initial   // Excitation block
   begin
 	mem_1 [0] = 0;		// Do the initial assignment of values
 	mem_1 [1] = 1;
-	mem_2 [0] = 16'h0;	
-	mem_2 [1] = 16'h1;	
-	mem_2 [2] = 16'h2;	
-	mem_2 [3] = 16'h3;	
+	mem_2 [0] = 16'h0;
+	mem_2 [1] = 16'h1;
+	mem_2 [2] = 16'h2;
+	mem_2 [3] = 16'h3;
 
         #5 ;
-        mem_1 [1] = mem_1 [0] ;	// use the mem array on the rhs 	
+        mem_1 [1] = mem_1 [0] ;	// use the mem array on the rhs
         mem_2 [3] = mem_2 [0] ;
- 
+
         #5;
 
   end
 
 initial  // Validation block
   begin
-    #1 ;    
+    #1 ;
     // Validate initialization
     work1 = mem_1[0];
     if(work1 != 0)
        begin
          $display("FAILED - mem_1 [0] init failed\n");
          $finish ;
-       end 
+       end
     work1 = mem_1[1];
     if(work1 != 1)
        begin
          $display("FAILED - mem_1 [1] init failed\n");
          $finish ;
-       end 
+       end
     work16 = mem_2 [0];
     if(work16 != 16'h0)
        begin
          $display("FAILED - mem_2 [0] init failed\n");
          $finish ;
-       end 
+       end
     work16 = mem_2 [1];
     if(work16 != 16'h1)
        begin
          $display("FAILED - mem_2 [1] init failed\n");
          $finish ;
-       end 
+       end
     work16 = mem_2 [2];
     if(work16 != 16'h2)
        begin
          $display("FAILED - mem_2 [2] init failed\n");
          $finish ;
-       end 
+       end
     work16 = mem_2 [3];
     if(work16 != 16'h3)
        begin
          $display("FAILED - mem_2 [3] init failed\n");
          $finish ;
-       end 
+       end
 
     #5 ;
     work1 = mem_1[1];
@@ -94,13 +94,13 @@ initial  // Validation block
        begin
          $display("FAILED - mem_1 [1] rhs assignment \n");
          $finish ;
-       end 
+       end
     work16 = mem_2 [3];
     if(work16 != 16'h0)
        begin
          $display("FAILED - mem_2 [3] rhs assignment\n");
          $finish ;
-       end 
+       end
 
     $display("PASSED\n");
     $finish ;

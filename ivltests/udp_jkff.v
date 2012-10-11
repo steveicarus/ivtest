@@ -25,10 +25,10 @@ module test_jkff;
    reg j, k;
    reg s, r;
    reg qq;
-   
+
    integer errors;
    initial errors = 0;
-   
+
    initial
      begin
 	cp <= 0;
@@ -91,7 +91,7 @@ module test_jkff;
 `else
    jkff ff (q, cp, j, k, s, r);
 `endif
-   
+
    always @(cp or j or k or s or r)
      begin
 	#2;
@@ -110,7 +110,7 @@ endmodule
 primitive jkff(q, cp, j, k, s, r);
    output q;
    input  cp, j, k, s, r;
-   reg 	  q;
+   reg	  q;
    table
    // (cp)  j  k  s   r  :  q  :  q  ;
         ?   ?  ? (?0) 0  :  ?  :  -  ;

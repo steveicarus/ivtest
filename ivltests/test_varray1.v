@@ -11,12 +11,12 @@ initial begin
   @(negedge reset);
   for (i = 0; i < M; i=i+1) begin
     @(negedge clk);
-    x = {$random} % MAX; 
+    x = {$random} % MAX;
   end
- 
+
 end
 
- 
+
 endmodule
 
 module test;
@@ -25,30 +25,30 @@ module test;
   parameter T = 10;  // for timing
   parameter D = 8;  // depth of pipeline, MAX of 8
   parameter K = 10; // distance between boundaries of pipeline
-  parameter S = 2*M*T + 12*D; 
+  parameter S = 2*M*T + 12*D;
   parameter MAX = D*K;
-  
+
   bit clk =0, reset = 0;
-  
+
   wire [W-1:0] xin;
   wire [W-1:0] din = K;
-  
+
   wire [W-1:0] dout, bout, xout;
-  
+
   wire [2:0] lin = 3'b111;  // -1 in fact
   wire [2:0] lout;
-  
+
   int x_gold; // for computing expected result
-  
+
   initial forever #T clk = ~clk;
-  
-  
-  
+
+
+
   stimulus   #(W, M, MAX)   stim  (.clk(clk), .reset(reset), .x(xin));
-  diq_array  #(W, D)         duv   (.clk(clk), .reset(reset), 
+  diq_array  #(W, D)         duv   (.clk(clk), .reset(reset),
                                     .din(din), .bin(8'd0), .xin(xin), .lin(lin),
                                     .dout(dout), .bout(bout), .xout(xout),
-                                   .lout(lout) );     
+                                   .lout(lout) );
 
 
 initial begin: checking
@@ -58,7 +58,7 @@ initial begin: checking
   forever begin
     @(posedge clk);
     #1;
-    // checking dout 
+    // checking dout
     if (dout !== din) begin
       $display("ERROR");
       $finish;
@@ -76,15 +76,15 @@ initial begin: checking
     end
 
   end
-end 
-  
+end
+
   initial begin
     doreset();
     #S;
     $display("PASSED");
     $finish;
   end
-  
+
   task doreset;
      begin
 	@(negedge clk);
@@ -93,5 +93,5 @@ end
 	reset = 0;
      end
   endtask
-  
+
 endmodule

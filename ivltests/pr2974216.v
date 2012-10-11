@@ -44,5 +44,3 @@ module param #(parameter width = 32) (
 
   always @* pa_out = {{32-width{1'bx}}, in};
 endmodule
-
-  

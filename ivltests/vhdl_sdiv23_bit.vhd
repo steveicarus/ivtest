@@ -7,10 +7,9 @@ entity sdiv23 is
     b_i : in signed (22 downto 0);
     c_o : out signed (22 downto 0)
   );
-end entity sdiv23; 
+end entity sdiv23;
 
 architecture rtl of sdiv23 is
 begin
   c_o <= a_i / b_i;
 end architecture rtl;
-

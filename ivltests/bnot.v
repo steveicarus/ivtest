@@ -4,12 +4,12 @@ module test;
    initial begin
       x=10;
 
-      // ok 
+      // ok
       a=x;
 
       // fails at run time with
       // vvm_func.cc:49: failed assertion `v.nbits == p.nbits'
-      // Abort (core dumped)     
+      // Abort (core dumped)
       b = ~x;
 
       if (b === 1'b1)

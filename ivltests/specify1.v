@@ -1,5 +1,3 @@
-
-
 /*
  * Copyright (c) 2000 Philips Semiconductors Stefan.Thiede@philips.com
  *

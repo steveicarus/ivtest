@@ -26,7 +26,7 @@ module U1 (OUT);
 
    output [9:0] OUT;
 
-   assign 	OUT = VALUE;
+   assign	OUT = VALUE;
 
 endmodule
 
@@ -36,7 +36,7 @@ module U2 (OUT);
 
    output [9:0] OUT;
 
-   assign 	OUT = VALUE;
+   assign	OUT = VALUE;
 
 endmodule
 

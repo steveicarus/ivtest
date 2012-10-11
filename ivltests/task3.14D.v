@@ -28,9 +28,9 @@ reg error;
 task my_task ;
   input in1,in2;
   output out1,out2;
-  begin 
+  begin
     out1 = in1 ;
-    out2 = in2 ; 
+    out2 = in2 ;
   end
 endtask
 
@@ -40,23 +40,23 @@ initial
     my_task(1'b1,1'b0,var1,var2);
     if(~(var1 & ~var2))
       begin
-        $display("FAILED - task 3.14D task didn't return correct value  (1)"); 
-         error = 1;
-      end
-    
-    in1 = 0;
-    my_task(~in1,~in1,var1,var2); 
-    if(~(var1 & var2))
-      begin
-         $display("FAILED - task 3.14D task didn't return correct value(2)"); 
+        $display("FAILED - task 3.14D task didn't return correct value  (1)");
          error = 1;
       end
 
     in1 = 0;
-    my_task(in1,in1,var1,var2); 
+    my_task(~in1,~in1,var1,var2);
+    if(~(var1 & var2))
+      begin
+         $display("FAILED - task 3.14D task didn't return correct value(2)");
+         error = 1;
+      end
+
+    in1 = 0;
+    my_task(in1,in1,var1,var2);
     if(~(~var1 & ~var2))
       begin
-         $display("FAILED - task 3.14D task didn't return correct value(2)"); 
+         $display("FAILED - task 3.14D task didn't return correct value(2)");
          error = 1;
       end
 

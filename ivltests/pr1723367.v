@@ -2,10 +2,10 @@
  * Author:  Evan Lavelle, Riverside Machines Ltd.
  * Version: 0.1 (2007-05-22)
  * Licence: This code is released into the public domain.
- * 
+ *
  * Test implicit Verilog-95 style ports. According to 12.3.2 of the 2005
  * LRM:
- * 
+ *
  * "The port reference for each port in the list of ports at the top of each
  * module declaration can be one of the following:
  *
@@ -13,12 +13,12 @@
  * A bit-select of a vector declared within the module
  * A part-select of a vector declared within the module
  * A concatenation of any of the above
- * 
+ *
  * The port expression is optional because ports can be defined that do not
  * connect to anything internal to the module."
- * 
+ *
  * The expected output is:
- * 
+ *
  * sum[          1] = 0101010101100000
  * sum[          2] = 0101010101100000
  * sum[          3] = 0101010101100000
@@ -42,7 +42,7 @@
  * sum[         21] = 0101010101100000
  * sum[         22] = 0101010101100000
  * sum[         23] = 0101010101100000
- * 
+ *
  */
 module test;
 
@@ -50,7 +50,7 @@ module test;
    wire [7:0]  data = 1;
    wire        dummy1, dummy2;
    wire [15:0] wire5, wire9, wire13, wire17, wire21;
-   
+
    initial
      main;
 
@@ -273,7 +273,7 @@ module m19(a[7:0],);
 endmodule
 
 /* ----------------------------------------------------------------------------
- * 95, one and two ports, with ports which are a concatenation of a bit select 
+ * 95, one and two ports, with ports which are a concatenation of a bit select
  * and a 3-bit part select
  * ------------------------------------------------------------------------- */
 

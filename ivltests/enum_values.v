@@ -1,4 +1,3 @@
-
 /*
  * This program tests that enumeration values work and are
  * implicitly translated to integer values.
@@ -9,7 +8,7 @@ module main;
 	  BLACK = 10, WHITE = 'd11
 	} color1;
 
-   int 	var1;
+   int	var1;
 
    initial begin
       color1 = RED;

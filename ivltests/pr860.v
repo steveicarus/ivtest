@@ -8,7 +8,7 @@ module stam () ;
    parameter M = (!ABS) ? 7 : WIDTH_IN;
 
    parameter AFTER_DC_WIDTH = M;
-   
+
    initial begin
       $display("AFTER_DC_WIDTH=%d", AFTER_DC_WIDTH);
       if (AFTER_DC_WIDTH !== 7) begin
@@ -20,5 +20,3 @@ module stam () ;
    end
 
 endmodule // stam
-
-

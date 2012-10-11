@@ -24,15 +24,15 @@ reg a,b,c;
 reg error;
 
 
-initial 
+initial
   begin
-    error = 0;	   
+    error = 0;
     fork
       a = 1;
       b = 0;
       c = 1;
     join
-  
+
   if(a !== 1)
      begin
        $display("FAILED - a not set to 1");
@@ -49,8 +49,8 @@ initial
        error = 1;
      end
   if(error == 0)
-    $display("PASSED");	   
-   
+    $display("PASSED");
+
   end
- 
+
 endmodule

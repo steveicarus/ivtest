@@ -1,10 +1,10 @@
-//  Icarus 0.6 AND snapshot 20020728 
+//  Icarus 0.6 AND snapshot 20020728
 //  -----------------------------
-//  (1) force to nets not supported  
+//  (1) force to nets not supported
 //  (2) comment the force statement and the release statement will cause
 //      the compiler to fail silently (no messages, no a.out)
-//       
-//  Icarus snapshot 20020817 
+//
+//  Icarus snapshot 20020817
 //  ------------------------
 //  Runs fine IFF the whole of a bus is set, cannot force individual bits
 //  (Fails with a rather incomprehensible error)
@@ -13,7 +13,7 @@
 //                     iverilog tt.v
 //                     (adding -Wall doesn't help)
 //                     vvp a.out (if a.out is generated!)
-//       
+//
 //
 //  Veriwell
 // ---------

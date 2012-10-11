@@ -17,7 +17,7 @@ module macro_with_args();
 `define	sum( a /* comment */ , b /* comment */ ) /* comment */ \
   (a + b)
 
-`define sumsqr( 
+`define sumsqr(
     a // comment
   ,
     b // comment

@@ -1,4 +1,3 @@
-
 module test;
    integer dindex[2:0];
    integer cindex[2:0];

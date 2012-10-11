@@ -21,7 +21,7 @@
 // D: New test used to validate always @(value), and
 // D: always @(val1 or val2), and always @(posedge val1 or negedge val2)
 // D: statements.
-//  
+//
 //
 
 module main ();
@@ -30,10 +30,10 @@ reg reset;
 reg clock ;
 reg test_var;
 
-initial	// Used to generate timing of events 
+initial	// Used to generate timing of events
   begin
     clock = 0;
-    reset = 0; 
+    reset = 0;
 
     // Nothing sent yet...
 
@@ -45,7 +45,7 @@ initial	// Used to generate timing of events
     $display("time=%d, c=%b, r=%b, reg=%b",$time,clock,reset,test_var);
     reset = 0;	// 10ns
 
-    #5 ;  
+    #5 ;
     $display("time=%d, c=%b, r=%b, reg=%b",$time,clock,reset,test_var);
     clock = 1;	// 15 ns
 
@@ -53,7 +53,7 @@ initial	// Used to generate timing of events
     $display("time=%d, c=%b, r=%b, reg=%b",$time,clock,reset,test_var);
     clock = 0; // 20 ns
 
-    #5 ; 	// 25 ns
+    #5 ;	// 25 ns
     $display("time=%d, c=%b, r=%b, reg=%b",$time,clock,reset,test_var);
   end
 
@@ -62,52 +62,52 @@ initial	// Used to generate timing of events
 //
 // This LOOKS like a race between the posedge and the reset value
 // but is a standard method for reseting f/f's.
-// 
+//
 
 always @(posedge clock or posedge reset)
   if(reset)
      test_var = 0;
   else
-     test_var = ~test_var; 
-  
-initial // This is the validation block  
+     test_var = ~test_var;
+
+initial // This is the validation block
   begin
     # 3;	// 3 ns Check always @(val)
-    if(test_var != 1'bx) 
+    if(test_var != 1'bx)
       begin
         $display("FAILED - initial condition of reg variable not x\n");
         $finish ;
       end
     # 5;	// 8 ns Check posedge of always @(posedge val or negedge)
-    if(test_var == 1'bx) 
+    if(test_var == 1'bx)
       begin
         $display("FAILED - Reset didn't reset var \n");
         $finish ;
       end
-    if(test_var == 1'b1) 
+    if(test_var == 1'b1)
       begin
         $display("FAILED - Reset set it to 1?? \n");
         $finish ;
       end
 
     # 5;	// 12 ns
-    if(test_var == 1'bx) 
+    if(test_var == 1'bx)
       begin
         $display("FAILED - Reset didn't reset var \n");
         $finish ;
       end
-    if(test_var == 1'b1) 
+    if(test_var == 1'b1)
       begin
         $display("FAILED - Reset set it to 1?? \n");
         $finish ;
       end
     # 5;	// 17 ns - have received the clock by now
-    if(test_var == 1'bx) 
+    if(test_var == 1'bx)
       begin
         $display("FAILED -  The clock caused an x??\n");
         $finish ;
       end
-    if(test_var == 1'b0) 
+    if(test_var == 1'b0)
       begin
         $display("FAILED - The clock didn't have any effect?? \n");
         $finish ;

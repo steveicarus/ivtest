@@ -1,4 +1,3 @@
-
 /*
  * This program doesn't do anything, and shouldn't be run. This is
  * only to check that the null target can see the ternary operator.
@@ -6,7 +5,7 @@
 
 module main2( );
 
-   reg 	      sel;
+   reg	      sel;
    reg [13:0] out;
    reg [13:0] a, b;
 

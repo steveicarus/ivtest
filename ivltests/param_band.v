@@ -24,7 +24,7 @@ module test;
 
 parameter A0 =  & 4'b1111;
 
-initial 
+initial
   begin
    if(A0 !== 1'b1)
       $display("FAILED - bit-wise and in an expression .");

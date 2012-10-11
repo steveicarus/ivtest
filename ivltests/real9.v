@@ -1,4 +1,3 @@
-
 /* real9.v
  * This tests comparison of a real variable with integer constants.
  */

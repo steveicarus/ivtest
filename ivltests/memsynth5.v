@@ -1,14 +1,14 @@
 module main;
-	
+
    reg [7:0] mem [7:0], D;
    reg [2:0] radr, wadr;
-   reg 	     wr, rst, clk;
+   reg	     wr, rst, clk;
 
    /*
     * This implements the synchronous write port to the memory.
     */
    always @(posedge clk)
-   
+
      if (rst) begin
 	mem[0] <= 0;
 	mem[1] <= 0;

@@ -23,7 +23,7 @@ module test;
    endtask
 
    initial #5 first(1);
-      
+
    initial
      begin
 	ack <= 0; clk <= 0;
@@ -33,6 +33,5 @@ module test;
 	#10 $display("FAILED");
 	$finish;
      end
-   
-endmodule // test
 
+endmodule // test

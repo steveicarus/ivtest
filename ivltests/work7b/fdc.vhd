@@ -15,7 +15,7 @@ end fdc;
 architecture fdc_rtl of fdc is
 begin
 
-i_finish: process (clk) 
+i_finish: process (clk)
 begin
    if (clk'event and clk = '1') then
      if (reset = '1') then
@@ -27,4 +27,3 @@ begin
 end process;
 
 end fdc_rtl;
-

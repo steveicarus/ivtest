@@ -1,4 +1,3 @@
-
 /*
  * This is the essence of tracker id#1421777. The problem is the error
  * message around the "... dut.tmp" expression. This probram won't

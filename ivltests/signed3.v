@@ -37,7 +37,7 @@ initial
                 R0);
          error = 1;
       end
-    
+
     if(R1 !== 16'hfff4)
       begin
          $display("FAILED - negative decimal assignment failed. R1 s/b fff4, is %h",

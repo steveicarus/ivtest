@@ -29,7 +29,7 @@ endprimitive
 module main;
    wire out;
    reg in;
-   
+
    BUFG bg(out, in);
 
    initial begin
@@ -46,4 +46,3 @@ module main;
       $display("PASSED");
    end
 endmodule
- 

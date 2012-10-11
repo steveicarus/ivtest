@@ -7,7 +7,7 @@ module test;
 	bit signed [6:0] bs7;
     bit unsigned [5:0] bu6;
 
-	initial 
+	initial
 	begin
        b = 1;
 	   b10 = 100;

@@ -39,20 +39,18 @@ initial
       begin
         $display("FAILED - var index -  a = %b, [b] = %d, c=%b",a,b,c);
         error = 1;
-      end 
+      end
     #1 ;
-    b = 1; 
+    b = 1;
     #1 ;
     if(a != 4'b1100)
       begin
         $display("FAILED - var index -  a = %b, [b] = %d, c=%b",a,b,c);
         error = 1;
-      end 
-    
+      end
+
     if(error == 0)
-       $display("PASSED"); 
+       $display("PASSED");
   end
 
 endmodule
-
-

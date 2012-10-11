@@ -7,4 +7,3 @@ module top;
   assign apass = {(wid-8){ 8'b0}}; // This will pass.
   assign afail = {(wid-16){8'b0}}; // and this will fail.
 endmodule
-

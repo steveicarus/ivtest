@@ -25,7 +25,7 @@
 module main;
 
    reg [3:0] mem [2:0];
-   reg 	     a, b;
+   reg	     a, b;
 
    initial begin
       mem[0] = 0;

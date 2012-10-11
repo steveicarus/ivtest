@@ -1,4 +1,3 @@
-
 // This tests that the individual bits of a uwire are checked for
 // double-driving individually. The code below uses a packed struct
 // to represent individual bits.

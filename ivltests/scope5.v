@@ -1,4 +1,3 @@
-
 module test;
 
    real tmp;

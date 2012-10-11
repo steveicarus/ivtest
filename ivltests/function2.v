@@ -1,4 +1,3 @@
-
 /*
  * This program handles the case of a system task within a user
  * defined function.
@@ -23,4 +22,3 @@ module main;
         end
 
 endmodule
-

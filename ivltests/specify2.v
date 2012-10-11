@@ -1,9 +1,7 @@
-
-
 module main;
 
    wire dst;
-   reg 	src;
+   reg	src;
 
    spec_buf dut(dst, src);
 

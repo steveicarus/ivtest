@@ -28,30 +28,30 @@ function [31:0] myfunc ;
   myfunc = in1 ;
 endfunction
 
-initial 
+initial
   begin
     error = 0;
     val1 = myfunc(32'h0) ;
     if(val1 != 32'h0)
-      begin 
+      begin
         $display("FAILED - function3.11B - func(lit) != lit ");
         error = 1;
       end
-    
-    val2 = 32'h12345678 ; 
+
+    val2 = 32'h12345678 ;
     val1 = myfunc(val2);
     if(val1 != val2)
-      begin 
+      begin
         $display("FAILED - function3.11B - func(reg var) != reg var ");
         error = 1;
       end
 
     if(myfunc(32'h10101010) != 32'h10101010)
-      begin 
+      begin
         $display("FAILED - function3.11B - if(func(reg var) != reg var) ");
         error = 1;
       end
-    
+
     if(error == 0)
        $display("PASSED");
   end

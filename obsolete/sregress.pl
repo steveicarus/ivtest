@@ -21,18 +21,18 @@
 # 9/17/99 - SDW - Modified to handle multiple compilers.  This is needed
 #                 to allow verification of the sweet in other environments.
 #                 Right now it works with Verilog-XL. Need to debug w/ ivl
-#                 
+#
 #                 Modified the check_results analysis to handle different
 #                 compilers.  Works with Veriog-XL. Need to debug w/ ivl
 #
 # 9/23/99 - SDW - Added command line option to change the source of the
 #                 regress.list - If a command line option is present, then
-#		  		  it is used as the name of a file for the regress.list.
+#		  it is used as the name of a file for the regress.list.
 #
 # 9/27/99 - SDW - Added optional "main module" arguement to the regress.list
 #                 format.
 #
-# 10/5/99 - SDW - Added a "CN" Switch for IVL to pass -t null to the 
+# 10/5/99 - SDW - Added a "CN" Switch for IVL to pass -t null to the
 #                 compiler.  Per Steve Williams' request.
 #
 # 12/27/99- SDW - added $redir to cmd generation and validated against
@@ -40,7 +40,7 @@
 #                 Changed $redir to -l which is the switch for XL to gen a
 #                 log file. This got me a serial run.
 #
-# 12/31/99 - SDW - Last change of the century! Steve Williams asked for 
+# 12/31/99 - SDW - Last change of the century! Steve Williams asked for
 #                  qualifying Compiler errors. So far I'm now counting
 #                  sorry messages and "parse error" messages. Steve will
 #                  perhaps be suprised that there are other types appearing
@@ -51,14 +51,14 @@
 #
 # 03/13/00 - SDW - Fixed REPORT print error for Compiler Error Count
 #
-# 05/08/00 - SDW - Added gold=filename as 4th option instead of 
+# 05/08/00 - SDW - Added gold=filename as 4th option instead of
 #                  module name (some time I'll have to make it 4th or
 #                  5th to handle place where we need module names too!)
 #                  Also rm'd any pre-existing log files
 # 06/11/00 - SDW - Added CRASH detection for CE class tests
 #
 # 10/04/00 - SDW - Added suggested change from Steve Williams
-#                  to remove simv.exe for the software to run 
+#                  to remove simv.exe for the software to run
 #                  on windows.
 
 #  Global setup and paths
@@ -71,7 +71,7 @@ if($num_opts ne -1) {
    # Got here cuz there is a command line option
    $regress_fn = $ARGV[0];
    if(!( -e "$regress_fn")) {
-       print("Error - Command line option file $num_opts doesn't exist.\n");   
+       print("Error - Command line option file $num_opts doesn't exist.\n");
        exit(1);
    }
 } else {
@@ -85,7 +85,7 @@ $report_fn = "./regression_report.txt";
 
 $comp_name = "IVL" ;	# Change the name of the compiler in use here.
                         # this may change to a command line option after
-		        		# I get things debugged!
+			# I get things debugged!
 
 if($comp_name eq "XL") {
    $vername = "vlogcmd";	# XL's command name
@@ -93,9 +93,9 @@ if($comp_name eq "XL") {
    $verout =  "";
    $redir = " -l  ";
 } else {
-   $vername = "iverilog";	# IVL's shell 
+   $vername = "iverilog";	# IVL's shell
    $versw   = "";			# switches
-   $verout  = "-o simv";	# output (for IVL ) 
+   $verout  = "-o simv";	# output (for IVL )
    $redir = "&>";
 #   $redir = "2>&1 > ";
 }
@@ -124,7 +124,7 @@ print("Testing $testname ********");
 #
 #    %testmod = main module declaration (optional)
 
-sub read_regression_list {    
+sub read_regression_list {
     open (REGRESS_LIST, "<$regress_fn");
     local ($found, $testname);
 
@@ -146,17 +146,17 @@ sub read_regression_list {
              $opt{$testname} = "";         # or diff
            } elsif ($_ =~ /gold=/) {
              $testmod{$testname} = "" ;	   # It's a gold file
-             $opt{$testname} = $_[3] ; 
+             $opt{$testname} = $_[3] ;
            } elsif ($_ =~ /diff=/) {	   # It's a diff file
              $testmod{$testname} = "";
-             $opt{$testname} = $_[3];     
+             $opt{$testname} = $_[3];
            }
         } elsif ($#_ eq 4) {             # Check for 5 fields
            $testmod{$testname} = $_[3];  # Module name - always in this case
            if ($_ =~ /gold=/) {
-             $opt{$testname} = $_[4];                   
+             $opt{$testname} = $_[4];
            } elsif ($_ =~ /diff=/) {
-             $opt{$testname} = $_[4];                   
+             $opt{$testname} = $_[4];
            }
         }
 
@@ -179,9 +179,9 @@ sub execute_regression {
     local ($bpath, $lpath, $vpath);
 
     foreach $testname (@testlist) {
-   
+
         #
-        # First lets clean up if its' IVL. We need to know if 
+        # First lets clean up if its' IVL. We need to know if
         # these are generated on the current pass.
         #
         if($comp_name eq "IVL") {
@@ -208,7 +208,7 @@ sub execute_regression {
         }
         if($comp_name eq "XL") { # Just over-ride for XL
            $vermod = " ";
-        } 
+        }
 
 
 		print "Test $testname:";
@@ -219,21 +219,21 @@ sub execute_regression {
 		}
 
 		$lpath = "./$logdir/$testname.log";
-        system("rm -rf $lpath");  
-        system("rm -rf *.out");  
+        system("rm -rf $lpath");
+        system("rm -rf *.out");
 
         # Check here for "compile only" situation and set
         # the switch appropriately.
         #
         # While we're in CO mode - take a snapshot of it. Note
         # this puts a contraint on the order -never can have a CO
-        # as the FIRST test in the list for this to work. 
+        # as the FIRST test in the list for this to work.
         #
 
         if($testtype{$testname} ne "CO") {	# Capture ONLY
             $versw = $old_versw ;			# the non-compile only
         }									# command here.
-         
+
         if(($testtype{$testname} eq "CO") ||
            ($testtype{$testname} eq "CN")) {
           if($comp_name eq "XL")  {
@@ -242,36 +242,36 @@ sub execute_regression {
              if($testtype{$testname} eq "CN") {
                   $versw = "-t null";
              } else {
-                  $versw = ""; 	 
+                  $versw = "";
              }
           }
-        } else { 
+        } else {
           $versw = $old_versw ;	 # Restore non-compile only state
         }
-         
+
         #
         # if we have a logfile - remove it first
         #
         if(-e "$lpath") {
            system("rm $lpath");
         }
-          
+
         #
         # Now build the command up
         #
 	#	$cmd = "$vername $versw $vermod $verout $vpath &> $lpath ";
 		$cmd = "$vername $versw $vermod $verout $vpath $redir $lpath ";
 		print "$cmd\n";
-	 	system("$cmd");
+		system("$cmd");
 
         # Note that with IVL we have to execute the code now
-        # that it's compiled - there is GOING to be switch in 
-        # the verilog switch that will make this unnecessary. 
-  
+        # that it's compiled - there is GOING to be switch in
+        # the verilog switch that will make this unnecessary.
+
         if($comp_name eq "IVL") {
               if( -e "simv") {
                  if(!($testtype{$testname} eq "CO" ) &&
-                    !($testtype{$testname} eq "CN" ) && 
+                    !($testtype{$testname} eq "CN" ) &&
                     !($testtype{$testname} eq "CE" )) {
                    system ("./simv >> $lpath");
                  } else {
@@ -279,14 +279,14 @@ sub execute_regression {
                  }
               } elsif ( -e "core") {
                   system ("echo CRASHED >> $lpath" );
-               
+
               } elsif ($testtype{$testname} eq "CN" ) {
                    system ("echo PASSED >> $lpath" );
               } else {
                   system ("echo COMPERR >> $lpath" );
               }
         }
- 
+
     }
 
 }
@@ -318,7 +318,7 @@ sub check_results {
     #
     # This section runs if gold=name is the 4th option
     #
-     
+
     $gold_file = "";
     $gold_file = "";
     $diff_file = "";
@@ -334,17 +334,17 @@ sub check_results {
         system ("echo FAILED >> $lpath");
       }
     }
-    
+
     $gold_file = "";
     $diff_file = "";
     #
     # Now look for difference file requirements - use this for
-    # vcd's initially I guess. 
+    # vcd's initially I guess.
     #
     if(($opt{$testname} ne "")  && ($optname  =~ /diff=/)){
       $diff_file = $optname ;
       $diff_file =~ s/diff=//;
-      system("rm -rf ./dfile");	
+      system("rm -rf ./dfile");
       ($out_file,$gold_file) = split(/:/,$diff_file);
       system("diff $out_file $gold_file > ./dfile");
       if( -z "dfile" ) {
@@ -363,11 +363,11 @@ sub check_results {
 		$result = `tail -150 $lpath`;
 
 		# First do analysis for all tests that SHOULD run
-		if(($testtype{$testname} ne "CO")  && 
-			($testtype{$testname} ne "CE") &&  
+		if(($testtype{$testname} ne "CO")  &&
+			($testtype{$testname} ne "CE") &&
 			($testtype{$testname} ne "CN")) {
-			# 
-			# This section is true for all tests that execute - 
+			#
+			# This section is true for all tests that execute -
 			# no matter the compiler.
 			#
 			if ($result =~ /PASSED/) {
@@ -376,7 +376,7 @@ sub check_results {
 			} elsif (($result =~ /FAILED/)) {
 				printf REPORT "%30s execution failed\n", $testname;
 				$no_run++;
-			} 
+			}
 
 			# Need to check for syntax errors in tests that
 			# are expected to pass.
@@ -384,34 +384,34 @@ sub check_results {
 			if($comp_name eq "XL") {
 				if($result =~ /Error/) {
 					printf REPORT "%30s compile errors\n", $testname;
-					$no_compile++ ; 
+					$no_compile++ ;
 				}
 			} else {# IVL compile error check goes here
 			    if ($result =~ /PASSED/) {
 				} elsif ($result =~ /COMPERR/)  {
-                   $comp_err = 0; 
+                   $comp_err = 0;
                    printf REPORT "%30s ",$testname;
 				   if($result =~ /parse error/) {
                       printf REPORT "had parse errors:";
                       $no_parse_err++;
-					  $no_compile++ ; 
+					  $no_compile++ ;
                       $comp_err++;
-                   }	
+                   }
 				   if(($result =~ /Unable/) ||
 				      ($result =~ /unhandled/)) {
                       printf REPORT "had elaboration errors:";
-					  $no_compile++ ; 
+					  $no_compile++ ;
                       $comp_err++;
-                   }	
+                   }
 				   if($result =~ /sorry/) {
                       printf REPORT "had unsupported features";
                       $no_sorry++ ;
-					  $no_compile++ ; 
+					  $no_compile++ ;
                       $comp_err++;
-                   }	
+                   }
                    if($comp_err eq 0) {
                       printf REPORT "has C Compiler problem";
-					  $no_compile++ ; 
+					  $no_compile++ ;
                       $comperr_cnt++;
                    }
                    if($result  =~ /CRASHED/ ) {
@@ -420,7 +420,7 @@ sub check_results {
                       $crash_count++;
                    }
                    printf REPORT "\n";
-					
+
 				} elsif (($result =~ /CRASHED/)) {
 					printf REPORT "%30s compile crashed\n", $testname;
 					printf "%30s compile crashed (1)\n", $testname;
@@ -429,7 +429,7 @@ sub check_results {
 			}
 
 		}
-        
+
 		# Now look at Compile only situation - going to be
 		# different results for each compiler.
 
@@ -438,7 +438,7 @@ sub check_results {
 			if($comp_name eq "XL") {
                # Deal with XL frist
 				if($result =~ /Error/) {
-				 	$pass_count++;
+					$pass_count++;
                 }
             } else {
                # Deal with IVL here...
@@ -446,25 +446,25 @@ sub check_results {
                     printf REPORT "%30s compile crashed\n", $testname;
                     printf "%30s compile crashed (1)\n", $testname;
                     $crash_count++;
-                }              
+                }
             }
-        } 
- 
+        }
+
 		if(($testtype{$testname} eq "CO") ||
 		   ($testtype{$testname} eq "CN")) {
 			if($comp_name eq "XL") {
 				if($result =~ /Error/) {
 					printf REPORT "%30s compile failed\n", $testname;
 					print "%30s compile failed\n", $testname;
-					$no_compile++ ; 
+					$no_compile++ ;
 				} else {
 					printf REPORT "%30s passed\n", $testname;
-					$pass_count++ ; 
+					$pass_count++ ;
 				}
 			} else {		# IVL stuff goes here.
 			    if ($result =~ /PASSED/) {
-				 	printf REPORT "%30s passed\n", $testname;
-				 	$pass_count++;
+					printf REPORT "%30s passed\n", $testname;
+					$pass_count++;
 				} elsif ($result =~ /COMPERR/) {
                    $comp_err = 0;
                    printf REPORT "%30s ",$testname;
@@ -472,17 +472,17 @@ sub check_results {
                       printf REPORT "had parse errors:";
                       $no_parse_err++;
                       $comp_err++;
-                   }	
+                   }
 				   if(($result =~ /Unable/)  ||
 				      ($result =~ /unhandled/)) {
                       printf REPORT "had elaboration errors:";
                       $comp_err++;
-                   }	
+                   }
 				   if($result =~ /sorry/) {
                       printf REPORT "had unsupported features";
                       $no_sorry++ ;
                       $comp_err++;
-                   }	
+                   }
                    if($comp_err eq 0) {
                       printf REPORT "has C Compiler problem";
                       $comperr_cnt++;
@@ -493,7 +493,7 @@ sub check_results {
                    printf REPORT "\n";
 				} elsif ($result =~ /CRASHED/ ) {
 					printf REPORT "%30s compile crashed\n", $testname;
-					$crash_count++ ; 
+					$crash_count++ ;
 				}
             }
          }

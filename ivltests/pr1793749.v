@@ -1,4 +1,3 @@
-
 module test;
    reg [8:0] t1;
    initial

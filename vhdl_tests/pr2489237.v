@@ -9,7 +9,7 @@ module top
   input                 clk;
   input                 a, b, c, d;
   output                e, f, g, h;
-  
+
   child child
     (/*AUTOINST*/
      // Outputs
@@ -35,12 +35,12 @@ module child(
   input                 clk;
   input                 a, b, c, d;
   output                e, f, g, h;
-  
+
   reg			e;
   reg			f;
   reg			g;
   reg			h;
-  
+
   always @ (posedge clk) e <= a;
   always @ (posedge clk) f <= b;
   always @ (posedge clk) g <= c;

@@ -37,7 +37,7 @@ initial
     dat = 0;
   end
 
-initial 
+initial
   begin
    dat = #1 'h00010203;
    exp_dat = #1 'h0010203;

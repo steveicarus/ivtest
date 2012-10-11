@@ -36,7 +36,7 @@ always @(posedge clock or posedge reset)
 
 initial
   begin
-    
+
     // Set reset to init f/f.
     error = 0;
     clock = 0;

@@ -1,4 +1,3 @@
-
 // pr1866215
 
 module A (CH, CL, SH, SL);
@@ -10,10 +9,10 @@ output	[47:32]	CH;
 
 B B0	(CH, CL, SH, SL);
 
-   assign 	SH = 'hff;
-   assign 	SL = 32'haaaaaaaa;
-   assign 	CH = 'hff;
-   assign 	CL = 32'h55555555;
+   assign	SH = 'hff;
+   assign	SL = 32'haaaaaaaa;
+   assign	CH = 'hff;
+   assign	CL = 32'h55555555;
 
 endmodule
 

@@ -7,7 +7,7 @@
 
 module port_test4 (
 		    a,		// Input
-		    b, 		// Output
+		    b,		// Output
                   );
 
 input a;

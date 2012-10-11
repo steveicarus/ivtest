@@ -22,7 +22,7 @@ module xnor_test;
   reg onebit1, onebit2;
   reg [3:0] small1, small2;
   reg [15:0] large1, large2, large3, large4;
-  reg 	     fail;
+  reg	     fail;
   initial
     begin
       fail = 0;
@@ -32,7 +32,7 @@ module xnor_test;
       if ((1'b1 ^~ 1'b0) === 1'b1) fail = 1;
       if ((1'b0 ^~ 1'b0) === 1'b0) fail = 1;
       if ((1'b1 ~^ 1'b1) === 1'b0) fail = 1;
-      
+
       // different sized operands (equality)
       for (small1=0; small1 < 15; small1=small1+1)
 	begin
@@ -59,7 +59,7 @@ module xnor_test;
 	      $display ("Pattern failed: %h != %h", large3, large4);
 	    end
 	end // for (large1 = 0; large1 < 1000; large1=large1+1)
-      
+
      if (fail)
 	$display ("FAILED");
       else $display ("PASSED");
@@ -67,7 +67,3 @@ module xnor_test;
     end // initial begin
 
 endmodule // xnor_test
-
-
-
-

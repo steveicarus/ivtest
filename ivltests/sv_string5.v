@@ -1,4 +1,3 @@
-
 /*
  * This demonstrates that strings can be used as
  * constructed formats in $display et al.
@@ -41,7 +40,7 @@ module main;
 
       foo[2]='h53;
       foo[3]='h53;
- 
+
       $display(foo);
    end
 endmodule // main

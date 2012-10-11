@@ -19,24 +19,22 @@
 //  SDW - always force reg_lvalue = boolean_expr ;
 //  D:    This is an infinite loop - thus compile only
 
-module main ; 
+module main ;
 
 reg [3:0] value1 ;
 
-initial 
+initial
   begin
     #15;
     if(value1 != 4'b1)
-      $display("FAILED - 3.1.3E always force reg_lvalue = boolean_expr;\n"); 
+      $display("FAILED - 3.1.3E always force reg_lvalue = boolean_expr;\n");
     else
 	begin
            $display("PASSED\n");
-     	   $finish;                                                            
+	   $finish;
         end
   end
 
 always force value1 = 1'b1 & 1'b1 ;
 
 endmodule
-
-

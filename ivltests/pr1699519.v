@@ -12,5 +12,3 @@ module top;
     $display("Checking e and E: %e, %E", rval, rval);
   end
 endmodule
-
- 	  	 

@@ -19,7 +19,7 @@
 //  SDW - Validate always wait (expression ) reg_lvalue = constant  ;
 
 
-module main ; 
+module main ;
 
 reg [3:0] value1,value2,value3;
 
@@ -34,38 +34,36 @@ initial
    value2 = 0;
    value3 = 0;
    #2 ;
-   if(value2 != 0) 
+   if(value2 != 0)
        begin
          $display("FAILED - 3.1.8A always wait (expr) reg_lval = const (1);");
-          value3 = 1; 
+          value3 = 1;
        end
    value1 = 1;
    #2 ;
-   if(value2 != 0) 
+   if(value2 != 0)
        begin
          $display("FAILED - 3.1.8A always wait (expr) reg_lval = const (2);");
-          value3 = 1; 
+          value3 = 1;
        end
    value1 = 2;
    #2 ;
-   if(value2 != 0) 
+   if(value2 != 0)
        begin
          $display("FAILED - 3.1.8A always wait (expr) reg_lval = const (3);");
-          value3 = 1; 
+          value3 = 1;
        end
-   value1 = 4'h3; 
+   value1 = 4'h3;
    #2;
-   if(value2 != 3) 
+   if(value2 != 3)
        begin
          $display("FAILED - 3.1.8A always wait (expr) reg_lval = const (4);");
-          value3 = 1; 
+          value3 = 1;
        end
    #10;
    if(value3 == 0)
        $display("PASSED");
    $finish ;
-  end 
+  end
 
 endmodule
-
-

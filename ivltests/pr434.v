@@ -1,4 +1,3 @@
-
 /*
  * This tests is based on PR#434
  */
@@ -10,7 +9,7 @@ module mctrl( reset0, reset1, reset2, reset3, clk, por);
    input  clk,por;
 
    reg [7:0] cnt;
-   
+
    always @ (posedge por or posedge clk)
      if (por)
        cnt <= 0;
@@ -28,12 +27,12 @@ endmodule
 
 module test();
    reg clk,por;
-   
+
    wire reset0, reset1, reset2, reset3;
 
    mctrl m1(reset0, reset1, reset2, reset3, clk, por);
-   
-   initial 
+
+   initial
      begin
 	clk = 0;
 	por = 0;
@@ -43,7 +42,7 @@ module test();
      end
 
    always #15 clk = ~clk;
-   
+
 
    initial
      begin
@@ -51,4 +50,3 @@ module test();
 	#10 por = 0;
      end
 endmodule // test
-

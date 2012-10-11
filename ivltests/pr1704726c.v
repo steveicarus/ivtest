@@ -22,7 +22,7 @@ module top;
    ***********/
   // Check genvar/parameter name issues.
   genvar name_v;
-  generate 
+  generate
     for (name_v = 0; name_v < 2; name_v = name_v + 1) begin
       assign out[name_v] = name_v;
     end
@@ -30,7 +30,7 @@ module top;
 
   // Check genvar/localparam name issues.
   genvar name_lpv;
-  generate 
+  generate
     for (name_lpv = 0; name_lpv < 2; name_lpv = name_lpv + 1) begin
       assign out[name_lpv] = name_lpv;
     end
@@ -52,7 +52,7 @@ module top;
 
   // Check task/genvar name issues.
   genvar name_tv;
-  generate 
+  generate
     for (name_tv = 0; name_tv < 2; name_tv = name_tv + 1) begin
       assign out[name_tv] = name_tv;
     end
@@ -84,7 +84,7 @@ module top;
 
   // Check function/genvar name issues.
   genvar name_fv;
-  generate 
+  generate
     for (name_fv = 0; name_fv < 2; name_fv = name_fv + 1) begin
       assign out[name_fv] = name_fv;
     end
@@ -115,7 +115,7 @@ module top;
 
   // Check module instance/genvar name issues.
   genvar name_iv;
-  generate 
+  generate
     for (name_iv = 0; name_iv < 2; name_iv = name_iv + 1) begin
       assign out[name_iv] = name_iv;
     end
@@ -153,7 +153,7 @@ module top;
 
   // Check named block/genvar name issues.
   genvar name_bv;
-  generate 
+  generate
     for (name_bv = 0; name_bv < 2; name_bv = name_bv + 1) begin
       assign out[name_bv] = name_bv;
     end
@@ -197,7 +197,7 @@ module top;
 
   // Check named event/genvar name issues.
   genvar name_ev;
-  generate 
+  generate
     for (name_ev = 0; name_ev < 2; name_ev = name_ev + 1) begin
       assign out[name_ev] = name_ev;
     end
@@ -251,7 +251,7 @@ module top;
 
   // Check generate loop/genvar name issues.
   genvar name_glv;
-  generate 
+  generate
     for (name_glv = 0; name_glv < 2; name_glv = name_glv + 1) begin
       assign out[name_glv] = name_glv;
     end
@@ -333,7 +333,7 @@ module top;
 
   // Check generate if/genvar name issues.
   genvar name_giv;
-  generate 
+  generate
     for (name_giv = 0; name_giv < 2; name_giv = name_giv + 1) begin
       assign out[name_giv] = name_giv;
     end
@@ -430,7 +430,7 @@ module top;
 
   // Check generate case/genvar name issues.
   genvar name_gcv;
-  generate 
+  generate
     for (name_gcv = 0; name_gcv < 2; name_gcv = name_gcv + 1) begin
       assign out[name_gcv] = name_gcv;
     end
@@ -542,7 +542,7 @@ module top;
 
   // Check generate block/genvar name issues.
   genvar name_gbv;
-  generate 
+  generate
     for (name_gbv = 0; name_gbv < 2; name_gbv = name_gbv + 1) begin
       assign out[name_gbv] = name_gbv;
     end

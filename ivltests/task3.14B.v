@@ -35,7 +35,7 @@ initial
     if(globvar)
       $display("PASSED");
     else
-      $display("FAILED - task 3.14B task didn't correctly affect global var"); 
+      $display("FAILED - task 3.14B task didn't correctly affect global var");
   end
 
 endmodule // main

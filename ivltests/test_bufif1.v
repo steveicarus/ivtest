@@ -18,7 +18,7 @@
  */
 module test_bufif1 ( );
 
-reg gnd, vdd, x, z; 
+reg gnd, vdd, x, z;
 
 wire t0, t1, t2, t3, t4, t5, t6, t7,
      t8, t9, ta, tb, tc, td, te, tf;
@@ -66,93 +66,92 @@ initial begin
   assign z = 1'bz;
   #10;
 
-  if (t0 !== z) 
-  begin 
+  if (t0 !== z)
+  begin
       failed = 1;
       $display ("FAILED: bufif1 s:%d g:%d d:%d expected:z", gnd, gnd, t0 );
   end
 
-  if (t1 !== 0) 
-  begin 
+  if (t1 !== 0)
+  begin
       failed = 1;
       $display ("FAILED: bufif1 s:%d g:%d d:%d expected:0", gnd, vdd, t1 );
   end
-  if (t2 !== StL) 
-  begin 
+  if (t2 !== StL)
+  begin
       failed = 1;
       $display ("FAILED: bufif1 s:%d g:%d d:%d expected:StL", gnd, x, t2 );
   end
-  if (t3 !== StL) 
-  begin 
+  if (t3 !== StL)
+  begin
       failed = 1;
       $display ("FAILED: bufif1 s:%d g:%d d:%d expected:StL", gnd, z, t3 );
   end
 
-  if (t4 !== 1'bz) 
-  begin 
+  if (t4 !== 1'bz)
+  begin
       failed = 1;
       $display ("FAILED: bufif1 s:%d g:%d d:%d expected:z", gnd, z, t4 );
   end
-  if (t5 !== 1) 
-  begin 
+  if (t5 !== 1)
+  begin
       failed = 1;
       $display ("FAILED: bufif1 s:%d g:%d d:%d expected:1", vdd, vdd, t5 );
   end
-  if (t6 !== StH) 
-  begin 
+  if (t6 !== StH)
+  begin
       failed = 1;
       $display ("FAILED: bufif1 s:%d g:%d d:%d expected:StH", vdd, x, t6 );
   end
-  if (t7 !== StH) 
-  begin 
+  if (t7 !== StH)
+  begin
       failed = 1;
       $display ("FAILED: bufif1 s:%d g:%d d:%d expected:StH", vdd, z, t7 );
   end
 
-  if (t8 !== 1'bz) 
-  begin 
+  if (t8 !== 1'bz)
+  begin
       failed = 1;
       $display ("FAILED: bufif1 s:%d g:%d d:%d expected:z", x, gnd, t8 );
   end
-  if (t9 !== 1'bx) 
-  begin 
+  if (t9 !== 1'bx)
+  begin
       failed = 1;
       $display ("FAILED: bufif1 s:%d g:%d d:%d expected:x", x, vdd, t9 );
   end
-  if (ta !== 1'bx) 
-  begin 
+  if (ta !== 1'bx)
+  begin
       failed = 1;
       $display ("FAILED: bufif1 s:%d g:%d d:%d expected:x", x, x, ta );
   end
-  if (tb !== 1'bx) 
-  begin 
+  if (tb !== 1'bx)
+  begin
       failed = 1;
       $display ("FAILED: bufif1 s:%d g:%d d:%d expected:x", x, z, tb );
   end
 
-  if (tc !== 1'bz) 
-  begin 
+  if (tc !== 1'bz)
+  begin
       failed = 1;
       $display ("FAILED: bufif1 s:%d g:%d d:%d expected:z", z, gnd, tc );
   end
-  if (td !== 1'bx) 
-  begin 
+  if (td !== 1'bx)
+  begin
       failed = 1;
       $display ("FAILED: bufif1 s:%d g:%d d:%d expected:x", z, vdd, td );
   end
-  if (te !== 1'bx) 
-  begin 
+  if (te !== 1'bx)
+  begin
       failed = 1;
       $display ("FAILED: bufif1 s:%d g:%d d:%d expected:x", z, x, te );
   end
-  if (tf !== 1'bx) 
-  begin 
+  if (tf !== 1'bx)
+  begin
       failed = 1;
       $display ("FAILED: bufif1 s:%d g:%d d:%d expected:x", z, z, tf );
   end
 
-  if (failed == 0) 
+  if (failed == 0)
       $display ("PASSED");
 end
 endmodule
-

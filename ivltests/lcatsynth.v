@@ -1,4 +1,3 @@
-
 module main;
 
    reg q0, q1, clk, clr;
@@ -46,4 +45,3 @@ module main;
    end
 
 endmodule // main
-

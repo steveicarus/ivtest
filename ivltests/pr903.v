@@ -1,4 +1,3 @@
-
 /*
  * This tests some compile-time division of very long constants.
  */

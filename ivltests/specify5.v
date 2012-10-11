@@ -84,5 +84,3 @@ primitive UDP_DFF(q, d, cp, cdn);
      ?   ?    p  : ? : - ;
   endtable
 endprimitive
-
- 	  	 

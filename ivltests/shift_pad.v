@@ -20,7 +20,7 @@
 module main;
 
    reg [1:0] out;
-   reg 	     in;
+   reg	     in;
 
    initial begin
       in = 1;

@@ -17,7 +17,7 @@
 //    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 //
 //  SDW - Check posedge vector - should use bit 0 only. Doesn't work with XL
-                                                                   
+
 module time2 ();
 
 reg [3:0] clock;
@@ -37,11 +37,11 @@ initial
 
 always @(posedge clock & b)
   begin
-    count = count+1;          
+    count = count+1;
     $display(" edge ! time = %t, count = %h",$time,count);
   end
 
-initial 
+initial
   begin
     #1000;
     if(count != 6)

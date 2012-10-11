@@ -17,7 +17,7 @@
 //    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 //
 //  SDW - assign a string in a function
-// 
+//
 //  This test was contributed via forwarding on the geda netlist. I don't
 //  know who actually wrote it - that isn't obvious from the copy of email
 //  I eventually received - SDW

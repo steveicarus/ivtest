@@ -1,4 +1,3 @@
-
 module main;
 
 
@@ -12,7 +11,7 @@ module main;
    tranif0 (pin, keep0, pin);
 
    // Logic to drive a value onto a pin.
-   reg 	value, enable;
+   reg	value, enable;
    bufif1 (pin, value, enable);
 
    initial begin

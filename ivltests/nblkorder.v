@@ -17,7 +17,7 @@
 //    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 //
 // SDW - Validates Non-blocking order determinism IEEE1364-Draft, page 5-3,
-// SDW - section 5.4.1. 
+// SDW - section 5.4.1.
 
 module main ();
 
@@ -26,7 +26,7 @@ reg inval;
 reg error;
 
 always @(posedge clock)
-  begin 
+  begin
     x <= ~inval;
     x <= inval;
   end
@@ -44,7 +44,7 @@ initial
       begin
         $display("FAILED - parallel non-blocking assign s/b 0, is %b",x);
         error = 1;
-      end 
+      end
     #6
     clock = 0;
     #1 ;
@@ -56,9 +56,9 @@ initial
       begin
         $display("FAILED - parallel non-blocking assign s/b 1, is %b",x);
         error = 1;
-      end 
+      end
     #1 ;
     if(error == 0)
-       $display("PASSED"); 
+       $display("PASSED");
   end
 endmodule

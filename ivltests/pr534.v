@@ -1,15 +1,15 @@
 ///////////////////////////////////////////////////////////////////////////
-// 
+//
 // To test:
 //        (a) The use & representation of time variables
 //        (b) The display of time variables
-// 
+//
 // Compile and run the program
-//        iverilog tt_clean.v   
+//        iverilog tt_clean.v
 //        vvp a.out
 //
 // VISUALLY INSPECT the displays.  (There ain't no way to automate this)
-// 
+//
 ///////////////////////////////////////////////////////////////////////////
 `timescale 1 ns / 10 ps
 
@@ -24,7 +24,7 @@ module top;
 
   initial begin
     fail = 0;
-    $display("\n\t\t==> CHECK THIS DISPLAY ==> \n");
+    $display("\n\t\t==> CHECK THIS DISPLAY ==>\n");
     $display("pci_clk_period:\t\t\t %0d",`PCI_CLK_PERIOD);
     $display("pci_clk_period:\t\t\t %0t",`PCI_CLK_PERIOD);
     if($time !== 0) fail = 1;
@@ -35,30 +35,30 @@ module top;
     if($time !== 45) fail = 1;
     if (fail == 1)
       $display("$time=%0d (45)", $time);
-    #15;                                               
+    #15;
     if($simtime !== 6000) fail = 1;
     if($time !== 60) fail = 1;
-    #(`PCI_CLK_PERIOD);                                
+    #(`PCI_CLK_PERIOD);
     if($simtime !== 7500) fail = 1;
     if($time !== 75) fail = 1;
-    #(`PCI_CLK_PERIOD *2);                             
+    #(`PCI_CLK_PERIOD *2);
     if($simtime !== 10500) fail = 1;
     if($time !== 105) fail = 1;
 
-    $timeformat(-9,2,"ns",20);                         
-    $display("after setting timeformat:");             
+    $timeformat(-9,2,"ns",20);
+    $display("after setting timeformat:");
     $display("pci_clk_period:\t\t\t %0d",`PCI_CLK_PERIOD);
     $display("pci_clk_period:\t\t\t %0t",`PCI_CLK_PERIOD);
-    delay_pci(3);                                      
+    delay_pci(3);
     if($simtime !== 15000) fail = 1;
     if($time !== 150) fail = 1;
-    #15;                                               
+    #15;
     if($simtime !== 16500) fail = 1;
     if($time !== 165) fail = 1;
-    #(`PCI_CLK_PERIOD);                                
+    #(`PCI_CLK_PERIOD);
     if($simtime !== 18000) fail = 1;
     if($time !== 180) fail = 1;
-    #(`PCI_CLK_PERIOD *2);                             
+    #(`PCI_CLK_PERIOD *2);
     if($simtime !== 21000) fail = 1;
     if($time !== 210) fail = 1;
 
@@ -66,17 +66,16 @@ module top;
     if(fail) $display("\t\t****** time representation test BAD    *******");
     else     $display("\t\t****** time representation test OK     *******");
     $display("\t\t**********************************************\n");
-    $finish;                                           
+    $finish;
   end
 
   task delay_pci;
     input delta;
-    integer delta;  
+    integer delta;
     integer ii;
     begin
-      #(`PCI_CLK_PERIOD * delta);  
+      #(`PCI_CLK_PERIOD * delta);
     end
   endtask
 
 endmodule
-

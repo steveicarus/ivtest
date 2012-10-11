@@ -1,4 +1,3 @@
-
 /*
  * Test support for multi-dimension unpacked arrays.
  */

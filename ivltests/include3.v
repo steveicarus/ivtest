@@ -20,4 +20,3 @@
 //
 
 `include "ivltests/include2.v"
-

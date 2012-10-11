@@ -1,4 +1,3 @@
-
 module main;
 
    wire logic [3:0][7:0] foo;

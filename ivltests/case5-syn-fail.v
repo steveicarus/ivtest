@@ -1,4 +1,3 @@
-
 /*
  * This tests the synthesis of a case statement that has an empty case.
  */

@@ -22,7 +22,7 @@ module sum_test;
       $finish;
    end
 endmodule
-   
+
 module sum
   #(
     parameter n = 4,
@@ -34,7 +34,7 @@ module sum
     input [n*width-1:0]addends,
     output reg [log_n+width-1:0] s
     );
-   
+
    generate
    if (n==1)
      always @(*) s = addends;
@@ -48,5 +48,3 @@ module sum
    endgenerate
 
 endmodule // sum
-
-

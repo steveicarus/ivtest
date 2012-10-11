@@ -1,4 +1,3 @@
-
 /*
  * This test is derived from bug report PR#511. Mostly what it is
  * doing is checking the behavior of === and wait.
@@ -295,4 +294,3 @@ module I54;
  end
 
 endmodule
-

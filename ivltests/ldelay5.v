@@ -26,7 +26,7 @@ module test;
    wire [1:2] q, a, b;
    drec U1(q[1], a[1], b[1]);
    drec U2(q[2], a[2], b[2]);
-   
+
    initial $display("PASSED");
 
 endmodule
@@ -45,4 +45,3 @@ primitive U_drec (q, a, b);
           0  1 : 0 ;
    endtable
 endprimitive
-

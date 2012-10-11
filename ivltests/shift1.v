@@ -29,7 +29,7 @@ assign data2 = (decode_vec[8'h01   ] ) ? 8'h55 : 8'h00;
 
 initial
 begin
-#0; 
+#0;
 $monitor("%h %h %h", decode_vec, data1, data2);
 decode_vec = 8'h02;
 #10;

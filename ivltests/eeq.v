@@ -34,16 +34,16 @@ module eeq;
 `else
    wire      nee = a !== b;
 `endif
-   
-   reg 	     err;
 
-   always 
+   reg	     err;
+
+   always
      begin
-	#2; 
+	#2;
 	$display("%b %b ===%b !==%b", a, b, eeq, nee);
 	if (((a === b) !== eeq) || ((a !== b) !== nee)) err = 1;
      end
- 
+
    initial
      begin
 	err = 0;

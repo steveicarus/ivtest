@@ -1,9 +1,8 @@
-
 /*
  * This is based on PR#1029
  */
 module main();
- 
+
 `define none
 `define fred eric
 `define bill main`none.eric
@@ -14,5 +13,5 @@ initial
     $display("%0s",`bill);
     $finish ;
   end
- 
+
 endmodule

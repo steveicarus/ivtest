@@ -7,10 +7,9 @@ entity xor104 is
     b_i : in std_logic_vector (103 downto 0);
     c_o : out std_logic_vector (103 downto 0)
   );
-end entity xor104; 
+end entity xor104;
 
 architecture rtl of xor104 is
 begin
   c_o <= a_i xor b_i;
 end architecture rtl;
-

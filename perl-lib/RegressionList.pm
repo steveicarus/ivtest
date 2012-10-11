@@ -22,8 +22,8 @@ our (@testlist, %srcpath, %testtype, %args, %plargs,
 
 #
 #  Parses the regression list file
-# 
-#  Parameters: 
+#
+#  Parameters:
 #    $regress_fn = file name to read tests from.
 #    $ver = iverilog version.
 #
@@ -32,7 +32,7 @@ our (@testlist, %srcpath, %testtype, %args, %plargs,
 #  test_name type,opt_ivl_args test_dir opt_module_name log/gold_file
 #
 #  type can be:
-#    normal 
+#    normal
 #    CO = compile only.
 #    CE = compile error.
 #    CN = compile null.
@@ -41,7 +41,7 @@ our (@testlist, %srcpath, %testtype, %args, %plargs,
 #    NI = not implemented.
 #
 sub read_regression_list {
-    my $regress_fn = shift 
+    my $regress_fn = shift
         or die "No regression list file name specified";
     my $ver = shift
         or die "No iverilog version specified";

@@ -28,4 +28,3 @@ always @(posedge clk or negedge reset_b)
 
 
 endmodule
-

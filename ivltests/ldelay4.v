@@ -27,8 +27,8 @@ module test;
    reg  a, b;
    drec #1 rec(q, a, b);
    edet det (e, q);
-   
-   reg 	error;
+
+   reg	error;
    initial
      begin
 	error = 0;
@@ -42,7 +42,7 @@ module test;
 
    always @(q)
      $display("%d: q=%b", $time, q);
-   
+
    initial
      begin
 //	$dumpvars;
@@ -76,9 +76,9 @@ endprimitive
 primitive edet (q, i);
    output           q;
    input  i;
-   reg 	        q;
+   reg	        q;
    table
          (?x) : ? : 1;
          (x?) : ? : 0;
-   endtable  
+   endtable
 endprimitive

@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (c) Tony Bybell 1999-2000.
  *
  * This program is free software; you can redistribute it and/or
@@ -9,9 +9,9 @@
 
 
 /*
- * vcd.c 			23jan99ajb
- * evcd parts 			29jun99ajb
- * profiler optimizations 	15jul99ajb
+ * vcd.c			23jan99ajb
+ * evcd parts			29jun99ajb
+ * profiler optimizations	15jul99ajb
  * more profiler optimizations	25jan00ajb
  * finsim parameter fix		26jan00ajb
  * vector rechaining code	03apr00ajb
@@ -34,7 +34,7 @@ static void evcd_strcpy(char *dst, char *src);
 
 enum Tokens   { T_VAR, T_END, T_SCOPE, T_UPSCOPE,
 		T_COMMENT, T_DATE, T_DUMPALL, T_DUMPOFF, T_DUMPON,
-		T_DUMPVARS, T_ENDDEFINITIONS, 
+		T_DUMPVARS, T_ENDDEFINITIONS,
 		T_DUMPPORTS, T_DUMPPORTSOFF, T_DUMPPORTSON, T_DUMPPORTSALL,
 		T_TIMESCALE, T_VERSION, T_VCDCLOSE,
 		T_EOF, T_STRING, T_UNKNOWN_KEY };
@@ -81,7 +81,7 @@ if(obj->he_curr==obj->he_fini)
 	obj->he_fini=obj->he_curr+VCD_HISTENT_GRANULARITY;
 	}
 
-return(obj->he_curr++);	
+return(obj->he_curr++);
 }
 
 /******************************************************************/
@@ -113,7 +113,7 @@ static struct vcdsymbol *bsearch_vcd(struct globals *obj, char *key)
 struct vcdsymbol **v;
 struct vcdsymbol *t;
 
-v=(struct vcdsymbol **)bsearch(key, obj->sorted, obj->numsyms, 
+v=(struct vcdsymbol **)bsearch(key, obj->sorted, obj->numsyms,
 	sizeof(struct vcdsymbol *), vcdsymbsearchcompare);
 
 if(v)
@@ -122,7 +122,7 @@ if(v)
 		for(;;)
 			{
 			t=*v;
-	
+
 			if((v==obj->sorted)||(strcmp((*(--v))->id, key)))
 				{
 				return(t);
@@ -161,7 +161,7 @@ static void create_sorted_table(struct globals *obj)
 struct vcdsymbol *v;
 struct vcdsymbol **pnt;
 
-if(obj->sorted) 
+if(obj->sorted)
 	{
 	free_2(obj->sorted);	/* this means we saw a 2nd enddefinition chunk! */
 	}
@@ -247,7 +247,7 @@ for(;;)
 	if(ch<=' ') continue;	/* val<=' ' is a quick whitespace check      */
 	break;			/* (take advantage of fact that vcd is text) */
 	}
-if(ch=='$') 
+if(ch=='$')
 	{
 	obj->yytext[len++]=ch;
 	for(;;)
@@ -274,7 +274,7 @@ for(obj->yytext[len++]=ch;;obj->yytext[len++]=ch)
 	}
 obj->yytext[len]=0;	/* terminator */
 
-if(is_string) 
+if(is_string)
 	{
 	obj->yylen=len;
 	return(T_STRING);
@@ -312,7 +312,7 @@ if(!obj->var_prevch)
 	ch=obj->var_prevch;
 	obj->var_prevch=0;
 	}
-	
+
 if(ch=='[') return(V_LB);
 if(ch==':') return(V_COLON);
 if(ch==']') return(V_RB);
@@ -374,7 +374,7 @@ if(!obj->var_prevch)
 	ch=obj->var_prevch;
 	obj->var_prevch=0;
 	}
-	
+
 if(ch=='[') return(V_LB);
 if(ch==':') return(V_COLON);
 if(ch==']') return(V_RB);
@@ -448,7 +448,7 @@ if(!obj->var_prevch)
       ch=obj->var_prevch;
       obj->var_prevch=0;
       }
-      
+
 for(obj->yytext[len++]=ch;;obj->yytext[len++]=ch)
       {
 	if(len==obj->T_MAX_STR)
@@ -559,7 +559,7 @@ switch(obj->yytext[0])
 	case 'Z':
 		if(obj->yylen>1)
 			{
-			v=bsearch_vcd(obj, obj->yytext+1);	
+			v=bsearch_vcd(obj, obj->yytext+1);
 			if(!v)
 				{
 				fprintf(stderr,"Near byte %d, Unknown VCD identifier: '%s'\n",obj->vcdbyteno+(obj->vst-obj->vcdbuf),obj->yytext+1);
@@ -597,12 +597,12 @@ switch(obj->yytext[0])
 	case 'B':
 		{
 		/* extract binary number then.. */
-		vector=malloc_2(obj->yylen_cache=obj->yylen); 
+		vector=malloc_2(obj->yylen_cache=obj->yylen);
 		strcpy(vector,obj->yytext+1);
 		vlen=obj->yylen-1;
 
 		get_strtoken(obj);
-		v=bsearch_vcd(obj, obj->yytext);	
+		v=bsearch_vcd(obj, obj->yytext);
 		if(!v)
 			{
 			fprintf(stderr,"Near byte %d, Unknown identifier: '%s'\n",obj->vcdbyteno+(obj->vst-obj->vcdbuf), obj->yytext);
@@ -616,14 +616,14 @@ switch(obj->yytext[0])
 				char *pnt;
 				char ch;
 				TimeType k=0;
-		
+
 				pnt=vector;
 				while((ch=*(pnt++))) { k=(k<<1)|((ch=='1')?1:0); }
 				free_2(vector);
-			
+
 				d=malloc_2(sizeof(double));
 				*d=(double)k;
-			
+
 				if(!v)
 					{
 					fprintf(stderr,"Near byte %d, Unknown identifier: '%s'\n",obj->vcdbyteno+(obj->vst-obj->vcdbuf), obj->yytext);
@@ -636,21 +636,21 @@ switch(obj->yytext[0])
 				break;
 				}
 
-			if(vlen<v->size) 	/* fill in left part */
+			if(vlen<v->size)	/* fill in left part */
 				{
 				char extend;
 				int i, fill;
 
 				extend=(vector[0]=='1')?'0':vector[0];
 
-				fill=v->size-vlen;				
+				fill=v->size-vlen;
 				for(i=0;i<fill;i++)
 					{
 					v->value[i]=extend;
 					}
 				strcpy(v->value+fill,vector);
 				}
-			else if(vlen==v->size) 	/* straight copy */
+			else if(vlen==v->size)	/* straight copy */
 				{
 				strcpy(v->value,vector);
 				}
@@ -689,14 +689,14 @@ switch(obj->yytext[0])
 
 	case 'p':
 		/* extract port dump value.. */
-		vector=malloc_2(obj->yylen_cache=obj->yylen); 
+		vector=malloc_2(obj->yylen_cache=obj->yylen);
 		strcpy(vector,obj->yytext+1);
 		vlen=obj->yylen-1;
 
 		get_strtoken(obj);	/* throw away 0_strength_component */
 		get_strtoken(obj); /* throw away 0_strength_component */
 		get_strtoken(obj); /* this is the id                  */
-		v=bsearch_vcd(obj, obj->yytext);	
+		v=bsearch_vcd(obj, obj->yytext);
 		if(!v)
 			{
 			fprintf(stderr,"Near byte %d, Unknown identifier: '%s'\n",obj->vcdbyteno+(obj->vst-obj->vcdbuf), obj->yytext);
@@ -710,14 +710,14 @@ switch(obj->yytext[0])
 				char *pnt;
 				char ch;
 				TimeType k=0;
-		
+
 				pnt=vector;
 				while((ch=*(pnt++))) { k=(k<<1)|((ch=='1')?1:0); }
 				free_2(vector);
-			
+
 				d=malloc_2(sizeof(double));
 				*d=(double)k;
-			
+
 				if(!v)
 					{
 					fprintf(stderr,"Near byte %d, Unknown identifier: '%s'\n",obj->vcdbyteno+(obj->vst-obj->vcdbuf), obj->yytext);
@@ -730,21 +730,21 @@ switch(obj->yytext[0])
 				break;
 				}
 
-			if(vlen<v->size) 	/* fill in left part */
+			if(vlen<v->size)	/* fill in left part */
 				{
 				char extend;
 				int i, fill;
 
 				extend='0';
 
-				fill=v->size-vlen;				
+				fill=v->size-vlen;
 				for(i=0;i<fill;i++)
 					{
 					v->value[i]=extend;
 					}
 				evcd_strcpy(v->value+fill,vector);
 				}
-			else if(vlen==v->size) 	/* straight copy */
+			else if(vlen==v->size)	/* straight copy */
 				{
 				evcd_strcpy(v->value,vector);
 				}
@@ -787,9 +787,9 @@ switch(obj->yytext[0])
 
 		d=malloc_2(sizeof(double));
 		sscanf(obj->yytext+1,"%lg",d);
-		
+
 		get_strtoken(obj);
-		v=bsearch_vcd(obj, obj->yytext);	
+		v=bsearch_vcd(obj, obj->yytext);
 		if(!v)
 			{
 			fprintf(stderr,"Near byte %d, Unknown identifier: '%s'\n",obj->vcdbyteno+(obj->vst-obj->vcdbuf), obj->yytext);
@@ -811,9 +811,9 @@ switch(obj->yytext[0])
 
 		d=(char *)malloc_2(obj->yylen);
 		strcpy(d, obj->yytext+1);
-		
+
 		get_strtoken(obj);
-		v=bsearch_vcd(obj, obj->yytext);	
+		v=bsearch_vcd(obj, obj->yytext);
 		if(!v)
 			{
 			fprintf(stderr,"Near byte %d, Unknown identifier: '%s'\n",obj->vcdbyteno+(obj->vst-obj->vcdbuf), obj->yytext);
@@ -849,7 +849,7 @@ while((ch=*src))
 			*dst=vcd[i];
 			break;
 			}
-		}	
+		}
 	if(i==23) *dst='x';
 
 	src++;
@@ -899,7 +899,7 @@ for(;;)
 				{
 				vtok=get_token(obj);
 				if((vtok==T_END)||(vtok==T_EOF)) break;
-				prefix=obj->yytext[0];		
+				prefix=obj->yytext[0];
 				}
 			switch(prefix)
 				{
@@ -1007,7 +1007,7 @@ for(;;)
 					v->size=atoi_64(obj->yytext);
 					if(!v->size) v->size=1;
 					}
-					else 
+					else
 					if(vtok==V_LB)
 					{
 					vtok=get_vartoken(obj);
@@ -1062,7 +1062,7 @@ for(;;)
 					}
 
                                 if(obj->pv)
-                                        { 
+                                        {
                                         if(!strcmp(obj->pv->name,v->name))
                                                 {
                                                 obj->pv->chain=v;
@@ -1107,7 +1107,7 @@ for(;;)
 					}
 
                                 if(obj->pv)
-                                        { 
+                                        {
                                         if(!strcmp(obj->pv->name,v->name))
                                                 {
                                                 obj->pv->chain=v;
@@ -1124,7 +1124,7 @@ for(;;)
 					obj->rootv=v;
 					}
                                 obj->pv=v;
-				
+
 				vtok=get_vartoken(obj);
 				if(vtok==V_END) goto dumpv;
 				if(vtok!=V_LB) goto err;
@@ -1155,14 +1155,14 @@ for(;;)
 			else
 			if((v->size>1)&&(v->msi<=0)&&(v->lsi<=0))
 				{
-				if(v->vartype==V_EVENT) 
+				if(v->vartype==V_EVENT)
 					{
 					v->size=1;
 					}
 					else
 					{
 					/* any criteria for the direction here? */
-					v->msi=v->size-1;	
+					v->msi=v->size-1;
 					v->lsi=0;
 					}
 				}
@@ -1173,7 +1173,7 @@ for(;;)
 				v->size=v->msi-v->lsi+1;
 				}
 			else
-			if((v->lsi>=v->msi)&&((v->lsi-v->msi+1)!=v->size)) 
+			if((v->lsi>=v->msi)&&((v->lsi-v->msi+1)!=v->size))
 				{
 				if((v->vartype!=V_EVENT)&&(v->vartype!=V_PARAMETER)) goto err;
 				v->size=v->msi-v->lsi+1;
@@ -1200,7 +1200,7 @@ for(;;)
 					for(i=0;i<v->size;i++)
 						{
 						v->value[i]='x';
-	
+
 						v->narray[i]=(struct Node *)calloc_2(1,sizeof(struct Node));
 						v->narray[i]->head.time=-1;
 						v->narray[i]->head.v.val=1;
@@ -1213,9 +1213,9 @@ for(;;)
 				struct queuedevent *q;
 				v->ev=q=(struct queuedevent *)calloc_2(1,sizeof(struct queuedevent));
 				q->sym=v;
-				q->last_event_time=-1;		
+				q->last_event_time=-1;
 				q->next=queuedevents;
-				queuedevents=q;		
+				queuedevents=q;
 				}
 
 			if(!obj->vcdsymroot)
@@ -1230,7 +1230,7 @@ for(;;)
 			obj->numsyms++;
 
 			DEBUG(fprintf(stderr,"VAR %s %d %s %s[%d:%d]\n",
-				vartypes[v->vartype], v->size, v->id, v->name, 
+				vartypes[v->vartype], v->size, v->id, v->name,
 					v->msi, v->lsi));
 			goto bail;
 			err:
@@ -1263,7 +1263,7 @@ for(;;)
 					{
 					TimeType time;
 					time=atoi_64(obj->yytext+1);
-					
+
 					if(obj->start_time<0)
 						{
 						obj->start_time=time;
@@ -1337,9 +1337,9 @@ if(!n->curr)
         if(ch=='1') heval=3; else
         if((ch=='x')||(ch=='X')) heval=1; else
         heval=2;
-	
-	if((n->curr->v.val!=heval)||(time==obj->start_time)) /* same region == go skip */ 
-        	{
+
+	if((n->curr->v.val!=heval)||(time==obj->start_time)) /* same region == go skip */
+		{
 		if((n->curr->time==time)&&(obj->count_glitches))
 			{
 			DEBUG(printf("Warning: Glitch at time ["TTFormat"] Signal [%p], Value [%c->%c].\n",
@@ -1355,13 +1355,13 @@ if(!n->curr)
 			}
 			else
 			{
-                	he=histent_calloc(obj);
-                	he->time=time;
-                	he->v.val=heval;
+			he=histent_calloc(obj);
+			he->time=time;
+			he->v.val=heval;
 
-                	n->curr->next=he;
+			n->curr->next=he;
 			n->curr=he;
-                	obj->regions+=regadd;
+			obj->regions+=regadd;
 			}
                 }
        }
@@ -1378,23 +1378,23 @@ switch(ch)
 		he->flags=(HIST_STRING|HIST_REAL);
 	        he->time=-1;
 	        he->v.vector=NULL;
-	
+
 		n->curr=he;
 		n->head.next=he;
-	
+
 		add_histent(obj, time,n,ch,regadd, vector);
 		}
 		else
 		{
 		if(regadd) { time*=(obj->time_scale); }
-	
+
 			if((n->curr->time==time)&&(obj->count_glitches))
 				{
 				DEBUG(printf("Warning: String Glitch at time ["TTFormat"] Signal [%p].\n",
 					time, n));
 				if(n->curr->v.vector) free_2(n->curr->v.vector);
 				n->curr->v.vector=vector;		/* we have a glitch! */
-	
+
 				obj->num_glitches++;
 				if(!(n->curr->flags&HIST_GLITCH))
 					{
@@ -1404,14 +1404,14 @@ switch(ch)
 				}
 				else
 				{
-	                	he=histent_calloc(obj);
+				he=histent_calloc(obj);
 				he->flags=(HIST_STRING|HIST_REAL);
-	                	he->time=time;
-	                	he->v.vector=vector;
-	
-	                	n->curr->next=he;
+				he->time=time;
+				he->v.vector=vector;
+
+				n->curr->next=he;
 				n->curr=he;
-	                	obj->regions+=regadd;
+				obj->regions+=regadd;
 				}
 	       }
 	break;
@@ -1424,29 +1424,29 @@ switch(ch)
 		he->flags=HIST_REAL;
 	        he->time=-1;
 	        he->v.vector=NULL;
-	
+
 		n->curr=he;
 		n->head.next=he;
-	
+
 		add_histent(obj, time,n,ch,regadd, vector);
 		}
 		else
 		{
 		if(regadd) { time*=(obj->time_scale); }
-	
+
 		if(
 		  (n->curr->v.vector&&vector&&(*(double *)n->curr->v.vector!=*(double *)vector))
 			||(time==obj->start_time)
 			||(!n->curr->v.vector)
-			) /* same region == go skip */ 
-	        	{
+			) /* same region == go skip */
+			{
 			if((n->curr->time==time)&&(obj->count_glitches))
 				{
 				DEBUG(printf("Warning: Real number Glitch at time ["TTFormat"] Signal [%p].\n",
 					time, n));
 				if(n->curr->v.vector) free_2(n->curr->v.vector);
 				n->curr->v.vector=vector;		/* we have a glitch! */
-	
+
 				obj->num_glitches++;
 				if(!(n->curr->flags&HIST_GLITCH))
 					{
@@ -1456,14 +1456,14 @@ switch(ch)
 				}
 				else
 				{
-	                	he=histent_calloc(obj);
+				he=histent_calloc(obj);
 				he->flags=HIST_REAL;
-	                	he->time=time;
-	                	he->v.vector=vector;
-	
-	                	n->curr->next=he;
+				he->time=time;
+				he->v.vector=vector;
+
+				n->curr->next=he;
 				n->curr=he;
-	                	obj->regions+=regadd;
+				obj->regions+=regadd;
 				}
 	                }
 			else
@@ -1480,29 +1480,29 @@ switch(ch)
 		he=histent_calloc(obj);
 	        he->time=-1;
 	        he->v.vector=NULL;
-	
+
 		n->curr=he;
 		n->head.next=he;
-	
+
 		add_histent(obj, time,n,ch,regadd, vector);
 		}
 		else
 		{
 		if(regadd) { time*=(obj->time_scale); }
-	
+
 		if(
 		  (n->curr->v.vector&&vector&&(strcmp(n->curr->v.vector,vector)))
 			||(time==obj->start_time)
 			||(!n->curr->v.vector)
-			) /* same region == go skip */ 
-	        	{
+			) /* same region == go skip */
+			{
 			if((n->curr->time==time)&&(obj->count_glitches))
 				{
 				DEBUG(printf("Warning: Glitch at time ["TTFormat"] Signal [%p], Value [%c->%c].\n",
 					time, n, "0XZ1"[n->curr->v.val], ch));
 				if(n->curr->v.vector) free_2(n->curr->v.vector);
 				n->curr->v.vector=vector;		/* we have a glitch! */
-	
+
 				obj->num_glitches++;
 				if(!(n->curr->flags&HIST_GLITCH))
 					{
@@ -1512,13 +1512,13 @@ switch(ch)
 				}
 				else
 				{
-	                	he=histent_calloc(obj);
-	                	he->time=time;
-	                	he->v.vector=vector;
-	
-	                	n->curr->next=he;
+				he=histent_calloc(obj);
+				he->time=time;
+				he->v.vector=vector;
+
+				n->curr->next=he;
 				n->curr=he;
-	                	obj->regions+=regadd;
+				obj->regions+=regadd;
 				}
 	                }
 			else
@@ -1542,7 +1542,7 @@ int i,j;
 struct queuedevent *q;
 q=queuedevents;
 while(q)
-	{	
+	{
 	struct vcdsymbol *v;
 
 	v=q->sym;
@@ -1550,7 +1550,7 @@ while(q)
 		{
 		/* dump degating event */
 		DEBUG(fprintf(stderr,"#"TTFormat" %s = '%c' (event)\n",v->ev->last_event_time+1,v->name,'0'));
-		add_histent(obj, v->ev->last_event_time+1,v->narray[0],'0',1, NULL);	
+		add_histent(obj, v->ev->last_event_time+1,v->narray[0],'0',1, NULL);
 		}
 	q=q->next;
 	}
@@ -1656,10 +1656,10 @@ for(i=0;i<obj->numsyms;i++)
 		if(((v->size==1)||(!obj->atomic_vectors))&&(v->vartype!=V_REAL))
 			{
 			struct symbol *s;
-	
+
 			for(j=0;j<v->size;j++)
 				{
-				if(v->msi>=0) 
+				if(v->msi>=0)
 					{
 					if(!obj->vcd_explicit_zero_subscripts)
 						sprintf(str+slen,"%d",msi);
@@ -1669,12 +1669,12 @@ for(i=0;i<obj->numsyms;i++)
 				if(!symfind(obj, str))
 					{
 					s=symadd(obj, str,hash(str));
-	
+
 					s->n=v->narray[j];
 					if(substnode)
 						{
 						struct Node *n, *n2;
-	
+
 						n=s->n;
 						n2=vprime->narray[j];
 						/* nname stays same */
@@ -1683,7 +1683,7 @@ for(i=0;i<obj->numsyms;i++)
 						/* harray calculated later */
 						n->numhist=n2->numhist;
 						}
-	
+
 					s->n->nname=s->name;
 					s->h=s->n->curr;
 					if(!obj->firstnode)
@@ -1695,7 +1695,7 @@ for(i=0;i<obj->numsyms;i++)
 						obj->curnode->nextinaet=s;
 						obj->curnode=s;
 						}
-	
+
 					obj->numfacs++;
 					DEBUG(fprintf(stderr,"Added: %s\n",str));
 					}
@@ -1790,7 +1790,7 @@ for(i=0;i<obj->numsyms;i++)
 
 if(sym_chain)
 	{
-	sym_curr=sym_chain;	
+	sym_curr=sym_chain;
 	while(sym_curr)
 		{
 		sym_curr->val->vec_root= ((struct vcdsymbol *)sym_curr->val->vec_root)->sym_chain;
@@ -1819,7 +1819,7 @@ for(i=0;i<obj->numfacs;i++)
         {
         char *subst, ch;
         int len;
-                 
+
         obj->facs[i]=obj->curnode;
         if((len=strlen(subst=obj->curnode->name))>obj->longestname) obj->longestname=len;
         obj->curnode=obj->curnode->nextinaet;
@@ -1834,14 +1834,14 @@ quicksort(obj->facs,0,obj->numfacs-1);
 for(i=0;i<obj->numfacs;i++)
         {
         char *subst, ch;
-         
+
         subst=obj->facs[i]->name;
         while((ch=(*subst)))
                 {
                 if(ch==0x01) { *subst=obj->hier_delimeter; } /* restore back to normal */
                 subst++;
                 }
-        
+
 #ifdef DEBUG_FACILITIES
         printf("%-4d %s\n",i,obj->facs[i]->name);
 #endif
@@ -1873,7 +1873,7 @@ if(obj->sorted)
 			free_2(v);
 			}
 		}
-	free_2(obj->sorted); obj->sorted=NULL; 
+	free_2(obj->sorted); obj->sorted=NULL;
 	}
 
 if(obj->slisthier) { free_2(obj->slisthier); obj->slisthier=NULL; }
@@ -1964,7 +1964,7 @@ vcd_cleanup(obj);
 
 printf("Found %d symbols.\n", obj->numfacs);
 printf("["TTFormat"] start time.\n["TTFormat"] end time.\n", obj->start_time, obj->end_time);
-if(obj->num_glitches) printf("Warning: encountered %d glitch%s across %d glitch region%s.\n", 
+if(obj->num_glitches) printf("Warning: encountered %d glitch%s across %d glitch region%s.\n",
                 obj->num_glitches, (obj->num_glitches!=1)?"es":"",
                 obj->num_glitch_regions, (obj->num_glitch_regions!=1)?"s":"");
 

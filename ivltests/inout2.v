@@ -1,4 +1,3 @@
-
 /*
  * This test deminstrates a complication in the handling of a vector
  * as a unit, instead of breaking it out. The problem is with the
@@ -10,7 +9,7 @@ module main;
 
    reg [1:0]  drv = 2'b0z;
    wire [1:0] a = drv;
-   reg 	      en;
+   reg	      en;
 
    bi dut0(a[0], en);
 

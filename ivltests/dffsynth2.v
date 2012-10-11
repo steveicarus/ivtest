@@ -1,4 +1,3 @@
-
 /*
  * This program tests the synthesis of small memories, including
  * aysnchronous read w/ synchronous write.

@@ -14,7 +14,7 @@
 //
 //    You should have received a copy of the GNU General Public License
 //    along with this program; if not, write to the Free Software
-//    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA 
+//    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 //
 //    for3.16A -  Template 1 - for(val1=0; val1 <= expr ; val1 = val1 + 1) some_action
 //
@@ -34,10 +34,10 @@ initial
     #100;
     $display("foo[31:16] = %x bar = %x",foo[31:16],bar);
     //if(foo[31:16]==((bar & 32'hffffffff) >> 16))
-    if(foo[31:16] === 16'ha5a5)	   
-     	$display("PASS (%x)",foo[31:16]);
+    if(foo[31:16] === 16'ha5a5)
+	$display("PASS (%x)",foo[31:16]);
      else
        $display("FAIL (%x vs %x)",foo[31:16],((bar & 32'hffffffff) >> 16));
     $finish;
   end
-endmodule										
+endmodule

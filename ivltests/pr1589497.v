@@ -8,7 +8,7 @@ module test;
       mydata = -6;
       repeat ( 11 )
         begin
-          add_one(mydata); 
+          add_one(mydata);
           $display("mydata = %0d", mydata);
         end
       $finish;
@@ -23,5 +23,3 @@ task add_one;
 endtask
 
 endmodule
-
-

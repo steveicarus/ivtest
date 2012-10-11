@@ -1,4 +1,3 @@
-
 module main;
 
    reg [8:0] val;

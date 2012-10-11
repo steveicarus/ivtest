@@ -19,7 +19,7 @@
 //
 // SDW: Module instantiation with non-ordered port assignment
 //
-// D: Same as sdw_inst1 except using .net(net) port convention. 
+// D: Same as sdw_inst1 except using .net(net) port convention.
 //
 
 module test_mod (reset,clka,out);
@@ -94,14 +94,14 @@ initial
         $display("FAILED - out_1 didn't set on clk_1\n");
         $finish ;
       end
-    
+
     if(!out_0)
       begin
         $display("FAILED - out_0 changed due to clk_0\n");
         $finish ;
       end
 
-    
+
     $display("PASSED\n");
     $finish ;
   end

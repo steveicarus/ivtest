@@ -15,7 +15,7 @@ entity foo_entity is
 end foo_entity;
 
 architecture beh of foo_entity is
-  
+
 type word is record
   high: std_logic_vector (3 downto 0);
   low: std_logic_vector (3 downto 0);
@@ -39,5 +39,3 @@ begin
   o_high1 <= my_dword(1).high;
 
 end beh;
- 
-

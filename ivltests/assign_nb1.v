@@ -47,7 +47,7 @@ initial
          error = 1;
        end
     if(error === 0)
-       $display("PASSED"); 
+       $display("PASSED");
   end
 
 endmodule

@@ -6,7 +6,7 @@ module top;
   reg [7:0] check [0:7];
   integer idx, istr;
 
-  
+
   initial begin
     for (idx = 0; idx < 8; idx = idx + 1) array[idx] = idx + 1;
     for (idx = 8; idx < 16; idx = idx + 1) array2[idx] = 0;

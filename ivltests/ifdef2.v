@@ -27,15 +27,15 @@ reg error ;
 
 
 `ifdef NOCODE
-initial 
+initial
    begin
      #20;
      error = 0;
      #20;
-   end 
+   end
 `endif
 
-initial 
+initial
  begin
    #1;
    error = 1;
@@ -44,6 +44,6 @@ initial
       $display("PASSED");
    else
       $display("FAILED");
-  end 
+  end
 
 endmodule // main

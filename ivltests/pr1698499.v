@@ -82,7 +82,7 @@ module sysSimpleTest();
 	     99'h4000000000000000000000000 ;
 
   // handling of inlined registers
-  
+
   always@(posedge CLK)
   begin
     if (!RST_N)
@@ -98,7 +98,7 @@ module sysSimpleTest();
 	if (z$EN) z <= z$D_IN;
       end
   end
-  
+
   // synopsys translate_off
   initial
   begin
@@ -108,7 +108,7 @@ module sysSimpleTest();
   // synopsys translate_on
 
   // handling of system tasks
-  
+
   // synopsys translate_off
   always@(negedge CLK)
   begin
@@ -131,6 +131,3 @@ module sysSimpleTest();
   end
   // synopsys translate_on
 endmodule  // sysSimpleTest
-
-
- 	  	 

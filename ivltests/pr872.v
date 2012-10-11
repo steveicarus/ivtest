@@ -1,4 +1,3 @@
-
 /*
  * Based on PR#872
  */
@@ -25,4 +24,3 @@ endmodule // main
  */
 module foo (output reg bar = 0);
 endmodule
-

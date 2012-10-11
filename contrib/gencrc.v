@@ -24,16 +24,16 @@
 // should be reusable for other types of CRCs with some fiddling.
 //
 // This CRC code works for a specific type of network protocol, and it
-// must do certain byte swappings, etc.  You may need to play with it 
+// must do certain byte swappings, etc.  You may need to play with it
 // for your protocol.  Also, make sure the polynomials are what you
 // really want.  This is obviously, not synthesizable - I just used this
 // in a testbench at one point.
 //
 // These tasks are crude and rely on some global parameters.  They should
-// also read from a file, yada yada yada.  It is probably better to do this 
+// also read from a file, yada yada yada.  It is probably better to do this
 // with a PLI call, but here it is anyway..
 //
-// The test case includes a golden DOCSIS (Cable Modem) test message that 
+// The test case includes a golden DOCSIS (Cable Modem) test message that
 // was captured in a lab.
 //
 // tom coonan, 1999.
@@ -41,7 +41,7 @@
 module test_gencrc;
 
 // *** Buffer for the Golden Message ***
-reg [7:0]	test_packet[0:54];  
+reg [7:0]	test_packet[0:54];
 
 // *** Global parameter block for the CRC32 calculator.
 //
@@ -153,13 +153,13 @@ task main_test;
    reg [15:0]	crc16_expected;
    reg [31:0]	crc32_expected;
    begin
-   
+
    num_errors = 0;
-   
+
    // Initialize the Golden Message!
    //
    initialize_test_packet;
-   
+
    // **** TEST CRC16
    //
    //
@@ -170,10 +170,10 @@ task main_test;
    crc16_expected = {test_packet[4], test_packet[5]};
    crc16_length = 4;  // Must tell test function the length
    gencrc16;  // Call main test function
-   if (crc16_result !== crc16_expected) 
+   if (crc16_result !== crc16_expected)
    begin
       num_errors = num_errors + 1;
-      $display ("FAILED - Actual crc16_result = %h, Expected = %h", 
+      $display ("FAILED - Actual crc16_result = %h, Expected = %h",
       crc16_result, crc16_expected);
    end
 
@@ -187,17 +187,17 @@ task main_test;
    crc32_expected = {test_packet[50], test_packet[51], test_packet[52], test_packet[53]};
    crc32_length = 44;
    gencrc32;
-   if (crc32_result !== crc32_expected) 
+   if (crc32_result !== crc32_expected)
      begin
-       $display ("FAILED - Actual crc32_result = %h, Expected = %h", 
+       $display ("FAILED - Actual crc32_result = %h, Expected = %h",
        crc32_result, crc32_expected);
        num_errors = num_errors + 1;
      end
-  
+
    if(num_errors == 0)
     $display("PASSED");
 end
-   
+
 endtask
 
 
@@ -240,13 +240,13 @@ task gencrc16;
             end
          end
       end
-      
+
       // Last step is to "mirror" every bit, swap the 2 bytes, and then complement each bit.
       //
       // Mirror:
       for (bit = 0; bit < 16; bit = bit + 1)
          temp[15-bit] = crc16_result[bit];
-         
+
       // Swap and Complement:
       crc16_result = ~{temp[7:0], temp[15:8]};
    end
@@ -284,17 +284,16 @@ task gencrc32;
             end
          end
       end
-      
+
       // Last step is to "mirror" every bit, swap the 4 bytes, and then complement each bit.
       //
       // Mirror:
       for (bit = 0; bit < 32; bit = bit + 1)
          temp[31-bit] = crc32_result[bit];
-         
+
       // Swap and Complement:
       crc32_result = ~{temp[7:0], temp[15:8], temp[23:16], temp[31:24]};
    end
 endtask
 
 endmodule
-

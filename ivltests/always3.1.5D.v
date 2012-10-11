@@ -19,11 +19,11 @@
 //  SDW - Validate always if ( boolean_expr ) statement ;
 //  D:    Note that initial has to be before always to execute!
 
-module main ; 
+module main ;
 
 reg [3:0] value1 ;
 
-initial 
+initial
 	begin
            value1 = 0;
            # 5 ;
@@ -31,7 +31,7 @@ initial
                 $display("FAILED - always 3.1.5D always if ( bool_expr) statement  \n");
            else
                 $display("PASSED");
-     	   $finish;                                                            
+	   $finish;
         end
 
 always if( 1'b1 && 1'b1 ) begin
@@ -40,5 +40,3 @@ always if( 1'b1 && 1'b1 ) begin
                  end
 
 endmodule
-
-

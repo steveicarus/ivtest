@@ -18,7 +18,7 @@
 //
 //  SDW - Validate fork template 2
 
-module main ; 
+module main ;
 
 reg [3:0] value1,value2 ;
 reg [3:0] ret1,ret2 ;
@@ -32,7 +32,7 @@ always @(value1 or value2)
     join
   end
 
-initial 
+initial
   begin
     error = 0;
     #1;
@@ -40,7 +40,7 @@ initial
     value2 = 2;
     ret1 = 0;
     ret2 = 0;
-    #12; 
+    #12;
     if(ret1 !== 1)
        begin
          $display("FAILED - force3.19B first statement didn't execute(1)");

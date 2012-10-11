@@ -16,24 +16,22 @@
 //    along with this program; if not, write to the Free Software
 //    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 //
-//  SDW - Validate always @ (event_expression)  ; 
-//  D:    
+//  SDW - Validate always @ (event_expression)  ;
+//  D:
 
-module main ; 
+module main ;
 
 reg [3:0] value1 ;
 
-initial 
+initial
 	begin
            # 10 ;
            value1 = 4'h5;
            # 10 ;
            $display("PASSED\n");
-     	   $finish;                                                            
+	   $finish;
         end
 
 always @ (value1) ;
 
 endmodule
-
-

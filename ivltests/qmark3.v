@@ -38,18 +38,18 @@ initial
            begin
              for(var3= 0; var3 <= 4'h3;var3 = var3+1)
                begin
- 
+
                  cond = bvec[var1];
                  a =    bvec[var2];
                  b =    bvec[var3];
- 
+
                  out1 = cond ? a: b ;
- 
+
                  if(cond)
                     out2 = a ;
                  else
                     out2 = b;
- 
+
                  if(out1 != out2)
                    begin
                      $display("FAILED - qmark2 - %b %b %b %b %b",
@@ -60,7 +60,7 @@ initial
            end
       end
     if(error == 0)
-       $display("PASSED");   
+       $display("PASSED");
   end
 
 endmodule // main

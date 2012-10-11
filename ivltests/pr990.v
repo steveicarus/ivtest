@@ -3,12 +3,12 @@
  * Or at least the bug being reported.
  */
 module bug();
- 
+
 reg [31:0] x;
 wire y;
- 
+
 assign y = x == 0;
- 
+
 initial begin
   $display("y: %b", y);
   x = 0;

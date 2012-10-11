@@ -17,22 +17,22 @@
 #    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 #
 # Format of the file
-# 
+#
 # testname	testtype	directory
 #
-# Note that no  extension is required for the testname, and that the 
+# Note that no  extension is required for the testname, and that the
 # sregress.pl logic requires that the FIRST test in the list not be a
 # CO class test.
 #
 # Testtype can be one of
 #
-# normal:	Normal results expected, i.e it should compile an execute 
+# normal:	Normal results expected, i.e it should compile an execute
 #               to a PASSED
-# CO:		Compile only - Examine the logfile for any errors - shouldn't 
+# CO:		Compile only - Examine the logfile for any errors - shouldn't
 #               be any.
-# CE:		Compile with Errors - We EXPECT errors - we're checking 
+# CE:		Compile with Errors - We EXPECT errors - we're checking
 #               illegal syntax
-# 
+#
 # The third arguement is the directory, and forth optional is one of
 # modulename - Defines the top level module
 # gold=filename - Compare a gold file against the generated log file.

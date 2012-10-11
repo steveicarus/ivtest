@@ -37,5 +37,3 @@ module othertop;
     #20 $display("%m var is (%b)", othertopvar);
   end
 endmodule
-
- 	  	 

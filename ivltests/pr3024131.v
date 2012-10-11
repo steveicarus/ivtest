@@ -4,7 +4,7 @@
 module top;
   integer Ival = 14;
   integer result;
-  
+
   initial begin
     result = Ival * 216 * 140e-3;
     if (result !== 423) $display("Failed:, expected 423, got %0d", result);

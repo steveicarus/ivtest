@@ -25,5 +25,3 @@ module b (output wire [5:0] a);
    assign a = 5;
 
 endmodule
-
- 	  	 

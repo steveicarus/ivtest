@@ -21,7 +21,7 @@ module lower;
     $display("Using a CPU word size of %g bits.", $simparam("CPUWordSize"));
     $display("Running in directory: %0s\n", $simparam$str("cwd"));
 
-    /* 
+    /*
      * Check the time units and precision.
      *
      * Since this is double math check that the result is within a
@@ -128,7 +128,7 @@ module lower;
     end
 
     if (pass) $display("\nPASSED");
-    
+
   end
 
   /* We need this to make instance and path different. */

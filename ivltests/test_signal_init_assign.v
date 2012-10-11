@@ -1,4 +1,3 @@
-
 module main;
 
    reg src;
@@ -26,7 +25,7 @@ test #(.parm(1)) test1 (.dst(dst1), .src(src), .clk(clk));
    //  8   - '-'
 //Maybe in the future we'll have to do something similar?
 
-   
+
    initial begin
       clk = 0;
       src = 0;
@@ -44,8 +43,8 @@ test #(.parm(1)) test1 (.dst(dst1), .src(src), .clk(clk));
       end
       $display("PASSED");
    end // initial begin
-   
-   
+
+
 
 
 endmodule // main

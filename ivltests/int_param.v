@@ -1,9 +1,8 @@
-
 module main;
 
    localparam int int_lparm = 11;
    parameter int  int_param = 10;
-   int 		  int_var;
+   int		  int_var;
 
    initial begin
       if (int_lparm != 11) begin

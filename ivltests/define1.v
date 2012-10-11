@@ -29,7 +29,7 @@ module define1 ;
 reg [`WIDTH-1:0] val ;
 reg error;
 
-initial 
+initial
   begin
      error = 0;
      val = `NUM1 ;
@@ -52,7 +52,7 @@ initial
          $display("FAILED - define NUM1 10 didn't");
        end
      if(error == 0)
-       $display("PASSED"); 
-  end 
+       $display("PASSED");
+  end
 
 endmodule

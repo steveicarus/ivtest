@@ -22,7 +22,7 @@
 //
 
 module main ();
- 
+
 reg [3:0] global_var;
 reg [3:0] result;
 
@@ -31,7 +31,7 @@ input [3:0] a;
 begin
     my_func = a + a;
 end
-endfunction 
+endfunction
 
 initial
   begin
@@ -44,7 +44,7 @@ initial
          $finish ;
       end
 
-    $display("PASSED\n"); 
+    $display("PASSED\n");
     $finish ;
   end
 endmodule

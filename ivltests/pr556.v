@@ -1,4 +1,3 @@
-
 /*
  * This test is from PR#556.
  *
@@ -19,6 +18,3 @@ initial
     $finish;
   end
 endmodule
-
-
-

@@ -17,19 +17,19 @@
 //    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 //
 //  SDW - always force reg_lvalue = constant ;
-//  D:    No dependancy 
+//  D:    No dependancy
 //  SJW - Fix to actually run. Save the existing always3.1.3D.v, as it
 //        has slightly different syntax that may as well be tested.
 
-module main ; 
+module main ;
 
 reg [3:0] value1 ;
 
-initial 
+initial
   begin
     #15;
     if(value1 !== 4'h5)
-      $display("FAILED - 3.1.3D always force reg_lvalue = constant;"); 
+      $display("FAILED - 3.1.3D always force reg_lvalue = constant;");
     else
       $display("PASSED");
     $finish;
@@ -38,5 +38,3 @@ initial
 always #10 force value1 = 4'h5;
 
 endmodule
-
-

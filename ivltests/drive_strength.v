@@ -76,7 +76,7 @@ module drive_strength;
   assign (highz1, strong0) hz1pu0 = 1'b1;
   assign (highz1, strong0) hz1we0 = 1'b1;
   assign (highz1, strong0) hz1hz0 = 1'b1;
-  
+
   /* supply assignments */
   assign (supply1, supply0) su1su0 = 1'b0;
   assign (supply1, supply0) st1su0 = 1'b0;
@@ -118,7 +118,7 @@ module drive_strength;
       $dumpfile ("verilog.dump");
       $dumpvars (0, drive_strength);
 `endif
-      
+
       /* check all values for 1/x/0 */
       #1;	// Give things a chance to evaluate!!!
       if ((su1su0 !== 1'bx) ||
@@ -166,8 +166,5 @@ module drive_strength;
       bug_fix = 0;
     end
 `endif // ifdef BUG_FIX
-  
+
 endmodule
-
-
-

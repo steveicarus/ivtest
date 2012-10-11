@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (c) Tony Bybell 1999-2000.
  *
  * This program is free software; you can redistribute it and/or
@@ -44,10 +44,10 @@ hptr bsearch_node(nptr n, TimeType key)
 max_compare_time=-2; max_compare_pos=NULL; max_compare_index=NULL;
 
 bsearch(&key, n->harray, n->numhist, sizeof(hptr), compar_histent);
-if((!max_compare_pos)||(max_compare_time<0)) 
+if((!max_compare_pos)||(max_compare_time<0))
 	{
 	max_compare_pos=n->harray[1]; /* aix bsearch fix */
-	max_compare_index=&(n->harray[1]); 
+	max_compare_index=&(n->harray[1]);
 	}
 
 return(max_compare_pos);
@@ -73,4 +73,3 @@ if ((!ascii)||(!strlen(ascii))) return(NULL);
 rc=(struct symbol **)bsearch(ascii, obj->facs, obj->numfacs, sizeof(struct symbol *), compar_facs);
 if(rc) return(*rc); else return(NULL);
 }
-

@@ -22,5 +22,3 @@ module test ();
    end // initial begin
 
 endmodule
-
- 	  	 

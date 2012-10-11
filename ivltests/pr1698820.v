@@ -16,5 +16,3 @@ module top;
     $fclose(fp);
   end
 endmodule
-
- 	  	 

@@ -38,9 +38,9 @@ module top ;
 
   initial
 	  begin
-  	#60;
+	#60;
 	  forever #3 clk = ~clk ; // 16Mhz
-  	end
+	end
 
   always @( posedge clk )
     begin
@@ -51,10 +51,9 @@ module top ;
     $display ("%x %x", x_os_integ, y_os_integ);
     end
 
-  initial 
+  initial
     begin
-    #200 $finish ; 
+    #200 $finish ;
     end
 
 endmodule
-

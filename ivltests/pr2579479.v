@@ -1,4 +1,3 @@
-
 // Based on pr2579479
 
 module main;

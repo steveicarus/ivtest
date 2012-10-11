@@ -1,12 +1,11 @@
-
 module main();
 
    reg [34:0] my_reg;
-   reg 	      error;
+   reg	      error;
    reg [34:0] ref_val;
    reg [34:0] ref_val2;
    reg [7:0]  count;
-   
+
 
    initial
       begin
@@ -20,7 +19,7 @@ module main();
 
 	 ref_val2 = 35'h7fffffffff;
 	 $display("*:%d", ref_val2);
-	 
+
 	 // Trivial test to see that small unsized integers still work.
 	 my_reg = 100;
 	 if (my_reg != 'h64)
@@ -117,7 +116,7 @@ module main();
 	 // test.
 `else
 	 // Unsized integers bigger than 32 bits are truncated...
-	 // Here all the bits are set. Since there is no 'd prefix, 
+	 // Here all the bits are set. Since there is no 'd prefix,
 	 // it will be sign extended later on.
 	 my_reg = 17179869183;
 	 $display("7:%d", my_reg);
@@ -150,11 +149,11 @@ module main();
 	 if (error==1)
 	    begin
 	       $display("FAILED");
-	    end 
+	    end
 	 else
 	    begin
 	       $display("PASSED");
-	    end 
+	    end
 
 	 $finish;
       end

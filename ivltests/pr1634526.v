@@ -1,4 +1,3 @@
-
 /* pr1634526.v */
 
 module test;
@@ -18,5 +17,3 @@ module test;
     minus1 = value - 1;
   endfunction
 endmodule
-
- 	  	 

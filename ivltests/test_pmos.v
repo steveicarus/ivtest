@@ -72,93 +72,92 @@ initial begin
 
   failed = 0;
 
-  if (t0 !== gnd) 
-  begin 
+  if (t0 !== gnd)
+  begin
       failed = 1;
       $display ("FAILED: pmos s:%d g:%d d:%d expected:0", gnd, gnd, t0 );
   end
 
-  if (t1 !== z) 
-  begin 
+  if (t1 !== z)
+  begin
       failed = 1;
       $display ("FAILED: pmos s:%d g:%d d:%d expected:z", gnd, vdd, t1 );
   end
-  if (t2 !== StL) 
-  begin 
+  if (t2 !== StL)
+  begin
       failed = 1;
       $display ("FAILED: pmos s:%d g:%d d:%d expected:StL", gnd, x, t2 );
   end
-  if (t3 !== StL) 
-  begin 
+  if (t3 !== StL)
+  begin
       failed = 1;
       $display ("FAILED: pmos s:%d g:%d d:%d expected:StL", gnd, z, t3 );
   end
 
-  if (t4 !== 1'b1) 
-  begin 
+  if (t4 !== 1'b1)
+  begin
       failed = 1;
       $display ("FAILED: pmos s:%d g:%d d:%d expected:1", vdd, gnd, t4 );
   end
-  if (t5 !== z) 
-  begin 
+  if (t5 !== z)
+  begin
       failed = 1;
       $display ("FAILED: pmos s:%d g:%d d:%d expected:z", vdd, vdd, t5 );
   end
-  if (t6 !== StH) 
-  begin 
+  if (t6 !== StH)
+  begin
       failed = 1;
       $display ("FAILED: pmos s:%d g:%d d:%d expected:StH", vdd, x, t6 );
   end
-  if (t7 !== StH) 
-  begin 
+  if (t7 !== StH)
+  begin
       failed = 1;
       $display ("FAILED: pmos s:%d g:%d d:%d expected:StH", vdd, z, t7 );
   end
 
-  if (t8 !== 1'bx) 
-  begin 
+  if (t8 !== 1'bx)
+  begin
       failed = 1;
       $display ("FAILED: pmos s:%d g:%d d:%d expected:x", x, gnd, t8 );
   end
-  if (t9 !== 1'bz) 
-  begin 
+  if (t9 !== 1'bz)
+  begin
       failed = 1;
       $display ("FAILED: pmos s:%d g:%d d:%d expected:z", x, vdd, t9 );
   end
-  if (ta !== 1'bx) 
-  begin 
+  if (ta !== 1'bx)
+  begin
       failed = 1;
       $display ("FAILED: pmos s:%d g:%d d:%d expected:x", x, x, ta );
   end
-  if (tb !== 1'bx) 
-  begin 
+  if (tb !== 1'bx)
+  begin
       failed = 1;
       $display ("FAILED: pmos s:%d g:%d d:%d expected:x", x, z, tb );
   end
 
-  if (tc !== 1'bz) 
-  begin 
+  if (tc !== 1'bz)
+  begin
       failed = 1;
       $display ("FAILED: pmos s:%d g:%d d:%d expected:z", z, gnd, tc );
   end
-  if (td !== 1'bz) 
-  begin 
+  if (td !== 1'bz)
+  begin
       failed = 1;
       $display ("FAILED: pmos s:%d g:%d d:%d expected:z", z, vdd, td );
   end
-  if (te !== 1'bz) 
-  begin 
+  if (te !== 1'bz)
+  begin
       failed = 1;
       $display ("FAILED: pmos s:%d g:%d d:%d expected:z", z, x, te );
   end
-  if (tf !== 1'bz) 
-  begin 
+  if (tf !== 1'bz)
+  begin
       failed = 1;
       $display ("FAILED: pmos s:%d g:%d d:%d expected:z", z, z, tf );
   end
 
-  if (failed == 0) 
+  if (failed == 0)
       $display ("PASSED");
 end
 endmodule
-

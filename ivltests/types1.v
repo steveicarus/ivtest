@@ -1,4 +1,3 @@
-
 /*
  * This is a simplified version of the test program for issue 1323691
  * from the iverilog bugs database.
@@ -7,16 +6,16 @@
 
 
 module main;
-		    
-   parameter early_empty=1;
-   
-   reg 	     re;
 
-   reg 	     rc_isEmpty, rc_willBeEmpty;
+   parameter early_empty=1;
+
+   reg	     re;
+
+   reg	     rc_isEmpty, rc_willBeEmpty;
    wire      empty;
 
-   assign    empty = (early_empty!=0) ? 
-			        rc_willBeEmpty && re || rc_isEmpty : 
+   assign    empty = (early_empty!=0) ?
+			        rc_willBeEmpty && re || rc_isEmpty :
 			        rc_isEmpty;
 
 

@@ -32,21 +32,21 @@ endfunction
 wire [3:0] val1;
 assign val1 = myfunc(val2);
 
-initial 
+initial
   begin
     error = 0;
     val2 = 4'h0;
     # 1 ;
     if(val1 !== 4'b0)
-      begin 
+      begin
         $display("FAILED - function3.11D - function within continuous assign(1)");
         error = 1;
       end
-    
-    val2 = 32'h8; 
+
+    val2 = 32'h8;
     # 1 ;
     if(val1 !== val2)
-      begin 
+      begin
         $display("FAILED - function3.11D - function within continuous assign(2)");
         error = 1;
       end

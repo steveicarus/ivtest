@@ -29,7 +29,7 @@ module mangle;
    reg \abc ;
    reg \`~!-_=+\|[]{};:'"",./<>? ;
    reg cde ;
-   
+
    initial
      begin
 	abc <= 1;
@@ -38,6 +38,5 @@ module mangle;
 	$display("PASSED");
 	$finish;
      end
-   
-endmodule
 
+endmodule

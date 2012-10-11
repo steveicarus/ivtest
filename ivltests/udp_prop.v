@@ -1,18 +1,18 @@
 module test;
 
    reg  cp;
-   reg 	d;
+   reg	d;
    wire q;
-   
+
    dff ff(q, cp, d);
-   
+
    always begin #5 cp=0; #5 cp=1; end
 
    always
      begin
 	@(negedge cp)
 	  d <= ~d;
-	
+
 	@(posedge cp)
 	  if (q !== 'bx && d === q)
 	    begin
@@ -21,7 +21,7 @@ module test;
 	    end
      end
 
-   initial 
+   initial
      begin
 	#1 d <= 1;
 	#22;
@@ -36,7 +36,7 @@ endmodule
 primitive dff(q, cp, d);
    output q;
    input  cp, d;
-   reg 	  q;
+   reg	  q;
 
    table
    // (cp)  d  :  q  :  q  ;
@@ -52,4 +52,3 @@ primitive dff(q, cp, d);
    endtable
 
 endprimitive
-

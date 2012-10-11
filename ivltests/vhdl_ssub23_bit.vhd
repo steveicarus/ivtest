@@ -7,10 +7,9 @@ entity ssub23 is
     b_i : in signed (22 downto 0);
     c_o : out signed (22 downto 0)
   );
-end entity ssub23; 
+end entity ssub23;
 
 architecture rtl of ssub23 is
 begin
   c_o <= a_i - b_i;
 end architecture rtl;
-

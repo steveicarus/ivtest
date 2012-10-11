@@ -10,7 +10,7 @@ module top;
   // The .alias/real temporary is not needed.
   // The .sfunc should connect directly to the "results" net.
   // The .part is not needed and is causing a core dump.
-  // 
+  //
   // Once these are fixed it appears there is a concurrency issues
   assign result = $bitstoreal(bits);
 

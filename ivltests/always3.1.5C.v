@@ -18,11 +18,11 @@
 //
 //  SDW - Validate always if ( constant) statement_1 else statement_2 ;
 
-module main ; 
+module main ;
 
 reg [3:0] value1 ;
 
-initial 
+initial
 	begin
            value1 = 0;
            # 5 ;
@@ -30,7 +30,7 @@ initial
                 $display("FAILED - always 3.1.5C always if ( constant) statementelse ;");
            else
                 $display("PASSED");
-     	   $finish;                                                            
+	   $finish;
         end
 
 always if( 1'b1) begin
@@ -40,5 +40,3 @@ always if( 1'b1) begin
        else value1 = 0 ;
 
 endmodule
-
-

@@ -72,5 +72,5 @@ module top;
     input [31:0] in;
     int_func = in * 2;
   endfunction
-   
+
 endmodule

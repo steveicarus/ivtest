@@ -1,4 +1,3 @@
-
 /*
  * From PR#379
  */
@@ -39,5 +38,3 @@ always @(VoltageOK or CounterReset) // CounterReset should make an error
    endcase
 
 endmodule
-
-

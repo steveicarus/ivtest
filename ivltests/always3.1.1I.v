@@ -16,15 +16,15 @@
 //    along with this program; if not, write to the Free Software
 //    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 //
-//  SDW - Validate always reg_lvalue = @ (event_expression)  constant 
+//  SDW - Validate always reg_lvalue = @ (event_expression)  constant
 //
 
-module main ; 
+module main ;
 
 reg [3:0] value1 ;
 reg event_var ;
 
-initial 
+initial
 begin
   # 2 ;
   value1 = 5'h 0 ;
@@ -36,26 +36,24 @@ begin
   event_var = 1'b1 ;
   #5 ;
 end
-  
-initial 
-  begin			// Should be xxxx at initial time 
+
+initial
+  begin			// Should be xxxx at initial time
     if(value1 !== 4'bxxxx)
-  	$display("FAILED - always reg_lvalue = @ (event_expression) constant \n"); 
+	$display("FAILED - always reg_lvalue = @ (event_expression) constant \n");
     # 6 ;
-    if(value1 != 4'h5) 	// Time 5 should see a change of 0 to 1 
-  	$display("FAILED - always reg_lvalue = @ event_identifier boolean_expression\n"); 
+    if(value1 != 4'h5)	// Time 5 should see a change of 0 to 1
+	$display("FAILED - always reg_lvalue = @ event_identifier boolean_expression\n");
     # 5 ;
-    if(value1 != 4'h5) 	// Time 5 should see a change of 0 to 1 
-  	$display("FAILED - always reg_lvalue = @ event_identifier boolean_expression\n"); 
+    if(value1 != 4'h5)	// Time 5 should see a change of 0 to 1
+	$display("FAILED - always reg_lvalue = @ event_identifier boolean_expression\n");
         begin
           $display("PASSED\n");
           $finish ;
         end
   end
 
-always value1 = @ (event_var) 4'h5 ; 
+always value1 = @ (event_var) 4'h5 ;
 
 
 endmodule
-
-

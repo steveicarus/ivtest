@@ -2,24 +2,24 @@
 Steve,
       I have small 8bit CPU working in Iverilog, it works if I
       change a line similar to the one below in the test case to
-      
+
       assign result = (data[0] | data[1])  ? 1:0;
 
-      using the test case below I get, 
- 
-      elab_net.cc:1368: failed assertion `expr_sig->pin_count() == 1'  
-  
+      using the test case below I get,
+
+      elab_net.cc:1368: failed assertion `expr_sig->pin_count() == 1'
+
       when compiling using the standard "verilog bug.v"  (verilog-20000519)
-      
-      This works fine in XL. 
+
+      This works fine in XL.
 
    Regards
- 
+
       Gerard.
- 
+
  PS thanks for fixing the $monitor function. It works as XL,
     as long as I pipe the output through uniq (./stimexe | uniq)
- 
+
 
  */
 
@@ -28,13 +28,13 @@ module stim;
    wire [1:0] data;
    wire       result;
 
-   
+
   assign result = data ? 1:0;
-  
+
   initial
        $display("PASSED");
-   
-   
+
+
 endmodule // stim
 
 

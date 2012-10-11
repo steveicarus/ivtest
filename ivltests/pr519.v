@@ -45,5 +45,3 @@ module main;
   end // initial begin
 
 endmodule
-
-

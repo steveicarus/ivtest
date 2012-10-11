@@ -55,19 +55,19 @@ reg rc;
 assign c=a*b;
 multiplier #(`W) mpy(a,b,s);
 
-initial 
+initial
 begin
 
-rc=0;	
+rc=0;
 a={{`W-1{1'b0}}, 1'b1};		// walking 1s
 for(i=0;i<`W;i=i+1)
 	begin
 	b={{`W-1{1'b0}}, 1'b1};
 	for(j=0;j<`W;j=j+1)
 		begin
-                #1;			 
+                #1;
 		d=a*b;
-		if ((c!=d)||(c!=s)) 
+		if ((c!=d)||(c!=s))
 			begin
 			$display("a=%h b=%h c=%h d=%h s=%h", a,b,c,d,s);
 			rc=1;
@@ -83,7 +83,7 @@ for(i=0;i<`W;i=i+1)
 	b={{`W-1{1'b1}}, 1'b0};
 	for(j=0;j<`W;j=j+1)
 		begin
-                #1;			 
+                #1;
 		d=a*b;
 		if ((c!=d)||(c!=s))
 			begin
@@ -101,7 +101,7 @@ for(i=0;i<`W;i=i+1)
 	b={{`W-2{1'b0}}, 2'b11};
 	for(j=0;j<`W;j=j+1)
 		begin
-                #1;			 
+                #1;
 		d=a*b;
 		if ((c!=d)||(c!=s))
 			begin
@@ -119,7 +119,7 @@ for(i=0;i<`W;i=i+1)
 	b={{`W-2{1'b1}}, 2'b00};
 	for(j=0;j<`W;j=j+1)
 		begin
-                #1;			 
+                #1;
 		d=a*b;
 		if ((c!=d)||(c!=s))
 			begin
@@ -137,7 +137,7 @@ for(i=0;i<`W;i=i+1)
 	b={{`W-3{1'b0}}, 3'b101};
 	for(j=0;j<`W;j=j+1)
 		begin
-                #1;			 
+                #1;
 		d=a*b;
 		if ((c!=d)||(c!=s))
 			begin
@@ -155,7 +155,7 @@ for(i=0;i<`W;i=i+1)
 	b={{`W-3{1'b1}}, 3'b010};
 	for(j=0;j<`W;j=j+1)
 		begin
-                #1;			 
+                #1;
 		d=a*b;
 		if ((c!=d)||(c!=s))
 			begin

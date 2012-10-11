@@ -1,4 +1,3 @@
-
 /*
  * This program is derived from iverilog issue # 1327436.
  */
@@ -19,7 +18,7 @@ initial begin
      $finish;
   end
 
-  #79 
+  #79
   APAD=25'h1555555;
 
   #19 if (AIN !== 25'h1ffffff) begin

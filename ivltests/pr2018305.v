@@ -5,4 +5,3 @@ module top;
   initial if (with_range != 63 || no_range != 1) $display("FAILED");
   else $display("PASSED");
 endmodule
-

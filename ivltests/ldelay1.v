@@ -38,7 +38,7 @@ module test;
 	   end
       end
    endtask
-   
+
    initial
      begin
 	ok.error = 0;
@@ -64,4 +64,3 @@ module test;
 	  $display("PASSED");
      end
 endmodule
-

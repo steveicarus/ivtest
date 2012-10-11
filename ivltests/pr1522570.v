@@ -1,5 +1,3 @@
-
-
 module main;
 
    reg signed [5:0] GAIN = 2;

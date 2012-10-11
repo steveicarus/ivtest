@@ -1,4 +1,3 @@
-
 module test;
 
    parameter       some = 4;
@@ -21,7 +20,7 @@ module test;
 	end
    endgenerate
 
-   integer 	  idx;
+   integer	  idx;
    initial #1 begin
       for (idx = 0 ; idx < some ;  idx = idx+1) begin
 	 if (flag1[idx] !== 1'bx) begin
@@ -34,5 +33,3 @@ module test;
    end
 
 endmodule
-
- 	  	 

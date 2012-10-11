@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (c) Tony Bybell 1999-2000.
  *
  * This program is free software; you can redistribute it and/or
@@ -10,7 +10,7 @@
 #ifndef VCD_VCD_H
 #define VCD_VCD_H
 
-#include <stdio.h> 
+#include <stdio.h>
 #include <stdlib.h>
 
 #ifndef _MSC_VER
@@ -39,7 +39,7 @@ struct symbol *val;
 };
 
 struct slist
-{  
+{
 struct slist *next;
 char *str;
 int len;

@@ -29,7 +29,7 @@
 //
 //  NOTES       :   It seems that Icarus Verilog 0.4 does not evaluate
 //                  moderately complex parameter statements properly.
-//                  
+//
 //****************************************************************************
 
 module parameter_test;

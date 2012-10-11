@@ -19,19 +19,17 @@
 //  SDW - Validate always # (mintypmax_dly) reg_lvalue ;
 //  D:    Note that initial has to be before always to execute!
 
-module main ; 
+module main ;
 
 reg [3:0] value1 ;
 
-initial 
+initial
 	begin
           #30;
           $display("PASSED\n");
-     	  $finish;                                                            
+	  $finish;
         end
 
 always # (3:10:15) ;
 
 endmodule
-
-

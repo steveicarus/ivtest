@@ -97,4 +97,3 @@ module SPDT_RELAY (COIL1, COIL2, ARM, NC, NO);
   tranif1 t1 (ARM,NC,coil_off);
   tranif1 t2 (ARM,NO,coil_on);
 endmodule
-

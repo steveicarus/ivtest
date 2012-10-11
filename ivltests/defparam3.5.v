@@ -21,8 +21,8 @@
 module module_a (out0,in0);
 
 input		in0;
-output [5:0] 	out0;
- 
+output [5:0]	out0;
+
 parameter [5:0] ident0 = 0;
 parameter [5:0] ident1 = 5'h11;
 
@@ -53,7 +53,7 @@ endmodule // module_b
 
 module main ();
 
-reg        in0,in1; 
+reg        in0,in1;
 reg	   error;
 wire [5:0] out0,out1;
 
@@ -71,7 +71,7 @@ initial
      #1 ;
      in0 = 0;
      #1 ;
-     if(out0 != 5'h11) 
+     if(out0 != 5'h11)
        begin
           $display("FAILED - defparam3.5A - Defparam testmodA.ident0");
           $display("out0 = %h",out0);
@@ -80,7 +80,7 @@ initial
      #1 ;
      in0 = 1;
      #1 ;
-     if(out0 != 5'h4) 
+     if(out0 != 5'h4)
        begin
           $display("FAILED - defparam3.5A - Defparam testmodA.ident0");
           error = 1;
@@ -88,12 +88,12 @@ initial
      #1;
      in1 = 0;
      #1;
-     if(out0 != 5'h4) 	// Validate the 0 side didn't change!
+     if(out0 != 5'h4)	// Validate the 0 side didn't change!
        begin
           $display("FAILED - defparam3.5A - Defparam testmodA.ident0");
           error = 1;
        end
-     if(out1 != 5'h6) 
+     if(out1 != 5'h6)
        begin
           $display("FAILED - defparam3.5A - Defparam testmodB.ident1");
           error = 1;
@@ -101,7 +101,7 @@ initial
      #1;
      in1 = 1;
      #1;
-     if(out1 != 5'h5) 
+     if(out1 != 5'h5)
        begin
           $display("FAILED - defparam3.5A - Defparam testmodB.ident0");
           error = 1;
@@ -109,6 +109,6 @@ initial
 
 
      if(error == 0)
-       $display("PASSED");     
+       $display("PASSED");
   end
 endmodule // main

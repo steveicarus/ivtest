@@ -1,4 +1,3 @@
-
 /*
  * Based on bug report pr772.
  */
@@ -11,7 +10,7 @@ parameter kuku = "AAAAA";
 reg reset_b,clk;
 initial begin
       reset_b  = 0;
-      repeat (10) @(posedge clk);	
+      repeat (10) @(posedge clk);
       #1 reset_b = 1;
 end
 
@@ -29,8 +28,8 @@ always @(posedge clk or negedge reset_b)
   if (!reset_b) begin
   end
   else begin
-    if ((kuku=="RRRRR") || (kuku=="AAAAA") || (kuku=="BBBBB")) 
-      	$display("PASSED");
+    if ((kuku=="RRRRR") || (kuku=="AAAAA") || (kuku=="BBBBB"))
+	$display("PASSED");
     else $display("FAILED");
     $finish;
   end

@@ -1,4 +1,3 @@
-
 // pr1913918
 module test();
    parameter a  = 4'b1000;

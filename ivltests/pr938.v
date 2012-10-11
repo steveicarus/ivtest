@@ -1,4 +1,3 @@
-
 /*
  * This tests is based on PR#938. Check here that the
  * IEEE1364-2001 format for port declarations works for
@@ -25,9 +24,9 @@ module test;
       end
    end
 
-endmodule 
+endmodule
 
- 
+
 primitive prim_mux2(output out, input in1, input in0, input select);
 
 table
@@ -41,4 +40,4 @@ table
     ?   1      0 : 1;
 endtable
 
-endprimitive 
+endprimitive

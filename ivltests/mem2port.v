@@ -1,8 +1,8 @@
 /*
  * Bug report:
- * 
+ *
  * From: Hendrik <hendrik@humanistic.org>
- * Subject: gEDA: Pass array element into module in iverilog 0.5 
+ * Subject: gEDA: Pass array element into module in iverilog 0.5
  * To: geda-dev@seul.org
  * Date: Mon, 10 Sep 2001 11:53:04 +0800
  */
@@ -31,7 +31,7 @@ module speak(x1, x2, x3);
         always #100
                 $display ("%d: x1=%d, x2=%d, x3=%d", $time, x1, x2, x3);
 
-   integer 	    errors;
+   integer	    errors;
    initial
      begin
 	errors = 0;

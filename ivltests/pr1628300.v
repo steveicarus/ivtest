@@ -13,5 +13,3 @@ initial begin
 	$display("sin(", ax, ") is not really ", ay);
 end
 endmodule
-
- 	  	 

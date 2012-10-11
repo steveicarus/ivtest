@@ -1,4 +1,3 @@
-
 /* Based on PR#848 */
 
 module err ();
@@ -24,6 +23,3 @@ always @(posedge clk) begin
 end
 
 endmodule
-
-
-

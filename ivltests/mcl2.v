@@ -43,44 +43,44 @@ assign dpa_one= 1024'h1;
 assign const__1_24_=- 1024'h18;
 assign const__2_33_=- 1024'h21;
 
-/* mis.mcl:4 module mis (y, a, b); */ 
+/* mis.mcl:4 module mis (y, a, b); */
 
-/* mis.mcl:5 input signed [3:0] a, b; */ 
+/* mis.mcl:5 input signed [3:0] a, b; */
 
-/* mis.mcl:10 C0 = -24; */ 
+/* mis.mcl:10 C0 = -24; */
 
 assign C0= ((const__1_24_[4:0]-(const__1_24_[5]<<5)));
 
-/* mis.mcl:11 C1 = -33; */ 
+/* mis.mcl:11 C1 = -33; */
 
 assign C1= ((const__2_33_[5:0]-(const__2_33_[6]<<6)));
 
-/* mis.mcl:13 y = C0*a + C1*b; */ 
+/* mis.mcl:13 y = C0*a + C1*b; */
 
 assign y_1_= ((C0[6:0]-(C0[7]<<7))*(a[2:0]-(a[3]<<3))+
     (C1[6:0]-(C1[7]<<7))*(b[2:0]-(b[3]<<3)));
 
-/* mis.mcl:6 output signed [12:0] y; */ 
+/* mis.mcl:6 output signed [12:0] y; */
 
 assign y = y_1_[12:0];
 
-/* mis.mcl:4 module mis (y, a, b); */ 
+/* mis.mcl:4 module mis (y, a, b); */
 
-/* mis.mcl:13 y = C0*a + C1*b; */ 
+/* mis.mcl:13 y = C0*a + C1*b; */
 
 /*User Defined Aliases */
 endmodule
 
 module test_mis;
   reg [10:0] count;
-  
+
   reg clk;
   reg [3:0] a, b;
-  
+
   wire [12:0] y;
-  
+
   mis u1(y, a, b);
-  
+
   initial
   begin
     count = 0;
@@ -88,18 +88,18 @@ module test_mis;
     a = 0;
     b = 0;
   end
-  
+
   always
     #10 clk = ~clk;
-  
+
   always @(posedge clk)
   begin
     a = count[3:0];
     b = count[7:4];
-    
+
     #10
     $display("%h %h %h", a, b, y);
-    
+
     count = count + 1;
     if(count == 0)
       $finish;

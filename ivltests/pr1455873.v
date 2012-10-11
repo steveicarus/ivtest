@@ -1,4 +1,3 @@
-
 module main;
 
    reg [6:0] bar;

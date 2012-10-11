@@ -1,4 +1,3 @@
-
 /*
  * This test is based on PR#978.
  * Check that user defined functions can have real-valued

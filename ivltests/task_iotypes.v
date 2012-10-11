@@ -32,7 +32,7 @@ module gen_errors;
      integer B;
      output  C;
      integer C;
-     output  D;  
+     output  D;
      reg     D;
      inout [31:0] E;
      reg   [31:0] E;
@@ -42,7 +42,7 @@ module gen_errors;
        C = B;
      end
    endtask
- 
+
    initial begin
       $display("PASSED");
    end

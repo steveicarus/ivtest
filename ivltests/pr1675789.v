@@ -1,4 +1,3 @@
-
 module main;
 
    parameter NIBBLE = 4;

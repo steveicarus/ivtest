@@ -30,7 +30,7 @@ initial
   begin
     error = 0;
     I0 = -4'd12;
-    I1 = -32'd12; 
+    I1 = -32'd12;
     if(I0 !== 32'hfffffff4)
       begin
         $display("FAILED - negative decimal assignment failed. I0 s/b fffffff4, is %h",

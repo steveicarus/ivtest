@@ -1,4 +1,3 @@
-
 // pr1866215
 
 module A (CH, CL, SH, SL);
@@ -40,8 +39,8 @@ output	[31:0]	CL;
 output	[39:32]	SH;
 output	[31:0]	SL;
 
-   assign 	CH = 6'h33;
-   assign 	CL = 32'h55555555;
-   assign 	SH = 7'h66;
-   assign 	SL = 32'haaaaaaaa;
+   assign	CH = 6'h33;
+   assign	CL = 32'h55555555;
+   assign	SH = 7'h66;
+   assign	SL = 32'haaaaaaaa;
 endmodule

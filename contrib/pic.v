@@ -16,13 +16,13 @@
 //    along with this program; if not, write to the Free Software
 //    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 //
-// 
+//
 // SYNTHETIC PIC 2.0                                          4/23/98
 //
 //    This is a synthesizable Microchip 16C57 compatible
 //    microcontroller.  This core is not intended as a high fidelity model of
 //    the PIC, but simply a way to offer a simple processor core to people
-//    familiar with the PIC who also have PIC tools.  
+//    familiar with the PIC who also have PIC tools.
 //
 //    pictest.v  -   top-level testbench (NOT SYNTHESIZABLE)
 //    piccpu.v   -   top-level synthesizable module
@@ -67,7 +67,7 @@ reg [7:0]	y;
 
 // Internal declarations
 reg		addercout; // Carry out straight from the adder itself.
- 
+
 parameter  ALUOP_ADD        = 4'b0000;
 parameter  ALUOP_SUB        = 4'b1000;
 parameter  ALUOP_AND        = 4'b0001;
@@ -100,15 +100,15 @@ always @(y)
 always @(addercout or op)
    if (op == ALUOP_SUB) cout <= ~addercout; // Invert adder's carry to get borrow
    else                 cout <=  addercout;
-      
+
 endmodule
-// 
+//
 // SYNTHETIC PIC 2.0                                          4/23/98
 //
 //    This is a synthesizable Microchip 16C57 compatible
 //    microcontroller.  This core is not intended as a high fidelity model of
 //    the PIC, but simply a way to offer a simple processor core to people
-//    familiar with the PIC who also have PIC tools.  
+//    familiar with the PIC who also have PIC tools.
 //
 //    pictest.v  -   top-level testbench (NOT SYNTHESIZABLE)
 //    piccpu.v   -   top-level synthesizable module
@@ -136,7 +136,7 @@ module piccpu (
    portain,
    portbout,
    portcout,
-   
+
    debugw,
    debugpc,
    debuginst,
@@ -228,7 +228,7 @@ reg [7:0]	portc;	// Output PORT
 
 // ********** Instruction Related signals ******
 
-reg 		skip;  // When HI force a NOP (all zeros) into inst
+reg		skip;  // When HI force a NOP (all zeros) into inst
 
 reg  [2:0]	pcinsel;
 
@@ -272,7 +272,7 @@ wire		wwe;	// Write Enable for the W register.  Produced by Instruction Decoder.
 
 // *************  Internal Busses, mux connections, etc.  ********************
 
-// Bit decoder bits.  
+// Bit decoder bits.
 reg [7:0]	bd;	// Final decoder value after any polarity inversion.
 reg [7:0]	bdec;	// e.g. "Bit Decoded"
 
@@ -303,24 +303,24 @@ reg  [7:0]	ebus;
 reg  [7:0]	alua;
 reg  [7:0]	alub;
 wire [7:0]	aluout;
-wire 		alucin;
+wire		alucin;
 wire		alucout;
-wire       	aluz;
+wire		aluz;
 
 // ALU A and B mux selects.
 //
-parameter 	ALUASEL_W	= 2'b00,
+parameter	ALUASEL_W	= 2'b00,
 		ALUASEL_SBUS	= 2'b01,
 		ALUASEL_K	= 2'b10,
 		ALUASEL_BD	= 2'b11;
-		
-parameter 	ALUBSEL_W	= 2'b00,
+
+parameter	ALUBSEL_W	= 2'b00,
 		ALUBSEL_SBUS	= 2'b01,
 		ALUBSEL_K	= 2'b10,
 		ALUBSEL_1	= 2'b11;
 
 // ALU Operation codes.
-//		
+//
 parameter   ALUOP_ADD  = 4'b0000;
 parameter   ALUOP_SUB  = 4'b1000;
 parameter   ALUOP_AND  = 4'b0001;
@@ -335,35 +335,35 @@ parameter   ALUOP_SWAP = 4'b0111;
 // Instantiate each of our subcomponents
 //
 picregs  regs (
-   .clk		(clk), 
+   .clk		(clk),
    .reset	(reset),
-   .we  	(regfilewe),
+   .we		(regfilewe),
    .re		(regfilere),
-   .bank	(fileaddr[6:5]), 
+   .bank	(fileaddr[6:5]),
    .location	(fileaddr[4:0]),
-   .din		(regfilein), 
+   .din		(regfilein),
    .dout	(regfileout)
 );
 
 // Instatiate the ALU.
 //
 picalu   alu  (
-   .op         (aluop), 
-   .a          (alua), 
+   .op         (aluop),
+   .a          (alua),
    .b          (alub),
    .y          (aluout),
-   .cin        (status[0]), 
-   .cout       (alucout), 
+   .cin        (status[0]),
+   .cout       (alucout),
    .zout       (aluz)
 );
 
 // Instantiate the Instruction Decoder.  This is really just a lookup table.
-// Given the instruction, generate all the signals we need.  
+// Given the instruction, generate all the signals we need.
 //
 // For example, each instruction implies a specific ALU operation.  Some of
 // these are obvious such as the ADDW uses an ADD alu op.  Less obvious is
 // that a mov instruction uses an OR op which lets us do a simple copy.
-// 
+//
 // Data has to funnel through the ALU, which sometimes makes for contrived
 // ALU ops.
 //
@@ -391,8 +391,8 @@ assign	debugstatus = status;
 //
 // We implement the following:
 //    - The 5-bit fsel address is within a "BANK" which is 32 bytes.
-//    - The FSR bits 6:5 are the BANK select, so there are 4 BANKS, a 
-//      total of 128 bytes.  Minus the 8 special registers, that's 
+//    - The FSR bits 6:5 are the BANK select, so there are 4 BANKS, a
+//      total of 128 bytes.  Minus the 8 special registers, that's
 //      really 120 bytes.
 //    - The INDF register is for indirect addressing.  Referencing INDF
 //      uses FSR as the pointer.  Therefore, using INDF/FSR you address
@@ -403,7 +403,7 @@ assign	debugstatus = status;
 // The fsel address *may* be zero in which case, we are to do indirect
 // addressing, using FSR register as the 8-bit pointer.
 //
-// Otherwise, use the 5-bits of FSEL (from the Instruction itself) and 
+// Otherwise, use the 5-bits of FSEL (from the Instruction itself) and
 // 2 bank bits from the FSR register (bits 6:5).
 //
 always @(fsel or fsr) begin
@@ -420,17 +420,17 @@ always @(fsel or fsr) begin
    end
 end
 
-// Write Enable to Register File.  
+// Write Enable to Register File.
 // Assert this when the general fwe (write enable to *any* register) is true AND Register File
 //    address range is specified.
-//  
+//
 always @(regfilesel or fwe)
    regfilewe <= regfilesel & fwe;
 
 // Read Enable (this if nothing else, helps in debug.)
 // Assert if Register File address range is specified AND the ALU is actually using some
 //    data off the SBUS.
-//   
+//
 always @(regfilesel or aluasel or alubsel)
    regfilere <= regfilesel & ((aluasel == ALUASEL_SBUS) | (alubsel == ALUBSEL_SBUS));
 
@@ -459,7 +459,7 @@ always @(fileaddr) begin
          end
    endcase
 end
-  
+
 // *********** SBUS **************
 // The sbus (Source Bus) is the output of a multiplexor that takes
 // inputs from the Register File, and all other special registers
@@ -471,7 +471,7 @@ end
 always @(fsel or fsr or tmr0 or pc or status
          or porta or portb or portc or regfileout or ebus
          or specialsel or regfilesel or expsel) begin
-         
+
    // For our current mix of registers and peripherals, only the first 8 addresses
    // are "special" registers (e.g. not in the Register File).  As more peripheral
    // registers are added, they must be muxed into this MUX as well.
@@ -521,7 +521,7 @@ always @(aluout)
 
 always @(dbus)
    regfilein <= dbus;
-   
+
 // Drive the ROM address bus straight from the PC
 //
 always @(pc)
@@ -587,19 +587,19 @@ always @(inst or aluz) begin
    casex ({inst, aluz})
       13'b10??_????_????_?:    // A GOTO, CALL or RETLW instructions
          skip <= 1'b1;
-         
+
       13'b0110_????_????_1:    // BTFSC instruction and aluz == 1
          skip <= 1'b1;
-	
+
       13'b0111_????_????_0:    // BTFSS instruction and aluz == 0
          skip <= 1'b1;
-      
+
       13'b0010_11??_????_1:    // DECFSZ instruction and aluz == 1
          skip <= 1'b1;
-	
+
       13'b0011_11??_????_1:    // INCFSZ instruction and aluz == 1
          skip <= 1'b1;
-	
+
       default:
          skip <= 1'b0;
    endcase
@@ -638,7 +638,7 @@ always @(posedge clk) begin
       if (wwe) begin
          w <= dbus;
       end
-   end   
+   end
 end
 
 // ************ Writes to various Special Registers (fsel between 0 and 7)
@@ -676,7 +676,7 @@ always @(posedge clk) begin
             3'b101: if (~|(prescaler & 8'b00111111)) tmr0 <= tmr0 + 1;
             3'b110: if (~|(prescaler & 8'b01111111)) tmr0 <= tmr0 + 1;
             3'b111: if (~|(prescaler & 8'b11111111)) tmr0 <= tmr0 + 1;
-         endcase            
+         endcase
       end
    end
 end
@@ -733,7 +733,7 @@ always @(posedge clk) begin
 end
 
 // FSR Register  (Register #4)
-//            
+//
 always @(posedge clk) begin
    if (reset) begin
       fsr <= 8'h00;
@@ -756,7 +756,7 @@ always @(posedge clk) begin
    else begin
       if (isoption)
          option <= dbus;
-   end   
+   end
 end
 
 // PORTA Input Port   (Register #5)
@@ -769,7 +769,7 @@ always @(posedge clk) begin
    end
    else begin
       porta <= portain;
-   end   
+   end
 end
 
 // PORTB Output Port  (Register #6)
@@ -781,13 +781,13 @@ always @(posedge clk) begin
       if (fwe & specialsel & (fsel == PORTB_ADDRESS) & ~istris) begin
          portb <= dbus;
       end
-   end   
+   end
 end
 
 // Connect the output ports to the register output.
 always @(portb)
    portbout <= portb;
-   
+
 // PORTC Output Port  (Register #7)
 always @(posedge clk) begin
    if (reset) begin
@@ -797,13 +797,13 @@ always @(posedge clk) begin
       if (fwe & specialsel & (fsel == PORTC_ADDRESS) & ~istris) begin
          portc <= dbus;
       end
-   end   
+   end
 end
 
 // Connect the output ports to the register output.
 always @(portc)
    portcout <= portc;
- 
+
 // TRIS Registers
 always @(posedge clk) begin
    if (reset) begin
@@ -813,7 +813,7 @@ always @(posedge clk) begin
       if (fwe & specialsel & (fsel == PORTA_ADDRESS) & istris) begin
          trisa <= dbus;
       end
-   end   
+   end
 end
 
 always @(posedge clk) begin
@@ -824,7 +824,7 @@ always @(posedge clk) begin
       if (fwe & specialsel & (fsel == PORTB_ADDRESS) & istris) begin
          trisb <= dbus;
       end
-   end   
+   end
 end
 
 always @(posedge clk) begin
@@ -835,9 +835,9 @@ always @(posedge clk) begin
       if (fwe & specialsel & (fsel == PORTC_ADDRESS) & istris) begin
          trisc <= dbus;
       end
-   end   
+   end
 end
-  
+
 
 // ********** PC AND STACK *************************
 //
@@ -857,7 +857,7 @@ end
 //
 always @(pc)
    pcplus1 <= pc + 1;
-   
+
 parameter	PC_SELECT_PCPLUS1	= 3'b000,
 		PC_SELECT_K             = 3'b001,
 		PC_SELECT_STACK1        = 3'b010,
@@ -865,7 +865,7 @@ parameter	PC_SELECT_PCPLUS1	= 3'b000,
 		PC_SELECT_DBUS          = 3'b100,
 		PC_SELECT_RESET_VECTOR  = 3'b101;
 
-// 8:1 Data MUX into PC 
+// 8:1 Data MUX into PC
 always @(posedge clk) begin
    case (pcinsel) // synopsys parallel_case full_case
       3'b000:  pc <= pcplus1;
@@ -874,7 +874,7 @@ always @(posedge clk) begin
       3'b011:  pc <= stack2;
       3'b100:  pc <= dbus;
       3'b101:  pc <= RESET_VECTOR;
-      
+
       // Don't really carry about these...
       3'b110:  pc <= pc;
       3'b111:  pc <= pc;
@@ -917,23 +917,23 @@ always @(posedge clk) begin
       if (inst[11:8] == 4'b1001) begin
          case (stacklevel)
             2'b00:
-               // No previous CALLs 
+               // No previous CALLs
                begin
                   stack1 <= pc;
                   $display ("Write to STACK1: %0h", pc);
                end
             2'b01:
-               // ONE previous CALL 
+               // ONE previous CALL
                begin
                   stack2 <= pc;
                   $display ("Write to STACK2: %0h", pc);
                end
             2'b10:
-               // TWO previous CALLs -- This is illegal on the 16C5X! 
+               // TWO previous CALLs -- This is illegal on the 16C5X!
                begin
                   $display ("Too many CALLs!!");
                end
-            2'b11: 
+            2'b11:
                begin
                   $display ("Too many CALLs!!");
                end
@@ -949,7 +949,7 @@ end
 // increase the stack depth).  There are two stack registers, stack1 and stack2.
 // The stack1 register is used first (e.g. the first time a call is performed),
 // then stack2.  As CALLs are done, stacklevel increments.  Conversely, as
-// RETs are done, stacklevel goes down. 
+// RETs are done, stacklevel goes down.
 
 always @(posedge clk) begin
    if (reset == 1'b1) begin
@@ -981,7 +981,7 @@ end
 // The following is an example of customization.
 //
 // Example:  Create a read/write port located at address 7F.  It'll be 8-bits, where
-//           the upper 4 bits are outputs and the lower 4 bits are inputs.  
+//           the upper 4 bits are outputs and the lower 4 bits are inputs.
 //           Use indirect addressing to access it (INDF/FSR).  Just for fun, let's
 //           attach a special loop-back circuit between the outputs and inputs.
 //           Let's attach... say... a 4-bit adder.
@@ -1020,13 +1020,13 @@ always @(fileaddr or special_peripheral_readeable_bits) begin
 end
 
 endmodule
-// 
+//
 // SYNTHETIC PIC 2.0                                          4/23/98
 //
 //    This is a synthesizable Microchip 16C57 compatible
 //    microcontroller.  This core is not intended as a high fidelity model of
 //    the PIC, but simply a way to offer a simple processor core to people
-//    familiar with the PIC who also have PIC tools.  
+//    familiar with the PIC who also have PIC tools.
 //
 //    pictest.v  -   top-level testbench (NOT SYNTHESIZABLE)
 //    piccpu.v   -   top-level synthesizable module
@@ -1206,13 +1206,13 @@ end
 endmodule
 
 
-// 
+//
 // SYNTHETIC PIC 2.0                                          4/23/98
 //
 //    This is a synthesizable Microchip 16C57 compatible
 //    microcontroller.  This core is not intended as a high fidelity model of
 //    the PIC, but simply a way to offer a simple processor core to people
-//    familiar with the PIC who also have PIC tools.  
+//    familiar with the PIC who also have PIC tools.
 //
 //    pictest.v  -   top-level testbench (NOT SYNTHESIZABLE)
 //    piccpu.v   -   top-level synthesizable module
@@ -1255,10 +1255,10 @@ endmodule
 // So, the unique 16 registers in bank #1 are named r48 - r63 (I use decimal).  The
 // unique registers in bank #3 are therefore r112 - r127.  There is no r111 because,
 // remember, the lower 16 registers each each bank are all reall the same registers 0-15.
-// 
+//
 // Confused?!  The Data Book explains it better than I can.
 //
-//   bank location 
+//   bank location
 //     XX 00rrr  -  The special registers are not implemented in this register file.
 //     XX 01rrr  -  The 8 common words, just above the Special Regs, same for all Banks
 //     00 1rrrr  -  The 16 words unique to Bank #0
@@ -1266,11 +1266,11 @@ endmodule
 //     10 1rrrr  -  The 16 words unique to Bank #2
 //     11 1rrrr  -  The 16 words unique to Bank #3
 //
-//  So, 
+//  So,
 //     Special Regs are location[4:3] == 00
 //     Common Regs are  location[4:3] == 01
 //     Words in banks   location[4]   == 1
-// 
+//
 //
 //  I had problems trying to use simple register file declarations that
 //  would always, always work right, were synthesizable and allowed
@@ -1289,8 +1289,8 @@ input		we;
 input		re;
 input  [1:0]	bank;		// Bank 0,1,2,3
 input  [4:0]	location;	// Location
-input  [7:0]	din;		// Input 
-output [7:0]	dout;		// Output 
+input  [7:0]	din;		// Input
+output [7:0]	dout;		// Output
 
 //parameter	MAX_ADDRESS = 127;
 
@@ -1322,31 +1322,31 @@ integer cycle_counter;
 initial cycle_counter = 0;
 always @(negedge clk) begin
    if (re) begin
-`ifdef DEBUG_SHOWREADS   
+`ifdef DEBUG_SHOWREADS
       $display ("[%0d] Read:  data = %0h(hex), from bank #%0d(dec) location %0h", cycle_counter, dout, bank, location);
 `endif
    end
    if (we) begin
-`ifdef DEBUG_SHOWWRITES   
+`ifdef DEBUG_SHOWWRITES
       $display ("[%0d] Write: data = %0h(hex), to   bank #%0d(dec) location %0h", cycle_counter, din, bank, location);
 `endif
    end
    if (~reset) cycle_counter = cycle_counter + 1;
-end  
+end
 // synopsys translate_on
 
 // READ the Register File
 //
 always @(bank or location or re
-		or commonblockout 
-		or highblock0out 
-		or highblock1out 
-		or highblock2out 
+		or commonblockout
+		or highblock0out
+		or highblock1out
+		or highblock2out
 		or highblock3out) begin
-   if (re) begin		
+   if (re) begin
       if (location[4:3] == 2'b01) begin
          // This is the lower 8 words, common to all banks, just above special registers
-         dout <= commonblockout;	// Access to first 8 locations past Special Registers 
+         dout <= commonblockout;	// Access to first 8 locations past Special Registers
       end
       else begin
          if (location[4]) begin
@@ -1456,7 +1456,7 @@ always @(location or
       3'h7: commonblockout <= r15;
    endcase
 end
-      
+
 // Write to common block
 always @(posedge clk) begin
    if (we & commonblocksel) begin
@@ -1502,7 +1502,7 @@ always @(location or
       4'hF: highblock0out <= r31;
    endcase
 end
-      
+
 // Write to high block bank 0
 always @(posedge clk) begin
    if (we & highblock0sel) begin
@@ -1580,7 +1580,7 @@ always @(posedge clk) begin
       endcase
    end
 end
-      
+
 
 // **************** Highblock2 ****************
 
@@ -1758,19 +1758,19 @@ begin
    // Bank #3
    r112 = 0;
    r126 = 0;
-  
+
 end
 endtask
 `endif
-// synopsys translate_on 
+// synopsys translate_on
 endmodule
-// 
+//
 // SYNTHETIC PIC 2.0                                          4/23/98
 //
 //    This is a synthesizable Microchip 16C57 compatible
 //    microcontroller.  This core is not intended as a high fidelity model of
 //    the PIC, but simply a way to offer a simple processor core to people
-//    familiar with the PIC who also have PIC tools.  
+//    familiar with the PIC who also have PIC tools.
 //
 //    pictest.v  -   top-level testbench (NOT SYNTHESIZABLE)
 //    piccpu.v   -   top-level synthesizable module
@@ -1798,7 +1798,7 @@ parameter	TEST_NUMBER = 9;
 
 // *** Testing variables
 // Debug flags.
-integer		dbg_showporta;	// Are set in an 'initial' for default values, 
+integer		dbg_showporta;	// Are set in an 'initial' for default values,
 integer		dbg_showportb;	//    override in specific tests...
 integer		dbg_showportc;	// Setting to 1 will cause variable to be displayed.
 integer		dbg_showinst;
@@ -1864,7 +1864,7 @@ initial begin
    reset = 0;
 end
 
-  
+
 // Drive the clock input
 initial begin
    clk  = 0;
@@ -1885,7 +1885,7 @@ initial begin
    dbg_showw      = 0;
    dbg_showpc     = 0;
    dbg_showcycles = 0;
-   
+
    dbg_limitcycles = 1;
    dbg_maxcycles   = 50000;
 end
@@ -1903,7 +1903,7 @@ initial begin
       7: test7;
       8: test8;
       9: test9;
-      default: 
+      default:
          begin
             $display ("ERROR: Unknown Test Number: %0d", TEST_NUMBER);
             $finish;
@@ -1915,7 +1915,7 @@ task test1;
 begin
    $display ("SYNTHETIC PIC 2.0.  This is TEST #1");
    #1;
-   
+
    // Only Watch Port B
    dbg_showportb  = 1;
    dbg_showcycles = 1;
@@ -1994,12 +1994,12 @@ begin
 
    $readmemh ("TEST6.ROM", rom);
    #200;
-   
+
    repeat (20) begin
       porta = $random;
       #10000;
    end
-   
+
    $finish;
 end
 endtask
@@ -2058,7 +2058,7 @@ initial begin
    #1;
    // Don't start counting until after reset.
    @(negedge reset);
-   
+
    forever begin
       @(posedge clk);
       cycles = cycles + 1;
@@ -2067,7 +2067,7 @@ initial begin
             $display ("#Cycles = %0d", cycles);
          end
       end
-   
+
       if (dbg_limitcycles) begin
          if (cycles > dbg_maxcycles) begin
             $display ("Maximum cycles (%0d) Exceeded.  Halting simulation.", dbg_maxcycles);
@@ -2078,7 +2078,7 @@ initial begin
 end
 
 always @(romaddr) begin
-   if (dbg_showrom) 
+   if (dbg_showrom)
       $display ("ROM Address = %h, Data = %h", romaddr, romdata);
 end
 
@@ -2145,60 +2145,60 @@ initial begin
 	end
 	else if (debuginst[11:6] == 7'b0000_10) begin
 		if (piccpu_inst.d == 0)	$display ("%h SUBWF  f=0x%0h, W", last_pc, debuginst[4:0]);
-		else       	$display ("%h SUBWF  f=0x%0h, f", last_pc, debuginst[4:0]);
+		else		$display ("%h SUBWF  f=0x%0h, f", last_pc, debuginst[4:0]);
 	end
 
 	else if (debuginst[11:6] == 7'b0000_11) begin
 		if (piccpu_inst.d == 0)	$display ("%h DECF  f=0x%0h, W", last_pc, debuginst[4:0]);
-		else       	$display ("%h DECF  f=0x%0h, f", last_pc, debuginst[4:0]);
+		else		$display ("%h DECF  f=0x%0h, f", last_pc, debuginst[4:0]);
 	end
 	else if (debuginst[11:6] == 7'b0001_00) begin
 		if (piccpu_inst.d == 0)	$display ("%h IORWF  f=0x%0h, W", last_pc, debuginst[4:0]);
-		else       	$display ("%h IORWF  f=0x%0h, f", last_pc, debuginst[4:0]);
+		else		$display ("%h IORWF  f=0x%0h, f", last_pc, debuginst[4:0]);
 	end
 	else if (debuginst[11:6] == 7'b0001_01) begin
 		if (piccpu_inst.d == 0)	$display ("%h ANDWF  f=0x%0h, W", last_pc, debuginst[4:0]);
-		else       	$display ("%h ANDWF  f=0x%0h, f", last_pc, debuginst[4:0]);
+		else		$display ("%h ANDWF  f=0x%0h, f", last_pc, debuginst[4:0]);
 	end
 	else if (debuginst[11:6] == 7'b0001_10) begin
 		if (piccpu_inst.d == 0)	$display ("XORWF  f=0x%0h, W", last_pc, debuginst[4:0]);
-		else       	$display ("%h XORWF  f=0x%0h, f", last_pc, debuginst[4:0]);
+		else		$display ("%h XORWF  f=0x%0h, f", last_pc, debuginst[4:0]);
 	end
 	else if (debuginst[11:6] == 7'b0001_11) begin
 		if (piccpu_inst.d == 0)	$display ("%h ADDWF  f=0x%0h, W", last_pc, debuginst[4:0]);
-		else       	$display ("%h ADDWF  f=0x%0h, f", last_pc, debuginst[4:0]);
+		else		$display ("%h ADDWF  f=0x%0h, f", last_pc, debuginst[4:0]);
 	end
 	else if (debuginst[11:6] == 7'b0010_00) begin
 		if (piccpu_inst.d == 0)	$display ("%h MOVF  f=0x%0h, W", last_pc, debuginst[4:0]);
-		else       	$display ("%h MOVF  f=0x%0h, f", last_pc, debuginst[4:0]);
+		else		$display ("%h MOVF  f=0x%0h, f", last_pc, debuginst[4:0]);
 	end
 	else if (debuginst[11:6] == 7'b0010_01) begin
 		if (piccpu_inst.d == 0)	$display ("%h COMF  f=0x%0h, W", last_pc, debuginst[4:0]);
-		else       	$display ("%h COMF  f=0x%0h, f", last_pc, debuginst[4:0]);
+		else		$display ("%h COMF  f=0x%0h, f", last_pc, debuginst[4:0]);
 	end
 	else if (debuginst[11:6] == 7'b0010_10) begin
 		if (piccpu_inst.d == 0)	$display ("%h INCF  f=0x%0h, W", last_pc, debuginst[4:0]);
-		else       	$display ("%h INCF  f=0x%0h, f", last_pc, debuginst[4:0]);
+		else		$display ("%h INCF  f=0x%0h, f", last_pc, debuginst[4:0]);
 	end
 	else if (debuginst[11:6] == 7'b0010_11) begin
 		if (piccpu_inst.d == 0)	$display ("%h DECFSZ  f=0x%0h, W", last_pc, debuginst[4:0]);
-		else       	$display ("%h DECFSZ  f=0x%0h, f", last_pc, debuginst[4:0]);
+		else		$display ("%h DECFSZ  f=0x%0h, f", last_pc, debuginst[4:0]);
 	end
 	else if (debuginst[11:6] == 7'b0011_00) begin
 		if (piccpu_inst.d == 0)	$display ("%h RRF  f=0x%0h, W", last_pc, debuginst[4:0]);
-		else       	$display ("%h RRF  f=0x%0h, f", last_pc, debuginst[4:0]);
+		else		$display ("%h RRF  f=0x%0h, f", last_pc, debuginst[4:0]);
 	end
 	else if (debuginst[11:6] == 7'b0011_01) begin
 		if (piccpu_inst.d == 0)	$display ("%h RLF  f=0x%0h, W", last_pc, debuginst[4:0]);
-		else       	$display ("%h RLF  f=0x%0h, f", last_pc, debuginst[4:0]);
+		else		$display ("%h RLF  f=0x%0h, f", last_pc, debuginst[4:0]);
 	end
 	else if (debuginst[11:6] == 7'b0011_10) begin
 		if (piccpu_inst.d == 0)	$display ("%h SWAPF  f=0x%0h, W", last_pc, debuginst[4:0]);
-		else       	$display ("%h SWAPF  f=0x%0h, f", last_pc, debuginst[4:0]);
+		else		$display ("%h SWAPF  f=0x%0h, f", last_pc, debuginst[4:0]);
 	end
 	else if (debuginst[11:6] == 7'b0011_11) begin
 		if (piccpu_inst.d == 0)	$display ("%h INCFSZ  f=0x%0h, W", last_pc, debuginst[4:0]);
-		else       	$display ("%h INCFSZ  f=0x%0h, f", last_pc, debuginst[4:0]);
+		else		$display ("%h INCFSZ  f=0x%0h, f", last_pc, debuginst[4:0]);
 	end
 
 	// Bit-Oriented File Register Operations
@@ -2260,4 +2260,3 @@ end
 
 
 endmodule
-

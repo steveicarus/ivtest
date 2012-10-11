@@ -1,4 +1,3 @@
-
 /*
  * Exhaustive check of all the subtract results.
  */
@@ -9,7 +8,7 @@ module main;
 
    sub8 dut(.out(out), .A(A), .B(B));
 
-   reg 	     error = 0;
+   reg	     error = 0;
    integer   adx, bdx;
 
    initial begin

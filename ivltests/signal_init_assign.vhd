@@ -1,4 +1,3 @@
-
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -7,7 +6,7 @@ use ieee.std_logic_1164.all;
 
 entity test is
   generic (PARM : std_logic := '0');
-  port (clk : in std_logic;   
+  port (clk : in std_logic;
         src : in  std_logic;
         dst : out std_logic);
 end test;

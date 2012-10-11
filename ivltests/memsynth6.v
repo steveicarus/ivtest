@@ -1,8 +1,8 @@
 module main;
-	
+
    reg [7:0] mem [7:0], D;
    reg [3:0] radr, wadr;
-   reg 	     wr, clk;
+   reg	     wr, clk;
 
    /*
     * This implements the synchronous write port to the memory.

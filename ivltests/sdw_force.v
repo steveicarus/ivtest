@@ -17,10 +17,10 @@
 //    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 //
 // SDW - Force stmt validation
-//                                                           
+//
 // D: This code verifies the force statement
-// D: It is intended to be self checking. 
-//                                     
+// D: It is intended to be self checking.
+//
 
 module main ();
 
@@ -36,7 +36,7 @@ begin
   timer = 1;
   # 5 ;
 end
- 
+
 
 initial
   begin
@@ -44,7 +44,7 @@ initial
     #2 ;  // Validate that force occurs
     force timer = 0;
     if( timer == 1) working = 0;
-    #10 ; // Validate that force stays in effect 
+    #10 ; // Validate that force stays in effect
     if( timer == 1) working = 0;
   end
 

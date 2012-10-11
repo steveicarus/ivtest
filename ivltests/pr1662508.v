@@ -1,4 +1,3 @@
-
 // pr1662508.v
 
 `timescale 1ns / 1ns
@@ -51,5 +50,3 @@ always @(negedge clk) if (~we) begin
 end
 
 endmodule
-
- 	  	 

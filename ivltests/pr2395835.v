@@ -1,4 +1,3 @@
-
 module t();
 
    reg passed = 1;
@@ -27,4 +26,3 @@ module t();
 	  $display("PASSED");
      end
 endmodule
-

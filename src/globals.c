@@ -24,7 +24,7 @@ g->numfacs=0;
 g->regions=0;
 g->longestname=0;
 
-g->firstnode=NULL;  
+g->firstnode=NULL;
 g->curnode=NULL;
 
 g->hier_delimeter='.';
@@ -43,7 +43,7 @@ g->dumping_off=0;
 g->start_time=-1;
 g->end_time=-1;
 g->current_time=-1;
-g->time_scale=1; 
+g->time_scale=1;
 
 g->count_glitches=0;
 g->num_glitches=0;
@@ -58,7 +58,7 @@ g->rootv=NULL;
 g->slistroot=NULL;
 g->slistcurr=NULL;
 g->slisthier=NULL;
-g->slisthier_len=0; 
+g->slisthier_len=0;
 
 g->T_MAX_STR=1024;
 g->yytext=NULL;

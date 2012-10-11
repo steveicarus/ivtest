@@ -1,11 +1,10 @@
-
 `timescale  100 ps / 10 ps
 
 (* ivl_synthesis_cell *)
 module LD (Q, D, G);
 
    output    Q;
-   reg 	     q_out;
+   reg	     q_out;
 
    input     D, G;
 

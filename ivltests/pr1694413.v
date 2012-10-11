@@ -12,5 +12,3 @@ module test ();
    end
 
 endmodule
-
- 	  	 

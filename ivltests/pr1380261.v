@@ -8,7 +8,7 @@ reg b;
 reg signed c;
 reg d;
 
-always @(m, n, c) begin  
+always @(m, n, c) begin
     p <= m * n; // m and n are signed, so do signed multiply
     s <= m + b; // b is UNsigned, so do unsigned pad and add.
     d <= c == 1; // c and the literal 1 are signed, so do signed compare.

@@ -17,7 +17,7 @@ module main;
 
 always #50 clk = ~clk;
 initial begin
-   
+
 $monitor($time,"clk=%b,reset=%b,%b%b%b",clk,reset,data[1],data[2],data
 [3]);
    clk = 0;

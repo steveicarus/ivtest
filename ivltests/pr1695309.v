@@ -4,7 +4,7 @@ module main;
    parameter MSB = 7;
 
    wire [MSB:0] Z;
-   reg [MSB:0] 	A, B;
+   reg [MSB:0]	A, B;
    generate
       for (i = 0; i <= MSB; i = i+1)
 	begin: or2
@@ -32,5 +32,3 @@ module OR2 (Z, A, B);
 
    or (Z, A, B);
 endmodule
-
- 	  	 

@@ -3,14 +3,14 @@
  * correctly.
  */
 
-module testbench;  
+module testbench;
   reg d, clk, rst, enable;
   wire q, q_bar;
 
   dff uut(q, q_bar, d, clk, rst);
 
   initial clk <= 0;
- 
+
   always @(clk)
     if (enable)
       #1 clk <= !clk;
@@ -45,14 +45,14 @@ module testbench;
     enable <= 0;  // Alternative to using $finish
     $display("PASSED");
   end
-  
+
 endmodule // testbench
 
 module dff(q, q_bar, d, clk, rst);
   output q, q_bar;
   input d, clk, rst;
   reg q;
-  
+
   always @(posedge clk or posedge rst)
     if (rst)
       q <= 1'b0;
@@ -60,5 +60,5 @@ module dff(q, q_bar, d, clk, rst);
       q <= d;
 
   not(q_bar, q);
-  
+
 endmodule // dff

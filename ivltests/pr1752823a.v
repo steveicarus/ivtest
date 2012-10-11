@@ -8,5 +8,3 @@ module top;
     $display("+0=%f and -0=%f.", zero, mzero);
   end
 endmodule
-
- 	  	 

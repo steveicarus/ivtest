@@ -1,8 +1,7 @@
-
 module main;
 
    wire [31:0] DB;
-   reg 	       E;
+   reg	       E;
 
    X2 U (.DB(DB[31:8]), .E(E));
    Y1 V (.DB(DB[7:0]),  .E(E));

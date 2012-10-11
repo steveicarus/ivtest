@@ -1,4 +1,3 @@
-
 /*
  * This program tests the simple parameter override from the command
  * line. This program should be compiled with the -Pmain.foo=2 argument.

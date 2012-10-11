@@ -1,4 +1,3 @@
-
 module test;
 
    reg [3:0] foo;

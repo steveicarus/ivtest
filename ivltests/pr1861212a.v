@@ -1,6 +1,6 @@
 module top2;
   reg real vo;
- 
+
   initial begin
     vo = 3.3;
     #1000 vo = 4.5776;

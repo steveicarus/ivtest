@@ -29,8 +29,8 @@ module test;
         x <= -y;
 
   always #2 clk = ~clk;
-     
-  initial 
+
+  initial
     begin
        clk = 0;
        error = 0;
@@ -50,11 +50,11 @@ module test;
          begin
            error = 1;
 	   $display("FAILED - X should still be EEEE_EEEF, rather x=%h",x);
-	 end    
+	 end
 
        #10;
        if(error == 0)
-	  $display("PASSED");      
+	  $display("PASSED");
 
        $finish ;
     end

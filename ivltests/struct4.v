@@ -1,4 +1,3 @@
-
 module main;
 
    // Declare word1 as a VARIABLE

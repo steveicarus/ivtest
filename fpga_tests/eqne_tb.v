@@ -1,4 +1,3 @@
-
 module main;
 
    wire eq1, eq2, eq5;

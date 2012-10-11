@@ -1,9 +1,9 @@
 `define PERIOD 10
 
 module main;
-   reg 	   CLK;
+   reg	   CLK;
    integer counter;
-   
+
    initial begin		// reset and clock generator
       counter = 0;
       CLK = 0;

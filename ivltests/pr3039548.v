@@ -1,5 +1,5 @@
 module check_this;
-   
+
 reg [5:0] offset;
 reg [9:0] enablemask;
    initial begin

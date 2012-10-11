@@ -22,14 +22,14 @@
 // PR#205
 
 module main;
-   
+
    function f;
       input a;
       begin
          f = a;
       end
    endfunction
-   
+
    reg r;
 
    initial
@@ -37,5 +37,5 @@ module main;
         r <= f(32'b 101);
         $display("PASSED");
      end
-   
+
 endmodule

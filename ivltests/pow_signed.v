@@ -1,7 +1,7 @@
 module top;
   reg pass;
   integer in1, in2, res;
- 
+
   initial begin
     pass = 1'b1;
 

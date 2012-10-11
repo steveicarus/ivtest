@@ -1,9 +1,8 @@
-
 module main;
 
    reg [7:0] data_i;
    reg [2:0] addr;
-   reg 	     clk, rst, wr;
+   reg	     clk, rst, wr;
 
    reg [7:0] data_o, buff[0:7];
 

@@ -1,4 +1,3 @@
-
 /*
  * This test program catches the essence of PR#1072
  */

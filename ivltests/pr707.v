@@ -28,4 +28,3 @@ module test;
     end
     mux udp1(w1, r1, r2, r3, /* foo */);
 endmodule
-

@@ -3,7 +3,7 @@
 module top;
    reg [63:0] in1,in2;
    reg [63:0] out;
-   
+
    initial begin
       in1 = 64'hffffffffffffffff;
       in2 = 64'hfffffffffffffff7;

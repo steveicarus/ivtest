@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (c) Tony Bybell 1999-2000.
  *
  * This program is free software; you can redistribute it and/or
@@ -18,5 +18,3 @@ char *bsearch_trunc(char *ascii, int maxlen);
 struct symbol *bsearch_facs(struct globals *obj, char *ascii);
 
 #endif
-
-

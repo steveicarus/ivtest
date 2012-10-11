@@ -1,13 +1,12 @@
-
 module main;
 
    parameter CACHE_RAM = 128;
    parameter ADR_WIDTH = 7;
-   
+
    reg [31:0] buff[0:CACHE_RAM], data_o, data_i;
 
    reg [ADR_WIDTH-1:0] addr;
-   reg 	      clk, rst, wr;
+   reg	      clk, rst, wr;
 
    (* ivl_synthesis_on *)
    always @(posedge clk)

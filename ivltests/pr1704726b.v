@@ -13,7 +13,7 @@ module top;
       endtask
     end else begin: name_ti
       task name_task;
-        begin 
+        begin
           $display("FAILED in task from scope name_ti");
           pass = 1'b0;
         end
@@ -31,7 +31,7 @@ module top;
       end
       default: begin: name_tc
         task name_task;
-          begin 
+          begin
             $display("FAILED in task from scope name_tc");
             pass = 1'b0;
           end

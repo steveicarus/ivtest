@@ -1,4 +1,3 @@
-
 // This demonstrates some errors.
 program main;
 

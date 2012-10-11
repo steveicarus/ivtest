@@ -75,7 +75,7 @@ static PLI_INT32 test_next_calltf(PLI_BYTE8 *name)
 static void register_functions(void)
 {
       s_vpi_systf_data tf_data;
-  
+
       tf_data.type      = vpiSysTask;
       tf_data.tfname    = "$test_next_sim_time";
       tf_data.calltf    = test_next_calltf;

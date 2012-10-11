@@ -3,10 +3,10 @@ module testbench();
   reg        clr, clk, enable;
 
   counter uut(q, clr, clk);
-    
+
   always @(clk)
     if (enable)
-      #1 clk <= !clk;  
+      #1 clk <= !clk;
 
   initial begin
     enable <= 1;
@@ -20,19 +20,19 @@ module testbench();
       $display("PASSED");
     else
       $display("FAILED -- counter not correct (%d)", q);
-  end  
-  
+  end
+
 endmodule // testbench
 
 module counter(q, clr, clk);
   output [3:0] q;
   input clr, clk;
   reg [3:0] q;
-  
+
   always @(posedge clk or posedge clr)
     if (clr)
       q <= 4'b0000;
     else
       q <= q + 1'b1;
-  
+
 endmodule // counter

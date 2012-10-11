@@ -1,4 +1,3 @@
-
 // pr1776485.v
 
 module vvp_fun_and;
@@ -32,5 +31,3 @@ endmodule
 module UXO(output [5:0] gain);
    assign gain = 6'b101010;
 endmodule
-
- 	  	 

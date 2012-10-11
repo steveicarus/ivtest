@@ -1,5 +1,5 @@
 // This module generates M pairs of N-1 bits unsigned numbers A, B
-// and also serialises them starting from LSB bits between 
+// and also serialises them starting from LSB bits between
 // activation of active-high reset signal
 
 module stimulus #(parameter N = 4, M = 10) (input clk,
@@ -8,7 +8,7 @@ module stimulus #(parameter N = 4, M = 10) (input clk,
                  output reg unsigned [N-1:0] A, B );
 
 parameter D = 5;
-int unsigned i;  
+int unsigned i;
 reg unsigned [N-1:0] r1, r2;
 
 initial begin
@@ -21,7 +21,7 @@ end
 
 task do_items (input unsigned [N-1:0] v1, v2);
 begin
-    A = 0; B = 0; reset = 0; 
+    A = 0; B = 0; reset = 0;
     do_reset();
     A = v1; B = v2;
     for (i=0; i<N; i=i+1) begin
@@ -34,7 +34,7 @@ begin
        @(posedge clk);
 end
 endtask
-  
+
 task do_reset;
 begin
   @(posedge clk);
@@ -43,7 +43,7 @@ begin
   reset = 1'b0;
 end
 endtask
-    
+
 endmodule
 
 // This module takes M pairs of N-1 bits unsigned numbers A, B and a serial stream ss
@@ -54,11 +54,11 @@ module check #(parameter N = 4, M = 10)(input clk, reset, input unsigned [N-1:0]
 
 reg unsigned [N:0] psum;
 reg unsigned [N:0] ssum;
-int unsigned i;  
+int unsigned i;
 
 
 initial begin
-  repeat(M) 
+  repeat(M)
     check_item();
 end
 
@@ -90,20 +90,20 @@ module test;
   reg reset, clk;
   wire sa, sb, ss;
   wire [N-1:0] A, B;
-  
+
   initial begin
     clk = 0;
     forever #(T/2) clk = ~clk;
   end
-  
+
   stimulus #(N, M) stim  (.clk(clk), .reset(reset), .sa(sa), .sb(sb), .A(A), .B(B));
-  sa1           duv   (.clk(clk), .reset(reset), .a_i(sa), .b_i(sb), .s_o(ss) );     
-  check    #(N, M) check (.clk(clk), .reset(reset), .A(A), .B(B), .ss(ss));  
-  
+  sa1           duv   (.clk(clk), .reset(reset), .a_i(sa), .b_i(sb), .s_o(ss) );
+  check    #(N, M) check (.clk(clk), .reset(reset), .A(A), .B(B), .ss(ss));
+
   initial begin
     #S;
     $display("PASSED");
     $finish;
   end
-  
+
 endmodule

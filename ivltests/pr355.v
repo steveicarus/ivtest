@@ -27,12 +27,12 @@
 module testFunction();
 
    // SIGNAL DECLARATIONS
-   reg						clock;
-   reg [`NRBITS-1:0] 		a_in;
-   integer 					a_integer;
-   integer 					myint;
-   reg [`NRBITS:0] 		cycle_count;	// Counts valid clock cycles
-   
+   reg				clock;
+   reg [`NRBITS-1:0]		a_in;
+   integer			a_integer;
+   integer			myint;
+   reg [`NRBITS:0]		cycle_count;	// Counts valid clock cycles
+
    // Initialize inputs
    initial begin
 	  clock = 1;
@@ -40,10 +40,10 @@ module testFunction();
       # (16*200+15) $display("PASSED");
       $finish;
    end
-   
+
    // Generate the clock
    always #100 clock = ~clock;
-   
+
    // Simulate
    always @(negedge clock) begin
 	  cycle_count = cycle_count + 1;
@@ -67,7 +67,7 @@ module testFunction();
    // Function	to convert a reg of `NRBITS
    // bits to a signed integer
    function integer short_to_int;
-	  
+
 	  input [`NRBITS-1:0]	x;
 	  begin
 		 short_to_int = x;

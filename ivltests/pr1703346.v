@@ -1,4 +1,3 @@
-
 module main;
 
    wire [1:0] foo [0:1];

@@ -40,7 +40,7 @@ module main;
    test dut (.clk(clk), .c(c), .a(a), .b(b));
 
    integer    x;
-   (* ivl_synthesis_off *) 
+   (* ivl_synthesis_off *)
    initial begin
       clk = 0;
       for (x = 0 ;  x < 4 ;  x = x+1) begin

@@ -1,4 +1,3 @@
-
 /*
  * This test reflects the problem reported in PR#1115.
  */

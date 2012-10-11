@@ -1,4 +1,3 @@
-
 module main;
 
    byte foo, bar = 10;

@@ -36,4 +36,3 @@ module top ();
     test #(1) b();
     initial #1 $display("PASSED");
 endmodule
-

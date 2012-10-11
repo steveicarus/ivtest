@@ -1,7 +1,7 @@
 module test ( a, b);
 
 output        a;
-output reg [31:0] b;		
+output reg [31:0] b;
 
 reg [1:0] c;
 
@@ -23,6 +23,4 @@ assign a = (b == {16{c}});
 
       $display("PASSED");
    end
-endmodule 
-
- 	  	 
+endmodule

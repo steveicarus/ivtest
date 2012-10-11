@@ -40,7 +40,7 @@ initial
     #1;
     a = 0;
     work = 16'd1235;
-    #1; 
+    #1;
     if(wresult !== 8'hxx)
       begin
          $display("FAILED - wire 1235 mod 0: wresult = %h",wresult);
@@ -51,9 +51,9 @@ initial
          $display("FAILED - reg 1235 mod 0: result = %h",result);
          error =1;
       end
-    #1; 
+    #1;
     a = 8'd10;
-    #1; 
+    #1;
     if(wresult !== 8'h05)
       begin
          $display("FAILED - wire 1235 mod 10: wresult = %h",wresult);
@@ -65,9 +65,9 @@ initial
          error =1;
       end
 
-    #1; 
+    #1;
     a = 8'b0000_x001;
-    #1; 
+    #1;
     if(wresult !== 8'bxxxx_xxxx)
       begin
          $display("FAILED - wire 1235 mod 10: wresult = %h",wresult);
@@ -82,7 +82,7 @@ initial
 
     if(error == 0)
      $display("PASSED");
-        
+
   end
 
 endmodule

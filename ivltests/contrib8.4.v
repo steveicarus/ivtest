@@ -26,6 +26,3 @@ b = {5{a[4]}};
 initial
   $display("PASSED");
 endmodule
-
-
-

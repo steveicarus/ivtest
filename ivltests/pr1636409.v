@@ -31,5 +31,3 @@ module top;
     #50 $finish;
   end
 endmodule
-
- 	  	 

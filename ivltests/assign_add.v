@@ -1,4 +1,3 @@
-
 /*
  * assign_sum
  * Demonstrate continuous assign of a sum.

@@ -12,24 +12,24 @@ timeprecision 1us;
 // A local time unit is OK.
 module check_tu;
   timeunit 10us;
-endmodule 
+endmodule
 
 // A local time precision is OK.
 module check_tp;
   timeprecision 10us;
-endmodule 
+endmodule
 
 // Both a local time unit and precision are OK.
 module check_tup;
   timeunit 10us;
   timeprecision 10us;
-endmodule 
+endmodule
 
 // Both a local time unit and precision are OK (check both orders).
 module check_tpu;
   timeprecision 10us;
   timeunit 10us;
-endmodule 
+endmodule
 
 /*
  * Now do the same with repeat declarations (this is valid SV syntax).
@@ -38,13 +38,13 @@ endmodule
 module check_tu_d;
   timeunit 10us;
   timeunit 10us;
-endmodule 
+endmodule
 
 // A local time precision is OK.
 module check_tp_d;
   timeprecision 10us;
   timeprecision 10us;
-endmodule 
+endmodule
 
 // Both a local time unit and precision are OK.
 module check_tup_d;
@@ -52,7 +52,7 @@ module check_tup_d;
   timeprecision 10us;
   timeunit 10us;
   timeprecision 10us;
-endmodule 
+endmodule
 
 // Both a local time unit and precision are OK (check both orders).
 module check_tpu_d;
@@ -60,7 +60,7 @@ module check_tpu_d;
   timeunit 10us;
   timeprecision 10us;
   timeunit 10us;
-endmodule 
+endmodule
 
 // It is OK to redefine the global time unit and precision.
 timeunit 100us;
@@ -73,13 +73,13 @@ timeprecision 1ns;
 module check_tu_d_e;
   timeunit 10us;
   timeunit 1us;
-endmodule 
+endmodule
 
 // A local time precision is OK, but a repeat must match.
 module check_tp_d_e;
   timeprecision 10us;
   timeprecision 1us;
-endmodule 
+endmodule
 
 // A repeat time unit is only allowed if an initial one is given.
 module check_tu_m_e;
@@ -98,14 +98,14 @@ module check_tup_d_e;
   timeunit 10us;
   timeunit 10us;
   timeprecision 1us;
-endmodule 
+endmodule
 
 // A local time prec is OK and a repeat is OK, but this is not a unit decl.
 module check_tpu_d_e;
   timeprecision 1us;
   timeprecision 1us;
   timeunit 10us;
-endmodule 
+endmodule
 
 // Check all the valid timeunit and time precision values.
 timeunit 100s;

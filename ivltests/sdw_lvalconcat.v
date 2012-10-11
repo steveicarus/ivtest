@@ -17,7 +17,7 @@
 //    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 //
 // SDW - Validate that an lvalue concat can receive an assignment.
-// 
+//
 // D: Validate that an lvalue can be a concatenation.
 //
 
@@ -63,7 +63,7 @@ begin
 
     if(working)
        $display("PASSED\n");
-   
+
 end
 
 endmodule

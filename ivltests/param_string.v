@@ -24,4 +24,3 @@ module main;
    initial $display(passed);
 
 endmodule // main
-

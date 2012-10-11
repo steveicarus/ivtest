@@ -1,4 +1,3 @@
-
 /* Extracted from PR#820. */
 
 module main();

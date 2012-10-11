@@ -1,4 +1,3 @@
-
 module main;
 
    struct packed {

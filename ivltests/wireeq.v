@@ -27,7 +27,7 @@ reg globvar;
 reg [3:0] var1;
 reg error;
 
-wire var2 = (var1 == 4'h02); 
+wire var2 = (var1 == 4'h02);
 
 initial
   begin

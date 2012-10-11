@@ -1,4 +1,4 @@
-module main; 
+module main;
   reg pass = 1'b1;
 
   reg v1 = 1'b0;
@@ -115,5 +115,3 @@ module main;
     $finish;
   end
 endmodule
-
-

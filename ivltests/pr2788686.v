@@ -38,7 +38,7 @@ module top;
                vec);
       pass = 1'b0;
     end
-  
+
     // Assign after the vector (variable delay).
     vec = 8'hff;
     off = 8;
@@ -59,7 +59,7 @@ module top;
                vec);
       pass = 1'b0;
     end
-  
+
     // Assign after the vector (event trigger).
     vec = 8'hff;
     off = 8;

@@ -8,7 +8,7 @@ entity dec2to4 is
 end dec2to4;
 
 architecture dec2to4_rtl of dec2to4 is
-  begin 
+  begin
     process (sel, en)
       begin
         if (en = '1') then
@@ -16,7 +16,7 @@ architecture dec2to4_rtl of dec2to4 is
              when "00" => y <= "1000";
              when "01" => y <= "0100";
              when "10" => y <= "0010";
-             when "11" => y <= "0001";  
+             when "11" => y <= "0001";
              when others => y <= "0000";
           end case;
         else
@@ -24,5 +24,3 @@ architecture dec2to4_rtl of dec2to4 is
         end if;
   end process;
 end dec2to4_rtl;
-  
-

@@ -40,7 +40,7 @@ initial   // Excitation block
    # 5;			// Assign a shorter value
    a = 16'h1234;	// should see 0 extension in result
    result = a;
-    
+
    # 5;			// Assign a 32  bit vector
    b = 32'h12345678 ;
    result = b;
@@ -61,28 +61,28 @@ initial  // Validation block
   begin
     #1 ;
     #5 ;
-    if(result != 32'h00001234)   
+    if(result != 32'h00001234)
       begin
         $display("FAILED - Bit extend wrong\n");
         $finish ;
       end
- 
+
     #5 ;
-    if(result != 32'h12345678)   
+    if(result != 32'h12345678)
       begin
         $display("FAILED - 32 bit assign wrong\n");
         $finish ;
       end
-  
+
     #5 ;
-    if(result != 32'h00000000)   
+    if(result != 32'h00000000)
       begin
         $display("FAILED - -1 + 1 = %h\n",result);
         $finish ;
       end
- 
+
     #5 ;
-    if(result != 32'hffffffff)   
+    if(result != 32'hffffffff)
       begin
         $display("FAILED - 0 - 1 = %h\n",result);
         $finish ;

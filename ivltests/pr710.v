@@ -1,4 +1,3 @@
-
 module main;
 
    reg [5:0] idx, mask;

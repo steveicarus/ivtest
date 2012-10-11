@@ -1,4 +1,4 @@
-`timescale 1ns/10ps 
+`timescale 1ns/10ps
 module test;
 
 reg [15:0] a1;

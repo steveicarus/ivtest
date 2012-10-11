@@ -76,7 +76,7 @@ module main;
 
       if (eps > 0.0001) begin
 	 $display("Error -- time1 s/b 3.4 but is=%t", time1);
-		 
+
 	 err =1 ;
       end
 

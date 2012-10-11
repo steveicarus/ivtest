@@ -1,4 +1,3 @@
-
 // pr1901125
 
 module test();
@@ -17,4 +16,3 @@ module test();
    end
 
 endmodule
-

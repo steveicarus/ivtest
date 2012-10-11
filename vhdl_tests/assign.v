@@ -1,11 +1,11 @@
 /*
- * Basics tests of continuous assignment. 
+ * Basics tests of continuous assignment.
  */
 module testbench();
   reg [3:0] a, b;
   integer   c, d;
   wire [3:0] x, y, z;
-    
+
   assign x = a + b + b;
   assign y = b - a;
   assign z = a + (a * b);
@@ -31,5 +31,5 @@ module testbench();
       end
     $display("PASSED");
   end
-         
+
 endmodule // testbench

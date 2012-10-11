@@ -1,8 +1,7 @@
-
 module main;
 
    time period;
-   reg 	drive;
+   reg	drive;
 
    // This is the main point of the test. Non-constant delay expressions
    // should work here.

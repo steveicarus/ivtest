@@ -30,5 +30,3 @@ module inv1 (z, a);
 
   endspecify
 endmodule
-
- 	  	 

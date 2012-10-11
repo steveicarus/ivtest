@@ -1,5 +1,3 @@
-
-
 module main;
 
    reg [1:0] src;

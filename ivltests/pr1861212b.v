@@ -15,7 +15,7 @@ module drvr(output wire [63:0] vo);
   real vint;
 
   assign vo = $realtobits(vint);
- 
+
   initial begin
     vint = 3.3;
     #1000 vint = 4.5776;

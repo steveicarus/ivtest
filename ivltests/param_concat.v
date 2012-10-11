@@ -24,5 +24,3 @@ module main;
     else
       $display("FAILED");
 endmodule
-
-

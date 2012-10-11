@@ -31,4 +31,3 @@ always @(a)
   end
 
 endmodule
-

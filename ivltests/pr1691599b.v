@@ -1,6 +1,5 @@
-
 // pr1691599b.v
-//  	  	 
+//
 module main;
 
    parameter cnt = 4;

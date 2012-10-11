@@ -100,8 +100,8 @@ static PLI_INT32 xxx_calltf(PLI_BYTE8 *user_data)
 
   return 0;
 }
-  
-  
+
+
 static void xxx_register()
 {
   s_vpi_systf_data      tfdata;
@@ -124,7 +124,7 @@ static void xxx_register()
 
   tfdata.sysfunctype    = vpiIntFunc;
   /* tfdata.sysfunctype    = vpiSizedFunc; */
- 
+
   tfdata.tfname         = "$example";
   tfdata.calltf         = xxx_calltf;
   tfdata.compiletf      = xxx_compiletf;

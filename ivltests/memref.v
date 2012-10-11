@@ -1,4 +1,3 @@
-
 /*
  * Check simple scope up-reference of memories.
  */

@@ -1,5 +1,5 @@
 module test();
-reg		c;	      	
+reg		c;
 
   a #(1) ua( .c(c), .b(h));
 
@@ -9,7 +9,7 @@ reg		c;
     #1 c = 0;
     $display("PASSED");
   end
-  
+
 endmodule
 module a(
 		c,
@@ -17,16 +17,16 @@ module a(
 		);
    parameter    e       = 2;
 
-   input 			      c;
-   output [e-1:0]   b;
-   
+   input	     c;
+   output [e-1:0]    b;
+
    reg  [e-1:0]      f;
    reg  [e-1:0]      g;
    reg  [e-1:0]      b;
-   integer 		       	       d;
-   
+   integer	     d;
+
    always @(posedge c) begin
-     for(d=0; d<e; d=d+1) 
+     for(d=0; d<e; d=d+1)
        b[d] <= (f[d] & (b[d] | g[d]));
    end
 endmodule

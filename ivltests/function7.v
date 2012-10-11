@@ -1,4 +1,3 @@
-
 module test;
    parameter BYTES = 2;
    localparam mxbit = BYTES*8-1;

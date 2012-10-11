@@ -20,30 +20,30 @@
 //
 
 module main ();
- 
+
    reg [7:0] array [7:0];
-   reg 	     error ;
+   reg	     error ;
    reg [3:0] count;
-   
+
    initial
      begin
-	
+
 	for(count = 0; count <= 7; count = count + 1)
 	  begin
 	     array[count] = 1 << count;
 	  end
 
 	$writememb("work/writememb2.dat", array, 6, 1);
-	
+
 	for(count = 0; count <= 7; count = count + 1)
 	  begin
 	     array[count] = 'bx;
 	  end
-	
+
 	error = 0;
-	
+
 	$readmemb("work/writememb2.dat", array);
-	
+
 	for(count = 0; count <= 5; count = count + 1)
 	  begin
 	     if(array[count] !== (1<<(6-count)))
@@ -52,10 +52,10 @@ module main ();
 		  $display("FAILED - array[count] == %h, s/b %h",
 			   array[count], 1 << count);
                end
-	  end 
-	
-	if(error == 0) 
-	  $display("PASSED\n"); 
+	  end
+
+	if(error == 0)
+	  $display("PASSED\n");
 	$finish ;
      end
 endmodule

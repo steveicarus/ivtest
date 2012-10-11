@@ -1,6 +1,6 @@
 module top();
   reg [7:0] a, a_a, a__a;
-  
+
   initial begin
     a = 1;
     #1;
@@ -13,8 +13,8 @@ module top();
       $display("PASSED");
     else
       $display("FAILED");
-    
+
     $finish;
   end
-  
+
 endmodule // top

@@ -1,13 +1,13 @@
 module stimulus (output reg A, B);
-  
-  
+
+
   initial begin
     {A, B} = 2'b00;
     #10 {A, B} = 2'b01;
     #10 {A, B} = 2'b10;
     #10 {A, B} = 2'b11;
   end
-    
+
 endmodule
 
 module scoreboard (input Y, A, B);
@@ -23,12 +23,12 @@ function truth_table (input a, b);
         2'b10: gate_output = 1;
         2'b11: gate_output = 1;
       endcase
-      
+
     truth_table = gate_output;
     end
 endfunction
-    
-    
+
+
 reg Y_t;
 
 always @(A or B) begin
@@ -47,11 +47,11 @@ module test;
   stimulus     stim    (A, B);
   or_gate      duv     (.a_i(A), .b_i(B), .c_o(Y) );
   scoreboard   mon     (Y, A, B);
-  
+
   initial begin
-    #100; 
+    #100;
     $display("PASSED");
     $finish;
   end
-    
+
 endmodule

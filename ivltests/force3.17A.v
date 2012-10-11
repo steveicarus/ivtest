@@ -14,7 +14,7 @@
 //
 //    You should have received a copy of the GNU General Public License
 //    along with this program; if not, write to the Free Software
-//    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA 
+//    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 //
 //    force3.17A -  Template 1 - force reg_lvalue = constant.
 //
@@ -24,7 +24,7 @@ module test ;
 reg [3:0] val1;
 reg [3:0] val2;
 
-initial 
+initial
   begin
    val2 = 0;
    #50 ;
@@ -34,7 +34,7 @@ initial
      $display("PASSED");
   end
 
-initial 
+initial
   begin
    #20;
    force val2 = 4'b1010;

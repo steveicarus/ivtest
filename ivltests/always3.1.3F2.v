@@ -23,11 +23,11 @@
 //        Without a delay in the always statement, there would be an
 //        infinite loop that blocks execution.
 
-module main ; 
+module main ;
 
 wire [3:0] value1 ;
 
-initial 
+initial
   begin
     #15;
      if(value1 !== 4'h5)
@@ -40,5 +40,3 @@ initial
 always #10 force value1 = 4'h5;
 
 endmodule
-
-

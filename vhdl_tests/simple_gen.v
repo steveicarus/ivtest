@@ -2,7 +2,7 @@
 module main();
   wire [39:0] data;
   integer     j;
-  
+
   generate
     genvar   i;
     for (i = 0; i < 4; i = i + 1) begin

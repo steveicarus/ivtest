@@ -2,7 +2,7 @@ module test;
 
   reg [7:0] bus;
   reg [7:0] skewed_bus;
-  
+
   integer delay0;  initial delay0 =  4;
   integer delay1;  initial delay1 =  8;
   integer delay2;  initial delay2 = 12;
@@ -11,14 +11,14 @@ module test;
   integer delay5;  initial delay5 = 24;
   integer delay6;  initial delay6 = 28;
   integer delay7;  initial delay7 = 32;
-  
+
   /* model skew across the bus using transport delays */
-  
+
   always @( bus[0] )
     begin
       skewed_bus[0] <= #delay0 bus[0];
     end
-  
+
    always @( bus[1] )
     begin
       skewed_bus[1] <= #delay1 bus[1];
@@ -28,7 +28,7 @@ module test;
     begin
       skewed_bus[2] <= #delay2 bus[2];
     end
-  
+
    always @( bus[3] )
     begin
       skewed_bus[3] <= #delay3 bus[3];
@@ -38,22 +38,22 @@ module test;
     begin
       skewed_bus[4] <= #delay4 bus[4];
     end
-  
+
   always @( bus[5] )
     begin
       skewed_bus[5] <= #delay5 bus[5];
     end
-  
+
   always @( bus[6] )
     begin
       skewed_bus[6] <= #delay6 bus[6];
     end
-  
+
   always @( bus[7] )
     begin
       skewed_bus[7] <= #delay7 bus[7];
     end
-  
+
 
    initial
      begin
@@ -313,7 +313,7 @@ module test;
        #4;
        bus = 8'b01111001;
        #4;
-       bus = 8'b01000100;       
+       bus = 8'b01000100;
      end
 
    initial
@@ -1211,4 +1211,3 @@ module test;
      end
 
 endmodule
-

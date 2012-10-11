@@ -34,4 +34,4 @@ module main;
 		$display(">|!A|");
 		$display("*|%s|", myReg16[14:1]);
 	end
-endmodule 
+endmodule

@@ -1,4 +1,3 @@
-
 // `define READ read_good
 
 module top;
@@ -31,7 +30,7 @@ module top;
     integer i;
 
     reg [7:0] rddata;
-      
+
     begin
       for(i=7; i>=0; i=i-1) begin
         @(posedge clk);
@@ -60,5 +59,3 @@ module top;
     end
   endtask
 endmodule
-
- 	  	 

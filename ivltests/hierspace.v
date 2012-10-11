@@ -27,7 +27,7 @@
 module a;
    wire b ;
    m inst (b);
-   initial 
+   initial
      begin
 	#1 inst.x   <= 1'b0;
 	#1 inst .x  <= 1'bx;
@@ -42,5 +42,5 @@ module a;
 endmodule
 module m (x);
    output x;
-   reg 	  x;
+   reg	  x;
 endmodule

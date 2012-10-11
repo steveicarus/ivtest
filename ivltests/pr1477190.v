@@ -1,4 +1,3 @@
-
 module main;
 
    reg b, a;

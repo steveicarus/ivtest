@@ -1,6 +1,3 @@
-
-
-
 module test;
    reg [4:0]  i;
    reg [7:0]  j, k, l;

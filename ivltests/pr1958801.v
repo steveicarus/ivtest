@@ -1,4 +1,3 @@
-
 // pr1958001
 
 module s_cmpGe( in00, in01, out00 );
@@ -38,4 +37,3 @@ module x;
     end
 
 endmodule
-

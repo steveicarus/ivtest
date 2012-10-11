@@ -3,7 +3,7 @@
 //
 module test;
     reg [31:0] rtn;
-    reg [31:0] pseed, seed1, seed2; 
+    reg [31:0] pseed, seed1, seed2;
     reg [31:0] mem1[3:0], mem2[3:0];
     integer i;
 
@@ -38,4 +38,3 @@ module test;
 	$finish;
     end
 endmodule
-

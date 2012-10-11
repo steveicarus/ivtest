@@ -38,23 +38,23 @@ wire [8:0] y_1_;
 assign dpa_zero= 1024'h0;
 assign dpa_one= 1024'h1;
 
-/* simple.mcl:4 module simple (y, a, b, c); */ 
+/* simple.mcl:4 module simple (y, a, b, c); */
 
-/* simple.mcl:6 input signed [3:0] a, b; */ 
+/* simple.mcl:6 input signed [3:0] a, b; */
 
-/* simple.mcl:7 input signed [7:0] c; */ 
+/* simple.mcl:7 input signed [7:0] c; */
 
-/* simple.mcl:9 y = a*b+c; */ 
+/* simple.mcl:9 y = a*b+c; */
 
 assign y_1_= ((a[2:0]-(a[3]<<3))*(b[2:0]-(b[3]<<3))+(c[6:0]-(c[7]<<7)));
 
-/* simple.mcl:5 output signed [8:0] y; */ 
+/* simple.mcl:5 output signed [8:0] y; */
 
 assign y = y_1_[8:0];
 
-/* simple.mcl:4 module simple (y, a, b, c); */ 
+/* simple.mcl:4 module simple (y, a, b, c); */
 
-/* simple.mcl:9 y = a*b+c; */ 
+/* simple.mcl:9 y = a*b+c; */
 
 /*User Defined Aliases */
 endmodule
@@ -62,15 +62,15 @@ endmodule
 module test_simple;
 
   reg [15:0] count;
-  
+
   reg clk;
   reg [3:0] a, b;
   reg [7:0] c;
-  
+
   wire [8:0] y;
-  
+
   simple u1(y, a, b, c);
-  
+
   initial
   begin
     count = 0;
@@ -79,23 +79,21 @@ module test_simple;
     b = 0;
     c = 0;
   end
-  
+
   always
     #10 clk = ~clk;
-  
+
   always @(posedge clk)
   begin
     a = count[3:0];
     b = count[7:4];
     c = count[15:8];
-    
+
     #10
     $display("%h %h %h %h", a, b, c, y);
-    
+
     count = count + 1;
     if(count == 0)
       $finish;
   end
 endmodule
-  
-  

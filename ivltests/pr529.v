@@ -1,27 +1,27 @@
-// -- test force/release of: 
+// -- test force/release of:
 //      a wire assigned to a reg
 //      a wire with no assignment
-//      a whole bus (assigned to a reg), 
+//      a whole bus (assigned to a reg),
 //      a single bit of a bus (assigned to a reg)
 // -- make sure the force/release is passed into the hierarchy
-// 
+//
 // -- run with
 //           iverilog -Wall tt.v
 //           vvp a.out
 // -- to see debug display statements, use
 //           iverilog -Wall -DDISPLAY tt.v
-//           
+//
 module top ();
 
-  reg [31:0] 	ii;
-  reg 		bitfail, bitnafail, busfail, busbitfail;
-  reg 		a;
-  reg [1:0] 	b;
-  wire 		bit = a;
+  reg [31:0]	ii;
+  reg		bitfail, bitnafail, busfail, busbitfail;
+  reg		a;
+  reg [1:0]	b;
+  wire		bit = a;
   wire		bitna;
-  wire [1:0] 	bus = b;
-  wire [1:0] 	ibus = b;
-  wire 		subfail, subfailna;
+  wire [1:0]	bus = b;
+  wire [1:0]	ibus = b;
+  wire		subfail, subfailna;
 
   // call in a lower level module
   subtop U1 (

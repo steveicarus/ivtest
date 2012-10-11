@@ -1,4 +1,3 @@
-
 /* PR1625912 */
 
 /*
@@ -22,5 +21,3 @@ module top;
    end
 
 endmodule
-
- 	  	 

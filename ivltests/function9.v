@@ -1,5 +1,3 @@
-
-
 module main;
 
    localparam BYTESIZE = 8;
@@ -9,7 +7,7 @@ module main;
    function [STRLEN*BYTESIZE - 1 : 0] bits2text;
       input [STRLEN-1:0] use_map;
 
-      integer 		 idx;
+      integer		 idx;
       begin
 	 bits2text = 0;
 	 for (idx = 0 ; idx < STRLEN ; idx = idx+1) begin

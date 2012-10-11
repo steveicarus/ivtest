@@ -38,8 +38,7 @@ error = 1;
 end
 end
 if(error == 0)
-$display("PASSED");  
-end 
+$display("PASSED");
+end
 
 endmodule
-

@@ -1,19 +1,18 @@
-
 // Note: The for is translated to a begin/while is it tests the while.
 
-module main; 
+module main;
   reg val = 1'b0;
   reg cond = 1'b1;
   reg [1:0] cval;
   integer idx;
   integer dly = 1;
- 
+
   // Simple assign (error).
   always val = 1'b1;
- 
+
   // A zero delay assign (error).
   always #0 val = 1'b1;
- 
+
   // A variable delay assign (warning).
   always #dly val = 1'b1;
 

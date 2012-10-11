@@ -74,4 +74,4 @@ module test ();
 
     if (pass) $display("PASSED");
   end
-endmodule 
+endmodule

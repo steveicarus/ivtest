@@ -1,5 +1,3 @@
-
-
 /*
  * Copyright (c) 1998 Philips Semiconductors (Stefan.Thiede@sv.sc.philips.com)
  *
@@ -35,7 +33,7 @@ a       a4({a[1]});
 g       g({a,b});
 e       e();
 
-initial 
+initial
   $display("PASSED");
 endmodule
 

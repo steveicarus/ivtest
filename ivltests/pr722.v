@@ -1,4 +1,3 @@
-
 /* From PR#722
  * If bounds checking is in a 16bit field, this will crash.
  */
@@ -18,5 +17,3 @@ module test;
     end
 
 endmodule
-
-

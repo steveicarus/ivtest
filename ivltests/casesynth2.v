@@ -24,7 +24,7 @@ module main;
 
    reg clk, rst, set;
    reg [3:0] out, load;
-   reg 	     carry;
+   reg	     carry;
    reg [1:0] op;
 
    (* ivl_synthesis_on *)

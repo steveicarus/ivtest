@@ -26,22 +26,22 @@ reg reset;
 reg error;
 
 task task_a ;
-  begin 
+  begin
     # 2;
     if(reset)
       q = 0;
     else
-      q = ~q ; 
+      q = ~q ;
   end
 endtask
 
 initial
   begin
-    
+
     // Set reset to init f/f.
     error = 0;
     reset = 1;
-    task_a ;	// Same as posedge reset in previous test 
+    task_a ;	// Same as posedge reset in previous test
 
     #4 ;
     if(q != 1'b0)

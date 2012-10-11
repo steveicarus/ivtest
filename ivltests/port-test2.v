@@ -1,5 +1,4 @@
-
-// This is a compile time test, 
+// This is a compile time test,
 // for various port declaration syntax options
 
 `define TEST3
@@ -9,7 +8,7 @@
 
 `ifdef TEST3
 module port_3
-  ( 
+  (
     dummy_1,
    /* unconnected */,
     in[7:0],
@@ -19,9 +18,9 @@ module port_3
    );
    input [7:0]  in;
    output [7:0] out;
-   output 	dummy_1;
-   output 	dummy_2;
-   assign 	out = in;
+   output	dummy_1;
+   output	dummy_2;
+   assign	out = in;
 endmodule
 `endif // ifdef TEST_3
 
@@ -29,10 +28,10 @@ endmodule
 module port_test;
 
    reg [7:0] data;
-   
+
 `ifdef TEST3
    wire [7:0] out_3;
-   reg 	      pass_3;
+   reg	      pass_3;
    initial    pass_3 = 1;
    port_3 dut_3
      (,          // unconnected dummy_1
@@ -56,7 +55,7 @@ module port_test;
      begin
 	data <= 1;
 	#1;
-	
+
 	while (data != 0)
 	  begin
 	     $display ("%b", data);
@@ -68,7 +67,7 @@ module port_test;
 		  pass_3 = 0;
 	       end
 `endif
-	     
+
 	     data <= data << 1;
 	     #1;
 	  end
@@ -77,7 +76,7 @@ module port_test;
 	if (pass_3)
 	  $display("PASSED");
 `endif
-	
+
 	$finish;
      end
 

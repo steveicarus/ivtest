@@ -14,40 +14,40 @@ initial
     # 1;			// This removes race between tdelay5 and var2.
     var2 = 0;
     #1 ;
-    var1 = 1; 		// Now twiddle var1 to cause var2 change 5ns later.
+    var1 = 1;		// Now twiddle var1 to cause var2 change 5ns later.
     #1 ;
     if(var2 != 0)
       begin
-        $display("FAILED at %t",$time); 
+        $display("FAILED at %t",$time);
         error = 1;
       end
     #1;
     if(var2 != 0)
       begin
-        $display("FAILED at %t",$time); 
+        $display("FAILED at %t",$time);
         error = 1;
       end
     #1;
     if(var2 != 0)
       begin
-        $display("FAILED at %t",$time); 
+        $display("FAILED at %t",$time);
         error = 1;
       end
     #1;
     if(var2 != 0)
       begin
-        $display("FAILED at %t",$time); 
+        $display("FAILED at %t",$time);
         error = 1;
       end
     #1;
     if(var2 != 1)
       begin
-        $display("FAILED at %t",$time); 
+        $display("FAILED at %t",$time);
         error = 1;
       end
-    
-    if(error == 0) 
-       $display("PASSED");
-  end 
 
-endmodule 
+    if(error == 0)
+       $display("PASSED");
+  end
+
+endmodule

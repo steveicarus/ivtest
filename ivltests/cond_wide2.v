@@ -20,7 +20,7 @@
 module foo;
 
    reg [2:0] cond;
-   reg 	     test;
+   reg	     test;
 
    initial begin
       cond = 0;

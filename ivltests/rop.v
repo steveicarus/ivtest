@@ -30,223 +30,223 @@
 module rop;
 
    reg [2:0] a;
-   reg 	     b;
-   reg 	     error;
+   reg	     b;
+   reg	     error;
 
    initial
      begin
     error = 0;
 	a = 3'b 10z;
-	b =  & a; 
-	$display(" & 3'b%b === %b", a, b); 
+	b =  & a;
+	$display(" & 3'b%b === %b", a, b);
 	if (b !== 1'b0)
 	begin
 	   $display("FAILED");
 	    error = 1;
         end
-	b =  | a; 
-	$display(" | 3'b%b === %b", a, b); 
-	if (b !== 1'b1) 
+	b =  | a;
+	$display(" | 3'b%b === %b", a, b);
+	if (b !== 1'b1)
           begin
 	   error = 1;
 	   $display("FAILED");
 	  end
-	b =  ^ a; 
-	$display(" ^ 3'b%b === %b", a, b); 
-	if (b !== 1'bx) 
-          begin		 
+	b =  ^ a;
+	$display(" ^ 3'b%b === %b", a, b);
+	if (b !== 1'bx)
+          begin
 	   $display("FAILED");
 	   error = 1;
           end
-	b = ~& a; 
-	$display("~& 3'b%b === %b", a, b); 
-	if (b !== 1'b1) 
-	  begin
-	   $display("FAILED");
-	   error = 1;
-	  end
-	b = ~| a; 
-	$display("~| 3'b%b === %b", a, b); 
-	if (b !== 1'b0) 
-	  begin
-	   $display("FAILED");
-	   error = 1;
-	  end
-	b = ~^ a; 
-	$display("~^ 3'b%b === %b", a, b); 
-	if (b !== 1'bx) 
-	  begin
-	   $display("FAILED");
-	   error = 1;
-	  end
-	a = 3'b 0xz;				    
-	b =  & a; 
-	$display(" & 3'b%b === %b", a, b); 
-	if (b !== 1'b0) 
-	  begin
-	   $display("FAILED");
-	   error = 1;
-	  end
-	b =  | a; 
-	$display(" | 3'b%b === %b", a, b);  
-	if (b !== 1'bx) 
-	  begin
-	   $display("FAILED");
-	   error = 1;
-	  end
-	b =  ^ a; 
-	$display(" ^ 3'b%b === %b", a, b); 
-	if (b !== 1'bx) 
-	  begin
-	   $display("FAILED");
-	   error = 1;
-	  end
-	b = ~& a; 
-	$display("~& 3'b%b === %b", a, b); 
-	if (b !== 1'b1) 
-	  begin
-	   $display("FAILED");
-	   error = 1;
-	  end
-	b = ~| a; 
-	$display("~| 3'b%b === %b", a, b); 
-	if (b !== 1'bx) 
-	  begin
-	   $display("FAILED");
-	   error = 1;
-	  end
-	b = ~^ a; 
-	$display("~^ 3'b%b === %b", a, b); 
-	if (b !== 1'bx) 
-	  begin
-	   $display("FAILED");
-	   error = 1;
-	  end
-	a = 3'b 1xz;				    
-	b =  & a; 
-	$display(" & 3'b%b === %b", a, b); 
-	if (b !== 1'bx) 
-	  begin
-	   $display("FAILED");
-	   error = 1;
-	  end
-	b =  | a; 
-	$display(" | 3'b%b === %b", a, b); 
-	if (b !== 1'b1) 
-	  begin
-	   $display("FAILED");
-	   error = 1;
-	  end
-	b =  ^ a; 
-	$display(" ^ 3'b%b === %b", a, b); 
-	if (b !== 1'bx) 
-	  begin
-	   $display("FAILED");
-	   error = 1;
-	  end
-	b = ~& a; 
-	$display("~& 3'b%b === %b", a, b); 
-	if (b !== 1'bx) 
-	  begin
-	   $display("FAILED");
-	   error = 1;
-	  end
-	b = ~| a; 
-	$display("~| 3'b%b === %b", a, b); 
-	if (b !== 1'b0) 
-	  begin
-	   $display("FAILED");
-	   error = 1;
-	  end
-	b = ~^ a; 
-	$display("~^ 3'b%b === %b", a, b); 
-	if (b !== 1'bx) 
-	  begin
-	   $display("FAILED");
-	   error = 1;
-	  end
-	a = 3'b 000;				    
-	b =  & a; 
-	$display(" & 3'b%b === %b", a, b); 
-	if (b !== 1'b0) 
-	  begin
-	   $display("FAILED");
-	   error = 1;
-	  end
-	b =  | a; 
-	$display(" | 3'b%b === %b", a, b); 
-	if (b !== 1'b0) 
-	  begin
-	   $display("FAILED");
-	   error = 1;
-	  end
-	b =  ^ a; 
-	$display(" ^ 3'b%b === %b", a, b); 
-	if (b !== 1'b0) 
-	  begin
-	   $display("FAILED");
-	   error = 1;
-	  end
-	b = ~& a; 
-	$display("~& 3'b%b === %b", a, b); 
-	if (b !== 1'b1) 
-	  begin
-	   $display("FAILED");
-	   error = 1;
-	  end
-	b = ~| a; 
-	$display("~| 3'b%b === %b", a, b); 
-	if (b !== 1'b1) 
-	  begin
-	   $display("FAILED");
-	   error = 1;
-	  end
-	b = ~^ a; 
-	$display("~^ 3'b%b === %b", a, b); 
-	if (b !== 1'b1) 
-	  begin
-	   $display("FAILED");
-	   error = 1;
-	  end
-	a = 3'b 111;				    
-	b =  & a; 
-	$display(" & 3'b%b === %b", a, b); 
+	b = ~& a;
+	$display("~& 3'b%b === %b", a, b);
 	if (b !== 1'b1)
 	  begin
 	   $display("FAILED");
 	   error = 1;
 	  end
-	b =  | a; 
-	$display(" | 3'b%b === %b", a, b); 
-	if (b !== 1'b1) 
+	b = ~| a;
+	$display("~| 3'b%b === %b", a, b);
+	if (b !== 1'b0)
 	  begin
 	   $display("FAILED");
 	   error = 1;
 	  end
-	b =  ^ a; 
-        $display(" ^ 3'b%b === %b", a, b); 
-	if (b !== 1'b1) 
+	b = ~^ a;
+	$display("~^ 3'b%b === %b", a, b);
+	if (b !== 1'bx)
 	  begin
 	   $display("FAILED");
 	   error = 1;
 	  end
-	b = ~& a; 
-	$display("~& 3'b%b === %b", a, b); 
-	if (b !== 1'b0) 
+	a = 3'b 0xz;
+	b =  & a;
+	$display(" & 3'b%b === %b", a, b);
+	if (b !== 1'b0)
 	  begin
 	   $display("FAILED");
 	   error = 1;
 	  end
-	b = ~| a; 
-	$display("~| 3'b%b === %b", a, b); 
-	if (b !== 1'b0) 
+	b =  | a;
+	$display(" | 3'b%b === %b", a, b);
+	if (b !== 1'bx)
 	  begin
 	   $display("FAILED");
 	   error = 1;
 	  end
-	b = ~^ a; 
-	$display("~^ 3'b%b === %b", a, b); 
-	if (b !== 1'b0) 
+	b =  ^ a;
+	$display(" ^ 3'b%b === %b", a, b);
+	if (b !== 1'bx)
+	  begin
+	   $display("FAILED");
+	   error = 1;
+	  end
+	b = ~& a;
+	$display("~& 3'b%b === %b", a, b);
+	if (b !== 1'b1)
+	  begin
+	   $display("FAILED");
+	   error = 1;
+	  end
+	b = ~| a;
+	$display("~| 3'b%b === %b", a, b);
+	if (b !== 1'bx)
+	  begin
+	   $display("FAILED");
+	   error = 1;
+	  end
+	b = ~^ a;
+	$display("~^ 3'b%b === %b", a, b);
+	if (b !== 1'bx)
+	  begin
+	   $display("FAILED");
+	   error = 1;
+	  end
+	a = 3'b 1xz;
+	b =  & a;
+	$display(" & 3'b%b === %b", a, b);
+	if (b !== 1'bx)
+	  begin
+	   $display("FAILED");
+	   error = 1;
+	  end
+	b =  | a;
+	$display(" | 3'b%b === %b", a, b);
+	if (b !== 1'b1)
+	  begin
+	   $display("FAILED");
+	   error = 1;
+	  end
+	b =  ^ a;
+	$display(" ^ 3'b%b === %b", a, b);
+	if (b !== 1'bx)
+	  begin
+	   $display("FAILED");
+	   error = 1;
+	  end
+	b = ~& a;
+	$display("~& 3'b%b === %b", a, b);
+	if (b !== 1'bx)
+	  begin
+	   $display("FAILED");
+	   error = 1;
+	  end
+	b = ~| a;
+	$display("~| 3'b%b === %b", a, b);
+	if (b !== 1'b0)
+	  begin
+	   $display("FAILED");
+	   error = 1;
+	  end
+	b = ~^ a;
+	$display("~^ 3'b%b === %b", a, b);
+	if (b !== 1'bx)
+	  begin
+	   $display("FAILED");
+	   error = 1;
+	  end
+	a = 3'b 000;
+	b =  & a;
+	$display(" & 3'b%b === %b", a, b);
+	if (b !== 1'b0)
+	  begin
+	   $display("FAILED");
+	   error = 1;
+	  end
+	b =  | a;
+	$display(" | 3'b%b === %b", a, b);
+	if (b !== 1'b0)
+	  begin
+	   $display("FAILED");
+	   error = 1;
+	  end
+	b =  ^ a;
+	$display(" ^ 3'b%b === %b", a, b);
+	if (b !== 1'b0)
+	  begin
+	   $display("FAILED");
+	   error = 1;
+	  end
+	b = ~& a;
+	$display("~& 3'b%b === %b", a, b);
+	if (b !== 1'b1)
+	  begin
+	   $display("FAILED");
+	   error = 1;
+	  end
+	b = ~| a;
+	$display("~| 3'b%b === %b", a, b);
+	if (b !== 1'b1)
+	  begin
+	   $display("FAILED");
+	   error = 1;
+	  end
+	b = ~^ a;
+	$display("~^ 3'b%b === %b", a, b);
+	if (b !== 1'b1)
+	  begin
+	   $display("FAILED");
+	   error = 1;
+	  end
+	a = 3'b 111;
+	b =  & a;
+	$display(" & 3'b%b === %b", a, b);
+	if (b !== 1'b1)
+	  begin
+	   $display("FAILED");
+	   error = 1;
+	  end
+	b =  | a;
+	$display(" | 3'b%b === %b", a, b);
+	if (b !== 1'b1)
+	  begin
+	   $display("FAILED");
+	   error = 1;
+	  end
+	b =  ^ a;
+        $display(" ^ 3'b%b === %b", a, b);
+	if (b !== 1'b1)
+	  begin
+	   $display("FAILED");
+	   error = 1;
+	  end
+	b = ~& a;
+	$display("~& 3'b%b === %b", a, b);
+	if (b !== 1'b0)
+	  begin
+	   $display("FAILED");
+	   error = 1;
+	  end
+	b = ~| a;
+	$display("~| 3'b%b === %b", a, b);
+	if (b !== 1'b0)
+	  begin
+	   $display("FAILED");
+	   error = 1;
+	  end
+	b = ~^ a;
+	$display("~^ 3'b%b === %b", a, b);
+	if (b !== 1'b0)
 	  begin
 	   $display("FAILED");
 	   error = 1;
@@ -254,6 +254,5 @@ module rop;
         if(error === 0)
 	   $display("PASSED");
      end
-   
-endmodule
 
+endmodule

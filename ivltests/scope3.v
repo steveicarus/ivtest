@@ -1,9 +1,9 @@
 /*
 Verilog-XL error message:
 
-Error!    Recursive instantiation of module (a)             [Verilog-RINOM]    
+Error!    Recursive instantiation of module (a)             [Verilog-RINOM]
           "murec.v", 13: a a0(z, x);
-1 error   
+1 error
 */
 
 module test;
@@ -28,4 +28,3 @@ module b( z, x );
 
     a a0( z, x ); // Error should be caught here
 endmodule
-

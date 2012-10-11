@@ -1,4 +1,3 @@
-
 module main;
 
    wire a;
@@ -13,7 +12,7 @@ module main;
    endtask
 
    initial work;
-   
+
 endmodule
 
 module device(r);

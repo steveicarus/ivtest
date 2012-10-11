@@ -105,5 +105,3 @@ module top;
  memory memory();
 
 endmodule
-
-

@@ -1,4 +1,3 @@
-
 module top;
 
    wire net1, net2;

@@ -1,4 +1,3 @@
-
 /* PR#704 */
 module foo;
 

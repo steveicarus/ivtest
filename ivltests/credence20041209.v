@@ -1,5 +1,5 @@
 // Copyright C(O) 2004 Burnell G West
-// The following text may be utilized and / or reproduced by anybody for 
+// The following text may be utilized and / or reproduced by anybody for
 // any reason.
 //
 //  verr.v
@@ -48,7 +48,7 @@ endmodule
 module vtest;
 
 wire vout0, vout1, vout2, vout3, vout4, vout5, vout6, vout7, vout8, vout9;
-wire vout10, vout11, vout12, vout13, vout14, vout15, vout16, vout17, 
+wire vout10, vout11, vout12, vout13, vout14, vout15, vout16, vout17,
 vout18, vout19;
 
 reg  clk, bit0;

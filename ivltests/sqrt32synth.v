@@ -105,10 +105,10 @@ module testBench;
    parameter  Amax= 10001; //quick test
 
    reg [w-1:0] A;
-   reg 	       clk, reset;
+   reg	       clk, reset;
 
    wire [(w/2)-1:0] Z;
-   wire 	    done;
+   wire		    done;
 
    sqrt dut (.clk(clk), .rdy(done), .reset(reset), .x(A), .acc(Z));
 
@@ -123,7 +123,7 @@ module testBench;
 	 @(negedge clk);
       end
    endtask
-   
+
    task run_dut ;
       begin
 	 while (done==0)
@@ -143,27 +143,27 @@ module testBench;
 
 	$display ("ss=%d, width=%d, Amax=%d", ss, w, Amax);
 	errCnt = 0;
-        
+
 	A = 4;
 	reset_dut;
 	run_dut;
 	$display("test=0 x=%d, y=%d", A, Z);
-    
+
 	A = Amax/10;
 	reset_dut;
 	run_dut;
 	$display("test=0 x=%d, y=%d", A, Z);
-    
+
 	A = Amax-1;
 	reset_dut;
 	run_dut;
 	$display("test=0 x=%d, y=%d", A, Z);
- 
+
 	for (idx = 1 ;  idx < Amax;  idx = 2*idx) begin
            A = idx;
            reset_dut;
            run_dut;
-         
+
            $display("%d: x=%d, y=%d", idx, A, Z);
 
 	   a = A;
@@ -190,16 +190,16 @@ module testBench;
 	     end
 
 	end
- 
+
 	$display ("Running  tests Amax=%d random input numbers", Amax);
-      
+
 	for (idx = 0 ;  idx < Amax;  idx = 1+ idx) begin
            A = $random;
-           // A = A - ((A / Amax) * Amax);	 //this is needed only if <32 bit 
-         
+           // A = A - ((A / Amax) * Amax);	 //this is needed only if <32 bit
+
            //A = idx;    //sequential -- comment out to get random tests
-	 
-	   if (A < 1<<(w-1)) begin 
+
+	   if (A < 1<<(w-1)) begin
 
               reset_dut;
               run_dut;
@@ -232,11 +232,11 @@ module testBench;
 
               //$display("%d: x=%d, y=%d", idx, A, Z);
 	      if (idx%1000 == 0) $display("Finished %d tests", idx);
-	   end // if (A < Amax) begin 
+	   end // if (A < Amax) begin
 	end
 	$display ("PASSED");
 	$finish;
-  
+
      end
-  
-endmodule    
+
+endmodule

@@ -27,12 +27,12 @@ initial begin
   #T;
   for (i = 0; i < M; i=i+1) begin
     #T;
-    {sel, en} = i; 
+    {sel, en} = i;
   end
- 
+
 end
 
- 
+
 endmodule
 
 // This module always checks that y complies with a decoding operation
@@ -56,11 +56,11 @@ always @(sel, en, y) begin
           1: if (y !== 4'b0100) begin
                $display("ERROR");
                $finish;
-             end     
+             end
           2: if (y !== 4'b0010) begin
                $display("ERROR");
                $finish;
-             end  
+             end
           3: if (y !== 4'b0001) begin
                $display("ERROR");
                $finish;
@@ -86,21 +86,21 @@ endmodule
 module test;
   parameter M = 8;
   parameter T = 10;
-  parameter  S = 4*M*T + 40; 
- 
+  parameter  S = 4*M*T + 40;
+
   wire [1:0] sel;
   wire en;
   wire [0:3] y;
-  
-  
+
+
   stimulus #(M, T) stim  (.sel(sel), .en(en) );
-  dec2to4          duv   (.sel(sel), .en(en), .y(y) );     
-  check            check (.sel(sel), .en(en), .y(y) );  
-  
+  dec2to4          duv   (.sel(sel), .en(en), .y(y) );
+  check            check (.sel(sel), .en(en), .y(y) );
+
   initial begin
     #S;
     $display("PASSED");
     $finish;
   end
-  
+
 endmodule

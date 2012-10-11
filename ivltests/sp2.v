@@ -20,10 +20,10 @@
 
 module write_sp_vectors(Clk, a, b, c);
 input Clk, a, b, c;
- 
+
 parameter fname = "PhCount.unnamed";
 parameter source_id = "(unknown source module RCSID)$";
- 
+
 integer fp;
 initial
   begin
@@ -34,17 +34,17 @@ initial
     $fdisplay(fp, "# captured from: %0s\n", source_id[8*80:8]);
   end
 endmodule
-					 
+
 module main;
 parameter fname = "PhCount.unnamed";
 
 reg clk;
 reg a,b,c;
-					 
+
 write_sp_vectors #("sp2", "foo") v0 (clk,a, b, c);
 
 initial
   begin
   #10 $finish;
   end
-endmodule 
+endmodule

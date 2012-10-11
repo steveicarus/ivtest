@@ -1,4 +1,3 @@
-
 module main;
 
    reg [7:0] foo;

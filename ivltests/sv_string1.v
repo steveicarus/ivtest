@@ -1,4 +1,3 @@
-
 /*
  * This is the most basic test of string variables.
  */

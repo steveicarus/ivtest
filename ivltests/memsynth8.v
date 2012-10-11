@@ -1,10 +1,9 @@
-
 module main;
 
    reg [7:0] mem;
    reg [2:0] addr;
-   reg 	     out;
-   reg 	     clk;
+   reg	     out;
+   reg	     clk;
 
    (* ivl_synthesis_on *)
    always @(posedge clk) out <= mem[addr];

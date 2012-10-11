@@ -28,14 +28,14 @@ always @( val1 )
   casez (val1)
     3'b000: result = 0;
     3'b010: result = 1 ;
-    3'b110: result = 2; 
+    3'b110: result = 2;
   endcase
 
-initial 
+initial
   begin
     error = 0;
-    
-    val1 = 3'b0z0 ; 
+
+    val1 = 3'b0z0 ;
     if(result !=0)
       begin
         $display("FAILED casez 3.10B - case (expr) lab1: ");

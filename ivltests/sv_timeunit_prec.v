@@ -3,7 +3,7 @@ timeprecision 10us;
 
 module fast_g (out);
    output out;
-   reg 	  out;
+   reg	  out;
 
    initial begin
       #0 out = 0;
@@ -20,7 +20,7 @@ timeprecision 10us;
 
 module slow (out);
    output out;
-   reg 	  out;
+   reg	  out;
 
    initial begin
       #0 out = 0;
@@ -34,7 +34,7 @@ module fast (out);
    timeunit 10us;
    timeprecision 1us;
    output out;
-   reg 	  out;
+   reg	  out;
 
    initial begin
       #0 out = 0;
@@ -46,7 +46,7 @@ endmodule // fast
 
 module saf(out);
    output out;
-   reg 	  out;
+   reg	  out;
 
    initial begin
       #0 out = 0;
@@ -135,7 +135,7 @@ module main;
 	   $display("FAILED: slow at 101us, expected 1'b1, got %b.", slow);
 	   pass = 1'b0;
 	end
-	
+
 	if (saf !== 1'b1) begin
 	   $display("FAILED: saf at 101us, expected 1'b1, got %b.", saf);
 	   pass = 1'b0;

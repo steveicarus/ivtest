@@ -17,26 +17,24 @@
 //    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 //
 //  SDW - always release net_lvalue ;
-//  D:    No dependancy 
+//  D:    No dependancy
 
-module main ; 
+module main ;
 
 wire [3:0] value1 ;
 
-initial 
+initial
   begin
     #15;
     if(value1 != 4'h5)
-      $display("FAILED - 3.1.3H always release net_lvalue;\n"); 
+      $display("FAILED - 3.1.3H always release net_lvalue;\n");
     else
 	begin
            $display("PASSED\n");
-     	   $finish;                                                            
+	   $finish;
         end
   end
 
 always release value1 ;
 
 endmodule
-
-

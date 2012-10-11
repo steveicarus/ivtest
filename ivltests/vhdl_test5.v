@@ -42,8 +42,8 @@ module main;
     wire [0:7] o_vl;
     dummy dummy_vhdl(o, i);
     stimulus stim(i);
-    assign o_vl = i; 
-    
+    assign o_vl = i;
+
     always @(i) begin
     #1;
         if(o !== o_vl) begin
@@ -51,11 +51,10 @@ module main;
             $display("INPUT: ", i);
             $display("CORRECT: ", o_vl);
         end
-    end 
+    end
     initial begin
         #120000;
             $display("PASSED");
         $finish;
     end
 endmodule
- 

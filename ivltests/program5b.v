@@ -1,4 +1,3 @@
-
 module test(input wire foo);
    initial $display("FAILED", foo);
    final $display(foo);

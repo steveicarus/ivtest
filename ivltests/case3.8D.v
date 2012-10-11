@@ -28,15 +28,15 @@ always @( val1 )
   case (val1)
     3'b000: result = 0;
     3'b001: result = 1 ;
-    3'b010: result = 2; 
+    3'b010: result = 2;
     3'bx11: result = 4;
     3'bz11: result = 5;
   endcase
 
-initial 
+initial
   begin
     error = 0;
-    #1;    
+    #1;
     val1 = 3'b0;
     #1;
     if(result !== 0)
@@ -44,7 +44,7 @@ initial
         $display("FAILED case 3.8D - case (expr) lab1: ");
         error = 1;
       end
-    #1;    
+    #1;
     val1 = 3'b001;
     #1;
     if(result !== 1)

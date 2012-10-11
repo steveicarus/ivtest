@@ -22,7 +22,7 @@
 /*
  * Verifies some real values to make sure the real->double conversion
  * is properly handled and the values make it into vvp properly.
- * 
+ *
  * http://babbage.cs.qc.edu/courses/cs341/IEEE-754.html
  *
  */

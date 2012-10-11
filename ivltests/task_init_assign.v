@@ -1,5 +1,3 @@
-
-
 module main;
 
    // The declaration assignment within a task it not allowed
@@ -9,7 +7,7 @@ module main;
       y = x + step;
    endtask // foo
 
-   integer 	  a, b;
+   integer	  a, b;
    initial begin
       a = 3;
       foo(a, b);

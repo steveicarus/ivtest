@@ -1,5 +1,4 @@
-
-// pr1784984 
+// pr1784984
 module signed_test;
 
    reg [31:0] a;

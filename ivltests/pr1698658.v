@@ -7,5 +7,3 @@ module top;
     #1000 $display("The time is %t", $time);
   end
 endmodule
-
- 	  	 

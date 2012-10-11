@@ -40,7 +40,7 @@ reg error;
 NameA testmodA ();
 NameA testmodB ();
 
-initial 
+initial
   begin
      error = 0;
      # 1;
@@ -74,4 +74,3 @@ initial
 
 
 endmodule
-

@@ -1,7 +1,7 @@
 //                              -*- Mode: Verilog -*-
 // Filename        : cnr_tb.v
 // Description     : single row corner bender testbench
-// Author          : 
+// Author          :
 // Created On      : Thu Mar 23 16:23:01 2006
 // Last Modified By: $Id: pr1492075.v,v 1.1 2006/06/02 05:01:52 stevewilliams Exp $
 // Last Modified On: .
@@ -14,7 +14,7 @@ module cnr_tb ();
    reg clkb;
    reg clocken;
    integer  cntb;
- 
+
    // clock generation clkb
    always @ (posedge clocken)
      begin
@@ -25,18 +25,17 @@ module cnr_tb ();
 	  end
      end
 
-   // 
-   initial 
+   //
+   initial
      begin
 	$monitor("clkb=%b at %t", clkb, $time);
 	clkb = 1'b0;
 	clocken = 0;
 	#1 clocken = 1;
 	#(10*20) clocken = 0;
-	
+
 	#100;
 	$finish;
      end
-  
-endmodule // cnr_tb
 
+endmodule // cnr_tb

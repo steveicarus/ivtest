@@ -1,4 +1,3 @@
-
 module test;
 wire [3:0] a;
 reg [1:0] b;

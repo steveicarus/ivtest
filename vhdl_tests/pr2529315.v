@@ -1,12 +1,12 @@
 module test (
-input  		clk_dma,
-input  		rst_dma_n,		
+input		clk_dma,
+input		rst_dma_n,
 
-input  		wr_valid,
-input  		wr_trans,		
-input  		wr_flush,		
+input		wr_valid,
+input		wr_trans,
+input		wr_flush,
 
-output 		wr_ready);		
+output		wr_ready);
 
 wire   buf_wr_wstrb;
 

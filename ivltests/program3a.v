@@ -1,4 +1,3 @@
-
 // This should generate an error
 
 module main;

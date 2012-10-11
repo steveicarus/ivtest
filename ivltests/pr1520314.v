@@ -1,4 +1,3 @@
- 
 module kk_timing (A, B, C, D, E, F);
 
  input A, B, D, E, F;
@@ -14,8 +13,8 @@ module kk_timing (A, B, C, D, E, F);
  wire BL_X_0 = BL_X[0];
 
  specify
- $setuphold(posedge A &&& B, BL[0], 0, 0, C,,,D, BL_X[0]); // line 14 compile fail iverilog_20060618 
- $setuphold(posedge A &&& B, BL_0 , 0, 0, C,,,D, BL_X[0]); // line 15 compile fail iverilog_20060618 
+ $setuphold(posedge A &&& B, BL[0], 0, 0, C,,,D, BL_X[0]); // line 14 compile fail iverilog_20060618
+ $setuphold(posedge A &&& B, BL_0 , 0, 0, C,,,D, BL_X[0]); // line 15 compile fail iverilog_20060618
  $setuphold(posedge A &&& B, BL[0], 0, 0, C,,,D, BL_X_0 ); // line 16 compile pass iverilog_20060618
  $setuphold(posedge A &&& B, BL_0 , 0, 0, C,,,D, BL_X_0 ); // line 17 compile pass iverilog_20060618
  endspecify

@@ -3,7 +3,7 @@ module top;
   enum reg[0:0] { IDLE = 1'b0,
                   BUSY = 1'b1
                 } state, next;
-	
+
   initial begin
     pass = 1'b1;
     next = IDLE;
@@ -32,5 +32,4 @@ module top;
     if (pass) $display("PASSED");
   end
 
-endmodule			
-			
+endmodule

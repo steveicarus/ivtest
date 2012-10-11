@@ -1,4 +1,3 @@
-
 /*
  * This program tests that enumeration value first/last/num
  * methods work properly.

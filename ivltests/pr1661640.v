@@ -1,4 +1,3 @@
-
 // pr1661640.v
 
  module test;

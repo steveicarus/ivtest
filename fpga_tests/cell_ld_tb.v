@@ -1,10 +1,9 @@
-
 `timescale  100 ps / 10 ps
 
 module main;
 
    wire Q;
-   reg 	D, G;
+   reg	D, G;
 
    LD u1 (.Q(Q), .D(D), .G(G));
 

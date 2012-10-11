@@ -30,5 +30,3 @@ module top;
     end
   endgenerate
 endmodule
-
- 	  	 

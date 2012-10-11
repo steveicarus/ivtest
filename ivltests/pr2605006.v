@@ -1,7 +1,6 @@
-
 module test();
    reg clk;
-   
+
    reg [15:0] usb_shadow [0: 32];
 
    initial begin

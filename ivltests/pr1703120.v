@@ -29,5 +29,3 @@ module top;
     $display("1.0/real zero is %d.", 1.0/rval);
   end
 endmodule
-
- 	  	 

@@ -1,4 +1,3 @@
-
 module signed_mux_bug();
 
 reg       s;

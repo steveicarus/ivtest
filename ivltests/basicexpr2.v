@@ -36,9 +36,9 @@ wire [1:0] q;
 adder u_add (.q(q),.a(d),.b(d));
 
 (* ivl_synthesis_off *)
-initial 
+initial
   begin
-//    $dumpfile("test.vcd");	   
+//    $dumpfile("test.vcd");
 //    $dumpvars(0,test);
     d = 0;
     # 1;

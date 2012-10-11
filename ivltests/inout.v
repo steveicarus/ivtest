@@ -21,18 +21,18 @@
 module id(a,a);
 inout a;
 endmodule
- 
+
 module top ();
- 
+
 wire b,c;
- 
+
 id i1(b,c);
- 
+
 reg a, error, ena_a,ena_b;
- 
+
 assign c = ena_a ? a : 1'bz;
 assign b = ena_b ? a : 1'bz;
-                                 
+
 initial
   begin
      error = 0;
@@ -60,7 +60,7 @@ initial
        begin
          error = 1;
          $display("FAILED - b init value not 1'b1  a=%b,b=%b,c=%b",a,b,c);
-       end                             
+       end
      if(c !== 1'b1)
        begin
          error = 1;
@@ -69,7 +69,7 @@ initial
      #1 ;
      ena_a = 1'b0;
      #1 ;
-     ena_b = 1'b1; 
+     ena_b = 1'b1;
      #1 ;
      a= 0;
      #1;
@@ -90,7 +90,7 @@ initial
        begin
          error = 1;
          $display("FAILED - b init value not 1'b1  a=%b,b=%b,c=%b",a,b,c);
-       end                             
+       end
      if(c !== 1'b1)
        begin
          error = 1;
@@ -101,5 +101,5 @@ initial
     if(error == 0)
        $display("PASSED");
   end
- 
-endmodule           
+
+endmodule

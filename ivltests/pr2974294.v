@@ -22,5 +22,3 @@ initial begin
 end
 
 endmodule
-
- 	  	 

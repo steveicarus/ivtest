@@ -1,4 +1,3 @@
-
 /*
  * This tests the handling of signed/types parameters. This is a test
  * of the complaints from pr 1449749.
@@ -45,4 +44,3 @@ module main;
       $display("PASSED");
    end
 endmodule // main
-

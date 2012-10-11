@@ -1,4 +1,3 @@
-
 // pr1750870
 
 module test (FUSE_Q);
@@ -20,5 +19,3 @@ module test (FUSE_Q);
    end
 
 endmodule
-
- 	  	 

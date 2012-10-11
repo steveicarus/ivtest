@@ -1,4 +1,3 @@
-
 module main;
 
    // Declare word1 as a VARIABLE
@@ -32,7 +31,7 @@ module main;
 		  word1, word2.high, word2.low);
 	 $finish;
       end
-  
+
   /* and also for word3 */
     if (word3.low !== 8'haa || word3.high !== 8'h55) begin
 	 $display("FAILED: word3 = %h, word3.high = %h, word3.low = %h (should be reverse)",

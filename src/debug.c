@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (c) Tony Bybell 1999-2000.
  *
  * This program is free software; you can redistribute it and/or
@@ -26,24 +26,24 @@
 	static void mem_addnode(void *ptr, size_t size)
 	{
 	struct memchunk *m;
-	
+
 	m=(struct memchunk *)malloc(sizeof(struct memchunk));
 	m->ptr=ptr;
 	m->size=size;
 	m->next=mem;
-	
+
 	mem=m;
 	mem_total+=size;
 	mem_chunks++;
-	
+
 	fprintf(stderr,"mem_addnode:  TC:%05d TOT:%010d PNT:%010p LEN:+%d\n",mem_chunks,mem_total,ptr,size);
 	}
-	
+
 	static void mem_freenode(void *ptr)
 	{
 	struct memchunk *m, *mprev=NULL;
 	m=mem;
-	
+
 	while(m)
 		{
 		if(m->ptr==ptr)
@@ -56,7 +56,7 @@
 				{
 				mem=m->next;
 				}
-	
+
 			mem_total=mem_total-m->size;
 			mem_chunks--;
 			fprintf(stderr,"mem_freenode: TC:%05d TOT:%010d PNT:%010p LEN:-%d\n",mem_chunks,mem_total,ptr,m->size);
@@ -66,7 +66,7 @@
 		mprev=m;
 		m=m->next;
 		}
-	
+
 	fprintf(stderr,"mem_freenode: PNT:%010p *INVALID*\n",ptr);
 	sleep(1);
 	}
@@ -212,4 +212,3 @@ while((ch=*(str++)))
 	}
 return(nflag?(-val):val);
 }
-

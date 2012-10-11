@@ -23,7 +23,7 @@ mytest(int ud, int reason)
 
     lt = tf_igetlongtime(&ht, inst);
     io_printf("\ttf_igetlongtime(inst)\t\t-> %d/%d\n", (int)ht, (int)lt);
-    
+
     lt = tf_getlongsimtime(&ht);
     io_printf("\ttf_getlongsimtime()\t\t-> %d/%d\n", (int)ht, (int)lt);
 
@@ -32,7 +32,7 @@ mytest(int ud, int reason)
 
     lt = tf_igettimeprecision(inst);
     io_printf("\ttf_igettimeprecision(inst)\t-> %d\n", (int)lt);
-    
+
     lt = tf_gettimeunit();
     io_printf("\ttf_gettimeunit()\t\t-> %d\n", (int)lt);
 

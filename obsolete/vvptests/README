@@ -2,6 +2,5 @@ This series of tests is used to validate the vvp portion of the iverilog runtime
 
 ./vvp.pl
 
-This will execute the regression list in regress.list and generate a report in 
+This will execute the regression list in regress.list and generate a report in
 regression_report.txt
-

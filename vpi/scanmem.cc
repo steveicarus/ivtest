@@ -46,7 +46,7 @@ extern "C" PLI_INT32 MemPeek(PLI_BYTE8 *)
         while ((handle = vpi_scan(iterate))) {
             if (!strcmp("m_peek", vpi_get_str(vpiName, handle))) {
 		vpiHandle memw_iter = vpi_iterate(vpiMemoryWord, handle);
-		vpi_printf("  Found %s (%d deep x %d bits)\n", 
+		vpi_printf("  Found %s (%d deep x %d bits)\n",
 		    vpi_get_str(vpiName, handle),
 		    (int)vpi_get(vpiSize, handle),
 		    (int)vpi_get(vpiSize, vpi_scan(memw_iter)));
@@ -103,7 +103,7 @@ extern "C" PLI_INT32 MemPoke(PLI_BYTE8 *)
         while ((handle = vpi_scan(iterate))) {
             if (!strcmp("m_poke", vpi_get_str(vpiName, handle))) {
 		vpiHandle memw_iter = vpi_iterate(vpiMemoryWord, handle);
-		vpi_printf("  Found %s (%d deep x %d bits)\n", 
+		vpi_printf("  Found %s (%d deep x %d bits)\n",
 		    vpi_get_str(vpiName, handle),
 		    (int)vpi_get(vpiSize, handle),
 		    (int)vpi_get(vpiSize, vpi_scan(memw_iter)));

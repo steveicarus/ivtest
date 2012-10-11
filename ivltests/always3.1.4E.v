@@ -19,18 +19,18 @@
 //  SDW - Validate always # (mintypmax_dly) reg_lvalue = constant ;
 //  D:    Note that initial has to be before always to execute!
 
-module main ; 
+module main ;
 
 reg [3:0] value1 ;
 reg err ;
 
-initial 
+initial
 	begin
            err = 0;
            # 1;
            if(value1 !== 4'bxxxx)
              begin
-               $display("FAILED - 3.1.4E - initial value not xxxx;\n"); 
+               $display("FAILED - 3.1.4E - initial value not xxxx;\n");
                err = 1;
              end
            #15 ;
@@ -39,14 +39,12 @@ initial
                $display("FAILED - 3.1.4E - always # mintypmax_dly reg_lvalue = constant\n");
                err = 1;
              end
-           
+
            if (err == 0)
              $display("PASSED\n");
-     	     $finish;
+	     $finish;
         end
 
 always # (3:10:15) value1 = 4'h5;
 
 endmodule
-
-

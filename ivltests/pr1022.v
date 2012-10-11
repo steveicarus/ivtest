@@ -1,4 +1,3 @@
-
 // based on PR#1022
 
 module foo;
@@ -20,4 +19,3 @@ module foo;
    end // initial begin
 
 endmodule
-

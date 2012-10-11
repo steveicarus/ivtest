@@ -39,7 +39,7 @@ EndOfCompile(s_cb_data *data)
     val.format = vpiIntVal;
     vpi_get_value(hand, &val);
 
-    // Add a few transitions 
+    // Add a few transitions
     for (i = 0; i < 6; i++) {
 
 	if (i < 3) {

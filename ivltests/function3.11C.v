@@ -33,30 +33,30 @@ function [31:0] myfunc1 ;
   myfunc1 = myfunc2(in1) ;
 endfunction
 
-initial 
+initial
   begin
     error = 0;
     val1 = myfunc1(32'h0) ;
     if(val1 != 32'h0)
-      begin 
-        $display("FAILED - function3.11C - function called from funct(1)"); 
+      begin
+        $display("FAILED - function3.11C - function called from funct(1)");
         error = 1;
       end
-    
-    val2 = 32'h12345678 ; 
+
+    val2 = 32'h12345678 ;
     val1 = myfunc1(val2);
     if(val1 != val2)
-      begin 
+      begin
         $display("FAILED - function3.11C - function called from funct(2)");
         error = 1;
       end
 
     if(myfunc1(32'h10101010) != 32'h10101010)
-      begin 
+      begin
         $display("FAILED - function3.11C - function called from funct(3)");
         error = 1;
       end
-    
+
     if(error == 0)
        $display("PASSED");
   end

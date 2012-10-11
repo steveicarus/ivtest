@@ -1,4 +1,3 @@
-
 /*
  * Copyright (c) 2003 Stephen Williams (steve@icarus.com)
  *
@@ -26,7 +25,7 @@ module main;
 
    wire [35:0] p;
    reg [17:0]  a, b;
-   reg 	       clk, ce, reset;
+   reg	       clk, ce, reset;
 
    parameter   MAX_TRIALS = 1000;
    integer     idx;
@@ -99,4 +98,3 @@ module MULT18X18S (output reg [35:0] P,
 
 
 endmodule
-

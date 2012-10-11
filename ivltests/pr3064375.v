@@ -28,14 +28,14 @@ always @(posedge CLK or posedge RST) begin
   else
     Reg1 <= !Reg1;
 end
-  
+
 always @(negedge CLK or posedge RST) begin
   if (RST)
     Reg2 <= 0;
   else
     Reg2 <= Reg1;
 end
-  
+
 initial begin
   $monitor("CLK %b RST %b Reg1 %b Reg2 %b", CLK, RST, Reg1, Reg2);
 end

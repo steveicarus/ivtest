@@ -38,7 +38,7 @@ vstd:memwide		normal	memwide.cc	memwide-std.log
 vstd:nulls1		normal	nulls1.c	nulls1-std.log
 
 # Icarus outputs warning messages.
-vstd:pr723		normal	pr723.c 	pr723-std.log
+vstd:pr723		normal	pr723.c		pr723-std.log
 
 # This test has a non-deterministic output order. The gold file needs
 # to be adjusted to match the simulator being used.
@@ -53,7 +53,7 @@ vstd:scopes		normal	scopes.c	scopes-std.log
 # Specifically the calltf, compieltf and sizetf routines take a
 # (char *) argument not a (PLI_BYTE8 *). This difference only
 # produces a warning for C code, but is fatal for C++ code.
-# 
+#
 #==========
 v0.8:hello_vpi   normal hello_vpi.c   hello.log           -DIVERILOG_V0_8
 v0.8:hello_tf    normal hello_tf.c    hello_tf.log        -DIVERILOG_V0_8
@@ -63,7 +63,7 @@ v0.8:nulls1      normal nulls1.c      nulls1-v0.8.log     -DIVERILOG_V0_8
 v0.8:scanmem     normal scanmem.cc    scanmem.log         -DIVERILOG_V0_8
 v0.8:scanmem2    normal scanmem2.cc   scanmem2.log        -DIVERILOG_V0_8
 # V0.8 incorrectly uses 0 bits outside the vector range to determine
-# if X is printed. 
+# if X is printed.
 v0.8:scanmem3    normal scanmem3.cc   scanmem3-v0.8.log   -DIVERILOG_V0_8
 v0.8:event1      normal event1.c      event1.log          -DIVERILOG_V0_8
 v0.8:pokereg     normal pokereg.cc    pokereg.log         -DIVERILOG_V0_8
@@ -165,5 +165,3 @@ ports_params     normal ports_params.c ports_params.gold
 # different log file to run with an older versions or if it uses
 # something not implemented (NI) by other versions of the program
 # it will also need a version specific line(s) above.
-
-

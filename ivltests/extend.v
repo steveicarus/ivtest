@@ -19,16 +19,16 @@
 
 /*
  * This test tests simple zero-extend of small r-values into large
- * l-values. 
- * 
+ * l-values.
+ *
  * Correction and extensions by EML; 2007-11-15
  */
 module main;
 
    reg [3:0] y;
    reg signed xs;
-   reg 	      x;
-   reg 	      fail;
+   reg	      x;
+   reg	      fail;
 
    initial begin
       fail = 0;
@@ -78,7 +78,7 @@ module main;
 	 fail = 1;
       end
 
-      // 'bx is an unsized unsigned constant; it X-extends to the size of 
+      // 'bx is an unsized unsigned constant; it X-extends to the size of
       // the expression it is in
       y = 'bx;
       if (y !== 4'bxxxx) begin
@@ -94,8 +94,8 @@ module main;
 	 fail = 1;
       end
 
-      // this is the only case in which a constant pads to the left with 
-      // X's. 4'bx is 4-bit unsigned, but it is specified with fewer than 4 
+      // this is the only case in which a constant pads to the left with
+      // X's. 4'bx is 4-bit unsigned, but it is specified with fewer than 4
       // bits
       y = 4'bx;
       if (y !== 4'bxxxx) begin
@@ -103,8 +103,8 @@ module main;
 	 fail = 1;
       end
 
-      // this is the only case in which a constant pads to the left with 
-      // Z's. 4'bz is 4-bit unsigned, but it is specified with fewer than 4 
+      // this is the only case in which a constant pads to the left with
+      // Z's. 4'bz is 4-bit unsigned, but it is specified with fewer than 4
       // bits
       y = 4'bz;
       if (y !== 4'bzzzz) begin

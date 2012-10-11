@@ -10,7 +10,7 @@ begin
         foo_value = 10;
         foo_bit[i] <= #foo_value  1'b0;
 
-        /*      
+        /*
                 NOTE:
                 if you replace previous line either with:
                         foo_bit[1] <= #foo_value  1'b0;
@@ -27,4 +27,3 @@ begin
 end
 
 endmodule
-

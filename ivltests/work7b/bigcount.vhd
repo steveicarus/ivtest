@@ -16,11 +16,11 @@ begin
 d <= t xor q;
 
 myreset <= reset or t;
- 
+
 f1: fdc port map (clk => clk, reset => reset, d => d,   q => q);
 tb: timebase port map (CLOCK => clk, RESET => myreset, ENABLE => '1', TICK => t, COUNT_VALUE => open );
 
 counting: timebase port map (CLOCK => clk, RESET => reset, ENABLE => q, TICK => open, COUNT_VALUE => count );
 
-  
+
 end bigcount_rtl;

@@ -1,4 +1,3 @@
-
 module signed_multiplier_test;
 
    reg failed_flag = 0;

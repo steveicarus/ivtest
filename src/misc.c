@@ -1,6 +1,6 @@
 /*
  * Copyright (c) Tony Bybell 1999-2000.
- * 
+ *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; either version 2
@@ -25,7 +25,7 @@ for(p=s;*p;p++)
                 {
                 h=h^(g>>24);
                 h=h^g;
-                }   
+                }
         }
 return(h%SYMPRIME);
 }
@@ -59,21 +59,21 @@ if(!obj->facs_are_sorted)
 	{
 	hv=hash(s);
 	if(!(temp=obj->sym[hv])) return(NULL); /* no hash entry, add here wanted to add */
-	
+
 	while(temp)
 	        {
 	        if(!strcmp(temp->name,s))
 	                {
-	                return(temp); /* in table already */    
+	                return(temp); /* in table already */
 	                }
 	        if(!temp->next) break;
 	        temp=temp->next;
 	        }
-	
+
 	return(NULL); /* not found, add here if you want to add*/
 	}
 	else	/* no sense hashing if the facs table is built */
-	{	
+	{
 	DEBUG(printf("BSEARCH: %s\n",s));
 	return(bsearch_facs(obj, s));
 	}
@@ -84,7 +84,7 @@ if(!obj->facs_are_sorted)
  * compares two facilities a la strcmp but preserves
  * numbers for comparisons
  *
- * there are two flavors..the slow and accurate to any 
+ * there are two flavors..the slow and accurate to any
  * arbitrary number of digits version (first) and the
  * fast one good to 2**31-1.  we default to the faster
  * version since there's probably no real need to
@@ -201,7 +201,7 @@ for(;;)
 
 
 /*
- * Quicksort algorithm from p154 of 
+ * Quicksort algorithm from p154 of
  * "Introduction to Algorithms" by Cormen, Leiserson, and Rivest.
  * 05-jul-97bsi
  */
@@ -220,7 +220,7 @@ while(1)
 	do
 		{
 		j--;
-		} while(sigcmp(a[j]->name,x->name)>0);	
+		} while(sigcmp(a[j]->name,x->name)>0);
 
 	do	{
 		i++;

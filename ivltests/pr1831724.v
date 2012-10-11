@@ -1,4 +1,3 @@
-
 // pr1831724
 
 module test;

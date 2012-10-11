@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (c) Tony Bybell 1999-2000.
  *
  * This program is free software; you can redistribute it and/or
@@ -41,7 +41,7 @@ union
 } HistEnt;
 
 enum HistEntFlagBits
-{ HIST_GLITCH_B, HIST_REAL_B, HIST_STRING_B 
+{ HIST_GLITCH_B, HIST_REAL_B, HIST_STRING_B
 };
 
 #define HIST_GLITCH (1<<HIST_GLITCH_B)
@@ -65,7 +65,7 @@ typedef struct ExtNode
 struct Node
   {
     char     *nname;	/* ascii name of node */
-    ExtNode  *ext;	/* extension to node for vectors */    
+    ExtNode  *ext;	/* extension to node for vectors */
     HistEnt  head;	/* first entry in transition history */
     hptr     curr;      /* ptr. to current history entry */
 

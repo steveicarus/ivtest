@@ -1,10 +1,8 @@
-
-
 module main;
 
    reg [3:0] count;
-   reg 	     CLOCK;
-   reg 	     RSTn, SETn;
+   reg	     CLOCK;
+   reg	     RSTn, SETn;
 
    (* ivl_synthesis_off *)
    initial begin
@@ -60,7 +58,7 @@ module main;
    end
 
    (* ivl_synthesis_on *)
-   always @(posedge CLOCK or negedge RSTn or negedge SETn) 
+   always @(posedge CLOCK or negedge RSTn or negedge SETn)
      begin
 	if (!RSTn)
 	  count =0; //async clear

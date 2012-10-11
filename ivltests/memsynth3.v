@@ -1,12 +1,10 @@
-
-
 module main;
 
    reg [3:0] foo, bar;
    reg [1:0] adr;
 
-   reg 	     bit, rst, clk;
-   reg 	     load_enable, write_enable;
+   reg	     bit, rst, clk;
+   reg	     load_enable, write_enable;
 
    (* ivl_synthesis_on *)
    always @(posedge clk or posedge rst)

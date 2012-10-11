@@ -21,7 +21,7 @@
 //
 
 module main ();
- 
+
 reg [7:0] array [0:7];
 reg error ;
 reg [3:0] count;
@@ -39,10 +39,10 @@ initial
              $display("FAILED - array[count] == %h, s/b %h",
                        array[count],count);
           end
-     end 
-    
-    if(error == 0) 
-           $display("PASSED\n"); 
+     end
+
+    if(error == 0)
+           $display("PASSED\n");
     $finish ;
   end
 endmodule

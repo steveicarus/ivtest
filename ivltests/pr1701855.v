@@ -2,7 +2,7 @@
 
 module top;
   initial begin
-    
+
     // This should print the following:
 
     // Time scale of (top) is 1us / 1ns

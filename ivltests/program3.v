@@ -1,4 +1,3 @@
-
 // This test program shows how programs can be contained by
 // modules, and can access variables in the context.
 module main;

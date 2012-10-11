@@ -1,12 +1,11 @@
-
 /*
  * This is the crux of PR487.
  */
 
-module  test();                
+module  test();
 
 parameter[1:4]    async_wrport = 4'b1100;
-reg           async_wri;          
+reg           async_wri;
 reg[1:4]      async_i;
 
 initial   begin
@@ -16,4 +15,3 @@ initial   begin
    end
 end
 endmodule
-

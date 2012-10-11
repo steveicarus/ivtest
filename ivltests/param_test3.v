@@ -24,4 +24,3 @@ module n;
 wire a;
 m #(1,2,3) am(a);
 endmodule
-

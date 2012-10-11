@@ -88,14 +88,14 @@ module top;
       $display("FAILED: %%0c, expected %0s, got %0s", cmp, str);
       pass = 1'b0;
     end
-    
+
     cmp = "000c";
     $sformat(str, "%04c", bval);
     if (str != cmp) begin
       $display("FAILED: %%04c, expected %0s, got %0s", cmp, str);
       pass = 1'b0;
     end
-    
+
     // Check the %d conversion.
     dval = 123;
     cmp = "00000123";

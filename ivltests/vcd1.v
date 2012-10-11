@@ -31,7 +31,7 @@ wire junk;
 nand  #1 na1 (na1_out,in0,in1);
 nand  #1 na2 (na2_out,in0,na1_out);
 nand  #1 na3 (na3_out,in1,na1_out);
-nand  #1 na4 (out,na2_out,na3_out); 
+nand  #1 na4 (out,na2_out,na3_out);
 
 assign junk = in0;
 
@@ -62,8 +62,8 @@ initial
     $display("%b xor %b = %b",i1,i2,xout);
     i1 = 1'b0;
     i2 = 1'b1;
-    #5 ; 
+    #5 ;
     $display("%b xor %b = %b",i1,i2,xout);
   end
- 
+
 endmodule // main

@@ -24,7 +24,7 @@
 module main;
 
    wire rdy;
-   reg 	reset, clk;
+   reg	reset, clk;
 
    timer dut(.rdy(rdy), .clk(clk), .reset(reset));
 

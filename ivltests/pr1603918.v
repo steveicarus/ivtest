@@ -55,5 +55,3 @@ module top;
   nand dut (q, a, b);
 //  nand dut (q, b, a);       // This also produces incorrect results.
 endmodule
-
- 	  	 

@@ -1,8 +1,7 @@
-
 module test;
 
    reg a, b1, b2;
-   
+
    submod m1 (a, b1, c1);
    submod m2 (a, b2, c2);
 
@@ -23,10 +22,10 @@ module test;
 	#0;                             // does not trip $enddefinitions
 	a = 0;                          // does not trip $enddefinitions
 	$dumpvars(0, m1);               // (test.m1), test.m1.mm1, test.m1.mm2
- 	#1;                             // $enddefinitions called
+	#1;                             // $enddefinitions called
 	$dumpvars(0, m2);               // ignored
      end
-	
+
    initial
      begin
 	#1 set(3'd 0);

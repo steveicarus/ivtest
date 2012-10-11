@@ -25,13 +25,13 @@ module paramtest(clk, dat);
    input     clk;
    output [dat_width-1:0] dat;
 
-   reg [dat_width-1:0] 	  dat;
-   reg [4-1:0] 		  exp_dat;
-   parameter 		  pay_init = 32'h01020304;
-   parameter 		  pay_inc = 32'h01010101;
+   reg [dat_width-1:0]	  dat;
+   reg [4-1:0]		  exp_dat;
+   parameter		  pay_init = 32'h01020304;
+   parameter		  pay_inc = 32'h01010101;
 
-   parameter 		  cell_size = (53 * 8);
-   parameter 		  transfers = cell_size/dat_width + ((cell_size%dat_width)?1:0);
+   parameter		  cell_size = (53 * 8);
+   parameter		  transfers = cell_size/dat_width + ((cell_size%dat_width)?1:0);
 
    initial begin
       exp_dat = 0;
@@ -52,4 +52,3 @@ module paramtest(clk, dat);
       end
    end
 endmodule
-

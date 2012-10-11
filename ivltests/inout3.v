@@ -1,4 +1,3 @@
-
 module main;
 
    wire qh = 1'bz;
@@ -7,7 +6,7 @@ module main;
 
    buft a({qh,Q}, D);
 
-   reg 	      x;
+   reg	      x;
    //assign     D[0] = x;
 
    initial begin

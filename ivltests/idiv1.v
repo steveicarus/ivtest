@@ -29,7 +29,7 @@ module top () ;
 
 always @(a or b)
    result = a / b;
- 
+
 initial begin
    #1 a = 0; b = 1;
    # 1;
@@ -96,4 +96,4 @@ initial begin
 
 end
 
-endmodule           
+endmodule

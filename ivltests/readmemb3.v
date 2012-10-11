@@ -16,12 +16,12 @@
 //    along with this program; if not, write to the Free Software
 //    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 //
-// SDW: readmemb function - Only read part of data file 
+// SDW: readmemb function - Only read part of data file
 //
 //
 
 module main ();
- 
+
 reg [7:0] array [0:7];
 reg error ;
 reg [3:0] count;
@@ -44,7 +44,7 @@ initial
              $display("FAILED - array[count] == %h, s/b %h",
                        array[count],count);
           end
-     end 
+     end
 
     if(array[4] !== 8'h0)
       begin
@@ -52,9 +52,9 @@ initial
         $display("FAILED - array[4] == %h, s/b 0",
                        array[count]);
       end
-    
-    if(error == 0) 
-           $display("PASSED\n"); 
+
+    if(error == 0)
+           $display("PASSED\n");
     $finish ;
   end
 endmodule

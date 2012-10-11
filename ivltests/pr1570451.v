@@ -2,17 +2,17 @@ module test;
 
   reg [1:0] bus;
   reg [1:0] skewed_bus;
-  
+
   integer delay0;  initial delay0 = 5;
   integer delay1;  initial delay1 = 10;
-  
+
   /* attempt to model skew across the bus using transport delays */
-  
+
   always @( bus[0] )
     begin
       skewed_bus[0] <= #delay0 bus[0];
     end
-  
+
    always @( bus[1] )
     begin
       skewed_bus[1] <= #delay1 bus[1];
@@ -45,4 +45,3 @@ module test;
       $display("PASSED");
    end
 endmodule
-

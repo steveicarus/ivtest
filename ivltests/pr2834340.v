@@ -46,4 +46,3 @@ wire coil_off = !coil & !dly_coil;
 tranif1 t1 (ARM,NC,coil_off);
 tranif1 t2 (ARM,NO,coil_on);
 endmodule
-

@@ -1,4 +1,3 @@
-
 // Released under GPL2.0
 // (c) 2002 Tom Verbeure
 
@@ -71,4 +70,4 @@ module main;
 		$display(">|00000000000000000000000001000001|");
 		$displayb("*|",myInt,"|");
 	end
-endmodule 
+endmodule

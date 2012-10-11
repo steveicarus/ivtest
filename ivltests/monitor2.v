@@ -49,5 +49,3 @@ module stim;
   end
 
 endmodule
-
-

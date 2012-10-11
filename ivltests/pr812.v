@@ -40,11 +40,10 @@ module bot(a, b);
 		tp = 1 / `div;
 		tp2 = 1 / `div;
 		$display("tp = %f, tp2 = %f", tp, tp2);
-		if (tp != 10.0) 
+		if (tp != 10.0)
 			$display("tp != 10.0.  (tp = %f)", tp);
 		else
 			$display("tp == 10, (expected)");
 		#1 $display("tp = %f, tp2 = %f", tp, tp2);
 	end
 endmodule
-

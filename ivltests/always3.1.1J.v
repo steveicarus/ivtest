@@ -19,12 +19,12 @@
 //  SDW - Validate always reg_lvalue = @ (event_expression)  boolean_expr
 //
 
-module main ; 
+module main ;
 
 reg [3:0] value1 ;
 reg event_var ;
 
-initial 
+initial
 begin
   # 2 ;
   value1 = 5'h 0 ;
@@ -36,26 +36,24 @@ begin
   event_var = 1'b1 ;
   #5 ;
 end
-  
-initial 
-  begin			// Should be xxxx at initial time 
+
+initial
+  begin			// Should be xxxx at initial time
     if(value1 !== 4'bxxxx)
-  	$display("FAILED - always reg_lvalue = @ (event_expression)  boolean_expr\n"); 
+	$display("FAILED - always reg_lvalue = @ (event_expression)  boolean_expr\n");
     # 6 ;
-    if(value1 != 4'h1) 	// Time 5 should see a change of 0 to 1 
-  	$display("FAILED - always reg_lvalue = @ (event_expression)  boolean_expr\n"); 
+    if(value1 != 4'h1)	// Time 5 should see a change of 0 to 1
+	$display("FAILED - always reg_lvalue = @ (event_expression)  boolean_expr\n");
     # 5 ;
-    if(value1 != 4'h1) 	// Time 5 should see a change of 0 to 1 
-  	$display("FAILED - always reg_lvalue = @ (event_expression)  boolean_expr\n"); 
+    if(value1 != 4'h1)	// Time 5 should see a change of 0 to 1
+	$display("FAILED - always reg_lvalue = @ (event_expression)  boolean_expr\n");
         begin
           $display("PASSED\n");
           $finish ;
         end
   end
 
-always value1 = @ (event_var) 1'b1 && 1'b1 ; 
+always value1 = @ (event_var) 1'b1 && 1'b1 ;
 
 
 endmodule
-
-

@@ -14,4 +14,3 @@ module test();
      initial CLK = 0;
      initial cnt = bar;
 endmodule
-

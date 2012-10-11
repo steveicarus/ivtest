@@ -7,10 +7,9 @@ entity or104 is
     b_i : in std_logic_vector (103 downto 0);
     c_o : out std_logic_vector (103 downto 0)
   );
-end entity or104; 
+end entity or104;
 
 architecture rtl of or104 is
 begin
   c_o <= a_i or b_i;
 end architecture rtl;
-

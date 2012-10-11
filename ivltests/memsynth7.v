@@ -1,10 +1,8 @@
-
-
 module main;
 
    reg [7:0] a;
    reg [2:0] adr, w_adr;
-   reg 	     rst, clk, ae, wr;
+   reg	     rst, clk, ae, wr;
 
    (* ivl_synthesis_on *)
    always @(posedge clk)

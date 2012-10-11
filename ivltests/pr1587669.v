@@ -51,5 +51,3 @@ module nr2 (zn, a1, a2, a3, a4);
     (a4 -=> zn) = (0.500, 0.500);
   endspecify
 endmodule
-
- 	  	 

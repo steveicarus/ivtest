@@ -20,9 +20,9 @@
 module  drvz( clk, iA, iC, ioS );
     input   clk, iA, iC ;
     inout   ioS ;
-    
+
     assign  ioS = (iC) ? iA : 'bz ;
-    
+
 endmodule
 
 module  main;
@@ -30,20 +30,20 @@ module  main;
     reg     clk, c ;
     initial begin clk = 0 ; forever #5 clk = ~clk ; end
     initial begin c = 0 ; #40 $finish ; end
-    
+
     wire    a, b, s ;
-    
+
     assign  a = 'b0 ;
     assign  b = 'b1 ;
-    
+
     always @(posedge clk) c <= ~c ;
-    
+
     drvz M ( clk, a, c,  s ) ;
     drvz N ( clk, b, ~c, s ) ; // line(A)
-    
+
     always @(posedge clk)
         $display("%b %b %b", s, a, b );
-    
+
 endmodule
 
 //  expected output

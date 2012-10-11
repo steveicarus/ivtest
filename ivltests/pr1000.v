@@ -1,4 +1,3 @@
-
 /*
  * Based on PR#1000.
  */
@@ -20,4 +19,3 @@ module foo20 ();
    end
 
 endmodule
-

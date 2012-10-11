@@ -1,4 +1,3 @@
-
 /*
  * Copyright (c) 2001 Stephen Williams (steve@icarus.com)
  *
@@ -72,5 +71,5 @@ module main;
       $display("PASSED");
 
    end // initial begin
-   
+
 endmodule // main

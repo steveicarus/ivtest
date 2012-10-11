@@ -1,4 +1,3 @@
-
 module main;
 
    shortint foo, bar = 10;

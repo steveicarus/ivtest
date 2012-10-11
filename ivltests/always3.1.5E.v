@@ -18,11 +18,11 @@
 //
 //  SDW - Validate always if ( bool_expr) statement else ;
 
-module main ; 
+module main ;
 
 reg [3:0] value1 ;
 
-initial 
+initial
 	begin
            value1 = 0;
            # 5 ;
@@ -30,7 +30,7 @@ initial
                 $display("FAILED - always 3.1.5E always if ( bool_expr) statementelse ;");
            else
                 $display("PASSED");
-     	   $finish;                                                            
+	   $finish;
         end
 
 always if( 1'b1 & 1'b1) begin
@@ -40,5 +40,3 @@ always if( 1'b1 & 1'b1) begin
        else ;
 
 endmodule
-
-

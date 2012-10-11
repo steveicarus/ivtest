@@ -25,7 +25,7 @@
 module grayGap (ad, clk, read, write);
 
    output [31:0] ad;
-   input 	 clk, read, write;
+   input	 clk, read, write;
 
    reg [15:0] regff;
 
@@ -41,7 +41,7 @@ endmodule
 module main;
 
    wire [31:0] ad;
-   reg 	       clk, read, write;
+   reg	       clk, read, write;
 
    reg [31:0]  ad_val;
    reg ad_en;

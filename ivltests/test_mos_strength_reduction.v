@@ -39,13 +39,13 @@ rpmos p0 ( o,  vdd,  i);
 initial begin
 #1;
   failed = 0;
-  if (i === vdd) 
+  if (i === vdd)
     if (o !== pu0) begin
       $display ("FAILED: test_mos_strength_reduction:  case pull i:%d o:%d pu0:%d", i, o, pu0);
       failed = 1;
     end
 
-  else if (i === gnd) 
+  else if (i === gnd)
     if (o !== pu1) begin
       $display ("FAILED: test_mos_strength_reduction:  case pull i:%d o:%d pu0:%d", i, o, pu0);
       failed = 1;
@@ -85,13 +85,13 @@ rpmos rp0 ( p0, vdd, i);
 initial begin
 #1;
   failed = 0;
-  if (i === vdd) 
+  if (i === vdd)
     if (o !== we0) begin
       $display ("FAILED: test_mos_strength_reduction:  case weak i:%d o:%d pu0:%d", i, o, we0);
       failed = 1;
     end
 
-  else if (i === gnd) 
+  else if (i === gnd)
     if (o !== we1) begin
       $display ("FAILED: test_mos_strength_reduction:  case weak i:%d o:%d pu0:%d", i, o, we0);
       failed = 1;
@@ -163,7 +163,7 @@ initial begin
   if (o !== gnd ) begin
     $display ("FAILED: test_mos_strength_reduction:  case 0");
     failed = 1;
-  end 
+  end
 #1;
   c0 = 1'b0;
   c1 = 1'b0;
@@ -171,7 +171,7 @@ initial begin
   if (o !== vdd ) begin
     $display ("FAILED: test_mos_strength_reduction:  case 1");
     failed = 1;
-  end 
+  end
 #1;
   c0 = 1'b1;
   c1 = 1'b0;
@@ -179,7 +179,7 @@ initial begin
   if (o !== 1'bx ) begin
     $display ("FAILED: test_mos_strength_reduction:  case x");
     failed = 1;
-  end 
+  end
   if (! failed )
     $display ("PASSED: test_mos_strength_reduction");
 #1;

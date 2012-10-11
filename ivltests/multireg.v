@@ -43,9 +43,9 @@ wire [2:0] q;
 basicreg u_reg (clk,d,q);
 
 (* ivl_synthesis_off *)
-initial 
+initial
   begin
-//    $dumpfile("test.vcd");	   
+//    $dumpfile("test.vcd");
 //    $dumpvars(0,test);
     clk = 0;
     d = 0;

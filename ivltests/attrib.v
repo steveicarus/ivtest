@@ -1,4 +1,3 @@
-
 // This test program is mostly about the parser parsing the attribute
 // attached to the main.dut.Q reg below.
 
@@ -31,11 +30,11 @@ endmodule // main
 module test (Q, D, CK);
 
    output [3:0] Q;
-   input [3:0] 	D;
-   input 	CK;
+   input [3:0]	D;
+   input	CK;
 
    (* REGISTER_DUPLICATION = "no" *)
-   reg [3:0] 	Q;
+   reg [3:0]	Q;
    always @(posedge CK)
      Q <= D;
 

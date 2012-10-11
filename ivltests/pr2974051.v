@@ -4,7 +4,7 @@ module pr2974051;
 
 wire [7:0] a;
 wire [7:0] b;
-reg 	   c;
+reg	   c;
 
 assign a[5:2] = 4'b0101;
 assign b[5:2] = 4'b1010;
