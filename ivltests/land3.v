@@ -3,17 +3,17 @@
  *
  * Copyright (C) 1999 Stephen G. Tell
  * Portions inspired by qmark.v by Steven Wilson (stevew@home.com)
- * 
+ *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2, or (at your option)
  * any later version.
- * 
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License
  * along with this software; see the file COPYING.  If not, write to
  * the Free Software Foundation, Inc., 59 Temple Place, Suite 330,
@@ -35,14 +35,14 @@ module land3;
 
    initial Clk = 0;
    always #10 Clk = ~Clk;
-   
+
    always @(posedge Clk)
       begin
        #1 ;
-       if(q != q_calc) 
+       if(q != q_calc)
          begin
            $display("FAILED - Cond && failed for vect %b%b%b - was %b, s/b %b",
-                    a,b,c,q,q_calc); 
+                    a,b,c,q,q_calc);
             error = 1;
          end
       end
@@ -70,7 +70,7 @@ module land3;
    end
 
 endmodule
-   
+
 module tand(q, q_calc, a, b, c);
    output q;
    output q_calc;
@@ -78,9 +78,9 @@ module tand(q, q_calc, a, b, c);
    input  b;
    input  c;
 
-   reg 	  q;
+   reg	  q;
    reg    q_calc;
-   
+
    always @(a or b or c) begin
       if(a===b && b===c)
 	 q <= 1;
@@ -88,20 +88,20 @@ module tand(q, q_calc, a, b, c);
 	 q <= 0;
    end // always @ (a or b or c)
 
-   // Added to allow 2nd calculation 
+   // Added to allow 2nd calculation
    // We use the if (a === b) formulation - it's part
    // of the base set that is need to do ANY tests..
    always @(a or b or c)
      begin
-       if( a===b) 
+       if( a===b)
         begin
           if(b === c)
             q_calc = 1'b1;
           else
-            q_calc = 1'b0; 
+            q_calc = 1'b0;
         end
       else
-          q_calc = 1'b0; 
+          q_calc = 1'b0;
      end
 
 endmodule // foo

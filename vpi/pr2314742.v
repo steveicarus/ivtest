@@ -5,7 +5,7 @@ module top;
    reg [7:0] c;
 
    integer   retcode;
-   
+
 
    initial
       begin
@@ -19,10 +19,10 @@ module top;
 
    always @(a)
      $display("%t The value of A is: %b", $time, a);
-   
+
    always @(b)
      $display("%t The value of B is: %b", $time, b);
-   
+
    always @(c)
      $display("%t The value of C is: %b", $time, c);
 

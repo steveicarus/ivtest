@@ -18,7 +18,7 @@
 //    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 //
 //	SDW - Validate XOR op using non-blocking assignment
-//	
+//
 
 module main;
 reg [7:0] a;
@@ -39,7 +39,7 @@ initial
               if(!c)
                 begin
                   $display("FAILED - XOR a=%b,b=%b,c=%b",a,b,c);
-                  error = 1; 
+                  error = 1;
                 end
             end
           if(!a)
@@ -47,7 +47,7 @@ initial
               if(c)
                 begin
                   $display("FAILED - XOR a=%b,b=%b,c=%b",a,b,c);
-                  error = 1; 
+                  error = 1;
                 end
             end
           b = 1;
@@ -57,7 +57,7 @@ initial
               if(!c)
                 begin
                   $display("FAILED - XOR a=%b,b=%b,c=%b",a,b,c);
-                  error = 1; 
+                  error = 1;
                 end
             end
           if(a)
@@ -65,7 +65,7 @@ initial
               if(c)
                 begin
                   $display("FAILED - XOR a=%b,b=%b,c=%b",a,b,c);
-                  error = 1; 
+                  error = 1;
                 end
             end
        end
@@ -76,5 +76,3 @@ initial
 always @(a or b)
    c <= a ^ b;
 endmodule
-
-

@@ -17,26 +17,24 @@
 //    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 //
 //  SDW - always force net_lvalue = boolean_expr ;
-//  D:    No dependancy 
+//  D:    No dependancy
 
-module main ; 
+module main ;
 
 wire [3:0] value1 ;
 
-initial 
+initial
   begin
     #15;
     if(value1 != 4'h5)
-      $display("FAILED - 3.1.3G always force net_lvalue = boolean_expr;\n"); 
+      $display("FAILED - 3.1.3G always force net_lvalue = boolean_expr;\n");
     else
 	begin
            $display("PASSED\n");
-     	   $finish;                                                            
+	   $finish;
         end
   end
 
 always force value1 = 1'b1 && 1'b1;
 
 endmodule
-
-

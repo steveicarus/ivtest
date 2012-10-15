@@ -1,4 +1,3 @@
-
 /*
  * Modified to add "endtask : <name>" syntax. This modification tests
  * the SystemVerilog extension to the syntax. -- Stephen Williams
@@ -33,7 +32,7 @@
 module test;
 
    wire w;
-   
+
    jobs j(w);
 
    task ini;
@@ -53,14 +52,14 @@ module test;
 	else
 	  $display("FAILED");
      end
-   
+
 endmodule // test
 
 module jobs (out);
 
    output out;
-   reg 	  out;
-   
+   reg	  out;
+
    task set;
       input val;
       begin
@@ -69,4 +68,3 @@ module jobs (out);
    endtask : set
 
 endmodule // jobs
-

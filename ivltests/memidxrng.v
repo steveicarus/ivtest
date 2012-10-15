@@ -28,7 +28,7 @@ module memidxrng;
 
    reg [7:0] i;
    integer errs = 0;
-   
+
    initial
      begin
 	for (i=0; i<255; i=i+1) mem[i] <= ^i;
@@ -49,5 +49,5 @@ module memidxrng;
 	  $display("PASSED");
 	$finish;
      end
-   
+
 endmodule

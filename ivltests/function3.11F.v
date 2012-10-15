@@ -1,5 +1,5 @@
 //
-// Copyright (c) 1999 Peter Monta (pmonta@imedia.com) 
+// Copyright (c) 1999 Peter Monta (pmonta@imedia.com)
 //
 //    This source code is free software; you can redistribute it
 //    and/or modify it in source code form under the terms of the GNU
@@ -45,20 +45,20 @@ initial
       begin
         $display("FAILED function 3.11F - register within a function(1)");
         error = 1;
-      end 
+      end
     val1 = 2'b11 ;
     val2 = bar(val1) ;
     if(val2 != 1)
       begin
         $display("FAILED function 3.11F - register within a function(2)");
         error = 1;
-      end 
+      end
     val2 = bar(2'b00);
     if(val2 != 0)
       begin
         $display("FAILED function 3.11F - register within a function(2)");
         error = 1;
-      end 
+      end
     if(error == 0)
       $display("PASSED");
   end

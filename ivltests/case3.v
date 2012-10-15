@@ -9,8 +9,8 @@ always @ *
 	 2'b01: q = b;
 	 2'b10: q = c;
 	 2'b11: q = d;
-     endcase 
- 
+     endcase
+
 endmodule
 
 module test ;

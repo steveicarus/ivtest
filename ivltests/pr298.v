@@ -42,11 +42,11 @@ initial
      // The #1 is needed here to allow the initial values to
      // settle. Without it, there is a time-0 race.
     #1 $display(QQ, Q);
-    #10 
+    #10
     D = 0;
     #15
     $display(QQ, Q);
-    #20 
+    #20
     D = 1;
     #25
     $display(QQ, Q);

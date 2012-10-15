@@ -23,7 +23,7 @@ module main;
    reg signed [7:0]  a;
    wire signed [7:0] vala = abs(a);
 
-   reg 	      real  b;
+   reg	      real  b;
    wire       real  valb = abs(b);
 
    initial begin

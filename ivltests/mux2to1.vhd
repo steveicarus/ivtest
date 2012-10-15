@@ -16,4 +16,3 @@ begin
         end case;
       end process;
 end mux2to1_rtl;
-    

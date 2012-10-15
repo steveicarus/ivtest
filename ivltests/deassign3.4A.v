@@ -18,7 +18,7 @@
 //
 //  SDW - Validate deassign reg_ident;
 
-module main ; 
+module main ;
 
 
 reg [31:0] value;
@@ -29,7 +29,7 @@ reg error;
 always @(posedge clock)
   value = 3;
 
-always @(control) 
+always @(control)
   if(control == 1)
     assign value = 1;
   else
@@ -37,7 +37,7 @@ always @(control)
     assign value = 2;
   else
     deassign value ;
-  
+
 
 // Setup a clock generator.
 always begin
@@ -54,7 +54,7 @@ initial
           begin
             $display("FAILED - deassign3.4A - procedural assignment(1)");
             error = 1;
-          end 
+          end
         # 2;
         control = 1;
         # 1;
@@ -62,7 +62,7 @@ initial
           begin
             $display("FAILED - deassign3.4A - procedural assignment(2)");
             error = 1;
-          end 
+          end
         # 1 ;
         control = 2;
         # 1 ;
@@ -70,7 +70,7 @@ initial
           begin
             $display("FAILED - deassign3.4A - procedural assignment(3)");
             error = 1;
-          end 
+          end
         #1 ;
         control = 0;
         # 10;
@@ -78,13 +78,11 @@ initial
           begin
             $display("FAILED - deassign3.4A - procedural assignment(4)");
             error = 1;
-          end 
+          end
 
-        if(error == 0) $display ("PASSED"); 
+        if(error == 0) $display ("PASSED");
         $finish ;
 
       end
 
 endmodule
-
-

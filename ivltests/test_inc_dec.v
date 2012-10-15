@@ -3,19 +3,19 @@
  */
 module test;
 
-parameter S = 9; 
+parameter S = 9;
 parameter K = 3;
 parameter L = 2**(S-K);
 parameter N = 2**(S-1);
 
-reg signed [S-1:0] a_reg; 
-bit signed [S-1:0] a_bit; 
-byte signed a_byte;      
+reg signed [S-1:0] a_reg;
+bit signed [S-1:0] a_bit;
+byte signed a_byte;
 shortint signed a_short;
-int signed a_int;      
+int signed a_int;
 longint signed a_long;
 byte signed amount;
-byte unsigned pos; 
+byte unsigned pos;
 int temp;
 int i;
 

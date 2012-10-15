@@ -1,4 +1,3 @@
-
 -- In this test, we declare a component in the "gates" package
 -- and show that it can be referenced within the package namespace.
 
@@ -28,13 +27,13 @@ architecture fa4_rtl of fa4 is
   use work.gates.fa1;
 
   -- internal carry signals propagation
-  signal c_int: bit_vector (4 downto 0); 
+  signal c_int: bit_vector (4 downto 0);
 
   begin
- 
+
     -- carry in
     c_int(0) <= c_i;
- 
+
     -- slice 0
     s0: fa1 port map (c_i => c_int(0),
                       a_i => va_i(0),
@@ -50,7 +49,7 @@ architecture fa4_rtl of fa4 is
                       s_o => vs_o(1),
                       c_o => c_int(2)
                       );
- 
+
     -- slice 2
     s2: fa1 port map (c_i => c_int(2),
                       a_i => va_i(2),

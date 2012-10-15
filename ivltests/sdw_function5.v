@@ -18,11 +18,11 @@
 //
 // SDW: Function with case
 //
-// D: 
+// D:
 //
 
 module main ();
- 
+
 reg [3:0] global_var;
 reg [3:0] result;
 // Interesting because 2 * 0 is  0 ;-)
@@ -34,7 +34,7 @@ begin
       default: my_func = a + a;
    endcase
 end
-endfunction 
+endfunction
 
 initial
   begin
@@ -47,7 +47,7 @@ initial
          $finish ;
       end
 
-    $display("PASSED\n"); 
+    $display("PASSED\n");
     $finish ;
   end
 endmodule

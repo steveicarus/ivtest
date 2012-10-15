@@ -1,4 +1,3 @@
-
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -6,7 +5,7 @@ use ieee.std_logic_1164.all;
 -- signals. We also let a generic into the test.
 
 entity test is
-  
+
   generic (width : integer := 4);
 
   port (clk  : in std_logic;
@@ -19,7 +18,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity reg_xor is
-  port (clk : in std_logic;   
+  port (clk : in std_logic;
         src0, src1 : in  std_logic;
         dst : out std_logic);
 end reg_xor;

@@ -3,8 +3,8 @@ use ieee.std_logic_1164.all;
 
 package diq_pkg is
 
-  
-component Add_Synth 
+
+component Add_Synth
 generic (n: integer);
 port (a,b: in std_logic_vector (n-1 downto 0);
       cin: in std_logic;
@@ -12,7 +12,7 @@ port (a,b: in std_logic_vector (n-1 downto 0);
       sum : out std_logic_vector (n-1 downto 0) );
 end component;
 
-component Inc_Synth 
+component Inc_Synth
 generic (n: integer);
 port (a: in std_logic_vector (n-1 downto 0);
       sum : out std_logic_vector (n-1 downto 0) );
@@ -35,7 +35,7 @@ end diq_array;
 
 architecture systolic of diq_array is
 
-component diq 
+component diq
 generic (n: integer );
 port (clk,reset: in std_logic;
      lin: in std_logic_vector (2 downto 0);
@@ -79,7 +79,7 @@ port (clk, reset: in std_logic;
 	  lout: out std_logic_vector (2 downto 0) );
 end diq;
 
-architecture diq_wordlevel of diq is 
+architecture diq_wordlevel of diq is
 
 
 signal b_int, d_int, x_int, x_inv: std_logic_vector (n-1 downto 0);
@@ -88,7 +88,7 @@ signal sel: std_logic;
 signal zero,uno: std_logic;
 begin
 d_reg: process(clk,reset)
-begin 
+begin
 if reset = '1' then
 	d_int <= (others => '0');
 elsif (clk'event and clk = '1') then
@@ -97,7 +97,7 @@ end if;
 end process;
 
 l_reg: process(clk,reset)
-begin 
+begin
 if reset = '1' then
 	l_int <= (others => '0');
 elsif (clk'event and clk = '1') then
@@ -107,16 +107,16 @@ end process;
 
 
 b_reg: process(clk,reset)
-begin 
+begin
 if reset = '1' then
 	b_int <= (others => '0');
 elsif (clk'event and clk = '1') then
 	b_int <= bin;
 end if;
 end process;
- 
+
 x_reg: process(clk,reset)
-begin 
+begin
 if reset = '1' then
 	x_int <= (others => '0');
 elsif (clk'event and clk = '1') then
@@ -133,11 +133,11 @@ x_inv <= not x_int;
 comparison: Add_Synth generic map (n => n)
                   port map (a => b_int, b => x_inv, cin => uno, comp => sel, sum => open);
 incrementer: Inc_Synth generic map (n => 3)
-                  port map (a => l_int, sum => l_inc);                                 
+                  port map (a => l_int, sum => l_inc);
 -- outputs
 lout <= l_inc when (sel = '1') else l_int;
 dout <= d_int;
-xout <= x_int; 
+xout <= x_int;
 end diq_wordlevel;
 
 

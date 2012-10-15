@@ -2,10 +2,10 @@ module test;
 
 //  This example was adapted from:
 
-// DRAFT STANDARD VERILOG HARDWARE DESCRIPTION LANGUAGE 
+// DRAFT STANDARD VERILOG HARDWARE DESCRIPTION LANGUAGE
 // IEEE P1364-2005/D3, 1/7/04
 // Section 4.4.2 "An example of an expression bit-length problem"
-// pg. 59  
+// pg. 59
 
 reg [15:0] a, b, answer; // 16-bit regs
 
@@ -23,4 +23,3 @@ initial
   end
 
 endmodule
-

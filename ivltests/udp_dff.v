@@ -73,7 +73,7 @@ endmodule
 
 primitive dff (Q, C, D, notifier);
    output Q;
-   reg 	  Q;
+   reg	  Q;
    input  C, D, notifier;
    table
       // C D notifier : Q : Q+

@@ -21,7 +21,7 @@
 //
 
 module main ();
- 
+
 reg [7:0] array [0:7];
 reg error ;
 reg [3:0] count;

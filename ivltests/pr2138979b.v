@@ -1,4 +1,3 @@
-
 module signed_logic_operators_bug();
 
 reg   [7:0] a, b;

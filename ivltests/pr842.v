@@ -1,4 +1,3 @@
-
 /*
  * Based on bug report PR#842.
  */
@@ -21,5 +20,3 @@ endmodule
 module foo;
     parameter FOO = 17;
 endmodule
-
-

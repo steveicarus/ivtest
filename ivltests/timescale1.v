@@ -25,7 +25,7 @@
 `timescale 100us / 1us
 module slow (out);
    output out;
-   reg 	  out;
+   reg	  out;
 
    initial begin
       #0 out = 0;
@@ -38,7 +38,7 @@ endmodule // slow
 `timescale 10us / 1us
 module fast (out);
    output out;
-   reg 	  out;
+   reg	  out;
 
    initial begin
       #0 out = 0;

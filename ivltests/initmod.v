@@ -22,7 +22,7 @@ module  busm ( clk, iB, oB );
     input   [3:0]   iB ;
     output  [3:0]   oB ;
     reg     [3:0]   r ;
-    
+
     assign  oB = r ;
     always @(posedge clk) r <= iB ;
 
@@ -34,29 +34,29 @@ module  main;
     reg     clk ;
     initial begin clk = 0 ; forever #5 clk = ~clk ; end
     initial begin a = 0 ; c = 0 ; #100 $finish; end
-    
+
     wire    e0, f0, g0, h0 ;
     wire    e, f, g, h ;
     wire    [3:0]   ii, oo ;
-    
+
     always @(posedge clk) a <= ~a ;
     always @(posedge clk) b <=  a ;
     always @(posedge clk) c <=  c ^ a ;
     always @(posedge clk) d <= ~c ;
-    
+
     assign  ii = {a, b, c, d} ;
     assign  {e0, f0, g0, h0} = oo ;
-    
+
     busm M0 ( clk, ii, oo );
     busm M1 ( clk, {a,b,c,d}, {e,f,g,h} );
-    
+
     always @(posedge clk)
         $display("%h %h %h %h : %b : %h %h %h %h : %b : %h %h %h %h",
             a, b, c, d, M0.r, e0, f0, g0, h0,
             M1.r, e, f, g, h
-            
+
         );
-    
+
 endmodule
 
 //  expecting result

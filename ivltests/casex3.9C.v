@@ -28,13 +28,13 @@ always @( val1 or val2)
   casex (val1 & val2 )
     3'b000: result = 0;
     3'b0x1: result = 1 ;
-    3'b010: result = 2; 
+    3'b010: result = 2;
   endcase
 
-initial 
+initial
   begin
     error = 0;
-    
+
     val1 = 3'b0;
     val2 = 3'b0;
     if(result !=0)

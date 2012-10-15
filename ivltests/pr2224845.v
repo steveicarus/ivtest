@@ -1,4 +1,3 @@
-
 `define VUG_PCREL(u, uch) ({ {(uch - 12 - 1 > 0 ? uch - 12 - 1 : 1){u[11]}}, \
                              u[10:0], 2'b00 })
 
@@ -29,4 +28,3 @@ begin
 end
 
 endmodule
-

@@ -1,9 +1,9 @@
-// This slightly convoluted module used to cause an argument-size 
+// This slightly convoluted module used to cause an argument-size
 // mismatch in the call to the function extend_data
 
 module test (c);
 
- parameter MAX_SIZE = 32;	
+ parameter MAX_SIZE = 32;
 
  input			c;
 
@@ -30,8 +30,8 @@ module test (c);
 
  function integer sign_of;
 
-  input	[2*MAX_SIZE-1:0]	data;		
-  input				size;		
+  input	[2*MAX_SIZE-1:0]	data;
+  input				size;
 
   reg	[2*MAX_SIZE-1:0]	data;
   integer			size;
@@ -44,10 +44,10 @@ module test (c);
 
  function [2*MAX_SIZE-1:0] extend_data;
 
-  input	[2*MAX_SIZE-1:0]	data;		
-  input				size;		
-  input				new_size;	
-  input				extend;		
+  input	[2*MAX_SIZE-1:0]	data;
+  input				size;
+  input				new_size;
+  input				extend;
 
   reg	[2*MAX_SIZE-1:0]	data;
   integer			size,
@@ -59,13 +59,13 @@ module test (c);
  endfunction
 
  function [MAX_SIZE-1:0] hw;
-  input	[MAX_SIZE-1:0]		a;		
-  input	[MAX_SIZE-1:0]		b;		
+  input	[MAX_SIZE-1:0]		a;
+  input	[MAX_SIZE-1:0]		b;
 
   reg	[MAX_SIZE-1:0]		a,
 				b;
 
-  reg	[MAX_SIZE:0]		diff;		
+  reg	[MAX_SIZE:0]		diff;
 
   begin
    diff = extend_data(b, MAX_SIZE, MAX_SIZE+1, 1'b1) -

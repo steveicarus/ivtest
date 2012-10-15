@@ -1,4 +1,3 @@
-
 module main;
 
    reg enable, bar_a, bar_b, val_in;

@@ -1,4 +1,3 @@
-
 /*
  * This example is a distillation of the essence of PR#993.
  * Or at least the essence that led to a bug report.

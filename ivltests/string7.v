@@ -73,4 +73,4 @@ module main;
 		$display(">|   A|");
 		$display("*|%s|", myInt);
 	end
-endmodule 
+endmodule

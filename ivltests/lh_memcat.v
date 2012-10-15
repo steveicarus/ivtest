@@ -23,7 +23,7 @@ module main;
         rst             = 1'b0;
         a[3:0]          = 4'b0101;
 
-        // -- iverilog internal value is not dealt with correctly (see value 
+        // -- iverilog internal value is not dealt with correctly (see value
         out[23:0]       = ( rst ?  24'o7654_3210 : in[23:0] );
 
         casex ( done )

@@ -3,16 +3,16 @@
 // internal signal as well as a port.
 module top;
    wire ign;
-   
+
    a inst(ign);
-   
+
 endmodule // top
 
 module a(p);
    output p;
-   
+
    b inst(p);
-     
+
    initial begin
       #1;
       if (p !== 1)
@@ -21,12 +21,12 @@ module a(p);
         $display("PASSED");
       $finish;
    end
-      
+
 endmodule // a
 
 module b(q);
    output q;
 
    assign q = 1;
-         
+
 endmodule // b

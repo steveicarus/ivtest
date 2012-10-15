@@ -1,4 +1,3 @@
-
 module main;
 
    reg [3:0] tmp;

@@ -28,7 +28,7 @@ reg [1:0] sel;
 reg [1:0] out, a,b,c,d;
 reg error;
 
-always @ (sel) 
+always @ (sel)
    case (sel)
        2'b00: assign out = a;
        2'b01: assign out = b;

@@ -3,7 +3,7 @@ module top;
   parameter iiparam = -1;
   parameter [7:0] uparam = -1.0;
   parameter signed [7:0] sparam = -1.0;
-  parameter real rparam = -1;  
+  parameter real rparam = -1;
   parameter realtime rtparam = -1;
   parameter integer iparam = -1.0;
   parameter time tparam = -1.0;

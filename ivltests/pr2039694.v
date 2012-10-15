@@ -23,4 +23,3 @@ module testcase_inline;
    test_inline test_inline_b();
    test_inline test_inline_c();
 endmodule
-   

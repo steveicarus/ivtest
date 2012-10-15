@@ -16,7 +16,7 @@ initial begin
 	end
 	#33.1ns;
 	incr = 33.1e-9/10e-12;
-	tmanual = tmanual + incr; 
+	tmanual = tmanual + incr;
 	tnow  = $realtime*factor;
 	tdiff = tnow-tmanual;
     if (tdiff != 0) begin
@@ -25,7 +25,7 @@ initial begin
 	end
 	#78.1ps;
 	incr = 78.1e-12/10e-12;
-	tmanual = tmanual + incr; 
+	tmanual = tmanual + incr;
 	tnow  = $realtime*factor;
 	tdiff = tnow-tmanual;
     if (tdiff != 0) begin
@@ -34,7 +34,7 @@ initial begin
 	end
 	#123.08ns;
 	incr = 123.08e-9/10e-12;
-	tmanual = tmanual + incr; 
+	tmanual = tmanual + incr;
 	tnow  = $realtime*factor;
 	tdiff = tnow-tmanual;
     if (tdiff != 0) begin
@@ -43,7 +43,7 @@ initial begin
 	end
 	#9.006ns;
 	incr = 9.006e-9/10e-12;
-	tmanual = tmanual + incr; 
+	tmanual = tmanual + incr;
 	tnow  = $realtime*factor;
 	tdiff = tnow-tmanual;
     if (tdiff != 0) begin
@@ -52,7 +52,7 @@ initial begin
 	end
 	#17.003ns;
 	incr = 17.003e-9/10e-12;
-	tmanual = tmanual + incr; 
+	tmanual = tmanual + incr;
 	tnow  = $realtime*factor;
 	tdiff = tnow-tmanual;
     if (tdiff != 0) begin
@@ -61,7 +61,7 @@ initial begin
 	end
 	#578.23us;
 	incr = 578.23e-6/10e-12;
-	tmanual = tmanual + incr; 
+	tmanual = tmanual + incr;
 	tnow  = $realtime*factor;
 	tdiff = tnow-tmanual;
     if (tdiff != 0) begin
@@ -70,7 +70,7 @@ initial begin
 	end
 	#0.0356ms;
 	incr = 0.0356e-3/10e-12;
-	tmanual = tmanual + incr; 
+	tmanual = tmanual + incr;
 	tnow  = $realtime*factor;
 	tdiff = tnow-tmanual;
     if (tdiff != 0) begin
@@ -79,7 +79,7 @@ initial begin
 	end
 	#1.011s;
 	incr = 1.011e0/10e-12;
-	tmanual = tmanual + incr; 
+	tmanual = tmanual + incr;
 	tnow  = $realtime*factor;
 	tdiff = tnow-tmanual;
     if (tdiff != 0) begin

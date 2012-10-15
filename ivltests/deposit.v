@@ -27,12 +27,12 @@ module deposit_test;
 
    reg start;
    initial start = 0;
-   
+
 `ifdef RTL
 
    reg [3:0] cnt;
    wire      cnt_tc = &cnt;
-   
+
    always @(posedge ck)
      if (start | ~cnt_tc)
        cnt <= cnt + 1;
@@ -44,7 +44,7 @@ module deposit_test;
    wire [3:0] cnt_c;
    wire       cnt_tc;
    wire       ne, e;
-   
+
    and (cnt_tc, cnt[0], cnt[1], cnt[2], cnt[3]);
    not (ne, cnt_tc);
    or (e, ne, start);
@@ -53,14 +53,14 @@ module deposit_test;
    had A1 (cnt[1], cnt_c[0],  cnt_c[1], cnt_1[1]);
    had A2 (cnt[2], cnt_c[1],  cnt_c[2], cnt_1[2]);
    had A3 (cnt[3], cnt_c[2],  cnt_c[3], cnt_1[3]);
-   
+
    dffe C0 (ck, e, cnt_1[0], cnt[0]);
    dffe C1 (ck, e, cnt_1[1], cnt[1]);
    dffe C2 (ck, e, cnt_1[2], cnt[2]);
    dffe C3 (ck, e, cnt_1[3], cnt[3]);
 
 `endif // !ifdef RTL
-   
+
    integer    r0; initial r0 = 0;
    integer    r1; initial r1 = 0;
 
@@ -73,7 +73,7 @@ module deposit_test;
 	if (cnt_tc === 1'b1) r1 = r1 + 1;
 	#1 ck <= 1;
      end
-   
+
    initial
      begin
 	// $dumpfile("deposit.vcd");
@@ -97,7 +97,7 @@ module deposit_test;
 	  $display("FAILED");
 	$finish;
      end
-   
+
 endmodule
 
 `ifdef RTL
@@ -113,7 +113,7 @@ endmodule
 
 primitive UDP_dffe (q,  cp, e, d);
    output                q;
-   reg 	            q;
+   reg	            q;
    input cp, e, d;
    table
         (01) 1  1 : ? :  1 ;

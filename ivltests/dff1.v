@@ -31,16 +31,16 @@ module main () ;
    initial begin
       clk = 0;
       D = 0;
-      @(negedge clk) 
-         if (Q !== 1'b0) 
+      @(negedge clk)
+         if (Q !== 1'b0)
              begin
 	        $display("FAILED: %b !== %b", Q, D);
 	        $finish;
              end
 
       D = 1;
-      @(negedge clk) 
-         if (Q !== 1'b1) 
+      @(negedge clk)
+         if (Q !== 1'b1)
             begin
 	        $display("FAILED: %b !== %b", Q, D);
 	        $finish;
@@ -48,16 +48,16 @@ module main () ;
 
       D = 'bx;
 
-      @(negedge clk) 
-         if (Q !== 1'bx) 
+      @(negedge clk)
+         if (Q !== 1'bx)
             begin
 	        $display("FAILED: %b !== %b", Q, D);
 	        $finish;
             end
 
       D = 'bz;
-      @(negedge clk) 
-         if (Q !== 1'bz) 
+      @(negedge clk)
+         if (Q !== 1'bz)
             begin
 	        $display("FAILED: %b !== %b", Q, D);
 	        $finish;
@@ -67,5 +67,4 @@ module main () ;
       $finish;
    end // initial begin
 
-endmodule           
-
+endmodule

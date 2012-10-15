@@ -1,4 +1,3 @@
-
 module main;
 
    function [15:0] sum;
@@ -8,8 +7,8 @@ module main;
       sum = a + b;
    endfunction // sum
 
-   reg 		   clk;
-   reg [15:0] 	   d, e, out;
+   reg		   clk;
+   reg [15:0]	   d, e, out;
    (* ivl_synthesis_on *)
    always @(posedge clk)
      out <= sum(d, e);

@@ -1,4 +1,3 @@
-
 /*
  * This tests the latching of an output that isn't really an output,
  * but an intermediate symbol that is only used in some clauses.
@@ -7,8 +6,8 @@ module main;
 
    reg [15:0] out, a;
    reg [7:0]  b;
-   reg 	      cy;
-   reg 	      with_carry;
+   reg	      cy;
+   reg	      with_carry;
 
    (* ivl_combinational *)
    always @(with_carry, a, b, cy)

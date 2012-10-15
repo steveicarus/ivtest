@@ -33,7 +33,7 @@ module test;
    wire ab = a & b;
    wire abc = ab | c;
    wire abcd = abc & d;
-   
+
    initial
      begin
 	a = 0;
@@ -42,7 +42,7 @@ module test;
 	d = 1;
 	#1;
 	a = 1;
-	if (abcd === 1) 
+	if (abcd === 1)
 	  begin
 	     $display("PASSED");
 	     $finish;
@@ -55,5 +55,5 @@ module test;
 	else
 	  $display("abcd value still wrong");
      end
-   
+
 endmodule

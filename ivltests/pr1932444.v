@@ -2,7 +2,7 @@ module test;
   reg pass = 1'b1;
 
   reg array[1:0];
-  reg [7:0] delay[1:0];   
+  reg [7:0] delay[1:0];
   integer i = 1, j = 0;
 
   initial begin
@@ -34,8 +34,6 @@ module test;
     end
 
     if (pass) $display("PASSED");
-    
-  end  
-endmodule
 
-   
+  end
+endmodule

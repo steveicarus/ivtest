@@ -1,4 +1,3 @@
-
 module test;
 
    reg [2:0] tmp1;
@@ -42,4 +41,3 @@ module test;
    endtask // t3
 
 endmodule
-

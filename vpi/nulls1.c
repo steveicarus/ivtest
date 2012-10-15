@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2002	Michael Ruff (mruff at chiaro.com)
- * 			Michael Runyan (mrunyan at chiaro.com)
+ *			Michael Runyan (mrunyan at chiaro.com)
  *
  *    This source code is free software; you can redistribute it
  *    and/or modify it in source code form under the terms of the GNU

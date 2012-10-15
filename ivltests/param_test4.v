@@ -5,7 +5,7 @@ module test;
 
     initial begin
 	// if got here then we compiled
-	if (parm2) 
+	if (parm2)
 	    $display("PASSED");
 	else
 	    $display("FAILED");

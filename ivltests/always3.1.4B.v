@@ -19,27 +19,25 @@
 //  SDW - Validate always # delay_value reg_lvalue = constant ;
 //  D:    Note that initial has to be before always to execute!
 
-module main ; 
+module main ;
 
 reg [3:0] value1 ;
 
-initial 
+initial
 	begin
            # 1;
            if(value1 != 4'bxxxx)
-             $display("FAILED - 3.1.4B - initial value not xxxx;\n"); 
+             $display("FAILED - 3.1.4B - initial value not xxxx;\n");
            #15 ;
            if(value1 != 4'h5)
              $display("FAILED - 3.1.4B - always # delay_value reg_lvalue = constant\n");
            else
               begin
                  $display("PASSED\n");
-     	         $finish;                                                            
+	         $finish;
               end
         end
 
 always # 10 value1 = 4'h5;
 
 endmodule
-
-

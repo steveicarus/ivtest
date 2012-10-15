@@ -23,11 +23,11 @@ module  main;
     reg     clk ;
     initial begin clk = 0 ; forever #5 clk = ~clk ; end
     initial #20 $finish;
-    
+
     wire    w,   ww, wr, w1, wwr, ww1, wr1, wwro, ww1o, wr1o ;
     reg     r,   rw ;
     reg    error;
-    
+
                                 //  z <- (z) = z
     assign  ww  =   w       ;   //  z <- (z) = z
     assign  wr  =   r       ;   //  x <- (z) = x
@@ -35,18 +35,18 @@ module  main;
     assign  wwr =   w & r   ;   //  x <-  z  & x
     assign  ww1 =   w & 'b1 ;   //  x <-  z  & 1
     assign  wr1 =   r & 'b1 ;   //  x <-  x  & 1
-    
+
     assign  wwro=   w | r   ;   //  x <-  z  | x
     assign  ww1o=   w | 'b1 ;   //  1 <-  z  | 1
     assign  wr1o=   r | 'b1 ;   //  1 <-  x  | 1
-    
+
     always @(posedge clk)
           rw <= w ;               //  x <- (x) = z
-      
+
     always @(posedge clk)
       begin
         #1;
-        $display("%b %b %b %b %b %b %b : %b %b %b : %b %b", 
+        $display("%b %b %b %b %b %b %b : %b %b %b : %b %b",
         w, ww, wr, w1, wwr, ww1, wr1, wwro, ww1o, wr1o, r, rw );
       end
 
@@ -101,8 +101,8 @@ initial
       if(error === 0)
         $display("PASSED");
       $finish;
-   end                   
-    
+   end
+
 endmodule
 
 // *Initial Value Test*

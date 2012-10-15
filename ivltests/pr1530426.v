@@ -1,5 +1,3 @@
-
-
 module main;
 
    parameter N = 2**4;

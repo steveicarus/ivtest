@@ -20,7 +20,7 @@ module top;
     $display("Failed to match, expected %b, got %b.", clk, out);
     pass = 1'b0;
   end
-  
+
 
   ckt dut (out, clk);
 endmodule

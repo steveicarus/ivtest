@@ -98,63 +98,63 @@ module test;
    buf (out, in[65]);
    buf (out, in[66]);
 
-   reg 	       err;
+   reg	       err;
 
    // Verilog-XL yields out=x for all but the first two
-   
+
    initial
      begin
 	err = 0;
-	
-	in =  67'b0; 
+
+	in =  67'b0;
 	#1 $display("in=%b out=%b", in, out);
 	if (out!==1'b0) err = 1;
-	
-	in = ~67'b0; 
+
+	in = ~67'b0;
 	#1 $display("in=%b out=%b", in, out);
 	if (out!==1'b1) err = 1;
-	
-	in =  67'bz; 
-	#1 $display("in=%b out=%b", in, out);
-	if (out!==1'bx) err = 1;
-	
-	in =  67'bx; 
-	#1 $display("in=%b out=%b", in, out);
-	if (out!==1'bx) err = 1;
-	
-	in =  67'h 5_55555555_55555555; 
-	#1 $display("in=%b out=%b", in, out);
-	if (out!==1'bx) err = 1;
-	
-	in = ~67'h 5_55555555_55555555; 
-	#1 $display("in=%b out=%b", in, out);
-	if (out!==1'bx) err = 1;
-	
-	in =  67'h 0_xxxxxxxx_00000000; 
+
+	in =  67'bz;
 	#1 $display("in=%b out=%b", in, out);
 	if (out!==1'bx) err = 1;
 
-	in = ~67'h 0_xxxxxxxx_00000000; 
+	in =  67'bx;
 	#1 $display("in=%b out=%b", in, out);
 	if (out!==1'bx) err = 1;
 
-	in =  67'h x_xxxxxxxx_00000000; 
+	in =  67'h 5_55555555_55555555;
 	#1 $display("in=%b out=%b", in, out);
 	if (out!==1'bx) err = 1;
 
-	in = ~67'h x_xxxxxxxx_00000000; 
+	in = ~67'h 5_55555555_55555555;
 	#1 $display("in=%b out=%b", in, out);
 	if (out!==1'bx) err = 1;
 
-	in =  67'h x_55555555_55555555; 
+	in =  67'h 0_xxxxxxxx_00000000;
 	#1 $display("in=%b out=%b", in, out);
 	if (out!==1'bx) err = 1;
 
-	in = ~67'h x_55555555_55555555; 
+	in = ~67'h 0_xxxxxxxx_00000000;
 	#1 $display("in=%b out=%b", in, out);
 	if (out!==1'bx) err = 1;
 
-	in =  67'h 1_ffffxxxx_00000000; 
+	in =  67'h x_xxxxxxxx_00000000;
+	#1 $display("in=%b out=%b", in, out);
+	if (out!==1'bx) err = 1;
+
+	in = ~67'h x_xxxxxxxx_00000000;
+	#1 $display("in=%b out=%b", in, out);
+	if (out!==1'bx) err = 1;
+
+	in =  67'h x_55555555_55555555;
+	#1 $display("in=%b out=%b", in, out);
+	if (out!==1'bx) err = 1;
+
+	in = ~67'h x_55555555_55555555;
+	#1 $display("in=%b out=%b", in, out);
+	if (out!==1'bx) err = 1;
+
+	in =  67'h 1_ffffxxxx_00000000;
 	#1 $display("in=%b out=%b", in, out);
 	if (out!==1'bx) err = 1;
 
@@ -168,5 +168,5 @@ module test;
 	  $display("PASSED");
 	$finish;
      end
-   
+
 endmodule

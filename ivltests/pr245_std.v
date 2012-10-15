@@ -1,4 +1,3 @@
-
 /*
  * See pr245 in the ivtest test suite.
  */

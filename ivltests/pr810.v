@@ -1,4 +1,3 @@
-
 /*
  * See PR#810 in the test suite.
  */
@@ -37,4 +36,3 @@ parameter taaa         =       ( taaa_d1 > taaa_d0 ) ? taaa_d1 : taaa_d0;
    end // initial begin
 
 endmodule
-

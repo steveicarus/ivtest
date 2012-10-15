@@ -19,18 +19,18 @@
 //  SDW - Validate always event_trigger ;
 
 
-module main ; 
+module main ;
 
 
-event one_event ; 
+event one_event ;
 
-always @(one_event) 
+always @(one_event)
       begin
           # 1;
           $display("saw event");
       end
 
-initial 
+initial
     begin
      #1 ;
      #1 ;

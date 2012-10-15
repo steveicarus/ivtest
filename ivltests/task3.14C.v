@@ -28,7 +28,7 @@ reg error;
 task my_task ;
   input in1;
   output out1;
-  out1 = in1; 
+  out1 = in1;
 endtask
 
 initial
@@ -37,15 +37,15 @@ initial
     my_task(1'b1,globvar);
     if(~globvar)
       begin
-        $display("FAILED - task 3.14C task didn't correctly affect global var(1)"); 
+        $display("FAILED - task 3.14C task didn't correctly affect global var(1)");
          error = 1;
       end
-    
+
     in1 = 0;
-    my_task(!in1,globvar); 
+    my_task(!in1,globvar);
     if(~globvar)
       begin
-         $display("FAILED - task 3.14C task didn't correctly affect global var(2)"); 
+         $display("FAILED - task 3.14C task didn't correctly affect global var(2)");
          error = 1;
       end
     if(error == 0)

@@ -1,7 +1,7 @@
 module test;
 
    wire [10:0] a = 7'd 16;
-   
+
    initial
      begin
         #1;
@@ -11,6 +11,5 @@ module test;
         $display(">%4h<", a);
         $display("%d, %d", a);
      end
-   
-endmodule
 
+endmodule

@@ -18,7 +18,7 @@ module test;
 
   initial
     $my_monitor(i1);
-  
+
   initial
     begin
       #0 a = 0;

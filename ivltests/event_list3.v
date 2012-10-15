@@ -21,7 +21,7 @@ parameter ii = 4;
 reg CLK;
 reg A;
 reg [ii-1:0] B,C;
-initial 
+initial
 begin
   #30;
   C <= {ii{1'b0}};
@@ -29,16 +29,16 @@ begin
   $finish;
 end
 
-always 
+always
 begin
   CLK = 1'b0;
   #10;
   CLK = 1'b1;
   #10;
-  $display ($time); 
+  $display ($time);
 end
 
-always @(A or C) begin 
+always @(A or C) begin
     A = 1'b0;
     $display ("combinatorial process ", A, " time:",$time);
     A = 1'b1;
@@ -46,4 +46,3 @@ always @(A or C) begin
     B = A+C;
   end
 endmodule
-

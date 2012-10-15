@@ -23,7 +23,7 @@ module sum_test;
       $finish;
    end
 endmodule
-   
+
 module sum
   #(
     parameter n = 4,
@@ -35,7 +35,7 @@ module sum
     input [n*width-1:0]addends,
     output reg [log_n+width-1:0] s
     );
-   
+
    generate
    // This does not terminate and should fail after 100 loops.
    if (n==-1)
@@ -50,5 +50,3 @@ module sum
    endgenerate
 
 endmodule // sum
-
-

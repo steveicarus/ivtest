@@ -1,5 +1,3 @@
-
-
 module test();
   wire x, y;
 a__a a_(

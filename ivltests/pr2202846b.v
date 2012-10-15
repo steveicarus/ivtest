@@ -8,13 +8,13 @@ module top;
     casex (cond)
      6'b01_??10           : result = 1;
      {2'b10, 4'b??10}     : result = 2;
-     {expr, 4'b??01}      : result = 3; 
+     {expr, 4'b??01}      : result = 3;
      {expr[2], 5'b0??11}  : result = 4;
      {expr[2:1], 4'b??11} : result = 5;
      {expr, 4'b??00}      : result = 6;
      default              : result = 0;
    endcase
-  end 
+  end
 
   initial begin
     pass = 1'b1;

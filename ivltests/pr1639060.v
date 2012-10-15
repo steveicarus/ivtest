@@ -1,4 +1,3 @@
-
 // pr1639060
 
 module top;
@@ -25,5 +24,3 @@ module top;
     end
   endtask
 endmodule
-
- 	  	 

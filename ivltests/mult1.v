@@ -31,7 +31,7 @@ assign wresult = wa * wb;
 
 always @(a or b)
    result = a * b;
- 
+
 initial
   begin
     #1;
@@ -125,4 +125,4 @@ initial
 
   end
 
-endmodule           
+endmodule

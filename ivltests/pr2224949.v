@@ -1,4 +1,3 @@
-
 module t();
 
 wire [63:0] a;
@@ -29,4 +28,3 @@ output [15:0] b;
 assign b = a ^ 1;
 
 endmodule
-

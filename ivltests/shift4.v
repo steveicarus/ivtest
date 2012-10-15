@@ -1,4 +1,3 @@
-
 module main;
    reg signed [7:0] a;
    reg [7:0] b;
@@ -44,4 +43,3 @@ module main;
       $display("PASSED");
    end
 endmodule
-

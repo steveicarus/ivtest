@@ -1,4 +1,3 @@
-
 // pr1701921
 
 module top;
@@ -22,5 +21,3 @@ module top;
    end
 
 endmodule
-
- 	  	 

@@ -4,7 +4,7 @@ module top;
   parameter one = 1'b1;
   parameter highz = 1'bz;
   parameter undef = 1'bx;
-  
+
   initial begin
     passed = 1'b1;
 

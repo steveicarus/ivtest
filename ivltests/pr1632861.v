@@ -17,5 +17,3 @@ module test;
     $display("At %0t value is %b", $time, tst);
   end
 endmodule
-
- 	  	 

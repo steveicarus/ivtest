@@ -65,17 +65,17 @@ endcase
 
 initial
 begin
-addr   =  8'h00;  
+addr   =  8'h00;
 addr16 = 16'h0000;
 #10;
 $display("should be 00 -- data1=%h  data2=%h  data3=%h  data4=%h\n",data1,data2,data3,data4);
 
-addr   =  8'h11;  
+addr   =  8'h11;
 addr16 = 16'h0011;
 #10;
 $display("should be 11 -- data1=%h  data2=%h  data3=%h  data4=%h\n",data1,data2,data3,data4);
 
-addr   =  8'h22;  
+addr   =  8'h22;
 addr16 = 16'h0022;
 #10;
 $display("should be 22 -- data1=%h  data2=%h  data3=%h  data4=%h\n",data1,data2,data3,data4);

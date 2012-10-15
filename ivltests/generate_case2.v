@@ -1,5 +1,3 @@
-
-
 module main;
 
    wire [2:0] value1, value2, value3, value4;

@@ -23,4 +23,3 @@ task otto;
         ;
 endtask
 endmodule
-

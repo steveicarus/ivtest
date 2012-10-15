@@ -15,7 +15,7 @@ module top;
                val);
       pass = 1'b0;
     end
-    
+
     // Verify that a force/release leaves the variable set correctly.
     force val = 4'b1001;
     release val;
@@ -69,7 +69,7 @@ module top;
                rval);
       pass = 1'b0;
     end
-    
+
     // Verify that a force/release leaves the variable set correctly.
     force rval = 2.0;
     release rval;

@@ -58,7 +58,7 @@ static PLI_INT32 compiletf(PLI_BYTE8 *name)
 	vpi_control(vpiFinish, 1);
 	return 0;
     }
-    
+
     return 0;
 }
 

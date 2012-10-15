@@ -1,4 +1,3 @@
-
 // Copyright (c) 1999 Steven Wilson (stevew@home.com)
 //
 //    This source code is free software; you can redistribute it
@@ -47,9 +46,9 @@ always @(negedge clk)
   if(a1 != a2)
      err = 1;
 
-initial 
+initial
   begin
-//    $dumpfile("test.vcd"); 
+//    $dumpfile("test.vcd");
 //    $dumpvars(0,test);
     err = 0;
     clk = 0;
@@ -65,4 +64,3 @@ initial
     $finish;
   end
 endmodule
-

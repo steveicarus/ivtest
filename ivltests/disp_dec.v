@@ -21,8 +21,8 @@
  * This demonstrates proper handling of unknown values in decimal output.
  */
 module main();
- 
-initial 
+
+initial
   begin
     $display("4'bxxxx = %d", 4'bxxxx);
     $display("4'bzzxx = %d", 4'bzzxx);

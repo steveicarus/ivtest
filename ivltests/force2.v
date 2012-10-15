@@ -14,11 +14,11 @@
 //
 //    You should have received a copy of the GNU General Public License
 //    along with this program; if not, write to the Free Software
-//    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA 
+//    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 
 module main;
 
-   reg [3:0]  val_drv = 4'b0101; 
+   reg [3:0]  val_drv = 4'b0101;
    wire [3:0] val = val_drv;
 
    initial begin

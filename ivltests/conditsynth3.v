@@ -1,8 +1,7 @@
-
 module main;
 
    reg [2:0] Q;
-   reg 	     clk, clr, up;
+   reg	     clk, clr, up;
 
    (*ivl_synthesis_off *)
    initial begin

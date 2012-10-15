@@ -8,7 +8,7 @@ module top;
 
   initial begin
     data = 8'h55;
-    
+
     #0 $display("Printing the byte %b with a header.", data);
     $write("Bad - ");
     odata = 10'b1x00000000;
@@ -27,11 +27,9 @@ module top;
   task send_byte;
     input [9:0] sndbyte;
 
-    begin 
+    begin
       $write("%b", sndbyte);
     end
   endtask
 
 endmodule
-
- 	  	 

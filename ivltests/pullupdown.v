@@ -22,8 +22,8 @@ module pullupdown;
   // declare several bussed wires
   wire pull_up_1, pull_down_1;
   wire [7:0] pull_up_8, pull_down_8;
-  reg 	     error;
-  
+  reg	     error;
+
   // assign pullups to each wire
 /* -----\/----- EXCLUDED -----\/-----
   pullup (pull_up_1);
@@ -40,20 +40,20 @@ module pullupdown;
  -----/\----- EXCLUDED -----/\----- */
 
   // create tristate drivers for each wire
-  reg 	     driver_1;
+  reg	     driver_1;
   reg [7:0]  driver_8;
-  reg 	     driver_1_en, driver_8_en;
+  reg	     driver_1_en, driver_8_en;
 
   assign     pull_up_1 = (driver_1_en) ? driver_1 : 1'bz;
   assign     pull_down_1 = (driver_1_en) ? driver_1 : 1'bz;
-  
+
   assign     pull_up_8 = (driver_8_en) ? driver_8 : 8'bz;
   assign     pull_down_8 = (driver_8_en) ? driver_8 : 8'bz;
 
   initial
     begin : test_block
       integer i;
-      
+
       // turn off all drivers
       driver_1_en = 0;
       driver_8_en = 0;
@@ -75,7 +75,7 @@ module pullupdown;
 	  driver_8 = i;
 	  $display ("Testing drivers with value %h", driver_8);
 	  #1;
-	  
+
 	  check_drivers;
 	  #10;
 	end
@@ -92,7 +92,5 @@ module pullupdown;
 	error = 1;
     end
   endtask // check_drivers
-  
+
 endmodule // pullupdown
-
-

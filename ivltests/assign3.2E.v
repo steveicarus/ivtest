@@ -18,7 +18,7 @@
 //
 //  SDW - Validate assign procedural assign {ident[1],ident[0]}  = expr ERR;
 
-module main ; 
+module main ;
 
 
 reg [31:0] value;
@@ -29,12 +29,12 @@ reg error;
 always @(posedge clock)
   {value[3],value[2],value[1],value[0]}  = 3;
 
-always @(control) 
+always @(control)
   if(control)
     assign {value[3],value[2],value[1],value[0]}  = 4'h2;
   else
     deassign {value[3],value[2],value[1],value[0]}  ;
-  
+
 
 // Setup a clock generator.
 always begin
@@ -51,7 +51,7 @@ initial
           begin
             $display("FAILED - assign3.2E - procedural assignment(1)");
             error = 1;
-          end 
+          end
         # 2;
         control = 1;
         # 1;
@@ -59,7 +59,7 @@ initial
           begin
             $display("FAILED - assign3.2E - procedural assignment(2)");
             error = 1;
-          end 
+          end
         # 3 ;
         control = 0;
         # 2;
@@ -67,13 +67,11 @@ initial
           begin
             $display("FAILED - assign3.2E - procedural assignment(3)");
             error = 1;
-          end 
+          end
 
-        if(error == 0) $display ("PASSED"); 
+        if(error == 0) $display ("PASSED");
         $finish ;
 
       end
 
 endmodule
-
-

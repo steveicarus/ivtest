@@ -19,7 +19,7 @@ end
 initial begin
   fork
     gen;
-    checking;	
+    checking;
   join
 end
 

@@ -1,11 +1,10 @@
-
 module main;
 
    int unsigned foo, bar = 10;
    int signed   foos, bars = 10;
 
    int unsigned wire_sum;
-   int 		wire_sums;
+   int		wire_sums;
 
    assign wire_sum = foo + bar;
    assign wire_sums = foos + bars;

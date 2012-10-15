@@ -14,9 +14,9 @@ module top;
   always @* begin
     out1 = (in % const_w0);
   end
-    
+
   assign out2 = (in % const_w0);
-        
+
   initial begin
     passed = 1'b1;
     #1;
@@ -42,7 +42,7 @@ module top;
       $display("Failed: CA %%, expected -2, got %0d.", out3);
       passed = 1'b0;
     end
-        
+
     if (passed) $display("PASSED");
     $finish;
   end

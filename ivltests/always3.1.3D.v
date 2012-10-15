@@ -17,26 +17,24 @@
 //    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 //
 //  SDW - always force reg_lvalue = constant ;
-//  D:    No dependancy 
+//  D:    No dependancy
 
-module main ; 
+module main ;
 
 reg [3:0] value1 ;
 
-initial 
+initial
   begin
     #15;
     if(value1 != 4'h5)
-      $display("FAILED - 3.1.3D always force reg_lvalue = constant;\n"); 
+      $display("FAILED - 3.1.3D always force reg_lvalue = constant;\n");
     else
 	begin
            $display("PASSED\n");
-     	   $finish;                                                            
+	   $finish;
         end
   end
 
 always force value1 = 4'h5;
 
 endmodule
-
-

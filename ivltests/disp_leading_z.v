@@ -21,8 +21,8 @@
  * This demonstrates proper handling of leading zeroes, and the %0b format.
  */
 module main();
- 
-initial 
+
+initial
   begin
     $display("|%b|",     10'b11);
     $display("|%0b|",    10'b11);

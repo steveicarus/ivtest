@@ -85,9 +85,9 @@ void vpi_compat_bootstrap(void)
 {
  int i;
 
- for (i = 0;; i++) 
+ for (i = 0;; i++)
   {
-   if (vlog_startup_routines[i] == NULL) break; 
+   if (vlog_startup_routines[i] == NULL) break;
    vlog_startup_routines[i]();
   }
 }

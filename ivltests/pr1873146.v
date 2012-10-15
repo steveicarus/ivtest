@@ -1,6 +1,6 @@
 module test (a, b);
-    
-  output [31 : 0] a; 
+
+  output [31 : 0] a;
   input b;
 
   buf bufd[31:0] (a, b);

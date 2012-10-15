@@ -1,4 +1,3 @@
-
 /*
  * This program tests that enumeration value first/last/next
  * methods work properly. The .next method requires some run-time

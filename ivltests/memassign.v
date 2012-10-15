@@ -39,7 +39,7 @@ assign big_word[ 23: 16] = mem_buffer[1];
 assign big_word[ 15:  8] = mem_buffer[2];
 assign big_word[  7:  0] = mem_buffer[3];
 
-initial 
+initial
   begin
   error = 0;
 
@@ -55,7 +55,7 @@ initial
                 myconst,big_word);
       error = 1;
     end
-  #100  ; 
+  #100  ;
   mem_buffer[1] = 8'h34;
   #50;
   myconst = 32'h12_34_00_00;
@@ -65,7 +65,7 @@ initial
                  myconst,big_word);
       error = 1;
     end
-  #100 ;  
+  #100 ;
   mem_buffer[2] = 8'h56;
   #50;
   myconst = 32'h12_34_56_00;
@@ -75,7 +75,7 @@ initial
                  myconst,big_word);
       error = 1;
     end
-  #100;   
+  #100;
   mem_buffer[3] = 8'h78;
   #50;
   myconst = 32'h12_34_56_00;
@@ -103,4 +103,3 @@ initial
 
 end
 endmodule
-

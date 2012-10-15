@@ -4,7 +4,7 @@ module top(arg);
     wire [31:0] out_0;
     wire [31:0] out_1;
     reg  [31:0] var;
-    
+
     add dut_0 (var, var, out_0);
     add dut_1 (arg, var, out_1);
 
@@ -18,4 +18,3 @@ module add(in0, in1, out);
     // This works if you explicitly specify the sensitivity list.
     always @* out = in0 + in1;
 endmodule
-

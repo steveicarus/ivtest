@@ -21,7 +21,7 @@
 
 module m();
 
-initial 
+initial
   begin
       #10;
       $display("FAILED");
@@ -43,8 +43,7 @@ endtask
 initial begin
   t;
   $display("PASSED");
-  $finish; 
+  $finish;
 end
 
 endmodule
-

@@ -10,5 +10,3 @@ module example;
         $display( "%T", $time );
     end
 endmodule
-
-

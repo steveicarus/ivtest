@@ -12,9 +12,9 @@ module top ();
       $display("PASSED");
     else
       $display("FAILED");
-  end 
-  
-endmodule // top  
+  end
+
+endmodule // top
 
 module test ( din, dout);
   input [31:0] din;

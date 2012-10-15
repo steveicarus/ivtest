@@ -19,27 +19,25 @@
 //  SDW - Validate always reg_lvalue <= # (mintypmax_expression) boolean_expr ;
 //  D:    This guy doesn't stop..
 
-module main ; 
+module main ;
 
 reg [3:0] value1 ;
 
-initial 
+initial
   begin
     # 3;  /* Wait till here to verify didn't see 2ns delay! */
     if(value1 !== 4'hx)
-  	$display("FAILED - always reg_lvalue <= # (mintypmax_expression) boolean_expr \n"); 
+	$display("FAILED - always reg_lvalue <= # (mintypmax_expression) boolean_expr \n");
     #12 ;
     if(value1 != 4'h5)
-  	$display("FAILED - always reg_lvalue <= # (mintypmax_expression) boolean_expr \n"); 
+	$display("FAILED - always reg_lvalue <= # (mintypmax_expression) boolean_expr \n");
     else
         begin
             $display("PASSED\n");
             $finish ;
         end
    end
-     
+
 always value1 <= # (2:10:17) 1'b1 && 1'b1  ;
 
 endmodule
-
-

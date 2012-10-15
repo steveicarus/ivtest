@@ -69,4 +69,4 @@ module main;
 		$display(">|A|");
 		$display("*|%c|", myInt);
 	end
-endmodule 
+endmodule

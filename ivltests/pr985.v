@@ -1,5 +1,3 @@
-
-
 `define ADDR_DEC_W	      8                 // Number of bits used to decode.
 `define ADDR_DEVICE0	     `ADDR_DEC_W'h10    // Device 0 located at address 20xx_xxxxh
 `define ADDR_DEVICE1	     `ADDR_DEC_W'h1F    // Device 1 located at address 20xx_xxxxh
@@ -31,7 +29,7 @@ initial begin
   $display ("CHILD parameters are: %h %h %h", dec_addr_w, t0_addr, t1_addr) ;
 end
 
-endmodule	
+endmodule
 
 module grandchild_module ( );
 
@@ -44,5 +42,4 @@ initial begin
   $display ("GRANDCHILD parameters are: %h %h %h", dec_addr_w, t0_addr, t1_addr) ;
 end
 
-endmodule	
-
+endmodule

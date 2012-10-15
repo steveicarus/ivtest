@@ -1,4 +1,3 @@
-
 module main;
 
    reg clk;

@@ -13,7 +13,7 @@ module top;
 
   // Check signal/genvar name issues.
   genvar name0_v;
-  generate 
+  generate
     for (name0_v = 0; name0_v < 2; name0_v = name0_v + 1) begin
       assign out[name0_v] = name0_v;
     end

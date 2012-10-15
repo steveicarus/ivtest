@@ -32,5 +32,3 @@ MUX_REG_8x8 PAGE_REG_B3 (
 			.TQ	());
 
 endmodule
-
-

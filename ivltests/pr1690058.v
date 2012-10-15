@@ -1,4 +1,3 @@
-
 module test;
 
    parameter bar = 8;

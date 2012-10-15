@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (c) Tony Bybell 1999-2000
  *
  * This program is free software; you can redistribute it and/or
@@ -28,7 +28,7 @@ size_t size;
  * types...
  */
 #ifdef G_HAVE_GINT64
-	typedef gint64          TimeType; 
+	typedef gint64          TimeType;
 	typedef guint64         UTimeType;
 
         #ifndef _MSC_VER
@@ -45,7 +45,7 @@ size_t size;
 
 	#define WAVE_MINZOOM (LLDescriptor(-4000000000))
 #else
-	typedef long            TimeType; 
+	typedef long            TimeType;
 	typedef unsigned long   UTimeType;
 
 	#define TTFormat "%d"

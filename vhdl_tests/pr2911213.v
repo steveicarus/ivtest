@@ -3,7 +3,7 @@ module top();
   reg [3:0] a;
   reg [4:0] b;
   wire [8:0] y;
-  
+
   functest uut(a, b, y);
 
   initial begin
@@ -13,16 +13,16 @@ module top();
     if (y == 8'b10100101)
       $display("PASSED");
     else
-      $display("FAILED y = %b", y);          
-  end    
-  
+      $display("FAILED y = %b", y);
+  end
+
 endmodule // top
 
 
 module functest (
     operand_a,
     operand_b,
-    
+
     result_y
     );
 

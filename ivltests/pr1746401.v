@@ -1,7 +1,7 @@
 module test();
    reg [1:0] array[1:0];
-   reg 	     sign;
-   reg 	     clk = 1'b0;
+   reg	     sign;
+   reg	     clk = 1'b0;
 
    always @(posedge clk)
      sign = array[1][1];
@@ -21,5 +21,3 @@ module test();
    end
 
 endmodule // test
-
- 	  	 

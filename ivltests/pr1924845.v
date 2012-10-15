@@ -9,7 +9,7 @@ module test;
   parameter div = b / a;
   parameter sub = b - a;
 
-  initial begin 
+  initial begin
     if (con != -2) begin
       $display("FAILED: constant mult. expected -2, got %d (%b)", con, con);
       pass = 1'b0;

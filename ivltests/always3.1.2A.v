@@ -19,21 +19,19 @@
 //  SDW - Validate always 3.1.2A always reg_lvalue <= constant ;
 //  D:    Note that initial has to be before always to execute!
 
-module main ; 
+module main ;
 
 reg [3:0] value1 ;
 
-initial 
+initial
     if(value1 != 4'h5)
-  	$display("FAILED - 3.1.2A always reg_lvalue = constant\n"); 
+	$display("FAILED - 3.1.2A always reg_lvalue = constant\n");
     else
 	begin
            $display("PASSED\n");
-     	   $finish;                                                            
+	   $finish;
         end
 
-always value1 <= 4'h5 ; 
+always value1 <= 4'h5 ;
 
 endmodule
-
-

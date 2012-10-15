@@ -1,4 +1,3 @@
-
 /*
  * This is interesting, and not completely intuitive. In the code
  * below, the variable "tmp" is assigned the value 4'bxxxx, then

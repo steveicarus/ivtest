@@ -39,19 +39,19 @@ endmodule
 module test;
 
    wire [7:0] acc;
-   
+
    nest n(acc);
 
    initial n.r <= 0;
 
-`ifdef TEST   
+`ifdef TEST
    task increment;
       begin
 	 n.incr(1);
       end
    endtask
 `endif
-   
+
    initial
      begin
 `ifdef TEST
@@ -67,5 +67,5 @@ module test;
 	else
 	  $display("FAILED");
      end
-   
+
 endmodule

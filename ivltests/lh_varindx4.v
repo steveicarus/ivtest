@@ -24,7 +24,7 @@
 module main;
 
    reg [3:0] vec;
-   reg 	     a;
+   reg	     a;
    integer   i;
 
    initial begin

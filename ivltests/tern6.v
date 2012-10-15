@@ -25,7 +25,7 @@
 module main;
 
    reg [6:0] a, b;
-   reg 	     sel;
+   reg	     sel;
 
    wire [6:0] test = sel? a : b;
 

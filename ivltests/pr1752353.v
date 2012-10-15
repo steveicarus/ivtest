@@ -17,7 +17,7 @@ module test;
       $display("PASSED");
    end
 
-endmodule 
+endmodule
 
 module subbuf (output [31:0] out, input[31:0]in);
    assign out = ~in;

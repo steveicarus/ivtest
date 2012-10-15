@@ -29,5 +29,5 @@ module top;
     input real in;
     rl_func = in * 2.0;
   endfunction
-   
+
 endmodule

@@ -15,7 +15,7 @@
 #
 #    You should have received a copy of the GNU General Public License
 #    along with this program; if not, write to the Free Software
-#    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA  
+#    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 
 $total_count = 0;
 
@@ -25,7 +25,7 @@ if($num_opts ne -1) {
    # Got here cuz there is a command line option
    $regress_fn = $ARGV[0];
    if(!( -e "$regress_fn")) {
-       print("Error - Command line option file $num_opts doesn't exist.\n");   
+       print("Error - Command line option file $num_opts doesn't exist.\n");
        exit(1);
    }
 } else {
@@ -39,7 +39,7 @@ $report_fn = "./err_regress.txt";
 
 $comp_name = "IVL" ;	# Change the name of the compiler in use here.
                         # this may change to a command line option after
-		        		# I get things debugged!
+			# I get things debugged!
 
 # Debug variables
 $dbg1 = 0;
@@ -57,7 +57,7 @@ print("Testing $testname ********");
 #
 #  parses the regression list file
 #
-#  First line 
+#  First line
 #  splits the data into a list of names (@testlist), and a
 #  number of hashes, indexed by name of test.  Hashes are
 #  (from left-to-right in regression file):
@@ -71,10 +71,10 @@ print("Testing $testname ********");
 #    %testmod = main module declaration (optional)
 #
 #  Second line
-#  
-#  The error you expect to find. 
+#
+#  The error you expect to find.
 
-sub read_regression_list {    
+sub read_regression_list {
     open (REGRESS_LIST, "<$regress_fn");
     local ($found, $testname);
 
@@ -86,13 +86,13 @@ sub read_regression_list {
 	    @found = split;
         $compare_line = <REGRESS_LIST>; # Read 2nd line
         chop($compare_line);
-       
-        # Now spread things out a bit 
+
+        # Now spread things out a bit
         $testname = $found[0];
         $testpath{$testname} = $found[1];
         $testmod{$testname} = $found[2];
         $compare{$testname} = $compare_line;
-        push (@testlist, $testname); 
+        push (@testlist, $testname);
         if($dbg1 == 1) {
              print $testname,"-",$testpath{$testname},"-",
                    $testmod{$testname},"=",$compare{$testname},"\n";
@@ -113,7 +113,7 @@ sub execute_regression {
     local ($bpath, $lpath, $vpath);
 
     foreach $testname (@testlist) {
-   
+
         #
         # First lets clean up the "last" test run.
         #
@@ -136,7 +136,7 @@ sub execute_regression {
         $vername = "iverilog ";
         $verout = "-o simv";
         $redir = "&>";
- 
+
 		print "Test $testname:";
 		if ($testpath{$testname} eq "") {
 			$vpath = "./$testname.v";
@@ -145,25 +145,25 @@ sub execute_regression {
 		}
 
 		$lpath = "./$logdir/$testname.log";
-        system("rm -rf $lpath");  
-        system("rm -rf *.out");  
+        system("rm -rf $lpath");
+        system("rm -rf *.out");
 
-         
+
         #
         # if we have a logfile - remove it first
         #
         if(-e "$lpath") {
            system("rm $lpath");
         }
-          
+
         #
         # Now build the command up
         #
-	 	$cmd = "$vername $versw $verout $vermod $vpath $redir $lpath ";
+		$cmd = "$vername $versw $verout $vermod $vpath $redir $lpath ";
 		print "$cmd\n";
-	 	system("$cmd");	  # and execute it.
+		system("$cmd");	  # and execute it.
 
- 
+
     }
 
 }
@@ -195,7 +195,7 @@ sub check_results {
       open(FILE_D,$lpath);
       @infile = <FILE_D>;
       close(FILE_D);
-    
+
       $num_lines = $#infile ;
       for($indx=0; $indx <= $num_lines; $indx++)  {
          chop($infile[$indx]);
@@ -203,11 +203,11 @@ sub check_results {
 
       if($dbg1 == 1) {
          print "Number lines = ",$num_lines,"\n";
-      }  
+      }
 
       #Now scan the log file for the error
       $error_found = 0;
-      
+
       for($indx=0; $indx <= $num_lines; $indx++)  {
          if($dbg2 == 1) {
             print "Comparing:\n";
@@ -215,8 +215,8 @@ sub check_results {
             print "cmpr:",$compare{$testname},"\n";
          }
          if($infile[$indx] eq $compare{$testname}) {
-              $error_found = 1; 
-         } 
+              $error_found = 1;
+         }
       }
 
       if($error_found == 1) {
@@ -227,7 +227,7 @@ sub check_results {
         print REPORT "$testname\t\tFAILED\n";
         print "$testname\t\tFAILED\n";
       }
-     
+
     }
 
     $total = $pass_count + $no_compile + $no_run + $crash_count;

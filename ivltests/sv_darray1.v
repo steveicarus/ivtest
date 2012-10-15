@@ -1,4 +1,3 @@
-
 /*
  * This demonstrates a basic dynamic array
  */

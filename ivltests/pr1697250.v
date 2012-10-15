@@ -1,4 +1,3 @@
-
 // pr1697250
 
 module test();
@@ -24,5 +23,3 @@ module test();
       $display("PASSED");
    end
 endmodule
-
- 	  	 

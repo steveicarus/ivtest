@@ -29,7 +29,7 @@ static void checkParams()
     vpiHandle module = vpi_scan(mod_i);
     assert( module != NULL );
     vpi_free_object(mod_i);
-    
+
     vpiHandle param_i = vpi_iterate(vpiParameter, module) ;
     assert( param_i != NULL );
     vpiHandle parameter;
@@ -39,7 +39,7 @@ static void checkParams()
         int type = vpi_get(vpiConstType, parameter) ;
         printf( "PARAM NAME=%s type=%d ",  name, type );
         s_vpi_value val ;
-        
+
         switch(type)
         {
         case vpiDecConst:
@@ -54,7 +54,7 @@ static void checkParams()
                                 vpi_get_value(parameter, &val) ;
                                 printf( "value=(REAL)%g ", val.value.real );
                                 break ;
-                                
+
         case vpiStringConst:    val.format = vpiStringVal ;
                                 vpi_get_value(parameter, &val) ;
                                 printf( "value=(STR)\"%s\" ", val.value.str );
@@ -62,8 +62,8 @@ static void checkParams()
         default:                printf( "value=<UNKNOWN> " );
                                 break ;
         }
-        
-        
+
+
         int local =vpi_get(vpiLocalParam, parameter)!=0 ;
         printf( "local=%s\n", local ? "yes" : "no" );
     }
@@ -88,7 +88,7 @@ static void checkPorts()
         int portIndex = vpi_get(vpiPortIndex, port) ;
         PLI_INT32 dir = vpi_get(vpiDirection, port) ;
         PLI_INT32 size = vpi_get(vpiSize, port) ;
-        
+
         printf( "PORT name=%s index=%d dir=%d size=%d\n", portName, portIndex, dir, size );
     }
 }
@@ -118,4 +118,3 @@ static void setCallback(void)
 
 
 void (*vlog_startup_routines[]) () = { setCallback, 0};
-

@@ -14,25 +14,25 @@ module main;
     #1 if (b !== 4'd1) begin
       $display("FAILED: c = 0, expected 1, got %0d", b);
       pass = 1'b0;
-    end 
+    end
 
     #9 c = 4;
     #1 if (b !== 4'd2) begin
       $display("FAILED: c = 4, expected 2, got %0d", b);
       pass = 1'b0;
-    end 
+    end
 
     #9 c = 8;
     #1 if (b !== 4'd4) begin
       $display("FAILED: c = 8, expected 4, got %0d", b);
       pass = 1'b0;
-    end 
+    end
 
     #9 c = 12;
     #1 if (b !== 4'd8) begin
       $display("FAILED: c = 12, expected 8, got %0d", b);
       pass = 1'b0;
-    end 
+    end
 
     if (pass) $display("PASSED");
   end

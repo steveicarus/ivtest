@@ -1,4 +1,3 @@
-
 // Released under GPL 2.0
 // (C) 2002 Tom Verbeure
 
@@ -33,4 +32,4 @@ module main;
 		$display(">|4142434448494a4b4c4d4e4f50515253|");
 		$display("*|%h|", "ABCDHIJKLMNOPQRS");
 	end
-endmodule 
+endmodule

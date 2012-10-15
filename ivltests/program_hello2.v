@@ -1,4 +1,3 @@
-
 // This trivial program is NOT valid. "always" blocks are not
 // valid in program blocks.
 

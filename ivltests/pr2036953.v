@@ -1,4 +1,3 @@
-
 module test;
 
 reg [1:0] width1[1:0];
@@ -20,4 +19,3 @@ begin
 end
 
 endmodule
-

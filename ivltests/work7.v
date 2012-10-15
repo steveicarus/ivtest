@@ -6,7 +6,7 @@ module test;
     clk = 1'b0;
     forever #25 clk = ~clk;
   end
-  
+
   initial begin
     reset = 1'b0;
     @(negedge clk);
@@ -14,7 +14,7 @@ module test;
     repeat(6) @(negedge clk);
     reset = 1'b0;
   end
-    
+
   initial begin
     #200000;
     #500;
@@ -28,7 +28,7 @@ module test;
       $finish;
   end
 end
-    
+
   bigcount duv (.clk(clk), .reset(reset), .count(count) );
-    
+
 endmodule

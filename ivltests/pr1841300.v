@@ -1,4 +1,3 @@
-
 // PR1841300
 // The output should be:
 // a is '14'; b is 'fffffff4'; c is 'fffffff4'

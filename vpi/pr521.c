@@ -10,7 +10,7 @@ static int pli_test(int ud, int reason)
    printf ("PLI Parameter received 0x%x\n",a);
    return 0;
 }
-   
+
 static int return_32(int ud, int reason)
 {
   return (32);

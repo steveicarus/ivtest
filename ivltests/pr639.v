@@ -1,26 +1,26 @@
 // Icarus 0.7, cvs files from Feb 2, 2003
 // --------------------------------------
-// 
+//
 //        iverilog precision.v
-//    or 
+//    or
 //        iverilog -D DUMP precision.v
 //        vvp a.out
 //
 // Use & display of real time periods with `timescale set to 1 ns / 10 ps
-// 
+//
 // $simtime keeps time in 10ps increments
 // $simtime cannot be displayed (yet)
 // $simtime can be used in comparisons -- compared to times in 10 ps units
-// $time should be $simtime-rounded-to-ns  
+// $time should be $simtime-rounded-to-ns
 // $time displays according to `timescale and $timeformat
 // $time can be used in comparisons -- compared to times in 1 ns units
 //
 // Assuming that the simulation runs on units of 10ps, a clock which is set to
-// change value every (15.2 ns)/2 should change every 7.6 ns, i.e. 760*10ps. 
-// 
+// change value every (15.2 ns)/2 should change every 7.6 ns, i.e. 760*10ps.
+//
 // The dumpfile shows a timescale of 10ps; therefore, it should show the clock
 // changing every 760*10ps.  It doesn't.  The clock is changing every 700*10ps.
-// The checks on the clock using $simtime below verify that the dumpfile is 
+// The checks on the clock using $simtime below verify that the dumpfile is
 // seeing what the simulation is, in fact, doing.
 //
 
@@ -30,7 +30,7 @@
 `define	PERIODR		15.2
 
 module top;
- 
+
 reg tick,clk, fail;
 reg [31:0] ii;
 
@@ -117,5 +117,5 @@ always  begin
   // 3040	: 0
   // etc.
 end
-  
+
 endmodule

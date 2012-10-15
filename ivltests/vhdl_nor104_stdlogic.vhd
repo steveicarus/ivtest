@@ -7,10 +7,9 @@ entity nor104 is
     b_i : in std_logic_vector (103 downto 0);
     c_o : out std_logic_vector (103 downto 0)
   );
-end entity nor104; 
+end entity nor104;
 
 architecture rtl of nor104 is
 begin
   c_o <= a_i nor b_i;
 end architecture rtl;
-

@@ -16,7 +16,7 @@ module top;
     idx[0] = 0;
     idx[1] = 1;
     idx[2] = 2;
-    $write("%0s", str[idx[1]]); // This prints PA or FAIL. 
+    $write("%0s", str[idx[1]]); // This prints PA or FAIL.
     $write("%0s", pvstr[idx[0] +: 16]); // This adds an S.
     $write("%0s", pvstr2[pvidx2[pvbase +: 4] +: 8]); // This adds another S.
     $display("%0s", str[pvidx[pvbase +: 8]]); // This adds the ED.

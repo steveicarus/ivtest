@@ -3,7 +3,7 @@ module top;
   real result;
   initial begin
     pass = 1'b1;
-    
+
     // This should turn into a just a load of 0.5.
     result = 1/2.0;
     if (result != 0.5) begin

@@ -1,4 +1,3 @@
-
 module evidence;
    reg [4:0] y = 5'h10;
    initial begin
@@ -10,4 +9,3 @@ module evidence;
       $display("PASSED");
    end
 endmodule
-

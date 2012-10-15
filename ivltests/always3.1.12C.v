@@ -20,13 +20,13 @@
 
 
 
-module main ; 
+module main ;
 
 reg [3:0] value1,value2,value3;
 
-always fork : fork_id 
+always fork : fork_id
          reg [3:0] value4 ;
-         #5 begin 
+         #5 begin
               value4 = 0;
               value1 = value4 + 1 ;
             end
@@ -41,26 +41,26 @@ initial
     if(value1 != 0)
       begin
          $display("FAILED - 3.1.12C always fork : id block_decl statements join (0)");
-          value2 = 1; 
-      end 
+          value2 = 1;
+      end
     #2 ;
     if(value1 != 1)
       begin
          $display("FAILED - 3.1.12C always fork : id block_decl statements join (1)");
-          value2 = 1; 
-      end 
+          value2 = 1;
+      end
     #5 ;
     if(value1 != 2)
       begin
          $display("FAILED - 3.1.12C always fork : id block_decl statements join (2)");
-          value2 = 1; 
-      end 
+          value2 = 1;
+      end
     #5 ;
     if(value1 != 1)
       begin
          $display("FAILED - 3.1.12C always fork : id block_decl statements join (3)");
-          value2 = 1; 
-      end 
+          value2 = 1;
+      end
     if(value2 == 0) $display("PASSED");
     $finish ;
   end

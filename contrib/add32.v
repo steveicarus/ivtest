@@ -46,4 +46,3 @@ CLOCK, A, B, C_IN, SUM, C_OUT);
     end
 
 endmodule
-

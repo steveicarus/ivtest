@@ -27,7 +27,7 @@
 module a;
    wire \a.b ;
    m    \c.d (\a.b );
-   initial 
+   initial
      begin
 	\c.d . \y.z  <= 1'b1;
 	#1;
@@ -39,6 +39,6 @@ module a;
 endmodule
 module m(x);
    output x;
-   reg 	  \y.z ;
+   reg	  \y.z ;
    assign x = \y.z ;
 endmodule

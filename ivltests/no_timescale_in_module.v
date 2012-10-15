@@ -2,5 +2,3 @@
 module top;
 `timescale 1us/1ns
 endmodule
-
-

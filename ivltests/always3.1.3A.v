@@ -16,24 +16,22 @@
 //    along with this program; if not, write to the Free Software
 //    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 //
-//  SDW - Validate always assign reg_lvalue = constant ;  
+//  SDW - Validate always assign reg_lvalue = constant ;
 //  D:    Note that initial has to be before always to execute!
 
-module main ; 
+module main ;
 
 reg [3:0] value1 ;
 
-initial 
+initial
     if(value1 != 4'h5)
-  	$display("FAILED - 3.1.3A always assign reg_lvalue = constant\n"); 
+	$display("FAILED - 3.1.3A always assign reg_lvalue = constant\n");
     else
 	begin
            $display("PASSED\n");
-     	   $finish;                                                            
+	   $finish;
         end
 
-always assign value1 = 4'h5 ; 
+always assign value1 = 4'h5 ;
 
 endmodule
-
-

@@ -2,11 +2,11 @@ module top;
 
    // packed 2D array, arranged as 4 bytes of 8 bits each.
    logic [3:0][7:0] word32;
-   int 		    idx;
-   int 		    x;
+   int		    idx;
+   int		    x;
 
    // Show a slice select in a continuous assignment
-   wire [7:0] 	    word1 = word32[1];
+   wire [7:0]	    word1 = word32[1];
 
    initial begin
       // Const slice select in l-values.

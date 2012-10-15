@@ -34,7 +34,7 @@ input a;
 input b;
 endmodule
 
-//Template 4  - 
+//Template 4  -
 module mod4 (ident1,out1);
 input  [31:0]  ident1;
 output [31:0]  out1;
@@ -48,7 +48,7 @@ wire [31:0] out1,out2;
 reg  [31:0] val1,val2;
 reg error;
 
-mod4 inst1 (val1,out1);   		// Ordered port list
+mod4 inst1 (val1,out1);			// Ordered port list
 mod4 inst2 (.ident1(val2),.out1(out2)); // List by portname
 
 initial
@@ -59,13 +59,13 @@ initial
       begin
         $display("FAILED - module 3.12A - Ordered module port list failed");
         error = 1;
-      end 
+      end
     val2 = 32'h44332211;
     #1 if(out2 != 32'h44332211)
       begin
         $display("FAILED -module 3.12A -named module port list (.x(a)) failed");
         error = 1;
-      end 
+      end
     if(error == 0)
       $display("PASSED");
  end

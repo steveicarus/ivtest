@@ -2,7 +2,7 @@
 module top();
   wire [7:0] v1, v2, v3;
   wire [7:0] w1, w2, w3;
-  
+
   child c1(v1, w1);
   child c2(v2, w2);
   child c3(v3, w3);
@@ -33,13 +33,13 @@ module top();
     else
       $display("PASSED");
   end
-  
+
 endmodule // top
 
 module child(value, value_w);
   output [7:0] value, value_w;
   reg [7:0]    value;
-  
+
   parameter MY_VALUE = 12;
 
   assign value_w = MY_VALUE + 1;
@@ -50,4 +50,3 @@ module child(value, value_w);
     value <= MY_VALUE;
   end
 endmodule // child
-

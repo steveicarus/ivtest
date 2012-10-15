@@ -1,4 +1,3 @@
-
 module test;
 
    // Test declaring the enum as a 3-bit logic.

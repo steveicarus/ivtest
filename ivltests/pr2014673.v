@@ -10,7 +10,7 @@ module bugreport;
    wire [BaudGeneratorAccWidth:0] BaudGeneratorInc = ((Baud<<(BaudGeneratorAccWidth-4))+(ClkFrequency>>5))/(ClkFrequency>>4);
    wire [BaudGeneratorAccWidth:0] BaudGeneratorIncShouldBe = 17'h4b;
 
-   initial #1 if (BaudGeneratorInc !== BaudGeneratorIncShouldBe) 
+   initial #1 if (BaudGeneratorInc !== BaudGeneratorIncShouldBe)
      $display("FAILED -- Got %x, expected %x.",BaudGeneratorInc,BaudGeneratorIncShouldBe);
    else
      $display("PASSED");

@@ -1,4 +1,3 @@
-
 /*
  * Based on PR#1024
  */
@@ -10,4 +9,3 @@ module test;
       $display("PASSED");
    end
 endmodule // test
-

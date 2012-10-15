@@ -16,7 +16,7 @@
 //    along with this program; if not, write to the Free Software
 //    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 //
-// 
+//
 // Just a little demo of some FSM techniques, including One-Hot and
 // using 'default' settings and the case statements to selectively
 // update registers (sort of like J-K flip-flops).
@@ -50,7 +50,7 @@ reg [7:0] y, y_in;
 // Update state.  'state' is the actual flip-flop register and next_state is the combinatorial
 // bus used to update 'state''s value.  Check for the ZERO state which means an unexpected
 // next state was computed.  If this occurs, jump to our initialization state; state[0].
-// 
+//
 // It is considered good practice by many designers to seperate the combinatorial
 // and sequential aspects of state registers, and often registers in general.
 //
@@ -87,7 +87,7 @@ end
 //
 always @(state or a or b or x or y) begin
    // *** Establish defaults.
-   
+
    // Working registers by default retain their current value.  If any particular
    // state does NOT need to change a register, then it doesn't have to reference
    // the register at all.  In these cases, the default below takes affect.  This
@@ -95,13 +95,13 @@ always @(state or a or b or x or y) begin
    //
    x_in = x;
    y_in = y;
-   
+
    // State by default will be cleared.  If we somehow ever got into an unknown
    // state, then the default would throw state machine back to zero.  Look
    // at the sequential 'always' block for state to see how this is handled.
    //
    next_state = 0;
-   
+
    // One-Hot State Machine Encoding.
    //
    // *** Using a 1'b1 in the case statement is the trick to doing One-Hot...
@@ -109,7 +109,7 @@ always @(state or a or b or x or y) begin
    //     establish the defaults above. ***
    //
    case (1'b1) // synopsys parallel_case
-   
+
       // Initialization state.  Set X and Y register to some interesting starting values.
       //
       state[0]:
@@ -118,15 +118,15 @@ always @(state or a or b or x or y) begin
             y_in = 8'd100;
             next_state[1] = 1'b1;
          end
-      
-      // Just for fun.. Jump through states..  
+
+      // Just for fun.. Jump through states..
       state[1]: next_state[2] = 1'b1;
       state[2]: next_state[3] = 1'b1;
       state[3]: next_state[4] = 1'b1;
       state[4]: next_state[5] = 1'b1;
       state[5]: next_state[6] = 1'b1;
       state[6]: next_state[7] = 1'b1;
-      
+
       // Conditionally decrement Y register.
       state[7]:
          begin
@@ -138,8 +138,8 @@ always @(state or a or b or x or y) begin
                next_state[8] = 1'b1;
             end
          end
-        
-      // Just for fun.. Jump through states..  
+
+      // Just for fun.. Jump through states..
       state[8]: next_state[9]   = 1'b1;
       state[9]: next_state[10]  = 1'b1;
       state[10]: next_state[11] = 1'b1;
@@ -156,12 +156,12 @@ always @(state or a or b or x or y) begin
             end
          end
 
-      // Just for fun.. Jump through states..  
+      // Just for fun.. Jump through states..
       state[12]: next_state[13] = 1'b1;
       state[13]: next_state[14] = 1'b1;
       state[14]: next_state[15] = 1'b1;
-      state[15]: next_state[1]  = 1'b1; // Don't go back to our 
-                                        // initialization state, but state 
+      state[15]: next_state[1]  = 1'b1; // Don't go back to our
+                                        // initialization state, but state
                                         // following that one.
     endcase
 end
@@ -189,7 +189,7 @@ onehot onehot (
 
 // Generate clock.
 //
-initial 
+initial
 begin
    clk = 0;
    forever begin
@@ -211,7 +211,7 @@ end
 // When a is asserted, Y should slowly decrement.  When b is asserted, X should
 // slowly increment.  That's it.
 //
-initial begin 
+initial begin
 `ifdef DEBUG
    $dumpfile("test.vcd");
    $dumpvars(0,test_onehot);
@@ -221,13 +221,13 @@ initial begin
    b = 0;
    repeat (64) @(posedge clk);
    #1
-   
+
    // Y should be decremented..
    a = 1;
    b = 0;
    repeat (256) @(posedge clk);
    #1
-   
+
    // X should be incremented..
    a = 0;
    b = 1;
@@ -244,15 +244,14 @@ initial begin
         error = 1;
         $display("FAILED - Y Expected value 63, is %d",y);
       end
-   
+
    if(error == 0)
       $display("PASSED");
-   
+
    $finish;
 end
 
 // Monitor the module.
 //
-      
-endmodule
 
+endmodule

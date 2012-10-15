@@ -3,7 +3,7 @@ module array_assign();
   integer                    ii;
   reg    signed  [2:0]       ar_reg[0:MSB];
   wire   signed  [4:0]       as_wr;
-  
+
   // compiled with "-g2 -g2x"
   // FAILED at this line
   assign as_wr = {{2{ar_reg[0][2]}},ar_reg[1]};
@@ -15,7 +15,7 @@ module array_assign();
         $display("  %t    ar_reg[0]=3'b%3b  ar_reg[1]=3'b%3b", $time, ar_reg[0], ar_reg[1]);
         $display("  %t      as_wr=5'b%5b", $time, as_wr);
       end
-      
+
   initial
   begin
     $display("\n*** module %m **************************************");
@@ -26,8 +26,8 @@ module array_assign();
     #10;
     for(ii=0; ii<(MSB+1); ii=ii+1)
       ar_reg[ii] <= 3'sd0;
-    
-    $display(" \n \n");
+
+    $display("\n\n");
   end
 
 endmodule
@@ -50,5 +50,3 @@ module array_assign
                     20    ar_reg[0]=3'b000  ar_reg[1]=3'b000
                     20      as_wr=5'b00000
 expected output - END */
-
- 	  	 

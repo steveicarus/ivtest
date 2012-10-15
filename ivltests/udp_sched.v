@@ -1,11 +1,10 @@
-
 /*
  * This test tries to assure that all synchronous UDP outputs are
  * scheduled before any non-blocking assignment event. The reason
  * is that primitive outputs are scheduled in the active event
  * queue, which is supposed to empty before any non-blocking
  * assignments take effect.
- * 
+ *
  * This is based on an example by Steve Sharp
  */
 

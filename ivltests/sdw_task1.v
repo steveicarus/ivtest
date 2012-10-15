@@ -37,7 +37,7 @@ initial
 begin
   global_reg = 2;
   dec_glob;
-  
+
   if(global_reg != 1)
     begin
       $display("FAILED - task didn't modify global_reg\n");

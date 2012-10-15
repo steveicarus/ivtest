@@ -48,11 +48,11 @@ initial
               begin  // {
                  $display("FAILED - GA And a=%h,b=%h,expct=%h - rcvd=%h",
                            a,b,rslt,out);
-                 error = 1; 
-              end // } 
-          end // } 
-      end // } 
+                 error = 1;
+              end // }
+          end // }
+      end // }
     if( error == 0)
       $display("PASSED");
-  end // } 
+  end // }
 endmodule // main

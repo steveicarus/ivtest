@@ -1,4 +1,3 @@
-
 /*
  * What matters here is the size of the display, which should reflect
  * the size of 20, which is written with an _ character. Weird, but

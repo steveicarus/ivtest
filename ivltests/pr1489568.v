@@ -1,4 +1,3 @@
-
 // pr1489568
 
 module bug();
@@ -25,4 +24,3 @@ module bug();
    end // initial begin
 
 endmodule
-

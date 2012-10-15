@@ -1,8 +1,7 @@
-
 /* pr1650842 */
 
  module test;
- 
+
    initial main;
 
    task main;
@@ -30,4 +29,3 @@
       end
    endtask
  endmodule
- 

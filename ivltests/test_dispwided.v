@@ -1,4 +1,3 @@
-
 /*
  * Copyright (c) 2002 Stephen Williams (steve@icarus.com)
  *

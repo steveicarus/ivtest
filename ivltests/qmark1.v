@@ -16,7 +16,7 @@
 //    along with this program; if not, write to the Free Software
 //    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 //
-//  SDW - Validate the ? operator - use [var] as bit selector also 
+//  SDW - Validate the ? operator - use [var] as bit selector also
 
 
 module main;
@@ -47,7 +47,7 @@ initial
                  cond = bvec[2];
               else
                  cond = bvec[3];
-   
+
               if (var2 == 4'h0)
                   a =    bvec[0];
               else

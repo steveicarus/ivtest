@@ -5,7 +5,7 @@ module top();
   assign tdo = tdo_oe ? tdo_out : 1'bz;
 
   assign tdo_out = 1'b1;
-  
+
   // Check undriven value is Z
   initial begin
     tdo_oe = 0;
@@ -25,5 +25,5 @@ module top();
 
     $display("PASSED");
   end
-  
+
 endmodule // top

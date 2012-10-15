@@ -1,4 +1,3 @@
-
 // pr1765789
 
 module main;

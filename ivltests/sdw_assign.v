@@ -49,21 +49,21 @@ initial // Validation block
       begin
         $display("FAILED - result not initialized\n");
         $finish ;
-      end 
-    
+      end
+
     # 5;
     if(result != 32'haaaaaaaa)
       begin
         $display("FAILED - result not updated\n");
         $finish ;
-      end 
+      end
 
     # 5;
     if(result != 32'hffffffff)
       begin
         $display("FAILED - result not updated\n");
         $finish ;
-      end 
+      end
 
     $display("PASSED\n");
     $finish ;

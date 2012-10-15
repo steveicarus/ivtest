@@ -1,4 +1,3 @@
-
 // This program block demonstrates that initial and final blocks
 // work, and that program variables work as well.
 program main;
@@ -23,4 +22,3 @@ program main;
    end
 
 endprogram // main
-

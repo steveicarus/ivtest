@@ -16,7 +16,7 @@
 //    along with this program; if not, write to the Free Software
 //    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 //
-//  SDW - Validate task w/ no I/O or internal state 
+//  SDW - Validate task w/ no I/O or internal state
 
 
 module main;
@@ -34,7 +34,7 @@ initial
     if(globvar)
       $display("PASSED");
     else
-      $display("FAILED - task 3.14A task didn't correctly affect global var"); 
+      $display("FAILED - task 3.14A task didn't correctly affect global var");
   end
 
 endmodule // main

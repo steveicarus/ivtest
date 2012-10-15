@@ -9,4 +9,3 @@ module top;
     rfail = {(wid-16){8'b0}}; // and this will fail.
   end
 endmodule
-

@@ -18,7 +18,7 @@
 //
 //  SDW - Validate always #1 disable task_identifier ;
 
-module main ; 
+module main ;
 
 
 reg [3:0] value1 ;
@@ -27,7 +27,7 @@ task foo ;
   value1 = #2  1;
 endtask
 
-initial 
+initial
   begin
     value1 = 1'b0;
     #5;

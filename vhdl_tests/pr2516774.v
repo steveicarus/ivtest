@@ -1,7 +1,7 @@
 // Catch problem where we assign to function params
 module top();
   integer r;
-  
+
   function integer fact;
     input   n;
     integer n;

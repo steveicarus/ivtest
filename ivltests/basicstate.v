@@ -34,7 +34,7 @@ always @(posedge clk or posedge rst)
        2'b01: st <= 2'b11;
        2'b11: st <= 2'b10;
        2'b10: st <= 2'b00;
-     endcase 
+     endcase
 endmodule
 
 module test ;
@@ -49,7 +49,7 @@ always #5 clk = ~clk;
 
 initial
   begin
-//    $dumpfile("test.vcd");	   
+//    $dumpfile("test.vcd");
 //    $dumpvars(0,test);
     clk = 0;
     rst = 1;
@@ -58,35 +58,35 @@ initial
     rst = 0;
     if(st !== 2'b00)
        begin
-	 $display("FAILED - SM didn't initialize");        
+	 $display("FAILED - SM didn't initialize");
 	 $finish;
        end
     @(posedge clk);
-    #1 ; 
+    #1 ;
     if(st !== 2'b01)
        begin
-	 $display("FAILED - SM didn't xsn to 01");        
+	 $display("FAILED - SM didn't xsn to 01");
 	 $finish;
        end
     @(posedge clk);
-    #1 ; 
+    #1 ;
     if(st !== 2'b11)
        begin
-	 $display("FAILED - SM didn't xsn to 11");        
+	 $display("FAILED - SM didn't xsn to 11");
 	 $finish;
        end
     @(posedge clk);
-    #1 ; 
+    #1 ;
     if(st !== 2'b10)
        begin
-	 $display("FAILED - SM didn't xsn to 10");        
+	 $display("FAILED - SM didn't xsn to 10");
 	 $finish;
        end
     @(posedge clk);
-    #1 ; 
+    #1 ;
     if(st !== 2'b00)
        begin
-	 $display("FAILED - SM didn't xsn to 00");        
+	 $display("FAILED - SM didn't xsn to 00");
 	 $finish;
        end
     $display("PASSED");

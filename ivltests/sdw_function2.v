@@ -22,7 +22,7 @@
 //
 
 module main ();
- 
+
 reg [3:0] global_reg;
 reg [3:0] result;
 
@@ -33,7 +33,7 @@ begin
     global_reg = a + a;
     my_func = a + a;
 end
-endfunction 
+endfunction
 
 initial
   begin
@@ -52,7 +52,7 @@ initial
          $finish ;
       end
 
-    $display("PASSED\n"); 
+    $display("PASSED\n");
     $finish ;
   end
 endmodule

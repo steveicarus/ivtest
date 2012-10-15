@@ -1,4 +1,3 @@
-
 module main;
 
    parameter WIDTH = 8;
@@ -10,7 +9,7 @@ module main;
 
    test #(.width(WIDTH)) test0 (.dst(dst), .src0(src0), .src1(src1), .clk(clk));
 
-   integer 	    idx;
+   integer	    idx;
    initial begin
       clk = 0;
       for (idx = 0 ; idx < ITERATIONS ; idx = idx+1) begin

@@ -22,10 +22,8 @@ initial
       $display("PASSED");
     else
       $display("FAILED");
-    #40 
+    #40
     $finish;
   end
 
 endmodule
-
-

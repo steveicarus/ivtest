@@ -15,7 +15,7 @@ result for a given snapshot can be found.
 Added format.v, and gold/format.gold and test4.v
 
 
-10/6/2000 
+10/6/2000
 
 Fixed bug in function3.11D.v - now runs on verilog XL okay.
 Added #1 before big if clause in drive_strength.v
@@ -23,7 +23,7 @@ Added #1 before big if clause in drive_strength.v
 8/13/2000
 
 Went thru older test submissions and found some missing. Added
-stask_parm1.v, assign_mem1, task_inpad, task_omemw2    
+stask_parm1.v, assign_mem1, task_inpad, task_omemw2
 
 6/12/2000
 
@@ -33,17 +33,17 @@ headers removed on param_string.
 6/11/2000
 
 Added several tests (most sent from Steve Williams as bug
-reports.) Added CRASH detection for CE class tests.  
-Also added Tom Coonan's pic processor to the suite. 
+reports.) Added CRASH detection for CE class tests.
+Also added Tom Coonan's pic processor to the suite.
 Reworked the sregress.pl script to allow addition of
-diff/gold AND module choices. 
+diff/gold AND module choices.
 
 5/08/2000
 
-Modified the script to support log file comparison against gold files and 
-against created files against gold files. Added Steven Tell's new 
+Modified the script to support log file comparison against gold files and
+against created files against gold files. Added Steven Tell's new
 fdisplay, and fopen tests.  Added div16.v to the contrib list now that
-we can handle $random (this from Tom Coonan) 
+we can handle $random (this from Tom Coonan)
 
 5/04/2000
 
@@ -54,9 +54,9 @@ define1. Also now using iverilog.
 
 4/30/2000
 
-Received 4 tests from Peter Monta via Steve Williams.  I'm including 
+Received 4 tests from Peter Monta via Steve Williams.  I'm including
 three of them (reworked two to be self-checking..) The new tests are
-assign_nb1, wireland, and param_concat and function_exp. 
+assign_nb1, wireland, and param_concat and function_exp.
 
 Also added an aliasing mechanism so that we can recover with tests
 that barf.  Now you simply type ./regress and it'll run ./sregress.pl.
@@ -68,7 +68,7 @@ to use sregress.pl directly - run it under csh with this set!!
 
 Received scope1 from Steve Williams.
 
-4/28/2000 
+4/28/2000
 
 Added three tests from Steve Williams and commented out wiresr/wiresl
 since they're crashing the test bench right now at run time.
@@ -87,10 +87,10 @@ from the verilog 2000 spec.
 
 Added nblkorder to validate case where same variable is assigned
 sequentially in a non-blocking always block. This was suggested from
-a question on a the comp.lang.verilog usenet group. IVL does the 
+a question on a the comp.lang.verilog usenet group. IVL does the
 right thing according to IEEE1364-Draft, page 5-3, section 5.4.1.
 
-This test still needs to be refereed by JML though.  
+This test still needs to be refereed by JML though.
 
 4/10/2000
 
@@ -103,7 +103,7 @@ wrote fork3.19A, and fork3.19B.
 
 3/13/2000
 
-Well - been a month - geewhiz.  defparam needs main added in 
+Well - been a month - geewhiz.  defparam needs main added in
 regress.list and had to change the summary error print message
 to REPORT file in sregress.pl
 
@@ -117,11 +117,11 @@ Been awhile!  Anyway, got a bug report from George Gallant concerning
 functions with either case or if statements.  Thus sdw_function4 and
 sdw_function5 both which fail. Also need to add readmemh and readmemb!
 
-1/23/2000 
+1/23/2000
 
 Added drive_strength.v and pullupdown.v to test suite. Contributed!
 
-01/13/2000 
+01/13/2000
 
 Wrote mult1.v to test reg and wire multiply case, and modulus.v
 to test % operator.  Fixed the race in them. Fixed contrib8.5
@@ -129,10 +129,10 @@ in regress.list - it needed to NOT call the top level mod.
 Added xnor_test.v sent to me from Steve Williams(via Guy
 Hutchinson)
 
-01/10/2000 
+01/10/2000
 
 Added inout.v and modparam.v tests.  inout does some sneaky
-stuff with modname(a,a); inout a; This is legal to short 
+stuff with modname(a,a); inout a; This is legal to short
 two signals together.  modparam passes paramters down from
 a top level module and overides the loever level. Added udp_bufg
 back to list. It doesn't work, but doesn't core dump or hang
@@ -143,7 +143,7 @@ anymore.
 Fixed the error message from fifo.v to get correctly detected.
 (It should say "Failed.") Added gencrc and onehot to the regress.list.
 
-01/01/2000 
+01/01/2000
 
 Added a set of unary operator tests.  unary_and, unary_nand,
 unary_or,unary_nor, unary_xor, unary_xnor1, and  unary_xnor2.
@@ -154,18 +154,18 @@ errors to the sregress.pl script.
 12/27/99
 
 This is a BIG release for one simple fact. The entire suite has
-been tested against Cadence Verilog XL....and we found a bug in 
-XL!  See time2.v for the failing testcase. 
+been tested against Cadence Verilog XL....and we found a bug in
+XL!  See time2.v for the failing testcase.
 
 Did some basic maintenance/QA on test suite.  Changed sregress.pl
 to use the -l option for XL, as oppossed to redirection.  Works
 more reliably on Sun(well - this FIXED a problem with all the
-verilog runs going into backround with the >& syntax?) 
+verilog runs going into backround with the >& syntax?)
 
 Fixed always3.1.9A.v, Fixed always3.1.9B.v. Added tests always3.1.9C,D.v
 Fixed wiremod1.v, syntax error in ptest006-008 in $display. Howcome
 IVL likes these?  Removed sdw_template.v.   Added "PASSED" printout
-to z1,z2. This should make them compatible with XL. 
+to z1,z2. This should make them compatible with XL.
 Fixed assign3.2D.v syntax error, moved syntax error into assign3.2E.v
 to test for it!
 Fixed contrib8.4.v so that it prints PASSED.
@@ -181,25 +181,25 @@ out because they hang the testsuite currently.
 
 12/1/99
 
-Added qmark6.v contributed by Dan Nelsen. Muxtest.v validates 
-X on sel, when inputs are both 1 or 0.  
+Added qmark6.v contributed by Dan Nelsen. Muxtest.v validates
+X on sel, when inputs are both 1 or 0.
 
 11/12/99
 
 Added several ga_* tests that use a primitive gate vector. The ga_nand.v test
 of this sequence fails.  Went thru the ptestxxx.v series and replaced all
-!= or == constructs with !==/===. 
+!= or == constructs with !==/===.
 
 11/8/99
 
-Fixed stuff added on 11/6 - it now says PASSED! 
-Added wirele.v, wirege.v, wireeq.v tests.  These with the 
+Fixed stuff added on 11/6 - it now says PASSED!
+Added wirele.v, wirege.v, wireeq.v tests.  These with the
 CVS 11/7/99 cut that I used to test.
 
 11/6/99
 
 Added tests wireadd1.v  wiremod1.v  wiresl.v  wiresr.v  wiresub1.v  wirexor1.v
-Several of the tests in regress.list had the .v extension so they 
+Several of the tests in regress.list had the .v extension so they
 weren't running correctly. That's fixed.
 
 10/14/99
@@ -209,7 +209,7 @@ This is mainly a debug release.  See below.
 lh_varindx added (tests left hand variable index of a vector.)
 Rewrote always3.1.6A-C COMPLETELY.  Changed time1.v to use
 always block and #5 d = a; Added time3.v that looks at same
-structure for non-blocking (#5 d <= a). 
+structure for non-blocking (#5 d <= a).
 
 Added an always3.1.6D.v ( a case test from Steve Williams.)
 
@@ -226,12 +226,12 @@ test for proper operation of the semantics for #0
 which is used to defeat what would otherwise be
 a race condition.  Researched the operation of #0 in
 Moorby 4th edition. This seems to be kosher (though
-not GOOD programming practice.) 
+not GOOD programming practice.)
 
-Added several contributed tests by many folks.  
+Added several contributed tests by many folks.
 
-Note that the regression_report.txt is the results of 
-running with the 9/28 IVL release.  
+Note that the regression_report.txt is the results of
+running with the 9/28 IVL release.
 
 9/27/99
 
@@ -241,14 +241,14 @@ a 4th arguement within the regress.list line.
 
 9/20/99
 
-This release collects the tests together along with a 
-regression script(sregress.pl) which is a modified 
+This release collects the tests together along with a
+regression script(sregress.pl) which is a modified
 version of a script contributed by Guy Hutchison.
-(Thanks Guy!!!) 
+(Thanks Guy!!!)
 
 To run the testsuite - ensure that you have the
 appropriate IVL environment variables set - the
-script doesn't check for THAT yet - maybe next 
+script doesn't check for THAT yet - maybe next
 time;-) You need the appropriate stuff in your
 search path for IVL and set VPI_MODULE_PATH and
 LD_LIBRARY_PATH as necessary.  See the IVL docs
@@ -264,16 +264,16 @@ tests run are obtained from regress.list.
 
 9/9/99
 
-Completed thru 3.14F(tasks).  So Added from Section 
+Completed thru 3.14F(tasks).  So Added from Section
 3.11-3.14. Updated ivl_test.html file. Also have included
 some of the "contributed" tests. Haven't worked them all
-into the test document yet. 
+into the test document yet.
 
 9/6/99
 
 Completed all of the always block tests.  Added tests
 for sections 3.2-3.10.  Reworked the 3.1.5 tests that
-had bugs.  Updated the ivl_tests.html file to 
+had bugs.  Updated the ivl_tests.html file to
 reflect work to date.
 
 Note that runsh doesn't use the "verilog" script yet.
@@ -283,8 +283,6 @@ Note that runsh doesn't use the "verilog" script yet.
 
 New tests added  3.1.5C - 3.1.7B
 
-8/12/99 
+8/12/99
 
 Initial release to Steve Williams.
-
-

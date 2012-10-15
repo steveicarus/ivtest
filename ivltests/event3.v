@@ -59,4 +59,3 @@ always @e2 begin
 	-> et1.e1;
 end
 endmodule
-

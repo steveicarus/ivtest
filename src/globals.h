@@ -58,7 +58,7 @@ struct vcdsymbol *pv, *rootv;
 
 struct slist *slistroot, *slistcurr;
 char *slisthier;
-int slisthier_len; 
+int slisthier_len;
 
 int T_MAX_STR;      /* was originally a const..now it reallocs */
 char *yytext;

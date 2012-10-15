@@ -19,11 +19,11 @@
 //  SDW - Validate release statement
 //
 // D: This code verifies the release statement.
-// D: It depends on the force statement being 
-// D: functional! (Kinda have to - no way to 
+// D: It depends on the force statement being
+// D: functional! (Kinda have to - no way to
 // D: release if you haven't forced the issue.
-// D: It is intended to be self checking. 
-//                                     
+// D: It is intended to be self checking.
+//
 // By: Steve Wilson
 //
 
@@ -34,7 +34,7 @@ reg timer;
 
 initial
   working = 1;
- 
+
 initial
   begin
     #5 ;
@@ -46,8 +46,8 @@ initial
     #10;
     release working;	// This releases the force
     #2 ;
-    working = 1; 	// This allows a new value onto the reg.
-  end   
+    working = 1;	// This allows a new value onto the reg.
+  end
 
 initial
   begin

@@ -20,7 +20,7 @@ begin
         variable tmp : std_logic_vector(15 downto 0);
     begin
         tmp := input;
-        tmp := tmp and mask; 
+        tmp := tmp and mask;
         output <= tmp;
     end process;
 end;

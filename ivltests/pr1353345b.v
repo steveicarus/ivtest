@@ -1,13 +1,12 @@
-
 module main;
 
    parameter use_wid = 4;
 
    reg  [use_wid-1:0] d;
    wire [use_wid-1:0] q;
-   reg 		      clk;
+   reg		      clk;
 
-   defparam 	      dut.wid = use_wid;
+   defparam	      dut.wid = use_wid;
    B dut (.Q(q), .D(d), .C(clk));
 
    initial begin

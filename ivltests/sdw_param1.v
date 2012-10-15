@@ -32,15 +32,15 @@ reg [15:0] test_var;
 
 initial   // Excitation block
   begin
-    test_var = VAL_1 ; 
+    test_var = VAL_1 ;
     #5 ;
     test_var = VAL_2 ;
-    #5 ; 
+    #5 ;
   end
 
 initial  // Validation block
   begin
-    
+
     #1 ;
     if(test_var != 16'h0001)
       begin

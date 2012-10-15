@@ -1,4 +1,3 @@
-
 /*
  * This is a simple test of a generate loop.
  */
@@ -14,7 +13,7 @@ module main;
 
    genvar i;
 
-   assign 	 cin[0] = 0;
+   assign	 cin[0] = 0;
    for (i=0 ; i<SIZE ;  i = i+1) begin : slice
       wire [1:0] sum      = a[i] + b[i] + cin[i];
       assign     q[i]     = sum[0];

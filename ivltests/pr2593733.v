@@ -2,7 +2,7 @@
 module use_wid_gt_zero_assert (
 );
 
-parameter width = 1;  
+parameter width = 1;
 parameter option = "OFF";
 
 reg [width-1:0] dst;

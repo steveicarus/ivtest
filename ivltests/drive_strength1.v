@@ -26,7 +26,7 @@ module main();
    reg pullval;
    wire (weak0, weak1) value = pullval;
 
-   reg 	en0, en1;
+   reg	en0, en1;
 
    /* This buffer will drive a strong 1 to value if en0 is 1, otherwise
       it will go HiZ. */

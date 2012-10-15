@@ -1,4 +1,3 @@
-
 module test;
    initial begin
       main;

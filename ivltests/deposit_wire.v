@@ -26,7 +26,7 @@
  * that the wire takes on the deposited value, but that value doesn't
  * stick if its normal input changes.
  */
-module main ; 
+module main ;
 
    reg in;
    wire test = in;
@@ -56,5 +56,3 @@ module main ;
    end
 
 endmodule
-
-

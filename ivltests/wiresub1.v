@@ -42,15 +42,15 @@ for ( var1 = 4'b0; var1 != 4'hf; var1 = var1 + 1)
         #1 ;
         if(var3 !== var3a)
           begin
-           #1 ;		   
+           #1 ;
            error = 1;
           end
         #1;
      end
 if(error == 0)
-  $display("PASSED"); 
+  $display("PASSED");
 else
-  $display("FAILED"); 
+  $display("FAILED");
 end
 
 endmodule // main

@@ -5,11 +5,11 @@ module top;
 
   wire [7:0] foo;
 
-  bot b( .q(foo[3:0]) );    
-  
+  bot b( .q(foo[3:0]) );
+
 endmodule // top
 
 module bot(q);
   output [3:0] q;
-  
+
 endmodule

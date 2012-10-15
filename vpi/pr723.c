@@ -17,7 +17,7 @@ static PLI_INT32 calltf(PLI_BYTE8 *data)
         if (vpi_mcd_name((1U<<31) | i))
             vpi_printf("FP  %02d: %s\n", i, vpi_mcd_name((1U<<31) | i));
     }
-    
+
     return 0;
 }
 

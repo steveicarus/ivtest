@@ -1,5 +1,3 @@
-
-
 module DFF (input D, input C, output reg Q);
 
    always @(posedge C)

@@ -14,5 +14,3 @@ module top;
     else $display("Fail: %b", pattern);
   end
 endmodule
-
- 	  	 

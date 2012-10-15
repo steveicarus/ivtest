@@ -28,9 +28,9 @@
 `define     COS_ITERATIONS      13
 
 module math ;
-    
+
     /* Conversion Routines */
-    
+
     // Return the sign of a particular number.
     function real sign ;
       input real x ;
@@ -38,7 +38,7 @@ module math ;
         sign = x < 0.0 ? 1.0 : 0.0 ;
       end
     endfunction
-    
+
     // Return the trunc function of a number
     function real trunc ;
       input real x ;
@@ -46,7 +46,7 @@ module math ;
         trunc = x - mod(x,1.0) ;
       end
     endfunction
-    
+
     // Return the ceiling function of a number.
     function real ceil ;
       input real x ;
@@ -58,7 +58,7 @@ module math ;
         ceil = trunc(retval) ;
       end
     endfunction
-    
+
     // Return the floor function of a number
     function real floor ;
       input real x ;
@@ -70,7 +70,7 @@ module math ;
         floor = trunc(retval) ;
       end
     endfunction
-    
+
     // Return the round function of a number
     function real round ;
       input real x ;
@@ -80,7 +80,7 @@ module math ;
         round = trunc(retval) ;
       end
     endfunction
-    
+
     // Return the fractional remainder of (x mod m)
     function real mod ;
       input real x ;
@@ -101,7 +101,7 @@ module math ;
         mod = retval ;
       end
     endfunction
-    
+
     // Return the max between two real numbers
     function real realmax ;
       input real x ;
@@ -110,7 +110,7 @@ module math ;
         realmax = x > y ? x : y ;
       end
     endfunction
-    
+
     // Return the min between two real numbers
     function real realmin ;
       input real x ;
@@ -119,9 +119,9 @@ module math ;
         realmin = x > y ? y : x ;
       end
     endfunction
-    
+
     /* Random Numbers */
-    
+
     // Generate Gaussian distributed variables
     function real gaussian ;
       input real mean ;
@@ -143,9 +143,9 @@ module math ;
         // gaussian2 = mean + sqrt(-2*log(s)/s)*v2 * sqrt(var) ;
       end
     endfunction
-    
+
     /* Roots and Log Functions */
-    
+
     // Return the square root of a number
     function real sqrt ;
       input real x ;
@@ -157,7 +157,7 @@ module math ;
         sqrt = (x == 0.0) ? 0.0 : powr(x,0.5) ;
       end
     endfunction
-    
+
     // Return the cube root of a number
     function real cbrt ;
       input real x ;
@@ -169,15 +169,15 @@ module math ;
         cbrt = (x == 0.0) ? 0.0 : powr(x,1.0/3.0) ;
       end
     endfunction
-    
+
     // Return the absolute value of a real value
     function real abs ;
       input real x ;
       begin
         abs = (x > 0.0) ? x : -x ;
       end
-    endfunction 
-    
+    endfunction
+
     // Return a real value raised to an integer power
     function real pow ;
       input real b ;
@@ -194,7 +194,7 @@ module math ;
         pow = x < 0 ? (1.0/retval) : retval ;
       end
     endfunction
-    
+
     // Return a real value raised to a real power
     function real powr ;
       input real b ;
@@ -203,7 +203,7 @@ module math ;
         powr = exp(x*log(b)) ;
       end
     endfunction
-    
+
     // Return the evaluation of e^x where e is the natural logarithm base
     // NOTE: This is the Taylor series expansion of e^x
     function real exp ;
@@ -224,7 +224,7 @@ module math ;
         exp = retval ;
       end
     endfunction
-    
+
     // Return the evaluation log(x)
     function real log ;
       input real x ;
@@ -249,7 +249,7 @@ module math ;
         log = whole+2.0*retval ;
       end
     endfunction
-    
+
     // Return the evaluation ln(x) (same as log(x))
     function real ln ;
       input real x ;
@@ -257,7 +257,7 @@ module math ;
         ln = log(x) ;
       end
     endfunction
-    
+
     // Return the evaluation log_2(x)
     function real log2 ;
       input real x ;
@@ -265,14 +265,14 @@ module math ;
         log2 = log(x)/`MATH_LOG_OF_2 ;
       end
     endfunction
-    
+
     function real log10 ;
       input real x ;
       begin
         log10 = log(x)/`MATH_LOG_OF_10 ;
       end
     endfunction
-    
+
     function real log_base ;
       input real x ;
       input real b ;
@@ -280,9 +280,9 @@ module math ;
         log_base = log(x)/log(b) ;
       end
     endfunction
-    
+
     /* Trigonometric Functions */
-    
+
     // Internal function to reduce a value to be between [-pi:pi]
     function real reduce ;
       input real x ;
@@ -302,7 +302,7 @@ module math ;
         reduce = retval ;
       end
     endfunction
-    
+
     // Return the cos of a number in radians
     function real cos ;
       input real x ;
@@ -321,12 +321,12 @@ module math ;
             sign = -2*(i % 2)+1 ;
             xsqnm1 = xsqnm1*newx*newx ;
             twonm1fact = twonm1fact * (2.0*i) * (2.0*i-1.0) ;
-            retval = retval + sign*(xsqnm1/twonm1fact) ; 
+            retval = retval + sign*(xsqnm1/twonm1fact) ;
         end
         cos = retval ;
       end
     endfunction
-    
+
     // Return the sin of a number in radians
     function real sin ;
       input real x ;
@@ -334,7 +334,7 @@ module math ;
         sin = cos(x - `MATH_PI_OVER_2) ;
       end
     endfunction
-    
+
     // Return the tan of a number in radians
     function real tan ;
       input real x ;
@@ -342,7 +342,7 @@ module math ;
         tan = sin(x) / cos(x) ;
       end
     endfunction
-    
+
     // Return the arcsin in radians of a number
     function real arcsin ;
       input real x ;
@@ -350,7 +350,7 @@ module math ;
         arcsin = 2.0*arctan(x/(1.0+sqrt(1.0-x*x))) ;
       end
     endfunction
-    
+
     // Return the arccos in radians of a number
     function real arccos ;
       input real x ;
@@ -358,7 +358,7 @@ module math ;
         arccos = `MATH_PI_OVER_2-arcsin(x) ;
       end
     endfunction
-    
+
     // Return the arctan in radians of a number
     // TODO: Make sure this REALLY does work as it is supposed to!
     function real arctan ;
@@ -386,11 +386,11 @@ module math ;
         end
         retval = retval * (newx/(1+newx*newx)) ;
         retval = retval * mult ;
-        
+
         arctan = (x > 0.0) ? retval : -retval ;
       end
     endfunction
-    
+
     // Return the arctan in radians of a ratio x/y
     // TODO: Test to make sure this works as it is supposed to!
     function real arctan_xy ;
@@ -405,9 +405,9 @@ module math ;
         arctan_xy = (y < 0.0) ? -retval : retval ;
       end
     endfunction
-    
+
     /* Hyperbolic Functions */
-    
+
     // Return the sinh of a number
     function real sinh ;
       input real x ;
@@ -415,7 +415,7 @@ module math ;
         sinh = (exp(x) - exp(-x))/2.0 ;
       end
     endfunction
-    
+
     // Return the cosh of a number
     function real cosh ;
       input real x ;
@@ -423,7 +423,7 @@ module math ;
         cosh = (exp(x) + exp(-x))/2.0 ;
       end
     endfunction
-    
+
     // Return the tanh of a number
     function real tanh ;
       input real x ;
@@ -433,7 +433,7 @@ module math ;
         tanh = (e2x+1.0)/(e2x-1.0) ;
       end
     endfunction
-    
+
     // Return the arcsinh of a number
     function real arcsinh ;
       input real x ;
@@ -441,7 +441,7 @@ module math ;
         arcsinh = log(x+sqrt(x*x+1.0)) ;
       end
     endfunction
-    
+
     // Return the arccosh of a number
     function real arccosh ;
       input real x ;
@@ -449,7 +449,7 @@ module math ;
         arccosh = ln(x+sqrt(x*x-1.0)) ;
       end
     endfunction
-    
+
     // Return the arctanh of a number
     function real arctanh ;
       input real x ;
@@ -457,7 +457,7 @@ module math ;
         arctanh = 0.5*ln((1.0+x)/(1.0-x)) ;
       end
     endfunction
-    
+
     initial begin
         $display( "cos(MATH_PI_OVER_3): %f", cos(`MATH_PI_OVER_3) ) ;
         $display( "sin(MATH_PI_OVER_3): %f", sin(`MATH_PI_OVER_3) ) ;
@@ -496,7 +496,5 @@ module math ;
         $display( "cos(pi/2): %f", cos(`MATH_PI_OVER_2)) ;
         $display( "arccos(cos(pi/2)): %f", arccos(cos(`MATH_PI_OVER_2)) ) ;
     end
-    
-endmodule
 
- 	  	 
+endmodule

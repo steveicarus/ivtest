@@ -1,4 +1,3 @@
-
 /*
  * Based on pr#859.
  * This test makes sure the @* input search can handle null

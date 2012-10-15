@@ -4,7 +4,7 @@
  */
 module test();
    integer start;
-   
+
    initial
      #900000 begin $display("FAILED"); $stop; end
 

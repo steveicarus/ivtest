@@ -6,5 +6,3 @@ module top;
       $display("rval1=", rval1,,"rval2=", rval2,,"rtval=",rtval);
    end
 endmodule
-
- 	  	 

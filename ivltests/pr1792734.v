@@ -12,7 +12,7 @@ module top;
     dz = 'dz;
     dz2 = 'd?;
     $display("  'dx: %b", dx, ",   'dz: %b", dz, ",   'd?: %b", dz2);
-    
+
     dx = 2'dx;
     dz = 2'dz;
     dz2 = 2'd?;
@@ -28,7 +28,7 @@ module top;
     dz = 'sdz;
     dz2 = 'sd?;
     $display(" 'sdx: %b", dx, ",  'sdz: %b", dz, ",  'sd?: %b", dz2);
-    
+
     dx = 2'sdx;
     dz = 2'sdz;
     dz2 = 2'sd?;

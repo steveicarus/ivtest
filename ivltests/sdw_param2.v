@@ -45,8 +45,8 @@ initial  // Validation block
         $display("FAILED - parameter assignment didn't work\n");
         $finish ;
       end
-    
- 
+
+
     $display("PASSED\n");
     $finish ;
   end

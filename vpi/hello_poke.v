@@ -1,4 +1,3 @@
-
 module main;
 
    reg [5*8-1 : 0] hello;

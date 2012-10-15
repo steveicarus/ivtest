@@ -25,7 +25,7 @@
 module main;
 
    reg [7:0] delay = 0;
-   reg 	     step;
+   reg	     step;
 
    initial begin
       delay = 2;

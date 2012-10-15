@@ -35,6 +35,6 @@ module top;
     end
 
     if (pass) $display("PASSED");
-    
+
   end
 endmodule

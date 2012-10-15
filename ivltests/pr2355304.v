@@ -2,7 +2,7 @@ module test ();
     parameter t=0;
     reg t_not, t_zero;
 
-    generate 
+    generate
     if (!t) begin
         initial t_not = 1;
     end

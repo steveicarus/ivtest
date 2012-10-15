@@ -1,12 +1,12 @@
 //////////////////////////////////////////////////////////////////////////////
 //
-// using `timescale, test rounding up to specified precision and 
+// using `timescale, test rounding up to specified precision and
 //                        scaling to specified time unit
 //
 // run with
 //        iverilog lrm_eg.v
 //        vvp a.out
-// 
+//
 // (uncomment $display statements for help in debugging)
 //
 //////////////////////////////////////////////////////////////////////////////
@@ -18,7 +18,7 @@ module test;
   reg fail;
   reg [7:0] ii;
 
-  initial begin 
+  initial begin
     fail = 0;
     #d set = 0;
     //$display("time in units of 10ns: %0t, in ns: %0d, set: %0b",$time,ii,set);

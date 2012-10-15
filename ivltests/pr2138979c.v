@@ -1,4 +1,3 @@
-
 module signed_assignment_bug();
 
 reg   [7:0] a;

@@ -16,7 +16,7 @@
 //    along with this program; if not, write to the Free Software
 //    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 //
-//  SDW - Compound ifdef (two) with interior not defined 
+//  SDW - Compound ifdef (two) with interior not defined
 //
 
 
@@ -27,16 +27,16 @@ reg error ;
 
 `ifdef DOUBLE
 `ifdef NOCODE
-initial 
+initial
    begin
      #20;
      error = 1;
      #20;
-   end 
+   end
 `endif	// NOCODE
 `endif  // DOUBLE
 
-initial 
+initial
  begin
    #1;
    error = 0;
@@ -45,6 +45,6 @@ initial
       $display("PASSED");
    else
       $display("FAILED");
-  end 
+  end
 
 endmodule // main

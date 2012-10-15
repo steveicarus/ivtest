@@ -1,4 +1,3 @@
-
 // This program is about testing that the value ranges parse and work for
 // integer parameters.
 module test(input wire in);

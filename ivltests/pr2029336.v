@@ -65,4 +65,3 @@ module testbench;
 		clk = ~clk;
 
 endmodule
-

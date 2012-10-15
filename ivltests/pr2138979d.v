@@ -1,4 +1,3 @@
-
 module signed_logic_operators_bug();
 
 reg         sel;

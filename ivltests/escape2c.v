@@ -11,7 +11,7 @@ GND ,
 \6Y_D ,
 \6A_E ,
 // note: with space before the nl below
-\6Y_E 
+\6Y_E
 ) ;
 
 input \6A_A ;

@@ -1,6 +1,6 @@
 module top();
   wire out1, out2;
-  
+
   child c1(1, 0, out1);
   child c2(1, 1, out2);
 
@@ -13,7 +13,7 @@ module top();
     else
       $display("PASSED");
   end
-  
+
 endmodule // top
 
 module child(in1, in2, out);

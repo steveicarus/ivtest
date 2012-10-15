@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (c) Tony Bybell 1999-2000.
  *
  * This program is free software; you can redistribute it and/or
@@ -12,7 +12,7 @@
 #include <stdlib.h>
 
 /*
- * if your system really doesn't have alloca() at all, 
+ * if your system really doesn't have alloca() at all,
  * you can force functionality by using malloc
  * instead.  but note that you're going to have some
  * memory leaks because of it.  you have been warned.
@@ -32,5 +32,4 @@
 
 #define wave_alloca alloca
 
-#endif 
-
+#endif

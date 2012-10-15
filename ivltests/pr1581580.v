@@ -1,10 +1,9 @@
-
 module test;
 
    parameter SIZE = 2;
 
    reg [SIZE-1:0] d ;	// data in
-   reg 		  c ;	// latch control
+   reg		  c ;	// latch control
    wire [SIZE-1:0] q ;	// output
 
    unit_latch u_lat[SIZE-1:0] (.Q(q), .G(c), .D(d));

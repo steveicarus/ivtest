@@ -1,4 +1,3 @@
-
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -21,4 +20,3 @@ begin
             "1000";
 
 end behaviour;
-

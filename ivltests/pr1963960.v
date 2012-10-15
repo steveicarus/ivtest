@@ -13,7 +13,7 @@ module top;
     $fclose(fd);
 
     // Now read it back and verify that $ungetc() and other things work.
-    fd = $fopen("work/test.txt", "r"); 
+    fd = $fopen("work/test.txt", "r");
     if (fd == 0) begin
       $display("Failed to open test file for reading!");
       $finish;

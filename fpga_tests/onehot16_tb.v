@@ -29,7 +29,7 @@ module main;
 
    onehot16 dut(.out(out), .A(A));
 
-   reg 	     error = 0;
+   reg	     error = 0;
    integer   adx;
 
    initial begin

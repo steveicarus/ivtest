@@ -20,11 +20,11 @@
 /* Based on PR#564 */
 
 module main( );
- 
- 
+
+
    parameter [7:0] forwards  = 8'b11110001;
    parameter [0:7] backwards = 8'b10001111;
- 
+
    integer         i;
 
    initial begin

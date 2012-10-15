@@ -26,7 +26,7 @@ reg q;
 
 always @ (clk or d)
   if(~clk)
-    q = d; 
+    q = d;
 
 endmodule
 
@@ -36,14 +36,14 @@ reg clk, d;
 
 basiclatch u_reg (clk,d,q);
 
-initial 
+initial
   begin
     clk = 0;
     d = 0;
     #1 ;
     if(q !== 0)
        begin
-         $display("FAILED - initial value not 0"); 
+         $display("FAILED - initial value not 0");
 	 $finish;
        end
     #1 ;
@@ -53,25 +53,25 @@ initial
     # 1;
     if(q !== 0)
        begin
-         $display("FAILED - Didn't latch initial 0"); 
+         $display("FAILED - Didn't latch initial 0");
 	 $finish;
        end
-    #1 
+    #1
     clk = 0;
     # 1;
     if(q !== 1)
        begin
-         $display("FAILED - Didn't pass 1 after latch dropped"); 
+         $display("FAILED - Didn't pass 1 after latch dropped");
 	 $finish;
        end
-    #1 
+    #1
     clk = 1;
     # 1;
     d = 0;
     # 1;
     if(q !== 1)
        begin
-         $display("FAILED - Didn't latch 1 after latch dropped"); 
+         $display("FAILED - Didn't latch 1 after latch dropped");
 	 $finish;
        end
 

@@ -15,7 +15,7 @@ module test();
    endgenerate
 
    initial
-      begin 
+      begin
          clk = 0;
          if (data[0] != 32'bx) begin
             $display("FAILED: initial value, expected 32'bx, got %b", data[0]);
@@ -32,5 +32,3 @@ module test();
 
    always #25 clk = ~clk;
 endmodule // test
-
-  

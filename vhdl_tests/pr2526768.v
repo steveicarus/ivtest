@@ -1,8 +1,8 @@
 module top();
   wire [7:0] Z, CO;
   reg  [7:0] A, B, CI;
-  reg  ok; 
-  
+  reg  ok;
+
   test test(Z, CO, A, B, CI);
 
   task check;
@@ -18,8 +18,8 @@ module top();
       $display;
     end
   endtask // check
-  
-  
+
+
   initial begin
     ok = 1;
     A = 0;
@@ -36,7 +36,7 @@ module top();
     if (ok)
       $display("PASSED");
   end
-  
+
 endmodule // top
 
 module test (Z, CO, A, B, CI);
@@ -48,11 +48,10 @@ module test (Z, CO, A, B, CI);
   reg [width-1:0] Z, CO;
 
   integer i;
-    
+
   always @(A or B or CI) begin
     for(i=0; i < width; i=i+1)
       {CO[i],Z[i]} = A[i] + B[i] + CI[i];
   end
 
-endmodule 
-
+endmodule

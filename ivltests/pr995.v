@@ -1,4 +1,3 @@
-
 /*
  * This test runs the random number generator to make sure
  * it follows the standard algorithm. It is based on the bug
@@ -9,7 +8,7 @@ module pr995 ();
    integer seed;
    integer i;
    integer result;
-  
+
    initial begin
       seed = 1;
       $display ("Start sequence: seed=%h", seed);

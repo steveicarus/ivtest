@@ -27,7 +27,7 @@ module main;
    wire bit;
    PULLDOWN pd(bit);
 
-   reg 	drv;
+   reg	drv;
    assign bit = drv;
 
    initial begin
@@ -46,7 +46,7 @@ module main;
       $display("PASSED");
       $finish;
    end // initial begin
-      
+
 endmodule // main
 
 

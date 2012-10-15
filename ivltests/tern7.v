@@ -26,7 +26,7 @@ module main;
    wire a = b ? c : (d&e);
 
    reg [4:0] tmp;
-   reg 	     ref;
+   reg	     ref;
    initial begin
       // Do an exaustive scan of the possible values.
       for (tmp = 0 ;  tmp < 16 ;  tmp = tmp + 1) begin

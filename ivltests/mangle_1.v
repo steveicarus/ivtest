@@ -25,7 +25,7 @@
 module a;
    wire \a.b ;
    m    \c.d (\a.b );
-   initial 
+   initial
       begin
 	\c.d . \y.z  <= 1'b1;
 	#1;

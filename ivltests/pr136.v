@@ -13,7 +13,7 @@
 //                  The code compiles OK, but gives a runtime error of:
 //                  vpi_const.c:35: vpip_bits_to_dec_str: Assertion `nbits <=
 //                  8*sizeof(val)' failed.
-//                  
+//
 //    This source code is free software; you can redistribute it
 //    and/or modify it in source code form under the terms of the GNU
 //    General Public License as published by the Free Software
@@ -58,5 +58,3 @@ endmodule
 //****************************************************************************
 //  EOF : parameter_multiply_test
 //****************************************************************************
-
-

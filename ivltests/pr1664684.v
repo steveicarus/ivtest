@@ -1,13 +1,12 @@
-
 // pr1664684
 
 module bug (rdo, rm, cpen, up14, rdi);
    output [31:0] rdo;
-   input 	 rm, cpen;
+   input	 rm, cpen;
    input [31:0]  up14, rdi;
 
    initial $monitor($time,,rdo,,rm,cpen,,up14,,rdi);
-   assign 	 rdo = (rm | cpen) ? up14 : rdi;
+   assign	 rdo = (rm | cpen) ? up14 : rdi;
 
  endmodule
 
@@ -15,7 +14,7 @@ module bug (rdo, rm, cpen, up14, rdi);
 
    reg [31:0] up14;
    wire [31:0] rdo;
-   reg 	       rm, cpen;
+   reg	       rm, cpen;
    tri0 [31:0] rdi;
 
    bug u1 (rdo, rm, cpen, up14, rdi);

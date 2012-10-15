@@ -1,4 +1,3 @@
-
 /*
 * This tests the case that a delay value is a calculated real value.
 */

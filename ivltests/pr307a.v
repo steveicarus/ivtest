@@ -8,7 +8,7 @@ module top;
 
       assign out1 = in1 + in2;
 
-   
+
    task r;
       integer   errors;
       begin
@@ -23,10 +23,10 @@ module top;
 	end
       end
    endtask
-   
+
    initial begin
       r.errors = 0;
-      
+
       in1 = 128'hffffffffffffffffffffffffffffffff;
       in2 = 128'hfffffffffffffffffffffffffffffff7;
       r;

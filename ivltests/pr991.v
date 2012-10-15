@@ -1,4 +1,3 @@
-
 /*
  * This test file is based on PR991.
  */
@@ -20,6 +19,4 @@ module bug();
     $displayb(test3); // Should be 1
   end
 
-endmodule 
-
-
+endmodule

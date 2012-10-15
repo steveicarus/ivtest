@@ -1,4 +1,3 @@
-
 module main;
 
    reg [31:0] foo;
@@ -14,4 +13,3 @@ module main;
    end
 
 endmodule // main
-

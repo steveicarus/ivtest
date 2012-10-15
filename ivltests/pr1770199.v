@@ -10,5 +10,3 @@ module top;
     $display("The strength is: %v:", net);
   end
 endmodule
-
- 	  	 

@@ -16,22 +16,20 @@
 //    along with this program; if not, write to the Free Software
 //    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 //
-//  SDW - Validate always # delay_value ; 
+//  SDW - Validate always # delay_value ;
 //  D:    Note that initial has to be before always to execute!
 
-module main ; 
+module main ;
 
 reg [3:0] value1 ;
 
-initial 
+initial
 	begin
            # 20 ;
            $display("PASSED\n");
-     	   $finish;                                                            
+	   $finish;
         end
 
 always # 10 ;
 
 endmodule
-
-

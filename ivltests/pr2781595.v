@@ -1,19 +1,19 @@
 module xortest(out, a, b);
     output out;
     input a, b;
-    parameter tdelay=2; 
+    parameter tdelay=2;
     wire a_, b_, i1, i2, i3;
-	
+
     supply0 gnd;
     supply1 vdd;
-	
+
     nmos #(tdelay) n5(a_, gnd, a);
     pmos #(tdelay) p5(a_, vdd, a);
 
     nmos #(tdelay) n6(b_, gnd, b);
     pmos #(tdelay) p6(b_, vdd, b);
-	
-	
+
+
     nmos #(tdelay) n1(out, i1, a);
     nmos #(tdelay) n2(i1, gnd, b);
     nmos #(tdelay) n3(out, i2, a_);
@@ -30,9 +30,9 @@ module testXor();
     wire out;
     reg a, b;
     reg pass;
-	
+
     xortest x1(out, a, b);
-	
+
     initial begin
 	pass = 1'b1;
 	a=1;b=1;
@@ -58,7 +58,7 @@ module testXor();
 	a=1;b=0;
 	#100; $display("A=%b  B=%b Out=%b",a,b,out);
 	a=0;b=0;
-	#100; $display("A=%b  B=%b Out=%b",a,b,out);		
+	#100; $display("A=%b  B=%b Out=%b",a,b,out);
 
 	if (pass) $display("PASSED");
     end
@@ -71,6 +71,4 @@ module testXor();
 	    pass = 1'b0;
 	end
     end
-endmodule 
-
- 	  	 
+endmodule

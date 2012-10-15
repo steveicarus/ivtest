@@ -1,4 +1,3 @@
-
 module test();
 
    reg [0:(8*6)-1] identstr= "PASSED";
@@ -11,7 +10,7 @@ module test();
 //	$dumpvars;
      end
 
-   initial 
+   initial
      begin
 	for (i=0; i<6; i=i+1)
 	  begin
@@ -23,6 +22,3 @@ module test();
      end
 
 endmodule // test
-
-
- 	  	 

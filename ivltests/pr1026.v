@@ -1,4 +1,3 @@
-
 /*
  * This is based on PR#1026.
  */

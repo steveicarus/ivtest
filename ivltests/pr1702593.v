@@ -5,5 +5,3 @@ module top;
     $display("The value is %5.2f", -1);
   end
 endmodule
-
- 	  	 

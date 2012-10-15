@@ -17,10 +17,10 @@
 //    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 //
 // SDW - validate named blocks/disable stmt
-//                                                           
-// D: This code verifies both named blocks and the disable statement 
-// D: It is intended to be self checking. 
-//                                     
+//
+// D: This code verifies both named blocks and the disable statement
+// D: It is intended to be self checking.
+//
 
 module main ();
 
@@ -28,7 +28,7 @@ reg working;
 reg timer;
 
 initial
-  begin:my_block 
+  begin:my_block
     working = 1;
     #5;
     working = 1;
@@ -42,7 +42,7 @@ initial
 initial
   begin
     #15;
-    disable my_block; 
+    disable my_block;
   end
 
 initial

@@ -8,7 +8,7 @@
 module main;
 
    reg [31:0] x;
-   reg 	      clk, reset;
+   reg	      clk, reset;
 
    wire [15:0] y;
    wire        rdy;

@@ -101,14 +101,14 @@ initial
         $display("FAILED - out_1 didn't set on clk_1\n");
         $finish ;
       end
-    
+
     if(!out_0)
       begin
         $display("FAILED - out_0 changed due to clk_0\n");
         $finish ;
       end
 
-    
+
     $display("PASSED\n");
     $finish ;
   end

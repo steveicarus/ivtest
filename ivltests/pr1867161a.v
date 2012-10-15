@@ -1,4 +1,4 @@
-module test;		  
+module test;
   /* The base+b calculation uses %load/vp0 and this will cause invalid
    * results when the sum of base+b is larger than what will fit
    * in b. The addition is done at b's width. It appears that
@@ -8,7 +8,7 @@ module test;
    * The workaround is to make b large enough to access
    * the largest a index not a's range. */
   parameter base = 8;
-  reg [31:0] a[15:base]; 	
+  reg [31:0] a[15:base];
   reg [2:0]  b;
 
   initial begin
@@ -17,4 +17,4 @@ module test;
       $display("Value[%0d]: %1d", b, a[base+b]);
     end
   end
-endmodule 
+endmodule

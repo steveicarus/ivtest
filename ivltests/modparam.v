@@ -18,18 +18,18 @@
 //
 //  SDW - Validate parameter passing override in module declaration.
 //
-// Build a single line of storage - Note it's 
+// Build a single line of storage - Note it's
 //
 
 module reg32 (clk,we, din, dout);
 
 parameter WIDTH=32;
 
-input 			we;
-input 			clk;
-input [WIDTH-1:0] 	din;
+input			we;
+input			clk;
+input [WIDTH-1:0]	din;
 
-output [WIDTH-1:0] 	dout;
+output [WIDTH-1:0]	dout;
 
 reg [WIDTH-1:0] store;
 
@@ -45,16 +45,16 @@ module memory(clk, we, addr, din,  dout);
 
 parameter WIDTH=8;
 
-input 			clk;
-input 			we;
+input			clk;
+input			we;
 input [1:0]		addr;
-input [WIDTH-1:0] 	din;
+input [WIDTH-1:0]	din;
 
-output [WIDTH-1:0] 	dout;
-reg    [WIDTH-1:0] 	dout;
+output [WIDTH-1:0]	dout;
+reg    [WIDTH-1:0]	dout;
 
 wire    [WIDTH-1:0]	dout0,dout1,dout2,dout3;
-reg  			we0,we1,we2,we3;
+reg			we0,we1,we2,we3;
 
 reg32 #(WIDTH) reg0 (.clk(clk),.we(we0),.din(din[WIDTH-1:0]),
                      .dout(dout0[WIDTH-1:0]));
@@ -69,35 +69,35 @@ reg32 #(WIDTH) reg3 (.clk(clk),.we(we3),.din(din[WIDTH-1:0]),
 // Build we decode
 //
 always @(addr or we)
-   case (addr) 
+   case (addr)
       2'b00: begin
                we0 = we;
-               we1 = 0; 
-               we2 = 0; 
-               we3 = 0; 
+               we1 = 0;
+               we2 = 0;
+               we3 = 0;
              end
       2'b01: begin
                we0 = 0;
-               we1 = we; 
-               we2 = 0; 
-               we3 = 0; 
+               we1 = we;
+               we2 = 0;
+               we3 = 0;
              end
       2'b10: begin
                we0 = 0;
-               we1 = 0; 
-               we2 = we; 
-               we3 = 0; 
+               we1 = 0;
+               we2 = we;
+               we3 = 0;
              end
       2'b11: begin
                we0 = 0;
-               we1 = 0; 
-               we2 = 0; 
-               we3 = we; 
+               we1 = 0;
+               we2 = 0;
+               we3 = we;
              end
    endcase
 
 //
-// Connect dout to register output 
+// Connect dout to register output
 //
 always @(addr or dout0 or dout1 or dout2 or dout3)
    case (addr)
@@ -112,12 +112,12 @@ endmodule
 module top;
 
 parameter WIDTH=8;
-reg  			clk;
-reg  			we;
+reg			clk;
+reg			we;
 reg    [1:0]		addr;
-reg   [WIDTH-1:0] 		din;
+reg   [WIDTH-1:0]		din;
 reg			error;
-wire  [WIDTH-1:0] 		dout;
+wire  [WIDTH-1:0]		dout;
 
 memory mem (clk, we, addr, din,  dout);
 
@@ -141,13 +141,13 @@ initial
     #10;
     addr = 3;
     din = 32'h3;
-    #10; 
+    #10;
     we = 0;
     addr = 0;
     #1;
     if(dout[7:0] !== 8'h00)
       begin
-         $display("FAILED - Ram[0] not 0, is %h",dout[7:0]); 
+         $display("FAILED - Ram[0] not 0, is %h",dout[7:0]);
          error = 1;
       end
     if(error == 0)

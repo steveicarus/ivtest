@@ -14,14 +14,14 @@ module test;
         end
       else
         begin
-          ptr_nxt = 0;         
+          ptr_nxt = 0;
         end
     end
-            
+
   initial
     begin
       #1;
-      
+
       ptr = 2;
       size = 2;
       #1
@@ -35,7 +35,7 @@ module test;
           $display("  ERROR");
 	  $finish;
         end
-      
+
       ptr = 3;
       size = 4;
       #1
@@ -66,9 +66,7 @@ module test;
 
       $display("PASSED");
       $finish;
-    
+
     end
 
 endmodule
-
-

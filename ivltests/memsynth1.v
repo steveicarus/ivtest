@@ -1,4 +1,3 @@
-
 /*
  * This program tests the synthesis of small memories, including
  * aysnchronous read w/ synchronous write.
@@ -6,7 +5,7 @@
 module main;
 
    reg [3:0] mem [1:0], D;
-   reg 	     rst, clk, wr, wadr, radr;
+   reg	     rst, clk, wr, wadr, radr;
 
    /*
     * This implements the synchronous write port to the memory.

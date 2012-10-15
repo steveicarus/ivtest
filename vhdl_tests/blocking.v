@@ -34,5 +34,5 @@ module testbench();
         $finish;
       end
   end
-  
+
 endmodule // testbench

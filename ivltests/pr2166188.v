@@ -1,4 +1,3 @@
-
 module t();
 
 parameter eh = 11;
@@ -31,4 +30,3 @@ begin
 end
 
 endmodule
-

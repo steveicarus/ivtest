@@ -1,4 +1,3 @@
-
 module main;
 
    wire [3:0] src [15:0];

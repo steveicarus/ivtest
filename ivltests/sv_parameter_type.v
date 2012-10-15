@@ -73,4 +73,4 @@ module mod_typ #(
 
    assign siz = $bits (cnt);
 
-endmodule  
+endmodule

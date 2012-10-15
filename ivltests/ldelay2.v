@@ -27,7 +27,7 @@ module test;
    reg  a, b;
    xor #1 (q, a, b);
 
-   reg 	error;
+   reg	error;
    initial
      begin
 	error = 0;
@@ -36,7 +36,7 @@ module test;
 	error = 1;
 	$display("%0d: FAILED: q=%b", $time, q);
      end
-   
+
    initial
      begin
 //	$dumpvars;
@@ -53,4 +53,3 @@ module test;
 	  $display("PASSED");
      end
 endmodule
-

@@ -1,4 +1,3 @@
-
 /*
  * This is from iverilog issue # 1313453
  * This point is that it should compile.
@@ -14,4 +13,3 @@ input a;
 initial $display("PASSED");
 
 endmodule
-

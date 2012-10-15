@@ -1,4 +1,3 @@
-
 module test;
    parameter NBytes = 21;
    parameter  Message = "0H1d2j3i4k 5R6i7k8d9["; // Message to send

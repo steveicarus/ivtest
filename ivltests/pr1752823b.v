@@ -10,5 +10,3 @@ module top;
     $display("+0=%f, -0=%f, inf=%f and minf=%f.", zero, mzero, inf, minf);
   end
 endmodule
-
- 	  	 

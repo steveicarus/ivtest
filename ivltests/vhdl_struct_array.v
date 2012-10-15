@@ -1,4 +1,3 @@
-
 module main;
 
    reg [16:0] in;

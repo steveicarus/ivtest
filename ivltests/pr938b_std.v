@@ -22,9 +22,9 @@ module test;
       end
    end
 
-endmodule 
+endmodule
 
- 
+
 primitive prim_mux2( output out, input in1, input in0, input select);
 
 table
@@ -38,4 +38,4 @@ table
     ?   1      0 : 1;
 endtable
 
-endprimitive 
+endprimitive

@@ -1,6 +1,6 @@
 /***********************************************************************
 
-  Array access test cases 
+  Array access test cases
   Copyright (C) 2001  Eric LaForest, ecl@pet.dhs.org
   Licenced under GPL
 
@@ -9,7 +9,7 @@
 module wire_test_case (array_out, clock, reset);
 	output [15:0] array_out;
 	input clock, reset;
-	
+
 	reg [3:0] readptr;
 	reg [15:0] body [15:0];
 
@@ -41,7 +41,7 @@ endmodule
 module always_test_case (array_out, clock, reset);
 	output [15:0] array_out;
 	input clock, reset;
-	
+
 	reg [3:0] readptr;
 	reg [15:0] body [15:0];
 
@@ -67,7 +67,7 @@ module always_test_case (array_out, clock, reset);
 		else begin
 			readptr <= readptr + 16'h0001;
 		end
-	end	
+	end
 endmodule
 
 module BENCH ();
@@ -106,12 +106,12 @@ module BENCH ();
 	end
 
    initial errors = 0;
-   
+
    always @(negedge clock)
      if (array_out1 !== array_out2)
        begin
 	  $display("FAILED: %b !== %b", array_out1, array_out2);
 	  errors = errors + 1;
        end
-   
+
 endmodule

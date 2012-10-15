@@ -56,5 +56,3 @@ module bar(clk, x);
     $display("[bar %d] x = %d",counter, x);
   end
 endmodule
-
-

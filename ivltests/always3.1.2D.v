@@ -16,30 +16,28 @@
 //    along with this program; if not, write to the Free Software
 //    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 //
-//  SDW - Validate 3.1.2D always reg_lvalue = # delay_value boolean_expr ; 
+//  SDW - Validate 3.1.2D always reg_lvalue = # delay_value boolean_expr ;
 //  D:    Note that initial has to be before always to execute!
 
-module main ; 
+module main ;
 
 reg [3:0] value1 ;
 
-initial 
+initial
   begin
     if(value1 !== 4'hx)
-  	$display("FAILED - always reg_lvalue = # delay_value boolean_expr"); 
+	$display("FAILED - always reg_lvalue = # delay_value boolean_expr");
     #15 ;
     if(value1 != 4'b1)
-  	$display("FAILED - always reg_lvalue = # delay_value boolean_expr"); 
+	$display("FAILED - always reg_lvalue = # delay_value boolean_expr");
     else
         begin
             $display("PASSED\n");
             $finish ;
         end
    end
-     
-always 
+
+always
           value1 <= # 10 1'b1 && 1'b1 ;
 
 endmodule
-
-

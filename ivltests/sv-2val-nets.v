@@ -1,5 +1,3 @@
-
-
 // This tests part selects of 2-value logic vectors through
 // module ports. This is not supported in SystemVerilog, but
 // we expect it to work as an Icarus Verilog extension, as

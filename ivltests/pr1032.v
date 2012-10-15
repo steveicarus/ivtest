@@ -1,7 +1,6 @@
-
 module test;
 
-   reg 	d;
+   reg	d;
    wire bar;
 
    // Assign some value to bar with weak drive.

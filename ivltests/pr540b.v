@@ -1,6 +1,6 @@
 // Icarus 0.6, snapshot 20020907
 // ==================================================
-// -- confused by disables from within a fork -- vvp fails 
+// -- confused by disables from within a fork -- vvp fails
 //
 // -- to run, incant
 //                  iverilog tt.v
@@ -85,7 +85,7 @@ module top;
     begin: forked_tasks
       fork
 	begin
-	  #5; 
+	  #5;
 	  fork_fail = 1;
 	end
 	begin
@@ -135,7 +135,7 @@ task task_with_fork;  // disable block whick calls fork
     begin: forked_tasks_in_task
       fork
 	begin: alf
-	  #5; 
+	  #5;
 	  tfk_fail = 1;
 	end
 	begin: bet
@@ -155,7 +155,7 @@ task task_with_fork2; // disable *one* of the forked blocks
     begin: forked_tasks_in_task2
       fork
 	begin: gam
-	  #5; 
+	  #5;
 	  tfk2pos = 1;
 	end
 	begin: delt
@@ -175,7 +175,7 @@ task task_with_fork3; // disable *one* of the forked blocks
     begin: forked_tasks_in_task3
       fork
 	begin: eps
-	  #5; 
+	  #5;
 	  tfk3nega = 0;
 	end
 	begin: zet

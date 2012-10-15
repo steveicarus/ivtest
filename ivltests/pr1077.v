@@ -23,10 +23,10 @@ initial begin
 	$finish;
 end
 
-always @(posedge clk) 
+always @(posedge clk)
 begin
 	// BUG: this should eval to "1" but does not!
-	y <= count[10] || ~count[5:3];	
+	y <= count[10] || ~count[5:3];
 
 	// this should print "one" and does
 	if(count[10] || ~(count[5:3]))
@@ -38,4 +38,3 @@ begin
 end
 
 endmodule
-

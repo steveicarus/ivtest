@@ -1,4 +1,3 @@
-
 module main;
 
    wire [15:0] out;

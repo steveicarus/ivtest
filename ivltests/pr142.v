@@ -30,16 +30,16 @@ module testit;
 
    task idle;
       input [15:0] waitcnt;
-   
+
    begin: idletask
    // begin
       integer i;
       for (i=0; i < waitcnt; i = i + 1)
          begin
             @ (posedge clk);
-            
+
          end // for (i=0; i < waitcnt; i = i + 1)
-      
+
    end
    endtask // idle
 

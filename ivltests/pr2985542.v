@@ -1,4 +1,3 @@
-
 module main;
 
    wire [3:0] b = 4'b1111;

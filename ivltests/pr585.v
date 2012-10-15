@@ -7,7 +7,7 @@ module main();
   reg mem;
 
    initial begin
-      ram_temp = 8'h08; 
+      ram_temp = 8'h08;
       mem = (ram_temp & 8'h08) >> 3;
       $write("Calculated: %b\nActually in mem: %b\n",((ram_temp & 8'h08) >> 3),
 mem);

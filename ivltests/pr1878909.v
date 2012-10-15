@@ -19,7 +19,7 @@ module test_mod(
   );
   input  in_0;
   output out_0;
-  
+
   function test;
   input moo;
   begin

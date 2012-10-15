@@ -17,7 +17,7 @@
 //    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 //
 // SDW - Validate a lval concat in a continuous assignment
-// 
+//
 // D: Validate that an lvalue can be a concatenation.
 //
 
@@ -27,7 +27,7 @@ reg [1:0] c;
 reg working;
 
 assign {a,b} = c;
- 
+
 initial
 begin
     working = 1;
@@ -65,7 +65,7 @@ begin
 
     #1 if(working)
        $display("PASSED\n");
-    
+
 end
 
 endmodule

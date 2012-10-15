@@ -20,7 +20,7 @@
 module main;
 
    wire no, po;
-   reg 	d, c;
+   reg	d, c;
 
    rnmos n (no, d, c);
    rpmos p (po, d, c);

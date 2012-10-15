@@ -1,4 +1,3 @@
-
 /*
  * In this example, the set and clr are both synchronous. This checks
  * that this complex case is handled correctly.
@@ -6,7 +5,7 @@
 module main;
 
 
-   reg 	      Q, clk, rst, set, clr;
+   reg	      Q, clk, rst, set, clr;
    (* ivl_synthesis_on *)
    always@(posedge clk or posedge rst)
      begin
@@ -106,9 +105,3 @@ module main;
    end
 
 endmodule
-
-
-
-
-
-

@@ -22,7 +22,7 @@ module sum_test;
       $finish;
    end
 endmodule
-   
+
 module sum
   #(
     parameter n = 4,
@@ -34,7 +34,7 @@ module sum
     input [n*width-1:0]addends,
     output reg [log_n+width-1:0] s
     );
-   
+
     // This should fail at the first recursion since this is not inside
     // a generate block.
     wire [$clog2(n/2)+width-1:0] a1;
@@ -44,5 +44,3 @@ module sum
     always @(posedge clk) s <= a1 + a2;
 
 endmodule // sum
-
-

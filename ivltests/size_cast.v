@@ -1,4 +1,3 @@
-
 module main;
 
    reg [7:0] foo;
@@ -27,5 +26,3 @@ module main;
    end // initial begin
 
 endmodule // main
-
-

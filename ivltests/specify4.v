@@ -1,4 +1,3 @@
-
 // specify4.v
 
 module top;
@@ -29,5 +28,3 @@ module mydff (output reg q, input d, input c);
       (posedge c => (q +: d)) = (3, 2);
    endspecify
 endmodule
-
- 	  	 

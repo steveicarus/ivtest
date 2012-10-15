@@ -1,7 +1,6 @@
-
 /* pr1612693.v */
 
-module test (); 
+module test ();
    reg [9:0] col;
    wire [9:0] xsize;
    // The setup for this expression caused an assertion at run time

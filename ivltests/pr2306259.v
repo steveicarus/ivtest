@@ -1,4 +1,3 @@
-
 module test ();
    generate
       if (1) begin

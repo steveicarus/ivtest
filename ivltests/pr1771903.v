@@ -9,5 +9,3 @@ module top;
              $bits(1.23456));
   end
 endmodule
-
- 	  	 

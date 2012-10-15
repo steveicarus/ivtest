@@ -1,4 +1,3 @@
-
 module main;
 
    reg [31:0] bytes;

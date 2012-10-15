@@ -1,5 +1,3 @@
-
-
 module main;
    wire [1:0] a2, b2;
    wire [2:0] a3, b3;

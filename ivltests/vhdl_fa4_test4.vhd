@@ -1,28 +1,27 @@
-
 -- In this test, we declare a component in the "mypackage" package
 -- and show that it can be referenced within the package namespace.
--- it also shows the usage of subtypes, constants and signals 
--- expressed in terms of defined subtypes 
+-- it also shows the usage of subtypes, constants and signals
+-- expressed in terms of defined subtypes
 
 library ieee;
 use ieee.numeric_bit.all;
 
 package mypackage is
-  
+
   -- trivial sub type
   subtype Myrange_t is integer range 0 to 4;
-  
+
   -- some constants
   constant ZERO: Myrange_t := 0;
   constant ONE: Myrange_t := 1;
   constant TWO: Myrange_t := 2;
   constant THREE: Myrange_t := 3;
   constant FOUR: Myrange_t := 4;
-  
+
   -- another subtype
   subtype AdderWidth_t is bit_vector (THREE downto ZERO);
   subtype CarryWidth_t is bit_vector (THREE+1 downto ZERO);
-  
+
   -- full 1-bit adder
   component fa1 is
     port (a_i, b_i, c_i: in bit;
@@ -43,15 +42,15 @@ entity fa4 is
 end entity fa4;
 
 architecture fa4_rtl of fa4 is
-  
+
 -- auxiliary signal for carry
-signal c_int: CarryWidth_t; 
+signal c_int: CarryWidth_t;
 
 begin
- 
+
     -- carry in
     c_int(ZERO) <= c_i;
- 
+
     -- slice 0
     s0: fa1 port map (c_i => c_int(ZERO),
                       a_i => va_i(ZERO),
@@ -67,7 +66,7 @@ begin
                       s_o => vs_o(ONE),
                       c_o => c_int(TWO)
                       );
- 
+
     -- slice 2
     s2: fa1 port map (c_i => c_int(TWO),
                       a_i => va_i(TWO),

@@ -23,7 +23,7 @@
  * right time and not the wrong time.
  */
 
-module main ; 
+module main ;
 
    reg a;
 

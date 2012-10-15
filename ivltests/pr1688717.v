@@ -1,4 +1,3 @@
- 
 module bar;
    reg [24:1] original = 24'h123456;
    reg [8:1]  second, minus_indexed, plus_indexed;

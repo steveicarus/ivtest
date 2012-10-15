@@ -1,4 +1,3 @@
-
 /*
  * This example is a distillation of the essence of PR#993.
  * Or at least the essence that led to a bug report.
@@ -8,8 +7,8 @@ module main;
 
    parameter [31:0] fifo_address = 32'hc0_00_00_00;
 
-   reg [31:0] 	    bar;
-   reg 		    flag;
+   reg [31:0]	    bar;
+   reg		    flag;
    wire [31:0] foo  = flag? fifo_address  : bar;
 
    initial begin

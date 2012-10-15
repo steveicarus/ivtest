@@ -13,5 +13,3 @@ module forBug();
 	  $display("j=%d",j);
      end
 endmodule // forBug
-
- 	  	 

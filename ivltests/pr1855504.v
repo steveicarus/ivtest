@@ -1,4 +1,3 @@
-
 // pr1855504
 
 module mul_test();

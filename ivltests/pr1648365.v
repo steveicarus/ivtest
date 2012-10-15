@@ -1,5 +1,3 @@
-
-
 module ivitest;
 
 reg clock_1x, clock_2x;
@@ -57,12 +55,10 @@ end
 initial begin
 //    $dumpfile( "test.vcd" );
 //    $dumpvars;
-    
+
     #100;
     $finish;
 end
 
 
 endmodule
-
- 	  	 

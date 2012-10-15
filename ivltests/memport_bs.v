@@ -35,7 +35,7 @@ module pr303;
 
    reg [2:0]  a;
    reg [3:0]  e;
-   
+
    initial
      begin
 	e = 0;

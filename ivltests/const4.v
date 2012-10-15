@@ -22,13 +22,13 @@ module test;
     end
 
     //always @(i) $display("%0t:\ti = %d", $time, i);
-   
+
     // Potential ambiguities
     initial begin
 	err = 0;
 
        i = # 9  1'd0;
-       
+
 	i = # 9_7 'D 3;
 	#100;
 	if (i != 'd3) begin

@@ -16,5 +16,3 @@ $write("%f %b %f\n",r, $realtobits(r), $bitstoreal($realtobits(r)));
 
 end
 endmodule
-
-

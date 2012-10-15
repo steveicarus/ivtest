@@ -14,4 +14,3 @@ module main( stb, a );
    endspecify
 
 endmodule // main
-

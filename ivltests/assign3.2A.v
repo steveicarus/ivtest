@@ -18,7 +18,7 @@
 //
 //  SDW - Validate assign identifier = expression ;
 
-module main ; 
+module main ;
 
 wire a;
 wire [31:0] b;
@@ -31,24 +31,24 @@ assign a = val [0];		// Pull single bit
 assign b = val;			// full variable
 assign c = val[31:16];		// Top portion bit select
 
-initial 
+initial
   begin
     error = 0;
     if(a != 1'bx)
       begin
         $display("FAILED - 3.2A assign ident = expr");
          error = 1;
-      end      
+      end
     if(b != 32'bx)
       begin
         $display("FAILED - 3.2A assign ident = expr");
          error = 1;
-      end      
+      end
     if(c != 16'bx)
       begin
         $display("FAILED - 3.2A assign ident = expr");
          error = 1;
-      end      
+      end
     #1 ;
     val = 32'h87654321;
     #1 ;
@@ -56,17 +56,17 @@ initial
       begin
         $display("FAILED - 3.2A assign ident = expr");
          error = 1;
-      end      
+      end
     if(b != 32'h87654321)
       begin
         $display("FAILED - 3.2A assign ident = expr");
          error = 1;
-      end      
+      end
     if(c != 16'h8765)
       begin
         $display("FAILED - 3.2A assign ident = expr");
          error = 1;
-      end      
+      end
     if(error == 0)
          $display("PASSED");
 
@@ -75,5 +75,3 @@ initial
 
 
 endmodule
-
-

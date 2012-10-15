@@ -11,10 +11,9 @@ entity subtract is
     b : in unsigned(3 downto 0);
     out_sig : out unsigned(3 downto 0)
   );
-end entity; 
+end entity;
 
 architecture test of subtract is
 begin
   out_sig <= (a + not b) + 1;
 end architecture;
-

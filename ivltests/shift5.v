@@ -29,5 +29,3 @@ module ArithmeticShiftTest;
     end
   end // initial begin
 endmodule // ArithmeticShiftTest
-
-

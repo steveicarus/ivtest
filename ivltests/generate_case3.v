@@ -1,4 +1,3 @@
-
 module main;
 
    parameter COND = 1;

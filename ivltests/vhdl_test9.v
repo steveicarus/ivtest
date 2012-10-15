@@ -71,6 +71,5 @@ module main;
         #120000;
         $display("PASSED");
     end
-    
+
 endmodule
- 

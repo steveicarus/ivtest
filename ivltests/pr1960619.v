@@ -10,25 +10,25 @@ module test;
    end
 
    function [4:0] _$Finv5;
-      input 	 l;
+      input	 l;
       reg [4:0]  l;
       _$Finv5 = ~l;
    endfunction
 
    function [7:0] _$Fsub8;
-      input 	 l,r;
+      input	 l,r;
       reg [7:0]  l,r;
       _$Fsub8 = l-r;
    endfunction
 
    function [7:0] _$Fadd8;
-      input 	 l,r;
+      input	 l,r;
       reg [7:0]  l,r;
       _$Fadd8 = l+r;
    endfunction
 
    function [31:0] _$Fsll32;
-      input 	 l,r;
+      input	 l,r;
       reg [31:0] l;
       integer    r;
       begin
@@ -45,7 +45,7 @@ module test;
    function [31:0] _$Fsrl32;
       input l,r;
       reg [31:0] l;
-      integer 	 r;
+      integer	 r;
       begin
 	 if(r < 0) begin
 	    if(r + 32 <= 0) _$Fsrl32 = 32'b0;

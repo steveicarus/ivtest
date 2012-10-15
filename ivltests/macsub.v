@@ -1,4 +1,3 @@
-
 module test();
 
 integer j;
@@ -24,4 +23,3 @@ begin
 		$display("FAILED");
 end
 endmodule
-

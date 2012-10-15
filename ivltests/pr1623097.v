@@ -1,4 +1,3 @@
-
 /* pr1623097 */
 `timescale 1ns/1ns
 
@@ -9,7 +8,7 @@ module top;
   reg [3:0] data;
   reg [3:0] clear;
   reg clk;
-  
+
   genvar i;
 
   initial begin
@@ -64,5 +63,3 @@ module top;
 
 
 endmodule
-
- 	  	 

@@ -1,4 +1,3 @@
-
 /*
  * This example is based on PR#584 in the bugs database.
  */
@@ -22,5 +21,3 @@ initial begin
      $finish;
 end
 endmodule
-
-

@@ -4,7 +4,7 @@
 ////
 
 module ExplodedArrays1;
-    
+
    reg [7:0] data [0:25600-1];
 
    integer   idx;
@@ -23,6 +23,3 @@ module ExplodedArrays1;
    end // initial begin
 
 endmodule
-
-
- 	  	 

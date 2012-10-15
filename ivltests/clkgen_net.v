@@ -23,7 +23,7 @@ initial begin
     fork
       checking;
 	  gen;
-    join	  
+    join
 end
 
 

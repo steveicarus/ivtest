@@ -25,17 +25,17 @@ reg [31:0] v1,v2,v3;
 reg error;
 event event_1, event_2;
 
-always @ event_1 
+always @ event_1
   begin
-     v1 = v1 + 1; 
+     v1 = v1 + 1;
   end
 
-always @ event_2 
+always @ event_2
   begin
      v2 = 1;
   end
 
-initial 
+initial
   begin
     error = 0;
     v1 = 0;
@@ -43,7 +43,7 @@ initial
     v3 = 0;
 //    $dumpfile("test.vcd");
 //    $dumpvars(0,main);
- 
+
     #(5);
     -> event_1;
     v3 = 1;
@@ -62,7 +62,7 @@ initial
         error = 1;
       end
     v3 = 2;
-     
+
     #5 -> event_1;
     #1 ;
     if(v1 !== 2)

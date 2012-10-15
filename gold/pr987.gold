@@ -1,4 +1,4 @@
-./ivltests/pr987.v:13: warning: wait expression is constant false.
-./ivltests/pr987.v:13:        : The statement will block permanently.
+./ivltests/pr987.v:12: warning: wait expression is constant false.
+./ivltests/pr987.v:12:        : The statement will block permanently.
 Test thread runs.
 Test thread runs.

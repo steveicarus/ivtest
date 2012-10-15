@@ -26,13 +26,13 @@ module main;
 
    wire d = a & !b;  // change from !b to ~b and everything is fine
    reg [2:0] tmp;
-   reg 	     ref;
+   reg	     ref;
    initial begin
       // Do an exaustive scan of the possible values.
       for (tmp = 0 ;  tmp < 4 ;  tmp = tmp + 1) begin
 	 a = tmp[0];
 	 b = tmp[1];
-   	 c = a & ~b;
+	 c = a & ~b;
 	 #1 if (c != d) begin
 	    $display("FAILED -- a=%b, b=%b, c=%b, d=%b",
 		     a, b, c, d);

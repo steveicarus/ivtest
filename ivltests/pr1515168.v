@@ -1,4 +1,3 @@
-
 module extension_bug();
 
 reg       x;

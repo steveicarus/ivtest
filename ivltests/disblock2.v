@@ -3,7 +3,7 @@ reg [1:0] result;
 initial begin
     $display("hello world, 'b%b", 1'b1);
     result = get_bytes(4'b0111);
-    
+
 end
 
 function [1:0] get_bytes;
@@ -25,4 +25,3 @@ begin
 end
 endfunction
 endmodule
-

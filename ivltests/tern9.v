@@ -1,4 +1,3 @@
-
 /* tern9.v
  */
 module main;

@@ -111,7 +111,7 @@ sub execute_regression {
                 }
                 next;
             }
-            
+
             # Check the log file for an un-translatable construct error
             # We report this separately so we can distinguish between
             # expected and unexpected failures
@@ -165,7 +165,7 @@ sub execute_regression {
             $failed++;
             next;
         }
-        #print "primary unit is $unit\n";           
+        #print "primary unit is $unit\n";
 
         # Elaborate the primary unit to produce and executable
         # Could elaborate and run in a single step, but this should
@@ -198,7 +198,7 @@ sub execute_regression {
                 }
             }
         }
-        
+
         if ($diff{$tname} ne "") {
             $diff_file = $diff{$tname}
         } else {

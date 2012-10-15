@@ -1,7 +1,7 @@
 module top;
   reg passed, in, expect;
   integer lp;
-  
+
   wire rand = &in;
   wire ror = |in;
   wire rxor = ^in;

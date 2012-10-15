@@ -40,7 +40,7 @@ module test;
 	   end
       end
    endtask
-   
+
    initial
      begin
 	ok.error = 0;
@@ -75,4 +75,4 @@ module gate(q, a, b);
    input  a, b;
 
    and #5555 (q, a, b);
-endmodule 
+endmodule

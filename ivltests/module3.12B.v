@@ -28,10 +28,10 @@ module main;
   wire b;
   foo foo1 (.a());
   foo foo2 (.a(b));
- 
+
   initial
     if(!b)
-        $display("FAILED - 3.12B - Module with output only failed"); 
+        $display("FAILED - 3.12B - Module with output only failed");
     else
         $display("PASSED");
 endmodule // main

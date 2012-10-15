@@ -26,7 +26,7 @@ module top;
     // The system function is a primary and should create a self-determined
     // context for the ARS. The addition is then done in an unsigned
     // context, but this should still give the correct result.
-    // 
+    //
     // The bug is that Icarus is not sign padding the ARS since the
     // addition is casting it to be unsigned. It should only be able to
     // cast the sign of the result not the actual ARS! This casting is

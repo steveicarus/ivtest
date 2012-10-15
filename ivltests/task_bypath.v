@@ -35,4 +35,3 @@ initial begin
 end
 
 endmodule
-

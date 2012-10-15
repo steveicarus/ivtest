@@ -1,11 +1,11 @@
 module test ;
- 
+
 wire a;
 reg  sel,in0, in1;
 reg  error;
- 
+
 assign a = sel ? in1 : in0 ;
- 
+
 initial
   begin
     error = 0;
@@ -20,7 +20,7 @@ initial
          $display("sel=%b,in0=%b,in1=%b,out=%b",
                    sel,in0,in1,a);
          error = 1;
-       end          
+       end
     #1;
     in0 = 1;
     #1;
@@ -61,7 +61,7 @@ initial
          $display("sel=%b,in0=%b,in1=%b,out=%b",
                    sel,in0,in1,a);
          error = 1;
-       end                
+       end
    #1;
     in1 = 0;
     sel = 1'bx;
@@ -84,9 +84,9 @@ initial
          $display("sel=%b,in0=%b,in1=%b,out=%b",
                    sel,in0,in1,a);
          error = 1;
-       end                
+       end
     if(error === 0)
       $display("PASSED");
   end
- 
-endmodule        
+
+endmodule

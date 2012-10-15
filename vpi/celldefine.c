@@ -27,4 +27,3 @@ static void vpi_register(void)
 }
 
 void (*vlog_startup_routines[]) () = {vpi_register, 0};
-

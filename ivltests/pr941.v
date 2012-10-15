@@ -1,4 +1,3 @@
-
 /*
  * Based on PR#941.
  * This tests that trivial contant expressions passed as input to
@@ -20,4 +19,3 @@ initial begin
 end
 
 endmodule
-

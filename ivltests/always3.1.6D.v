@@ -16,10 +16,10 @@
 //    along with this program; if not, write to the Free Software
 //    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 //
-//  SDW - Validate always case ( reg_value) case_item1; case_item2;  case_item3; endcase 
-//  D:    
+//  SDW - Validate always case ( reg_value) case_item1; case_item2;  case_item3; endcase
+//  D:
 
- 
+
  // time   value1   value2
  //         xxxx     xxxx
  //   1     0000
@@ -28,8 +28,8 @@
  //   4              0001
  //   5     0010
  //   6              0010
- 
-module main ; 
+
+module main ;
 
 reg [3:0] value1,value2,value3;
 
@@ -56,7 +56,7 @@ initial begin
    #2 value1 = 4'b0001;
    #2 value1 = 4'b0010;
 end
-   
+
 always  case (value1)
 	  4'b0000 : begin
 	     value2 = 4'b0000 ;
@@ -64,22 +64,20 @@ always  case (value1)
 	  end
 	  4'b0001 : begin
 	     value2 = 4'b0001 ;
-	     #2 ; 
+	     #2 ;
 	  end
 	  4'b0010 : begin
 	     value2 = 4'b0010 ;
-	     #2 ; 
+	     #2 ;
 	  end
 	  4'bxxxx : #2 ;
-	  
+
 	  default : begin
 	     $display("FAILED -- unexpected value1===%b", value1);
 	     $finish;
-	  end 
-	  
-	endcase	
+	  end
+
+	endcase
 
 
 endmodule
-
-

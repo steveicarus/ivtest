@@ -1,4 +1,3 @@
-
 module bug;
 
    reg [31:0] a;

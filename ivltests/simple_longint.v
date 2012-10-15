@@ -1,4 +1,3 @@
-
 module main;
 
    longint foo, bar = 10;

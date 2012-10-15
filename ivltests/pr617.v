@@ -11,28 +11,28 @@ module main();
     $display("%b",INIT_00[c]);
 
     t = {17'd0,INIT_00[0]}<<1;
-    if(t !== 17'b0_0000_0000_0000_0010) 
+    if(t !== 17'b0_0000_0000_0000_0010)
       begin
          $display("FAILED - shift operation {17'd0,INIT_00[0]}<<1; %b",t);
-	 error = 1;      
+	 error = 1;
       end
     else
       $display("%b",t);
     c = 0;
     t = {17'd0,INIT_00[c]}<<1;
-    if(t !== 17'b0_0000_0000_0000_0010) 
+    if(t !== 17'b0_0000_0000_0000_0010)
       begin
          $display("FAILED - shift operation {17'd0,INIT_00[c]}<<1 %b",t);
-	 error = 1;      
+	 error = 1;
       end
     else
       $display("%b",t);
     c = 16;
     t = {17'd0,INIT_00[c]}<<1;
-    if(t !== 17'b0_0000_0000_0000_0010) 
+    if(t !== 17'b0_0000_0000_0000_0010)
       begin
          $display("FAILED - shift operation {17'd0,INIT_00[c]}<<1 %b",t);
-	 error = 1;      
+	 error = 1;
       end
     else
       $display("%b",t);

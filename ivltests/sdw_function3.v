@@ -23,7 +23,7 @@
 //
 
 module main ();
- 
+
 reg [3:0] global_reg;
 reg [3:0] result;
 
@@ -31,9 +31,9 @@ reg [3:0] result;
 function [3:0] my_func_2;
 input [3:0]  a;
 begin
-   my_func_2 = a; 
+   my_func_2 = a;
 end
-endfunction 
+endfunction
 
 // This is the calling function
 function [3:0] my_func_1 ;
@@ -41,7 +41,7 @@ input [3:0] a;
 begin
     my_func_1 = my_func_2(a) + my_func_2(a); // So call it twice!
 end
-endfunction 
+endfunction
 
 initial
   begin
@@ -54,7 +54,7 @@ initial
          $finish ;
       end
 
-    $display("PASSED\n"); 
+    $display("PASSED\n");
     $finish ;
   end
 endmodule

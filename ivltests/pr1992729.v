@@ -1,5 +1,3 @@
-
-
 module main;
 
    function integer my_ceil;

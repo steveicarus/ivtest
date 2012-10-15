@@ -116,11 +116,11 @@ parameter MAX_TRIALS = 10;
 
 initial begin
 //   $dumpfile ("multdiv.vcd");
-//   $dumpvars (0,a);   
-//   $dumpvars (0,b);   
-//   $dumpvars (0,y);   
-//   $dumpvars (0,resetb);   
-//   $dumpvars (0,done);   
+//   $dumpvars (0,a);
+//   $dumpvars (0,b);
+//   $dumpvars (0,y);
+//   $dumpvars (0,resetb);
+//   $dumpvars (0,done);
    num_errors = 0;
 
    #100;
@@ -129,13 +129,13 @@ initial begin
    repeat (MAX_TRIALS) begin
       test_multiply ($random, $random);
    end
-   
+
    // Special cases
    test_multiply ($random, 1);
    test_multiply (1, $random);
    test_multiply ($random, 0);
    test_multiply (0, $random);
-   
+
    $display ("Done.  %0d Errors", num_errors);
    if(num_errors == 0)
       $display("PASSED");
@@ -146,9 +146,9 @@ end
 task test_multiply;
    input [15:0] aarg;
    input [15:0] barg;
-   
+
    integer expected_answer;
-   
+
    begin
       if (~done) begin
          $display ("Multiplier is Busy!!");
@@ -159,7 +159,7 @@ task test_multiply;
          a = aarg;
          b = barg;
          @(negedge clk) start = 0;
-         @(posedge done); 
+         @(posedge done);
          expected_answer = a*b;
          $display ("%0d * %0d = %0h, Reality = %0h", a, b, y, expected_answer);
          if (y !== expected_answer) begin
@@ -171,4 +171,3 @@ task test_multiply;
 endtask
 
 endmodule
-     

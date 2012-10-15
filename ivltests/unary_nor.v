@@ -23,7 +23,7 @@
 module main;
 
 reg [3:0] vect;
-reg 	error;
+reg	error;
 wire	result;
 
 assign result = ~|(vect);
@@ -37,7 +37,7 @@ initial
       if(result !== 1'b0)
         begin
            $display("FAILED - Unary nor ~|(%b)=%b",vect,result);
-           error = 1'b1; 
+           error = 1'b1;
         end
     end
    #1;
@@ -46,10 +46,10 @@ initial
    if(result !== 1'b1)
      begin
        $display("FAILED - Unary nor |~(%b)=%b",vect,result);
-       error = 1'b1; 
+       error = 1'b1;
      end
    if(error === 0 )
-     $display("PASSED");  
+     $display("PASSED");
  end
 
 endmodule // main

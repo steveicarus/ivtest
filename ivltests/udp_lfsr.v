@@ -22,15 +22,15 @@
 module test_lfsr;
 
    reg   cp;
-   reg 	 in;
+   reg	 in;
    wire  out;
-   reg 	 reset;
+   reg	 reset;
    lfsr sr(cp, reset, in, out);
-   
-   reg 	 errors;
+
+   reg	 errors;
    initial errors = 0;
    integer i;
-   
+
    initial
      begin
         in = 0;
@@ -59,7 +59,7 @@ module test_lfsr;
    reg [7:0] next;
    reg [7:0] old;
    reg [7:0] new;
-   
+
    always @(reset)
      if (reset)
        begin
@@ -98,16 +98,16 @@ endmodule
 
 module lfsr (clk, reset, in, out);
 
-   parameter 	  P = 8'b 1101_1001;
+   parameter	  P = 8'b 1101_1001;
 
-   input 	  clk;
-   input 	  reset;
-   input 	  in;
+   input	  clk;
+   input	  reset;
+   input	  in;
 
-   output 	  out;
-   wire [6:0] 	  s;
-   wire 	  i = ^{P & {out,s}} ^ in;	  
- 	  
+   output	  out;
+   wire [6:0]	  s;
+   wire		  i = ^{P & {out,s}} ^ in;
+
    jkff ff1 (s[0], clk, i,    ~i,    reset, 0);
    jkff ff2 (s[1], clk, s[0], ~s[0], 0, reset);
    jkff ff3 (s[2], clk, s[1], ~s[1], 0, reset);
@@ -117,13 +117,13 @@ module lfsr (clk, reset, in, out);
    jkff ff7 (s[6], clk, s[5], ~s[5], 0, reset);
    jkff ff6 (s[5], clk, s[4], ~s[4], 0, reset);
    jkff ff5 (s[4], clk, s[3], ~s[3], 0, reset);
-   
+
 endmodule
 
 primitive jkff(q, cp, j, k, s, r);
    output q;
    input  cp, j, k, s, r;
-   reg 	  q;
+   reg	  q;
    table
    // (cp)  j  k  s   r  :  q  :  q  ;
         ?   ?  ? (?0) 0  :  ?  :  -  ;

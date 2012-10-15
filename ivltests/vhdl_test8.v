@@ -68,4 +68,3 @@ module main;
     stimulus stim(a,b);
     check c(a,b,o_vhdl, o_verilog);
 endmodule
- 

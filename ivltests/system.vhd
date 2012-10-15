@@ -46,7 +46,7 @@ entity Reg_N is
 		    a_reg: out std_logic_vector (n-1 downto 0) );
 end Reg_N;
 
-architecture System_rtl of Const_system is 
+architecture System_rtl of Const_system is
 
 -- Register component
 component Reg_N is
@@ -85,7 +85,7 @@ signal zero, one: std_logic;
 signal const: std_logic_vector (10 downto 0);
 begin
 
-const <= conv_std_logic_vector (C, 11); 
+const <= conv_std_logic_vector (C, 11);
 
 -- connstant bit 0, 1
 zero <= '0';
@@ -94,13 +94,13 @@ one  <= '1';
 -- registering input X
 RegX: Reg_N generic map (n => 8)
             port map ( clk => clk, reset => reset, a => x, a_reg => x_int);
-   
+
 -- Incrementing input x_int
 incrementer: Inc generic map (n => 8)
                   port map (a => x_int, sum => x_inc);  -- x + 1
 
--- forming 1's complement of x+1    
-x_inv <= "111" & not x_inc;         
+-- forming 1's complement of x+1
+x_inv <= "111" & not x_inc;
 
 x_ext <= "000" & x_int;
 -- adding constant to x_int
@@ -146,7 +146,7 @@ use ieee.std_logic_1164.all;
 architecture Reg_rtl of Reg_N is
 begin
 
-My_register: process (clk, reset) 
+My_register: process (clk, reset)
 begin
   if (reset = '1') then
     a_reg <= (others => '0');

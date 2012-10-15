@@ -1,8 +1,7 @@
-
 module main;
 
    reg [7:0] th2, init;
-   reg 	     carry, clk,  rst, foo;
+   reg	     carry, clk,  rst, foo;
 
    (* ivl_synthesis_on *)
    always @(posedge clk) begin

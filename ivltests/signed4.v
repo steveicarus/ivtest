@@ -31,10 +31,10 @@ module signed1();
 
 	$display("x = %0d (should be 3)",x);
 	$display("y = %0d (should be -3)",y);
-	
+
 	x = y;
 	$display("x = %0d (should be 253)",x);
-	
+
 
      end
 

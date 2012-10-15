@@ -56,5 +56,3 @@ module add1(a, b, ci, sum, co);
 	output sum, co;
 	assign {co,sum} = a + b + ci;
 endmodule
-
- 	  	 

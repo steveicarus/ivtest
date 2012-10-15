@@ -1,4 +1,3 @@
-
 // pr1755593
 
 module main;
@@ -35,7 +34,7 @@ module test (Z, D0, D1, D2, D3, E0, E1);
 
    u_test I48 (Z, D0, D1, D2, D3, E0, E1);
 
-endmodule 
+endmodule
 primitive u_test (Z, D0, D1, D2, D3, E0, E1);
 
    output Z;
@@ -73,5 +72,3 @@ primitive u_test (Z, D0, D1, D2, D3, E0, E1);
    endtable
 
 endprimitive
-
- 	  	 

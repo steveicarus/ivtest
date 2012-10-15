@@ -22,10 +22,10 @@ module main;
     reg [7:0] a ;
     reg x, y ;
     reg error;
-    initial 
+    initial
       begin
         error = 0;
-	    for (a = 0; a < 32; a=a+1 ) 
+	    for (a = 0; a < 32; a=a+1 )
           begin
 			// ternary operator is right associative
 	        x = a[0] ? a[1] : a[2] ? a[3] : a[4] ;
@@ -37,8 +37,7 @@ module main;
               end
           end
         if(error == 0)
-          $display("PASSED");  
-     end 
+          $display("PASSED");
+     end
 
 endmodule
-

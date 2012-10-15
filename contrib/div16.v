@@ -36,7 +36,7 @@
 // Start pulse should be a single cycle.
 // Division by zero results in a quotient equal to FFFF and remainder equal to 'a'.
 //
-// 
+//
 // Written by tom coonan.
 //
 // Notes:
@@ -92,7 +92,7 @@ reg [(2*N-1):0]	bpower;
 // Remainder will be whatever is left in the accumulator.
 assign r = accum;
 
-// Do this addition here for resource sharing.  
+// Do this addition here for resource sharing.
 // ** Note that 'accum' is N bits wide, but bpower is 2*N-1 bits wide **
 //
 wire [2*N-1:0] accum_minus_bpower = accum - bpower;
@@ -109,7 +109,7 @@ always @(posedge clk or negedge resetb) begin
       if (start) begin
          // Reinitialize the divide circuit.
          q      <= 0;
-         accum  <= a; // Accumulator initially gets the dividend.  
+         accum  <= a; // Accumulator initially gets the dividend.
          power[N-1] <= 1'b1; // We start with highest power of 2 (which is a '1' in MSB)
          bpower <= b << N-1; // Start with highest bpower, which is (divisor * 2^(N-1))
          done <= 0;
@@ -169,30 +169,30 @@ div16 div16 (
 
 initial begin
    num_errors = 0;
-   
+
    start = 0;
-   
+
    // Wait till reset is completely over.
    #200;
-   
+
    // Do some divisions where divisor is constrained to 8-bits and dividend is 16-bits
    $display ("16-bit Dividend, 8-bit divisor");
    repeat (25) begin
       do_divide ($random, $random & 255);
    end
-   
+
    // Do some divisions where divisor is constrained to 12-bits and dividend is 16-bits
    $display ("\n16-bit Dividend, 12-bit divisor");
    repeat (25) begin
       do_divide ($random, $random & 4095);
    end
-   
+
    // Do some divisions where both divisor and dividend is 16-bits
    $display ("\n16-bit Dividend, 16-bit divisor");
    repeat (25) begin
       do_divide ($random, $random);
    end
-   
+
    // Special cases
    $display ("\nSpecial Cases:");
    do_divide (16'hFFFF,  16'hFFFF); // largest possible quotient
@@ -207,14 +207,14 @@ initial begin
    else begin
       $display ("\n\nFAILED - There were %0d Errors.", num_errors);
    end
-   
+
    $finish;
 end
 
 task do_divide;
    input [15:0] arga;
    input [15:0] argb;
-   
+
    begin
       a = arga;
       b = argb;
@@ -224,8 +224,8 @@ task do_divide;
       #1 start = 0;
       while (~done) @(posedge clk);
       #1;
-      
-      $display ("Circuit: %0d / %0d = %0d, rem = %0d \t\t......... Reality: %0d, rem = %0d", arga, argb, q, r, a/b, a%b);
+
+      $display ("Circuit: %0d / %0d = %0d, rem = %0d\t\t......... Reality: %0d, rem = %0d", arga, argb, q, r, a/b, a%b);
       if (b !== 0) begin
          if (q !== a/b) begin
             $display ("   Error!  Unexpected Quotient\n\n");
@@ -254,7 +254,7 @@ end
 
 //initial begin
 //   $dumpfile ("test_div16.vcd");
-//   $dumpvars (0,test_div16);   
+//   $dumpvars (0,test_div16);
 //end
 
 endmodule

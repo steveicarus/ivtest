@@ -20,22 +20,20 @@
 //  D:    This is an infinite loop - thus compile only
 //  SJW - rework from akways3.1.3E to make it runnable.
 
-module main ; 
+module main ;
 
 reg [3:0] value1 ;
 
-initial 
+initial
   begin
     #15;
     if(value1 !== 4'b1)
-      $display("FAILED - 3.1.3E always force reg_lvalue = boolean_expr;"); 
+      $display("FAILED - 3.1.3E always force reg_lvalue = boolean_expr;");
     else
       $display("PASSED");
-     $finish;                                                            
+     $finish;
   end
 
 always #10 force value1 = 1'b1 & 1'b1 ;
 
 endmodule
-
-

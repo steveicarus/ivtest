@@ -19,7 +19,7 @@
 
 module assignsigned();
    parameter foo = 10;
-   reg 	     signed [15:0] bar = -1;
+   reg	     signed [15:0] bar = -1;
    wire      baz;
    assign    baz = (bar < $signed(foo));
 

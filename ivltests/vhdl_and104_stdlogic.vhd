@@ -7,10 +7,9 @@ entity and104 is
     b_i : in std_logic_vector (103 downto 0);
     c_o : out std_logic_vector (103 downto 0)
   );
-end entity and104; 
+end entity and104;
 
 architecture rtl of and104 is
 begin
   c_o <= a_i and b_i;
 end architecture rtl;
-

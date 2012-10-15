@@ -1,4 +1,3 @@
-
 // pr1742910
 
 module checktest();

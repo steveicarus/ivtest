@@ -25,7 +25,7 @@
 module main;
 
    wire   Y;
-   reg 	  A, B, S;
+   reg	  A, B, S;
 
    muxx1 MUX2 ( Y, S, A, B ) ;
 
@@ -91,4 +91,3 @@ primitive muxx1(Q, S, A, B);
 
    endtable
 endprimitive
-

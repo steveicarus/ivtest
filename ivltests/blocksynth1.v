@@ -8,7 +8,7 @@
 module main;
 
    reg [1:0] out;
-   reg 	     flag;
+   reg	     flag;
    reg [1:0] sel;
 
    (* ivl_synthesis_on, ivl_combinational *)
@@ -31,7 +31,7 @@ module main;
      end
 
    reg [2:0] idx;
-   reg 	     test;
+   reg	     test;
 
    (* ivl_synthesis_off *)
    initial begin

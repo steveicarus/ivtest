@@ -19,7 +19,7 @@
 
 
 module main();
- 
+
    reg [4:0] sum;
 
    initial begin
@@ -27,7 +27,7 @@ module main();
       // Self-determined expressions take their size from the
       // operands. The compiler should thus make the constant
       // expression below exactly 4 bits wide.
-      
+
       $display("Should be 0001: %b", 4'd7 + 4'd10);
 
       if ($bits(4'd7 + 4'd10) != 4) begin
@@ -40,7 +40,7 @@ module main();
       // by extension the operands, take on the width of the
       // left side. This expansion should be passed all the
       // way down the expression.
-      
+
       sum = 4'd7 + 4'd10;
       $display("Should be 10001: %b", sum);
 

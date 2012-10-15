@@ -17,5 +17,3 @@ module test(CL, Q_data, D);
   endspecify
 
 endmodule
-
- 	  	 

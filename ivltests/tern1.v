@@ -26,7 +26,7 @@ module main;
    reg [3:0] r;
    reg [3:0] a;
    reg [4:0] b;
-   reg 	     f;
+   reg	     f;
 
 
    initial begin

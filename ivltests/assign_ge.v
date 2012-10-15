@@ -27,9 +27,9 @@ integer b;
 wire  result;
 integer error;
 
-assign result = (a >= b); 
+assign result = (a >= b);
 
-initial 
+initial
   begin
     a =  0;
     b = 0;
@@ -41,7 +41,7 @@ initial
     #5;
     if( result !== 1'b1)
        error =1;
-   
+
     b = 1;
     #5 ;
     if( result !== 1'b1)

@@ -1,6 +1,6 @@
 module top;
   reg [7:0] array [7:0];
-  
+
   initial begin
     $writememb();
     $writememb(top);

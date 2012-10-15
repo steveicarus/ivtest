@@ -1,4 +1,3 @@
-
 `timescale 1 s / 1 fs
 
 module main;

@@ -1,4 +1,3 @@
-
 /*
  * This module demonstrates the ability to use a defparam to control
  * the instantation of an instance array, and to also control
@@ -28,7 +27,7 @@ module main;
 	 #1 clk = clk << 1;
       $finish;
    end
-	 
+
 endmodule // main
 
 module dut #(parameter wid = 1) (input [wid-1:0] clk);

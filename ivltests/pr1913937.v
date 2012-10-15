@@ -14,7 +14,7 @@ module test ();
    wire [1:0] a;
    wire [3:0] b = 4'b1111;
    wire [3:0] c = 4'b1111;
-   
+
    assign a = |((c & ~(1'b1<<9'h00)) & b);
 
    initial begin

@@ -12,6 +12,6 @@ initial
    rc = $pli_test(a[15:8]);
    $display("Passing parameter to PLI routine: 0x%x",b);
    rc = $pli_test(b);
- end 
+ end
 
 endmodule

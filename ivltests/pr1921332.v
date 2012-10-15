@@ -4,7 +4,7 @@ module test (D);
 
    prim  p (a, D, D, D);
 
-endmodule 
+endmodule
 
 primitive prim (Z, A, B, S);
 

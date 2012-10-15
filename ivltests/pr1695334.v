@@ -4,7 +4,7 @@ module test();
 
    wire [BITS-1:0] a;
    reg [BITS-1:0]  a_bc;
-   assign 	   a =  a_bc - 2*C;
+   assign	   a =  a_bc - 2*C;
 
    initial begin
       a_bc = 9;
@@ -17,5 +17,3 @@ module test();
    end
 
 endmodule
-
- 	  	 

@@ -12,7 +12,7 @@ module top;
       array2[idx+8] = 0;
     end
   endtask
-  
+
   initial begin
     // An invalid string.
     $readmemb(str, array);

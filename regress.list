@@ -1183,6 +1183,7 @@ v0.8:pr3390385c		NI
 v0.8:pr3390385d		NI
 v0.8:pr3462145		NI
 v0.8:pr3515542	NI
+v0.9:pr3576165	NI
 v0.8:sbyte_test	NI
 v0.8:simple_byte	NI
 v0.8:simple_int	NI
@@ -1592,6 +1593,7 @@ v0.9:pr3390385d		NI
 v0.9:pr3462145		NI
 v0.9:pr3515542	NI
 v0.9:pr3534333	NI
+v0.9:pr3576165	NI
 v0.9:program_hello	NI
 v0.9:program_hello2	NI
 v0.9:program2	NI
@@ -4377,3 +4379,4 @@ fscanf_u_warn	normal	ivltests diff=log/fscanf_u_warn.log:gold/fscanf_u_warn.gold
 struct_packed_array	normal,-g2009	ivltests
 struct_packed_array2	normal,-g2009	ivltests
 vhdl_struct_array	normal,-g2005-sv,ivltests/vhdl_struct_array.vhd	ivltests
+pr3576165	normal,-g2009	ivltests

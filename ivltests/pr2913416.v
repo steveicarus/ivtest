@@ -1,7 +1,7 @@
 module bug;
 reg pass;
 reg Select;
-reg signed [3:0] Delta; 
+reg signed [3:0] Delta;
 reg signed [5:0] Value;
 
 wire signed [5:0] Value_ca = (Select ? 12 : 8) + Delta;

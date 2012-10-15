@@ -1,9 +1,7 @@
-
-
 module main;
 
    reg [1:0] a, b;
-   reg 	     flag;
+   reg	     flag;
 
    (* ivl_combinational *)
    always @(a, b)

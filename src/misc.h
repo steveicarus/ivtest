@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (c) Tony Bybell 1999-2000.
  *
  * This program is free software; you can redistribute it and/or
@@ -34,7 +34,7 @@ struct symbol *nextinaet;/* for aet node chaining */
 struct HistEnt *h;	 /* points to previous one */
 
 struct symbol *vec_root, *vec_chain;
-	
+
 struct symbol *next;	/* for hash chain */
 char *name;
 
@@ -60,4 +60,3 @@ extern int longestname;
 extern char hier_delimeter;
 
 #endif
-

@@ -19,12 +19,12 @@
 //  SDW - Validate always disable block_identifier ;
 
 
-module main ; 
+module main ;
 
 
 reg [3:0] value1 ;
 
-always begin : block_id 
+always begin : block_id
           #1 ;
           $display("Hi there");
           $finish ;

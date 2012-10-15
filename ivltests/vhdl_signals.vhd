@@ -11,7 +11,7 @@ entity test is
     i : in unsigned(3 downto 0);
     o : out std_logic
   );
-end entity; 
+end entity;
 
 -- Generated from Verilog module test (foo.v:3)
 architecture from_verilog of test is
@@ -30,4 +30,3 @@ begin
   tmp_s7 <= i(1);
   tmp_s11 <= i(0);
 end architecture;
-

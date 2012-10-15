@@ -1,9 +1,8 @@
-
 module main;
 
    wire [1:0] di;
    reg [1:0]  do;
-   reg 	      dir;
+   reg	      dir;
 
    wire [1:0] q;
 
@@ -40,6 +39,6 @@ module sub(inout [1:0]Q,
 	   input [1:0]Do,
 	   input dir);
 
-   assign 	 Di = Q;
-   assign 	 Q = dir? Do : 2'bzz;
+   assign	 Di = Q;
+   assign	 Q = dir? Do : 2'bzz;
 endmodule // sub

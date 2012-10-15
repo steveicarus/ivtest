@@ -45,5 +45,3 @@ output wire [W-1:0]	Y
 assign Y = A + B;
 
 endmodule
-
- 	  	 

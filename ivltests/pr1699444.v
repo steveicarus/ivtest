@@ -5,5 +5,3 @@ module top;
     $display("Output a double slash \\\\.");
   end
 endmodule
-
- 	  	 

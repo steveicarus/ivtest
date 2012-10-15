@@ -1,5 +1,3 @@
-
-
 # include  <vpi_user.h>
 # include  <stdlib.h>
 # include  <assert.h>

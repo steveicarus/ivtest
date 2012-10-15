@@ -1,6 +1,6 @@
 /***********************************************************************
 
-  Incorrect direction non-detection test case   
+  Incorrect direction non-detection test case
   Copyright (C) 2001  Eric LaForest, ecl@pet.dhs.org
   Licenced under GPL
 
@@ -12,7 +12,7 @@ module CPU (data, address, rw, clock, reset);
         // This should be an output really....
         input rw;
         input clock, reset;
-        
+
         reg [15:0] data, address; // XXX error on data
         reg rw; // error on rw
 
@@ -24,7 +24,7 @@ module CPU (data, address, rw, clock, reset);
         always @(negedge clock) begin
                 rw <= 1'b0;
         end
-        
+
 endmodule
 
 module BENCH ();

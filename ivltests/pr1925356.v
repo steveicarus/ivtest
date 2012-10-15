@@ -14,4 +14,3 @@ module top;
     else $display("FAILED");
   end
 endmodule
-

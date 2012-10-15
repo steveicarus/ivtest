@@ -1,4 +1,3 @@
-
 // specify3.v
 
 module top;
@@ -41,5 +40,3 @@ module myxor (q, a, b, fast);
       if (~fast) (a => q) = 4;
    endspecify
 endmodule
-
- 	  	 

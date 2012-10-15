@@ -7,7 +7,7 @@ module lower;
    parameter two = 2;                  // This should be 'sd2
    parameter three = 0;                // This should be 'sd3
    parameter local1 = one - two;       // This should be -'sd1
- 
+
    parameter local_lt0 = local1 < 0;      // This should be 'd1
    parameter local_le0 = local1 <= 0;     // This should be 'd1
    parameter local_gt0 = local1 > 0;      // This should be 'd0

@@ -11,7 +11,7 @@ module top;
     ps = 8'b0;
     array[0] = 8'b0;
     $monitor($time," BS = ", bs[1], ", PS = ", ps[2:1], ", AR = ", array[0][1]);
-   
+
     // This should only trigger the $monitor when bit 1 changes.
     for (idx = 0; idx < 8 ; idx = idx + 1) begin
       #1 bs[idx] = 1'b1;

@@ -13,6 +13,3 @@ architecture rtl of not_gate is
 begin
    c_o <= not a_i;
 end architecture rtl;
-
-
-

@@ -10,10 +10,10 @@ end entity fa1;
 
 architecture fa1_rtl of fa1 is
 begin
-  
+
   s_o <= a_i xor b_i xor c_i;
   c_o <= (a_i and b_i) or (c_i and (a_i xor b_i));
-  
+
 end architecture fa1_rtl;
 
 -- Declare and implement a 4-bit full-adder that uses the
@@ -35,13 +35,13 @@ architecture fa4_rtl of fa4 is
   end component fa1;
 
   -- internal carry signals propagation
-  signal c_int: bit_vector (4 downto 0); 
+  signal c_int: bit_vector (4 downto 0);
 
   begin
- 
+
     -- carry in
     c_int(0) <= c_i;
- 
+
     -- slice 0
     s0: fa1 port map (c_i => c_int(0),
                       a_i => va_i(0),
@@ -57,7 +57,7 @@ architecture fa4_rtl of fa4 is
                       s_o => vs_o(1),
                       c_o => c_int(2)
                       );
- 
+
     -- slice 2
     s2: fa1 port map (c_i => c_int(2),
                       a_i => va_i(2),

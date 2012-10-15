@@ -4,7 +4,7 @@ module main;
 
    reg [WORD_WID-1: 0] mem [0:WORD_CNT-1], tmp;
 
-   integer 	       idx, jdx;
+   integer	       idx, jdx;
    initial begin
       for (idx = 0 ;  idx < WORD_CNT ;  idx = idx+1)
 	mem[idx] = idx;

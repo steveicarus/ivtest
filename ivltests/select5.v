@@ -1,4 +1,3 @@
-
 /*
  * This program demonstrates non-constant part selects
  * applied to a signal value.

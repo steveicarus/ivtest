@@ -37,7 +37,7 @@ output		fullp;
 parameter	DEPTH = 3,		// 2 bits, e.g. 4 words in the FIFO.
 		MAX_COUNT = 3'b111;	// topmost address in FIFO.
 
-reg 	emptyp;
+reg		emptyp;
 reg		fullp;
 
 // Registered output.
@@ -63,18 +63,18 @@ always @(posedge clk)
  begin
    if (rstp == 1)
       dout <= 16'h0000;
-   else 
+   else
       dout <= fifomem[tail];
- end 
+ end
 
-     
+
 // Update FIFO memory.
 always @(posedge clk) begin
    if (rstp == 1'b0 && writep == 1'b1 && fullp == 1'b0) begin
       fifomem[head] <= din;
    end
 end
-                  
+
 // Update the head register.
 //
 always @(posedge clk) begin
@@ -97,7 +97,7 @@ always @(posedge clk) begin
    end
    else begin
       if (readp == 1'b1 && emptyp == 1'b0) begin
-         // READ               
+         // READ
          tail <= tail + 1;
       end
    end
@@ -112,11 +112,11 @@ always @(posedge clk) begin
    else begin
       case ({readp, writep})
          2'b00: count <= count;
-         2'b01: 
+         2'b01:
             // WRITE
-            if (count != MAX_COUNT) 
+            if (count != MAX_COUNT)
                count <= count + 1;
-         2'b10: 
+         2'b10:
             // READ
             if (count != 2'b00)
                count <= count - 1;
@@ -127,7 +127,7 @@ always @(posedge clk) begin
    end
 end
 
-         
+
 // *** Update the flags
 //
 // First, update the empty flag.
@@ -193,18 +193,18 @@ begin
    readp = 1;
    @(posedge clk) #5;
 `ifdef DEBUG
-   $display ("Expect %0h, Read %0h from FIFO", 
+   $display ("Expect %0h, Read %0h from FIFO",
 `endif // DEBUG
    if(expect !== dout)
      begin
-        $display ("FAILED - Expect %0h, Read %0h from FIFO", 
+        $display ("FAILED - Expect %0h, Read %0h from FIFO",
                        expect,dout);
         error = 1;
      end
    readp = 0;
 end
 endtask
-   
+
 task write_word;
 input [15:0]	value;
 begin
@@ -230,7 +230,7 @@ initial begin
 end
 
 initial begin
-   error = 0; 	// Set error to zero here.   
+   error = 0;	// Set error to zero here.
 `ifdef DEBUG
    $dumpfile("test.vcd");
    $dumpvars(0,test_fifo);
@@ -254,22 +254,22 @@ begin
    #50;
    rstp = 0;
    #50;
-   
+
    // ** Write 3 values.
    write_word (16'h1111);
    write_word (16'h2222);
    write_word (16'h3333);
-   
+
    // ** Read 2 values
    read_word(16'h1111);
    read_word(16'h2222);
-   
+
    // ** Write one more
    write_word (16'h4444);
-   
+
    // ** Read a bunch of values
    read_word(16'h3333);
-   
+
    // *** Write a bunch more values
    write_word (16'h0001);
    write_word (16'h0002);
@@ -314,7 +314,7 @@ begin
    #50;
    rstp = 0;
    #50;
-   
+
    fork
       // Writer
       begin
@@ -334,14 +334,14 @@ begin
          $display ("Done with WRITER fork..");
          $finish;
       end
-      
+
       // Reader
       begin
          forever begin
             @(negedge clk);
             if (emptyp == 1'b0) begin
                read_word;
-            end  
+            end
             else begin
                $display ("READER is waiting..");
             end
@@ -356,7 +356,7 @@ endtask
 /*
 always @(fullp)
    $display ("fullp = %0b", fullp);
-   
+
 always @(emptyp)
    $display ("emptyp = %0b", emptyp);
 

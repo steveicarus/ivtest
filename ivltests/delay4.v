@@ -1,9 +1,8 @@
-
 module main;
 
    reg [7:0] period;
 
-   reg 	     drive;
+   reg	     drive;
    wire      trace;
 
    // This is the main point of the test. Non-constant delay expressions

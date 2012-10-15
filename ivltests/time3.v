@@ -19,7 +19,7 @@
 //
 // SDW - time3.v - Verify glitch doesn't propagate with non-blocking
 //
-// D: 
+// D:
 
 module main ();
 
@@ -52,11 +52,11 @@ initial
     # 3;
     a = 1'b0;
     # 10;
-    
+
     if(error)
        $display("FAILED");
     else
-       $display("PASSED");    
+       $display("PASSED");
     #5;
     $finish;
   end

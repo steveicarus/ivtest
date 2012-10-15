@@ -1,4 +1,3 @@
-
 module main;
 
    reg [2:0] ADDR;

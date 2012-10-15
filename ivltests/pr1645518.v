@@ -1,4 +1,3 @@
-
 /* PR1645518 */
 
 module testBench;
