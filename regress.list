@@ -4380,3 +4380,4 @@ struct_packed_array	normal,-g2009	ivltests
 struct_packed_array2	normal,-g2009	ivltests
 vhdl_struct_array	normal,-g2005-sv,ivltests/vhdl_struct_array.vhd	ivltests
 pr3576165	normal,-g2009	ivltests
+pr3582052	normal	ivltests
