@@ -1092,6 +1092,7 @@ v0.8:sv_darray4	NI
 v0.8:sv_darray5	NI
 v0.8:sv_darray5b	NI
 v0.8:sv_darray6	NI
+v0.8:sv_class1	NI
 v0.8:struct_packed_array	NI
 v0.8:struct_packed_array2	NI
 v0.8:vhdl_struct_array	NI
@@ -1631,6 +1632,7 @@ v0.9:sv_darray4	NI
 v0.9:sv_darray5	NI
 v0.9:sv_darray5b	NI
 v0.9:sv_darray6	NI
+v0.9:sv_class1	NI
 v0.9:sv_string1	NI
 v0.9:sv_string2	NI
 v0.9:sv_string3	NI
@@ -2510,6 +2512,7 @@ vlog95:sv_darray4	NI  # Dynamic arrays
 vlog95:sv_darray5	NI  # Dynamic arrays
 vlog95:sv_darray5b	NI  # Dynamic arrays
 vlog95:sv_darray6	NI  # Dynamic arrays
+vlog95:sv_class1	NI  # Dynamic arrays
 vlog95:vhdl_test5	NI
 vlog95:vhdl_test6	NI
 vlog95:vhdl_test7	NI
@@ -4381,3 +4384,4 @@ struct_packed_array2	normal,-g2009	ivltests
 vhdl_struct_array	normal,-g2005-sv,ivltests/vhdl_struct_array.vhd	ivltests
 pr3576165	normal,-g2009	ivltests
 pr3582052	normal	ivltests
+sv_class1	normal,-g2009	ivltests
