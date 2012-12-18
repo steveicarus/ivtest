@@ -1946,6 +1946,7 @@ v0.9:function9		NI
 
 # V0.9 does not support multi-dimensional arrays.
 v0.9:array7		NI
+v0.9:pr3582052		NI
 
 # This test fails because the conditional expression needs to be pulled on
 # demand. Just allowing the expression to propagate causes a timing race
