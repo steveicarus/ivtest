@@ -12,6 +12,9 @@ tail -n8 log/*.log | fgrep "indirectly lost" | fgrep -v " 0 bytes" || \
 tail -n8 log/*.log | fgrep "possibly lost" | fgrep -v " 0 bytes" || \
   echo "No \"possibly lost\" memory in vvp."
 
+tail -n8 log/*.log | fgrep "still reachable" | fgrep -v " 0 bytes" || \
+  echo "No \"still reachable\" memory in vvp."
+
 # egrep "^\*\*[0-9]+\*\*" log/*.log || echo "No \"missed deletes\" in vvp."
 
 echo ""
@@ -27,5 +30,8 @@ tail -n8 vpi_log/*.log | fgrep "indirectly lost" | fgrep -v " 0 bytes" || \
 
 tail -n8 vpi_log/*.log | fgrep "possibly lost" | fgrep -v " 0 bytes" || \
   echo "No \"possibly lost\" memory in vvp."
+
+tail -n8 vpi_log/*.log | fgrep "still reachable" | fgrep -v " 0 bytes" || \
+  echo "No \"still reachable\" memory in vvp."
 
 # egrep "^\*\*[0-9]+\*\*" vpi_log/*.log || echo "No \"missed deletes\" in vvp."

@@ -115,6 +115,7 @@ module top;
       $display("FAILED: $fscanf() #5 %b !== 32'bx", out_32);
       passed = 1'b0;
     end
+    $fclose(fd);
 
     if (passed) $display("PASSED");
   end
