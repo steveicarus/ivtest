@@ -1097,6 +1097,10 @@ v0.8:struct_packe_write_read2	NI
 v0.8:struct_packed_array	NI
 v0.8:struct_packed_array2	NI
 v0.8:vhdl_struct_array	NI
+v0.8:br917a	NI
+v0.8:br917b	NI
+v0.8:br917c	NI
+v0.8:br917d	NI
 
 # V0.8 does not support automatic tasks or functions.
 v0.8:automatic_error1	NI
@@ -1775,6 +1779,10 @@ v0.9:sv_string5	NI
 v0.9:struct_packed_array	NI
 v0.9:struct_packed_array2	NI
 v0.9:vhdl_struct_array	NI
+v0.9:br917a	NI
+v0.9:br917b	NI
+v0.9:br917c	NI
+v0.9:br917d	NI
 
 # v0.9 does not have the vhdl_sys module
 v0.9:ivlh_event	NI
@@ -4390,3 +4398,7 @@ pr3576165	normal,-g2009	ivltests
 pr3582052	normal	ivltests
 sv_class1	normal,-g2009	ivltests
 struct_packed_write_read2	normal,-g2009	ivltests
+br917a	normal,-g2009	ivltests
+br917b	normal,-g2009	ivltests
+br917c	normal,-g2009	ivltests
+br917d	normal,-g2009	ivltests
