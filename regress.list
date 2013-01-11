@@ -780,6 +780,7 @@ v0.8:gen_case_opt3 NI
 v0.8:generate_multi_loop	NI
 v0.8:genloop	NI
 v0.8:genvar_scopes	NI
+v0.8:negative_genvar	NI
 v0.8:pr1565544	NI
 v0.8:pr1565699b	NI
 v0.8:pr1623097	NI
@@ -2141,6 +2142,10 @@ vlog95:array_select	CE	ivltests # Also net array
 vlog95:bitp1	CE	ivltests
 vlog95:bits	CE	ivltests
 vlog95:bits2	CE	ivltests
+vlog95:br917a	CE	ivltests
+vlog95:br917b	CE	ivltests
+vlog95:br917c	CE	ivltests
+vlog95:br917d	CE	ivltests
 vlog95:ca_mult	CE	ivltests
 vlog95:cast_int	CE	ivltests
 vlog95:cast_real_signed	CE	ivltests  # Also real net
@@ -2416,6 +2421,7 @@ vlog95:generate_case	CE	ivltests
 vlog95:generate_case2	CE	ivltests
 vlog95:generate_case3	CE	ivltests
 vlog95:generate_multi_loop	CE	ivltests
+vlog95:negative_genvar	CE	ivltests
 vlog95:pr1565699b	CE	ivltests
 vlog95:pr1623097	CE	ivltests
 vlog95:pr1676071	NI	ivltests  # This also core dumps
@@ -2500,6 +2506,7 @@ vlog95:ilongint_test	EF,-g2005-sv	ivltests
 vlog95:ishortint_test	EF,-g2005-sv	ivltests
 
 # No support for the SystemVerilog string data type.
+vlog95:array_string	NI
 vlog95:sv_string1	NI
 vlog95:sv_string2	NI
 vlog95:sv_string3	NI
@@ -4405,3 +4412,4 @@ br917b	normal,-g2009	ivltests
 br917c	normal,-g2009	ivltests
 br917d	normal,-g2009	ivltests
 array_string	normal,-g2009	ivltests
+negative_genvar	normal	ivltests
