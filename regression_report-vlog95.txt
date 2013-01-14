@@ -67,6 +67,10 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                       bitp1: Passed - CE.
                        bits: Passed - CE.
                       bits2: Passed - CE.
+                     br917a: Passed - CE.
+                     br917b: Passed - CE.
+                     br917c: Passed - CE.
+                     br917d: Passed - CE.
                     ca_mult: Passed - CE.
            cast_real_signed: Passed - CE.
            enum_elem_ranges: Passed - CE.
@@ -159,6 +163,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   sint_test: Passed - CE.
               slongint_test: Passed - CE.
              sshortint_test: Passed - CE.
+        struct_packed_array: Passed - CE.
+       struct_packed_array2: Passed - CE.
              test_dispwided: Passed - CE.
             test_enumsystem: Passed - CE.
                test_inc_dec: Passed - CE.
@@ -318,6 +324,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
              generate_case2: Passed - CE.
              generate_case3: Passed - CE.
         generate_multi_loop: Passed - CE.
+            negative_genvar: Passed - CE.
                  pr1565699b: Passed - CE.
                   pr1623097: Passed - CE.
                   pr1676071: Not Implemented.
@@ -394,6 +401,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   iint_test: Passed - expected fail.
               ilongint_test: Passed - expected fail.
              ishortint_test: Passed - expected fail.
+               array_string: Not Implemented.
                  sv_string1: Not Implemented.
                  sv_string2: Not Implemented.
                  sv_string3: Not Implemented.
@@ -411,6 +419,14 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  pr3390385d: Passed - CE.
                   pr3462145: Passed - CE.
                  sv_darray1: Not Implemented.
+                 sv_darray2: Not Implemented.
+                 sv_darray3: Not Implemented.
+                 sv_darray4: Not Implemented.
+                 sv_darray5: Not Implemented.
+                sv_darray5b: Not Implemented.
+                 sv_darray6: Not Implemented.
+                  sv_class1: Not Implemented.
+  struct_packed_write_read2: Not Implemented.
                  vhdl_test5: Not Implemented.
                  vhdl_test6: Not Implemented.
                  vhdl_test7: Not Implemented.
@@ -1803,6 +1819,9 @@ test_mos_strength_reduction: Passed.
                    fscanf_z: Passed.
                    sscanf_u: Passed.
                    fscanf_u: Passed.
+          vhdl_struct_array: Passed.
+                  pr3576165: Passed.
+                  pr3582052: Passed.
 ============================================================================
 Test results:
-  Total=1803, Passed=1649, Failed=11, Not Implemented=100, Expected Fail=43
+  Total=1822, Passed=1659, Failed=11, Not Implemented=109, Expected Fail=43

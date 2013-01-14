@@ -2240,6 +2240,8 @@ vlog95:simple_shortint	CE	ivltests
 vlog95:sint_test	CE	ivltests
 vlog95:slongint_test	CE	ivltests
 vlog95:sshortint_test	CE	ivltests
+vlog95:struct_packed_array	CE	ivltests
+vlog95:struct_packed_array2	CE	ivltests
 vlog95:test_dispwided	CE	ivltests
 vlog95:test_enumsystem	CE	ivltests
 vlog95:test_inc_dec	CE	ivltests  # Also >>>
