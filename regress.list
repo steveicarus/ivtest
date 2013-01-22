@@ -4421,3 +4421,4 @@ br917c	normal,-g2009	ivltests
 br917d	normal,-g2009	ivltests
 array_string	normal,-g2009	ivltests
 negative_genvar	normal	ivltests
+signed_net_display	normal	ivltests
