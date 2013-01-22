@@ -2236,6 +2236,7 @@ vlog95:signed9	CE	ivltests
 vlog95:signed10	CE	ivltests
 vlog95:signed12	CE	ivltests
 vlog95:signed_a	CE	ivltests
+vlog95:signed_net_display	CE	ivltests
 vlog95:signed_part	CE	ivltests
 vlog95:signed_pv	CE	ivltests
 vlog95:simple_byte	CE	ivltests
@@ -2329,6 +2330,7 @@ vlog95:pr2715748	CE	ivltests  # Also real net
 vlog95:pr2815398b	CE	ivltests
 vlog95:pr3054101g	CE	ivltests
 vlog95:pr3054101h	CE	ivltests
+vlog95:pr3592746	CE	ivltests
 vlog95:real_array	CE	ivltests
 vlog95:real_array_nb	CE	ivltests
 vlog95:scan-invalid	CE	ivltests
