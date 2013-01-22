@@ -61,6 +61,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                 sv_darray5b: Not Implemented.
                  sv_darray6: Not Implemented.
                   sv_class1: Not Implemented.
+  struct_packed_write_read2: Not Implemented.
            sv_timeunit_prec: Not Implemented.
       sv_timeunit_prec_fail: Not Implemented.
            sys_func_as_task: Not Implemented.
@@ -183,6 +184,11 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
         struct_packed_array: Not Implemented.
        struct_packed_array2: Not Implemented.
           vhdl_struct_array: Not Implemented.
+                     br917a: Not Implemented.
+                     br917b: Not Implemented.
+                     br917c: Not Implemented.
+                     br917d: Not Implemented.
+               array_string: Not Implemented.
                  ivlh_event: Not Implemented.
               cmdline_parm1: Not Implemented.
                     analog1: Not Implemented.
@@ -225,6 +231,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                   pr3149494: Passed - expected fail.
                   pr3284821: Passed - expected fail.
                   pr2877564: Passed - CE.
+                  pr1723367: Passed.
               delayed_sfunc: Passed.
                    specify5: Passed.
                       pr377: Passed.
@@ -1204,7 +1211,6 @@ test_mos_strength_reduction: Passed.
                   pr1716276: Passed.
                   pr1717361: Passed.
                   pr1719055: Passed.
-                  pr1723367: Passed.
                   pr1735724: Passed - CE.
                   pr1735822: Passed.
                   pr1735836: Passed.
@@ -1819,6 +1825,7 @@ test_mos_strength_reduction: Passed.
                    sscanf_u: Passed.
                    fscanf_u: Passed.
               fscanf_u_warn: Passed.
+            negative_genvar: Passed.
 ============================================================================
 Test results:
-  Total=1819, Passed=1571, Failed=0, Not Implemented=209, Expected Fail=39
+  Total=1826, Passed=1572, Failed=0, Not Implemented=215, Expected Fail=39

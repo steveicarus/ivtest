@@ -1876,6 +1876,10 @@ v0.9:pr3284821	EF	ivltests
 # V0.9 has a slightly different message
 v0.9:pr2877564	CE	ivltests diff=log/pr2877564.log:gold/pr2877564-v0.9.gold
 
+# V0.9 uses the input/output line instead of the width declaration line in
+# the warning message.
+v0.9:pr1723367	normal,-gno-io-range-error	ivltests diff=log/pr1723367.log:gold/pr1723367-v0.9.gold
+
 #==========
 # V0.9 has different T0 values for nets (z vs x). No transitions to x at T0.
 #==========
