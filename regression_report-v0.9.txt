@@ -1827,8 +1827,9 @@ test_mos_strength_reduction: Passed.
                    fscanf_u: Passed.
               fscanf_u_warn: Passed.
                   pr3587570: Passed.
+                  pr3592746: Passed.
             negative_genvar: Passed.
          signed_net_display: Passed.
 ============================================================================
 Test results:
-  Total=1829, Passed=1575, Failed=0, Not Implemented=215, Expected Fail=39
+  Total=1830, Passed=1576, Failed=0, Not Implemented=215, Expected Fail=39

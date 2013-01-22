@@ -4414,6 +4414,7 @@ pr3571573	normal	ivltests diff=log/pr3571573.log:gold/pr3571573.gold
 pr3576165	normal,-g2009	ivltests
 pr3582052	normal	ivltests
 pr3587570	normal	ivltests
+pr3592746	normal	ivltests
 sv_class1	normal,-g2009	ivltests
 struct_packed_write_read2	normal,-g2009	ivltests
 br917a	normal,-g2009	ivltests

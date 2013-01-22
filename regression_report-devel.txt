@@ -1817,6 +1817,7 @@ test_mos_strength_reduction: Passed.
                   pr3576165: Passed.
                   pr3582052: Passed.
                   pr3587570: Passed.
+                  pr3592746: Passed.
                   sv_class1: Passed.
   struct_packed_write_read2: Passed.
                      br917a: Passed.
@@ -1828,4 +1829,4 @@ test_mos_strength_reduction: Passed.
          signed_net_display: Passed.
 ============================================================================
 Test results:
-  Total=1826, Passed=1823, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1827, Passed=1824, Failed=3, Not Implemented=0, Expected Fail=0
