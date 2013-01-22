@@ -1813,6 +1813,7 @@ test_mos_strength_reduction: Passed.
         struct_packed_array: Passed.
        struct_packed_array2: Passed.
           vhdl_struct_array: Passed.
+                  pr3571573: Passed.
                   pr3576165: Passed.
                   pr3582052: Passed.
                   sv_class1: Passed.
@@ -1825,4 +1826,4 @@ test_mos_strength_reduction: Passed.
             negative_genvar: Passed.
 ============================================================================
 Test results:
-  Total=1823, Passed=1820, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1824, Passed=1821, Failed=3, Not Implemented=0, Expected Fail=0

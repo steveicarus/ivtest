@@ -1907,6 +1907,7 @@ v0.9:pr1883052		EF	ivltests
 v0.9:pr1883052-v0.9	normal	ivltests
 v0.9:pr1883052b		EF	ivltests
 v0.9:pr1883052b-v0.9	normal	ivltests
+v0.9:pr3571573	normal	ivltests diff=log/pr3571573.log:gold/pr3571573-v0.9.gold
 v0.9:delay_var	normal	ivltests diff=log/delay_var.log:gold/delay_var-v0.9.gold
 
 # V0.9 does not have the patches applied to make these work correctly. We
@@ -4409,6 +4410,7 @@ fscanf_u_warn	normal	ivltests diff=log/fscanf_u_warn.log:gold/fscanf_u_warn.gold
 struct_packed_array	normal,-g2009	ivltests
 struct_packed_array2	normal,-g2009	ivltests
 vhdl_struct_array	normal,-g2005-sv,ivltests/vhdl_struct_array.vhd	ivltests
+pr3571573	normal	ivltests diff=log/pr3571573.log:gold/pr3571573.gold
 pr3576165	normal,-g2009	ivltests
 pr3582052	normal	ivltests
 sv_class1	normal,-g2009	ivltests

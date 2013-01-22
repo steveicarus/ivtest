@@ -256,6 +256,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
              pr1883052-v0.9: Passed.
                  pr1883052b: Passed - expected fail.
             pr1883052b-v0.9: Passed.
+                  pr3571573: Passed.
                   delay_var: Passed.
                complex_lidx: Not Implemented.
              generate_case3: Passed - expected fail.
@@ -1828,4 +1829,4 @@ test_mos_strength_reduction: Passed.
             negative_genvar: Passed.
 ============================================================================
 Test results:
-  Total=1826, Passed=1572, Failed=0, Not Implemented=215, Expected Fail=39
+  Total=1827, Passed=1573, Failed=0, Not Implemented=215, Expected Fail=39
