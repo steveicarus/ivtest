@@ -7,7 +7,7 @@ module main;
    localparam STRIDE = 2;
    string source = "a0b1c2d3";
 
-   int 	  idx;
+   int	  idx;
    initial begin
       for (idx = 0 ; idx <= AMAX ; idx = idx+1) begin
 	 foo[idx] = source.substr(idx*STRIDE+0, idx*STRIDE+STRIDE-1);
