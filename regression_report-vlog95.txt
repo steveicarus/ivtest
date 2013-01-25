@@ -1613,7 +1613,7 @@ test_mos_strength_reduction: Passed.
                   pr2834340: Passed.
                  pr2834340b: Passed.
                   pr2837451: Passed.
-                 pr2835632a: ==> Failed - running iverilog.
+                 pr2835632a: Passed.
                   pr2842185: Passed.
                   pr2842621: Passed.
               pr2842621_std: Passed.
@@ -1826,6 +1826,8 @@ test_mos_strength_reduction: Passed.
                   pr3576165: Passed.
                   pr3582052: Passed.
                   pr3587570: Passed.
+          undef_lval_select: Passed.
+       undef_lval_select_SV: Passed.
 ============================================================================
 Test results:
-  Total=1826, Passed=1664, Failed=10, Not Implemented=109, Expected Fail=43
+  Total=1828, Passed=1667, Failed=9, Not Implemented=109, Expected Fail=43

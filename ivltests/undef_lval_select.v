@@ -41,7 +41,21 @@ module top;
     end
 
     vec = 4'bxxxx;
+    vec[1'bx+:2] = 2'b01;
+    if (vec !== 4'bxxx) begin
+      $display("Failed vec[1'bx+:1], expected 4'bxxxx, got %b", vec);
+      pass = 1'b0;
+    end
+
+    vec = 4'bxxxx;
     vec[1'bx-:1] = 1'b1;
+    if (vec !== 4'bxxx) begin
+      $display("Failed vec[1'bx-:1], expected 4'bxxxx, got %b", vec);
+      pass = 1'b0;
+    end
+
+    vec = 4'bxxxx;
+    vec[1'bx-:2] = 2'b01;
     if (vec !== 4'bxxx) begin
       $display("Failed vec[1'bx-:1], expected 4'bxxxx, got %b", vec);
       pass = 1'b0;
