@@ -1758,7 +1758,7 @@ test_mos_strength_reduction: Passed.
                clkgen_logic: Passed.
                  clkgen_net: Passed.
                  clkgen_reg: Passed.
-                  pr3366114: ==> Failed - running iverilog.
+                  pr3366114: Passed.
                  pr3366217a: Passed - CE.
                  pr3366217b: Passed - CE.
                  pr3366217c: Passed - CE.
@@ -1828,4 +1828,4 @@ test_mos_strength_reduction: Passed.
                   pr3587570: Passed.
 ============================================================================
 Test results:
-  Total=1826, Passed=1663, Failed=11, Not Implemented=109, Expected Fail=43
+  Total=1826, Passed=1664, Failed=10, Not Implemented=109, Expected Fail=43
