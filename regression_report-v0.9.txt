@@ -71,6 +71,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                  ubyte_test: Not Implemented.
                   uint_test: Not Implemented.
               ulongint_test: Not Implemented.
+       undef_lval_select_SV: Not Implemented.
              ushortint_test: Not Implemented.
               vhdl_and_gate: Not Implemented.
        vhdl_and104_stdlogic: Not Implemented.
@@ -1830,6 +1831,7 @@ test_mos_strength_reduction: Passed.
                   pr3592746: Passed.
             negative_genvar: Passed.
          signed_net_display: Passed.
+          undef_lval_select: Passed.
 ============================================================================
 Test results:
-  Total=1830, Passed=1576, Failed=0, Not Implemented=215, Expected Fail=39
+  Total=1832, Passed=1577, Failed=0, Not Implemented=216, Expected Fail=39

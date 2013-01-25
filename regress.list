@@ -1222,6 +1222,7 @@ v0.8:two_state_display	NI
 v0.8:ubyte_test	NI
 v0.8:uint_test	NI
 v0.8:ulongint_test	NI
+v0.8:undef_lval_select_SV	NI
 v0.8:ushortint_test	NI
 v0.8:vhdl_and_gate	NI
 v0.8:vhdl_and104_stdlogic	NI
@@ -1667,6 +1668,7 @@ v0.9:two_state_display	NI
 v0.9:ubyte_test	NI
 v0.9:uint_test	NI
 v0.9:ulongint_test	NI
+v0.9:undef_lval_select_SV	NI
 v0.9:ushortint_test	NI
 v0.9:vhdl_and_gate	NI
 v0.9:vhdl_and104_stdlogic	NI
@@ -4426,3 +4428,5 @@ br917d	normal,-g2009	ivltests
 array_string	normal,-g2009	ivltests
 negative_genvar	normal	ivltests
 signed_net_display	normal	ivltests
+undef_lval_select	normal	ivltests
+undef_lval_select_SV	normal,-g2009	ivltests
