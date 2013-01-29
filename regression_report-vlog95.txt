@@ -71,6 +71,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                      br917b: Passed - CE.
                      br917c: Passed - CE.
                      br917d: Passed - CE.
+                      br919: Passed - CE.
                     ca_mult: Passed - CE.
            cast_real_signed: Passed - CE.
            enum_elem_ranges: Passed - CE.
@@ -1828,6 +1829,7 @@ test_mos_strength_reduction: Passed.
                   pr3587570: Passed.
           undef_lval_select: Passed.
        undef_lval_select_SV: Passed.
+           vvp_scalar_value: Passed.
 ============================================================================
 Test results:
-  Total=1828, Passed=1667, Failed=9, Not Implemented=109, Expected Fail=43
+  Total=1830, Passed=1669, Failed=9, Not Implemented=109, Expected Fail=43

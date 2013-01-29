@@ -1788,6 +1788,8 @@ v0.9:br917b	NI
 v0.9:br917c	NI
 v0.9:br917d	NI
 v0.9:array_string	NI
+v0.9:struct_packed_sysfunct	NI
+v0.9:sv_end_labels_bad		NI
 
 # v0.9 does not have the vhdl_sys module
 v0.9:ivlh_event	NI
@@ -1932,6 +1934,7 @@ v0.9:pr2985542	EF	ivltests
 v0.9:pr3270320	NI	ivltests
 v0.9:pr3368642	EF	ivltests
 v0.9:pr3527694	EF	ivltests diff=log/pr3527694.log:gold/pr3527694.gold
+v0.9:br919	EF	ivltests
 
 # v0.9 does not support the uwire check and always prints a warning message.
 v0.9:uwire	normal	ivltests diff=log/uwire.log:gold/uwire-v0.9.gold
@@ -1946,9 +1949,6 @@ v0.9:wreal	NI
 # These tests use the SV $bits function, but v0.9 doesn't recognise -g2009
 v0.9:parameter_type2	normal	ivltests
 v0.9:localparam_type2	normal	ivltests
-
-v0.9:struct_packed_sysfunct	NI
-v0.9:sv_end_labels_bad		NI
 
 # V0.9 does not support $countdrivers
 v0.9:countdrivers1	NI
@@ -2153,6 +2153,7 @@ vlog95:br917a	CE	ivltests
 vlog95:br917b	CE	ivltests
 vlog95:br917c	CE	ivltests
 vlog95:br917d	CE	ivltests
+vlog95:br919	CE	ivltests
 vlog95:ca_mult	CE	ivltests
 vlog95:cast_int	CE	ivltests
 vlog95:cast_real_signed	CE	ivltests  # Also real net
@@ -4430,3 +4431,5 @@ negative_genvar	normal	ivltests
 signed_net_display	normal	ivltests
 undef_lval_select	normal	ivltests
 undef_lval_select_SV	normal,-g2009	ivltests
+vvp_scalar_value	normal	ivltests
+br919	normal	ivltests

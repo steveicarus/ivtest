@@ -190,6 +190,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                      br917c: Not Implemented.
                      br917d: Not Implemented.
                array_string: Not Implemented.
+     struct_packed_sysfunct: Not Implemented.
+          sv_end_labels_bad: Not Implemented.
                  ivlh_event: Not Implemented.
               cmdline_parm1: Not Implemented.
                     analog1: Not Implemented.
@@ -275,14 +277,13 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                   pr3270320: Not Implemented.
                   pr3368642: Passed - expected fail.
                   pr3527694: Passed - expected fail.
+                      br919: Passed - expected fail.
                       uwire: Passed.
                  uwire_fail: Passed.
                   pr3015421: Passed - CE.
                       wreal: Not Implemented.
             parameter_type2: Passed.
            localparam_type2: Passed.
-     struct_packed_sysfunct: Not Implemented.
-          sv_end_labels_bad: Not Implemented.
               countdrivers1: Not Implemented.
               countdrivers2: Not Implemented.
               countdrivers3: Not Implemented.
@@ -1832,6 +1833,7 @@ test_mos_strength_reduction: Passed.
             negative_genvar: Passed.
          signed_net_display: Passed.
           undef_lval_select: Passed.
+           vvp_scalar_value: Passed.
 ============================================================================
 Test results:
-  Total=1832, Passed=1577, Failed=0, Not Implemented=216, Expected Fail=39
+  Total=1834, Passed=1578, Failed=0, Not Implemented=216, Expected Fail=40
