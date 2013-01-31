@@ -1094,6 +1094,15 @@ v0.8:sv_darray5	NI
 v0.8:sv_darray5b	NI
 v0.8:sv_darray6	NI
 v0.8:sv_class1	NI
+v0.8:sv_class2	NI
+v0.8:sv_class3	NI
+v0.8:sv_class4	NI
+v0.8:sv_class5	NI
+v0.8:sv_class6	NI
+v0.8:sv_class7	NI
+v0.8:sv_class8	NI
+v0.8:sv_class9	NI
+v0.8:sv_class10	NI
 v0.8:struct_packe_write_read2	NI
 v0.8:struct_packed_array	NI
 v0.8:struct_packed_array2	NI
@@ -1641,6 +1650,15 @@ v0.9:sv_darray5	NI
 v0.9:sv_darray5b	NI
 v0.9:sv_darray6	NI
 v0.9:sv_class1	NI
+v0.9:sv_class2	NI
+v0.9:sv_class3	NI
+v0.9:sv_class4	NI
+v0.9:sv_class5	NI
+v0.9:sv_class6	NI
+v0.9:sv_class7	NI
+v0.9:sv_class8	NI
+v0.9:sv_class9	NI
+v0.9:sv_class10	NI
 v0.9:struct_packed_write_read2	NI
 v0.9:sv_string1	NI
 v0.9:sv_string2	NI
@@ -2545,6 +2563,15 @@ vlog95:sv_darray5	NI  # Dynamic arrays
 vlog95:sv_darray5b	NI  # Dynamic arrays
 vlog95:sv_darray6	NI  # Dynamic arrays
 vlog95:sv_class1	NI  # Dynamic arrays
+vlog95:sv_class2	NI  # Dynamic arrays
+vlog95:sv_class3	NI  # Dynamic arrays
+vlog95:sv_class4	NI  # Dynamic arrays
+vlog95:sv_class5	NI  # Dynamic arrays
+vlog95:sv_class6	NI  # Dynamic arrays
+vlog95:sv_class7	NI  # Dynamic arrays
+vlog95:sv_class8	NI  # Dynamic arrays
+vlog95:sv_class9	NI  # Dynamic arrays
+vlog95:sv_class10	NI  # Dynamic arrays
 vlog95:struct_packed_write_read2	NI
 vlog95:vhdl_test5	NI
 vlog95:vhdl_test6	NI
@@ -4421,6 +4448,15 @@ pr3582052	normal	ivltests
 pr3587570	normal	ivltests
 pr3592746	normal	ivltests
 sv_class1	normal,-g2009	ivltests
+sv_class2	normal,-g2009	ivltests
+sv_class3	normal,-g2009	ivltests
+sv_class4	normal,-g2009	ivltests
+sv_class5	normal,-g2009	ivltests
+sv_class6	normal,-g2009	ivltests
+sv_class7	normal,-g2009	ivltests
+sv_class8	normal,-g2009	ivltests
+sv_class9	normal,-g2009	ivltests
+sv_class10	normal,-g2009	ivltests
 struct_packed_write_read2	normal,-g2009	ivltests
 br917a	normal,-g2009	ivltests
 br917b	normal,-g2009	ivltests
