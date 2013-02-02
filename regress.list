@@ -4468,4 +4468,6 @@ signed_net_display	normal	ivltests
 undef_lval_select	normal	ivltests
 undef_lval_select_SV	normal,-g2009	ivltests
 vvp_scalar_value	normal	ivltests
+br918a	normal	ivltests
+br918c	normal	ivltests
 br919	normal	ivltests
