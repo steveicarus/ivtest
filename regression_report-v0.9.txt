@@ -61,6 +61,15 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                 sv_darray5b: Not Implemented.
                  sv_darray6: Not Implemented.
                   sv_class1: Not Implemented.
+                  sv_class2: Not Implemented.
+                  sv_class3: Not Implemented.
+                  sv_class4: Not Implemented.
+                  sv_class5: Not Implemented.
+                  sv_class6: Not Implemented.
+                  sv_class7: Not Implemented.
+                  sv_class8: Not Implemented.
+                  sv_class9: Not Implemented.
+                 sv_class10: Not Implemented.
   struct_packed_write_read2: Not Implemented.
            sv_timeunit_prec: Not Implemented.
       sv_timeunit_prec_fail: Not Implemented.
@@ -1836,4 +1845,4 @@ test_mos_strength_reduction: Passed.
            vvp_scalar_value: Passed.
 ============================================================================
 Test results:
-  Total=1834, Passed=1578, Failed=0, Not Implemented=216, Expected Fail=40
+  Total=1843, Passed=1578, Failed=0, Not Implemented=225, Expected Fail=40

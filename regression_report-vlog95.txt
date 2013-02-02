@@ -429,6 +429,15 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                 sv_darray5b: Not Implemented.
                  sv_darray6: Not Implemented.
                   sv_class1: Not Implemented.
+                  sv_class2: Not Implemented.
+                  sv_class3: Not Implemented.
+                  sv_class4: Not Implemented.
+                  sv_class5: Not Implemented.
+                  sv_class6: Not Implemented.
+                  sv_class7: Not Implemented.
+                  sv_class8: Not Implemented.
+                  sv_class9: Not Implemented.
+                 sv_class10: Not Implemented.
   struct_packed_write_read2: Not Implemented.
                  vhdl_test5: Not Implemented.
                  vhdl_test6: Not Implemented.
@@ -1832,4 +1841,4 @@ test_mos_strength_reduction: Passed.
            vvp_scalar_value: Passed.
 ============================================================================
 Test results:
-  Total=1830, Passed=1669, Failed=9, Not Implemented=109, Expected Fail=43
+  Total=1839, Passed=1669, Failed=9, Not Implemented=118, Expected Fail=43
