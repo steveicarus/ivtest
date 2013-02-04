@@ -1978,6 +1978,8 @@ v0.9:countdrivers5	NI
 # V0.9 does not support constant functions
 v0.9:constfunc1		NI
 v0.9:constfunc2		NI
+v0.9:constfunc3		NI
+v0.9:constfunc4		NI
 v0.9:function7		NI
 v0.9:function8		NI
 v0.9:function9		NI
@@ -4408,6 +4410,8 @@ fork_join_any	normal,-g2009	ivltests
 fork_join_none	normal,-g2009	ivltests
 constfunc1	normal	ivltests
 constfunc2	normal	ivltests
+constfunc3	normal	ivltests
+constfunc4	normal,-gverilog-ams	ivltests
 countdrivers1	normal	ivltests
 countdrivers2	normal	ivltests
 countdrivers3	normal	ivltests
