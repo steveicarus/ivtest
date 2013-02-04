@@ -1843,6 +1843,11 @@ test_mos_strength_reduction: Passed.
          signed_net_display: Passed.
           undef_lval_select: Passed.
            vvp_scalar_value: Passed.
+                     br916a: Passed.
+                     br916b: Passed.
+                     br918a: Passed.
+                     br918b: Passed.
+                     br918c: Passed.
 ============================================================================
 Test results:
-  Total=1843, Passed=1578, Failed=0, Not Implemented=225, Expected Fail=40
+  Total=1848, Passed=1583, Failed=0, Not Implemented=225, Expected Fail=40
