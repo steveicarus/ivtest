@@ -2414,6 +2414,8 @@ vlog95:pr2823711	NI	ivltests
 vlog95:rl_pow		NI	ivltests
 
 # These tests have different output because of file name/line, etc. differences.
+vlog95:br916a	normal	ivltests diff=log/br916a.log:gold/br916a-vlog95.gold
+vlog95:br916b	normal	ivltests diff=log/br916b.log:gold/br916b-vlog95.gold
 vlog95:fatal_et_al	normal	ivltests gold=fatal_et_al-vlog95.gold
 vlog95:fdisplay3	RE	ivltests gold=fdisplay3-vlog95.gold
 vlog95:fdisplay_fail_fd	normal	ivltests gold=fdisplay_fail_fd-vlog95.gold
