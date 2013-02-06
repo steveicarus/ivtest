@@ -2400,6 +2400,7 @@ vlog95:pr1528093	NI	ivltests
 vlog95:analog1		NI	ivltests
 vlog95:analog2		NI	ivltests
 vlog95:cast_int		NI	ivltests
+vlog95:constfunc4	NI	ivltests  # abs() function.
 vlog95:test_vams_math	NI	ivltests
 vlog95:vams_abs1	NI	ivltests
 vlog95:vams_abs2	NI	ivltests
@@ -2407,6 +2408,7 @@ vlog95:vams_abs2	NI	ivltests
 # No support for general power conversion.
 vlog95:ca_pow_signed	NI	ivltests
 vlog95:ca_pow_unsigned	NI	ivltests
+vlog95:constfunc3	NI	ivltests
 vlog95:pow_signed	NI	ivltests
 vlog95:ca_pow_synth	NI	ivltests
 vlog95:pow_unsigned	NI	ivltests
@@ -2517,6 +2519,7 @@ vlog95:pr3054101f	CE	ivltests
 
 # Currently no support for tran_VP (inout ports).
 vlog95:bitsel10		CE	ivltests
+vlog95:br918c		CE	ivltests
 vlog95:countdrivers3	CE	ivltests
 vlog95:inout		NI	ivltests
 vlog95:inout2		CE	ivltests
@@ -2624,6 +2627,10 @@ vlog95:basicexpr	NI
 vlog95:shiftl		NI
 vlog95:ufuncsynth1	NI
 vlog95:pr685		NI
+
+# The converter generates a complex expression for $strobe and Icarus does not
+# currently support this. The translation is correct.
+vlog95:pr1830834	EF	ivltests
 
 #==========
 # The default case.

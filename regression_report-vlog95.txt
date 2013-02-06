@@ -280,16 +280,20 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                     analog1: Not Implemented.
                     analog2: Not Implemented.
                    cast_int: Not Implemented.
+                 constfunc4: Not Implemented.
              test_vams_math: Not Implemented.
                   vams_abs1: Not Implemented.
                   vams_abs2: Not Implemented.
               ca_pow_signed: Not Implemented.
             ca_pow_unsigned: Not Implemented.
+                 constfunc3: Not Implemented.
                  pow_signed: Not Implemented.
                ca_pow_synth: Not Implemented.
                pow_unsigned: Not Implemented.
                   pr2823711: Not Implemented.
                      rl_pow: Not Implemented.
+                     br916a: Passed.
+                     br916b: Passed.
                 fatal_et_al: Passed.
                   fdisplay3: Passed.
            fdisplay_fail_fd: Passed.
@@ -385,6 +389,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  pr3054101e: Passed - CE.
                  pr3054101f: Passed - CE.
                    bitsel10: Passed - CE.
+                     br918c: Passed - CE.
               countdrivers3: Passed - CE.
                       inout: Not Implemented.
                      inout2: Passed - CE.
@@ -479,6 +484,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                      shiftl: Not Implemented.
                 ufuncsynth1: Not Implemented.
                       pr685: Not Implemented.
+                  pr1830834: Passed - expected fail.
               always3.1.10A: Passed - CE.
               always3.1.11A: Passed.
               always3.1.11B: Passed.
@@ -1333,7 +1339,6 @@ test_mos_strength_reduction: Passed.
                   pr1812297: Passed.
                    long_div: Passed.
                   pr1822658: Passed.
-                  pr1830834: Passed.
                   pr1831724: Passed.
                  pr1832097a: Passed.
                  pr1832097b: Passed.
@@ -1839,6 +1844,8 @@ test_mos_strength_reduction: Passed.
           undef_lval_select: Passed.
        undef_lval_select_SV: Passed.
            vvp_scalar_value: Passed.
+                     br918a: ==> Failed - output does not match gold file.
+                     br918b: ==> Failed - output does not match gold file.
 ============================================================================
 Test results:
-  Total=1839, Passed=1669, Failed=9, Not Implemented=118, Expected Fail=43
+  Total=1846, Passed=1671, Failed=11, Not Implemented=120, Expected Fail=44
