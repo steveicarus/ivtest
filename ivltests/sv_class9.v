@@ -12,7 +12,7 @@ program main;
    endclass : foo_t // foo_t
 
    foo_t obj;
-   int 	 tmp[];
+   int	 tmp[];
 
    initial begin
       obj = new;
