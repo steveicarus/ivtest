@@ -2233,7 +2233,7 @@ vlog95:sv_string4	CE,-g2009	ivltests
 vlog95:sv_string5	CE,-g2009	ivltests
 
 # SystemVerilog dynamic arrays and new operator.
-vlog95:sv_darray1	NI,-g2009,-pallowsigned=1	ivltests 
+vlog95:sv_darray1	NI,-g2009,-pallowsigned=1	ivltests
 vlog95:sv_darray2	NI,-g2009,-pallowsigned=1	ivltests
 vlog95:sv_darray3	NI,-g2009,-pallowsigned=1	ivltests
 vlog95:sv_darray4	NI,-g2009,-pallowsigned=1	ivltests
@@ -2312,7 +2312,7 @@ vlog95:test_system	TE,-g2009,-pallowsigned=1,ivltests/system.vhd	ivltests
 vlog95:test_vams_math	EF,-gverilog-ams  ivltests gold=test_vams_math.gold
 
 # $signed() and $unsigned() are not currently generated. Some of these pass!
-vlog95:br919		normal,-pallowsigned=1	ivltests 
+vlog95:br919		normal,-pallowsigned=1	ivltests
 vlog95:concat3		EF,-pallowsigned=1	ivltests
 vlog95:mult2		EF,-pallowsigned=1	ivltests
 vlog95:pr757		EF,-pallowsigned=1	ivltests
