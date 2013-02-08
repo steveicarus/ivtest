@@ -22,6 +22,7 @@ vhdl_regression_report.txt
 *.vpi
 src/vcddiff
 vsim
+vlog95.v
 
 # Some tests do not work out of the work directory, so
 # ignore these files that they leave in the home directory.

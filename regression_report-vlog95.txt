@@ -1,5 +1,439 @@
 Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
 ----------------------------------------------------------------------------
+          automatic_error11: Passed - CE.
+          automatic_error12: Passed - CE.
+          automatic_error13: Passed - CE.
+           automatic_events: Passed - CE.
+          automatic_events2: Passed - CE.
+          automatic_events3: Passed - CE.
+      automatic_events3_std: Passed - CE.
+             automatic_task: Passed - CE.
+            automatic_task2: Passed - CE.
+            automatic_task3: Passed - CE.
+                def_nettype: Passed - CE.
+                nested_func: Passed - CE.
+                  pr2169870: Passed - CE.
+                 pr2172606b: Passed - CE.
+                  pr2276163: Passed - CE.
+                  pr2929913: Passed - CE.
+             recursive_func: Passed - CE.
+             recursive_task: Passed - CE.
+                 ca_64delay: Passed - CE.
+                    ca_time: Passed - CE.
+               ca_var_delay: Passed - CE.
+           cast_real_signed: Passed - CE.
+         cast_real_unsigned: Passed - CE.
+                      clog2: Passed - CE.
+              delayed_sfunc: Passed - CE.
+                 pr1861212c: Passed - CE.
+                 pr1864110a: Passed - CE.
+                 pr1864110b: Passed - CE.
+                 pr1864110c: Passed - CE.
+                  pr1864115: Passed - CE.
+                  pr1873372: Passed - CE.
+                  pr1880003: Passed - CE.
+                  pr1898293: Passed - CE.
+                  pr2123158: Passed - CE.
+                  pr2123190: Passed - CE.
+                 pr2453002b: Passed - CE.
+                  pr2456943: Passed - CE.
+                  pr2806474: Passed - CE.
+                  pr2976242: Passed - CE.
+                 pr2976242b: Passed - CE.
+                      real8: Passed - CE.
+             real_mod_in_ca: Passed - CE.
+           real_pulse_clean: Passed - CE.
+             real_pwr_in_ca: Passed - CE.
+            real_wire_array: Passed - CE.
+        real_wire_force_rel: Passed - CE.
+                      tern8: Passed - CE.
+                 v2005_math: Passed - CE.
+                  vams_abs2: Passed - CE.
+                      wreal: Passed - CE.
+                  pr1528093: Passed - CE.
+              ca_pow_signed: Passed - CE.
+               ca_pow_synth: Passed - CE.
+            ca_pow_unsigned: Passed - CE.
+                 constfunc3: Passed - CE.
+                 pow_signed: Passed - CE.
+               pow_unsigned: Passed - CE.
+                     pow-ca: Passed - CE.
+                   pow-proc: Passed - CE.
+                  pr2352834: Passed - CE.
+                  pr2823711: Passed - CE.
+                 pr2909386b: Passed - CE.
+                     rl_pow: Passed - CE.
+                    big_int: Passed - CE.
+                  pr2673846: Passed - CE.
+                  pr2029336: Passed - CE.
+               array_select: Passed - CE.
+             array_select_a: Passed - CE.
+          array_word_width2: Passed - CE.
+              genvar_scopes: Passed - CE.
+                   meminit2: Passed - CE.
+            negative_genvar: Passed - CE.
+                  pr1565544: Passed - CE.
+                  pr1657307: Passed - CE.
+                  pr1695322: Passed - CE.
+                 pr1701855b: Passed - CE.
+                  pr1703346: Passed - CE.
+                 pr1740476b: Passed - CE.
+                  pr1758122: Passed - CE.
+                  pr1799904: Passed - CE.
+                  pr1820472: Passed - CE.
+                  pr1868792: Passed - CE.
+                  pr1876798: Passed - CE.
+                  pr1903324: Passed - CE.
+                  pr2011429: Passed - CE.
+                  pr2076391: Passed - CE.
+                  pr2201909: Passed - CE.
+                 pr2201909b: Passed - CE.
+                  pr2166311: Passed - CE.
+                  pr2715748: Passed - CE.
+                 pr2815398b: Passed - CE.
+                 pr3054101g: Passed - CE.
+                 pr3054101h: Passed - CE.
+                  pr3592746: Passed - CE.
+                 real_array: Passed - CE.
+              real_array_nb: Passed - CE.
+               scan-invalid: Passed - CE.
+            sel_rval_bit_ob: Passed - CE.
+           sel_rval_part_ob: Passed - CE.
+         signed_net_display: Passed - CE.
+                    concat4: Passed - expected fail.
+                      final: Passed - CE.
+              program_hello: Passed - CE.
+                   program2: Passed - CE.
+                   program3: Passed - CE.
+                   program4: Passed - CE.
+               array_string: Passed - CE.
+                 sv_string1: Passed - CE.
+                 sv_string2: Passed - CE.
+                 sv_string3: Passed - CE.
+                 sv_string4: Passed - CE.
+                 sv_string5: Passed - CE.
+                 sv_darray1: Not Implemented.
+                 sv_darray2: Not Implemented.
+                 sv_darray3: Not Implemented.
+                 sv_darray4: Not Implemented.
+                 sv_darray5: Not Implemented.
+                sv_darray5b: Not Implemented.
+                 sv_darray6: Not Implemented.
+                  sv_class1: Passed - CE.
+                  sv_class2: Passed - CE.
+                  sv_class3: Passed - CE.
+                  sv_class4: Passed - CE.
+                  sv_class5: Passed - CE.
+                  sv_class6: Passed - CE.
+                  sv_class7: Passed - CE.
+                  sv_class8: Passed - CE.
+                  sv_class9: Not Implemented.
+                 sv_class10: Passed - CE.
+                 vhdl_test5: Passed - CE.
+                 vhdl_test6: Passed - CE.
+                 vhdl_test7: Passed - CE.
+                 vhdl_test8: Passed - CE.
+                 vhdl_test9: Passed - CE.
+                  enum_next: Passed - CE.
+                 enum_test1: Passed - CE.
+              fork_join_any: Passed - CE.
+             fork_join_none: Passed - CE.
+                     plus_5: Passed - CE.
+                 pr3366217f: Passed - CE.
+                 pr3366217h: Passed - CE.
+                 pr3366217i: Passed - CE.
+                  pr3390385: Passed - CE.
+                 pr3390385b: Passed - CE.
+                 pr3390385c: Passed - CE.
+                 pr3390385d: Passed - CE.
+                  pr3462145: Passed - CE.
+                  ibit_test: Passed - expected fail.
+                 ibyte_test: Passed - expected fail.
+                  iint_test: Passed - expected fail.
+              ilongint_test: Passed - expected fail.
+             ishortint_test: Passed - expected fail.
+                 sbyte_test: Passed - expected fail.
+                  sint_test: Passed - expected fail.
+              slongint_test: Passed - expected fail.
+             sshortint_test: Passed - expected fail.
+                 ubyte_test: Passed - expected fail.
+                  uint_test: Passed - expected fail.
+              ulongint_test: Passed - expected fail.
+             ushortint_test: Passed - expected fail.
+                     br918a: Passed - expected fail.
+                     br918b: Passed - expected fail.
+                    packeda: Not Implemented.
+                   packeda2: Not Implemented.
+               partselsynth: Passed - TE.
+                  pr1723367: Passed - TE.
+                  pr1990164: Passed - expected fail.
+                  pr1993479: Passed - expected fail.
+                  pr2019553: Passed - CE.
+                  pr2121536: Not Implemented.
+                 pr2121536b: Not Implemented.
+                  pr2913416: Passed - expected fail.
+                  pr3522653: Passed - expected fail.
+                   simparam: Passed - expected fail.
+        struct_packed_array: Not Implemented.
+       struct_packed_array2: Not Implemented.
+           task_init_assign: Passed - expected fail.
+                test_system: Passed - TE.
+             test_vams_math: Passed - expected fail.
+                      br919: Passed.
+                    concat3: Passed - expected fail.
+                      mult2: Passed - expected fail.
+                      pr757: Passed - expected fail.
+                     pr1002: Passed - expected fail.
+                    pr1002a: Passed.
+                  pr1522570: Passed - expected fail.
+                  pr1698499: Passed - expected fail.
+                  pr1793749: Passed - expected fail.
+                 pr1793749b: Passed - expected fail.
+                  pr1823732: Passed - expected fail.
+                  pr1841300: Passed - expected fail.
+                  pr1845683: Passed.
+                  pr1960619: Passed - expected fail.
+                  pr1963240: Passed - expected fail.
+                  pr2136787: Passed - expected fail.
+                  pr2138979: Passed - expected fail.
+                 pr2138979b: Passed - expected fail.
+                 pr2138979c: Passed - expected fail.
+                 pr2138979d: Passed - expected fail.
+                  pr2159630: Passed - expected fail.
+                 pr2722339a: Passed.
+                 pr2722339b: Passed.
+                  pr2901556: Passed - expected fail.
+                  pr2913404: Passed.
+                  pr2922063: Passed - expected fail.
+                 pr2922063a: Passed - expected fail.
+                 pr2922063b: Passed - expected fail.
+                  pr3077640: Passed.
+             select_padding: Passed - expected fail.
+                     shift4: Passed - expected fail.
+                    signed5: Passed - expected fail.
+                    signed9: Passed - expected fail.
+                   signed10: Passed - expected fail.
+                    analog1: Passed - CE.
+                    analog2: Passed - CE.
+               complex_lidx: Passed - CE.
+                  defparam3: Passed - CE.
+                  defparam4: Passed - CE.
+              gen_case_opt1: Passed - CE.
+              gen_case_opt2: Passed - CE.
+              gen_case_opt3: Passed - CE.
+                    genloop: Passed - CE.
+              generate_case: Passed - CE.
+             generate_case2: Passed - CE.
+             generate_case3: Passed - CE.
+        generate_multi_loop: Passed - CE.
+                 pr1565699b: Passed - CE.
+                  pr1623097: Passed - CE.
+                  pr1676071: Passed - CE.
+                 pr1691599b: Passed - CE.
+                  pr1695309: Passed - CE.
+                 pr1704726b: Passed - CE.
+                  pr1755629: Passed - CE.
+                  pr1828642: Passed - CE.
+                  pr1956211: Passed - CE.
+                  pr1960625: Passed - CE.
+                  pr1988302: Passed - CE.
+                  pr1988310: Passed - CE.
+                 pr2018235a: Passed - CE.
+                  pr2091455: Passed - CE.
+                  pr2109179: Passed - CE.
+                  pr2138682: Passed - CE.
+                  pr2257003: Passed - CE.
+                 pr2257003b: Passed - CE.
+                  pr2306259: Passed - CE.
+                  pr2350934: Passed - CE.
+                 pr2350934b: Passed - CE.
+                  pr2350988: Passed - CE.
+                  pr2355304: Passed - CE.
+                 pr2728812a: Passed - CE.
+                 pr2815398a: Passed - CE.
+             pr2815398a_std: Passed - CE.
+                  pr2909414: Passed - CE.
+                  pr2924354: Passed - CE.
+                  pr3011327: Passed - CE.
+                  pr3409749: Passed - CE.
+                 pr3437290b: Passed - CE.
+                  pr3527694: Passed - CE.
+                  pr3534422: Passed - CE.
+                  pr3557493: Passed - CE.
+              scoped_events: Passed - CE.
+                test_forgen: Passed - CE.
+                  test_gxor: Passed - CE.
+     unnamed_generate_block: Passed - CE.
+               test_varray1: Passed - CE.
+                    bitsel6: Passed - CE.
+                    bitsel7: Passed - CE.
+                 pr3054101a: Passed - CE.
+                 pr3054101b: Passed - CE.
+                  pr1745005: Passed - CE.
+                 pr2725700c: Passed - CE.
+                 pr2835632b: Passed - CE.
+                 pr3054101c: Passed - CE.
+                 pr3054101d: Passed - CE.
+                 pr3054101e: Passed - CE.
+                 pr3054101f: Passed - CE.
+                signed_part: Passed - CE.
+                   bitsel10: Passed - CE.
+                     br918c: Passed - CE.
+              countdrivers3: Passed - CE.
+                      inout: Passed - TE.
+                     inout2: Passed - CE.
+                     inout3: Passed - CE.
+                     inout4: Passed - CE.
+                  pr1444055: Passed - CE.
+                  pr1478121: Passed - CE.
+                  pr2219441: Passed - CE.
+                  pr3194155: Not Implemented.
+                 pr3296466a: Passed - CE.
+                 pr3296466b: Passed - CE.
+                 pr3296466d: Passed - CE.
+                  pr3452808: Not Implemented.
+                       tri2: Passed - CE.
+                  basicexpr: Passed - TE.
+                     shiftl: Passed - TE.
+                ufuncsynth1: Passed - TE.
+                      pr685: Passed - TE.
+                  pr1830834: Passed - expected fail.
+                  pr1587669: Passed - expected fail.
+                  pr1877743: Passed - expected fail.
+                 pr2590274c: Passed - expected fail.
+                 pr2829776b: Passed - expected fail.
+                  pr2972866: Passed - expected fail.
+                 real_delay: Passed - expected fail.
+                   specify2: Passed - expected fail.
+                   specify3: Passed - expected fail.
+                   specify4: Passed - expected fail.
+                   specify5: Passed - expected fail.
+                 specify_01: Passed - expected fail.
+                       sdf1: Passed - expected fail.
+                       sdf2: Passed - expected fail.
+                       sdf3: Passed - expected fail.
+                       sdf4: Passed - expected fail.
+                       sdf5: Passed - expected fail.
+                       sdf6: Passed - expected fail.
+                       sdf7: Passed - expected fail.
+                       sdf8: Passed - expected fail.
+                sdf_del_min: Passed - expected fail.
+                sdf_del_typ: Passed - expected fail.
+                sdf_del_max: Passed - expected fail.
+                 sdf_esc_id: Passed - expected fail.
+                     br916a: Passed.
+                     br916b: Passed.
+                fatal_et_al: Passed.
+                  fdisplay3: Passed.
+           fdisplay_fail_fd: Passed.
+          fdisplay_fail_mcd: Passed.
+                     format: Passed.
+                fread-error: Passed.
+              fscanf_u_warn: Passed.
+              fscanf_z_warn: Passed.
+            localparam_type: Passed.
+             parameter_type: Passed.
+                       mem1: Passed.
+                        pic: Passed.
+                      pr910: Passed.
+                  pr1819452: Passed.
+                 pr2509349a: Passed.
+                 pr2509349b: Passed.
+                 pr2800985b: Passed.
+                 queue_fail: Passed.
+              readmem-error: Passed.
+            readmem-invalid: Passed.
+                     swrite: Passed.
+        sys_func_task_error: Passed - RE.
+           sys_func_as_task: Passed.
+            warn_opt_sys_tf: Passed.
+             writemem-error: Passed.
+           writemem-invalid: Passed.
+                     array6: Passed.
+                      bitp1: Passed.
+                       bits: Passed.
+                      bits2: Passed.
+                     br917a: Passed.
+                     br917b: Passed.
+                     br917c: Passed.
+                     br917d: Passed.
+                    ca_mult: Passed.
+                   cast_int: Passed.
+                 constfunc4: Passed.
+                 constfunc6: Passed.
+           enum_elem_ranges: Passed.
+            enum_value_expr: Passed.
+                enum_values: Passed.
+                     extend: Passed.
+             first_last_num: Passed.
+               inc_dec_stmt: Passed.
+                  int_param: Passed.
+                     iuint1: Passed.
+                      logp2: Passed.
+                     pr1033: Passed.
+                  pr1380261: Passed.
+                  pr1494799: Passed.
+                  pr1589497: Passed.
+                  pr1603313: Passed.
+                  pr1717361: Passed.
+                  pr1719055: Passed.
+                  pr1879226: Passed.
+                  pr1883052: Passed.
+                 pr1883052b: Passed.
+                  pr1950282: Passed.
+                  pr1958801: Passed.
+                  pr2030767: Passed.
+                  pr2117473: Passed.
+                  pr2152011: Passed.
+                  pr2233180: Passed.
+                 pr2233180b: Passed.
+                 pr2233180c: Passed.
+                  pr2233192: Passed.
+                 pr2233192b: Passed.
+                 pr2233192c: Passed.
+                 pr2425055b: Passed.
+                 pr2425055c: Passed.
+                 pr2722330a: Passed.
+                 pr2722330b: Passed.
+                  pr2909555: Passed.
+                 pr2913438b: Passed.
+                  pr2986528: Passed.
+                  pr2998515: Passed.
+                  pr3104254: Passed.
+                  pr3284821: Passed.
+                  pr3292735: Passed.
+                 pr3366217e: Passed.
+                      pr748: Passed.
+                     shift2: Passed.
+                     shift3: Passed.
+                     shift5: Passed.
+                    signed1: Passed.
+                    signed4: Passed.
+                    signed6: Passed.
+                    signed7: Passed.
+                    signed8: Passed.
+                   signed12: Passed.
+                   signed_a: Passed.
+                  signed_pv: Passed.
+                simple_byte: Passed.
+                 simple_int: Passed.
+             simple_longint: Passed.
+            simple_shortint: Passed.
+             test_dispwided: Passed.
+               test_inc_dec: Passed.
+            test_enumsystem: Passed.
+              test_tliteral: Passed.
+          two_state_display: Passed.
+            undefined_shift: Passed.
+                  vams_abs1: Passed.
+            vhdl_sadd23_bit: Passed.
+            vhdl_sdiv23_bit: Passed.
+            vhdl_ssub23_bit: Passed.
+            vhdl_smul23_bit: Passed.
+       vhdl_sadd23_stdlogic: Passed.
+       vhdl_sdiv23_stdlogic: Passed.
+       vhdl_ssub23_stdlogic: Passed.
+       vhdl_smul23_stdlogic: Passed.
                       case1: Passed.
                       case2: Passed.
                       case4: Passed.
@@ -44,447 +478,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   mix_reset: Passed.
                 casex_synth: Passed.
                   full_case: Passed.
-          automatic_error11: Not Implemented.
-          automatic_error12: Not Implemented.
-          automatic_error13: Not Implemented.
-           automatic_events: Not Implemented.
-          automatic_events2: Not Implemented.
-          automatic_events3: Not Implemented.
-      automatic_events3_std: Not Implemented.
-             automatic_task: Not Implemented.
-            automatic_task2: Not Implemented.
-            automatic_task3: Not Implemented.
-                def_nettype: Not Implemented.
-                nested_func: Not Implemented.
-                  pr2169870: Not Implemented.
-                 pr2172606b: Not Implemented.
-                  pr2276163: Not Implemented.
-                  pr2929913: Not Implemented.
-             recursive_func: Not Implemented.
-             recursive_task: Not Implemented.
-                     array6: Passed - CE.
-               array_select: Passed - CE.
-                      bitp1: Passed - CE.
-                       bits: Passed - CE.
-                      bits2: Passed - CE.
-                     br917a: Passed - CE.
-                     br917b: Passed - CE.
-                     br917c: Passed - CE.
-                     br917d: Passed - CE.
-                      br919: Passed - CE.
-                    ca_mult: Passed - CE.
-           cast_real_signed: Passed - CE.
-           enum_elem_ranges: Passed - CE.
-                  enum_next: Passed - CE.
-                 enum_test1: Passed - CE.
-            enum_value_expr: Passed - CE.
-                enum_values: Passed - CE.
-                     extend: Passed - CE.
-             first_last_num: Passed - CE.
-               inc_dec_stmt: Passed - CE.
-                  int_param: Passed - CE.
-                     iuint1: Passed - CE.
-                      logp2: Passed - CE.
-                    packeda: Not Implemented.
-                     plus_5: Passed - CE.
-                     pow-ca: Passed - CE.
-                   pow-proc: Passed - CE.
-                     pr1002: Passed - CE.
-                    pr1002a: Passed - CE.
-                     pr1033: Passed - CE.
-                  pr1380261: Passed - CE.
-                  pr1494799: Passed - CE.
-                  pr1522570: Passed - CE.
-                  pr1589497: Passed - CE.
-                  pr1603313: Passed - CE.
-                  pr1717361: Passed - CE.
-                  pr1719055: Passed - CE.
-                  pr1845683: Passed - CE.
-                  pr1879226: Passed - CE.
-                  pr1883052: Passed - CE.
-                 pr1883052b: Passed - CE.
-                  pr1950282: Passed - CE.
-                  pr1958801: Passed - CE.
-                  pr1990164: Passed - CE.
-                  pr1993479: Passed - CE.
-                  pr2030767: Passed - CE.
-                  pr2076391: Passed - CE.
-                  pr2117473: Passed - CE.
-                  pr2121536: Not Implemented.
-                 pr2121536b: Not Implemented.
-                  pr2152011: Passed - CE.
-                  pr2159630: Passed - CE.
-                  pr2233180: Passed - CE.
-                 pr2233180b: Passed - CE.
-                 pr2233180c: Passed - CE.
-                  pr2233192: Passed - CE.
-                 pr2233192b: Passed - CE.
-                 pr2233192c: Passed - CE.
-                  pr2352834: Passed - CE.
-                 pr2425055b: Passed - CE.
-                 pr2425055c: Passed - CE.
-                 pr2722330b: Passed - CE.
-                 pr2722339a: Passed - CE.
-                 pr2722339b: Passed - CE.
-                  pr2901556: Passed - CE.
-                 pr2909386b: Passed - CE.
-                  pr2909555: Passed - CE.
-                  pr2913404: Passed - CE.
-                  pr2913416: Passed - CE.
-                 pr2913438b: Passed - CE.
-                 pr2922063b: Passed - CE.
-                  pr2986528: Passed - CE.
-                  pr2998515: Passed - CE.
-                 pr3054101d: Passed - CE.
-                  pr3077640: Passed - CE.
-                  pr3104254: Passed - CE.
-                  pr3284821: Passed - CE.
-                  pr3292735: Passed - CE.
-                      pr748: Passed - CE.
-                 sbyte_test: Passed - CE.
-                     shift2: Passed - CE.
-                     shift3: Passed - CE.
-                     shift4: Passed - CE.
-                     shift5: Passed - CE.
-                    signed1: Passed - CE.
-                    signed4: Passed - CE.
-                    signed6: Passed - CE.
-                    signed7: Passed - CE.
-                    signed8: Passed - CE.
-                    signed9: Passed - CE.
-                   signed10: Passed - CE.
-                   signed12: Passed - CE.
-                   signed_a: Passed - CE.
-         signed_net_display: Passed - CE.
-                signed_part: Passed - CE.
-                  signed_pv: Passed - CE.
-                simple_byte: Passed - CE.
-                 simple_int: Passed - CE.
-             simple_longint: Passed - CE.
-            simple_shortint: Passed - CE.
-                  sint_test: Passed - CE.
-              slongint_test: Passed - CE.
-             sshortint_test: Passed - CE.
-        struct_packed_array: Passed - CE.
-       struct_packed_array2: Passed - CE.
-             test_dispwided: Passed - CE.
-            test_enumsystem: Passed - CE.
-               test_inc_dec: Passed - CE.
-                test_system: Passed - CE.
-              test_tliteral: Passed - CE.
-          two_state_display: Passed - CE.
-                 ubyte_test: Passed - CE.
-                  uint_test: Passed - CE.
-              ulongint_test: Passed - CE.
-            undefined_shift: Passed - CE.
-             ushortint_test: Passed - CE.
-            vhdl_sadd23_bit: Passed - CE.
-            vhdl_sdiv23_bit: Passed - CE.
-            vhdl_ssub23_bit: Passed - CE.
-            vhdl_smul23_bit: Passed - CE.
-       vhdl_sadd23_stdlogic: Passed - CE.
-       vhdl_sdiv23_stdlogic: Passed - CE.
-       vhdl_ssub23_stdlogic: Passed - CE.
-       vhdl_smul23_stdlogic: Passed - CE.
-                    concat3: Passed - expected fail.
-                      mult2: Not Implemented.
-                      pr757: Passed - expected fail.
-                  pr1698499: Passed - expected fail.
-                  pr1793749: Passed - expected fail.
-                 pr1793749b: Passed - expected fail.
-                  pr1823732: Passed - CE.
-                  pr1841300: Passed - expected fail.
-                  pr1960619: Passed - expected fail.
-                  pr1963240: Passed - expected fail.
-                  pr2136787: Passed - expected fail.
-                  pr2138979: Passed - expected fail.
-                 pr2138979b: Passed - expected fail.
-                 pr2138979c: Passed - expected fail.
-                 pr2138979d: Passed - expected fail.
-                  pr2922063: Passed - CE.
-                 pr2922063a: Passed - CE.
-             select_padding: Passed - expected fail.
-                    signed5: Passed - expected fail.
-                 pr2722330a: Passed - CE.
-                    big_int: Passed - CE.
-                  pr2673846: Passed - CE.
-                  pr2029336: Passed - CE.
-             array_select_a: Passed - CE.
-          array_word_width2: Passed - CE.
-                 ca_64delay: Passed - CE.
-           check_constant_8: Passed - CE.
-           check_constant_9: Passed - CE.
-          check_constant_10: Passed - CE.
-          check_constant_11: Passed - CE.
-          check_constant_16: Passed - CE.
-          check_constant_17: Passed - CE.
-              genvar_scopes: Passed - CE.
-                   meminit2: Passed - CE.
-                  pr1565544: Passed - CE.
-                  pr1657307: Passed - CE.
-                  pr1695322: Passed - CE.
-                 pr1701855b: Passed - CE.
-                  pr1703346: Passed - CE.
-                 pr1740476b: Passed - CE.
-                  pr1758122: Passed - CE.
-                  pr1799904: Passed - CE.
-                  pr1820472: Passed - CE.
-                  pr1868792: Passed - CE.
-                  pr1876798: Passed - CE.
-                  pr1903324: Passed - CE.
-                  pr2011429: Passed - CE.
-                  pr2201909: Passed - CE.
-                 pr2201909b: Passed - CE.
-                  pr2166311: Passed - CE.
-                  pr2715748: Passed - CE.
-                 pr2815398b: Passed - CE.
-                 pr3054101g: Passed - CE.
-                 pr3054101h: Passed - CE.
-                  pr3592746: Passed - CE.
-              real_array_nb: Passed - CE.
-               scan-invalid: Passed - CE.
-            sel_rval_bit_ob: Passed - CE.
-           sel_rval_part_ob: Passed - CE.
-               test_varray1: Passed - CE.
-         cast_real_unsigned: Not Implemented.
-                    ca_time: Not Implemented.
-               ca_var_delay: Not Implemented.
-                      clog2: Not Implemented.
-              delayed_sfunc: Not Implemented.
-                 pr1861212c: Not Implemented.
-                 pr1864110a: Not Implemented.
-                 pr1864110b: Not Implemented.
-                 pr1864110c: Not Implemented.
-                  pr1864115: Not Implemented.
-                  pr1873372: Not Implemented.
-                  pr1880003: Not Implemented.
-                  pr1898293: Not Implemented.
-                  pr2123158: Not Implemented.
-                  pr2123190: Not Implemented.
-                 pr2453002b: Not Implemented.
-                  pr2456943: Not Implemented.
-                  pr2806474: Not Implemented.
-                  pr2976242: Not Implemented.
-                 pr2976242b: Not Implemented.
-                      real8: Not Implemented.
-                 real_array: Not Implemented.
-             real_mod_in_ca: Not Implemented.
-           real_pulse_clean: Not Implemented.
-             real_pwr_in_ca: Not Implemented.
-            real_wire_array: Not Implemented.
-        real_wire_force_rel: Not Implemented.
-                      tern8: Not Implemented.
-                 v2005_math: Not Implemented.
-                      wreal: Not Implemented.
-                  pr1528093: Not Implemented.
-                    analog1: Not Implemented.
-                    analog2: Not Implemented.
-                   cast_int: Not Implemented.
-                 constfunc4: Not Implemented.
-             test_vams_math: Not Implemented.
-                  vams_abs1: Not Implemented.
-                  vams_abs2: Not Implemented.
-              ca_pow_signed: Not Implemented.
-            ca_pow_unsigned: Not Implemented.
-                 constfunc3: Not Implemented.
-                 pow_signed: Not Implemented.
-               ca_pow_synth: Not Implemented.
-               pow_unsigned: Not Implemented.
-                  pr2823711: Not Implemented.
-                     rl_pow: Not Implemented.
-                     br916a: Passed.
-                     br916b: Passed.
-                fatal_et_al: Passed.
-                  fdisplay3: Passed.
-           fdisplay_fail_fd: Passed.
-          fdisplay_fail_mcd: Passed.
-                     format: Passed.
-                fread-error: Passed.
-              fscanf_u_warn: Passed.
-              fscanf_z_warn: Passed.
-            localparam_type: Passed.
-             parameter_type: Passed.
-                       mem1: Passed.
-                        pic: Passed.
-                      pr910: Passed.
-                  pr1819452: Passed.
-                 pr2509349a: Passed.
-                 pr2509349b: Passed.
-                 pr2800985b: Passed.
-                 queue_fail: Passed.
-              readmem-error: Passed.
-            readmem-invalid: Passed.
-                     swrite: Passed.
-        sys_func_task_error: Passed - RE.
-           sys_func_as_task: Passed.
-            warn_opt_sys_tf: Passed.
-             writemem-error: Passed.
-           writemem-invalid: Passed.
-               complex_lidx: Passed - CE.
-                  defparam3: Passed - CE.
-                  defparam4: Passed - CE.
-              gen_case_opt1: Passed - CE.
-              gen_case_opt2: Passed - CE.
-              gen_case_opt3: Passed - CE.
-                    genloop: Not Implemented.
-              generate_case: Passed - CE.
-             generate_case2: Passed - CE.
-             generate_case3: Passed - CE.
-        generate_multi_loop: Passed - CE.
-            negative_genvar: Passed - CE.
-                 pr1565699b: Passed - CE.
-                  pr1623097: Passed - CE.
-                  pr1676071: Not Implemented.
-                 pr1691599b: Passed - CE.
-                  pr1695309: Passed - CE.
-                 pr1704726a: Passed - CE.
-                 pr1704726b: Passed - CE.
-                 pr1704726c: Passed - CE.
-                 pr1704726d: Passed - CE.
-                  pr1755629: Passed - CE.
-                  pr1828642: Passed - CE.
-                  pr1833754: Passed - CE.
-                  pr1956211: Passed - CE.
-                  pr1960625: Passed - CE.
-                 pr1988302b: Passed - CE.
-                  pr1988302: Passed - CE.
-                  pr1988310: Passed - CE.
-                 pr2018235a: Passed - CE.
-                  pr2039632: Passed - CE.
-                  pr2091455: Passed - CE.
-                  pr2109179: Passed - CE.
-                  pr2138682: Passed - CE.
-                 pr2257003b: Passed - CE.
-                  pr2257003: Passed - CE.
-                  pr2306259: Passed - CE.
-                 pr2350934b: Passed - CE.
-                  pr2350934: Passed - CE.
-                  pr2350988: Passed - CE.
-                  pr2355304: Passed - CE.
-                 pr2728812a: Passed - CE.
-                 pr2728812b: Passed - CE.
-                  pr2809288: Passed - CE.
-             pr2815398a_std: Passed - CE.
-                 pr2815398a: Passed - CE.
-                  pr2909414: Passed - CE.
-                  pr2924354: Passed - CE.
-                  pr3011327: Passed - CE.
-                  pr3409749: Passed - CE.
-                 pr3437290b: Passed - CE.
-                  pr3527694: Passed - CE.
-                  pr3534422: Passed - CE.
-                  pr3557493: Passed - CE.
-              scoped_events: Passed - CE.
-                test_forgen: Passed - CE.
-                  test_gxor: Passed - CE.
-     unnamed_generate_block: Passed - CE.
-                    bitsel6: Passed - CE.
-                    bitsel7: Passed - CE.
-                  pr1745005: Passed - CE.
-                 pr2725700c: Passed - CE.
-                 pr2835632b: Passed - CE.
-                 pr3054101a: Passed - CE.
-                 pr3054101b: Passed - CE.
-                 pr3054101c: Passed - CE.
-                 pr3054101e: Passed - CE.
-                 pr3054101f: Passed - CE.
-                   bitsel10: Passed - CE.
-                     br918c: Passed - CE.
-              countdrivers3: Passed - CE.
-                      inout: Not Implemented.
-                     inout2: Passed - CE.
-                     inout3: Passed - CE.
-                     inout4: Passed - CE.
-                  pr1444055: Passed - CE.
-                  pr1478121: Passed - CE.
-                  pr2219441: Passed - CE.
-                  pr3194155: Not Implemented.
-                 pr3296466a: Passed - CE.
-                 pr3296466b: Passed - CE.
-                 pr3296466d: Passed - CE.
-                  pr3452808: Not Implemented.
-                       tri2: Passed - CE.
-                  ibit_test: Passed - expected fail.
-                 ibyte_test: Passed - expected fail.
-                  iint_test: Passed - expected fail.
-              ilongint_test: Passed - expected fail.
-             ishortint_test: Passed - expected fail.
-               array_string: Not Implemented.
-                 sv_string1: Not Implemented.
-                 sv_string2: Not Implemented.
-                 sv_string3: Not Implemented.
-                 sv_string4: Not Implemented.
-                 sv_string5: Not Implemented.
-              fork_join_any: Not Implemented.
-             fork_join_none: Not Implemented.
-                 pr3366217e: Not Implemented.
-                 pr3366217f: Not Implemented.
-                 pr3366217h: Not Implemented.
-                 pr3366217i: Not Implemented.
-                  pr3390385: Passed - CE.
-                 pr3390385b: Passed - CE.
-                 pr3390385c: Passed - CE.
-                 pr3390385d: Passed - CE.
-                  pr3462145: Passed - CE.
-                 sv_darray1: Not Implemented.
-                 sv_darray2: Not Implemented.
-                 sv_darray3: Not Implemented.
-                 sv_darray4: Not Implemented.
-                 sv_darray5: Not Implemented.
-                sv_darray5b: Not Implemented.
-                 sv_darray6: Not Implemented.
-                  sv_class1: Not Implemented.
-                  sv_class2: Not Implemented.
-                  sv_class3: Not Implemented.
-                  sv_class4: Not Implemented.
-                  sv_class5: Not Implemented.
-                  sv_class6: Not Implemented.
-                  sv_class7: Not Implemented.
-                  sv_class8: Not Implemented.
-                  sv_class9: Not Implemented.
-                 sv_class10: Not Implemented.
-  struct_packed_write_read2: Not Implemented.
-                 vhdl_test5: Not Implemented.
-                 vhdl_test6: Not Implemented.
-                 vhdl_test7: Not Implemented.
-                 vhdl_test8: Not Implemented.
-                 vhdl_test9: Not Implemented.
-                      final: Not Implemented.
-              program_hello: Not Implemented.
-             program_hello2: Not Implemented.
-                   program2: Not Implemented.
-                  program2b: Not Implemented.
-                   program3: Not Implemented.
-                   program4: Not Implemented.
-                  program5b: Not Implemented.
-                  pr1587669: Passed - expected fail.
-                  pr1877743: Passed - expected fail.
-                 pr2590274c: Passed - expected fail.
-                 pr2829776b: Passed - expected fail.
-                  pr2972866: Passed - expected fail.
-                 real_delay: Passed - expected fail.
-                   specify2: Passed - expected fail.
-                   specify3: Passed - expected fail.
-                   specify4: Passed - expected fail.
-                   specify5: Passed - expected fail.
-                 specify_01: Passed - expected fail.
-                       sdf1: Passed - expected fail.
-                       sdf2: Passed - expected fail.
-                       sdf3: Passed - expected fail.
-                       sdf4: Passed - expected fail.
-                       sdf5: Passed - expected fail.
-                       sdf6: Passed - expected fail.
-                       sdf7: Passed - expected fail.
-                       sdf8: Passed - expected fail.
-                sdf_del_min: Passed - expected fail.
-                sdf_del_typ: Passed - expected fail.
-                sdf_del_max: Passed - expected fail.
-                 sdf_esc_id: Passed - expected fail.
-                  basicexpr: Not Implemented.
-                     shiftl: Not Implemented.
-                ufuncsynth1: Not Implemented.
-                      pr685: Not Implemented.
-                  pr1830834: Passed - expected fail.
               always3.1.10A: Passed - CE.
               always3.1.11A: Passed.
               always3.1.11B: Passed.
@@ -1045,7 +1038,6 @@ test_mos_strength_reduction: Passed.
                       pr445: Passed.
                     concat1: Passed.
                     concat2: Passed.
-                    concat4: ==> Failed - output does not match gold file.
                   timeform1: Passed.
                   timeform2: Passed.
                       pr183: Passed - CO.
@@ -1107,7 +1099,6 @@ test_mos_strength_reduction: Passed.
                  basicexpr4: Passed.
                      sqrt32: Passed.
                   memsynth8: Passed.
-               partselsynth: ==> Failed - running iverilog (translated).
                      busbug: Passed.
                        real: Passed.
                       real2: Passed.
@@ -1294,9 +1285,11 @@ test_mos_strength_reduction: Passed.
                  elsif_test: Passed.
                   pr1703120: Passed.
                   pr1704013: Passed - CE.
+                 pr1704726a: Passed - CE.
+                 pr1704726c: Passed - CE.
+                 pr1704726d: Passed - CE.
                   pr1705027: Passed - CO.
                   pr1716276: Passed.
-                  pr1723367: ==> Failed - running iverilog (translated).
                   pr1735724: Passed - CE.
                   pr1735822: Passed.
                   pr1735836: Passed.
@@ -1346,6 +1339,7 @@ test_mos_strength_reduction: Passed.
                   pr1855504: Passed.
                  pr1861212a: Passed.
                  pr1861212b: Passed.
+                  pr1833754: Passed - CE.
             macro_with_args: Passed.
                      macro2: Passed.
                  pr1862744a: Passed.
@@ -1438,9 +1432,9 @@ test_mos_strength_reduction: Passed.
                  pr1978358c: Passed.
                  pr1978358d: Passed.
                     tranif1: Passed.
-                   simparam: ==> Failed - output does not match gold file.
                   pr1983762: Passed.
                   pr1985582: Passed.
+                 pr1988302b: Passed - CE.
                dump_memword: Passed.
             parameter_type2: Passed.
            localparam_type2: Passed.
@@ -1455,10 +1449,10 @@ test_mos_strength_reduction: Passed.
                   pr2015466: Passed.
                  pr2018235b: Passed.
                   pr2018305: Passed.
-                  pr2019553: ==> Failed - running iverilog.
                      macsub: Passed.
                   pr2036953: Passed.
                   pr2038048: Passed.
+                  pr2039632: Passed - CE.
                   pr2039694: Passed.
                   pr2043324: Passed.
                   pr2043585: Passed.
@@ -1498,10 +1492,16 @@ test_mos_strength_reduction: Passed.
            check_constant_5: Passed - CE.
            check_constant_6: Passed - CE.
            check_constant_7: Passed - CE.
+           check_constant_8: Passed - CE.
+           check_constant_9: Passed - CE.
+          check_constant_10: Passed - CE.
+          check_constant_11: Passed - CE.
           check_constant_12: Passed - CE.
           check_constant_13: Passed - CE.
           check_constant_14: Passed - CE.
           check_constant_15: Passed - CE.
+          check_constant_16: Passed - CE.
+          check_constant_17: Passed - CE.
           check_constant_18: Passed - CE.
           check_constant_19: Passed - CE.
           check_constant_20: Passed - CE.
@@ -1593,6 +1593,7 @@ test_mos_strength_reduction: Passed.
        real_concat_invalid2: Passed - CE.
                   pr2728032: Passed.
                   pr2728547: Passed.
+                 pr2728812b: Passed - CE.
                  pr2728812c: Passed - CE.
                   pr2745281: Passed.
          indef_width_concat: Passed - CE.
@@ -1614,6 +1615,7 @@ test_mos_strength_reduction: Passed.
                   pr2801134: Passed.
                   pr2801662: Passed.
                   pr2806449: Passed.
+                  pr2809288: Passed - CE.
                   pr2818823: Passed.
            sv_timeunit_prec: Passed.
       sv_timeunit_prec_fail: Passed - CE.
@@ -1804,24 +1806,25 @@ test_mos_strength_reduction: Passed.
                     struct6: Passed.
                     struct7: Passed.
                     struct8: Passed.
-                   packeda2: ==> Failed - running iverilog.
                   pr3499807: Passed.
           switch_primitives: Passed.
-           task_init_assign: ==> Failed - output does not match gold file.
                   pr3515542: Passed - CE.
      struct_packed_sysfunct: Passed.
           sv_end_labels_bad: Passed - CE.
-                  pr3522653: ==> Failed - output does not match gold file.
                      attrib: Passed.
                  specparam1: Passed.
                  specparam2: Passed.
                   pr3527022: Passed.
              test_when_else: Passed.
+             program_hello2: Passed - CE.
+                  program2b: Passed - CE.
                   program3a: Passed - CE.
                   program3b: Passed - CE.
                   program5a: Passed - CE.
+                  program5b: Passed - CE.
                  constfunc1: Passed.
                  constfunc2: Passed.
+                 constfunc5: Passed.
               countdrivers1: Passed.
               countdrivers2: Passed.
               countdrivers4: Passed.
@@ -1841,11 +1844,10 @@ test_mos_strength_reduction: Passed.
                   pr3576165: Passed.
                   pr3582052: Passed.
                   pr3587570: Passed.
+  struct_packed_write_read2: Passed.
           undef_lval_select: Passed.
        undef_lval_select_SV: Passed.
            vvp_scalar_value: Passed.
-                     br918a: ==> Failed - output does not match gold file.
-                     br918b: ==> Failed - output does not match gold file.
 ============================================================================
 Test results:
-  Total=1846, Passed=1671, Failed=11, Not Implemented=120, Expected Fail=44
+  Total=1848, Passed=1757, Failed=1, Not Implemented=16, Expected Fail=74

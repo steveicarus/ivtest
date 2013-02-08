@@ -155,9 +155,20 @@ sub execute_regression {
         $cmd .= " vlog95.v >> log/$tname.log 2>&1";
 #        print "$cmd\n";
         if ($pass_type == 0 and system("$cmd")) {
-            &print_rpt("==> Failed - running iverilog (translated).\n");
-            $failed++;
-            next;
+            if ($testtype{$tname} eq "TE") {
+                # Check if the system command core dumped!
+                if ($? >> 8 & 128) {
+                    &print_rpt("==> Failed - TE (core dump).\n");
+                    $failed++;
+                    next;
+                } else {
+                    $pass_type = 3;
+                }
+            } else {
+                &print_rpt("==> Failed - running iverilog (translated).\n");
+                $failed++;
+                next;
+            }
         }
 
         $cmd = "vvp$sfx vsim $plargs{$tname} >> log/$tname.log 2>&1";
@@ -190,6 +201,10 @@ sub execute_regression {
                 &print_rpt("Passed - RE.\n");
                 $passed++;
                 next;
+            } elsif ($pass_type == 3) {
+                &print_rpt("Passed - TE.\n");
+                $passed++;
+                next;
             }
             $diff_file = "log/$tname.log";
         }
@@ -205,6 +220,8 @@ sub execute_regression {
                 &print_rpt(" CE -");
             } elsif ($pass_type == 2) {
                 &print_rpt(" RE -");
+            } elsif ($pass_type == 3) {
+                &print_rpt(" TE -");
             }
             &print_rpt(" output does not match gold file.\n");
             $failed++;
@@ -215,6 +232,8 @@ sub execute_regression {
             &print_rpt("Passed - CE.\n");
         } elsif ($pass_type == 2) {
             &print_rpt("Passed - RE.\n");
+        } elsif ($pass_type == 3) {
+            &print_rpt("Passed - TE.\n");
         } else {
             &print_rpt("Passed.\n");
         }
