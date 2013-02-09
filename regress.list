@@ -2233,13 +2233,13 @@ vlog95:sv_string4	CE,-g2009	ivltests
 vlog95:sv_string5	CE,-g2009	ivltests
 
 # SystemVerilog dynamic arrays and new operator.
-vlog95:sv_darray1	NI,-g2009,-pallowsigned=1	ivltests
-vlog95:sv_darray2	NI,-g2009,-pallowsigned=1	ivltests
-vlog95:sv_darray3	NI,-g2009,-pallowsigned=1	ivltests
-vlog95:sv_darray4	NI,-g2009,-pallowsigned=1	ivltests
-vlog95:sv_darray5	NI,-g2009,-pallowsigned=1	ivltests
-vlog95:sv_darray5b	NI,-g2009,-pallowsigned=1	ivltests
-vlog95:sv_darray6	NI,-g2009,-pallowsigned=1	ivltests  # Also string
+vlog95:sv_darray1	CE,-g2009,-pallowsigned=1	ivltests
+vlog95:sv_darray2	CE,-g2009,-pallowsigned=1	ivltests
+vlog95:sv_darray3	CE,-g2009,-pallowsigned=1	ivltests
+vlog95:sv_darray4	CE,-g2009,-pallowsigned=1	ivltests
+vlog95:sv_darray5	CE,-g2009,-pallowsigned=1	ivltests
+vlog95:sv_darray5b	CE,-g2009,-pallowsigned=1	ivltests
+vlog95:sv_darray6	CE,-g2009,-pallowsigned=1	ivltests  # Also string
 
 # SystemVerilog classes, new and null operators.
 vlog95:sv_class1	CE,-g2009	ivltests
@@ -2250,7 +2250,7 @@ vlog95:sv_class5	CE,-g2009	ivltests
 vlog95:sv_class6	CE,-g2009	ivltests
 vlog95:sv_class7	CE,-g2009	ivltests
 vlog95:sv_class8	CE,-g2009	ivltests
-vlog95:sv_class9	NI,-g2009	ivltests  # Also dynamic array
+vlog95:sv_class9	CE,-g2009	ivltests  # Also dynamic array
 vlog95:sv_class10	CE,-g2009	ivltests
 
 # No support for SystemVerilog zero argument functions.
