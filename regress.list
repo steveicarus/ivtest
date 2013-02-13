@@ -2293,6 +2293,7 @@ vlog95:ushortint_test	EF,-g2009,-pallowsigned=1	ivltests
 # These tests have unresolved failures that still need to be looked at.
 vlog95:br918a		EF	ivltests
 vlog95:br918b		EF	ivltests
+vlog95:br918c		EF	ivltests
 vlog95:packeda		NI  # Assert
 vlog95:packeda2		NI  # Assert
 vlog95:partselsynth	TE,-S  ivltests
@@ -4492,4 +4493,5 @@ br916b	normal	ivltests diff=log/br916b.log:gold/br916b.gold
 br918a	normal	ivltests
 br918b	normal	ivltests
 br918c	normal	ivltests
+br918d	normal	ivltests
 br919	normal	ivltests

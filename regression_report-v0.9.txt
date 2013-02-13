@@ -1852,6 +1852,7 @@ test_mos_strength_reduction: Passed.
                      br918a: Passed.
                      br918b: Passed.
                      br918c: Passed.
+                     br918d: Passed.
 ============================================================================
 Test results:
-  Total=1852, Passed=1583, Failed=0, Not Implemented=229, Expected Fail=40
+  Total=1853, Passed=1584, Failed=0, Not Implemented=229, Expected Fail=40
