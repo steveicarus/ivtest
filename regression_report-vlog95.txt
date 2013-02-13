@@ -162,6 +162,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
              ushortint_test: Passed - expected fail.
                      br918a: Passed - expected fail.
                      br918b: Passed - expected fail.
+                     br918d: Passed - expected fail.
                     packeda: Not Implemented.
                    packeda2: Not Implemented.
                partselsynth: Passed - TE.
@@ -1850,4 +1851,4 @@ test_mos_strength_reduction: Passed.
            vvp_scalar_value: Passed.
 ============================================================================
 Test results:
-  Total=1848, Passed=1765, Failed=1, Not Implemented=8, Expected Fail=74
+  Total=1849, Passed=1765, Failed=1, Not Implemented=8, Expected Fail=75
