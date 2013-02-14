@@ -160,9 +160,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   uint_test: Passed - expected fail.
               ulongint_test: Passed - expected fail.
              ushortint_test: Passed - expected fail.
-                     br918a: Passed - expected fail.
-                     br918b: Passed - expected fail.
-                     br918d: Passed - expected fail.
                     packeda: Not Implemented.
                    packeda2: Not Implemented.
                partselsynth: Passed - TE.
@@ -226,7 +223,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
               generate_case: Passed - CE.
              generate_case2: Passed - CE.
              generate_case3: Passed - CE.
-        generate_multi_loop: Passed - CE.
+        generate_multi_loop: Not Implemented.
                  pr1565699b: Passed - CE.
                   pr1623097: Passed - CE.
                   pr1676071: Passed - CE.
@@ -1849,6 +1846,9 @@ test_mos_strength_reduction: Passed.
           undef_lval_select: Passed.
        undef_lval_select_SV: Passed.
            vvp_scalar_value: Passed.
+                     br918a: Passed.
+                     br918b: Passed.
+                     br918d: Passed.
 ============================================================================
 Test results:
-  Total=1849, Passed=1765, Failed=1, Not Implemented=8, Expected Fail=75
+  Total=1849, Passed=1767, Failed=1, Not Implemented=9, Expected Fail=72

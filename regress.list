@@ -2291,9 +2291,6 @@ vlog95:ulongint_test	EF,-g2009,-pallowsigned=1	ivltests
 vlog95:ushortint_test	EF,-g2009,-pallowsigned=1	ivltests
 
 # These tests have unresolved failures that still need to be looked at.
-vlog95:br918a		EF	ivltests
-vlog95:br918b		EF	ivltests
-vlog95:br918d		EF	ivltests
 vlog95:packeda		NI  # Assert
 vlog95:packeda2		NI  # Assert
 vlog95:partselsynth	TE,-S  ivltests
@@ -2363,7 +2360,7 @@ vlog95:genloop		CE	ivltests
 vlog95:generate_case	CE	ivltests
 vlog95:generate_case2	CE	ivltests
 vlog95:generate_case3	CE	ivltests
-vlog95:generate_multi_loop	CE	ivltests
+vlog95:generate_multi_loop	NI  # Assert
 vlog95:pr1565699b	CE	ivltests
 vlog95:pr1623097	CE	ivltests
 vlog95:pr1676071	CE	ivltests
