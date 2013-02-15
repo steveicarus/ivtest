@@ -66,6 +66,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                     big_int: Passed - CE.
                   pr2673846: Passed - CE.
                   pr2029336: Passed - CE.
+                      urand: Passed - CE.
                array_select: Passed - CE.
              array_select_a: Passed - CE.
           array_word_width2: Passed - CE.
@@ -167,7 +168,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   pr2019553: Passed - CE.
                   pr2121536: Not Implemented.
                  pr2121536b: Not Implemented.
-                  pr2913416: Passed - expected fail.
                   pr3522653: Passed - expected fail.
                    simparam: Passed - expected fail.
         struct_packed_array: Not Implemented.
@@ -208,7 +208,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
              select_padding: Passed - expected fail.
                      shift4: Passed - expected fail.
                     signed5: Passed - expected fail.
-                    signed9: Passed - expected fail.
                    signed10: Passed - expected fail.
                     analog1: Passed - CE.
                     analog2: Passed - CE.
@@ -394,6 +393,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  pr2722330a: Passed.
                  pr2722330b: Passed.
                   pr2909555: Passed.
+                  pr2913416: Passed.
                  pr2913438b: Passed.
                   pr2986528: Passed.
                   pr2998515: Passed.
@@ -410,6 +410,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                     signed6: Passed.
                     signed7: Passed.
                     signed8: Passed.
+                    signed9: Passed.
                    signed12: Passed.
                    signed_a: Passed.
                   signed_pv: Passed.
@@ -1324,7 +1325,6 @@ test_mos_strength_reduction: Passed.
                  pr1795005b: Passed.
                   pr1804877: Passed.
                   pr1805837: Passed.
-                      urand: Passed.
                     urand_r: Passed.
                      fileio: Passed.
                   pr1812297: Passed.
@@ -1851,4 +1851,4 @@ test_mos_strength_reduction: Passed.
                      br918d: Passed.
 ============================================================================
 Test results:
-  Total=1849, Passed=1768, Failed=1, Not Implemented=9, Expected Fail=71
+  Total=1849, Passed=1770, Failed=1, Not Implemented=9, Expected Fail=69

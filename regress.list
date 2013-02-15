@@ -2177,6 +2177,7 @@ vlog95:rl_pow			CE	ivltests
 vlog95:big_int			CE	ivltests
 vlog95:pr2673846		CE	ivltests
 vlog95:pr2029336		CE	ivltests
+vlog95:urand			CE	ivltests
 
 # IEEE 1364-1995 only supports register arrays.
 vlog95:array_select		CE,-pallowsigned=1	ivltests
@@ -2298,7 +2299,6 @@ vlog95:pr1723367	TE,-gno-io-range-error	ivltests gold=pr1723367.gold
 vlog95:pr2019553	CE	ivltests  # Pullup
 vlog95:pr2121536	NI  # Assert
 vlog95:pr2121536b	NI  # Assert
-vlog95:pr2913416	EF,-pallowsigned=1	ivltests  # Fail
 vlog95:pr3522653	EF	ivltests gold=pr3522653.gold
 vlog95:simparam		EF	ivltests
 vlog95:struct_packed_array	NI,-g2009,-pallowsigned=1	ivltests  # Assert
@@ -2341,7 +2341,6 @@ vlog95:pr3077640	normal,-pallowsigned=1	ivltests
 vlog95:select_padding	EF,-pallowsigned=1	ivltests
 vlog95:shift4		EF,-pallowsigned=1	ivltests
 vlog95:signed5		EF,-pallowsigned=1	ivltests
-vlog95:signed9		EF,-pallowsigned=1	ivltests
 vlog95:signed10		EF,-pallowsigned=1	ivltests
 
 # No support for most Verilog-A constructs
@@ -2549,6 +2548,7 @@ vlog95:pr2425055c	normal,-pallowsigned=1	ivltests
 vlog95:pr2722330a	normal,-pallowsigned=1	ivltests
 vlog95:pr2722330b	normal,-pallowsigned=1	ivltests
 vlog95:pr2909555	normal,-pallowsigned=1	ivltests
+vlog95:pr2913416	normal,-pallowsigned=1	ivltests
 vlog95:pr2913438b	normal,-pallowsigned=1	ivltests
 vlog95:pr2986528	normal,-pallowsigned=1	ivltests
 vlog95:pr2998515	normal,-pallowsigned=1	ivltests
@@ -2565,6 +2565,7 @@ vlog95:signed4		normal,-pallowsigned=1	ivltests gold=signed4.gold
 vlog95:signed6		normal,-pallowsigned=1	ivltests
 vlog95:signed7		normal,-pallowsigned=1	ivltests
 vlog95:signed8		normal,-pallowsigned=1	ivltests
+vlog95:signed9		normal,-pallowsigned=1	ivltests
 vlog95:signed12		normal,-pallowsigned=1	ivltests gold=signed12.gold
 vlog95:signed_a		normal,-pallowsigned=1	ivltests
 vlog95:signed_pv	normal,-pallowsigned=1	ivltests
