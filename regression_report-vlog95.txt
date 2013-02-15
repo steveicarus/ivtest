@@ -164,8 +164,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                    packeda2: Not Implemented.
                partselsynth: Passed - TE.
                   pr1723367: Passed - TE.
-                  pr1990164: Passed - expected fail.
-                  pr1993479: Passed - expected fail.
                   pr2019553: Passed - CE.
                   pr2121536: Not Implemented.
                  pr2121536b: Not Implemented.
@@ -192,6 +190,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   pr1845683: Passed.
                   pr1960619: Passed - expected fail.
                   pr1963240: Passed - expected fail.
+                  pr1990164: Passed - expected fail.
                   pr2136787: Passed - expected fail.
                   pr2138979: Passed - expected fail.
                  pr2138979b: Passed - expected fail.
@@ -380,6 +379,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  pr1883052b: Passed.
                   pr1950282: Passed.
                   pr1958801: Passed.
+                  pr1993479: Passed.
                   pr2030767: Passed.
                   pr2117473: Passed.
                   pr2152011: Passed.
@@ -1851,4 +1851,4 @@ test_mos_strength_reduction: Passed.
                      br918d: Passed.
 ============================================================================
 Test results:
-  Total=1849, Passed=1767, Failed=1, Not Implemented=9, Expected Fail=72
+  Total=1849, Passed=1768, Failed=1, Not Implemented=9, Expected Fail=71

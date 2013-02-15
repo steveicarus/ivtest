@@ -2295,8 +2295,6 @@ vlog95:packeda		NI  # Assert
 vlog95:packeda2		NI  # Assert
 vlog95:partselsynth	TE,-S  ivltests
 vlog95:pr1723367	TE,-gno-io-range-error	ivltests gold=pr1723367.gold
-vlog95:pr1990164	EF,-pallowsigned=1	ivltests  # Fail
-vlog95:pr1993479	EF,-pallowsigned=1	ivltests gold=pr1993479.gold  # Fail
 vlog95:pr2019553	CE	ivltests  # Pullup
 vlog95:pr2121536	NI  # Assert
 vlog95:pr2121536b	NI  # Assert
@@ -2325,6 +2323,7 @@ vlog95:pr1841300	EF,-pallowsigned=1	ivltests gold=pr1841300.gold
 vlog95:pr1845683	normal,-pallowsigned=1	ivltests gold=pr1845683.gold
 vlog95:pr1960619	EF,-pallowsigned=1	ivltests gold=pr1960619.gold
 vlog95:pr1963240	EF,-pallowsigned=1	ivltests gold=pr1963240.gold
+vlog95:pr1990164	EF,-pallowsigned=1	ivltests  # Needs $unsigned
 vlog95:pr2136787	EF,-pallowsigned=1	ivltests gold=pr2136787.gold
 vlog95:pr2138979	EF,-pallowsigned=1	ivltests
 vlog95:pr2138979b	EF,-pallowsigned=1	ivltests gold=pr2138979b.gold
@@ -2535,6 +2534,7 @@ vlog95:pr1883052	normal,-pallowsigned=1	ivltests
 vlog95:pr1883052b	normal,-pallowsigned=1	ivltests
 vlog95:pr1950282	normal,-pallowsigned=1	ivltests
 vlog95:pr1958801	normal,-pallowsigned=1	ivltests
+vlog95:pr1993479	normal,-pallowsigned=1	ivltests gold=pr1993479.gold
 vlog95:pr2030767	normal,-pallowsigned=1	ivltests
 vlog95:pr2117473	normal,-pallowsigned=1	ivltests
 vlog95:pr2152011	normal,-pallowsigned=1	ivltests gold=pr2152011.gold
