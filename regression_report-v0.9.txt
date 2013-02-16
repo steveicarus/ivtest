@@ -74,6 +74,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
            sv_timeunit_prec: Not Implemented.
       sv_timeunit_prec_fail: Not Implemented.
            sys_func_as_task: Not Implemented.
+           task_init_assign: Not Implemented.
                test_inc_dec: Not Implemented.
               test_tliteral: Not Implemented.
           two_state_display: Not Implemented.
@@ -173,7 +174,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                    packeda2: Not Implemented.
                inc_dec_stmt: Not Implemented.
                 task_scope2: Not Implemented.
-           task_init_assign: Not Implemented.
               program_hello: Not Implemented.
              program_hello2: Not Implemented.
                    program2: Not Implemented.

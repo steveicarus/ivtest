@@ -172,7 +172,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                    simparam: Passed - expected fail.
         struct_packed_array: Not Implemented.
        struct_packed_array2: Not Implemented.
-           task_init_assign: Passed - expected fail.
                 test_system: Passed - TE.
              test_vams_math: Passed - expected fail.
                       br919: Passed.
@@ -1806,6 +1805,7 @@ test_mos_strength_reduction: Passed.
                     struct8: Passed.
                   pr3499807: Passed.
           switch_primitives: Passed.
+           task_init_assign: Passed.
                   pr3515542: Passed - CE.
      struct_packed_sysfunct: Passed.
           sv_end_labels_bad: Passed - CE.
@@ -1851,4 +1851,4 @@ test_mos_strength_reduction: Passed.
                      br918d: Passed.
 ============================================================================
 Test results:
-  Total=1849, Passed=1770, Failed=1, Not Implemented=9, Expected Fail=69
+  Total=1849, Passed=1771, Failed=1, Not Implemented=9, Expected Fail=68

@@ -1783,7 +1783,6 @@ v0.9:packeda		NI
 v0.9:packeda2		NI
 v0.9:inc_dec_stmt	NI
 v0.9:task_scope2	NI
-v0.9:task_init_assign	NI
 v0.9:program_hello	NI
 v0.9:program_hello2	NI
 v0.9:program2	NI
@@ -2303,7 +2302,6 @@ vlog95:pr3522653	EF	ivltests gold=pr3522653.gold
 vlog95:simparam		EF	ivltests
 vlog95:struct_packed_array	NI,-g2009,-pallowsigned=1	ivltests  # Assert
 vlog95:struct_packed_array2	NI,-g2009,-pallowsigned=1	ivltests  # Assert
-vlog95:task_init_assign	EF,-g2009	ivltests
 vlog95:test_system	TE,-g2009,-pallowsigned=1,ivltests/system.vhd	ivltests
 vlog95:test_vams_math	EF,-gverilog-ams  ivltests gold=test_vams_math.gold
 
