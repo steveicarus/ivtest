@@ -1106,6 +1106,9 @@ v0.8:sv_class7	NI
 v0.8:sv_class8	NI
 v0.8:sv_class9	NI
 v0.8:sv_class10	NI
+v0.8::parpkg_test	NI
+v0.8::parpkg_test2	NI
+v0.8::parpkg_testi3	NI
 v0.8:struct_packe_write_read2	NI
 v0.8:struct_packed_array	NI
 v0.8:struct_packed_array2	NI
@@ -1662,6 +1665,9 @@ v0.9:sv_class7	NI
 v0.9:sv_class8	NI
 v0.9:sv_class9	NI
 v0.9:sv_class10	NI
+v0.9::parpkg_test	NI
+v0.9::parpkg_test2	NI
+v0.9::parpkg_testi3	NI
 v0.9:struct_packed_write_read2	NI
 v0.9:sv_string1	NI
 v0.9:sv_string2	NI
@@ -2441,6 +2447,55 @@ vlog95:pr685		TE,-S	ivltests
 # The converter generates a complex expression for $strobe and Icarus does not
 # currently support this. The translation is correct.
 vlog95:pr1830834	EF	ivltests
+
+# No support for these SystemVerilog features
+vlog95:fork_join_any	NI
+vlog95:fork_join_none	NI
+vlog95:pr3366217e	NI  # Just signed
+vlog95:pr3366217f	NI
+vlog95:pr3366217h	NI
+vlog95:pr3366217i	NI
+vlog95:pr3390385	CE,-g2009	ivltests  # ++
+vlog95:pr3390385b	CE,-g2009	ivltests  # ++
+vlog95:pr3390385c	CE,-g2009	ivltests  # ++
+vlog95:pr3390385d	CE,-g2009	ivltests  # ++
+vlog95:pr3462145	CE,-g2009	ivltests  # ++
+vlog95:sv_darray1	NI  # Dynamic arrays
+vlog95:sv_darray2	NI  # Dynamic arrays
+vlog95:sv_darray3	NI  # Dynamic arrays
+vlog95:sv_darray4	NI  # Dynamic arrays
+vlog95:sv_darray5	NI  # Dynamic arrays
+vlog95:sv_darray5b	NI  # Dynamic arrays
+vlog95:sv_darray6	NI  # Dynamic arrays
+vlog95:sv_class1	NI  # Dynamic arrays
+vlog95:sv_class2	NI  # Dynamic arrays
+vlog95:sv_class3	NI  # Dynamic arrays
+vlog95:sv_class4	NI  # Dynamic arrays
+vlog95:sv_class5	NI  # Dynamic arrays
+vlog95:sv_class6	NI  # Dynamic arrays
+vlog95:sv_class7	NI  # Dynamic arrays
+vlog95:sv_class8	NI  # Dynamic arrays
+vlog95:sv_class9	NI  # Dynamic arrays
+vlog95:sv_class10	NI  # Dynamic arrays
+vlog95::parpkg_test	NI
+vlog95::parpkg_test2	NI
+vlog95::parpkg_testi3	NI
+vlog95:struct_packed_write_read2	NI
+vlog95:vhdl_test5	NI
+vlog95:vhdl_test6	NI
+vlog95:vhdl_test7	NI
+vlog95:vhdl_test8	NI
+vlog95:vhdl_test9	NI
+
+# Currently no support for SystemVerilog final blocks.
+vlog95:final		NI
+vlog95:program_hello	NI
+vlog95:program_hello2	NI
+vlog95:program2		NI
+vlog95:program2b	NI
+vlog95:program3		NI
+vlog95:program4		NI
+vlog95:program5b	NI
 
 # Currently no support for specify blocks.
 vlog95:pr1587669	EF,-gspecify  ivltests gold=pr1587669.gold
@@ -4491,3 +4546,6 @@ br918b	normal	ivltests
 br918c	normal	ivltests
 br918d	normal	ivltests
 br919	normal	ivltests
+parpkg_test	normal,-g2009	ivltests
+parpkg_test2	normal,-g2009	ivltests
+parpkg_test3	normal,-g2009	ivltests
