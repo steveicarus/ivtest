@@ -77,7 +77,7 @@ sub execute_regression {
     }
 
     foreach $tname (@testlist) {
-        my ($pass_type);
+        my $pass_type;
         next if ($tname eq "");  # Skip test that have been replaced.
 
         $total++;
@@ -105,7 +105,6 @@ sub execute_regression {
         $cmd .= "iverilog$sfx -o vlog95.v";
         $cmd .= " -s $testmod{$tname}" if ($testmod{$tname} ne "");
         $cmd .= $testtype{$tname} eq "CN" ? " -t null" : " -t vlog95";
-# Add -pallowsigned=1 here to allow signed, etc. to not be an error.
         $cmd .= " -pfileline=1 -pspacing=4" if ($testtype{$tname} ne "CN");
         $cmd .= " $args{$tname}";
         $cmd .= " ./$srcpath{$tname}/$tname.v > log/$tname.log 2>&1";
@@ -146,11 +145,25 @@ sub execute_regression {
 
         # Run the translated Verilog code. All compile errors should
         # already be handled. Remove the -S flag if it exists along
-        # with any included VHDL file(s) and any -f arguments.
+        # with any included VHDL file(s) and any -f arguments. The
+	# -pallowsigned flag and the various generation flags should
+	# also be removed. If we had -pallowsigned=1 then use the
+	# -g2001-noconfig to get signed/unsigned otherwise use -g1995.
+        my $gen_flag;
+	if($args{$tname} =~ m/-pallowsigned=1/) {
+	    $gen_flag = "-g2001-noconfig";
+	} else {
+	    $gen_flag = "-g1995";
+	}
         $args{$tname} =~ s/-S//;
         $args{$tname} =~ s/\S+\.vhd//g;
         $args{$tname} =~ s/-f\S+//g;
-        $cmd = "iverilog$sfx -o vsim $args{$tname}";
+        $args{$tname} =~ s/-pallowsigned=1//g;
+        $args{$tname} =~ s/-g2001(-noconfig)?//g;
+        $args{$tname} =~ s/-g2005(-sv)?//g;
+        $args{$tname} =~ s/-g2009//g;
+        $args{$tname} =~ s/-gverilog-ams//g;
+        $cmd = "iverilog$sfx -o vsim $gen_flag $args{$tname}";
         $cmd .= " -s $testmod{$tname}" if ($testmod{$tname} ne "");
         $cmd .= " vlog95.v >> log/$tname.log 2>&1";
 #        print "$cmd\n";

@@ -169,11 +169,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   pr2121536: Not Implemented.
                  pr2121536b: Not Implemented.
                   pr3522653: Passed - expected fail.
-                   simparam: Passed - expected fail.
         struct_packed_array: Not Implemented.
        struct_packed_array2: Not Implemented.
-                test_system: Passed - TE.
-             test_vams_math: Passed - expected fail.
                       br919: Passed.
                     concat3: Passed - expected fail.
                       mult2: Passed - expected fail.
@@ -338,9 +335,10 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  queue_fail: Passed.
               readmem-error: Passed.
             readmem-invalid: Passed.
+                   simparam: Passed - expected fail.
                      swrite: Passed.
         sys_func_task_error: Passed - RE.
-           sys_func_as_task: Passed.
+           sys_func_as_task: Passed - RE.
             warn_opt_sys_tf: Passed.
              writemem-error: Passed.
            writemem-invalid: Passed.
@@ -420,6 +418,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
              test_dispwided: Passed.
                test_inc_dec: Passed.
             test_enumsystem: Passed.
+                test_system: Passed.
               test_tliteral: Passed.
           two_state_display: Passed.
             undefined_shift: Passed.
@@ -1403,6 +1402,7 @@ test_mos_strength_reduction: Passed.
                   pr1948110: Passed.
                   pr1948342: Passed.
                test_va_math: Passed.
+             test_vams_math: Passed.
        concat_zero_wid_fail: Passed - CE.
       concat_zero_wid_fail2: Passed.
          repl_zero_wid_fail: Passed - CE.
@@ -1851,4 +1851,4 @@ test_mos_strength_reduction: Passed.
                      br918d: Passed.
 ============================================================================
 Test results:
-  Total=1849, Passed=1771, Failed=1, Not Implemented=9, Expected Fail=68
+  Total=1849, Passed=1772, Failed=1, Not Implemented=9, Expected Fail=67
