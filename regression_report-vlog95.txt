@@ -161,16 +161,12 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   uint_test: Passed - expected fail.
               ulongint_test: Passed - expected fail.
              ushortint_test: Passed - expected fail.
-                    packeda: Not Implemented.
-                   packeda2: Not Implemented.
                partselsynth: Passed - TE.
                   pr1723367: Passed - TE.
                   pr2019553: Passed - CE.
                   pr2121536: Not Implemented.
                  pr2121536b: Not Implemented.
                   pr3522653: Passed - expected fail.
-        struct_packed_array: Not Implemented.
-       struct_packed_array2: Not Implemented.
                       br919: Passed.
                     concat3: Passed - expected fail.
                       mult2: Passed - expected fail.
@@ -218,6 +214,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
              generate_case2: Passed - CE.
              generate_case3: Passed - CE.
         generate_multi_loop: Not Implemented.
+                   packeda2: Passed - CE.
                  pr1565699b: Passed - CE.
                   pr1623097: Passed - CE.
                   pr1676071: Passed - CE.
@@ -363,6 +360,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   int_param: Passed.
                      iuint1: Passed.
                       logp2: Passed.
+                    packeda: Passed.
                      pr1033: Passed.
                   pr1380261: Passed.
                   pr1494799: Passed.
@@ -415,6 +413,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  simple_int: Passed.
              simple_longint: Passed.
             simple_shortint: Passed.
+        struct_packed_array: Passed.
+       struct_packed_array2: Passed.
              test_dispwided: Passed.
                test_inc_dec: Passed.
             test_enumsystem: Passed.
@@ -1851,4 +1851,4 @@ test_mos_strength_reduction: Passed.
                      br918d: Passed.
 ============================================================================
 Test results:
-  Total=1849, Passed=1772, Failed=1, Not Implemented=9, Expected Fail=67
+  Total=1849, Passed=1776, Failed=1, Not Implemented=5, Expected Fail=67

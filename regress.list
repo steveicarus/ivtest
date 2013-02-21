@@ -2291,8 +2291,6 @@ vlog95:ulongint_test	EF,-g2009,-pallowsigned=1	ivltests
 vlog95:ushortint_test	EF,-g2009,-pallowsigned=1	ivltests
 
 # These tests have unresolved failures that still need to be looked at.
-vlog95:packeda		NI  # Assert
-vlog95:packeda2		NI  # Assert
 # The following two have problem getting the correct net/expression
 # information from the nexus. pr1723367 is the real torture test.
 vlog95:partselsynth	TE,-S  ivltests
@@ -2303,8 +2301,6 @@ vlog95:pr2121536b	NI  # Assert
 # The following demonstrates a compiler bug where `sh uses the integer width
 # While `sd or a plain integer uses the minimum width.
 vlog95:pr3522653	EF	ivltests gold=pr3522653.gold
-vlog95:struct_packed_array	NI,-g2009,-pallowsigned=1	ivltests  # Assert
-vlog95:struct_packed_array2	NI,-g2009,-pallowsigned=1	ivltests  # Assert
 
 # $signed() and $unsigned() are not currently generated. Some of these pass!
 vlog95:br919		normal,-pallowsigned=1	ivltests
@@ -2358,6 +2354,7 @@ vlog95:generate_case	CE	ivltests
 vlog95:generate_case2	CE	ivltests
 vlog95:generate_case3	CE	ivltests
 vlog95:generate_multi_loop	NI  # Assert
+vlog95:packeda2		CE,-g2009,-pallowsigned=1	ivltests
 vlog95:pr1565699b	CE	ivltests
 vlog95:pr1623097	CE	ivltests
 vlog95:pr1676071	CE	ivltests
@@ -2527,6 +2524,7 @@ vlog95:inc_dec_stmt	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:int_param	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:iuint1		normal,-g2009,-pallowsigned=1	ivltests
 vlog95:logp2		normal,-g2009,-pallowsigned=1	ivltests
+vlog95:packeda		normal,-g2009,-pallowsigned=1	ivltests
 vlog95:pr1033		normal,-pallowsigned=1	ivltests gold=pr1033.gold
 vlog95:pr1380261	normal,-pallowsigned=1	ivltests
 vlog95:pr1494799	normal,-pallowsigned=1	ivltests gold=pr1494799.gold
@@ -2579,6 +2577,8 @@ vlog95:simple_byte	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:simple_int	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:simple_longint	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:simple_shortint	normal,-g2009,-pallowsigned=1	ivltests
+vlog95:struct_packed_array	normal,-g2009,-pallowsigned=1	ivltests
+vlog95:struct_packed_array2	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:test_dispwided	normal,-pallowsigned=1	ivltests gold=test_dispwided.gold
 vlog95:test_inc_dec	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:test_enumsystem	normal,-g2009,-pallowsigned=1,ivltests/enumsystem.vhd	ivltests
