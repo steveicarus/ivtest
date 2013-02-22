@@ -2296,8 +2296,6 @@ vlog95:ushortint_test	EF,-g2009,-pallowsigned=1	ivltests
 vlog95:partselsynth	TE,-S  ivltests
 vlog95:pr1723367	TE,-gno-io-range-error	ivltests gold=pr1723367.gold
 vlog95:pr2019553	CE	ivltests  # Pullup
-vlog95:pr2121536	NI  # Assert
-vlog95:pr2121536b	NI  # Assert
 # The following demonstrates a compiler bug where `sh uses the integer width
 # While `sd or a plain integer uses the minimum width.
 vlog95:pr3522653	EF	ivltests gold=pr3522653.gold
@@ -2422,10 +2420,12 @@ vlog95:inout4		CE	ivltests
 vlog95:pr1444055	CE	ivltests
 vlog95:pr1478121	CE	ivltests
 vlog95:pr2219441	CE	ivltests
-vlog95:pr3194155	NI  # Seg. faults
+vlog95:pr3194155	NI  # Asserts
 vlog95:pr3296466a	CE	ivltests
 vlog95:pr3296466b	CE	ivltests  # Also some nexus problems.
 vlog95:pr3296466d	CE	ivltests
+# This is caused because the two port are cross coupled. This creates a
+# recursive call that never ends and blows over the stack limit.
 vlog95:pr3452808	NI  # Seg. faults
 vlog95:tri2		CE	ivltests
 
@@ -2540,6 +2540,8 @@ vlog95:pr1958801	normal,-pallowsigned=1	ivltests
 vlog95:pr1993479	normal,-pallowsigned=1	ivltests gold=pr1993479.gold
 vlog95:pr2030767	normal,-pallowsigned=1	ivltests
 vlog95:pr2117473	normal,-pallowsigned=1	ivltests
+vlog95:pr2121536	normal,-pallowsigned=1	ivltests
+vlog95:pr2121536b	normal,-pallowsigned=1	ivltests
 vlog95:pr2152011	normal,-pallowsigned=1	ivltests gold=pr2152011.gold
 vlog95:pr2233180	normal,-pallowsigned=1	ivltests
 vlog95:pr2233180b	normal,-pallowsigned=1	ivltests

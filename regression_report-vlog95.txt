@@ -164,8 +164,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                partselsynth: Passed - TE.
                   pr1723367: Passed - TE.
                   pr2019553: Passed - CE.
-                  pr2121536: Not Implemented.
-                 pr2121536b: Not Implemented.
                   pr3522653: Passed - expected fail.
                       br919: Passed.
                     concat3: Passed - expected fail.
@@ -376,6 +374,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   pr1993479: Passed.
                   pr2030767: Passed.
                   pr2117473: Passed.
+                  pr2121536: Passed.
+                 pr2121536b: Passed.
                   pr2152011: Passed.
                   pr2233180: Passed.
                  pr2233180b: Passed.
@@ -1851,4 +1851,4 @@ test_mos_strength_reduction: Passed.
                      br918d: Passed.
 ============================================================================
 Test results:
-  Total=1849, Passed=1776, Failed=1, Not Implemented=5, Expected Fail=67
+  Total=1849, Passed=1778, Failed=1, Not Implemented=3, Expected Fail=67
