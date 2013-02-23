@@ -285,29 +285,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                 ufuncsynth1: Passed - TE.
                       pr685: Passed - TE.
                   pr1830834: Passed - expected fail.
-                  pr1587669: Passed - expected fail.
-                  pr1877743: Passed - expected fail.
-                 pr2590274c: Passed - expected fail.
-                 pr2829776b: Passed - expected fail.
-                  pr2972866: Passed - expected fail.
-                 real_delay: Passed - expected fail.
-                   specify2: Passed - expected fail.
-                   specify3: Passed - expected fail.
-                   specify4: Passed - expected fail.
-                   specify5: Passed - expected fail.
-                 specify_01: Passed - expected fail.
-                       sdf1: Passed - expected fail.
-                       sdf2: Passed - expected fail.
-                       sdf3: Passed - expected fail.
-                       sdf4: Passed - expected fail.
-                       sdf5: Passed - expected fail.
-                       sdf6: Passed - expected fail.
-                       sdf7: Passed - expected fail.
-                       sdf8: Passed - expected fail.
-                sdf_del_min: Passed - expected fail.
-                sdf_del_typ: Passed - expected fail.
-                sdf_del_max: Passed - expected fail.
-                 sdf_esc_id: Passed - expected fail.
                      br916a: Passed.
                      br916b: Passed.
                 fatal_et_al: Passed.
@@ -909,7 +886,12 @@ test_mos_strength_reduction: Passed.
              comp1001_fail4: Passed.
              comp1001_fail5: Passed.
                    specify1: Passed - CO.
+                   specify2: Passed.
+                   specify3: Passed.
+                   specify4: Passed.
+                   specify5: Passed.
                deposit_wire: Passed.
+                 specify_01: Passed.
                     deposit: Passed.
                  assign_neq: Passed.
                  assign_deq: Passed.
@@ -1224,6 +1206,7 @@ test_mos_strength_reduction: Passed.
                   pr1574175: Passed.
                   pr1581580: Passed.
                   pr1587634: Passed - CO.
+                  pr1587669: Passed.
                   pr1598445: Passed.
                   pr1601896: Passed.
                   pr1601898: Passed.
@@ -1336,6 +1319,18 @@ test_mos_strength_reduction: Passed.
                  pr1861212a: Passed.
                  pr1861212b: Passed.
                   pr1833754: Passed - CE.
+                       sdf1: Passed.
+                       sdf2: Passed.
+                       sdf3: Passed.
+                       sdf4: Passed.
+                       sdf5: Passed.
+                       sdf6: Passed.
+                       sdf7: Passed.
+                       sdf8: Passed.
+                sdf_del_min: Passed.
+                sdf_del_typ: Passed.
+                sdf_del_max: Passed.
+                 sdf_esc_id: Passed.
             macro_with_args: Passed.
                      macro2: Passed.
                  pr1862744a: Passed.
@@ -1354,6 +1349,7 @@ test_mos_strength_reduction: Passed.
                   pr1875866: Passed.
                  pr1875866b: Passed.
                   pr1877740: Passed.
+                  pr1877743: Passed.
                   pr1878909: Passed.
          multi_driver_delay: Passed.
                real_op_fail: Passed - CE.
@@ -1570,6 +1566,7 @@ test_mos_strength_reduction: Passed.
                   pr2580730: Passed.
                  pr2590274a: Passed.
                  pr2590274b: Passed.
+                 pr2590274c: Passed.
                   pr2593733: Passed.
                   pr2597278: Passed.
                  pr2597278b: Passed - CE.
@@ -1622,6 +1619,7 @@ test_mos_strength_reduction: Passed.
                udp_eval_arg: Passed.
               cmdline_parm1: Passed.
                   pr2829776: Passed.
+                 pr2829776b: Passed.
                      memref: Passed.
                   pr2832234: Passed.
                   pr2834340: Passed.
@@ -1655,6 +1653,7 @@ test_mos_strength_reduction: Passed.
                   pr2969724: Passed.
        named_event_no_edges: Passed - CE.
                   pr2971207: Passed.
+                  pr2972866: Passed.
                   pr2973532: Passed.
                   pr2974051: Passed.
                   pr2974216: Passed.
@@ -1673,6 +1672,7 @@ test_mos_strength_reduction: Passed.
                   pr3022502: Passed.
                   pr3024131: Passed.
       verify_two_var_delays: Passed.
+                 real_delay: Passed.
                   pr3039548: Passed.
                       uwire: Passed.
                      uwire2: Passed.
@@ -1851,4 +1851,4 @@ test_mos_strength_reduction: Passed.
                      br918d: Passed.
 ============================================================================
 Test results:
-  Total=1849, Passed=1778, Failed=1, Not Implemented=3, Expected Fail=67
+  Total=1849, Passed=1801, Failed=1, Not Implemented=3, Expected Fail=44

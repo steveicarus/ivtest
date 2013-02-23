@@ -2440,31 +2440,6 @@ vlog95:pr685		TE,-S	ivltests
 # currently support this. The translation is correct.
 vlog95:pr1830834	EF	ivltests
 
-# Currently no support for specify blocks.
-vlog95:pr1587669	EF,-gspecify  ivltests gold=pr1587669.gold
-vlog95:pr1877743	EF,-gspecify  ivltests
-vlog95:pr2590274c	EF,-gspecify  ivltests gold=pr2590274.gold
-vlog95:pr2829776b	EF,-gspecify  ivltests
-vlog95:pr2972866	EF,-Tmax,-gspecify	ivltests gold=pr2972866.gold
-vlog95:real_delay	EF,-gspecify	ivltests gold=real_delay.gold
-vlog95:specify2		EF,-gspecify	ivltests
-vlog95:specify3		EF,-gspecify	ivltests gold=specify3.gold
-vlog95:specify4		EF,-gspecify	ivltests gold=specify4.gold
-vlog95:specify5		EF,-gspecify	ivltests gold=specify5.gold
-vlog95:specify_01	EF,-gspecify  ivltests test
-vlog95:sdf1		EF,-gspecify  ivltests gold=sdf1.gold
-vlog95:sdf2		EF,-gspecify  ivltests gold=sdf1.gold
-vlog95:sdf3		EF,-gspecify  ivltests gold=sdf1.gold
-vlog95:sdf4		EF,-gspecify  ivltests gold=sdf1.gold
-vlog95:sdf5		EF,-gspecify  ivltests gold=sdf5.gold
-vlog95:sdf6		EF,-gspecify  ivltests gold=sdf6.gold
-vlog95:sdf7		EF,-gspecify  ivltests gold=sdf7.gold
-vlog95:sdf8		EF,-gspecify  ivltests gold=sdf8.gold
-vlog95:sdf_del_min	EF,-gspecify,-Tmin	ivltests
-vlog95:sdf_del_typ	EF,-gspecify,-Ttyp	ivltests
-vlog95:sdf_del_max	EF,-gspecify,-Tmax	ivltests
-vlog95:sdf_esc_id	EF,-gspecify  ivltests gold=sdf1.gold
-
 # These tests have different output because of file name/line, etc. differences.
 vlog95:br916a		normal	ivltests gold=br916a-vlog95.gold
 vlog95:br916b		normal	ivltests gold=br916b-vlog95.gold
