@@ -1106,6 +1106,9 @@ v0.8:sv_class7	NI
 v0.8:sv_class8	NI
 v0.8:sv_class9	NI
 v0.8:sv_class10	NI
+v0.8::parpkg_test	NI
+v0.8::parpkg_test2	NI
+v0.8::parpkg_testi3	NI
 v0.8:struct_packe_write_read2	NI
 v0.8:struct_packed_array	NI
 v0.8:struct_packed_array2	NI
@@ -1662,6 +1665,9 @@ v0.9:sv_class7	NI
 v0.9:sv_class8	NI
 v0.9:sv_class9	NI
 v0.9:sv_class10	NI
+v0.9::parpkg_test	NI
+v0.9::parpkg_test2	NI
+v0.9::parpkg_testi3	NI
 v0.9:struct_packed_write_read2	NI
 v0.9:sv_string1	NI
 v0.9:sv_string2	NI
@@ -2439,6 +2445,80 @@ vlog95:pr685		TE,-S	ivltests
 # The converter generates a complex expression for $strobe and Icarus does not
 # currently support this. The translation is correct.
 vlog95:pr1830834	EF	ivltests
+
+# No support for these SystemVerilog features
+vlog95:fork_join_any	NI
+vlog95:fork_join_none	NI
+vlog95:pr3366217e	NI  # Just signed
+vlog95:pr3366217f	NI
+vlog95:pr3366217h	NI
+vlog95:pr3366217i	NI
+vlog95:pr3390385	CE,-g2009	ivltests  # ++
+vlog95:pr3390385b	CE,-g2009	ivltests  # ++
+vlog95:pr3390385c	CE,-g2009	ivltests  # ++
+vlog95:pr3390385d	CE,-g2009	ivltests  # ++
+vlog95:pr3462145	CE,-g2009	ivltests  # ++
+vlog95:sv_darray1	NI  # Dynamic arrays
+vlog95:sv_darray2	NI  # Dynamic arrays
+vlog95:sv_darray3	NI  # Dynamic arrays
+vlog95:sv_darray4	NI  # Dynamic arrays
+vlog95:sv_darray5	NI  # Dynamic arrays
+vlog95:sv_darray5b	NI  # Dynamic arrays
+vlog95:sv_darray6	NI  # Dynamic arrays
+vlog95:sv_class1	NI  # Dynamic arrays
+vlog95:sv_class2	NI  # Dynamic arrays
+vlog95:sv_class3	NI  # Dynamic arrays
+vlog95:sv_class4	NI  # Dynamic arrays
+vlog95:sv_class5	NI  # Dynamic arrays
+vlog95:sv_class6	NI  # Dynamic arrays
+vlog95:sv_class7	NI  # Dynamic arrays
+vlog95:sv_class8	NI  # Dynamic arrays
+vlog95:sv_class9	NI  # Dynamic arrays
+vlog95:sv_class10	NI  # Dynamic arrays
+vlog95::parpkg_test	NI
+vlog95::parpkg_test2	NI
+vlog95::parpkg_testi3	NI
+vlog95:struct_packed_write_read2	NI
+vlog95:vhdl_test5	NI
+vlog95:vhdl_test6	NI
+vlog95:vhdl_test7	NI
+vlog95:vhdl_test8	NI
+vlog95:vhdl_test9	NI
+
+# Currently no support for SystemVerilog final blocks.
+vlog95:final		NI
+vlog95:program_hello	NI
+vlog95:program_hello2	NI
+vlog95:program2		NI
+vlog95:program2b	NI
+vlog95:program3		NI
+vlog95:program4		NI
+vlog95:program5b	NI
+
+# Currently no support for specify blocks.
+vlog95:pr1587669	EF,-gspecify  ivltests gold=pr1587669.gold
+vlog95:pr1877743	EF,-gspecify  ivltests
+vlog95:pr2590274c	EF,-gspecify  ivltests gold=pr2590274.gold
+vlog95:pr2829776b	EF,-gspecify  ivltests
+vlog95:pr2972866	EF,-Tmax,-gspecify	ivltests gold=pr2972866.gold
+vlog95:real_delay	EF,-gspecify	ivltests gold=real_delay.gold
+vlog95:specify2		EF,-gspecify	ivltests
+vlog95:specify3		EF,-gspecify	ivltests gold=specify3.gold
+vlog95:specify4		EF,-gspecify	ivltests gold=specify4.gold
+vlog95:specify5		EF,-gspecify	ivltests gold=specify5.gold
+vlog95:specify_01	EF,-gspecify  ivltests test
+vlog95:sdf1		EF,-gspecify  ivltests gold=sdf1.gold
+vlog95:sdf2		EF,-gspecify  ivltests gold=sdf1.gold
+vlog95:sdf3		EF,-gspecify  ivltests gold=sdf1.gold
+vlog95:sdf4		EF,-gspecify  ivltests gold=sdf1.gold
+vlog95:sdf5		EF,-gspecify  ivltests gold=sdf5.gold
+vlog95:sdf6		EF,-gspecify  ivltests gold=sdf6.gold
+vlog95:sdf7		EF,-gspecify  ivltests gold=sdf7.gold
+vlog95:sdf8		EF,-gspecify  ivltests gold=sdf8.gold
+vlog95:sdf_del_min	EF,-gspecify,-Tmin	ivltests
+vlog95:sdf_del_typ	EF,-gspecify,-Ttyp	ivltests
+vlog95:sdf_del_max	EF,-gspecify,-Tmax	ivltests
+vlog95:sdf_esc_id	EF,-gspecify  ivltests gold=sdf1.gold
 
 # These tests have different output because of file name/line, etc. differences.
 vlog95:br916a		normal	ivltests gold=br916a-vlog95.gold
@@ -4477,3 +4557,6 @@ br918b	normal	ivltests
 br918c	normal	ivltests
 br918d	normal	ivltests
 br919	normal	ivltests
+parpkg_test	normal,-g2009	ivltests
+parpkg_test2	normal,-g2009	ivltests
+parpkg_test3	normal,-g2009	ivltests

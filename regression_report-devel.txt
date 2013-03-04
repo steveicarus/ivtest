@@ -1850,6 +1850,9 @@ test_mos_strength_reduction: Passed.
                      br918c: Passed.
                      br918d: Passed.
                       br919: Passed.
+                parpkg_test: Passed.
+               parpkg_test2: Passed.
+               parpkg_test3: Passed.
 ============================================================================
 Test results:
-  Total=1850, Passed=1847, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1853, Passed=1850, Failed=3, Not Implemented=0, Expected Fail=0
