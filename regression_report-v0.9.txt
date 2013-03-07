@@ -70,6 +70,9 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                   sv_class8: Not Implemented.
                   sv_class9: Not Implemented.
                  sv_class10: Not Implemented.
+                parpkg_test: Not Implemented.
+               parpkg_test2: Not Implemented.
+               parpkg_test3: Not Implemented.
   struct_packed_write_read2: Not Implemented.
            sv_timeunit_prec: Not Implemented.
       sv_timeunit_prec_fail: Not Implemented.
@@ -1855,4 +1858,4 @@ test_mos_strength_reduction: Passed.
                      br918d: Passed.
 ============================================================================
 Test results:
-  Total=1853, Passed=1584, Failed=0, Not Implemented=229, Expected Fail=40
+  Total=1856, Passed=1584, Failed=0, Not Implemented=232, Expected Fail=40
