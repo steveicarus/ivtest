@@ -2259,11 +2259,6 @@ vlog95:sv_class8	CE,-g2009	ivltests
 vlog95:sv_class9	CE,-g2009	ivltests  # Also dynamic array
 vlog95:sv_class10	CE,-g2009	ivltests
 
-# SystemVerilog packages are not supported.
-vlog95:parpkg_test	CE,-g2009	ivltests
-vlog95:parpkg_test2	CE,-g2009	ivltests
-vlog95:parpkg_test3	CE,-g2009	ivltests
-
 # No support for SystemVerilog zero argument functions.
 vlog95:vhdl_test5	CE,-g2009,ivltests/vhdl_test5.vhd	ivltests
 vlog95:vhdl_test6	CE,-g2009,ivltests/vhdl_test6.vhd	ivltests
