@@ -1835,6 +1835,7 @@ test_mos_strength_reduction: Passed.
                   sv_class8: Passed.
                   sv_class9: Passed.
                  sv_class10: Passed.
+                 sv_class11: Passed.
   struct_packed_write_read2: Passed.
                      br917a: Passed.
                      br917b: Passed.
@@ -1872,4 +1873,4 @@ test_mos_strength_reduction: Passed.
             implicit_cast13: Passed.
 ============================================================================
 Test results:
-  Total=1870, Passed=1867, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1871, Passed=1868, Failed=3, Not Implemented=0, Expected Fail=0
