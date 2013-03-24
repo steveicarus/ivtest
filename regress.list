@@ -1668,6 +1668,19 @@ v0.9:sv_class10	NI
 v0.9:parpkg_test	NI
 v0.9:parpkg_test2	NI
 v0.9:parpkg_test3	NI
+v0.9:implicit_cast1	NI
+v0.9:implicit_cast2	NI
+v0.9:implicit_cast3	NI
+v0.9:implicit_cast4	NI
+v0.9:implicit_cast5	NI
+v0.9:implicit_cast6	NI
+v0.9:implicit_cast7	NI
+v0.9:implicit_cast8	NI
+v0.9:implicit_cast9	NI
+v0.9:implicit_cast10	NI
+v0.9:implicit_cast11	NI
+v0.9:implicit_cast12	NI
+v0.9:implicit_cast13	NI
 v0.9:struct_packed_write_read2	NI
 v0.9:sv_string1	NI
 v0.9:sv_string2	NI
@@ -4486,3 +4499,16 @@ br919	normal	ivltests
 parpkg_test	normal,-g2009	ivltests
 parpkg_test2	normal,-g2009	ivltests
 parpkg_test3	normal,-g2009	ivltests
+implicit_cast1	normal,-g2009	ivltests
+implicit_cast2	normal,-g2009	ivltests
+implicit_cast3	normal,-g2009	ivltests
+implicit_cast4	normal,-g2009	ivltests
+implicit_cast5	normal,-g2009	ivltests
+implicit_cast6	normal,-g2009	ivltests
+implicit_cast7	normal,-g2009	ivltests
+implicit_cast8	normal,-g2009	ivltests
+implicit_cast9	normal,-g2009	ivltests
+implicit_cast10	normal,-g2009	ivltests
+implicit_cast11	normal,-g2009	ivltests
+implicit_cast12	normal,-g2009	ivltests
+implicit_cast13	normal,-g2009	ivltests
