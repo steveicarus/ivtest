@@ -16,18 +16,18 @@ floor(MATH_PI): 3.000000
 round(e): 3.000000
 ceil(-e): -2.000000
 exp(MATH_PI): 23.140693
-log2(MATH_PI): 4.536886
-log_base(pow(2,32),2): 40.215917
+log2(MATH_PI): 1.651496
+log_base(pow(2,32),2): 32.000000
 ln(0.1): -2.302585
-cbrt(7): 3.725878
+cbrt(7): 1.912931
 cos(6.2831853071): -1.000000
 sin(-6.2831853071): 0.000000
 sinh(2.7182818284): 7.544137
 cosh(6.2831853071): 267.746761
 arctan_xy(-4,3): 2.498092
-arctan(MATH_PI): 0.610977
-arctan(-MATH_E/2): -0.477284
-arctan(MATH_PI_OVER_2): 0.507114
+arctan(MATH_PI): 1.262627
+arctan(-MATH_E/2): -0.936472
+arctan(MATH_PI_OVER_2): 1.003885
 arctan(1/7) = 0.141897
 arctan(3/79) = 0.037956
 pi/4 ?= 0.785398
