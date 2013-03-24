@@ -4496,6 +4496,7 @@ br918b	normal	ivltests
 br918c	normal	ivltests
 br918d	normal	ivltests
 br919	normal	ivltests
+br1265	normal	ivltests
 parpkg_test	normal,-g2009	ivltests
 parpkg_test2	normal,-g2009	ivltests
 parpkg_test3	normal,-g2009	ivltests
