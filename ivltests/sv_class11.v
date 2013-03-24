@@ -21,6 +21,13 @@ program main;
 	 peek = value_;
       endfunction // peek
 
+      function int is_multiple(int x);
+	 if (value_ % x == 0)
+	   is_multiple = 1;
+	 else
+	   is_multiple = 0;
+      endfunction // is_multiple
+
    endclass : foo_t // foo_t
 
    foo_t obj;
@@ -40,9 +47,19 @@ program main;
 	 $finish;
       end
 
+      if (obj.is_multiple(2) != 0) begin
+	 $display("FAILED -- obj.is_multipe(2) incorrect result. (5/2)");
+	 $finish;
+      end
+
       obj.add(3);
       if (obj.peek() != 8) begin
 	 $display("FAILED -- obj.value_=%0d after add(3).", obj.value_);
+	 $finish;
+      end
+
+      if (obj.is_multiple(2) == 0) begin
+	 $display("FAILED -- obj.is_multipe(2) incorrect result. (8/2)");
 	 $finish;
       end
 
