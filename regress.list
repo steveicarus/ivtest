@@ -4429,6 +4429,9 @@ constfunc3	normal	ivltests
 constfunc4	normal,-gverilog-ams	ivltests
 constfunc5	normal	ivltests
 constfunc6	normal	ivltests
+constfunc7	normal	ivltests
+constfunc8	normal	ivltests
+constfunc9	normal	ivltests
 countdrivers1	normal	ivltests
 countdrivers2	normal	ivltests
 countdrivers3	normal	ivltests

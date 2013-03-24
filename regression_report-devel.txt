@@ -1783,6 +1783,9 @@ test_mos_strength_reduction: Passed.
                  constfunc4: Passed.
                  constfunc5: Passed.
                  constfunc6: Passed.
+                 constfunc7: Passed.
+                 constfunc8: Passed.
+                 constfunc9: Passed.
               countdrivers1: Passed.
               countdrivers2: Passed.
               countdrivers3: Passed.
@@ -1869,4 +1872,4 @@ test_mos_strength_reduction: Passed.
             implicit_cast13: Passed.
 ============================================================================
 Test results:
-  Total=1867, Passed=1864, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1870, Passed=1867, Failed=3, Not Implemented=0, Expected Fail=0
