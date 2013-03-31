@@ -1854,7 +1854,8 @@ test_mos_strength_reduction: Passed.
                      br918c: Passed.
                      br918d: Passed.
                       br919: Passed.
-                     br1265: Passed.
+                      br924: Passed - CE.
+        non-polymorphic-abs: Passed.
                 parpkg_test: Passed.
                parpkg_test2: Passed.
                parpkg_test3: Passed.
@@ -1873,4 +1874,4 @@ test_mos_strength_reduction: Passed.
             implicit_cast13: Passed.
 ============================================================================
 Test results:
-  Total=1871, Passed=1868, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1872, Passed=1869, Failed=3, Not Implemented=0, Expected Fail=0

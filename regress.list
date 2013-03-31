@@ -1926,7 +1926,7 @@ v0.9:pr2877564	CE	ivltests diff=log/pr2877564.log:gold/pr2877564-v0.9.gold
 v0.9:pr1723367	normal,-gno-io-range-error	ivltests diff=log/pr1723367.log:gold/pr1723367-v0.9.gold
 
 # V0.9 allows $abs to be polymorphic
-v0.9:br1265	EF	ivltests
+v0.9:non-polymorphic-abs	EF	ivltests
 
 #==========
 # V0.9 has different T0 values for nets (z vs x). No transitions to x at T0.
@@ -4526,7 +4526,7 @@ br918c	normal	ivltests
 br918d	normal	ivltests
 br919	normal	ivltests
 br924	CE	ivltests
-br1265	normal	ivltests
+non-polymorphic-abs	normal	ivltests
 parpkg_test	normal,-g2009	ivltests
 parpkg_test2	normal,-g2009	ivltests
 parpkg_test3	normal,-g2009	ivltests
