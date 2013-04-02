@@ -70,9 +70,23 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                   sv_class8: Not Implemented.
                   sv_class9: Not Implemented.
                  sv_class10: Not Implemented.
+                 sv_class11: Not Implemented.
                 parpkg_test: Not Implemented.
                parpkg_test2: Not Implemented.
                parpkg_test3: Not Implemented.
+             implicit_cast1: Not Implemented.
+             implicit_cast2: Not Implemented.
+             implicit_cast3: Not Implemented.
+             implicit_cast4: Not Implemented.
+             implicit_cast5: Not Implemented.
+             implicit_cast6: Not Implemented.
+             implicit_cast7: Not Implemented.
+             implicit_cast8: Not Implemented.
+             implicit_cast9: Not Implemented.
+            implicit_cast10: Not Implemented.
+            implicit_cast11: Not Implemented.
+            implicit_cast12: Not Implemented.
+            implicit_cast13: Not Implemented.
   struct_packed_write_read2: Not Implemented.
            sv_timeunit_prec: Not Implemented.
       sv_timeunit_prec_fail: Not Implemented.
@@ -247,6 +261,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                   pr3284821: Passed - expected fail.
                   pr2877564: Passed - CE.
                   pr1723367: Passed.
+        non-polymorphic-abs: Passed - expected fail.
               delayed_sfunc: Passed.
                    specify5: Passed.
                       pr377: Passed.
@@ -292,6 +307,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                       br919: Passed - expected fail.
                       uwire: Passed.
                  uwire_fail: Passed.
+                  pr2848986: Passed - CE.
                   pr3015421: Passed - CE.
                       wreal: Not Implemented.
             parameter_type2: Passed.
@@ -307,6 +323,9 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                  constfunc4: Not Implemented.
                  constfunc5: Not Implemented.
                  constfunc6: Not Implemented.
+                 constfunc7: Not Implemented.
+                 constfunc8: Not Implemented.
+                 constfunc9: Not Implemented.
                   function7: Not Implemented.
                   function8: Not Implemented.
                   function9: Not Implemented.
@@ -1234,7 +1253,7 @@ test_mos_strength_reduction: Passed.
                   pr1735822: Passed.
                   pr1735836: Passed.
                  pr1740476b: Passed.
-                  pr1741212: Passed.
+                  pr1741212: ==> Failed - output does not match gold file.
                   pr1742910: Passed.
                   pr1745005: Passed.
                   pr1746401: Passed.
@@ -1722,7 +1741,6 @@ test_mos_strength_reduction: Passed.
                array_select: Passed.
            pv_undef_sig_sel: Passed.
              array_select_a: Passed.
-                  pr2848986: Passed - CE.
                   pr2859628: Passed.
                   signed_pv: Passed.
                    signed_a: Passed.
@@ -1856,6 +1874,7 @@ test_mos_strength_reduction: Passed.
                      br918b: Passed.
                      br918c: Passed.
                      br918d: Passed.
+                      br924: Passed - CE.
 ============================================================================
 Test results:
-  Total=1856, Passed=1584, Failed=0, Not Implemented=232, Expected Fail=40
+  Total=1875, Passed=1584, Failed=1, Not Implemented=249, Expected Fail=41

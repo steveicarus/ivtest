@@ -1,3 +1,4 @@
+// $abs should take a real argument and return a real result.
 module test();
 
 localparam s = 0;
