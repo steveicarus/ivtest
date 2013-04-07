@@ -332,6 +332,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                      array7: Not Implemented.
                   pr3582052: Not Implemented.
                   pr1877743: Passed - expected fail.
+                  pr1741212: Passed - expected fail.
+           mixed_width_case: Passed - expected fail.
                       case1: Passed.
                       case2: Passed.
                       case4: Passed.
@@ -1253,7 +1255,6 @@ test_mos_strength_reduction: Passed.
                   pr1735822: Passed.
                   pr1735836: Passed.
                  pr1740476b: Passed.
-                  pr1741212: ==> Failed - output does not match gold file.
                   pr1742910: Passed.
                   pr1745005: Passed.
                   pr1746401: Passed.
@@ -1877,4 +1878,4 @@ test_mos_strength_reduction: Passed.
                       br924: Passed - CE.
 ============================================================================
 Test results:
-  Total=1875, Passed=1584, Failed=1, Not Implemented=249, Expected Fail=41
+  Total=1876, Passed=1584, Failed=0, Not Implemented=249, Expected Fail=43

@@ -350,6 +350,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   int_param: Passed.
                      iuint1: Passed.
                       logp2: Passed.
+           mixed_width_case: Passed.
                     packeda: Passed.
                      pr1033: Passed.
                   pr1380261: Passed.
@@ -1873,4 +1874,4 @@ test_mos_strength_reduction: Passed.
                parpkg_test3: Passed.
 ============================================================================
 Test results:
-  Total=1871, Passed=1815, Failed=1, Not Implemented=11, Expected Fail=44
+  Total=1872, Passed=1816, Failed=1, Not Implemented=11, Expected Fail=44

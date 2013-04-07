@@ -1057,6 +1057,7 @@ v0.8:value_range2	NI
 v0.8:value_range3	NI
 v0.8:vams_abs1	NI
 v0.8:vams_abs2	NI
+v0.8:non-polymorphic-abs	NI
 v0.8:wreal	NI
 v0.8:struct1	NI
 v0.8:struct2	NI
@@ -1307,6 +1308,19 @@ v0.8:vhdl_test9		NI
 v0.8:work7		NI
 v0.8:work7b		NI
 v0.8:int_param		NI
+v0.8:implicit_cast1	NI
+v0.8:implicit_cast2	NI
+v0.8:implicit_cast3	NI
+v0.8:implicit_cast4	NI
+v0.8:implicit_cast5	NI
+v0.8:implicit_cast6	NI
+v0.8:implicit_cast7	NI
+v0.8:implicit_cast8	NI
+v0.8:implicit_cast9	NI
+v0.8:implicit_cast10	NI
+v0.8:implicit_cast11	NI
+v0.8:implicit_cast12	NI
+v0.8:implicit_cast13	NI
 
 # v0.8 does not have the vhdl_sys module
 v0.8:ivlh_event	NI
@@ -1320,6 +1334,24 @@ v0.8:pr1403406b	NI
 v0.8:uwire	NI
 v0.8:uwire2	NI
 v0.8:uwire_fail	NI
+
+# V0.8 does not support constant functions
+v0.8:constfunc1		NI
+v0.8:constfunc2		NI
+v0.8:constfunc3		NI
+v0.8:constfunc4		NI
+v0.8:constfunc5		NI
+v0.8:constfunc6		NI
+v0.8:constfunc7		NI
+v0.8:constfunc8		NI
+v0.8:constfunc9		NI
+v0.8:function7		NI
+v0.8:function8		NI
+v0.8:function9		NI
+
+# V0.8 does not support multi-dimensional arrays.
+v0.8:array7		NI
+v0.8:pr3582052		NI
 
 # V0.8 does not support specify block delays.
 v0.8:pr1587669	CO	ivltests
@@ -1546,6 +1578,17 @@ v0.8:pr3306516	NI	ivltests
 v0.8:pr3309391	NI	ivltests
 v0.8:pr3368642	EF	ivltests
 v0.8:pr3441576	NI
+v0.8:pr3527022	NI
+v0.8:pr3527694	NI
+v0.8:pr3534422	NI
+v0.8:pr3534333	NI
+v0.8:pr3539372	NI
+v0.8:pr3563412	EF	ivltests
+v0.8:pr3576165	NI
+v0.8:br916a	NI
+v0.8:br916b	NI
+v0.8:br918d	EF	ivltests
+v0.8:br919	EF	ivltests
 v0.8:shift5	EF	ivltests diff=log/shift5.log:gold/shift5.gold
 v0.8:signed_a	EF	ivltests
 v0.8:signed_equality	EF	ivltests
@@ -1555,6 +1598,15 @@ v0.8:string11	EF	ivltests diff=log/string11.log:gold/string11.gold
 v0.8:undefined_shift	NI
 v0.8:vcd-dup	EF	ivltests diff=work/vcd-dup.vcd:gold/vcd-dup.vcd.gold:2
 v0.8:writemem-error	EF	ivltests diff=log/writemem-error.log:gold/writemem-error.gold
+v0.8:vvp_scalar_value	NI
+v0.8:complex_lidx	NI
+v0.8:specparam1	NI
+v0.8:specparam2	NI
+v0.8:udp_real_delay	NI
+v0.8:struct_packed_write_read2	NI
+v0.8:signed_net_display	NI
+v0.8:undef_lval_select	NI
+v0.8:mixed_width_case	NI
 # Patches for these could be back ported if needed, but since we are not
 # actively supporting V0.8 this has not been done.
 v0.8:block_only_with_var_def	CE	ivltests
@@ -2026,6 +2078,14 @@ v0.9:pr3582052		NI
 # this requires the run-time expression rework that is planned to be added
 # to development.
 v0.9:pr1877743	EF,-gspecify  ivltests
+
+# V0.9 does not have the implicit cast fixes. These fixes could probably
+# be back ported if really needed.
+v0.9:pr1741212	EF	ivltests diff=log/pr1741212.log:gold/pr1741212.gold
+
+# V0.9 does not have the case expression type/width fix. This fix could
+# probably be back ported if really needed.
+v0.9:mixed_width_case	EF	ivltests
 
 #==========
 # V0.9 doesn't support synthesis. Might as well run them as
@@ -2543,6 +2603,7 @@ vlog95:inc_dec_stmt	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:int_param	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:iuint1		normal,-g2009,-pallowsigned=1	ivltests
 vlog95:logp2		normal,-g2009,-pallowsigned=1	ivltests
+vlog95:mixed_width_case	normal,-pallowsigned=1	ivltests
 vlog95:packeda		normal,-g2009,-pallowsigned=1	ivltests
 vlog95:pr1033		normal,-pallowsigned=1	ivltests gold=pr1033.gold
 vlog95:pr1380261	normal,-pallowsigned=1	ivltests
@@ -4543,3 +4604,4 @@ implicit_cast10	normal,-g2009	ivltests
 implicit_cast11	normal,-g2009	ivltests
 implicit_cast12	normal,-g2009	ivltests
 implicit_cast13	normal,-g2009	ivltests
+mixed_width_case	normal	ivltests
