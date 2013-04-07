@@ -1345,6 +1345,10 @@ v0.8:constfunc6		NI
 v0.8:constfunc7		NI
 v0.8:constfunc8		NI
 v0.8:constfunc9		NI
+v0.8:constfunc10	NI
+v0.8:constfunc11	NI
+v0.8:constfunc12	NI
+v0.8:constfunc13	NI
 v0.8:function7		NI
 v0.8:function8		NI
 v0.8:function9		NI
@@ -2064,6 +2068,10 @@ v0.9:constfunc6		NI
 v0.9:constfunc7		NI
 v0.9:constfunc8		NI
 v0.9:constfunc9		NI
+v0.9:constfunc10	NI
+v0.9:constfunc11	NI
+v0.9:constfunc12	NI
+v0.9:constfunc13	NI
 v0.9:function7		NI
 v0.9:function8		NI
 v0.9:function9		NI
@@ -2592,6 +2600,7 @@ vlog95:cast_int		normal,-gverilog-ams,-pallowsigned=1	ivltests
 vlog95:constfunc4	normal,-gverilog-ams,-pallowsigned=1	ivltests
 vlog95:constfunc6	normal,-pallowsigned=1	ivltests
 vlog95:constfunc7	normal,-pallowsigned=1	ivltests
+vlog95:constfunc13	normal,-pallowsigned=1	ivltests
 vlog95:enum_elem_ranges	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:enum_value_expr	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:enum_values	normal,-g2009,-pallowsigned=1	ivltests
@@ -4518,6 +4527,10 @@ constfunc6	normal	ivltests
 constfunc7	normal	ivltests
 constfunc8	normal	ivltests
 constfunc9	normal	ivltests
+constfunc10	normal	ivltests
+constfunc11	normal	ivltests
+constfunc12	normal	ivltests
+constfunc13	normal	ivltests
 countdrivers1	normal	ivltests
 countdrivers2	normal	ivltests
 countdrivers3	normal	ivltests

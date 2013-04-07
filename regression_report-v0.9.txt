@@ -326,6 +326,10 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                  constfunc7: Not Implemented.
                  constfunc8: Not Implemented.
                  constfunc9: Not Implemented.
+                constfunc10: Not Implemented.
+                constfunc11: Not Implemented.
+                constfunc12: Not Implemented.
+                constfunc13: Not Implemented.
                   function7: Not Implemented.
                   function8: Not Implemented.
                   function9: Not Implemented.
@@ -1878,4 +1882,4 @@ test_mos_strength_reduction: Passed.
                       br924: Passed - CE.
 ============================================================================
 Test results:
-  Total=1876, Passed=1584, Failed=0, Not Implemented=249, Expected Fail=43
+  Total=1880, Passed=1584, Failed=0, Not Implemented=253, Expected Fail=43

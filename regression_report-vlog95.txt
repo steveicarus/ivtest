@@ -339,6 +339,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  constfunc4: Passed.
                  constfunc6: Passed.
                  constfunc7: Passed.
+                constfunc13: Passed.
            enum_elem_ranges: Passed.
             enum_value_expr: Passed.
                 enum_values: Passed.
@@ -1841,6 +1842,9 @@ test_mos_strength_reduction: Passed.
                  constfunc5: Passed.
                  constfunc8: Passed.
                  constfunc9: Passed.
+                constfunc10: Passed.
+                constfunc11: Passed.
+                constfunc12: Passed.
               countdrivers1: Passed.
               countdrivers2: Passed.
               countdrivers4: Passed.
@@ -1874,4 +1878,4 @@ test_mos_strength_reduction: Passed.
                parpkg_test3: Passed.
 ============================================================================
 Test results:
-  Total=1872, Passed=1816, Failed=1, Not Implemented=11, Expected Fail=44
+  Total=1876, Passed=1820, Failed=1, Not Implemented=11, Expected Fail=44
