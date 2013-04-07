@@ -1108,6 +1108,7 @@ v0.8:sv_class8	NI
 v0.8:sv_class9	NI
 v0.8:sv_class10	NI
 v0.8:sv_class11	NI
+v0.8:sv_package	NI
 v0.8:parpkg_test	NI
 v0.8:parpkg_test2	NI
 v0.8:parpkg_test3	NI
@@ -1723,6 +1724,7 @@ v0.9:sv_class8	NI
 v0.9:sv_class9	NI
 v0.9:sv_class10	NI
 v0.9:sv_class11	NI
+v0.9:sv_package	NI
 v0.9:parpkg_test	NI
 v0.9:parpkg_test2	NI
 v0.9:parpkg_test3	NI
@@ -2405,6 +2407,7 @@ vlog95:implicit_cast10	NI,-g2009,-pallowsigned=1	ivltests
 vlog95:implicit_cast11	NI,-g2009,-pallowsigned=1	ivltests
 vlog95:implicit_cast13	NI,-g2009,-pallowsigned=1	ivltests
 vlog95:sv_class11	NI,-g2009	ivltests
+vlog95:sv_package	NI,-g2009	ivltests
 # The following demonstrates a compiler bug where `sh uses the integer width
 # While `sd or a plain integer uses the minimum width.
 vlog95:pr3522653	EF	ivltests gold=pr3522653.gold
@@ -4581,6 +4584,7 @@ sv_class8	normal,-g2009	ivltests
 sv_class9	normal,-g2009	ivltests
 sv_class10	normal,-g2009	ivltests
 sv_class11	normal,-g2009	ivltests
+sv_package	mormal,-g2009	ivltests
 struct_packed_write_read2	normal,-g2009	ivltests
 br917a	normal,-g2009	ivltests
 br917b	normal,-g2009	ivltests
