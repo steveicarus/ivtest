@@ -1439,7 +1439,9 @@ test_mos_strength_reduction: Passed.
                  pr2815398b: Passed.
                   pr2818823: Passed.
            sv_timeunit_prec: Passed.
+          sv_timeunit_prec2: Passed.
       sv_timeunit_prec_fail: Passed - CE.
+     sv_timeunit_prec_fail2: Passed - CE.
                   pr2823414: Passed - CE.
                   pr2823711: Passed.
                   pr2824189: Passed.
@@ -1879,4 +1881,4 @@ test_mos_strength_reduction: Passed.
            mixed_width_case: Passed.
 ============================================================================
 Test results:
-  Total=1877, Passed=1874, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1879, Passed=1876, Failed=3, Not Implemented=0, Expected Fail=0

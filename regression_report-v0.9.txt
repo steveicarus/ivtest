@@ -89,7 +89,9 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
             implicit_cast13: Not Implemented.
   struct_packed_write_read2: Not Implemented.
            sv_timeunit_prec: Not Implemented.
+          sv_timeunit_prec2: Not Implemented.
       sv_timeunit_prec_fail: Not Implemented.
+     sv_timeunit_prec_fail2: Not Implemented.
            sys_func_as_task: Not Implemented.
            task_init_assign: Not Implemented.
                test_inc_dec: Not Implemented.
@@ -1882,4 +1884,4 @@ test_mos_strength_reduction: Passed.
                       br924: Passed - CE.
 ============================================================================
 Test results:
-  Total=1880, Passed=1584, Failed=0, Not Implemented=253, Expected Fail=43
+  Total=1882, Passed=1584, Failed=0, Not Implemented=255, Expected Fail=43
