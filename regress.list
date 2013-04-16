@@ -1221,7 +1221,9 @@ v0.8:sshortint_test	NI
 v0.8:sv-2val-nets	NI
 v0.8:sv-constants	NI
 v0.8:sv_timeunit_prec	NI
+v0.8:sv_timeunit_prec2	NI
 v0.8:sv_timeunit_prec_fail	NI
+v0.8:sv_timeunit_prec_fail2	NI
 v0.8:sys_func_as_task	NI
 v0.8:test_dec2to4	NI
 v0.8:test_enumsystem	NI
@@ -1746,7 +1748,9 @@ v0.9:sv_string3	NI
 v0.9:sv_string4	NI
 v0.9:sv_string5	NI
 v0.9:sv_timeunit_prec	NI
+v0.9:sv_timeunit_prec2	NI
 v0.9:sv_timeunit_prec_fail	NI
+v0.9:sv_timeunit_prec_fail2	NI
 v0.9:sys_func_as_task	NI
 v0.9:task_init_assign	NI
 v0.9:task_scope2	NI
@@ -4175,7 +4179,9 @@ pr2815398a_std	normal	ivltests
 pr2815398b	normal	ivltests diff=log/pr2815398b.log:gold/pr2815398b.gold
 pr2818823	normal	ivltests
 sv_timeunit_prec	normal,-g2005-sv  ivltests
+sv_timeunit_prec2	normal,-g2009  ivltests
 sv_timeunit_prec_fail	CE,-g2005-sv  ivltests diff=log/sv_timeunit_prec_fail.log:gold/sv_timeunit_prec_fail.gold
+sv_timeunit_prec_fail2	CE,-g2009  ivltests diff=log/sv_timeunit_prec_fail2.log:gold/sv_timeunit_prec_fail2.gold
 pr2823414	CE	ivltests diff=log/pr2823414.log:gold/pr2823414.gold
 pr2823711	normal	ivltests
 pr2824189	normal	ivltests
