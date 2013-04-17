@@ -29,6 +29,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
              implicit_cast5: Passed - CE.
              implicit_cast6: Passed - CE.
             implicit_cast12: Passed - CE.
+            implicit_cast13: Passed - CE.
                  pr1861212c: Passed - CE.
                  pr1864110a: Passed - CE.
                  pr1864110b: Passed - CE.
@@ -134,6 +135,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   sv_class8: Passed - CE.
                   sv_class9: Passed - CE.
                  sv_class10: Passed - CE.
+                 sv_class11: Passed - CE.
                  vhdl_test5: Passed - CE.
                  vhdl_test6: Passed - CE.
                  vhdl_test7: Passed - CE.
@@ -174,8 +176,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
              implicit_cast8: Not Implemented.
             implicit_cast10: Not Implemented.
             implicit_cast11: Not Implemented.
-            implicit_cast13: Not Implemented.
-                 sv_class11: Not Implemented.
                   pr3522653: Passed - expected fail.
                       br919: Passed.
                     concat3: Passed - expected fail.
@@ -409,6 +409,9 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
             simple_shortint: Passed.
         struct_packed_array: Passed.
        struct_packed_array2: Passed.
+                 sv_package: Passed.
+                sv_package2: Passed.
+                sv_package5: Passed.
              test_dispwided: Passed.
                test_inc_dec: Passed.
             test_enumsystem: Passed.
@@ -1866,6 +1869,8 @@ test_mos_strength_reduction: Passed.
                   pr3576165: Passed.
                   pr3582052: Passed.
                   pr3587570: Passed.
+                sv_package3: Passed.
+                sv_package4: Passed.
   struct_packed_write_read2: Passed.
           undef_lval_select: Passed.
        undef_lval_select_SV: Passed.
@@ -1880,4 +1885,4 @@ test_mos_strength_reduction: Passed.
                parpkg_test3: Passed.
 ============================================================================
 Test results:
-  Total=1878, Passed=1822, Failed=1, Not Implemented=11, Expected Fail=44
+  Total=1883, Passed=1829, Failed=1, Not Implemented=9, Expected Fail=44

@@ -2243,6 +2243,7 @@ vlog95:implicit_cast4		CE,-g2009,-pallowsigned=1	ivltests
 vlog95:implicit_cast5		CE,-g2009,-pallowsigned=1	ivltests
 vlog95:implicit_cast6		CE,-g2009,-pallowsigned=1	ivltests
 vlog95:implicit_cast12		CE,-g2009,-pallowsigned=1	ivltests
+vlog95:implicit_cast13		CE,-g2009,-pallowsigned=1	ivltests
 vlog95:pr1861212c		CE	ivltests
 vlog95:pr1864110a		CE	ivltests
 vlog95:pr1864110b		CE	ivltests
@@ -2366,6 +2367,7 @@ vlog95:sv_class7	CE,-g2009	ivltests
 vlog95:sv_class8	CE,-g2009	ivltests
 vlog95:sv_class9	CE,-g2009	ivltests  # Also dynamic array
 vlog95:sv_class10	CE,-g2009	ivltests
+vlog95:sv_class11	CE,-g2009	ivltests
 
 # No support for SystemVerilog zero argument functions.
 vlog95:vhdl_test5	CE,-g2009,ivltests/vhdl_test5.vhd	ivltests
@@ -2417,13 +2419,6 @@ vlog95:implicit_cast3	NI,-g2009,-pallowsigned=1	ivltests
 vlog95:implicit_cast8	NI,-g2009,-pallowsigned=1	ivltests
 vlog95:implicit_cast10	NI,-g2009,-pallowsigned=1	ivltests
 vlog95:implicit_cast11	NI,-g2009,-pallowsigned=1	ivltests
-vlog95:implicit_cast13	NI,-g2009,-pallowsigned=1	ivltests
-vlog95:sv_class11	NI,-g2009	ivltests
-vlog95:sv_package	NI,-g2009	ivltests
-vlog95:sv_package2	NI,-g2009	ivltests
-vlog95:sv_package3	NI,-g2009	ivltests
-vlog95:sv_package4	NI,-g2009	ivltests
-vlog95:sv_package5	NI,-g2009	ivltests
 # The following demonstrates a compiler bug where `sh uses the integer width
 # While `sd or a plain integer uses the minimum width.
 vlog95:pr3522653	EF	ivltests gold=pr3522653.gold
@@ -2689,6 +2684,9 @@ vlog95:simple_longint	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:simple_shortint	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:struct_packed_array	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:struct_packed_array2	normal,-g2009,-pallowsigned=1	ivltests
+vlog95:sv_package	normal,-g2009,-pallowsigned=1	ivltests
+vlog95:sv_package2	normal,-g2009,-pallowsigned=1	ivltests
+vlog95:sv_package5	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:test_dispwided	normal,-pallowsigned=1	ivltests gold=test_dispwided.gold
 vlog95:test_inc_dec	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:test_enumsystem	normal,-g2009,-pallowsigned=1,ivltests/enumsystem.vhd	ivltests
