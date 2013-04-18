@@ -167,15 +167,15 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   uint_test: Passed - expected fail.
               ulongint_test: Passed - expected fail.
              ushortint_test: Passed - expected fail.
+             implicit_cast1: Passed - expected fail.
+             implicit_cast2: Passed - expected fail.
+             implicit_cast3: Passed - expected fail.
+             implicit_cast8: Passed - expected fail.
+            implicit_cast10: Passed - expected fail.
+            implicit_cast11: Passed - expected fail.
                partselsynth: Passed - TE.
                   pr1723367: Passed - TE.
                   pr2019553: Passed - CE.
-             implicit_cast1: Not Implemented.
-             implicit_cast2: Not Implemented.
-             implicit_cast3: Not Implemented.
-             implicit_cast8: Not Implemented.
-            implicit_cast10: Not Implemented.
-            implicit_cast11: Not Implemented.
                   pr3522653: Passed - expected fail.
                       br919: Passed.
                     concat3: Passed - expected fail.
@@ -1885,4 +1885,4 @@ test_mos_strength_reduction: Passed.
                parpkg_test3: Passed.
 ============================================================================
 Test results:
-  Total=1883, Passed=1829, Failed=1, Not Implemented=9, Expected Fail=44
+  Total=1883, Passed=1829, Failed=1, Not Implemented=3, Expected Fail=50

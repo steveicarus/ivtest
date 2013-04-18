@@ -2405,6 +2405,13 @@ vlog95:ubyte_test	EF,-g2009,-pallowsigned=1	ivltests
 vlog95:uint_test	EF,-g2009,-pallowsigned=1	ivltests
 vlog95:ulongint_test	EF,-g2009,-pallowsigned=1	ivltests
 vlog95:ushortint_test	EF,-g2009,-pallowsigned=1	ivltests
+# These have four state to two state cast problems
+vlog95:implicit_cast1	EF,-g2009,-pallowsigned=1	ivltests
+vlog95:implicit_cast2	EF,-g2009,-pallowsigned=1	ivltests
+vlog95:implicit_cast3	EF,-g2009,-pallowsigned=1	ivltests
+vlog95:implicit_cast8	EF,-g2009,-pallowsigned=1	ivltests
+vlog95:implicit_cast10	EF,-g2009,-pallowsigned=1	ivltests
+vlog95:implicit_cast11	EF,-g2009,-pallowsigned=1	ivltests
 
 # These tests have unresolved failures that still need to be looked at.
 # The following two have problem getting the correct net/expression
@@ -2412,13 +2419,8 @@ vlog95:ushortint_test	EF,-g2009,-pallowsigned=1	ivltests
 vlog95:partselsynth	TE,-S  ivltests
 vlog95:pr1723367	TE,-gno-io-range-error	ivltests gold=pr1723367.gold
 vlog95:pr2019553	CE	ivltests  # Pullup
-# New tests that need to be looked at.
-vlog95:implicit_cast1	NI,-g2009,-pallowsigned=1	ivltests
-vlog95:implicit_cast2	NI,-g2009,-pallowsigned=1	ivltests
-vlog95:implicit_cast3	NI,-g2009,-pallowsigned=1	ivltests
-vlog95:implicit_cast8	NI,-g2009,-pallowsigned=1	ivltests
-vlog95:implicit_cast10	NI,-g2009,-pallowsigned=1	ivltests
-vlog95:implicit_cast11	NI,-g2009,-pallowsigned=1	ivltests
+# New tests that need to be looked at go here.
+
 # The following demonstrates a compiler bug where `sh uses the integer width
 # While `sd or a plain integer uses the minimum width.
 vlog95:pr3522653	EF	ivltests gold=pr3522653.gold
