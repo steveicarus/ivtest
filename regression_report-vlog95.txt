@@ -175,7 +175,9 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
             implicit_cast11: Passed - expected fail.
                partselsynth: Passed - TE.
                   pr1723367: Passed - TE.
-                  pr2019553: Passed - CE.
+        generate_multi_loop: Not Implemented.
+                  pr3194155: Not Implemented.
+                  pr3452808: Not Implemented.
                   pr3522653: Passed - expected fail.
                       br919: Passed.
                     concat3: Passed - expected fail.
@@ -223,7 +225,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
               generate_case: Passed - CE.
              generate_case2: Passed - CE.
              generate_case3: Passed - CE.
-        generate_multi_loop: Not Implemented.
                    packeda2: Passed - CE.
                  pr1565699b: Passed - CE.
                   pr1623097: Passed - CE.
@@ -286,11 +287,9 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   pr1444055: Passed - CE.
                   pr1478121: Passed - CE.
                   pr2219441: Passed - CE.
-                  pr3194155: Not Implemented.
                  pr3296466a: Passed - CE.
                  pr3296466b: Passed - CE.
                  pr3296466d: Passed - CE.
-                  pr3452808: Not Implemented.
                        tri2: Passed - CE.
                   basicexpr: Passed - TE.
                      shiftl: Passed - TE.
@@ -1462,6 +1461,7 @@ test_mos_strength_reduction: Passed.
                   pr2015466: Passed.
                  pr2018235b: Passed.
                   pr2018305: Passed.
+                  pr2019553: Passed.
                      macsub: Passed.
                   pr2036953: Passed.
                   pr2038048: Passed.

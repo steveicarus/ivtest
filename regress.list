@@ -2418,12 +2418,18 @@ vlog95:implicit_cast11	EF,-g2009,-pallowsigned=1	ivltests
 # information from the nexus. pr1723367 is the real torture test.
 vlog95:partselsynth	TE,-S  ivltests
 vlog95:pr1723367	TE,-gno-io-range-error	ivltests gold=pr1723367.gold
-vlog95:pr2019553	CE	ivltests  # Pullup
-# New tests that need to be looked at go here.
-
+# There is a separate driver for each bit of byte_value.
+vlog95:generate_multi_loop	NI	ivltests  # Assert
+# There are multiple drivers on the nexus. A local pulldown and the actual
+# input driver.
+vlog95:pr3194155	NI	ivltests  # Asserts
+# This is caused because the two port are cross coupled. This creates a
+# recursive call that never ends and blows over the stack limit.
+vlog95:pr3452808	NI	ivltests  # Seg. faults
 # The following demonstrates a compiler bug where `sh uses the integer width
 # While `sd or a plain integer uses the minimum width.
 vlog95:pr3522653	EF	ivltests gold=pr3522653.gold
+# New tests that need to be looked at go here.
 
 # $signed() and $unsigned() are not currently generated. Some of these pass!
 vlog95:br919		normal,-pallowsigned=1	ivltests
@@ -2476,7 +2482,6 @@ vlog95:genloop		CE	ivltests
 vlog95:generate_case	CE	ivltests
 vlog95:generate_case2	CE	ivltests
 vlog95:generate_case3	CE	ivltests
-vlog95:generate_multi_loop	NI  # Assert
 vlog95:packeda2		CE,-g2009,-pallowsigned=1	ivltests
 vlog95:pr1565699b	CE	ivltests
 vlog95:pr1623097	CE	ivltests
@@ -2545,13 +2550,9 @@ vlog95:inout4		CE	ivltests
 vlog95:pr1444055	CE	ivltests
 vlog95:pr1478121	CE	ivltests
 vlog95:pr2219441	CE	ivltests
-vlog95:pr3194155	NI  # Asserts
 vlog95:pr3296466a	CE	ivltests
 vlog95:pr3296466b	CE	ivltests  # Also some nexus problems.
 vlog95:pr3296466d	CE	ivltests
-# This is caused because the two port are cross coupled. This creates a
-# recursive call that never ends and blows over the stack limit.
-vlog95:pr3452808	NI  # Seg. faults
 vlog95:tri2		CE	ivltests
 
 # The Icarus compiler does not support arrayed UDP instance. These are
