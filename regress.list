@@ -1108,6 +1108,9 @@ v0.8:sv_class8	NI
 v0.8:sv_class9	NI
 v0.8:sv_class10	NI
 v0.8:sv_class11	NI
+v0.8:sv_class12	NI
+v0.8:sv_class13	NI
+v0.8:sv_class14	NI
 v0.8:sv_package	NI
 v0.8:sv_package2	NI
 v0.8:sv_package3	NI
@@ -1732,6 +1735,9 @@ v0.9:sv_class8	NI
 v0.9:sv_class9	NI
 v0.9:sv_class10	NI
 v0.9:sv_class11	NI
+v0.9:sv_class12	NI
+v0.9:sv_class13	NI
+v0.9:sv_class14	NI
 v0.9:sv_package	NI
 v0.9:sv_package2	NI
 v0.9:sv_package3	NI
@@ -2372,6 +2378,9 @@ vlog95:sv_class8	CE,-g2009	ivltests
 vlog95:sv_class9	CE,-g2009	ivltests  # Also dynamic array
 vlog95:sv_class10	CE,-g2009	ivltests
 vlog95:sv_class11	CE,-g2009	ivltests
+vlog95:sv_class12	CE,-g2009	ivltests
+vlog95:sv_class13	CE,-g2009	ivltests
+vlog95:sv_class14	CE,-g2009	ivltests
 
 # No support for SystemVerilog zero argument functions.
 vlog95:vhdl_test5	CE,-g2009,ivltests/vhdl_test5.vhd	ivltests
@@ -4610,6 +4619,9 @@ sv_class8	normal,-g2009	ivltests
 sv_class9	normal,-g2009	ivltests
 sv_class10	normal,-g2009	ivltests
 sv_class11	normal,-g2009	ivltests
+sv_class12	normal,-g2009	ivltests
+sv_class13	normal,-g2009	ivltests
+sv_class14	normal,-g2009	ivltests
 sv_package	mormal,-g2009	ivltests
 sv_package2	mormal,-g2009	ivltests
 sv_package3	mormal,-g2009	ivltests
