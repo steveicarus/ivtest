@@ -1889,6 +1889,10 @@ test_mos_strength_reduction: Passed.
             implicit_cast12: Passed.
             implicit_cast13: Passed.
            mixed_width_case: Passed.
+                named_begin: Passed.
+                 named_fork: Passed.
+           named_begin_fail: Passed - CE.
+            named_fork_fail: Passed - CE.
 ============================================================================
 Test results:
-  Total=1889, Passed=1886, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1893, Passed=1890, Failed=3, Not Implemented=0, Expected Fail=0

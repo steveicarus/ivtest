@@ -1631,6 +1631,10 @@ v0.8:pr3437290c	EF		ivltests
 
 v0.8:struct_packed_sysfunct	NI
 v0.8:sv_end_labels_bad		NI
+v0.8:named_begin	NI
+v0.8:named_fork		NI
+v0.8:named_begin_fail	NI
+v0.8:named_fork_fail	NI
 
 #==========
 # Things not supported by V0.9.
@@ -1666,6 +1670,10 @@ v0.9:inc_dec_stmt	NI
 v0.9:ishortint_test	NI
 v0.9:iuint1		NI
 v0.9:logp2	NI
+v0.9:named_begin	NI
+v0.9:named_fork		NI
+v0.9:named_begin_fail	NI
+v0.9:named_fork_fail	NI
 v0.9:packeda		NI
 v0.9:packeda2		NI
 v0.9:plus_5		NI
@@ -4664,3 +4672,7 @@ implicit_cast11	normal,-g2009	ivltests
 implicit_cast12	normal,-g2009	ivltests
 implicit_cast13	normal,-g2009	ivltests
 mixed_width_case	normal	ivltests
+named_begin	normal	ivltests
+named_fork	normal	ivltests
+named_begin_fail	CE	ivltests
+named_fork_fail	CE	ivltests

@@ -1888,6 +1888,10 @@ test_mos_strength_reduction: Passed.
                 parpkg_test: Passed.
                parpkg_test2: Passed.
                parpkg_test3: Passed.
+                named_begin: Passed.
+                 named_fork: Passed.
+           named_begin_fail: Passed - CE.
+            named_fork_fail: Passed - CE.
 ============================================================================
 Test results:
-  Total=1888, Passed=1834, Failed=1, Not Implemented=3, Expected Fail=50
+  Total=1892, Passed=1838, Failed=1, Not Implemented=3, Expected Fail=50

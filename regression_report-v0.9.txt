@@ -24,6 +24,10 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
              ishortint_test: Not Implemented.
                      iuint1: Not Implemented.
                       logp2: Not Implemented.
+                named_begin: Not Implemented.
+                 named_fork: Not Implemented.
+           named_begin_fail: Not Implemented.
+            named_fork_fail: Not Implemented.
                      plus_5: Not Implemented.
                   pr3366114: Not Implemented.
                  pr3366217a: Not Implemented.
@@ -1894,4 +1898,4 @@ test_mos_strength_reduction: Passed.
                       br924: Passed - CE.
 ============================================================================
 Test results:
-  Total=1892, Passed=1584, Failed=0, Not Implemented=265, Expected Fail=43
+  Total=1896, Passed=1584, Failed=0, Not Implemented=269, Expected Fail=43
