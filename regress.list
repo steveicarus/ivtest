@@ -1630,7 +1630,10 @@ v0.8:pr3437290a	EF		ivltests
 v0.8:pr3437290c	EF		ivltests
 
 v0.8:struct_packed_sysfunct	NI
-v0.8:sv_end_labels_bad		NI
+v0.8:sv_end_label	NI
+v0.8:sv_end_label_fail	NI
+v0.8:sv_end_labels	NI
+v0.8:sv_end_labels_bad	NI
 v0.8:named_begin	NI
 v0.8:named_fork		NI
 v0.8:named_begin_fail	NI
@@ -1916,7 +1919,10 @@ v0.9:br917c	NI
 v0.9:br917d	NI
 v0.9:array_string	NI
 v0.9:struct_packed_sysfunct	NI
-v0.9:sv_end_labels_bad		NI
+v0.9:sv_end_label	NI
+v0.9:sv_end_label_fail	NI
+v0.9:sv_end_labels	NI
+v0.9:sv_end_labels_bad	NI
 
 # v0.9 does not have the vhdl_sys module
 v0.9:ivlh_event	NI
@@ -2389,6 +2395,7 @@ vlog95:sv_class11	CE,-g2009	ivltests
 vlog95:sv_class12	CE,-g2009	ivltests
 vlog95:sv_class13	CE,-g2009	ivltests
 vlog95:sv_class14	CE,-g2009	ivltests
+vlog95:sv_end_label	CE,-g2009	ivltests  # Also generate
 
 # No support for SystemVerilog zero argument functions.
 vlog95:vhdl_test5	CE,-g2009,ivltests/vhdl_test5.vhd	ivltests
@@ -4541,7 +4548,6 @@ inc_dec_stmt	normal,-g2009	ivltests
 task_init_assign	normal,-g2009	ivltests
 pr3515542	CE,-g2005-sv	ivltests diff=log/pr3515542.log:gold/pr3515542.gold
 struct_packed_sysfunct		normal,-g2009   ivltests
-sv_end_labels_bad		CE,-g2009   ivltests  # should fail
 complex_lidx	normal	ivltests
 pr3522653	normal	ivltests diff=log/pr3522653.log:gold/pr3522653.gold
 attrib	normal	ivltests
@@ -4672,7 +4678,11 @@ implicit_cast11	normal,-g2009	ivltests
 implicit_cast12	normal,-g2009	ivltests
 implicit_cast13	normal,-g2009	ivltests
 mixed_width_case	normal	ivltests
-named_begin	normal	ivltests
-named_fork	normal	ivltests
-named_begin_fail	CE	ivltests
-named_fork_fail	CE	ivltests
+named_begin	normal,-g2009	ivltests
+named_fork	normal,-g2009	ivltests
+named_begin_fail	CE,-g2009	ivltests
+named_fork_fail	CE,-g2009	ivltests
+sv_end_labels	normal,-g2009	ivltests
+sv_end_labels_bad	CE,-g2009	ivltests diff=log/sv_end_labels_bad.log:gold/sv_end_labels_bad.gold
+sv_end_label	normal,-g2009	ivltests
+sv_end_label_fail	CE,-g2009	ivltests diff=log/sv_end_label_fail.log:gold/sv_end_label_fail.gold

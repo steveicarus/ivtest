@@ -1758,7 +1758,6 @@ test_mos_strength_reduction: Passed.
            task_init_assign: Passed.
                   pr3515542: Passed - CE.
      struct_packed_sysfunct: Passed.
-          sv_end_labels_bad: Passed - CE.
                complex_lidx: Passed.
                   pr3522653: Passed.
                      attrib: Passed.
@@ -1893,6 +1892,10 @@ test_mos_strength_reduction: Passed.
                  named_fork: Passed.
            named_begin_fail: Passed - CE.
             named_fork_fail: Passed - CE.
+              sv_end_labels: Passed.
+          sv_end_labels_bad: Passed - CE.
+               sv_end_label: Passed.
+          sv_end_label_fail: Passed - CE.
 ============================================================================
 Test results:
-  Total=1893, Passed=1890, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1896, Passed=1893, Failed=3, Not Implemented=0, Expected Fail=0

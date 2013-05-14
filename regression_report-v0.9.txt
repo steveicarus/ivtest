@@ -231,6 +231,9 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                      br917d: Not Implemented.
                array_string: Not Implemented.
      struct_packed_sysfunct: Not Implemented.
+               sv_end_label: Not Implemented.
+          sv_end_label_fail: Not Implemented.
+              sv_end_labels: Not Implemented.
           sv_end_labels_bad: Not Implemented.
                  ivlh_event: Not Implemented.
               cmdline_parm1: Not Implemented.
@@ -1898,4 +1901,4 @@ test_mos_strength_reduction: Passed.
                       br924: Passed - CE.
 ============================================================================
 Test results:
-  Total=1896, Passed=1584, Failed=0, Not Implemented=269, Expected Fail=43
+  Total=1899, Passed=1584, Failed=0, Not Implemented=272, Expected Fail=43
