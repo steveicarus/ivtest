@@ -16,6 +16,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                 fatal_et_al: Not Implemented.
                    fileline: Not Implemented.
                   fileline2: Not Implemented.
+                      final: Not Implemented.
+                     final2: Not Implemented.
              first_last_num: Not Implemented.
                   ibit_test: Not Implemented.
                  ibyte_test: Not Implemented.
@@ -190,7 +192,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                   test_gxor: Not Implemented.
                test_varray1: Not Implemented.
              test_when_else: Not Implemented.
-                      final: Not Implemented.
                   size_cast: Not Implemented.
                     struct1: Not Implemented.
                     struct2: Not Implemented.
@@ -1901,4 +1902,4 @@ test_mos_strength_reduction: Passed.
                       br924: Passed - CE.
 ============================================================================
 Test results:
-  Total=1899, Passed=1584, Failed=0, Not Implemented=272, Expected Fail=43
+  Total=1900, Passed=1584, Failed=0, Not Implemented=273, Expected Fail=43

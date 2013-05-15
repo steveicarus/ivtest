@@ -108,6 +108,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
          signed_net_display: Passed - CE.
                     concat4: Passed - expected fail.
                       final: Passed - CE.
+                     final2: Passed - CE.
               program_hello: Passed - CE.
                    program2: Passed - CE.
                    program3: Passed - CE.
@@ -1897,4 +1898,4 @@ test_mos_strength_reduction: Passed.
           sv_end_label_fail: Passed - CE.
 ============================================================================
 Test results:
-  Total=1895, Passed=1841, Failed=1, Not Implemented=3, Expected Fail=50
+  Total=1896, Passed=1842, Failed=1, Not Implemented=3, Expected Fail=50
