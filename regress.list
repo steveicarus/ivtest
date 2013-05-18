@@ -1630,6 +1630,18 @@ v0.8:block_only_with_var_def	CE	ivltests
 v0.8:pr3437290a	EF		ivltests
 v0.8:pr3437290c	EF		ivltests
 
+# V0.8 does not have the assignment LHS out-of-range/undefined word index
+# fixes. I have not looked at the feasibility of back-porting these fixes.
+# In any case, the tests use other features that aren't supported in V0.8.
+v0.8:array_lval_select1		NI	ivltests
+v0.8:array_lval_select2		NI	ivltests
+v0.8:array_lval_select3a	NI	ivltests
+v0.8:array_lval_select3a-	NI	ivltests
+v0.8:array_lval_select3b	NI	ivltests
+v0.8:array_lval_select4a	NI	ivltests
+v0.8:array_lval_select4b	NI	ivltests
+v0.8:array_lval_select5		NI	ivltests
+
 v0.8:struct_packed_sysfunct	NI
 v0.8:sv_end_label	NI
 v0.8:sv_end_label_fail	NI
@@ -2134,6 +2146,17 @@ v0.9:pr1741212	EF	ivltests diff=log/pr1741212.log:gold/pr1741212.gold
 # probably be back ported if really needed.
 v0.9:mixed_width_case	EF	ivltests
 
+# V0.9 does not have the assignment LHS out-of-range/undefined word index
+# fixes. These fixes could probably be back ported if really needed.
+v0.9:array_lval_select1		NI	ivltests
+v0.9:array_lval_select2		NI	ivltests
+v0.9:array_lval_select3a	NI	ivltests
+v0.9:array_lval_select3a-	NI	ivltests
+v0.9:array_lval_select3b	NI	ivltests
+v0.9:array_lval_select4a	NI	ivltests
+v0.9:array_lval_select4b	NI	ivltests
+v0.9:array_lval_select5		NI	ivltests
+
 #==========
 # V0.9 doesn't support synthesis. Might as well run them as
 # non-synthesis tests, though.
@@ -2257,6 +2280,9 @@ vlog95:recursive_func		CE	ivltests
 vlog95:recursive_task		CE	ivltests
 
 # Verilog 95 does not support real nets.
+vlog95:array_lval_select4a	CE	ivltests  # Also net arrays
+vlog95:array_lval_select4b	CE	ivltests  # Also net arrays
+vlog95:array_lval_select5	CE	ivltests  # Also net arrays
 vlog95:ca_64delay		CE	ivltests  # Also net arrays
 vlog95:ca_time			CE	ivltests
 vlog95:ca_var_delay		CE	ivltests
@@ -2319,6 +2345,11 @@ vlog95:pr2029336		CE	ivltests
 vlog95:urand			CE	ivltests
 
 # IEEE 1364-1995 only supports register arrays.
+vlog95:array_lval_select1	normal,-DVLOG95	ivltests
+vlog95:array_lval_select2	normal,-DVLOG95	ivltests
+vlog95:array_lval_select3a	TE,-DVLOG95	ivltests
+vlog95:array_lval_select3a-	normal,-DVLOG95	ivltests
+vlog95:array_lval_select3b	CE,-DVLOG95	ivltests
 vlog95:array_select		CE,-pallowsigned=1	ivltests
 vlog95:array_select_a		CE	ivltests
 vlog95:array_word_width2	CE	ivltests
@@ -4689,3 +4720,11 @@ sv_end_labels	normal,-g2009	ivltests
 sv_end_labels_bad	CE,-g2009	ivltests diff=log/sv_end_labels_bad.log:gold/sv_end_labels_bad.gold
 sv_end_label	normal,-g2009	ivltests
 sv_end_label_fail	CE,-g2009	ivltests diff=log/sv_end_label_fail.log:gold/sv_end_label_fail.gold
+array_lval_select1	normal	ivltests
+array_lval_select2	normal	ivltests
+array_lval_select3a	CE	ivltests
+array_lval_select3a-	normal	ivltests
+array_lval_select3b	CE	ivltests
+array_lval_select4a	normal	ivltests
+array_lval_select4b	CE	ivltests
+array_lval_select5	normal	ivltests

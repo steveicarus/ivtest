@@ -18,6 +18,9 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   pr2929913: Passed - CE.
              recursive_func: Passed - CE.
              recursive_task: Passed - CE.
+        array_lval_select4a: Passed - CE.
+        array_lval_select4b: Passed - CE.
+         array_lval_select5: Passed - CE.
                  ca_64delay: Passed - CE.
                     ca_time: Passed - CE.
                ca_var_delay: Passed - CE.
@@ -72,6 +75,11 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   pr2673846: Passed - CE.
                   pr2029336: Passed - CE.
                       urand: Passed - CE.
+         array_lval_select1: Passed.
+         array_lval_select2: Passed.
+        array_lval_select3a: Passed - TE.
+       array_lval_select3a-: Passed.
+        array_lval_select3b: Passed - CE.
                array_select: Passed - CE.
              array_select_a: Passed - CE.
           array_word_width2: Passed - CE.
@@ -1898,4 +1906,4 @@ test_mos_strength_reduction: Passed.
           sv_end_label_fail: Passed - CE.
 ============================================================================
 Test results:
-  Total=1896, Passed=1842, Failed=1, Not Implemented=3, Expected Fail=50
+  Total=1904, Passed=1850, Failed=1, Not Implemented=3, Expected Fail=50
