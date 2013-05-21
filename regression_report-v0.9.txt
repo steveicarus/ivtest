@@ -366,6 +366,14 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
         array_lval_select4a: Not Implemented.
         array_lval_select4b: Not Implemented.
          array_lval_select5: Not Implemented.
+         undef_lval_select2: Not Implemented.
+        undef_lval_select3a: Not Implemented.
+        undef_lval_select3b: Not Implemented.
+        undef_lval_select3c: Not Implemented.
+        undef_lval_select4a: Not Implemented.
+        undef_lval_select4b: Not Implemented.
+        undef_lval_select4c: Not Implemented.
+         undef_lval_select5: Not Implemented.
                       case1: Passed.
                       case2: Passed.
                       case4: Passed.
@@ -1911,4 +1919,4 @@ test_mos_strength_reduction: Passed.
                       br930: Passed - CO.
 ============================================================================
 Test results:
-  Total=1909, Passed=1585, Failed=0, Not Implemented=281, Expected Fail=43
+  Total=1917, Passed=1585, Failed=0, Not Implemented=289, Expected Fail=43

@@ -1887,6 +1887,14 @@ test_mos_strength_reduction: Passed.
                 sv_package4: Passed.
   struct_packed_write_read2: Passed.
           undef_lval_select: Passed.
+         undef_lval_select2: Passed.
+        undef_lval_select3a: Passed.
+        undef_lval_select3b: Passed - CE.
+        undef_lval_select3c: Passed - CE.
+        undef_lval_select4a: Passed.
+        undef_lval_select4b: Passed - CE.
+        undef_lval_select4c: Passed - CE.
+         undef_lval_select5: Passed.
        undef_lval_select_SV: Passed.
            vvp_scalar_value: Passed.
                      br918a: Passed.
@@ -1907,4 +1915,4 @@ test_mos_strength_reduction: Passed.
                       br930: Passed - CO.
 ============================================================================
 Test results:
-  Total=1905, Passed=1851, Failed=1, Not Implemented=3, Expected Fail=50
+  Total=1913, Passed=1859, Failed=1, Not Implemented=3, Expected Fail=50

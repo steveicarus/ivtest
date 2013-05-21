@@ -1861,6 +1861,14 @@ test_mos_strength_reduction: Passed.
             negative_genvar: Passed.
          signed_net_display: Passed.
           undef_lval_select: Passed.
+         undef_lval_select2: Passed.
+        undef_lval_select3a: Passed.
+        undef_lval_select3b: Passed - CE.
+        undef_lval_select3c: Passed - CE.
+        undef_lval_select4a: Passed.
+        undef_lval_select4b: Passed - CE.
+        undef_lval_select4c: Passed - CE.
+         undef_lval_select5: Passed.
        undef_lval_select_SV: Passed.
            vvp_scalar_value: Passed.
                      br916a: Passed.
@@ -1908,4 +1916,4 @@ test_mos_strength_reduction: Passed.
                       br930: Passed - CO.
 ============================================================================
 Test results:
-  Total=1906, Passed=1903, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1914, Passed=1911, Failed=3, Not Implemented=0, Expected Fail=0
