@@ -4754,3 +4754,5 @@ array_lval_select4a	normal	ivltests
 array_lval_select4b	CE	ivltests
 array_lval_select5	normal	ivltests
 br930	CO	ivltests
+br931	normal	ivltests
+

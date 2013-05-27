@@ -1913,6 +1913,7 @@ test_mos_strength_reduction: Passed.
           sv_end_labels_bad: Passed - CE.
           sv_end_label_fail: Passed - CE.
                       br930: Passed - CO.
+                      br931: Passed.
 ============================================================================
 Test results:
-  Total=1913, Passed=1859, Failed=1, Not Implemented=3, Expected Fail=50
+  Total=1914, Passed=1860, Failed=1, Not Implemented=3, Expected Fail=50
