@@ -10,7 +10,6 @@ ERROR: vlog95.v:40: $readmemb: Finish address 8 is out of bounds for memory 'top
 ERROR: vlog95.v:42: $readmemb: Finish address 16 is out of bounds for memory 'top.array2[8:15]'!
 WARNING: vlog95.v:45: $readmemb(ivltests/readmemb.txt): Too many words in the file for the requested range [0:6].
 WARNING: vlog95.v:48: $readmemb(ivltests/readmemb.txt): Not enough words in the file for the requested range [-1:7].
-Failed: for index -1 of readmemb 9, expected 1, got 1
 ERROR: vlog95.v:51: $readmemb(ivltests/readmem-error.txt): Invalid input character: u
 WARNING: vlog95.v:53: $readmemh's file name argument (vpiReg) is not a valid string.
 WARNING: vlog95.v:54: $readmemh's file name argument (vpiIntegerVar) is not a valid string.
@@ -24,5 +23,4 @@ ERROR: vlog95.v:73: $readmemh: Finish address 8 is out of bounds for memory 'top
 ERROR: vlog95.v:75: $readmemh: Finish address 16 is out of bounds for memory 'top.array2[8:15]'!
 WARNING: vlog95.v:78: $readmemh(ivltests/readmemh.txt): Too many words in the file for the requested range [0:6].
 WARNING: vlog95.v:81: $readmemh(ivltests/readmemh.txt): Not enough words in the file for the requested range [-1:7].
-Failed: for index -1 of readmemh 9, expected 1, got 1
 ERROR: vlog95.v:84: $readmemh(ivltests/readmem-error.txt): Invalid input character: u

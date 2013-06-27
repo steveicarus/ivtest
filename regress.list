@@ -2513,43 +2513,72 @@ vlog95:pr3452808	NI	ivltests  # Seg. faults
 # The following demonstrates a compiler bug where `sh uses the integer width
 # While `sd or a plain integer uses the minimum width.
 vlog95:pr3522653	EF	ivltests gold=pr3522653.gold
+# Translating selects of a non-zero based vector/array cast the base select
+# expression to $signed(). The normalization is already removed, but the code
+# cannot currently determine if the $signed() is from the normalization or
+# from the original code. Some of these run correctly with the extra $signed()
+# operators, but others need to have them removed to run correctly.
+vlog95:assign_nb2	CE	ivltests
+vlog95:bitsel		CE	ivltests # diff=log/bitsel.log:gold/bitsel.gold
+vlog95:bitsel3		CE	ivltests
+vlog95:bitsel5		CE	ivltests
+vlog95:pr2202846b	CE	ivltests
+# Translating selects with the LSB > MSB are also normalized and the code
+# cannot determine if the $signed() should be removed or not.
+vlog95:bitsel2		CE	ivltests
+vlog95:pr751		CE,-Wsensitivity-entire-vector  ivltests # diff=log/pr751.log:gold/pr751.gold
+# Translating a parameter select is always normalized, but we do not have
+# the real MSB/LSB information so cannot warn that a LSB > MSB parameter
+# must use -pallowsigned=1. For now mark this as a CE.
+vlog95:pr487		CE	ivltests # diff=log/pr487.log:gold/pr487.gold
 # New tests that need to be looked at go here.
 
-# $signed() and $unsigned() are not currently generated. Some of these pass!
+# $signed() and $unsigned() are not currently fully supported.
 vlog95:br919		normal,-pallowsigned=1	ivltests
-vlog95:concat3		EF,-pallowsigned=1	ivltests
-vlog95:mult2		EF,-pallowsigned=1	ivltests
-vlog95:pr757		EF,-pallowsigned=1	ivltests
+vlog95:concat3		normal,-pallowsigned=1	ivltests
+vlog95:mult2		normal,-pallowsigned=1	ivltests
+vlog95:pr757		normal,-pallowsigned=1	ivltests
 vlog95:pr1002		EF,-pallowsigned=1	ivltests gold=pr1002.gold
 vlog95:pr1002a		normal,-pallowsigned=1	ivltests gold=pr1002a.gold
 vlog95:pr1522570	EF,-pallowsigned=1	ivltests  # problems with >>>
-vlog95:pr1698499	EF,-pallowsigned=1	ivltests gold=pr1698499.gold
+vlog95:pr1698499	normal,-pallowsigned=1	ivltests gold=pr1698499.gold
 vlog95:pr1793749	EF,-pallowsigned=1	ivltests gold=pr1793749.gold
-vlog95:pr1793749b	EF,-pallowsigned=1	ivltests gold=pr1793749b.gold
+vlog95:pr1793749b	normal,-pallowsigned=1	ivltests gold=pr1793749b.gold
+vlog95:pr1795005a	normal,-pallowsigned=1	ivltests diff=log/pr1795005a.log:gold/pr1795005a.gold
+vlog95:pr1795005b	normal,-pallowsigned=1	ivltests diff=log/pr1795005b.log:gold/pr1795005b.gold
 vlog95:pr1823732	EF,-pallowsigned=1	ivltests
-vlog95:pr1841300	EF,-pallowsigned=1	ivltests gold=pr1841300.gold
+vlog95:pr1841300	normal,-pallowsigned=1	ivltests gold=pr1841300.gold
 vlog95:pr1845683	normal,-pallowsigned=1	ivltests gold=pr1845683.gold
-vlog95:pr1960619	EF,-pallowsigned=1	ivltests gold=pr1960619.gold
-vlog95:pr1963240	EF,-pallowsigned=1	ivltests gold=pr1963240.gold
+vlog95:pr1960558	normal,-pallowsigned=1	ivltests diff=log/pr1960558.log:gold/pr1960558.gold
+vlog95:pr1960619	normal,-pallowsigned=1	ivltests gold=pr1960619.gold
+vlog95:pr1963240	normal,-pallowsigned=1	ivltests gold=pr1963240.gold
 vlog95:pr1990164	EF,-pallowsigned=1	ivltests  # Needs $unsigned
-vlog95:pr2136787	EF,-pallowsigned=1	ivltests gold=pr2136787.gold
+vlog95:pr2136787	normal,-pallowsigned=1	ivltests gold=pr2136787.gold
 vlog95:pr2138979	EF,-pallowsigned=1	ivltests
 vlog95:pr2138979b	EF,-pallowsigned=1	ivltests gold=pr2138979b.gold
 vlog95:pr2138979c	EF,-pallowsigned=1	ivltests gold=pr2138979c.gold
 vlog95:pr2138979d	EF,-pallowsigned=1	ivltests gold=pr2138979d.gold
 vlog95:pr2159630	EF,-pallowsigned=1	ivltests gold=pr2159630.gold
-vlog95:pr2722339a	normal,-pallowsigned=1	ivltests
-vlog95:pr2722339b	normal,-pallowsigned=1	ivltests
+vlog95:pr2722339a	EF,-pallowsigned=1	ivltests
+vlog95:pr2722339b	EF,-pallowsigned=1	ivltests
 vlog95:pr2901556	EF,-pallowsigned=1	ivltests
 vlog95:pr2913404	normal,-pallowsigned=1	ivltests
 vlog95:pr2922063	EF,-pallowsigned=1	ivltests
 vlog95:pr2922063a	EF,-pallowsigned=1	ivltests
 vlog95:pr2922063b	EF,-pallowsigned=1	ivltests
 vlog95:pr3077640	normal,-pallowsigned=1	ivltests
-vlog95:select_padding	EF,-pallowsigned=1	ivltests
-vlog95:shift4		EF,-pallowsigned=1	ivltests
-vlog95:signed5		EF,-pallowsigned=1	ivltests
+vlog95:select_padding	normal,-pallowsigned=1	ivltests
+vlog95:shift4		normal,-pallowsigned=1	ivltests
+vlog95:signed5		normal,-pallowsigned=1	ivltests
 vlog95:signed10		EF,-pallowsigned=1	ivltests
+vlog95:signed13		normal,-pallowsigned=1	ivltests
+# Also tests have different output because of file name/line, etc. differences.
+vlog95:readmem-error	normal,-pallowsigned=1	ivltests gold=readmem-error-vlog95.gold
+# Translating a down index part select require -pallowsigned=1 to get the
+# index calculation to be 100% correct when the select expression is not
+# already signed.
+vlog95:param_select3	normal,-pallowsigned=1	ivltests
+vlog95:select5		normal,-pallowsigned=1	ivltests
 
 # No support for most Verilog-A constructs
 vlog95:analog1		CE,-gverilog-ams	ivltests
@@ -2671,13 +2700,12 @@ vlog95:pr2509349a	normal	ivltests gold=pr2509349a-vlog95.gold
 vlog95:pr2509349b	normal	ivltests gold=pr2509349b-vlog95.gold
 vlog95:pr2800985b	normal	ivltests gold=pr2800985b-vlog95.gold
 vlog95:queue_fail	normal	ivltests gold=queue_fail-vlog95.gold
-vlog95:readmem-error	normal	ivltests gold=readmem-error-vlog95.gold
 vlog95:readmem-invalid	normal	ivltests gold=readmem-invalid-vlog95.gold
 # Because the lower module has a parameter it is given a unique name that
 # does not match what the code is looking for. If we can verify that there
 # is only a single instance or that the instance has the original or at
 # least all the instances have the same value we may be able to use the
-# orignal name.
+# original name.
 vlog95:simparam		EF	ivltests
 vlog95:swrite		normal	ivltests gold=swrite-vlog95.gold
 vlog95:sys_func_task_error	RE	ivltests gold=sys_func_task_error-vlog95.gold

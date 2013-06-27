@@ -194,40 +194,55 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   pr3194155: Not Implemented.
                   pr3452808: Not Implemented.
                   pr3522653: Passed - expected fail.
+                 assign_nb2: Passed - CE.
+                     bitsel: Passed - CE.
+                    bitsel3: Passed - CE.
+                    bitsel5: Passed - CE.
+                 pr2202846b: Passed - CE.
+                    bitsel2: Passed - CE.
+                      pr751: Passed - CE.
+                      pr487: Passed - CE.
                       br919: Passed.
-                    concat3: Passed - expected fail.
-                      mult2: Passed - expected fail.
-                      pr757: Passed - expected fail.
+                    concat3: Passed.
+                      mult2: Passed.
+                      pr757: Passed.
                      pr1002: Passed - expected fail.
                     pr1002a: Passed.
                   pr1522570: Passed - expected fail.
-                  pr1698499: Passed - expected fail.
+                  pr1698499: Passed.
                   pr1793749: Passed - expected fail.
-                 pr1793749b: Passed - expected fail.
+                 pr1793749b: Passed.
+                 pr1795005a: Passed.
+                 pr1795005b: Passed.
                   pr1823732: Passed - expected fail.
-                  pr1841300: Passed - expected fail.
+                  pr1841300: Passed.
                   pr1845683: Passed.
-                  pr1960619: Passed - expected fail.
-                  pr1963240: Passed - expected fail.
+                  pr1960558: Passed.
+                  pr1960619: Passed.
+                  pr1963240: Passed.
                   pr1990164: Passed - expected fail.
-                  pr2136787: Passed - expected fail.
+                  pr2136787: Passed.
                   pr2138979: Passed - expected fail.
                  pr2138979b: Passed - expected fail.
                  pr2138979c: Passed - expected fail.
                  pr2138979d: Passed - expected fail.
                   pr2159630: Passed - expected fail.
-                 pr2722339a: Passed.
-                 pr2722339b: Passed.
+                 pr2722339a: Passed - expected fail.
+                 pr2722339b: Passed - expected fail.
                   pr2901556: Passed - expected fail.
                   pr2913404: Passed.
                   pr2922063: Passed - expected fail.
                  pr2922063a: Passed - expected fail.
                  pr2922063b: Passed - expected fail.
                   pr3077640: Passed.
-             select_padding: Passed - expected fail.
-                     shift4: Passed - expected fail.
-                    signed5: Passed - expected fail.
+             select_padding: Passed.
+                     shift4: Passed.
+                    signed5: Passed.
                    signed10: Passed - expected fail.
+                   signed13: Passed.
+              readmem-error: Passed.
+              param_select3: Passed.
+                    select5: Passed.
                     analog1: Passed - CE.
                     analog2: Passed - CE.
                complex_lidx: Passed - CE.
@@ -331,7 +346,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  pr2509349b: Passed.
                  pr2800985b: Passed.
                  queue_fail: Passed.
-              readmem-error: Passed.
             readmem-invalid: Passed.
                    simparam: Passed - expected fail.
                      swrite: Passed.
@@ -780,7 +794,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                      scope5: Passed.
                  task-scope: Passed.
                  assign_nb1: Passed.
-                 assign_nb2: Passed.
                assign_delay: Passed.
                       delay: Passed.
                      delay2: Passed.
@@ -798,7 +811,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                param_concat: Passed.
                param_select: Passed.
               param_select2: Passed.
-              param_select3: Passed.
                 param_times: Passed.
                    case3.8D: Passed.
                function_exp: Passed.
@@ -908,7 +920,6 @@ test_mos_strength_reduction: Passed.
                     signed2: Passed.
                     signed3: Passed.
                    signed11: Passed.
-                   signed13: Passed.
                     repeat1: Passed.
                     repeat2: Passed.
                decl_assign1: Passed.
@@ -972,7 +983,6 @@ test_mos_strength_reduction: Passed.
                     select2: Passed.
                     select3: Passed.
                     select4: Passed.
-                    select5: Passed.
                     select6: Passed.
                     select7: Passed.
                     select8: Passed.
@@ -1011,11 +1021,7 @@ test_mos_strength_reduction: Passed.
              multiply_large: Passed.
                       pr304: Passed.
                  mhead_task: Passed.
-                     bitsel: Passed.
-                    bitsel2: Passed.
-                    bitsel3: Passed.
                     bitsel4: Passed.
-                    bitsel5: Passed.
                     bitsel8: Passed.
                     bitsel9: Passed.
                    bitwidth: Passed.
@@ -1059,7 +1065,6 @@ test_mos_strength_reduction: Passed.
                   pr245_std: Passed.
                       pr377: Passed.
                       pr478: Passed.
-                      pr487: Passed.
                       pr492: Passed.
                       pr498: Passed.
                     addwide: Passed.
@@ -1148,7 +1153,6 @@ test_mos_strength_reduction: Passed.
                       pr729: Passed.
                       pr734: Passed.
                       pr735: Passed.
-                      pr751: Passed.
                       pr772: Passed.
                       pr809: Passed.
                      pr809b: Passed.
@@ -1337,8 +1341,6 @@ test_mos_strength_reduction: Passed.
                   pr1792734: Passed.
                   pr1793157: Passed.
                   pr1794362: Passed.
-                 pr1795005a: Passed.
-                 pr1795005b: Passed.
                   pr1804877: Passed.
                   pr1805837: Passed.
                     urand_r: Passed.
@@ -1441,7 +1443,6 @@ test_mos_strength_reduction: Passed.
                 scaled_real: Passed.
                   pr1960545: Passed.
                   pr1960548: Passed.
-                  pr1960558: Passed.
                   pr1960575: Passed.
                   pr1960596: Passed.
                   pr1960633: Passed.
@@ -1542,7 +1543,6 @@ test_mos_strength_reduction: Passed.
                  pr2202706b: Passed.
                  pr2202706c: Passed.
                  pr2202846a: Passed.
-                 pr2202846b: Passed.
                  pr2202846c: Passed.
                   pr2208681: Passed.
                   pr2215342: Passed.
@@ -1918,4 +1918,4 @@ test_mos_strength_reduction: Passed.
                       br931: Passed.
 ============================================================================
 Test results:
-  Total=1916, Passed=1862, Failed=1, Not Implemented=3, Expected Fail=50
+  Total=1916, Passed=1872, Failed=1, Not Implemented=3, Expected Fail=40
