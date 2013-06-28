@@ -209,7 +209,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   pr2922063: Passed - expected fail.
                  pr2922063a: Passed - expected fail.
                  pr2922063b: Passed - expected fail.
-                  pr2901556: Passed - expected fail.
                   pr2159630: Passed - expected fail.
                     analog1: Passed - CE.
                     analog2: Passed - CE.
@@ -443,6 +442,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   pr1963240: Passed.
                   pr1990164: Passed.
                   pr2136787: Passed.
+                  pr2901556: Passed.
                   pr2913404: Passed.
                   pr3077640: Passed.
              select_padding: Passed.
@@ -1918,4 +1918,4 @@ test_mos_strength_reduction: Passed.
                       br931: Passed.
 ============================================================================
 Test results:
-  Total=1916, Passed=1876, Failed=1, Not Implemented=3, Expected Fail=36
+  Total=1916, Passed=1877, Failed=1, Not Implemented=3, Expected Fail=35

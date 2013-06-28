@@ -2543,9 +2543,6 @@ vlog95:pr2922063	EF,-pallowsigned=1	ivltests
 vlog95:pr2922063a	EF,-pallowsigned=1	ivltests
 vlog95:pr2922063b	EF,-pallowsigned=1	ivltests
 
-# There is a problem in the >>> CA translation or compiler. Also See pr1823732.
-vlog95:pr2901556	EF,-pallowsigned=1	ivltests
-
 # Size (spacing) difference since -4 is used for the second value.
 # Should this be $signed(<sized_value>) if it is not an integer?
 vlog95:pr2159630	EF,-pallowsigned=1	ivltests gold=pr2159630.gold
@@ -2810,6 +2807,7 @@ vlog95:pr1960619	normal,-pallowsigned=1	ivltests gold=pr1960619.gold
 vlog95:pr1963240	normal,-pallowsigned=1	ivltests gold=pr1963240.gold
 vlog95:pr1990164	normal,-pallowsigned=1	ivltests
 vlog95:pr2136787	normal,-pallowsigned=1	ivltests gold=pr2136787.gold
+vlog95:pr2901556	normal,-pallowsigned=1	ivltests
 vlog95:pr2913404	normal,-pallowsigned=1	ivltests
 vlog95:pr3077640	normal,-pallowsigned=1	ivltests
 vlog95:select_padding	normal,-pallowsigned=1	ivltests
