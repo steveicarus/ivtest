@@ -71,10 +71,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   pr2823711: Passed - CE.
                  pr2909386b: Passed - CE.
                      rl_pow: Passed - CE.
-                    big_int: Passed - CE.
-                  pr2673846: Passed - CE.
-                  pr2029336: Passed - CE.
-                      urand: Passed - CE.
          array_lval_select1: Passed.
          array_lval_select2: Passed.
         array_lval_select3a: Passed - TE.
@@ -457,6 +453,10 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
               readmem-error: Passed.
               param_select3: Passed.
                     select5: Passed.
+                    big_int: Passed.
+                  pr2673846: Passed.
+                  pr2029336: Passed.
+                      urand: Passed.
                       case1: Passed.
                       case2: Passed.
                       case4: Passed.

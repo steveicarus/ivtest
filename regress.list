@@ -2359,12 +2359,6 @@ vlog95:pr2823711		CE	ivltests
 vlog95:pr2909386b		CE,-pallowsigned=1	ivltests
 vlog95:rl_pow			CE	ivltests
 
-# Support for greater than 32 bit integer constants is an Icarus extension.
-vlog95:big_int			CE	ivltests
-vlog95:pr2673846		CE	ivltests
-vlog95:pr2029336		CE	ivltests
-vlog95:urand			CE	ivltests
-
 # IEEE 1364-1995 only supports register arrays.
 vlog95:array_lval_select1	normal,-DVLOG95	ivltests
 vlog95:array_lval_select2	normal,-DVLOG95	ivltests
@@ -2825,11 +2819,19 @@ vlog95:signed10		normal,-pallowsigned=1	ivltests gold=signed10.gold
 vlog95:signed13		normal,-pallowsigned=1	ivltests
 # Also tests have different output because of file name/line, etc. differences.
 vlog95:readmem-error	normal,-pallowsigned=1	ivltests gold=readmem-error-vlog95.gold
+
 # Translating a down index part select require -pallowsigned=1 to get the
 # index calculation to be 100% correct when the select expression is not
 # already signed.
 vlog95:param_select3	normal,-pallowsigned=1	ivltests
 vlog95:select5		normal,-pallowsigned=1	ivltests
+
+# Support for greater than 32 bit integer constants is an Icarus extension.
+# If the -pallowsigned=1 flag is given then they can be converted correctly.
+vlog95:big_int		normal,-pallowsigned=1	ivltests
+vlog95:pr2673846	normal,-pallowsigned=1	ivltests
+vlog95:pr2029336	normal,-pallowsigned=1	ivltests diff=work/pr2029336.out:gold/pr2029336.gold
+vlog95:urand		normal,-pallowsigned=1	ivltests gold=urand.gold
 
 # At this time v0.10 (-tvlog95) doesn't support synthesis either.
 vlog95:case1	normal	ivltests
