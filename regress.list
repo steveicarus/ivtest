@@ -2550,7 +2550,6 @@ vlog95:pr2922063a	EF,-pallowsigned=1	ivltests
 vlog95:pr2922063b	EF,-pallowsigned=1	ivltests
 
 # There is a problem in the >>> CA translation or compiler. Also See pr1823732.
-vlog95:pr1522570	EF,-pallowsigned=1	ivltests
 vlog95:pr2901556	EF,-pallowsigned=1	ivltests
 
 # Size (spacing) difference since -4 is used for the second value.
@@ -2797,13 +2796,14 @@ vlog95:vhdl_sdiv23_stdlogic	normal,-g2009,-pallowsigned=1,ivltests/vhdl_sdiv23_s
 vlog95:vhdl_ssub23_stdlogic	normal,-g2009,-pallowsigned=1,ivltests/vhdl_ssub23_stdlogic.vhd	ivltests
 vlog95:vhdl_smul23_stdlogic	normal,-g2009,-pallowsigned=1,ivltests/vhdl_smul23_stdlogic.vhd	ivltests
 
-# $signed() and $unsigned() in the compiler are always supported and in
-# procedural code are supported when the -pallowsigned=1 flag is provided.
+# $signed() and $unsigned() in the compiler are always supported and for
+# procedural code they are supported if the -pallowsigned=1 flag is provided.
 vlog95:br919		normal,-pallowsigned=1	ivltests
 vlog95:concat3		normal,-pallowsigned=1	ivltests
 vlog95:mult2		normal,-pallowsigned=1	ivltests
 vlog95:pr757		normal,-pallowsigned=1	ivltests
 vlog95:pr1002a		normal,-pallowsigned=1	ivltests gold=pr1002a.gold
+vlog95:pr1522570	normal,-pallowsigned=1	ivltests
 vlog95:pr1698499	normal,-pallowsigned=1	ivltests gold=pr1698499.gold
 vlog95:pr1793749b	normal,-pallowsigned=1	ivltests gold=pr1793749b.gold
 vlog95:pr1795005a	normal,-pallowsigned=1	ivltests diff=log/pr1795005a.log:gold/pr1795005a.gold
