@@ -1111,6 +1111,11 @@ v0.8:sv_class11	NI
 v0.8:sv_class12	NI
 v0.8:sv_class13	NI
 v0.8:sv_class14	NI
+v0.8:sv_class15	NI
+v0.8:sv_class16	NI
+v0.8:sv_class17	NI
+v0.8:sv_class18	NI
+v0.8:sv_class19	NI
 v0.8:sv_package	NI
 v0.8:sv_package2	NI
 v0.8:sv_package3	NI
@@ -1774,6 +1779,11 @@ v0.9:sv_class11	NI
 v0.9:sv_class12	NI
 v0.9:sv_class13	NI
 v0.9:sv_class14	NI
+v0.9:sv_class15	NI
+v0.9:sv_class16	NI
+v0.9:sv_class17	NI
+v0.9:sv_class18	NI
+v0.9:sv_class19	NI
 v0.9:sv_package	NI
 v0.9:sv_package2	NI
 v0.9:sv_package3	NI
@@ -2445,6 +2455,11 @@ vlog95:sv_class11	CE,-g2009	ivltests
 vlog95:sv_class12	CE,-g2009	ivltests
 vlog95:sv_class13	CE,-g2009	ivltests
 vlog95:sv_class14	CE,-g2009	ivltests
+vlog95:sv_class15	CE,-g2009	ivltests
+vlog95:sv_class16	CE,-g2009	ivltests
+vlog95:sv_class17	CE,-g2009	ivltests
+vlog95:sv_class18	CE,-g2009	ivltests
+vlog95:sv_class19	CE,-g2009	ivltests
 vlog95:sv_end_label	CE,-g2009	ivltests  # Also generate
 
 # No support for SystemVerilog zero argument functions.
@@ -4732,6 +4747,11 @@ sv_class11	normal,-g2009	ivltests
 sv_class12	normal,-g2009	ivltests
 sv_class13	normal,-g2009	ivltests
 sv_class14	normal,-g2009	ivltests
+sv_class15	normal,-g2009	ivltests
+sv_class16	normal,-g2009	ivltests
+sv_class17	normal,-g2009	ivltests
+sv_class18	normal,-g2009	ivltests
+sv_class19	normal,-g2009	ivltests
 sv_package	mormal,-g2009	ivltests
 sv_package2	mormal,-g2009	ivltests
 sv_package3	mormal,-g2009	ivltests
