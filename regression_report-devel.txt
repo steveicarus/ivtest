@@ -1847,6 +1847,11 @@ test_mos_strength_reduction: Passed.
                  sv_class12: Passed.
                  sv_class13: Passed.
                  sv_class14: Passed.
+                 sv_class15: Passed.
+                 sv_class16: Passed.
+                 sv_class17: Passed.
+                 sv_class18: Passed.
+                 sv_class19: Passed.
                  sv_package: Passed.
                 sv_package2: Passed.
                 sv_package3: Passed.
@@ -1919,4 +1924,4 @@ test_mos_strength_reduction: Passed.
                      br932b: Passed.
 ============================================================================
 Test results:
-  Total=1917, Passed=1914, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1922, Passed=1919, Failed=3, Not Implemented=0, Expected Fail=0
