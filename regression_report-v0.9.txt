@@ -80,6 +80,11 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                  sv_class12: Not Implemented.
                  sv_class13: Not Implemented.
                  sv_class14: Not Implemented.
+                 sv_class15: Not Implemented.
+                 sv_class16: Not Implemented.
+                 sv_class17: Not Implemented.
+                 sv_class18: Not Implemented.
+                 sv_class19: Not Implemented.
                  sv_package: Not Implemented.
                 sv_package2: Not Implemented.
                 sv_package3: Not Implemented.
@@ -238,6 +243,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
           sv_end_labels_bad: Not Implemented.
                      br932a: Not Implemented.
                      br932b: Not Implemented.
+                test_work14: Not Implemented.
                  ivlh_event: Not Implemented.
               cmdline_parm1: Not Implemented.
                     analog1: Not Implemented.
@@ -1922,4 +1928,4 @@ test_mos_strength_reduction: Passed.
                       br931: Passed.
 ============================================================================
 Test results:
-  Total=1920, Passed=1586, Failed=0, Not Implemented=291, Expected Fail=43
+  Total=1926, Passed=1586, Failed=0, Not Implemented=297, Expected Fail=43
