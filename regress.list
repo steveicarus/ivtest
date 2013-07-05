@@ -2527,21 +2527,11 @@ vlog95:pr3522653	EF	ivltests gold=pr3522653.gold
 # Translating selects of a non-zero based vector/array cast the base select
 # expression to $signed(). The normalization is already removed, but the code
 # cannot currently determine if the $signed() is from the normalization or
-# from the original code. Some of these run correctly with the extra $signed()
-# operators, but others need to have them removed to run correctly.
-vlog95:assign_nb2	CE	ivltests
-vlog95:bitsel		CE	ivltests # diff=log/bitsel.log:gold/bitsel.gold
-vlog95:bitsel3		CE	ivltests
+# from the original code.
 vlog95:bitsel5		CE	ivltests
-vlog95:pr2202846b	CE	ivltests
 # Translating selects with the LSB > MSB are also normalized and the code
 # cannot determine if the $signed() should be removed or not.
-vlog95:bitsel2		CE	ivltests
 vlog95:pr751		CE,-Wsensitivity-entire-vector  ivltests # diff=log/pr751.log:gold/pr751.gold
-# Translating a parameter select is always normalized, but we do not have
-# the real MSB/LSB information so cannot warn that a LSB > MSB parameter
-# must use -pallowsigned=1. For now mark this as a CE.
-vlog95:pr487		CE	ivltests # diff=log/pr487.log:gold/pr487.gold
 # New tests that need to be looked at go here.
 
 # $signed() and $unsigned() are not currently supported in a continuous
@@ -2841,6 +2831,10 @@ vlog95:readmem-error	normal,-pallowsigned=1	ivltests gold=readmem-error-vlog95.g
 # already signed.
 vlog95:param_select3	normal,-pallowsigned=1	ivltests
 vlog95:select5		normal,-pallowsigned=1	ivltests
+
+# Translating a parameter with the LSB > MSB requires -pallowsigned=1 to get
+# the index calculation correct.
+vlog95:pr487		normal,-pallowsigned=1	ivltests diff=log/pr487.log:gold/pr487.gold
 
 # Support for greater than 32 bit integer constants is an Icarus extension.
 # If the -pallowsigned=1 flag is given then they can be converted correctly.

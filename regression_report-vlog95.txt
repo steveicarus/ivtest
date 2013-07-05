@@ -195,14 +195,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   pr3194155: Not Implemented.
                   pr3452808: Not Implemented.
                   pr3522653: Passed - expected fail.
-                 assign_nb2: Passed - CE.
-                     bitsel: Passed - CE.
-                    bitsel3: Passed - CE.
                     bitsel5: Passed - CE.
-                 pr2202846b: Passed - CE.
-                    bitsel2: Passed - CE.
                       pr751: Passed - CE.
-                      pr487: Passed - CE.
                      pr1002: Passed - expected fail.
                   pr2138979: Passed - expected fail.
                  pr2138979b: Passed - expected fail.
@@ -458,6 +452,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
               readmem-error: Passed.
               param_select3: Passed.
                     select5: Passed.
+                      pr487: Passed.
                     big_int: Passed.
                   pr2673846: Passed.
                   pr2029336: Passed.
@@ -799,6 +794,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                      scope5: Passed.
                  task-scope: Passed.
                  assign_nb1: Passed.
+                 assign_nb2: Passed.
                assign_delay: Passed.
                       delay: Passed.
                      delay2: Passed.
@@ -1026,6 +1022,9 @@ test_mos_strength_reduction: Passed.
              multiply_large: Passed.
                       pr304: Passed.
                  mhead_task: Passed.
+                     bitsel: Passed.
+                    bitsel2: Passed.
+                    bitsel3: Passed.
                     bitsel4: Passed.
                     bitsel8: Passed.
                     bitsel9: Passed.
@@ -1548,6 +1547,7 @@ test_mos_strength_reduction: Passed.
                  pr2202706b: Passed.
                  pr2202706c: Passed.
                  pr2202846a: Passed.
+                 pr2202846b: Passed.
                  pr2202846c: Passed.
                   pr2208681: Passed.
                   pr2215342: Passed.
