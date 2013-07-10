@@ -2544,12 +2544,6 @@ vlog95:pr2138979d	EF,-pallowsigned=1	ivltests gold=pr2138979d.gold
 vlog95:pr2722339a	EF,-pallowsigned=1	ivltests
 vlog95:pr2722339b	EF,-pallowsigned=1	ivltests
 
-# A $signed() or $unsigned() can be used to create a self determined context.
-vlog95:pr1793749	EF,-pallowsigned=1	ivltests gold=pr1793749.gold
-vlog95:pr2922063	EF,-pallowsigned=1	ivltests
-vlog95:pr2922063a	EF,-pallowsigned=1	ivltests
-vlog95:pr2922063b	EF,-pallowsigned=1	ivltests
-
 # Size (spacing) difference since -4 is used for the second value.
 # Should this be $signed(<sized_value>) if it is not an integer?
 vlog95:pr2159630	EF,-pallowsigned=1	ivltests gold=pr2159630.gold
@@ -2725,6 +2719,7 @@ vlog95:pr1589497	normal,-pallowsigned=1	ivltests gold=pr1589497.gold
 vlog95:pr1603313	normal,-pallowsigned=1	ivltests
 vlog95:pr1717361	normal,-pallowsigned=1	ivltests
 vlog95:pr1719055	normal,-pallowsigned=1	ivltests gold=pr1719055.gold
+vlog95:pr1793749	normal,-pallowsigned=1	ivltests gold=pr1793749.gold
 vlog95:pr1879226	normal,-pallowsigned=1	ivltests
 vlog95:pr1883052	normal,-pallowsigned=1	ivltests
 vlog95:pr1883052b	normal,-pallowsigned=1	ivltests
@@ -2749,6 +2744,9 @@ vlog95:pr2722330b	normal,-pallowsigned=1	ivltests
 vlog95:pr2909555	normal,-pallowsigned=1	ivltests
 vlog95:pr2913416	normal,-pallowsigned=1	ivltests
 vlog95:pr2913438b	normal,-pallowsigned=1	ivltests
+vlog95:pr2922063	normal,-pallowsigned=1	ivltests
+vlog95:pr2922063a	normal,-pallowsigned=1	ivltests
+vlog95:pr2922063b	normal,-pallowsigned=1	ivltests
 vlog95:pr2986528	normal,-pallowsigned=1	ivltests
 vlog95:pr2998515	normal,-pallowsigned=1	ivltests
 vlog95:pr3104254	normal,-pallowsigned=1	ivltests

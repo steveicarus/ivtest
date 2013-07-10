@@ -204,10 +204,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  pr2138979d: Passed - expected fail.
                  pr2722339a: Passed - expected fail.
                  pr2722339b: Passed - expected fail.
-                  pr1793749: Passed - expected fail.
-                  pr2922063: Passed - expected fail.
-                 pr2922063a: Passed - expected fail.
-                 pr2922063b: Passed - expected fail.
                   pr2159630: Passed - expected fail.
                     analog1: Passed - CE.
                     analog2: Passed - CE.
@@ -355,6 +351,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   pr1603313: Passed.
                   pr1717361: Passed.
                   pr1719055: Passed.
+                  pr1793749: Passed.
                   pr1879226: Passed.
                   pr1883052: Passed.
                  pr1883052b: Passed.
@@ -379,6 +376,9 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   pr2909555: Passed.
                   pr2913416: Passed.
                  pr2913438b: Passed.
+                  pr2922063: Passed.
+                 pr2922063a: Passed.
+                 pr2922063b: Passed.
                   pr2986528: Passed.
                   pr2998515: Passed.
                   pr3104254: Passed.
@@ -1923,4 +1923,4 @@ test_mos_strength_reduction: Passed.
                       br931: Passed.
 ============================================================================
 Test results:
-  Total=1921, Passed=1882, Failed=1, Not Implemented=3, Expected Fail=35
+  Total=1921, Passed=1886, Failed=1, Not Implemented=3, Expected Fail=31
