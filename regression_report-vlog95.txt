@@ -412,6 +412,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
             test_enumsystem: Passed.
                 test_system: Passed.
               test_tliteral: Passed.
+                test_work14: Passed.
           two_state_display: Passed.
             undefined_shift: Passed.
                   vams_abs1: Passed.
@@ -1923,4 +1924,4 @@ test_mos_strength_reduction: Passed.
                       br931: Passed.
 ============================================================================
 Test results:
-  Total=1921, Passed=1886, Failed=1, Not Implemented=3, Expected Fail=31
+  Total=1922, Passed=1887, Failed=1, Not Implemented=3, Expected Fail=31
