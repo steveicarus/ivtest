@@ -152,11 +152,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  sv_class18: Passed - CE.
                  sv_class19: Passed - CE.
                sv_end_label: Passed - CE.
-                 vhdl_test5: Passed - CE.
-                 vhdl_test6: Passed - CE.
-                 vhdl_test7: Passed - CE.
-                 vhdl_test8: Passed - CE.
-                 vhdl_test9: Passed - CE.
                   enum_next: Passed - CE.
                  enum_test1: Passed - CE.
               fork_join_any: Passed - CE.
@@ -412,6 +407,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
             test_enumsystem: Passed.
                 test_system: Passed.
               test_tliteral: Passed.
+                 vhdl_test8: Passed.
+                 vhdl_test9: Passed.
                 test_work14: Passed.
           two_state_display: Passed.
             undefined_shift: Passed.
@@ -1812,6 +1809,9 @@ test_mos_strength_reduction: Passed.
                  vhdl_test2: Passed.
                  vhdl_test3: Passed.
                  vhdl_test4: Passed.
+                 vhdl_test5: Passed.
+                 vhdl_test6: Passed.
+                 vhdl_test7: Passed.
                  clkgen_bit: Passed.
                clkgen_logic: Passed.
                  clkgen_net: Passed.
@@ -1908,6 +1908,7 @@ test_mos_strength_reduction: Passed.
                      br918a: Passed.
                      br918b: Passed.
                      br918d: Passed.
+                      br921: Passed.
                       br924: Passed - CE.
         non-polymorphic-abs: Passed.
                 parpkg_test: Passed.
@@ -1924,4 +1925,4 @@ test_mos_strength_reduction: Passed.
                       br931: Passed.
 ============================================================================
 Test results:
-  Total=1922, Passed=1887, Failed=1, Not Implemented=3, Expected Fail=31
+  Total=1923, Passed=1888, Failed=1, Not Implemented=3, Expected Fail=31

@@ -1337,6 +1337,7 @@ v0.8:implicit_cast10	NI
 v0.8:implicit_cast11	NI
 v0.8:implicit_cast12	NI
 v0.8:implicit_cast13	NI
+v0.8:br921		NI
 v0.8:br932a		NI
 v0.8:br932b		NI
 v0.8:test_work14	NI
@@ -1952,6 +1953,7 @@ v0.9:br917a	NI
 v0.9:br917b	NI
 v0.9:br917c	NI
 v0.9:br917d	NI
+v0.9:br921	NI
 v0.9:array_string	NI
 v0.9:struct_packed_sysfunct	NI
 v0.9:sv_end_label	NI
@@ -2464,13 +2466,6 @@ vlog95:sv_class18	CE,-g2009	ivltests
 vlog95:sv_class19	CE,-g2009	ivltests
 vlog95:sv_end_label	CE,-g2009	ivltests  # Also generate
 
-# No support for SystemVerilog zero argument functions.
-vlog95:vhdl_test5	CE,-g2009,ivltests/vhdl_test5.vhd	ivltests
-vlog95:vhdl_test6	CE,-g2009,ivltests/vhdl_test6.vhd	ivltests
-vlog95:vhdl_test7	CE,-g2009,ivltests/vhdl_test7.vhd	ivltests
-vlog95:vhdl_test8	CE,-g2009,-pallowsigned=1,ivltests/vhdl_test8.vhd	ivltests
-vlog95:vhdl_test9	CE,-g2009,-pallowsigned=1,ivltests/vhdl_test9.vhd	ivltests
-
 # No support for these SystemVerilog features
 vlog95:enum_next	CE,-g2009,-pallowsigned=1	ivltests  # enum
 vlog95:enum_test1	CE,-g2009,-pallowsigned=1	ivltests  # enum
@@ -2780,6 +2775,8 @@ vlog95:test_inc_dec	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:test_enumsystem	normal,-g2009,-pallowsigned=1,ivltests/enumsystem.vhd	ivltests
 vlog95:test_system	normal,-g2009,-pallowsigned=1,ivltests/system.vhd	ivltests
 vlog95:test_tliteral	normal,-g2009,-pallowsigned=1	ivltests
+vlog95:vhdl_test8	normal,-g2005-sv,-pallowsigned=1,ivltests/vhdl_test8.vhd	ivltests
+vlog95:vhdl_test9	normal,-g2005-sv,-pallowsigned=1,ivltests/vhdl_test9.vhd	ivltests
 vlog95:test_work14	normal,-g2009,-pallowsigned=1,ivltests/work14_pkg.vhd,ivltests/work14.vhd ivltests
 vlog95:two_state_display	normal,-g2009,-pallowsigned=1	ivltests gold=two_state_display.gold
 vlog95:undefined_shift	normal,-pallowsigned=1	ivltests
@@ -4778,6 +4775,7 @@ br918b	normal	ivltests
 br918c	normal	ivltests
 br918d	normal	ivltests
 br919	normal	ivltests
+br921	norma,-g2009	ivltests gold=br921.gold
 br924	CE	ivltests
 non-polymorphic-abs	normal	ivltests
 parpkg_test	normal,-g2009	ivltests
