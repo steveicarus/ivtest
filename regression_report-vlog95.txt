@@ -315,6 +315,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                       bitp1: Passed.
                        bits: Passed.
                       bits2: Passed.
+                      br884: Passed.
                      br917a: Passed.
                      br917b: Passed.
                      br917c: Passed.
@@ -1925,4 +1926,4 @@ test_mos_strength_reduction: Passed.
                       br931: Passed.
 ============================================================================
 Test results:
-  Total=1923, Passed=1888, Failed=1, Not Implemented=3, Expected Fail=31
+  Total=1924, Passed=1889, Failed=1, Not Implemented=3, Expected Fail=31

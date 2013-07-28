@@ -231,6 +231,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
         struct_packed_array: Not Implemented.
        struct_packed_array2: Not Implemented.
           vhdl_struct_array: Not Implemented.
+                      br884: Not Implemented.
                      br917a: Not Implemented.
                      br917b: Not Implemented.
                      br917c: Not Implemented.
@@ -1929,4 +1930,4 @@ test_mos_strength_reduction: Passed.
                       br931: Passed.
 ============================================================================
 Test results:
-  Total=1927, Passed=1586, Failed=0, Not Implemented=298, Expected Fail=43
+  Total=1928, Passed=1586, Failed=0, Not Implemented=299, Expected Fail=43

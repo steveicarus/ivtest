@@ -1128,6 +1128,7 @@ v0.8:struct_packe_write_read2	NI
 v0.8:struct_packed_array	NI
 v0.8:struct_packed_array2	NI
 v0.8:vhdl_struct_array	NI
+v0.8:br884	NI
 v0.8:br917a	NI
 v0.8:br917b	NI
 v0.8:br917c	NI
@@ -1949,6 +1950,7 @@ v0.9:sv_string5	NI
 v0.9:struct_packed_array	NI
 v0.9:struct_packed_array2	NI
 v0.9:vhdl_struct_array	NI
+v0.9:br884	NI
 v0.9:br917a	NI
 v0.9:br917b	NI
 v0.9:br917c	NI
@@ -2683,6 +2685,7 @@ vlog95:array6		normal,-pallowsigned=1	ivltests
 vlog95:bitp1		normal,-g2009,-pallowsigned=1	ivltests
 vlog95:bits		normal,-g2009,-pallowsigned=1	ivltests
 vlog95:bits2		normal,-g2009,-pallowsigned=1	ivltests
+vlog95:br884		normal,-g2009,-pallowsigned=1	ivltests
 vlog95:br917a		normal,-g2009,-pallowsigned=1	ivltests
 vlog95:br917b		normal,-g2009,-pallowsigned=1	ivltests
 vlog95:br917c		normal,-g2009,-pallowsigned=1	ivltests
@@ -4768,6 +4771,7 @@ undef_lval_select4c	CE	ivltests
 undef_lval_select5	normal	ivltests
 undef_lval_select_SV	normal,-g2009	ivltests
 vvp_scalar_value	normal	ivltests
+br884	normal,-g2009	ivltests
 br916a	normal	ivltests diff=log/br916a.log:gold/br916a.gold
 br916b	normal	ivltests diff=log/br916b.log:gold/br916b.gold
 br918a	normal	ivltests
