@@ -23,6 +23,9 @@ vhdl_regression_report.txt
 src/vcddiff
 vsim
 vlog95.v
+tmp_blif.blif
+tmp_blif.v
+tmp_blif.vvp
 
 # Some tests do not work out of the work directory, so
 # ignore these files that they leave in the home directory.
