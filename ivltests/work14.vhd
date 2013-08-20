@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 use work.work14_pkg.all;
 
 entity work14_comp is
-  
+
   generic (
     max_out_val : natural := 3;
     sample_parm : string := "test");

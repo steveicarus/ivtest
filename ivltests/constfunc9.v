@@ -15,7 +15,7 @@ begin:body
 end
 
 endfunction
-     
+
 localparam val = pow2(8);
 
 initial begin

@@ -6,7 +6,7 @@ begin
   $display("%s", str);
   if (str == "br932a")
     $display("PASSED");
-  else 
+  else
     $display("FAILED");
 end
 

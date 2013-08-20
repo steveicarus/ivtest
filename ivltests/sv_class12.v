@@ -14,7 +14,7 @@ program main;
       endfunction // new
 
    endclass : foo_t // foo_t
-   
+
    class bar_t ;
       int value;
 

@@ -9,7 +9,7 @@ program main;
    class foo_t ;
       int       int_value = 42;
       bit [3:0] bit_value = 5;
-      string 	txt_value = "text";
+      string	txt_value = "text";
 
       function new();
 	 // The declaration assignments happen before the constructor

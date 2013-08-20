@@ -11,7 +11,7 @@ begin:body
 end
 
 endfunction
-     
+
 localparam val0 = pow2(0);
 localparam val1 = pow2(1);
 localparam val2 = pow2(2);

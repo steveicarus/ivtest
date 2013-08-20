@@ -10,19 +10,19 @@ initial begin : clkgen forever #10 clk = ~clk; end
 
 assign lvalue = maxvalue;
 
-work14_comp #(.max_out_val(maxvalue)) duv (.clk_i(clk), .val(mvalue));  
-  
+work14_comp #(.max_out_val(maxvalue)) duv (.clk_i(clk), .val(mvalue));
+
 initial begin
   @(posedge clk);
   #1;
-  if (lvalue !== mvalue) $display ("ERROR due to mismatch between lvalue=%d and mvalue=%d", lvalue, mvalue); 
+  if (lvalue !== mvalue) $display ("ERROR due to mismatch between lvalue=%d and mvalue=%d", lvalue, mvalue);
   @(posedge clk);
   #1;
-  if (lvalue !== mvalue) $display ("ERROR due to mismatch between lvalue=%d and mvalue=%d", lvalue, mvalue); 
+  if (lvalue !== mvalue) $display ("ERROR due to mismatch between lvalue=%d and mvalue=%d", lvalue, mvalue);
   #5;
   $display ("PASSED");
   $finish;
 end
-  
-  
+
+
 endmodule

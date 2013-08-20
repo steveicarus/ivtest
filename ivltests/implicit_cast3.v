@@ -125,6 +125,6 @@ initial begin
     $display("FAILED");
   else
     $display("PASSED");
-end    
+end
 
 endmodule
