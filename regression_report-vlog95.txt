@@ -1924,6 +1924,7 @@ test_mos_strength_reduction: Passed.
           sv_end_label_fail: Passed - CE.
                       br930: Passed - CO.
                       br931: Passed.
+                      br935: Passed.
 ============================================================================
 Test results:
-  Total=1924, Passed=1895, Failed=1, Not Implemented=3, Expected Fail=25
+  Total=1925, Passed=1896, Failed=1, Not Implemented=3, Expected Fail=25
