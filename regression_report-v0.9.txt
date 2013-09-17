@@ -247,6 +247,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                      br932b: Not Implemented.
                       br936: Not Implemented.
                 test_work14: Not Implemented.
+                       fr49: Not Implemented.
                  ivlh_event: Not Implemented.
               cmdline_parm1: Not Implemented.
                     analog1: Not Implemented.
@@ -1932,4 +1933,4 @@ test_mos_strength_reduction: Passed.
                       br935: Passed.
 ============================================================================
 Test results:
-  Total=1930, Passed=1587, Failed=0, Not Implemented=300, Expected Fail=43
+  Total=1931, Passed=1587, Failed=0, Not Implemented=301, Expected Fail=43

@@ -1134,6 +1134,7 @@ v0.8:br917b	NI
 v0.8:br917c	NI
 v0.8:br917d	NI
 v0.8:array_string	NI
+v0.8:fr49	NI  # do/while
 
 # V0.8 does not support automatic tasks or functions.
 v0.8:automatic_error1	NI
@@ -1967,6 +1968,7 @@ v0.9:br932a		NI
 v0.9:br932b		NI
 v0.9:br936		NI
 v0.9:test_work14	NI
+v0.9:fr49	NI  # do/while
 
 # v0.9 does not have the vhdl_sys module
 v0.9:ivlh_event	NI
@@ -4824,3 +4826,4 @@ br932b	normal,-g2009	ivltests
 br935	normal	ivltests
 br936	normal,-g2009	ivltests
 test_work14	normal,-g2009,ivltests/work14_pkg.vhd,ivltests/work14.vhd ivltests
+fr49	normal,-g2009	ivltests
