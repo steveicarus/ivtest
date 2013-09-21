@@ -1134,6 +1134,7 @@ v0.8:br917b	NI
 v0.8:br917c	NI
 v0.8:br917d	NI
 v0.8:array_string	NI
+v0.8:fr49	NI  # do/while
 
 # V0.8 does not support automatic tasks or functions.
 v0.8:automatic_error1	NI
@@ -1341,6 +1342,7 @@ v0.8:implicit_cast13	NI
 v0.8:br921		NI
 v0.8:br932a		NI
 v0.8:br932b		NI
+v0.8:br936		NI
 v0.8:test_work14	NI
 
 # v0.8 does not have the vhdl_sys module
@@ -1964,7 +1966,9 @@ v0.9:sv_end_labels	NI
 v0.9:sv_end_labels_bad	NI
 v0.9:br932a		NI
 v0.9:br932b		NI
+v0.9:br936		NI
 v0.9:test_work14	NI
+v0.9:fr49	NI  # do/while
 
 # v0.9 does not have the vhdl_sys module
 v0.9:ivlh_event	NI
@@ -2469,6 +2473,7 @@ vlog95:sv_class19	CE,-g2009	ivltests
 vlog95:sv_end_label	CE,-g2009	ivltests  # Also generate
 
 # No support for these SystemVerilog features
+vlog95:br936		CE,-g2009,-pallowsigned=1	ivltests  # join_any
 vlog95:enum_next	CE,-g2009,-pallowsigned=1	ivltests  # enum
 vlog95:enum_test1	CE,-g2009,-pallowsigned=1	ivltests  # enum
 vlog95:fork_join_any	CE,-g2009,-pallowsigned=1	ivltests  # join_any
@@ -4832,3 +4837,4 @@ sv_port_default8	normal,-g2009	ivltests
 sv_port_default9	normal,-g2009	ivltests
 sv_port_default10	normal,-g2009	ivltests
 sv_port_default11	normal,-g2009	ivltests
+fr49	normal,-g2009	ivltests

@@ -1927,6 +1927,7 @@ test_mos_strength_reduction: Passed.
                       br935: Passed.
                       br936: Passed.
                 test_work14: Passed.
+                       fr49: Passed.
 ============================================================================
 Test results:
-  Total=1927, Passed=1924, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1928, Passed=1925, Failed=3, Not Implemented=0, Expected Fail=0
