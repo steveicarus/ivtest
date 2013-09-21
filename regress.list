@@ -4821,3 +4821,14 @@ br932b	normal,-g2009	ivltests
 br935	normal	ivltests
 br936	normal,-g2009	ivltests
 test_work14	normal,-g2009,ivltests/work14_pkg.vhd,ivltests/work14.vhd ivltests
+sv_port_default1	normal,-g2009	ivltests
+sv_port_default2	normal,-g2009	ivltests
+sv_port_default3	normal,-g2009	ivltests
+sv_port_default4	normal,-g2009	ivltests
+sv_port_default5	normal,-g2009	ivltests
+sv_port_default6	normal,-g2009	ivltests
+sv_port_default7	normal,-g2009	ivltests
+sv_port_default8	normal,-g2009	ivltests
+sv_port_default9	normal,-g2009	ivltests
+sv_port_default10	normal,-g2009	ivltests
+sv_port_default11	normal,-g2009	ivltests
