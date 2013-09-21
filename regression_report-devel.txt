@@ -1927,7 +1927,18 @@ test_mos_strength_reduction: Passed.
                       br935: Passed.
                       br936: Passed.
                 test_work14: Passed.
+           sv_port_default1: Passed.
+           sv_port_default2: Passed.
+           sv_port_default3: Passed.
+           sv_port_default4: Passed.
+           sv_port_default5: Passed.
+           sv_port_default6: Passed.
+           sv_port_default7: Passed.
+           sv_port_default8: Passed.
+           sv_port_default9: Passed.
+          sv_port_default10: Passed.
+          sv_port_default11: Passed.
                        fr49: Passed.
 ============================================================================
 Test results:
-  Total=1928, Passed=1925, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1939, Passed=1936, Failed=3, Not Implemented=0, Expected Fail=0

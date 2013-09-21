@@ -1121,6 +1121,17 @@ v0.8:sv_package2	NI
 v0.8:sv_package3	NI
 v0.8:sv_package4	NI
 v0.8:sv_package5	NI
+v0.8:sv_port_default1	NI
+v0.8:sv_port_default2	NI
+v0.8:sv_port_default3	NI
+v0.8:sv_port_default4	NI
+v0.8:sv_port_default5	NI
+v0.8:sv_port_default6	NI
+v0.8:sv_port_default7	NI
+v0.8:sv_port_default8	NI
+v0.8:sv_port_default9	NI
+v0.8:sv_port_default10	NI
+v0.8:sv_port_default11	NI
 v0.8:parpkg_test	NI
 v0.8:parpkg_test2	NI
 v0.8:parpkg_test3	NI
@@ -1794,6 +1805,17 @@ v0.9:sv_package2	NI
 v0.9:sv_package3	NI
 v0.9:sv_package4	NI
 v0.9:sv_package5	NI
+v0.9:sv_port_default1	NI
+v0.9:sv_port_default2	NI
+v0.9:sv_port_default3	NI
+v0.9:sv_port_default4	NI
+v0.9:sv_port_default5	NI
+v0.9:sv_port_default6	NI
+v0.9:sv_port_default7	NI
+v0.9:sv_port_default8	NI
+v0.9:sv_port_default9	NI
+v0.9:sv_port_default10	NI
+v0.9:sv_port_default11	NI
 v0.9:parpkg_test	NI
 v0.9:parpkg_test2	NI
 v0.9:parpkg_test3	NI
@@ -4751,11 +4773,11 @@ sv_class16	normal,-g2009	ivltests
 sv_class17	normal,-g2009	ivltests
 sv_class18	normal,-g2009	ivltests
 sv_class19	normal,-g2009	ivltests
-sv_package	mormal,-g2009	ivltests
-sv_package2	mormal,-g2009	ivltests
-sv_package3	mormal,-g2009	ivltests
-sv_package4	mormal,-g2009	ivltests
-sv_package5	mormal,-g2009	ivltests
+sv_package	normal,-g2009	ivltests
+sv_package2	normal,-g2009	ivltests
+sv_package3	normal,-g2009	ivltests
+sv_package4	normal,-g2009	ivltests
+sv_package5	normal,-g2009	ivltests
 struct_packed_write_read2	normal,-g2009	ivltests
 br917a	normal,-g2009	ivltests
 br917b	normal,-g2009	ivltests
