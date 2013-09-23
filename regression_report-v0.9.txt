@@ -90,6 +90,17 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                 sv_package3: Not Implemented.
                 sv_package4: Not Implemented.
                 sv_package5: Not Implemented.
+           sv_port_default1: Not Implemented.
+           sv_port_default2: Not Implemented.
+           sv_port_default3: Not Implemented.
+           sv_port_default4: Not Implemented.
+           sv_port_default5: Not Implemented.
+           sv_port_default6: Not Implemented.
+           sv_port_default7: Not Implemented.
+           sv_port_default8: Not Implemented.
+           sv_port_default9: Not Implemented.
+          sv_port_default10: Not Implemented.
+          sv_port_default11: Not Implemented.
                 parpkg_test: Not Implemented.
                parpkg_test2: Not Implemented.
                parpkg_test3: Not Implemented.
@@ -1933,4 +1944,4 @@ test_mos_strength_reduction: Passed.
                       br935: Passed.
 ============================================================================
 Test results:
-  Total=1931, Passed=1587, Failed=0, Not Implemented=301, Expected Fail=43
+  Total=1942, Passed=1587, Failed=0, Not Implemented=312, Expected Fail=43

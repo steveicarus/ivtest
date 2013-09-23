@@ -2493,6 +2493,15 @@ vlog95:sv_class17	CE,-g2009	ivltests
 vlog95:sv_class18	CE,-g2009	ivltests
 vlog95:sv_class19	CE,-g2009	ivltests
 vlog95:sv_end_label	CE,-g2009	ivltests  # Also generate
+vlog95:sv_port_default1	CE,-g2009	ivltests
+vlog95:sv_port_default2	CE,-g2009,-pallowsigned=1	ivltests
+vlog95:sv_port_default3	CE,-g2009	ivltests
+vlog95:sv_port_default4	CE,-g2009,-pallowsigned=1	ivltests
+vlog95:sv_port_default5	CE,-g2009	ivltests
+vlog95:sv_port_default6	CE,-g2009,-pallowsigned=1	ivltests
+vlog95:sv_port_default7	CE,-g2009,-pallowsigned=1	ivltests
+vlog95:sv_port_default8	CE,-g2009,-pallowsigned=1	ivltests
+vlog95:sv_port_default9	CE,-g2009	ivltests
 
 # No support for these SystemVerilog features
 vlog95:br936		CE,-g2009,-pallowsigned=1	ivltests  # join_any
@@ -2790,6 +2799,8 @@ vlog95:struct_packed_array2	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:sv_package	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:sv_package2	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:sv_package5	normal,-g2009,-pallowsigned=1	ivltests
+vlog95:sv_port_default10	normal,-g2009,-pallowsigned=1	ivltests
+vlog95:sv_port_default11	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:test_dispwided	normal,-pallowsigned=1	ivltests gold=test_dispwided.gold
 vlog95:test_inc_dec	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:test_enumsystem	normal,-g2009,-pallowsigned=1,ivltests/enumsystem.vhd	ivltests

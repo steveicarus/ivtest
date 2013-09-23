@@ -152,6 +152,15 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  sv_class18: Passed - CE.
                  sv_class19: Passed - CE.
                sv_end_label: Passed - CE.
+           sv_port_default1: Passed - CE.
+           sv_port_default2: Passed - CE.
+           sv_port_default3: Passed - CE.
+           sv_port_default4: Passed - CE.
+           sv_port_default5: Passed - CE.
+           sv_port_default6: Passed - CE.
+           sv_port_default7: Passed - CE.
+           sv_port_default8: Passed - CE.
+           sv_port_default9: Passed - CE.
                       br936: Passed - CE.
                   enum_next: Passed - CE.
                  enum_test1: Passed - CE.
@@ -397,6 +406,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  sv_package: Passed.
                 sv_package2: Passed.
                 sv_package5: Passed.
+          sv_port_default10: Passed.
+          sv_port_default11: Passed.
              test_dispwided: Passed.
                test_inc_dec: Passed.
             test_enumsystem: Passed.
@@ -1928,4 +1939,4 @@ test_mos_strength_reduction: Passed.
                       br935: Passed.
 ============================================================================
 Test results:
-  Total=1926, Passed=1897, Failed=1, Not Implemented=3, Expected Fail=25
+  Total=1937, Passed=1908, Failed=1, Not Implemented=3, Expected Fail=25
