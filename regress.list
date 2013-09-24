@@ -2728,6 +2728,7 @@ vlog95:enum_value_expr	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:enum_values	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:extend		normal,-pallowsigned=1	ivltests
 vlog95:first_last_num	normal,-g2009,-pallowsigned=1	ivltests
+vlog95:fr49		normal,-g2009,-pallowsigned=1	ivltests
 vlog95:implicit_cast7	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:implicit_cast9	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:inc_dec_stmt	normal,-g2009,-pallowsigned=1	ivltests

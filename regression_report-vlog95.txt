@@ -335,6 +335,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                 enum_values: Passed.
                      extend: Passed.
              first_last_num: Passed.
+                       fr49: Passed.
              implicit_cast7: Passed.
              implicit_cast9: Passed.
                inc_dec_stmt: Passed.
@@ -1939,4 +1940,4 @@ test_mos_strength_reduction: Passed.
                       br935: Passed.
 ============================================================================
 Test results:
-  Total=1937, Passed=1908, Failed=1, Not Implemented=3, Expected Fail=25
+  Total=1938, Passed=1909, Failed=1, Not Implemented=3, Expected Fail=25
