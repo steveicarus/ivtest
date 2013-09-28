@@ -4859,6 +4859,7 @@ br932a	normal,-g2009	ivltests
 br932b	normal,-g2009	ivltests
 br935	normal	ivltests
 br936	normal,-g2009	ivltests
+br937	normal,+string=0123456789	ivltests
 test_work14	normal,-g2009,ivltests/work14_pkg.vhd,ivltests/work14.vhd ivltests
 sv_port_default1	normal,-g2009	ivltests
 sv_port_default2	normal,-g2009	ivltests

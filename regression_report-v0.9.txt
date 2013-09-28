@@ -1942,6 +1942,7 @@ test_mos_strength_reduction: Passed.
                       br930: Passed - CO.
                       br931: Passed.
                       br935: Passed.
+                      br937: Passed.
 ============================================================================
 Test results:
-  Total=1942, Passed=1587, Failed=0, Not Implemented=312, Expected Fail=43
+  Total=1943, Passed=1588, Failed=0, Not Implemented=312, Expected Fail=43
