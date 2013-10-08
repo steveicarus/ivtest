@@ -1,5 +1,6 @@
 Running compiler/VVP tests for Icarus Verilog version: 0.9.
 ----------------------------------------------------------------------------
+                 array_size: Not Implemented.
                       bitp1: Not Implemented.
                        bits: Not Implemented.
                       bits2: Not Implemented.
@@ -23,6 +24,12 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                  ibyte_test: Not Implemented.
                   iint_test: Not Implemented.
               ilongint_test: Not Implemented.
+             implicit-port1: Not Implemented.
+             implicit-port2: Not Implemented.
+             implicit-port3: Not Implemented.
+             implicit-port4: Not Implemented.
+             implicit-port5: Not Implemented.
+             implicit-port6: Not Implemented.
              ishortint_test: Not Implemented.
                      iuint1: Not Implemented.
                       logp2: Not Implemented.
@@ -389,6 +396,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
         array_lval_select4a: Not Implemented.
         array_lval_select4b: Not Implemented.
          array_lval_select5: Not Implemented.
+         array_lval_select6: Not Implemented.
          undef_lval_select2: Not Implemented.
         undef_lval_select3a: Not Implemented.
         undef_lval_select3b: Not Implemented.
@@ -1945,4 +1953,4 @@ test_mos_strength_reduction: Passed.
                       br937: Passed.
 ============================================================================
 Test results:
-  Total=1943, Passed=1588, Failed=0, Not Implemented=312, Expected Fail=43
+  Total=1951, Passed=1588, Failed=0, Not Implemented=320, Expected Fail=43
