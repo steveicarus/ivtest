@@ -11,7 +11,7 @@ module addN
     output wire [WID:0]  Q
     /* */);
 
-   wire [WID-1:0] 	Cout;
+   wire [WID-1:0]	Cout;
 
    /* The least significant slice has no Cin */
    add1 U0 (.A(A[0]), .B(B[0]), .Cin(1'b0), .Q(Q[0]), .Cout(Cout[0]));

@@ -4,7 +4,7 @@ module test;
    localparam count = 1<<width;
    reg [width-1:0] array[count];
 
-   integer 	   idx;
+   integer	   idx;
    initial begin
       for (idx = 0 ; idx < count ; idx = idx+1)
 	array[idx] = idx;

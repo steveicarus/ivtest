@@ -6,13 +6,13 @@ module main;
 
    reg [WID-1:0]  D;
    reg [SWID-1:0] S;
-   wire 	  Q;
+   wire		Q;
 
    muxN dut(.\D[3] (D[3]), .\D[2] (D[2]), .\D[1] (D[1]), .\D[0] (D[0]),
 	    .\S[1] (S[1]), .\S[0] (S[0]),
 	    .Q(Q));
 
-   integer 	  idx, sdx;
+   integer	  idx, sdx;
    initial begin
       for (idx = 0 ; idx < 50 ; idx += 1) begin
 	 D = $random;

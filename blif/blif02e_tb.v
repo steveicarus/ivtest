@@ -2,7 +2,7 @@
 /*
  * This is a post-synthesis test for the blif01a.v test. Run this
  * simulation in these steps:
- * 
+ *
  *   $ iverilog -tblif -o foo.blif blif01a.v
  *   $ abc
  *   abc 01> read_blif foo.blif
@@ -15,14 +15,14 @@ module main;
 
    parameter WID = 4;
    reg [WID-1:0] A, B;
-   wire 	 QE, QN, QGT, QGE;
+   wire		 QE, QN, QGT, QGE;
 
    cmpN ucmp(.\A[3] (A[3]), .\A[2] (A[2]), .\A[1] (A[1]), .\A[0] (A[0]),
 	     .\B[3] (B[3]), .\B[2] (B[2]), .\B[1] (B[1]), .\B[0] (B[0]),
 	     .QE(QE), .QN(QN), .QGT(QGT), .QGE(QGE));
 
-   int 		 adx;
-   int 		 bdx;
+   int		 adx;
+   int		 bdx;
    initial begin
       for (bdx = 0 ; bdx[WID]==0 ; bdx = bdx+1) begin
 	 for (adx = 0 ; adx[WID]==0 ; adx = adx+1) begin

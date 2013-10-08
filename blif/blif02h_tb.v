@@ -2,7 +2,7 @@
 module main;
 
    reg [1:0] D0, D1;
-   reg 	     sel;
+   reg	     sel;
    wire [1:0] Q;
 
    test_mux DUT(.\S[1] (1'b0), .\S[0] (sel),

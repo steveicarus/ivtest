@@ -20,7 +20,7 @@ initial begin
       a[i] = 8'h0;
       r[i] = 0.0;
    end
-   
+
    // test using one in a part select
    a[1][idx[1]*4 +: 4] = 4'ha;
    if (a[1] != 8'ha0) begin
@@ -97,7 +97,7 @@ initial begin
       $display("FAILED real word, expected 1.0, got %f", r[0]);
       pass = 1'b0;
    end
-   
+
    // NB to real array
    r[idx[1]] <= 2.2;
    if (r[1] != 0.0) begin
@@ -109,7 +109,7 @@ initial begin
       $display("FAILED NB assign real word 2, expected 2.2 got %f", r[1]);
       pass = 1'b0;
    end
-   
+
    // NB to real array with delay
    r[idx[2]] <= #(idx[2]) 3.3;
    #1.1;
@@ -121,8 +121,8 @@ initial begin
    if (r[2] != 3.3) begin
       $display("FAILED NB assign with delay to real word 2, expected 3.3 got %f", r[1]);
       pass = 1'b0;
-   end      
-   
+   end
+
    if (pass) $display("PASSED");
 end
 endmodule
