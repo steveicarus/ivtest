@@ -1192,6 +1192,7 @@ v0.8:readmem-invalid	NI
 v0.8:writemem-invalid	NI
 
 # V0.8 does not support SystemVerilog or VHDL
+v0.8:array_size	NI
 v0.8:bitp1	NI
 v0.8:bits	NI
 v0.8:bits2	NI
@@ -1215,6 +1216,12 @@ v0.8:ibit_test	NI
 v0.8:ibyte_test	NI
 v0.8:iint_test	NI
 v0.8:ilongint_test	NI
+v0.8:implicit-port1     NI
+v0.8:implicit-port2     NI
+v0.8:implicit-port3     NI
+v0.8:implicit-port4     NI
+v0.8:implicit-port5     NI
+v0.8:implicit-port6     NI
 v0.8:ishortint_test	NI
 v0.8:iuint1	NI
 v0.8:logp2	NI
@@ -1665,6 +1672,7 @@ v0.8:array_lval_select3b	NI	ivltests
 v0.8:array_lval_select4a	NI	ivltests
 v0.8:array_lval_select4b	NI	ivltests
 v0.8:array_lval_select5		NI	ivltests
+v0.8:array_lval_select6		NI	ivltests
 v0.8:undef_lval_select2		NI	ivltests
 v0.8:undef_lval_select3a	NI	ivltests
 v0.8:undef_lval_select3b	NI	ivltests
@@ -1689,6 +1697,7 @@ v0.8:named_fork_fail	NI
 #==========
 
 # V0.9 does not support SystemVerilog or VHDL
+v0.9:array_size	NI
 v0.9:bitp1	NI
 v0.9:bits	NI
 v0.9:bits2	NI
@@ -1716,6 +1725,12 @@ v0.9:iint_test	NI
 v0.9:ilongint_test	NI
 v0.9:int_param		NI
 v0.9:inc_dec_stmt	NI
+v0.9:implicit-port1  	NI
+v0.9:implicit-port2  	NI
+v0.9:implicit-port3  	NI
+v0.9:implicit-port4  	NI
+v0.9:implicit-port5  	NI
+v0.9:implicit-port6  	NI
 v0.9:ishortint_test	NI
 v0.9:iuint1		NI
 v0.9:logp2	NI
@@ -2211,6 +2226,7 @@ v0.9:array_lval_select3b	NI	ivltests
 v0.9:array_lval_select4a	NI	ivltests
 v0.9:array_lval_select4b	NI	ivltests
 v0.9:array_lval_select5		NI	ivltests
+v0.9:array_lval_select6		NI	ivltests
 v0.9:undef_lval_select2		NI	ivltests
 v0.9:undef_lval_select3a	NI	ivltests
 v0.9:undef_lval_select3b	NI	ivltests
@@ -2346,6 +2362,7 @@ vlog95:recursive_task		CE	ivltests
 vlog95:array_lval_select4a	CE	ivltests  # Also net arrays
 vlog95:array_lval_select4b	CE	ivltests  # Also net arrays
 vlog95:array_lval_select5	CE	ivltests  # Also net arrays
+vlog95:array_lval_select6	CE	ivltests  # Also net arrays
 vlog95:ca_64delay		CE	ivltests  # Also net arrays
 vlog95:ca_time			CE	ivltests
 vlog95:ca_var_delay		CE	ivltests
@@ -3290,6 +3307,12 @@ tern10		normal	ivltests
 readmemh5	CE	ivltests # Should be error for readmemh(romimg,rom[0:7])
 port-test2	normal	ivltests # Port declaration syntax checks
 port-test3	CE	ivltests # Port declaration syntax checks
+implicit-port1  normal  ivltests # SystemVerilog implicit port connections
+implicit-port2  CE      ivltests
+implicit-port3  CE      ivltests
+implicit-port4  normal  ivltests
+implicit-port5  normal  ivltests
+implicit-port6  CE      ivltests
 param_string	normal	ivltests # parameter storing a string.
 galan		normal	ivltests # Ternary test with varying size lhs vs rhs
 pic		normal	contrib  pictest diff=log/pic.log:gold/pic.gold
@@ -4067,6 +4090,7 @@ array4		normal	ivltests
 array5		CE	ivltests
 array6		normal	ivltests
 array7		normal	ivltests
+array_size      normal  ivltests # test [size] arrays
 pr1971662a	CE	ivltests
 pr1971662b	CE	ivltests
 pr1978358	normal	ivltests
@@ -4853,6 +4877,7 @@ array_lval_select3b	CE	ivltests
 array_lval_select4a	normal	ivltests
 array_lval_select4b	CE	ivltests
 array_lval_select5	normal	ivltests
+array_lval_select6	normal	ivltests
 br930	CO	ivltests
 br931	normal	ivltests
 br932a	normal,-g2009	ivltests
