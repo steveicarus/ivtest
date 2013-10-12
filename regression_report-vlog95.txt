@@ -1947,6 +1947,7 @@ test_mos_strength_reduction: Passed.
                       br931: Passed.
                       br935: Passed.
                       br937: Passed.
+                  itor_rtoi: Passed.
 ============================================================================
 Test results:
-  Total=1947, Passed=1918, Failed=1, Not Implemented=3, Expected Fail=25
+  Total=1948, Passed=1919, Failed=1, Not Implemented=3, Expected Fail=25

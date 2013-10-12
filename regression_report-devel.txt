@@ -1948,6 +1948,7 @@ test_mos_strength_reduction: Passed.
           sv_port_default10: Passed.
           sv_port_default11: Passed.
                        fr49: Passed.
+                  itor_rtoi: Passed.
 ============================================================================
 Test results:
-  Total=1948, Passed=1945, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1949, Passed=1946, Failed=3, Not Implemented=0, Expected Fail=0
