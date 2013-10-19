@@ -2286,6 +2286,7 @@ v0.9:inside_synth3	normal	ivltests
 v0.9:mix_reset	normal	ivltests
 v0.9:casex_synth	normal	ivltests
 v0.9:full_case	normal	ivltests
+v0.9:full_case2	NI
 
 #==========
 # At this time v0.10 doesn't support synthesis either.
@@ -2945,6 +2946,7 @@ vlog95:inside_synth3	normal	ivltests
 vlog95:mix_reset	normal	ivltests
 vlog95:casex_synth	normal	ivltests
 vlog95:full_case	normal	ivltests
+vlog95:full_case2	normal	ivltests
 
 #==========
 # The default case.

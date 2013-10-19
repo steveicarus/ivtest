@@ -516,6 +516,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   mix_reset: Passed.
                 casex_synth: Passed.
                   full_case: Passed.
+                 full_case2: Passed.
               always3.1.10A: Passed - CE.
               always3.1.11A: Passed.
               always3.1.11B: Passed.
@@ -1952,4 +1953,4 @@ test_mos_strength_reduction: Passed.
                   itor_rtoi: Passed.
 ============================================================================
 Test results:
-  Total=1950, Passed=1921, Failed=1, Not Implemented=3, Expected Fail=25
+  Total=1951, Passed=1922, Failed=1, Not Implemented=3, Expected Fail=25

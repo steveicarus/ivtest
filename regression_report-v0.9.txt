@@ -451,6 +451,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                   mix_reset: Passed.
                 casex_synth: Passed.
                   full_case: Passed.
+                 full_case2: Not Implemented.
               always3.1.10A: Passed - CE.
               always3.1.11A: Passed.
               always3.1.11B: Passed.
@@ -1956,4 +1957,4 @@ test_mos_strength_reduction: Passed.
                   itor_rtoi: Passed.
 ============================================================================
 Test results:
-  Total=1954, Passed=1589, Failed=0, Not Implemented=322, Expected Fail=43
+  Total=1955, Passed=1589, Failed=0, Not Implemented=323, Expected Fail=43
