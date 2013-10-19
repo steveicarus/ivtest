@@ -45,6 +45,7 @@ sub read_regression_list {
         or die "No regression list file name specified";
     my $ver = shift
         or die "No iverilog version specified";
+    my $opt = shift;
 
     my ($line, @fields, $tname, $tver, %nameidx, $options);
     open (REGRESS_LIST, "<$regress_fn") or
@@ -66,7 +67,8 @@ sub read_regression_list {
         $tname = $fields[0];
         if ($tname =~ /:/) {
             ($tver, $tname) = split(":", $tname);
-            next if ($tver ne "v$ver");  # Skip if this is not our version.
+            # Skip if this is not our version or option.
+            next if (($tver ne "v$ver") && ($tver ne $opt));
         } else {
             next if (exists($testtype{$tname}));  # Skip if already defined.
         }

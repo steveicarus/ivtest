@@ -32,7 +32,7 @@ use Environment;
 #
 #  Main script
 #
-my ($suffix, $with_valg) = &get_args;
+my ($suffix, $strict, $with_valg) = &get_args;
 my $regress_fn = &get_regress_fn;
 &open_report_file;
 my $ver = &get_ivl_version($suffix);
@@ -42,7 +42,7 @@ my $msg = $with_valg ? " (with valgrind)" : "";
 &print_rpt("-" x 76 . "\n");
 # Override the regression list version to be (v)log95
 $ver = "log95";
-&read_regression_list($regress_fn, $ver);
+&read_regression_list($regress_fn, $ver, "");
 &execute_regression($suffix, $with_valg);
 &close_report_file;
 

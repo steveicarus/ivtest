@@ -32,16 +32,17 @@ use Environment;
 #
 #  Main script
 #
-my ($suffix, $with_valg) = &get_args;
+my ($suffix, $strict, $with_valg) = &get_args;
 my $regress_fn = &get_regress_fn;
 &open_report_file;
 my $ver = &get_ivl_version($suffix);
+my $opt = $strict ? " (strict)" : "";
 my $msg = $with_valg ? " (with valgrind)" : "";
 &print_rpt("Running compiler/VVP tests for Icarus Verilog " .
-           "version: $ver$msg.\n");
+           "version: $ver$opt$msg.\n");
 &print_rpt("-" x 76 . "\n");
-&read_regression_list($regress_fn, $ver);
-&execute_regression($suffix, $with_valg);
+&read_regression_list($regress_fn, $ver, $strict ? "std" : "");
+&execute_regression($suffix, $strict, $with_valg);
 &close_report_file;
 
 
@@ -51,6 +52,7 @@ my $msg = $with_valg ? " (with valgrind)" : "";
 #
 sub execute_regression {
     my $sfx = shift(@_);
+    my $strict = shift(@_);
     my $with_valg = shift(@_);
     my ($tname, $total, $passed, $failed, $expected_fail, $not_impl,
         $len, $cmd, $diff_file);
@@ -101,6 +103,7 @@ sub execute_regression {
         $pass_type = 0;
         $cmd = $with_valg ? "valgrind --trace-children=yes " : "";
         $cmd .= "iverilog$sfx -o vsim $args{$tname}";
+        $cmd .= " -gstrict-expr-width" if ($strict);
         $cmd .= " -s $testmod{$tname}" if ($testmod{$tname} ne "");
         $cmd .= " -t null" if ($testtype{$tname} eq "CN");
         $cmd .= " ./$srcpath{$tname}/$tname.v > log/$tname.log 2>&1";
