@@ -8,6 +8,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                clkgen_logic: Not Implemented.
                  clkgen_net: Not Implemented.
                  clkgen_reg: Not Implemented.
+           disable_fork_cmd: Not Implemented.
             enum_base_range: Not Implemented.
            enum_elem_ranges: Not Implemented.
                   enum_next: Not Implemented.
@@ -20,6 +21,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                       final: Not Implemented.
                      final2: Not Implemented.
              first_last_num: Not Implemented.
+              fork_join_any: Not Implemented.
+             fork_join_none: Not Implemented.
                   ibit_test: Not Implemented.
                  ibyte_test: Not Implemented.
                   iint_test: Not Implemented.
@@ -239,8 +242,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                    program4: Not Implemented.
                   program5a: Not Implemented.
                   program5b: Not Implemented.
-              fork_join_any: Not Implemented.
-             fork_join_none: Not Implemented.
                  sv_string1: Not Implemented.
                  sv_string2: Not Implemented.
                  sv_string3: Not Implemented.
@@ -1954,4 +1955,4 @@ test_mos_strength_reduction: Passed.
                   itor_rtoi: Passed.
 ============================================================================
 Test results:
-  Total=1952, Passed=1589, Failed=0, Not Implemented=320, Expected Fail=43
+  Total=1953, Passed=1589, Failed=0, Not Implemented=321, Expected Fail=43

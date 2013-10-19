@@ -163,6 +163,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
            sv_port_default8: Passed - CE.
            sv_port_default9: Passed - CE.
                       br936: Passed - CE.
+           disable_fork_cmd: Passed - CE.
                   enum_next: Passed - CE.
                  enum_test1: Passed - CE.
               fork_join_any: Passed - CE.
@@ -1950,4 +1951,4 @@ test_mos_strength_reduction: Passed.
                   itor_rtoi: Passed.
 ============================================================================
 Test results:
-  Total=1948, Passed=1919, Failed=1, Not Implemented=3, Expected Fail=25
+  Total=1949, Passed=1920, Failed=1, Not Implemented=3, Expected Fail=25
