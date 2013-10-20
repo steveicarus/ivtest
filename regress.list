@@ -4915,3 +4915,4 @@ sv_port_default11	normal,-g2009	ivltests
 fr49	normal,-g2009	ivltests
 itor_rtoi	normal	ivltests gold=itor_rtoi.gold
 disable_fork_cmd	normal,-g2009	ivltests
+param-extend	normal	ivltests
