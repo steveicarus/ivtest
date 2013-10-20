@@ -106,7 +106,7 @@ sub execute_regression {
         $cmd .= " -s $testmod{$tname}" if ($testmod{$tname} ne "");
         $cmd .= $testtype{$tname} eq "CN" ? " -t null" : " -t vlog95";
         $cmd .= " -pfileline=1 -pspacing=4" if ($testtype{$tname} ne "CN");
-        $cmd .= " $args{$tname}";
+        $cmd .= " -D__ICARUS_UNSIZED__ $args{$tname}";
         $cmd .= " ./$srcpath{$tname}/$tname.v > log/$tname.log 2>&1";
 #        print "$cmd\n";
         if (system("$cmd")) {

@@ -73,9 +73,6 @@ vstd:assign3.2E		NI
 vstd:pr2909386a		EF	ivltests
 vstd:pr2909386b		EF	ivltests
 
-# It appears that the power operator is not working correctly.
-vstd:pr2865563		EF	ivltests
-
 # Problems with +: and a negative index, returns 'bx.
 vstd:signed_part	EF	ivltests
 vstd:signed_pv		EF	ivltests
@@ -95,15 +92,6 @@ vstd:pr3054101d		EF	ivltests
 vstd:pr3054101e		EF	ivltests
 vstd:pr3054101f		EF	ivltests
 
-# It does not support constants greater than 32 bits! Will 'd fix these?
-vstd:ca_pow_unsigned	EF	ivltests
-vstd:pow_unsigned	EF	ivltests
-vstd:pr903		EF	ivltests
-vstd:pr1388974		EF	ivltests
-vstd:pr2030767		EF	ivltests
-vstd:pr2352834		EF	ivltests
-vstd:pr2352834		EF	ivltests
-
 # The for loop index in a sensitivity list is not working correctly at T0.
 vstd:pr1026		EF	ivltests
 
@@ -115,9 +103,6 @@ vstd:sp2		EF	ivltests
 
 # I believe these should be accepted, but they need to be checked.
 vstd:pr1723367		CE	ivltests
-
-# I'm not sure which simulator has the bug. More research is needed.
-vstd:pr1742910		EF	ivltests
 
 # A partially out of bounds write should still write the in bounds bits.
 vstd:pr1990269		EF	ivltests
@@ -186,15 +171,9 @@ vstd:writemem-invalid	CE	ivltests
 vstd:undef		CE	ivltests
 vstd:pr2043585		normal	ivltests diff=log/pr2043585.log:gold/pr2043585_std.gold
 # spacing differences are also OK
-vstd:pr812		normal	ivltests diff=log/pr812.log:gold/pr812_std.gold
 vstd:resetall2		normal	ivltests diff=log/resetall2.log:gold/resetall2_std.gold
-vstd:pr1645277		normal	ivltests diff=log/pr1645277.log:gold/pr1645277_std.gold
-vstd:pr1792152		normal	ivltests diff=log/pr1792152.log:gold/pr1792152_std.gold
 # This has a trialing space is that OK?
 vstd:pr1661640		normal	ivltests diff=log/pr1661640.log:gold/pr1661640_std.gold
-# and extra leading zeros
-vstd:pr905		normal	ivltests diff=log/pr905.log:gold/pr905_std.gold
-vstd:pr985		normal	ivltests diff=log/pr985.log:gold/pr985_std.gold
 
 # $timeformat is ignored if there is no timescale.
 vstd:pr530a		EF	ivltests
@@ -230,12 +209,7 @@ vstd:pr1787423b_std	normal	ivltests
 vstd:pr1752823a		EF	ivltests
 vstd:pr1752823b		EF	ivltests
 # numeric display differences no trailing zeros, etc.
-vstd:localparam_type	normal	ivltests diff=log/localparam_type.log:gold/parameter_type_std.gold
-vstd:parameter_type	normal	ivltests diff=log/parameter_type.log:gold/parameter_type_std.gold
 vstd:nested_func	normal	ivltests diff=log/nested_func.log:gold/nested_func_std.gold
-vstd:pr1628300		normal	ivltests diff=log/pr1628300.log:gold/pr1628300_std.gold
-vstd:pr1701890		normal	ivltests diff=log/pr1701890.log:gold/pr1701890_std.gold
-vstd:pr2039694		normal	ivltests diff=log/pr2039694.log:gold/pr2039694_std.gold
 vstd:pr2251119		normal	ivltests diff=log/pr2251119.log:gold/pr2251119_std.gold
 vstd:pr2792897		EF	ivltests
 vstd:pr2792897_std	normal	ivltests
@@ -491,12 +465,6 @@ vstd:pr1819452		NI
 vstd:mixed_type_div_mod	NI
 vstd:pr1528093		NI
 
-# No support for divide by zero to get inf.
-vstd:pr1703120		CE
-
-# Icarus does not truncate results in a self determined context.
-vstd:pr1639064b		EF	ivltests diff=log/pr1639064b.log:gold/pr1639064b.gold
-
 # No support for the fileio routines ($fopen{r,w,a}).
 vstd:fileio		NI
 
@@ -545,9 +513,6 @@ vstd:unnamed_generate_block	NI
 # No support for `__FILE__ and `__LINE__
 vstd:fileline		NI
 vstd:fileline2		NI
-
-# No support for forced lossless parameter expressions
-vstd:param-width-ivl	NI
 
 #-------------------------------
 # Icarus bugs.
@@ -1513,8 +1478,7 @@ v0.8:gate_connect2	NI	ivltests
 v0.8:int_not_signext	EF	ivltests diff=log/int_not_signext.log:gold/int_not_signext.gold
 v0.8:integer5	EF	ivltests
 v0.8:multi_driver_delay	EF	ivltests
-v0.8:param-width-ivl	EF	ivltests gold=param-width-ivl.gold
-v0.8:param-width-std	EF	ivltests gold=param-width-std.gold
+v0.8:param-width	EF	ivltests gold=param-width.gold
 v0.8:pr487	EF	ivltests diff=log/pr487.log:gold/pr487.gold
 v0.8:pr527	EF	ivltests diff=log/pr527.log:gold/pr527.gold
 v0.8:pr528	EF	ivltests diff=log/pr528.log:gold/pr528.gold
@@ -2077,9 +2041,6 @@ v0.9:pr2972866	EF	ivltests
 
 # V0.9 does not support the CAs have their own driver functionality.
 v0.9:pr2715558	EF	ivltests diff=log/pr2715558.log:gold/pr2715558.gold
-
-# V0.9 does not support the -gstrict-expr-width option
-v0.9:param-width-std	EF	ivltests gold=param-width-std.gold
 
 # V0.9 does not have the expression elaboration rework code
 # This gives display differences in the following tests.
@@ -2947,6 +2908,54 @@ vlog95:mix_reset	normal	ivltests
 vlog95:casex_synth	normal	ivltests
 vlog95:full_case	normal	ivltests
 vlog95:full_case2	normal	ivltests
+
+#==========
+# Strict standard compliance.
+#==========
+
+# The standard requires oversized unsized constant numbers to be truncated.
+# These tests are specifically testing that such numbers aren't truncated.
+std:pr903		NI
+std:pr1388974		NI
+
+# Different results when unsized numbers are handled strictly.
+std:gate_connect2	CE			ivltests diff=log/gate_connect2.log:gold/gate_connect2_std.gold
+std:pr1639064b		normal			ivltests diff=log/pr1639064b.log:gold/pr1639064b_std.gold
+std:sel_rval_bit_ob	normal,-Wselect-range	ivltests diff=log/sel_rval_bit_ob.log:gold/sel_rval_bit_ob_std.gold
+std:sel_rval_part_ob	normal,-Wselect-range	ivltests diff=log/sel_rval_part_ob.log:gold/sel_rval_part_ob_std.gold
+
+# Different results when parameter expression width is calculated strictly.
+std:param-width		normal			ivltests diff=log/param-width.log:gold/param-width_std.gold
+
+# Extra white space or leading zeroes when displaying unsized numbers.
+std:localparam_type	normal			ivltests diff=log/localparam_type.log:gold/parameter_type_std.gold
+std:parameter_type	normal			ivltests diff=log/parameter_type.log:gold/parameter_type_std.gold
+std:pr812		normal			ivltests diff=log/pr812.log:gold/pr812_std.gold
+std:pr905		normal			ivltests diff=log/pr905.log:gold/pr905_std.gold
+std:pr985		normal			ivltests diff=log/pr985.log:gold/pr985_std.gold
+std:pr1645277		normal			ivltests diff=log/pr1645277.log:gold/pr1645277_std.gold
+std:pr1703120		normal			ivltests diff=log/pr1703120.log:gold/pr1703120_std.gold
+std:pr1792152		normal			ivltests diff=log/pr1792152.log:gold/pr1792152_std.gold
+std:pr2039694		normal			ivltests diff=log/pr2039694.log:gold/pr2039694_std.gold
+std:pr3527694		normal			ivltests diff=log/pr3527694.log:gold/pr3527694_std.gold
+
+# Evaluated constants in warning/error messages are sized.
+std:pr1833024		CE			ivltests diff=log/pr1833024.log:gold/pr1833024_std.gold
+std:pr3366217a		CE,-g2005-sv		ivltests diff=log/pr3366217a.log:gold/pr3366217a_std.gold
+std:pr3366217b		CE,-g2005-sv		ivltests diff=log/pr3366217b.log:gold/pr3366217b_std.gold
+std:pr3366217g		CE,-g2005-sv		ivltests diff=log/pr3366217g.log:gold/pr3366217g_std.gold
+
+#==========
+# Compatibility with other simulators.
+#==========
+
+# Display differences caused by running vvp with -compatible option.
+std:ca_time		normal			ivltests diff=log/ca_time.log:gold/ca_time_std.gold
+std:delayed_sfunc	normal,-gspecify	ivltests diff=log/delayed_sfunc.log:gold/delayed_sfunc_std.gold
+std:pr1701890		normal			ivltests diff=log/pr1701890.log:gold/pr1701890_std.gold
+std:pr1864110a		normal			ivltests diff=log/pr1864110a.log:gold/pr1864110a_std.gold
+std:pr1864110b		normal			ivltests diff=log/pr1864110b.log:gold/pr1864110b_std.gold
+std:pr1864115		normal			ivltests diff=log/pr1864115.log:gold/pr1864115_std.gold
 
 #==========
 # The default case.
@@ -4553,8 +4562,7 @@ def_nettype_none	CE	ivltests gold=def_nettype_none.gold
 undef		normal	ivltests gold=undef.gold
 fileline	normal  ivltests gold=fileline.gold
 fileline2	normal  ivltests gold=fileline2.gold
-param-width-ivl	normal	ivltests gold=param-width-ivl.gold
-param-width-std	normal,-gstrict-expr-width	ivltests gold=param-width-std.gold
+param-width	normal	ivltests gold=param-width.gold
 pr3149494	normal	ivltests gold=pr3149494.gold
 pr3190941	CE	ivltests diff=log/pr3190941.log:gold/pr3190941.gold
 pr3190948	normal  ivltests

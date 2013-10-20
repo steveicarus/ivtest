@@ -15,7 +15,7 @@ module foo ();
   wire [CLOCK_PERIOD_BIT_WIDTH-1:0] rst, rst2;
 
   assign rst  = {1'd1, {CP_SUM_BIT_WIDTH-1 {1'd0}}} / CLOCK_FREQUENCY;
-  assign rst2 = (2**(CP_SUM_BIT_WIDTH-1)) / CLOCK_FREQUENCY;
+  assign rst2 = (52'd2**(CP_SUM_BIT_WIDTH-1)) / CLOCK_FREQUENCY;
 
   initial
     #1 if (rst == rst2) $display("PASSED");

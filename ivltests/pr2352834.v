@@ -9,14 +9,14 @@ module top;
 
     in1 = -2; in2 = 63;
     res = in1 ** in2;
-    if (res !== -9223372036854775808) begin
+    if (res !== -128'sd9223372036854775808) begin
       $display("Failed: -2 ** 65, expected -9223372036854775808, got %0d", res);
       pass = 1'b0;
     end
 
     in1 = -2; in2 = 65;
     res = in1 ** in2;
-    if (res !== -36893488147419103232) begin
+    if (res !== -128'sd36893488147419103232) begin
       $display("Failed: -2 ** 65, expected -36893488147419103232, got %0d", res);
       pass = 1'b0;
     end

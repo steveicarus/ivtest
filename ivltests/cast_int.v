@@ -8,8 +8,8 @@ module top;
 //    $monitor(in,, out,, bin,, big);
     bin = 8589934592.5; // 2**33+0.5 overflows a 32 bit long.
     #1;
-    if (big !== 8589934593) begin
-      $display("Failed: multiword check, expected 8589934593, got %d", out);
+    if (big !== 35'sd8589934593) begin
+      $display("Failed: multiword check, expected 8589934593, got %d", big);
       pass = 1'b0;
     end
 

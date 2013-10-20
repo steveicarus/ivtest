@@ -55,7 +55,7 @@ sub execute_regression {
     my $strict = shift(@_);
     my $with_valg = shift(@_);
     my ($tname, $total, $passed, $failed, $expected_fail, $not_impl,
-        $len, $cmd, $diff_file);
+        $len, $cmd, $ivl_args, $vvp_args, $diff_file);
 
     $total = 0;
     $passed = 0;
@@ -74,6 +74,14 @@ sub execute_regression {
     }
     if (! -d 'work') {
         mkdir 'work' or die "Error: unable to create work directory.\n";
+    }
+
+    if ($strict) {
+        $ivl_args = "-gstrict-expr-width";
+        $vvp_args = "-compatible";
+    } else {
+        $ivl_args = "-D__ICARUS_UNSIZED__";
+        $vvp_args = "";
     }
 
     foreach $tname (@testlist) {
@@ -102,8 +110,7 @@ sub execute_regression {
         #
         $pass_type = 0;
         $cmd = $with_valg ? "valgrind --trace-children=yes " : "";
-        $cmd .= "iverilog$sfx -o vsim $args{$tname}";
-        $cmd .= " -gstrict-expr-width" if ($strict);
+        $cmd .= "iverilog$sfx -o vsim $ivl_args $args{$tname}";
         $cmd .= " -s $testmod{$tname}" if ($testmod{$tname} ne "");
         $cmd .= " -t null" if ($testtype{$tname} eq "CN");
         $cmd .= " ./$srcpath{$tname}/$tname.v > log/$tname.log 2>&1";
@@ -144,7 +151,7 @@ sub execute_regression {
 
         $cmd = $with_valg ? "valgrind --leak-check=full " .
                             "--show-reachable=yes " : "";
-        $cmd .= "vvp$sfx vsim $plargs{$tname} >> log/$tname.log 2>&1";
+        $cmd .= "vvp$sfx vsim $vvp_args $plargs{$tname} >> log/$tname.log 2>&1";
 #        print "$cmd\n";
         if ($pass_type == 0 and system("$cmd")) {
             if ($testtype{$tname} eq "RE") {

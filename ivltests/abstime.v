@@ -27,7 +27,11 @@ module top;
       pass = 1'b0;
     end
 
+`ifdef __ICARUS_UNSIZED__
     #9999000000;
+`else
+    #9999000000.0;
+`endif
     result = $abstime;
     if ($abs(result-10.0) > result*1e-9) begin
       $display("FAILED at time 10s, expected 10.0, got %g", result);
