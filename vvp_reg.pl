@@ -32,16 +32,17 @@ use Environment;
 #
 #  Main script
 #
-my ($suffix, $with_valg) = &get_args;
+my ($suffix, $strict, $with_valg) = &get_args;
 my $regress_fn = &get_regress_fn;
 &open_report_file;
 my $ver = &get_ivl_version($suffix);
+my $opt = $strict ? " (strict)" : "";
 my $msg = $with_valg ? " (with valgrind)" : "";
 &print_rpt("Running compiler/VVP tests for Icarus Verilog " .
-           "version: $ver$msg.\n");
+           "version: $ver$opt$msg.\n");
 &print_rpt("-" x 76 . "\n");
-&read_regression_list($regress_fn, $ver);
-&execute_regression($suffix, $with_valg);
+&read_regression_list($regress_fn, $ver, $strict ? "std" : "");
+&execute_regression($suffix, $strict, $with_valg);
 &close_report_file;
 
 
@@ -51,9 +52,10 @@ my $msg = $with_valg ? " (with valgrind)" : "";
 #
 sub execute_regression {
     my $sfx = shift(@_);
+    my $strict = shift(@_);
     my $with_valg = shift(@_);
     my ($tname, $total, $passed, $failed, $expected_fail, $not_impl,
-        $len, $cmd, $diff_file);
+        $len, $cmd, $ivl_args, $vvp_args, $diff_file);
 
     $total = 0;
     $passed = 0;
@@ -72,6 +74,14 @@ sub execute_regression {
     }
     if (! -d 'work') {
         mkdir 'work' or die "Error: unable to create work directory.\n";
+    }
+
+    if ($strict) {
+        $ivl_args = "-gstrict-expr-width";
+        $vvp_args = "-compatible";
+    } else {
+        $ivl_args = "-D__ICARUS_UNSIZED__";
+        $vvp_args = "";
     }
 
     foreach $tname (@testlist) {
@@ -100,7 +110,7 @@ sub execute_regression {
         #
         $pass_type = 0;
         $cmd = $with_valg ? "valgrind --trace-children=yes " : "";
-        $cmd .= "iverilog$sfx -o vsim $args{$tname}";
+        $cmd .= "iverilog$sfx -o vsim $ivl_args $args{$tname}";
         $cmd .= " -s $testmod{$tname}" if ($testmod{$tname} ne "");
         $cmd .= " -t null" if ($testtype{$tname} eq "CN");
         $cmd .= " ./$srcpath{$tname}/$tname.v > log/$tname.log 2>&1";
@@ -141,7 +151,7 @@ sub execute_regression {
 
         $cmd = $with_valg ? "valgrind --leak-check=full " .
                             "--show-reachable=yes " : "";
-        $cmd .= "vvp$sfx vsim $plargs{$tname} >> log/$tname.log 2>&1";
+        $cmd .= "vvp$sfx vsim $vvp_args $plargs{$tname} >> log/$tname.log 2>&1";
 #        print "$cmd\n";
         if ($pass_type == 0 and system("$cmd")) {
             if ($testtype{$tname} eq "RE") {

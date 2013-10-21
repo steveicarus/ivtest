@@ -1601,8 +1601,7 @@ test_mos_strength_reduction: Passed.
                       undef: Passed.
                    fileline: Passed.
                   fileline2: ==> Failed - output does not match gold file.
-            param-width-ivl: Passed.
-            param-width-std: Passed.
+                param-width: Passed.
                   pr3149494: Passed.
                   pr3190941: Passed - CE.
                   pr3190948: Passed.
@@ -1951,6 +1950,7 @@ test_mos_strength_reduction: Passed.
                        fr49: Passed.
                   itor_rtoi: Passed.
            disable_fork_cmd: Passed.
+               param-extend: Passed.
 ============================================================================
 Test results:
   Total=1951, Passed=1948, Failed=3, Not Implemented=0, Expected Fail=0

@@ -6,7 +6,7 @@ module main;
 
    initial begin
       #1 ;
-      if (addr !== 'h1_0040_0008) begin
+      if (addr !== 33'h1_0040_0008) begin
 	 $display("FAILED -- addr = %h", addr);
 	 $finish;
       end

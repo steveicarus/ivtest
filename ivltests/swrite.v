@@ -144,11 +144,23 @@ module top;
     $swrite(result, "%D", val);
     check_result(result, "       1000", "%D in $swrite failed!");
     $swrite(result, "%d", length);
+`ifdef __ICARUS_UNSIZED__
     check_result(result, " 34", "%d in $swrite failed!");
+`else
+    check_result(result, "         34", "%d in $swrite failed!");
+`endif
     $swrite(result, "%d", 31);
+`ifdef __ICARUS_UNSIZED__
     check_result(result, " 31", "%d in $swrite failed!");
+`else
+    check_result(result, "         31", "%d in $swrite failed!");
+`endif
     $swrite(result, "%d", $unsigned(31));
+`ifdef __ICARUS_UNSIZED__
     check_result(result, "31", "%d in $swrite failed!");
+`else
+    check_result(result, "        31", "%d in $swrite failed!");
+`endif
     $swrite(result, "%0d", val);
     check_result(result, "1000", "%0d in $swrite failed!");
     $swrite(result, "%+d", val);

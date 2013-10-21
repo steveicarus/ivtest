@@ -10,6 +10,6 @@ real ax, ay;
 initial begin
 	ax = 2.0;
 	ay = sin(ax);
-	$display("sin(", ax, ") is not really ", ay);
+	$display("sin(%g) is not really %g", ax, ay);
 end
 endmodule

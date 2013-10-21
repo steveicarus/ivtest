@@ -1,3 +1,5 @@
+// Note: when __ICARUS_UNSIZED__ is not defined, this test assumes integers
+// are 32 bits wide.
 module main();
 
    reg [34:0] my_reg;
@@ -31,7 +33,7 @@ module main();
 	 my_reg = 17179869185;
 	 $display("1:%d", my_reg);
 
-`ifdef __ICARUS__
+`ifdef __ICARUS_UNSIZED__
 	 // Ordinary compilers will truncate unsized integer
 	 // constants to 32bits. Icarus Verilog is more generous.
 	 if (my_reg !== 35'h4_00000001) begin
@@ -53,7 +55,7 @@ module main();
 	 my_reg = 'd17179869184;
 	 $display("2:%d", my_reg);
 
-`ifdef __ICARUS__
+`ifdef __ICARUS_UNSIZED__
 	 // Ordinary compilers will truncate unsized integer
 	 // constants to 32bits. Icarus Verilog is more generous.
 	 if (my_reg !== 35'h4_00000000) begin
@@ -109,7 +111,7 @@ module main();
 	       $display("Error: expected 34359738367");
 	    end
 
-`ifdef __ICARUS__
+`ifdef __ICARUS_UNSIZED__
 	 // Since Icarus Verilog doesn't truncate constant values,
 	 // the whole idea of truncating then sign-extending the result
 	 // to go into the wide reg does not apply. So skip this
@@ -133,7 +135,7 @@ module main();
 	 my_reg = 'd17179869183;
 	 $display("8:%d", my_reg);
 
-`ifdef __ICARUS__
+`ifdef __ICARUS_UNSIZED__
 	 if (my_reg != 'd17179869183)
 	    begin
 	       error = 1;

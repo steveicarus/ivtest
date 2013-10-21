@@ -73,7 +73,7 @@ module top;
       $display("FAILED(o) to parse one argument found %d", code);
       pass = 1'b0;
     end
-    if (a !== 'o01234567xzxzx) begin
+    if (a !== 64'o01234567xzxzx) begin
       $display("FAILED(o) argument value, expected 01234567xzxzx, got %o", a);
       pass = 1'b0;
     end
@@ -214,7 +214,7 @@ module top;
       $display("FAILED(h1) to parse one argument found %d", code);
       pass = 1'b0;
     end
-    if (a !== 'h0123456789xzxzx) begin
+    if (a !== 64'h0123456789xzxzx) begin
       $display("FAILED(h1) argument value, expected 0123456789xzxzx, got %h", a);
       pass = 1'b0;
     end
@@ -224,7 +224,7 @@ module top;
       $display("FAILED(h2) to parse one argument found %d", code);
       pass = 1'b0;
     end
-    if (a !== 'haabbccddeeff) begin
+    if (a !== 64'haabbccddeeff) begin
       $display("FAILED(h2) argument value, expected aabbccddeeff, got %h", a);
       pass = 1'b0;
     end
@@ -234,7 +234,7 @@ module top;
       $display("FAILED(h3) to parse one argument found %d", code);
       pass = 1'b0;
     end
-    if (a !== 'h0123456789xzxzx) begin
+    if (a !== 64'h0123456789xzxzx) begin
       $display("FAILED(h3) argument value, expected 0123456789xzxzx, got %h", a);
       pass = 1'b0;
     end
@@ -244,7 +244,7 @@ module top;
       $display("FAILED(h4) to parse one argument found %d", code);
       pass = 1'b0;
     end
-    if (a !== 'haabbccddeeff) begin
+    if (a !== 64'haabbccddeeff) begin
       $display("FAILED(h4) argument value, expected aabbccddeeff, got %h", a);
       pass = 1'b0;
     end

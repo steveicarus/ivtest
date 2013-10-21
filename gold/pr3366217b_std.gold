@@ -1,0 +1,2 @@
+./ivltests/pr3366217b.v:3: error: Enumeration name nega cannot have a value equal to 32'sd-1.
+2 error(s) during elaboration.
