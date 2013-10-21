@@ -1133,6 +1133,11 @@ v0.8:sv_port_default8	NI
 v0.8:sv_port_default9	NI
 v0.8:sv_port_default10	NI
 v0.8:sv_port_default11	NI
+v0.8:sv_darray_args1	NI
+v0.8:sv_darray_args2	NI
+v0.8:sv_darray_args2b	NI
+v0.8:sv_darray_args3	NI
+v0.8:sv_darray_args4	NI
 v0.8:parpkg_test	NI
 v0.8:parpkg_test2	NI
 v0.8:parpkg_test3	NI
@@ -1835,6 +1840,11 @@ v0.9:sv_port_default8	NI
 v0.9:sv_port_default9	NI
 v0.9:sv_port_default10	NI
 v0.9:sv_port_default11	NI
+v0.9:sv_darray_args1	NI
+v0.9:sv_darray_args2	NI
+v0.9:sv_darray_args2b	NI
+v0.9:sv_darray_args3	NI
+v0.9:sv_darray_args4	NI
 v0.9:parpkg_test	NI
 v0.9:parpkg_test2	NI
 v0.9:parpkg_test3	NI
@@ -4907,3 +4917,9 @@ sv_port_default11	normal,-g2009	ivltests
 fr49	normal,-g2009	ivltests
 itor_rtoi	normal	ivltests gold=itor_rtoi.gold
 disable_fork_cmd	normal,-g2009	ivltests
+sv_darray_args1	normal,-g2009	ivltests
+sv_darray_args2	normal,-g2009	ivltests
+sv_darray_args2b	normal,-g2009	ivltests
+sv_darray_args3	normal,-g2009	ivltests
+sv_darray_args4	normal,-g2009	ivltests
+sv_array_assign_pattern2	normal,-g2009	ivltests
