@@ -1335,6 +1335,7 @@ v0.8:br932a		NI
 v0.8:br932b		NI
 v0.8:br936		NI
 v0.8:test_work14	NI
+v0.8:wait_fork		NI
 
 # v0.8 does not have the vhdl_sys module
 v0.8:ivlh_event	NI
@@ -1922,6 +1923,7 @@ v0.9:vhdl_test6		NI
 v0.9:vhdl_test7		NI
 v0.9:vhdl_test8		NI
 v0.9:vhdl_test9		NI
+v0.9:wait_fork		NI
 v0.9:work7		NI
 v0.9:work7b		NI
 v0.9:int_param		NI
@@ -2519,6 +2521,7 @@ vlog95:pr3390385b	CE,-g2009	ivltests  # ++
 vlog95:pr3390385c	CE,-g2009	ivltests  # ++
 vlog95:pr3390385d	CE,-g2009	ivltests  # ++
 vlog95:pr3462145	CE,-g2009	ivltests  # ++
+vlog95:wait_fork	CE,-g2009	ivltests  # wait fork and join_*
 
 # No support for the SystemVerilog two state types (initial value problems).
 vlog95:ibit_test	EF,-g2009	ivltests
@@ -4933,6 +4936,7 @@ sv_port_default11	normal,-g2009	ivltests
 fr49	normal,-g2009	ivltests
 itor_rtoi	normal	ivltests gold=itor_rtoi.gold
 disable_fork_cmd	normal,-g2009	ivltests
+wait_fork	normal,-g2009	ivltests
 sv_darray_args1	normal,-g2009	ivltests
 sv_darray_args2	normal,-g2009	ivltests
 sv_darray_args2b	normal,-g2009	ivltests

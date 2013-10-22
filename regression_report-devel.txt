@@ -1950,6 +1950,7 @@ test_mos_strength_reduction: Passed.
                        fr49: Passed.
                   itor_rtoi: Passed.
            disable_fork_cmd: Passed.
+                  wait_fork: Passed.
             sv_darray_args1: Passed.
             sv_darray_args2: Passed.
            sv_darray_args2b: Passed.
@@ -1959,4 +1960,4 @@ test_mos_strength_reduction: Passed.
                param-extend: Passed.
 ============================================================================
 Test results:
-  Total=1957, Passed=1954, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1958, Passed=1955, Failed=3, Not Implemented=0, Expected Fail=0
