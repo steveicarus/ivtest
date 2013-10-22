@@ -126,6 +126,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  sv_string3: Passed - CE.
                  sv_string4: Passed - CE.
                  sv_string5: Passed - CE.
+   sv_array_assign_pattern2: Passed - CE.
                  sv_darray1: Passed - CE.
                  sv_darray2: Passed - CE.
                  sv_darray3: Passed - CE.
@@ -133,6 +134,11 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  sv_darray5: Passed - CE.
                 sv_darray5b: Passed - CE.
                  sv_darray6: Passed - CE.
+            sv_darray_args1: Passed - CE.
+            sv_darray_args2: Passed - CE.
+           sv_darray_args2b: Passed - CE.
+            sv_darray_args3: Passed - CE.
+            sv_darray_args4: Passed - CE.
                   sv_class1: Passed - CE.
                   sv_class2: Passed - CE.
                   sv_class3: Passed - CE.
@@ -1953,4 +1959,4 @@ test_mos_strength_reduction: Passed.
                param-extend: Passed.
 ============================================================================
 Test results:
-  Total=1951, Passed=1922, Failed=1, Not Implemented=3, Expected Fail=25
+  Total=1957, Passed=1928, Failed=1, Not Implemented=3, Expected Fail=25

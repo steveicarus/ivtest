@@ -112,6 +112,12 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
            sv_port_default9: Not Implemented.
           sv_port_default10: Not Implemented.
           sv_port_default11: Not Implemented.
+            sv_darray_args1: Not Implemented.
+            sv_darray_args2: Not Implemented.
+           sv_darray_args2b: Not Implemented.
+            sv_darray_args3: Not Implemented.
+            sv_darray_args4: Not Implemented.
+   sv_array_assign_pattern2: Not Implemented.
                 parpkg_test: Not Implemented.
                parpkg_test2: Not Implemented.
                parpkg_test3: Not Implemented.
@@ -1957,4 +1963,4 @@ test_mos_strength_reduction: Passed.
                param-extend: Passed.
 ============================================================================
 Test results:
-  Total=1955, Passed=1590, Failed=0, Not Implemented=323, Expected Fail=42
+  Total=1961, Passed=1590, Failed=0, Not Implemented=329, Expected Fail=42

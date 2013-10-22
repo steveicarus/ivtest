@@ -9,7 +9,7 @@ program main;
    endfunction // sum_array
 
    bit [7:0] obj[];
-   int 	     foo;
+   int	     foo;
    initial begin
       foo = sum_array('{});
       if (foo !== 0) begin
