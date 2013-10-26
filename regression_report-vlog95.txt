@@ -780,6 +780,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                        tri0: Passed.
                       tri0b: Passed.
                        tri1: Passed.
+                       tri3: Passed.
                      triand: Passed.
                       trior: Passed.
                       idiv1: Passed.
@@ -1958,6 +1959,9 @@ test_mos_strength_reduction: Passed.
                       br937: Passed.
                   itor_rtoi: Passed.
                param-extend: Passed.
+               constconcat1: Passed.
+               constconcat2: Passed.
+     always_star_array_lval: Passed.
 ============================================================================
 Test results:
-  Total=1958, Passed=1929, Failed=1, Not Implemented=3, Expected Fail=25
+  Total=1962, Passed=1933, Failed=1, Not Implemented=3, Expected Fail=25

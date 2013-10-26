@@ -2213,6 +2213,14 @@ v0.9:undef_lval_select4b	NI	ivltests
 v0.9:undef_lval_select4c	NI	ivltests
 v0.9:undef_lval_select5		NI	ivltests
 
+# V0.9 doesn't have the tri0/1 strength resolution fix. An attempt to
+# back port the fix resulted in another test failing.
+v0.9:tri3	EF	ivltests
+
+# V0.9 has problems with force statements
+v0.9:constconcat1	EF	ivltests
+v0.9:constconcat2	EF	ivltests
+
 #==========
 # V0.9 doesn't support synthesis. Might as well run them as
 # non-synthesis tests, though.
@@ -3245,6 +3253,7 @@ tri0		normal	ivltests
 tri0b		normal	ivltests
 tri1		normal	ivltests
 tri2		normal	ivltests
+tri3		normal	ivltests
 triand		normal	ivltests
 trior		normal	ivltests
 idiv1		normal	ivltests # Contrib by S Williams
@@ -4944,3 +4953,6 @@ sv_darray_args3	normal,-g2009	ivltests
 sv_darray_args4	normal,-g2009	ivltests
 sv_array_assign_pattern2	normal,-g2009	ivltests
 param-extend	normal	ivltests
+constconcat1	normal	ivltests
+constconcat2	normal	ivltests
+always_star_array_lval	normal	ivltests gold=always_star_array_lval.gold

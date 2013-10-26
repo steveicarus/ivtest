@@ -413,6 +413,9 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
         undef_lval_select4b: Not Implemented.
         undef_lval_select4c: Not Implemented.
          undef_lval_select5: Not Implemented.
+                       tri3: Passed - expected fail.
+               constconcat1: Passed - expected fail.
+               constconcat2: Passed - expected fail.
                       case1: Passed.
                       case2: Passed.
                       case4: Passed.
@@ -1962,6 +1965,7 @@ test_mos_strength_reduction: Passed.
                       br937: Passed.
                   itor_rtoi: Passed.
                param-extend: Passed.
+     always_star_array_lval: Passed.
 ============================================================================
 Test results:
-  Total=1962, Passed=1590, Failed=0, Not Implemented=330, Expected Fail=42
+  Total=1966, Passed=1591, Failed=0, Not Implemented=330, Expected Fail=45
