@@ -9,6 +9,7 @@ module main;
 
    logic [7:0] tmp;
    initial begin
+      #0; // avoid time-zero race
       for (tmp = 0 ; tmp <= 3 ; tmp = tmp+1) begin
 	 //if ($bits(foo[tmp]) !== 8) begin
 	 //   $display("FAILED -- $bits = %d", $bits(foo[tmp]));
