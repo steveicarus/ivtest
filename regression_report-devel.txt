@@ -1860,6 +1860,10 @@ test_mos_strength_reduction: Passed.
                  sv_class17: Passed.
                  sv_class18: Passed.
                  sv_class19: Passed.
+                 sv_class20: Passed.
+                 sv_class21: Passed.
+                 sv_class22: Passed.
+                 sv_class23: Passed.
                  sv_package: Passed.
                 sv_package2: Passed.
                 sv_package3: Passed.
@@ -1964,4 +1968,4 @@ test_mos_strength_reduction: Passed.
      always_star_array_lval: Passed.
 ============================================================================
 Test results:
-  Total=1962, Passed=1959, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1966, Passed=1963, Failed=3, Not Implemented=0, Expected Fail=0
