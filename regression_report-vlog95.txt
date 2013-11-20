@@ -158,6 +158,10 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  sv_class17: Passed - CE.
                  sv_class18: Passed - CE.
                  sv_class19: Passed - CE.
+                 sv_class20: Passed - CE.
+                 sv_class21: Passed - CE.
+                 sv_class22: Passed - CE.
+                 sv_class23: Passed - CE.
                sv_end_label: Passed - CE.
            sv_port_default1: Passed - CE.
            sv_port_default2: Passed - CE.
@@ -1964,4 +1968,4 @@ test_mos_strength_reduction: Passed.
      always_star_array_lval: Passed.
 ============================================================================
 Test results:
-  Total=1962, Passed=1933, Failed=1, Not Implemented=3, Expected Fail=25
+  Total=1966, Passed=1937, Failed=1, Not Implemented=3, Expected Fail=25

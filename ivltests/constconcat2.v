@@ -57,7 +57,7 @@ wire [1:0] N = {1'b1, n};
 
 reg failed;
 
-initial begin 
+initial begin
   failed = 0; #1;
 
   $display("A = %b, expect 1z", A); if (A !== 2'b1z) failed = 1;

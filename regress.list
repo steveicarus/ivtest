@@ -2961,7 +2961,7 @@ std:pr1388974		NI
 
 # Different results when unsized numbers are handled strictly.
 std:gate_connect2	CE			ivltests diff=log/gate_connect2.log:gold/gate_connect2_std.gold
-std:indef_width_concat	CE	  		ivltests diff=log/indef_width_concat.log:gold/indef_width_concat_std.gold
+std:indef_width_concat	CE			ivltests diff=log/indef_width_concat.log:gold/indef_width_concat_std.gold
 std:pr1639064b		normal			ivltests diff=log/pr1639064b.log:gold/pr1639064b_std.gold
 std:sel_rval_bit_ob	normal,-Wselect-range	ivltests diff=log/sel_rval_bit_ob.log:gold/sel_rval_bit_ob_std.gold
 std:sel_rval_part_ob	normal,-Wselect-range	ivltests diff=log/sel_rval_part_ob.log:gold/sel_rval_part_ob_std.gold
