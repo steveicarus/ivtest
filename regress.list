@@ -4977,3 +4977,7 @@ param-extend	normal	ivltests
 constconcat1	normal	ivltests
 constconcat2	normal	ivltests
 always_star_array_lval	normal	ivltests gold=always_star_array_lval.gold
+sv_macro	normal,-g2009	ivltests
+sv_union1	normal,-g2009	ivltests
+sv_union2	normal,-g2009	ivltests
+sv_union3	normal,-g2009	ivltests
