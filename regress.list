@@ -1271,6 +1271,7 @@ v0.8:vhdl_nor104_stdlogic	NI
 v0.8:vhdl_nor23_bit	NI
 v0.8:vhdl_notg_bit	NI
 v0.8:vhdl_notg_stdlogic	NI
+v0.8:vhdl_notfunc_stdlogic	NI
 v0.8:vhdl_not104_stdlogic	NI
 v0.8:vhdl_not23_bit	NI
 v0.8:vhdl_org_bit	NI
@@ -1885,6 +1886,7 @@ v0.9:vhdl_nor104_stdlogic	NI
 v0.9:vhdl_nor23_bit	NI
 v0.9:vhdl_notg_bit	NI
 v0.9:vhdl_notg_stdlogic	NI
+v0.9:vhdl_notfunc_stdlogic	NI
 v0.9:vhdl_not104_stdlogic	NI
 v0.9:vhdl_not23_bit	NI
 v0.9:vhdl_org_bit	NI
@@ -4638,6 +4640,7 @@ vhdl_nor104_stdlogic	normal,-g2005-sv,ivltests/vhdl_nor104_stdlogic.vhd	ivltests
 vhdl_nor23_bit	normal,-g2005-sv,ivltests/vhdl_nor23_bit.vhd	ivltests
 vhdl_notg_bit	normal,-g2005-sv,ivltests/vhdl_notg_bit.vhd	ivltests
 vhdl_notg_stdlogic	normal,-g2005-sv,ivltests/vhdl_notg_stdlogic.vhd	ivltests
+vhdl_notfunc_stdlogic	normal,-g2005-sv,ivltests/vhdl_notfunc_stdlogic.vhd	ivltests
 vhdl_not104_stdlogic	normal,-g2005-sv,ivltests/vhdl_not104_stdlogic.vhd	ivltests
 vhdl_not23_bit	normal,-g2005-sv,ivltests/vhdl_not23_bit.vhd	ivltests
 vhdl_org_bit	normal,-g2005-sv,ivltests/vhdl_org_bit.vhd	ivltests
