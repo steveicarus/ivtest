@@ -1629,6 +1629,7 @@ test_mos_strength_reduction: Passed.
              vhdl_nor23_bit: Passed.
               vhdl_notg_bit: Passed.
          vhdl_notg_stdlogic: Passed.
+      vhdl_notfunc_stdlogic: Passed.
        vhdl_not104_stdlogic: Passed.
              vhdl_not23_bit: Passed.
                vhdl_org_bit: Passed.
@@ -1728,7 +1729,7 @@ test_mos_strength_reduction: Passed.
                   pr3409749: Passed.
                test_mux2to1: Passed.
                test_dec2to4: Passed.
-            test_enumsystem: ==> Failed - running iverilog.
+            test_enumsystem: Passed.
               test_timebase: Passed.
                 test_system: Passed.
     test_signal_init_assign: Passed.
@@ -1973,4 +1974,4 @@ test_mos_strength_reduction: Passed.
                   sv_union3: Passed.
 ============================================================================
 Test results:
-  Total=1971, Passed=1967, Failed=4, Not Implemented=0, Expected Fail=0
+  Total=1972, Passed=1969, Failed=3, Not Implemented=0, Expected Fail=0

@@ -1,9 +1,19 @@
 Running compiler/VVP tests for Icarus Verilog version: 0.9.
 ----------------------------------------------------------------------------
                  array_size: Not Implemented.
+               array_string: Not Implemented.
                       bitp1: Not Implemented.
                        bits: Not Implemented.
                       bits2: Not Implemented.
+                      br884: Not Implemented.
+                     br917a: Not Implemented.
+                     br917b: Not Implemented.
+                     br917c: Not Implemented.
+                     br917d: Not Implemented.
+                      br921: Not Implemented.
+                     br932a: Not Implemented.
+                     br932b: Not Implemented.
+                      br936: Not Implemented.
                  clkgen_bit: Not Implemented.
                clkgen_logic: Not Implemented.
                  clkgen_net: Not Implemented.
@@ -24,10 +34,26 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
               fork_join_any: Not Implemented.
               fork_join_dis: Not Implemented.
              fork_join_none: Not Implemented.
+                       fr49: Not Implemented.
                   ibit_test: Not Implemented.
                  ibyte_test: Not Implemented.
                   iint_test: Not Implemented.
               ilongint_test: Not Implemented.
+               inc_dec_stmt: Not Implemented.
+                  int_param: Not Implemented.
+             implicit_cast1: Not Implemented.
+             implicit_cast2: Not Implemented.
+             implicit_cast3: Not Implemented.
+             implicit_cast4: Not Implemented.
+             implicit_cast5: Not Implemented.
+             implicit_cast6: Not Implemented.
+             implicit_cast7: Not Implemented.
+             implicit_cast8: Not Implemented.
+             implicit_cast9: Not Implemented.
+            implicit_cast10: Not Implemented.
+            implicit_cast11: Not Implemented.
+            implicit_cast12: Not Implemented.
+            implicit_cast13: Not Implemented.
              implicit-port1: Not Implemented.
              implicit-port2: Not Implemented.
              implicit-port3: Not Implemented.
@@ -41,6 +67,11 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                  named_fork: Not Implemented.
            named_begin_fail: Not Implemented.
             named_fork_fail: Not Implemented.
+                    packeda: Not Implemented.
+                   packeda2: Not Implemented.
+                parpkg_test: Not Implemented.
+               parpkg_test2: Not Implemented.
+               parpkg_test3: Not Implemented.
                      plus_5: Not Implemented.
                   pr3366114: Not Implemented.
                  pr3366217a: Not Implemented.
@@ -60,23 +91,41 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                   pr3515542: Not Implemented.
                   pr3534333: Not Implemented.
                   pr3576165: Not Implemented.
+              program_hello: Not Implemented.
+             program_hello2: Not Implemented.
+                   program2: Not Implemented.
+                  program2b: Not Implemented.
+                   program3: Not Implemented.
+                  program3a: Not Implemented.
+                  program3b: Not Implemented.
+                   program4: Not Implemented.
+                  program5a: Not Implemented.
+                  program5b: Not Implemented.
                  sbyte_test: Not Implemented.
                 simple_byte: Not Implemented.
                  simple_int: Not Implemented.
              simple_longint: Not Implemented.
             simple_shortint: Not Implemented.
                   sint_test: Not Implemented.
+                  size_cast: Not Implemented.
               slongint_test: Not Implemented.
              sshortint_test: Not Implemented.
+        struct_packed_array: Not Implemented.
+       struct_packed_array2: Not Implemented.
+     struct_packed_sysfunct: Not Implemented.
+  struct_packed_write_read2: Not Implemented.
+                    struct1: Not Implemented.
+                    struct2: Not Implemented.
+                    struct3: Not Implemented.
+                   struct3b: Not Implemented.
+                    struct4: Not Implemented.
+                    struct5: Not Implemented.
+                    struct6: Not Implemented.
+                    struct7: Not Implemented.
+                    struct8: Not Implemented.
                sv-2val-nets: Not Implemented.
                sv-constants: Not Implemented.
-                 sv_darray1: Not Implemented.
-                 sv_darray2: Not Implemented.
-                 sv_darray3: Not Implemented.
-                 sv_darray4: Not Implemented.
-                 sv_darray5: Not Implemented.
-                sv_darray5b: Not Implemented.
-                 sv_darray6: Not Implemented.
+   sv_array_assign_pattern2: Not Implemented.
                   sv_class1: Not Implemented.
                   sv_class2: Not Implemented.
                   sv_class3: Not Implemented.
@@ -101,6 +150,23 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                  sv_class22: Not Implemented.
                  sv_class23: Not Implemented.
                  sv_class24: Not Implemented.
+            sv_darray_args1: Not Implemented.
+            sv_darray_args2: Not Implemented.
+           sv_darray_args2b: Not Implemented.
+            sv_darray_args3: Not Implemented.
+            sv_darray_args4: Not Implemented.
+                 sv_darray1: Not Implemented.
+                 sv_darray2: Not Implemented.
+                 sv_darray3: Not Implemented.
+                 sv_darray4: Not Implemented.
+                 sv_darray5: Not Implemented.
+                sv_darray5b: Not Implemented.
+                 sv_darray6: Not Implemented.
+               sv_end_label: Not Implemented.
+          sv_end_label_fail: Not Implemented.
+              sv_end_labels: Not Implemented.
+          sv_end_labels_bad: Not Implemented.
+                   sv_macro: Not Implemented.
                  sv_package: Not Implemented.
                 sv_package2: Not Implemented.
                 sv_package3: Not Implemented.
@@ -117,37 +183,34 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
            sv_port_default9: Not Implemented.
           sv_port_default10: Not Implemented.
           sv_port_default11: Not Implemented.
-            sv_darray_args1: Not Implemented.
-            sv_darray_args2: Not Implemented.
-           sv_darray_args2b: Not Implemented.
-            sv_darray_args3: Not Implemented.
-            sv_darray_args4: Not Implemented.
-   sv_array_assign_pattern2: Not Implemented.
-                parpkg_test: Not Implemented.
-               parpkg_test2: Not Implemented.
-               parpkg_test3: Not Implemented.
-             implicit_cast1: Not Implemented.
-             implicit_cast2: Not Implemented.
-             implicit_cast3: Not Implemented.
-             implicit_cast4: Not Implemented.
-             implicit_cast5: Not Implemented.
-             implicit_cast6: Not Implemented.
-             implicit_cast7: Not Implemented.
-             implicit_cast8: Not Implemented.
-             implicit_cast9: Not Implemented.
-            implicit_cast10: Not Implemented.
-            implicit_cast11: Not Implemented.
-            implicit_cast12: Not Implemented.
-            implicit_cast13: Not Implemented.
-  struct_packed_write_read2: Not Implemented.
+                  sv_union1: Not Implemented.
+                  sv_union2: Not Implemented.
+                  sv_union3: Not Implemented.
+                 sv_string1: Not Implemented.
+                 sv_string2: Not Implemented.
+                 sv_string3: Not Implemented.
+                 sv_string4: Not Implemented.
+                 sv_string5: Not Implemented.
            sv_timeunit_prec: Not Implemented.
           sv_timeunit_prec2: Not Implemented.
       sv_timeunit_prec_fail: Not Implemented.
      sv_timeunit_prec_fail2: Not Implemented.
            sys_func_as_task: Not Implemented.
            task_init_assign: Not Implemented.
+               test_dec2to4: Not Implemented.
+            test_enumsystem: Not Implemented.
+                test_forgen: Not Implemented.
+                  test_gxor: Not Implemented.
                test_inc_dec: Not Implemented.
+               test_mux2to1: Not Implemented.
+                task_scope2: Not Implemented.
+    test_signal_init_assign: Not Implemented.
+                test_system: Not Implemented.
+              test_timebase: Not Implemented.
               test_tliteral: Not Implemented.
+               test_varray1: Not Implemented.
+             test_when_else: Not Implemented.
+                test_work14: Not Implemented.
           two_state_display: Not Implemented.
                  ubyte_test: Not Implemented.
                   uint_test: Not Implemented.
@@ -170,6 +233,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
              vhdl_nor23_bit: Not Implemented.
               vhdl_notg_bit: Not Implemented.
          vhdl_notg_stdlogic: Not Implemented.
+      vhdl_notfunc_stdlogic: Not Implemented.
        vhdl_not104_stdlogic: Not Implemented.
              vhdl_not23_bit: Not Implemented.
                vhdl_org_bit: Not Implemented.
@@ -208,6 +272,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
              vhdl_sa1_test1: Not Implemented.
              vhdl_sa1_test2: Not Implemented.
              vhdl_sa1_test3: Not Implemented.
+          vhdl_struct_array: Not Implemented.
                  vhdl_test1: Not Implemented.
                  vhdl_test2: Not Implemented.
                  vhdl_test3: Not Implemented.
@@ -220,66 +285,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                   wait_fork: Not Implemented.
                       work7: Not Implemented.
                      work7b: Not Implemented.
-                  int_param: Not Implemented.
-               test_mux2to1: Not Implemented.
-               test_dec2to4: Not Implemented.
-            test_enumsystem: Not Implemented.
-              test_timebase: Not Implemented.
-                test_system: Not Implemented.
-    test_signal_init_assign: Not Implemented.
-                test_forgen: Not Implemented.
-                  test_gxor: Not Implemented.
-               test_varray1: Not Implemented.
-             test_when_else: Not Implemented.
-                  size_cast: Not Implemented.
-                    struct1: Not Implemented.
-                    struct2: Not Implemented.
-                    struct3: Not Implemented.
-                   struct3b: Not Implemented.
-                    struct4: Not Implemented.
-                    struct5: Not Implemented.
-                    struct6: Not Implemented.
-                    struct7: Not Implemented.
-                    struct8: Not Implemented.
-                    packeda: Not Implemented.
-                   packeda2: Not Implemented.
-               inc_dec_stmt: Not Implemented.
-                task_scope2: Not Implemented.
-              program_hello: Not Implemented.
-             program_hello2: Not Implemented.
-                   program2: Not Implemented.
-                  program2b: Not Implemented.
-                   program3: Not Implemented.
-                  program3a: Not Implemented.
-                  program3b: Not Implemented.
-                   program4: Not Implemented.
-                  program5a: Not Implemented.
-                  program5b: Not Implemented.
-                 sv_string1: Not Implemented.
-                 sv_string2: Not Implemented.
-                 sv_string3: Not Implemented.
-                 sv_string4: Not Implemented.
-                 sv_string5: Not Implemented.
-        struct_packed_array: Not Implemented.
-       struct_packed_array2: Not Implemented.
-          vhdl_struct_array: Not Implemented.
-                      br884: Not Implemented.
-                     br917a: Not Implemented.
-                     br917b: Not Implemented.
-                     br917c: Not Implemented.
-                     br917d: Not Implemented.
-                      br921: Not Implemented.
-               array_string: Not Implemented.
-     struct_packed_sysfunct: Not Implemented.
-               sv_end_label: Not Implemented.
-          sv_end_label_fail: Not Implemented.
-              sv_end_labels: Not Implemented.
-          sv_end_labels_bad: Not Implemented.
-                     br932a: Not Implemented.
-                     br932b: Not Implemented.
-                      br936: Not Implemented.
-                test_work14: Not Implemented.
-                       fr49: Not Implemented.
                  ivlh_event: Not Implemented.
               cmdline_parm1: Not Implemented.
                     analog1: Not Implemented.
@@ -1973,4 +1978,4 @@ test_mos_strength_reduction: Passed.
      always_star_array_lval: Passed.
 ============================================================================
 Test results:
-  Total=1971, Passed=1591, Failed=0, Not Implemented=335, Expected Fail=45
+  Total=1976, Passed=1591, Failed=0, Not Implemented=340, Expected Fail=45
