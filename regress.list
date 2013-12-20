@@ -1033,6 +1033,7 @@ v0.8:struct5	NI
 v0.8:struct6	NI
 v0.8:struct7	NI
 v0.8:struct8	NI
+v0.8:struct9	NI
 v0.8:packeda	NI
 v0.8:packeda2	NI
 v0.8:inc_dec_stmt NI
@@ -1803,6 +1804,7 @@ v0.9:struct5		NI
 v0.9:struct6		NI
 v0.9:struct7		NI
 v0.9:struct8		NI
+v0.9:struct9		NI
 v0.9:sv-2val-nets	NI
 v0.9:sv-constants	NI
 v0.9:sv_array_assign_pattern2	NI
@@ -4740,6 +4742,7 @@ struct5	normal,-g2009	ivltests
 struct6	normal,-g2009	ivltests
 struct7	normal,-g2009	ivltests
 struct8	normal,-g2009	ivltests
+struct9	normal,-g2009	ivltests
 packeda	normal,-g2009	ivltests
 packeda2	normal,-g2009	ivltests
 pr3499807	normal	ivltests diff=log/pr3499807.log:gold/pr3499807.gold
@@ -4954,3 +4957,8 @@ sv_union1	normal,-g2009	ivltests
 sv_union2	normal,-g2009	ivltests
 sv_union3	normal,-g2009	ivltests
 br_gh6	normal	ivltests
+sv_union1b	normal,-g2009	ivltests
+sv_union2b	normal,-g2009	ivltests
+sv_union3b	normal,-g2009	ivltests
+sv_union4b	normal,-g2009	ivltests
+sv_enum1	normal,-g2009	ivltests
