@@ -1976,6 +1976,7 @@ test_mos_strength_reduction: Passed.
                   itor_rtoi: Passed.
                param-extend: Passed.
      always_star_array_lval: Passed.
+                     br_gh6: Passed.
 ============================================================================
 Test results:
-  Total=1976, Passed=1591, Failed=0, Not Implemented=340, Expected Fail=45
+  Total=1977, Passed=1592, Failed=0, Not Implemented=340, Expected Fail=45

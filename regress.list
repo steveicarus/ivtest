@@ -4953,3 +4953,4 @@ sv_macro	normal,-g2009	ivltests
 sv_union1	normal,-g2009	ivltests
 sv_union2	normal,-g2009	ivltests
 sv_union3	normal,-g2009	ivltests
+br_gh6	normal	ivltests

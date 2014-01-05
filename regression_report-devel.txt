@@ -1972,6 +1972,7 @@ test_mos_strength_reduction: Passed.
                   sv_union1: Passed.
                   sv_union2: Passed.
                   sv_union3: Passed.
+                     br_gh6: Passed.
 ============================================================================
 Test results:
-  Total=1972, Passed=1969, Failed=3, Not Implemented=0, Expected Fail=0
+  Total=1973, Passed=1970, Failed=3, Not Implemented=0, Expected Fail=0
