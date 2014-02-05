@@ -4962,3 +4962,7 @@ sv_union2b	normal,-g2009	ivltests
 sv_union3b	normal,-g2009	ivltests
 sv_union4b	normal,-g2009	ivltests
 sv_enum1	normal,-g2009	ivltests
+sv_uwire1	normal,-g2009	ivltests
+sv_uwire2	normal,-g2009	ivltests
+sv_uwire3	normal,-g2009	ivltests
+sv_uwire4	normal,-g2009	ivltests
