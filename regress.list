@@ -3740,7 +3740,7 @@ pr772		normal	ivltests
 pr809		normal	ivltests
 pr809b		normal	ivltests
 pr810		normal	ivltests
-pr812		normal	ivltests diff=log/pr812.log:gold/pr812.gold
+pr812		normal	ivltests diff=log/pr812.log:gold/pr812_std.gold
 pr820		normal	ivltests diff=log/pr820.log:gold/pr820.gold
 pr823		normal	ivltests
 pr841		normal	ivltests
@@ -3765,7 +3765,7 @@ race		normal	ivltests
 pr973		normal	ivltests
 pr978		normal	ivltests
 pr979		normal	ivltests diff=log/pr979.log:gold/pr979.gold
-pr985		normal	ivltests diff=log/pr985.log:gold/pr985.gold
+pr985		normal	ivltests diff=log/pr985.log:gold/pr985_std.gold
 pr987		normal	ivltests diff=log/pr987.log:gold/pr987.gold
 pr990		normal	ivltests
 pr991		normal	ivltests diff=log/pr991.log:gold/pr991.gold
@@ -3954,7 +3954,7 @@ pr1787423b	normal	ivltests
 pr1787423c	normal	ivltests
 cmos		normal	ivltests diff=log/cmos.log:gold/cmos.gold
 pr1792108	normal	ivltests diff=log/pr1792108.log:gold/pr1792108.gold
-pr1792152	normal	ivltests diff=log/pr1792152.log:gold/pr1792152.gold
+pr1792152	normal	ivltests diff=log/pr1792152.log:gold/pr1792152_std.gold
 pr1792734	normal	ivltests diff=log/pr1792734.log:gold/pr1792734.gold
 pr1793157	normal	ivltests diff=log/pr1793157.log:gold/pr1793157.gold
 pr1793749	normal	ivltests diff=log/pr1793749.log:gold/pr1793749.gold
@@ -4168,7 +4168,7 @@ pr2030767	normal	ivltests
 pr2036953	normal	ivltests
 pr2038048	normal	ivltests
 pr2039632	CE	ivltests
-pr2039694	normal	ivltests diff=log/pr2039694.log:gold/pr2039694.gold
+pr2039694	normal	ivltests diff=log/pr2039694.log:gold/pr2039694_std.gold
 pr2043324	normal	ivltests
 pr2043585	normal,-Wsensitivity-entire-array ivltests diff=log/pr2043585.log:gold/pr2043585.gold
 pr2051694	CE	ivltests
@@ -4757,7 +4757,7 @@ attrib	normal	ivltests
 specparam1	normal	ivltests
 specparam2	normal	ivltests
 pr3527022	normal	ivltests
-pr3527694	normal	ivltests diff=log/pr3527694.log:gold/pr3527694.gold
+pr3527694	normal	ivltests diff=log/pr3527694.log:gold/pr3527694_std.gold
 test_when_else	normal,-g2009,ivltests/when_else.vhd	ivltests
 program_hello	normal,-g2009	ivltests
 program_hello2	CE,-g2009	ivltests
