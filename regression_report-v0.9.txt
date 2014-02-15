@@ -123,6 +123,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                     struct6: Not Implemented.
                     struct7: Not Implemented.
                     struct8: Not Implemented.
+                    struct9: Not Implemented.
                sv-2val-nets: Not Implemented.
                sv-constants: Not Implemented.
    sv_array_assign_pattern2: Not Implemented.
@@ -166,6 +167,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
           sv_end_label_fail: Not Implemented.
               sv_end_labels: Not Implemented.
           sv_end_labels_bad: Not Implemented.
+                   sv_enum1: Not Implemented.
                    sv_macro: Not Implemented.
                  sv_package: Not Implemented.
                 sv_package2: Not Implemented.
@@ -183,9 +185,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
            sv_port_default9: Not Implemented.
           sv_port_default10: Not Implemented.
           sv_port_default11: Not Implemented.
-                  sv_union1: Not Implemented.
-                  sv_union2: Not Implemented.
-                  sv_union3: Not Implemented.
                  sv_string1: Not Implemented.
                  sv_string2: Not Implemented.
                  sv_string3: Not Implemented.
@@ -195,6 +194,13 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
           sv_timeunit_prec2: Not Implemented.
       sv_timeunit_prec_fail: Not Implemented.
      sv_timeunit_prec_fail2: Not Implemented.
+                  sv_union1: Not Implemented.
+                 sv_union1b: Not Implemented.
+                  sv_union2: Not Implemented.
+                 sv_union2b: Not Implemented.
+                  sv_union3: Not Implemented.
+                 sv_union3b: Not Implemented.
+                 sv_union4b: Not Implemented.
            sys_func_as_task: Not Implemented.
            task_init_assign: Not Implemented.
                test_dec2to4: Not Implemented.
@@ -424,6 +430,9 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
         undef_lval_select4c: Not Implemented.
          undef_lval_select5: Not Implemented.
                        tri3: Passed - expected fail.
+                    br_gh11: Not Implemented.
+                     br_gh8: Passed - expected fail.
+                     br_gh9: Not Implemented.
                constconcat1: Passed - expected fail.
                constconcat2: Passed - expected fail.
                       case1: Passed.
@@ -1977,6 +1986,8 @@ test_mos_strength_reduction: Passed.
                param-extend: Passed.
      always_star_array_lval: Passed.
                      br_gh6: Passed.
+                     br_gh7: Passed.
+                    br_gh12: Passed.
 ============================================================================
 Test results:
-  Total=1977, Passed=1592, Failed=0, Not Implemented=340, Expected Fail=45
+  Total=1988, Passed=1594, Failed=0, Not Implemented=348, Expected Fail=46
