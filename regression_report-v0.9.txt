@@ -430,11 +430,18 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
         undef_lval_select4c: Not Implemented.
          undef_lval_select5: Not Implemented.
                        tri3: Passed - expected fail.
-                    br_gh11: Not Implemented.
+              pow_ca_signed: Not Implemented.
+            pow_ca_unsigned: Not Implemented.
+             pow_reg_signed: Not Implemented.
+           pow_reg_unsigned: Not Implemented.
                      br_gh8: Passed - expected fail.
                      br_gh9: Not Implemented.
+                    br_gh11: Not Implemented.
+                    br_gh14: Not Implemented.
                constconcat1: Passed - expected fail.
                constconcat2: Passed - expected fail.
+                     br605a: Passed - expected fail.
+                     br605b: Passed - expected fail.
                       case1: Passed.
                       case2: Passed.
                       case4: Passed.
@@ -1988,6 +1995,7 @@ test_mos_strength_reduction: Passed.
                      br_gh6: Passed.
                      br_gh7: Passed.
                     br_gh12: Passed.
+                      br946: Passed.
 ============================================================================
 Test results:
-  Total=1988, Passed=1594, Failed=0, Not Implemented=348, Expected Fail=46
+  Total=1996, Passed=1595, Failed=0, Not Implemented=353, Expected Fail=48
