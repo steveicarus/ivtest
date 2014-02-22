@@ -1221,7 +1221,7 @@ v0.8:pr3390385c		NI
 v0.8:pr3390385d		NI
 v0.8:pr3462145		NI
 v0.8:pr3515542	NI
-v0.9:pr3576165	NI
+v0.8:pr3576165	NI
 v0.8:sbyte_test	NI
 v0.8:simple_byte	NI
 v0.8:simple_int	NI
@@ -1848,6 +1848,7 @@ v0.9:sv_end_label	NI
 v0.9:sv_end_label_fail	NI
 v0.9:sv_end_labels	NI
 v0.9:sv_end_labels_bad	NI
+v0.9:sv_enum1	NI
 v0.9:sv_macro	NI
 v0.9:sv_package	NI
 v0.9:sv_package2	NI
@@ -1865,9 +1866,6 @@ v0.9:sv_port_default8	NI
 v0.9:sv_port_default9	NI
 v0.9:sv_port_default10	NI
 v0.9:sv_port_default11	NI
-v0.9:sv_union1	NI
-v0.9:sv_union2	NI
-v0.9:sv_union3	NI
 v0.9:sv_string1	NI
 v0.9:sv_string2	NI
 v0.9:sv_string3	NI
@@ -1877,6 +1875,13 @@ v0.9:sv_timeunit_prec	NI
 v0.9:sv_timeunit_prec2	NI
 v0.9:sv_timeunit_prec_fail	NI
 v0.9:sv_timeunit_prec_fail2	NI
+v0.9:sv_union1	NI
+v0.9:sv_union1b	NI
+v0.9:sv_union2	NI
+v0.9:sv_union2b	NI
+v0.9:sv_union3	NI
+v0.9:sv_union3b	NI
+v0.9:sv_union4b	NI
 v0.9:sys_func_as_task	NI
 v0.9:task_init_assign	NI
 v0.9:test_dec2to4	NI
@@ -2199,9 +2204,36 @@ v0.9:undef_lval_select5		NI	ivltests
 # back port the fix resulted in another test failing.
 v0.9:tri3	EF	ivltests
 
+# V0.9 doesn't have the signed power operator fixes.
+v0.9:pow_ca_signed	NI	ivltests
+v0.9:pow_ca_unsigned	NI	ivltests
+v0.9:pow_reg_signed	NI	ivltests
+v0.9:pow_reg_unsigned	NI	ivltests
+
+# V0.9 doesn't have the bitwise constant signedness fix. This could be
+# back-ported if necessary.
+v0.9:br_gh8	EF	ivltests
+
+# V0.9 doesn't have the power operator efficiency fixes.
+v0.9:br_gh9	NI	ivltests
+
+# V0.9 doesn't have the operator attributes fix. This could be back-ported if
+# necessary.
+v0.9:br_gh11	NI	ivltests
+
+# V0.9 doesn't have the relational operator optimisation fix. This could be
+# back-ported if necessary.
+v0.9:br_gh14	NI	ivltests
+
 # V0.9 has problems with force statements
 v0.9:constconcat1	EF	ivltests
 v0.9:constconcat2	EF	ivltests
+
+# V0.9 does not support updates to procedural continuous assignments when
+# the RHS is more complex than a simple signal (nor does V0.10 at the time
+# of writing).
+v0.9:br605a	EF	ivltests
+v0.9:br605b	EF	ivltests
 
 #==========
 # V0.9 doesn't support synthesis. Might as well run them as
@@ -2373,10 +2405,15 @@ vlog95:wreal			CE	ivltests
 vlog95:pr1528093		CE	ivltests
 
 # IEEE 1364-1995 does not support the general power operator.
+vlog95:br_gh9			CE	ivltests
 vlog95:ca_pow_signed		CE,-pallowsigned=1	ivltests
 vlog95:ca_pow_synth		CE	ivltests
 vlog95:ca_pow_unsigned		CE	ivltests
 vlog95:constfunc3		CE	ivltests
+vlog95:pow_ca_signed		CE	ivltests
+vlog95:pow_ca_unsigned		CE	ivltests
+vlog95:pow_reg_signed		CE	ivltests
+vlog95:pow_reg_unsigned		CE	ivltests
 vlog95:pow_signed		CE	ivltests
 vlog95:pow_unsigned		CE	ivltests
 vlog95:pow-ca			CE,-pallowsigned=1	ivltests
@@ -2716,6 +2753,7 @@ vlog95:br917a		normal,-g2009,-pallowsigned=1	ivltests
 vlog95:br917b		normal,-g2009,-pallowsigned=1	ivltests
 vlog95:br917c		normal,-g2009,-pallowsigned=1	ivltests
 vlog95:br917d		normal,-g2009,-pallowsigned=1	ivltests
+vlog95:br_gh8		normal,-pallowsigned=1	ivltests
 vlog95:ca_mult		normal,-pallowsigned=1	ivltests gold=ca_mult.gold
 vlog95:cast_int		normal,-gverilog-ams,-pallowsigned=1	ivltests
 vlog95:constfunc4	normal,-gverilog-ams,-pallowsigned=1	ivltests
@@ -4962,7 +5000,21 @@ sv_union2b	normal,-g2009	ivltests
 sv_union3b	normal,-g2009	ivltests
 sv_union4b	normal,-g2009	ivltests
 sv_enum1	normal,-g2009	ivltests
+pow_ca_signed		normal	ivltests
+pow_ca_unsigned		normal	ivltests
+pow_reg_signed		normal	ivltests
+pow_reg_unsigned	normal	ivltests
+br_gh7	normal	ivltests
+br_gh8	normal	ivltests
+br_gh9	normal	ivltests
+br_gh11	CO	ivltests
+br_gh12	normal	ivltests
+br_gh14	normal	ivltests
+br605a	normal	ivltests
+br605b	normal	ivltests
+br946	normal	ivltests
 sv_uwire1	normal,-g2009	ivltests
 sv_uwire2	normal,-g2009	ivltests
 sv_uwire3	normal,-g2009	ivltests
 sv_uwire4	normal,-g2009	ivltests
+synth_if_no_else normal,-S	ivltests

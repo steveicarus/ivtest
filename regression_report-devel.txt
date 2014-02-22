@@ -1729,7 +1729,7 @@ test_mos_strength_reduction: Passed.
                   pr3409749: Passed.
                test_mux2to1: Passed.
                test_dec2to4: Passed.
-            test_enumsystem: ==> Failed - running iverilog.
+            test_enumsystem: Passed.
               test_timebase: Passed.
                 test_system: Passed.
     test_signal_init_assign: Passed.
@@ -1979,6 +1979,19 @@ test_mos_strength_reduction: Passed.
                  sv_union3b: Passed.
                  sv_union4b: Passed.
                    sv_enum1: Passed.
+              pow_ca_signed: Passed.
+            pow_ca_unsigned: Passed.
+             pow_reg_signed: Passed.
+           pow_reg_unsigned: Passed.
+                     br_gh7: Passed.
+                     br_gh8: Passed.
+                     br_gh9: Passed.
+                    br_gh11: Passed - CO.
+                    br_gh12: Passed.
+                    br_gh14: Passed.
+                     br605a: ==> Failed - output does not match gold file.
+                     br605b: ==> Failed - output does not match gold file.
+                      br946: Passed.
 ============================================================================
 Test results:
-  Total=1979, Passed=1975, Failed=4, Not Implemented=0, Expected Fail=0
+  Total=1992, Passed=1987, Failed=5, Not Implemented=0, Expected Fail=0

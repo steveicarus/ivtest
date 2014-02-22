@@ -1760,6 +1760,7 @@ test_mos_strength_reduction: Passed.
                     struct6: Passed.
                     struct7: Passed.
                     struct8: Passed.
+                    struct9: Passed.
                     packeda: Passed.
                    packeda2: Passed.
                   pr3499807: Passed.
@@ -1973,6 +1974,24 @@ test_mos_strength_reduction: Passed.
                   sv_union2: Passed.
                   sv_union3: Passed.
                      br_gh6: Passed.
+                 sv_union1b: Passed.
+                 sv_union2b: Passed.
+                 sv_union3b: Passed.
+                 sv_union4b: Passed.
+                   sv_enum1: Passed.
+              pow_ca_signed: Passed.
+            pow_ca_unsigned: Passed.
+             pow_reg_signed: Passed.
+           pow_reg_unsigned: Passed.
+                     br_gh7: Passed.
+                     br_gh8: Passed.
+                     br_gh9: Passed.
+                    br_gh11: Passed - CO.
+                    br_gh12: Passed.
+                    br_gh14: Passed.
+                     br605a: ==> Failed - output does not match gold file.
+                     br605b: ==> Failed - output does not match gold file.
+                      br946: Passed.
 ============================================================================
 Test results:
-  Total=1973, Passed=1966, Failed=5, Not Implemented=2, Expected Fail=0
+  Total=1992, Passed=1983, Failed=7, Not Implemented=2, Expected Fail=0

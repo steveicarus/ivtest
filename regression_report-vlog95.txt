@@ -60,10 +60,15 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   vams_abs2: Passed - CE.
                       wreal: Passed - CE.
                   pr1528093: Passed - CE.
+                     br_gh9: Passed - CE.
               ca_pow_signed: Passed - CE.
                ca_pow_synth: Passed - CE.
             ca_pow_unsigned: Passed - CE.
                  constfunc3: Passed - CE.
+              pow_ca_signed: Passed - CE.
+            pow_ca_unsigned: Passed - CE.
+             pow_reg_signed: Passed - CE.
+           pow_reg_unsigned: Passed - CE.
                  pow_signed: Passed - CE.
                pow_unsigned: Passed - CE.
                      pow-ca: Passed - CE.
@@ -126,6 +131,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  sv_string3: Passed - CE.
                  sv_string4: Passed - CE.
                  sv_string5: Passed - CE.
+                   sv_macro: Passed - CE.
    sv_array_assign_pattern2: Passed - CE.
                  sv_darray1: Passed - CE.
                  sv_darray2: Passed - CE.
@@ -162,6 +168,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  sv_class21: Passed - CE.
                  sv_class22: Passed - CE.
                  sv_class23: Passed - CE.
+                 sv_class24: Passed - CE.
                sv_end_label: Passed - CE.
            sv_port_default1: Passed - CE.
            sv_port_default2: Passed - CE.
@@ -337,6 +344,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                      br917b: Passed.
                      br917c: Passed.
                      br917d: Passed.
+                     br_gh8: Passed.
                     ca_mult: Passed.
                    cast_int: Passed.
                  constfunc4: Passed.
@@ -1801,6 +1809,7 @@ test_mos_strength_reduction: Passed.
              vhdl_nor23_bit: Passed.
               vhdl_notg_bit: Passed.
          vhdl_notg_stdlogic: Passed.
+      vhdl_notfunc_stdlogic: Passed.
        vhdl_not104_stdlogic: Passed.
              vhdl_not23_bit: Passed.
                vhdl_org_bit: Passed.
@@ -1883,6 +1892,7 @@ test_mos_strength_reduction: Passed.
                     struct6: Passed.
                     struct7: Passed.
                     struct8: Passed.
+                    struct9: Passed.
                   pr3499807: Passed.
           switch_primitives: Passed.
            task_init_assign: Passed.
@@ -1966,6 +1976,22 @@ test_mos_strength_reduction: Passed.
                constconcat1: Passed.
                constconcat2: Passed.
      always_star_array_lval: Passed.
+                  sv_union1: Passed.
+                  sv_union2: Passed.
+                  sv_union3: Passed.
+                     br_gh6: Passed.
+                 sv_union1b: Passed.
+                 sv_union2b: Passed.
+                 sv_union3b: Passed.
+                 sv_union4b: Passed.
+                   sv_enum1: Passed.
+                     br_gh7: Passed.
+                    br_gh11: Passed - CO.
+                    br_gh12: Passed.
+                    br_gh14: Passed.
+                     br605a: ==> Failed - output does not match gold file.
+                     br605b: ==> Failed - output does not match gold file.
+                      br946: Passed.
 ============================================================================
 Test results:
-  Total=1966, Passed=1937, Failed=1, Not Implemented=3, Expected Fail=25
+  Total=1992, Passed=1961, Failed=3, Not Implemented=3, Expected Fail=25
