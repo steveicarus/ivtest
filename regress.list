@@ -2225,6 +2225,10 @@ v0.9:br_gh11	NI	ivltests
 # back-ported if necessary.
 v0.9:br_gh14	NI	ivltests
 
+# V0.9 doesn't have the verinum undefined add/sub fix. This could be
+# back-ported if necessary.
+v0.9:br_gh15	EF	ivltests
+
 # V0.9 has problems with force statements
 v0.9:constconcat1	EF	ivltests
 v0.9:constconcat2	EF	ivltests
@@ -5009,7 +5013,9 @@ br_gh8	normal	ivltests
 br_gh9	normal	ivltests
 br_gh11	CO	ivltests
 br_gh12	normal	ivltests
+br_gh13	normal	ivltests
 br_gh14	normal	ivltests
+br_gh15	normal	ivltests
 br605a	normal	ivltests
 br605b	normal	ivltests
 br946	normal	ivltests

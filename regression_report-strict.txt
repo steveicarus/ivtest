@@ -1988,10 +1988,12 @@ test_mos_strength_reduction: Passed.
                      br_gh9: Passed.
                     br_gh11: Passed - CO.
                     br_gh12: Passed.
+                    br_gh13: Passed.
                     br_gh14: Passed.
+                    br_gh15: Passed.
                      br605a: ==> Failed - output does not match gold file.
                      br605b: ==> Failed - output does not match gold file.
                       br946: Passed.
 ============================================================================
 Test results:
-  Total=1992, Passed=1983, Failed=7, Not Implemented=2, Expected Fail=0
+  Total=1994, Passed=1985, Failed=7, Not Implemented=2, Expected Fail=0

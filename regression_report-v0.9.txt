@@ -438,6 +438,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                      br_gh9: Not Implemented.
                     br_gh11: Not Implemented.
                     br_gh14: Not Implemented.
+                    br_gh15: Passed - expected fail.
                constconcat1: Passed - expected fail.
                constconcat2: Passed - expected fail.
                      br605a: Passed - expected fail.
@@ -1995,7 +1996,8 @@ test_mos_strength_reduction: Passed.
                      br_gh6: Passed.
                      br_gh7: Passed.
                     br_gh12: Passed.
+                    br_gh13: Passed.
                       br946: Passed.
 ============================================================================
 Test results:
-  Total=1996, Passed=1595, Failed=0, Not Implemented=353, Expected Fail=48
+  Total=1998, Passed=1596, Failed=0, Not Implemented=353, Expected Fail=49
