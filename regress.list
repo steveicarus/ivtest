@@ -1882,6 +1882,10 @@ v0.9:sv_union2b	NI
 v0.9:sv_union3	NI
 v0.9:sv_union3b	NI
 v0.9:sv_union4b	NI
+v0.9:sv_uwire1	NI
+v0.9:sv_uwire2	NI
+v0.9:sv_uwire3	NI
+v0.9:sv_uwire4	NI
 v0.9:sys_func_as_task	NI
 v0.9:task_init_assign	NI
 v0.9:test_dec2to4	NI
@@ -2096,6 +2100,7 @@ v0.9:pr1883052b		EF	ivltests
 v0.9:pr1883052b-v0.9	normal	ivltests
 v0.9:pr3571573	normal	ivltests diff=log/pr3571573.log:gold/pr3571573-v0.9.gold
 v0.9:delay_var	normal	ivltests diff=log/delay_var.log:gold/delay_var-v0.9.gold
+v0.9:br947	normal	ivltests diff=log/br947.log:gold/br947-v0.9.gold
 
 # V0.9 does not have the patches applied to make these work correctly. We
 # should see if some of these can be applied. If they are applied then we
@@ -2182,52 +2187,60 @@ v0.9:mixed_width_case	EF	ivltests
 
 # V0.9 does not have the assignment LHS out-of-range/undefined index
 # fixes. These fixes could probably be back ported if really needed.
-v0.9:array_lval_select1		NI	ivltests
-v0.9:array_lval_select2		NI	ivltests
-v0.9:array_lval_select3a	NI	ivltests
-v0.9:array_lval_select3a-	NI	ivltests
-v0.9:array_lval_select3b	NI	ivltests
-v0.9:array_lval_select4a	NI	ivltests
-v0.9:array_lval_select4b	NI	ivltests
-v0.9:array_lval_select5		NI	ivltests
-v0.9:array_lval_select6		NI	ivltests
-v0.9:undef_lval_select2		NI	ivltests
-v0.9:undef_lval_select3a	NI	ivltests
-v0.9:undef_lval_select3b	NI	ivltests
-v0.9:undef_lval_select3c	NI	ivltests
-v0.9:undef_lval_select4a	NI	ivltests
-v0.9:undef_lval_select4b	NI	ivltests
-v0.9:undef_lval_select4c	NI	ivltests
-v0.9:undef_lval_select5		NI	ivltests
+v0.9:array_lval_select1		NI
+v0.9:array_lval_select2		NI
+v0.9:array_lval_select3a	NI
+v0.9:array_lval_select3a-	NI
+v0.9:array_lval_select3b	NI
+v0.9:array_lval_select4a	NI
+v0.9:array_lval_select4b	NI
+v0.9:array_lval_select5		NI
+v0.9:array_lval_select6		NI
+v0.9:undef_lval_select2		NI
+v0.9:undef_lval_select3a	NI
+v0.9:undef_lval_select3b	NI
+v0.9:undef_lval_select3c	NI
+v0.9:undef_lval_select4a	NI
+v0.9:undef_lval_select4b	NI
+v0.9:undef_lval_select4c	NI
+v0.9:undef_lval_select5		NI
 
 # V0.9 doesn't have the tri0/1 strength resolution fix. An attempt to
 # back port the fix resulted in another test failing.
 v0.9:tri3	EF	ivltests
 
 # V0.9 doesn't have the signed power operator fixes.
-v0.9:pow_ca_signed	NI	ivltests
-v0.9:pow_ca_unsigned	NI	ivltests
-v0.9:pow_reg_signed	NI	ivltests
-v0.9:pow_reg_unsigned	NI	ivltests
+v0.9:pow_ca_signed	NI
+v0.9:pow_ca_unsigned	NI
+v0.9:pow_reg_signed	NI
+v0.9:pow_reg_unsigned	NI
 
 # V0.9 doesn't have the bitwise constant signedness fix. This could be
 # back-ported if necessary.
 v0.9:br_gh8	EF	ivltests
 
 # V0.9 doesn't have the power operator efficiency fixes.
-v0.9:br_gh9	NI	ivltests
+v0.9:br_gh9	NI
 
 # V0.9 doesn't have the operator attributes fix. This could be back-ported if
 # necessary.
-v0.9:br_gh11	NI	ivltests
+v0.9:br_gh11	NI
+
+# V0.9 doesn't have the lossless expression width cap.
+v0.9:br_gh13a	NI
 
 # V0.9 doesn't have the relational operator optimisation fix. This could be
 # back-ported if necessary.
-v0.9:br_gh14	NI	ivltests
+v0.9:br_gh14	NI
 
-# V0.9 doesn't have the verinum undefined add/sub fix. This could be
-# back-ported if necessary.
+# V0.9 doesn't have the verinum undefined add/sub/multiply fixed. These
+# could be back-ported if necessary.
 v0.9:br_gh15	EF	ivltests
+v0.9:br_gh18	EF	ivltests
+
+# V0.9 doesn't have the large shift value fix. This could be back-ported if
+#necessary.
+v0.9:br_gh19	EF	ivltests
 
 # V0.9 has problems with force statements
 v0.9:constconcat1	EF	ivltests
@@ -2238,6 +2251,10 @@ v0.9:constconcat2	EF	ivltests
 # of writing).
 v0.9:br605a	EF	ivltests
 v0.9:br605b	EF	ivltests
+
+# V0.9 doesn't have the tgt-vvp undefined add/sub and zero multiply fix.
+# This could be back-ported if necessary.
+v0.9:arith-unknown	EF	ivltests
 
 #==========
 # V0.9 doesn't support synthesis. Might as well run them as
@@ -2288,6 +2305,7 @@ v0.9:mix_reset	normal	ivltests
 v0.9:casex_synth	normal	ivltests
 v0.9:full_case	normal	ivltests
 v0.9:full_case2	NI
+v0.9:synth_if_no_else NI
 
 #==========
 # At this time v0.10 doesn't support synthesis either.
@@ -2976,6 +2994,9 @@ vlog95:full_case2	normal	ivltests
 # These tests are specifically testing that such numbers aren't truncated.
 std:pr903		NI
 std:pr1388974		NI
+
+# The standard doesn't support lossless expressions.
+std:br_gh13a		NI
 
 # Different results when unsized numbers are handled strictly.
 std:gate_connect2	CE			ivltests diff=log/gate_connect2.log:gold/gate_connect2_std.gold
@@ -5014,13 +5035,18 @@ br_gh9	normal	ivltests
 br_gh11	CO	ivltests
 br_gh12	normal	ivltests
 br_gh13	normal	ivltests
+br_gh13a	normal	ivltests	gold=br_gh13a.gold
 br_gh14	normal	ivltests
 br_gh15	normal	ivltests
+br_gh18	normal	ivltests
+br_gh19	normal	ivltests
 br605a	normal	ivltests
 br605b	normal	ivltests
 br946	normal	ivltests
+br947	normal	ivltests	gold=br947.gold
 sv_uwire1	normal,-g2009	ivltests
 sv_uwire2	normal,-g2009	ivltests
 sv_uwire3	normal,-g2009	ivltests
 sv_uwire4	normal,-g2009	ivltests
 synth_if_no_else normal,-S	ivltests
+arith-unknown	normal	ivltests

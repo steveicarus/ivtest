@@ -1,0 +1,4 @@
+./ivltests/br_gh13a.v:7: warning: excessive unsized expression width detected.
+./ivltests/br_gh13a.v:7:        : The expression width is capped at 65536 bits.
+0
+PASSED
