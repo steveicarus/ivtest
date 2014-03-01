@@ -2239,7 +2239,7 @@ v0.9:br_gh15	EF	ivltests
 v0.9:br_gh18	EF	ivltests
 
 # V0.9 doesn't have the large shift value fix. This could be back-ported if
-#necessary.
+# necessary.
 v0.9:br_gh19	EF	ivltests
 
 # V0.9 has problems with force statements
@@ -2255,6 +2255,10 @@ v0.9:br605b	EF	ivltests
 # V0.9 doesn't have the tgt-vvp undefined add/sub and zero multiply fix.
 # This could be back-ported if necessary.
 v0.9:arith-unknown	EF	ivltests
+
+# V0.9 doesn't have the user function in a continuous assignment bug fix.
+# This could be back-ported if necessary.
+v0.9:br948	EF	ivltests
 
 #==========
 # V0.9 doesn't support synthesis. Might as well run them as
@@ -5050,6 +5054,7 @@ br605a	normal	ivltests
 br605b	normal	ivltests
 br946	normal	ivltests
 br947	normal	ivltests	gold=br947.gold
+br948	normal	ivltests
 sv_uwire1	normal,-g2009	ivltests
 sv_uwire2	normal,-g2009	ivltests
 sv_uwire3	normal,-g2009	ivltests
