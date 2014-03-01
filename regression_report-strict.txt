@@ -47,6 +47,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.10 (strict).
                  full_case2: Passed.
                       pr903: Not Implemented.
                   pr1388974: Not Implemented.
+                   br_gh13a: Not Implemented.
               gate_connect2: Passed - CE.
          indef_width_concat: Passed - CE.
                  pr1639064b: Passed.
@@ -1988,10 +1989,21 @@ test_mos_strength_reduction: Passed.
                      br_gh9: Passed.
                     br_gh11: Passed - CO.
                     br_gh12: Passed.
+                    br_gh13: Passed.
                     br_gh14: Passed.
+                    br_gh15: Passed.
+                    br_gh18: Passed.
+                    br_gh19: Passed.
                      br605a: ==> Failed - output does not match gold file.
                      br605b: ==> Failed - output does not match gold file.
                       br946: Passed.
+                      br947: Passed.
+                  sv_uwire1: Passed.
+                  sv_uwire2: Passed.
+                  sv_uwire3: Passed.
+                  sv_uwire4: Passed.
+           synth_if_no_else: Passed.
+              arith-unknown: Passed.
 ============================================================================
 Test results:
-  Total=1992, Passed=1983, Failed=7, Not Implemented=2, Expected Fail=0
+  Total=2004, Passed=1994, Failed=7, Not Implemented=3, Expected Fail=0

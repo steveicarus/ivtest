@@ -201,6 +201,10 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                   sv_union3: Not Implemented.
                  sv_union3b: Not Implemented.
                  sv_union4b: Not Implemented.
+                  sv_uwire1: Not Implemented.
+                  sv_uwire2: Not Implemented.
+                  sv_uwire3: Not Implemented.
+                  sv_uwire4: Not Implemented.
            sys_func_as_task: Not Implemented.
            task_init_assign: Not Implemented.
                test_dec2to4: Not Implemented.
@@ -360,6 +364,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
             pr1883052b-v0.9: Passed.
                   pr3571573: Passed.
                   delay_var: Passed.
+                      br947: Passed.
                complex_lidx: Not Implemented.
              generate_case3: Passed - expected fail.
                      pr1002: Passed - expected fail.
@@ -437,11 +442,16 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                      br_gh8: Passed - expected fail.
                      br_gh9: Not Implemented.
                     br_gh11: Not Implemented.
+                   br_gh13a: Not Implemented.
                     br_gh14: Not Implemented.
+                    br_gh15: Passed - expected fail.
+                    br_gh18: Passed - expected fail.
+                    br_gh19: Passed - expected fail.
                constconcat1: Passed - expected fail.
                constconcat2: Passed - expected fail.
                      br605a: Passed - expected fail.
                      br605b: Passed - expected fail.
+              arith-unknown: Passed - expected fail.
                       case1: Passed.
                       case2: Passed.
                       case4: Passed.
@@ -487,6 +497,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                 casex_synth: Passed.
                   full_case: Passed.
                  full_case2: Not Implemented.
+           synth_if_no_else: Not Implemented.
               always3.1.10A: Passed - CE.
               always3.1.11A: Passed.
               always3.1.11B: Passed.
@@ -1995,7 +2006,8 @@ test_mos_strength_reduction: Passed.
                      br_gh6: Passed.
                      br_gh7: Passed.
                     br_gh12: Passed.
+                    br_gh13: Passed.
                       br946: Passed.
 ============================================================================
 Test results:
-  Total=1996, Passed=1595, Failed=0, Not Implemented=353, Expected Fail=48
+  Total=2008, Passed=1597, Failed=0, Not Implemented=359, Expected Fail=52
