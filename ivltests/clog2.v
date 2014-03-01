@@ -5,13 +5,8 @@ module top;
   parameter prm1 = $clog2(-1.0);
   parameter prm30 = $clog2(-(2**31-1));
   parameter prm31 = $clog2(-(2**31));
-`ifdef __ICARUS_UNSIZED__
-  parameter prm32 = $clog2(-(2**32));
-  parameter prm67 = $clog2(-(2**67));
-`else
   parameter prm32 = $clog2(-(33'sd2**32));
   parameter prm67 = $clog2(-(68'sd2**67));
-`endif
   parameter p0 = $clog2(0);
   parameter p1 = $clog2(1);
   parameter p2 = $clog2(2);
@@ -21,11 +16,7 @@ module top;
   parameter p8 = $clog2(8);
   parameter p8r = $clog2(8.49999);
   parameter p128 = $clog2(129'h100000000000000000000000000000000);
-`ifdef __ICARUS_UNSIZED__
-  parameter p128p = $clog2(2**128);
-`else
   parameter p128p = $clog2(129'sd2**128);
-`endif
   // These all return 'bx.
   parameter pminf = $clog2(-1.0/0.0); // -Inf
   parameter pinf = $clog2(1.0/0.0);  // +Inf
@@ -153,21 +144,13 @@ module top;
       pass = 1'b0;
     end
 
-`ifdef __ICARUS_UNSIZED__
-    result = $clog2(-(2**32));
-`else
     result = $clog2(-(33'sd2**32));
-`endif
     if (result !== 32) begin
       $display("Failed with -(2**32), expected 32, got %d", result);
       pass = 1'b0;
     end
 
-`ifdef __ICARUS_UNSIZED__
-    result = $clog2(-(2**67));
-`else
     result = $clog2(-(68'sd2**67));
-`endif
     if (result !== 67) begin
       $display("Failed with -(2**67), expected 67, got %d", result);
       pass = 1'b0;
@@ -233,11 +216,7 @@ module top;
       pass = 1'b0;
     end
 
-`ifdef __ICARUS_UNSIZED__
-    result = $clog2(2**128);
-`else
     result = $clog2(129'sd2**128);
-`endif
     if (result !== 128) begin
       $display("Failed with 2**128, expected 128, got %d", result);
       pass = 1'b0;
