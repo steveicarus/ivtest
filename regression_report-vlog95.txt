@@ -2000,10 +2000,11 @@ test_mos_strength_reduction: Passed.
                      br605b: ==> Failed - output does not match gold file.
                       br946: Passed.
                       br947: Passed.
+                      br948: Passed.
                   sv_uwire3: Passed.
                   sv_uwire4: Passed.
            synth_if_no_else: Passed.
               arith-unknown: Passed.
 ============================================================================
 Test results:
-  Total=2004, Passed=1973, Failed=3, Not Implemented=3, Expected Fail=25
+  Total=2005, Passed=1974, Failed=3, Not Implemented=3, Expected Fail=25
