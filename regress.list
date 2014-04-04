@@ -5061,3 +5061,4 @@ sv_uwire3	normal,-g2009	ivltests
 sv_uwire4	normal,-g2009	ivltests
 synth_if_no_else normal,-S	ivltests
 arith-unknown	normal	ivltests
+mod_inst_pkg    normal,-g2009	ivltests
