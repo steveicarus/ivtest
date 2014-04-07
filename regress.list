@@ -5069,3 +5069,4 @@ sv_unpacked_port	normal,-g2009	ivltests
 sv_unpacked_port2	normal,-g2009	ivltests
 sv_unpacked_wire	normal,-g2009	ivltests
 sv_unpacked_wire2	normal,-g2009	ivltests
+mod_inst_pkg    normal,-g2009	ivltests
