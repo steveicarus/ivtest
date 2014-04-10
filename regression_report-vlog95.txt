@@ -116,6 +116,10 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
             sel_rval_bit_ob: Passed - CE.
            sel_rval_part_ob: Passed - CE.
          signed_net_display: Passed - CE.
+           sv_unpacked_port: Passed - CE.
+          sv_unpacked_port2: Passed - CE.
+           sv_unpacked_wire: Passed - CE.
+          sv_unpacked_wire2: Passed - CE.
                     concat4: Passed - expected fail.
                       final: Passed - CE.
                      final2: Passed - CE.
@@ -277,6 +281,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                 test_forgen: Passed - CE.
                   test_gxor: Passed - CE.
      unnamed_generate_block: Passed - CE.
+            sv_packed_port1: Passed - CE.
+            sv_packed_port2: Passed - CE.
                test_varray1: Passed - CE.
                     bitsel6: Passed - CE.
                     bitsel7: Passed - CE.
@@ -367,6 +373,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                      iuint1: Passed.
                       logp2: Passed.
            mixed_width_case: Passed.
+               mod_inst_pkg: Passed.
                     packeda: Passed.
                      pr1033: Passed.
                   pr1380261: Passed.
@@ -428,6 +435,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
             simple_shortint: Passed.
         struct_packed_array: Passed.
        struct_packed_array2: Passed.
+            sv_for_variable: Passed.
                  sv_package: Passed.
                 sv_package2: Passed.
                 sv_package5: Passed.
@@ -2005,6 +2013,7 @@ test_mos_strength_reduction: Passed.
                   sv_uwire4: Passed.
            synth_if_no_else: Passed.
               arith-unknown: Passed.
+           sv_typedef_scope: Passed.
 ============================================================================
 Test results:
-  Total=2005, Passed=1974, Failed=3, Not Implemented=3, Expected Fail=25
+  Total=2014, Passed=1983, Failed=3, Not Implemented=3, Expected Fail=25

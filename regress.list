@@ -1744,6 +1744,7 @@ v0.9:implicit-port6	NI
 v0.9:ishortint_test	NI
 v0.9:iuint1		NI
 v0.9:logp2	NI
+v0.9:mod_inst_pkg	NI
 v0.9:named_begin	NI
 v0.9:named_fork		NI
 v0.9:named_begin_fail	NI
@@ -1849,12 +1850,15 @@ v0.9:sv_end_label_fail	NI
 v0.9:sv_end_labels	NI
 v0.9:sv_end_labels_bad	NI
 v0.9:sv_enum1	NI
+v0.9:sv_for_variable	NI
 v0.9:sv_macro	NI
 v0.9:sv_package	NI
 v0.9:sv_package2	NI
 v0.9:sv_package3	NI
 v0.9:sv_package4	NI
 v0.9:sv_package5	NI
+v0.9:sv_packed_port1	NI
+v0.9:sv_packed_port2	NI
 v0.9:sv_port_default1	NI
 v0.9:sv_port_default2	NI
 v0.9:sv_port_default3	NI
@@ -1875,6 +1879,7 @@ v0.9:sv_timeunit_prec	NI
 v0.9:sv_timeunit_prec2	NI
 v0.9:sv_timeunit_prec_fail	NI
 v0.9:sv_timeunit_prec_fail2	NI
+v0.9:sv_typedef_scope	NI
 v0.9:sv_union1	NI
 v0.9:sv_union1b	NI
 v0.9:sv_union2	NI
@@ -1882,6 +1887,10 @@ v0.9:sv_union2b	NI
 v0.9:sv_union3	NI
 v0.9:sv_union3b	NI
 v0.9:sv_union4b	NI
+v0.9:sv_unpacked_port	NI
+v0.9:sv_unpacked_port2	NI
+v0.9:sv_unpacked_wire	NI
+v0.9:sv_unpacked_wire2	NI
 v0.9:sv_uwire1	NI
 v0.9:sv_uwire2	NI
 v0.9:sv_uwire3	NI
@@ -2489,6 +2498,10 @@ vlog95:scan-invalid		CE	ivltests
 vlog95:sel_rval_bit_ob		CE	ivltests
 vlog95:sel_rval_part_ob		CE	ivltests
 vlog95:signed_net_display	CE,-pallowsigned=1	ivltests
+vlog95:sv_unpacked_port		CE,-g2009	ivltests
+vlog95:sv_unpacked_port2	CE,-g2009,-pallowsigned=1	ivltests
+vlog95:sv_unpacked_wire		CE,-g2009	ivltests
+vlog95:sv_unpacked_wire2	CE,-g2009,-pallowsigned=1	ivltests
 
 # A zero replication in a CA is not supported.
 vlog95:concat4		EF	ivltests
@@ -2694,6 +2707,8 @@ vlog95:scoped_events	CE	ivltests
 vlog95:test_forgen	CE,-g2009,ivltests/forgen.vhd	ivltests
 vlog95:test_gxor	CE,-g2009,-pallowsigned=1,ivltests/gxor.vhd	ivltests
 vlog95:unnamed_generate_block	CE	ivltests
+vlog95:sv_packed_port1		CE,-g2009	ivltests
+vlog95:sv_packed_port2		CE,-g2009	ivltests
 vlog95:test_varray1	CE,-g2009,-pallowsigned=1,ivltests/varray1.vhd	ivltests
 
 # Currently part selects in a CA with a non-zero base are not supported.
@@ -2806,6 +2821,7 @@ vlog95:int_param	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:iuint1		normal,-g2009,-pallowsigned=1	ivltests
 vlog95:logp2		normal,-g2009,-pallowsigned=1	ivltests
 vlog95:mixed_width_case	normal,-pallowsigned=1	ivltests
+vlog95:mod_inst_pkg	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:packeda		normal,-g2009,-pallowsigned=1	ivltests
 vlog95:pr1033		normal,-pallowsigned=1	ivltests gold=pr1033.gold
 vlog95:pr1380261	normal,-pallowsigned=1	ivltests
@@ -2867,6 +2883,7 @@ vlog95:simple_longint	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:simple_shortint	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:struct_packed_array	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:struct_packed_array2	normal,-g2009,-pallowsigned=1	ivltests
+vlog95:sv_for_variable  normal,-g2009,-pallowsigned=1	ivltests
 vlog95:sv_package	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:sv_package2	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:sv_package5	normal,-g2009,-pallowsigned=1	ivltests

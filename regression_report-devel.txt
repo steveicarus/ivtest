@@ -1729,7 +1729,7 @@ test_mos_strength_reduction: Passed.
                   pr3409749: Passed.
                test_mux2to1: Passed.
                test_dec2to4: Passed.
-            test_enumsystem: ==> Failed - running iverilog.
+            test_enumsystem: Passed.
               test_timebase: Passed.
                 test_system: Passed.
     test_signal_init_assign: Passed.
@@ -2007,6 +2007,13 @@ test_mos_strength_reduction: Passed.
               arith-unknown: Passed.
            sv_typedef_scope: Passed.
             sv_for_variable: Passed.
+            sv_packed_port1: Passed.
+            sv_packed_port2: Passed.
+           sv_unpacked_port: Passed.
+          sv_unpacked_port2: Passed.
+           sv_unpacked_wire: Passed.
+          sv_unpacked_wire2: Passed.
+               mod_inst_pkg: Passed.
 ============================================================================
 Test results:
-  Total=2007, Passed=2001, Failed=6, Not Implemented=0, Expected Fail=0
+  Total=2014, Passed=2009, Failed=5, Not Implemented=0, Expected Fail=0

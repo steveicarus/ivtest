@@ -63,6 +63,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
              ishortint_test: Not Implemented.
                      iuint1: Not Implemented.
                       logp2: Not Implemented.
+               mod_inst_pkg: Not Implemented.
                 named_begin: Not Implemented.
                  named_fork: Not Implemented.
            named_begin_fail: Not Implemented.
@@ -168,12 +169,15 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
               sv_end_labels: Not Implemented.
           sv_end_labels_bad: Not Implemented.
                    sv_enum1: Not Implemented.
+            sv_for_variable: Not Implemented.
                    sv_macro: Not Implemented.
                  sv_package: Not Implemented.
                 sv_package2: Not Implemented.
                 sv_package3: Not Implemented.
                 sv_package4: Not Implemented.
                 sv_package5: Not Implemented.
+            sv_packed_port1: Not Implemented.
+            sv_packed_port2: Not Implemented.
            sv_port_default1: Not Implemented.
            sv_port_default2: Not Implemented.
            sv_port_default3: Not Implemented.
@@ -194,6 +198,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
           sv_timeunit_prec2: Not Implemented.
       sv_timeunit_prec_fail: Not Implemented.
      sv_timeunit_prec_fail2: Not Implemented.
+           sv_typedef_scope: Not Implemented.
                   sv_union1: Not Implemented.
                  sv_union1b: Not Implemented.
                   sv_union2: Not Implemented.
@@ -201,6 +206,10 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                   sv_union3: Not Implemented.
                  sv_union3b: Not Implemented.
                  sv_union4b: Not Implemented.
+           sv_unpacked_port: Not Implemented.
+          sv_unpacked_port2: Not Implemented.
+           sv_unpacked_wire: Not Implemented.
+          sv_unpacked_wire2: Not Implemented.
                   sv_uwire1: Not Implemented.
                   sv_uwire2: Not Implemented.
                   sv_uwire3: Not Implemented.
@@ -2011,4 +2020,4 @@ test_mos_strength_reduction: Passed.
                       br946: Passed.
 ============================================================================
 Test results:
-  Total=2009, Passed=1597, Failed=0, Not Implemented=359, Expected Fail=53
+  Total=2018, Passed=1597, Failed=0, Not Implemented=368, Expected Fail=53
