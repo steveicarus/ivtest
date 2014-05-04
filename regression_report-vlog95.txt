@@ -2004,6 +2004,8 @@ test_mos_strength_reduction: Passed.
                     br_gh15: Passed.
                     br_gh18: Passed.
                     br_gh19: Passed.
+                   br_gh19a: Passed.
+                   br_gh19b: Passed.
                      br605a: ==> Failed - output does not match gold file.
                      br605b: ==> Failed - output does not match gold file.
                       br946: Passed.
@@ -2016,4 +2018,4 @@ test_mos_strength_reduction: Passed.
            sv_typedef_scope: Passed.
 ============================================================================
 Test results:
-  Total=2014, Passed=1983, Failed=3, Not Implemented=3, Expected Fail=25
+  Total=2016, Passed=1985, Failed=3, Not Implemented=3, Expected Fail=25
