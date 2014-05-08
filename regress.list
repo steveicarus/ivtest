@@ -5080,6 +5080,10 @@ sv_uwire2	normal,-g2009	ivltests
 sv_uwire3	normal,-g2009	ivltests
 sv_uwire4	normal,-g2009	ivltests
 synth_if_no_else normal,-S	ivltests
+not_a_latch1 normal,-S	ivltests
+not_a_latch2 normal,-S	ivltests
+for_loop_synth normal,-S	ivltests
+for_loop_synth2 normal,-S	ivltests
 arith-unknown	normal	ivltests
 sv_typedef_scope normal,-g2009	ivltests
 sv_for_variable  normal,-g2009	ivltests
