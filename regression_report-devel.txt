@@ -2006,6 +2006,10 @@ test_mos_strength_reduction: Passed.
                   sv_uwire3: Passed.
                   sv_uwire4: Passed.
            synth_if_no_else: Passed.
+               not_a_latch1: Passed.
+               not_a_latch2: Passed.
+             for_loop_synth: Passed.
+            for_loop_synth2: Passed.
               arith-unknown: Passed.
            sv_typedef_scope: Passed.
             sv_for_variable: Passed.
@@ -2018,4 +2022,4 @@ test_mos_strength_reduction: Passed.
                mod_inst_pkg: Passed.
 ============================================================================
 Test results:
-  Total=2016, Passed=2011, Failed=5, Not Implemented=0, Expected Fail=0
+  Total=2020, Passed=2015, Failed=5, Not Implemented=0, Expected Fail=0
