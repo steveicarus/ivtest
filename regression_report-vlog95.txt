@@ -546,6 +546,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                 casex_synth: Passed.
                   full_case: Passed.
                  full_case2: Passed.
+             for_loop_synth: Passed.
+            for_loop_synth2: Passed.
               always3.1.10A: Passed - CE.
               always3.1.11A: Passed.
               always3.1.11B: Passed.
@@ -2018,6 +2020,10 @@ test_mos_strength_reduction: Passed.
                not_a_latch2: Passed.
               arith-unknown: Passed.
            sv_typedef_scope: Passed.
+                    br_gh22: Passed.
+                   br_gh25a: Passed - CE.
+                   br_gh25b: Passed - CE.
+                    br_gh26: Passed - CE.
 ============================================================================
 Test results:
-  Total=2018, Passed=1987, Failed=3, Not Implemented=3, Expected Fail=25
+  Total=2024, Passed=1993, Failed=3, Not Implemented=3, Expected Fail=25

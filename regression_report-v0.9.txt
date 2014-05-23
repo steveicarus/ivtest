@@ -34,6 +34,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
               fork_join_any: Not Implemented.
               fork_join_dis: Not Implemented.
              fork_join_none: Not Implemented.
+            for_loop_synth2: Not Implemented.
                        fr49: Not Implemented.
                   ibit_test: Not Implemented.
                  ibyte_test: Not Implemented.
@@ -507,8 +508,11 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                   mix_reset: Passed.
                 casex_synth: Passed.
                   full_case: Passed.
+           synth_if_no_else: Passed.
+               not_a_latch1: Passed.
+               not_a_latch2: Passed.
+             for_loop_synth: Passed.
                  full_case2: Not Implemented.
-           synth_if_no_else: Not Implemented.
               always3.1.10A: Passed - CE.
               always3.1.11A: Passed.
               always3.1.11B: Passed.
@@ -2020,6 +2024,10 @@ test_mos_strength_reduction: Passed.
                     br_gh13: Passed.
                    br_gh19a: Passed.
                       br946: Passed.
+                    br_gh22: Passed.
+                   br_gh25a: Passed - CE.
+                   br_gh25b: Passed - CE.
+                    br_gh26: Passed - CE.
 ============================================================================
 Test results:
-  Total=2020, Passed=1598, Failed=0, Not Implemented=368, Expected Fail=54
+  Total=2028, Passed=1606, Failed=0, Not Implemented=368, Expected Fail=54

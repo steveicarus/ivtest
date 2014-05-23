@@ -18,7 +18,7 @@ module main;
    initial begin
       ival = 'hx3x2x1x0;
       #1 $display("ival = %h, oval = %h", ival, oval);
-      if (oval !== 'hzzzzzzzzxcxdxexf) begin
+      if (oval !== 64'hzzzzzzzzxcxdxexf) begin
 	 $display("FAILED -- oval=%h", oval);
 	 $finish;
       end

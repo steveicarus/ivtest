@@ -1715,6 +1715,7 @@ v0.9:first_last_num	NI
 v0.9:fork_join_any	NI
 v0.9:fork_join_dis	NI
 v0.9:fork_join_none	NI
+v0.9:for_loop_synth2	NI
 v0.9:fr49	NI  # do/while
 v0.9:ibit_test	NI
 v0.9:ibyte_test	NI
@@ -2318,8 +2319,13 @@ v0.9:inside_synth3	normal	ivltests
 v0.9:mix_reset	normal	ivltests
 v0.9:casex_synth	normal	ivltests
 v0.9:full_case	normal	ivltests
+v0.9:synth_if_no_else normal	ivltests
+v0.9:not_a_latch1 normal	ivltests
+v0.9:not_a_latch2 normal	ivltests
+v0.9:for_loop_synth	normal	ivltests
+
+# This fails due to incomplete support for attributes in the parser.
 v0.9:full_case2	NI
-v0.9:synth_if_no_else NI
 
 #==========
 # At this time v0.10 doesn't support synthesis either.
@@ -3013,6 +3019,8 @@ vlog95:mix_reset	normal	ivltests
 vlog95:casex_synth	normal	ivltests
 vlog95:full_case	normal	ivltests
 vlog95:full_case2	normal	ivltests
+vlog95:for_loop_synth	normal	ivltests
+vlog95:for_loop_synth2	normal	ivltests
 
 #==========
 # Strict standard compliance.
@@ -5094,3 +5102,7 @@ sv_unpacked_port2	normal,-g2009	ivltests
 sv_unpacked_wire	normal,-g2009	ivltests
 sv_unpacked_wire2	normal,-g2009	ivltests
 mod_inst_pkg    normal,-g2009	ivltests
+br_gh22		normal	ivltests
+br_gh25a	CE	ivltests
+br_gh25b	CE	ivltests
+br_gh26		CE	ivltests
