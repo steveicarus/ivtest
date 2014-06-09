@@ -2271,6 +2271,10 @@ v0.9:arith-unknown	EF	ivltests
 # This could be back-ported if necessary.
 v0.9:br948	EF	ivltests
 
+# V0.9 doesn't have the tgt-vvp string escaping bug fix.
+# This could be back-ported if necessary.
+v0.9:br_gh28	NI	ivltests
+
 #==========
 # V0.9 doesn't support synthesis. Might as well run them as
 # non-synthesis tests, though.
@@ -5106,3 +5110,4 @@ br_gh22		normal	ivltests
 br_gh25a	CE	ivltests
 br_gh25b	CE	ivltests
 br_gh26		CE	ivltests
+br_gh28		normal	ivltests
