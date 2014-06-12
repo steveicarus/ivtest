@@ -990,6 +990,8 @@ test_mos_strength_reduction: Passed.
                   pr1805837: Passed.
                       urand: Passed.
                     urand_r: Passed.
+                   urand_r2: Passed.
+                   urand_r3: Passed.
                      fileio: Passed.
                   pr1812297: Passed.
                   pr1819452: Passed.
@@ -2024,6 +2026,7 @@ test_mos_strength_reduction: Passed.
                    br_gh25a: Passed - CE.
                    br_gh25b: Passed - CE.
                     br_gh26: Passed - CE.
+                    br_gh28: Passed.
 ============================================================================
 Test results:
-  Total=2024, Passed=2019, Failed=5, Not Implemented=0, Expected Fail=0
+  Total=2027, Passed=2022, Failed=5, Not Implemented=0, Expected Fail=0

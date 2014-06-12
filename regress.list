@@ -181,6 +181,8 @@ vstd:pr530a		EF	ivltests
 # The SV random functions return different results. Is this OK?
 vstd:urand		EF	ivltests diff=log/urand.log:gold/urand.gold
 vstd:urand_r		EF	ivltests diff=log/urand_r.log:gold/urand_r.gold
+vstd:urand_r2		EF	ivltests diff=log/urand_r2.log:gold/urand_r.gold
+vstd:urand_r3		EF	ivltests diff=log/urand_r3.log:gold/urand_r.gold
 
 # Some out of bounds selects can fail. Though you should still get the
 # in bounds bits. Some of these do not do that!
@@ -1002,6 +1004,8 @@ v0.8:queue_stat	NI # $q_* (stochastic routines) not supported.
 v0.8:swrite	NI # $swrite not supported.
 v0.8:urand	NI # $urandom not supported.
 v0.8:urand_r	NI # $urandom_range not supported.
+v0.8:urand_r2	NI # $urandom_range not supported.
+v0.8:urand_r3	NI # $urandom_range not supported.
 
 # V0.8 does not have the VA math library installed by default.
 # Install the standalone library to get this functionality.
@@ -4070,6 +4074,8 @@ pr1804877	normal	ivltests diff=log/pr1804877.log:gold/pr1804877.gold
 pr1805837	normal	ivltests diff=log/pr1805837.log:gold/pr1805837.gold
 urand		normal	ivltests diff=log/urand.log:gold/urand.gold
 urand_r		normal	ivltests diff=log/urand_r.log:gold/urand_r.gold
+urand_r2	normal	ivltests diff=log/urand_r2.log:gold/urand_r.gold
+urand_r3	normal	ivltests diff=log/urand_r3.log:gold/urand_r.gold
 fileio		normal	ivltests diff=log/fileio.log:gold/fileio.gold
 pr1812297	normal	ivltests
 pr1819452	normal	ivltests diff=log/pr1819452.log:gold/pr1819452.gold
