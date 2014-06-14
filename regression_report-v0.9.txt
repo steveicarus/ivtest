@@ -464,6 +464,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                      br605b: Passed - expected fail.
               arith-unknown: Passed - expected fail.
                       br948: Passed - expected fail.
+                    br_gh28: Not Implemented.
                       case1: Passed.
                       case2: Passed.
                       case4: Passed.
@@ -1430,6 +1431,8 @@ test_mos_strength_reduction: Passed.
                   pr1805837: Passed.
                       urand: Passed.
                     urand_r: Passed.
+                   urand_r2: Passed.
+                   urand_r3: Passed.
                      fileio: Passed.
                   pr1812297: Passed.
                   pr1819452: Passed.
@@ -2030,4 +2033,4 @@ test_mos_strength_reduction: Passed.
                     br_gh26: Passed - CE.
 ============================================================================
 Test results:
-  Total=2028, Passed=1606, Failed=0, Not Implemented=368, Expected Fail=54
+  Total=2031, Passed=1608, Failed=0, Not Implemented=369, Expected Fail=54
