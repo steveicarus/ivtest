@@ -21,11 +21,16 @@ Running compiler/VVP tests for Icarus Verilog version: 0.10.
                  casesynth1: Passed.
                  casesynth2: Passed.
                  casesynth3: Passed.
+                 casesynth4: Passed.
+                 casesynth5: Passed.
+                 casesynth6: Passed.
                   lcatsynth: Passed.
                    dffsynth: Passed.
                   dffsynth2: Passed.
                   dffsynth3: Passed.
                   dffsynth4: Passed.
+                  dffsynth5: Passed.
+                  dffsynth6: Passed.
                 sqrt32synth: Passed.
                   memsynth1: Passed.
                   memsynth2: Passed.
@@ -1731,7 +1736,7 @@ test_mos_strength_reduction: Passed.
                   pr3409749: Passed.
                test_mux2to1: Passed.
                test_dec2to4: Passed.
-            test_enumsystem: Passed.
+            test_enumsystem: ==> Failed - running iverilog.
               test_timebase: Passed.
                 test_system: Passed.
     test_signal_init_assign: Passed.
@@ -2029,4 +2034,4 @@ test_mos_strength_reduction: Passed.
                     br_gh28: Passed.
 ============================================================================
 Test results:
-  Total=2027, Passed=2022, Failed=5, Not Implemented=0, Expected Fail=0
+  Total=2032, Passed=2026, Failed=6, Not Implemented=0, Expected Fail=0
