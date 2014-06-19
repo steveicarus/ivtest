@@ -160,6 +160,10 @@ pr2966059        normal,-gno-xtypes pr2966059.c   pr2966059.gold
 pr2971220        normal pr2971220.c   pr2971220.gold
 final            normal,-g2009 final.c final.gold
 ports_params     normal ports_params.c ports_params.gold
+find_sig	 normal find_sig.c     find_sig.gold
+myscope		 normal myscope.c      myscope.gold
+myscope2	 normal myscope2.c     myscope2.gold
+range1		 normal range1.c       range1.gold
 
 # Add new tests here. If the test needs a compile option or a
 # different log file to run with an older versions or if it uses
