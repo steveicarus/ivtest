@@ -2295,6 +2295,9 @@ v0.9:conditsynth3	normal	ivltests
 v0.9:casesynth1	normal	ivltests
 v0.9:casesynth2	normal	ivltests
 v0.9:casesynth3	normal	ivltests
+v0.9:casesynth4	normal	ivltests
+v0.9:casesynth5	normal	ivltests
+v0.9:casesynth6	normal	ivltests
 v0.9:lcatsynth	normal	ivltests
 v0.9:dffsynth	normal	ivltests
 v0.9:dffsynth2	normal	ivltests
@@ -2345,11 +2348,16 @@ v0.10:conditsynth3	normal	ivltests
 v0.10:casesynth1	normal	ivltests
 v0.10:casesynth2	normal	ivltests
 v0.10:casesynth3	normal	ivltests
+v0.10:casesynth4	normal,-S	ivltests
+v0.10:casesynth5	normal,-S	ivltests
+v0.10:casesynth6	normal,-S	ivltests
 v0.10:lcatsynth	normal	ivltests
 v0.10:dffsynth	normal	ivltests
 v0.10:dffsynth2	normal	ivltests
 v0.10:dffsynth3	normal	ivltests
 v0.10:dffsynth4	normal	ivltests
+v0.10:dffsynth5	normal,-S	ivltests
+v0.10:dffsynth6	normal,-S	ivltests
 v0.10:sqrt32synth	normal	ivltests
 v0.10:memsynth1	normal	ivltests
 v0.10:memsynth2	normal	ivltests

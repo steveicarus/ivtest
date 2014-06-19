@@ -29,21 +29,21 @@ module main;
       D = 0;
       I = 0;
       #1 if (Q !== 8'h00) begin
-	 $display("FAILED -- Q=%h, D=%h, I=%h", Q, D, I);
+	 $display("FAILED -- Q=%b, D=%b, I=%b", Q, D, I);
 	 $finish;
       end
 
       D = 'h55;
       I = 'h55;
       #1 if (Q !== 8'h00) begin
-	 $display("FAILED -- Q=%h, D=%h, I=%h", Q, D, I);
+	 $display("FAILED -- Q=%b, D=%b, I=%b", Q, D, I);
 	 $finish;
       end
 
       D = 'h55;
       I = 'haa;
       #1 if (Q !== 8'hff) begin
-	 $display("FAILED -- Q=%h, D=%h, I=%h", Q, D, I);
+	 $display("FAILED -- Q=%b, D=%b, I=%b", Q, D, I);
 	 $finish;
       end
 
