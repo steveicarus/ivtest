@@ -6,13 +6,9 @@ Running compiler/VVP tests for Icarus Verilog version: 0.10 (strict).
                       case5: Passed.
              case5-syn-fail: Passed.
                       case6: Passed.
-                      case7: Passed.
                     condit1: Passed.
                  basiclatch: Passed.
-                 basicstate: Passed.
-                basicstate2: Passed.
                    multireg: Passed.
-                blocksynth1: Passed.
                 blocksynth2: Passed.
                 blocksynth3: Passed.
                conditsynth1: Passed.
@@ -30,13 +26,10 @@ Running compiler/VVP tests for Icarus Verilog version: 0.10 (strict).
                   memsynth1: Passed.
                   memsynth2: Passed.
                   memsynth3: Passed.
-                  memsynth4: Passed.
                   memsynth5: Passed.
                   memsynth6: Passed.
                   memsynth7: Passed.
                   memsynth9: Passed.
-                   ssetclr1: Passed.
-                   ssetclr2: Passed.
                    ssetclr3: Passed.
                inside_synth: Passed.
               inside_synth2: Passed.
@@ -738,15 +731,27 @@ test_mos_strength_reduction: Passed.
                       pr622: Passed.
                       pr639: Passed.
                       case3: Passed.
+                      case7: Passed.
                    basicreg: Passed.
+                 basicstate: Passed.
+                basicstate2: Passed.
                   basicexpr: Passed.
                  basicexpr2: Passed.
                  basicexpr3: Passed.
                  basicexpr4: Passed.
                      shiftl: Passed.
+                blocksynth1: Passed.
+                 casesynth4: ==> Failed - running iverilog.
+                 casesynth5: ==> Failed - running iverilog.
+                 casesynth6: Passed.
+                  dffsynth5: Passed.
+                  dffsynth6: Passed.
                      sqrt32: Passed.
+                  memsynth4: Passed.
                   memsynth8: Passed.
                 ufuncsynth1: Passed.
+                   ssetclr1: Passed.
+                   ssetclr2: Passed.
                partselsynth: Passed.
                      busbug: Passed.
                        real: Passed.
@@ -1009,6 +1014,8 @@ test_mos_strength_reduction: Passed.
                   pr1805837: Passed.
                       urand: Passed.
                     urand_r: Passed.
+                   urand_r2: Passed.
+                   urand_r3: Passed.
                      fileio: Passed.
                   pr1812297: Passed.
                   pr1819452: Passed.
@@ -1479,7 +1486,7 @@ test_mos_strength_reduction: Passed.
                   pr2842621: Passed.
               pr2842621_std: Passed.
               genvar_scopes: Passed.
-               array_select: ==> Failed - output does not match gold file.
+               array_select: Passed.
               real_array_nb: Passed.
            pv_undef_sig_sel: Passed.
              array_select_a: Passed.
@@ -2024,6 +2031,8 @@ test_mos_strength_reduction: Passed.
                    br_gh25a: Passed - CE.
                    br_gh25b: Passed - CE.
                     br_gh26: Passed - CE.
+                    br_gh28: Passed.
+                    br_gh30: Passed.
 ============================================================================
 Test results:
-  Total=2024, Passed=2013, Failed=8, Not Implemented=3, Expected Fail=0
+  Total=2033, Passed=2021, Failed=9, Not Implemented=3, Expected Fail=0
