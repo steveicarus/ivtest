@@ -2347,13 +2347,9 @@ v0.10:case4	normal	ivltests
 v0.10:case5	normal	ivltests
 v0.10:case5-syn-fail	normal	ivltests
 v0.10:case6	normal	ivltests
-v0.10:case7	normal	ivltests
 v0.10:condit1	normal	ivltests
 v0.10:basiclatch	normal	ivltests
-v0.10:basicstate	normal	ivltests
-v0.10:basicstate2	normal	ivltests
 v0.10:multireg	normal	ivltests
-v0.10:blocksynth1	normal	ivltests
 v0.10:blocksynth2	normal	ivltests
 v0.10:blocksynth3	normal	ivltests
 v0.10:conditsynth1	normal	ivltests
@@ -2362,27 +2358,19 @@ v0.10:conditsynth3	normal	ivltests
 v0.10:casesynth1	normal	ivltests
 v0.10:casesynth2	normal	ivltests
 v0.10:casesynth3	normal	ivltests
-v0.10:casesynth4	normal,-S	ivltests
-v0.10:casesynth5	normal,-S	ivltests
-v0.10:casesynth6	normal,-S	ivltests
 v0.10:lcatsynth	normal	ivltests
 v0.10:dffsynth	normal	ivltests
 v0.10:dffsynth2	normal	ivltests
 v0.10:dffsynth3	normal	ivltests
 v0.10:dffsynth4	normal	ivltests
-v0.10:dffsynth5	normal,-S	ivltests
-v0.10:dffsynth6	normal,-S	ivltests
 v0.10:sqrt32synth	normal	ivltests
 v0.10:memsynth1	normal	ivltests
 v0.10:memsynth2	normal	ivltests
 v0.10:memsynth3	normal	ivltests
-v0.10:memsynth4	normal	ivltests
 v0.10:memsynth5	normal	ivltests
 v0.10:memsynth6	normal	ivltests
 v0.10:memsynth7	normal	ivltests
 v0.10:memsynth9	normal	ivltests
-v0.10:ssetclr1	normal	ivltests
-v0.10:ssetclr2	normal	ivltests
 v0.10:ssetclr3	normal	ivltests
 v0.10:inside_synth	normal	ivltests
 v0.10:inside_synth2	normal	ivltests
@@ -2990,19 +2978,15 @@ vlog95:pr2029336	normal,-pallowsigned=1	ivltests diff=work/pr2029336.out:gold/pr
 vlog95:urand		normal,-pallowsigned=1	ivltests gold=urand.gold
 
 # At this time v0.10 (-tvlog95) doesn't support synthesis either.
-vlog95:case1	normal	ivltests
-vlog95:case2	normal	ivltests
-vlog95:case4	normal	ivltests
-vlog95:case5	normal	ivltests
+vlog95:case1		normal	ivltests
+vlog95:case2		normal	ivltests
+vlog95:case4		normal	ivltests
+vlog95:case5		normal	ivltests
 vlog95:case5-syn-fail	normal	ivltests
-vlog95:case6	normal	ivltests
-vlog95:case7	normal	ivltests
-vlog95:condit1	normal	ivltests
+vlog95:case6		normal	ivltests
+vlog95:condit1		normal	ivltests
 vlog95:basiclatch	normal	ivltests
-vlog95:basicstate	normal	ivltests
-vlog95:basicstate2	normal	ivltests
-vlog95:multireg	normal	ivltests
-vlog95:blocksynth1	normal	ivltests
+vlog95:multireg		normal	ivltests
 vlog95:blocksynth2	normal	ivltests
 vlog95:blocksynth3	normal	ivltests
 vlog95:conditsynth1	normal	ivltests
@@ -3012,7 +2996,7 @@ vlog95:casesynth1	normal	ivltests
 vlog95:casesynth2	normal	ivltests
 vlog95:casesynth3	normal	ivltests
 vlog95:lcatsynth	normal	ivltests
-vlog95:dffsynth	normal	ivltests
+vlog95:dffsynth		normal	ivltests
 vlog95:dffsynth2	normal	ivltests
 vlog95:dffsynth3	normal	ivltests
 vlog95:dffsynth4	normal	ivltests
@@ -3020,14 +3004,11 @@ vlog95:sqrt32synth	normal	ivltests
 vlog95:memsynth1	normal	ivltests
 vlog95:memsynth2	normal	ivltests
 vlog95:memsynth3	normal	ivltests
-vlog95:memsynth4	normal	ivltests
 vlog95:memsynth5	normal	ivltests
 vlog95:memsynth6	normal	ivltests
 vlog95:memsynth7	normal	ivltests
 vlog95:memsynth9	normal	ivltests
-vlog95:ssetclr1	normal	ivltests
-vlog95:ssetclr2	normal	ivltests
-vlog95:ssetclr3	normal	ivltests
+vlog95:ssetclr3		normal	ivltests
 vlog95:inside_synth	normal	ivltests
 vlog95:inside_synth2	normal	ivltests
 vlog95:inside_synth3	normal	ivltests
@@ -3037,6 +3018,15 @@ vlog95:full_case	normal	ivltests
 vlog95:full_case2	normal	ivltests
 vlog95:for_loop_synth	normal	ivltests
 vlog95:for_loop_synth2	normal	ivltests
+# These should synthesize correctly, but currently have conversion issues.
+vlog95:basicstate	normal	ivltests
+vlog95:basicstate2	normal	ivltests
+vlog95:blocksynth1	normal	ivltests
+vlog95:casesynth4	normal	ivltests
+vlog95:casesynth5	normal	ivltests
+vlog95:casesynth6	normal	ivltests
+vlog95:dffsynth6	normal	ivltests
+vlog95:memsynth4	normal	ivltests
 
 #==========
 # Strict standard compliance.
@@ -3784,11 +3774,16 @@ conditsynth3	normal,-S  ivltests
 casesynth1	normal,-S  ivltests
 casesynth2	normal,-S  ivltests
 casesynth3	normal,-S  ivltests
+casesynth4	normal,-S  ivltests
+casesynth5	normal,-S  ivltests
+casesynth6	normal,-S  ivltests
 lcatsynth	normal,-S  ivltests
 dffsynth	normal,-S  ivltests
 dffsynth2	normal,-S  ivltests
 dffsynth3	normal,-S  ivltests
 dffsynth4	normal,-S  ivltests
+dffsynth5	normal,-S  ivltests
+dffsynth6	normal,-S  ivltests
 sqrt32synth	normal,-S  ivltests
 sqrt32		normal	ivltests
 memsynth1	normal,-S  ivltests

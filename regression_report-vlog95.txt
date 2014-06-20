@@ -507,13 +507,9 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                       case5: Passed.
              case5-syn-fail: Passed.
                       case6: Passed.
-                      case7: Passed.
                     condit1: Passed.
                  basiclatch: Passed.
-                 basicstate: Passed.
-                basicstate2: Passed.
                    multireg: Passed.
-                blocksynth1: Passed.
                 blocksynth2: Passed.
                 blocksynth3: Passed.
                conditsynth1: Passed.
@@ -531,13 +527,10 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   memsynth1: Passed.
                   memsynth2: Passed.
                   memsynth3: Passed.
-                  memsynth4: Passed.
                   memsynth5: Passed.
                   memsynth6: Passed.
                   memsynth7: Passed.
                   memsynth9: Passed.
-                   ssetclr1: Passed.
-                   ssetclr2: Passed.
                    ssetclr3: Passed.
                inside_synth: Passed.
               inside_synth2: Passed.
@@ -548,6 +541,14 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  full_case2: Passed.
              for_loop_synth: Passed.
             for_loop_synth2: Passed.
+                 basicstate: Passed.
+                basicstate2: Passed.
+                blocksynth1: Passed.
+                 casesynth4: Passed.
+                 casesynth5: Passed.
+                 casesynth6: Passed.
+                  dffsynth6: Passed.
+                  memsynth4: Passed.
               always3.1.10A: Passed - CE.
               always3.1.11A: Passed.
               always3.1.11B: Passed.
@@ -1170,12 +1171,16 @@ test_mos_strength_reduction: Passed.
                       pr622: Passed.
                       pr639: Passed.
                       case3: Passed.
+                      case7: Passed.
                    basicreg: Passed.
                  basicexpr2: Passed.
                  basicexpr3: Passed.
                  basicexpr4: Passed.
+                  dffsynth5: Passed.
                      sqrt32: Passed.
                   memsynth8: Passed.
+                   ssetclr1: Passed.
+                   ssetclr2: Passed.
                      busbug: Passed.
                        real: Passed.
                       real2: Passed.
@@ -2029,4 +2034,4 @@ test_mos_strength_reduction: Passed.
                     br_gh28: Passed.
 ============================================================================
 Test results:
-  Total=2027, Passed=1996, Failed=3, Not Implemented=3, Expected Fail=25
+  Total=2032, Passed=2001, Failed=3, Not Implemented=3, Expected Fail=25

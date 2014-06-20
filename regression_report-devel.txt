@@ -6,13 +6,9 @@ Running compiler/VVP tests for Icarus Verilog version: 0.10.
                       case5: Passed.
              case5-syn-fail: Passed.
                       case6: Passed.
-                      case7: Passed.
                     condit1: Passed.
                  basiclatch: Passed.
-                 basicstate: Passed.
-                basicstate2: Passed.
                    multireg: Passed.
-                blocksynth1: Passed.
                 blocksynth2: Passed.
                 blocksynth3: Passed.
                conditsynth1: Passed.
@@ -21,27 +17,19 @@ Running compiler/VVP tests for Icarus Verilog version: 0.10.
                  casesynth1: Passed.
                  casesynth2: Passed.
                  casesynth3: Passed.
-                 casesynth4: Passed.
-                 casesynth5: Passed.
-                 casesynth6: Passed.
                   lcatsynth: Passed.
                    dffsynth: Passed.
                   dffsynth2: Passed.
                   dffsynth3: Passed.
                   dffsynth4: Passed.
-                  dffsynth5: Passed.
-                  dffsynth6: Passed.
                 sqrt32synth: Passed.
                   memsynth1: Passed.
                   memsynth2: Passed.
                   memsynth3: Passed.
-                  memsynth4: Passed.
                   memsynth5: Passed.
                   memsynth6: Passed.
                   memsynth7: Passed.
                   memsynth9: Passed.
-                   ssetclr1: Passed.
-                   ssetclr2: Passed.
                    ssetclr3: Passed.
                inside_synth: Passed.
               inside_synth2: Passed.
@@ -714,15 +702,27 @@ test_mos_strength_reduction: Passed.
                       pr622: Passed.
                       pr639: Passed.
                       case3: Passed.
+                      case7: Passed.
                    basicreg: Passed.
+                 basicstate: Passed.
+                basicstate2: Passed.
                   basicexpr: Passed.
                  basicexpr2: Passed.
                  basicexpr3: Passed.
                  basicexpr4: Passed.
                      shiftl: Passed.
+                blocksynth1: Passed.
+                 casesynth4: Passed.
+                 casesynth5: Passed.
+                 casesynth6: Passed.
+                  dffsynth5: Passed.
+                  dffsynth6: Passed.
                      sqrt32: Passed.
+                  memsynth4: Passed.
                   memsynth8: Passed.
                 ufuncsynth1: Passed.
+                   ssetclr1: Passed.
+                   ssetclr2: Passed.
                partselsynth: Passed.
                      busbug: Passed.
                        real: Passed.
@@ -1736,7 +1736,7 @@ test_mos_strength_reduction: Passed.
                   pr3409749: Passed.
                test_mux2to1: Passed.
                test_dec2to4: Passed.
-            test_enumsystem: ==> Failed - running iverilog.
+            test_enumsystem: Passed.
               test_timebase: Passed.
                 test_system: Passed.
     test_signal_init_assign: Passed.
@@ -2034,4 +2034,4 @@ test_mos_strength_reduction: Passed.
                     br_gh28: Passed.
 ============================================================================
 Test results:
-  Total=2032, Passed=2026, Failed=6, Not Implemented=0, Expected Fail=0
+  Total=2032, Passed=2027, Failed=5, Not Implemented=0, Expected Fail=0
