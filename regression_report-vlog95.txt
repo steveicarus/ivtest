@@ -87,6 +87,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
           array_word_width2: Passed - CE.
               genvar_scopes: Passed - CE.
                    meminit2: Passed - CE.
+                  memsynth4: Passed - CE.
             negative_genvar: Passed - CE.
                   pr1565544: Passed - CE.
                   pr1657307: Passed - CE.
@@ -311,6 +312,9 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  pr3296466d: Passed - CE.
                        tri2: Passed - CE.
                   basicexpr: Passed - TE.
+                 basicstate: Passed - TE.
+                basicstate2: Passed - TE.
+                  dffsynth6: Passed - TE.
                      shiftl: Passed - TE.
                 ufuncsynth1: Passed - TE.
                       pr685: Passed - TE.
@@ -541,14 +545,10 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  full_case2: Passed.
              for_loop_synth: Passed.
             for_loop_synth2: Passed.
-                 basicstate: Passed.
-                basicstate2: Passed.
                 blocksynth1: Passed.
                  casesynth4: Passed.
                  casesynth5: Passed.
                  casesynth6: Passed.
-                  dffsynth6: Passed.
-                  memsynth4: Passed.
               always3.1.10A: Passed - CE.
               always3.1.11A: Passed.
               always3.1.11B: Passed.

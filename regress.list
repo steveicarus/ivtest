@@ -2480,6 +2480,7 @@ vlog95:array_select_a		CE	ivltests
 vlog95:array_word_width2	CE	ivltests
 vlog95:genvar_scopes		CE	ivltests
 vlog95:meminit2			CE	ivltests
+vlog95:memsynth4		CE,-S	ivltests  # Synthesized net array
 vlog95:negative_genvar		CE	ivltests
 vlog95:pr1565544		CE	ivltests
 vlog95:pr1657307		CE	ivltests
@@ -2757,6 +2758,9 @@ vlog95:tri2		CE	ivltests
 # The Icarus compiler does not support arrayed UDP instance. These are
 # created in the synthesis process.
 vlog95:basicexpr	TE,-S	ivltests
+vlog95:basicstate	TE,-S	ivltests
+vlog95:basicstate2	TE,-S	ivltests
+vlog95:dffsynth6	TE,-S	ivltests
 vlog95:shiftl		TE,-S	ivltests
 vlog95:ufuncsynth1	TE,-S	ivltests
 vlog95:pr685		TE,-S	ivltests
@@ -3018,15 +3022,13 @@ vlog95:full_case	normal	ivltests
 vlog95:full_case2	normal	ivltests
 vlog95:for_loop_synth	normal	ivltests
 vlog95:for_loop_synth2	normal	ivltests
-# These should synthesize correctly, but currently have conversion issues.
-vlog95:basicstate	normal	ivltests
-vlog95:basicstate2	normal	ivltests
+# The synthesized expression for out is not generated correctly.
 vlog95:blocksynth1	normal	ivltests
+# The synthesized expression for a and b are not generated correctly.
 vlog95:casesynth4	normal	ivltests
 vlog95:casesynth5	normal	ivltests
+# The synthesized caseZ compare is not supported.
 vlog95:casesynth6	normal	ivltests
-vlog95:dffsynth6	normal	ivltests
-vlog95:memsynth4	normal	ivltests
 
 #==========
 # Strict standard compliance.
