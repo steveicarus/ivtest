@@ -7,7 +7,7 @@ module test
 
    // This should synthesize to an unrolled version of the
    // for loop.
-   integer 		    j;
+   integer		    j;
    always @* begin
       for (j = 0 ; j < inputs ; j = j+1) begin
 	 if (I[j]) Q[j] = ~D[j];

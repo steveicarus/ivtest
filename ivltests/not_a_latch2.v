@@ -3,7 +3,7 @@ module test(input wire load, drain,
 	    input wire clk, data,
 	    output reg foo_nxt, bar_nxt);
 
-   reg 		       foo, bar;
+   reg		       foo, bar;
 
    (* ivl_combinational *)
    always @* begin

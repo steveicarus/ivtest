@@ -16,7 +16,7 @@ initial begin
 end
 
 endmodule
-    
+
 module \test_str="hello" (output [63:0] \port="y" );
 
 assign \port="y" = "hello";

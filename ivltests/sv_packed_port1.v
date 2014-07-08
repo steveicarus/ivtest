@@ -9,7 +9,7 @@ module main;
    foo_s [1:0][3:0] ival;
    foo_s [1:0][3:0] oval;
 
-   genvar 	    g;
+   genvar	    g;
    for (g = 0 ; g < 4 ; g = g+1) begin:loop
       TEST dut(.in(ival[0][g]),
 	       .out(oval[0][g]));

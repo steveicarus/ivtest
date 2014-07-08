@@ -17,7 +17,7 @@ endmodule // dut
 module main;
 
    wire q;
-   reg 	d, clk, rst;
+   reg	d, clk, rst;
    DFF dut (.Q(q), .D(d), .CLK(clk), .RST(rst));
 
    initial begin

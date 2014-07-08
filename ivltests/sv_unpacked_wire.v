@@ -17,7 +17,7 @@ module main;
    always @(posedge clk)
      Q <= data_x[addr];
 
-   reg [2:0] 	   idx;
+   reg [2:0]	   idx;
    initial begin
       clk = 0;
       data[0] = 0;

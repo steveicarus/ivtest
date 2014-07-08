@@ -1,9 +1,9 @@
 
 module test
   (output reg       a,
-   output reg 	    b,
+   output reg	    b,
    input wire [1:0] sel,
-   input wire 	    d
+   input wire	    d
    /* */);
 
    always @* begin
@@ -30,7 +30,7 @@ endmodule // test
 
 module main;
    reg [1:0] sel;
-   reg 	     d;
+   reg	     d;
    wire      a, b;
 
    test dut (.a(a), .b(b), .sel(sel), .d(d));

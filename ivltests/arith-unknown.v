@@ -22,7 +22,7 @@ initial begin
   result = unknown * 0;
   $display("%b", result);
   if (result !== 4'bxxxx) failed = 1;
-  
+
   if (failed)
     $display("FAILED");
   else

@@ -23,7 +23,7 @@ module main;
 
    wire       q0;
    wire [1:0] q1;
-   reg 	      d0, clk, rst;
+   reg	      d0, clk, rst;
    reg [1:0]  d1;
 
    DFF dut (.Q0(q0), .Q1(q1), .D0(d0), .D1(d1), .CLK(clk), .RST(rst));

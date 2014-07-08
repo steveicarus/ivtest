@@ -2,7 +2,7 @@
 module test
   #(parameter width = 8)
   (input wire             clk,
-   input wire [1:0] 	  addr,
+   input wire [1:0]	  addr,
    input wire [width-1:0] data[0:3],
    output reg [width-1:0] Q
    /* */);
@@ -24,7 +24,7 @@ module main;
 
    test #(.width(width)) DUT (.clk(clk), .addr(addr), .data(data), .Q(Q));
 
-   reg [2:0] 	   idx;
+   reg [2:0]	   idx;
    initial begin
       clk = 0;
       data[0] = 0;
