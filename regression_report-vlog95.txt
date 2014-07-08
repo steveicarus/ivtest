@@ -233,6 +233,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   pr2159630: Passed - expected fail.
                     analog1: Passed - CE.
                     analog2: Passed - CE.
+                      br955: Passed - CE.
                complex_lidx: Passed - CE.
                   defparam3: Passed - CE.
                   defparam4: Passed - CE.
@@ -279,12 +280,12 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   pr3534422: Passed - CE.
                   pr3557493: Passed - CE.
               scoped_events: Passed - CE.
-                test_forgen: Passed - CE.
-                  test_gxor: Passed - CE.
-     unnamed_generate_block: Passed - CE.
             sv_packed_port1: Passed - CE.
             sv_packed_port2: Passed - CE.
+                test_forgen: Passed - CE.
+                  test_gxor: Passed - CE.
                test_varray1: Passed - CE.
+     unnamed_generate_block: Passed - CE.
                     bitsel6: Passed - CE.
                     bitsel7: Passed - CE.
                  pr3054101a: Passed - CE.
@@ -2035,4 +2036,4 @@ test_mos_strength_reduction: Passed.
                     br_gh30: Passed.
 ============================================================================
 Test results:
-  Total=2033, Passed=2002, Failed=3, Not Implemented=3, Expected Fail=25
+  Total=2034, Passed=2003, Failed=3, Not Implemented=3, Expected Fail=25

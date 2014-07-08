@@ -2037,6 +2037,7 @@ test_mos_strength_reduction: Passed.
                    br_gh25b: Passed - CE.
                     br_gh26: Passed - CE.
                     br_gh30: Passed.
+                      br955: Passed.
 ============================================================================
 Test results:
-  Total=2037, Passed=1614, Failed=0, Not Implemented=369, Expected Fail=54
+  Total=2038, Passed=1615, Failed=0, Not Implemented=369, Expected Fail=54
