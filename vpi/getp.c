@@ -20,8 +20,8 @@ calltf(int ud, int reason)
 static int sizetf(int ud, int reason) { return 32; }
 
 s_tfcell veriusertfs[2] = {
-  {usertask, 0, 0, sizetf, calltf, 0, "$mytest", 1},
-  {0, 0, 0, 0, 0, 0, 0, 0}
+  {usertask, 0, 0, sizetf, calltf, 0, "$mytest", 1, 0, 0, {0} },
+  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, {0} }
 };
 
 static void veriusertfs_register(void)

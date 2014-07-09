@@ -48,8 +48,8 @@ mytest(int ud, int reason)
 static int return_32(int ud, int reason) { return 32; }
 
 s_tfcell veriusertfs[2] = {
-  { usertask, 0, 0, return_32, mytest, 0, "$mytest", 1},
-  {0, 0, 0, 0, 0, 0, 0, 0}
+  { usertask, 0, 0, return_32, mytest, 0, "$mytest", 1, 0, 0, {0} },
+  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, {0} }
 };
 
 // Icarus registration

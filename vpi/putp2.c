@@ -47,9 +47,12 @@ s_tfcell veriusertfs[2] = {
    calltf,
    0,
    "$copy_test",
-   1
+   1,
+   0,
+   0,
+   {0}
   },
-  {0, 0, 0, 0, 0, 0, 0, 0}
+  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, {0} }
 };
 
 static void veriusertfs_register(void)
