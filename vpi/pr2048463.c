@@ -39,6 +39,8 @@ static PLI_INT32 sys_end_of_simulation(p_cb_data cb_data)
 {
   unsigned idx;
 
+  (void)cb_data;  /* Parameter is not used. */
+
   for (idx = 0; idx < name_count; idx += 1) {
     free(name_list[idx]);
   }
@@ -101,6 +103,8 @@ PLI_INT32 PLIbook_MyMonitor_compiletf(PLI_BYTE8 *user_data)
   vpiHandle systf_handle, arg_iterator, arg_handle;
   PLI_INT32 tfarg_type;
 
+  (void)user_data;  /* Parameter is not used. */
+
   /* obtain a handle to the system task instance */
   systf_handle = vpi_handle(vpiSysTfCall, NULL);
 
@@ -143,6 +147,8 @@ PLI_INT32 PLIbook_MyMonitor_calltf(PLI_BYTE8 *user_data)
   s_vpi_value  value_s;
   s_cb_data    cb_data_s;
   PLI_BYTE8   *net_name_temp, *net_name_keep;
+
+  (void)user_data;  /* Parameter is not used. */
 
   /* setup value change callback options */
   time_s.type       = vpiScaledRealTime;

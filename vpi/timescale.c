@@ -10,6 +10,9 @@ mytest(int ud, int reason)
     PLI_BYTE8 *inst = tf_getinstance();
     PLI_BYTE8 *name = tf_spname();
 
+    (void)ud;  /* Parameter is not used. */
+    (void)reason;  /* Parameter is not used. */
+
     io_printf("Module %s\n", name);
 
     lt = tf_gettime();
@@ -45,7 +48,12 @@ mytest(int ud, int reason)
     return 0;
 }
 
-static int return_32(int ud, int reason) { return 32; }
+static int return_32(int ud, int reason)
+{
+    (void)ud;  /* Parameter is not used. */
+    (void)reason;  /* Parameter is not used. */
+    return 32;
+}
 
 s_tfcell veriusertfs[2] = {
   { usertask, 0, 0, return_32, mytest, 0, "$mytest", 1, 0, 0, {0} },

@@ -97,6 +97,8 @@ static void checkPorts()
 
 static PLI_INT32 checkPortsParams(struct t_cb_data*cb)
 {
+    (void)cb;  /* Parameter is not used. */
+
     checkParams();
     checkPorts();
     return 0;

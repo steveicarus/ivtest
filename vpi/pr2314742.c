@@ -29,7 +29,7 @@ static PLI_INT32 xxx_compiletf(char *user_data)
 static PLI_INT32 xxx_compiletf(PLI_BYTE8 *user_data)
 #endif
 {
-  /* empty */
+  (void)user_data;  /* Parameter is not used. */
   return 0;
 }
 
@@ -47,6 +47,8 @@ static PLI_INT32 xxx_calltf(PLI_BYTE8 *user_data)
   vpiHandle	arg_iterator;
   int		i;
   vpiHandle	argi[100];
+
+  (void)user_data;  /* Parameter is not used. */
 
   /* Get handle to this instance, look up our workarea */
   systf_h = vpi_handle(vpiSysTfCall, NULL);

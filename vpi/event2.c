@@ -32,6 +32,8 @@ Callback(s_cb_data *data)
     s_vpi_time t;
     static int count = 0;
 
+    (void)data;  /* Parameter is not used. */
+
     t.type = vpiScaledRealTime;
     vpi_get_time(0, &t);
 
@@ -53,6 +55,8 @@ CallbackRegister(s_cb_data *data)
     vpiHandle hand;
     s_cb_data cb_data;
     s_vpi_time timerec = { vpiSimTime, 0, 0, 0 };
+
+    (void)data;  /* Parameter is not used. */
 
     hand = vpi_handle_by_name("test.e", 0);
     assert(hand);

@@ -9,6 +9,8 @@ static PLI_INT32 calltf(PLI_BYTE8 *data)
 {
     int i;
 
+    (void)data;  /* Parameter is not used. */
+
     for (i = 0; i < 31; i++) {
         if (vpi_mcd_name(1U<<i))
             vpi_printf("MCD %02d: %s\n", i+1, vpi_mcd_name(1U<<i));

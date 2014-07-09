@@ -6,6 +6,10 @@ char *veriuser_version_str = "Test PLI v0.1 ";
 static int pli_test(int ud, int reason)
 {
    int a;
+
+   (void)ud;  /* Parameter is not used. */
+   (void)reason;  /* Parameter is not used. */
+
    a = tf_getp(1);
    printf ("PLI Parameter received 0x%x\n",a);
    return 0;
@@ -13,6 +17,9 @@ static int pli_test(int ud, int reason)
 
 static int return_32(int ud, int reason)
 {
+  (void)ud;  /* Parameter is not used. */
+  (void)reason;  /* Parameter is not used. */
+
   return (32);
 }
 

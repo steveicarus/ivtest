@@ -47,6 +47,8 @@ static PLI_INT32 dump_specify_calltf(PLI_BYTE8*name)
       vpiHandle argv = vpi_iterate(vpiArgument, sys);
       vpiHandle item = vpi_scan(argv);
 
+      (void)name;  /* Parameter is not used. */
+
       assert(item);
       vpi_free_object(argv);
 

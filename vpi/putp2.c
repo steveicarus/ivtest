@@ -31,13 +31,20 @@
 static int calltf(int user_data, int reason)
 {
 //    char *inst = tf_getinstance();
+    (void)user_data;  /* Parameter is not used. */
+    (void)reason;  /* Parameter is not used. */
 
     tf_putp (0, tf_getp(1));
 
     return 0;
 }
 
-static int sizetf(int user_data, int reason) { return 32; }
+static int sizetf(int user_data, int reason)
+{
+    (void)user_data;  /* Parameter is not used. */
+    (void)reason;  /* Parameter is not used. */
+    return 32;
+}
 
 s_tfcell veriusertfs[2] = {
   {userfunction,

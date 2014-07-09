@@ -51,6 +51,8 @@ static PLI_INT32 memmonitor_calltf(PLI_BYTE8*name)
       vpiHandle argv = vpi_iterate(vpiArgument, sys);
       vpiHandle arg;
 
+      (void)name;  /* Parameter is not used. */
+
       while ( (arg = vpi_scan(argv)) ) {
 	    s_cb_data cb_data;
 
