@@ -5127,3 +5127,5 @@ br_gh26		CE	ivltests
 br_gh28		normal	ivltests
 br_gh30		normal	ivltests
 br955		normal	ivltests
+if_part_no_else normal,-S	ivltests
+if_part_no_else2 normal,-S	ivltests
