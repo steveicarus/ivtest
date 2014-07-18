@@ -2034,6 +2034,8 @@ test_mos_strength_reduction: Passed.
                     br_gh28: Passed.
                     br_gh30: Passed.
                       br955: Passed.
+            if_part_no_else: Passed.
+           if_part_no_else2: Passed.
 ============================================================================
 Test results:
-  Total=2034, Passed=2029, Failed=5, Not Implemented=0, Expected Fail=0
+  Total=2036, Passed=2031, Failed=5, Not Implemented=0, Expected Fail=0

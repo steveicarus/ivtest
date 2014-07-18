@@ -19,8 +19,8 @@ endmodule // test
 module main;
 
    wire [1:0] foo;
-   reg 	      in0, en0;
-   reg 	      in1, en1;
+   reg	      in0, en0;
+   reg	      in1, en1;
 
    test dut (.foo(foo), .in0(in0), .in1(in1), .en0(en0), .en1(en1));
 

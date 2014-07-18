@@ -3,8 +3,8 @@
 module test
   (output reg [1:0] foo,
    input wire [1:0] addr,
-   input wire 	    in0, in1,
-   input wire 	    en0, en1
+   input wire	    in0, in1,
+   input wire	    en0, en1
    /* */);
 
    localparam foo_default = 2'b00;
@@ -25,8 +25,8 @@ module main;
 
    wire [1:0] foo;
    reg [1:0]  addr;
-   reg 	      in0, in1;
-   reg 	      en0, en1;
+   reg	      in0, in1;
+   reg	      en0, en1;
 
    test dut(.foo(foo), .addr(addr), .in0(in0), .in1(in1), .en0(en0), .en1(en1));
 
