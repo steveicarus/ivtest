@@ -518,6 +518,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                not_a_latch1: Passed.
                not_a_latch2: Passed.
              for_loop_synth: Passed.
+            if_part_no_else: Passed.
+           if_part_no_else2: Passed.
                  full_case2: Not Implemented.
               always3.1.10A: Passed - CE.
               always3.1.11A: Passed.
@@ -2040,4 +2042,4 @@ test_mos_strength_reduction: Passed.
                       br955: Passed.
 ============================================================================
 Test results:
-  Total=2038, Passed=1615, Failed=0, Not Implemented=369, Expected Fail=54
+  Total=2040, Passed=1617, Failed=0, Not Implemented=369, Expected Fail=54
