@@ -550,6 +550,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  casesynth4: Passed.
                  casesynth5: Passed.
                  casesynth6: Passed.
+            if_part_no_else: Passed.
+           if_part_no_else2: Passed.
               always3.1.10A: Passed - CE.
               always3.1.11A: Passed.
               always3.1.11B: Passed.
@@ -2036,4 +2038,4 @@ test_mos_strength_reduction: Passed.
                     br_gh30: Passed.
 ============================================================================
 Test results:
-  Total=2034, Passed=2003, Failed=3, Not Implemented=3, Expected Fail=25
+  Total=2036, Passed=2005, Failed=3, Not Implemented=3, Expected Fail=25

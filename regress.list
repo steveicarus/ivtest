@@ -2336,6 +2336,8 @@ v0.9:synth_if_no_else normal	ivltests
 v0.9:not_a_latch1 normal	ivltests
 v0.9:not_a_latch2 normal	ivltests
 v0.9:for_loop_synth	normal	ivltests
+v0.9:if_part_no_else	normal	ivltests
+v0.9:if_part_no_else2	normal	ivltests
 
 # This fails due to incomplete support for attributes in the parser.
 v0.9:full_case2	NI
@@ -3032,6 +3034,9 @@ vlog95:casesynth4	normal	ivltests
 vlog95:casesynth5	normal	ivltests
 # The synthesized caseZ compare is not supported.
 vlog95:casesynth6	normal	ivltests
+# The synthesized substitute is not supported.
+vlog95:if_part_no_else	normal	ivltests
+vlog95:if_part_no_else2	normal	ivltests
 
 #==========
 # Strict standard compliance.
@@ -5127,5 +5132,5 @@ br_gh26		CE	ivltests
 br_gh28		normal	ivltests
 br_gh30		normal	ivltests
 br955		normal	ivltests
-if_part_no_else normal,-S	ivltests
-if_part_no_else2 normal,-S	ivltests
+if_part_no_else	normal,-S	ivltests
+if_part_no_else2	normal,-S	ivltests
