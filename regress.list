@@ -5129,3 +5129,5 @@ br_gh30		normal	ivltests
 br955		normal	ivltests
 if_part_no_else normal,-S	ivltests
 if_part_no_else2 normal,-S	ivltests
+ff_dual_enable normal,-S	ivltests
+case_wo_default normal,-S	ivltests
