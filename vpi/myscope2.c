@@ -9,6 +9,8 @@ static int sn_calltf(int user_data, int reason)
 {
       int high_time, low_time;
 
+      (void)user_data;  /* Parameter is not used. */
+
       io_printf("... sn_calltf(reason=%d)\n", reason);
       low_time = tf_igetlongtime(&high_time,instance);
       io_printf("high_time=%d, low_time=%d\n", high_time, low_time);
@@ -17,6 +19,8 @@ static int sn_calltf(int user_data, int reason)
 
 int ise_vls_misc(int data, int reason, int paramvc)
 {
+      (void)paramvc;  /* Parameter is not used. */
+
       io_printf("... ise_vls_misc(reason=%d)\n", reason);
       if (reason != reason_endofcompile)
 	    return sn_calltf(data, reason);
@@ -26,6 +30,8 @@ int ise_vls_misc(int data, int reason, int paramvc)
 
 int ise_startup(int data, int reason)
 {
+      (void)data;  /* Parameter is not used. */
+
       instance = tf_getinstance();
       io_printf("... ise_startup(reason=%d)\n", reason);
       tf_isynchronize(instance);
@@ -33,8 +39,8 @@ int ise_startup(int data, int reason)
 }
 
 static s_tfcell sn[2] = {
-      { usertask, 0, ise_startup, 0, sn_calltf, ise_vls_misc,"$sn"},
-      {0}
+      {usertask, 0, ise_startup, 0, sn_calltf, ise_vls_misc, "$sn", 1, 0, 0, {0} },
+      {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, {0} }
 };
 
 static void veriusertfs_register(void)

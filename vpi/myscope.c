@@ -8,6 +8,8 @@ static int sn_calltf(char*user_data)
 {
       vpiHandle scope = vpi_handle(vpiScope, 0);
 
+      (void)user_data;  /* Parameter is not used. */
+
       assert(scope);
 
 

@@ -11,6 +11,8 @@ static int sn_calltf(char*user_data)
       int left_value;
       int right_value;
 
+      (void)user_data;  /* Parameter is not used. */
+
 	/* Get the handle of an object that we know to be present. */
       vpiHandle xor_hand   = vpi_handle_by_name("xor_try.inp_xor",0);
 

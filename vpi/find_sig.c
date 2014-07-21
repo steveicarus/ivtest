@@ -8,6 +8,8 @@ static int sn_calltf(char*user_data)
 {
       vpiHandle obj = vpi_handle_by_name("xor_try.unused", 0);
 
+      (void)user_data;  /* Parameter is not used. */
+
       if (obj==0) {
 	    vpi_printf("FAILED -- no xor_try.unused\n");
 	    return 0;
