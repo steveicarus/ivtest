@@ -1,6 +1,5 @@
 Compiling vpi/myscope2.c...
 Making myscope2.vpi from  myscope2.o...
-veriusertfs: $sn, forcing forwref = true
 ... ise_startup(reason=1)
 ... ise_vls_misc(reason=16)
 ... ise_vls_misc(reason=8)
