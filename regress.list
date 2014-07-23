@@ -1700,6 +1700,7 @@ v0.9:br932a	NI
 v0.9:br932b	NI
 v0.9:br936	NI
 V0.9:br_gh4	NI
+V0.9:br_gh4a	NI
 v0.9:clkgen_bit	NI
 v0.9:clkgen_logic	NI
 v0.9:clkgen_net	NI
@@ -5137,3 +5138,4 @@ br955		normal	ivltests
 if_part_no_else	normal,-S	ivltests
 if_part_no_else2	normal,-S	ivltests
 br_gh4	normal,-g2009	ivltests
+br_gh4a	normal,-g2009	ivltests
