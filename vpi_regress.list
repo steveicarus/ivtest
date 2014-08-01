@@ -115,6 +115,16 @@ v0.9:final       NI final.c final.gold
 v0.8:ports_params  NI ports_params.c ports_params.gold
 v0.9:ports_params  NI ports_params.c ports_params.gold
 
+# V0.8, V0.9 do not support the fixed VPI access.
+v0.8:find_sig	 NI find_sig.c     find_sig.gold
+v0.9:find_sig	 NI find_sig.c     find_sig.gold
+v0.8:myscope	 NI myscope.c      myscope.gold
+v0.9:myscope	 NI myscope.c      myscope.gold
+v0.8:myscope2	 NI myscope2.c     myscope2.gold
+v0.9:myscope2	 NI myscope2.c     myscope2.gold
+v0.8:range1	 NI range1.c       range1.gold
+v0.9:range1	 NI range1.c       range1.gold
+
 # Add v0.8/v0.9 overrides here.
 
 #==========
