@@ -4773,6 +4773,7 @@ vhdl_fa4_test1	normal,-g2005-sv,ivltests/vhdl_fa4_test1.vhd	ivltests
 vhdl_fa4_test2	normal,-g2005-sv,ivltests/vhdl_fa4_test2.vhd	ivltests
 vhdl_fa4_test3	normal,-g2005-sv,ivltests/vhdl_fa4_test3.vhd	ivltests
 vhdl_fa4_test4	normal,-g2005-sv,ivltests/vhdl_fa4_test4.vhd	ivltests
+vhdl_real	normal,ivltests/vhdl_real.vhd	ivltests
 queue		normal	ivltests
 queue_fail	normal	ivltests diff=log/queue_fail.log:gold/queue_fail.gold
 queue_stat	normal	ivltests diff=log/queue_stat.log:gold/queue_stat.gold
