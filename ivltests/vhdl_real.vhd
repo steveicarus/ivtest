@@ -29,7 +29,7 @@ architecture test of vhdl_real is
   constant d      : real := 23.8;
   constant e      : real := c + d;
 
-  signal a        : real := -1.2;
+  signal a        : real := 1.2;
   signal b        : real := 32.123_23;
   signal pi       : real := 3.14159265;
   signal exp      : real := 2.334E+2;
