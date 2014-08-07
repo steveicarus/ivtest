@@ -1542,7 +1542,7 @@ test_mos_strength_reduction: Passed.
                   pr2998515: Passed.
                   pr3011327: Passed.
                   pr3012758: Passed.
-        sys_func_task_error: Passed.
+        sys_func_task_error: Passed - RE.
            sys_func_as_task: Passed.
                   pr3015421: Passed - CE.
                   pr3022502: Passed.
@@ -1737,7 +1737,7 @@ test_mos_strength_reduction: Passed.
                   pr3409749: Passed.
                test_mux2to1: Passed.
                test_dec2to4: Passed.
-            test_enumsystem: ==> Failed - running iverilog.
+            test_enumsystem: Passed.
               test_timebase: Passed.
                 test_system: Passed.
     test_signal_init_assign: Passed.
@@ -2035,10 +2035,12 @@ test_mos_strength_reduction: Passed.
                     br_gh28: Passed.
                     br_gh30: Passed.
                       br955: Passed.
+             ff_dual_enable: Passed.
+            case_wo_default: Passed.
             if_part_no_else: Passed.
            if_part_no_else2: Passed.
                      br_gh4: Passed.
                     br_gh4a: Passed.
 ============================================================================
 Test results:
-  Total=2039, Passed=2033, Failed=6, Not Implemented=0, Expected Fail=0
+  Total=2041, Passed=2036, Failed=5, Not Implemented=0, Expected Fail=0
