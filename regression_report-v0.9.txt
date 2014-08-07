@@ -290,6 +290,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
              vhdl_fa4_test2: Not Implemented.
              vhdl_fa4_test3: Not Implemented.
              vhdl_fa4_test4: Not Implemented.
+                  vhdl_real: Not Implemented.
                vhdl_signals: Not Implemented.
              vhdl_sa1_test1: Not Implemented.
              vhdl_sa1_test2: Not Implemented.
@@ -520,6 +521,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                not_a_latch1: Passed.
                not_a_latch2: Passed.
              for_loop_synth: Passed.
+             ff_dual_enable: Passed.
+            case_wo_default: Passed.
             if_part_no_else: Passed.
            if_part_no_else2: Passed.
                  full_case2: Not Implemented.
@@ -2044,4 +2047,4 @@ test_mos_strength_reduction: Passed.
                       br955: Passed.
 ============================================================================
 Test results:
-  Total=2042, Passed=1617, Failed=0, Not Implemented=371, Expected Fail=54
+  Total=2045, Passed=1619, Failed=0, Not Implemented=372, Expected Fail=54

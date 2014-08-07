@@ -2335,10 +2335,12 @@ v0.9:inside_synth3	normal	ivltests
 v0.9:mix_reset	normal	ivltests
 v0.9:casex_synth	normal	ivltests
 v0.9:full_case	normal	ivltests
-v0.9:synth_if_no_else normal	ivltests
-v0.9:not_a_latch1 normal	ivltests
-v0.9:not_a_latch2 normal	ivltests
+v0.9:synth_if_no_else	normal	ivltests
+v0.9:not_a_latch1	normal	ivltests
+v0.9:not_a_latch2	normal	ivltests
 v0.9:for_loop_synth	normal	ivltests
+v0.9:ff_dual_enable	normal	ivltests
+v0.9:case_wo_default	normal	ivltests
 v0.9:if_part_no_else	normal	ivltests
 v0.9:if_part_no_else2	normal	ivltests
 
