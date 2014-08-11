@@ -1388,6 +1388,7 @@ v0.8:function9		NI
 # V0.8 does not support multi-dimensional arrays.
 v0.8:array7		NI
 v0.8:pr3582052		NI
+v0.8:br_gh33		NI
 
 # V0.8 does not support specify block delays.
 v0.8:pr1587669	CO	ivltests
@@ -2186,6 +2187,7 @@ v0.9:function9		NI
 # V0.9 does not support multi-dimensional arrays.
 v0.9:array7		NI
 v0.9:pr3582052		NI
+v0.9:br_gh33		NI
 
 # This test fails because the conditional expression needs to be pulled on
 # demand. Just allowing the expression to propagate causes a timing race
@@ -5139,6 +5141,7 @@ br_gh25b	CE	ivltests
 br_gh26		CE	ivltests
 br_gh28		normal	ivltests
 br_gh30		normal	ivltests
+br_gh33		normal	ivltests	gold=br_gh33.gold
 br955		normal	ivltests
 ff_dual_enable normal,-S	ivltests
 case_wo_default normal,-S	ivltests

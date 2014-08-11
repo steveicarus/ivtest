@@ -427,6 +427,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                   function9: Not Implemented.
                      array7: Not Implemented.
                   pr3582052: Not Implemented.
+                    br_gh33: Not Implemented.
                   pr1877743: Passed - expected fail.
                   pr1741212: Passed - expected fail.
            mixed_width_case: Passed - expected fail.
@@ -2047,4 +2048,4 @@ test_mos_strength_reduction: Passed.
                       br955: Passed.
 ============================================================================
 Test results:
-  Total=2045, Passed=1619, Failed=0, Not Implemented=372, Expected Fail=54
+  Total=2046, Passed=1619, Failed=0, Not Implemented=373, Expected Fail=54

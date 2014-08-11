@@ -2034,6 +2034,7 @@ test_mos_strength_reduction: Passed.
                     br_gh26: Passed - CE.
                     br_gh28: Passed.
                     br_gh30: Passed.
+                    br_gh33: Passed.
                       br955: Passed.
              ff_dual_enable: Passed.
             case_wo_default: Passed.
@@ -2043,4 +2044,4 @@ test_mos_strength_reduction: Passed.
                     br_gh4a: Passed.
 ============================================================================
 Test results:
-  Total=2041, Passed=2036, Failed=5, Not Implemented=0, Expected Fail=0
+  Total=2042, Passed=2037, Failed=5, Not Implemented=0, Expected Fail=0
