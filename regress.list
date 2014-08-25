@@ -1978,6 +1978,7 @@ v0.9:vhdl_fa4_test2	NI
 v0.9:vhdl_fa4_test3	NI
 v0.9:vhdl_fa4_test4	NI
 v0.9:vhdl_real		NI
+v0.9:vhdl_unbounded	NI
 v0.9:vhdl_signals	NI
 v0.9:vhdl_sa1_test1	NI
 v0.9:vhdl_sa1_test2	NI
@@ -2457,6 +2458,7 @@ vlog95:tern8			CE	ivltests
 vlog95:v2005_math		CE	ivltests
 vlog95:vams_abs2		CE,-gverilog-ams,-pallowsigned=1	ivltests
 vlog95:vhdl_real		CE,ivltests/vhdl_real.vhd	ivltests
+vlog95:vhdl_unbounded		CE,ivltests/vhdl_unbounded.vhd	ivltests
 vlog95:wreal			CE	ivltests
 
 # Real modulus is an Icarus extension.
@@ -4779,7 +4781,8 @@ vhdl_fa4_test1	normal,-g2005-sv,ivltests/vhdl_fa4_test1.vhd	ivltests
 vhdl_fa4_test2	normal,-g2005-sv,ivltests/vhdl_fa4_test2.vhd	ivltests
 vhdl_fa4_test3	normal,-g2005-sv,ivltests/vhdl_fa4_test3.vhd	ivltests
 vhdl_fa4_test4	normal,-g2005-sv,ivltests/vhdl_fa4_test4.vhd	ivltests
-vhdl_real	normal,ivltests/vhdl_real.vhd	ivltests
+vhdl_real	normal,-g2009,ivltests/vhdl_real.vhd		ivltests
+vhdl_unbounded	normal,-g2009,ivltests/vhdl_unbounded.vhd	ivltests
 queue		normal	ivltests
 queue_fail	normal	ivltests diff=log/queue_fail.log:gold/queue_fail.gold
 queue_stat	normal	ivltests diff=log/queue_stat.log:gold/queue_stat.gold
