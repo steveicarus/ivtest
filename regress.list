@@ -2734,8 +2734,8 @@ vlog95:pr3557493	CE	ivltests
 vlog95:scoped_events	CE	ivltests
 vlog95:sv_packed_port1	CE,-g2009	ivltests
 vlog95:sv_packed_port2	CE,-g2009	ivltests
-vlog95:sv_queue1	CE,-g2009	ivltests
-vlog95:sv_queue2	CE,-g2009	ivltests
+vlog95:sv_queue1	CE,-g2009,-pallowsigned=1	ivltests
+vlog95:sv_queue2	CE,-g2009,-pallowsigned=1	ivltests
 vlog95:test_forgen	CE,-g2009,ivltests/forgen.vhd	ivltests
 vlog95:test_gxor	CE,-g2009,-pallowsigned=1,ivltests/gxor.vhd	ivltests
 vlog95:test_varray1	CE,-g2009,-pallowsigned=1,ivltests/varray1.vhd	ivltests
