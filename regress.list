@@ -1867,8 +1867,8 @@ v0.9:sv_package4	NI
 v0.9:sv_package5	NI
 v0.9:sv_packed_port1	NI
 v0.9:sv_packed_port2	NI
-v0.9::sv_queue1	NI
-v0.9::sv_queue2	NI
+v0.9:sv_queue1	NI
+v0.9:sv_queue2	NI
 v0.9:sv_port_default1	NI
 v0.9:sv_port_default2	NI
 v0.9:sv_port_default3	NI
@@ -5155,3 +5155,4 @@ if_part_no_else	normal,-S	ivltests
 if_part_no_else2	normal,-S	ivltests
 br_gh4	normal,-g2009	ivltests
 br_gh4a	normal,-g2009	ivltests
+br_gh37		normal	ivltests

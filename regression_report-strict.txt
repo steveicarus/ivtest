@@ -2023,6 +2023,8 @@ test_mos_strength_reduction: Passed.
             sv_for_variable: Passed.
             sv_packed_port1: Passed.
             sv_packed_port2: Passed.
+                  sv_queue1: Passed.
+                  sv_queue2: Passed.
            sv_unpacked_port: Passed.
           sv_unpacked_port2: Passed.
            sv_unpacked_wire: Passed.
@@ -2042,6 +2044,7 @@ test_mos_strength_reduction: Passed.
            if_part_no_else2: ==> Failed - running iverilog.
                      br_gh4: Passed.
                     br_gh4a: Passed.
+                    br_gh37: Passed.
 ============================================================================
 Test results:
-  Total=2042, Passed=2029, Failed=10, Not Implemented=3, Expected Fail=0
+  Total=2045, Passed=2032, Failed=10, Not Implemented=3, Expected Fail=0

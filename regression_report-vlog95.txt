@@ -284,6 +284,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
               scoped_events: Passed - CE.
             sv_packed_port1: Passed - CE.
             sv_packed_port2: Passed - CE.
+                  sv_queue1: Not Implemented.
+                  sv_queue2: Not Implemented.
                 test_forgen: Passed - CE.
                   test_gxor: Passed - CE.
                test_varray1: Passed - CE.
@@ -2042,6 +2044,7 @@ test_mos_strength_reduction: Passed.
              ff_dual_enable: Passed.
             case_wo_default: Passed.
                     br_gh4a: Passed.
+                    br_gh37: Passed.
 ============================================================================
 Test results:
-  Total=2042, Passed=2011, Failed=3, Not Implemented=3, Expected Fail=25
+  Total=2045, Passed=2012, Failed=3, Not Implemented=5, Expected Fail=25
