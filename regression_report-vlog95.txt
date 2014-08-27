@@ -468,6 +468,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
        vhdl_sdiv23_stdlogic: Passed.
        vhdl_ssub23_stdlogic: Passed.
        vhdl_smul23_stdlogic: Passed.
+                  vhdl_init: Passed.
                       br919: Passed.
                     concat3: Passed.
                       mult2: Passed.
@@ -2045,4 +2046,4 @@ test_mos_strength_reduction: Passed.
                     br_gh4a: Passed.
 ============================================================================
 Test results:
-  Total=2043, Passed=2011, Failed=4, Not Implemented=3, Expected Fail=25
+  Total=2044, Passed=2012, Failed=4, Not Implemented=3, Expected Fail=25

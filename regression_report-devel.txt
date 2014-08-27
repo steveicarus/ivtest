@@ -1672,6 +1672,7 @@ test_mos_strength_reduction: Passed.
              vhdl_fa4_test2: Passed.
              vhdl_fa4_test3: Passed.
              vhdl_fa4_test4: Passed.
+                  vhdl_init: Passed.
                   vhdl_real: Passed.
              vhdl_unbounded: Passed.
                       queue: Passed.
@@ -2045,4 +2046,4 @@ test_mos_strength_reduction: Passed.
                     br_gh4a: Passed.
 ============================================================================
 Test results:
-  Total=2043, Passed=2037, Failed=6, Not Implemented=0, Expected Fail=0
+  Total=2044, Passed=2038, Failed=6, Not Implemented=0, Expected Fail=0
