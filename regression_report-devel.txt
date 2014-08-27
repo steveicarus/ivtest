@@ -1672,7 +1672,9 @@ test_mos_strength_reduction: Passed.
              vhdl_fa4_test2: Passed.
              vhdl_fa4_test3: Passed.
              vhdl_fa4_test4: Passed.
+                  vhdl_init: Passed.
                   vhdl_real: Passed.
+             vhdl_unbounded: Passed.
                       queue: Passed.
                  queue_fail: Passed.
                  queue_stat: Passed.
@@ -1737,7 +1739,7 @@ test_mos_strength_reduction: Passed.
                   pr3409749: Passed.
                test_mux2to1: Passed.
                test_dec2to4: Passed.
-            test_enumsystem: Passed.
+            test_enumsystem: ==> Failed - running iverilog.
               test_timebase: Passed.
                 test_system: Passed.
     test_signal_init_assign: Passed.
@@ -2047,4 +2049,4 @@ test_mos_strength_reduction: Passed.
                     br_gh37: Passed.
 ============================================================================
 Test results:
-  Total=2045, Passed=2040, Failed=5, Not Implemented=0, Expected Fail=0
+  Total=2047, Passed=2041, Failed=6, Not Implemented=0, Expected Fail=0
