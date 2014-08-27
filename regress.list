@@ -2460,8 +2460,8 @@ vlog95:real_wire_force_rel	CE	ivltests
 vlog95:tern8			CE	ivltests
 vlog95:v2005_math		CE	ivltests
 vlog95:vams_abs2		CE,-gverilog-ams,-pallowsigned=1	ivltests
-vlog95:vhdl_real		CE,ivltests/vhdl_real.vhd	ivltests
-vlog95:vhdl_unbounded		CE,ivltests/vhdl_unbounded.vhd	ivltests
+vlog95:vhdl_real		CE,-g2009,ivltests/vhdl_real.vhd	ivltests
+vlog95:vhdl_unbounded		CE,-g2009,ivltests/vhdl_unbounded.vhd	ivltests
 vlog95:wreal			CE	ivltests
 
 # Real modulus is an Icarus extension.
@@ -2944,7 +2944,6 @@ vlog95:vhdl_sadd23_stdlogic	normal,-g2009,-pallowsigned=1,ivltests/vhdl_sadd23_s
 vlog95:vhdl_sdiv23_stdlogic	normal,-g2009,-pallowsigned=1,ivltests/vhdl_sdiv23_stdlogic.vhd	ivltests
 vlog95:vhdl_ssub23_stdlogic	normal,-g2009,-pallowsigned=1,ivltests/vhdl_ssub23_stdlogic.vhd	ivltests
 vlog95:vhdl_smul23_stdlogic	normal,-g2009,-pallowsigned=1,ivltests/vhdl_smul23_stdlogic.vhd	ivltests
-vlog95:vhdl_init		normal,ivltests/vhdl_init.vhd	ivltests
 
 # $signed() and $unsigned() in the compiler are always supported and they
 # are supported in general if the -pallowsigned=1 flag is provided.
