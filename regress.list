@@ -1977,6 +1977,7 @@ v0.9:vhdl_fa4_test1	NI
 v0.9:vhdl_fa4_test2	NI
 v0.9:vhdl_fa4_test3	NI
 v0.9:vhdl_fa4_test4	NI
+v0.9:vhdl_init		NI
 v0.9:vhdl_real		NI
 v0.9:vhdl_unbounded	NI
 v0.9:vhdl_signals	NI
@@ -2939,6 +2940,7 @@ vlog95:vhdl_sadd23_stdlogic	normal,-g2009,-pallowsigned=1,ivltests/vhdl_sadd23_s
 vlog95:vhdl_sdiv23_stdlogic	normal,-g2009,-pallowsigned=1,ivltests/vhdl_sdiv23_stdlogic.vhd	ivltests
 vlog95:vhdl_ssub23_stdlogic	normal,-g2009,-pallowsigned=1,ivltests/vhdl_ssub23_stdlogic.vhd	ivltests
 vlog95:vhdl_smul23_stdlogic	normal,-g2009,-pallowsigned=1,ivltests/vhdl_smul23_stdlogic.vhd	ivltests
+vlog95:vhdl_init		normal,ivltests/vhdl_init.vhd	ivltests
 
 # $signed() and $unsigned() in the compiler are always supported and they
 # are supported in general if the -pallowsigned=1 flag is provided.
@@ -4781,6 +4783,7 @@ vhdl_fa4_test1	normal,-g2005-sv,ivltests/vhdl_fa4_test1.vhd	ivltests
 vhdl_fa4_test2	normal,-g2005-sv,ivltests/vhdl_fa4_test2.vhd	ivltests
 vhdl_fa4_test3	normal,-g2005-sv,ivltests/vhdl_fa4_test3.vhd	ivltests
 vhdl_fa4_test4	normal,-g2005-sv,ivltests/vhdl_fa4_test4.vhd	ivltests
+vhdl_init	normal,ivltests/vhdl_init.vhd		ivltests
 vhdl_real	normal,-g2009,ivltests/vhdl_real.vhd		ivltests
 vhdl_unbounded	normal,-g2009,ivltests/vhdl_unbounded.vhd	ivltests
 queue		normal	ivltests
