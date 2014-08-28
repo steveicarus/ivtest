@@ -29,8 +29,6 @@ use Diff;
 use Reporting;
 use Environment;
 use Parallel::ForkManager;
-use Sys::CpuAffinity;
-
 
 #
 #  Main script
@@ -47,9 +45,34 @@ my %results = ();
 &print_rpt("-" x 76 . "\n");
 &read_regression_list($regress_fn, $ver, $strict ? "std" : "");
 &execute_regression($suffix, $strict, $with_valg);
-for(sort keys %results) {
-    print "$results{$_}\n";
+
+# Display results
+my ($len, $total, $passed, $failed, $expected_fail, $not_impl);
+$len = 0;
+foreach $tname (@testlist) {
+    $len = length($tname) if (length($tname) > $len);
 }
+for(sort keys %results) {
+    $test_name = sprintf("%${len}s: ", $_);
+    $result = $results{$_};
+    &print_rpt("$test_name: $result\n");
+
+    $total++;
+    if($result =~ "Passed - expected fail") {
+        $expected_fail++;
+    } elsif($result =~ "Passed") {
+        $passed++;
+    } elsif($result =~ "Not Implemented") {
+        $not_impl++;
+    } elsif($result =~ "==> Failed") {
+        $failed++;
+    }
+}
+
+&print_rpt("=" x 76 . "\n");
+&print_rpt("Test results:\n  Total=$total, Passed=$passed, Failed=$failed,".
+            " Not Implemented=$not_impl, Expected Fail=$expected_fail\n");
+
 &close_report_file;
 
 #
@@ -60,31 +83,26 @@ sub execute_regression {
     my $sfx = shift(@_);
     my $strict = shift(@_);
     my $with_valg = shift(@_);
-    my ($tname, $total, $passed, $failed, $expected_fail, $not_impl,
-        $len, $cmd, $ivl_args, $vvp_args, $diff_file);
+    my ($tname, $cmd, $ivl_args, $vvp_args, $diff_file);
 
     $total = 0;
     $passed = 0;
     $failed = 0;
     $expected_fail = 0;
     $not_impl = 0;
-    $len = 0;
     $cpus = `cat /proc/cpuinfo | grep "^processor" | wc -l`;
     if($cpus == 0) {
         $cpus = 1;
     }
-    $pm = Parallel::ForkManager->new($cpus);
 
+    $pm = Parallel::ForkManager->new($cpus);
     $pm->run_on_finish(
+        # Store the test name and result
         sub {
             my ($pid, $exit_code, $ident, $exit_signal, $core_dump, $data) = @_;
-            $results{$pid} = ${$data};
+            $results{@$data{'name'}} = @$data{'result'};
         }
     );
-
-    foreach $tname (@testlist) {
-        $len = length($tname) if (length($tname) > $len);
-    }
 
     # Make sure we have a log and work directory.
     if (! -d 'log') {
@@ -104,15 +122,14 @@ sub execute_regression {
 
     foreach $tname (@testlist) {
         my $pid = $pm->start() and next;
-        my $ret = "";
+        my %ret = ();
         my ($pass_type);
 
         if ($tname eq "") {  # Skip test that have been replaced.
-            $pm->finish(0, \$ret);
+            $pm->finish();
             next;
         }
-        $total++;
-        $ret = $ret . sprintf("%${len}s: ", $tname);
+        $ret{name} = $tname;
         if ($diff{$tname} ne "" and -e $diff{$tname}) {
             unlink $diff{$tname} or
                 die "Error: unable to remove old diff file $diff{$tname}.\n";
@@ -123,9 +140,8 @@ sub execute_regression {
         }
 
         if ($testtype{$tname} eq "NI") {
-            $ret = $ret . "Not Implemented.";
-            $not_impl++;
-            $pm->finish(0, \$ret);
+            $ret{result} = "Not Implemented.";
+            $pm->finish(0, \%ret);
             next;
         }
 
@@ -138,43 +154,38 @@ sub execute_regression {
         $cmd .= " -s $testmod{$tname}" if ($testmod{$tname} ne "");
         $cmd .= " -t null" if ($testtype{$tname} eq "CN");
         $cmd .= " ./$srcpath{$tname}/$tname.v > log/$tname.log 2>&1";
-#        print "$cmd\n";
+        print "$cmd\n";
         if (system("$cmd")) {
             if ($testtype{$tname} eq "CE") {
                 # Check if the system command core dumped!
                 if ($? >> 8 & 128) {
-                    $ret = $ret . "==> Failed - CE (core dump).";
-                    $failed++;
-                    $pm->finish(0, \$ret);
+                    $ret{result} = "==> Failed - CE (core dump).";
+                    $pm->finish(0, \%ret);
                     next;
                 } else {
                     $pass_type = 1;
                 }
             } else {
-                $ret = $ret . "==> Failed - running iverilog.";
-                $failed++;
-                $pm->finish(0, \$ret);
+                $ret{result} = "==> Failed - running iverilog.";
+                $pm->finish(0, \%ret);
                 next;
             }
         } else {
             if ($testtype{$tname} eq "CE") {
-                $ret = $ret . "==> Failed - CE (no error reported).";
-                $failed++;
-                $pm->finish(0, \$ret);
+                $ret{result} = "==> Failed - CE (no error reported).";
+                $pm->finish(0, \%ret);
                 next;
             }
         }
 
         if ($testtype{$tname} eq "CO") {
-            $ret = $ret . "Passed - CO.";
-            $passed++;
-            $pm->finish(0, \$ret);
+            $ret{result} = "Passed - CO.";
+            $pm->finish(0, \%ret);
             next;
         }
         if ($testtype{$tname} eq "CN") {
-            $ret = $ret . "Passed - CN.";
-            $passed++;
-            $pm->finish(0, \$ret);
+            $ret{result} = "Passed - CN.";
+            $pm->finish(0, \%ret);
             next;
         }
 
@@ -186,17 +197,15 @@ sub execute_regression {
             if ($testtype{$tname} eq "RE") {
                 # Check if the system command core dumped!
                 if ($? >> 8 & 128) {
-                    $ret = $ret . "==> Failed - RE (core dump).";
-                    $failed++;
-                    $pm->finish(0, \$ret);
+                    $ret{result} = "==> Failed - RE (core dump).";
+                    $pm->finish(0, \%ret);
                     next;
                 } else {
                     $pass_type = 2;
                 }
             } else {
-                $ret = $ret . "==> Failed - running vvp.";
-                $failed++;
-                $pm->finish(0, \$ret);
+                $ret{result} = "==> Failed - running vvp.";
+                $pm->finish(0, \%ret);
                 next;
             }
         }
@@ -205,14 +214,12 @@ sub execute_regression {
             $diff_file = $diff{$tname}
         } else {
             if ($pass_type == 1) {
-                $ret = $ret . "Passed - CE.";
-                $passed++;
-                $pm->finish(0, \$ret);
+                $ret{result} = "Passed - CE.";
+                $pm->finish(0, \%ret);
                 next;
             } elsif ($pass_type == 2) {
-                $ret = $ret . "Passed - RE.";
-                $passed++;
-                $pm->finish(0, \$ret);
+                $ret{result} = "Passed - RE.";
+                $pm->finish(0, \%ret);
                 next;
             }
             $diff_file = "log/$tname.log";
@@ -220,32 +227,30 @@ sub execute_regression {
 #        print "diff $gold{$tname}, $diff_file, $offset{$tname}\n";
         if (diff($gold{$tname}, $diff_file, $offset{$tname})) {
             if ($testtype{$tname} eq "EF") {
-                $ret = $ret . "Passed - expected fail.";
-                $expected_fail++;
-                $pm->finish(0, \$ret);
+                $ret{result} = "Passed - expected fail.";
+                $pm->finish(0, \%ret);
                 next;
             }
-            $ret = $ret . "==> Failed -";
+            $result = "==> Failed -";
             if ($pass_type == 1) {
-                $ret = $ret . " CE -";
+                $result = $result . " CE -";
             } elsif ($pass_type == 2) {
-                $ret = $ret . " RE -";
+                $result = $result . " RE -";
             }
-            $ret = $ret . " output does not match gold file.";
-            $failed++;
-            $pm->finish(0, \$ret);
+            $ret{result} = $result . " output does not match gold file.";
+            $pm->finish(0, \%ret);
             next;
         }
 
         if ($pass_type == 1) {
-            $ret = $ret . "Passed - CE.";
+            $ret{result} = "Passed - CE.";
         } elsif ($pass_type == 2) {
-            $ret = $ret . "Passed - RE.";
+            $ret{result} = "Passed - RE.";
         } else {
-            $ret = $ret . "Passed.";
+            $ret{result} = "Passed.";
         }
         $passed++;
-        $pm->finish(0, \$ret);
+        $pm->finish(0, \%ret);
     } continue {
         if ($tname ne "") {
             system("rm -f ./vsim && rm -rf ivl_vhdl_work") and
@@ -253,8 +258,4 @@ sub execute_regression {
         }
     }
     $pm->wait_all_children();
-
-    &print_rpt("=" x 76 . "\n");
-    &print_rpt("Test results:\n  Total=$total, Passed=$passed, Failed=$failed,".
-               " Not Implemented=$not_impl, Expected Fail=$expected_fail\n");
 }
