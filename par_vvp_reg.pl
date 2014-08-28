@@ -47,13 +47,19 @@ my %results = ();
 &execute_regression($suffix, $strict, $with_valg);
 
 # Display results
-my ($len, $total, $passed, $failed, $expected_fail, $not_impl);
+my ($tname, $len, $total, $passed, $failed, $expected_fail, $not_impl);
 $len = 0;
+$total = 0;
+$passed = 0;
+$failed = 0;
+$expected_fail = 0;
+$not_impl = 0;
+
 foreach $tname (@testlist) {
     $len = length($tname) if (length($tname) > $len);
 }
 for(sort keys %results) {
-    $test_name = sprintf("%${len}s: ", $_);
+    $test_name = sprintf("%${len}s", $_);
     $result = $results{$_};
     &print_rpt("$test_name: $result\n");
 
@@ -85,11 +91,6 @@ sub execute_regression {
     my $with_valg = shift(@_);
     my ($tname, $cmd, $ivl_args, $vvp_args, $diff_file);
 
-    $total = 0;
-    $passed = 0;
-    $failed = 0;
-    $expected_fail = 0;
-    $not_impl = 0;
     $cpus = `cat /proc/cpuinfo | grep "^processor" | wc -l`;
     if($cpus == 0) {
         $cpus = 1;
@@ -100,7 +101,9 @@ sub execute_regression {
         # Store the test name and result
         sub {
             my ($pid, $exit_code, $ident, $exit_signal, $core_dump, $data) = @_;
-            $results{@$data{'name'}} = @$data{'result'};
+            if(defined($data)) {
+                $results{@$data{'name'}} = @$data{'result'};
+            }
         }
     );
 
@@ -154,7 +157,7 @@ sub execute_regression {
         $cmd .= " -s $testmod{$tname}" if ($testmod{$tname} ne "");
         $cmd .= " -t null" if ($testtype{$tname} eq "CN");
         $cmd .= " ./$srcpath{$tname}/$tname.v > log/$tname.log 2>&1";
-        print "$cmd\n";
+        #print "$cmd\n";
         if (system("$cmd")) {
             if ($testtype{$tname} eq "CE") {
                 # Check if the system command core dumped!
@@ -249,7 +252,6 @@ sub execute_regression {
         } else {
             $ret{result} = "Passed.";
         }
-        $passed++;
         $pm->finish(0, \%ret);
     } continue {
         if ($tname ne "") {
@@ -257,5 +259,6 @@ sub execute_regression {
                 die "Error: failed to remove temporary file.";
         }
     }
+
     $pm->wait_all_children();
 }
