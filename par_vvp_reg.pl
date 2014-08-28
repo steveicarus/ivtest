@@ -80,6 +80,7 @@ for(sort keys %results) {
             " Not Implemented=$not_impl, Expected Fail=$expected_fail\n");
 
 &close_report_file;
+system("rm -rf *.vsim ivl_vhdl_work");
 
 #
 #  execute_regression sequentially compiles and executes each test in
@@ -153,7 +154,7 @@ sub execute_regression {
         #
         $pass_type = 0;
         $cmd = $with_valg ? "valgrind --trace-children=yes " : "";
-        $cmd .= "iverilog$sfx -o vsim $ivl_args $args{$tname}";
+        $cmd .= "iverilog$sfx -o $tname.vsim $ivl_args $args{$tname}";
         $cmd .= " -s $testmod{$tname}" if ($testmod{$tname} ne "");
         $cmd .= " -t null" if ($testtype{$tname} eq "CN");
         $cmd .= " ./$srcpath{$tname}/$tname.v > log/$tname.log 2>&1";
@@ -194,7 +195,7 @@ sub execute_regression {
 
         $cmd = $with_valg ? "valgrind --leak-check=full " .
                             "--show-reachable=yes " : "";
-        $cmd .= "vvp$sfx vsim $vvp_args $plargs{$tname} >> log/$tname.log 2>&1";
+        $cmd .= "vvp$sfx $tname.vsim $vvp_args $plargs{$tname} >> log/$tname.log 2>&1";
 #        print "$cmd\n";
         if ($pass_type == 0 and system("$cmd")) {
             if ($testtype{$tname} eq "RE") {
@@ -255,8 +256,8 @@ sub execute_regression {
         $pm->finish(0, \%ret);
     } continue {
         if ($tname ne "") {
-            system("rm -f ./vsim && rm -rf ivl_vhdl_work") and
-                die "Error: failed to remove temporary file.";
+            #system("rm -f ./$tname.vsim && rm -rf ivl_vhdl_work") and
+                #die "Error: failed to remove temporary file.";
         }
     }
 
