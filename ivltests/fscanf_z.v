@@ -9,11 +9,11 @@ module top;
     passed = 1'b1;
 
     // Check that a normal 32 bit %z works as expected.
-    fd = $fopen("work/test_fscanf.bin", "wb");
+    fd = $fopen("work/test_fscanf_z.bin", "wb");
     in_32 = 32'b000x100z_001z000x_101xxxzz_100z111x;
     $fwrite(fd, "%z", in_32);
     $fclose(fd);
-    fd = $fopen("work/test_fscanf.bin", "rb");
+    fd = $fopen("work/test_fscanf_z.bin", "rb");
     res = $fscanf(fd, "%z", out_32);
     if (res !== 1) begin
       $display("FAILED: $fscanf() #1 returned %d", res);
@@ -31,13 +31,13 @@ module top;
 
     // Check that a normal 32/64 bit %z works as expected. Do the write as
     // two 32 bit values to make sure the word order is correct.
-    fd = $fopen("work/test_fscanf.bin", "wb");
+    fd = $fopen("work/test_fscanf_z.bin", "wb");
     in_32 = 32'b000x100z_001z000x_101xxxzz_100z111x;
     $fwrite(fd, "%z", in_32);
     in_32x = 32'b0001000x_0010000x_0011000x_0100000x;
     $fwrite(fd, "%z", in_32x);
     $fclose(fd);
-    fd = $fopen("work/test_fscanf.bin", "rb");
+    fd = $fopen("work/test_fscanf_z.bin", "rb");
     res = $fscanf(fd, "%z", out_64);
     if (res !== 1) $display("FAILED: $fscanf() #2a returned %d", res);
     else if ({in_32x,in_32} !== out_64) begin
@@ -52,12 +52,12 @@ module top;
     $fclose(fd);
 
     // Check that a normal 64/64 bit %z works as expected.
-    fd = $fopen("work/test_fscanf.bin", "wb");
+    fd = $fopen("work/test_fscanf_z.bin", "wb");
     in_32 = 32'b000x100z_001z000x_101xxxzz_100z111x;
     in_32x = 32'b0001000x_0010000x_0011000x_0100000x;
     $fwrite(fd, "%z", {in_32x,in_32});
     $fclose(fd);
-    fd = $fopen("work/test_fscanf.bin", "rb");
+    fd = $fopen("work/test_fscanf_z.bin", "rb");
     res = $fscanf(fd, "%z", out_64);
     if (res !== 1) $display("FAILED: $fscanf() #2b returned %d", res);
     else if ({in_32x,in_32} !== out_64) begin
@@ -72,12 +72,12 @@ module top;
     $fclose(fd);
 
     // Check that a normal 64/32 bit %z works as expected.
-    fd = $fopen("work/test_fscanf.bin", "wb");
+    fd = $fopen("work/test_fscanf_z.bin", "wb");
     in_32 = 32'b000x100z_001z000x_101xxxzz_100z111x;
     in_32x = 32'b0001000x_0010000x_0011000x_0100000x;
     $fwrite(fd, "%z", {in_32x,in_32});
     $fclose(fd);
-    fd = $fopen("work/test_fscanf.bin", "rb");
+    fd = $fopen("work/test_fscanf_z.bin", "rb");
     res = $fscanf(fd, "%z%z", out_32,out_32x);
     if (res !== 2) $display("FAILED: $fscanf() #2c returned %d", res);
     else if ({in_32x,in_32} !== {out_32x, out_32}) begin
@@ -92,11 +92,11 @@ module top;
     $fclose(fd);
 
     // Check that a 16 bit %z works as expected.
-    fd = $fopen("work/test_fscanf.bin", "wb");
+    fd = $fopen("work/test_fscanf_z.bin", "wb");
     in_32 = 32'b000x100z_001z000x_101xxxzz_100z111x;
     $fwrite(fd, "%z", in_32);
     $fclose(fd);
-    fd = $fopen("work/test_fscanf.bin", "rb");
+    fd = $fopen("work/test_fscanf_z.bin", "rb");
     res = $fscanf(fd, "%z", out_16);
     if (res !== 1) begin
       $display("FAILED: $fscanf() #3 returned %d", res);
@@ -114,11 +114,11 @@ module top;
 
     // Check that a 16 bit %z works as expected even with a 32 bit variable.
     // All 32 bits are read but we truncate and zero fill the result.
-    fd = $fopen("work/test_fscanf.bin", "wb");
+    fd = $fopen("work/test_fscanf_z.bin", "wb");
     in_32 = 32'b000x100z_001z000x_101xxxzz_100z111x;
     $fwrite(fd, "%z", in_32);
     $fclose(fd);
-    fd = $fopen("work/test_fscanf.bin", "rb");
+    fd = $fopen("work/test_fscanf_z.bin", "rb");
     res = $fscanf(fd, "%16z", out_32);
     if (res !== 1) begin
       $display("FAILED: $fscanf() #4 returned %d", res);
@@ -135,11 +135,11 @@ module top;
     $fclose(fd);
 
     // Check that a 32 bit %z works with a 64 bit variable when sized.
-    fd = $fopen("work/test_fscanf.bin", "wb");
+    fd = $fopen("work/test_fscanf_z.bin", "wb");
     in_32 = 32'b000x100z_001z000x_101xxxzz_100z111x;
     $fwrite(fd, "%z", in_32);
     $fclose(fd);
-    fd = $fopen("work/test_fscanf.bin", "rb");
+    fd = $fopen("work/test_fscanf_z.bin", "rb");
     res = $fscanf(fd, "%32z", out_64);
     if (res !== 1) begin
       $display("FAILED: $fscanf() #5 returned %d", res);
@@ -156,13 +156,13 @@ module top;
     $fclose(fd);
 
     // Check that by default one element is suppressed.
-    fd = $fopen("work/test_fscanf.bin", "wb");
+    fd = $fopen("work/test_fscanf_z.bin", "wb");
     in_32x = 32'b0001000x_0010000x_0011000x_0100000x;
     $fwrite(fd, "%z", in_32x);
     in_32 = 32'b000x100z_001z000x_101xxxzz_100z111x;
     $fwrite(fd, "%z", in_32);
     $fclose(fd);
-    fd = $fopen("work/test_fscanf.bin", "rb");
+    fd = $fopen("work/test_fscanf_z.bin", "rb");
     res = $fscanf(fd, "%*z%z", out_32);
     if (res !== 1) begin
       $display("FAILED: $fscanf() #6 returned %d", res);
@@ -179,13 +179,13 @@ module top;
     $fclose(fd);
 
     // Check that multiple elements can be suppressed (exact count).
-    fd = $fopen("work/test_fscanf.bin", "wb");
+    fd = $fopen("work/test_fscanf_z.bin", "wb");
     in_32x = 32'b0001000x_0010000x_0011000x_0100000x;
     $fwrite(fd, "%z%z", in_32x, in_32x);
     in_32 = 32'b000x100z_001z000x_101xxxzz_100z111x;
     $fwrite(fd, "%z", in_32);
     $fclose(fd);
-    fd = $fopen("work/test_fscanf.bin", "rb");
+    fd = $fopen("work/test_fscanf_z.bin", "rb");
     res = $fscanf(fd, "%*64z%z", out_32);
     if (res !== 1) begin
       $display("FAILED: $fscanf() #7 returned %d", res);
@@ -202,13 +202,13 @@ module top;
     $fclose(fd);
 
     // Check that multiple elements can be suppressed (minimum count).
-    fd = $fopen("work/test_fscanf.bin", "wb");
+    fd = $fopen("work/test_fscanf_z.bin", "wb");
     in_32x = 32'b0001000x_0010000x_0011000x_0100000x;
     $fwrite(fd, "%z%z", in_32x, in_32x);
     in_32 = 32'b000x100z_001z000x_101xxxzz_100z111x;
     $fwrite(fd, "%z", in_32);
     $fclose(fd);
-    fd = $fopen("work/test_fscanf.bin", "rb");
+    fd = $fopen("work/test_fscanf_z.bin", "rb");
     res = $fscanf(fd, "%*33z%z", out_32);
     if (res !== 1) begin
       $display("FAILED: $fscanf() #8 returned %d", res);
