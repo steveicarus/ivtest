@@ -45,42 +45,8 @@ my %results = ();
 &print_rpt("-" x 76 . "\n");
 &read_regression_list($regress_fn, $ver, $strict ? "std" : "");
 &execute_regression($suffix, $strict, $with_valg);
-
-# Display results
-my ($tname, $len, $total, $passed, $failed, $expected_fail, $not_impl);
-$len = 0;
-$total = 0;
-$passed = 0;
-$failed = 0;
-$expected_fail = 0;
-$not_impl = 0;
-
-foreach $tname (@testlist) {
-    $len = length($tname) if (length($tname) > $len);
-}
-for(sort keys %results) {
-    $test_name = sprintf("%${len}s", $_);
-    $result = $results{$_};
-    &print_rpt("$test_name: $result\n");
-
-    $total++;
-    if($result =~ "Passed - expected fail") {
-        $expected_fail++;
-    } elsif($result =~ "Passed") {
-        $passed++;
-    } elsif($result =~ "Not Implemented") {
-        $not_impl++;
-    } elsif($result =~ "==> Failed") {
-        $failed++;
-    }
-}
-
-&print_rpt("=" x 76 . "\n");
-&print_rpt("Test results:\n  Total=$total, Passed=$passed, Failed=$failed,".
-            " Not Implemented=$not_impl, Expected Fail=$expected_fail\n");
-
+&save_results();
 &close_report_file;
-system("rm -rf *.vsim ivl_vhdl_work");
 
 #
 #  execute_regression sequentially compiles and executes each test in
@@ -254,12 +220,44 @@ sub execute_regression {
             $ret{result} = "Passed.";
         }
         $pm->finish(0, \%ret);
-    } continue {
-        if ($tname ne "") {
-            #system("rm -f ./$tname.vsim && rm -rf ivl_vhdl_work") and
-                #die "Error: failed to remove temporary file.";
-        }
     }
 
     $pm->wait_all_children();
 }
+
+sub save_results {
+    my ($tname, $len, $total, $passed, $failed, $expected_fail, $not_impl);
+    $len = 0;
+    $total = 0;
+    $passed = 0;
+    $failed = 0;
+    $expected_fail = 0;
+    $not_impl = 0;
+
+    foreach $tname (@testlist) {
+        $len = length($tname) if (length($tname) > $len);
+    }
+    for(sort keys %results) {
+        $test_name = sprintf("%${len}s", $_);
+        $result = $results{$_};
+        &print_rpt("$test_name: $result\n");
+
+        $total++;
+        if($result =~ "Passed - expected fail") {
+            $expected_fail++;
+        } elsif($result =~ "Passed") {
+            $passed++;
+        } elsif($result =~ "Not Implemented") {
+            $not_impl++;
+        } elsif($result =~ "==> Failed") {
+            $failed++;
+        }
+    }
+
+    &print_rpt("=" x 76 . "\n");
+    &print_rpt("Test results:\n  Total=$total, Passed=$passed, Failed=$failed,".
+                " Not Implemented=$not_impl, Expected Fail=$expected_fail\n");
+
+    system("rm -rf *.vsim ivl_vhdl_work");
+}
+
