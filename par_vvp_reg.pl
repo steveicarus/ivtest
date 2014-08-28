@@ -58,7 +58,12 @@ sub execute_regression {
     my $with_valg = shift(@_);
     my ($tname, $cmd, $ivl_args, $vvp_args, $diff_file);
 
-    $cpus = `cat /proc/cpuinfo | grep "^processor" | wc -l`;
+    # You can specify the number of used cores as the first argument
+    if(defined($ENV{'CPUS'}) and $ENV{'CPUS'} =~ /^\d+$/) {
+        $cpus = $ENV{'CPUS'};
+    } else { # or it might be autodetected
+        $cpus = `cat /proc/cpuinfo | grep "^processor" | wc -l`;
+    }
     if($cpus == 0) {
         $cpus = 1;
     }
