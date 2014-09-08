@@ -1869,6 +1869,7 @@ v0.9:sv_packed_port1	NI
 v0.9:sv_packed_port2	NI
 v0.9:sv_queue1	NI
 v0.9:sv_queue2	NI
+v0.9:sv_queue3	NI
 v0.9:sv_port_default1	NI
 v0.9:sv_port_default2	NI
 v0.9:sv_port_default3	NI
@@ -5143,6 +5144,7 @@ sv_packed_port1		normal,-g2009	ivltests
 sv_packed_port2		normal,-g2009	ivltests
 sv_queue1		normal,-g2009	ivltests
 sv_queue2		normal,-g2009	ivltests
+sv_queue3		normal,-g2009	ivltests
 sv_unpacked_port	normal,-g2009	ivltests
 sv_unpacked_port2	normal,-g2009	ivltests
 sv_unpacked_wire	normal,-g2009	ivltests
