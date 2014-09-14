@@ -1904,6 +1904,7 @@ v0.9:sv_unpacked_wire	NI
 v0.9:sv_unpacked_wire2	NI
 v0.9:sv_foreach1	NI
 v0.9:sv_foreach2	NI
+v0.9:sv_foreach3	NI
 v0.9:sv_uwire1	NI
 v0.9:sv_uwire2	NI
 v0.9:sv_uwire3	NI
@@ -5151,6 +5152,7 @@ sv_unpacked_wire	normal,-g2009	ivltests
 sv_unpacked_wire2	normal,-g2009	ivltests
 sv_foreach1	normal,-g2009	ivltests
 sv_foreach2	normal,-g2009	ivltests
+sv_foreach3	normal,-g2009	ivltests
 mod_inst_pkg    normal,-g2009	ivltests
 br_gh22		normal	ivltests
 br_gh25a	CE	ivltests
