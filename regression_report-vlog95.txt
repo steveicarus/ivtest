@@ -462,6 +462,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
           two_state_display: Passed.
             undefined_shift: Passed.
                   vams_abs1: Passed.
+         vhdl_const_package: Passed.
             vhdl_sadd23_bit: Passed.
             vhdl_sdiv23_bit: Passed.
             vhdl_ssub23_bit: Passed.
@@ -2049,4 +2050,4 @@ test_mos_strength_reduction: Passed.
                     br_gh37: Passed.
 ============================================================================
 Test results:
-  Total=2047, Passed=2016, Failed=3, Not Implemented=3, Expected Fail=25
+  Total=2048, Passed=2017, Failed=3, Not Implemented=3, Expected Fail=25
