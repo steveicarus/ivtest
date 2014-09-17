@@ -2,7 +2,7 @@
 module main;
 
    string words [$], tmp_word;
-   int 	  nums [$], tmp_num;
+   int	  nums [$], tmp_num;
 
    initial begin
 
