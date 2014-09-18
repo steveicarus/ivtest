@@ -2602,6 +2602,9 @@ vlog95:sv_class21	CE,-g2009	ivltests
 vlog95:sv_class22	CE,-g2009	ivltests
 vlog95:sv_class23	CE,-g2009	ivltests
 vlog95:sv_class24	CE,-g2009	ivltests
+vlog95:sv_foreach2	CE,-g2009,-pallowsigned=1	ivltests
+vlog95:sv_foreach3	CE,-g2009	ivltests
+vlog95:sv_foreach4	CE,-g2009	ivltests
 vlog95:sv_end_label	CE,-g2009	ivltests  # Also generate
 vlog95:sv_port_default1	CE,-g2009	ivltests
 vlog95:sv_port_default2	CE,-g2009,-pallowsigned=1	ivltests
@@ -2746,6 +2749,7 @@ vlog95:sv_packed_port1	CE,-g2009	ivltests
 vlog95:sv_packed_port2	CE,-g2009	ivltests
 vlog95:sv_queue1	CE,-g2009,-pallowsigned=1	ivltests
 vlog95:sv_queue2	CE,-g2009,-pallowsigned=1	ivltests
+vlog95:sv_queue3	CE,-g2009	ivltests
 vlog95:test_forgen	CE,-g2009,ivltests/forgen.vhd	ivltests
 vlog95:test_gxor	CE,-g2009,-pallowsigned=1,ivltests/gxor.vhd	ivltests
 vlog95:test_varray1	CE,-g2009,-pallowsigned=1,ivltests/varray1.vhd	ivltests
@@ -2927,6 +2931,7 @@ vlog95:simple_shortint	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:struct_packed_array	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:struct_packed_array2	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:sv_for_variable  normal,-g2009,-pallowsigned=1	ivltests
+vlog95:sv_foreach1	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:sv_package	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:sv_package2	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:sv_package5	normal,-g2009,-pallowsigned=1	ivltests

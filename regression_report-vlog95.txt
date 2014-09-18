@@ -178,6 +178,9 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  sv_class22: Passed - CE.
                  sv_class23: Passed - CE.
                  sv_class24: Passed - CE.
+                sv_foreach2: Passed - CE.
+                sv_foreach3: Passed - CE.
+                sv_foreach4: Passed - CE.
                sv_end_label: Passed - CE.
            sv_port_default1: Passed - CE.
            sv_port_default2: Passed - CE.
@@ -288,6 +291,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
             sv_packed_port2: Passed - CE.
                   sv_queue1: Passed - CE.
                   sv_queue2: Passed - CE.
+                  sv_queue3: Passed - CE.
                 test_forgen: Passed - CE.
                   test_gxor: Passed - CE.
                test_varray1: Passed - CE.
@@ -447,6 +451,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
         struct_packed_array: Passed.
        struct_packed_array2: Passed.
             sv_for_variable: Passed.
+                sv_foreach1: Passed.
                  sv_package: Passed.
                 sv_package2: Passed.
                 sv_package5: Passed.
@@ -2050,4 +2055,4 @@ test_mos_strength_reduction: Passed.
                     br_gh37: Passed.
 ============================================================================
 Test results:
-  Total=2048, Passed=2017, Failed=3, Not Implemented=3, Expected Fail=25
+  Total=2053, Passed=2022, Failed=3, Not Implemented=3, Expected Fail=25
