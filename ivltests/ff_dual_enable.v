@@ -18,7 +18,7 @@ endmodule // test
 module main;
    reg clk;
    wire foo, bar;
-   reg 	foo_valid, foo_in;
+   reg	foo_valid, foo_in;
    reg  bar_valid, bar_in;
 
    test dut (.clk(clk),

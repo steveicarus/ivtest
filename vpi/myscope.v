@@ -1,12 +1,12 @@
 //---------------------------------------------------------------------------
-// 
+//
 //---------------------------------------------------------------------------
  module xor_try;
- 
+
     reg  [1:0]  inp_xor;    // The two-bit inputs to the XOR
     reg     out_xor;        // The XOR output
     reg     clk;
- 
+
     initial begin clk = 1'b1; #10 $sn; #160 $finish; end
     always #50 clk = ~clk;
                 // The clock

@@ -2034,6 +2034,8 @@ test_mos_strength_reduction: Passed.
           sv_unpacked_wire2: Passed.
                 sv_foreach1: Passed.
                 sv_foreach2: Passed.
+                sv_foreach3: Passed.
+                sv_foreach4: Passed.
                mod_inst_pkg: Passed.
                     br_gh22: Passed.
                    br_gh25a: Passed - CE.
@@ -2050,6 +2052,7 @@ test_mos_strength_reduction: Passed.
                      br_gh4: Passed.
                     br_gh4a: Passed.
                     br_gh37: Passed.
+                      br959: Passed.
 ============================================================================
 Test results:
-  Total=2050, Passed=2045, Failed=5, Not Implemented=0, Expected Fail=0
+  Total=2053, Passed=2048, Failed=5, Not Implemented=0, Expected Fail=0
