@@ -2950,8 +2950,6 @@ vlog95:test_work14	normal,-g2009,-pallowsigned=1,ivltests/work14_pkg.vhd,ivltest
 vlog95:two_state_display	normal,-g2009,-pallowsigned=1	ivltests gold=two_state_display.gold
 vlog95:undefined_shift	normal,-pallowsigned=1	ivltests
 vlog95:vams_abs1	normal,-gverilog-ams,-pallowsigned=1	ivltests
-vlog95:vhdl_const_package	normal,-g2009,ivltests/vhdl_const_package_pkg.vhd,ivltests/vhdl_const_package.vhd	ivltests
-vlog95:vhdl_record_elab	normal,-g2009,ivltests/vhdl_record_elab_pkg.vhd,ivltests/vhdl_record_elab.vhd	ivltests
 vlog95:vhdl_sadd23_bit	normal,-g2009,-pallowsigned=1,ivltests/vhdl_sadd23_bit.vhd	ivltests
 vlog95:vhdl_sdiv23_bit	normal,-g2009,-pallowsigned=1,ivltests/vhdl_sdiv23_bit.vhd	ivltests
 vlog95:vhdl_ssub23_bit	normal,-g2009,-pallowsigned=1,ivltests/vhdl_ssub23_bit.vhd	ivltests
