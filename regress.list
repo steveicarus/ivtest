@@ -1911,6 +1911,7 @@ v0.9:sv_uwire1	NI
 v0.9:sv_uwire2	NI
 v0.9:sv_uwire3	NI
 v0.9:sv_uwire4	NI
+v0.9:sv_root_class	NI
 v0.9:sys_func_as_task	NI
 v0.9:task_init_assign	NI
 v0.9:test_dec2to4	NI
@@ -5174,3 +5175,4 @@ br_gh4		normal,-g2009	ivltests
 br_gh4a		normal,-g2009	ivltests
 br_gh37		normal	ivltests
 br959		normal,-g2009	ivltests
+sv_root_class	normal,-g2009	ivltests	gold=sv_root_class.gold
