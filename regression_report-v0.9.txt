@@ -14,6 +14,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                      br932a: Not Implemented.
                      br932b: Not Implemented.
                       br936: Not Implemented.
+                      br959: Not Implemented.
                      br_gh4: Not Implemented.
                     br_gh4a: Not Implemented.
                  clkgen_bit: Not Implemented.
@@ -183,6 +184,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
             sv_packed_port2: Not Implemented.
                   sv_queue1: Not Implemented.
                   sv_queue2: Not Implemented.
+                  sv_queue3: Not Implemented.
            sv_port_default1: Not Implemented.
            sv_port_default2: Not Implemented.
            sv_port_default3: Not Implemented.
@@ -215,6 +217,10 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
           sv_unpacked_port2: Not Implemented.
            sv_unpacked_wire: Not Implemented.
           sv_unpacked_wire2: Not Implemented.
+                sv_foreach1: Not Implemented.
+                sv_foreach2: Not Implemented.
+                sv_foreach3: Not Implemented.
+                sv_foreach4: Not Implemented.
                   sv_uwire1: Not Implemented.
                   sv_uwire2: Not Implemented.
                   sv_uwire3: Not Implemented.
@@ -2053,4 +2059,4 @@ test_mos_strength_reduction: Passed.
                     br_gh37: Passed.
 ============================================================================
 Test results:
-  Total=2051, Passed=1620, Failed=0, Not Implemented=377, Expected Fail=54
+  Total=2057, Passed=1620, Failed=0, Not Implemented=383, Expected Fail=54
