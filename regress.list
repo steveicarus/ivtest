@@ -2605,10 +2605,10 @@ vlog95:sv_class21	CE,-g2009	ivltests
 vlog95:sv_class22	CE,-g2009	ivltests
 vlog95:sv_class23	CE,-g2009	ivltests
 vlog95:sv_class24	CE,-g2009	ivltests
+vlog95:sv_end_label	CE,-g2009	ivltests  # Also generate
 vlog95:sv_foreach2	CE,-g2009,-pallowsigned=1	ivltests
 vlog95:sv_foreach3	CE,-g2009	ivltests
 vlog95:sv_foreach4	CE,-g2009	ivltests
-vlog95:sv_end_label	CE,-g2009	ivltests  # Also generate
 vlog95:sv_port_default1	CE,-g2009	ivltests
 vlog95:sv_port_default2	CE,-g2009,-pallowsigned=1	ivltests
 vlog95:sv_port_default3	CE,-g2009	ivltests
@@ -2618,6 +2618,7 @@ vlog95:sv_port_default6	CE,-g2009,-pallowsigned=1	ivltests
 vlog95:sv_port_default7	CE,-g2009,-pallowsigned=1	ivltests
 vlog95:sv_port_default8	CE,-g2009,-pallowsigned=1	ivltests
 vlog95:sv_port_default9	CE,-g2009	ivltests
+vlog95:sv_root_class	CE,-g2009	ivltests
 
 # These variable assignments are converted to wire definitions that are
 # assigned from both a continuous assignment and a procedural assignment.
