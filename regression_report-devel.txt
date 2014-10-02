@@ -2056,6 +2056,7 @@ test_mos_strength_reduction: Passed.
                     br_gh37: Passed.
                       br959: Passed.
               sv_root_class: Passed.
+               sv_root_task: Passed.
 ============================================================================
 Test results:
-  Total=2056, Passed=2051, Failed=5, Not Implemented=0, Expected Fail=0
+  Total=2057, Passed=2052, Failed=5, Not Implemented=0, Expected Fail=0
