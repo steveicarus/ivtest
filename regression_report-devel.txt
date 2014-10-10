@@ -1676,6 +1676,7 @@ test_mos_strength_reduction: Passed.
            vhdl_record_elab: Passed.
             vhdl_subprogram: Passed.
                   vhdl_init: Passed.
+                 vhdl_range: Passed.
                   vhdl_real: Passed.
              vhdl_unbounded: Passed.
                       queue: Passed.
@@ -2061,4 +2062,4 @@ test_mos_strength_reduction: Passed.
                sv_root_func: Passed.
 ============================================================================
 Test results:
-  Total=2059, Passed=2054, Failed=5, Not Implemented=0, Expected Fail=0
+  Total=2060, Passed=2055, Failed=5, Not Implemented=0, Expected Fail=0

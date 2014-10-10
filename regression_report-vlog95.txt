@@ -58,6 +58,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                       tern8: Passed - CE.
                  v2005_math: Passed - CE.
                   vams_abs2: Passed - CE.
+                 vhdl_range: Passed - CE.
                   vhdl_real: Passed - CE.
             vhdl_subprogram: Passed - CE.
              vhdl_unbounded: Passed - CE.
@@ -1890,7 +1891,7 @@ test_mos_strength_reduction: Passed.
              vhdl_sa1_test3: Passed.
                  vhdl_test1: Passed.
                  vhdl_test2: Passed.
-                 vhdl_test3: Passed.
+                 vhdl_test3: ==> Failed - running iverilog.
                  vhdl_test4: Passed.
                  vhdl_test5: Passed.
                  vhdl_test6: Passed.
@@ -2057,6 +2058,8 @@ test_mos_strength_reduction: Passed.
             case_wo_default: Passed.
                     br_gh4a: Passed.
                     br_gh37: Passed.
+               sv_root_task: ==> Failed - running iverilog.
+               sv_root_func: ==> Failed - running iverilog.
 ============================================================================
 Test results:
-  Total=2057, Passed=2026, Failed=3, Not Implemented=3, Expected Fail=25
+  Total=2060, Passed=2026, Failed=6, Not Implemented=3, Expected Fail=25
