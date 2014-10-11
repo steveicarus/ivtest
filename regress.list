@@ -1914,6 +1914,7 @@ v0.9:sv_uwire4	NI
 v0.9:sv_root_class	NI
 v0.9:sv_root_task	NI
 v0.9:sv_root_func	NI
+v0.9:sv_pkg_class	NI
 v0.9:sys_func_as_task	NI
 v0.9:task_init_assign	NI
 v0.9:test_dec2to4	NI
@@ -5193,3 +5194,4 @@ br959		normal,-g2009	ivltests
 sv_root_class	normal,-g2009	ivltests	gold=sv_root_class.gold
 sv_root_task	normal,-g2009	ivltests	gold=sv_root_task.gold
 sv_root_func	normal,-g2009	ivltests	gold=sv_root_func.gold
+sv_pkg_class	normal,-g2009	ivltests	gold=sv_pkg_class.gold
