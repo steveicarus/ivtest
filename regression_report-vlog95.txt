@@ -2060,6 +2060,7 @@ test_mos_strength_reduction: Passed.
                     br_gh37: Passed.
                sv_root_task: ==> Failed - running iverilog.
                sv_root_func: ==> Failed - running iverilog.
+               sv_pkg_class: ==> Failed - running iverilog.
 ============================================================================
 Test results:
-  Total=2060, Passed=2026, Failed=6, Not Implemented=3, Expected Fail=25
+  Total=2061, Passed=2026, Failed=7, Not Implemented=3, Expected Fail=25

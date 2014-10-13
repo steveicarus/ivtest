@@ -2063,4 +2063,4 @@ test_mos_strength_reduction: Passed.
                sv_pkg_class: Passed.
 ============================================================================
 Test results:
-  Total=2060, Passed=2055, Failed=5, Not Implemented=0, Expected Fail=0
+  Total=2061, Passed=2056, Failed=5, Not Implemented=0, Expected Fail=0
