@@ -58,7 +58,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                       tern8: Passed - CE.
                  v2005_math: Passed - CE.
                   vams_abs2: Passed - CE.
-                 vhdl_range: Passed - CE.
                   vhdl_real: Passed - CE.
             vhdl_subprogram: Passed - CE.
              vhdl_unbounded: Passed - CE.
@@ -184,6 +183,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                 sv_foreach2: Passed - CE.
                 sv_foreach3: Passed - CE.
                 sv_foreach4: Passed - CE.
+               sv_pkg_class: Passed - CE.
            sv_port_default1: Passed - CE.
            sv_port_default2: Passed - CE.
            sv_port_default3: Passed - CE.
@@ -460,9 +460,12 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                 sv_package5: Passed.
           sv_port_default10: Passed.
           sv_port_default11: Passed.
+               sv_root_func: Passed.
+               sv_root_task: Passed.
              test_dispwided: Passed.
                test_inc_dec: Passed.
             test_enumsystem: Passed.
+                 vhdl_range: Passed.
                 test_system: Passed.
               test_tliteral: Passed.
                  vhdl_test8: Passed.
@@ -479,6 +482,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
        vhdl_sdiv23_stdlogic: Passed.
        vhdl_ssub23_stdlogic: Passed.
        vhdl_smul23_stdlogic: Passed.
+                 vhdl_test3: Passed.
                       br919: Passed.
                     concat3: Passed.
                       mult2: Passed.
@@ -1891,7 +1895,6 @@ test_mos_strength_reduction: Passed.
              vhdl_sa1_test3: Passed.
                  vhdl_test1: Passed.
                  vhdl_test2: Passed.
-                 vhdl_test3: ==> Failed - running iverilog.
                  vhdl_test4: Passed.
                  vhdl_test5: Passed.
                  vhdl_test6: Passed.
@@ -2058,9 +2061,6 @@ test_mos_strength_reduction: Passed.
             case_wo_default: Passed.
                     br_gh4a: Passed.
                     br_gh37: Passed.
-               sv_root_task: ==> Failed - running iverilog.
-               sv_root_func: ==> Failed - running iverilog.
-               sv_pkg_class: ==> Failed - running iverilog.
 ============================================================================
 Test results:
-  Total=2061, Passed=2026, Failed=7, Not Implemented=3, Expected Fail=25
+  Total=2061, Passed=2030, Failed=3, Not Implemented=3, Expected Fail=25
