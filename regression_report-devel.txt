@@ -1676,6 +1676,7 @@ test_mos_strength_reduction: Passed.
            vhdl_record_elab: Passed.
             vhdl_subprogram: Passed.
                   vhdl_init: Passed.
+                 vhdl_range: Passed.
                   vhdl_real: Passed.
              vhdl_unbounded: Passed.
                       queue: Passed.

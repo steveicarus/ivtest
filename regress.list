@@ -1993,6 +1993,7 @@ v0.9:vhdl_const_package NI
 v0.9:vhdl_record_elab   NI
 v0.9:vhdl_subprogram    NI
 v0.9:vhdl_init		NI
+v0.9:vhdl_range		NI
 v0.9:vhdl_real		NI
 v0.9:vhdl_unbounded	NI
 v0.9:vhdl_signals	NI
@@ -2473,6 +2474,7 @@ vlog95:real_wire_force_rel	CE	ivltests
 vlog95:tern8			CE	ivltests
 vlog95:v2005_math		CE	ivltests
 vlog95:vams_abs2		CE,-gverilog-ams,-pallowsigned=1	ivltests
+vlog95:vhdl_range		CE,-g2009,ivltests/vhdl_range.vhd	ivltests
 vlog95:vhdl_real		CE,-g2009,ivltests/vhdl_real.vhd	ivltests
 vlog95:vhdl_subprogram		CE,-g2009,ivltests/vhdl_subpprogram_pkg.vhd,ivltests/vhdl_subprogram.vhd	ivltests
 vlog95:vhdl_unbounded		CE,-g2009,ivltests/vhdl_unbounded.vhd	ivltests
@@ -4811,6 +4813,7 @@ vhdl_const_package      normal,-g2005-sv,ivltests/vhdl_const_package_pkg.vhd,ivl
 vhdl_record_elab        normal,-g2005-sv,ivltests/vhdl_record_elab_pkg.vhd,ivltests/vhdl_record_elab.vhd    ivltests
 vhdl_subprogram         normal,-g2005-sv,ivltests/vhdl_subprogram_pkg.vhd,ivltests/vhdl_subprogram.vhd    ivltests
 vhdl_init	normal,ivltests/vhdl_init.vhd		ivltests
+vhdl_range	normal,-g2009,ivltests/vhdl_range.vhd		ivltests
 vhdl_real	normal,-g2009,ivltests/vhdl_real.vhd		ivltests
 vhdl_unbounded	normal,-g2009,ivltests/vhdl_unbounded.vhd	ivltests
 queue		normal	ivltests
