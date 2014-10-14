@@ -29,21 +29,25 @@ initial begin
   if(dut.left_asc !== 2)
   begin
     $display("FAILED: left should be %2d but is %2d", 2, dut.left_asc);
+    $finish();
   end
 
   if(dut.right_asc !== 4)
   begin
     $display("FAILED: left should be %2d but is %2d", 2, dut.right_asc);
+    $finish();
   end
 
   if(dut.left_dsc !== 9)
   begin
     $display("FAILED: left should be %2d but is %2d", 2, dut.left_dsc);
+    $finish();
   end
 
   if(dut.right_dsc !== 3)
   begin
     $display("FAILED: left should be %2d but is %2d", 2, dut.right_dsc);
+    $finish();
   end
 
   for(i = $left(dut.ascending); i <= $right(dut.ascending); i++)
