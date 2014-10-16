@@ -225,6 +225,10 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                   sv_uwire2: Not Implemented.
                   sv_uwire3: Not Implemented.
                   sv_uwire4: Not Implemented.
+              sv_root_class: Not Implemented.
+               sv_root_task: Not Implemented.
+               sv_root_func: Not Implemented.
+               sv_pkg_class: Not Implemented.
            sys_func_as_task: Not Implemented.
            task_init_assign: Not Implemented.
                test_dec2to4: Not Implemented.
@@ -298,7 +302,11 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
              vhdl_fa4_test2: Not Implemented.
              vhdl_fa4_test3: Not Implemented.
              vhdl_fa4_test4: Not Implemented.
+         vhdl_const_package: Not Implemented.
+           vhdl_record_elab: Not Implemented.
+            vhdl_subprogram: Not Implemented.
                   vhdl_init: Not Implemented.
+                 vhdl_range: Not Implemented.
                   vhdl_real: Not Implemented.
              vhdl_unbounded: Not Implemented.
                vhdl_signals: Not Implemented.
@@ -2059,4 +2067,4 @@ test_mos_strength_reduction: Passed.
                     br_gh37: Passed.
 ============================================================================
 Test results:
-  Total=2057, Passed=1620, Failed=0, Not Implemented=383, Expected Fail=54
+  Total=2065, Passed=1620, Failed=0, Not Implemented=391, Expected Fail=54
