@@ -466,6 +466,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                test_inc_dec: Passed.
             test_enumsystem: Passed.
                  vhdl_range: Passed.
+                  vhdl_rtoi: Passed.
                 test_system: Passed.
               test_tliteral: Passed.
                  vhdl_test8: Passed.
@@ -2064,4 +2065,4 @@ test_mos_strength_reduction: Passed.
                     br_gh37: Passed.
 ============================================================================
 Test results:
-  Total=2062, Passed=2031, Failed=3, Not Implemented=3, Expected Fail=25
+  Total=2063, Passed=2032, Failed=3, Not Implemented=3, Expected Fail=25
