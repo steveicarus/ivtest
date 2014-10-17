@@ -1992,6 +1992,7 @@ v0.9:vhdl_fa4_test4	NI
 v0.9:vhdl_const_package NI
 v0.9:vhdl_record_elab   NI
 v0.9:vhdl_subprogram    NI
+v0.9:vhdl_concat        NI
 v0.9:vhdl_init		NI
 v0.9:vhdl_range		NI
 v0.9:vhdl_real		NI
@@ -4816,6 +4817,7 @@ vhdl_fa4_test4	normal,-g2005-sv,ivltests/vhdl_fa4_test4.vhd	ivltests
 vhdl_const_package      normal,-g2005-sv,ivltests/vhdl_const_package_pkg.vhd,ivltests/vhdl_const_package.vhd    ivltests
 vhdl_record_elab        normal,-g2005-sv,ivltests/vhdl_record_elab_pkg.vhd,ivltests/vhdl_record_elab.vhd    ivltests
 vhdl_subprogram         normal,-g2005-sv,ivltests/vhdl_subprogram_pkg.vhd,ivltests/vhdl_subprogram.vhd    ivltests
+vhdl_concat	normal,-g2009,ivltests/vhdl_concat.vhd		ivltests
 vhdl_init	normal,ivltests/vhdl_init.vhd		ivltests
 vhdl_range	normal,-g2009,ivltests/vhdl_range.vhd		ivltests
 vhdl_real	normal,-g2009,ivltests/vhdl_real.vhd		ivltests

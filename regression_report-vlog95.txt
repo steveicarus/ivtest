@@ -1879,6 +1879,7 @@ test_mos_strength_reduction: Passed.
              vhdl_fa4_test4: Passed.
          vhdl_const_package: Passed.
            vhdl_record_elab: Passed.
+                vhdl_concat: Passed.
                   vhdl_init: Passed.
                       queue: Passed.
                  queue_stat: Passed.
@@ -2063,4 +2064,4 @@ test_mos_strength_reduction: Passed.
                     br_gh37: Passed.
 ============================================================================
 Test results:
-  Total=2061, Passed=2030, Failed=3, Not Implemented=3, Expected Fail=25
+  Total=2062, Passed=2031, Failed=3, Not Implemented=3, Expected Fail=25
