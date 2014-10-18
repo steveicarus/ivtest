@@ -5205,3 +5205,4 @@ sv_pkg_class	normal,-g2009	ivltests	gold=sv_pkg_class.gold
 br960a	normal,-gspecify	ivltests	gold=br960a.gold
 br960b	normal,-gspecify	ivltests	gold=br960b.gold
 br960c	normal,-gspecify	ivltests	gold=br960c.gold
+br960d	normal,-gspecify	ivltests	gold=br960d.gold
