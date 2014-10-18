@@ -2061,6 +2061,9 @@ test_mos_strength_reduction: Passed.
             case_wo_default: Passed.
                     br_gh4a: Passed.
                     br_gh37: Passed.
+                     br960a: Passed.
+                     br960b: Passed.
+                     br960c: Passed.
 ============================================================================
 Test results:
-  Total=2061, Passed=2030, Failed=3, Not Implemented=3, Expected Fail=25
+  Total=2064, Passed=2033, Failed=3, Not Implemented=3, Expected Fail=25

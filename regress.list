@@ -5202,3 +5202,6 @@ sv_root_class	normal,-g2009	ivltests	gold=sv_root_class.gold
 sv_root_task	normal,-g2009	ivltests	gold=sv_root_task.gold
 sv_root_func	normal,-g2009	ivltests	gold=sv_root_func.gold
 sv_pkg_class	normal,-g2009	ivltests	gold=sv_pkg_class.gold
+br960a	normal,-gspecify	ivltests	gold=br960a.gold
+br960b	normal,-gspecify	ivltests	gold=br960b.gold
+br960c	normal,-gspecify	ivltests	gold=br960c.gold
