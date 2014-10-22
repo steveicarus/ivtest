@@ -13,6 +13,8 @@ static PLI_INT32 number_compiletf(PLI_BYTE8 *x)
 
       s_vpi_value var;
 
+      (void)x;  /* Parameter is not used. */
+
       if (argv == 0) {
 	    vpi_printf("ERROR: missing required numeric argument.\n"),
 	    vpi_control(vpiFinish, 1);

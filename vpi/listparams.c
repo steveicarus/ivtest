@@ -9,6 +9,7 @@ static PLI_INT32 listparams_compiletf(char*name)
 static PLI_INT32 listparams_compiletf(PLI_BYTE8*name)
 #endif
 {
+      (void)name;  /* Parameter is not used. */
       return 0;
 }
 
@@ -55,6 +56,8 @@ static PLI_INT32 listparams_calltf(PLI_BYTE8*name)
       vpiHandle scope= vpi_handle(vpiScope, sys);
       vpiHandle argv = vpi_iterate(vpiArgument, sys);
       vpiHandle item;
+
+      (void)name;  /* Parameter is not used. */
 
       while ( (item = vpi_scan(argv)) ) {
 	    s_vpi_value value;

@@ -34,6 +34,8 @@ static PLI_INT32 calltf(PLI_BYTE8 *data)
 {
     vpiHandle hand, iter;
 
+    (void)data;  /* Parameter is not used. */
+
     hand = vpi_handle(vpiSysTfCall, 0);
     iter = vpi_iterate(vpiArgument, hand);
     hand = vpi_scan(iter);

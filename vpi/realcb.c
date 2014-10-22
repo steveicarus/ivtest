@@ -48,6 +48,8 @@ static PLI_INT32 my_watchreal_calltf(PLI_BYTE8 *xx)
       struct t_cb_data cb;
       struct t_vpi_time timerec;
 
+      (void)xx;  /* Parameter is not used. */
+
       vpiHandle sys = vpi_handle(vpiSysTfCall, 0);
       vpiHandle argv = vpi_iterate(vpiArgument, sys);
 

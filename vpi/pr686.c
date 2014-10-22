@@ -44,6 +44,7 @@ static PLI_INT32 test_next_compiletf(char *name)
 static PLI_INT32 test_next_compiletf(PLI_BYTE8 *name)
 #endif
 {
+      (void)name;  /* Parameter is not used. */
       return 0;
 }
 
@@ -54,6 +55,8 @@ static PLI_INT32 test_next_calltf(PLI_BYTE8 *name)
 #endif
 {
       vpiHandle sys, argv, value;
+
+      (void)name;  /* Parameter is not used. */
 
       sys = vpi_handle(vpiSysTfCall, 0);
       assert(sys);

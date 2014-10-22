@@ -3,6 +3,8 @@
 
 static PLI_INT32 end_of_sim_cb(struct t_cb_data *x)
 {
+      (void)x;  /* Parameter is not used. */
+
       vpi_printf("In VPI cbEndOfSimulation callback.\n");
       return 0;
 }

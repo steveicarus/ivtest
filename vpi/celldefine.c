@@ -5,6 +5,9 @@ static PLI_INT32 calltf(PLI_BYTE8 *data)
     vpiHandle callh = vpi_handle(vpiSysTfCall, 0);
     vpiHandle argv = vpi_iterate(vpiArgument, callh);
     vpiHandle mod = vpi_scan(argv);
+
+    (void)data;  /* Parameter is not used. */
+
     vpi_free_object(argv);
 
     vpi_printf("Module instance %s is%s a cell.\n",

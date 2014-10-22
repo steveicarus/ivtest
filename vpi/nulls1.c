@@ -26,7 +26,10 @@ PLI_INT32
 ValueChange(p_cb_data cb_data)
 {
 	static s_vpi_time get_time = { vpiSimTime, 0, 0, 0 };
-  vpi_get_time(NULL,&get_time);
+
+	(void)cb_data;  /* Parameter is not used. */
+
+	vpi_get_time(NULL,&get_time);
 	vpi_printf("%6d: Value Change\n", (int)get_time.low);
 	return(0);
 }
@@ -40,6 +43,8 @@ PLI_INT32 CompileTF(PLI_BYTE8 *user_data)
 	s_cb_data cb_data;
 	vpiHandle call_h=vpi_handle(vpiSysTfCall,NULL);
 	vpiHandle arg_i,arg_h;
+
+	(void)user_data;  /* Parameter is not used. */
 
 	// Get First Argument and Setup Value Change Callback
 	arg_i=vpi_iterate(vpiArgument,call_h);

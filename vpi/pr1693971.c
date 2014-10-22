@@ -74,6 +74,7 @@ static PLI_INT32 PLIbook_PowSizetf(char *user_data)
 static PLI_INT32 PLIbook_PowSizetf(PLI_BYTE8 *user_data)
 #endif
 {
+  (void)user_data;  /* Parameter is not used. */
   //vpi_printf("\n$my_pow PLI sizetf function.\n\n");
   return(32);   /* $my_pow returns 32-bit values */
 }
@@ -90,6 +91,8 @@ static PLI_INT32 PLIbook_PowCompiletf(PLI_BYTE8 *user_data)
   vpiHandle systf_handle, arg_itr, arg_handle;
   PLI_INT32 tfarg_type;
   int       err_flag = 0;
+
+  (void)user_data;  /* Parameter is not used. */
 
   vpi_printf("\n$my_pow PLI compiletf function.\n\n");
 
@@ -153,6 +156,8 @@ static PLI_INT32 PLIbook_PowCalltf(PLI_BYTE8 *user_data)
   PLI_INT32   base, expo;
   double      result;
 
+  (void)user_data;  /* Parameter is not used. */
+
   //vpi_printf("\n$my_pow PLI calltf function.\n\n");
 
   systf_handle = vpi_handle(vpiSysTfCall, NULL);
@@ -188,6 +193,7 @@ static PLI_INT32 PLIbook_PowCalltf(PLI_BYTE8 *user_data)
  *********************************************************************/
 static PLI_INT32 PLIbook_PowStartOfSim(s_cb_data *callback_data)
 {
+  (void)callback_data;  /* Parameter is not used. */
   vpi_printf("\n$my_pow StartOfSim callback.\n\n");
   return(0);
 }

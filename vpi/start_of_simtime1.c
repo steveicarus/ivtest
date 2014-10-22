@@ -22,6 +22,7 @@ static PLI_INT32 delayed_poke(p_cb_data cb_data)
 
 static PLI_INT32 poke_compiletf(char*xx)
 {
+      (void)xx;  /* Parameter is not used. */
       return 0;
 }
 
@@ -35,6 +36,8 @@ static PLI_INT32 poke_calltf(char*xx)
       vpiHandle dst, val, del, tmp;
 
       struct poke_details*poke;
+
+      (void)xx;  /* Parameter is not used. */
 
       assert(argv);
 

@@ -37,6 +37,8 @@ static PLI_INT32 CompileTF(PLI_BYTE8 *x)
 	vpiHandle arg;
 	int first = 1;
 
+	(void)x;  /* Parameter is not used. */
+
 	vpi_printf("%s (", vpi_get_str(vpiName, sys));
 	while ((arg = vpi_scan(argv))) {
 	    if (!first)

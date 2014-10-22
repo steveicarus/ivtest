@@ -32,6 +32,8 @@ EndOfCompile(s_cb_data *data)
     s_vpi_value val;
     int i;
 
+    (void)data;  /* Parameter is not used. */
+
     hand = vpi_handle_by_name("test.r", 0);
     assert(hand);
 

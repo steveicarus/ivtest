@@ -38,6 +38,7 @@ static PLI_INT32 CompileTF(char *x)
 static PLI_INT32 CompileTF(PLI_BYTE8 *x)
 #endif
 {
+	(void)x;  /* Parameter is not used. */
 	RecurseScope(NULL, 0);
 	return 0;
 }

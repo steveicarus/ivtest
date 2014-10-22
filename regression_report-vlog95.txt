@@ -58,6 +58,9 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                       tern8: Passed - CE.
                  v2005_math: Passed - CE.
                   vams_abs2: Passed - CE.
+                  vhdl_real: Passed - CE.
+            vhdl_subprogram: Passed - CE.
+             vhdl_unbounded: Passed - CE.
                       wreal: Passed - CE.
                   pr1528093: Passed - CE.
                      br_gh9: Passed - CE.
@@ -87,6 +90,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
           array_word_width2: Passed - CE.
               genvar_scopes: Passed - CE.
                    meminit2: Passed - CE.
+                  memsynth4: Passed - CE.
             negative_genvar: Passed - CE.
                   pr1565544: Passed - CE.
                   pr1657307: Passed - CE.
@@ -116,6 +120,10 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
             sel_rval_bit_ob: Passed - CE.
            sel_rval_part_ob: Passed - CE.
          signed_net_display: Passed - CE.
+           sv_unpacked_port: Passed - CE.
+          sv_unpacked_port2: Passed - CE.
+           sv_unpacked_wire: Passed - CE.
+          sv_unpacked_wire2: Passed - CE.
                     concat4: Passed - expected fail.
                       final: Passed - CE.
                      final2: Passed - CE.
@@ -126,6 +134,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                array_string: Passed - CE.
                      br932a: Passed - CE.
                      br932b: Passed - CE.
+                     br_gh4: Passed - CE.
                  sv_string1: Passed - CE.
                  sv_string2: Passed - CE.
                  sv_string3: Passed - CE.
@@ -145,6 +154,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
            sv_darray_args2b: Passed - CE.
             sv_darray_args3: Passed - CE.
             sv_darray_args4: Passed - CE.
+                      br959: Passed - CE.
                   sv_class1: Passed - CE.
                   sv_class2: Passed - CE.
                   sv_class3: Passed - CE.
@@ -170,6 +180,10 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  sv_class23: Passed - CE.
                  sv_class24: Passed - CE.
                sv_end_label: Passed - CE.
+                sv_foreach2: Passed - CE.
+                sv_foreach3: Passed - CE.
+                sv_foreach4: Passed - CE.
+               sv_pkg_class: Passed - CE.
            sv_port_default1: Passed - CE.
            sv_port_default2: Passed - CE.
            sv_port_default3: Passed - CE.
@@ -179,6 +193,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
            sv_port_default7: Passed - CE.
            sv_port_default8: Passed - CE.
            sv_port_default9: Passed - CE.
+              sv_root_class: Passed - CE.
                   sv_uwire1: Passed - TE.
                   sv_uwire2: Passed - TE.
                       br936: Passed - CE.
@@ -228,6 +243,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   pr2159630: Passed - expected fail.
                     analog1: Passed - CE.
                     analog2: Passed - CE.
+                      br955: Passed - CE.
                complex_lidx: Passed - CE.
                   defparam3: Passed - CE.
                   defparam4: Passed - CE.
@@ -274,10 +290,15 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   pr3534422: Passed - CE.
                   pr3557493: Passed - CE.
               scoped_events: Passed - CE.
+            sv_packed_port1: Passed - CE.
+            sv_packed_port2: Passed - CE.
+                  sv_queue1: Passed - CE.
+                  sv_queue2: Passed - CE.
+                  sv_queue3: Passed - CE.
                 test_forgen: Passed - CE.
                   test_gxor: Passed - CE.
-     unnamed_generate_block: Passed - CE.
                test_varray1: Passed - CE.
+     unnamed_generate_block: Passed - CE.
                     bitsel6: Passed - CE.
                     bitsel7: Passed - CE.
                  pr3054101a: Passed - CE.
@@ -305,6 +326,9 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  pr3296466d: Passed - CE.
                        tri2: Passed - CE.
                   basicexpr: Passed - TE.
+                 basicstate: Passed - TE.
+                basicstate2: Passed - TE.
+                  dffsynth6: Passed - TE.
                      shiftl: Passed - TE.
                 ufuncsynth1: Passed - TE.
                       pr685: Passed - TE.
@@ -367,6 +391,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                      iuint1: Passed.
                       logp2: Passed.
            mixed_width_case: Passed.
+               mod_inst_pkg: Passed.
                     packeda: Passed.
                      pr1033: Passed.
                   pr1380261: Passed.
@@ -428,14 +453,19 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
             simple_shortint: Passed.
         struct_packed_array: Passed.
        struct_packed_array2: Passed.
+            sv_for_variable: Passed.
+                sv_foreach1: Passed.
                  sv_package: Passed.
                 sv_package2: Passed.
                 sv_package5: Passed.
           sv_port_default10: Passed.
           sv_port_default11: Passed.
+               sv_root_func: Passed.
+               sv_root_task: Passed.
              test_dispwided: Passed.
                test_inc_dec: Passed.
             test_enumsystem: Passed.
+                 vhdl_range: Passed.
                 test_system: Passed.
               test_tliteral: Passed.
                  vhdl_test8: Passed.
@@ -452,6 +482,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
        vhdl_sdiv23_stdlogic: Passed.
        vhdl_ssub23_stdlogic: Passed.
        vhdl_smul23_stdlogic: Passed.
+                 vhdl_test3: Passed.
                       br919: Passed.
                     concat3: Passed.
                       mult2: Passed.
@@ -499,13 +530,9 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                       case5: Passed.
              case5-syn-fail: Passed.
                       case6: Passed.
-                      case7: Passed.
                     condit1: Passed.
                  basiclatch: Passed.
-                 basicstate: Passed.
-                basicstate2: Passed.
                    multireg: Passed.
-                blocksynth1: Passed.
                 blocksynth2: Passed.
                 blocksynth3: Passed.
                conditsynth1: Passed.
@@ -523,13 +550,10 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                   memsynth1: Passed.
                   memsynth2: Passed.
                   memsynth3: Passed.
-                  memsynth4: Passed.
                   memsynth5: Passed.
                   memsynth6: Passed.
                   memsynth7: Passed.
                   memsynth9: Passed.
-                   ssetclr1: Passed.
-                   ssetclr2: Passed.
                    ssetclr3: Passed.
                inside_synth: Passed.
               inside_synth2: Passed.
@@ -538,6 +562,14 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                 casex_synth: Passed.
                   full_case: Passed.
                  full_case2: Passed.
+             for_loop_synth: Passed.
+            for_loop_synth2: Passed.
+                blocksynth1: Passed.
+                 casesynth4: Passed.
+                 casesynth5: Passed.
+                 casesynth6: Passed.
+            if_part_no_else: Passed.
+           if_part_no_else2: Passed.
               always3.1.10A: Passed - CE.
               always3.1.11A: Passed.
               always3.1.11B: Passed.
@@ -1160,12 +1192,16 @@ test_mos_strength_reduction: Passed.
                       pr622: Passed.
                       pr639: Passed.
                       case3: Passed.
+                      case7: Passed.
                    basicreg: Passed.
                  basicexpr2: Passed.
                  basicexpr3: Passed.
                  basicexpr4: Passed.
+                  dffsynth5: Passed.
                      sqrt32: Passed.
                   memsynth8: Passed.
+                   ssetclr1: Passed.
+                   ssetclr2: Passed.
                      busbug: Passed.
                        real: Passed.
                       real2: Passed.
@@ -1392,6 +1428,8 @@ test_mos_strength_reduction: Passed.
                   pr1804877: Passed.
                   pr1805837: Passed.
                     urand_r: Passed.
+                   urand_r2: Passed.
+                   urand_r3: Passed.
                      fileio: Passed.
                   pr1812297: Passed.
                    long_div: Passed.
@@ -1839,6 +1877,9 @@ test_mos_strength_reduction: Passed.
              vhdl_fa4_test2: Passed.
              vhdl_fa4_test3: Passed.
              vhdl_fa4_test4: Passed.
+         vhdl_const_package: Passed.
+           vhdl_record_elab: Passed.
+                  vhdl_init: Passed.
                       queue: Passed.
                  queue_stat: Passed.
                   pow-const: Passed.
@@ -1854,7 +1895,6 @@ test_mos_strength_reduction: Passed.
              vhdl_sa1_test3: Passed.
                  vhdl_test1: Passed.
                  vhdl_test2: Passed.
-                 vhdl_test3: Passed.
                  vhdl_test4: Passed.
                  vhdl_test5: Passed.
                  vhdl_test6: Passed.
@@ -1996,6 +2036,8 @@ test_mos_strength_reduction: Passed.
                     br_gh15: Passed.
                     br_gh18: Passed.
                     br_gh19: Passed.
+                   br_gh19a: Passed.
+                   br_gh19b: Passed.
                      br605a: ==> Failed - output does not match gold file.
                      br605b: ==> Failed - output does not match gold file.
                       br946: Passed.
@@ -2004,7 +2046,24 @@ test_mos_strength_reduction: Passed.
                   sv_uwire3: Passed.
                   sv_uwire4: Passed.
            synth_if_no_else: Passed.
+               not_a_latch1: Passed.
+               not_a_latch2: Passed.
               arith-unknown: Passed.
+           sv_typedef_scope: Passed.
+                    br_gh22: Passed.
+                   br_gh25a: Passed - CE.
+                   br_gh25b: Passed - CE.
+                    br_gh26: Passed - CE.
+                    br_gh28: Passed.
+                    br_gh30: Passed.
+                    br_gh33: Passed.
+             ff_dual_enable: Passed.
+            case_wo_default: Passed.
+                    br_gh4a: Passed.
+                    br_gh37: Passed.
+                     br960a: Passed.
+                     br960b: Passed.
+                     br960c: Passed.
 ============================================================================
 Test results:
-  Total=2005, Passed=1974, Failed=3, Not Implemented=3, Expected Fail=25
+  Total=2064, Passed=2033, Failed=3, Not Implemented=3, Expected Fail=25

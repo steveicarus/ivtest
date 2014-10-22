@@ -29,6 +29,8 @@ static PLI_INT32 my_hello_calltf(PLI_BYTE8 *xx)
 {
       s_vpi_value value;
 
+      (void)xx;  /* Parameter is not used. */
+
       vpiHandle sys = vpi_handle(vpiSysTfCall, 0);
       vpiHandle argv = vpi_iterate(vpiArgument, sys);
       vpiHandle arg;
