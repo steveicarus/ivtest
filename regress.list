@@ -2112,7 +2112,11 @@ v0.9:non-polymorphic-abs	EF	ivltests
 #==========
 # V0.9 has different T0 values for nets (z vs x). No transitions to x at T0.
 #==========
-v0.9:delayed_sfunc	normale,-gspecify	ivltests diff=log/delayed_sfunc.log:gold/delayed_sfunc-v0.9.gold
+v0.9:br960a	normal,-gspecify ivltests diff=log/br960a.log:gold/br960a-v0.9.gold
+v0.9:br960b	normal,-gspecify ivltests diff=log/br960b.log:gold/br960b-v0.9.gold
+v0.9:br960c	normal,-gspecify ivltests diff=log/br960c.log:gold/br960c-v0.9.gold
+v0.9:br960d	normal,-gspecify ivltests diff=log/br960d.log:gold/br960d-v0.9.gold
+v0.9:delayed_sfunc	normale,-gspecify ivltests diff=log/delayed_sfunc.log:gold/delayed_sfunc-v0.9.gold
 v0.9:specify5	normal,-gspecify  ivltests diff=log/specify5.log:gold/specify5-v0.9.gold
 v0.9:pr377	normal	ivltests diff=log/pr377.log:gold/pr377-v0.9.gold
 v0.9:pr528	normal	ivltests diff=log/pr528.log:gold/pr528-v0.9.gold

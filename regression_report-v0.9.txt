@@ -305,9 +305,11 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
          vhdl_const_package: Not Implemented.
            vhdl_record_elab: Not Implemented.
             vhdl_subprogram: Not Implemented.
+                vhdl_concat: Not Implemented.
                   vhdl_init: Not Implemented.
                  vhdl_range: Not Implemented.
                   vhdl_real: Not Implemented.
+                  vhdl_rtoi: Not Implemented.
              vhdl_unbounded: Not Implemented.
                vhdl_signals: Not Implemented.
              vhdl_sa1_test1: Not Implemented.
@@ -369,6 +371,10 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                   pr2877564: Passed - CE.
                   pr1723367: Passed.
         non-polymorphic-abs: Passed - expected fail.
+                     br960a: Passed.
+                     br960b: Passed.
+                     br960c: Passed.
+                     br960d: Passed.
               delayed_sfunc: Passed.
                    specify5: Passed.
                       pr377: Passed.
@@ -2067,4 +2073,4 @@ test_mos_strength_reduction: Passed.
                     br_gh37: Passed.
 ============================================================================
 Test results:
-  Total=2065, Passed=1620, Failed=0, Not Implemented=391, Expected Fail=54
+  Total=2071, Passed=1624, Failed=0, Not Implemented=393, Expected Fail=54
