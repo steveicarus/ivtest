@@ -1679,7 +1679,15 @@ test_mos_strength_reduction: Passed.
              vhdl_fa4_test2: Passed.
              vhdl_fa4_test3: Passed.
              vhdl_fa4_test4: Passed.
+         vhdl_const_package: Passed.
+           vhdl_record_elab: Passed.
+            vhdl_subprogram: Passed.
+                vhdl_concat: Passed.
+                  vhdl_init: Passed.
+                 vhdl_range: Passed.
                   vhdl_real: Passed.
+                  vhdl_rtoi: Passed.
+             vhdl_unbounded: Passed.
                       queue: Passed.
                  queue_fail: Passed.
                  queue_stat: Passed.
@@ -1740,7 +1748,7 @@ test_mos_strength_reduction: Passed.
                   pr3409749: Passed.
                test_mux2to1: Passed.
                test_dec2to4: Passed.
-            test_enumsystem: ==> Failed - running iverilog.
+            test_enumsystem: Passed.
               test_timebase: Passed.
                 test_system: Passed.
     test_signal_init_assign: Passed.
@@ -2025,10 +2033,15 @@ test_mos_strength_reduction: Passed.
             sv_packed_port2: Passed.
                   sv_queue1: Passed.
                   sv_queue2: Passed.
+                  sv_queue3: Passed.
            sv_unpacked_port: Passed.
           sv_unpacked_port2: Passed.
            sv_unpacked_wire: Passed.
           sv_unpacked_wire2: Passed.
+                sv_foreach1: Passed.
+                sv_foreach2: Passed.
+                sv_foreach3: Passed.
+                sv_foreach4: Passed.
                mod_inst_pkg: Passed.
                     br_gh22: Passed.
                    br_gh25a: Passed - CE.
@@ -2045,6 +2058,17 @@ test_mos_strength_reduction: Passed.
                      br_gh4: Passed.
                     br_gh4a: Passed.
                     br_gh37: Passed.
+                      br959: Passed.
+              sv_root_class: Passed.
+               sv_root_task: Passed.
+               sv_root_func: Passed.
+               sv_pkg_class: Passed.
+                     br960a: Passed.
+                     br960b: Passed.
+                     br960c: Passed.
+                     br960d: Passed.
+                      br961: Passed.
+                     br961a: Passed - CE.
 ============================================================================
 Test results:
-  Total=2045, Passed=2032, Failed=10, Not Implemented=3, Expected Fail=0
+  Total=2069, Passed=2057, Failed=9, Not Implemented=3, Expected Fail=0

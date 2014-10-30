@@ -2067,6 +2067,8 @@ test_mos_strength_reduction: Passed.
                      br960b: Passed.
                      br960c: Passed.
                      br960d: Passed.
+                      br961: Passed.
+                     br961a: Passed - CE.
 ============================================================================
 Test results:
-  Total=2067, Passed=2036, Failed=3, Not Implemented=3, Expected Fail=25
+  Total=2069, Passed=2038, Failed=3, Not Implemented=3, Expected Fail=25

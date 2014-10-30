@@ -5215,3 +5215,5 @@ br960a	normal,-gspecify	ivltests	gold=br960a.gold
 br960b	normal,-gspecify	ivltests	gold=br960b.gold
 br960c	normal,-gspecify	ivltests	gold=br960c.gold
 br960d	normal,-gspecify	ivltests	gold=br960d.gold
+br961	normal	ivltests
+br961a	CE	ivltests
