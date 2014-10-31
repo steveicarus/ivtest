@@ -267,6 +267,8 @@ vstd:sys_func_as_task	NI
 vstd:enum_base_range	NI
 vstd:enum_elem_ranges	NI
 vstd:enum_test1		NI
+vstd:enum_test2		NI
+vstd:enum_test3		NI
 vstd:enum_value_expr	NI
 
 #-------------------------------
@@ -1187,6 +1189,8 @@ v0.8:enum_base_range	NI
 v0.8:enum_elem_ranges	NI
 v0.8:enum_next	NI
 v0.8:enum_test1	NI
+v0.8:enum_test2	NI
+v0.8:enum_test3	NI
 v0.8:enum_value_expr	NI
 v0.8:enum_values	NI
 v0.8:fatal_et_al	NI
@@ -1712,6 +1716,8 @@ v0.9:enum_base_range	NI
 v0.9:enum_elem_ranges	NI
 v0.9:enum_next	NI
 v0.9:enum_test1	NI
+v0.9:enum_test2	NI
+v0.9:enum_test3	NI
 v0.9:enum_value_expr	NI
 v0.9:enum_values	NI
 v0.9:fatal_et_al	NI
@@ -2873,6 +2879,7 @@ vlog95:constfunc7	normal,-pallowsigned=1	ivltests
 vlog95:constfunc13	normal,-pallowsigned=1	ivltests
 vlog95:constfunc14	normal,-pallowsigned=1	ivltests
 vlog95:enum_elem_ranges	normal,-g2009,-pallowsigned=1	ivltests
+vlog95:enum_test2	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:enum_value_expr	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:enum_values	normal,-g2009,-pallowsigned=1	ivltests
 vlog95:extend		normal,-pallowsigned=1	ivltests
@@ -4746,6 +4753,8 @@ enum_base_range	normal,-g2005-sv	ivltests
 enum_elem_ranges	normal,-g2005-sv	ivltests
 enum_next	normal,-g2005-sv	ivltests
 enum_test1	normal,-g2005-sv	ivltests
+enum_test2	normal,-g2005-sv	ivltests
+enum_test3	CE,-g2005-sv	ivltests
 enum_value_expr	normal,-g2005-sv	ivltests
 enum_values	normal,-g2005-sv	ivltests
 first_last_num	normal,-g2005-sv	ivltests

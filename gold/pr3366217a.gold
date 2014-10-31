@@ -1,5 +1,5 @@
-./ivltests/pr3366217a.v:3: error: Enumeration name some0 cannot have a value equal to 'sd100.
-./ivltests/pr3366217a.v:3: error: Enumeration name some1 cannot have a value equal to 'sd101.
-./ivltests/pr3366217a.v:3: error: Enumeration name some2 cannot have a value equal to 'sd102.
-./ivltests/pr3366217a.v:3: error: Enumeration name some3 cannot have a value equal to 'sd103.
+./ivltests/pr3366217a.v:3: error: Enumeration name some0 cannot have an out of range value 'sd100.
+./ivltests/pr3366217a.v:3: error: Enumeration name some1 cannot have an out of range value 'sd101.
+./ivltests/pr3366217a.v:3: error: Enumeration name some2 cannot have an out of range value 'sd102.
+./ivltests/pr3366217a.v:3: error: Enumeration name some3 cannot have an out of range value 'sd103.
 5 error(s) during elaboration.
