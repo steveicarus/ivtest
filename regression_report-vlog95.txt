@@ -379,7 +379,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                 constfunc13: Passed.
                 constfunc14: Passed.
            enum_elem_ranges: Passed.
-                 enum_test2: Passed.
             enum_value_expr: Passed.
                 enum_values: Passed.
                      extend: Passed.
@@ -1822,6 +1821,7 @@ test_mos_strength_reduction: Passed.
         stask_sens_null_arg: Passed.
                  pr3112073a: Passed - CE.
             enum_base_range: Passed.
+                 enum_test2: Passed.
                  enum_test3: Passed - CE.
            def_nettype_none: Passed - CE.
                       undef: Passed.
