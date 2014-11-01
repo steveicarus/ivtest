@@ -1602,6 +1602,8 @@ test_mos_strength_reduction: Passed.
            enum_elem_ranges: Passed.
                   enum_next: Passed.
                  enum_test1: Passed.
+                 enum_test2: Passed.
+                 enum_test3: Passed - CE.
             enum_value_expr: Passed.
                 enum_values: Passed.
              first_last_num: Passed.
@@ -2067,6 +2069,8 @@ test_mos_strength_reduction: Passed.
                      br960b: Passed.
                      br960c: Passed.
                      br960d: Passed.
+                      br961: Passed.
+                     br961a: Passed - CE.
 ============================================================================
 Test results:
-  Total=2067, Passed=2062, Failed=5, Not Implemented=0, Expected Fail=0
+  Total=2071, Passed=2066, Failed=5, Not Implemented=0, Expected Fail=0
