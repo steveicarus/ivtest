@@ -269,6 +269,10 @@ vstd:enum_elem_ranges	NI
 vstd:enum_test1		NI
 vstd:enum_test2		NI
 vstd:enum_test3		NI
+vstd:enum_test4		NI
+vstd:enum_test5		NI
+vstd:enum_test6		NI
+vstd:enum_test7		NI
 vstd:enum_value_expr	NI
 
 #-------------------------------
@@ -1191,6 +1195,10 @@ v0.8:enum_next	NI
 v0.8:enum_test1	NI
 v0.8:enum_test2	NI
 v0.8:enum_test3	NI
+v0.8:enum_test4	NI
+v0.8:enum_test5	NI
+v0.8:enum_test6	NI
+v0.8:enum_test7	NI
 v0.8:enum_value_expr	NI
 v0.8:enum_values	NI
 v0.8:fatal_et_al	NI
@@ -1720,6 +1728,10 @@ v0.9:enum_next	NI
 v0.9:enum_test1	NI
 v0.9:enum_test2	NI
 v0.9:enum_test3	NI
+v0.9:enum_test4	NI
+v0.9:enum_test5	NI
+v0.9:enum_test6	NI
+v0.9:enum_test7	NI
 v0.9:enum_value_expr	NI
 v0.9:enum_values	NI
 v0.9:fatal_et_al	NI
@@ -3135,8 +3147,6 @@ std:pr3527694		normal			ivltests diff=log/pr3527694.log:gold/pr3527694_std.gold
 # Evaluated constants in warning/error messages are sized.
 std:pr1833024		CE			ivltests diff=log/pr1833024.log:gold/pr1833024_std.gold
 std:pr3366217a		CE,-g2005-sv		ivltests diff=log/pr3366217a.log:gold/pr3366217a_std.gold
-std:pr3366217b		CE,-g2005-sv		ivltests diff=log/pr3366217b.log:gold/pr3366217b_std.gold
-std:pr3366217g		CE,-g2005-sv		ivltests diff=log/pr3366217g.log:gold/pr3366217g_std.gold
 
 #==========
 # Compatibility with other simulators.
@@ -4758,6 +4768,10 @@ enum_next	normal,-g2005-sv	ivltests
 enum_test1	normal,-g2005-sv	ivltests
 enum_test2	normal,-g2005-sv	ivltests
 enum_test3	CE,-g2005-sv	ivltests
+enum_test4	normal,-g2005-sv	ivltests
+enum_test5	CE,-g2005-sv	ivltests
+enum_test6	CE,-g2005-sv	ivltests
+enum_test7	CE,-g2005-sv	ivltests
 enum_value_expr	normal,-g2005-sv	ivltests
 enum_values	normal,-g2005-sv	ivltests
 first_last_num	normal,-g2005-sv	ivltests

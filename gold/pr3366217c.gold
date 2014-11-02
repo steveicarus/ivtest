@@ -1,3 +1,3 @@
-./ivltests/pr3366217c.v:3: error: Enumeration name b cannot have an out of range value 'sd4.
-./ivltests/pr3366217c.v:3: error: Enumeration name c cannot have an out of range value 'sd5.
+./ivltests/pr3366217c.v:3: error: Enumeration name b has an inferred value that overflowed.
+./ivltests/pr3366217c.v:3: error: Enumeration name c has an inferred value that overflowed.
 3 error(s) during elaboration.
