@@ -1829,6 +1829,7 @@ test_mos_strength_reduction: Passed.
                  enum_test5: Passed - CE.
                  enum_test6: Passed - CE.
                  enum_test7: Passed - CE.
+                 enum_test8: Passed.
            def_nettype_none: Passed - CE.
                       undef: Passed.
                    fileline: Passed.
@@ -2079,4 +2080,4 @@ test_mos_strength_reduction: Passed.
                      br961a: Passed - CE.
 ============================================================================
 Test results:
-  Total=2077, Passed=2046, Failed=3, Not Implemented=3, Expected Fail=25
+  Total=2078, Passed=2047, Failed=3, Not Implemented=3, Expected Fail=25

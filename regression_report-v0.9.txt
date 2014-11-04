@@ -34,6 +34,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                  enum_test5: Not Implemented.
                  enum_test6: Not Implemented.
                  enum_test7: Not Implemented.
+                 enum_test8: Not Implemented.
             enum_value_expr: Not Implemented.
                 enum_values: Not Implemented.
                 fatal_et_al: Not Implemented.
@@ -2083,4 +2084,4 @@ test_mos_strength_reduction: Passed.
                      br961a: Passed - CE.
 ============================================================================
 Test results:
-  Total=2081, Passed=1626, Failed=0, Not Implemented=401, Expected Fail=54
+  Total=2082, Passed=1626, Failed=0, Not Implemented=402, Expected Fail=54
