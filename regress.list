@@ -1185,6 +1185,7 @@ v0.8:array_size	NI
 v0.8:bitp1	NI
 v0.8:bits	NI
 v0.8:bits2	NI
+v0.8:br956	NI
 v0.8:clkgen_bit	NI
 v0.8:clkgen_logic	NI
 v0.8:clkgen_net	NI
@@ -1714,6 +1715,7 @@ v0.9:br921	NI
 v0.9:br932a	NI
 v0.9:br932b	NI
 v0.9:br936	NI
+v0.9:br956	NI
 v0.9:br959	NI
 v0.9:br962	NI
 v0.9:br963	NI
@@ -5229,6 +5231,7 @@ br_gh28		normal	ivltests
 br_gh30		normal	ivltests
 br_gh33		normal	ivltests	gold=br_gh33.gold
 br955		normal	ivltests
+br956		normal,-g2009	ivltests
 ff_dual_enable	normal,-S	ivltests
 case_wo_default	normal,-S	ivltests
 if_part_no_else	normal,-S	ivltests
