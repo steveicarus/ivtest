@@ -2,11 +2,11 @@
 module qtest;
   parameter width = 32;
   parameter depth = 32;
-  
+
   reg [width-1:0] values[$];
   reg [$clog2(depth)+width-1:0] sum1;
   reg [$clog2(depth)+width-1:0] sum2;
-  
+
   task new_sample;
     input [width-1:0] data;
 
@@ -35,5 +35,5 @@ module qtest;
     repeat (2*depth) new_sample({$random});
     $display("PASSED");
   end
-      
+
 endmodule
