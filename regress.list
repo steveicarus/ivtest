@@ -1254,6 +1254,7 @@ v0.8:sshortint_test	NI
 v0.8:sv-2val-nets	NI
 v0.8:sv-constants	NI
 v0.8:sv_macro	NI
+v0.8:sv_string_index	NI
 v0.8:sv_timeunit_prec	NI
 v0.8:sv_timeunit_prec2	NI
 v0.8:sv_timeunit_prec_fail	NI
@@ -1909,6 +1910,7 @@ v0.9:sv_port_default8	NI
 v0.9:sv_port_default9	NI
 v0.9:sv_port_default10	NI
 v0.9:sv_port_default11	NI
+v0.9:sv_string_index	NI
 v0.9:sv_string1	NI
 v0.9:sv_string2	NI
 v0.9:sv_string3	NI
@@ -2600,6 +2602,7 @@ vlog95:array_string	CE,-g2009,-pallowsigned=1	ivltests
 vlog95:br932a		CE,-g2009	ivltests
 vlog95:br932b		CE,-g2009	ivltests
 vlog95:br_gh4		CE,-g2009	ivltests
+vlog95:string_index	CE,-g2005-sv	ivltests
 vlog95:sv_string1	CE,-g2009	ivltests
 vlog95:sv_string2	CE,-g2009	ivltests
 vlog95:sv_string3	CE,-g2009	ivltests
@@ -3597,6 +3600,7 @@ wait3		normal	ivltests diff=log/wait3.log:gold/wait3.gold
 string1		normal	ivltests
 string2		normal	ivltests
 string3		normal	ivltests
+string_index	normal,-g2005-sv	ivltests
 ga_mod		normal	ivltests main
 ga_mod1		normal	ivltests main
 ga_mod2		normal	ivltests main
