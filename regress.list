@@ -672,6 +672,7 @@ v0.8:real_delay	NI
 v0.8:bool1	NI
 v0.8:ca_64delay	NI
 v0.8:ca_time	NI
+v0.8:cast_real	NI
 v0.8:cast_real_unsigned	NI
 v0.8:cast_real_signed	NI
 v0.8:compare_bool_reg	NI
@@ -1721,6 +1722,7 @@ v0.9:br962	NI
 v0.9:br963	NI
 v0.9:br_gh4	NI
 v0.9:br_gh4a	NI
+v0.9:cast_real	NI
 v0.9:clkgen_bit	NI
 v0.9:clkgen_logic	NI
 v0.9:clkgen_net	NI
@@ -2475,6 +2477,7 @@ vlog95:array_lval_select6	CE	ivltests  # Also net arrays
 vlog95:ca_64delay		CE	ivltests  # Also net arrays
 vlog95:ca_time			CE	ivltests
 vlog95:ca_var_delay		CE	ivltests
+vlog95:cast_real		CE,-pallowsigned=1	ivltests
 vlog95:cast_real_signed		CE,-pallowsigned=1	ivltests
 vlog95:cast_real_unsigned	CE	ivltests
 vlog95:clog2			CE	ivltests  # Also big int
@@ -4356,6 +4359,7 @@ pr1992729	normal	ivltests
 pr1993479	normal	ivltests diff=log/pr1993479.log:gold/pr1993479.gold
 pr2001162	normal	ivltests diff=log/pr2001162.log:gold/pr2001162.gold
 cast_int	normal,-gverilog-ams	ivltests
+cast_real	normal,-g2005-sv	ivltests
 cast_real_signed	normal	ivltests
 cast_real_unsigned	normal	ivltests
 pr2002443	CO,-E	ivltests
