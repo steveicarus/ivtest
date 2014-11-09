@@ -742,6 +742,9 @@ test_mos_strength_reduction: Passed.
                  casesynth4: Passed.
                  casesynth5: Passed.
                  casesynth6: Passed.
+                 casesynth7: Passed - CE.
+                 casesynth8: Passed - CE.
+                 casesynth9: Passed.
                   dffsynth5: Passed.
                   dffsynth6: Passed.
                      sqrt32: Passed.
@@ -2081,4 +2084,4 @@ test_mos_strength_reduction: Passed.
                       br963: Passed.
 ============================================================================
 Test results:
-  Total=2079, Passed=2071, Failed=5, Not Implemented=3, Expected Fail=0
+  Total=2082, Passed=2074, Failed=5, Not Implemented=3, Expected Fail=0

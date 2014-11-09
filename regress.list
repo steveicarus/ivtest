@@ -2361,6 +2361,9 @@ v0.9:casesynth3	normal	ivltests
 v0.9:casesynth4	normal	ivltests
 v0.9:casesynth5	normal	ivltests
 v0.9:casesynth6	normal	ivltests
+v0.9:casesynth7	CO	ivltests
+v0.9:casesynth8	CO	ivltests
+v0.9:casesynth9	normal	ivltests
 v0.9:lcatsynth	normal	ivltests
 v0.9:dffsynth	normal	ivltests
 v0.9:dffsynth2	normal	ivltests
@@ -3111,6 +3114,8 @@ vlog95:casesynth4	normal	ivltests
 vlog95:casesynth5	normal	ivltests
 # The synthesized caseZ compare is not supported.
 vlog95:casesynth6	normal	ivltests
+# The synthesized expression for out is not generated correctly.
+vlog95:casesynth9	normal	ivltests
 # The synthesized substitute is not supported.
 vlog95:if_part_no_else	normal	ivltests
 vlog95:if_part_no_else2	normal	ivltests
@@ -3862,6 +3867,9 @@ casesynth3	normal,-S  ivltests
 casesynth4	normal,-S  ivltests
 casesynth5	normal,-S  ivltests
 casesynth6	normal,-S  ivltests
+casesynth7	CE,-S  ivltests
+casesynth8	CE,-S  ivltests
+casesynth9	normal,-S  ivltests
 lcatsynth	normal,-S  ivltests
 dffsynth	normal,-S  ivltests
 dffsynth2	normal,-S  ivltests

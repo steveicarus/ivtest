@@ -527,6 +527,9 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                  casesynth4: Passed.
                  casesynth5: Passed.
                  casesynth6: Passed.
+                 casesynth7: Passed - CO.
+                 casesynth8: Passed - CO.
+                 casesynth9: Passed.
                   lcatsynth: Passed.
                    dffsynth: Passed.
                   dffsynth2: Passed.
@@ -2085,4 +2088,4 @@ test_mos_strength_reduction: Passed.
                      br961a: Passed - CE.
 ============================================================================
 Test results:
-  Total=2083, Passed=1626, Failed=0, Not Implemented=403, Expected Fail=54
+  Total=2086, Passed=1629, Failed=0, Not Implemented=403, Expected Fail=54
