@@ -59,8 +59,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.10 (strict).
                   pr3527694: Passed.
                   pr1833024: Passed - CE.
                  pr3366217a: Passed - CE.
-                 pr3366217b: Passed - CE.
-                 pr3366217g: Passed - CE.
                     ca_time: Passed.
               delayed_sfunc: Passed.
                   pr1701890: Passed.
@@ -741,9 +739,12 @@ test_mos_strength_reduction: Passed.
                  basicexpr4: Passed.
                      shiftl: Passed.
                 blocksynth1: Passed.
-                 casesynth4: ==> Failed - running iverilog.
-                 casesynth5: ==> Failed - running iverilog.
+                 casesynth4: Passed.
+                 casesynth5: Passed.
                  casesynth6: Passed.
+                 casesynth7: Passed - CE.
+                 casesynth8: Passed - CE.
+                 casesynth9: Passed.
                   dffsynth5: Passed.
                   dffsynth6: Passed.
                      sqrt32: Passed.
@@ -1612,6 +1613,11 @@ test_mos_strength_reduction: Passed.
                  enum_test1: Passed.
                  enum_test2: Passed.
                  enum_test3: Passed - CE.
+                 enum_test4: Passed.
+                 enum_test5: Passed - CE.
+                 enum_test6: Passed - CE.
+                 enum_test7: Passed - CE.
+                 enum_test8: Passed.
             enum_value_expr: Passed.
                 enum_values: Passed.
              first_last_num: Passed.
@@ -1727,10 +1733,12 @@ test_mos_strength_reduction: Passed.
                  clkgen_net: Passed.
                  clkgen_reg: Passed.
                   pr3366114: Passed.
+                 pr3366217b: Passed - CE.
                  pr3366217c: Passed - CE.
                  pr3366217d: Passed - CE.
                  pr3366217e: Passed.
                  pr3366217f: Passed.
+                 pr3366217g: Passed - CE.
                  pr3366217h: Passed.
                  pr3366217i: Passed.
                test_inc_dec: Passed.
@@ -2053,10 +2061,11 @@ test_mos_strength_reduction: Passed.
                     br_gh30: Passed.
                     br_gh33: Passed.
                       br955: Passed.
+                      br956: Passed.
              ff_dual_enable: Passed.
             case_wo_default: Passed.
             if_part_no_else: Passed.
-           if_part_no_else2: ==> Failed - running iverilog.
+           if_part_no_else2: Passed.
                      br_gh4: Passed.
                     br_gh4a: Passed.
                     br_gh37: Passed.
@@ -2071,6 +2080,8 @@ test_mos_strength_reduction: Passed.
                      br960d: Passed.
                       br961: Passed.
                      br961a: Passed - CE.
+                      br962: Passed.
+                      br963: Passed.
 ============================================================================
 Test results:
-  Total=2071, Passed=2060, Failed=8, Not Implemented=3, Expected Fail=0
+  Total=2082, Passed=2074, Failed=5, Not Implemented=3, Expected Fail=0

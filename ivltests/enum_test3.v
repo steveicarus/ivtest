@@ -5,5 +5,5 @@ module top;
   enum reg[3:0] {VAL2, XX2='b0xxxx} en2;
   enum reg[3:0] {VAL3, XX3='b0xxxxx} en3;
 
-  initial $display("PASSED");
+  initial $display("FAILED");
 endmodule

@@ -14,7 +14,10 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                      br932a: Not Implemented.
                      br932b: Not Implemented.
                       br936: Not Implemented.
+                      br956: Not Implemented.
                       br959: Not Implemented.
+                      br962: Not Implemented.
+                      br963: Not Implemented.
                      br_gh4: Not Implemented.
                     br_gh4a: Not Implemented.
                  clkgen_bit: Not Implemented.
@@ -28,6 +31,11 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                  enum_test1: Not Implemented.
                  enum_test2: Not Implemented.
                  enum_test3: Not Implemented.
+                 enum_test4: Not Implemented.
+                 enum_test5: Not Implemented.
+                 enum_test6: Not Implemented.
+                 enum_test7: Not Implemented.
+                 enum_test8: Not Implemented.
             enum_value_expr: Not Implemented.
                 enum_values: Not Implemented.
                 fatal_et_al: Not Implemented.
@@ -519,6 +527,9 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                  casesynth4: Passed.
                  casesynth5: Passed.
                  casesynth6: Passed.
+                 casesynth7: Passed - CO.
+                 casesynth8: Passed - CO.
+                 casesynth9: Passed.
                   lcatsynth: Passed.
                    dffsynth: Passed.
                   dffsynth2: Passed.
@@ -2077,4 +2088,4 @@ test_mos_strength_reduction: Passed.
                      br961a: Passed - CE.
 ============================================================================
 Test results:
-  Total=2075, Passed=1626, Failed=0, Not Implemented=395, Expected Fail=54
+  Total=2086, Passed=1629, Failed=0, Not Implemented=403, Expected Fail=54

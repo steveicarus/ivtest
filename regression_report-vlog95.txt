@@ -142,6 +142,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  sv_string5: Passed - CE.
                    sv_macro: Passed - CE.
    sv_array_assign_pattern2: Passed - CE.
+                      br962: Passed - CE.
+                      br963: Passed - CE.
                  sv_darray1: Passed - CE.
                  sv_darray2: Passed - CE.
                  sv_darray3: Passed - CE.
@@ -569,6 +571,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  casesynth4: Passed.
                  casesynth5: Passed.
                  casesynth6: Passed.
+                 casesynth9: Passed.
             if_part_no_else: Passed.
            if_part_no_else2: Passed.
               always3.1.10A: Passed - CE.
@@ -1198,6 +1201,8 @@ test_mos_strength_reduction: Passed.
                  basicexpr2: Passed.
                  basicexpr3: Passed.
                  basicexpr4: Passed.
+                 casesynth7: Passed - CE.
+                 casesynth8: Passed - CE.
                   dffsynth5: Passed.
                      sqrt32: Passed.
                   memsynth8: Passed.
@@ -1823,6 +1828,11 @@ test_mos_strength_reduction: Passed.
             enum_base_range: Passed.
                  enum_test2: Passed.
                  enum_test3: Passed - CE.
+                 enum_test4: Passed.
+                 enum_test5: Passed - CE.
+                 enum_test6: Passed - CE.
+                 enum_test7: Passed - CE.
+                 enum_test8: Passed.
            def_nettype_none: Passed - CE.
                       undef: Passed.
                    fileline: Passed.
@@ -2061,6 +2071,7 @@ test_mos_strength_reduction: Passed.
                     br_gh28: Passed.
                     br_gh30: Passed.
                     br_gh33: Passed.
+                      br956: Passed.
              ff_dual_enable: Passed.
             case_wo_default: Passed.
                     br_gh4a: Passed.
@@ -2073,4 +2084,4 @@ test_mos_strength_reduction: Passed.
                      br961a: Passed - CE.
 ============================================================================
 Test results:
-  Total=2071, Passed=2040, Failed=3, Not Implemented=3, Expected Fail=25
+  Total=2082, Passed=2051, Failed=3, Not Implemented=3, Expected Fail=25

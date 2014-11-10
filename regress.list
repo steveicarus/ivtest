@@ -269,6 +269,11 @@ vstd:enum_elem_ranges	NI
 vstd:enum_test1		NI
 vstd:enum_test2		NI
 vstd:enum_test3		NI
+vstd:enum_test4		NI
+vstd:enum_test5		NI
+vstd:enum_test6		NI
+vstd:enum_test7		NI
+vstd:enum_test8		NI
 vstd:enum_value_expr	NI
 
 #-------------------------------
@@ -1180,6 +1185,7 @@ v0.8:array_size	NI
 v0.8:bitp1	NI
 v0.8:bits	NI
 v0.8:bits2	NI
+v0.8:br956	NI
 v0.8:clkgen_bit	NI
 v0.8:clkgen_logic	NI
 v0.8:clkgen_net	NI
@@ -1191,6 +1197,11 @@ v0.8:enum_next	NI
 v0.8:enum_test1	NI
 v0.8:enum_test2	NI
 v0.8:enum_test3	NI
+v0.8:enum_test4	NI
+v0.8:enum_test5	NI
+v0.8:enum_test6	NI
+v0.8:enum_test7	NI
+v0.8:enum_test8	NI
 v0.8:enum_value_expr	NI
 v0.8:enum_values	NI
 v0.8:fatal_et_al	NI
@@ -1704,7 +1715,10 @@ v0.9:br921	NI
 v0.9:br932a	NI
 v0.9:br932b	NI
 v0.9:br936	NI
+v0.9:br956	NI
 v0.9:br959	NI
+v0.9:br962	NI
+v0.9:br963	NI
 v0.9:br_gh4	NI
 v0.9:br_gh4a	NI
 v0.9:clkgen_bit	NI
@@ -1718,6 +1732,11 @@ v0.9:enum_next	NI
 v0.9:enum_test1	NI
 v0.9:enum_test2	NI
 v0.9:enum_test3	NI
+v0.9:enum_test4	NI
+v0.9:enum_test5	NI
+v0.9:enum_test6	NI
+v0.9:enum_test7	NI
+v0.9:enum_test8	NI
 v0.9:enum_value_expr	NI
 v0.9:enum_values	NI
 v0.9:fatal_et_al	NI
@@ -2342,6 +2361,9 @@ v0.9:casesynth3	normal	ivltests
 v0.9:casesynth4	normal	ivltests
 v0.9:casesynth5	normal	ivltests
 v0.9:casesynth6	normal	ivltests
+v0.9:casesynth7	CO	ivltests
+v0.9:casesynth8	CO	ivltests
+v0.9:casesynth9	normal	ivltests
 v0.9:lcatsynth	normal	ivltests
 v0.9:dffsynth	normal	ivltests
 v0.9:dffsynth2	normal	ivltests
@@ -2584,6 +2606,8 @@ vlog95:sv_macro		CE,-g2009,-pallowsigned=1	ivltests
 
 # SystemVerilog dynamic arrays and new operator.
 vlog95:sv_array_assign_pattern2	CE,-g2009,-pallowsigned=1	ivltests
+vlog95:br962		CE,-g2009	ivltests
+vlog95:br963		CE,-g2009	ivltests
 vlog95:sv_darray1	CE,-g2009,-pallowsigned=1	ivltests
 vlog95:sv_darray2	CE,-g2009,-pallowsigned=1	ivltests
 vlog95:sv_darray3	CE,-g2009,-pallowsigned=1	ivltests
@@ -3090,6 +3114,8 @@ vlog95:casesynth4	normal	ivltests
 vlog95:casesynth5	normal	ivltests
 # The synthesized caseZ compare is not supported.
 vlog95:casesynth6	normal	ivltests
+# The synthesized expression for out is not generated correctly.
+vlog95:casesynth9	normal	ivltests
 # The synthesized substitute is not supported.
 vlog95:if_part_no_else	normal	ivltests
 vlog95:if_part_no_else2	normal	ivltests
@@ -3131,8 +3157,6 @@ std:pr3527694		normal			ivltests diff=log/pr3527694.log:gold/pr3527694_std.gold
 # Evaluated constants in warning/error messages are sized.
 std:pr1833024		CE			ivltests diff=log/pr1833024.log:gold/pr1833024_std.gold
 std:pr3366217a		CE,-g2005-sv		ivltests diff=log/pr3366217a.log:gold/pr3366217a_std.gold
-std:pr3366217b		CE,-g2005-sv		ivltests diff=log/pr3366217b.log:gold/pr3366217b_std.gold
-std:pr3366217g		CE,-g2005-sv		ivltests diff=log/pr3366217g.log:gold/pr3366217g_std.gold
 
 #==========
 # Compatibility with other simulators.
@@ -3843,6 +3867,9 @@ casesynth3	normal,-S  ivltests
 casesynth4	normal,-S  ivltests
 casesynth5	normal,-S  ivltests
 casesynth6	normal,-S  ivltests
+casesynth7	CE,-S  ivltests
+casesynth8	CE,-S  ivltests
+casesynth9	normal,-S  ivltests
 lcatsynth	normal,-S  ivltests
 dffsynth	normal,-S  ivltests
 dffsynth2	normal,-S  ivltests
@@ -4754,6 +4781,11 @@ enum_next	normal,-g2005-sv	ivltests
 enum_test1	normal,-g2005-sv	ivltests
 enum_test2	normal,-g2005-sv	ivltests
 enum_test3	CE,-g2005-sv	ivltests
+enum_test4	normal,-g2005-sv	ivltests
+enum_test5	CE,-g2005-sv	ivltests
+enum_test6	CE,-g2005-sv	ivltests
+enum_test7	CE,-g2005-sv	ivltests
+enum_test8	normal,-g2005-sv	ivltests
 enum_value_expr	normal,-g2005-sv	ivltests
 enum_values	normal,-g2005-sv	ivltests
 first_last_num	normal,-g2005-sv	ivltests
@@ -5207,6 +5239,7 @@ br_gh28		normal	ivltests
 br_gh30		normal	ivltests
 br_gh33		normal	ivltests	gold=br_gh33.gold
 br955		normal	ivltests
+br956		normal,-g2009	ivltests
 ff_dual_enable	normal,-S	ivltests
 case_wo_default	normal,-S	ivltests
 if_part_no_else	normal,-S	ivltests
@@ -5225,3 +5258,5 @@ br960c	normal,-gspecify	ivltests	gold=br960c.gold
 br960d	normal,-gspecify	ivltests	gold=br960d.gold
 br961	normal	ivltests
 br961a	CE	ivltests
+br962		normal,-g2009	ivltests
+br963		normal,-g2009	ivltests
