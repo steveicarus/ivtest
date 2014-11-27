@@ -459,6 +459,7 @@ test_mos_strength_reduction: Passed.
                     string1: Passed.
                     string2: Passed.
                     string3: Passed.
+               string_index: Passed.
                      ga_mod: Passed.
                     ga_mod1: Passed.
                     ga_mod2: Passed.
@@ -1184,8 +1185,11 @@ test_mos_strength_reduction: Passed.
                   pr1993479: Passed.
                   pr2001162: Passed.
                    cast_int: Passed.
+                  cast_real: Passed.
            cast_real_signed: Passed.
          cast_real_unsigned: Passed.
+            sv_cast_integer: Passed.
+             sv_cast_string: Passed.
                   pr2002443: Passed - CO.
                   pr2011429: Passed.
                   pr2013758: Passed.
@@ -1265,6 +1269,7 @@ test_mos_strength_reduction: Passed.
            check_constant_1: Passed - CE.
            check_constant_2: Passed - CE.
            check_constant_3: Passed - CE.
+     check_constant_3_v2001: Passed.
            check_constant_4: Passed - CE.
            check_constant_5: Passed - CE.
            check_constant_6: Passed - CE.
@@ -2084,4 +2089,4 @@ test_mos_strength_reduction: Passed.
                       br963: Passed.
 ============================================================================
 Test results:
-  Total=2082, Passed=2077, Failed=5, Not Implemented=0, Expected Fail=0
+  Total=2087, Passed=2082, Failed=5, Not Implemented=0, Expected Fail=0
