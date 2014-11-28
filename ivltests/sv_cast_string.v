@@ -43,6 +43,16 @@ module sv_cast_string();
     if(chars != "6543210")
     begin
         $display("FAILED 2 chars = %x", chars);
+        $finish();
+    end
+
+    str = "wrong string";
+    // Vector to string casting
+    str = string'(chars);
+    if(str != "6543210")
+    begin
+        $display("FAILED 3 str = %x", str);
+        $finish();
     end
 
     $display("PASSED");
