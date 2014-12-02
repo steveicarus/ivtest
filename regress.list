@@ -1829,10 +1829,9 @@ v0.9:simple_longint	NI
 v0.9:simple_shortint	NI
 v0.9:sint_test	NI
 v0.9:size_cast		NI
-v0.9:sv_cast_integer	NI
-v0.9:sv_cast_string	NI
 v0.9:slongint_test	NI
 v0.9:sshortint_test	NI
+v0.9:string_index	NI
 v0.9:struct_packed_array	NI
 v0.9:struct_packed_array2	NI
 v0.9:struct_packed_sysfunct	NI
@@ -1850,6 +1849,8 @@ v0.9:struct9		NI
 v0.9:sv-2val-nets	NI
 v0.9:sv-constants	NI
 v0.9:sv_array_assign_pattern2	NI
+v0.9:sv_cast_integer	NI
+v0.9:sv_cast_string	NI
 v0.9:sv_class1	NI
 v0.9:sv_class2	NI
 v0.9:sv_class3	NI
