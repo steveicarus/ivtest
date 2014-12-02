@@ -25,8 +25,11 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  ca_64delay: Passed - CE.
                     ca_time: Passed - CE.
                ca_var_delay: Passed - CE.
+                  cast_real: Passed - CE.
            cast_real_signed: Passed - CE.
          cast_real_unsigned: Passed - CE.
+            sv_cast_integer: Passed.
+             sv_cast_string: Passed - CE.
                       clog2: Passed - CE.
               delayed_sfunc: Passed - CE.
              implicit_cast4: Passed - CE.
@@ -135,6 +138,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                      br932a: Passed - CE.
                      br932b: Passed - CE.
                      br_gh4: Passed - CE.
+               string_index: Passed - CE.
                  sv_string1: Passed - CE.
                  sv_string2: Passed - CE.
                  sv_string3: Passed - CE.
@@ -1611,6 +1615,7 @@ test_mos_strength_reduction: Passed.
            check_constant_1: Passed - CE.
            check_constant_2: Passed - CE.
            check_constant_3: Passed - CE.
+     check_constant_3_v2001: Passed.
            check_constant_4: Passed - CE.
            check_constant_5: Passed - CE.
            check_constant_6: Passed - CE.
@@ -2084,4 +2089,4 @@ test_mos_strength_reduction: Passed.
                      br961a: Passed - CE.
 ============================================================================
 Test results:
-  Total=2082, Passed=2051, Failed=3, Not Implemented=3, Expected Fail=25
+  Total=2087, Passed=2056, Failed=3, Not Implemented=3, Expected Fail=25

@@ -20,6 +20,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                       br963: Not Implemented.
                      br_gh4: Not Implemented.
                     br_gh4a: Not Implemented.
+                  cast_real: Not Implemented.
                  clkgen_bit: Not Implemented.
                clkgen_logic: Not Implemented.
                  clkgen_net: Not Implemented.
@@ -125,6 +126,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                   size_cast: Not Implemented.
               slongint_test: Not Implemented.
              sshortint_test: Not Implemented.
+               string_index: Not Implemented.
         struct_packed_array: Not Implemented.
        struct_packed_array2: Not Implemented.
      struct_packed_sysfunct: Not Implemented.
@@ -142,6 +144,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                sv-2val-nets: Not Implemented.
                sv-constants: Not Implemented.
    sv_array_assign_pattern2: Not Implemented.
+            sv_cast_integer: Not Implemented.
+             sv_cast_string: Not Implemented.
                   sv_class1: Not Implemented.
                   sv_class2: Not Implemented.
                   sv_class3: Not Implemented.
@@ -206,6 +210,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
            sv_port_default9: Not Implemented.
           sv_port_default10: Not Implemented.
           sv_port_default11: Not Implemented.
+            sv_string_index: Not Implemented.
                  sv_string1: Not Implemented.
                  sv_string2: Not Implemented.
                  sv_string3: Not Implemented.
@@ -1726,6 +1731,7 @@ test_mos_strength_reduction: Passed.
            check_constant_1: Passed - CE.
            check_constant_2: Passed - CE.
            check_constant_3: Passed - CE.
+     check_constant_3_v2001: Passed.
            check_constant_4: Passed - CE.
            check_constant_5: Passed - CE.
            check_constant_6: Passed - CE.
@@ -2088,4 +2094,4 @@ test_mos_strength_reduction: Passed.
                      br961a: Passed - CE.
 ============================================================================
 Test results:
-  Total=2086, Passed=1629, Failed=0, Not Implemented=403, Expected Fail=54
+  Total=2092, Passed=1630, Failed=0, Not Implemented=408, Expected Fail=54
