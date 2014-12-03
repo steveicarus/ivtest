@@ -1269,7 +1269,6 @@ test_mos_strength_reduction: Passed.
            check_constant_1: Passed - CE.
            check_constant_2: Passed - CE.
            check_constant_3: Passed - CE.
-     check_constant_3_v2001: Passed.
            check_constant_4: Passed - CE.
            check_constant_5: Passed - CE.
            check_constant_6: Passed - CE.

@@ -4454,7 +4454,6 @@ pr2152011	normal	ivltests diff=log/pr2152011.log:gold/pr2152011.gold
 check_constant_1	CE ivltests
 check_constant_2	CE ivltests
 check_constant_3	CE,-g1995 ivltests
-check_constant_3_v2001	normal,-g2001  ivltests
 check_constant_4	CE ivltests
 check_constant_5	CE ivltests
 check_constant_6	CE ivltests
