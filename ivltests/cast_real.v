@@ -20,21 +20,26 @@
 // Test casting integers to real
 
 module cast_real();
+    int i;
+    logic [3:0] l;
+    logic signed [3:0] sl;
+    real a, b, c, d, e;
+
 initial begin
     // Initalization using an integer variable
-    int i = 5;
-    real a = real'(i);
+    i = 5;
+    a = real'(i);
 
     // ..and logic
-    logic [3:0] l = 4'b1010;
-    real b = real'(l);
+    l = 4'b1010;
+    b = real'(l);
 
-    logic signed [3:0] sl = 4'b1010;
-    real c = real'(sl);
+    sl = 4'b1010;
+    c = real'(sl);
 
     // Initialization using an integer constant
-    real d = real'(11);
-    real e = real'(-7);
+    d = real'(11);
+    e = real'(-7);
 
     if (a != 5.0)
     begin

@@ -2088,4 +2088,4 @@ test_mos_strength_reduction: Passed.
                      br961a: Passed - CE.
 ============================================================================
 Test results:
-  Total=2087, Passed=2056, Failed=3, Not Implemented=3, Expected Fail=25
+  Total=2086, Passed=2055, Failed=3, Not Implemented=3, Expected Fail=25
