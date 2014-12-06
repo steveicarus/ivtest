@@ -1731,6 +1731,7 @@ v0.9:clkgen_logic	NI
 v0.9:clkgen_net	NI
 v0.9:clkgen_reg	NI
 v0.9:disable_fork_cmd	NI
+v0.9:display_bug	NI
 v0.9:enum_base_range	NI
 v0.9:enum_elem_ranges	NI
 v0.9:enum_next	NI
