@@ -26,6 +26,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                  clkgen_net: Not Implemented.
                  clkgen_reg: Not Implemented.
            disable_fork_cmd: Not Implemented.
+                display_bug: Not Implemented.
             enum_base_range: Not Implemented.
            enum_elem_ranges: Not Implemented.
                   enum_next: Not Implemented.
@@ -2093,4 +2094,4 @@ test_mos_strength_reduction: Passed.
                      br961a: Passed - CE.
 ============================================================================
 Test results:
-  Total=2092, Passed=1630, Failed=0, Not Implemented=408, Expected Fail=54
+  Total=2092, Passed=1629, Failed=0, Not Implemented=409, Expected Fail=54

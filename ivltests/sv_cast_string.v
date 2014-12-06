@@ -31,7 +31,7 @@ module sv_cast_string();
 
     // This is Icarus-specific system function that in does the casting
     $ivl_string_method$to_vec(str, chars);
-    if(chars != 'h30313233343536)
+    if(chars != 56'h30313233343536)
     begin
         $display("FAILED 1 chars = %x", chars);
         $finish();
