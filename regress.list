@@ -4926,12 +4926,12 @@ clkgen_net	normal,-g2009	ivltests
 clkgen_reg	normal,-g2009	ivltests
 pr3366114	normal,-g2009	ivltests
 pr3366217a	CE,-g2005-sv	ivltests diff=log/pr3366217a.log:gold/pr3366217a_std.gold
-pr3366217b	CE,-g2005-sv	ivltests diff=log/pr3366217b.log:gold/pr3366217b_std.gold
+pr3366217b	CE,-g2005-sv	ivltests diff=log/pr3366217b.log:gold/pr3366217b.gold
 pr3366217c	CE,-g2005-sv	ivltests diff=log/pr3366217c.log:gold/pr3366217c.gold
 pr3366217d	CE,-g2005-sv	ivltests diff=log/pr3366217d.log:gold/pr3366217d.gold
 pr3366217e	normal,-g2005-sv	ivltests
 pr3366217f	normal,-g2005-sv	ivltests diff=log/pr3366217f.log:gold/pr3366217f.gold
-pr3366217g	CE,-g2005-sv	ivltests diff=log/pr3366217g.log:gold/pr3366217g_std.gold
+pr3366217g	CE,-g2005-sv	ivltests diff=log/pr3366217g.log:gold/pr3366217g.gold
 pr3366217h	normal,-g2005-sv	ivltests
 pr3366217i	normal,-g2005-sv	ivltests
 test_inc_dec	normal,-g2009	ivltests

@@ -7,7 +7,7 @@ module bug();
 localparam p = 1 << ~40'b0;
 
 initial begin
-  $display("%b", p);
+  $display("%0d", p);
   if (p === 5'b00000)
     $display("PASSED");
   else

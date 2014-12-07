@@ -1,4 +1,3 @@
-./ivltests/br_gh13a.v:7: warning: excessive unsized expression width detected.
-./ivltests/br_gh13a.v:7:        : The expression width is capped at 65536 bits.
+./ivltests/br_gh13a.v:7: warning: Unsized expression (('sd1)<<(~(40'd0))) expanded beyond and was clipped to 65568 bits. Try using sized operands.
 0
 PASSED
