@@ -1,24 +1,16 @@
-./ivltests/sel_rval_bit_ob.v:44: warning: Constant bit select [32] is after pvar0[31:0].
-./ivltests/sel_rval_bit_ob.v:44:        : Replacing select with a constant 1'bx.
-./ivltests/sel_rval_bit_ob.v:52: warning: Constant bit select [32] is after pvar0[31:0].
-./ivltests/sel_rval_bit_ob.v:52:        : Replacing select with a constant 1'bx.
-./ivltests/sel_rval_bit_ob.v:57: warning: Constant bit select [-1] is before pvar0[31:0].
+./ivltests/sel_rval_bit_ob.v:57: warning: Constant bit select [-1] is before pvar0[<inf>:0].
 ./ivltests/sel_rval_bit_ob.v:57:        : Replacing select with a constant 1'bx.
 ./ivltests/sel_rval_bit_ob.v:62: warning: Constant undefined bit select [1'bx] for parameter 'pvar0'.
 ./ivltests/sel_rval_bit_ob.v:62:        : Replacing select with a constant 1'bx.
 ./ivltests/sel_rval_bit_ob.v:67: warning: Constant undefined bit select [1'bz] for parameter 'pvar0'.
 ./ivltests/sel_rval_bit_ob.v:67:        : Replacing select with a constant 1'bx.
-./ivltests/sel_rval_bit_ob.v:79: warning: Constant bit select [32] is after pvar1[31:0].
-./ivltests/sel_rval_bit_ob.v:79:        : Replacing select with a constant 1'bx.
-./ivltests/sel_rval_bit_ob.v:84: warning: Constant bit select [-1] is before pvar1[31:0].
+./ivltests/sel_rval_bit_ob.v:84: warning: Constant bit select [-1] is before pvar1[<inf>:0].
 ./ivltests/sel_rval_bit_ob.v:84:        : Replacing select with a constant 1'bx.
 ./ivltests/sel_rval_bit_ob.v:89: warning: Constant undefined bit select [1'bx] for parameter 'pvar1'.
 ./ivltests/sel_rval_bit_ob.v:89:        : Replacing select with a constant 1'bx.
 ./ivltests/sel_rval_bit_ob.v:94: warning: Constant undefined bit select [1'bz] for parameter 'pvar1'.
 ./ivltests/sel_rval_bit_ob.v:94:        : Replacing select with a constant 1'bx.
-./ivltests/sel_rval_bit_ob.v:106: warning: Constant bit select [32] is after pvar2[31:0].
-./ivltests/sel_rval_bit_ob.v:106:        : Replacing select with a constant 1'bx.
-./ivltests/sel_rval_bit_ob.v:111: warning: Constant bit select [-1] is before pvar2[31:0].
+./ivltests/sel_rval_bit_ob.v:111: warning: Constant bit select [-1] is before pvar2[<inf>:0].
 ./ivltests/sel_rval_bit_ob.v:111:        : Replacing select with a constant 1'bx.
 ./ivltests/sel_rval_bit_ob.v:116: warning: Constant undefined bit select [1'bx] for parameter 'pvar2'.
 ./ivltests/sel_rval_bit_ob.v:116:        : Replacing select with a constant 1'bx.

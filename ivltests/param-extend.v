@@ -22,7 +22,11 @@ initial begin
   if (Result !== 36'h0ffffffff) Failed = 1;
   Result = 'd0 + UnsizedValue;
   $display("%h", Result);
+`ifdef OLD_UNSIZED
+  if (Result !== 36'hfffffffff) Failed = 1;
+`else
   if (Result !== 36'h0ffffffff) Failed = 1;
+`endif
 
   if (Failed)
     $display("FAILED");

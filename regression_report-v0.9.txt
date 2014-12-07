@@ -387,6 +387,22 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                   pr2877564: Passed - CE.
                   pr1723367: Passed.
         non-polymorphic-abs: Passed - expected fail.
+              gate_connect2: Passed - CE.
+               param-extend: Passed.
+                  pr1830834: Passed.
+                 pr1639064b: Passed.
+            sel_rval_bit_ob: Passed.
+           sel_rval_part_ob: Passed.
+                     swrite: Passed.
+            localparam_type: Passed.
+             parameter_type: Passed.
+                      pr812: Passed.
+                      pr905: Passed.
+                      pr985: Passed.
+                  pr1645277: Passed.
+                  pr1792152: Passed.
+                  pr2039694: Passed.
+                  pr1833024: Passed - CE.
                      br960a: Passed.
                      br960b: Passed.
                      br960c: Passed.
@@ -1268,7 +1284,6 @@ test_mos_strength_reduction: Passed.
                       pr809: Passed.
                      pr809b: Passed.
                       pr810: Passed.
-                      pr812: Passed.
                       pr820: Passed.
                       pr823: Passed.
                       pr841: Passed.
@@ -1280,7 +1295,6 @@ test_mos_strength_reduction: Passed.
                       pr872: Passed.
                       pr902: Passed.
                       pr903: Passed.
-                      pr905: Passed.
                       pr910: Passed.
                       pr913: Passed.
                       pr923: Passed.
@@ -1293,7 +1307,6 @@ test_mos_strength_reduction: Passed.
                       pr973: Passed.
                       pr978: Passed.
                       pr979: Passed.
-                      pr985: Passed.
                       pr987: Passed.
                       pr990: Passed.
                       pr991: Passed.
@@ -1389,10 +1402,8 @@ test_mos_strength_reduction: Passed.
                   pr1638985: Passed.
                   pr1639060: Passed.
                   pr1639064: Passed.
-                 pr1639064b: Passed.
                   pr1639968: Passed.
                   pr1639971: Passed.
-                  pr1645277: Passed.
                   pr1650842: Passed.
                   pr1657307: Passed.
                   pr1661640: Passed.
@@ -1462,7 +1473,6 @@ test_mos_strength_reduction: Passed.
                   pr1763333: Passed - CE.
                   pr1765789: Passed.
                   pr1770199: Passed.
-                     swrite: Passed.
                   pr1771903: Passed.
                   pr1776485: Passed.
                   pr1777103: Passed.
@@ -1474,7 +1484,6 @@ test_mos_strength_reduction: Passed.
                  pr1787423c: Passed.
                        cmos: Passed.
                   pr1792108: Passed.
-                  pr1792152: Passed.
                   pr1792734: Passed.
                   pr1793157: Passed.
                   pr1793749: Passed.
@@ -1498,7 +1507,6 @@ test_mos_strength_reduction: Passed.
                   pr1822658: Passed.
                   pr1823732: Passed.
                   pr1828642: Passed.
-                  pr1830834: Passed.
                   pr1831724: Passed.
                  pr1832097a: Passed.
                  pr1832097b: Passed.
@@ -1545,7 +1553,6 @@ test_mos_strength_reduction: Passed.
              real_mod_in_ca: Passed.
                      rl_pow: Passed.
                real_op_fail: Passed - CE.
-                  pr1833024: Passed - CE.
                   pr1885847: Passed.
                   pr1887168: Passed.
                pow_unsigned: Passed.
@@ -1642,8 +1649,6 @@ test_mos_strength_reduction: Passed.
                  pr1988302b: Passed - CE.
                   pr1988310: Passed.
                dump_memword: Passed.
-             parameter_type: Passed.
-            localparam_type: Passed.
                   pr1990029: Passed.
                   pr1990164: Passed.
                   pr1990269: Passed.
@@ -1669,7 +1674,6 @@ test_mos_strength_reduction: Passed.
                   pr2036953: Passed.
                   pr2038048: Passed.
                   pr2039632: Passed - CE.
-                  pr2039694: Passed.
                   pr2043324: Passed.
                   pr2043585: Passed.
                   pr2051694: Passed - CE.
@@ -1956,8 +1960,6 @@ test_mos_strength_reduction: Passed.
                  pr2913438b: Passed.
                   pr2918095: Passed.
              select_padding: Passed.
-            sel_rval_bit_ob: Passed.
-           sel_rval_part_ob: Passed.
                   pr2922063: Passed.
                  pr2922063a: Passed.
                  pr2922063b: Passed.
@@ -2028,7 +2030,6 @@ test_mos_strength_reduction: Passed.
                  pr3296466d: Passed.
                   pr3306516: Passed.
               gate_connect1: Passed.
-              gate_connect2: Passed - CE.
                   pr3309391: Passed.
                   pr3409749: Passed.
                par_mismatch: Passed - CE.
@@ -2075,7 +2076,6 @@ test_mos_strength_reduction: Passed.
                       br935: Passed.
                       br937: Passed.
                   itor_rtoi: Passed.
-               param-extend: Passed.
      always_star_array_lval: Passed.
                      br_gh6: Passed.
                      br_gh7: Passed.

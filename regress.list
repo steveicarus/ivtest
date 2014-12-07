@@ -2144,6 +2144,28 @@ v0.9:pr1723367	normal,-gno-io-range-error	ivltests diff=log/pr1723367.log:gold/p
 # V0.9 allows $abs to be polymorphic
 v0.9:non-polymorphic-abs	EF	ivltests
 
+# Different results for unsized numbers.
+v0.9:gate_connect2	CE			ivltests diff=log/gate_connect2.log:gold/gate_connect2-v0.9.gold
+v0.9:param-extend	normal,-DOLD_UNSIZED	ivltests
+v0.9:pr1830834	normal	ivltests diff=log/pr1830834.log:gold/pr1830834-v0.9.gold
+v0.9:pr1639064b		normal			ivltests diff=log/pr1639064b.log:gold/pr1639064b-v0.9.gold
+v0.9:sel_rval_bit_ob	normal,-Wselect-range	ivltests diff=log/sel_rval_bit_ob.log:gold/sel_rval_bit_ob-v0.9.gold
+v0.9:sel_rval_part_ob	normal,-Wselect-range	ivltests diff=log/sel_rval_part_ob.log:gold/sel_rval_part_ob-v0.9.gold
+v0.9:swrite		normal,-DOLD_UNSIZED	ivltests diff=log/swrite.log:gold/swrite.gold
+
+# Extra white space or leading zeroes when displaying unsized numbers.
+v0.9:localparam_type	normal			ivltests diff=log/localparam_type.log:gold/parameter_type-v0.9.gold
+v0.9:parameter_type	normal			ivltests diff=log/parameter_type.log:gold/parameter_type-v0.9.gold
+v0.9:pr812		normal			ivltests diff=log/pr812.log:gold/pr812-v0.9.gold
+v0.9:pr905		normal			ivltests diff=log/pr905.log:gold/pr905-v0.9.gold
+v0.9:pr985		normal			ivltests diff=log/pr985.log:gold/pr985-v0.9.gold
+v0.9:pr1645277		normal			ivltests diff=log/pr1645277.log:gold/pr1645277-v0.9.gold
+v0.9:pr1792152		normal			ivltests diff=log/pr1792152.log:gold/pr1792152-v0.9.gold
+v0.9:pr2039694		normal			ivltests diff=log/pr2039694.log:gold/pr2039694-v0.9.gold
+
+# Evaluated constants in warning/error messages are unsized.
+v0.9:pr1833024		CE			ivltests diff=log/pr1833024.log:gold/pr1833024-v0.9.gold
+
 #==========
 # V0.9 has different T0 values for nets (z vs x). No transitions to x at T0.
 #==========
@@ -2737,9 +2759,6 @@ vlog95:pr3194155	NI	ivltests  # Asserts
 # This is caused because the two port are cross coupled. This creates a
 # recursive call that never ends and blows over the stack limit.
 vlog95:pr3452808	NI	ivltests  # Seg. faults
-# The following demonstrates a compiler bug where `sh uses the integer width
-# While `sd or a plain integer uses the minimum width.
-vlog95:pr3522653	EF	ivltests gold=pr3522653.gold
 # Translating selects of a non-zero based vector/array cast the base select
 # expression to $signed(). The normalization is already removed, but the code
 # cannot currently determine if the $signed() is from the normalization or
@@ -3147,29 +3166,16 @@ std:pr1388974		NI
 std:br_gh13a		NI
 
 # Different results when unsized numbers are handled strictly.
-std:gate_connect2	CE			ivltests diff=log/gate_connect2.log:gold/gate_connect2_std.gold
 std:indef_width_concat	CE			ivltests diff=log/indef_width_concat.log:gold/indef_width_concat_std.gold
-std:pr1639064b		normal			ivltests diff=log/pr1639064b.log:gold/pr1639064b_std.gold
-std:sel_rval_bit_ob	normal,-Wselect-range	ivltests diff=log/sel_rval_bit_ob.log:gold/sel_rval_bit_ob_std.gold
-std:sel_rval_part_ob	normal,-Wselect-range	ivltests diff=log/sel_rval_part_ob.log:gold/sel_rval_part_ob_std.gold
 
 # Different results when parameter expression width is calculated strictly.
 std:param-width		normal			ivltests diff=log/param-width.log:gold/param-width_std.gold
 
 # Extra white space or leading zeroes when displaying unsized numbers.
-std:localparam_type	normal			ivltests diff=log/localparam_type.log:gold/parameter_type_std.gold
-std:parameter_type	normal			ivltests diff=log/parameter_type.log:gold/parameter_type_std.gold
-std:pr812		normal			ivltests diff=log/pr812.log:gold/pr812_std.gold
-std:pr905		normal			ivltests diff=log/pr905.log:gold/pr905_std.gold
-std:pr985		normal			ivltests diff=log/pr985.log:gold/pr985_std.gold
-std:pr1645277		normal			ivltests diff=log/pr1645277.log:gold/pr1645277_std.gold
 std:pr1703120		normal			ivltests diff=log/pr1703120.log:gold/pr1703120_std.gold
-std:pr1792152		normal			ivltests diff=log/pr1792152.log:gold/pr1792152_std.gold
-std:pr2039694		normal			ivltests diff=log/pr2039694.log:gold/pr2039694_std.gold
 std:pr3527694		normal			ivltests diff=log/pr3527694.log:gold/pr3527694_std.gold
 
 # Evaluated constants in warning/error messages are sized.
-std:pr1833024		CE			ivltests diff=log/pr1833024.log:gold/pr1833024_std.gold
 std:pr3366217a		CE,-g2005-sv		ivltests diff=log/pr3366217a.log:gold/pr3366217a_std.gold
 
 #==========
@@ -3179,6 +3185,8 @@ std:pr3366217a		CE,-g2005-sv		ivltests diff=log/pr3366217a.log:gold/pr3366217a_s
 # Display differences caused by running vvp with -compatible option.
 std:ca_time		normal			ivltests diff=log/ca_time.log:gold/ca_time_std.gold
 std:delayed_sfunc	normal,-gspecify	ivltests diff=log/delayed_sfunc.log:gold/delayed_sfunc_std.gold
+std:localparam_type	normal			ivltests diff=log/localparam_type.log:gold/parameter_type_std.gold
+std:parameter_type	normal			ivltests diff=log/parameter_type.log:gold/parameter_type_std.gold
 std:pr1701890		normal			ivltests diff=log/pr1701890.log:gold/pr1701890_std.gold
 std:pr1864110a		normal			ivltests diff=log/pr1864110a.log:gold/pr1864110a_std.gold
 std:pr1864110b		normal			ivltests diff=log/pr1864110b.log:gold/pr1864110b_std.gold
@@ -3958,7 +3966,7 @@ pr772		normal	ivltests
 pr809		normal	ivltests
 pr809b		normal	ivltests
 pr810		normal	ivltests
-pr812		normal	ivltests diff=log/pr812.log:gold/pr812_std.gold
+pr812		normal	ivltests diff=log/pr812.log:gold/pr812.gold
 pr820		normal	ivltests diff=log/pr820.log:gold/pr820.gold
 pr823		normal	ivltests
 pr841		normal	ivltests
@@ -3970,7 +3978,7 @@ pr860		normal	ivltests
 pr872		normal	ivltests
 pr902		normal	ivltests diff=log/pr902.log:gold/pr902.gold
 pr903		normal	ivltests
-pr905		normal	ivltests diff=log/pr905.log:gold/pr905_std.gold
+pr905		normal	ivltests diff=log/pr905.log:gold/pr905.gold
 pr910		normal	ivltests diff=log/pr910.log:gold/pr910.gold
 pr913		normal	ivltests
 pr923		normal	ivltests diff=log/pr923.log:gold/pr923.gold
@@ -3983,7 +3991,7 @@ race		normal	ivltests
 pr973		normal	ivltests
 pr978		normal	ivltests
 pr979		normal	ivltests diff=log/pr979.log:gold/pr979.gold
-pr985		normal	ivltests diff=log/pr985.log:gold/pr985_std.gold
+pr985		normal	ivltests diff=log/pr985.log:gold/pr985.gold
 pr987		normal	ivltests diff=log/pr987.log:gold/pr987.gold
 pr990		normal	ivltests
 pr991		normal	ivltests diff=log/pr991.log:gold/pr991.gold
@@ -4081,10 +4089,10 @@ pr1637208	normal	ivltests
 pr1638985	normal	ivltests diff=log/pr1638985.log:gold/pr1638985.gold
 pr1639060	normal	ivltests diff=log/pr1639060.log:gold/pr1639060.gold
 pr1639064	normal	ivltests diff=log/pr1639064.log:gold/pr1639064.gold
-pr1639064b	normal	ivltests diff=log/pr1639064b.log:gold/pr1639064b_std.gold
+pr1639064b	normal	ivltests diff=log/pr1639064b.log:gold/pr1639064b.gold
 pr1639968	normal	ivltests diff=log/pr1639968.log:gold/pr1639968.gold
 pr1639971	normal	ivltests diff=log/pr1639971.log:gold/pr1639971.gold
-pr1645277	normal	ivltests diff=log/pr1645277.log:gold/pr1645277_std.gold
+pr1645277	normal	ivltests diff=log/pr1645277.log:gold/pr1645277.gold
 pr1645518	normal	ivltests diff=log/pr1645518.log:gold/pr1645518.gold
 pr1648365	normal	ivltests diff=log/pr1648365.log:gold/pr1648365.gold
 pr1650842	normal	ivltests
@@ -4172,7 +4180,7 @@ pr1787423b	normal	ivltests
 pr1787423c	normal	ivltests
 cmos		normal	ivltests diff=log/cmos.log:gold/cmos.gold
 pr1792108	normal	ivltests diff=log/pr1792108.log:gold/pr1792108.gold
-pr1792152	normal	ivltests diff=log/pr1792152.log:gold/pr1792152_std.gold
+pr1792152	normal	ivltests diff=log/pr1792152.log:gold/pr1792152.gold
 pr1792734	normal	ivltests diff=log/pr1792734.log:gold/pr1792734.gold
 pr1793157	normal	ivltests diff=log/pr1793157.log:gold/pr1793157.gold
 pr1793749	normal	ivltests diff=log/pr1793749.log:gold/pr1793749.gold
@@ -4256,7 +4264,7 @@ real_pwr_in_ca	normal	ivltests
 real_mod_in_ca	normal	ivltests
 rl_pow	normal	ivltests
 real_op_fail	CE	ivltests
-pr1833024	CE	ivltests diff=log/pr1833024.log:gold/pr1833024_std.gold
+pr1833024	CE	ivltests diff=log/pr1833024.log:gold/pr1833024.gold
 pr1883052	normal	ivltests
 pr1883052b	normal	ivltests
 pr1885847	normal	ivltests diff=log/pr1885847.log:gold/pr1885847.gold
@@ -4391,7 +4399,7 @@ pr2030767	normal	ivltests
 pr2036953	normal	ivltests
 pr2038048	normal	ivltests
 pr2039632	CE	ivltests
-pr2039694	normal	ivltests diff=log/pr2039694.log:gold/pr2039694_std.gold
+pr2039694	normal	ivltests diff=log/pr2039694.log:gold/pr2039694.gold
 pr2043324	normal	ivltests
 pr2043585	normal,-Wsensitivity-entire-array ivltests diff=log/pr2043585.log:gold/pr2043585.gold
 pr2051694	CE	ivltests
@@ -4700,8 +4708,8 @@ pr2913438b	normal	ivltests
 pr2913927	normal	ivltests
 pr2918095	normal	ivltests
 select_padding	normal	ivltests
-sel_rval_bit_ob	normal,-Wselect-range  ivltests diff=log/sel_rval_bit_ob.log:gold/sel_rval_bit_ob_std.gold
-sel_rval_part_ob	normal,-Wselect-range  ivltests diff=log/sel_rval_part_ob.log:gold/sel_rval_part_ob_std.gold
+sel_rval_bit_ob	normal,-Wselect-range  ivltests diff=log/sel_rval_bit_ob.log:gold/sel_rval_bit_ob.gold
+sel_rval_part_ob	normal,-Wselect-range  ivltests diff=log/sel_rval_part_ob.log:gold/sel_rval_part_ob.gold
 pr2922063	normal	ivltests
 pr2922063a	normal	ivltests
 pr2922063b	normal	ivltests
@@ -4903,7 +4911,7 @@ pr3296466d	normal	ivltests
 pr3306516	normal,-gspecify	ivltests
 vhdl_sa1_test1	normal,-g2005-sv,ivltests/vhdl_sa1_test1.vhd	ivltests
 gate_connect1	normal	ivltests
-gate_connect2	CE	ivltests diff=log/gate_connect2.log:gold/gate_connect2_std.gold
+gate_connect2	CE	ivltests diff=log/gate_connect2.log:gold/gate_connect2.gold
 pr3309391	normal	ivltests
 ivlh_event	normal,-mvhdl_sys	ivltests	diff=log/ivlh_event.log:gold/ivlh_event.gold
 vhdl_sa1_test2	normal,-g2005-sv,ivltests/vhdl_sa1_test2.vhd	ivltests

@@ -243,7 +243,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
         generate_multi_loop: Not Implemented.
                   pr3194155: Not Implemented.
                   pr3452808: Not Implemented.
-                  pr3522653: Passed - expected fail.
                     bitsel5: Passed - CE.
                       pr751: Passed - CE.
                   pr2159630: Passed - expected fail.
@@ -1958,6 +1957,7 @@ test_mos_strength_reduction: Passed.
            task_init_assign: Passed.
                   pr3515542: Passed - CE.
      struct_packed_sysfunct: Passed.
+                  pr3522653: Passed.
                      attrib: Passed.
                  specparam1: Passed.
                  specparam2: Passed.

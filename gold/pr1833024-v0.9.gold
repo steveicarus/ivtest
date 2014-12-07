@@ -10,13 +10,13 @@
 ./ivltests/pr1833024.v:11: error: Unable to elaborate r-value: svar['sd0+:'sd1]
 ./ivltests/pr1833024.v:12: error: can not select part of scalar: svar
 ./ivltests/pr1833024.v:12: error: Unable to elaborate r-value: svar['sd0-:'sd1]
-./ivltests/pr1833024.v:14: error: can not select part of scalar array word: sarr[32'sd0]
+./ivltests/pr1833024.v:14: error: can not select part of scalar array word: sarr['sd0]
 ./ivltests/pr1833024.v:14: error: Unable to elaborate r-value: sarr['sd0]['sd0]
-./ivltests/pr1833024.v:15: error: can not select part of scalar array word: sarr[32'sd0]
+./ivltests/pr1833024.v:15: error: can not select part of scalar array word: sarr['sd0]
 ./ivltests/pr1833024.v:15: error: Unable to elaborate r-value: sarr['sd0]['sd0:'sd0]
-./ivltests/pr1833024.v:16: error: can not select part of scalar array word: sarr[32'sd0]
+./ivltests/pr1833024.v:16: error: can not select part of scalar array word: sarr['sd0]
 ./ivltests/pr1833024.v:16: error: Unable to elaborate r-value: sarr['sd0]['sd0+:'sd1]
-./ivltests/pr1833024.v:17: error: can not select part of scalar array word: sarr[32'sd0]
+./ivltests/pr1833024.v:17: error: can not select part of scalar array word: sarr['sd0]
 ./ivltests/pr1833024.v:17: error: Unable to elaborate r-value: sarr['sd0]['sd0-:'sd1]
 ./ivltests/pr1833024.v:19: error: can not select part of scalar: wsbslv
 ./ivltests/pr1833024.v:20: error: can not select part of scalar: wspslv
@@ -66,16 +66,16 @@
 ./ivltests/pr1833024.v:51: error: can not select part of scalar: svar
 ./ivltests/pr1833024.v:52: error: can not select part of scalar: svar
 ./ivltests/pr1833024.v:53: error: can not select part of scalar: svar
-./ivltests/pr1833024.v:55: error: can not select part of scalar array word: sarr[32'sd0]
-./ivltests/pr1833024.v:56: error: can not select part of scalar array word: sarr[32'sd0]
-./ivltests/pr1833024.v:57: error: can not select part of scalar array word: sarr[32'sd0]
-./ivltests/pr1833024.v:58: error: can not select part of scalar array word: sarr[32'sd0]
+./ivltests/pr1833024.v:55: error: can not select part of scalar array word: sarr['sd0]
+./ivltests/pr1833024.v:56: error: can not select part of scalar array word: sarr['sd0]
+./ivltests/pr1833024.v:57: error: can not select part of scalar array word: sarr['sd0]
+./ivltests/pr1833024.v:58: error: can not select part of scalar array word: sarr['sd0]
 ./ivltests/pr1833024.v:60: error: can not select part of scalar: sout
 ./ivltests/pr1833024.v:61: error: can not select part of scalar: sout
 ./ivltests/pr1833024.v:62: error: can not select part of scalar: sout
 ./ivltests/pr1833024.v:63: error: can not select part of scalar: sout
-./ivltests/pr1833024.v:65: error: can not select part of scalar array word: sarr[32'sd0]
-./ivltests/pr1833024.v:66: error: can not select part of scalar array word: sarr[32'sd0]
-./ivltests/pr1833024.v:67: error: can not select part of scalar array word: sarr[32'sd0]
-./ivltests/pr1833024.v:68: error: can not select part of scalar array word: sarr[32'sd0]
+./ivltests/pr1833024.v:65: error: can not select part of scalar array word: sarr['sd0]
+./ivltests/pr1833024.v:66: error: can not select part of scalar array word: sarr['sd0]
+./ivltests/pr1833024.v:67: error: can not select part of scalar array word: sarr['sd0]
+./ivltests/pr1833024.v:68: error: can not select part of scalar array word: sarr['sd0]
 68 error(s) during elaboration.

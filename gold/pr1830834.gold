@@ -1,4 +1,4 @@
-out: 110001, in[1] 110001:
-out[3:0]: 0001, in[1] 110001:
-out: 110001, in[1] 110001:
-out[3:0]: 0001, in[1] 110001:
+SORRY: ./ivltests/pr1830834.v:22: currently only simple signals or constant expressions may be passed to $strobe.
+NOTE: You can work around this by assigning the desired expression to an
+      intermediate net (using a continuous assignment) and passing that net
+      to $strobe.

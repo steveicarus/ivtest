@@ -41,26 +41,15 @@ Running compiler/VVP tests for Icarus Verilog version: 0.10 (strict).
                       pr903: Not Implemented.
                   pr1388974: Not Implemented.
                    br_gh13a: Not Implemented.
-              gate_connect2: Passed - CE.
          indef_width_concat: Passed - CE.
-                 pr1639064b: Passed.
-            sel_rval_bit_ob: Passed.
-           sel_rval_part_ob: Passed.
                 param-width: Passed.
-            localparam_type: Passed.
-             parameter_type: Passed.
-                      pr812: Passed.
-                      pr905: Passed.
-                      pr985: Passed.
-                  pr1645277: Passed.
                   pr1703120: Passed.
-                  pr1792152: Passed.
-                  pr2039694: Passed.
                   pr3527694: Passed.
-                  pr1833024: Passed - CE.
                  pr3366217a: Passed - CE.
                     ca_time: Passed.
               delayed_sfunc: Passed.
+            localparam_type: Passed.
+             parameter_type: Passed.
                   pr1701890: Passed.
                  pr1864110a: Passed.
                  pr1864110b: Passed.
@@ -799,6 +788,7 @@ test_mos_strength_reduction: Passed.
                       pr809: Passed.
                      pr809b: Passed.
                       pr810: Passed.
+                      pr812: Passed.
                       pr820: Passed.
                       pr823: Passed.
                       pr841: Passed.
@@ -809,6 +799,7 @@ test_mos_strength_reduction: Passed.
                       pr860: Passed.
                       pr872: Passed.
                       pr902: Passed.
+                      pr905: Passed.
                       pr910: Passed.
                       pr913: Passed.
                       pr923: Passed.
@@ -821,6 +812,7 @@ test_mos_strength_reduction: Passed.
                       pr973: Passed.
                       pr978: Passed.
                       pr979: Passed.
+                      pr985: Passed.
                       pr987: Passed.
                       pr990: Passed.
                       pr991: Passed.
@@ -917,8 +909,10 @@ test_mos_strength_reduction: Passed.
                   pr1638985: Passed.
                   pr1639060: Passed.
                   pr1639064: Passed.
+                 pr1639064b: Passed.
                   pr1639968: Passed.
                   pr1639971: Passed.
+                  pr1645277: Passed.
                   pr1645518: Passed.
                   pr1648365: Passed.
                   pr1650842: Passed.
@@ -1004,6 +998,7 @@ test_mos_strength_reduction: Passed.
                  pr1787423c: Passed.
                        cmos: Passed.
                   pr1792108: Passed.
+                  pr1792152: Passed.
                   pr1792734: Passed.
                   pr1793157: Passed.
                   pr1793749: Passed.
@@ -1084,6 +1079,7 @@ test_mos_strength_reduction: Passed.
              real_mod_in_ca: Passed.
                      rl_pow: Passed.
                real_op_fail: Passed - CE.
+                  pr1833024: Passed - CE.
                   pr1883052: Passed.
                  pr1883052b: Passed.
                   pr1885847: Passed.
@@ -1216,6 +1212,7 @@ test_mos_strength_reduction: Passed.
                   pr2036953: Passed.
                   pr2038048: Passed.
                   pr2039632: Passed - CE.
+                  pr2039694: Passed.
                   pr2043324: Passed.
                   pr2043585: Passed.
                   pr2051694: Passed - CE.
@@ -1520,6 +1517,8 @@ test_mos_strength_reduction: Passed.
                   pr2913927: Passed.
                   pr2918095: Passed.
              select_padding: Passed.
+            sel_rval_bit_ob: Passed.
+           sel_rval_part_ob: Passed.
                   pr2922063: Passed.
                  pr2922063a: Passed.
                  pr2922063b: Passed.
@@ -1716,6 +1715,7 @@ test_mos_strength_reduction: Passed.
                   pr3306516: Passed.
              vhdl_sa1_test1: Passed.
               gate_connect1: Passed.
+              gate_connect2: Passed - CE.
                   pr3309391: Passed.
                  ivlh_event: Passed.
              vhdl_sa1_test2: Passed.
