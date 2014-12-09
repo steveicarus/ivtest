@@ -3082,9 +3082,6 @@ vlog95:signed13		normal,-pallowsigned=1	ivltests
 # Also tests have different output because of file name/line, etc. differences.
 vlog95:readmem-error	normal,-pallowsigned=1	ivltests gold=readmem-error-vlog95.gold
 
-# Need to allow signed to get the constant display width correct.
-pr1703120		normal,-pallowsigned=1	ivltests diff=log/pr1703120.log:gold/pr1703120_std.gold
-
 # Translating a down index part select require -pallowsigned=1 to get the
 # index calculation to be 100% correct when the select expression is not
 # already signed.

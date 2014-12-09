@@ -523,7 +523,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                    signed10: Passed.
                    signed13: Passed.
               readmem-error: Passed.
-                  pr1703120: Passed.
               param_select3: Passed.
                     select5: Passed.
                       pr487: Passed.
@@ -1396,6 +1395,7 @@ test_mos_strength_reduction: Passed.
                   pr1702593: Passed.
                   pr1703959: Passed.
                  elsif_test: Passed.
+                  pr1703120: Passed.
                   pr1704013: Passed - CE.
                  pr1704726a: Passed - CE.
                  pr1704726c: Passed - CE.
