@@ -5287,3 +5287,4 @@ br961a	CE	ivltests
 br962		normal,-g2009	ivltests
 br963		normal,-g2009	ivltests
 display_bug	normal,-g2009	ivltests	gold=display_bug.gold
+disable_cleanup	normal	ivltests
