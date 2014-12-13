@@ -318,6 +318,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                 signed_part: Passed - CE.
                    bitsel10: Passed - CE.
                      br918c: Passed - CE.
+                      br965: Passed - CE.
               countdrivers3: Passed - CE.
                       inout: Passed - TE.
                      inout2: Passed - CE.
@@ -2090,4 +2091,4 @@ test_mos_strength_reduction: Passed.
             disable_cleanup: Passed.
 ============================================================================
 Test results:
-  Total=2088, Passed=2058, Failed=3, Not Implemented=3, Expected Fail=24
+  Total=2089, Passed=2059, Failed=3, Not Implemented=3, Expected Fail=24

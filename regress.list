@@ -2854,6 +2854,7 @@ vlog95:signed_part	CE,-pallowsigned=1	ivltests
 # Currently no support for tran_VP (inout ports).
 vlog95:bitsel10		CE	ivltests  # Also uses a logic bufif0
 vlog95:br918c		CE	ivltests  # Also uses a logic pullup
+vlog95:br965		CE	ivltests
 vlog95:countdrivers3	CE	ivltests  # also uses a logic bufif1
 vlog95:inout		TE	ivltests  # Duplicate names
 vlog95:inout2		CE	ivltests
@@ -5287,4 +5288,5 @@ br961a	CE	ivltests
 br962		normal,-g2009	ivltests
 br963		normal,-g2009	ivltests
 display_bug	normal,-g2009	ivltests	gold=display_bug.gold
-disable_cleanup	normal	ivltests
+disable_cleanup	normal		ivltests
+br965		normal		ivltests

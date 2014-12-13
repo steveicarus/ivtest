@@ -2093,6 +2093,7 @@ test_mos_strength_reduction: Passed.
                       br961: Passed.
                      br961a: Passed - CE.
             disable_cleanup: Passed.
+                      br965: Passed.
 ============================================================================
 Test results:
-  Total=2093, Passed=1630, Failed=0, Not Implemented=409, Expected Fail=54
+  Total=2094, Passed=1631, Failed=0, Not Implemented=409, Expected Fail=54

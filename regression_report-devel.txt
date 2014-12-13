@@ -2088,6 +2088,7 @@ test_mos_strength_reduction: Passed.
                       br963: Passed.
                 display_bug: Passed.
             disable_cleanup: Passed.
+                      br965: Passed.
 ============================================================================
 Test results:
-  Total=2088, Passed=2083, Failed=5, Not Implemented=0, Expected Fail=0
+  Total=2089, Passed=2084, Failed=5, Not Implemented=0, Expected Fail=0
