@@ -5290,3 +5290,5 @@ br963		normal,-g2009	ivltests
 display_bug	normal,-g2009	ivltests	gold=display_bug.gold
 disable_cleanup	normal		ivltests
 br965		normal		ivltests
+br967		normal		ivltests
+event_array	CE		ivltests
