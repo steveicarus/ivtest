@@ -2365,6 +2365,9 @@ v0.9:br948	EF	ivltests
 # This could be back-ported if necessary.
 v0.9:br_gh28	NI	ivltests
 
+# V0.9 doesn't have this enhancement.
+v0.9:fr47	NI	ivltests
+
 #==========
 # V0.9 doesn't support synthesis. Might as well run them as
 # non-synthesis tests, though.
@@ -5292,3 +5295,6 @@ disable_cleanup	normal		ivltests
 br965		normal		ivltests
 br967		normal		ivltests
 event_array	CE		ivltests
+patch1268	normal		ivltests
+fr47		normal		ivltests
+

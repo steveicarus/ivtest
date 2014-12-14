@@ -2091,6 +2091,8 @@ test_mos_strength_reduction: Passed.
                       br965: Passed.
                       br967: Passed.
                 event_array: Passed - CE.
+                  patch1268: Passed.
+                       fr47: Passed.
 ============================================================================
 Test results:
-  Total=2091, Passed=2086, Failed=5, Not Implemented=0, Expected Fail=0
+  Total=2093, Passed=2088, Failed=5, Not Implemented=0, Expected Fail=0
