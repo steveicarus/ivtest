@@ -317,6 +317,7 @@ ubyte_test		normal,-g2005-sv	ivltests
 uint_test		normal,-g2005-sv	ivltests
 ulongint_test		normal,-g2005-sv	ivltests
 undef_lval_select_SV	normal,-g2009		ivltests
+unp_array_typedef	normal,-g2009		ivltests
 ushortint_test		normal,-g2005-sv	ivltests
 wait_fork		normal,-g2009		ivltests
 work7			normal,-g2009,-fivltests/work7.cfg 	ivltests
