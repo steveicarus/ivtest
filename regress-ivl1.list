@@ -146,6 +146,9 @@ fatal_et_al		normal			ivltests gold=fatal_et_al.gold
 pr1494799		normal			ivltests gold=pr1494799.gold
 pr2428890c		normal			ivltests
 
+# $ivl_darray_method$to_vec & $ivl_darray_method$from_vec
+sv_cast_darray		normal,-g2005-sv		ivltests
+
 # $min/$max
 constfunc6		normal			ivltests
 pr2728032		normal			ivltests
