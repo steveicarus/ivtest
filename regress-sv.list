@@ -246,7 +246,8 @@ sv_darray_args2 	normal,-g2009		ivltests
 sv_darray_args2b	normal,-g2009		ivltests
 sv_darray_args3 	normal,-g2009		ivltests
 sv_darray_args4 	normal,-g2009		ivltests
-sv_end_label		normal,-g2009		ivltests
+sv_darray_return	normal,-g2009		ivltests
+sv_end_label		normal,-g2005-sv	ivltests
 sv_end_label_fail	CE,-g2009		ivltests gold=sv_end_label_fail.gold
 sv_end_labels		normal,-g2009		ivltests
 sv_end_labels_bad	CE,-g2009		ivltests gold=sv_end_labels_bad.gold
