@@ -41,11 +41,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.10 (strict).
                       pr903: Not Implemented.
                   pr1388974: Not Implemented.
                    br_gh13a: Not Implemented.
-         indef_width_concat: Passed - CE.
                 param-width: Passed.
-                  pr1703120: Passed.
-                  pr3527694: Passed.
-                 pr3366217a: Passed - CE.
                     ca_time: Passed.
               delayed_sfunc: Passed.
             localparam_type: Passed.
@@ -955,6 +951,7 @@ test_mos_strength_reduction: Passed.
                   pr1703346: Passed.
                   pr1703959: Passed.
                  elsif_test: Passed.
+                  pr1703120: Passed.
                   pr1704013: Passed - CE.
                  pr1704726a: Passed - CE.
                  pr1704726b: Passed.
@@ -1247,7 +1244,6 @@ test_mos_strength_reduction: Passed.
            automatic_events: Passed.
           automatic_events2: Passed.
           automatic_events3: Passed.
-      automatic_events3_std: Passed.
              automatic_task: Passed.
             automatic_task2: Passed.
             automatic_task3: Passed.
@@ -1436,6 +1432,7 @@ test_mos_strength_reduction: Passed.
                  pr2728812b: Passed - CE.
                  pr2728812c: Passed - CE.
                   pr2745281: Passed.
+         indef_width_concat: Passed - CE.
             warn_opt_sys_tf: Passed.
                  array_dump: Passed.
            array_word_width: Passed.
@@ -1737,6 +1734,7 @@ test_mos_strength_reduction: Passed.
                  clkgen_net: Passed.
                  clkgen_reg: Passed.
                   pr3366114: Passed.
+                 pr3366217a: Passed - CE.
                  pr3366217b: Passed - CE.
                  pr3366217c: Passed - CE.
                  pr3366217d: Passed - CE.
@@ -1806,6 +1804,7 @@ test_mos_strength_reduction: Passed.
                  specparam1: Passed.
                  specparam2: Passed.
                   pr3527022: Passed.
+                  pr3527694: Passed.
              test_when_else: Passed.
               program_hello: Passed.
              program_hello2: Passed - CE.
@@ -2095,4 +2094,4 @@ test_mos_strength_reduction: Passed.
                        fr47: Passed.
 ============================================================================
 Test results:
-  Total=2093, Passed=2085, Failed=5, Not Implemented=3, Expected Fail=0
+  Total=2092, Passed=2084, Failed=5, Not Implemented=3, Expected Fail=0

@@ -4,6 +4,14 @@ module top;
   reg sel, in_1, in_0;
   reg pout;
 
+`ifdef __ICARUS__
+  // This is technically incorrect for 1'bz inputs. The standard
+  // states that we should produce 1'bx for that case (idiotic)!
+  localparam zz_blend = 1'bz;
+`else
+  localparam zz_blend = 1'bx;
+`endif
+
   assign cout0 = sel ? 1'bz : in_0;
   assign cout1 = sel ? in_1: 1'bz;
   assign out = sel ? in_1: in_0;
@@ -25,9 +33,11 @@ module top;
           passed = 1'b0;
         end
       end else begin
-        // This is technically incorrect for 1'bz inputs. The standard
-        // states that we should produce 1'bx for that case (idiotic)!
-        if (in_0 === in_1 && in_0 !== bit) begin
+        if (in_0 === 1'bz && in_1 === 1'bz && bit !== zz_blend) begin
+          $display("FAILED: %0s sel = 1'bx/z & ins = %b, expected 1'b%b, got %b",
+                   comment, in_0, zz_blend, bit);
+          passed = 1'b0;
+        end else if (in_0 === in_1 && in_0 !== bit) begin
           $display("FAILED: %0s sel = 1'bx/z & ins = %b, expected 1'b%b, got %b",
                    comment, in_0, in_0, bit);
           passed = 1'b0;

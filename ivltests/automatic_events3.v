@@ -25,7 +25,7 @@ task automatic ReportPosEdge0;
 
 begin
   @(posedge Source[0]);
-  $display("Time %4t : Source[0] rise", $time);
+  $display("Time %t : Source[0] rise", $time);
 end
 
 endtask
@@ -34,7 +34,7 @@ task automatic ReportNegEdge0;
 
 begin
   @(negedge Source[0]);
-  $display("Time %4t : Source[0] fall", $time);
+  $display("Time %t : Source[0] fall", $time);
 end
 
 endtask
@@ -45,7 +45,7 @@ time t;
 
 begin
   @(Source[0]) t = $time;
-  #1 $display("Time %4t : Source[0] edge", t);
+  #1 $display("Time %t : Source[0] edge", t);
 end
 
 endtask
@@ -54,7 +54,7 @@ task automatic ReportPosEdge1;
 
 begin
   @(posedge Source[1]);
-  $display("Time %4t : Source[1] rise", $time);
+  $display("Time %t : Source[1] rise", $time);
 end
 
 endtask
@@ -63,7 +63,7 @@ task automatic ReportNegEdge1;
 
 begin
   @(negedge Source[1]);
-  $display("Time %4t : Source[1] fall", $time);
+  $display("Time %t : Source[1] fall", $time);
 end
 
 endtask
@@ -74,7 +74,7 @@ time t;
 
 begin
   @(Source[1]) t = $time;
-  #1 $display("Time %4t : Source[1] edge", t);
+  #1 $display("Time %t : Source[1] edge", t);
 end
 
 endtask

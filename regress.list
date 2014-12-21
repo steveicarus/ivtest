@@ -457,7 +457,6 @@ vstd:force_release_reg_pv	NI
 vstd:pr2943394		NI
 
 # No support for a time with a width.
-vstd:automatic_events3	NI
 vstd:pr243		NI
 vstd:pr245		NI
 vstd:pr1985582		NI
@@ -531,10 +530,6 @@ vstd:fileline2		NI
 # circumstances.
 vstd:pr1909940		CE	ivltests
 vstd:pr1909940b		CE	ivltests
-
-# This is flagged as a deliberate deviation from the standard.
-vstd:pr2172606b		NI
-vstd:pr2172606b_std	normal	ivltests
 
 #-------------------------------
 # Not applicable
@@ -1154,7 +1149,6 @@ v0.8:automatic_error13	NI
 v0.8:automatic_events	NI
 v0.8:automatic_events2	NI
 v0.8:automatic_events3	NI
-v0.8:automatic_events3_std	NI
 v0.8:automatic_task	NI
 v0.8:automatic_task2	NI
 v0.8:automatic_task3	NI
@@ -2489,7 +2483,6 @@ vlog95:automatic_error13	CE	ivltests
 vlog95:automatic_events		CE	ivltests
 vlog95:automatic_events2	CE	ivltests
 vlog95:automatic_events3	CE	ivltests
-vlog95:automatic_events3_std	CE	ivltests
 vlog95:automatic_task		CE	ivltests
 vlog95:automatic_task2		CE	ivltests
 vlog95:automatic_task3		CE	ivltests
@@ -3169,18 +3162,8 @@ std:pr1388974		NI
 # The standard doesn't support lossless expressions.
 std:br_gh13a		NI
 
-# Different results when unsized numbers are handled strictly.
-std:indef_width_concat	CE			ivltests diff=log/indef_width_concat.log:gold/indef_width_concat_std.gold
-
 # Different results when parameter expression width is calculated strictly.
 std:param-width		normal			ivltests diff=log/param-width.log:gold/param-width_std.gold
-
-# Extra white space or leading zeroes when displaying unsized numbers.
-std:pr1703120		normal			ivltests diff=log/pr1703120.log:gold/pr1703120_std.gold
-std:pr3527694		normal			ivltests diff=log/pr3527694.log:gold/pr3527694_std.gold
-
-# Evaluated constants in warning/error messages are sized.
-std:pr3366217a		CE,-g2005-sv		ivltests diff=log/pr3366217a.log:gold/pr3366217a_std.gold
 
 #==========
 # Compatibility with other simulators.
@@ -4140,7 +4123,7 @@ pr1702593	normal	ivltests diff=log/pr1702593.log:gold/pr1702593.gold
 pr1703346	normal	ivltests
 pr1703959	normal	ivltests
 elsif_test	normal	ivltests
-pr1703120	normal	ivltests diff=log/pr1703120.log:gold/pr1703120_std.gold
+pr1703120	normal	ivltests diff=log/pr1703120.log:gold/pr1703120.gold
 pr1704013	CE	ivltests
 pr1704726a	CE	ivltests diff=log/pr1704726a.log:gold/pr1704726a.gold
 pr1704726b	normal	ivltests
@@ -4438,7 +4421,6 @@ pr2117488	normal	ivltests
 automatic_events	normal	ivltests diff=log/automatic_events.log:gold/automatic_events.gold
 automatic_events2	normal	ivltests diff=log/automatic_events2.log:gold/automatic_events.gold
 automatic_events3	normal	ivltests diff=log/automatic_events3.log:gold/automatic_events3.gold
-automatic_events3_std	normal	ivltests diff=log/automatic_events3_std.log:gold/automatic_events3_std.gold
 automatic_task	normal	ivltests diff=log/automatic_task.log:gold/automatic_task.gold
 automatic_task2	normal	ivltests diff=log/automatic_task2.log:gold/automatic_task2.gold
 automatic_task3	normal	ivltests diff=log/automatic_task3.log:gold/automatic_task3.gold
@@ -4628,7 +4610,7 @@ pr2728812a	normal	ivltests
 pr2728812b	CE,-pRECURSIVE_MOD_LIMIT=5  ivltests
 pr2728812c	CE	ivltests
 pr2745281	normal	ivltests
-indef_width_concat	CE	ivltests diff=log/indef_width_concat.log:gold/indef_width_concat_std.gold
+indef_width_concat	CE	ivltests diff=log/indef_width_concat.log:gold/indef_width_concat.gold
 warn_opt_sys_tf	normal	ivltests diff=log/warn_opt_sys_tf.log:gold/warn_opt_sys_tf.gold
 array_dump	normal	ivltests diff=work/array_dump.vcd:gold/array_dump.vcd.gold:2
 array_word_width	normal	ivltests diff=log/array_word_width.log:gold/array_word_width.gold
@@ -4937,7 +4919,7 @@ clkgen_logic	normal,-g2009	ivltests
 clkgen_net	normal,-g2009	ivltests
 clkgen_reg	normal,-g2009	ivltests
 pr3366114	normal,-g2009	ivltests
-pr3366217a	CE,-g2005-sv	ivltests diff=log/pr3366217a.log:gold/pr3366217a_std.gold
+pr3366217a	CE,-g2005-sv	ivltests diff=log/pr3366217a.log:gold/pr3366217a.gold
 pr3366217b	CE,-g2005-sv	ivltests diff=log/pr3366217b.log:gold/pr3366217b.gold
 pr3366217c	CE,-g2005-sv	ivltests diff=log/pr3366217c.log:gold/pr3366217c.gold
 pr3366217d	CE,-g2005-sv	ivltests diff=log/pr3366217d.log:gold/pr3366217d.gold
@@ -5008,7 +4990,7 @@ attrib	normal	ivltests
 specparam1	normal	ivltests
 specparam2	normal	ivltests
 pr3527022	normal	ivltests
-pr3527694	normal	ivltests diff=log/pr3527694.log:gold/pr3527694_std.gold
+pr3527694	normal	ivltests diff=log/pr3527694.log:gold/pr3527694.gold
 test_when_else	normal,-g2009,ivltests/when_else.vhd	ivltests
 program_hello	normal,-g2009	ivltests
 program_hello2	CE,-g2009	ivltests
@@ -5297,4 +5279,3 @@ br967		normal		ivltests
 event_array	CE		ivltests
 patch1268	normal		ivltests
 fr47		normal		ivltests
-

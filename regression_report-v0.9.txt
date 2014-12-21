@@ -1708,7 +1708,6 @@ test_mos_strength_reduction: Passed.
            automatic_events: Passed.
           automatic_events2: Passed.
           automatic_events3: Passed.
-      automatic_events3_std: Passed.
              automatic_task: Passed.
             automatic_task2: Passed.
             automatic_task3: Passed.
@@ -2100,4 +2099,4 @@ test_mos_strength_reduction: Passed.
                   patch1268: Passed.
 ============================================================================
 Test results:
-  Total=2098, Passed=1634, Failed=0, Not Implemented=410, Expected Fail=54
+  Total=2097, Passed=1633, Failed=0, Not Implemented=410, Expected Fail=54

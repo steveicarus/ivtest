@@ -6,7 +6,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
            automatic_events: Passed - CE.
           automatic_events2: Passed - CE.
           automatic_events3: Passed - CE.
-      automatic_events3_std: Passed - CE.
              automatic_task: Passed - CE.
             automatic_task2: Passed - CE.
             automatic_task3: Passed - CE.
@@ -2095,4 +2094,4 @@ test_mos_strength_reduction: Passed.
                        fr47: Passed.
 ============================================================================
 Test results:
-  Total=2093, Passed=2063, Failed=3, Not Implemented=3, Expected Fail=24
+  Total=2092, Passed=2062, Failed=3, Not Implemented=3, Expected Fail=24
