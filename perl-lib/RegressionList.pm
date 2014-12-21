@@ -92,6 +92,9 @@ sub read_regression_list {
             $plargs{$tname} = "";
             $args{$tname} = "";
         }
+        if ($opt ne "std") {
+            $args{$tname} = $opt . $args{$tname};
+        }
 
         $srcpath{$tname} = $fields[2];
         $srcpath{$tname} = "" if (!defined($srcpath{$tname}));
@@ -119,12 +122,18 @@ sub read_regression_list {
            }
         # The five field case.
         } elsif (@fields == 5) {
-           $testmod{$tname} = $fields[3];
-           ($diff{$tname}, $gold{$tname}, $offset{$tname}) =
-               split(':', $fields[4]);
-           # Make sure this is numeric if it is not given.
-           $diff{$tname} =~ s/^diff=//;
-           if (!$offset{$tname}) {
+           if ($fields[4] =~ s/^diff=//) {
+               $testmod{$tname} = "" ;
+               ($diff{$tname}, $gold{$tname}, $offset{$tname}) =
+                   split(':', $fields[4]);
+               # Make sure this is numeric if it is not given.
+               if (!$offset{$tname}) {
+                   $offset{$tname} = 0;
+               }
+           } elsif ($fields[4] =~ s/^gold=//) {
+               $testmod{$tname} = "" ;
+               $diff{$tname} = "";
+               $gold{$tname} = "gold/$fields[4]";
                $offset{$tname} = 0;
            }
         } else {
