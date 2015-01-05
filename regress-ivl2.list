@@ -76,18 +76,18 @@ pr1388974		normal			ivltests
 
 # The standard doesn't support lossless expressions.
 br_gh13a		normal			ivltests gold=br_gh13a.gold
-param-width		normal			ivltests gold=param-width.gold
+param-width		normal			ivltests gold=param-width-ivl.gold
 
 #------------------------------------------------------------------------------
 # Differences when vvp is run without -compatible
 #------------------------------------------------------------------------------
 
 # Different output when real numbers are displayed without a format specifier.
-ca_time			normal			ivltests gold=ca_time.gold
-delayed_sfunc		normal,-gspecify	ivltests gold=delayed_sfunc.gold
-localparam_type		normal			ivltests gold=parameter_type.gold
-parameter_type		normal			ivltests gold=parameter_type.gold
-pr1701890		normal			ivltests gold=pr1701890.gold
-pr1864110a		normal			ivltests gold=pr1864110a.gold
-pr1864110b		normal			ivltests gold=pr1864110b.gold
-pr1864115		normal			ivltests gold=pr1864115.gold
+ca_time			normal			ivltests gold=ca_time-ivl.gold
+delayed_sfunc		normal,-gspecify	ivltests gold=delayed_sfunc-ivl.gold
+localparam_type		normal			ivltests gold=parameter_type-ivl.gold
+parameter_type		normal			ivltests gold=parameter_type-ivl.gold
+pr1701890		normal			ivltests gold=pr1701890-ivl.gold
+pr1864110a		normal			ivltests gold=pr1864110a-ivl.gold
+pr1864110b		normal			ivltests gold=pr1864110b-ivl.gold
+pr1864115		normal			ivltests gold=pr1864115-ivl.gold

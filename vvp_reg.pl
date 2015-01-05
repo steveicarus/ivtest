@@ -1,10 +1,10 @@
 #!/usr/bin/perl
 #
-# Script to handle regression for normal Verilog files.
+# Script to handle regression for Icarus Verilog using the vvp target.
 #
 # This script is based on code with the following Copyright.
 #
-# Copyright (c) 1999 Guy Hutchison (ghutchis@pacbell.net)
+# Copyright (c) 1999-2014 Guy Hutchison (ghutchis@pacbell.net)
 #
 #    This source code is free software; you can redistribute it
 #    and/or modify it in source code form under the terms of the GNU
@@ -32,16 +32,35 @@ use Environment;
 #
 #  Main script
 #
-my ($suffix, $strict, $with_valg) = &get_args;
-my $regress_fn = &get_regress_fn;
 &open_report_file;
+my ($suffix, $strict, $with_valg) = &get_args;
 my $ver = &get_ivl_version($suffix);
 my $opt = $strict ? " (strict)" : "";
 my $msg = $with_valg ? " (with valgrind)" : "";
 &print_rpt("Running compiler/VVP tests for Icarus Verilog " .
            "version: $ver$opt$msg.\n");
 &print_rpt("-" x 76 . "\n");
-&read_regression_list($regress_fn, $ver, $strict ? "std" : "");
+if ($#ARGV != -1) {
+    my $regress_fn = &get_regress_fn;
+    &read_regression_list($regress_fn, $ver, "");
+} else {
+    &read_regression_list("regress-v$ver.list", $ver, "");
+    if ($strict == 0) {
+        &read_regression_list("regress-ivl2.list", $ver, "");
+    }
+    &read_regression_list("regress-ivl1.list", $ver, "");
+    &read_regression_list("regress-vlg.list",  $ver, "");
+    &read_regression_list("regress-vams.list", $ver, "");
+    if ($ver == 0.10) {
+        &read_regression_list("regress-sv.list",   $ver, "");
+        &read_regression_list("regress-vhdl.list", $ver, "");
+    }
+    if ($ver == 0.9) {
+        &read_regression_list("regress-synth.list", $ver, "");
+    } else {
+        &read_regression_list("regress-synth.list", $ver, "-S");
+    }
+}
 &execute_regression($suffix, $strict, $with_valg);
 &close_report_file;
 
@@ -172,6 +191,8 @@ sub execute_regression {
 
         if ($diff{$tname} ne "") {
             $diff_file = $diff{$tname}
+        } elsif ($gold{$tname} ne "") {
+            $diff_file = "log/$tname.log";
         } else {
             if ($pass_type == 1) {
                 &print_rpt("Passed - CE.\n");

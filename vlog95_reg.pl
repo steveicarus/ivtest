@@ -32,17 +32,33 @@ use Environment;
 #
 #  Main script
 #
-my ($suffix, $strict, $with_valg) = &get_args;
-my $regress_fn = &get_regress_fn;
 &open_report_file;
+my ($suffix, $strict, $with_valg) = &get_args;
 my $ver = &get_ivl_version($suffix);
 my $msg = $with_valg ? " (with valgrind)" : "";
 &print_rpt("Running vlog95 compiler/VVP tests for Icarus Verilog " .
            "version: $ver$msg.\n");
 &print_rpt("-" x 76 . "\n");
-# Override the regression list version to be (v)log95
-$ver = "log95";
-&read_regression_list($regress_fn, $ver, "");
+if ($#ARGV != -1) {
+    my $regress_fn = &get_regress_fn;
+    &read_regression_list($regress_fn, $ver, "");
+} else {
+    &read_regression_list("regress-vlog95.list", $ver, "");
+    &read_regression_list("regress-v$ver.list", $ver, "");
+    &read_regression_list("regress-ivl2.list", $ver, "");
+    &read_regression_list("regress-ivl1.list", $ver, "");
+    &read_regression_list("regress-vlg.list",  $ver, "");
+    &read_regression_list("regress-vams.list", $ver, "");
+    if ($ver == 0.10) {
+        &read_regression_list("regress-sv.list",   $ver, "");
+        &read_regression_list("regress-vhdl.list", $ver, "");
+    }
+    if ($ver == 0.9) {
+        &read_regression_list("regress-synth.list", $ver, "");
+    } else {
+        &read_regression_list("regress-synth.list", $ver, "-S");
+    }
+}
 &execute_regression($suffix, $with_valg);
 &close_report_file;
 

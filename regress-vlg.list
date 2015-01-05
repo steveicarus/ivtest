@@ -508,7 +508,7 @@ lh_varindx		normal			ivltests
 lh_varindx2		normal			ivltests
 lh_varindx4		normal			ivltests
 lh_varindx5		normal			ivltests
-localparam_type 	normal			ivltests gold=parameter_type_std.gold
+localparam_type 	normal			ivltests gold=parameter_type.gold
 long_div		normal			ivltests gold=long_div.gold
 macro2			normal			ivltests
 macsub			normal			ivltests
@@ -560,7 +560,7 @@ onehot			normal			contrib  # one hot design
 p_monta 		normal			ivltests
 par_mismatch		CE,-gspecify		ivltests
 param-extend		normal			ivltests
-param-width		normal			ivltests gold=param-width_std.gold
+param-width		normal			ivltests gold=param-width.gold
 param_add		normal			ivltests # Addition in param declar
 param_and		normal			ivltests # bitwise &
 param_and2		normal			ivltests # logical && in param declar
@@ -582,7 +582,7 @@ param_test2		normal			ivltests gold=param_test2.gold
 param_test3		CO			ivltests # PR#293
 param_test4		normal			ivltests
 param_times		normal			ivltests # param has multiplication.
-parameter_type		normal			ivltests gold=parameter_type_std.gold
+parameter_type		normal			ivltests gold=parameter_type.gold
 patch1268		normal			ivltests
 pca1			normal			ivltests # Procedural Continuous Assignment in a mux
 pic			normal			contrib  pictest gold=pic.gold
@@ -833,7 +833,7 @@ pr1699519		normal			ivltests gold=pr1699519.gold
 pr1701855		normal			ivltests gold=pr1701855.gold
 pr1701855b		normal			ivltests gold=pr1701855b.gold
 pr1701889		normal			ivltests gold=pr1701889.gold
-pr1701890		normal			ivltests gold=pr1701890_std.gold
+pr1701890		normal			ivltests gold=pr1701890.gold
 pr1701921		normal			ivltests
 pr1702593		normal			ivltests gold=pr1702593.gold
 pr1703120		normal			ivltests gold=pr1703120.gold
