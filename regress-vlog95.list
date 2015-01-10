@@ -630,6 +630,7 @@ vhdl_test3		normal,-g2005-sv,-pallowsigned=1,ivltests/vhdl_test3.vhd	ivltests go
 # $signed() and $unsigned() in the compiler are always supported and they
 # are supported in general if the -pallowsigned=1 flag is provided.
 br919			normal,-pallowsigned=1	ivltests
+br968			normal,-pallowsigned=1	ivltests
 concat3 		normal,-pallowsigned=1	ivltests
 mult2			normal,-pallowsigned=1	ivltests
 pr757			normal,-pallowsigned=1	ivltests
@@ -700,4 +701,3 @@ if_part_no_else2	normal			ivltests
 # TO BE INVESTIGATED
 for_loop_synth		normal	ivltests
 for_loop_synth2		normal	ivltests
-
