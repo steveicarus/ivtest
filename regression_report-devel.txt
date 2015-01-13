@@ -106,6 +106,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.10.
                 fatal_et_al: Passed.
                   pr1494799: Passed.
                  pr2428890c: Passed.
+             sv_cast_darray: Passed.
                  constfunc6: Passed.
                   pr2728032: Passed.
                test_va_math: Passed.
@@ -1716,6 +1717,7 @@ test_mos_strength_reduction: Passed.
                       wreal: Passed.
                  array_size: Passed.
                array_string: Passed.
+    array_unpacked_sysfunct: Passed.
                       bitp1: Passed.
                        bits: Passed.
                       bits2: Passed.
@@ -1895,6 +1897,7 @@ test_mos_strength_reduction: Passed.
            sv_darray_args2b: Passed.
             sv_darray_args3: Passed.
             sv_darray_args4: Passed.
+           sv_darray_return: Passed.
                sv_end_label: Passed.
           sv_end_label_fail: Passed - CE.
               sv_end_labels: Passed.
@@ -1966,6 +1969,7 @@ test_mos_strength_reduction: Passed.
                   uint_test: Passed.
               ulongint_test: Passed.
        undef_lval_select_SV: Passed.
+          unp_array_typedef: Passed.
              ushortint_test: Passed.
                   wait_fork: Passed.
                       work7: Passed.
@@ -2095,4 +2099,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2093, Passed=2088, Failed=5, Not Implemented=0, Expected Fail=0
+  Total=2097, Passed=2092, Failed=5, Not Implemented=0, Expected Fail=0

@@ -126,6 +126,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
           sv_unpacked_port2: Passed - CE.
            sv_unpacked_wire: Passed - CE.
           sv_unpacked_wire2: Passed - CE.
+    array_unpacked_sysfunct: Passed - CE.
+          unp_array_typedef: Passed - CE.
                     concat4: Passed - expected fail.
                       final: Passed - CE.
                      final2: Passed - CE.
@@ -159,6 +161,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
            sv_darray_args2b: Passed - CE.
             sv_darray_args3: Passed - CE.
             sv_darray_args4: Passed - CE.
+             sv_cast_darray: Passed - CE.
+           sv_darray_return: Passed - CE.
                       br959: Passed - CE.
                   sv_class1: Passed - CE.
                   sv_class2: Passed - CE.
@@ -2095,4 +2099,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2093, Passed=2063, Failed=3, Not Implemented=3, Expected Fail=24
+  Total=2097, Passed=2067, Failed=3, Not Implemented=3, Expected Fail=24
