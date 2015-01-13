@@ -17,25 +17,37 @@
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 
 
-// Test for dynamic arrays used as the function return type.
+// Test for dynamic arrays used as the function parameters and return type.
 
-module sv_darray_return();
+module sv_darray_function();
 typedef logic[7:0] byte_array [];
 
-function byte_array make_array();
+function byte_array inc_array(byte_array inp);
     byte_array tmp;
-    tmp = new[3];
-    tmp[0] = 13;
-    tmp[1] = 14;
-    tmp[2] = 15;
+    tmp = new[$size(inp)];
+
+    for(int i = 0; i < $size(inp); ++i)
+    begin
+        tmp[i] = inp[i] + 1;
+    end
+
     return tmp;
 endfunction
 
 initial begin
-    byte_array a;
-    a = make_array();
+    byte_array a, b;
+    a = new[3];
+    a[0] = 10;
+    a[1] = 11;
+    a[2] = 12;
+    b = inc_array(a);
 
-    if($size(a) != 3 || a[0] !== 13 || a[1] !== 14 || a[2] !== 15) begin
+    if($size(a) != 3 || a[0] !== 10 || a[1] !== 11 || a[2] !== 12) begin
+        $display("FAILED");
+        $finish();
+    end
+
+    if($size(b) != 3 || b[0] !== 11 || b[1] !== 12 || b[2] !== 13) begin
         $display("FAILED");
         $finish();
     end
