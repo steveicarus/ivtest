@@ -613,6 +613,7 @@ test_dispwided		normal,-pallowsigned=1	ivltests gold=test_dispwided.gold
 test_inc_dec		normal,-g2009,-pallowsigned=1	ivltests
 test_enumsystem 	normal,-g2009,-pallowsigned=1,ivltests/enumsystem.vhd	ivltests
 vhdl_range		normal,-g2009,-pallowsigned=1,ivltests/vhdl_range.vhd	ivltests
+vhdl_range_func		normal,-g2009,-pallowsigned=1,ivltests/vhdl_range_func_pkg.vhd,ivltests/vhdl_range_func.vhd	ivltests
 vhdl_rtoi		normal,-g2009,-pallowsigned=1,ivltests/vhdl_rtoi.vhd	ivltests
 test_system		normal,-g2009,-pallowsigned=1,ivltests/system.vhd	ivltests
 test_tliteral		normal,-g2009,-pallowsigned=1	ivltests

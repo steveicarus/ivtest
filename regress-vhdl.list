@@ -108,6 +108,7 @@ vhdl_org_bit		normal,-g2005-sv,ivltests/vhdl_org_bit.vhd		ivltests
 vhdl_org_stdlogic	normal,-g2005-sv,ivltests/vhdl_org_stdlogic.vhd		ivltests
 vhdl_rand23_bit 	normal,-g2005-sv,ivltests/vhdl_rand23_bit.vhd		ivltests
 vhdl_range		normal,-g2009,ivltests/vhdl_range.vhd			ivltests
+vhdl_range_func		normal,-g2009,ivltests/vhdl_range_func_pkg.vhd,ivltests/vhdl_range_func.vhd,	ivltests
 vhdl_real		normal,-g2009,ivltests/vhdl_real.vhd			ivltests
 vhdl_record_elab	normal,-g2005-sv,ivltests/vhdl_record_elab_pkg.vhd,ivltests/vhdl_record_elab.vhd	ivltests
 vhdl_rtoi		normal,-g2009,ivltests/vhdl_rtoi.vhd			ivltests
