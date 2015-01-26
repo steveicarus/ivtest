@@ -31,7 +31,7 @@ end range_func_pkg;
 package body range_func_pkg is
 
 function negator (word_i : std_logic_vector(3 downto 0)) return std_logic_vector is
-    variable neg : std_logic_vector(3 downto 0);
+    variable neg : std_logic_vector(word_i'left downto word_i'right);
 begin
     for I in word_i'range loop
       neg (I) := not word_i(I);
