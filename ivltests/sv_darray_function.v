@@ -21,6 +21,7 @@
 
 module sv_darray_function();
 typedef logic[7:0] byte_array [];
+typedef logic[3*8-1:0] byte_vector;
 
 function byte_array inc_array(byte_array inp);
     byte_array tmp;
@@ -36,6 +37,8 @@ endfunction
 
 initial begin
     byte_array a, b;
+    byte_vector c;
+
     a = new[3];
     a[0] = 10;
     a[1] = 11;
@@ -43,12 +46,19 @@ initial begin
     b = inc_array(a);
 
     if($size(a) != 3 || a[0] !== 10 || a[1] !== 11 || a[2] !== 12) begin
-        $display("FAILED");
+        $display("FAILED 1");
         $finish();
     end
 
     if($size(b) != 3 || b[0] !== 11 || b[1] !== 12 || b[2] !== 13) begin
-        $display("FAILED");
+        $display("FAILED 2");
+        $finish();
+    end
+
+    // Cast dynamic array returned by function to logic vector
+    c = byte_vector'(inc_array(b));
+    if(c !== 24'h0c0d0e) begin
+        $display("FAILED 3");
         $finish();
     end
 
