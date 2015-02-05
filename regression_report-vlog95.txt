@@ -61,7 +61,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  v2005_math: Passed - CE.
                   vams_abs2: Passed - CE.
                   vhdl_real: Passed - CE.
-            vhdl_subprogram: Passed - CE.
              vhdl_unbounded: Passed - CE.
                       wreal: Passed - CE.
                   pr1528093: Passed - CE.
@@ -127,7 +126,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
            sv_unpacked_wire: Passed - CE.
           sv_unpacked_wire2: Passed - CE.
     array_unpacked_sysfunct: Passed - CE.
-          unp_array_typedef: Passed - CE.
                     concat4: Passed - expected fail.
                       final: Passed - CE.
                      final2: Passed - CE.
@@ -162,7 +160,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
             sv_darray_args3: Passed - CE.
             sv_darray_args4: Passed - CE.
              sv_cast_darray: Passed - CE.
-           sv_darray_return: Passed - CE.
                       br959: Passed - CE.
                   sv_class1: Passed - CE.
                   sv_class2: Passed - CE.
@@ -475,6 +472,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                test_inc_dec: Passed.
             test_enumsystem: Passed.
                  vhdl_range: Passed.
+            vhdl_range_func: Passed.
                   vhdl_rtoi: Passed.
                 test_system: Passed.
               test_tliteral: Passed.
@@ -493,6 +491,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
        vhdl_ssub23_stdlogic: Passed.
        vhdl_smul23_stdlogic: Passed.
                  vhdl_test3: Passed.
+            vhdl_subprogram: Passed.
+        vhdl_unbounded_func: Passed.
                       br919: Passed.
                       br968: Passed.
                     concat3: Passed.
@@ -2025,6 +2025,7 @@ test_mos_strength_reduction: Passed.
               vhdl_and_gate: Passed.
               vhdl_andg_bit: Passed.
          vhdl_andg_stdlogic: Passed.
+            vhdl_case_multi: Passed.
                 vhdl_concat: Passed.
          vhdl_const_package: Passed.
                  vhdl_expr1: Passed.
@@ -2099,4 +2100,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2097, Passed=2067, Failed=3, Not Implemented=3, Expected Fail=24
+  Total=2098, Passed=2068, Failed=3, Not Implemented=3, Expected Fail=24

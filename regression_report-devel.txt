@@ -1897,7 +1897,6 @@ test_mos_strength_reduction: Passed.
            sv_darray_args2b: Passed.
             sv_darray_args3: Passed.
             sv_darray_args4: Passed.
-           sv_darray_return: Passed.
                sv_end_label: Passed.
           sv_end_label_fail: Passed - CE.
               sv_end_labels: Passed.
@@ -1969,7 +1968,6 @@ test_mos_strength_reduction: Passed.
                   uint_test: Passed.
               ulongint_test: Passed.
        undef_lval_select_SV: Passed.
-          unp_array_typedef: Passed.
              ushortint_test: Passed.
                   wait_fork: Passed.
                       work7: Passed.
@@ -1991,6 +1989,7 @@ test_mos_strength_reduction: Passed.
               vhdl_and_gate: Passed.
               vhdl_andg_bit: Passed.
          vhdl_andg_stdlogic: Passed.
+            vhdl_case_multi: Passed.
                 vhdl_concat: Passed.
          vhdl_const_package: Passed.
                  vhdl_expr1: Passed.
@@ -2018,6 +2017,7 @@ test_mos_strength_reduction: Passed.
           vhdl_org_stdlogic: Passed.
             vhdl_rand23_bit: Passed.
                  vhdl_range: Passed.
+            vhdl_range_func: Passed.
                   vhdl_real: Passed.
            vhdl_record_elab: Passed.
                   vhdl_rtoi: Passed.
@@ -2051,6 +2051,7 @@ test_mos_strength_reduction: Passed.
             vhdl_umul23_bit: Passed.
        vhdl_umul23_stdlogic: Passed.
              vhdl_unbounded: Passed.
+        vhdl_unbounded_func: Passed.
             vhdl_usub23_bit: Passed.
        vhdl_usub23_stdlogic: Passed.
       vhdl_xnor104_stdlogic: Passed.
@@ -2099,4 +2100,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2097, Passed=2092, Failed=5, Not Implemented=0, Expected Fail=0
+  Total=2098, Passed=2093, Failed=5, Not Implemented=0, Expected Fail=0
