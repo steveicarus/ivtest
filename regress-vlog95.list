@@ -629,6 +629,7 @@ vhdl_ssub23_stdlogic	normal,-g2009,-pallowsigned=1,ivltests/vhdl_ssub23_stdlogic
 vhdl_smul23_stdlogic	normal,-g2009,-pallowsigned=1,ivltests/vhdl_smul23_stdlogic.vhd ivltests
 vhdl_test3		normal,-g2005-sv,-pallowsigned=1,ivltests/vhdl_test3.vhd	ivltests gold=vhdl_test3.gold
 vhdl_subprogram 	normal,-g2005-sv,-pallowsigned=1,ivltests/vhdl_subprogram_pkg.vhd,ivltests/vhdl_subprogram.vhd	ivltests
+vhdl_unbounded_func	normal,-g2005-sv,-pallowsigned=1,ivltests/vhdl_unbounded_func_pkg.vhd,ivltests/vhdl_unbounded_func.vhd	ivltests
 
 # $signed() and $unsigned() in the compiler are always supported and they
 # are supported in general if the -pallowsigned=1 flag is provided.
