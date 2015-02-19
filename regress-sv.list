@@ -95,6 +95,7 @@ display_bug		normal,-g2009		ivltests gold=display_bug.gold
 enum_base_range 	normal,-g2005-sv	ivltests
 enum_elem_ranges	normal,-g2005-sv	ivltests
 enum_next		normal,-g2005-sv	ivltests
+enum_ports		normal,-g2005-sv	ivltests
 enum_test1		normal,-g2005-sv	ivltests
 enum_test2		normal,-g2005-sv	ivltests
 enum_test3		CE,-g2005-sv		ivltests

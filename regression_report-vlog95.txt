@@ -387,6 +387,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
            enum_elem_ranges: Passed.
             enum_value_expr: Passed.
                 enum_values: Passed.
+                 enum_ports: Passed.
                      extend: Passed.
              first_last_num: Passed.
                        fr49: Passed.
@@ -474,6 +475,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  vhdl_range: Passed.
             vhdl_range_func: Passed.
                   vhdl_rtoi: Passed.
+                 vhdl_shift: Passed.
+            vhdl_to_integer: Passed.
                 test_system: Passed.
               test_tliteral: Passed.
                  vhdl_test8: Passed.
@@ -2028,12 +2031,14 @@ test_mos_strength_reduction: Passed.
             vhdl_case_multi: Passed.
                 vhdl_concat: Passed.
          vhdl_const_package: Passed.
+           vhdl_const_array: Passed.
                  vhdl_expr1: Passed.
              vhdl_fa4_test1: Passed.
              vhdl_fa4_test2: Passed.
              vhdl_fa4_test3: Passed.
              vhdl_fa4_test4: Passed.
                   vhdl_init: Passed.
+        vhdl_labeled_assign: Passed.
       vhdl_nand104_stdlogic: Passed.
             vhdl_nand23_bit: Passed.
              vhdl_nandg_bit: Passed.
@@ -2100,4 +2105,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2098, Passed=2068, Failed=3, Not Implemented=3, Expected Fail=24
+  Total=2103, Passed=2073, Failed=3, Not Implemented=3, Expected Fail=24

@@ -84,12 +84,14 @@ vhdl_andg_stdlogic	normal,-g2005-sv,ivltests/vhdl_andg_stdlogic.vhd	ivltests
 vhdl_case_multi		normal,-g2005-sv,ivltests/vhdl_case_multi.vhd		ivltests
 vhdl_concat		normal,-g2009,ivltests/vhdl_concat.vhd			ivltests
 vhdl_const_package	normal,-g2005-sv,ivltests/vhdl_const_package_pkg.vhd,ivltests/vhdl_const_package.vhd	ivltests
+vhdl_const_array	normal,-g2005-sv,ivltests/vhdl_const_array_pkg.vhd,ivltests/vhdl_const_array.vhd	ivltests
 vhdl_expr1		normal,-g2005-sv,ivltests/vhdl_expr1.vhd		ivltests
 vhdl_fa4_test1		normal,-g2005-sv,ivltests/vhdl_fa4_test1.vhd		ivltests
 vhdl_fa4_test2		normal,-g2005-sv,ivltests/vhdl_fa4_test2.vhd		ivltests
 vhdl_fa4_test3		normal,-g2005-sv,ivltests/vhdl_fa4_test3.vhd		ivltests
 vhdl_fa4_test4		normal,-g2005-sv,ivltests/vhdl_fa4_test4.vhd		ivltests
 vhdl_init		normal,ivltests/vhdl_init.vhd				ivltests
+vhdl_labeled_assign	normal,-g2005-sv,ivltests/vhdl_labeled_assign.vhd	ivltests
 vhdl_nand104_stdlogic	normal,-g2005-sv,ivltests/vhdl_nand104_stdlogic.vhd	ivltests
 vhdl_nand23_bit 	normal,-g2005-sv,ivltests/vhdl_nand23_bit.vhd		ivltests
 vhdl_nandg_bit		normal,-g2005-sv,ivltests/vhdl_nandg_bit.vhd		ivltests
@@ -120,6 +122,7 @@ vhdl_sadd23_bit 	normal,-g2005-sv,ivltests/vhdl_sadd23_bit.vhd		ivltests
 vhdl_sadd23_stdlogic	normal,-g2005-sv,ivltests/vhdl_sadd23_stdlogic.vhd	ivltests
 vhdl_sdiv23_bit 	normal,-g2005-sv,ivltests/vhdl_sdiv23_bit.vhd		ivltests
 vhdl_sdiv23_stdlogic	normal,-g2005-sv,ivltests/vhdl_sdiv23_stdlogic.vhd	ivltests
+vhdl_shift		normal,-g2005-sv,ivltests/vhdl_shift.vhd		ivltests
 vhdl_signals		normal,-g2005-sv,ivltests/vhdl_signals.vhd		ivltests
 vhdl_smul23_bit 	normal,-g2005-sv,ivltests/vhdl_smul23_bit.vhd		ivltests
 vhdl_smul23_stdlogic	normal,-g2005-sv,ivltests/vhdl_smul23_stdlogic.vhd	ivltests
@@ -136,6 +139,7 @@ vhdl_test6		normal,-g2005-sv,ivltests/vhdl_test6.vhd		ivltests
 vhdl_test7		normal,-g2005-sv,ivltests/vhdl_test7.vhd		ivltests
 vhdl_test8		normal,-g2005-sv,ivltests/vhdl_test8.vhd		ivltests
 vhdl_test9		normal,-g2005-sv,ivltests/vhdl_test9.vhd		ivltests
+vhdl_to_integer		normal,-g2005-sv,ivltests/vhdl_to_integer.vhd		ivltests
 vhdl_uadd23_bit 	normal,-g2005-sv,ivltests/vhdl_uadd23_bit.vhd		ivltests
 vhdl_uadd23_stdlogic	normal,-g2005-sv,ivltests/vhdl_uadd23_stdlogic.vhd	ivltests
 vhdl_udiv23_bit 	normal,-g2005-sv,ivltests/vhdl_udiv23_bit.vhd		ivltests
