@@ -20,32 +20,50 @@
 // Test for constant arrays access
 
 module constant_array_test;
-constant_array dut();
+reg logic [7:0] out_word;
+reg logic [2:0] index;
+constant_array dut(index, out_word);
 
 initial begin
+  index = 2;
   #1;       // wait for signal assignments
 
-  if(dut.test_a !== 32)
+  if(out_word !== 16)
   begin
     $display("FAILED 1");
     $finish();
   end
 
-  if(dut.test_b !== 4)
+  index = 4;
+  #1;
+
+  if(out_word !== 64)
   begin
     $display("FAILED 2");
     $finish();
   end
 
-  if(dut.test_c !== 3'b100)
+  if(dut.test_a !== 32)
   begin
     $display("FAILED 3");
     $finish();
   end
 
-  if(dut.test_d !== 1'b1)
+  if(dut.test_b !== 4)
   begin
     $display("FAILED 4");
+    $finish();
+  end
+
+  if(dut.test_c !== 3'b100)
+  begin
+    $display("FAILED 5");
+    $finish();
+  end
+
+  if(dut.test_d !== 1'b1)
+  begin
+    $display("FAILED 6");
     $finish();
   end
 

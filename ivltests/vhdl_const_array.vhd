@@ -25,6 +25,8 @@ use ieee.numeric_std.all;
 use work.constant_array_pkg.all;
 
 entity constant_array is
+    port (index  : in  std_logic_vector(2 downto 0);
+          output : out std_logic_vector(7 downto 0));
 end entity constant_array;
 
 architecture test of constant_array is
@@ -49,4 +51,9 @@ begin
   test_b <= test_array(2);
   test_c <= vector(4 downto 2);
   test_d <= vector(5);
+
+  process (index)
+  begin
+    output <= const_array(to_integer(unsigned(index)));
+  end process;
 end architecture test;
