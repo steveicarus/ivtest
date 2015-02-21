@@ -389,6 +389,9 @@ for_loop_synth2		NI
 # v0.9 doesn't support $fatal
 fatal_et_al		NI
 
+# v0.9 doesn't support $ivl_darray_method$to_vec & $ivl_darray_method$from_vec
+sv_cast_darray		NI
+
 # These tests only fail in synthesis.
 case5-syn-fail		normal			ivltests
 casesynth7		CO			ivltests

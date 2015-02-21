@@ -186,6 +186,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                  full_case2: Not Implemented.
             for_loop_synth2: Not Implemented.
                 fatal_et_al: Not Implemented.
+             sv_cast_darray: Not Implemented.
              case5-syn-fail: Passed.
                  casesynth7: Passed - CO.
                  casesynth8: Passed - CO.
@@ -1759,4 +1760,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=1757, Passed=1634, Failed=0, Not Implemented=69, Expected Fail=54
+  Total=1758, Passed=1634, Failed=0, Not Implemented=70, Expected Fail=54
