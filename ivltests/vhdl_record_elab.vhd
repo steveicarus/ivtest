@@ -45,13 +45,17 @@ end record;
 
 type dword is array (1 downto 0) of word;
 
-signal my_dword: dword;
+signal my_dword : dword;
+signal dword_a  : dword;
 
 begin
   -- inputs
   my_dword(0) <= (low => i_low0, high => i_high0);
   -- test if you can assign values in any order
   my_dword(1) <= (high => i_high1, low => i_low1);
+
+  dword_a <= (0 => (low => "0110", high => "1001"),
+              1 => (high => "1100", low => "0011"));
 
   -- outputs
   o_low0 <= my_dword(0).low;

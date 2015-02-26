@@ -32,14 +32,21 @@ module vhdl_record_elab_test;
             .i_high0(in[7:4]),   .i_low0(in[3:0]));
 
   initial begin
-     for (in = 0 ; in < 256 ; in = in+1) begin
+    for (in = 0 ; in < 256 ; in = in+1) begin
         #1 if (in !== out[15:0]) begin
-           $display("FAILED -- out=%h, in=%h", out, in);
-           $finish;
+            $display("FAILED -- out=%h, in=%h", out, in);
+            $finish;
         end
-     end
+    end
 
-     $display("PASSED");
+    if (dut.dword_a[0].low !== 4'b0110 || dut.dword_a[0].high !== 4'b1001 ||
+        dut.dword_a[1].low !== 4'b0011 || dut.dword_a[1].high !== 4'b1100)
+    begin
+        $display("FAILED 2");
+        $finish;
+    end
+
+    $display("PASSED");
   end
 endmodule
 
