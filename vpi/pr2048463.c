@@ -54,7 +54,7 @@ static PLI_INT32 sys_end_of_simulation(p_cb_data cb_data)
 /**********************************************************************
  * VPI Registration Data
  *********************************************************************/
-void PLIbook_MyMonitor_register()
+void PLIbook_MyMonitor_register(void)
 {
   s_vpi_systf_data tf_data;
   s_cb_data    cb_data;
@@ -76,7 +76,7 @@ void PLIbook_MyMonitor_register()
 }
 
 
-void (*vlog_startup_routines[])() = {
+void (*vlog_startup_routines[])(void) = {
    PLIbook_MyMonitor_register,
    0
 };

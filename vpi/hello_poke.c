@@ -58,7 +58,7 @@ static PLI_INT32 my_hello_calltf(PLI_BYTE8 *xx)
       return 0;
 }
 
-static void my_hello_register()
+static void my_hello_register(void)
 {
       s_vpi_systf_data tf_data;
 
@@ -74,7 +74,7 @@ static void my_hello_register()
  * This is a table of register functions. This table is the external
  * symbol that the simulator looks for when loading this .vpi module.
  */
-void (*vlog_startup_routines[])() = {
+void (*vlog_startup_routines[])(void) = {
       my_hello_register,
       0
 };

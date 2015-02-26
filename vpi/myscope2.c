@@ -48,7 +48,7 @@ static void veriusertfs_register(void)
       veriusertfs_register_table(sn);
 }
 
-void (*vlog_startup_routines[])() = {
+void (*vlog_startup_routines[])(void) = {
       &veriusertfs_register,
       0
 };

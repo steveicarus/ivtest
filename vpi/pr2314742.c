@@ -7,7 +7,7 @@
  * This file exercises an error
  */
 
-static int chkvpierr()
+static int chkvpierr(void)
 {
   s_vpi_error_info info;
   int level;
@@ -104,7 +104,7 @@ static PLI_INT32 xxx_calltf(PLI_BYTE8 *user_data)
 }
 
 
-static void xxx_register()
+static void xxx_register(void)
 {
   s_vpi_systf_data      tfdata;
 
@@ -141,7 +141,7 @@ static void xxx_register()
 
 
 
-static void xxx_startup()
+static void xxx_startup(void)
 {
   vpi_printf("*** Registering XXX PLI functions.\n");
   xxx_register();
@@ -152,7 +152,7 @@ static void xxx_startup()
  *
  **/
 
-void (*vlog_startup_routines[])() = {
+void (*vlog_startup_routines[])(void) = {
     xxx_startup,
     0
 };

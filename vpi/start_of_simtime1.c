@@ -77,7 +77,7 @@ static PLI_INT32 poke_calltf(char*xx)
       return 0;
 }
 
-static void poke_after_delay_register()
+static void poke_after_delay_register(void)
 {
       s_vpi_systf_data tf_data;
 
@@ -90,7 +90,7 @@ static void poke_after_delay_register()
 
 }
 
-void (*vlog_startup_routines[])() = {
+void (*vlog_startup_routines[])(void) = {
       poke_after_delay_register,
       0
 };

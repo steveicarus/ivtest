@@ -36,7 +36,7 @@ static PLI_INT32 number_compiletf(PLI_BYTE8 *x)
       return 0;
 }
 
-static void local_register()
+static void local_register(void)
 {
       s_vpi_systf_data tf_data;
 
@@ -49,5 +49,5 @@ static void local_register()
       vpi_register_systf(&tf_data);
 }
 
-void (*vlog_startup_routines[]) () = {
+void (*vlog_startup_routines[]) (void) = {
 local_register, 0};

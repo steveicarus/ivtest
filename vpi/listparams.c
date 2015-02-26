@@ -82,7 +82,7 @@ static void listparams_register(void)
       vpi_register_systf(&tf_data);
 }
 
-void (*vlog_startup_routines[])() = {
+void (*vlog_startup_routines[])(void) = {
       listparams_register,
       0
 };

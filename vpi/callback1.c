@@ -81,7 +81,7 @@ my_Register(void)
     vpi_register_cb(&cb_data);
 }
 
-void (*vlog_startup_routines[])() = {
+void (*vlog_startup_routines[])(void) = {
         my_Register,
         0
 };

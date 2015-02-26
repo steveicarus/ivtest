@@ -55,5 +55,5 @@ static void my_Register(void)
 	vpi_register_systf(&tf_data);
 }
 
-void (*vlog_startup_routines[]) () = {
+void (*vlog_startup_routines[]) (void) = {
 my_Register, 0};

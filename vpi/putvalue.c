@@ -80,4 +80,4 @@ VPIRegister(void)
     vpi_register_cb(&cb_data);
 }
 
-void (*vlog_startup_routines[]) () = { VPIRegister, 0};
+void (*vlog_startup_routines[]) (void) = { VPIRegister, 0};

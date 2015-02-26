@@ -76,7 +76,7 @@ static PLI_INT32 my_watchreal_calltf(PLI_BYTE8 *xx)
       return 0;
 }
 
-static void my_watchreal_register()
+static void my_watchreal_register(void)
 {
       s_vpi_systf_data tf_data;
 
@@ -88,7 +88,7 @@ static void my_watchreal_register()
       vpi_register_systf(&tf_data);
 }
 
-void (*vlog_startup_routines[])() = {
+void (*vlog_startup_routines[])(void) = {
       my_watchreal_register,
       0
 };

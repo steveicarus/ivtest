@@ -40,7 +40,7 @@ static PLI_INT32 PLIbook_PowStartOfSim(s_cb_data *callback_data);
  * $my_pow Registration Data
  * (add this function name to the vlog_startup_routines array)
  *********************************************************************/
-void PLIbook_pow_register()
+void PLIbook_pow_register(void)
 {
   s_vpi_systf_data tf_data;
   s_cb_data        cb_data_s;
@@ -200,7 +200,7 @@ static PLI_INT32 PLIbook_PowStartOfSim(s_cb_data *callback_data)
 /*********************************************************************/
 
 
-void (*vlog_startup_routines[])() =
+void (*vlog_startup_routines[])(void) =
 {
     /*** add user entries here ***/
   PLIbook_pow_register,

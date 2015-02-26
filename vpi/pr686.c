@@ -89,7 +89,7 @@ static void register_functions(void)
       vpi_register_systf(&tf_data);
 }
 
-void (*vlog_startup_routines[])() = {
+void (*vlog_startup_routines[])(void) = {
       register_functions,
       0
 };

@@ -22,7 +22,7 @@
 #include "vpi_user.h"
 
 
-static void checkParams()
+static void checkParams(void)
 {
     vpiHandle mod_i = vpi_iterate(vpiModule, NULL) ;
     assert( mod_i != NULL );
@@ -71,7 +71,7 @@ static void checkParams()
 
 
 
-static void checkPorts()
+static void checkPorts(void)
 {
     vpiHandle mod_i = vpi_iterate(vpiModule, NULL) ;
     assert( mod_i != 0 );
@@ -119,4 +119,4 @@ static void setCallback(void)
 }
 
 
-void (*vlog_startup_routines[]) () = { setCallback, 0};
+void (*vlog_startup_routines[]) (void) = { setCallback, 0};

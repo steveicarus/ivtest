@@ -196,7 +196,7 @@ static PLI_INT32 one_arg_array_compiletf(ICARUS_VPI_CONST PLI_BYTE8*user_data)
     return 0;
 }
 
-static void test_array_register()
+static void test_array_register(void)
 {
       s_vpi_systf_data tf_data;
 
@@ -219,7 +219,7 @@ static void test_array_register()
  * This is a table of register functions. This table is the external
  * symbol that the simulator looks for when loading this .vpi module.
  */
-void (*vlog_startup_routines[])() = {
+void (*vlog_startup_routines[])(void) = {
       test_array_register,
       0
 };

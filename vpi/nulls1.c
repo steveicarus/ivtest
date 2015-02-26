@@ -79,5 +79,5 @@ static void my_Register(void)
 
 }
 
-void (*vlog_startup_routines[]) () = {
+void (*vlog_startup_routines[]) (void) = {
 my_Register, 0};

@@ -9,7 +9,7 @@ static PLI_INT32 end_of_sim_cb(struct t_cb_data *x)
       return 0;
 }
 
-static void cb_register()
+static void cb_register(void)
 {
       s_cb_data cb_data;
       memset(&cb_data, 0, sizeof(s_cb_data));
@@ -22,7 +22,7 @@ static void cb_register()
  * This is a table of register functions. This table is the external
  * symbol that the simulator looks for when loading this .vpi module.
  */
-void (*vlog_startup_routines[])() = {
+void (*vlog_startup_routines[])(void) = {
       cb_register,
       0
 };

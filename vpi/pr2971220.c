@@ -230,7 +230,7 @@ static void register_check_systf(void)
       vpi_printf("--> registered func as: %s.\n", tf_data.tfname);
 }
 
-void (*vlog_startup_routines[])() = {
+void (*vlog_startup_routines[])(void) = {
       register_check_systf,
       0
 };
