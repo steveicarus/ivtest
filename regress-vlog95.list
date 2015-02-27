@@ -161,6 +161,7 @@ array_lval_select3a-	normal,-DVLOG95 	ivltests
 array_lval_select3b	CE,-DVLOG95		ivltests
 array_select		CE,-pallowsigned=1	ivltests
 array_select_a		CE			ivltests
+array_unpacked_sysfunct	CE,-g2005-sv	ivltests
 array_word_width2	CE			ivltests
 genvar_scopes		CE			ivltests
 meminit2		CE			ivltests
@@ -198,7 +199,6 @@ sv_unpacked_port	CE,-g2009		ivltests
 sv_unpacked_port2	CE,-g2009,-pallowsigned=1	ivltests
 sv_unpacked_wire	CE,-g2009		ivltests
 sv_unpacked_wire2	CE,-g2009,-pallowsigned=1	ivltests
-array_unpacked_sysfunct	CE,-g2005-sv	ivltests
 
 # A zero replication in a CA is not supported.
 concat4 		EF			ivltests
@@ -218,17 +218,18 @@ br932b			CE,-g2009		ivltests
 br_gh4			CE,-g2009		ivltests
 plus_arg_string		CE,-g2009		ivltests
 string_index		CE,-g2005-sv		ivltests
+sv_macro		CE,-g2009,-pallowsigned=1	ivltests
 sv_string1		CE,-g2009		ivltests
 sv_string2		CE,-g2009		ivltests
 sv_string3		CE,-g2009		ivltests
 sv_string4		CE,-g2009		ivltests
 sv_string5		CE,-g2009		ivltests
-sv_macro		CE,-g2009,-pallowsigned=1	ivltests
 
 # SystemVerilog dynamic arrays and new operator.
-sv_array_assign_pattern2	CE,-g2009,-pallowsigned=1	ivltests
 br962			CE,-g2009		ivltests
 br963			CE,-g2009		ivltests
+sv_array_assign_pattern2	CE,-g2009,-pallowsigned=1	ivltests
+sv_cast_darray		CE,-g2005-sv,-pallowsigned=1	ivltests
 sv_darray1		CE,-g2009,-pallowsigned=1	ivltests
 sv_darray2		CE,-g2009,-pallowsigned=1	ivltests
 sv_darray3		CE,-g2009,-pallowsigned=1	ivltests
@@ -241,7 +242,8 @@ sv_darray_args2 	CE,-g2009,-pallowsigned=1	ivltests
 sv_darray_args2b	CE,-g2009,-pallowsigned=1	ivltests
 sv_darray_args3 	CE,-g2009,-pallowsigned=1	ivltests
 sv_darray_args4 	CE,-g2009,-pallowsigned=1	ivltests  # Also string
-sv_cast_darray		CE,-g2005-sv,-pallowsigned=1	ivltests
+sv_darray_function 	CE,-g2009,-pallowsigned=1	ivltests
+unp_array_typedef 	CE,-g2009,-pallowsigned=1	ivltests  # Also string
 
 # SystemVerilog classes, new and null operators.
 br959			CE,-g2009		ivltests

@@ -88,6 +88,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
         array_lval_select3b: Passed - CE.
                array_select: Passed - CE.
              array_select_a: Passed - CE.
+    array_unpacked_sysfunct: Passed - CE.
           array_word_width2: Passed - CE.
               genvar_scopes: Passed - CE.
                    meminit2: Passed - CE.
@@ -125,7 +126,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
           sv_unpacked_port2: Passed - CE.
            sv_unpacked_wire: Passed - CE.
           sv_unpacked_wire2: Passed - CE.
-    array_unpacked_sysfunct: Passed - CE.
                     concat4: Passed - expected fail.
                       final: Passed - CE.
                      final2: Passed - CE.
@@ -139,15 +139,16 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                      br_gh4: Passed - CE.
             plus_arg_string: Passed - CE.
                string_index: Passed - CE.
+                   sv_macro: Passed - CE.
                  sv_string1: Passed - CE.
                  sv_string2: Passed - CE.
                  sv_string3: Passed - CE.
                  sv_string4: Passed - CE.
                  sv_string5: Passed - CE.
-                   sv_macro: Passed - CE.
-   sv_array_assign_pattern2: Passed - CE.
                       br962: Passed - CE.
                       br963: Passed - CE.
+   sv_array_assign_pattern2: Passed - CE.
+             sv_cast_darray: Passed - CE.
                  sv_darray1: Passed - CE.
                  sv_darray2: Passed - CE.
                  sv_darray3: Passed - CE.
@@ -160,7 +161,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
            sv_darray_args2b: Passed - CE.
             sv_darray_args3: Passed - CE.
             sv_darray_args4: Passed - CE.
-             sv_cast_darray: Passed - CE.
+         sv_darray_function: Passed - CE.
+          unp_array_typedef: Passed - CE.
                       br959: Passed - CE.
                   sv_class1: Passed - CE.
                   sv_class2: Passed - CE.
@@ -2106,4 +2108,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2104, Passed=2074, Failed=3, Not Implemented=3, Expected Fail=24
+  Total=2106, Passed=2076, Failed=3, Not Implemented=3, Expected Fail=24
