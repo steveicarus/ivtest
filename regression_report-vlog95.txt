@@ -162,6 +162,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
             sv_darray_args3: Passed - CE.
             sv_darray_args4: Passed - CE.
          sv_darray_function: Passed - CE.
+           sv_darray_signed: Passed - CE.
         sv_darray_word_size: Passed - CE.
           unp_array_typedef: Passed - CE.
                       br959: Passed - CE.
@@ -2109,4 +2110,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2107, Passed=2077, Failed=3, Not Implemented=3, Expected Fail=24
+  Total=2108, Passed=2078, Failed=3, Not Implemented=3, Expected Fail=24
