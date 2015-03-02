@@ -7,7 +7,6 @@ module main;
       $finish_and_return(1);
     end
     $display("Using image: %s", img);
-// HERE: this fails with !==
     if (img != "test_image.file") $display("FAILED");
     else $display("PASSED");
   end
