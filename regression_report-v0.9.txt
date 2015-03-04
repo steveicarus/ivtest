@@ -42,6 +42,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                   pr3149494: Passed - expected fail.
                   pr3284821: Passed - expected fail.
                   pr2877564: Passed - CE.
+               scan-invalid: Passed.
                   pr1723367: Passed.
         non-polymorphic-abs: Passed - expected fail.
               gate_connect2: Passed - CE.
@@ -1450,7 +1451,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                     rnpmos2: Passed.
                         rop: Passed.
                   rptconcat: Passed.
-               scan-invalid: Passed.
                       scanf: Passed.
                      scanf2: Passed.
                      scanf3: Passed.

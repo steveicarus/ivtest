@@ -150,6 +150,7 @@ pr3284821		EF			ivltests
 
 # v0.9 has a slightly different message
 pr2877564		CE			ivltests gold=pr2877564-v0.9.gold
+scan-invalid            normal                  ivltests gold=scan-invalid-v0.9.gold
 
 # v0.9 uses the input/output line instead of the width declaration line in
 # the warning message.
