@@ -20,8 +20,8 @@
 // Test for to_integer() function.
 
 module to_int_test;
-reg logic unsigned [7:0] unsign;
-reg logic signed [7:0] sign;
+logic unsigned [7:0] unsign;
+logic signed [7:0] sign;
 to_int dut(unsign, sign);
 
 initial begin

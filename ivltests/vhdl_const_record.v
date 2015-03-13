@@ -20,9 +20,9 @@
 // Test for accessing constant records & arrays of records in VHDL.
 
 module vhdl_const_record_test;
-reg int sel;
-reg logic[7:0] hex;
-reg logic[7:0] aval;
+int sel;
+logic [7:0] hex;
+logic [7:0] aval;
 vhdl_const_record dut(sel, hex, aval);
 
 initial begin

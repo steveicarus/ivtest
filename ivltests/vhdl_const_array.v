@@ -19,9 +19,9 @@
 
 // Test for constant arrays access
 
-module constant_array_test;
-reg logic [7:0] out_word;
-reg logic [2:0] index;
+module constant_array_test();
+reg [7:0] out_word;
+reg [2:0] index;
 constant_array dut(index, out_word);
 
 initial begin
