@@ -1976,6 +1976,7 @@ test_mos_strength_reduction: Passed.
                       work7: Passed.
                      work7b: Passed.
                  ivlh_event: Passed.
+        ivlh_rising_falling: Passed.
                test_dec2to4: Passed.
             test_enumsystem: Passed.
                 test_forgen: Passed.
@@ -1995,8 +1996,10 @@ test_mos_strength_reduction: Passed.
             vhdl_case_multi: Passed.
                 vhdl_concat: Passed.
          vhdl_const_package: Passed.
+          vhdl_const_record: Passed.
            vhdl_const_array: Passed.
                  vhdl_expr1: Passed.
+          vhdl_generic_eval: Passed.
              vhdl_fa4_test1: Passed.
              vhdl_fa4_test2: Passed.
              vhdl_fa4_test3: Passed.
@@ -2107,4 +2110,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2105, Passed=2100, Failed=5, Not Implemented=0, Expected Fail=0
+  Total=2108, Passed=2103, Failed=5, Not Implemented=0, Expected Fail=0
