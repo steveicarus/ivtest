@@ -190,6 +190,7 @@ simple_longint		normal,-g2005-sv	ivltests
 simple_shortint 	normal,-g2005-sv	ivltests
 sint_test		normal,-g2005-sv	ivltests
 size_cast		normal,-g2009		ivltests
+size_cast2		normal,-g2005-sv	ivltests
 slongint_test		normal,-g2005-sv	ivltests
 sshortint_test		normal,-g2005-sv	ivltests
 string_index		normal,-g2005-sv	ivltests
