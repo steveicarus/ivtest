@@ -64,6 +64,8 @@
 # gold or diff commands.
 #
 
+br942			normal,-g2009,ivltests/br942.vhd			ivltests
+br943_944		normal,-g2009,ivltests/br943_944.vhd			ivltests
 ivlh_event		normal,-mvhdl_sys					ivltests gold=ivlh_event.gold
 ivlh_rising_falling	normal,-mvhdl_sys					ivltests gold=ivlh_rising_falling.gold
 test_dec2to4		normal,-g2009,ivltests/dec2to4.vhd			ivltests
