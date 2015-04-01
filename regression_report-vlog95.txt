@@ -381,6 +381,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                      br917b: Passed.
                      br917c: Passed.
                      br917d: Passed.
+                  br943_944: Passed.
                      br_gh8: Passed.
                     ca_mult: Passed.
                    cast_int: Passed.
@@ -477,6 +478,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
              test_dispwided: Passed.
                test_inc_dec: Passed.
             test_enumsystem: Passed.
+          vhdl_prefix_array: Passed.
                  vhdl_range: Passed.
             vhdl_range_func: Passed.
                   vhdl_rtoi: Passed.
@@ -1985,6 +1987,7 @@ test_mos_strength_reduction: Passed.
                   program5b: Passed - CE.
              program_hello2: Passed - CE.
                   size_cast: Passed.
+                 size_cast2: Passed.
                     struct1: Passed.
                     struct2: Passed.
                     struct3: Passed.
@@ -2024,6 +2027,7 @@ test_mos_strength_reduction: Passed.
        undef_lval_select_SV: Passed.
                       work7: Passed.
                      work7b: Passed.
+                      br942: Passed.
                  ivlh_event: Passed.
         ivlh_rising_falling: Passed.
                test_dec2to4: Passed.
@@ -2038,6 +2042,7 @@ test_mos_strength_reduction: Passed.
          vhdl_andg_stdlogic: Passed.
             vhdl_case_multi: Passed.
                 vhdl_concat: Passed.
+           vhdl_concat_func: Passed.
          vhdl_const_package: Passed.
            vhdl_const_array: Passed.
                  vhdl_expr1: Passed.
@@ -2114,4 +2119,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2112, Passed=2082, Failed=3, Not Implemented=3, Expected Fail=24
+  Total=2117, Passed=2087, Failed=3, Not Implemented=3, Expected Fail=24

@@ -1842,6 +1842,7 @@ test_mos_strength_reduction: Passed.
             simple_shortint: Passed.
                   sint_test: Passed.
                   size_cast: Passed.
+                 size_cast2: Passed.
               slongint_test: Passed.
              sshortint_test: Passed.
                string_index: Passed.
@@ -1979,6 +1980,8 @@ test_mos_strength_reduction: Passed.
                   wait_fork: Passed.
                       work7: Passed.
                      work7b: Passed.
+                      br942: Passed.
+                  br943_944: Passed.
                  ivlh_event: Passed.
         ivlh_rising_falling: Passed.
                test_dec2to4: Passed.
@@ -1999,6 +2002,7 @@ test_mos_strength_reduction: Passed.
          vhdl_andg_stdlogic: Passed.
             vhdl_case_multi: Passed.
                 vhdl_concat: Passed.
+           vhdl_concat_func: Passed.
          vhdl_const_package: Passed.
           vhdl_const_record: Passed.
            vhdl_const_array: Passed.
@@ -2027,6 +2031,7 @@ test_mos_strength_reduction: Passed.
               vhdl_or23_bit: Passed.
                vhdl_org_bit: Passed.
           vhdl_org_stdlogic: Passed.
+          vhdl_prefix_array: Passed.
             vhdl_rand23_bit: Passed.
                  vhdl_range: Passed.
             vhdl_range_func: Passed.
@@ -2114,4 +2119,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2112, Passed=2107, Failed=5, Not Implemented=0, Expected Fail=0
+  Total=2117, Passed=2112, Failed=5, Not Implemented=0, Expected Fail=0
