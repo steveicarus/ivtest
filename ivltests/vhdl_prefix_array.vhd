@@ -37,19 +37,14 @@ architecture test of prefix_array is
   type t_timeouts_table is array (natural range <>) of t_timeouts;
 
   constant c_TIMEOUTS_TABLE : t_timeouts_table(3 downto 0) :=
-                              (0 => (a => 1,
-                                     b => 2),
-                               1 => (a => 3,
-                                     b => 4),
-                               2 => (a => 5,
-                                     b => 6),
-                               3 => (a => 7,
-                                     b => 8));
+                              (0 => (a => 1, b => 2),
+                               1 => (a => 3, b => 4),
+                               2 => (a => 5, b => 6),
+                               3 => (a => 7, b => 8));
 
 begin
   process(sel_word)
   begin
-    out_word <= to_unsigned((c_TIMEOUTS_TABLE(to_integer(unsigned(sel_word))).a),
-                            out_word'length);
+    out_word <= to_unsigned((c_TIMEOUTS_TABLE(to_integer(unsigned(sel_word))).a), 32);
   end process;
 end architecture test;
