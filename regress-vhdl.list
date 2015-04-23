@@ -123,6 +123,7 @@ vhdl_range		normal,-g2009,ivltests/vhdl_range.vhd			ivltests
 vhdl_range_func		normal,-g2009,ivltests/vhdl_range_func_pkg.vhd,ivltests/vhdl_range_func.vhd,	ivltests
 vhdl_real		normal,-g2009,ivltests/vhdl_real.vhd			ivltests
 vhdl_record_elab	normal,-g2005-sv,ivltests/vhdl_record_elab_pkg.vhd,ivltests/vhdl_record_elab.vhd	ivltests
+vhdl_report		normal,-g2005-sv,ivltests/vhdl_report_pkg.vhd,ivltests/vhdl_report.vhd	ivltests gold=vhdl_report.gold
 vhdl_rtoi		normal,-g2009,ivltests/vhdl_rtoi.vhd			ivltests
 vhdl_sa1_test1		normal,-g2005-sv,ivltests/vhdl_sa1_test1.vhd		ivltests
 vhdl_sa1_test2		normal,-g2005-sv,ivltests/vhdl_sa1_test2.vhd		ivltests
