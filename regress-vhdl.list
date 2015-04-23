@@ -85,6 +85,7 @@ vhdl_and_gate		normal,-g2005-sv,ivltests/vhdl_and_gate.vhd		ivltests
 vhdl_andg_bit		normal,-g2005-sv,ivltests/vhdl_andg_bit.vhd		ivltests
 vhdl_andg_stdlogic	normal,-g2005-sv,ivltests/vhdl_andg_stdlogic.vhd	ivltests
 vhdl_case_multi		normal,-g2005-sv,ivltests/vhdl_case_multi.vhd		ivltests
+vhdl_boolean		normal,-g2005-sv,ivltests/vhdl_boolean.vhd		ivltests
 vhdl_concat		normal,-g2009,ivltests/vhdl_concat.vhd			ivltests
 vhdl_concat_func	normal,-g2005-sv,ivltests/vhdl_concat_func.vhd		ivltests
 vhdl_const_package	normal,-g2005-sv,ivltests/vhdl_const_package_pkg.vhd,ivltests/vhdl_const_package.vhd	ivltests
