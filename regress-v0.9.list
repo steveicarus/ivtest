@@ -400,6 +400,9 @@ br_ml20150424		NI
 # v0.9 silently ignores extra indices.
 br_gh62			NI
 
+# The check for zero-width numeric constants hasn't been backported.
+br_gh60a		NI
+
 # These tests only fail in synthesis.
 case5-syn-fail		normal			ivltests
 casesynth7		CO			ivltests
