@@ -254,6 +254,7 @@ sub diff {
         while ($lline =~ m/^(==|\*\*)\d+(==|\*\*)/) {
             $lline = <LOG>;
         }
+        $gline =~ s/\r\n$/\n/;  # Strip <CR> at the end of line.
         $lline =~ s/\r\n$/\n/;  # Strip <CR> at the end of line.
         if ($gline ne $lline) {
             $diff = 1;
