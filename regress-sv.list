@@ -83,6 +83,7 @@ br956			normal,-g2009		ivltests
 br959			normal,-g2009		ivltests
 br962			normal,-g2009		ivltests
 br963			normal,-g2009		ivltests
+br973			normal,-g2009		ivltests
 br_gh4			normal,-g2009		ivltests
 br_gh4a 		normal,-g2009		ivltests
 cast_real		normal,-g2005-sv	ivltests

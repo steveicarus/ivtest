@@ -180,6 +180,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                constconcat2: Passed - expected fail.
                      br605a: Passed - expected fail.
                      br605b: Passed - expected fail.
+                      br971: Passed - expected fail.
               arith-unknown: Passed - expected fail.
                       br948: Passed - expected fail.
                     br_gh28: Not Implemented.
@@ -188,6 +189,9 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
             for_loop_synth2: Not Implemented.
                 fatal_et_al: Not Implemented.
              sv_cast_darray: Not Implemented.
+              br_ml20150424: Not Implemented.
+                    br_gh62: Not Implemented.
+                   br_gh60a: Not Implemented.
              case5-syn-fail: Passed.
                  casesynth7: Passed - CO.
                  casesynth8: Passed - CO.
@@ -447,6 +451,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                       br965: Passed.
                       br967: Passed.
                       br968: Passed.
+                      br972: Passed.
                      br_gh6: Passed.
                      br_gh7: Passed.
                     br_gh12: Passed.
@@ -1762,4 +1767,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=1760, Passed=1636, Failed=0, Not Implemented=70, Expected Fail=54
+  Total=1765, Passed=1637, Failed=0, Not Implemented=73, Expected Fail=55

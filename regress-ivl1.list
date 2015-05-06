@@ -149,6 +149,9 @@ pr2428890c		normal			ivltests
 # $ivl_darray_method$to_vec & $ivl_darray_method$from_vec
 sv_cast_darray		normal,-g2005-sv	ivltests
 
+# $ivl_to_unsigned
+br_ml20150424		normal			ivltests
+
 # $min/$max
 constfunc6		normal			ivltests
 pr2728032		normal			ivltests

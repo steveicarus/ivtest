@@ -643,6 +643,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  specparam2: Passed.
                       tern3: Passed.
                  pr2428890c: Passed.
+              br_ml20150424: Passed.
                   pr2728032: Passed.
                test_va_math: Passed.
                     va_math: Passed.
@@ -811,6 +812,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                       br961: Passed.
                      br961a: Passed - CE.
                       br967: Passed.
+                      br971: ==> Failed - output does not match gold file.
+                      br972: Passed.
                      br_gh6: Passed.
                      br_gh7: Passed.
                     br_gh11: Passed - CO.
@@ -830,6 +833,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                     br_gh30: Passed.
                     br_gh33: Passed.
                     br_gh37: Passed.
+                   br_gh60a: Passed - CE.
+                    br_gh62: Passed - CE.
              br_ml_20150315: Passed.
              br_ml_20150321: Passed - CE.
                       bufif: Passed.
@@ -1943,6 +1948,7 @@ test_mos_strength_reduction: Passed.
                  array_size: Passed.
                       br921: Passed.
                       br956: Passed.
+                      br973: Passed.
                     br_gh4a: Passed.
                  clkgen_bit: Passed.
                clkgen_logic: Passed.
@@ -2120,4 +2126,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2118, Passed=2088, Failed=3, Not Implemented=3, Expected Fail=24
+  Total=2124, Passed=2093, Failed=4, Not Implemented=3, Expected Fail=24
