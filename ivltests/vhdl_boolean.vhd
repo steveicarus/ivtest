@@ -1,5 +1,5 @@
 -- Copyright (c) 2015 CERN
--- Maciej Suminski <maciej.suminski@cern.ch>
+-- @author Maciej Suminski <maciej.suminski@cern.ch>
 --
 -- This source code is free software; you can redistribute it
 -- and/or modify it in source code form under the terms of the GNU
@@ -22,10 +22,22 @@
 library ieee;
 
 entity vhdl_boolean is
-    port (true_val, false_val : out boolean);
 end vhdl_boolean;
 
-architecture test of vhdl_boolean is begin
+architecture test of vhdl_boolean is
+    signal true_val, false_val, and1, and2, and3, or1, or2, or3, not1, not2 : boolean;
+begin
     true_val <= true;
     false_val <= false;
+
+    and1 <= true and true;
+    and2 <= true and false;
+    and3 <= false and false;
+
+    or1 <= true and true;
+    or2 <= true and false;
+    or3 <= false and false;
+
+    not1 <= not false;
+    not2 <= not true;
 end architecture test;
