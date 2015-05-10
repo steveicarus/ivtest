@@ -1,0 +1,2 @@
+# This test is sensitive to the number of bytes in the text file.
+ivltests/pr1819452.txt text eol=lf
