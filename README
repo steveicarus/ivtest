@@ -89,30 +89,36 @@ This script also takes the --suffix=<suffix> and the
 
 ####################
 #
-# MinGW test issues
+# Windows (MinGW) test issues
 #
 ####################
 
-Running under MinGW (3.14+ runtime) the following tests are
+Running under Windows (using a MinGW build) the following tests are
 expected to fail:
 
-pr1699519  - MinGW has three digit exponents.
-pr1703120  - integer infinity and infinity display
-pr1752823a  - missing -0
-pr1752823b  - infinity display and missing -0
-swrite  - MinGW has three digit exponents
-pr1864115  - %#g of 0.0 gives six decimal digits
-pr1873372  - MinGW has three digit exponents
-test_va_math  - infinity and NaN display, missing -0
-test_vams_math  - infinity and NaN display, missing -0
-ca_time  - %#g of 0.0 gives six decimal digits
-pr2509349a  - MinGW can not find /tmp
-pr2590274a  - MinGW has three digit exponents
-pr2590274b  - MinGW has three digit exponents
-pr2590274c  - MinGW has three digit exponents
-delayed_sfunc  - %#g of 0.0 gives six decimal digits
+pr1699519       - MinGW has three digit exponents.
+pr1873372       - MinGW has three digit exponents
+pr2509349a      - MinGW cannot find /tmp
+pr2590274a      - MinGW has three digit exponents
+pr2590274b      - MinGW has three digit exponents
+pr2590274c      - MinGW has three digit exponents
+swrite          - MinGW has three digit exponents
+test_va_math    - MinGW has three digit exponents
+test_vams_math  - MinGW has three digit exponents
 
 pr723  - MinGW has some fd problems that need to be investigated.
+
+v0.9 hasn't been updated to use the MinGW ANSI stdio functions, so
+has the following additional failures:
+
+ca_time         - %#g of 0.0 gives six decimal digits
+delayed_sfunc   - %#g of 0.0 gives six decimal digits
+pr1703120       - integer infinity and infinity display
+pr1752823a      - missing -0
+pr1752823b      - infinity display, missing -0
+pr1864115       - %#g of 0.0 gives six decimal digits
+test_va_math    - infinity and NaN display, missing -0
+test_vams_math  - infinity and NaN display, missing -0
 
 All of these issues produce something that humans should recognize
 as correct results (-0 == 0, extra digits, out of order text, etc.).
