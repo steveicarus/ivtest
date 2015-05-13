@@ -502,6 +502,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
        vhdl_ssub23_stdlogic: Passed.
        vhdl_smul23_stdlogic: Passed.
                  vhdl_test3: Passed.
+                vhdl_report: Passed.
             vhdl_subprogram: Passed.
         vhdl_unbounded_func: Passed.
                       br919: Passed.
@@ -2048,6 +2049,7 @@ test_mos_strength_reduction: Passed.
               vhdl_andg_bit: Passed.
          vhdl_andg_stdlogic: Passed.
             vhdl_case_multi: Passed.
+               vhdl_boolean: Passed.
                 vhdl_concat: Passed.
            vhdl_concat_func: Passed.
          vhdl_const_package: Passed.
@@ -2060,6 +2062,7 @@ test_mos_strength_reduction: Passed.
              vhdl_fa4_test4: Passed.
                   vhdl_init: Passed.
         vhdl_labeled_assign: Passed.
+                 vhdl_logic: Passed.
       vhdl_nand104_stdlogic: Passed.
             vhdl_nand23_bit: Passed.
              vhdl_nandg_bit: Passed.
@@ -2079,6 +2082,7 @@ test_mos_strength_reduction: Passed.
           vhdl_org_stdlogic: Passed.
             vhdl_rand23_bit: Passed.
            vhdl_record_elab: Passed.
+                vhdl_reduce: Passed.
              vhdl_sa1_test1: Passed.
              vhdl_sa1_test2: Passed.
              vhdl_sa1_test3: Passed.
@@ -2126,4 +2130,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2124, Passed=2093, Failed=4, Not Implemented=3, Expected Fail=24
+  Total=2128, Passed=2097, Failed=4, Not Implemented=3, Expected Fail=24

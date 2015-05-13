@@ -2005,6 +2005,7 @@ test_mos_strength_reduction: Passed.
               vhdl_andg_bit: Passed.
          vhdl_andg_stdlogic: Passed.
             vhdl_case_multi: Passed.
+               vhdl_boolean: Passed.
                 vhdl_concat: Passed.
            vhdl_concat_func: Passed.
          vhdl_const_package: Passed.
@@ -2018,6 +2019,7 @@ test_mos_strength_reduction: Passed.
              vhdl_fa4_test4: Passed.
                   vhdl_init: Passed.
         vhdl_labeled_assign: Passed.
+                 vhdl_logic: Passed.
       vhdl_nand104_stdlogic: Passed.
             vhdl_nand23_bit: Passed.
              vhdl_nandg_bit: Passed.
@@ -2041,6 +2043,8 @@ test_mos_strength_reduction: Passed.
             vhdl_range_func: Passed.
                   vhdl_real: Passed.
            vhdl_record_elab: Passed.
+                vhdl_reduce: Passed.
+                vhdl_report: Passed.
                   vhdl_rtoi: Passed.
              vhdl_sa1_test1: Passed.
              vhdl_sa1_test2: Passed.
@@ -2123,4 +2127,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2121, Passed=2115, Failed=6, Not Implemented=0, Expected Fail=0
+  Total=2125, Passed=2119, Failed=6, Not Implemented=0, Expected Fail=0
