@@ -338,6 +338,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.10.
                       br968: Passed.
                       br971: ==> Failed - output does not match gold file.
                       br972: Passed.
+                      br977: Passed.
                      br_gh6: Passed.
                      br_gh7: Passed.
                      br_gh8: Passed.
@@ -1742,8 +1743,10 @@ test_mos_strength_reduction: Passed.
                       br962: Passed.
                       br963: Passed.
                       br973: Passed.
+                      br975: Passed - CE.
                      br_gh4: Passed.
                     br_gh4a: Passed.
+            br_ml_20150315b: Passed - CE.
                   cast_real: Passed.
                  clkgen_bit: Passed.
                clkgen_logic: Passed.
@@ -2130,4 +2133,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2128, Passed=2122, Failed=6, Not Implemented=0, Expected Fail=0
+  Total=2131, Passed=2125, Failed=6, Not Implemented=0, Expected Fail=0
