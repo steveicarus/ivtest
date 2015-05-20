@@ -21,6 +21,7 @@
 
 library ieee;
 use ieee.std_logic_1164.all;
+use work.vhdl_range_pkg.all;
 
 entity range_entity is
     port (gen_vals: in std_logic);
@@ -34,6 +35,10 @@ architecture test of range_entity is
   signal ascending_rev : int_array(8 to 13);
   signal descending_rev : int_array(15 downto 10);
   signal left_asc, right_asc, left_dsc, right_dsc : integer;
+
+  -- There is no limited ranged integer in SystemVerilog, so just see if it compiles
+  signal int_asc : integer_asc;
+  signal int_desc : integer_desc;
 begin
   process(gen_vals) begin
     left_asc <= ascending'left;
