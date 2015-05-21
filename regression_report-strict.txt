@@ -2020,7 +2020,9 @@ test_mos_strength_reduction: Passed.
              vhdl_fa4_test2: Passed.
              vhdl_fa4_test3: Passed.
              vhdl_fa4_test4: Passed.
+       vhdl_generic_default: Passed.
                   vhdl_init: Passed.
+                 vhdl_inout: Passed.
         vhdl_labeled_assign: Passed.
                  vhdl_logic: Passed.
       vhdl_nand104_stdlogic: Passed.
@@ -2130,4 +2132,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2128, Passed=2122, Failed=6, Not Implemented=0, Expected Fail=0
+  Total=2130, Passed=2124, Failed=6, Not Implemented=0, Expected Fail=0
