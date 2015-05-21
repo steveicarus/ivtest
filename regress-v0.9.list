@@ -394,7 +394,8 @@ fatal_et_al		NI
 # v0.9 doesn't support $ivl_darray_method$to_vec & $ivl_darray_method$from_vec
 sv_cast_darray		NI
 
-# v0.9 doesn't support $ivl_to_unsigned
+# v0.9 doesn't support $ivlh_to_unsigned
+br978			NI
 br_ml20150424		NI
 
 # v0.9 silently ignores extra indices.
