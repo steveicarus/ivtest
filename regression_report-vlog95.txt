@@ -644,6 +644,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                  specparam2: Passed.
                       tern3: Passed.
                  pr2428890c: Passed.
+                      br978: Passed.
               br_ml20150424: Passed.
                   pr2728032: Passed.
                test_va_math: Passed.
@@ -2135,4 +2136,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2133, Passed=2102, Failed=4, Not Implemented=3, Expected Fail=24
+  Total=2134, Passed=2103, Failed=4, Not Implemented=3, Expected Fail=24

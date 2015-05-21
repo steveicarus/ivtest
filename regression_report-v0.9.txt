@@ -189,6 +189,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
             for_loop_synth2: Not Implemented.
                 fatal_et_al: Not Implemented.
              sv_cast_darray: Not Implemented.
+                      br978: Not Implemented.
               br_ml20150424: Not Implemented.
                     br_gh62: Not Implemented.
                    br_gh60a: Not Implemented.
@@ -1768,4 +1769,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=1766, Passed=1638, Failed=0, Not Implemented=73, Expected Fail=55
+  Total=1767, Passed=1638, Failed=0, Not Implemented=74, Expected Fail=55

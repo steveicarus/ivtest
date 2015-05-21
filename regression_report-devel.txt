@@ -107,6 +107,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.10.
                   pr1494799: Passed.
                  pr2428890c: Passed.
              sv_cast_darray: Passed.
+                      br978: Passed.
               br_ml20150424: Passed.
                  constfunc6: Passed.
                   pr2728032: Passed.
@@ -2135,4 +2136,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2133, Passed=2127, Failed=6, Not Implemented=0, Expected Fail=0
+  Total=2134, Passed=2128, Failed=6, Not Implemented=0, Expected Fail=0
