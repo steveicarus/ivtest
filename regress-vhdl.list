@@ -135,6 +135,7 @@ vhdl_sadd23_bit 	normal,-g2005-sv,ivltests/vhdl_sadd23_bit.vhd		ivltests
 vhdl_sadd23_stdlogic	normal,-g2005-sv,ivltests/vhdl_sadd23_stdlogic.vhd	ivltests
 vhdl_sdiv23_bit 	normal,-g2005-sv,ivltests/vhdl_sdiv23_bit.vhd		ivltests
 vhdl_sdiv23_stdlogic	normal,-g2005-sv,ivltests/vhdl_sdiv23_stdlogic.vhd	ivltests
+vhdl_selected		normal,-g2005-sv,ivltests/vhdl_selected.vhd		ivltests
 vhdl_shift		normal,-g2005-sv,ivltests/vhdl_shift.vhd		ivltests
 vhdl_signals		normal,-g2005-sv,ivltests/vhdl_signals.vhd		ivltests
 vhdl_smul23_bit 	normal,-g2005-sv,ivltests/vhdl_smul23_bit.vhd		ivltests
