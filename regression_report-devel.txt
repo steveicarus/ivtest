@@ -2081,6 +2081,7 @@ test_mos_strength_reduction: Passed.
                  vhdl_test7: Passed.
                  vhdl_test8: Passed.
                  vhdl_test9: Passed.
+                  vhdl_time: Passed.
             vhdl_to_integer: Passed.
             vhdl_uadd23_bit: Passed.
        vhdl_uadd23_stdlogic: Passed.
@@ -2092,6 +2093,7 @@ test_mos_strength_reduction: Passed.
         vhdl_unbounded_func: Passed.
             vhdl_usub23_bit: Passed.
        vhdl_usub23_stdlogic: Passed.
+                  vhdl_wait: Passed.
       vhdl_xnor104_stdlogic: Passed.
             vhdl_xnor23_bit: Passed.
              vhdl_xnorg_bit: Passed.
@@ -2138,4 +2140,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2136, Passed=2130, Failed=6, Not Implemented=0, Expected Fail=0
+  Total=2138, Passed=2132, Failed=6, Not Implemented=0, Expected Fail=0
