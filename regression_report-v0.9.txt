@@ -196,6 +196,7 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
              case5-syn-fail: Passed.
                  casesynth7: Passed - CO.
                  casesynth8: Passed - CO.
+                  dffsynth8: Passed.
                       pr903: Passed.
                   pr1388974: Passed.
                 param-width: Passed.
@@ -1735,6 +1736,7 @@ test_mos_strength_reduction: Passed.
                   dffsynth4: Passed.
                   dffsynth5: Passed.
                   dffsynth6: Passed.
+                  dffsynth7: Passed.
              ff_dual_enable: Passed.
              for_loop_synth: Passed.
                   full_case: Passed.
@@ -1770,4 +1772,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=1768, Passed=1639, Failed=0, Not Implemented=74, Expected Fail=55
+  Total=1770, Passed=1641, Failed=0, Not Implemented=74, Expected Fail=55

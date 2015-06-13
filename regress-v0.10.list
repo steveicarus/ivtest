@@ -83,7 +83,6 @@ conditsynth1		normal			ivltests
 conditsynth2		normal			ivltests
 conditsynth3		normal			ivltests
 dffsynth		normal			ivltests
-dffsynth2		normal			ivltests
 dffsynth3		normal			ivltests
 dffsynth4		normal			ivltests
 full_case		normal			ivltests
@@ -91,7 +90,6 @@ full_case2		normal			ivltests
 inside_synth		normal			ivltests
 inside_synth2		normal			ivltests
 inside_synth3		normal			ivltests
-lcatsynth		normal			ivltests
 memsynth1		normal			ivltests
 memsynth2		normal			ivltests
 memsynth3		normal			ivltests

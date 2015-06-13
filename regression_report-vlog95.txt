@@ -343,6 +343,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                      shiftl: Passed - TE.
                 ufuncsynth1: Passed - TE.
                       pr685: Passed - TE.
+                  dffsynth7: Passed - CE.
                   pr1830834: Passed - expected fail.
                      br916a: Passed.
                      br916b: Passed.
@@ -574,7 +575,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                conditsynth2: Passed.
                conditsynth3: Passed.
                    dffsynth: Passed.
-                  dffsynth2: Passed.
                   dffsynth3: Passed.
                   dffsynth4: Passed.
                   full_case: Passed.
@@ -582,7 +582,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                inside_synth: Passed.
               inside_synth2: Passed.
               inside_synth3: Passed.
-                  lcatsynth: Passed.
                   memsynth1: Passed.
                   memsynth2: Passed.
                   memsynth3: Passed.
@@ -2128,9 +2127,12 @@ test_mos_strength_reduction: Passed.
             case_wo_default: Passed.
                  casesynth7: Passed - CE.
                  casesynth8: Passed - CE.
+                  dffsynth2: Passed.
                   dffsynth5: Passed.
+                  dffsynth8: Passed - CE.
              ff_dual_enable: Passed.
                       land5: Passed.
+                  lcatsynth: Passed.
                   memsynth8: Passed.
                not_a_latch1: Passed.
                not_a_latch2: Passed.
@@ -2140,4 +2142,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2138, Passed=2107, Failed=4, Not Implemented=3, Expected Fail=24
+  Total=2140, Passed=2109, Failed=4, Not Implemented=3, Expected Fail=24

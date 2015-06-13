@@ -408,3 +408,4 @@ br_gh60a		NI
 case5-syn-fail		normal			ivltests
 casesynth7		CO			ivltests
 casesynth8		CO			ivltests
+dffsynth8		normal			ivltests

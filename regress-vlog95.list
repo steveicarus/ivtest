@@ -468,6 +468,10 @@ shiftl			TE,-S			ivltests
 ufuncsynth1		TE,-S			ivltests
 pr685			TE,-S			ivltests
 
+# The translator doesn't currently support multi-bit asynchronous set values.
+# These are created in the synthesis process.
+dffsynth7		CE,-S			ivltests
+
 # The converter generates a complex expression for $strobe and Icarus does not
 # currently support this. The translation is correct.
 pr1830834		EF			ivltests

@@ -18,7 +18,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.10 (strict).
                conditsynth2: Passed.
                conditsynth3: Passed.
                    dffsynth: Passed.
-                  dffsynth2: Passed.
                   dffsynth3: Passed.
                   dffsynth4: Passed.
                   full_case: Passed.
@@ -26,7 +25,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.10 (strict).
                inside_synth: Passed.
               inside_synth2: Passed.
               inside_synth3: Passed.
-                  lcatsynth: Passed.
                   memsynth1: Passed.
                   memsynth2: Passed.
                   memsynth3: Passed.
@@ -2115,14 +2113,18 @@ test_mos_strength_reduction: Passed.
                  casesynth7: Passed - CE.
                  casesynth8: Passed - CE.
                  casesynth9: Passed.
+                  dffsynth2: Passed.
                   dffsynth5: Passed.
                   dffsynth6: Passed.
+                  dffsynth7: Passed.
+                  dffsynth8: Passed - CE.
              ff_dual_enable: Passed.
              for_loop_synth: Passed.
             for_loop_synth2: Passed.
             if_part_no_else: Passed.
            if_part_no_else2: Passed.
                       land5: Passed.
+                  lcatsynth: Passed.
                   memsynth4: Passed.
                   memsynth8: Passed.
                not_a_latch1: Passed.
@@ -2137,4 +2139,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2135, Passed=2129, Failed=6, Not Implemented=0, Expected Fail=0
+  Total=2137, Passed=2131, Failed=6, Not Implemented=0, Expected Fail=0
