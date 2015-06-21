@@ -816,6 +816,9 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 0.10.
                       br971: ==> Failed - output does not match gold file.
                       br972: Passed.
                       br977: Passed.
+                      br982: Passed - CE.
+                     br982a: Passed - CE.
+                     br982b: Passed - CE.
                      br_gh6: Passed.
                      br_gh7: Passed.
                     br_gh11: Passed - CO.
@@ -2021,6 +2024,9 @@ test_mos_strength_reduction: Passed.
                    sv_enum1: Passed.
                 sv_package3: Passed.
                 sv_package4: Passed.
+          sv_port_default12: Passed.
+          sv_port_default13: Passed - CE.
+          sv_port_default14: Passed - CE.
            sv_timeunit_prec: Passed.
           sv_timeunit_prec2: Passed.
       sv_timeunit_prec_fail: Passed - CE.
@@ -2142,4 +2148,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2140, Passed=2109, Failed=4, Not Implemented=3, Expected Fail=24
+  Total=2146, Passed=2114, Failed=5, Not Implemented=3, Expected Fail=24

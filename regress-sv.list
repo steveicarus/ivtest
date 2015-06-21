@@ -286,6 +286,9 @@ sv_port_default8	normal,-g2009		ivltests
 sv_port_default9	normal,-g2009		ivltests
 sv_port_default10	normal,-g2009		ivltests
 sv_port_default11	normal,-g2009		ivltests
+sv_port_default12	normal,-g2009		ivltests
+sv_port_default13	CE,-g2009		ivltests
+sv_port_default14	CE,-g2009		ivltests
 sv_queue1		normal,-g2009		ivltests
 sv_queue2		normal,-g2009		ivltests
 sv_queue3		normal,-g2009		ivltests

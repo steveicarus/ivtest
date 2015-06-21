@@ -455,6 +455,9 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                       br968: Passed.
                       br972: Passed.
                       br977: Passed.
+                      br982: Passed - CE.
+                     br982a: Passed - CE.
+                     br982b: Passed - CE.
                      br_gh6: Passed.
                      br_gh7: Passed.
                     br_gh12: Passed.
@@ -1772,4 +1775,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=1770, Passed=1641, Failed=0, Not Implemented=74, Expected Fail=55
+  Total=1773, Passed=1644, Failed=0, Not Implemented=74, Expected Fail=55

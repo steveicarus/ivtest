@@ -223,6 +223,9 @@ br968			normal			ivltests
 br971			normal			ivltests
 br972			normal			ivltests
 br977			normal			ivltests
+br982			CE			ivltests
+br982a			CE			ivltests
+br982b			CE			ivltests
 br_gh6			normal			ivltests
 br_gh7			normal			ivltests
 br_gh8			normal			ivltests
