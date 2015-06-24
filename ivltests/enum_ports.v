@@ -19,9 +19,14 @@
 
 // Tests enum as a port type.
 
-typedef enum { var_presence, var_identif, var_1, var_2, var_3, var_rst, var_4, var_5, var_whatever } t_var;
+typedef enum integer { var_presence, var_identif, var_1, var_2, var_3, var_rst, var_4, var_5, var_whatever } t_var;
 
-module wf_cons_bytes_processor(input wire t_var var_i, output reg is_var_rst);
+module enum_ports(input wire t_var var_i, output t_var var_o, output reg is_var_rst);
+
+initial begin
+    var_o = var_presence;
+end
+
 always @(var_i)
 begin
     if(var_i == var_rst)
@@ -32,23 +37,30 @@ end
 endmodule
 
 module test_unit();
-reg t_var var_in;
+reg t_var var_in, var_out;
 reg result;
 
-wf_cons_bytes_processor dut(var_in, result);
+enum_ports dut(var_in, var_out, result);
 
 initial begin
+    #1;
+
+    if(var_out !== var_presence) begin
+        $display("FAILED 1");
+        $finish();
+    end
+
     var_in = var_1;
     #1;
     if(result !== 1'b0) begin
-        $display("FAILED 1");
+        $display("FAILED 2");
         $finish();
     end
 
     var_in = var_rst;
     #1
     if(result !== 1'b1) begin
-        $display("FAILED 2");
+        $display("FAILED 3");
         $finish();
     end
 
