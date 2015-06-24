@@ -31,6 +31,7 @@ initial begin
     #1;
 
     clk = 1;
+    #1;
     if(q !== 1'b0) begin
         $display("FAILED 1");
         $finish();

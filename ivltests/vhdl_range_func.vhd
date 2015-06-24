@@ -38,12 +38,12 @@ begin
 
   process(neg_inp)
   begin
-    neg_out := negator(neg_inp);
+    neg_out <= negator(neg_inp);
   end process;
 
   process(rev_inp)
   begin
-    rev_out := reverse(rev_inp);
+    rev_out <= reverse(rev_inp);
   end process;
 end test;
 
