@@ -178,6 +178,8 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                    br_gh19b: Passed - expected fail.
                constconcat1: Passed - expected fail.
                constconcat2: Passed - expected fail.
+      force_release_wire_pv: Passed - expected fail.
+     force_release_wire8_pv: Passed - expected fail.
                      br605a: Passed - expected fail.
                      br605b: Passed - expected fail.
                       br971: Passed - expected fail.
@@ -627,8 +629,6 @@ Running compiler/VVP tests for Icarus Verilog version: 0.9.
                  force3.17C: Passed.
             force_lval_part: Passed.
        force_release_reg_pv: Passed.
-     force_release_wire8_pv: Passed.
-      force_release_wire_pv: Passed.
                       fork1: Passed.
                   fork3.19A: Passed.
                   fork3.19B: Passed.
@@ -1775,4 +1775,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=1773, Passed=1644, Failed=0, Not Implemented=74, Expected Fail=55
+  Total=1773, Passed=1642, Failed=0, Not Implemented=74, Expected Fail=57

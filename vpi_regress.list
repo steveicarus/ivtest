@@ -126,6 +126,20 @@ v0.8:range1	 NI range1.c       range1.gold
 v0.9:range1	 NI range1.c       range1.gold
 v0.8:display_array	 NI display_array.c       display_array.gold
 v0.9:display_array	 NI display_array.c       display_array.gold
+v0.8:force_reg	 	 NI force.c		force_reg.gold
+v0.9:force_reg	 	 NI force.c		force_reg.gold
+v0.8:force_wire	 	 NI force.c		force_wire.gold
+v0.9:force_wire	 	 NI force.c		force_wire.gold
+v0.8:force_reg_pv	 NI force.c		force_reg_pv.gold
+v0.9:force_reg_pv	 NI force.c		force_reg_pv.gold
+v0.8:force_wire_pv	 NI force.c		force_wire_pv.gold
+v0.9:force_wire_pv	 NI force.c		force_wire_pv.gold
+v0.8:force_reg_real	 NI force_real.c	force_reg_real.gold
+v0.9:force_reg_real	 NI force_real.c	force_reg_real.gold
+v0.8:force_wire_real	 NI force_real.c	force_wire_real.gold
+v0.9:force_wire_real	 NI force_real.c	force_wire_real.gold
+v0.8:br_gh59		 NI br_gh59.c		br_gh59.gold
+v0.9:br_gh59		 NI br_gh59.c		br_gh59.gold
 
 # Add v0.8/v0.9 overrides here.
 
@@ -177,6 +191,13 @@ myscope		 normal myscope.c      myscope.gold
 myscope2	 normal myscope2.c     myscope2.gold
 range1		 normal range1.c       range1.gold
 display_array	 normal,-g2009 display_array.c       display_array.gold
+force_reg	 normal force.c		force_reg.gold
+force_wire	 normal force.c		force_wire.gold
+force_reg_pv	 normal force.c		force_reg_pv.gold
+force_wire_pv	 normal force.c		force_wire_pv.gold
+force_reg_real	 normal force_real.c	force_reg_real.gold
+force_wire_real	 normal force_real.c	force_wire_real.gold
+br_gh59		 normal	br_gh59.c	br_gh59.gold
 
 # Add new tests here. If the test needs a compile option or a
 # different log file to run with an older versions or if it uses

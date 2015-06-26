@@ -359,6 +359,8 @@ br_gh19b		EF			ivltests
 # v0.9 has problems with force statements
 constconcat1		EF			ivltests
 constconcat2		EF			ivltests
+force_release_wire_pv	EF			ivltests
+force_release_wire8_pv	EF			ivltests
 
 # v0.9 does not support updates to procedural continuous assignments when
 # the RHS is more complex than a simple signal (nor does v0.10 at the time
