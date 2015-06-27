@@ -1958,6 +1958,8 @@ test_mos_strength_reduction: Passed.
                       br975: Passed - CE.
                       br979: Passed.
                     br_gh4a: Passed.
+                   br_gh72a: Passed.
+                   br_gh72b: Passed.
             br_ml_20150315b: Passed - CE.
                  clkgen_bit: Passed.
                clkgen_logic: Passed.
@@ -2148,4 +2150,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2146, Passed=2114, Failed=5, Not Implemented=3, Expected Fail=24
+  Total=2148, Passed=2116, Failed=5, Not Implemented=3, Expected Fail=24

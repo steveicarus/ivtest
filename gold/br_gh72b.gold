@@ -1,0 +1,7 @@
+./ivltests/br_gh72b.v:5: error: too many arguments for `macro1
+./ivltests/br_gh72b.v:6: error: too many arguments for `macro1
+./ivltests/br_gh72b.v:9: error: too few arguments for `macro2
+./ivltests/br_gh72b.v:10: error: too few arguments for `macro2
+./ivltests/br_gh72b.v:11: error: too many arguments for `macro2
+1
+1 2
