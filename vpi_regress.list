@@ -140,6 +140,10 @@ v0.8:force_wire_real	 NI force_real.c	force_wire_real.gold
 v0.9:force_wire_real	 NI force_real.c	force_wire_real.gold
 v0.8:br_gh59		 NI br_gh59.c		br_gh59.gold
 v0.9:br_gh59		 NI br_gh59.c		br_gh59.gold
+v0.8:br_gh73a		 NI br_gh73a.c		br_gh73a.gold
+v0.9:br_gh73a		 NI br_gh73a.c		br_gh73a.gold
+v0.8:br_gh73b		 NI br_gh73b.c		br_gh73b.gold
+v0.9:br_gh73b		 NI br_gh73b.c		br_gh73b.gold
 
 # Add v0.8/v0.9 overrides here.
 
@@ -198,6 +202,8 @@ force_wire_pv	 normal force.c		force_wire_pv.gold
 force_reg_real	 normal force_real.c	force_reg_real.gold
 force_wire_real	 normal force_real.c	force_wire_real.gold
 br_gh59		 normal	br_gh59.c	br_gh59.gold
+br_gh73a	 normal	force.c		br_gh73a.gold
+br_gh73b	 normal	force.c		br_gh73b.gold
 
 # Add new tests here. If the test needs a compile option or a
 # different log file to run with an older versions or if it uses
