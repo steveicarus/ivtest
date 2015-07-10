@@ -1805,6 +1805,7 @@ test_mos_strength_reduction: Passed.
                   int_param: Passed.
              ishortint_test: Passed.
                      iuint1: Passed.
+           localparam_query: Passed.
            localparam_type2: Passed.
                       logp2: Passed.
                mod_inst_pkg: Passed.
@@ -2052,6 +2053,7 @@ test_mos_strength_reduction: Passed.
                vhdl_org_bit: Passed.
           vhdl_org_stdlogic: Passed.
           vhdl_prefix_array: Passed.
+             vhdl_procedure: Passed.
             vhdl_rand23_bit: Passed.
                  vhdl_range: Passed.
             vhdl_range_func: Passed.
@@ -2067,6 +2069,7 @@ test_mos_strength_reduction: Passed.
        vhdl_sadd23_stdlogic: Passed.
             vhdl_sdiv23_bit: Passed.
        vhdl_sdiv23_stdlogic: Passed.
+              vhdl_selected: Passed.
                  vhdl_shift: Passed.
                vhdl_signals: Passed.
             vhdl_smul23_bit: Passed.
@@ -2096,6 +2099,7 @@ test_mos_strength_reduction: Passed.
         vhdl_unbounded_func: Passed.
             vhdl_usub23_bit: Passed.
        vhdl_usub23_stdlogic: Passed.
+              vhdl_var_init: Passed.
                   vhdl_wait: Passed.
       vhdl_xnor104_stdlogic: Passed.
             vhdl_xnor23_bit: Passed.
@@ -2147,4 +2151,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2145, Passed=2139, Failed=6, Not Implemented=0, Expected Fail=0
+  Total=2149, Passed=2143, Failed=6, Not Implemented=0, Expected Fail=0

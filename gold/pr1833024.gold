@@ -31,37 +31,37 @@
 ./ivltests/pr1833024.v:31: error: can not select part of scalar: wsuptr
 ./ivltests/pr1833024.v:32: error: can not select part of scalar: wsdotr
 ./ivltests/pr1833024.v:34: error: can not select part of scalar: wsbstr
-./ivltests/pr1833024.v:34: internal error: Port expression too complicated for elaboration.
+./ivltests/pr1833024.v:34: error: Failed to elaborate port expression.
 ./ivltests/pr1833024.v:34: error: can not select part of scalar: wspstr
-./ivltests/pr1833024.v:34: internal error: Port expression too complicated for elaboration.
+./ivltests/pr1833024.v:34: error: Failed to elaborate port expression.
 ./ivltests/pr1833024.v:34: error: can not select part of scalar: wsuptr
-./ivltests/pr1833024.v:34: internal error: Port expression too complicated for elaboration.
+./ivltests/pr1833024.v:34: error: Failed to elaborate port expression.
 ./ivltests/pr1833024.v:34: error: can not select part of scalar: wsdotr
-./ivltests/pr1833024.v:34: internal error: Port expression too complicated for elaboration.
+./ivltests/pr1833024.v:34: error: Failed to elaborate port expression.
 ./ivltests/pr1833024.v:35: error: can not select part of scalar: wsbstr
 ./ivltests/pr1833024.v:35: error: Output port expression must support continuous assignment.
-./ivltests/pr1833024.v:35:      : Port arg1 of submod2 is connected to wsbstr['sd0]
+./ivltests/pr1833024.v:35:      : Port 1 (arg1) of submod2 is connected to wsbstr['sd0]
 ./ivltests/pr1833024.v:35: error: can not select part of scalar: wspstr
 ./ivltests/pr1833024.v:35: error: Output port expression must support continuous assignment.
-./ivltests/pr1833024.v:35:      : Port arg2 of submod2 is connected to wspstr['sd0:'sd0]
+./ivltests/pr1833024.v:35:      : Port 2 (arg2) of submod2 is connected to wspstr['sd0:'sd0]
 ./ivltests/pr1833024.v:35: error: can not select part of scalar: wsuptr
 ./ivltests/pr1833024.v:35: error: Output port expression must support continuous assignment.
-./ivltests/pr1833024.v:35:      : Port arg3 of submod2 is connected to wsuptr['sd0+:'sd1]
+./ivltests/pr1833024.v:35:      : Port 3 (arg3) of submod2 is connected to wsuptr['sd0+:'sd1]
 ./ivltests/pr1833024.v:35: error: can not select part of scalar: wsdotr
 ./ivltests/pr1833024.v:35: error: Output port expression must support continuous assignment.
-./ivltests/pr1833024.v:35:      : Port arg4 of submod2 is connected to wsdotr['sd0-:'sd1]
+./ivltests/pr1833024.v:35:      : Port 4 (arg4) of submod2 is connected to wsdotr['sd0-:'sd1]
 ./ivltests/pr1833024.v:36: error: can not select part of scalar: wsbstr
 ./ivltests/pr1833024.v:36: error: Inout port expression must support continuous assignment.
-./ivltests/pr1833024.v:36:      : Port arg1 of submod3 is connected to wsbstr['sd0]
+./ivltests/pr1833024.v:36:      : Port 1 (arg1) of submod3 is connected to wsbstr['sd0]
 ./ivltests/pr1833024.v:36: error: can not select part of scalar: wspstr
 ./ivltests/pr1833024.v:36: error: Inout port expression must support continuous assignment.
-./ivltests/pr1833024.v:36:      : Port arg2 of submod3 is connected to wspstr['sd0:'sd0]
+./ivltests/pr1833024.v:36:      : Port 2 (arg2) of submod3 is connected to wspstr['sd0:'sd0]
 ./ivltests/pr1833024.v:36: error: can not select part of scalar: wsuptr
 ./ivltests/pr1833024.v:36: error: Inout port expression must support continuous assignment.
-./ivltests/pr1833024.v:36:      : Port arg3 of submod3 is connected to wsuptr['sd0+:'sd1]
+./ivltests/pr1833024.v:36:      : Port 3 (arg3) of submod3 is connected to wsuptr['sd0+:'sd1]
 ./ivltests/pr1833024.v:36: error: can not select part of scalar: wsdotr
 ./ivltests/pr1833024.v:36: error: Inout port expression must support continuous assignment.
-./ivltests/pr1833024.v:36:      : Port arg4 of submod3 is connected to wsdotr['sd0-:'sd1]
+./ivltests/pr1833024.v:36:      : Port 4 (arg4) of submod3 is connected to wsdotr['sd0-:'sd1]
 ./ivltests/pr1833024.v:50: error: can not select part of scalar: svar
 ./ivltests/pr1833024.v:51: error: can not select part of scalar: svar
 ./ivltests/pr1833024.v:52: error: can not select part of scalar: svar
@@ -78,4 +78,4 @@
 ./ivltests/pr1833024.v:66: error: can not select part of scalar array word: sarr[32'sd0]
 ./ivltests/pr1833024.v:67: error: can not select part of scalar array word: sarr[32'sd0]
 ./ivltests/pr1833024.v:68: error: can not select part of scalar array word: sarr[32'sd0]
-68 error(s) during elaboration.
+72 error(s) during elaboration.
