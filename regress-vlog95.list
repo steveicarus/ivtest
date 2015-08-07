@@ -369,6 +369,7 @@ analog2 		CE,-gverilog-ams	ivltests
 
 # These tests have generate scopes that are not currently supported.
 br955			CE			ivltests
+br988			CE			ivltests
 complex_lidx		CE			ivltests
 defparam3		CE			ivltests
 defparam4		CE			ivltests
