@@ -66,6 +66,9 @@
 
 br942			normal,-g2005-sv,ivltests/br942.vhd			ivltests
 br943_944		normal,-g2005-sv,ivltests/br943_944.vhd			ivltests
+br985			normal,-g2005-sv,ivltests/br985.vhd			ivltests
+br986			normal,-g2005-sv,ivltests/br986.vhd			ivltests
+br987			normal,-g2005-sv,ivltests/br987.vhd			ivltests
 ivlh_event		normal,-mvhdl_sys					ivltests gold=ivlh_event.gold
 ivlh_rising_falling	normal,-mvhdl_sys					ivltests gold=ivlh_rising_falling.gold
 test_dec2to4		normal,-g2005-sv,ivltests/dec2to4.vhd			ivltests
@@ -84,6 +87,7 @@ vhdl_and23_bit		normal,-g2005-sv,ivltests/vhdl_and23_bit.vhd		ivltests
 vhdl_and_gate		normal,-g2005-sv,ivltests/vhdl_and_gate.vhd		ivltests
 vhdl_andg_bit		normal,-g2005-sv,ivltests/vhdl_andg_bit.vhd		ivltests
 vhdl_andg_stdlogic	normal,-g2005-sv,ivltests/vhdl_andg_stdlogic.vhd	ivltests
+vhdl_array_of_array	normal,-g2005-sv,ivltests/vhdl_array_of_array.vhd	ivltests
 vhdl_case_multi		normal,-g2005-sv,ivltests/vhdl_case_multi.vhd		ivltests
 vhdl_boolean		normal,-g2005-sv,ivltests/vhdl_boolean.vhd		ivltests
 vhdl_concat		normal,-g2005-sv,ivltests/vhdl_concat.vhd		ivltests
