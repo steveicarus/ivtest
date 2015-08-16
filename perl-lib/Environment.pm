@@ -7,7 +7,7 @@ package Environment;
 use strict;
 use warnings;
 
-our $VERSION = '1.01';
+our $VERSION = '1.02';
 
 use base 'Exporter';
 
@@ -85,10 +85,13 @@ sub get_regress_fn {
 #
 sub get_ivl_version {
     my $sfx = shift(@_);
-    if (`iverilog$sfx -V` =~ /^Icarus Verilog version (\d+\.\d+)/) {
-        return $1;
-    }
-    else {
+    if (`iverilog$sfx -V` =~ /^Icarus Verilog version (\d+)\.(\d+)/) {
+        if ($1 == 0) {
+            return $1.".".$2;
+        } else {
+            return $1;
+        }
+    } else {
         die "Failed to get version from iverilog$sfx -V output";
     }
 }

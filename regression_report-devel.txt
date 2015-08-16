@@ -1,4 +1,4 @@
-Running compiler/VVP tests for Icarus Verilog version: 0.10.
+Running compiler/VVP tests for Icarus Verilog version: 11.
 ----------------------------------------------------------------------------
                  basiclatch: Passed.
                 blocksynth2: Passed.

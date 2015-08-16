@@ -1,4 +1,4 @@
-Running compiler/VVP tests for Icarus Verilog version: 0.10 (strict).
+Running compiler/VVP tests for Icarus Verilog version: 11 (strict).
 ----------------------------------------------------------------------------
                  basiclatch: Passed.
                 blocksynth2: Passed.
@@ -2001,6 +2001,9 @@ test_mos_strength_reduction: Passed.
                      work7b: Passed.
                       br942: Passed.
                   br943_944: Passed.
+                      br985: Passed.
+                      br986: Passed.
+                      br987: Passed.
                  ivlh_event: Passed.
         ivlh_rising_falling: Passed.
                test_dec2to4: Passed.
@@ -2019,6 +2022,7 @@ test_mos_strength_reduction: Passed.
               vhdl_and_gate: Passed.
               vhdl_andg_bit: Passed.
          vhdl_andg_stdlogic: Passed.
+        vhdl_array_of_array: Passed.
             vhdl_case_multi: Passed.
                vhdl_boolean: Passed.
                 vhdl_concat: Passed.
@@ -2153,4 +2157,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2151, Passed=2145, Failed=6, Not Implemented=0, Expected Fail=0
+  Total=2155, Passed=2149, Failed=6, Not Implemented=0, Expected Fail=0
