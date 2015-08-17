@@ -1,4 +1,4 @@
-Running compiler/VVP tests for Icarus Verilog version: 11 (strict).
+Running compiler/VVP tests for Icarus Verilog version: 10.
 ----------------------------------------------------------------------------
                  basiclatch: Passed.
                 blocksynth2: Passed.
@@ -36,6 +36,18 @@ Running compiler/VVP tests for Icarus Verilog version: 11 (strict).
                    multireg: Passed.
                 sqrt32synth: Passed.
                    ssetclr3: Passed.
+                      pr903: Passed.
+                  pr1388974: Passed.
+                   br_gh13a: Passed.
+                param-width: Passed.
+                    ca_time: Passed.
+              delayed_sfunc: Passed.
+            localparam_type: Passed.
+             parameter_type: Passed.
+                  pr1701890: Passed.
+                 pr1864110a: Passed.
+                 pr1864110b: Passed.
+                  pr1864115: Passed.
                    fileline: Passed.
                   fileline2: ==> Failed - output does not match gold file.
               macro_str_esc: Passed.
@@ -81,7 +93,6 @@ Running compiler/VVP tests for Icarus Verilog version: 11 (strict).
                  pr1793749b: Passed.
                  pr1861212b: Passed.
                  pr1864110c: Passed.
-                  pr1864115: Passed.
                   pr2806449: Passed.
                   pr2877555: Passed.
                       real4: Passed.
@@ -104,7 +115,6 @@ Running compiler/VVP tests for Icarus Verilog version: 11 (strict).
                  pr2509349b: Passed.
                    simparam: Passed.
          blocking_repeat_ec: Passed.
-                    ca_time: Passed.
                 nb_array_pv: Passed.
                 nb_ec_array: Passed.
              nb_ec_array_pv: Passed.
@@ -136,10 +146,7 @@ Running compiler/VVP tests for Icarus Verilog version: 11 (strict).
                ca_var_delay: Passed.
            cast_real_signed: Passed.
          cast_real_unsigned: Passed.
-              delayed_sfunc: Passed.
                  pr1861212c: Passed.
-                 pr1864110a: Passed.
-                 pr1864110b: Passed.
                   pr1873372: Passed.
                   pr1880003: Passed.
                   pr1898293: Passed.
@@ -631,7 +638,6 @@ Running compiler/VVP tests for Icarus Verilog version: 11 (strict).
                 lh_varindx2: Passed.
                 lh_varindx4: Passed.
                 lh_varindx5: Passed.
-            localparam_type: Passed.
                    long_div: Passed.
                      macro2: Passed.
                      macsub: Passed.
@@ -683,7 +689,6 @@ Running compiler/VVP tests for Icarus Verilog version: 11 (strict).
                     p_monta: Passed.
                par_mismatch: Passed - CE.
                param-extend: Passed.
-                param-width: Passed.
                   param_add: Passed.
                   param_and: Passed.
                  param_and2: Passed.
@@ -705,7 +710,6 @@ Running compiler/VVP tests for Icarus Verilog version: 11 (strict).
                 param_test3: Passed - CO.
                 param_test4: Passed.
                 param_times: Passed.
-             parameter_type: Passed.
                   patch1268: Passed.
                        pca1: Passed.
                         pic: Passed.
@@ -956,7 +960,6 @@ Running compiler/VVP tests for Icarus Verilog version: 11 (strict).
                   pr1701855: Passed.
                  pr1701855b: Passed.
                   pr1701889: Passed.
-                  pr1701890: Passed.
                   pr1701921: Passed.
                   pr1702593: Passed.
                   pr1703120: Passed.
@@ -2159,4 +2162,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2157, Passed=2151, Failed=6, Not Implemented=0, Expected Fail=0
+  Total=2160, Passed=2154, Failed=6, Not Implemented=0, Expected Fail=0

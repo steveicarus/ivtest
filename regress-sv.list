@@ -86,6 +86,7 @@ br963			normal,-g2009		ivltests
 br973			normal,-g2009		ivltests
 br975			CE,-g2009		ivltests gold=br975.gold
 br979			normal,-g2009		ivltests
+br991b			CE,-g2009		ivltests gold=br991b.gold
 br_gh4			normal,-g2009		ivltests
 br_gh4a 		normal,-g2009		ivltests
 br_gh72a 		normal,-g2009		ivltests gold=br_gh72a.gold
