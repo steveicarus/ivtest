@@ -64,6 +64,10 @@
 # gold or diff commands.
 #
 
+# V10 does not support analog functionality
+analog1 		NI
+analog2 		NI
+
 # v10 has incomplete synthesis support
 basiclatch		normal			ivltests
 blocksynth2		normal			ivltests
