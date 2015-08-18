@@ -357,6 +357,14 @@ bitsel5 		CE			ivltests
 # Translating selects with the LSB > MSB are also normalized and the code
 # cannot determine if the $signed() should be removed or not.
 pr751			CE,-Wsensitivity-entire-vector	ivltests # gold=pr751.gold
+# This has a port connect issue and a failure because the actual port is cast
+# from 4-state to 2-state and the port information is removed on the 4-state
+# side (the actual port). I'm not sure why the enum is not a bit or other
+# 2-state variable, but when that is done there is a compile error.
+vhdl_var_init		CE,-g2009,vhdl_var_init.vhd	ivltests
+# When translating the synthesized code the UDP is driven with a two bit
+# data value. This should be a local value and then select the bits.
+lcatsynth		TE,-S			ivltests
 # New tests that need to be looked at go here.
 
 # Size (spacing) difference since -4 is used for the second value.
