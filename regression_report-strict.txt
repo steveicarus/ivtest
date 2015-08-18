@@ -1714,6 +1714,8 @@ test_mos_strength_reduction: Passed.
                   xnor_test: Passed.
                          z1: Passed.
                          z2: Passed.
+                  zero_repl: Passed.
+             zero_repl_fail: Passed - CE.
                     analog1: ==> Failed - running iverilog.
                     analog2: ==> Failed - running iverilog.
                    cast_int: Passed.
@@ -2159,4 +2161,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2157, Passed=2151, Failed=6, Not Implemented=0, Expected Fail=0
+  Total=2159, Passed=2153, Failed=6, Not Implemented=0, Expected Fail=0

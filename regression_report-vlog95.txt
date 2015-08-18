@@ -1953,6 +1953,8 @@ test_mos_strength_reduction: Passed.
                   xnor_test: Passed.
                          z1: Passed.
                          z2: Passed.
+                  zero_repl: Passed.
+             zero_repl_fail: Passed - CE.
                 scaled_real: Passed.
              test_vams_math: Passed.
                value_range1: Passed.
@@ -2162,4 +2164,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2160, Passed=2129, Failed=4, Not Implemented=3, Expected Fail=24
+  Total=2162, Passed=2131, Failed=4, Not Implemented=3, Expected Fail=24

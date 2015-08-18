@@ -1719,6 +1719,8 @@ test_mos_strength_reduction: Passed.
                   xnor_test: Passed.
                          z1: Passed.
                          z2: Passed.
+                  zero_repl: Passed.
+             zero_repl_fail: Passed - CE.
                    cast_int: Passed.
                  constfunc4: Passed.
                 scaled_real: Passed.
@@ -2162,4 +2164,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2160, Passed=2154, Failed=4, Not Implemented=2, Expected Fail=0
+  Total=2162, Passed=2156, Failed=4, Not Implemented=2, Expected Fail=0
