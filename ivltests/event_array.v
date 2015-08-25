@@ -14,7 +14,7 @@ generate
     end
   end
 endgenerate
-  
+
 initial begin
   event_count[0] = 0;
   event_count[1] = 0;

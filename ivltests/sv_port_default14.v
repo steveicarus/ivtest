@@ -22,19 +22,19 @@ initial begin
   k(3,c);
   $display(a,,b,,c);
   if (a !== 1 || b !== 2 || c !== 3) fail = 1;
-  
+
   k(,c);
   $display(a,,b,,c);
   if (a !== 1 || b !== 2 || c !== 1) fail = 1;
-  
+
   k(4,);
   $display(a,,b,,c);
   if (a !== 1 || b !== 4 || c !== 1) fail = 1;
-  
+
   k();
   $display(a,,b,,c);
   if (a !== 1 || b !== 1 || c !== 1) fail = 1;
-  
+
   if (fail)
     $display("FAILED");
   else

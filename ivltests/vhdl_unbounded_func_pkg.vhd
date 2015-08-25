@@ -17,7 +17,7 @@
 -- Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 
 
--- Basic test for functions that work with unbounded vectors as return 
+-- Basic test for functions that work with unbounded vectors as return
 -- and param types.
 
 library ieee;

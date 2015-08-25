@@ -18,5 +18,5 @@ initial begin
   value = vector[0][0 +: 4];
   value = vector[0][4 -: 4];
 end
-  
+
 endmodule

@@ -48,7 +48,7 @@ initial begin
     darr_rev[1] = 7'b0000011;
     darr_rev[2] = darr_rev[0] + darr_rev[1];
 
-    if(darr[2] !== 6'b110110 || darr_64[2] !== 64'hcafebad0deadd00d || 
+    if(darr[2] !== 6'b110110 || darr_64[2] !== 64'hcafebad0deadd00d ||
         darr_rev[2] !== 7'b1111011)
     begin
         $display("FAILED");

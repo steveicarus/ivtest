@@ -77,14 +77,14 @@ fileline2		normal			ivltests gold=fileline2.gold
 
 # Escaped defines ``
 macro_str_esc		normal			ivltests gold=macro_str_esc.gold
-macro_with_args 	normal			ivltests gold=macro_with_args.gold
+macro_with_args		normal			ivltests gold=macro_with_args.gold
 mcl1			normal			ivltests gold=mcl1.gold
 pr622			normal			ivltests gold=pr622.gold
 pr639			normal			ivltests gold=pr639.gold
 pr1741212		normal			ivltests gold=pr1741212.gold
 pr1912112		normal			ivltests gold=pr1912112.gold
 pr1925360		normal			ivltests
-repeat1 		normal			ivltests
+repeat1			normal			ivltests
 
 # This just checks whether the pre-processor runs successfully
 pr2002443		CO,-E			ivltests
@@ -94,7 +94,7 @@ pr2002443		CO,-E			ivltests
 #------------------------------------------------------------------------------
 
 # $abstime
-abstime 		normal			ivltests
+abstime			normal			ivltests
 pr2590274a		normal			ivltests gold=pr2590274.gold
 pr2590274b		normal			ivltests gold=pr2590274.gold
 pr2590274c		normal,-gspecify	ivltests gold=pr2590274.gold
@@ -102,14 +102,14 @@ pr2590274c		normal,-gspecify	ivltests gold=pr2590274.gold
 # $bits
 bitsel			normal			ivltests gold=bitsel.gold
 bitsel10		normal			ivltests
-bitsel2 		normal			ivltests
-bitsel3 		normal			ivltests
-bitsel4 		normal			ivltests
-bitsel5 		normal			ivltests
-bitsel6 		normal			ivltests
-bitsel7 		normal			ivltests
-bitsel8 		normal			ivltests # pr615
-bitsel9 		normal			ivltests # pr617
+bitsel2			normal			ivltests
+bitsel3			normal			ivltests
+bitsel4			normal			ivltests
+bitsel5			normal			ivltests
+bitsel6			normal			ivltests
+bitsel7			normal			ivltests
+bitsel8			normal			ivltests # pr615
+bitsel9			normal			ivltests # pr617
 bitwidth3		normal			ivltests
 clog2			normal			ivltests
 clog2-signal		normal			ivltests
@@ -157,7 +157,7 @@ br_ml20150424		normal			ivltests
 constfunc6		normal			ivltests
 pr2728032		normal			ivltests
 test_va_math		normal,-mva_math	ivltests gold=test_va_math.gold
-va_math 		normal			ivltests
+va_math			normal			ivltests
 
 # $readmempath
 pr2509349a		normal			ivltests gold=pr2509349a.gold
@@ -168,7 +168,7 @@ simparam		normal			ivltests
 
 # $simtime
 blocking_repeat_ec	normal			ivltests
-ca_time 		normal			ivltests gold=ca_time.gold
+ca_time			normal			ivltests gold=ca_time.gold
 nb_array_pv		normal			ivltests
 nb_ec_array		normal			ivltests
 nb_ec_array_pv		normal			ivltests
@@ -185,12 +185,12 @@ time6b			normal			ivltests # Rewrote time6 to pass with XL
 time6c			normal			ivltests gold=time6c.gold
 
 # $sizeof
-concat1 		normal			ivltests # PR#327,372
-concat2 		normal			ivltests # PR#282
+concat1			normal			ivltests # PR#327,372
+concat2			normal			ivltests # PR#282
 constconcat1		normal			ivltests
 constconcat2		normal			ivltests
 rptconcat2		normal			ivltests # Repeat concatenation operation.
-sdw_lvalconcat2 	normal			ivltests
+sdw_lvalconcat2		normal			ivltests
 
 # bool type
 bool1			normal			ivltests
@@ -232,7 +232,7 @@ real_op_fail		CE			ivltests
 real_pulse_clean	normal			ivltests
 real_pwr_in_ca		normal			ivltests
 real_select_invalid	CE			ivltests
-real_wire_array 	normal			ivltests
+real_wire_array		normal			ivltests
 real_wire_force_rel	normal			ivltests
 tern8			normal			ivltests
 

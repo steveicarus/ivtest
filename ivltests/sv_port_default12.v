@@ -25,19 +25,19 @@ initial begin
   result = x;
   $display(result);
   if (result !== 4) fail = 1;
-  
+
   result = y;
   $display(result);
   if (result !== 5) fail = 1;
-  
+
   result = k(3);
   $display(result);
   if (result !== 6) fail = 1;
-  
-  result = k(3,4); 
+
+  result = k(3,4);
   $display(result);
   if (result !== 7) fail = 1;
-  
+
   if (fail)
     $display("FAILED");
   else

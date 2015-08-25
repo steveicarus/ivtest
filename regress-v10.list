@@ -65,8 +65,8 @@
 #
 
 # V10 does not support analog functionality
-analog1 		NI
-analog2 		NI
+analog1			NI
+analog2			NI
 
 # v10 has incomplete synthesis support
 basiclatch		normal			ivltests

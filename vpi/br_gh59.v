@@ -7,7 +7,7 @@ module test(
 );
 
 assign B0 = WR ? 2'bz : IN;
-    
+
 initial $monitor("%b %b %b %0t", IN, WR, B0, $time);
-        
+
 endmodule

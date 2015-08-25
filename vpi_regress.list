@@ -126,10 +126,10 @@ v0.8:range1	 NI range1.c       range1.gold
 v0.9:range1	 NI range1.c       range1.gold
 v0.8:display_array	 NI display_array.c       display_array.gold
 v0.9:display_array	 NI display_array.c       display_array.gold
-v0.8:force_reg	 	 NI force.c		force_reg.gold
-v0.9:force_reg	 	 NI force.c		force_reg.gold
-v0.8:force_wire	 	 NI force.c		force_wire.gold
-v0.9:force_wire	 	 NI force.c		force_wire.gold
+v0.8:force_reg		 NI force.c		force_reg.gold
+v0.9:force_reg		 NI force.c		force_reg.gold
+v0.8:force_wire		 NI force.c		force_wire.gold
+v0.9:force_wire		 NI force.c		force_wire.gold
 v0.8:force_reg_pv	 NI force.c		force_reg_pv.gold
 v0.9:force_reg_pv	 NI force.c		force_reg_pv.gold
 v0.8:force_wire_pv	 NI force.c		force_wire_pv.gold

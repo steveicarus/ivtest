@@ -72,8 +72,8 @@ fileline2		NI
 cmdline_parm1		NI
 
 # v0.9 does not support these analog constructs.
-analog1 		NI
-analog2 		NI
+analog1			NI
+analog2			NI
 
 # v0.9 does not support non-blocking assignment to real array words.
 real_array_nb		NI
@@ -85,7 +85,7 @@ real_delay		NI
 verify_two_var_delays	NI
 
 # v0.9 does not have the net rework code.
-deposit 		EF			ivltests
+deposit			EF			ivltests
 pr699			EF			ivltests
 pr699b			EF			ivltests
 pr2832234		EF			ivltests
@@ -125,7 +125,7 @@ real5			normal			ivltests gold=real5-v0.9.gold
 # v0.9 has a different net order so v0.9 does not match development.
 # we plan to add a real vcd diff that will make this order independent,
 # but until then we need different gold files.
-vcd-dup 		normal			ivltests diff=work/vcd-dup.vcd:gold/vcd-dup.vcd-v0.9.gold:2
+vcd-dup			normal			ivltests diff=work/vcd-dup.vcd:gold/vcd-dup.vcd-v0.9.gold:2
 
 # v0.9 does not support passing the min/typ/max flag information to the
 # $sdf_annotate routine.
@@ -165,12 +165,12 @@ gate_connect2		CE			ivltests gold=gate_connect2-v0.9.gold
 param-extend		normal,-DOLD_UNSIZED	ivltests
 pr1830834		normal			ivltests gold=pr1830834-v0.9.gold
 pr1639064b		normal			ivltests gold=pr1639064b-v0.9.gold
-sel_rval_bit_ob 	normal,-Wselect-range	ivltests gold=sel_rval_bit_ob-v0.9.gold
+sel_rval_bit_ob		normal,-Wselect-range	ivltests gold=sel_rval_bit_ob-v0.9.gold
 sel_rval_part_ob	normal,-Wselect-range	ivltests gold=sel_rval_part_ob-v0.9.gold
 swrite			normal,-DOLD_UNSIZED	ivltests gold=swrite.gold
 
 # Extra white space or leading zeroes when displaying unsized numbers.
-localparam_type 	normal			ivltests gold=parameter_type-v0.9.gold
+localparam_type		normal			ivltests gold=parameter_type-v0.9.gold
 parameter_type		normal			ivltests gold=parameter_type-v0.9.gold
 pr812			normal			ivltests gold=pr812-v0.9.gold
 pr905			normal			ivltests gold=pr905-v0.9.gold
@@ -196,7 +196,7 @@ pr1587669		normal,-gspecify	ivltests gold=pr1587669-v0.9.gold
 pr1645518		normal			ivltests gold=pr1645518-v0.9.gold
 pr1648365		normal			ivltests gold=pr1648365-v0.9.gold
 pr1787423b		EF			ivltests
-pr1787423b-v0.9 	normal			ivltests
+pr1787423b-v0.9		normal			ivltests
 sdf1			normal,-gspecify	ivltests gold=sdf1-v0.9.gold
 sdf2			normal,-gspecify	ivltests gold=sdf1-v0.9.gold
 sdf3			normal,-gspecify	ivltests gold=sdf1-v0.9.gold
@@ -210,7 +210,7 @@ multi_driver_delay-v0.9 normal			ivltests
 pr1883052		EF			ivltests
 pr1883052-v0.9		normal			ivltests
 pr1883052b		EF			ivltests
-pr1883052b-v0.9 	normal			ivltests
+pr1883052b-v0.9		normal			ivltests
 pr3571573		normal			ivltests gold=pr3571573-v0.9.gold
 delay_var		normal			ivltests gold=delay_var-v0.9.gold
 br947			normal			ivltests gold=br947-v0.9.gold
@@ -249,7 +249,7 @@ pr3015421		CE			ivltests gold=pr3015421-v0.9.gold
 wreal			NI
 
 # These tests use the SV $bits function, but v0.9 doesn't recognise -g2009
-parameter_type2 	normal			ivltests
+parameter_type2		normal			ivltests
 localparam_type2	normal			ivltests
 
 # v0.9 does not support $countdrivers
@@ -282,7 +282,7 @@ function9		NI
 # v0.9 does not support multi-dimensional arrays.
 array7			NI
 pr3582052		NI
-br_gh33 		NI
+br_gh33			NI
 
 # This test fails because the conditional expression needs to be pulled on
 # demand. Just allowing the expression to propagate causes a timing race
@@ -325,7 +325,7 @@ tri3			EF			ivltests
 
 # v0.9 doesn't have the signed power operator fixes.
 pow_ca_signed		NI
-pow_ca_unsigned 	NI
+pow_ca_unsigned		NI
 pow_reg_signed		NI
 pow_reg_unsigned	NI
 
@@ -338,23 +338,23 @@ br_gh9			NI
 
 # v0.9 doesn't have the operator attributes fix. This could be back-ported if
 # necessary.
-br_gh11 		NI
+br_gh11			NI
 
 # v0.9 doesn't have the lossless expression width cap.
 br_gh13a		NI
 
 # v0.9 doesn't have the relational operator optimisation fix. This could be
 # back-ported if necessary.
-br_gh14 		NI
+br_gh14			NI
 
 # v0.9 doesn't have the verinum undefined add/sub/multiply fixed. These
 # could be back-ported if necessary.
-br_gh15 		EF			ivltests
-br_gh18 		EF			ivltests
+br_gh15			EF			ivltests
+br_gh18			EF			ivltests
 
 # v0.9 doesn't have the large shift value fix. This could be back-ported if
 # necessary.
-br_gh19 		EF			ivltests
+br_gh19			EF			ivltests
 br_gh19b		EF			ivltests
 
 # v0.9 has problems with force statements
@@ -380,7 +380,7 @@ br948			EF			ivltests
 
 # v0.9 doesn't have the tgt-vvp string escaping bug fix.
 # This could be back-ported if necessary.
-br_gh28 		NI			ivltests
+br_gh28			NI			ivltests
 
 # v0.9 doesn't have this enhancement.
 fr47			NI			ivltests

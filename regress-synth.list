@@ -84,7 +84,7 @@ case5			normal			ivltests
 case5-syn-fail		CE			ivltests
 case6			normal			ivltests
 case7			normal			ivltests
-case_wo_default 	normal			ivltests
+case_wo_default		normal			ivltests
 casesynth1		normal			ivltests
 casesynth2		normal			ivltests
 casesynth3		normal			ivltests
@@ -95,7 +95,7 @@ casesynth7		CE			ivltests
 casesynth8		CE			ivltests
 casesynth9		normal			ivltests
 casex_synth		normal			ivltests
-condit1 		normal			ivltests
+condit1			normal			ivltests
 conditsynth1		normal			ivltests
 conditsynth2		normal			ivltests
 conditsynth3		normal			ivltests
@@ -109,9 +109,9 @@ dffsynth7		normal			ivltests
 dffsynth8		CE			ivltests
 ff_dual_enable		normal			ivltests
 for_loop_synth		normal			ivltests
-for_loop_synth2 	normal			ivltests
+for_loop_synth2		normal			ivltests
 full_case		normal			ivltests
-if_part_no_else 	normal			ivltests
+if_part_no_else		normal			ivltests
 if_part_no_else2	normal			ivltests
 inside_synth		normal			ivltests
 inside_synth2		normal			ivltests

@@ -12,6 +12,3 @@ module example;
     $finish;
   end
 endmodule
-
-
-  

@@ -39,7 +39,7 @@ initial
     $display_array(real_darray);
 
     bit_darray = new[4];
-    bit_darray = '{64'hdeadbeefcafebabe, 64'h0badc0dec0dec0de, 
+    bit_darray = '{64'hdeadbeefcafebabe, 64'h0badc0dec0dec0de,
                    64'h0123456789abcdef, 64'hfedcba9876543210};
     $increase_array_vals(bit_darray);
     $display_array(bit_darray);

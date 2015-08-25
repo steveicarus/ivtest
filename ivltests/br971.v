@@ -6,7 +6,7 @@ module test();
 reg  [1:0] addr;
 reg  [3:0] memory[3:0];
 reg  [3:0] data;
-   
+
 initial begin
   assign data = memory[addr];
   addr = 1;
@@ -18,4 +18,4 @@ initial begin
     $display("FAILED");
 end
 
-endmodule 
+endmodule

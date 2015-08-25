@@ -2,7 +2,7 @@
 
 module test();
 
-localparam value = $ivlh_to_unsigned((1000 / ($signed(13'd50))), 12);  
+localparam value = $ivlh_to_unsigned((1000 / ($signed(13'd50))), 12);
 
 initial begin
   $display("%d", value);

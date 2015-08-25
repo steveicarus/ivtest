@@ -8,10 +8,10 @@ endmodule
 module test();
 
 wire [3:0] full;
-    
+
 partsel sel(full[1:0]);
 
-initial begin    
+initial begin
   #1 $peek(full);
   #0 $display("display : %b %b", full, sel.part);
   #1 $force(full);

@@ -88,9 +88,9 @@ br975			CE,-g2009		ivltests gold=br975.gold
 br979			normal,-g2009		ivltests
 br991b			CE,-g2009		ivltests gold=br991b.gold
 br_gh4			normal,-g2009		ivltests
-br_gh4a 		normal,-g2009		ivltests
-br_gh72a 		normal,-g2009		ivltests gold=br_gh72a.gold
-br_gh72b 		normal,-g2009		ivltests gold=br_gh72b.gold
+br_gh4a			normal,-g2009		ivltests
+br_gh72a		normal,-g2009		ivltests gold=br_gh72a.gold
+br_gh72b		normal,-g2009		ivltests gold=br_gh72b.gold
 br_ml_20150315b		CE			ivltests
 cast_real		normal,-g2005-sv	ivltests
 clkgen_bit		normal,-g2009		ivltests
@@ -99,7 +99,7 @@ clkgen_net		normal,-g2009		ivltests
 clkgen_reg		normal,-g2009		ivltests
 disable_fork_cmd	normal,-g2009		ivltests
 display_bug		normal,-g2009		ivltests gold=display_bug.gold
-enum_base_range 	normal,-g2005-sv	ivltests
+enum_base_range		normal,-g2005-sv	ivltests
 enum_elem_ranges	normal,-g2005-sv	ivltests
 enum_next		normal,-g2005-sv	ivltests
 enum_ports		normal,-g2005-sv	ivltests
@@ -111,7 +111,7 @@ enum_test5		CE,-g2005-sv		ivltests
 enum_test6		CE,-g2005-sv		ivltests
 enum_test7		CE,-g2005-sv		ivltests
 enum_test8		normal,-g2005-sv	ivltests
-enum_value_expr 	normal,-g2005-sv	ivltests
+enum_value_expr		normal,-g2005-sv	ivltests
 enum_values		normal,-g2005-sv	ivltests
 final			normal,-g2005-sv	ivltests gold=final.gold
 final2			normal,-g2005-sv	ivltests gold=final2.gold
@@ -133,10 +133,10 @@ implicit_cast6		normal,-g2009		ivltests
 implicit_cast7		normal,-g2009		ivltests
 implicit_cast8		normal,-g2009		ivltests
 implicit_cast9		normal,-g2009		ivltests
-implicit_cast10 	normal,-g2009		ivltests
-implicit_cast11 	normal,-g2009		ivltests
-implicit_cast12 	normal,-g2009		ivltests
-implicit_cast13 	normal,-g2009		ivltests
+implicit_cast10		normal,-g2009		ivltests
+implicit_cast11		normal,-g2009		ivltests
+implicit_cast12		normal,-g2009		ivltests
+implicit_cast13		normal,-g2009		ivltests
 implicit-port1		normal,-g2005-sv	ivltests # SystemVerilog implicit port connections
 implicit-port2		CE,-g2005-sv		ivltests
 implicit-port3		CE,-g2005-sv		ivltests
@@ -154,10 +154,10 @@ mod_inst_pkg		normal,-g2009		ivltests
 named_begin		normal,-g2009		ivltests
 named_begin_fail	CE,-g2009		ivltests
 named_fork		normal,-g2009		ivltests
-named_fork_fail 	CE,-g2009		ivltests
-packeda 		normal,-g2009		ivltests
+named_fork_fail		CE,-g2009		ivltests
+packeda			normal,-g2009		ivltests
 packeda2		normal,-g2009		ivltests
-parameter_type2 	normal,-g2009		ivltests
+parameter_type2		normal,-g2009		ivltests
 parpkg_test		normal,-g2009		ivltests
 parpkg_test2		normal,-g2009		ivltests
 parpkg_test3		normal,-g2009		ivltests
@@ -195,31 +195,31 @@ sbyte_test		normal,-g2005-sv	ivltests
 simple_byte		normal,-g2005-sv	ivltests
 simple_int		normal,-g2005-sv	ivltests
 simple_longint		normal,-g2005-sv	ivltests
-simple_shortint 	normal,-g2005-sv	ivltests
+simple_shortint		normal,-g2005-sv	ivltests
 sint_test		normal,-g2005-sv	ivltests
 size_cast		normal,-g2009		ivltests
 size_cast2		normal,-g2005-sv	ivltests
 slongint_test		normal,-g2005-sv	ivltests
 sshortint_test		normal,-g2005-sv	ivltests
 string_index		normal,-g2005-sv	ivltests
-struct1 		normal,-g2009		ivltests
-struct2 		normal,-g2009		ivltests
-struct3 		normal,-g2009		ivltests
+struct1			normal,-g2009		ivltests
+struct2			normal,-g2009		ivltests
+struct3			normal,-g2009		ivltests
 struct3b		normal,-g2009		ivltests
-struct4 		normal,-g2009		ivltests
-struct5 		normal,-g2009		ivltests
-struct6 		normal,-g2009		ivltests
-struct7 		normal,-g2009		ivltests
-struct8 		normal,-g2009		ivltests
-struct9 		normal,-g2009		ivltests
+struct4			normal,-g2009		ivltests
+struct5			normal,-g2009		ivltests
+struct6			normal,-g2009		ivltests
+struct7			normal,-g2009		ivltests
+struct8			normal,-g2009		ivltests
+struct9			normal,-g2009		ivltests
 struct_packed_array	normal,-g2009		ivltests
 struct_packed_array2	normal,-g2009		ivltests
 struct_packed_sysfunct	normal,-g2009		ivltests
 struct_packed_write_read2	normal,-g2009	ivltests
 sv-2val-nets		normal,-g2009		ivltests
 sv-constants		normal,-g2005-sv	ivltests
-sv_array_assign_pattern2	normal,-g2009 	ivltests
-sv_cast_integer 	normal,-g2005-sv	ivltests
+sv_array_assign_pattern2	normal,-g2009	ivltests
+sv_cast_integer		normal,-g2005-sv	ivltests
 sv_cast_string		normal,-g2005-sv	ivltests
 sv_class1		normal,-g2009		ivltests
 sv_class2		normal,-g2009		ivltests
@@ -252,11 +252,11 @@ sv_darray4		normal,-g2009		ivltests
 sv_darray5		normal,-g2009		ivltests
 sv_darray5b		normal,-g2009		ivltests
 sv_darray6		normal,-g2009		ivltests
-sv_darray_args1 	normal,-g2009		ivltests
-sv_darray_args2 	normal,-g2009		ivltests
+sv_darray_args1		normal,-g2009		ivltests
+sv_darray_args2		normal,-g2009		ivltests
 sv_darray_args2b	normal,-g2009		ivltests
-sv_darray_args3 	normal,-g2009		ivltests
-sv_darray_args4 	normal,-g2009		ivltests
+sv_darray_args3		normal,-g2009		ivltests
+sv_darray_args4		normal,-g2009		ivltests
 sv_darray_function	normal,-g2009		ivltests
 sv_darray_signed	normal,-g2009		ivltests
 sv_darray_word_size	normal,-g2005-sv	ivltests
@@ -265,7 +265,7 @@ sv_end_label_fail	CE,-g2009		ivltests gold=sv_end_label_fail.gold
 sv_end_labels		normal,-g2009		ivltests
 sv_end_labels_bad	CE,-g2009		ivltests gold=sv_end_labels_bad.gold
 sv_enum1		normal,-g2009		ivltests
-sv_for_variable 	normal,-g2009		ivltests
+sv_for_variable		normal,-g2009		ivltests
 sv_foreach1		normal,-g2009		ivltests
 sv_foreach2		normal,-g2009		ivltests
 sv_foreach3		normal,-g2009		ivltests
@@ -276,8 +276,8 @@ sv_package2		normal,-g2009		ivltests
 sv_package3		normal,-g2009		ivltests
 sv_package4		normal,-g2009		ivltests
 sv_package5		normal,-g2009		ivltests
-sv_packed_port1 	normal,-g2009		ivltests
-sv_packed_port2 	normal,-g2009		ivltests
+sv_packed_port1		normal,-g2009		ivltests
+sv_packed_port2		normal,-g2009		ivltests
 sv_pkg_class		normal,-g2009		ivltests gold=sv_pkg_class.gold
 sv_port_default1	normal,-g2009		ivltests
 sv_port_default2	normal,-g2009		ivltests
@@ -337,5 +337,5 @@ undef_lval_select_SV	normal,-g2009		ivltests
 unp_array_typedef	normal,-g2005-sv	ivltests
 ushortint_test		normal,-g2005-sv	ivltests
 wait_fork		normal,-g2009		ivltests
-work7			normal,-g2009,-fivltests/work7.cfg 	ivltests
+work7			normal,-g2009,-fivltests/work7.cfg	ivltests
 work7b			normal,-g2009,-fivltests/work7b.cfg	ivltests

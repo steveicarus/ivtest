@@ -1,5 +1,5 @@
 module top;
-  
+
 wire [2:0] value = 2;
 
 shim shim(
@@ -12,7 +12,7 @@ endmodule
 
 module shim(
   inout wire bit0,
-  inout wire bit1, 
+  inout wire bit1,
   inout wire bit2
 );
 
