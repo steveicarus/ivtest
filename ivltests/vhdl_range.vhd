@@ -34,7 +34,9 @@ architecture test of range_entity is
   signal descending : int_array(9 downto 3);
   signal ascending_rev : int_array(8 to 13);
   signal descending_rev : int_array(15 downto 10);
-  signal left_asc, right_asc, left_dsc, right_dsc : integer;
+  signal range_pow : int_array(2**4 downto 0);
+  signal range_rem : int_array(8 rem 3 downto 0);
+  signal left_asc, right_asc, left_dsc, right_dsc, pow_left, rem_left : integer;
 
   -- There is no limited ranged integer in SystemVerilog, so just see if it compiles
   signal int_asc : integer_asc;
@@ -45,6 +47,8 @@ begin
     right_asc <= ascending'right;
     left_dsc <= descending'left;
     right_dsc <= descending'right;
+    pow_left <= range_pow'left;
+    rem_left <= range_rem'left;
 
     -- 'range test
     for i in ascending'range loop

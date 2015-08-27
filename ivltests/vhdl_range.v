@@ -28,25 +28,37 @@ initial begin
 
   if(dut.left_asc !== 2)
   begin
-    $display("FAILED: left should be %2d but is %2d", 2, dut.left_asc);
+    $display("FAILED: left_asc should be %2d but is %2d", 2, dut.left_asc);
     $finish();
   end
 
   if(dut.right_asc !== 4)
   begin
-    $display("FAILED: left should be %2d but is %2d", 2, dut.right_asc);
+    $display("FAILED: right_asc should be %2d but is %2d", 2, dut.right_asc);
     $finish();
   end
 
   if(dut.left_dsc !== 9)
   begin
-    $display("FAILED: left should be %2d but is %2d", 2, dut.left_dsc);
+    $display("FAILED: left_dsc should be %2d but is %2d", 2, dut.left_dsc);
     $finish();
   end
 
   if(dut.right_dsc !== 3)
   begin
-    $display("FAILED: left should be %2d but is %2d", 2, dut.right_dsc);
+    $display("FAILED: right_dsc should be %2d but is %2d", 2, dut.right_dsc);
+    $finish();
+  end
+
+  if(dut.pow_left !== 16)
+  begin
+    $display("FAILED: pow_left should be %2d but is %2d", 16, dut.pow_left);
+    $finish();
+  end
+
+  if(dut.rem_left !== 2)
+  begin
+    $display("FAILED: rem_left should be %2d but is %2d", 2, dut.rem_left);
     $finish();
   end
 
