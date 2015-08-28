@@ -34,9 +34,9 @@ begin
     and2 <= true and false;
     and3 <= false and false;
 
-    or1 <= true and true;
-    or2 <= true and false;
-    or3 <= false and false;
+    or1 <= true or true;
+    or2 <= true or false;
+    or3 <= false or false;
 
     not1 <= not false;
     not2 <= not true;

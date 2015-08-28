@@ -67,7 +67,7 @@ initial begin
         $finish();
     end
 
-    if(dut.or2) begin
+    if(!dut.or2) begin
         $display("FAILED or2");
         $finish();
     end
