@@ -149,6 +149,7 @@ vhdl_ssub23_bit		normal,-g2005-sv,ivltests/vhdl_ssub23_bit.vhd		ivltests
 vhdl_ssub23_stdlogic	normal,-g2005-sv,ivltests/vhdl_ssub23_stdlogic.vhd	ivltests
 vhdl_struct_array	normal,-g2005-sv,ivltests/vhdl_struct_array.vhd		ivltests
 vhdl_subprogram		normal,-g2005-sv,ivltests/vhdl_subprogram_pkg.vhd,ivltests/vhdl_subprogram.vhd	ivltests
+vhdl_string		normal,-g2005-sv,ivltests/vhdl_string.vhd		ivltests gold=vhdl_string.gold
 vhdl_test1		normal,-g2005-sv,ivltests/vhdl_test1.vhd		ivltests
 vhdl_test2		normal,-g2005-sv,ivltests/vhdl_test2.vhd		ivltests
 vhdl_test3		normal,-g2005-sv,ivltests/vhdl_test3.vhd		ivltests gold=vhdl_test3.gold
