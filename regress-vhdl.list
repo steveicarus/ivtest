@@ -71,6 +71,7 @@ br986			normal,-g2005-sv,ivltests/br986.vhd			ivltests
 br987			normal,-g2005-sv,ivltests/br987.vhd			ivltests
 ivlh_event		normal,-mvhdl_sys					ivltests gold=ivlh_event.gold
 ivlh_rising_falling	normal,-mvhdl_sys					ivltests gold=ivlh_rising_falling.gold
+ivlh_textio		normal,-mvhdl_textio,-g2005-sv				ivltests
 test_dec2to4		normal,-g2005-sv,ivltests/dec2to4.vhd			ivltests
 test_enumsystem		normal,-g2005-sv,ivltests/enumsystem.vhd		ivltests
 test_forgen		normal,-g2005-sv,ivltests/forgen.vhd			ivltests
