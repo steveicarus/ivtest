@@ -1610,3 +1610,4 @@ z1			normal			ivltests foo
 z2			normal			ivltests foo
 zero_repl		normal			ivltests
 zero_repl_fail		CE			ivltests
+cmpi			normal			ivltests
