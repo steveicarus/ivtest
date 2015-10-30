@@ -367,6 +367,7 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
                     br_gh37: Passed.
                    br_gh60a: Passed - CE.
                     br_gh62: Passed - CE.
+                    br_gh79: Passed - CE.
              br_ml_20150315: Passed.
              br_ml_20150321: Passed - CE.
              br_ml_20150606: Passed.
