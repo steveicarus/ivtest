@@ -242,4 +242,7 @@ sub execute_regression {
     &print_rpt("=" x 76 . "\n");
     &print_rpt("Test results:\n  Total=$total, Passed=$passed, Failed=$failed,".
                " Not Implemented=$not_impl, Expected Fail=$expected_fail\n");
+
+    # Remove remaining temporary files
+    system("rm -f *.tmp ivltests/*.tmp");
 }
