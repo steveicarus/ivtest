@@ -178,6 +178,7 @@ vhdl_usub23_bit		normal,-g2005-sv,ivltests/vhdl_usub23_bit.vhd		ivltests
 vhdl_usub23_stdlogic	normal,-g2005-sv,ivltests/vhdl_usub23_stdlogic.vhd	ivltests
 vhdl_var_init		normal,-g2005-sv,ivltests/vhdl_var_init.vhd		ivltests
 vhdl_wait		normal,-g2005-sv,ivltests/vhdl_wait.vhd	ivltests gold=vhdl_wait.gold
+vhdl_while		normal,-g2005-sv,ivltests/vhdl_while.vhd		ivltests
 vhdl_xnor104_stdlogic	normal,-g2005-sv,ivltests/vhdl_xnor104_stdlogic.vhd	ivltests
 vhdl_xnor104_stdlogic	normal,-g2005-sv,ivltests/vhdl_xnor104_stdlogic.vhd	ivltests
 vhdl_xnor23_bit		normal,-g2005-sv,ivltests/vhdl_xnor23_bit.vhd		ivltests
