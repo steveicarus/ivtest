@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 #
 # Regression script for VHDL output. Based on vvp_reg.pl.
 #

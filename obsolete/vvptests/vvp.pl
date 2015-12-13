@@ -1,4 +1,4 @@
-#!/usr/bin/perl -s
+#!/usr/bin/env perl -s
 ##!/utilities/perl/bin/perl -s
 #
 # Script vvp.pl modified to handle vvp for Steve Williams
@@ -62,7 +62,7 @@ $comp_name = "IVL" ;	# Change the name of the compiler in use here.
                         # this may change to a command line option after
 			# I get things debugged!
 
-   $vername = "/usr/local/bin/vvp";	    # IVL's shell
+   $vername = "/usr/bin/env vvp";	    # IVL's shell
    $versw   = "";			    # switches
    $verout  = "-o simv -tvvp";	# vvp source output (for IVL )
    #$redir = "&>";
@@ -235,7 +235,7 @@ sub execute_regression {
 	#           !($testtype{$testname} eq "CN" ) &&
 	#           !($testtype{$testname} eq "CE" )) {
 	#          system ("rm -rf core");
-	#          system ("/usr/local/bin/vvp simv >> $lpath 2>&1 ");
+	#          system ("/usr/bin/env vvp simv >> $lpath 2>&1 ");
 	#        } else {
 	#
 	#        }

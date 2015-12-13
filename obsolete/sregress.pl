@@ -1,4 +1,4 @@
-#!/usr/bin/perl -s
+#!/usr/bin/env perl -s
 ##!/utilities/perl/bin/perl -s
 #
 # Copyright (c) 1999 Guy Hutchison (ghutchis@pacbell.net)
