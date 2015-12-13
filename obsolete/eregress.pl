@@ -1,4 +1,4 @@
-#!/usr/bin/perl -s
+#!/usr/bin/env perl -s
 #
 # Copyright (c) 1999 Guy Hutchison (stevew@home.com)
 #

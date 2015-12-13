@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 #
 # Script to handle regression for Icarus Verilog using the vvp target.
 #

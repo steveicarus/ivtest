@@ -1,4 +1,4 @@
-#! /usr/local/bin/vvp -v
+#! /usr/bin/env vvp -v
 :vpi_time_precision + 0;
 :vpi_module "system";
 S_test .scope module, "test";
