@@ -69,6 +69,7 @@ initial begin
     end
 
     $display("PASSED");
+    #0; // Need to wait for the file to close before we finish!
     $finish();
 end
 endmodule
