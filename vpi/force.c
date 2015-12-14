@@ -12,6 +12,7 @@ static PLI_INT32 peek_calltf(PLI_BYTE8 *xx)
       (void)xx;
 
       arg = vpi_scan(argv);
+      vpi_free_object(argv);  /* Free iterator since we did not scan to NULL. */
       assert(arg != 0);
 
       val.value.str = "";
@@ -35,6 +36,7 @@ static PLI_INT32 poke_calltf(PLI_BYTE8 *xx)
       (void)xx;
 
       arg = vpi_scan(argv);
+      vpi_free_object(argv);  /* Free iterator since we did not scan to NULL. */
       assert(arg != 0);
 
       val.value.integer = count++;
@@ -56,6 +58,7 @@ static PLI_INT32 force_calltf(PLI_BYTE8 *xx)
       (void)xx;
 
       arg = vpi_scan(argv);
+      vpi_free_object(argv);  /* Free iterator since we did not scan to NULL. */
       assert(arg != 0);
 
       val.value.str = "10";
@@ -77,6 +80,7 @@ static PLI_INT32 release_calltf(PLI_BYTE8 *xx)
       (void)xx;
 
       arg = vpi_scan(argv);
+      vpi_free_object(argv);  /* Free iterator since we did not scan to NULL. */
       assert(arg != 0);
 
       val.format = vpiBinStrVal;
