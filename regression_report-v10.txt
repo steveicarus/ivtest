@@ -2,6 +2,13 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
 ----------------------------------------------------------------------------
                     analog1: Not Implemented.
                     analog2: Not Implemented.
+                ivlh_textio: Not Implemented.
+                 vhdl_range: Not Implemented.
+                vhdl_string: Not Implemented.
+            vhdl_string_lim: Not Implemented.
+          vhdl_textio_write: Not Implemented.
+           vhdl_textio_read: Not Implemented.
+                 vhdl_while: Not Implemented.
                  basiclatch: Passed.
                 blocksynth2: Passed.
                 blocksynth3: Passed.
@@ -1722,6 +1729,7 @@ test_mos_strength_reduction: Passed.
                          z2: Passed.
                   zero_repl: Passed.
              zero_repl_fail: Passed - CE.
+                       cmpi: Passed.
                    cast_int: Passed.
                  constfunc4: Passed.
                 scaled_real: Passed.
@@ -2069,7 +2077,6 @@ test_mos_strength_reduction: Passed.
           vhdl_prefix_array: Passed.
              vhdl_procedure: Passed.
             vhdl_rand23_bit: Passed.
-                 vhdl_range: Passed.
             vhdl_range_func: Passed.
                   vhdl_real: Passed.
            vhdl_record_elab: Passed.
@@ -2165,4 +2172,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2163, Passed=2157, Failed=4, Not Implemented=2, Expected Fail=0
+  Total=2170, Passed=2157, Failed=4, Not Implemented=9, Expected Fail=0
