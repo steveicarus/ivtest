@@ -192,6 +192,7 @@ program5b		CE,-g2009		ivltests
 program_hello		normal,-g2009		ivltests
 program_hello2		CE,-g2009		ivltests
 sbyte_test		normal,-g2005-sv	ivltests
+sformatf		normal,-g2009		ivltests
 simple_byte		normal,-g2005-sv	ivltests
 simple_int		normal,-g2005-sv	ivltests
 simple_longint		normal,-g2005-sv	ivltests
