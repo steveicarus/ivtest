@@ -104,6 +104,7 @@ vhdl_fa4_test3		normal,-g2005-sv,ivltests/vhdl_fa4_test3.vhd		ivltests
 vhdl_fa4_test4		normal,-g2005-sv,ivltests/vhdl_fa4_test4.vhd		ivltests
 vhdl_generic_default	normal,-g2005-sv,ivltests/vhdl_generic_default.vhd	ivltests
 vhdl_init		normal,-g2005-sv,ivltests/vhdl_init.vhd			ivltests
+vhdl_image_attr		normal,-g2005-sv,-fivltests/vhdl_timescale_1ns.cfg,ivltests/vhdl_image_attr.vhd	ivltests gold=vhdl_image_attr.gold
 vhdl_inout		normal,-g2005-sv,ivltests/vhdl_inout.vhd		ivltests
 vhdl_labeled_assign	normal,-g2005-sv,ivltests/vhdl_labeled_assign.vhd	ivltests
 vhdl_logic		normal,-g2005-sv,ivltests/vhdl_logic.vhd		ivltests
