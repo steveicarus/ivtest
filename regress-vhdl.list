@@ -164,7 +164,7 @@ vhdl_test9		normal,-g2005-sv,ivltests/vhdl_test9.vhd		ivltests
 # vhdl_textio_write creates the test data for vhdl_textio_read, so it has to be run first
 vhdl_textio_write	normal,-g2005-sv,ivltests/vhdl_textio_write.vhd		ivltests
 vhdl_textio_read	normal,-g2005-sv,ivltests/vhdl_textio_read.vhd		ivltests
-vhdl_time		normal,-g2005-sv,-fivltests/vhdl_time.cfg		ivltests gold=vhdl_time.gold
+vhdl_time		normal,-g2005-sv,-fivltests/vhdl_timescale_1ns.cfg,ivltests/vhdl_time_pkg.vhd,ivltests/vhdl_time.vhd	ivltests gold=vhdl_time.gold
 vhdl_to_integer		normal,-g2005-sv,ivltests/vhdl_to_integer.vhd		ivltests
 vhdl_uadd23_bit		normal,-g2005-sv,ivltests/vhdl_uadd23_bit.vhd		ivltests
 vhdl_uadd23_stdlogic	normal,-g2005-sv,ivltests/vhdl_uadd23_stdlogic.vhd	ivltests
