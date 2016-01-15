@@ -139,6 +139,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                      br_gh4: Passed - CE.
                 ivlh_textio: Passed - CE.
             plus_arg_string: Passed - CE.
+                   sformatf: Passed - CE.
                string_index: Passed - CE.
                    sv_macro: Passed - CE.
                  sv_string1: Passed - CE.
@@ -503,6 +504,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
             undefined_shift: Passed.
                   vams_abs1: Passed.
           vhdl_const_record: Passed.
+            vhdl_image_attr: Passed.
             vhdl_sadd23_bit: Passed.
             vhdl_sdiv23_bit: Passed.
             vhdl_ssub23_bit: Passed.
@@ -2173,4 +2175,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2171, Passed=2140, Failed=4, Not Implemented=3, Expected Fail=24
+  Total=2173, Passed=2142, Failed=4, Not Implemented=3, Expected Fail=24
