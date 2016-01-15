@@ -108,6 +108,7 @@ vhdl_image_attr		normal,-g2005-sv,-fivltests/vhdl_timescale_1ns.cfg,ivltests/vhd
 vhdl_inout		normal,-g2005-sv,ivltests/vhdl_inout.vhd		ivltests
 vhdl_labeled_assign	normal,-g2005-sv,ivltests/vhdl_labeled_assign.vhd	ivltests
 vhdl_logic		normal,-g2005-sv,ivltests/vhdl_logic.vhd		ivltests
+vhdl_loop		normal,-g2005-sv,ivltests/vhdl_loop.vhd		ivltests
 vhdl_nand104_stdlogic	normal,-g2005-sv,ivltests/vhdl_nand104_stdlogic.vhd	ivltests
 vhdl_nand23_bit		normal,-g2005-sv,ivltests/vhdl_nand23_bit.vhd		ivltests
 vhdl_nandg_bit		normal,-g2005-sv,ivltests/vhdl_nandg_bit.vhd		ivltests
