@@ -122,6 +122,7 @@ vhdl_not23_bit		normal,-g2005-sv,ivltests/vhdl_not23_bit.vhd		ivltests
 vhdl_notfunc_stdlogic	normal,-g2005-sv,ivltests/vhdl_notfunc_stdlogic.vhd	ivltests
 vhdl_notg_bit		normal,-g2005-sv,ivltests/vhdl_notg_bit.vhd		ivltests
 vhdl_notg_stdlogic	normal,-g2005-sv,ivltests/vhdl_notg_stdlogic.vhd	ivltests
+vhdl_now		normal,-g2005-sv,ivltests/vhdl_now.vhd			ivltests  gold=vhdl_now.gold
 vhdl_or104_stdlogic	normal,-g2005-sv,ivltests/vhdl_or104_stdlogic.vhd	ivltests
 vhdl_or23_bit		normal,-g2005-sv,ivltests/vhdl_or23_bit.vhd		ivltests
 vhdl_org_bit		normal,-g2005-sv,ivltests/vhdl_org_bit.vhd		ivltests
