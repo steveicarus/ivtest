@@ -93,6 +93,7 @@ vhdl_case_multi		normal,-g2005-sv,ivltests/vhdl_case_multi.vhd		ivltests
 vhdl_boolean		normal,-g2005-sv,ivltests/vhdl_boolean.vhd		ivltests
 vhdl_concat		normal,-g2005-sv,ivltests/vhdl_concat.vhd		ivltests
 vhdl_concat_func	normal,-g2005-sv,ivltests/vhdl_concat_func.vhd		ivltests
+vhdl_concurrent_assert	normal,-g2005-sv,ivltests/vhdl_concurrent_assert.vhd	ivltests gold=vhdl_concurrent_assert.gold
 vhdl_const_package	normal,-g2005-sv,ivltests/vhdl_const_package_pkg.vhd,ivltests/vhdl_const_package.vhd	ivltests
 vhdl_const_record	normal,-g2005-sv,ivltests/vhdl_const_record.vhd		ivltests
 vhdl_const_array	normal,-g2005-sv,ivltests/vhdl_const_array_pkg.vhd,ivltests/vhdl_const_array.vhd	ivltests
