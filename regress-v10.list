@@ -70,12 +70,16 @@ analog2			NI
 
 # V10 does not support this VHDL functionality
 ivlh_textio		NI
+vhdl_image_attr		NI
 vhdl_range		NI
 vhdl_string		NI
 vhdl_string_lim		NI
 vhdl_textio_write	NI
 vhdl_textio_read	NI
 vhdl_while		NI
+
+# V10 does not support this SystemVerilog functionality
+sformatf		NI
 
 # v10 has incomplete synthesis support
 basiclatch		normal			ivltests
