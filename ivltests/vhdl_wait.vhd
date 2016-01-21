@@ -30,6 +30,11 @@ end vhdl_wait;
 architecture test of vhdl_wait is
 begin
     process begin
+        report "final wait test";
+        wait;
+    end process;
+
+    process begin
         wait on a(0);
         report "wait 1 completed";
         -- acknowledge wait 1
