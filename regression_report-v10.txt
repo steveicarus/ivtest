@@ -34,7 +34,6 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
                   full_case: Passed.
                  full_case2: Passed.
                inside_synth: Passed.
-              inside_synth2: Passed.
               inside_synth3: Passed.
                   memsynth1: Passed.
                   memsynth2: Passed.
@@ -2140,6 +2139,10 @@ test_mos_strength_reduction: Passed.
                  basicstate: Passed.
                 basicstate2: Passed.
                 blocksynth1: Passed.
+                     br993a: Passed - CE.
+                     br993b: Passed - CE.
+                      br994: Passed.
+                      br995: Passed - CE.
                       case3: Passed.
                       case7: Passed.
             case_wo_default: Passed.
@@ -2159,6 +2162,7 @@ test_mos_strength_reduction: Passed.
             for_loop_synth2: Passed.
             if_part_no_else: Passed.
            if_part_no_else2: Passed.
+              inside_synth2: Passed.
                       land5: Passed.
                   lcatsynth: Passed.
                   memsynth4: Passed.
@@ -2175,4 +2179,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2173, Passed=2158, Failed=4, Not Implemented=11, Expected Fail=0
+  Total=2177, Passed=2162, Failed=4, Not Implemented=11, Expected Fail=0

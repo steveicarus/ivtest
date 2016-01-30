@@ -76,6 +76,10 @@ basicstate2		normal			ivltests
 blocksynth1		normal			ivltests
 blocksynth2		normal			ivltests
 blocksynth3		normal			ivltests
+br993a			CE			ivltests
+br993b			CE			ivltests
+br994			normal			ivltests
+br995			CE			ivltests
 case1			normal			ivltests
 case2			normal			ivltests
 case3			normal			ivltests
@@ -111,6 +115,7 @@ ff_dual_enable		normal			ivltests
 for_loop_synth		normal			ivltests
 for_loop_synth2		normal			ivltests
 full_case		normal			ivltests
+full_case2		normal			ivltests
 if_part_no_else		normal			ivltests
 if_part_no_else2	normal			ivltests
 inside_synth		normal			ivltests

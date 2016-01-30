@@ -477,7 +477,9 @@ tri2			CE			ivltests
 basicexpr		TE,-S			ivltests
 basicstate		TE,-S			ivltests
 basicstate2		TE,-S			ivltests
+br994			TE,-S			ivltests
 dffsynth6		TE,-S			ivltests
+inside_synth2		TE,-S			ivltests
 shiftl			TE,-S			ivltests
 ufuncsynth1		TE,-S			ivltests
 pr685			TE,-S			ivltests

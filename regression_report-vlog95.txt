@@ -347,7 +347,9 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                   basicexpr: Passed - TE.
                  basicstate: Passed - TE.
                 basicstate2: Passed - TE.
+                      br994: Passed - TE.
                   dffsynth6: Passed - TE.
+              inside_synth2: Passed - TE.
                      shiftl: Passed - TE.
                 ufuncsynth1: Passed - TE.
                       pr685: Passed - TE.
@@ -592,7 +594,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                   full_case: Passed.
                  full_case2: Passed.
                inside_synth: Passed.
-              inside_synth2: Passed.
               inside_synth3: Passed.
                   memsynth1: Passed.
                   memsynth2: Passed.
@@ -2156,6 +2157,9 @@ test_mos_strength_reduction: Passed.
                  basicexpr3: Passed.
                  basicexpr4: Passed.
                    basicreg: Passed.
+                     br993a: Passed - CE.
+                     br993b: Passed - CE.
+                      br995: Passed - CE.
                       case3: Passed.
                       case7: Passed.
             case_wo_default: Passed.
@@ -2175,4 +2179,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2173, Passed=2142, Failed=4, Not Implemented=3, Expected Fail=24
+  Total=2177, Passed=2146, Failed=4, Not Implemented=3, Expected Fail=24
