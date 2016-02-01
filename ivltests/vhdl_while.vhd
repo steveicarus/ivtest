@@ -25,7 +25,7 @@ use IEEE.numeric_std.all;
 
 entity vhdl_while is
     port(
-        start: in std_logic_vector;
+        start: in std_logic;
         output: out integer
     );
 end vhdl_while;
