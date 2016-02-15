@@ -99,6 +99,7 @@ vhdl_const_record	normal,-g2005-sv,ivltests/vhdl_const_record.vhd		ivltests
 vhdl_const_array	normal,-g2005-sv,ivltests/vhdl_const_array_pkg.vhd,ivltests/vhdl_const_array.vhd	ivltests
 vhdl_delay_assign	normal,-g2005-sv,-fivltests/vhdl_timescale_1ns.cfg,ivltests/vhdl_delay_assign.vhd	ivltests
 vhdl_expr1		normal,-g2005-sv,ivltests/vhdl_expr1.vhd		ivltests
+vhdl_elab_range		normal,-g2005-sv,ivltests/vhdl_elab_range.vhd		ivltests
 vhdl_generic_eval	normal,-g2005-sv,ivltests/vhdl_generic_eval.vhd		ivltests
 vhdl_fa4_test1		normal,-g2005-sv,ivltests/vhdl_fa4_test1.vhd		ivltests
 vhdl_fa4_test2		normal,-g2005-sv,ivltests/vhdl_fa4_test2.vhd		ivltests
