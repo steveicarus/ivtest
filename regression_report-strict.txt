@@ -1,40 +1,22 @@
 Running compiler/VVP tests for Icarus Verilog version: 11 (strict).
 ----------------------------------------------------------------------------
-                 basiclatch: Passed.
-                blocksynth2: Passed.
-                blocksynth3: Passed.
-                      case1: Passed.
-                      case2: Passed.
-                      case4: Passed.
-                      case5: Passed.
-             case5-syn-fail: Passed.
-                      case6: Passed.
-                 casesynth1: Passed.
-                 casesynth2: Passed.
-                 casesynth3: Passed.
-                casex_synth: Passed.
-                    condit1: Passed.
-               conditsynth1: Passed.
-               conditsynth2: Passed.
-               conditsynth3: Passed.
-                   dffsynth: Passed.
-                  dffsynth3: Passed.
-                  dffsynth4: Passed.
-                  full_case: Passed.
-                 full_case2: Passed.
-               inside_synth: Passed.
-              inside_synth3: Passed.
-                  memsynth1: Passed.
-                  memsynth2: Passed.
-                  memsynth3: Passed.
-                  memsynth5: Passed.
-                  memsynth6: Passed.
-                  memsynth7: Passed.
-                  memsynth9: Passed.
-                  mix_reset: Passed.
-                   multireg: Passed.
-                sqrt32synth: Passed.
-                   ssetclr3: Passed.
+                 basiclatch: Passed - CE.
+                      case1: Passed - CE.
+                      case2: Passed - CE.
+                casex_synth: Passed - CE.
+                   dffsynth: Passed - CE.
+                  full_case: Passed - CE.
+                 full_case2: Passed - CE.
+               inside_synth: Passed - CE.
+              inside_synth3: Passed - CE.
+                  memsynth1: Passed - CE.
+                  memsynth2: Passed - CE.
+                  memsynth3: Passed - CE.
+                  memsynth5: Passed - CE.
+                  memsynth6: Passed - CE.
+                  memsynth7: Passed - CE.
+                  memsynth9: Passed - CE.
+                  mix_reset: Passed - CE.
                    fileline: Passed.
                   fileline2: ==> Failed - output does not match gold file.
               macro_str_esc: Passed.
@@ -2136,24 +2118,42 @@ test_mos_strength_reduction: Passed.
                  basicstate: Passed.
                 basicstate2: Passed.
                 blocksynth1: Passed.
-                     br993a: Passed - CE.
-                     br993b: Passed - CE.
+                blocksynth2: Passed.
+                blocksynth3: Passed.
+                     br993a: Passed.
+                     br993b: Passed.
                       br994: Passed.
                       br995: Passed - CE.
                       case3: Passed.
+                      case4: Passed.
+                      case5: Passed.
+             case5-syn-fail: Passed - CE.
+                      case6: Passed.
                       case7: Passed.
             case_wo_default: Passed.
+                 casesynth1: Passed.
+                 casesynth2: Passed.
+                 casesynth3: Passed.
                  casesynth4: Passed.
                  casesynth5: Passed.
                  casesynth6: Passed.
                  casesynth7: Passed - CE.
                  casesynth8: Passed - CE.
                  casesynth9: Passed.
+                    condit1: Passed.
+               conditsynth1: Passed.
+               conditsynth2: Passed.
+               conditsynth3: Passed.
                   dffsynth2: Passed.
+                  dffsynth3: Passed.
+                  dffsynth4: Passed.
                   dffsynth5: Passed.
                   dffsynth6: Passed.
                   dffsynth7: Passed.
                   dffsynth8: Passed - CE.
+                  dffsynth9: Passed.
+                 dffsynth10: Passed.
+                 dffsynth11: Passed.
              ff_dual_enable: Passed.
              for_loop_synth: Passed.
             for_loop_synth2: Passed.
@@ -2164,16 +2164,19 @@ test_mos_strength_reduction: Passed.
                   lcatsynth: Passed.
                   memsynth4: Passed.
                   memsynth8: Passed.
+                   multireg: Passed.
                not_a_latch1: Passed.
                not_a_latch2: Passed.
                partselsynth: Passed.
                       pr519: Passed.
                       pr685: Passed.
                      shiftl: Passed.
+                sqrt32synth: Passed.
                    ssetclr1: Passed.
                    ssetclr2: Passed.
+                   ssetclr3: Passed.
            synth_if_no_else: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2174, Passed=2168, Failed=6, Not Implemented=0, Expected Fail=0
+  Total=2177, Passed=2171, Failed=6, Not Implemented=0, Expected Fail=0

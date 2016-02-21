@@ -11,6 +11,8 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
            vhdl_textio_read: Not Implemented.
                  vhdl_while: Not Implemented.
                    sformatf: Not Implemented.
+                     br993a: Passed - CE.
+                     br993b: Passed - CE.
                  basiclatch: Passed.
                 blocksynth2: Passed.
                 blocksynth3: Passed.
@@ -31,6 +33,9 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
                    dffsynth: Passed.
                   dffsynth3: Passed.
                   dffsynth4: Passed.
+                  dffsynth9: Passed.
+                 dffsynth10: Passed.
+                 dffsynth11: Passed.
                   full_case: Passed.
                  full_case2: Passed.
                inside_synth: Passed.
@@ -2139,8 +2144,6 @@ test_mos_strength_reduction: Passed.
                  basicstate: Passed.
                 basicstate2: Passed.
                 blocksynth1: Passed.
-                     br993a: Passed - CE.
-                     br993b: Passed - CE.
                       br994: Passed.
                       br995: Passed - CE.
                       case3: Passed.
@@ -2179,4 +2182,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2177, Passed=2162, Failed=4, Not Implemented=11, Expected Fail=0
+  Total=2180, Passed=2165, Failed=4, Not Implemented=11, Expected Fail=0
