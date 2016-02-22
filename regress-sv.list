@@ -93,6 +93,7 @@ br_gh72a		normal,-g2009		ivltests gold=br_gh72a.gold
 br_gh72b		normal,-g2009		ivltests gold=br_gh72b.gold
 br_ml_20150315b		CE			ivltests
 cast_real		normal,-g2005-sv	ivltests
+cfunc_assign_op		normal,-g2009		ivltests
 clkgen_bit		normal,-g2009		ivltests
 clkgen_logic		normal,-g2009		ivltests
 clkgen_net		normal,-g2009		ivltests

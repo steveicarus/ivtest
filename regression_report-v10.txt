@@ -1776,6 +1776,7 @@ test_mos_strength_reduction: Passed.
                    br_gh72b: Passed.
             br_ml_20150315b: Passed - CE.
                   cast_real: Passed.
+            cfunc_assign_op: Passed.
                  clkgen_bit: Passed.
                clkgen_logic: Passed.
                  clkgen_net: Passed.
@@ -2182,4 +2183,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2180, Passed=2165, Failed=4, Not Implemented=11, Expected Fail=0
+  Total=2181, Passed=2166, Failed=4, Not Implemented=11, Expected Fail=0
