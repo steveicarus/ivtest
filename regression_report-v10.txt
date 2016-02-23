@@ -1750,6 +1750,8 @@ test_mos_strength_reduction: Passed.
                  array_size: Passed.
                array_string: Passed.
     array_unpacked_sysfunct: Passed.
+           assign_op_concat: Passed.
+             assign_op_type: Passed.
                       bitp1: Passed.
                        bits: Passed.
                       bits2: Passed.
@@ -1776,7 +1778,10 @@ test_mos_strength_reduction: Passed.
                    br_gh72b: Passed.
             br_ml_20150315b: Passed - CE.
                   cast_real: Passed.
-            cfunc_assign_op: Passed.
+      cfunc_assign_op_mixed: Passed.
+         cfunc_assign_op_pv: Passed.
+       cfunc_assign_op_real: Passed.
+        cfunc_assign_op_vec: Passed.
                  clkgen_bit: Passed.
                clkgen_logic: Passed.
                  clkgen_net: Passed.
@@ -2183,4 +2188,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2181, Passed=2166, Failed=4, Not Implemented=11, Expected Fail=0
+  Total=2186, Passed=2171, Failed=4, Not Implemented=11, Expected Fail=0

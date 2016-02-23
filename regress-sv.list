@@ -67,6 +67,8 @@
 array_size		normal,-g2005-sv	ivltests # test [size] arrays
 array_string		normal,-g2009		ivltests
 array_unpacked_sysfunct	normal,-g2005-sv	ivltests
+assign_op_concat	normal,-g2009		ivltests
+assign_op_type		normal,-g2009		ivltests
 bitp1			normal,-g2005-sv	ivltests
 bits			normal,-g2005-sv	ivltests
 bits2			normal,-g2005-sv	ivltests
@@ -93,7 +95,10 @@ br_gh72a		normal,-g2009		ivltests gold=br_gh72a.gold
 br_gh72b		normal,-g2009		ivltests gold=br_gh72b.gold
 br_ml_20150315b		CE			ivltests
 cast_real		normal,-g2005-sv	ivltests
-cfunc_assign_op		normal,-g2009		ivltests
+cfunc_assign_op_mixed	normal,-g2009		ivltests
+cfunc_assign_op_pv	normal,-g2009		ivltests
+cfunc_assign_op_real	normal,-g2009		ivltests
+cfunc_assign_op_vec	normal,-g2009		ivltests
 clkgen_bit		normal,-g2009		ivltests
 clkgen_logic		normal,-g2009		ivltests
 clkgen_net		normal,-g2009		ivltests
