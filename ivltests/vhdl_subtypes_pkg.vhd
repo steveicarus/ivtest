@@ -1,4 +1,4 @@
--- Copyright (c) 2015 CERN
+-- Copyright (c) 2016 CERN
 -- Maciej Suminski <maciej.suminski@cern.ch>
 --
 -- This source code is free software; you can redistribute it
@@ -17,27 +17,21 @@
 -- Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 
 
--- Test limited length strings in VHDL.
+-- Test for subtype definitions.
 
 library ieee;
-use ieee.std_logic_1164.all;
+use ieee.numeric_bit.all;
 
-entity vhdl_string_lim is
-    port (start : in std_logic;
-          res : out std_logic);
-end entity vhdl_string_lim;
+package vhdl_subtypes_pkg is
+    constant type_range : integer := 10;
 
-architecture test of vhdl_string_lim is
-begin
-  process (start)
-    variable a : string;
-    variable b : string(1 to 1);
-    variable c : string(1 to 5);
-  begin
-    a := "test string";
-    b := "a";
-    c := "abcde";
+    subtype int_type_const is integer range 0 to type_range-1;
+    subtype int_type is integer range 0 to 7;
+    subtype int_type_downto is integer range 8 downto 1;
+    subtype time_type is time range 0 fs to 1 ms;
+    subtype uns_type_const is unsigned(7 downto 0);
+end vhdl_subtypes_pkg;
 
-    res <= (a = "test string") and (b = "a") and (c = "abcde");
-  end process;
-end architecture test;
+package body vhdl_subtypes_pkg is
+end vhdl_subtypes_pkg;
+

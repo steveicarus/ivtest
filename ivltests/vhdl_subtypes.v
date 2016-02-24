@@ -20,31 +20,37 @@
 // Test for subtype definitions.
 
 module vhdl_subtypes_test;
-vhdl_subtypes dut();
+int a, b, c;
+time d;
+int e;
+
+vhdl_subtypes dut(a, b, c, d, e);
 
 initial
 begin
-    if(dut.a !== 1) begin
+    #1;
+
+    if(a !== 1) begin
         $display("FAILED");
         $finish();
     end
 
-    if(dut.b !== 2) begin
+    if(b !== 2) begin
         $display("FAILED");
         $finish();
     end
 
-    if(dut.c !== 3) begin
+    if(c !== 3) begin
         $display("FAILED");
         $finish();
     end
 
-    if(dut.d !== 4) begin
+    if(d !== 4) begin
         $display("FAILED");
         $finish();
     end
 
-    if(dut.e !== 5) begin
+    if(e !== 5) begin
         $display("FAILED");
         $finish();
     end

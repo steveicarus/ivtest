@@ -1,4 +1,4 @@
-// Copyright (c) 2015 CERN
+// Copyright (c) 2015-2016 CERN
 // Maciej Suminski <maciej.suminski@cern.ch>
 //
 // This source code is free software; you can redistribute it
@@ -20,9 +20,9 @@
 // Test reading files using std.textio library.
 
 module vhdl_textio_read_test;
-reg clk, active;
+reg clk, active, ok;
 int line_counter;
-vhdl_textio_read dut(clk, active, line_counter);
+vhdl_textio_read dut(clk, active, line_counter, ok);
 
 always #1 clk = ~clk;
 
@@ -33,38 +33,8 @@ initial begin
     // wait until the input file is read
     #12 active = 0;
 
-    if(dut.data_string != "string") begin
-        $display("FAILED 1");
-        $finish();
-    end
-
-    if(dut.data_int != 123) begin
-        $display("FAILED 2");
-        $finish();
-    end
-
-    if(dut.data_bool != 1) begin
-        $display("FAILED 3");
-        $finish();
-    end
-
-    if(dut.data_hex != 243) begin
-        $display("FAILED 4");
-        $finish();
-    end
-
-    if(dut.data_real != 12.21) begin
-        $display("FAILED 5");
-        $finish();
-    end
-
-    if(dut.data_time != 100) begin
-        $display("FAILED 6");
-        $finish();
-    end
-
-    if(line_counter != 6) begin
-        $display("FAILED 7");
+    if(ok !== 1'b1) begin
+        $display("FAILED");
         $finish();
     end
 

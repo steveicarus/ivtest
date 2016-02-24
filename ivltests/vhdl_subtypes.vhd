@@ -22,32 +22,26 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_bit.all;
+use work.vhdl_subtypes_pkg.all;
 
 entity vhdl_subtypes is
+    port( a : out int_type_const;
+          b : out int_type;
+          c : out int_type_downto;
+          d : out time_type;
+          e : out uns_type_const
+      );
 end vhdl_subtypes;
 
 architecture test of vhdl_subtypes is
-    constant type_range : integer := 10;
-
-    subtype int_type_const is integer range 0 to type_range-1;
-    subtype int_type is integer range 0 to 7;
-    subtype int_type_downto is integer range 8 downto 1;
-    subtype time_type is time range 0 fs to 1 ms;
-    subtype uns_type_const is unsigned(7 downto 0);
-
 begin
     process
-        variable a : int_type_const;
-        variable b : int_type;
-        variable c : int_type_downto;
-        variable d : time_type;
-        variable e : uns_type_const;
     begin
-        a := 1;
-        b := 2;
-        c := 3;
-        d := 4 s;
-        e := 5;
+        a <= 1;
+        b <= 2;
+        c <= 3;
+        d <= 4 s;
+        e <= 5;
         wait;
     end process;
 end test;

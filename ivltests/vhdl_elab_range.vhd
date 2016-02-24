@@ -24,6 +24,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity vhdl_elab_range is
+    port(sig_left, sig_right : out integer);
 end entity vhdl_elab_range;
 
 architecture test of vhdl_elab_range is
@@ -35,10 +36,9 @@ architecture test of vhdl_elab_range is
   signal test_sig : unsigned(inc_by_two(0) downto 0) := (others => '0');
 begin
   process
-      variable test_sig_left, test_sig_right : integer;
   begin
-      test_sig_left := test_sig'left;
-      test_sig_right := test_sig'right;
+      sig_left <= test_sig'left;
+      sig_right <= test_sig'right;
       wait;
   end process;
 end architecture test;

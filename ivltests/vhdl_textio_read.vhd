@@ -1,4 +1,4 @@
--- Copyright (c) 2015 CERN
+-- Copyright (c) 2015-2016 CERN
 -- Maciej Suminski <maciej.suminski@cern.ch>
 --
 -- This source code is free software; you can redistribute it
@@ -27,7 +27,8 @@ use std.textio.all;
 entity vhdl_textio_read is
     port(
         clk, active : in std_logic;
-        line_counter : out integer
+        line_counter : out integer;
+        ok : out std_logic
     );
 end vhdl_textio_read;
 
@@ -62,7 +63,16 @@ begin
                 when 3 => read(data_line, data_time);
                 when 4 => hread(data_line, data_hex);
                 when 5 => read(data_line, data_real);
-                when 6 => read(data_line, data_string);
+                when 6 =>
+                    read(data_line, data_string);
+                    -- Verify the read data
+                    if data_int = 123
+                        and data_bool = true
+                        and data_time = 100 s
+                        and data_hex = x"f3"
+                        and data_real = 12.21 then
+                        ok <= '1';
+                    end if;
             end case;
         end if;
     end process;

@@ -20,22 +20,14 @@
 // Test limited length strings in VHDL.
 
 module vhdl_string_lim_test;
-logic start;
-vhdl_string_lim dut(start);
+logic start, res;
+vhdl_string_lim dut(start, res);
 
 initial begin
-    if(dut.a != "test string") begin
-        $display("FAILED 1");
-        $finish();
-    end
+    #1;
 
-    if(dut.b != "a") begin
-        $display("FAILED 2");
-        $finish();
-    end
-
-    if(dut.c != "abcde") begin
-        $display("FAILED 3");
+    if(res !== 1'b1) begin
+        $display("FAILED");
         $finish();
     end
 

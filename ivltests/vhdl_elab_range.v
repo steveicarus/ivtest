@@ -20,16 +20,19 @@
 // Bug report test (could not elaborate a function used to specify a range).
 
 module vhdl_elab_range_test;
-vhdl_elab_range dut();
+integer left, right;
+vhdl_elab_range dut(left, right);
 
 initial begin
-    if(dut.test_sig_left !== 2) begin
-        $display("FAILED");
+    #1;
+
+    if(left !== 2) begin
+        $display("FAILED 1");
         $finish();
     end
 
-    if(dut.test_sig_right !== 0) begin
-        $display("FAILED");
+    if(right !== 0) begin
+        $display("FAILED 2");
         $finish();
     end
 
