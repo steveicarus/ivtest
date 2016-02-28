@@ -256,7 +256,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                     bitsel5: Passed - CE.
                       pr751: Passed - CE.
               vhdl_var_init: Passed - CE.
-                  lcatsynth: Passed - TE.
                   pr2159630: Passed - expected fail.
                     analog1: Passed - CE.
                     analog2: Passed - CE.
@@ -347,13 +346,26 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                   basicexpr: Passed - TE.
                  basicstate: Passed - TE.
                 basicstate2: Passed - TE.
+                     br993a: Passed - TE.
+                     br993b: Passed - TE.
                       br994: Passed - TE.
+                 casesynth1: Passed - TE.
+                 casesynth2: Passed - TE.
+                 casesynth3: Passed - TE.
+               conditsynth1: Passed - TE.
+               conditsynth2: Passed - TE.
+               conditsynth3: Passed - TE.
                   dffsynth6: Passed - TE.
+                  dffsynth9: Passed - TE.
+                 dffsynth10: Passed - TE.
               inside_synth2: Passed - TE.
+                   multireg: Passed - TE.
                      shiftl: Passed - TE.
                 ufuncsynth1: Passed - TE.
                       pr685: Passed - TE.
                   dffsynth7: Passed - CE.
+                 dffsynth11: Passed - CE.
+                sqrt32synth: Passed - CE.
                   pr1830834: Passed - expected fail.
                      br916a: Passed.
                      br916b: Passed.
@@ -384,6 +396,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
              writemem-error: Passed.
            writemem-invalid: Passed.
                      array6: Passed.
+             assign_op_type: Passed.
                       bitp1: Passed.
                        bits: Passed.
                       bits2: Passed.
@@ -397,6 +410,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                      br_gh8: Passed.
                     ca_mult: Passed.
                    cast_int: Passed.
+        cfunc_assign_op_vec: Passed.
                  constfunc4: Passed.
                  constfunc6: Passed.
                  constfunc7: Passed.
@@ -562,50 +576,24 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                   pr2673846: Passed.
                   pr2029336: Passed.
                       urand: Passed.
-                blocksynth1: Passed.
-                 casesynth4: Passed.
-                 casesynth5: Passed.
                  casesynth6: Passed.
-                 casesynth9: Passed.
-            if_part_no_else: Passed.
-           if_part_no_else2: Passed.
-             for_loop_synth: Passed.
-            for_loop_synth2: Passed.
-                 basiclatch: Passed.
-                blocksynth2: Passed.
-                blocksynth3: Passed.
-                      case1: Passed.
-                      case2: Passed.
-                      case4: Passed.
-                      case5: Passed.
-             case5-syn-fail: Passed.
-                      case6: Passed.
-                 casesynth1: Passed.
-                 casesynth2: Passed.
-                 casesynth3: Passed.
-                casex_synth: Passed.
-                    condit1: Passed.
-               conditsynth1: Passed.
-               conditsynth2: Passed.
-               conditsynth3: Passed.
-                   dffsynth: Passed.
-                  dffsynth3: Passed.
-                  dffsynth4: Passed.
-                  full_case: Passed.
-                 full_case2: Passed.
-               inside_synth: Passed.
-              inside_synth3: Passed.
-                  memsynth1: Passed.
-                  memsynth2: Passed.
-                  memsynth3: Passed.
-                  memsynth5: Passed.
-                  memsynth6: Passed.
-                  memsynth7: Passed.
-                  memsynth9: Passed.
-                  mix_reset: Passed.
-                   multireg: Passed.
-                sqrt32synth: Passed.
-                   ssetclr3: Passed.
+                 basiclatch: Passed - CE.
+                      case1: Passed - CE.
+                      case2: Passed - CE.
+                casex_synth: Passed - CE.
+                   dffsynth: Passed - CE.
+                  full_case: Passed - CE.
+                 full_case2: Passed - CE.
+               inside_synth: Passed - CE.
+              inside_synth3: Passed - CE.
+                  memsynth1: Passed - CE.
+                  memsynth2: Passed - CE.
+                  memsynth3: Passed - CE.
+                  memsynth5: Passed - CE.
+                  memsynth6: Passed - CE.
+                  memsynth7: Passed - CE.
+                  memsynth9: Passed - CE.
+                  mix_reset: Passed - CE.
                       pr903: Passed.
                   pr1388974: Passed.
                    br_gh13a: Passed.
@@ -1972,6 +1960,7 @@ test_mos_strength_reduction: Passed.
                value_range2: Passed.
                value_range3: Passed - CE.
                  array_size: Passed.
+           assign_op_concat: Passed.
                       br921: Passed.
                       br956: Passed.
                       br973: Passed.
@@ -1982,6 +1971,9 @@ test_mos_strength_reduction: Passed.
                    br_gh72a: Passed.
                    br_gh72b: Passed.
             br_ml_20150315b: Passed - CE.
+      cfunc_assign_op_mixed: Passed.
+         cfunc_assign_op_pv: Passed.
+       cfunc_assign_op_real: Passed.
                  clkgen_bit: Passed.
                clkgen_logic: Passed.
                  clkgen_net: Passed.
@@ -2157,26 +2149,43 @@ test_mos_strength_reduction: Passed.
                  basicexpr3: Passed.
                  basicexpr4: Passed.
                    basicreg: Passed.
-                     br993a: Passed - CE.
-                     br993b: Passed - CE.
+                blocksynth1: Passed.
+                blocksynth2: Passed.
+                blocksynth3: Passed.
                       br995: Passed - CE.
                       case3: Passed.
+                      case4: Passed.
+                      case5: Passed.
+             case5-syn-fail: Passed - CE.
+                      case6: Passed.
                       case7: Passed.
             case_wo_default: Passed.
+                 casesynth4: Passed.
+                 casesynth5: Passed.
                  casesynth7: Passed - CE.
                  casesynth8: Passed - CE.
+                 casesynth9: Passed.
+                    condit1: Passed.
                   dffsynth2: Passed.
+                  dffsynth3: Passed.
+                  dffsynth4: Passed.
                   dffsynth5: Passed.
                   dffsynth8: Passed - CE.
              ff_dual_enable: Passed.
+             for_loop_synth: Passed.
+            for_loop_synth2: Passed.
+            if_part_no_else: Passed.
+           if_part_no_else2: Passed.
                       land5: Passed.
+                  lcatsynth: Passed.
                   memsynth8: Passed.
                not_a_latch1: Passed.
                not_a_latch2: Passed.
                       pr519: Passed.
                    ssetclr1: Passed.
                    ssetclr2: Passed.
+                   ssetclr3: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2177, Passed=2146, Failed=4, Not Implemented=3, Expected Fail=24
+  Total=2186, Passed=2155, Failed=4, Not Implemented=3, Expected Fail=24
