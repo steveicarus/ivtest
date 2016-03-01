@@ -42,6 +42,7 @@ begin
     variable data_bool      : boolean;
     variable data_real      : real;
     variable data_time      : time;
+    variable data_vector    : std_logic_vector(5 downto 0);
 
     begin
         data_string := "string";
@@ -50,6 +51,7 @@ begin
         data_bool := true;
         data_real := 12.21;
         data_time := 100 s;
+        data_vector := "1100XZ";
 
         -- Test writing different variable types
         write(data_line, data_int);
@@ -64,6 +66,8 @@ begin
         write(data_line, data_real);
         writeline(data_file, data_line);
         write(data_line, data_string);
+        writeline(data_file, data_line);
+        write(data_line, data_vector);
         writeline(data_file, data_line);
     end process;
 end test;

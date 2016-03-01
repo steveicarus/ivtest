@@ -31,7 +31,7 @@ initial begin
     active = 1;
 
     // wait until the input file is read
-    #12 active = 0;
+    #14 active = 0;
 
     if(ok !== 1'b1) begin
         $display("FAILED");

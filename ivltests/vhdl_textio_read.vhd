@@ -43,6 +43,7 @@ begin
     variable data_bool          : boolean;
     variable data_real          : real;
     variable data_time          : time;
+    variable data_logic         : std_logic_vector(5 downto 0);
 
     begin
         if rising_edge(active) then
@@ -63,14 +64,18 @@ begin
                 when 3 => read(data_line, data_time);
                 when 4 => hread(data_line, data_hex);
                 when 5 => read(data_line, data_real);
-                when 6 =>
-                    read(data_line, data_string);
+                when 6 => read(data_line, data_string);
+                when 7 =>
+                    read(data_line, data_logic);
+
                     -- Verify the read data
                     if data_int = 123
                         and data_bool = true
                         and data_time = 100 s
                         and data_hex = x"f3"
-                        and data_real = 12.21 then
+                        and data_real = 12.21
+                        and data_string = "string"
+                        and data_logic = "1100XZ" then
                         ok <= '1';
                     end if;
             end case;
