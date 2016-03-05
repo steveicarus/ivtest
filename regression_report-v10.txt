@@ -11,6 +11,7 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
            vhdl_textio_read: Not Implemented.
                  vhdl_while: Not Implemented.
                    sformatf: Not Implemented.
+                     br1000: Passed.
                      br993a: Passed - CE.
                      br993b: Passed - CE.
                  basiclatch: Passed.
@@ -2188,4 +2189,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2186, Passed=2171, Failed=4, Not Implemented=11, Expected Fail=0
+  Total=2187, Passed=2172, Failed=4, Not Implemented=11, Expected Fail=0

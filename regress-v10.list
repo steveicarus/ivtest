@@ -81,7 +81,10 @@ vhdl_while		NI
 # V10 does not support this SystemVerilog functionality
 sformatf		NI
 
-# v10 has incomplete synthesis support
+# V10 doesn't support this by default
+br1000			normal,-gshared-loop-index	ivltests
+
+# V10 has incomplete synthesis support
 br993a			CE,-S			ivltests
 br993b			CE,-S			ivltests
 basiclatch		normal			ivltests
