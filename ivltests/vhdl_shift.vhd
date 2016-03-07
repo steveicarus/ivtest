@@ -1,4 +1,4 @@
--- Copyright (c) 2015 CERN
+-- Copyright (c) 2015-2016 CERN
 -- Maciej Suminski <maciej.suminski@cern.ch>
 --
 -- This source code is free software; you can redistribute it
@@ -25,16 +25,26 @@ use ieee.numeric_bit.all;
 
 entity shifter is
     port(input : in signed(7 downto 0);
-         out_srl, out_sll, out_sra, out_sla : out signed(7 downto 0));
+         out_srl, out_sll, out_sra, out_sla : out signed(7 downto 0);
+         out_shl_u, out_shr_u : out unsigned(7 downto 0);
+         out_shl_s, out_shr_s : out signed(7 downto 0)
+    );
 end entity shifter;
 
 architecture test of shifter is
 begin
     process(input)
+        -- test the unsigned variant of shift_left/right() functions
+        variable unsigned_input : unsigned(7 downto 0);
     begin
+        unsigned_input := input;
         out_srl <= input srl 1;
         out_sll <= input sll 1;
         out_sra <= input sra 1;
         out_sla <= input sla 1;
+        out_shl_s <= shift_left(input, 2);
+        out_shr_s <= shift_right(input, 2);
+        out_shl_u <= shift_left(unsigned_input, 2);
+        out_shr_u <= shift_right(unsigned_input, 2);
     end process;
 end architecture test;

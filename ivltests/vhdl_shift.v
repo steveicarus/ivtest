@@ -1,4 +1,4 @@
-// Copyright (c) 2015 CERN
+// Copyr (c) 2015-2016 CERN
 // Maciej Suminski <maciej.suminski@cern.ch>
 //
 // This source code is free software; you can redistribute it
@@ -20,8 +20,8 @@
 // Test for shift operators (logical and arithmetic)
 
 module shifter_test;
-reg signed [7:0] inp, out_srl, out_sll, out_sra, out_sla;
-shifter dut(inp, out_srl, out_sll, out_sra, out_sla);
+reg signed [7:0] inp, out_srl, out_sll, out_sra, out_sla, out_shl_u, out_shr_u, out_shl_s, out_shr_s;
+shifter dut(inp, out_srl, out_sll, out_sra, out_sla, out_shl_u, out_shr_u, out_shl_s, out_shr_s);
 
 initial begin
   inp = 8'b11101100;
@@ -48,6 +48,30 @@ initial begin
   if(out_sla !== 8'b11011000)
   begin
     $display("FAILED 4");
+    $finish();
+  end
+
+  if(out_shl_u !== 8'b10110000)
+  begin
+    $display("FAILED 5");
+    $finish();
+  end
+
+  if(out_shr_u !== 8'b00111011)
+  begin
+    $display("FAILED 6");
+    $finish();
+  end
+
+  if(out_shl_s !== 8'b10110000)
+  begin
+    $display("FAILED 7");
+    $finish();
+  end
+
+  if(out_shr_s !== 8'b11111011)
+  begin
+    $display("FAILED 8");
     $finish();
   end
 
