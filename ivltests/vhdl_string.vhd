@@ -29,14 +29,15 @@ end entity vhdl_string;
 architecture test of vhdl_string is
 begin
   process (start)
+      variable test_str : string(1 to 4) := "VHDL";
   begin
     report "";
     report """";
     report "test";
+    report test_str;
 
-    -- brackets are not handled at the moment
-    --report ("brackets test");
-    --report ((("multiple brackets test")));
+    report ("brackets test");
+    report ((("multiple brackets test")));
     report """quotation "" marks "" test""";
   end process;
 end architecture test;
