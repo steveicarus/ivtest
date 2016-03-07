@@ -147,6 +147,7 @@ array_lval_select3a-	normal			ivltests
 array_lval_select3b	CE			ivltests
 array_lval_select4b	CE			ivltests
 array_lval_select6	normal			ivltests
+array_packed_2d		normal			ivltests gold=array_packed_2d.gold
 array_select		normal			ivltests
 array_select_a		normal			ivltests
 array_word_check	normal			ivltests gold=array_word_check.gold
