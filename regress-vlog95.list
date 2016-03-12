@@ -299,6 +299,7 @@ sv_root_class		CE,-g2009		ivltests
 # This is not supported in 1364-1995 so the translated code will fail.
 sv_uwire1		TE,-g2009		ivltests
 sv_uwire2		TE,-g2009		ivltests
+vvp_recv_vec4_pv	TE,-g2009,-pallowsigned=1	ivltests
 
 # No support for these SystemVerilog features
 br936			CE,-g2009,-pallowsigned=1	ivltests  # join_any
@@ -367,6 +368,12 @@ pr751			CE,-Wsensitivity-entire-vector	ivltests # gold=pr751.gold
 # side (the actual port). I'm not sure why the enum is not a bit or other
 # 2-state variable, but when that is done there is a compile error.
 vhdl_var_init		CE,-g2009,vhdl_var_init.vhd	ivltests
+# This refers to a signal in a parent scope that is driven by a constant,
+# which hits the unhandled out_of_scope_drive clause in emit_nexus_as_ca.
+vhdl_range_func		TE,-g2005-sv,-pallowsigned=1,ivltests/vhdl_range_func_pkg.vhd,ivltests/vhdl_range_func.vhd,	ivltests
+# The $ivlh_file_open task appears to require its output parameters to be
+# 2-state variables.
+vhdl_file_open		EF,-g2005-sv,-pallowsigned=1,ivltests/vhdl_file_open.vhd		ivltests
 # New tests that need to be looked at go here.
 
 # Size (spacing) difference since -4 is used for the second value.
@@ -502,6 +509,10 @@ sqrt32synth		CE,-S			ivltests
 # The converter generates a complex expression for $strobe and Icarus does not
 # currently support this. The translation is correct.
 pr1830834		EF			ivltests
+
+# This test relies on variable initialisation occurring before any other
+# process runs. Check that it at least compiles cleanly.
+vhdl_loop		CO,-g2005-sv,-pallowsigned=1,ivltests/vhdl_loop.vhd		ivltests
 
 # These tests have different output because of file name/line, etc. differences.
 br916a			normal			ivltests gold=br916a-vlog95.gold
@@ -664,8 +675,12 @@ test_work14		normal,-g2009,-pallowsigned=1,ivltests/work14_pkg.vhd,ivltests/work
 two_state_display	normal,-g2009,-pallowsigned=1	ivltests gold=two_state_display.gold
 undefined_shift		normal,-pallowsigned=1	ivltests
 vams_abs1		normal,-gverilog-ams,-pallowsigned=1	ivltests
+vhdl_concurrent_assert	normal,-g2005-sv,-pallowsigned=1,ivltests/vhdl_concurrent_assert.vhd	ivltests gold=vhdl_concurrent_assert.gold
 vhdl_const_record	normal,-g2005-sv,-pallowsigned=1,ivltests/vhdl_const_record.vhd	ivltests
+vhdl_delay_assign	normal,-g2005-sv,-pallowsigned=1,-fivltests/vhdl_timescale_1ns.cfg,ivltests/vhdl_delay_assign.vhd	ivltests
+vhdl_elab_range		normal,-g2005-sv,-pallowsigned=1,ivltests/vhdl_elab_range.vhd		ivltests
 vhdl_image_attr		normal,-g2005-sv,-pallowsigned=1,-fivltests/vhdl_timescale_1ns.cfg,ivltests/vhdl_image_attr.vhd	ivltests gold=vhdl_image_attr.gold
+vhdl_process_scope	normal,-g2005-sv,-pallowsigned=1,ivltests/vhdl_process_scope.vhd	ivltests
 vhdl_sadd23_bit		normal,-g2009,-pallowsigned=1,ivltests/vhdl_sadd23_bit.vhd	ivltests
 vhdl_sdiv23_bit		normal,-g2009,-pallowsigned=1,ivltests/vhdl_sdiv23_bit.vhd	ivltests
 vhdl_ssub23_bit		normal,-g2009,-pallowsigned=1,ivltests/vhdl_ssub23_bit.vhd	ivltests
@@ -677,6 +692,7 @@ vhdl_smul23_stdlogic	normal,-g2009,-pallowsigned=1,ivltests/vhdl_smul23_stdlogic
 vhdl_test3		normal,-g2005-sv,-pallowsigned=1,ivltests/vhdl_test3.vhd	ivltests gold=vhdl_test3.gold
 vhdl_report		normal,-g2005-sv,-pallowsigned=1,ivltests/vhdl_report_pkg.vhd,ivltests/vhdl_report.vhd	ivltests gold=vhdl_report.gold
 vhdl_subprogram		normal,-g2005-sv,-pallowsigned=1,ivltests/vhdl_subprogram_pkg.vhd,ivltests/vhdl_subprogram.vhd	ivltests
+vhdl_subtypes		normal,-g2005-sv,-pallowsigned=1,ivltests/vhdl_subtypes_pkg.vhd,ivltests/vhdl_subtypes.vhd	ivltests
 vhdl_unbounded_func	normal,-g2005-sv,-pallowsigned=1,ivltests/vhdl_unbounded_func_pkg.vhd,ivltests/vhdl_unbounded_func.vhd	ivltests
 vhdl_var_init		normal,-g2009,-pallowsigned=1,ivltests/vhdl_var_init.vhd	ivltests
 vhdl_while		normal,-g2005-sv,-pallowsigned=1,ivltests/vhdl_while.vhd	ivltests
