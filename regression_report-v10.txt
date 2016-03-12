@@ -26,6 +26,7 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
                  casesynth1: Passed.
                  casesynth2: Passed.
                  casesynth3: Passed.
+                 casesynth7: Not Implemented.
                 casex_synth: Passed.
                     condit1: Passed.
                conditsynth1: Passed.
@@ -37,8 +38,6 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
                   dffsynth9: Passed.
                  dffsynth10: Passed.
                  dffsynth11: Passed.
-                  full_case: Passed.
-                 full_case2: Passed.
                inside_synth: Passed.
               inside_synth3: Passed.
                   memsynth1: Passed.
@@ -2159,7 +2158,6 @@ test_mos_strength_reduction: Passed.
                  casesynth4: Passed.
                  casesynth5: Passed.
                  casesynth6: Passed.
-                 casesynth7: Passed - CE.
                  casesynth8: Passed - CE.
                  casesynth9: Passed.
                   dffsynth2: Passed.

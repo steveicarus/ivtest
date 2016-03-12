@@ -65,6 +65,11 @@
 # gold or diff commands.
 #
 
+# We no longer support the ivl_full_case attribute. This is a dangerous
+# thing to use, as it results in synthesis vs. simulation mismatches.
+#full_case		normal			ivltests
+#full_case2		normal			ivltests
+
 basicexpr		normal			ivltests
 basicexpr2		normal			ivltests
 basicexpr3		normal			ivltests
@@ -95,7 +100,7 @@ casesynth3		normal			ivltests
 casesynth4		normal			ivltests
 casesynth5		normal			ivltests
 casesynth6		normal			ivltests
-casesynth7		CE			ivltests
+casesynth7		normal			ivltests gold=casesynth7.gold
 casesynth8		CE			ivltests
 casesynth9		normal			ivltests
 casex_synth		normal			ivltests
@@ -117,8 +122,6 @@ dffsynth11		normal			ivltests
 ff_dual_enable		normal			ivltests
 for_loop_synth		normal			ivltests
 for_loop_synth2		normal			ivltests
-full_case		normal			ivltests
-full_case2		normal			ivltests
 if_part_no_else		normal			ivltests
 if_part_no_else2	normal			ivltests
 inside_synth		normal			ivltests

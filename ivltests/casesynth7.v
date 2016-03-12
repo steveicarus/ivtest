@@ -1,7 +1,7 @@
-// We don't support incomplete case statements in asynchronous logic synthesis.
-// Such constructs are dangerous in synthesisable code, as in real hardware
-// the inferred latch will be sensitive to glitches as the case select value
-// changes. Check that the compiler correctly rejects this code.
+// Incomplete case statements in asynchronous logic are dangerous in
+// synthesisable code, as in real hardware the inferred latch will be
+// sensitive to glitches as the case select value changes. Check that
+// the compiler outputs a warning for this.
 module mux(
 
 input wire [2:0] sel,

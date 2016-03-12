@@ -480,6 +480,7 @@ br994			TE,-S			ivltests
 casesynth1		TE,-S			ivltests
 casesynth2		TE,-S			ivltests
 casesynth3		TE,-S			ivltests
+casesynth7		TE,-S			ivltests
 conditsynth1		TE,-S			ivltests
 conditsynth2		TE,-S			ivltests
 conditsynth3		TE,-S			ivltests

@@ -1,5 +1,5 @@
 # This test list is used to override other test lists when using
-# Icarus Verilog v0.10.
+# Icarus Verilog v11.
 
 #
 # Copyright (c) 1999-2015 Guy Hutchison (ghutchis@pacbell.net)
@@ -65,15 +65,7 @@
 #
 
 # v11 has incomplete synthesis support
-basiclatch		CE,-S			ivltests
-case1			CE,-S			ivltests
-case2			CE,-S			ivltests
-casex_synth		CE,-S			ivltests
 dffsynth		CE,-S			ivltests
-full_case		CE,-S			ivltests
-full_case2		CE,-S			ivltests
-inside_synth		CE,-S			ivltests
-inside_synth3		CE,-S			ivltests
 memsynth1		CE,-S			ivltests
 memsynth2		CE,-S			ivltests
 memsynth3		CE,-S			ivltests
@@ -82,3 +74,8 @@ memsynth6		CE,-S			ivltests
 memsynth7		CE,-S			ivltests
 memsynth9		CE,-S			ivltests
 mix_reset		CE,-S			ivltests
+
+# These tests pass, but synthesis is creating unnecessary latches.
+case1			normal			ivltests
+case2			normal			ivltests
+casex_synth		normal			ivltests

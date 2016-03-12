@@ -1,5 +1,5 @@
 # This test list is used to override other test lists when using
-# Icarus Verilog v0.10.
+# Icarus Verilog v10.
 
 #
 # Copyright (c) 1999-2015 Guy Hutchison (ghutchis@pacbell.net)
@@ -99,6 +99,7 @@ case6			normal			ivltests
 casesynth1		normal			ivltests
 casesynth2		normal			ivltests
 casesynth3		normal			ivltests
+casesynth7		NI
 casex_synth		normal			ivltests
 condit1			normal			ivltests
 conditsynth1		normal			ivltests
@@ -110,8 +111,6 @@ dffsynth4		normal			ivltests
 dffsynth9		normal			ivltests
 dffsynth10		normal			ivltests
 dffsynth11		normal			ivltests
-full_case		normal			ivltests
-full_case2		normal			ivltests
 inside_synth		normal			ivltests
 inside_synth3		normal			ivltests
 memsynth1		normal			ivltests
