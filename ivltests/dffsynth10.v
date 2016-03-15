@@ -7,8 +7,8 @@ reg [3:0] Q;
 
 always @(posedge CLK) begin
   if (EN) begin
-    Q[1] <=  D[1]; 
-    Q[2] <= ~D[2]; 
+    Q[1] <=  D[1];
+    Q[2] <= ~D[2];
     Q[3] <=  D[3];
   end
 end

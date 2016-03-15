@@ -13,8 +13,8 @@ always @(posedge CLK or posedge RST) begin
     Q[3] <= 1'b0;
   end
   else if (EN) begin
-    Q[1] <=  D[1]; 
-    Q[2] <= ~D[2]; 
+    Q[1] <=  D[1];
+    Q[2] <= ~D[2];
     Q[3] <=  D[3];
   end
 end

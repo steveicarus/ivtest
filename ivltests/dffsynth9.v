@@ -8,9 +8,9 @@ reg       EN3;
 reg [3:0] Q;
 
 always @(posedge CLK) begin
-  if (EN1) Q[1] <= D[1]; 
-  if (EN2) Q[2] <= D[2]; 
-  if (EN3) Q[3] <= D[3]; 
+  if (EN1) Q[1] <= D[1];
+  if (EN2) Q[2] <= D[2];
+  if (EN3) Q[3] <= D[3];
 end
 
 reg failed;
