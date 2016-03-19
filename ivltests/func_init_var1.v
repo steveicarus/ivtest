@@ -1,7 +1,7 @@
 module test();
 
 function integer accumulate1(input integer value);
-  int acc = 1;
+  static int acc = 1;
   acc = acc + value;
   return acc;
 endfunction

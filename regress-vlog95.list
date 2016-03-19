@@ -75,8 +75,9 @@ automatic_task		CE			ivltests
 automatic_task2		CE			ivltests
 automatic_task3		CE			ivltests
 def_nettype		CE			ivltests
-func_init_var1		CE			ivltests
-func_init_var2		CE			ivltests
+func_init_var1		CE,-pallowsigned=1	ivltests
+func_init_var2		CE,-pallowsigned=1	ivltests
+func_init_var3		CE,-pallowsigned=1	ivltests
 nested_func		CE			ivltests
 pr2169870		CE			ivltests
 pr2172606b		CE			ivltests
@@ -84,7 +85,9 @@ pr2276163		CE			ivltests
 pr2929913		CE			ivltests
 recursive_func		CE			ivltests
 recursive_task		CE			ivltests
-task_init_var		CE			ivltests
+task_init_var1		CE,-pallowsigned=1	ivltests
+task_init_var2		CE,-pallowsigned=1	ivltests
+task_init_var3		CE,-pallowsigned=1	ivltests
 
 # Verilog 95 does not support real nets.
 array_lval_select4a	CE			ivltests  # Also net arrays

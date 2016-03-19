@@ -1,19 +1,15 @@
-module static test();
+module automatic test();
 
-function integer accumulate1(input integer value);
-begin:blk
+function static integer accumulate1(input integer value);
   static int acc = 1;
   acc = acc + value;
   return acc;
-end
 endfunction
 
-function automatic integer accumulate2(input integer value);
-begin:blk
-  automatic int acc = 1;
+function integer accumulate2(input integer value);
+  int acc = 1;
   acc = acc + value;
   return acc;
-end
 endfunction
 
 localparam value1 = accumulate1(2);
@@ -23,9 +19,9 @@ localparam value4 = accumulate2(3);
 
 integer value;
 
-initial begin
-  static reg failed = 0;
+reg failed = 0;
 
+initial begin
   $display("%d", value1);
   if (value1 !== 3) failed = 1;
 

@@ -1,7 +1,7 @@
 module test();
 
 task accumulate1(input integer value, output integer result);
-  int acc = 1;
+  static int acc = 1;
   acc = acc + value;
   result = acc;
 endtask

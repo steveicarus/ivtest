@@ -12,6 +12,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                 def_nettype: Passed - CE.
              func_init_var1: Passed - CE.
              func_init_var2: Passed - CE.
+             func_init_var3: Passed - CE.
                 nested_func: Passed - CE.
                   pr2169870: Passed - CE.
                  pr2172606b: Passed - CE.
@@ -19,7 +20,9 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                   pr2929913: Passed - CE.
              recursive_func: Passed - CE.
              recursive_task: Passed - CE.
-              task_init_var: Passed - CE.
+             task_init_var1: Passed - CE.
+             task_init_var2: Passed - CE.
+             task_init_var3: Passed - CE.
         array_lval_select4a: Passed - CE.
         array_lval_select4b: Passed - CE.
          array_lval_select5: Passed - CE.
@@ -2206,4 +2209,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2204, Passed=2170, Failed=5, Not Implemented=3, Expected Fail=26
+  Total=2207, Passed=2173, Failed=5, Not Implemented=3, Expected Fail=26

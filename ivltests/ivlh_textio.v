@@ -44,7 +44,7 @@ bit bi;
 bit [7:0] biv;
 
 initial begin
-    string filename = "vpi_textio_text.tmp";
+    static string filename = "vpi_textio_text.tmp";
 
     // values to be saved
     str = "test_string";
