@@ -1775,6 +1775,8 @@ test_mos_strength_reduction: Passed.
               fork_join_dis: Passed.
              fork_join_none: Passed.
                        fr49: Passed.
+             func_init_var1: Passed.
+             func_init_var2: Passed.
                   ibit_test: Passed.
                  ibyte_test: Passed.
                   iint_test: Passed.
@@ -1981,8 +1983,11 @@ test_mos_strength_reduction: Passed.
                   sv_uwire2: Passed.
                   sv_uwire3: Passed.
                   sv_uwire4: Passed.
+               sv_var_init1: Passed.
+               sv_var_init2: Passed.
            sys_func_as_task: Passed.
            task_init_assign: Passed.
+              task_init_var: Passed.
                 task_scope2: Passed.
                test_inc_dec: Passed.
               test_tliteral: Passed.
@@ -2201,4 +2206,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2199, Passed=2192, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2204, Passed=2197, Failed=7, Not Implemented=0, Expected Fail=0

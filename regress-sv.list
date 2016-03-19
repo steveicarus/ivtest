@@ -126,6 +126,8 @@ fork_join_any		normal,-g2009		ivltests
 fork_join_dis		normal,-g2009		ivltests
 fork_join_none		normal,-g2009		ivltests
 fr49			normal,-g2009		ivltests
+func_init_var1		normal,-g2009		ivltests
+func_init_var2		normal,-g2009		ivltests
 ibit_test		normal,-g2005-sv	ivltests
 ibyte_test		normal,-g2005-sv	ivltests
 iint_test		normal,-g2005-sv	ivltests
@@ -332,8 +334,11 @@ sv_uwire1		normal,-g2009		ivltests
 sv_uwire2		normal,-g2009		ivltests
 sv_uwire3		normal,-g2009		ivltests
 sv_uwire4		normal,-g2009		ivltests
+sv_var_init1		normal,-g2009		ivltests
+sv_var_init2		normal,-g2009		ivltests
 sys_func_as_task	normal,-g2005-sv	ivltests gold=sys_func_as_task.gold
 task_init_assign	normal,-g2009		ivltests
+task_init_var		normal,-g2009		ivltests
 task_scope2		normal,-g2009		ivltests
 test_inc_dec		normal,-g2009		ivltests
 test_tliteral		normal,-g2009		ivltests

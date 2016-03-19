@@ -75,6 +75,8 @@ automatic_task		CE			ivltests
 automatic_task2		CE			ivltests
 automatic_task3		CE			ivltests
 def_nettype		CE			ivltests
+func_init_var1		CE			ivltests
+func_init_var2		CE			ivltests
 nested_func		CE			ivltests
 pr2169870		CE			ivltests
 pr2172606b		CE			ivltests
@@ -82,6 +84,7 @@ pr2276163		CE			ivltests
 pr2929913		CE			ivltests
 recursive_func		CE			ivltests
 recursive_task		CE			ivltests
+task_init_var		CE			ivltests
 
 # Verilog 95 does not support real nets.
 array_lval_select4a	CE			ivltests  # Also net arrays
@@ -300,6 +303,15 @@ sv_root_class		CE,-g2009		ivltests
 sv_uwire1		TE,-g2009		ivltests
 sv_uwire2		TE,-g2009		ivltests
 vvp_recv_vec4_pv	TE,-g2009,-pallowsigned=1	ivltests
+
+# SystemVerilog requires that variable initialization that is part of a
+# declaration is performed before the start of simulation. When standard
+# Verilog is selected, Icarus ensures that combinatorial always blocks
+# are started before initial blocks, so these tests will fail.
+sv_var_init1		EF,-g2009		ivltests
+# This test should fail the same way, but there is an unresolved bug in
+# translation.
+sv_var_init2		TE,-g2009		ivltests
 
 # No support for these SystemVerilog features
 br936			CE,-g2009,-pallowsigned=1	ivltests  # join_any
