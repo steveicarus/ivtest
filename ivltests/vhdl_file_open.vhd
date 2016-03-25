@@ -44,6 +44,7 @@ begin
             else
                 ok := '0';
             end if;
+            file_close(ok_file);
         end if;
     end process;
 end test;
