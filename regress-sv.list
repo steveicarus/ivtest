@@ -354,5 +354,3 @@ unp_array_typedef	normal,-g2005-sv	ivltests
 ushortint_test		normal,-g2005-sv	ivltests
 vvp_recv_vec4_pv	normal,-g2005-sv	ivltests
 wait_fork		normal,-g2009		ivltests
-work7			normal,-g2009,-fivltests/work7.cfg	ivltests
-work7b			normal,-g2009,-fivltests/work7b.cfg	ivltests

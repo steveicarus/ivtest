@@ -198,3 +198,5 @@ vhdl_xnorg_stdlogic	normal,-g2005-sv,ivltests/vhdl_xnorg_stdlogic.vhd	ivltests
 vhdl_xor23_bit		normal,-g2005-sv,ivltests/vhdl_xor23_bit.vhd		ivltests
 vhdl_xorg_bit		normal,-g2005-sv,ivltests/vhdl_xorg_bit.vhd		ivltests
 vhdl_xorg_stdlogic	normal,-g2005-sv,ivltests/vhdl_xorg_stdlogic.vhd	ivltests
+work7			normal,-g2009,-fivltests/work7.cfg			ivltests
+work7b			normal,-g2009,-fivltests/work7b.cfg			ivltests

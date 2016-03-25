@@ -2076,8 +2076,6 @@ test_mos_strength_reduction: Passed.
            task_init_assign: Passed.
                 task_scope2: Passed.
        undef_lval_select_SV: Passed.
-                      work7: Passed.
-                     work7b: Passed.
                       br942: Passed.
                       br986: Passed.
                       br987: Passed.
@@ -2164,6 +2162,8 @@ test_mos_strength_reduction: Passed.
              vhdl_xor23_bit: Passed.
               vhdl_xorg_bit: Passed.
          vhdl_xorg_stdlogic: Passed.
+                      work7: Passed.
+                     work7b: Passed.
                  basicexpr2: Passed.
                  basicexpr3: Passed.
                  basicexpr4: Passed.

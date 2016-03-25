@@ -2026,8 +2026,6 @@ test_mos_strength_reduction: Passed.
           unp_array_typedef: Passed.
              ushortint_test: Passed.
                   wait_fork: Passed.
-                      work7: Passed.
-                     work7b: Passed.
                       br942: Passed.
                   br943_944: Passed.
                       br985: Passed.
@@ -2142,6 +2140,8 @@ test_mos_strength_reduction: Passed.
              vhdl_xor23_bit: Passed.
               vhdl_xorg_bit: Passed.
          vhdl_xorg_stdlogic: Passed.
+                      work7: Passed.
+                     work7b: Passed.
                   basicexpr: Passed.
                  basicexpr2: Passed.
                  basicexpr3: Passed.
