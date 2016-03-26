@@ -1859,6 +1859,9 @@ test_mos_strength_reduction: Passed.
                   sint_test: Passed.
                   size_cast: Passed.
                  size_cast2: Passed.
+                 size_cast3: Passed.
+                 size_cast4: Passed.
+                 size_cast5: Passed.
               slongint_test: Passed.
              sshortint_test: Passed.
                string_index: Passed.
@@ -2209,4 +2212,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2207, Passed=2200, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2210, Passed=2203, Failed=7, Not Implemented=0, Expected Fail=0

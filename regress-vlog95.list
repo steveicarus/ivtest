@@ -389,6 +389,11 @@ vhdl_range_func		TE,-g2005-sv,-pallowsigned=1,ivltests/vhdl_range_func_pkg.vhd,i
 # The $ivlh_file_open task appears to require its output parameters to be
 # 2-state variables.
 vhdl_file_open		EF,-g2005-sv,-pallowsigned=1,ivltests/vhdl_file_open.vhd		ivltests
+# This casts a signed value to a larger size (requiring sign extension, then uses
+# the cast value in an unsigned expression with an even larger width (requiring
+# zero padding. I can't think how to do this in standard Verilog without using
+# an intermediate variable.
+size_cast4		EF,-g2009,-pallowsigned=1	ivltests
 # New tests that need to be looked at go here.
 
 # Size (spacing) difference since -4 is used for the second value.
@@ -661,6 +666,8 @@ simple_byte		normal,-g2009,-pallowsigned=1	ivltests
 simple_int		normal,-g2009,-pallowsigned=1	ivltests
 simple_longint		normal,-g2009,-pallowsigned=1	ivltests
 simple_shortint		normal,-g2009,-pallowsigned=1	ivltests
+size_cast3		normal,-g2009,-pallowsigned=1	ivltests
+size_cast5		normal,-g2009,-pallowsigned=1	ivltests
 struct_packed_array	normal,-g2009,-pallowsigned=1	ivltests
 struct_packed_array2	normal,-g2009,-pallowsigned=1	ivltests
 sv_for_variable  normal,-g2009,-pallowsigned=1	ivltests

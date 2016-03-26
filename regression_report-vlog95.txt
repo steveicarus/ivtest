@@ -267,6 +267,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
               vhdl_var_init: Passed - CE.
             vhdl_range_func: Passed - TE.
              vhdl_file_open: Passed - expected fail.
+                 size_cast4: Passed - expected fail.
                   pr2159630: Passed - expected fail.
                     analog1: Passed - CE.
                     analog2: Passed - CE.
@@ -503,6 +504,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                  simple_int: Passed.
              simple_longint: Passed.
             simple_shortint: Passed.
+                 size_cast3: Passed.
+                 size_cast5: Passed.
         struct_packed_array: Passed.
        struct_packed_array2: Passed.
             sv_for_variable: Passed.
@@ -2209,4 +2212,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2207, Passed=2173, Failed=5, Not Implemented=3, Expected Fail=26
+  Total=2210, Passed=2175, Failed=5, Not Implemented=3, Expected Fail=27
