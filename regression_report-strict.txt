@@ -1432,6 +1432,11 @@ Running compiler/VVP tests for Icarus Verilog version: 11 (strict).
                    resetall: Passed.
                   resetall2: Passed.
                     resolv1: Passed.
+           rise_fall_decay1: Passed.
+           rise_fall_decay2: Passed.
+           rise_fall_delay1: Passed.
+           rise_fall_delay2: Passed.
+           rise_fall_delay3: Passed.
                      rl_pow: Passed.
                      rnpmos: Passed.
                     rnpmos2: Passed.
@@ -2209,4 +2214,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2207, Passed=2200, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2212, Passed=2205, Failed=7, Not Implemented=0, Expected Fail=0

@@ -394,6 +394,11 @@ vhdl_file_open		EF,-g2005-sv,-pallowsigned=1,ivltests/vhdl_file_open.vhd		ivltes
 # zero padding. I can't think how to do this in standard Verilog without using
 # an intermediate variable.
 size_cast4		EF,-g2009,-pallowsigned=1	ivltests
+# This has a gate output connected to a VP part select. The translator
+# creates a CA for the part select, but has nothing to connect it to.
+# It leaves the gate output unconnected.
+rise_fall_decay2	CE			ivltests
+
 # New tests that need to be looked at go here.
 
 # Size (spacing) difference since -4 is used for the second value.
@@ -479,7 +484,7 @@ pr3054101e		CE			ivltests  # Also scale expr. problems
 pr3054101f		CE			ivltests  # Also scale expr. problems
 signed_part		CE,-pallowsigned=1	ivltests
 
-# Currently no support for tran_VP (inout ports).
+# Currently no support for tran_VP (inout ports and tranif gates).
 bitsel10		CE			ivltests  # Also uses a logic bufif0
 br918c			CE			ivltests  # Also uses a logic pullup
 br965			CE			ivltests
@@ -494,6 +499,7 @@ pr2219441		CE			ivltests
 pr3296466a		CE			ivltests
 pr3296466b		CE			ivltests  # Also some nexus problems.
 pr3296466d		CE			ivltests
+rise_fall_delay3	CE			ivltests  # Uses tranif1 gates
 tri2			CE			ivltests
 
 # The Icarus compiler does not support arrayed UDP instance. These are

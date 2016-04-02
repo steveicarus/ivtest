@@ -1350,6 +1350,11 @@ repl_zero_wid_pass	normal			ivltests
 resetall		normal,-Wtimescale	ivltests gold=resetall.gold
 resetall2		normal,-Wtimescale	ivltests gold=resetall2.gold
 resolv1			normal			ivltests # PR#300
+rise_fall_decay1	normal			ivltests
+rise_fall_decay2	normal			ivltests
+rise_fall_delay1	normal			ivltests
+rise_fall_delay2	normal			ivltests
+rise_fall_delay3	normal			ivltests
 rl_pow			normal			ivltests
 rnpmos			normal			ivltests
 rnpmos2			normal			ivltests

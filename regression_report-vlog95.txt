@@ -268,6 +268,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
             vhdl_range_func: Passed - TE.
              vhdl_file_open: Passed - expected fail.
                  size_cast4: Passed - expected fail.
+           rise_fall_decay2: Passed - CE.
                   pr2159630: Passed - expected fail.
                     analog1: Passed - CE.
                     analog2: Passed - CE.
@@ -354,6 +355,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                  pr3296466a: Passed - CE.
                  pr3296466b: Passed - CE.
                  pr3296466d: Passed - CE.
+           rise_fall_delay3: Passed - CE.
                        tri2: Passed - CE.
                   basicexpr: Passed - TE.
                  basicstate: Passed - TE.
@@ -1739,6 +1741,9 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                    resetall: Passed.
                   resetall2: Passed.
                     resolv1: Passed.
+           rise_fall_decay1: Passed.
+           rise_fall_delay1: Passed.
+           rise_fall_delay2: Passed.
                      rnpmos: Passed.
                     rnpmos2: Passed.
                         rop: Passed.
@@ -2212,4 +2217,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2210, Passed=2175, Failed=5, Not Implemented=3, Expected Fail=27
+  Total=2215, Passed=2180, Failed=5, Not Implemented=3, Expected Fail=27
