@@ -257,6 +257,24 @@ br_gh37			normal			ivltests
 br_gh60a		CE			ivltests
 br_gh62			CE			ivltests gold=br_gh62.gold
 br_gh79			CE			ivltests gold=br_gh79.gold
+br_gh99a		normal			ivltests
+br_gh99b		normal			ivltests
+br_gh99d		normal			ivltests
+br_gh99f		normal			ivltests
+br_gh99g		normal			ivltests
+br_gh99h		normal			ivltests
+br_gh99i		normal			ivltests
+br_gh99j		normal			ivltests
+br_gh99k		normal			ivltests
+br_gh99l		normal			ivltests
+br_gh99m		normal			ivltests
+br_gh99o		normal			ivltests
+br_gh99p		normal			ivltests
+br_gh99q		normal			ivltests
+br_gh99r		normal			ivltests
+br_gh99s		normal			ivltests
+br_gh99t		normal			ivltests
+br_gh99u		normal			ivltests
 br_ml_20150315		normal			ivltests gold=br_ml_20150315.gold
 br_ml_20150321		CE			ivltests
 br_ml_20150606		normal			ivltests

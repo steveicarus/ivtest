@@ -341,6 +341,24 @@ Running compiler/VVP tests for Icarus Verilog version: 11 (strict).
                    br_gh60a: Passed - CE.
                     br_gh62: Passed - CE.
                     br_gh79: Passed - CE.
+                   br_gh99a: Passed.
+                   br_gh99b: Passed.
+                   br_gh99d: Passed.
+                   br_gh99f: Passed.
+                   br_gh99g: Passed.
+                   br_gh99h: Passed.
+                   br_gh99i: Passed.
+                   br_gh99j: Passed.
+                   br_gh99k: Passed.
+                   br_gh99l: Passed.
+                   br_gh99m: Passed.
+                   br_gh99o: Passed.
+                   br_gh99p: Passed.
+                   br_gh99q: Passed.
+                   br_gh99r: Passed.
+                   br_gh99s: Passed.
+                   br_gh99t: Passed.
+                   br_gh99u: Passed.
              br_ml_20150315: Passed.
              br_ml_20150321: Passed - CE.
              br_ml_20150606: Passed.
@@ -1705,6 +1723,7 @@ test_mos_strength_reduction: Passed.
                        cmpi: Passed.
                     analog1: ==> Failed - running iverilog.
                     analog2: ==> Failed - running iverilog.
+                   br_gh99c: Passed.
                    cast_int: Passed.
                  constfunc4: Passed.
                 scaled_real: Passed.
@@ -1737,6 +1756,9 @@ test_mos_strength_reduction: Passed.
                       br962: Passed.
                       br963: Passed.
                       br973: Passed.
+                     br974a: Passed.
+                     br974b: Passed.
+                     br974c: Passed.
                       br975: Passed - CE.
                       br979: Passed.
                      br991b: Passed - CE.
@@ -1744,6 +1766,7 @@ test_mos_strength_reduction: Passed.
                     br_gh4a: Passed.
                    br_gh72a: Passed.
                    br_gh72b: Passed.
+                   br_gh99e: Passed.
             br_ml_20150315b: Passed - CE.
                   cast_real: Passed.
       cfunc_assign_op_mixed: Passed.
@@ -2157,6 +2180,9 @@ test_mos_strength_reduction: Passed.
                      br993b: Passed.
                       br994: Passed.
                       br995: Passed - CE.
+                   br_gh99v: Passed.
+                   br_gh99w: Passed.
+                   br_gh99x: Passed.
                       case3: Passed.
                       case4: Passed.
                       case5: Passed.
@@ -2214,4 +2240,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2212, Passed=2205, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2238, Passed=2229, Failed=9, Not Implemented=0, Expected Fail=0

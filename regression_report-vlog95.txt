@@ -251,6 +251,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                   uint_test: Passed - expected fail.
               ulongint_test: Passed - expected fail.
              ushortint_test: Passed - expected fail.
+                   br_gh99e: Passed - expected fail.
              implicit_cast1: Passed - expected fail.
              implicit_cast2: Passed - expected fail.
              implicit_cast3: Passed - expected fail.
@@ -363,6 +364,9 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                      br993a: Passed - TE.
                      br993b: Passed - TE.
                       br994: Passed - TE.
+                   br_gh99v: Passed - TE.
+                   br_gh99w: Passed - TE.
+                   br_gh99x: Passed - TE.
                  casesynth1: Passed - TE.
                  casesynth2: Passed - TE.
                  casesynth3: Passed - TE.
@@ -424,6 +428,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                   br943_944: Passed.
                       br985: Passed.
                      br_gh8: Passed.
+                   br_gh99c: Passed.
+                   br_gh99r: Passed.
                     ca_mult: Passed.
                    cast_int: Passed.
         cfunc_assign_op_vec: Passed.
@@ -865,6 +871,23 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                    br_gh60a: Passed - CE.
                     br_gh62: Passed - CE.
                     br_gh79: Passed - CE.
+                   br_gh99a: Passed.
+                   br_gh99b: Passed.
+                   br_gh99d: Passed.
+                   br_gh99f: Passed.
+                   br_gh99g: Passed.
+                   br_gh99h: Passed.
+                   br_gh99i: Passed.
+                   br_gh99j: Passed.
+                   br_gh99k: Passed.
+                   br_gh99l: Passed.
+                   br_gh99m: Passed.
+                   br_gh99o: Passed.
+                   br_gh99p: Passed.
+                   br_gh99q: Passed.
+                   br_gh99s: Passed.
+                   br_gh99t: Passed.
+                   br_gh99u: Passed.
              br_ml_20150315: Passed.
              br_ml_20150321: Passed - CE.
              br_ml_20150606: Passed.
@@ -1987,6 +2010,9 @@ test_mos_strength_reduction: Passed.
                       br921: Passed.
                       br956: Passed.
                       br973: Passed.
+                     br974a: Passed.
+                     br974b: Passed.
+                     br974c: Passed.
                       br975: Passed - CE.
                       br979: Passed.
                      br991b: Passed - CE.
@@ -2217,4 +2243,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2215, Passed=2180, Failed=5, Not Implemented=3, Expected Fail=27
+  Total=2241, Passed=2203, Failed=7, Not Implemented=3, Expected Fail=28

@@ -66,6 +66,7 @@
 
 analog1			normal,-gverilog-ams	ivltests
 analog2			normal,-gverilog-ams	ivltests
+br_gh99c		normal,-gverilog-ams	ivltests
 cast_int		normal,-gverilog-ams	ivltests
 constfunc4		normal,-gverilog-ams	ivltests
 scaled_real		normal,-gverilog-ams	ivltests
