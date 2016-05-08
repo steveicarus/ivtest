@@ -2243,4 +2243,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2241, Passed=2232, Failed=9, Not Implemented=0, Expected Fail=0
+  Total=2241, Passed=2234, Failed=7, Not Implemented=0, Expected Fail=0

@@ -9,6 +9,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
              automatic_task: Passed - CE.
             automatic_task2: Passed - CE.
             automatic_task3: Passed - CE.
+                      br942: Passed - CE.
                 def_nettype: Passed - CE.
              func_init_var1: Passed - CE.
              func_init_var2: Passed - CE.
@@ -23,6 +24,14 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
              task_init_var1: Passed - CE.
              task_init_var2: Passed - CE.
              task_init_var3: Passed - CE.
+                test_work14: Passed - CE.
+            vhdl_elab_range: Passed - CE.
+      vhdl_notfunc_stdlogic: Passed - CE.
+             vhdl_procedure: Passed - CE.
+            vhdl_range_func: Passed - CE.
+                vhdl_report: Passed - CE.
+            vhdl_subprogram: Passed - CE.
+        vhdl_unbounded_func: Passed - CE.
         array_lval_select4a: Passed - CE.
         array_lval_select4b: Passed - CE.
          array_lval_select5: Passed - CE.
@@ -266,7 +275,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                     bitsel5: Passed - CE.
                       pr751: Passed - CE.
               vhdl_var_init: Passed - CE.
-            vhdl_range_func: Passed - TE.
              vhdl_file_open: Passed - expected fail.
                  size_cast4: Passed - expected fail.
            rise_fall_decay2: Passed - CE.
@@ -538,14 +546,12 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
               test_tliteral: Passed.
                  vhdl_test8: Passed.
                  vhdl_test9: Passed.
-                test_work14: Passed.
           two_state_display: Passed.
             undefined_shift: Passed.
                   vams_abs1: Passed.
      vhdl_concurrent_assert: Passed.
           vhdl_const_record: Passed.
           vhdl_delay_assign: Passed.
-            vhdl_elab_range: Passed.
             vhdl_image_attr: Passed.
          vhdl_process_scope: Passed.
             vhdl_sadd23_bit: Passed.
@@ -557,10 +563,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
        vhdl_ssub23_stdlogic: Passed.
        vhdl_smul23_stdlogic: Passed.
                  vhdl_test3: Passed.
-                vhdl_report: Passed.
-            vhdl_subprogram: Passed.
               vhdl_subtypes: Passed.
-        vhdl_unbounded_func: Passed.
                  vhdl_while: Passed.
                       br919: Passed.
                       br968: Passed.
@@ -2110,7 +2113,6 @@ test_mos_strength_reduction: Passed.
            task_init_assign: Passed.
                 task_scope2: Passed.
        undef_lval_select_SV: Passed.
-                      br942: Passed.
                       br986: Passed.
                       br987: Passed.
                  ivlh_event: Passed.
@@ -2154,7 +2156,6 @@ test_mos_strength_reduction: Passed.
          vhdl_norg_stdlogic: Passed.
        vhdl_not104_stdlogic: Passed.
              vhdl_not23_bit: Passed.
-      vhdl_notfunc_stdlogic: Passed.
               vhdl_notg_bit: Passed.
          vhdl_notg_stdlogic: Passed.
                    vhdl_now: Passed.
@@ -2162,7 +2163,6 @@ test_mos_strength_reduction: Passed.
               vhdl_or23_bit: Passed.
                vhdl_org_bit: Passed.
           vhdl_org_stdlogic: Passed.
-             vhdl_procedure: Passed.
             vhdl_rand23_bit: Passed.
            vhdl_record_elab: Passed.
                 vhdl_reduce: Passed.
@@ -2243,4 +2243,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2241, Passed=2203, Failed=7, Not Implemented=3, Expected Fail=28
+  Total=2241, Passed=2205, Failed=5, Not Implemented=3, Expected Fail=28
