@@ -70,12 +70,25 @@ analog2			NI
 
 # V10 does not support this VHDL functionality
 ivlh_textio		NI
+test_when_else		NI
+vhdl_concurrent_assert	NI
+vhdl_delay_assign	NI
+vhdl_elab_range		NI
+vhdl_file_open		NI
 vhdl_image_attr		NI
+vhdl_lfcr		NI
+vhdl_loop		NI
+vhdl_multidim_array	NI
+vhdl_now		NI
+vhdl_process_scope	NI
 vhdl_range		NI
+vhdl_shift		NI
 vhdl_string		NI
 vhdl_string_lim		NI
+vhdl_subtypes		NI
 vhdl_textio_write	NI
 vhdl_textio_read	NI
+vhdl_wait		NI
 vhdl_while		NI
 
 # V10 does not support this SystemVerilog functionality

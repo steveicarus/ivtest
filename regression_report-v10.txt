@@ -3,12 +3,25 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
                     analog1: Not Implemented.
                     analog2: Not Implemented.
                 ivlh_textio: Not Implemented.
+             test_when_else: Not Implemented.
+     vhdl_concurrent_assert: Not Implemented.
+          vhdl_delay_assign: Not Implemented.
+            vhdl_elab_range: Not Implemented.
+             vhdl_file_open: Not Implemented.
             vhdl_image_attr: Not Implemented.
+                  vhdl_lfcr: Not Implemented.
+                  vhdl_loop: Not Implemented.
+        vhdl_multidim_array: Not Implemented.
+                   vhdl_now: Not Implemented.
+         vhdl_process_scope: Not Implemented.
                  vhdl_range: Not Implemented.
+                 vhdl_shift: Not Implemented.
                 vhdl_string: Not Implemented.
             vhdl_string_lim: Not Implemented.
+              vhdl_subtypes: Not Implemented.
           vhdl_textio_write: Not Implemented.
            vhdl_textio_read: Not Implemented.
+                  vhdl_wait: Not Implemented.
                  vhdl_while: Not Implemented.
                    sformatf: Not Implemented.
                      br1000: Passed.
@@ -277,6 +290,7 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
         array_lval_select3b: Passed - CE.
         array_lval_select4b: Passed - CE.
          array_lval_select6: Passed.
+            array_packed_2d: Passed.
                array_select: Passed.
              array_select_a: Passed.
            array_word_check: Passed.
@@ -360,6 +374,7 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
                       br990: Passed.
                      br991a: Passed.
                       br999: Passed.
+                     br1001: Passed.
                      br_gh6: Passed.
                      br_gh7: Passed.
                      br_gh8: Passed.
@@ -384,6 +399,24 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
                    br_gh60a: Passed - CE.
                     br_gh62: Passed - CE.
                     br_gh79: Passed - CE.
+                   br_gh99a: Passed.
+                   br_gh99b: Passed.
+                   br_gh99d: Passed.
+                   br_gh99f: Passed.
+                   br_gh99g: Passed.
+                   br_gh99h: Passed.
+                   br_gh99i: Passed.
+                   br_gh99j: Passed.
+                   br_gh99k: Passed.
+                   br_gh99l: Passed.
+                   br_gh99m: Passed.
+                   br_gh99o: Passed.
+                   br_gh99p: Passed.
+                   br_gh99q: Passed.
+                   br_gh99r: Passed.
+                   br_gh99s: Passed.
+                   br_gh99t: Passed.
+                   br_gh99u: Passed.
              br_ml_20150315: Passed.
              br_ml_20150321: Passed - CE.
              br_ml_20150606: Passed.
@@ -1471,6 +1504,11 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
                    resetall: Passed.
                   resetall2: Passed.
                     resolv1: Passed.
+           rise_fall_decay1: Passed.
+           rise_fall_decay2: Passed.
+           rise_fall_delay1: Passed.
+           rise_fall_delay2: Passed.
+           rise_fall_delay3: Passed.
                      rl_pow: Passed.
                      rnpmos: Passed.
                     rnpmos2: Passed.
@@ -1737,6 +1775,7 @@ test_mos_strength_reduction: Passed.
                   zero_repl: Passed.
              zero_repl_fail: Passed - CE.
                        cmpi: Passed.
+                   br_gh99c: Passed.
                    cast_int: Passed.
                  constfunc4: Passed.
                 scaled_real: Passed.
@@ -1769,6 +1808,9 @@ test_mos_strength_reduction: Passed.
                       br962: Passed.
                       br963: Passed.
                       br973: Passed.
+                     br974a: Passed.
+                     br974b: Passed.
+                     br974c: Passed.
                       br975: Passed - CE.
                       br979: Passed.
                      br991b: Passed - CE.
@@ -1776,6 +1818,7 @@ test_mos_strength_reduction: Passed.
                     br_gh4a: Passed.
                    br_gh72a: Passed.
                    br_gh72b: Passed.
+                   br_gh99e: Passed.
             br_ml_20150315b: Passed - CE.
                   cast_real: Passed.
       cfunc_assign_op_mixed: Passed.
@@ -1809,6 +1852,9 @@ test_mos_strength_reduction: Passed.
               fork_join_dis: Passed.
              fork_join_none: Passed.
                        fr49: Passed.
+             func_init_var1: Passed.
+             func_init_var2: Passed.
+             func_init_var3: Passed.
                   ibit_test: Passed.
                  ibyte_test: Passed.
                   iint_test: Passed.
@@ -1850,6 +1896,7 @@ test_mos_strength_reduction: Passed.
                 parpkg_test: Passed.
                parpkg_test2: Passed.
                parpkg_test3: Passed.
+              part_sel_port: Passed.
                      plus_5: Passed.
             plus_arg_string: Passed.
                   pr3366114: Passed.
@@ -1888,6 +1935,9 @@ test_mos_strength_reduction: Passed.
                   sint_test: Passed.
                   size_cast: Passed.
                  size_cast2: Passed.
+                 size_cast3: Passed.
+                 size_cast4: Passed.
+                 size_cast5: Passed.
               slongint_test: Passed.
              sshortint_test: Passed.
                string_index: Passed.
@@ -2013,8 +2063,13 @@ test_mos_strength_reduction: Passed.
                   sv_uwire2: Passed.
                   sv_uwire3: Passed.
                   sv_uwire4: Passed.
+               sv_var_init1: Passed.
+               sv_var_init2: Passed.
            sys_func_as_task: Passed.
            task_init_assign: Passed.
+             task_init_var1: Passed.
+             task_init_var2: Passed.
+             task_init_var3: Passed.
                 task_scope2: Passed.
                test_inc_dec: Passed.
               test_tliteral: Passed.
@@ -2025,6 +2080,7 @@ test_mos_strength_reduction: Passed.
        undef_lval_select_SV: Passed.
           unp_array_typedef: Passed.
              ushortint_test: Passed.
+           vvp_recv_vec4_pv: Passed.
                   wait_fork: Passed.
                       br942: Passed.
                   br943_944: Passed.
@@ -2042,7 +2098,6 @@ test_mos_strength_reduction: Passed.
                 test_system: Passed.
               test_timebase: Passed.
                test_varray1: Passed.
-             test_when_else: Passed.
                 test_work14: Passed.
        vhdl_and104_stdlogic: Passed.
              vhdl_and23_bit: Passed.
@@ -2102,7 +2157,6 @@ test_mos_strength_reduction: Passed.
             vhdl_sdiv23_bit: Passed.
        vhdl_sdiv23_stdlogic: Passed.
               vhdl_selected: Passed.
-                 vhdl_shift: Passed.
                vhdl_signals: Passed.
             vhdl_smul23_bit: Passed.
        vhdl_smul23_stdlogic: Passed.
@@ -2132,7 +2186,6 @@ test_mos_strength_reduction: Passed.
             vhdl_usub23_bit: Passed.
        vhdl_usub23_stdlogic: Passed.
               vhdl_var_init: Passed.
-                  vhdl_wait: Passed.
       vhdl_xnor104_stdlogic: Passed.
             vhdl_xnor23_bit: Passed.
              vhdl_xnorg_bit: Passed.
@@ -2152,6 +2205,9 @@ test_mos_strength_reduction: Passed.
                 blocksynth1: Passed.
                       br994: Passed.
                       br995: Passed - CE.
+                   br_gh99v: Passed.
+                   br_gh99w: Passed.
+                   br_gh99x: Passed.
                       case3: Passed.
                       case7: Passed.
             case_wo_default: Passed.
@@ -2187,4 +2243,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2187, Passed=2172, Failed=4, Not Implemented=11, Expected Fail=0
+  Total=2241, Passed=2212, Failed=4, Not Implemented=25, Expected Fail=0
