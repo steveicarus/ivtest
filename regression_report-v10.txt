@@ -24,6 +24,7 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
                   vhdl_wait: Not Implemented.
                  vhdl_while: Not Implemented.
                    sformatf: Not Implemented.
+           vvp_recv_vec4_pv: Passed - CE.
                      br1000: Passed.
                      br993a: Passed - CE.
                      br993b: Passed - CE.
@@ -417,6 +418,7 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
                    br_gh99s: Passed.
                    br_gh99t: Passed.
                    br_gh99u: Passed.
+                   br_gh103: Passed.
              br_ml_20150315: Passed.
              br_ml_20150321: Passed - CE.
              br_ml_20150606: Passed.
@@ -2080,7 +2082,6 @@ test_mos_strength_reduction: Passed.
        undef_lval_select_SV: Passed.
           unp_array_typedef: Passed.
              ushortint_test: Passed.
-           vvp_recv_vec4_pv: Passed.
                   wait_fork: Passed.
                       br942: Passed.
                   br943_944: Passed.
@@ -2243,4 +2244,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2241, Passed=2212, Failed=4, Not Implemented=25, Expected Fail=0
+  Total=2242, Passed=2213, Failed=4, Not Implemented=25, Expected Fail=0
