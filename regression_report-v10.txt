@@ -1,5 +1,6 @@
 Running compiler/VVP tests for Icarus Verilog version: 10.
 ----------------------------------------------------------------------------
+             func_init_var2: Not Implemented.
                     analog1: Not Implemented.
                     analog2: Not Implemented.
                 ivlh_textio: Not Implemented.
@@ -1821,6 +1822,8 @@ test_mos_strength_reduction: Passed.
                    br_gh72a: Passed.
                    br_gh72b: Passed.
                    br_gh99e: Passed.
+                  br_gh105a: Passed.
+                  br_gh105b: Passed.
             br_ml_20150315b: Passed - CE.
                   cast_real: Passed.
       cfunc_assign_op_mixed: Passed.
@@ -1855,7 +1858,6 @@ test_mos_strength_reduction: Passed.
              fork_join_none: Passed.
                        fr49: Passed.
              func_init_var1: Passed.
-             func_init_var2: Passed.
              func_init_var3: Passed.
                   ibit_test: Passed.
                  ibyte_test: Passed.
@@ -2012,6 +2014,7 @@ test_mos_strength_reduction: Passed.
                 sv_foreach3: Passed.
                 sv_foreach4: Passed.
                    sv_macro: Passed.
+                  sv_macro2: Passed.
                  sv_package: Passed.
                 sv_package2: Passed.
                 sv_package3: Passed.
@@ -2244,4 +2247,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2242, Passed=2213, Failed=4, Not Implemented=25, Expected Fail=0
+  Total=2245, Passed=2215, Failed=4, Not Implemented=26, Expected Fail=0

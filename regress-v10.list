@@ -64,6 +64,11 @@
 # gold or diff commands.
 #
 
+# The VVP runtime doesn't support return statements in automatic functions.
+# It's possible this could be fixed, but for now mark this as not implemented.
+# We can't mark it as EF, because it causes a runtime assertion failure.
+func_init_var2		NI
+
 # V10 does not support analog functionality
 analog1			NI
 analog2			NI

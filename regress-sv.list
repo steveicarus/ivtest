@@ -97,6 +97,8 @@ br_gh4a			normal,-g2009		ivltests
 br_gh72a		normal,-g2009		ivltests gold=br_gh72a.gold
 br_gh72b		normal,-g2009		ivltests gold=br_gh72b.gold
 br_gh99e		normal,-g2009		ivltests
+br_gh105a		normal,-g2009		ivltests gold=br_gh105a.gold
+br_gh105b		normal,-g2009		ivltests gold=br_gh105b.gold
 br_ml_20150315b		CE			ivltests
 cast_real		normal,-g2005-sv	ivltests
 cfunc_assign_op_mixed	normal,-g2009		ivltests
@@ -289,6 +291,7 @@ sv_foreach2		normal,-g2009		ivltests
 sv_foreach3		normal,-g2009		ivltests
 sv_foreach4		normal,-g2009		ivltests
 sv_macro		normal,-g2009		ivltests
+sv_macro2		normal,-g2009		ivltests gold=sv_macro2.gold
 sv_package		normal,-g2009		ivltests
 sv_package2		normal,-g2009		ivltests
 sv_package3		normal,-g2009		ivltests
