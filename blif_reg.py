@@ -43,32 +43,38 @@ def run_test(test):
     dut = "blif/" + test + ".v"
     tb  = "blif/" + test + "_tb.v"
 
+    redirect = "log/" + test + ".log 2>&1"
+
     # Process the DUT into a .blif file
-    ivl_blif_cmd = iverilog + " -g2009 -tblif -otmp_blif.blif " + dut
-    subprocess.check_call(ivl_blif_cmd, shell=True)
+    ivl_blif_cmd = iverilog + " -g2009 -tblif -otmp_blif.blif " + dut + " > " + redirect
+    rc = subprocess.call(ivl_blif_cmd, shell=True)
 
-    # Use ABC to convert the .blif file to Verilog
-    abc_cmd = "abc -c 'read_blif tmp_blif.blif ; write_verilog tmp_blif.v'"
-    rc = subprocess.check_output(abc_cmd, shell=True);
+    if rc == 0:
+        # Use ABC to convert the .blif file to Verilog
+        abc_cmd = "abc -c 'read_blif tmp_blif.blif ; write_verilog tmp_blif.v' >> " + redirect
+        rc = subprocess.call(abc_cmd, shell=True);
 
-    # Now simulate to make sure the tranlation worked properly.
-    ivl_blif_tb_cmd = iverilog + " -g2009 -otmp_blif.vvp " + tb + " tmp_blif.v"
-    subprocess.check_call(ivl_blif_tb_cmd, shell=True)
+    if rc == 0:
+        # Compile
+        ivl_blif_tb_cmd = iverilog + " -g2009 -otmp_blif.vvp " + tb + " tmp_blif.v >> " + redirect
+        rc = subprocess.call(ivl_blif_tb_cmd, shell=True)
 
-    vvp_cmd = vvp + " tmp_blif.vvp"
-    rc = subprocess.check_output(vvp_cmd, shell=True)
+    if rc == 0:
+        # Now simulate to make sure the tranlation worked properly.
+        vvp_cmd = vvp + " tmp_blif.vvp"
+        output = subprocess.check_output(vvp_cmd, shell=True)
+        rc = 0 if output == "PASSED\n" else 1
 
-    if rc == "PASSED\n":
+    if rc == 0:
         print test, "PASSED"
         count_passed = count_passed + 1
     else:
         print test, "FAILED"
         count_failed = count_failed + 1
 
-    os.remove("tmp_blif.blif")
-    os.remove("tmp_blif.v")
-    os.remove("tmp_blif.vvp")
-
+    for tmp in ["tmp_blif.blif", "tmp_blif.v", "tmp_blif.vvp"]:
+        if os.path.exists(tmp):
+            os.remove(tmp)
 
 count_passed = 0
 count_failed = 0
