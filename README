@@ -89,6 +89,21 @@ This script also takes the --suffix=<suffix> and the
 
 ####################
 #
+# BLIF test script
+#
+####################
+
+This test script require that abc be installed in your
+path and is used to test the Verilog to VHDL translation.
+
+python blif_reg.py
+
+There is no expected output as of yet so to check for
+regressions simply run with and without your patches.
+
+
+####################
+#
 # Windows (MinGW) test issues
 #
 ####################
