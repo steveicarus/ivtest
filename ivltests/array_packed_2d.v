@@ -30,6 +30,9 @@ initial begin
 for(i = 1; i <= 4; i = i + 1)
     vec[i] = i * 2;
 
+// display whole vector
+$display("%h", vec);
+
 // $display using variable index
 for(i = 1; i <= 4; i = i + 1)
     $display(vec[i]);
@@ -47,6 +50,9 @@ vec[2] = 4;
 vec[3] = 6;
 vec[4] = 8;
 
+// display whole vector
+$display("%h", vec);
+
 // $display using variable index
 for(i = 1; i <= 4; i = i + 1)
     $display(vec[i]);
@@ -62,6 +68,9 @@ $display(vec[4]);
 // test 1: assign using variable index
 for(i = 1; i <= 4; i = i + 1)
     vec2[i] = i * 2;
+
+// display whole vector
+$display("%h", vec2);
 
 // $display using variable index
 for(i = 1; i <= 4; i = i + 1)
@@ -79,6 +88,9 @@ vec2[1] = 2;
 vec2[2] = 4;
 vec2[3] = 6;
 vec2[4] = 8;
+
+// display whole vector
+$display("%h", vec2);
 
 // $display using variable index
 for(i = 1; i <= 4; i = i + 1)

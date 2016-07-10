@@ -278,6 +278,9 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
              vhdl_file_open: Passed - expected fail.
                  size_cast4: Passed - expected fail.
            rise_fall_decay2: Passed - CE.
+            array_packed_2d: Passed.
+                  br_gh112c: Passed.
+                  br_gh112d: Passed.
                   pr2159630: Passed - expected fail.
                     analog1: Passed - CE.
                     analog2: Passed - CE.
@@ -438,6 +441,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                      br_gh8: Passed.
                    br_gh99c: Passed.
                    br_gh99r: Passed.
+                  br_gh112e: Passed.
+                  br_gh112f: Passed.
                     ca_mult: Passed.
                    cast_int: Passed.
         cfunc_assign_op_vec: Passed.
@@ -787,7 +792,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                      array4: Passed.
                      array5: Passed - CE.
                      array7: Passed.
-            array_packed_2d: Passed.
            array_word_check: Passed.
            array_word_width: Passed.
                  assign3.2A: Passed.
@@ -2025,6 +2029,8 @@ test_mos_strength_reduction: Passed.
                    br_gh72b: Passed.
                   br_gh105a: Passed.
                   br_gh105b: Passed.
+                  br_gh112a: Passed.
+                  br_gh112b: Passed.
             br_ml_20150315b: Passed - CE.
       cfunc_assign_op_mixed: Passed.
          cfunc_assign_op_pv: Passed.
@@ -2247,4 +2253,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2245, Passed=2209, Failed=5, Not Implemented=3, Expected Fail=28
+  Total=2251, Passed=2215, Failed=5, Not Implemented=3, Expected Fail=28

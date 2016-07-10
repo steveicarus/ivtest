@@ -99,6 +99,12 @@ br_gh72b		normal,-g2009		ivltests gold=br_gh72b.gold
 br_gh99e		normal,-g2009		ivltests
 br_gh105a		normal,-g2009		ivltests gold=br_gh105a.gold
 br_gh105b		normal,-g2009		ivltests gold=br_gh105b.gold
+br_gh112a		normal,-g2009		ivltests
+br_gh112b		normal,-g2009		ivltests
+br_gh112c		normal,-g2009		ivltests
+br_gh112d		normal,-g2009		ivltests
+br_gh112e		normal,-g2009		ivltests
+br_gh112f		normal,-g2009		ivltests
 br_ml_20150315b		CE			ivltests
 cast_real		normal,-g2005-sv	ivltests
 cfunc_assign_op_mixed	normal,-g2009		ivltests
