@@ -269,6 +269,7 @@ unp_array_typedef	CE,-g2009,-pallowsigned=1	ivltests  # Also string
 
 # SystemVerilog classes, new and null operators.
 br959			CE,-g2009		ivltests
+br1003a			CE,-g2009		ivltests
 sv_class1		CE,-g2009		ivltests
 sv_class2		CE,-g2009		ivltests
 sv_class3		CE,-g2009		ivltests
@@ -560,6 +561,9 @@ vhdl_loop		CO,-g2005-sv,-pallowsigned=1,ivltests/vhdl_loop.vhd		ivltests
 # These tests have different output because of file name/line, etc. differences.
 br916a			normal			ivltests gold=br916a-vlog95.gold
 br916b			normal			ivltests gold=br916b-vlog95.gold
+br1003b			normal,-g2009		ivltests gold=br1003b-vlog95.gold
+br1003c			normal,-g2009		ivltests gold=br1003c-vlog95.gold
+br1003d			normal,-g2009		ivltests gold=br1003d-vlog95.gold
 fatal_et_al		normal			ivltests gold=fatal_et_al-vlog95.gold
 fdisplay3		RE			ivltests gold=fdisplay3-vlog95.gold
 fdisplay_fail_fd	normal			ivltests gold=fdisplay_fail_fd-vlog95.gold

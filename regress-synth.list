@@ -88,6 +88,7 @@ br995			CE			ivltests
 br_gh99v		normal			ivltests
 br_gh99w		normal			ivltests
 br_gh99x		normal			ivltests
+br_gh115		normal			ivltests
 case1			normal			ivltests
 case2			normal			ivltests
 case3			normal			ivltests

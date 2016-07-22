@@ -1764,6 +1764,10 @@ test_mos_strength_reduction: Passed.
                       br975: Passed - CE.
                       br979: Passed.
                      br991b: Passed - CE.
+                    br1003a: Passed.
+                    br1003b: Passed.
+                    br1003c: Passed.
+                    br1003d: Passed.
                      br1005: Passed - CE.
                      br_gh4: Passed.
                     br_gh4a: Passed.
@@ -2195,6 +2199,7 @@ test_mos_strength_reduction: Passed.
                    br_gh99v: Passed.
                    br_gh99w: Passed.
                    br_gh99x: Passed.
+                   br_gh115: Passed.
                       case3: Passed.
                       case4: Passed.
                       case5: Passed.
@@ -2252,4 +2257,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2250, Passed=2243, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2255, Passed=2248, Failed=7, Not Implemented=0, Expected Fail=0
