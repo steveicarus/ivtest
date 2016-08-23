@@ -2,10 +2,9 @@
 -- Author: Pawel Szostek (pawel.szostek@cern.ch)
 -- Date: 27.07.2011
 
-LIBRARY ieee;
-USE ieee.std_logic_1164.all;
-USE ieee.std_logic_unsigned.all;
-USE ieee.numeric_std.all;
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
 entity dummy is
     port (o1: out std_logic_vector(7 downto 0);
