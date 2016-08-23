@@ -183,6 +183,7 @@ vhdl_udiv23_bit		normal,-g2005-sv,ivltests/vhdl_udiv23_bit.vhd		ivltests
 vhdl_udiv23_stdlogic	normal,-g2005-sv,ivltests/vhdl_udiv23_stdlogic.vhd	ivltests
 vhdl_umul23_bit		normal,-g2005-sv,ivltests/vhdl_umul23_bit.vhd		ivltests
 vhdl_umul23_stdlogic	normal,-g2005-sv,ivltests/vhdl_umul23_stdlogic.vhd	ivltests
+vhdl_unary_minus	normal,-g2005-sv,ivltests/vhdl_unary_minus.vhd		ivltests
 vhdl_unbounded		normal,-g2005-sv,ivltests/vhdl_unbounded.vhd		ivltests
 vhdl_unbounded_func	normal,-g2005-sv,ivltests/vhdl_unbounded_func_pkg.vhd,ivltests/vhdl_unbounded_func.vhd	ivltests
 vhdl_usub23_bit		normal,-g2005-sv,ivltests/vhdl_usub23_bit.vhd		ivltests
