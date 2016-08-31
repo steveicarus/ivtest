@@ -234,6 +234,7 @@ br999			normal			ivltests
 br1000			normal			ivltests
 br1001			normal			ivltests
 br1006			normal,-gspecify	ivltests
+br1008			normal			ivltests gold=br1008.gold
 br_gh6			normal			ivltests
 br_gh7			normal			ivltests
 br_gh8			normal			ivltests
