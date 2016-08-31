@@ -186,6 +186,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
         sv_darray_word_size: Passed - CE.
           unp_array_typedef: Passed - CE.
                       br959: Passed - CE.
+                    br1003a: Passed - CE.
+                  br_gh104a: Passed - CE.
                   sv_class1: Passed - CE.
                   sv_class2: Passed - CE.
                   sv_class3: Passed - CE.
@@ -400,6 +402,10 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                   vhdl_loop: Passed - CO.
                      br916a: Passed.
                      br916b: Passed.
+                    br1003b: Passed.
+                    br1003c: Passed.
+                    br1003d: Passed.
+                     br1007: Passed.
                 fatal_et_al: Passed.
                   fdisplay3: Passed.
            fdisplay_fail_fd: Passed.
@@ -2029,6 +2035,7 @@ test_mos_strength_reduction: Passed.
                     br_gh4a: Passed.
                    br_gh72a: Passed.
                    br_gh72b: Passed.
+                  br_gh104b: Passed.
                   br_gh105a: Passed.
                   br_gh105b: Passed.
                   br_gh112a: Passed.
@@ -2219,6 +2226,7 @@ test_mos_strength_reduction: Passed.
                 blocksynth2: Passed.
                 blocksynth3: Passed.
                       br995: Passed - CE.
+                   br_gh115: Passed.
                       case3: Passed.
                       case4: Passed.
                       case5: Passed.
@@ -2255,4 +2263,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2253, Passed=2217, Failed=5, Not Implemented=3, Expected Fail=28
+  Total=2261, Passed=2225, Failed=5, Not Implemented=3, Expected Fail=28
