@@ -167,6 +167,7 @@ pr2352834		CE,-pallowsigned=1	ivltests
 pr2823711		CE			ivltests
 pr2909386b		CE,-pallowsigned=1	ivltests
 rl_pow			CE			ivltests
+vhdl_pow_rem		CE,-g2005-sv,-pallowsigned=1,ivltests/vhdl_pow_rem.vhd	ivltests
 
 # IEEE 1364-1995 only supports register arrays.
 array_lval_select1	normal,-DVLOG95		ivltests

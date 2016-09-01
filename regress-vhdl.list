@@ -134,6 +134,7 @@ vhdl_or104_stdlogic	normal,-g2005-sv,ivltests/vhdl_or104_stdlogic.vhd	ivltests
 vhdl_or23_bit		normal,-g2005-sv,ivltests/vhdl_or23_bit.vhd		ivltests
 vhdl_org_bit		normal,-g2005-sv,ivltests/vhdl_org_bit.vhd		ivltests
 vhdl_org_stdlogic	normal,-g2005-sv,ivltests/vhdl_org_stdlogic.vhd		ivltests
+vhdl_pow_rem		normal,-g2005-sv,ivltests/vhdl_pow_rem.vhd		ivltests
 vhdl_prefix_array	normal,-g2005-sv,ivltests/vhdl_prefix_array.vhd		ivltests
 vhdl_procedure		normal,-g2005-sv,ivltests/vhdl_procedure.vhd		ivltests  gold=vhdl_procedure.gold
 vhdl_process_scope	normal,-g2005-sv,ivltests/vhdl_process_scope.vhd	ivltests
