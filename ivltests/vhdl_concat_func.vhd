@@ -21,6 +21,7 @@
 
 library ieee;
 use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
 entity concat_func is
   port(in_word : in std_logic_vector(7 downto 0);
@@ -28,10 +29,13 @@ entity concat_func is
 end entity concat_func;
 
 architecture test of concat_func is
-
 begin
   process(in_word)
+    variable tmp  : unsigned(7 downto 0);
+    variable int : integer;
   begin
-    out_word <= in_word(7 downto 6) & to_unsigned(in_word, 3) & resize(in_word, 3);
+    tmp := unsigned(in_word);
+    int := to_integer(tmp);
+    out_word <= in_word(7 downto 6) & std_logic_vector(to_unsigned(int, 3)) & std_logic_vector(resize(tmp, 3));
   end process;
 end architecture test;
