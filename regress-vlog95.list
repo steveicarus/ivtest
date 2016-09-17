@@ -179,6 +179,7 @@ array_select		CE,-pallowsigned=1	ivltests
 array_select_a		CE			ivltests
 array_unpacked_sysfunct	CE,-g2005-sv	ivltests
 array_word_width2	CE			ivltests
+br1008			CE			ivltests
 genvar_scopes		CE			ivltests
 meminit2		CE			ivltests
 memsynth4		CE,-S			ivltests  # Synthesized net array
@@ -417,6 +418,8 @@ br_gh112c		normal,-g2009,-pallowsigned=1	ivltests
 br_gh112d		normal,-g2009,-pallowsigned=1	ivltests
 
 # New tests that need to be looked at go here.
+vhdl_concat_func	EF,-g2005-sv,-pallowsigned=1,ivltests/vhdl_concat_func.vhd		ivltests
+vhdl_resize		EF,-g2005-sv,-pallowsigned=1,ivltests/vhdl_resize.vhd		ivltests
 
 # Size (spacing) difference since -4 is used for the second value.
 # Should this be $signed(<sized_value>) if it is not an integer?
@@ -505,6 +508,10 @@ signed_part		CE,-pallowsigned=1	ivltests
 bitsel10		CE			ivltests  # Also uses a logic bufif0
 br918c			CE			ivltests  # Also uses a logic pullup
 br965			CE			ivltests
+br_gh127b		CE			ivltests
+br_gh127c		CE			ivltests
+br_gh127e		CE			ivltests
+br_gh127f		CE			ivltests
 countdrivers3		CE			ivltests  # also uses a logic bufif1
 inout			TE			ivltests  # Duplicate names
 inout2			CE			ivltests

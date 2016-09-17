@@ -319,6 +319,7 @@ Running compiler/VVP tests for Icarus Verilog version: 11 (strict).
                      br1001: Passed.
                      br1006: Passed.
                      br1007: Passed.
+                     br1008: Passed.
                      br_gh6: Passed.
                      br_gh7: Passed.
                      br_gh8: Passed.
@@ -362,6 +363,12 @@ Running compiler/VVP tests for Icarus Verilog version: 11 (strict).
                    br_gh99t: Passed.
                    br_gh99u: Passed.
                    br_gh103: Passed.
+                  br_gh127a: Passed.
+                  br_gh127b: Passed.
+                  br_gh127c: Passed.
+                  br_gh127d: Passed.
+                  br_gh127e: Passed.
+                  br_gh127f: Passed.
              br_ml_20150315: Passed.
              br_ml_20150321: Passed - CE.
              br_ml_20150606: Passed.
@@ -2084,8 +2091,9 @@ test_mos_strength_reduction: Passed.
           vhdl_const_record: Passed.
            vhdl_const_array: Passed.
           vhdl_delay_assign: Passed.
-                 vhdl_expr1: Passed.
             vhdl_elab_range: Passed.
+             vhdl_eval_cond: Passed.
+                 vhdl_expr1: Passed.
           vhdl_generic_eval: Passed.
              vhdl_fa4_test1: Passed.
              vhdl_fa4_test2: Passed.
@@ -2119,6 +2127,7 @@ test_mos_strength_reduction: Passed.
               vhdl_or23_bit: Passed.
                vhdl_org_bit: Passed.
           vhdl_org_stdlogic: Passed.
+               vhdl_pow_rem: Passed.
           vhdl_prefix_array: Passed.
              vhdl_procedure: Passed.
          vhdl_process_scope: Passed.
@@ -2129,6 +2138,7 @@ test_mos_strength_reduction: Passed.
            vhdl_record_elab: Passed.
                 vhdl_reduce: Passed.
                 vhdl_report: Passed.
+                vhdl_resize: Passed.
                   vhdl_rtoi: Passed.
              vhdl_sa1_test1: Passed.
              vhdl_sa1_test2: Passed.
@@ -2168,6 +2178,7 @@ test_mos_strength_reduction: Passed.
        vhdl_udiv23_stdlogic: Passed.
             vhdl_umul23_bit: Passed.
        vhdl_umul23_stdlogic: Passed.
+           vhdl_unary_minus: Passed.
              vhdl_unbounded: Passed.
         vhdl_unbounded_func: Passed.
             vhdl_usub23_bit: Passed.
@@ -2260,4 +2271,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2258, Passed=2251, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2269, Passed=2262, Failed=7, Not Implemented=0, Expected Fail=0

@@ -8,20 +8,24 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
      vhdl_concurrent_assert: Not Implemented.
           vhdl_delay_assign: Not Implemented.
             vhdl_elab_range: Not Implemented.
+             vhdl_eval_cond: Not Implemented.
              vhdl_file_open: Not Implemented.
             vhdl_image_attr: Not Implemented.
                   vhdl_lfcr: Not Implemented.
                   vhdl_loop: Not Implemented.
         vhdl_multidim_array: Not Implemented.
                    vhdl_now: Not Implemented.
+               vhdl_pow_rem: Not Implemented.
          vhdl_process_scope: Not Implemented.
                  vhdl_range: Not Implemented.
+                vhdl_resize: Not Implemented.
                  vhdl_shift: Not Implemented.
                 vhdl_string: Not Implemented.
             vhdl_string_lim: Not Implemented.
               vhdl_subtypes: Not Implemented.
           vhdl_textio_write: Not Implemented.
            vhdl_textio_read: Not Implemented.
+           vhdl_unary_minus: Not Implemented.
                   vhdl_wait: Not Implemented.
                  vhdl_while: Not Implemented.
                    sformatf: Not Implemented.
@@ -380,6 +384,7 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
                      br1001: Passed.
                      br1006: Passed.
                      br1007: Passed.
+                     br1008: Passed.
                      br_gh6: Passed.
                      br_gh7: Passed.
                      br_gh8: Passed.
@@ -423,6 +428,12 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
                    br_gh99t: Passed.
                    br_gh99u: Passed.
                    br_gh103: Passed.
+                  br_gh127a: Passed.
+                  br_gh127b: Passed.
+                  br_gh127c: Passed.
+                  br_gh127d: Passed.
+                  br_gh127e: Passed.
+                  br_gh127f: Passed.
              br_ml_20150315: Passed.
              br_ml_20150321: Passed - CE.
              br_ml_20150606: Passed.
@@ -2263,4 +2274,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2261, Passed=2231, Failed=4, Not Implemented=26, Expected Fail=0
+  Total=2272, Passed=2238, Failed=4, Not Implemented=30, Expected Fail=0
