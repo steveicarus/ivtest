@@ -2,6 +2,10 @@
 #
 # Script to handle regression for VPI routines
 #
+use lib './perl-lib';
+
+use Environment;
+
 $| = 1;  # This turns off buffered I/O
 
 # We support a --suffix= and --with-valgrind flags.
@@ -46,7 +50,7 @@ if ($#ARGV != -1) {
 #
 #  Main script
 #
-($ver) = `iverilog$sfx -V` =~ /^Icarus Verilog version (\d+\.\d+)/;
+my $ver = &get_ivl_version($sfx);
 my $msg = $with_valg ? " (with valgrind)" : "";
 print ("Running VPI tests for Icarus Verilog version: $ver$msg.\n");
 print "-" x 76 . "\n";
