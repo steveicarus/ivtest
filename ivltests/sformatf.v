@@ -35,6 +35,7 @@ initial begin
     // Integers
     f = $sformatf("sformatf test 1: %b %d %o %x", 8'd120, -12, 331, 120, 97);
     if(f != "sformatf test 1: 01111000         -12 00000000513 00000078         97") begin
+        $display(f);
         $display("FAILED 1");
         $finish();
     end
@@ -42,6 +43,7 @@ initial begin
     // Floats
     f = $sformatf("sformatf test 2: %e %f %g", 123.45, 100e12, 100e12);
     if(f != "sformatf test 2: 1.234500e+02 100000000000000.000000 1e+14") begin
+        $display(f);
         $display("FAILED 2");
         $finish();
     end
@@ -49,6 +51,7 @@ initial begin
     // Strings
     f = $sformatf("sformatf test 3: %s %c", "'string test'", 97);
     if(f != "sformatf test 3: 'string test' a") begin
+        $display(f);
         $display("FAILED 3");
         $finish();
     end
@@ -56,6 +59,7 @@ initial begin
     // Other stuff
     f = $sformatf("sformatf test 4: %t %v %u %z", 120s, test_net, word, word);
     if(f != "sformatf test 4:                  120 Pu1 UUUU UUUU") begin
+        $display(f);
         $display("FAILED 4");
         $finish();
     end

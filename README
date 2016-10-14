@@ -117,6 +117,7 @@ pr2509349a      - MinGW cannot find /tmp
 pr2590274a      - MinGW has three digit exponents
 pr2590274b      - MinGW has three digit exponents
 pr2590274c      - MinGW has three digit exponents
+sformatf        - MinGW has three digit exponents
 swrite          - MinGW has three digit exponents
 test_va_math    - MinGW has three digit exponents
 test_vams_math  - MinGW has three digit exponents
