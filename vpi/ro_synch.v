@@ -12,7 +12,7 @@ module main;
 	 $finish;
       end
       #1 if (val !== 3) begin
-	 $display("FAILED -- val==%0d: legalpoke didn't happen", val);
+	 $display("FAILED -- val==%0d: legal poke didn't happen", val);
 	 $finish;
       end
 

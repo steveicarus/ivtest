@@ -25,6 +25,7 @@ static PLI_INT32 delayed_poke(p_cb_data cb_data)
             time.real = 0.0;
             vpi_put_value(poke->dst, &value, &time, vpiTransportDelay);
       }
+      fflush(stderr); // for Windows
       free(poke);
       return 0;
 }
