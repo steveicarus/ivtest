@@ -747,6 +747,8 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
                    negvalue: Passed.
                        neq1: Passed.
                 nested_func: Passed.
+         nested_impl_event1: Passed.
+         nested_impl_event2: Passed.
             no_if_statement: Passed - CE.
      no_timescale_in_module: Passed - CE.
         non-polymorphic-abs: Passed.
@@ -2274,4 +2276,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2272, Passed=2238, Failed=4, Not Implemented=30, Expected Fail=0
+  Total=2274, Passed=2240, Failed=4, Not Implemented=30, Expected Fail=0
