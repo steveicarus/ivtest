@@ -9,7 +9,7 @@ always @* begin  // always @(b or c)
   @* a = c;  // @(c)
   $display("Triggered 2 at %0t", $time);
 end
-	
+
 initial begin
   #10 a = 0;
   #10 a = 1;
