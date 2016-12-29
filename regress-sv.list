@@ -112,7 +112,10 @@ br_gh112c		normal,-g2009		ivltests
 br_gh112d		normal,-g2009		ivltests
 br_gh112e		normal,-g2009		ivltests
 br_gh112f		normal,-g2009		ivltests
-br_ml_20150315b		CE			ivltests
+br_gh129		normal,-g2009		ivltests
+br_gh130a		CE,-g2009		ivltests
+br_gh130b		CE,-g2009		ivltests
+br_ml_20150315b		CE,-g2009		ivltests
 cast_real		normal,-g2005-sv	ivltests
 cfunc_assign_op_mixed	normal,-g2009		ivltests
 cfunc_assign_op_pv	normal,-g2009		ivltests
