@@ -285,6 +285,7 @@ br_gh127c		normal			ivltests gold=br_gh127c.gold
 br_gh127d		normal			ivltests gold=br_gh127d.gold
 br_gh127e		normal			ivltests gold=br_gh127e.gold
 br_gh127f		normal			ivltests gold=br_gh127f.gold
+br_gh142		CE			ivltests
 br_ml_20150315		normal			ivltests gold=br_ml_20150315.gold
 br_ml_20150321		CE			ivltests
 br_ml_20150606		normal			ivltests
