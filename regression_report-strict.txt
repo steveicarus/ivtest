@@ -369,6 +369,7 @@ Running compiler/VVP tests for Icarus Verilog version: 11 (strict).
                   br_gh127d: Passed.
                   br_gh127e: Passed.
                   br_gh127f: Passed.
+                   br_gh142: Passed - CE.
              br_ml_20150315: Passed.
              br_ml_20150321: Passed - CE.
              br_ml_20150606: Passed.
@@ -2276,4 +2277,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2274, Passed=2267, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2275, Passed=2268, Failed=7, Not Implemented=0, Expected Fail=0
