@@ -8,11 +8,11 @@ module top;
     passed = 1'b1;
 
     // Check that a normal 32 bit %z catches missing bytes.
-    fd = $fopen("work/test_fscanf.bin", "wb");
+    fd = $fopen("work/test_fscanf_z_warn.bin", "wb");
     in_32 = 32'b000x100z_001z000x_101xxxzz_100z111x;
     $fwrite(fd, "%u", in_32);
     $fclose(fd);
-    fd = $fopen("work/test_fscanf.bin", "rb");
+    fd = $fopen("work/test_fscanf_z_warn.bin", "rb");
     res = $fscanf(fd, "%z", out_32);
     if (res !== -1) begin
       $display("FAILED: $fscanf() #1 returned %d (%b)", res, out_32);
@@ -21,11 +21,11 @@ module top;
     $fclose(fd);
 
     // Check that a normal 64 bit %z catches missing bytes (1/4).
-    fd = $fopen("work/test_fscanf.bin", "wb");
+    fd = $fopen("work/test_fscanf_z_warn.bin", "wb");
     in_32 = 32'b000x100z_001z000x_101xxxzz_100z111x;
     $fwrite(fd, "%u", in_32);
     $fclose(fd);
-    fd = $fopen("work/test_fscanf.bin", "rb");
+    fd = $fopen("work/test_fscanf_z_warn.bin", "rb");
     res = $fscanf(fd, "%z", out_64);
     if (res !== -1) begin
       $display("FAILED: $fscanf() #2a returned %d (%b)", res, out_64);
@@ -34,11 +34,11 @@ module top;
     $fclose(fd);
 
     // Check that a normal 64 bit %z catches missing bytes (1/2).
-    fd = $fopen("work/test_fscanf.bin", "wb");
+    fd = $fopen("work/test_fscanf_z_warn.bin", "wb");
     in_32 = 32'b000x100z_001z000x_101xxxzz_100z111x;
     $fwrite(fd, "%z", in_32);
     $fclose(fd);
-    fd = $fopen("work/test_fscanf.bin", "rb");
+    fd = $fopen("work/test_fscanf_z_warn.bin", "rb");
     res = $fscanf(fd, "%z", out_64);
     if (res !== -1) begin
       $display("FAILED: $fscanf() #2b returned %d (%b)", res, out_64);
@@ -47,11 +47,11 @@ module top;
     $fclose(fd);
 
     // Check that a normal 64 bit %z catches missing bytes (3/4).
-    fd = $fopen("work/test_fscanf.bin", "wb");
+    fd = $fopen("work/test_fscanf_z_warn.bin", "wb");
     in_32 = 32'b000x100z_001z000x_101xxxzz_100z111x;
     $fwrite(fd, "%z%u", in_32, in_32);
     $fclose(fd);
-    fd = $fopen("work/test_fscanf.bin", "rb");
+    fd = $fopen("work/test_fscanf_z_warn.bin", "rb");
     res = $fscanf(fd, "%z", out_64);
     if (res !== -1) begin
       $display("FAILED: $fscanf() #2c returned %d (%b)", res, out_64);
@@ -60,11 +60,11 @@ module top;
     $fclose(fd);
 
     // Check that a normal 32 bit %z suppression catches missing bytes.
-    fd = $fopen("work/test_fscanf.bin", "wb");
+    fd = $fopen("work/test_fscanf_z_warn.bin", "wb");
     in_32 = 32'b000x100z_001z000x_101xxxzz_100z111x;
     $fwrite(fd, "%u", in_32);
     $fclose(fd);
-    fd = $fopen("work/test_fscanf.bin", "rb");
+    fd = $fopen("work/test_fscanf_z_warn.bin", "rb");
     res = $fscanf(fd, "%*z", out_32);
     if (res !== -1) begin
       $display("FAILED: $fscanf() #3 returned %d (%b)", res, out_32);
@@ -73,11 +73,11 @@ module top;
     $fclose(fd);
 
     // Check that a multiple read %z catches missing bytes (1/2).
-    fd = $fopen("work/test_fscanf.bin", "wb");
+    fd = $fopen("work/test_fscanf_z_warn.bin", "wb");
     in_32 = 32'b000x100z_001z000x_101xxxzz_100z111x;
     $fwrite(fd, "%z%u", in_32, in_32);
     $fclose(fd);
-    fd = $fopen("work/test_fscanf.bin", "rb");
+    fd = $fopen("work/test_fscanf_z_warn.bin", "rb");
     res = $fscanf(fd, "%z%z", out_32, out_32x);
     if (res !== 1) begin
       $display("FAILED: $fscanf() #4 returned %d (%b)", res, out_32x);
@@ -100,11 +100,11 @@ module top;
     $fclose(fd);
 
     // Check that a suppression/read %z catches missing bytes (1/2).
-    fd = $fopen("work/test_fscanf.bin", "wb");
+    fd = $fopen("work/test_fscanf_z_warn.bin", "wb");
     in_32 = 32'b000x100z_001z000x_101xxxzz_100z111x;
     $fwrite(fd, "%z%u", in_32, in_32);
     $fclose(fd);
-    fd = $fopen("work/test_fscanf.bin", "rb");
+    fd = $fopen("work/test_fscanf_z_warn.bin", "rb");
     out_32 = 32'bx;
     res = $fscanf(fd, "%*z%z", out_32);
     if (res !== -1) begin
