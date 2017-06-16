@@ -31,18 +31,12 @@ extern "C" PLI_INT32
 CallbackPeek(s_cb_data *data) {
 
     static s_vpi_time	zero_delay = { vpiNoDelay, 0, 0, 0 };
-    s_vpi_value value;
 
     vpi_printf(" callback\n");
 
-    // Get current poke value
-    vpiHandle poke_h = *(vpiHandle *)data->user_data;
-    value.format=vpiIntVal;
-    vpi_get_value(poke_h, &value);
-
-    // Toggle poke value
-    value.value.integer ^= 1;
-    vpi_put_value(poke_h, &value, &zero_delay, vpiInertialDelay);
+    // Toggle poke event
+    vpiHandle poke_e = *(vpiHandle *)data->user_data;
+    vpi_put_value(poke_e, NULL, &zero_delay, vpiInertialDelay);
 
     return 0;
 }
@@ -60,7 +54,7 @@ FindPoke(const char *name)
 
     // find named event
     handle = NULL;
-    iterate = vpi_iterate(vpiReg, module);
+    iterate = vpi_iterate(vpiNamedEvent, module);
     if (iterate != NULL) {
 	while ((handle = vpi_scan(iterate))) {
 	    if (!strcmp(name, vpi_get_str(vpiName, handle))) {
@@ -111,7 +105,7 @@ RegisterPeek(const char *name, vpiHandle poke)
 extern "C" PLI_INT32
 EndofCompile(s_cb_data * /*cb_data*/)
 {
-    RegisterPeek("e_Peek", FindPoke("r_Poke"));
+    RegisterPeek("e_Peek", FindPoke("e_Poke"));
     return 0;
 }
 

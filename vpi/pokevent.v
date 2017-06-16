@@ -1,17 +1,17 @@
 module test;
 
     event e_Peek;
-    reg	  r_Poke;
+    event e_Poke;
 
     initial begin
 	// $dumpvars;
 	#0;
-	r_Poke = 0;
+	->e_Poke;
 	#51 $finish;
     end
 
-    always @(r_Poke) begin
-	$display("r_Poke recieved @ %0t", $time);
+    always @(e_Poke) begin
+	$display("e_Poke received @ %0t", $time);
 	#10;
 	$display("e_Peek asserted @ %0t", $time);
 	->e_Peek;
