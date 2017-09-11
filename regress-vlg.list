@@ -236,6 +236,7 @@ br1001			normal			ivltests
 br1006			normal,-gspecify	ivltests
 br1007			normal,-Wselect-range	ivltests gold=br1007.gold
 br1008			normal			ivltests gold=br1008.gold
+br1019			normal			ivltests
 br_gh6			normal			ivltests
 br_gh7			normal			ivltests
 br_gh8			normal			ivltests
@@ -288,6 +289,7 @@ br_gh127f		normal			ivltests gold=br_gh127f.gold
 br_gh142		CE			ivltests
 br_gh152		CE			ivltests
 br_gh157		normal			ivltests gold=br_gh157.gold
+br_gh162		normal			ivltests
 br_ml_20150315		normal			ivltests gold=br_ml_20150315.gold
 br_ml_20150321		CE			ivltests
 br_ml_20150606		normal			ivltests

@@ -180,6 +180,7 @@ array_select_a		CE			ivltests
 array_unpacked_sysfunct	CE,-g2005-sv	ivltests
 array_word_width2	CE			ivltests
 br1008			CE			ivltests
+br1019			CE			ivltests
 genvar_scopes		CE			ivltests
 meminit2		CE			ivltests
 memsynth4		CE,-S			ivltests  # Synthesized net array
@@ -416,6 +417,8 @@ rise_fall_decay2	CE			ivltests
 array_packed_2d		normal,-g2009,-pallowsigned=1	ivltests gold=array_packed_2d.gold
 br_gh112c		normal,-g2009,-pallowsigned=1	ivltests
 br_gh112d		normal,-g2009,-pallowsigned=1	ivltests
+# This generates a very larg (65536 bit) constant, and the parser can't cope.
+br_gh162		TE			ivltests
 
 # New tests that need to be looked at go here.
 vhdl_concat_func	EF,-g2005-sv,-pallowsigned=1,ivltests/vhdl_concat_func.vhd		ivltests
