@@ -290,6 +290,7 @@ br_gh142		CE			ivltests
 br_gh152		CE			ivltests
 br_gh157		normal			ivltests gold=br_gh157.gold
 br_gh162		normal			ivltests
+br_gh163		CE			ivltests
 br_ml_20150315		normal			ivltests gold=br_ml_20150315.gold
 br_ml_20150321		CE			ivltests
 br_ml_20150606		normal			ivltests
