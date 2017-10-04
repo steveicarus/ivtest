@@ -454,6 +454,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                      br917d: Passed.
                   br943_944: Passed.
                       br985: Passed.
+                     br1025: Passed.
                      br_gh8: Passed.
                    br_gh99c: Passed.
                    br_gh99r: Passed.
@@ -2286,4 +2287,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2284, Passed=2246, Failed=5, Not Implemented=3, Expected Fail=30
+  Total=2285, Passed=2247, Failed=5, Not Implemented=3, Expected Fail=30

@@ -623,6 +623,7 @@ br917c			normal,-g2009,-pallowsigned=1	ivltests
 br917d			normal,-g2009,-pallowsigned=1	ivltests
 br943_944		normal,-g2009,-pallowsigned=1,ivltests/br943_944.vhd	ivltests
 br985			normal,-g2009,-pallowsigned=1,ivltests/br985.vhd	ivltests
+br1025			normal,-g2009,-pallowsigned=1	ivltests
 br_gh8			normal,-pallowsigned=1	ivltests
 br_gh99c		normal,-gverilog-ams,-pallowsigned=1	ivltests
 br_gh99r		normal,-pallowsigned=1	ivltests
