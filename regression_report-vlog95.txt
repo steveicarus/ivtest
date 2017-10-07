@@ -236,6 +236,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                sv_var_init1: Passed - expected fail.
                sv_var_init2: Passed - TE.
                       br936: Passed - CE.
+                   br_gh165: Passed - CE.
            disable_fork_cmd: Passed - CE.
                   enum_next: Passed - CE.
                  enum_test1: Passed - CE.
@@ -2287,4 +2288,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2285, Passed=2247, Failed=5, Not Implemented=3, Expected Fail=30
+  Total=2286, Passed=2248, Failed=5, Not Implemented=3, Expected Fail=30

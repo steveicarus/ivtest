@@ -1863,6 +1863,7 @@ test_mos_strength_reduction: Passed.
                    br_gh129: Passed.
                   br_gh130a: Passed - CE.
                   br_gh130b: Passed - CE.
+                   br_gh165: Passed.
             br_ml_20150315b: Passed - CE.
                   cast_real: Passed.
       cfunc_assign_op_mixed: Passed.
@@ -2287,4 +2288,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2285, Passed=2251, Failed=4, Not Implemented=30, Expected Fail=0
+  Total=2286, Passed=2252, Failed=4, Not Implemented=30, Expected Fail=0
