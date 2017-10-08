@@ -117,6 +117,11 @@ br_gh129		normal,-g2009		ivltests
 br_gh130a		CE,-g2009		ivltests
 br_gh130b		CE,-g2009		ivltests
 br_gh165		normal,-g2009		ivltests gold=br_gh165.gold
+br_gh164a		normal,-g2009		ivltests
+br_gh164b		normal,-g2009		ivltests
+br_gh164c		normal,-g2009		ivltests
+br_gh164d		normal,-g2009		ivltests
+br_gh164e		normal,-g2009		ivltests
 br_ml_20150315b		CE,-g2009		ivltests
 cast_real		normal,-g2005-sv	ivltests
 cfunc_assign_op_mixed	normal,-g2009		ivltests
