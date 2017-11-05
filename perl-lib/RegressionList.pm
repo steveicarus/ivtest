@@ -53,6 +53,13 @@ sub read_regression_list {
 
     while ($line = <REGRESS_LIST>) {
         chomp $line;
+	# recognise a trailing '\' as a line continuation
+	if ($line =~ s/\\$//) {
+	    my $next_line = <REGRESS_LIST>;
+	    $next_line =~ s/^\s+//;
+	    $line .= $next_line;
+	    redo unless eof(REGRESS_LIST);
+	}
         next if ($line =~ /^\s*#/);  # Skip comments.
         next if ($line =~ /^\s*$/);  # Skip blank lines.
 
