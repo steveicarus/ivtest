@@ -362,6 +362,10 @@ sv_union2b		normal,-g2009		ivltests
 sv_union3		normal,-g2009		ivltests
 sv_union3b		normal,-g2009		ivltests
 sv_union4b		normal,-g2009		ivltests
+sv_unit1b		normal,-g2009,-DMACRO1=1,-DMACRO2=2,\
+  ./ivltests/sv_unit1a.v			ivltests gold=sv_unit1b.gold
+sv_unit1c		normal,-g2009,-DMACRO1=1,-DMACRO2=2,-u,\
+  ./ivltests/sv_unit1a.v			ivltests gold=sv_unit1c.gold
 sv_unpacked_port	normal,-g2009		ivltests
 sv_unpacked_port2	normal,-g2009		ivltests
 sv_unpacked_wire	normal,-g2009		ivltests
