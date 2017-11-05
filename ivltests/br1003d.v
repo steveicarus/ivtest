@@ -1,5 +1,4 @@
-timeunit 100ps;
-timeprecision 10ps;
+timeunit 100ps / 10ps;
 
 package testpackage;
   task delay(output [63:0] t);
@@ -11,10 +10,9 @@ package testpackage;
   endtask
 endpackage
 
-timeunit 1ns;
-timeprecision 1ps;
-
 module top();
+
+timeunit 1ns / 1ps;
 
 import testpackage::delay;
 

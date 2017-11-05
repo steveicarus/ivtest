@@ -203,7 +203,8 @@ parpkg_test2		normal,-g2009		ivltests
 parpkg_test3		normal,-g2009		ivltests
 part_sel_port		normal,-g2005-sv	ivltests
 plus_5			normal,-g2009		ivltests
-plus_arg_string		normal,-g2009,+img=test_image.file	ivltests
+plus_arg_string		normal,-g2009,\
+  +img=test_image.file				ivltests
 pr3366114		normal,-g2009		ivltests
 pr3366217a		CE,-g2005-sv		ivltests gold=pr3366217a.gold
 pr3366217b		CE,-g2005-sv		ivltests gold=pr3366217b.gold
@@ -350,10 +351,24 @@ sv_string2		normal,-g2009		ivltests
 sv_string3		normal,-g2009		ivltests
 sv_string4		normal,-g2009		ivltests
 sv_string5		normal,-g2009		ivltests
-sv_timeunit_prec	normal,-g2005-sv	ivltests
+sv_timeunit_prec1	normal,-g2005-sv	ivltests
 sv_timeunit_prec2	normal,-g2009		ivltests
-sv_timeunit_prec_fail	CE,-g2005-sv		ivltests gold=sv_timeunit_prec_fail.gold
-sv_timeunit_prec_fail2	CE,-g2009		ivltests gold=sv_timeunit_prec_fail2.gold
+sv_timeunit_prec3	normal,-g2005-sv,-u,\
+  ./ivltests/sv_timeunit_prec3b.v,\
+  ./ivltests/sv_timeunit_prec3c.v,\
+  ./ivltests/sv_timeunit_prec3d.v		ivltests gold=sv_timeunit_prec3.gold
+sv_timeunit_prec4	normal,-g2009,-u,\
+  ./ivltests/sv_timeunit_prec4b.v,		ivltests gold=sv_timeunit_prec4.gold
+sv_timeunit_prec_fail1	CE,-g2005-sv,-u,\
+  ./ivltests/sv_timeunit_prec_fail1a.v,\
+  ./ivltests/sv_timeunit_prec_fail1b.v,\
+  ./ivltests/sv_timeunit_prec_fail1c.v,\
+  ./ivltests/sv_timeunit_prec_fail1d.v,\
+  ./ivltests/sv_timeunit_prec_fail1e.v,		ivltests gold=sv_timeunit_prec_fail1.gold
+sv_timeunit_prec_fail2	CE,-g2009,-u,\
+  ./ivltests/sv_timeunit_prec_fail2a.v,\
+  ./ivltests/sv_timeunit_prec_fail2b.v,\
+  ./ivltests/sv_timeunit_prec_fail2c.v,		ivltests gold=sv_timeunit_prec_fail2.gold
 sv_typedef_scope	normal,-g2009		ivltests
 sv_union1		normal,-g2009		ivltests
 sv_union1b		normal,-g2009		ivltests

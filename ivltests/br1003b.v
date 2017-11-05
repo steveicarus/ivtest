@@ -1,5 +1,4 @@
-timeunit 100ps;
-timeprecision 10ps;
+timeunit 100ps / 10ps;
 
 task delay(output [63:0] t);
   begin
@@ -9,10 +8,9 @@ task delay(output [63:0] t);
   end
 endtask
 
-timeunit 1ns;
-timeprecision 1ps;
-
 module top();
+
+timeunit 1ns / 1ps;
 
 reg [63:0] t1;
 reg [63:0] t2;
