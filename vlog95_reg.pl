@@ -161,7 +161,7 @@ sub execute_regression {
 
         # Run the translated Verilog code. All compile errors should
         # already be handled. Remove the -S flag if it exists along
-        # with any included VHDL file(s) and any -f arguments. The
+        # with any included source file(s) and any -f arguments. The
 	# -pallowsigned flag and the various generation flags should
 	# also be removed. If we had -pallowsigned=1 then use the
 	# -g2001-noconfig to get signed/unsigned otherwise use -g1995.
@@ -173,6 +173,7 @@ sub execute_regression {
 	}
         $args{$tname} =~ s/-S//;
         $args{$tname} =~ s/\S+\.vhd//g;
+        $args{$tname} =~ s/\S+\.v//g;
         $args{$tname} =~ s/-f\S+//g;
         $args{$tname} =~ s/-pallowsigned=1//g;
         $args{$tname} =~ s/-g2001(-noconfig)?//g;
