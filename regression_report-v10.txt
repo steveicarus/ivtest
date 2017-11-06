@@ -1,6 +1,14 @@
 Running compiler/VVP tests for Icarus Verilog version: 10.
 ----------------------------------------------------------------------------
              func_init_var2: Not Implemented.
+                   resetall: Passed.
+                    br1003b: Passed.
+                    br1003c: Passed.
+         sv_timeunit_prec3b: Not Implemented.
+         sv_timeunit_prec4b: Not Implemented.
+     sv_timeunit_prec_fail1: Passed - CE.
+     sv_timeunit_prec_fail2: Passed - CE.
+                  sv_unit1c: Not Implemented.
                     analog1: Not Implemented.
                     analog2: Not Implemented.
                 ivlh_textio: Not Implemented.
@@ -1526,7 +1534,6 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
           repeat_expr_probe: Passed.
          repl_zero_wid_fail: Passed - CE.
          repl_zero_wid_pass: Passed.
-                   resetall: Passed.
                   resetall2: Passed.
                     resolv1: Passed.
            rise_fall_decay1: Passed.
@@ -1840,8 +1847,6 @@ test_mos_strength_reduction: Passed.
                       br979: Passed.
                      br991b: Passed - CE.
                     br1003a: Passed.
-                    br1003b: Passed.
-                    br1003c: Passed.
                     br1003d: Passed.
                      br1005: Passed - CE.
                      br1025: Passed.
@@ -2095,10 +2100,12 @@ test_mos_strength_reduction: Passed.
                  sv_string3: Passed.
                  sv_string4: Passed.
                  sv_string5: Passed.
-           sv_timeunit_prec: Passed.
+          sv_timeunit_prec1: Passed.
           sv_timeunit_prec2: Passed.
-      sv_timeunit_prec_fail: Passed - CE.
-     sv_timeunit_prec_fail2: Passed - CE.
+         sv_timeunit_prec3a: Passed.
+         sv_timeunit_prec3c: Passed.
+         sv_timeunit_prec3d: Passed.
+         sv_timeunit_prec4a: Passed.
            sv_typedef_scope: Passed.
                   sv_union1: Passed.
                  sv_union1b: Passed.
@@ -2107,6 +2114,7 @@ test_mos_strength_reduction: Passed.
                   sv_union3: Passed.
                  sv_union3b: Passed.
                  sv_union4b: Passed.
+                  sv_unit1b: Passed.
            sv_unpacked_port: Passed.
           sv_unpacked_port2: Passed.
            sv_unpacked_wire: Passed.
@@ -2295,4 +2303,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2293, Passed=2259, Failed=4, Not Implemented=30, Expected Fail=0
+  Total=2301, Passed=2264, Failed=4, Not Implemented=33, Expected Fail=0

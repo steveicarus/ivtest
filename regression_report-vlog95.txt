@@ -2149,8 +2149,12 @@ test_mos_strength_reduction: Passed.
           sv_port_default14: Passed - CE.
           sv_timeunit_prec1: Passed.
           sv_timeunit_prec2: Passed.
-          sv_timeunit_prec3: Passed.
-          sv_timeunit_prec4: Passed.
+         sv_timeunit_prec3a: Passed.
+         sv_timeunit_prec3b: Passed.
+         sv_timeunit_prec3c: Passed.
+         sv_timeunit_prec3d: Passed.
+         sv_timeunit_prec4a: Passed.
+         sv_timeunit_prec4b: Passed.
      sv_timeunit_prec_fail1: Passed - CE.
      sv_timeunit_prec_fail2: Passed - CE.
            sv_typedef_scope: Passed.
@@ -2299,4 +2303,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2297, Passed=2259, Failed=5, Not Implemented=3, Expected Fail=30
+  Total=2301, Passed=2263, Failed=5, Not Implemented=3, Expected Fail=30

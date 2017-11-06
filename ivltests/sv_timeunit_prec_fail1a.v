@@ -6,7 +6,7 @@ timeunit 100us;
 timeprecision 1us;
 
 // Repeated declarations must match the initial declarations.
-timeunit 100ns;
+timeunit 1ms;
 timeprecision 1ns;
 
 // A local time unit is OK, but a repeat must match.

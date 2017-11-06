@@ -353,12 +353,12 @@ sv_string4		normal,-g2009		ivltests
 sv_string5		normal,-g2009		ivltests
 sv_timeunit_prec1	normal,-g2005-sv	ivltests
 sv_timeunit_prec2	normal,-g2009		ivltests
-sv_timeunit_prec3	normal,-g2005-sv,-u,\
-  ./ivltests/sv_timeunit_prec3b.v,\
-  ./ivltests/sv_timeunit_prec3c.v,\
-  ./ivltests/sv_timeunit_prec3d.v		ivltests gold=sv_timeunit_prec3.gold
-sv_timeunit_prec4	normal,-g2009,-u,\
-  ./ivltests/sv_timeunit_prec4b.v,		ivltests gold=sv_timeunit_prec4.gold
+sv_timeunit_prec3a	normal,-g2005-sv	ivltests gold=sv_timeunit_prec3a.gold
+sv_timeunit_prec3b	normal,-g2005-sv	ivltests gold=sv_timeunit_prec3b.gold
+sv_timeunit_prec3c	normal,-g2005-sv	ivltests gold=sv_timeunit_prec3c.gold
+sv_timeunit_prec3d	normal,-g2005-sv	ivltests gold=sv_timeunit_prec3d.gold
+sv_timeunit_prec4a	normal,-g2009		ivltests gold=sv_timeunit_prec4a.gold
+sv_timeunit_prec4b	normal,-g2009		ivltests gold=sv_timeunit_prec4b.gold
 sv_timeunit_prec_fail1	CE,-g2005-sv,-u,\
   ./ivltests/sv_timeunit_prec_fail1a.v,\
   ./ivltests/sv_timeunit_prec_fail1b.v,\

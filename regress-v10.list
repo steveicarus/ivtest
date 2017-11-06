@@ -69,6 +69,27 @@
 # We can't mark it as EF, because it causes a runtime assertion failure.
 func_init_var2		NI
 
+# The timescale parsing rework hasn't been backported to v10.
+# sv_timeunit_prec3b and sv_timeunit_prec4b fail at the compilation stage,
+# so are marked as NI to distinguish them from expected errors.
+resetall		normal,-Wtimescale	ivltests gold=resetall-v10.gold
+br1003b			normal,-g2009		ivltests gold=br1003b-v10.gold
+br1003c			normal,-g2009		ivltests gold=br1003c-v10.gold
+sv_timeunit_prec3b	NI
+sv_timeunit_prec4b	NI
+sv_timeunit_prec_fail1	CE,-g2005-sv,\
+  ./ivltests/sv_timeunit_prec_fail1a.v,\
+  ./ivltests/sv_timeunit_prec_fail1b.v,\
+  ./ivltests/sv_timeunit_prec_fail1c.v,\
+  ./ivltests/sv_timeunit_prec_fail1d.v,\
+  ./ivltests/sv_timeunit_prec_fail1e.v,		ivltests gold=sv_timeunit_prec_fail1-v10.gold
+sv_timeunit_prec_fail2	CE,-g2009,\
+  ./ivltests/sv_timeunit_prec_fail2a.v,\
+  ./ivltests/sv_timeunit_prec_fail2b.v,\
+  ./ivltests/sv_timeunit_prec_fail2c.v,		ivltests gold=sv_timeunit_prec_fail2-v10.gold
+# nor has the support for separate compilation units.
+sv_unit1c		NI
+
 # V10 does not support analog functionality
 analog1			NI
 analog2			NI

@@ -1,5 +1,5 @@
 /*
- * Now check declarations and repeat declarations in nested modules.
+ * Check declarations and repeat declarations in nested modules.
  */
 timeunit 100us;
 timeprecision 1us;
@@ -55,8 +55,6 @@ endmodule
 module check2;
 
 initial begin
-  #2;
-  $display("");
   $printtimescale(check_tu_nest);
   $printtimescale(check_tp_nest);
   $printtimescale(check_tup_nest);

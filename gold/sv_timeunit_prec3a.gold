@@ -17,8 +17,12 @@ Time scale of (check_100fs) is 100fs / 100fs
 Time scale of (check_10fs) is 10fs / 10fs
 Time scale of (check_1fs) is 1fs / 1fs
 
+Time scale of (check_tu) is 10us / 1us
+Time scale of (check_tp) is 100us / 10us
 Time scale of (check_tup) is 10us / 10us
-Time scale of (check_tup_d) is 10us / 10us
+Time scale of (check_tpu) is 10us / 10us
 
-Time scale of (check_tup_nest) is 10us / 10us
-Time scale of (check_tup_nest.nested) is 100us / 1us
+Time scale of (check_tu_d) is 10us / 1us
+Time scale of (check_tp_d) is 100us / 10us
+Time scale of (check_tup_d) is 10us / 10us
+Time scale of (check_tpu_d) is 10us / 10us

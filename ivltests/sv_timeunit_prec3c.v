@@ -1,6 +1,5 @@
 // A global timeprecision and local time units.
 
-`resetall
 timeprecision 10ps;
 
 module gtp_ltu1;
@@ -15,8 +14,6 @@ endmodule
 module check3;
 
 initial begin
-  #3;
-  $display("");
   $printtimescale(gtp_ltu1);
   $printtimescale(gtp_ltu2);
 end

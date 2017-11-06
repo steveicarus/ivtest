@@ -5,7 +5,7 @@
 timeunit 100us/1us;
 
 // Repeated declarations must match the initial declarations.
-timeunit 100ns/1ns;
+timeunit 1ms/1ns;
 
 // A local time unit/precision is OK, but a repeat must match.
 module check_tup_d_e;

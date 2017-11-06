@@ -145,7 +145,6 @@ endmodule
 module check1;
 
 initial begin
-  #1;
   $printtimescale(check_100s);
   $printtimescale(check_10s);
   $printtimescale(check_1s);
