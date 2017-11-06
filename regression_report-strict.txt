@@ -2038,9 +2038,11 @@ test_mos_strength_reduction: Passed.
                  sv_string3: Passed.
                  sv_string4: Passed.
                  sv_string5: Passed.
-           sv_timeunit_prec: Passed.
+          sv_timeunit_prec1: Passed.
           sv_timeunit_prec2: Passed.
-      sv_timeunit_prec_fail: Passed - CE.
+          sv_timeunit_prec3: Passed.
+          sv_timeunit_prec4: Passed.
+     sv_timeunit_prec_fail1: Passed - CE.
      sv_timeunit_prec_fail2: Passed - CE.
            sv_typedef_scope: Passed.
                   sv_union1: Passed.
@@ -2050,6 +2052,8 @@ test_mos_strength_reduction: Passed.
                   sv_union3: Passed.
                  sv_union3b: Passed.
                  sv_union4b: Passed.
+                  sv_unit1b: Passed.
+                  sv_unit1c: Passed.
            sv_unpacked_port: Passed.
           sv_unpacked_port2: Passed.
            sv_unpacked_wire: Passed.
@@ -2292,4 +2296,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2290, Passed=2283, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2294, Passed=2287, Failed=7, Not Implemented=0, Expected Fail=0
