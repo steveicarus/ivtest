@@ -149,6 +149,7 @@ v0.9:br_gh73b		 NI force.c		br_gh73b.gold
 
 # V10 exceptions
 v10:br_gh117		 NI br_gh117.c		br_gh117.gold
+v10:br_gh169b	normal,-g2009 br_gh169.c	br_gh169b-v10.gold
 
 #==========
 # The default case.
@@ -209,6 +210,8 @@ br_gh73a	 normal	force.c		br_gh73a.gold
 br_gh73b	 normal	force.c		br_gh73b.gold
 ro_synch	 normal ro_synch.c	ro_synch.gold
 br_gh117         normal br_gh117.c	br_gh117.gold
+br_gh169a        normal br_gh169.c	br_gh169a.gold
+br_gh169b        normal,-g2009 br_gh169.c	br_gh169b.gold
 
 # Add new tests here. If the test needs a compile option or a
 # different log file to run with an older versions or if it uses
