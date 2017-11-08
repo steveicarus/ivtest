@@ -81,6 +81,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                   pr1528093: Passed - CE.
                      br_gh9: Passed - CE.
               ca_pow_signed: Passed - CE.
+             br_mw_20171108: Passed - CE.
                ca_pow_synth: Passed - CE.
             ca_pow_unsigned: Passed - CE.
                  constfunc3: Passed - CE.
@@ -1168,6 +1169,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                 lh_varindx5: Passed.
                    long_div: Passed.
                      macro2: Passed.
+         macro_redefinition: Passed.
+          macro_replacement: Passed.
                      macsub: Passed.
                      mangle: Passed.
                    mangle_1: Passed.
@@ -2303,4 +2306,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2301, Passed=2263, Failed=5, Not Implemented=3, Expected Fail=30
+  Total=2304, Passed=2266, Failed=5, Not Implemented=3, Expected Fail=30

@@ -90,6 +90,10 @@ sv_timeunit_prec_fail2	CE,-g2009,\
 # nor has the support for separate compilation units.
 sv_unit1c		NI
 
+# The macro redefinition warnings haven't been backported to v10
+macro_redefinition	NI
+macro_replacement	NI
+
 # V10 does not support analog functionality
 analog1			NI
 analog2			NI

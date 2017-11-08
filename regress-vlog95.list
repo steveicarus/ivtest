@@ -152,6 +152,7 @@ pr1528093		CE			ivltests
 # IEEE 1364-1995 does not support the general power operator.
 br_gh9			CE			ivltests
 ca_pow_signed		CE,-pallowsigned=1	ivltests
+br_mw_20171108		CE,-pallowsigned=1	ivltests
 ca_pow_synth		CE			ivltests
 ca_pow_unsigned		CE			ivltests
 constfunc3		CE			ivltests
