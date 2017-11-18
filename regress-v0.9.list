@@ -391,6 +391,12 @@ full_case2		NI
 # v0.9 doesn't support the += operator
 for_loop_synth2		NI
 
+# v0.9 does not support the ==? or !=? operators
+wild_cmp_const		NI
+wild_cmp_err		NI
+wild_cmp_net		NI
+wild_cmp_var		NI
+
 # v0.9 doesn't support $fatal
 fatal_et_al		NI
 

@@ -261,6 +261,9 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                  pr3390385d: Passed - CE.
                   pr3462145: Passed - CE.
                   wait_fork: Passed - CE.
+               wild_cmp_err: Passed - CE.
+               wild_cmp_net: Passed - CE.
+               wild_cmp_var: Passed - CE.
                   ibit_test: Passed - expected fail.
                  ibyte_test: Passed - expected fail.
                   iint_test: Passed - expected fail.
@@ -2175,6 +2178,7 @@ test_mos_strength_reduction: Passed.
            task_init_assign: Passed.
                 task_scope2: Passed.
        undef_lval_select_SV: Passed.
+             wild_cmp_const: Passed.
                       br986: Passed.
                       br987: Passed.
                  ivlh_event: Passed.
@@ -2306,4 +2310,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2304, Passed=2266, Failed=5, Not Implemented=3, Expected Fail=30
+  Total=2308, Passed=2270, Failed=5, Not Implemented=3, Expected Fail=30

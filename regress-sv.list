@@ -409,3 +409,7 @@ ushortint_test		normal,-g2005-sv	ivltests
 vvp_recv_vec4_pv	normal,-g2005-sv	ivltests
 wait_fork		normal,-g2009		ivltests
 sf1289			normal,-g2012		ivltests
+wild_cmp_const		normal,-g2009		ivltests
+wild_cmp_net		normal,-g2009		ivltests
+wild_cmp_var		normal,-g2009		ivltests
+wild_cmp_err		CE,-g2009		ivltests gold=wild_cmp_err.gold

@@ -2089,6 +2089,10 @@ test_mos_strength_reduction: Passed.
            vvp_recv_vec4_pv: Passed.
                   wait_fork: Passed.
                      sf1289: Passed.
+             wild_cmp_const: Passed.
+               wild_cmp_net: Passed.
+               wild_cmp_var: Passed.
+               wild_cmp_err: Passed - CE.
                       br942: Passed.
                   br943_944: Passed.
                       br985: Passed.
@@ -2303,4 +2307,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2301, Passed=2294, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2305, Passed=2298, Failed=7, Not Implemented=0, Expected Fail=0

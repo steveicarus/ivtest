@@ -128,6 +128,10 @@ vhdl_while		NI
 # V10 does not support this SystemVerilog functionality
 sformatf		NI
 vvp_recv_vec4_pv	CE,-g2009
+wild_cmp_const		NI
+wild_cmp_err		NI
+wild_cmp_net		NI
+wild_cmp_var		NI
 
 # V10 doesn't support this by default
 br1000			normal,-gshared-loop-index	ivltests
