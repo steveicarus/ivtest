@@ -184,7 +184,7 @@ module top;
       $display("Failed: parameter 3'b100 !=? 2'b00 returned 1'b%b not 1'b1", wneqf);
       pass = 1'b0;
     end
-    
+
     if (pass) $display("PASSED");
   end
 endmodule
