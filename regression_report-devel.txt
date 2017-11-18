@@ -2096,6 +2096,7 @@ test_mos_strength_reduction: Passed.
                wild_cmp_net: Passed.
                wild_cmp_var: Passed.
                wild_cmp_err: Passed - CE.
+              wild_cmp_err2: Passed - CE.
                       br942: Passed.
                   br943_944: Passed.
                       br985: Passed.
@@ -2310,4 +2311,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2308, Passed=2301, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2309, Passed=2302, Failed=7, Not Implemented=0, Expected Fail=0

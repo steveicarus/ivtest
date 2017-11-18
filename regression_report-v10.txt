@@ -42,6 +42,7 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
            vvp_recv_vec4_pv: Passed - CE.
              wild_cmp_const: Not Implemented.
                wild_cmp_err: Not Implemented.
+              wild_cmp_err2: Not Implemented.
                wild_cmp_net: Not Implemented.
                wild_cmp_var: Not Implemented.
                      br1000: Passed.
@@ -2310,4 +2311,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2308, Passed=2265, Failed=4, Not Implemented=39, Expected Fail=0
+  Total=2309, Passed=2265, Failed=4, Not Implemented=40, Expected Fail=0
