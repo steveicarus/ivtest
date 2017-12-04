@@ -38,6 +38,8 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
            vhdl_unary_minus: Not Implemented.
                   vhdl_wait: Not Implemented.
                  vhdl_while: Not Implemented.
+                always_comb: Not Implemented.
+           always_comb_trig: Not Implemented.
                    sformatf: Not Implemented.
            vvp_recv_vec4_pv: Passed - CE.
              wild_cmp_const: Not Implemented.
@@ -2311,4 +2313,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2309, Passed=2265, Failed=4, Not Implemented=40, Expected Fail=0
+  Total=2311, Passed=2265, Failed=4, Not Implemented=42, Expected Fail=0

@@ -2,7 +2,7 @@
 # supports SystemVerilog (1800-2012).
 
 #
-# Copyright (c) 1999-2014 Guy Hutchison (ghutchis@pacbell.net)
+# Copyright (c) 1999-2017 Guy Hutchison (ghutchis@pacbell.net)
 #
 #    This source code is free software; you can redistribute it
 #    and/or modify it in source code form under the terms of the GNU
@@ -64,6 +64,8 @@
 # gold or diff commands.
 #
 
+always_comb		normal,-g2005-sv	ivltests
+always_comb_trig	normal,-g2005-sv	ivltests
 array_size		normal,-g2005-sv	ivltests # test [size] arrays
 array_string		normal,-g2009		ivltests
 array_unpacked_sysfunct	normal,-g2005-sv	ivltests
