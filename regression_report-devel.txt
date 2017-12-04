@@ -1760,6 +1760,9 @@ test_mos_strength_reduction: Passed.
                       wreal: Passed.
                 always_comb: Passed.
            always_comb_trig: Passed.
+                  always_ff: Passed.
+               always_latch: Passed.
+          always_latch_trig: Passed.
                  array_size: Passed.
                array_string: Passed.
     array_unpacked_sysfunct: Passed.
@@ -2313,4 +2316,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2311, Passed=2304, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2314, Passed=2307, Failed=7, Not Implemented=0, Expected Fail=0
