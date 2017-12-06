@@ -1831,6 +1831,8 @@ test_mos_strength_reduction: Passed.
                   vams_abs1: Passed.
                   vams_abs2: Passed.
                       wreal: Passed.
+                   always4A: Passed - CE.
+                   always4B: Passed - CE.
                  array_size: Passed.
                array_string: Passed.
     array_unpacked_sysfunct: Passed.
@@ -2316,4 +2318,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2314, Passed=2265, Failed=4, Not Implemented=45, Expected Fail=0
+  Total=2316, Passed=2267, Failed=4, Not Implemented=45, Expected Fail=0

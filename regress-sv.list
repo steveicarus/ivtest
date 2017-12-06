@@ -64,6 +64,8 @@
 # gold or diff commands.
 #
 
+always4A		CE,-g2005-sv		ivltests
+always4B		CE,-g2005-sv		ivltests
 always_comb		normal,-g2005-sv	ivltests
 always_comb_trig	normal,-g2005-sv	ivltests
 always_ff		normal,-g2005-sv	ivltests
