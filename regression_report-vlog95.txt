@@ -2061,12 +2061,15 @@ test_mos_strength_reduction: Passed.
                value_range3: Passed - CE.
                 always_comb: Passed.
            always_comb_fail: Passed - CE.
+          always_comb_fail3: Passed - CE.
            always_comb_trig: Passed.
                   always_ff: Passed.
              always_ff_fail: Passed - CE.
             always_ff_fail2: Passed - CE.
+            always_ff_fail3: Passed - CE.
                always_latch: Passed.
           always_latch_fail: Passed - CE.
+         always_latch_fail3: Passed - CE.
           always_latch_trig: Passed.
                  array_size: Passed.
            assign_op_concat: Passed.
@@ -2322,4 +2325,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2320, Passed=2282, Failed=5, Not Implemented=3, Expected Fail=30
+  Total=2323, Passed=2285, Failed=5, Not Implemented=3, Expected Fail=30

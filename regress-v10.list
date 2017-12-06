@@ -128,12 +128,15 @@ vhdl_while		NI
 # V10 does not support this SystemVerilog functionality
 always_comb		NI
 always_comb_fail	NI
+always_comb_fail3	NI
 always_comb_trig	NI
 always_ff		NI
 always_ff_fail		NI
 always_ff_fail2		NI
+always_ff_fail3		NI
 always_latch		NI
 always_latch_fail	NI
+always_latch_fail3	NI
 always_latch_trig	NI
 sformatf		NI
 vvp_recv_vec4_pv	CE,-g2009

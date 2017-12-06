@@ -1762,12 +1762,15 @@ test_mos_strength_reduction: Passed.
                    always4B: Passed - CE.
                 always_comb: Passed.
            always_comb_fail: Passed - CE.
+          always_comb_fail3: Passed - CE.
            always_comb_trig: Passed.
                   always_ff: Passed.
              always_ff_fail: Passed - CE.
             always_ff_fail2: Passed - CE.
+            always_ff_fail3: Passed - CE.
                always_latch: Passed.
           always_latch_fail: Passed - CE.
+         always_latch_fail3: Passed - CE.
           always_latch_trig: Passed.
                  array_size: Passed.
                array_string: Passed.
@@ -2322,4 +2325,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2320, Passed=2313, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2323, Passed=2316, Failed=7, Not Implemented=0, Expected Fail=0

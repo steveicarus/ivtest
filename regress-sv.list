@@ -68,12 +68,15 @@ always4A		CE,-g2005-sv		ivltests
 always4B		CE,-g2005-sv		ivltests
 always_comb		normal,-g2005-sv	ivltests
 always_comb_fail	CE,-g2005-sv		ivltests
+always_comb_fail3	CE,-g2005-sv		ivltests
 always_comb_trig	normal,-g2005-sv	ivltests
 always_ff		normal,-g2005-sv	ivltests
 always_ff_fail		CE,-g2005-sv		ivltests
 always_ff_fail2		CE,-g2005-sv		ivltests
+always_ff_fail3		CE,-g2005-sv		ivltests
 always_latch		normal,-g2005-sv	ivltests
 always_latch_fail	CE,-g2005-sv		ivltests
+always_latch_fail3	CE,-g2005-sv		ivltests
 always_latch_trig	normal,-g2005-sv	ivltests
 array_size		normal,-g2005-sv	ivltests # test [size] arrays
 array_string		normal,-g2009		ivltests
