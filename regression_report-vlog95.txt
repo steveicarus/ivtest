@@ -169,6 +169,9 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
             vhdl_string_lim: Passed - CE.
           vhdl_textio_write: Passed - CE.
            vhdl_textio_read: Passed - CE.
+           always_comb_warn: Passed - CE.
+             always_ff_warn: Passed - CE.
+          always_latch_warn: Passed - CE.
                       br962: Passed - CE.
                       br963: Passed - CE.
                   br_gh164a: Passed - CE.
@@ -2062,14 +2065,17 @@ test_mos_strength_reduction: Passed.
                 always_comb: Passed.
            always_comb_fail: Passed - CE.
           always_comb_fail3: Passed - CE.
+          always_comb_fail4: Passed - CE.
            always_comb_trig: Passed.
                   always_ff: Passed.
              always_ff_fail: Passed - CE.
             always_ff_fail2: Passed - CE.
             always_ff_fail3: Passed - CE.
+            always_ff_fail4: Passed - CE.
                always_latch: Passed.
           always_latch_fail: Passed - CE.
          always_latch_fail3: Passed - CE.
+         always_latch_fail4: Passed - CE.
           always_latch_trig: Passed.
                  array_size: Passed.
            assign_op_concat: Passed.
@@ -2325,4 +2331,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2323, Passed=2285, Failed=5, Not Implemented=3, Expected Fail=30
+  Total=2329, Passed=2291, Failed=5, Not Implemented=3, Expected Fail=30

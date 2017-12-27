@@ -69,15 +69,21 @@ always4B		CE,-g2005-sv		ivltests
 always_comb		normal,-g2005-sv	ivltests
 always_comb_fail	CE,-g2005-sv		ivltests
 always_comb_fail3	CE,-g2005-sv		ivltests
+always_comb_fail4	CE,-g2005-sv		ivltests
 always_comb_trig	normal,-g2005-sv	ivltests
+always_comb_warn	normal,-g2005-sv	ivltests gold=always_comb_warn.gold
 always_ff		normal,-g2005-sv	ivltests
 always_ff_fail		CE,-g2005-sv		ivltests
 always_ff_fail2		CE,-g2005-sv		ivltests
 always_ff_fail3		CE,-g2005-sv		ivltests
+always_ff_fail4		CE,-g2005-sv		ivltests
+always_ff_warn		normal,-g2005-sv	ivltests gold=always_ff_warn.gold
 always_latch		normal,-g2005-sv	ivltests
 always_latch_fail	CE,-g2005-sv		ivltests
 always_latch_fail3	CE,-g2005-sv		ivltests
+always_latch_fail4	CE,-g2005-sv		ivltests
 always_latch_trig	normal,-g2005-sv	ivltests
+always_latch_warn	normal,-g2005-sv	ivltests gold=always_latch_warn.gold
 array_size		normal,-g2005-sv	ivltests # test [size] arrays
 array_string		normal,-g2009		ivltests
 array_unpacked_sysfunct	normal,-g2005-sv	ivltests

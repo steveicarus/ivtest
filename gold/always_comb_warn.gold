@@ -1,0 +1,38 @@
+./ivltests/always_comb_warn.v:17: warning: An event (int2) cannot be synthesized in an always_comb process.
+./ivltests/always_comb_warn.v:17: warning: An event (int1) cannot be synthesized in an always_comb process.
+./ivltests/always_comb_warn.v:18: warning: A non-integral variable (intrl) cannot be synthesized in an always_comb process.
+./ivltests/always_comb_warn.v:19: warning: A non-blocking assignment should not be used in an always_comb process.
+./ivltests/always_comb_warn.v:20: warning: An event trigger statement cannot be synthesized in an always_comb process.
+./ivltests/always_comb_warn.v:21: warning: Assinging to a non-integral variable (rl) cannot be synthesized in an always_comb process.
+./ivltests/always_comb_warn.v:22: warning: A non-blocking assignment should not be used in an always_comb process.
+./ivltests/always_comb_warn.v:22: warning: Assinging to a non-integral variable (rl) cannot be synthesized in an always_comb process.
+./ivltests/always_comb_warn.v:23: warning: Assinging to a non-integral variable (ar) cannot be synthesized in an always_comb process.
+./ivltests/always_comb_warn.v:24: warning: A for statement must have a constant initial value to be synthesized in an always_comb process.
+./ivltests/always_comb_warn.v:24: warning: A for statement must compare against a constant value to be synthesized in an always_comb process.
+./ivltests/always_comb_warn.v:24: warning: A for statement must have a constant step value to be synthesized in an always_comb process.
+./ivltests/always_comb_warn.v:25: warning: A for statement must use the index (idx) in the condition expression to be synthesized in an always_comb process.
+./ivltests/always_comb_warn.v:25: warning: A for statement must use the index (idx) in the step expression to be synthesized in an always_comb process.
+./ivltests/always_comb_warn.v:26: warning: A for statement step must be an assignment to the index variable (idx) to be synthesized in an always_comb process.
+./ivltests/always_comb_warn.v:27: warning: A for statement step must be a simple assignment statement to be synthesized in an always_comb process.
+./ivltests/always_comb_warn.v:28: warning: A for statement step does not support operator 'l' it must be +/- to be synthesized in an always_comb process.
+./ivltests/always_comb_warn.v:29: warning: A for statement step must be a simple binary +/- to be synthesized in an always_comb process.
+./ivltests/always_comb_warn.v:34: warning: A procedural assign statement cannot be synthesized in an always_comb process.
+./ivltests/always_comb_warn.v:35: warning: A procedural deassign statement cannot be synthesized in an always_comb process.
+./ivltests/always_comb_warn.v:36: warning: A do/while statement cannot be synthesized in an always_comb process.
+./ivltests/always_comb_warn.v:38: warning: A force statement cannot be synthesized in an always_comb process.
+./ivltests/always_comb_warn.v:39: warning: A release statement cannot be synthesized in an always_comb process.
+./ivltests/always_comb_warn.v:40: warning: A while statement cannot be synthesized in an always_comb process.
+./ivltests/always_comb_warn.v:44: warning: A repeat statement cannot be synthesized in an always_comb process.
+./ivltests/always_comb_warn.v:45: warning: A disable statement can only be synthesized when disabling an enclosing block in an always_comb process.
+./ivltests/always_comb_warn.v:46: warning: A forever statement cannot be synthesized in an always_comb process.
+For: 0
+array size: 2
+array size: 0
+auto task
+do/while
+while
+repeat
+repeat
+forever
+Expect compile warnings!
+PASSED

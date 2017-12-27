@@ -3,7 +3,7 @@ module top;
   event foo;
 
   always_comb begin
-    @foo q <= d;
+    @foo q = d;
   end
 
   initial $display("Expected compile failure!");
