@@ -11,7 +11,10 @@ module top;
   int done = 0;
 
   task a_task;
-    $display("auto task");
+    real trl;
+    event tevt;
+    reg tvr;
+    $display("user task");
   endtask
 
   always_ff @(posedge clk)  begin: blk_name

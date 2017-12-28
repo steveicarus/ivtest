@@ -10,7 +10,10 @@ module top;
   int done = 0;
 
   task a_task;
-    $display("auto task");
+    real trl;
+    event tevt;
+    reg tvr;
+    $display("user task");
   endtask
 
   always_comb begin: blk_name
