@@ -10,7 +10,7 @@ module top;
   int step = 1;
   int done = 0;
 
-  task automatic a_task;
+  task a_task;
     $display("auto task");
   endtask
 
