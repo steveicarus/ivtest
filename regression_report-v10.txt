@@ -9,6 +9,9 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
      sv_timeunit_prec_fail1: Passed - CE.
      sv_timeunit_prec_fail2: Passed - CE.
                   sv_unit1c: Not Implemented.
+                  sv_unit2b: Not Implemented.
+                  sv_unit3b: Not Implemented.
+                  sv_unit4b: Not Implemented.
          macro_redefinition: Not Implemented.
           macro_replacement: Not Implemented.
                     analog1: Not Implemented.
@@ -2331,4 +2334,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2329, Passed=2267, Failed=4, Not Implemented=58, Expected Fail=0
+  Total=2332, Passed=2267, Failed=4, Not Implemented=61, Expected Fail=0

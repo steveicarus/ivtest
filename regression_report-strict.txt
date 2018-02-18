@@ -2081,6 +2081,9 @@ test_mos_strength_reduction: Passed.
                  sv_union4b: Passed.
                   sv_unit1b: Passed.
                   sv_unit1c: Passed.
+                  sv_unit2b: Passed.
+                  sv_unit3b: Passed.
+                  sv_unit4b: Passed.
            sv_unpacked_port: Passed.
           sv_unpacked_port2: Passed.
            sv_unpacked_wire: Passed.
@@ -2328,4 +2331,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2326, Passed=2319, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2329, Passed=2322, Failed=7, Not Implemented=0, Expected Fail=0

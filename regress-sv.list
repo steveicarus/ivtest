@@ -401,6 +401,12 @@ sv_unit1b		normal,-g2009,-DMACRO1=1,-DMACRO2=2,\
   ./ivltests/sv_unit1a.v			ivltests gold=sv_unit1b.gold
 sv_unit1c		normal,-g2009,-DMACRO1=1,-DMACRO2=2,-u,\
   ./ivltests/sv_unit1a.v			ivltests gold=sv_unit1c.gold
+sv_unit2b		normal,-g2009,-u,\
+  ./ivltests/sv_unit2a.v			ivltests gold=sv_unit2b.gold
+sv_unit3b		normal,-g2009,-u,\
+  ./ivltests/sv_unit3a.v			ivltests gold=sv_unit3b.gold
+sv_unit4b		normal,-g2009,-u,\
+  ./ivltests/sv_unit4a.v			ivltests gold=sv_unit3b.gold
 sv_unpacked_port	normal,-g2009		ivltests
 sv_unpacked_port2	normal,-g2009		ivltests
 sv_unpacked_wire	normal,-g2009		ivltests

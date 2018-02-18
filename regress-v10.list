@@ -89,6 +89,9 @@ sv_timeunit_prec_fail2	CE,-g2009,\
   ./ivltests/sv_timeunit_prec_fail2c.v,		ivltests gold=sv_timeunit_prec_fail2-v10.gold
 # nor has the support for separate compilation units.
 sv_unit1c		NI
+sv_unit2b		NI
+sv_unit3b		NI
+sv_unit4b		NI
 
 # The macro redefinition warnings haven't been backported to v10
 macro_redefinition	NI

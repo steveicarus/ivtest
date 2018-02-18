@@ -241,6 +241,9 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
            sv_port_default8: Passed - CE.
            sv_port_default9: Passed - CE.
               sv_root_class: Passed - CE.
+                  sv_unit2b: Passed - CE.
+                  sv_unit3b: Passed - CE.
+                  sv_unit4b: Passed - CE.
                   sv_uwire1: Passed - TE.
                   sv_uwire2: Passed - TE.
            vvp_recv_vec4_pv: Passed - TE.
@@ -2331,4 +2334,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2329, Passed=2291, Failed=5, Not Implemented=3, Expected Fail=30
+  Total=2332, Passed=2294, Failed=5, Not Implemented=3, Expected Fail=30
