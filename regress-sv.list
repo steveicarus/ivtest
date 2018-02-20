@@ -118,6 +118,8 @@ br1003c			normal,-g2009		ivltests gold=br1003c.gold
 br1003d			normal,-g2009		ivltests gold=br1003d.gold
 br1005			CE,-g2009		ivltests gold=br1005.gold
 br1025			normal,-g2009		ivltests
+br1027b			normal,-g2009		ivltests gold=br1027b.gold
+br1027d			normal,-g2009		ivltests gold=br1027d.gold
 br_gh4			normal,-g2009		ivltests
 br_gh4a			normal,-g2009		ivltests
 br_gh72a		normal,-g2009		ivltests gold=br_gh72a.gold
