@@ -901,6 +901,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                      br1027: Passed.
                     br1027a: Passed - CE.
                     br1027c: Passed - CE.
+                    br1027e: Passed - CE.
                      br_gh6: Passed.
                      br_gh7: Passed.
                     br_gh11: Passed - CO.
@@ -1834,6 +1835,9 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                     rnpmos2: Passed.
                         rop: Passed.
                   rptconcat: Passed.
+                      rtran: Passed.
+                   rtranif0: Passed.
+                   rtranif1: Passed.
                       scanf: Passed.
                      scanf2: Passed.
                      scanf3: Passed.
@@ -1972,7 +1976,10 @@ test_mos_strength_reduction: Passed.
                  timescale1: Passed.
                  timescale2: Passed.
                  timescale3: Passed - CE.
+                       tran: Passed.
+                    tranif0: Passed.
                     tranif1: Passed.
+                tran-keeper: Passed.
                        tri0: Passed.
                       tri0b: Passed.
                        tri1: Passed.
@@ -2097,6 +2104,7 @@ test_mos_strength_reduction: Passed.
                      br1005: Passed - CE.
                     br1027b: Passed.
                     br1027d: Passed.
+                    br1027f: Passed.
                     br_gh4a: Passed.
                    br_gh72a: Passed.
                    br_gh72b: Passed.
@@ -2339,4 +2347,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2337, Passed=2299, Failed=5, Not Implemented=3, Expected Fail=30
+  Total=2345, Passed=2307, Failed=5, Not Implemented=3, Expected Fail=30

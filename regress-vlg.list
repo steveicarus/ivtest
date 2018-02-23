@@ -1403,6 +1403,9 @@ rnpmos			normal			ivltests
 rnpmos2			normal			ivltests
 rop			normal			ivltests
 rptconcat		normal			ivltests # Repeat concatenation operation.
+rtran			normal			ivltests gold=rtran.gold
+rtranif0		normal			ivltests gold=rtranif0.gold
+rtranif1		normal			ivltests gold=rtranif1.gold
 scan-invalid		normal			ivltests gold=scan-invalid.gold
 scanf			normal			ivltests
 scanf2			normal			ivltests
@@ -1567,7 +1570,10 @@ timeform2		normal			ivltests gold=timeform2.gold
 timescale1		normal			ivltests
 timescale2		normal			ivltests
 timescale3		CE			ivltests
-tranif1			normal			ivltests
+tran			normal			ivltests gold=tran.gold
+tranif0 		normal			ivltests gold=tranif0.gold
+tranif1 		normal			ivltests gold=tranif1.gold
+tran-keeper		normal			ivltests
 tri0			normal			ivltests
 tri0b			normal			ivltests
 tri1			normal			ivltests

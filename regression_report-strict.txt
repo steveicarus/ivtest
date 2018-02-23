@@ -324,6 +324,7 @@ Running compiler/VVP tests for Icarus Verilog version: 11 (strict).
                      br1027: Passed.
                     br1027a: Passed - CE.
                     br1027c: Passed - CE.
+                    br1027e: Passed - CE.
                      br_gh6: Passed.
                      br_gh7: Passed.
                      br_gh8: Passed.
@@ -1484,6 +1485,9 @@ Running compiler/VVP tests for Icarus Verilog version: 11 (strict).
                     rnpmos2: Passed.
                         rop: Passed.
                   rptconcat: Passed.
+                      rtran: Passed.
+                   rtranif0: Passed.
+                   rtranif1: Passed.
                scan-invalid: Passed.
                       scanf: Passed.
                      scanf2: Passed.
@@ -1648,7 +1652,10 @@ test_mos_strength_reduction: Passed.
                  timescale1: Passed.
                  timescale2: Passed.
                  timescale3: Passed - CE.
+                       tran: Passed.
+                    tranif0: Passed.
                     tranif1: Passed.
+                tran-keeper: Passed.
                        tri0: Passed.
                       tri0b: Passed.
                        tri1: Passed.
@@ -1814,6 +1821,7 @@ test_mos_strength_reduction: Passed.
                      br1025: Passed.
                     br1027b: Passed.
                     br1027d: Passed.
+                    br1027f: Passed.
                      br_gh4: Passed.
                     br_gh4a: Passed.
                    br_gh72a: Passed.
@@ -2336,4 +2344,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2334, Passed=2327, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2342, Passed=2335, Failed=7, Not Implemented=0, Expected Fail=0

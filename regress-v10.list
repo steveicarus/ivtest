@@ -155,6 +155,11 @@ wild_cmp_err2		NI
 wild_cmp_net		NI
 wild_cmp_var		NI
 
+# V10 doesn't support rtran switches
+rtran			NI
+rtranif0		NI
+rtranif1		NI
+
 # V10 doesn't support this by default
 br1000			normal,-gshared-loop-index	ivltests
 

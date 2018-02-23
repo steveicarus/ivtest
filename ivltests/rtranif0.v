@@ -6,12 +6,12 @@ wire a1, a2, a3, a4, a5, a6, a7;
 
 assign (supply1, supply0) a1 = a;
 
-tranif1 t1(a1, a2, en);
-tranif1 t2(a2, a3, en);
-tranif1 t3(a3, a4, en);
-tranif1 t4(a4, a5, en);
-tranif1 t5(a5, a6, en);
-tranif1 t6(a6, a7, en);
+rtranif0 t1(a1, a2, en);
+rtranif0 t2(a2, a3, en);
+rtranif0 t3(a3, a4, en);
+rtranif0 t4(a4, a5, en);
+rtranif0 t5(a5, a6, en);
+rtranif0 t6(a6, a7, en);
 
 wire a11, a12, a13, a14, a15, b11, b12, b13, b14, b15;
 wire a21, a22, a23, a24, a25, b21, b22, b23, b24, b25;
@@ -48,35 +48,35 @@ assign ( highz1, strong0) a52 = a,  b52 = b;
 assign ( highz1,   pull0) a53 = a,  b53 = b;
 assign ( highz1,   weak0) a54 = a,  b54 = b;
 
-tranif1 t11(a11, b11, en);
-tranif1 t12(a12, b12, en);
-tranif1 t13(a13, b13, en);
-tranif1 t14(a14, b14, en);
-tranif1 t15(a15, b15, en);
+rtranif0 t11(a11, b11, en);
+rtranif0 t12(a12, b12, en);
+rtranif0 t13(a13, b13, en);
+rtranif0 t14(a14, b14, en);
+rtranif0 t15(a15, b15, en);
 
-tranif1 t21(a21, b21, en);
-tranif1 t22(a22, b22, en);
-tranif1 t23(a23, b23, en);
-tranif1 t24(a24, b24, en);
-tranif1 t25(a25, b25, en);
+rtranif0 t21(a21, b21, en);
+rtranif0 t22(a22, b22, en);
+rtranif0 t23(a23, b23, en);
+rtranif0 t24(a24, b24, en);
+rtranif0 t25(a25, b25, en);
 
-tranif1 t31(a31, b31, en);
-tranif1 t32(a32, b32, en);
-tranif1 t33(a33, b33, en);
-tranif1 t34(a34, b34, en);
-tranif1 t35(a35, b35, en);
+rtranif0 t31(a31, b31, en);
+rtranif0 t32(a32, b32, en);
+rtranif0 t33(a33, b33, en);
+rtranif0 t34(a34, b34, en);
+rtranif0 t35(a35, b35, en);
 
-tranif1 t41(a41, b41, en);
-tranif1 t42(a42, b42, en);
-tranif1 t43(a43, b43, en);
-tranif1 t44(a44, b44, en);
-tranif1 t45(a45, b45, en);
+rtranif0 t41(a41, b41, en);
+rtranif0 t42(a42, b42, en);
+rtranif0 t43(a43, b43, en);
+rtranif0 t44(a44, b44, en);
+rtranif0 t45(a45, b45, en);
 
-tranif1 t51(a51, b51, en);
-tranif1 t52(a52, b52, en);
-tranif1 t53(a53, b53, en);
-tranif1 t54(a54, b54, en);
-tranif1 t55(a55, b55, en);
+rtranif0 t51(a51, b51, en);
+rtranif0 t52(a52, b52, en);
+rtranif0 t53(a53, b53, en);
+rtranif0 t54(a54, b54, en);
+rtranif0 t55(a55, b55, en);
 
 task display_strengths;
 
