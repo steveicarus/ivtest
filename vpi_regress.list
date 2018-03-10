@@ -212,6 +212,7 @@ ro_synch	 normal ro_synch.c	ro_synch.gold
 br_gh117         normal br_gh117.c	br_gh117.gold
 br_gh169a        normal br_gh169.c	br_gh169a.gold
 br_gh169b        normal,-g2009 br_gh169.c	br_gh169b.gold
+br_gh184	 normal start_of_simtime1.c	br_gh184.gold
 
 # Add new tests here. If the test needs a compile option or a
 # different log file to run with an older versions or if it uses
