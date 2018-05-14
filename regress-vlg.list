@@ -241,7 +241,9 @@ br1027			normal			ivltests
 br1027a			CE			ivltests gold=br1027a.gold
 br1027c			CE			ivltests gold=br1027c.gold
 br1027e			CE			ivltests gold=br1027e.gold
-br1029			normal			ivltests gold=br1029.gold
+br1029a			normal			ivltests gold=br1029a.gold
+br1029b			normal			ivltests gold=br1029a.gold
+br1029c			CE			ivltests gold=br1029c.gold
 br_gh6			normal			ivltests
 br_gh7			normal			ivltests
 br_gh8			normal			ivltests
