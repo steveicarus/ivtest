@@ -617,6 +617,11 @@ pr2509349b		normal			ivltests gold=pr2509349b-vlog95.gold
 pr2800985b		normal			ivltests gold=pr2800985b-vlog95.gold
 queue_fail		normal			ivltests gold=queue_fail-vlog95.gold
 readmem-invalid		normal			ivltests gold=readmem-invalid-vlog95.gold
+sf_countbits_fail	normal,-g2009		ivltests gold=sf_countbits_fail-vlog95.gold
+sf_countones_fail	normal,-g2009		ivltests gold=sf_countones_fail-vlog95.gold
+sf_isunknown_fail	normal,-g2009		ivltests gold=sf_isunknown_fail-vlog95.gold
+sf_onehot_fail		normal,-g2009		ivltests gold=sf_onehot_fail-vlog95.gold
+sf_onehot0_fail		normal,-g2009		ivltests gold=sf_onehot0_fail-vlog95.gold
 # Because the lower module has a parameter it is given a unique name that
 # does not match what the code is looking for. If we can verify that there
 # is only a single instance or that the instance has the original or at

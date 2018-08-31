@@ -1966,6 +1966,16 @@ test_mos_strength_reduction: Passed.
               program_hello: Passed.
              program_hello2: Passed - CE.
                  sbyte_test: Passed.
+               sf_countbits: Passed.
+          sf_countbits_fail: Passed.
+               sf_countones: Passed.
+          sf_countones_fail: Passed.
+               sf_isunknown: Passed.
+          sf_isunknown_fail: Passed.
+                  sf_onehot: Passed.
+             sf_onehot_fail: Passed.
+                 sf_onehot0: Passed.
+            sf_onehot0_fail: Passed.
                    sformatf: Passed.
                 simple_byte: Passed.
                  simple_int: Passed.
@@ -2353,4 +2363,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2351, Passed=2344, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2361, Passed=2354, Failed=7, Not Implemented=0, Expected Fail=0

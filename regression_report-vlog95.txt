@@ -456,6 +456,11 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                  pr2800985b: Passed.
                  queue_fail: Passed.
             readmem-invalid: Passed.
+          sf_countbits_fail: Passed.
+          sf_countones_fail: Passed.
+          sf_isunknown_fail: Passed.
+             sf_onehot_fail: Passed.
+            sf_onehot0_fail: Passed.
                    simparam: Passed - expected fail.
                      swrite: Passed.
         sys_func_task_error: Passed - RE.
@@ -2170,6 +2175,11 @@ test_mos_strength_reduction: Passed.
                   program5a: Passed - CE.
                   program5b: Passed - CE.
              program_hello2: Passed - CE.
+               sf_countbits: Passed.
+               sf_countones: Passed.
+               sf_isunknown: Passed.
+                  sf_onehot: Passed.
+                 sf_onehot0: Passed.
                   size_cast: Passed.
                  size_cast2: Passed.
                     struct1: Passed.
@@ -2353,4 +2363,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2351, Passed=2313, Failed=5, Not Implemented=3, Expected Fail=30
+  Total=2361, Passed=2323, Failed=5, Not Implemented=3, Expected Fail=30

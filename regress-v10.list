@@ -147,6 +147,16 @@ always_latch_fail3	NI
 always_latch_fail4	NI
 always_latch_trig	NI
 always_latch_warn	NI
+sf_countbits		NI
+sf_countbits_fail	NI
+sf_countones		NI
+sf_countones_fail	NI
+sf_isunknown		NI
+sf_isunknown_fail	NI
+sf_onehot		NI
+sf_onehot_fail		NI
+sf_onehot0		NI
+sf_onehot0_fail		NI
 sformatf		NI
 vvp_recv_vec4_pv	CE,-g2009
 wild_cmp_const		NI

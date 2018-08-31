@@ -59,6 +59,16 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
          always_latch_fail4: Not Implemented.
           always_latch_trig: Not Implemented.
           always_latch_warn: Not Implemented.
+               sf_countbits: Not Implemented.
+          sf_countbits_fail: Not Implemented.
+               sf_countones: Not Implemented.
+          sf_countones_fail: Not Implemented.
+               sf_isunknown: Not Implemented.
+          sf_isunknown_fail: Not Implemented.
+                  sf_onehot: Not Implemented.
+             sf_onehot_fail: Not Implemented.
+                 sf_onehot0: Not Implemented.
+            sf_onehot0_fail: Not Implemented.
                    sformatf: Not Implemented.
            vvp_recv_vec4_pv: Passed - CE.
              wild_cmp_const: Not Implemented.
@@ -2353,4 +2363,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2351, Passed=2283, Failed=4, Not Implemented=64, Expected Fail=0
+  Total=2361, Passed=2283, Failed=4, Not Implemented=74, Expected Fail=0

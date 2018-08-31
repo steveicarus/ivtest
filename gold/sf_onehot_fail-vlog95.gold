@@ -1,0 +1,5 @@
+./ivltests/sf_onehot_fail.v:8: error: $onehot() does not support two arguments.
+ERROR: vlog95.v:19: $onehot's argument must be numeric.
+ERROR: vlog95.v:20: $onehot's argument must be numeric.
+ERROR: vlog95.v:21: $onehot takes a single numeric argument.
+                    Found 1 extra argument.
