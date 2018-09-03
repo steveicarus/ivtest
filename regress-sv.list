@@ -2,7 +2,7 @@
 # supports SystemVerilog (1800-2012).
 
 #
-# Copyright (c) 1999-2017 Guy Hutchison (ghutchis@pacbell.net)
+# Copyright (c) 1999-2018 Guy Hutchison (ghutchis@pacbell.net)
 #
 #    This source code is free software; you can redistribute it
 #    and/or modify it in source code form under the terms of the GNU
@@ -257,16 +257,16 @@ program5b		CE,-g2009		ivltests
 program_hello		normal,-g2009		ivltests
 program_hello2		CE,-g2009		ivltests
 sbyte_test		normal,-g2005-sv	ivltests
-sf_countbits		normal,-g2009		ivltests
-sf_countbits_fail	normal,-g2009		ivltests gold=sf_countbits_fail.gold
+sf_countbits		normal,-g2012		ivltests
+sf_countbits_fail	normal,-g2012		ivltests gold=sf_countbits_fail.gold
 sf_countones		normal,-g2009		ivltests
 sf_countones_fail	normal,-g2009		ivltests gold=sf_countones_fail.gold
-sf_isunknown		normal,-g2009		ivltests
-sf_isunknown_fail	normal,-g2009		ivltests gold=sf_isunknown_fail.gold
-sf_onehot		normal,-g2009		ivltests
-sf_onehot_fail		normal,-g2009		ivltests gold=sf_onehot_fail.gold
-sf_onehot0		normal,-g2009		ivltests
-sf_onehot0_fail		normal,-g2009		ivltests gold=sf_onehot0_fail.gold
+sf_isunknown		normal,-g2005-sv	ivltests
+sf_isunknown_fail	normal,-g2005-sv	ivltests gold=sf_isunknown_fail.gold
+sf_onehot		normal,-g2005-sv	ivltests
+sf_onehot_fail		normal,-g2005-sv	ivltests gold=sf_onehot_fail.gold
+sf_onehot0		normal,-g2005-sv	ivltests
+sf_onehot0_fail		normal,-g2005-sv	ivltests gold=sf_onehot0_fail.gold
 sformatf		normal,-g2009		ivltests
 simple_byte		normal,-g2005-sv	ivltests
 simple_int		normal,-g2005-sv	ivltests

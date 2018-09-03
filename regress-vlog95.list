@@ -2,7 +2,7 @@
 # the Icarus Verilog vlog95 target.
 
 #
-# Copyright (c) 1999-2014 Guy Hutchison (ghutchis@pacbell.net)
+# Copyright (c) 1999-2018 Guy Hutchison (ghutchis@pacbell.net)
 #
 #    This source code is free software; you can redistribute it
 #    and/or modify it in source code form under the terms of the GNU
@@ -169,6 +169,18 @@ pr2823711		CE			ivltests
 pr2909386b		CE,-pallowsigned=1	ivltests
 rl_pow			CE			ivltests
 vhdl_pow_rem		CE,-g2005-sv,-pallowsigned=1,ivltests/vhdl_pow_rem.vhd	ivltests
+
+# IEEE 1364-1995 does not support these SV functions
+sf_countbits		RE,-g2012		ivltests
+sf_countbits_fail	RE,-g2012		ivltests
+sf_countones		RE,-g2009		ivltests
+sf_countones_fail	RE,-g2009		ivltests
+sf_isunknown		RE,-g2005-sv		ivltests
+sf_isunknown_fail	RE,-g2005-sv		ivltests
+sf_onehot		RE,-g2005-sv		ivltests
+sf_onehot_fail		RE,-g2005-sv		ivltests
+sf_onehot0		RE,-g2005-sv		ivltests
+sf_onehot0_fail		RE,-g2005-sv		ivltests
 
 # IEEE 1364-1995 only supports register arrays.
 array_lval_select1	normal,-DVLOG95		ivltests
@@ -617,11 +629,6 @@ pr2509349b		normal			ivltests gold=pr2509349b-vlog95.gold
 pr2800985b		normal			ivltests gold=pr2800985b-vlog95.gold
 queue_fail		normal			ivltests gold=queue_fail-vlog95.gold
 readmem-invalid		normal			ivltests gold=readmem-invalid-vlog95.gold
-sf_countbits_fail	normal,-g2009		ivltests gold=sf_countbits_fail-vlog95.gold
-sf_countones_fail	normal,-g2009		ivltests gold=sf_countones_fail-vlog95.gold
-sf_isunknown_fail	normal,-g2009		ivltests gold=sf_isunknown_fail-vlog95.gold
-sf_onehot_fail		normal,-g2009		ivltests gold=sf_onehot_fail-vlog95.gold
-sf_onehot0_fail		normal,-g2009		ivltests gold=sf_onehot0_fail-vlog95.gold
 # Because the lower module has a parameter it is given a unique name that
 # does not match what the code is looking for. If we can verify that there
 # is only a single instance or that the instance has the original or at

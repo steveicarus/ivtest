@@ -1,7 +1,0 @@
-ERROR: vlog95.v:19: The first argument to $countbits() must be numeric.
-ERROR: vlog95.v:19: $countbits() requires at least one control bit argument.
-ERROR: vlog95.v:20: The first argument to $countbits() must be numeric.
-ERROR: vlog95.v:20: $countbits() requires at least one control bit argument.
-ERROR: vlog95.v:21: $countbits() requires at least one control bit argument.
-ERROR: vlog95.v:22: Control bit argument 1 to $countbits() must be numeric.
-ERROR: vlog95.v:23: Control bit argument 2 to $countbits() must be numeric.

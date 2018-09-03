@@ -98,6 +98,16 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                  pr2909386b: Passed - CE.
                      rl_pow: Passed - CE.
                vhdl_pow_rem: Passed - CE.
+               sf_countbits: Passed - RE.
+          sf_countbits_fail: Passed - RE.
+               sf_countones: Passed - RE.
+          sf_countones_fail: Passed - RE.
+               sf_isunknown: Passed - RE.
+          sf_isunknown_fail: Passed - RE.
+                  sf_onehot: Passed - RE.
+             sf_onehot_fail: Passed - RE.
+                 sf_onehot0: Passed - RE.
+            sf_onehot0_fail: Passed - RE.
          array_lval_select1: Passed.
          array_lval_select2: Passed.
         array_lval_select3a: Passed - TE.
@@ -456,11 +466,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                  pr2800985b: Passed.
                  queue_fail: Passed.
             readmem-invalid: Passed.
-          sf_countbits_fail: Passed.
-          sf_countones_fail: Passed.
-          sf_isunknown_fail: Passed.
-             sf_onehot_fail: Passed.
-            sf_onehot0_fail: Passed.
                    simparam: Passed - expected fail.
                      swrite: Passed.
         sys_func_task_error: Passed - RE.
@@ -2175,11 +2180,6 @@ test_mos_strength_reduction: Passed.
                   program5a: Passed - CE.
                   program5b: Passed - CE.
              program_hello2: Passed - CE.
-               sf_countbits: Passed.
-               sf_countones: Passed.
-               sf_isunknown: Passed.
-                  sf_onehot: Passed.
-                 sf_onehot0: Passed.
                   size_cast: Passed.
                  size_cast2: Passed.
                     struct1: Passed.
