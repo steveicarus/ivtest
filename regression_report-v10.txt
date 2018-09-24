@@ -53,6 +53,7 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
             always_ff_fail3: Not Implemented.
             always_ff_fail4: Not Implemented.
              always_ff_warn: Not Implemented.
+        always_ff_warn_sens: Not Implemented.
                always_latch: Not Implemented.
           always_latch_fail: Not Implemented.
          always_latch_fail3: Not Implemented.
@@ -2363,4 +2364,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2361, Passed=2283, Failed=4, Not Implemented=74, Expected Fail=0
+  Total=2362, Passed=2283, Failed=4, Not Implemented=75, Expected Fail=0

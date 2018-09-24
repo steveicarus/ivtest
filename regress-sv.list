@@ -78,6 +78,7 @@ always_ff_fail2		CE,-g2005-sv		ivltests
 always_ff_fail3		CE,-g2005-sv		ivltests
 always_ff_fail4		CE,-g2005-sv		ivltests
 always_ff_warn		normal,-g2005-sv	ivltests gold=always_ff_warn.gold
+always_ff_warn_sens	normal,-g2005-sv	ivltests gold=always_ff_warn_sens.gold
 always_latch		normal,-g2005-sv	ivltests
 always_latch_fail	CE,-g2005-sv		ivltests
 always_latch_fail3	CE,-g2005-sv		ivltests

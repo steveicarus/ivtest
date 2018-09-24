@@ -141,6 +141,7 @@ always_ff_fail2		NI
 always_ff_fail3		NI
 always_ff_fail4		NI
 always_ff_warn		NI
+always_ff_warn_sens	NI
 always_latch		NI
 always_latch_fail	NI
 always_latch_fail3	NI

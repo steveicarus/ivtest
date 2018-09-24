@@ -525,6 +525,7 @@ test_varray1		CE,-g2009,-pallowsigned=1,ivltests/varray1.vhd	ivltests
 unnamed_generate_block	CE			ivltests
 
 # Currently part selects in a CA with a non-zero base are not supported.
+always_ff_warn_sens	CE,-g2009		ivltests
 bitsel6			CE			ivltests
 bitsel7			CE			ivltests
 pr3054101a		CE			ivltests

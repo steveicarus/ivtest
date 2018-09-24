@@ -1788,6 +1788,7 @@ test_mos_strength_reduction: Passed.
             always_ff_fail3: Passed - CE.
             always_ff_fail4: Passed - CE.
              always_ff_warn: Passed.
+        always_ff_warn_sens: Passed.
                always_latch: Passed.
           always_latch_fail: Passed - CE.
          always_latch_fail3: Passed - CE.
@@ -2363,4 +2364,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2361, Passed=2354, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2362, Passed=2355, Failed=7, Not Implemented=0, Expected Fail=0

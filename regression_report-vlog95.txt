@@ -380,6 +380,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                   test_gxor: Passed - CE.
                test_varray1: Passed - CE.
      unnamed_generate_block: Passed - CE.
+        always_ff_warn_sens: Passed - CE.
                     bitsel6: Passed - CE.
                     bitsel7: Passed - CE.
                  pr3054101a: Passed - CE.
@@ -2363,4 +2364,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2361, Passed=2323, Failed=5, Not Implemented=3, Expected Fail=30
+  Total=2362, Passed=2324, Failed=5, Not Implemented=3, Expected Fail=30
