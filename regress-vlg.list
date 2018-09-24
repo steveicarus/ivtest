@@ -1577,8 +1577,8 @@ timescale1		normal			ivltests
 timescale2		normal			ivltests
 timescale3		CE			ivltests
 tran			normal			ivltests gold=tran.gold
-tranif0 		normal			ivltests gold=tranif0.gold
-tranif1 		normal			ivltests gold=tranif1.gold
+tranif0			normal			ivltests gold=tranif0.gold
+tranif1			normal			ivltests gold=tranif1.gold
 tran-keeper		normal			ivltests
 tri0			normal			ivltests
 tri0b			normal			ivltests
