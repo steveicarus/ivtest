@@ -301,6 +301,7 @@ br_gh163		CE			ivltests
 br_gh198		normal			ivltests gold=br_gh198.gold
 br_gh199a		normal			ivltests
 br_gh199b		normal			ivltests
+br_gh209		normal			ivltests diff=work/br_gh209.dat:gold/br_gh209.dat
 br_ml_20150315		normal			ivltests gold=br_ml_20150315.gold
 br_ml_20150321		CE			ivltests
 br_ml_20150606		normal			ivltests
