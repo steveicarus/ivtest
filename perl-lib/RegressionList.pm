@@ -52,7 +52,8 @@ sub read_regression_list {
         die "Error: unable to open $regress_fn for reading.\n";
 
     while ($line = <REGRESS_LIST>) {
-        chomp $line;
+	# can't use chomp here - in MSYS2 it only consumes the LF, not the CR
+	$line =~ s/\r?\n?$//;
 	# recognise a trailing '\' as a line continuation
 	if ($line =~ s/\\$//) {
 	    my $next_line = <REGRESS_LIST>;
