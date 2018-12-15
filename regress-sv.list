@@ -148,6 +148,8 @@ br_gh164d		normal,-g2009		ivltests
 br_gh164e		normal,-g2009		ivltests
 br_gh167a		normal,-g2009		ivltests
 br_gh167b		normal,-g2009		ivltests
+br_gh219		normal,-g2009		ivltests
+br_gh220		normal,-g2009		ivltests
 br_ml_20150315b		CE,-g2009		ivltests
 cast_real		normal,-g2005-sv	ivltests
 cfunc_assign_op_mixed	normal,-g2009		ivltests
