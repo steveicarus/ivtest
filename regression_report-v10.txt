@@ -370,6 +370,15 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
                  assign_nb2: Passed.
                  assign_neq: Passed.
                      attrib: Passed.
+            attrib01_module: Passed.
+         attrib02_port_decl: Passed.
+         attrib03_parameter: Passed.
+           attrib04_net_var: Passed.
+         attrib05_port_conn: Passed.
+   attrib06_operator_suffix: Passed.
+         attrib07_func_call: Passed.
+          attrib08_mod_inst: Passed.
+              attrib09_case: Passed.
            automatic_error1: Passed - CE.
            automatic_error2: Passed - CE.
            automatic_error3: Passed - CE.
@@ -2371,4 +2380,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2369, Passed=2290, Failed=4, Not Implemented=75, Expected Fail=0
+  Total=2378, Passed=2299, Failed=4, Not Implemented=75, Expected Fail=0
