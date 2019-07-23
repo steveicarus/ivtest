@@ -170,6 +170,15 @@ assign_nb1		normal			ivltests # Assign a constant to a single bit array (pmonta)
 assign_nb2		normal			ivltests # Assign a constant to a single bit array (pmonta)
 assign_neq		normal			ivltests # continuous assign with !=
 attrib			normal			ivltests
+attrib01_module     normal      ivltests gold=attrib01_module.gold
+attrib02_port_decl  normal      ivltests gold=attrib02_port_decl.gold
+attrib03_parameter  normal      ivltests gold=attrib03_parameter.gold
+attrib04_net_var    normal      ivltests gold=attrib04_net_var.gold
+attrib05_port_conn  normal      ivltests gold=attrib05_port_conn.gold
+attrib06_operator_suffix normal ivltests gold=attrib06_operator_suffix.gold
+attrib07_func_call  normal      ivltests gold=attrib07_func_call.gold
+attrib08_mod_inst   normal      ivltests gold=attrib08_mod_inst.gold
+attrib09_case       normal      ivltests gold=attrib09_case.gold
 automatic_error1	CE			ivltests
 automatic_error2	CE			ivltests
 automatic_error3	CE			ivltests
