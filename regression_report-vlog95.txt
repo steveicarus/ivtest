@@ -500,6 +500,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                    br_gh198: Passed.
                   br_gh199a: Passed.
                   br_gh199b: Passed.
+                   br_gh231: Passed.
                     ca_mult: Passed.
                    cast_int: Passed.
         cfunc_assign_op_vec: Passed.
@@ -589,6 +590,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
        struct_packed_array2: Passed.
             sv_for_variable: Passed.
                 sv_foreach1: Passed.
+                sv_foreach5: Passed.
                  sv_package: Passed.
                 sv_package2: Passed.
                 sv_package5: Passed.
@@ -2382,4 +2384,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2380, Passed=2341, Failed=5, Not Implemented=3, Expected Fail=31
+  Total=2382, Passed=2343, Failed=5, Not Implemented=3, Expected Fail=31

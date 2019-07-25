@@ -152,6 +152,7 @@ br_gh219		normal,-g2009		ivltests
 br_gh220		normal,-g2009		ivltests
 br_gh224		normal,-g2009		ivltests
 br_gh226		CE,-g2009		ivltests
+br_gh231		normal,-g2009		ivltests
 br_gh243		normal,-g2009		ivltests
 br_ml_20150315b		CE,-g2009		ivltests
 cast_real		normal,-g2005-sv	ivltests
@@ -355,6 +356,7 @@ sv_foreach1		normal,-g2009		ivltests
 sv_foreach2		normal,-g2009		ivltests
 sv_foreach3		normal,-g2009		ivltests
 sv_foreach4		normal,-g2009		ivltests
+sv_foreach5		normal,-g2009		ivltests
 sv_macro		normal,-g2009		ivltests
 sv_macro2		normal,-g2009		ivltests gold=sv_macro2.gold
 sv_package		normal,-g2009		ivltests

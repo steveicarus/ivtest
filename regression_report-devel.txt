@@ -1875,6 +1875,7 @@ test_mos_strength_reduction: Passed.
                    br_gh220: Passed.
                    br_gh224: Passed.
                    br_gh226: Passed - CE.
+                   br_gh231: Passed.
                    br_gh243: Passed.
             br_ml_20150315b: Passed - CE.
                   cast_real: Passed.
@@ -2077,6 +2078,7 @@ test_mos_strength_reduction: Passed.
                 sv_foreach2: Passed.
                 sv_foreach3: Passed.
                 sv_foreach4: Passed.
+                sv_foreach5: Passed.
                    sv_macro: Passed.
                   sv_macro2: Passed.
                  sv_package: Passed.
@@ -2382,4 +2384,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2380, Passed=2373, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2382, Passed=2375, Failed=7, Not Implemented=0, Expected Fail=0
