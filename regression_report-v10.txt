@@ -444,6 +444,7 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
                      br1006: Passed.
                      br1007: Passed.
                      br1008: Passed.
+                    br1015a: Passed - CE.
                      br1019: Passed.
                      br1027: Passed.
                     br1027a: Passed - CE.
@@ -1920,6 +1921,7 @@ test_mos_strength_reduction: Passed.
                     br1003a: Passed.
                     br1003d: Passed.
                      br1005: Passed - CE.
+                    br1015b: Passed - CE.
                      br1025: Passed.
                     br1027b: Passed.
                     br1027d: Passed.
@@ -2384,4 +2386,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2382, Passed=2303, Failed=4, Not Implemented=75, Expected Fail=0
+  Total=2384, Passed=2305, Failed=4, Not Implemented=75, Expected Fail=0
