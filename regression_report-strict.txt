@@ -399,10 +399,10 @@ Running compiler/VVP tests for Icarus Verilog version: 11 (strict).
                    br_gh230: Passed.
                   br_gh244a: Passed.
                   br_gh244b: Passed.
-             br_ml_20150315: Passed.
-             br_ml_20150321: Passed - CE.
-             br_ml_20150606: Passed.
-             br_mw_20171108: Passed.
+              br_ml20150315: Passed.
+              br_ml20150321: Passed - CE.
+              br_ml20150606: Passed.
+              br_mw20171108: Passed.
                       bufif: Passed.
                      busbug: Passed.
                    ca_force: Passed.
@@ -1876,7 +1876,7 @@ test_mos_strength_reduction: Passed.
                    br_gh226: Passed - CE.
                    br_gh231: Passed.
                    br_gh243: Passed.
-            br_ml_20150315b: Passed - CE.
+             br_ml20150315b: Passed - CE.
               br_ml20171017: Passed.
                   cast_real: Passed.
       cfunc_assign_op_mixed: Passed.
