@@ -319,6 +319,8 @@ br_ml20150315		normal			ivltests gold=br_ml_20150315.gold
 br_ml20150321		CE			ivltests
 br_ml20150606		normal			ivltests
 br_mw20171108		normal			ivltests
+br_ml20190806a		normal			ivltests
+br_ml20190806b		normal			ivltests
 bufif			normal			ivltests # Validate bufif0, bufif1
 busbug			normal			ivltests gold=busbug.gold
 ca_force		normal			ivltests

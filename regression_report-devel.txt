@@ -410,6 +410,8 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
               br_ml20150321: Passed - CE.
               br_ml20150606: Passed.
               br_mw20171108: Passed.
+             br_ml20190806a: Passed.
+             br_ml20190806b: Passed.
                       bufif: Passed.
                      busbug: Passed.
                    ca_force: Passed.
@@ -2387,4 +2389,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2385, Passed=2378, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2387, Passed=2380, Failed=7, Not Implemented=0, Expected Fail=0
