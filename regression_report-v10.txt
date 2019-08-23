@@ -81,6 +81,7 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
                    rtranif0: Not Implemented.
                    rtranif1: Not Implemented.
                      br1000: Passed.
+              br_ml20190814: Passed - expected fail.
                      br993a: Passed - CE.
                      br993b: Passed - CE.
                    br_gh115: Passed - CE.
@@ -2389,4 +2390,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2387, Passed=2308, Failed=4, Not Implemented=75, Expected Fail=0
+  Total=2388, Passed=2308, Failed=4, Not Implemented=75, Expected Fail=1

@@ -174,6 +174,9 @@ rtranif1		NI
 # V10 doesn't support this by default
 br1000			normal,-gshared-loop-index	ivltests
 
+# V10 does not support these SDF elements
+br_ml20190814           EF,-gspecify            ivltests
+
 # V10 has incomplete synthesis support
 br993a			CE,-S			ivltests
 br993b			CE,-S			ivltests

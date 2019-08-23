@@ -321,6 +321,7 @@ br_ml20150606		normal			ivltests
 br_mw20171108		normal			ivltests
 br_ml20190806a		normal			ivltests
 br_ml20190806b		normal			ivltests
+br_ml20190814		normal,-gspecify	ivltests gold=br_ml20190814.gold
 bufif			normal			ivltests # Validate bufif0, bufif1
 busbug			normal			ivltests gold=busbug.gold
 ca_force		normal			ivltests
