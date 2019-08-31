@@ -21,7 +21,7 @@
 
 typedef enum integer { var_presence, var_identif, var_1, var_2, var_3, var_rst, var_4, var_5, var_whatever } t_var;
 
-module enum_ports(input wire t_var var_i, output t_var var_o, output reg is_var_rst);
+module enum_ports(input t_var var_i, output t_var var_o, output reg is_var_rst);
 
 initial begin
     var_o = var_presence;
@@ -37,7 +37,7 @@ end
 endmodule
 
 module test_unit();
-reg t_var var_in, var_out;
+t_var var_in, var_out;
 reg result;
 
 enum_ports dut(var_in, var_out, result);
