@@ -14,7 +14,7 @@ initial begin
   if (outer.inner.a == 2)
     $display("PASSED");
   else
-    $display("PASSED");
+    $display("FAILED");
 end
 
 endmodule
