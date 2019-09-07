@@ -4,7 +4,7 @@ library ieee;
 
 entity bug3 is
 port (
-  clk1_i        : in  std_logic_vector;
+  clk1_i        : in  std_logic;
   clk1_ib       : in  std_logic;
   clk1_o        : out std_logic
 );
@@ -39,7 +39,7 @@ generic (
   DIFF_TERM : boolean := FALSE
 );
 port (
-  i     : in  std_logic_vector;
+  i     : in  std_logic;
   ib    : in  std_logic;
   o     : out std_logic
 );
