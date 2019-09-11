@@ -69,6 +69,11 @@
 # We can't mark it as EF, because it causes a runtime assertion failure.
 func_init_var2		NI
 
+# The fix for the assertion failure on an illegal SV cast causes enum_test1 to fail.
+# It's possible this could be fixed, but for now mark this as not implemented.
+# We can't mark it as CE, because it causes a compiler assertion failure.
+br_ml20180227           NI
+
 # The timescale parsing rework hasn't been backported to v10.
 # sv_timeunit_prec3b and sv_timeunit_prec4b fail at the compilation stage,
 # so are marked as NI to distinguish them from expected errors.
@@ -96,6 +101,11 @@ sv_unit4b		NI
 # The macro redefinition warnings haven't been backported to v10
 macro_redefinition	NI
 macro_replacement	NI
+
+# The fix for casting strings to vectors uses new VVP instructions,
+# so can't be backported.
+br_ml20180309a          NI
+br_ml20180309b          NI
 
 # V10 does not support analog functionality
 analog1			NI
@@ -165,6 +175,9 @@ wild_cmp_err		NI
 wild_cmp_err2		NI
 wild_cmp_net		NI
 wild_cmp_var		NI
+# and has non-standard support for this
+sv_cast_darray          NI
+sv_cast_darray-v10      normal,-g2009		ivltests
 
 # V10 doesn't support rtran switches
 rtran			NI
