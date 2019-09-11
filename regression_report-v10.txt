@@ -1,6 +1,7 @@
 Running compiler/VVP tests for Icarus Verilog version: 10.
 ----------------------------------------------------------------------------
              func_init_var2: Not Implemented.
+              br_ml20180227: Not Implemented.
                    resetall: Passed.
                     br1003b: Passed.
                     br1003c: Passed.
@@ -14,6 +15,8 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
                   sv_unit4b: Not Implemented.
          macro_redefinition: Not Implemented.
           macro_replacement: Not Implemented.
+             br_ml20180309a: Not Implemented.
+             br_ml20180309b: Not Implemented.
                     analog1: Not Implemented.
                     analog2: Not Implemented.
                 ivlh_textio: Not Implemented.
@@ -77,6 +80,8 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
               wild_cmp_err2: Not Implemented.
                wild_cmp_net: Not Implemented.
                wild_cmp_var: Not Implemented.
+             sv_cast_darray: Not Implemented.
+         sv_cast_darray-v10: Passed.
                       rtran: Not Implemented.
                    rtranif0: Not Implemented.
                    rtranif1: Not Implemented.
@@ -190,7 +195,6 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
                 fatal_et_al: Passed.
                   pr1494799: Passed.
                  pr2428890c: Passed.
-             sv_cast_darray: Passed.
                       br978: Passed.
               br_ml20150424: Passed.
                  constfunc6: Passed.
@@ -2390,4 +2394,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2388, Passed=2308, Failed=4, Not Implemented=75, Expected Fail=1
+  Total=2392, Passed=2308, Failed=4, Not Implemented=79, Expected Fail=1
