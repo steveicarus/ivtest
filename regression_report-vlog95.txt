@@ -2162,6 +2162,10 @@ test_mos_strength_reduction: Passed.
                    br_gh243: Passed.
              br_ml20150315b: Passed - CE.
               br_ml20180227: Passed - CE.
+            br_ml201801012a: Passed - CE.
+            br_ml201801012b: Passed - CE.
+            br_ml201801012c: Passed - CE.
+            br_ml201801012d: Passed - CE.
       cfunc_assign_op_mixed: Passed.
          cfunc_assign_op_pv: Passed.
        cfunc_assign_op_real: Passed.
@@ -2393,4 +2397,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2391, Passed=2352, Failed=5, Not Implemented=3, Expected Fail=31
+  Total=2395, Passed=2356, Failed=5, Not Implemented=3, Expected Fail=31
