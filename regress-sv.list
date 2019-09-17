@@ -466,3 +466,4 @@ wild_cmp_net		normal,-g2009		ivltests
 wild_cmp_var		normal,-g2009		ivltests
 wild_cmp_err		CE,-g2009		ivltests gold=wild_cmp_err.gold
 wild_cmp_err2		CE,-g2009		ivltests gold=wild_cmp_err2.gold
+gh161a			normal,-g2012		ivltests
