@@ -645,6 +645,8 @@ readmem-invalid		normal			ivltests gold=readmem-invalid-vlog95.gold
 # least all the instances have the same value we may be able to use the
 # original name.
 simparam		EF			ivltests
+sv_immediate_assert	normal,-g2009		ivltests gold=sv_immediate_assert-vlog95.gold
+sv_immediate_assume	normal,-g2009		ivltests gold=sv_immediate_assume-vlog95.gold
 swrite			normal			ivltests gold=swrite-vlog95.gold
 sys_func_task_error	RE			ivltests gold=sys_func_task_error-vlog95.gold
 # In Verilog 95 a system function cannot be called as a task.

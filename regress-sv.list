@@ -366,6 +366,8 @@ sv_foreach2		normal,-g2009		ivltests
 sv_foreach3		normal,-g2009		ivltests
 sv_foreach4		normal,-g2009		ivltests
 sv_foreach5		normal,-g2009		ivltests
+sv_immediate_assert	normal,-g2009		ivltests gold=sv_immediate_assert.gold
+sv_immediate_assume	normal,-g2009		ivltests gold=sv_immediate_assume.gold
 sv_macro		normal,-g2009		ivltests
 sv_macro2		normal,-g2009		ivltests gold=sv_macro2.gold
 sv_package		normal,-g2009		ivltests

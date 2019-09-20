@@ -169,6 +169,8 @@ sf_onehot_fail		NI
 sf_onehot0		NI
 sf_onehot0_fail		NI
 sformatf		NI
+sv_immediate_assert	NI
+sv_immediate_assume	NI
 vvp_recv_vec4_pv	CE,-g2009
 wild_cmp_const		NI
 wild_cmp_err		NI
