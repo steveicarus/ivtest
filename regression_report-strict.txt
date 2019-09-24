@@ -2089,6 +2089,8 @@ test_mos_strength_reduction: Passed.
                 sv_foreach3: Passed.
                 sv_foreach4: Passed.
                 sv_foreach5: Passed.
+        sv_immediate_assert: Passed.
+        sv_immediate_assume: Passed.
                    sv_macro: Passed.
                   sv_macro2: Passed.
                  sv_package: Passed.
@@ -2180,6 +2182,7 @@ test_mos_strength_reduction: Passed.
                wild_cmp_var: Passed.
                wild_cmp_err: Passed - CE.
               wild_cmp_err2: Passed - CE.
+                     gh161a: Passed.
                       br942: Passed.
                   br943_944: Passed.
                       br985: Passed.
@@ -2394,4 +2397,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2392, Passed=2385, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2395, Passed=2388, Failed=7, Not Implemented=0, Expected Fail=0

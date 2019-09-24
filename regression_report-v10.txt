@@ -1,5 +1,6 @@
 Running compiler/VVP tests for Icarus Verilog version: 10.
 ----------------------------------------------------------------------------
+                     gh161a: Not Implemented.
              func_init_var2: Not Implemented.
               br_ml20180227: Not Implemented.
                    resetall: Passed.
@@ -74,6 +75,8 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
                  sf_onehot0: Not Implemented.
             sf_onehot0_fail: Not Implemented.
                    sformatf: Not Implemented.
+        sv_immediate_assert: Not Implemented.
+        sv_immediate_assume: Not Implemented.
            vvp_recv_vec4_pv: Passed - CE.
              wild_cmp_const: Not Implemented.
                wild_cmp_err: Not Implemented.
@@ -2398,4 +2401,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2396, Passed=2312, Failed=4, Not Implemented=79, Expected Fail=1
+  Total=2399, Passed=2312, Failed=4, Not Implemented=82, Expected Fail=1

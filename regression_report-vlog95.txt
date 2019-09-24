@@ -475,6 +475,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                  queue_fail: Passed.
             readmem-invalid: Passed.
                    simparam: Passed - expected fail.
+        sv_immediate_assert: Passed.
+        sv_immediate_assume: Passed.
                      swrite: Passed.
         sys_func_task_error: Passed - RE.
            sys_func_as_task: Passed - RE.
@@ -2266,6 +2268,7 @@ test_mos_strength_reduction: Passed.
                 task_scope2: Passed.
        undef_lval_select_SV: Passed.
              wild_cmp_const: Passed.
+                     gh161a: Passed.
                       br986: Passed.
                       br987: Passed.
                  ivlh_event: Passed.
@@ -2397,4 +2400,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2395, Passed=2356, Failed=5, Not Implemented=3, Expected Fail=31
+  Total=2398, Passed=2359, Failed=5, Not Implemented=3, Expected Fail=31

@@ -124,6 +124,12 @@ sub execute_regression {
             next;
         }
 
+        if (! -e "./$srcpath{$tname}/$tname.v") {
+            &print_rpt("Failed - missing source file.\n");
+            $failed++;
+            next;
+        }
+
         #
         # Build up the iverilog command line and run it.
         #
