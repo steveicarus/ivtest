@@ -152,7 +152,7 @@ br_gh167b		normal,-g2009		ivltests
 br_gh219		normal,-g2009		ivltests
 br_gh220		normal,-g2009		ivltests
 br_gh224		normal,-g2009		ivltests
-br_gh226		CE,-g2009		ivltests
+br_gh226		normal,-g2009		ivltests
 br_gh231		normal,-g2009		ivltests
 br_gh243		normal,-g2009		ivltests
 br_ml20150315b		CE,-g2009		ivltests
