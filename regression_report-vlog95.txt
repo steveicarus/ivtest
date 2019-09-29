@@ -2121,16 +2121,19 @@ test_mos_strength_reduction: Passed.
            always_comb_fail: Passed - CE.
           always_comb_fail3: Passed - CE.
           always_comb_fail4: Passed - CE.
+        always_comb_no_sens: Passed.
            always_comb_trig: Passed.
                   always_ff: Passed.
              always_ff_fail: Passed - CE.
             always_ff_fail2: Passed - CE.
             always_ff_fail3: Passed - CE.
             always_ff_fail4: Passed - CE.
+          always_ff_no_sens: Passed - CE.
                always_latch: Passed.
           always_latch_fail: Passed - CE.
          always_latch_fail3: Passed - CE.
          always_latch_fail4: Passed - CE.
+       always_latch_no_sens: Passed - CE.
           always_latch_trig: Passed.
                  array_size: Passed.
            assign_op_concat: Passed.
@@ -2160,14 +2163,14 @@ test_mos_strength_reduction: Passed.
                   br_gh130b: Passed - CE.
                    br_gh220: Passed.
                    br_gh224: Passed.
-                   br_gh226: Passed - CE.
+                   br_gh226: Passed.
                    br_gh243: Passed.
              br_ml20150315b: Passed - CE.
               br_ml20180227: Passed - CE.
-            br_ml201801012a: Passed - CE.
-            br_ml201801012b: Passed - CE.
-            br_ml201801012c: Passed - CE.
-            br_ml201801012d: Passed - CE.
+             br_ml20181012a: Passed - CE.
+             br_ml20181012b: Passed - CE.
+             br_ml20181012c: Passed - CE.
+             br_ml20181012d: Passed - CE.
       cfunc_assign_op_mixed: Passed.
          cfunc_assign_op_pv: Passed.
        cfunc_assign_op_real: Passed.
@@ -2269,6 +2272,7 @@ test_mos_strength_reduction: Passed.
        undef_lval_select_SV: Passed.
              wild_cmp_const: Passed.
                      gh161a: Passed.
+                     gh161b: Passed.
                       br986: Passed.
                       br987: Passed.
                  ivlh_event: Passed.
@@ -2400,4 +2404,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2398, Passed=2359, Failed=5, Not Implemented=3, Expected Fail=31
+  Total=2402, Passed=2363, Failed=5, Not Implemented=3, Expected Fail=31
