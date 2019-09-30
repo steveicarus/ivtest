@@ -1795,6 +1795,7 @@ test_mos_strength_reduction: Passed.
           always_comb_fail3: Passed - CE.
           always_comb_fail4: Passed - CE.
         always_comb_no_sens: Passed.
+          always_comb_rfunc: Passed.
            always_comb_trig: Passed.
            always_comb_warn: Passed.
                   always_ff: Passed.
@@ -2401,4 +2402,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2399, Passed=2392, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2400, Passed=2393, Failed=7, Not Implemented=0, Expected Fail=0

@@ -50,6 +50,7 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
           always_comb_fail3: Not Implemented.
           always_comb_fail4: Not Implemented.
         always_comb_no_sens: Not Implemented.
+          always_comb_rfunc: Not Implemented.
            always_comb_trig: Not Implemented.
            always_comb_warn: Not Implemented.
                   always_ff: Not Implemented.
@@ -2405,4 +2406,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2403, Passed=2312, Failed=4, Not Implemented=86, Expected Fail=1
+  Total=2404, Passed=2312, Failed=4, Not Implemented=87, Expected Fail=1

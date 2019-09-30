@@ -1798,6 +1798,7 @@ test_mos_strength_reduction: Passed.
           always_comb_fail3: Passed - CE.
           always_comb_fail4: Passed - CE.
         always_comb_no_sens: Passed.
+          always_comb_rfunc: Passed.
            always_comb_trig: Passed.
            always_comb_warn: Passed.
                   always_ff: Passed.
