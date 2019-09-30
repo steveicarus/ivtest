@@ -1,4 +1,4 @@
-(DELAYFILE 
+(DELAYFILE
 
 (SDFVERSION "3.0" )
 
@@ -16,17 +16,17 @@
 
 (TIMESCALE 1ps)
 
-(CELL 
+(CELL
 
   (CELLTYPE "BUFGCE")
 
   (INSTANCE clk_IBUF_BUFG_inst)
 
-  (DELAY 
+  (DELAY
 
     (PATHPULSEPERCENT (30.0))
 
-    (ABSOLUTE 
+    (ABSOLUTE
 
       (IOPATH I O (40.0:47.0:47.0) (40.0:47.0:47.0))
 
