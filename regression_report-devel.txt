@@ -1880,6 +1880,7 @@ test_mos_strength_reduction: Passed.
                   br_gh164e: Passed.
                   br_gh167a: Passed.
                   br_gh167b: Passed.
+                  br_gh177a: Passed.
                    br_gh219: Passed.
                    br_gh220: Passed.
                    br_gh224: Passed.
