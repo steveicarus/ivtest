@@ -147,6 +147,7 @@ always_comb_fail	NI
 always_comb_fail3	NI
 always_comb_fail4	NI
 always_comb_no_sens	NI
+always_comb_rfunc	NI
 always_comb_trig	NI
 always_comb_warn	NI
 always_ff		NI
