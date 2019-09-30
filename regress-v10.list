@@ -146,6 +146,7 @@ always_comb		NI
 always_comb_fail	NI
 always_comb_fail3	NI
 always_comb_fail4	NI
+always_comb_no_sens	NI
 always_comb_trig	NI
 always_comb_warn	NI
 always_ff		NI
@@ -153,14 +154,18 @@ always_ff_fail		NI
 always_ff_fail2		NI
 always_ff_fail3		NI
 always_ff_fail4		NI
+always_ff_no_sens	NI
 always_ff_warn		NI
 always_ff_warn_sens	NI
 always_latch		NI
 always_latch_fail	NI
 always_latch_fail3	NI
 always_latch_fail4	NI
+always_latch_no_sens	NI
 always_latch_trig	NI
 always_latch_warn	NI
+br_gh226		CE,-g2009		ivltests
+gh161b			NI
 sf_countbits		NI
 sf_countbits_fail	NI
 sf_countones		NI
@@ -174,7 +179,7 @@ sf_onehot0_fail		NI
 sformatf		NI
 sv_immediate_assert	NI
 sv_immediate_assume	NI
-vvp_recv_vec4_pv	CE,-g2009
+vvp_recv_vec4_pv	CE,-g2009		ivltests
 wild_cmp_const		NI
 wild_cmp_err		NI
 wild_cmp_err2		NI

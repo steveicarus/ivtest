@@ -170,12 +170,12 @@ assign_nb1		normal			ivltests # Assign a constant to a single bit array (pmonta)
 assign_nb2		normal			ivltests # Assign a constant to a single bit array (pmonta)
 assign_neq		normal			ivltests # continuous assign with !=
 attrib			normal			ivltests
-attrib01_module 	normal			ivltests
+attrib01_module		normal			ivltests
 attrib02_port_decl	normal			ivltests
 attrib03_parameter	normal			ivltests
 attrib04_net_var	normal			ivltests
 attrib05_port_conn	normal			ivltests
-attrib06_operator_suffix normal 		ivltests
+attrib06_operator_suffix normal			ivltests
 attrib07_func_call	normal			ivltests
 attrib08_mod_inst	normal			ivltests
 attrib09_case		normal			ivltests

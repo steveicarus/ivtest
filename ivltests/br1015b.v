@@ -28,5 +28,5 @@ initial begin
   else
     $display("FAILED");
 end
-  
+
 endmodule

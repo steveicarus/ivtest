@@ -1,5 +1,5 @@
 module test;
-    
+
     wire [63:0] out;
     reg [5:0] in;
 

@@ -1794,6 +1794,7 @@ test_mos_strength_reduction: Passed.
            always_comb_fail: Passed - CE.
           always_comb_fail3: Passed - CE.
           always_comb_fail4: Passed - CE.
+        always_comb_no_sens: Passed.
            always_comb_trig: Passed.
            always_comb_warn: Passed.
                   always_ff: Passed.
@@ -1801,12 +1802,14 @@ test_mos_strength_reduction: Passed.
             always_ff_fail2: Passed - CE.
             always_ff_fail3: Passed - CE.
             always_ff_fail4: Passed - CE.
+          always_ff_no_sens: Passed - CE.
              always_ff_warn: Passed.
         always_ff_warn_sens: Passed.
                always_latch: Passed.
           always_latch_fail: Passed - CE.
          always_latch_fail3: Passed - CE.
          always_latch_fail4: Passed - CE.
+       always_latch_no_sens: Passed - CE.
           always_latch_trig: Passed.
           always_latch_warn: Passed.
                  array_size: Passed.
@@ -1876,7 +1879,7 @@ test_mos_strength_reduction: Passed.
                    br_gh219: Passed.
                    br_gh220: Passed.
                    br_gh224: Passed.
-                   br_gh226: Passed - CE.
+                   br_gh226: Passed.
                    br_gh231: Passed.
                    br_gh243: Passed.
              br_ml20150315b: Passed - CE.
@@ -1884,10 +1887,10 @@ test_mos_strength_reduction: Passed.
               br_ml20180227: Passed - CE.
              br_ml20180309a: Passed.
              br_ml20180309b: Passed.
-            br_ml201801012a: Passed - CE.
-            br_ml201801012b: Passed - CE.
-            br_ml201801012c: Passed - CE.
-            br_ml201801012d: Passed - CE.
+             br_ml20181012a: Passed - CE.
+             br_ml20181012b: Passed - CE.
+             br_ml20181012c: Passed - CE.
+             br_ml20181012d: Passed - CE.
                   cast_real: Passed.
       cfunc_assign_op_mixed: Passed.
          cfunc_assign_op_pv: Passed.
@@ -2183,6 +2186,7 @@ test_mos_strength_reduction: Passed.
                wild_cmp_err: Passed - CE.
               wild_cmp_err2: Passed - CE.
                      gh161a: Passed.
+                     gh161b: Passed.
                       br942: Passed.
                   br943_944: Passed.
                       br985: Passed.
@@ -2397,4 +2401,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2395, Passed=2388, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2399, Passed=2392, Failed=7, Not Implemented=0, Expected Fail=0
