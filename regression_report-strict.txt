@@ -1878,6 +1878,7 @@ test_mos_strength_reduction: Passed.
                   br_gh167a: Passed.
                   br_gh167b: Passed.
                   br_gh177a: Passed.
+                  br_gh177b: Passed.
                    br_gh219: Passed.
                    br_gh220: Passed.
                    br_gh224: Passed.
@@ -2080,6 +2081,7 @@ test_mos_strength_reduction: Passed.
            sv_darray_args2b: Passed.
             sv_darray_args3: Passed.
             sv_darray_args4: Passed.
+      sv_darray_decl_assign: Passed.
          sv_darray_function: Passed.
            sv_darray_signed: Passed.
         sv_darray_word_size: Passed.
@@ -2098,6 +2100,7 @@ test_mos_strength_reduction: Passed.
         sv_immediate_assume: Passed.
                    sv_macro: Passed.
                   sv_macro2: Passed.
+         sv_new_array_error: Passed - CE.
                  sv_package: Passed.
                 sv_package2: Passed.
                 sv_package3: Passed.
@@ -2164,6 +2167,11 @@ test_mos_strength_reduction: Passed.
                   sv_uwire4: Passed.
                sv_var_init1: Passed.
                sv_var_init2: Passed.
+        sv_wildcard_import1: Passed.
+        sv_wildcard_import2: Passed.
+        sv_wildcard_import3: Passed.
+        sv_wildcard_import4: Passed - CE.
+        sv_wildcard_import5: Passed - CE.
            sys_func_as_task: Passed.
            task_init_assign: Passed.
              task_init_var1: Passed.
@@ -2403,4 +2411,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2401, Passed=2394, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2409, Passed=2402, Failed=7, Not Implemented=0, Expected Fail=0
