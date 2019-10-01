@@ -64,6 +64,14 @@
 # gold or diff commands.
 #
 
+# Different error messages.
+br975			CE,-g2009		ivltests gold=br975-v10.gold
+br991b			CE,-g2009		ivltests gold=br991b-v10.gold
+pr1704726a		CE			ivltests gold=pr1704726a-v10.gold
+pr1704726c		CE			ivltests gold=pr1704726c-v10.gold
+pr1704726d		CE			ivltests gold=pr1704726d-v10.gold
+pr1862744b		CE,-Winfloop		ivltests gold=pr1862744b-v10.gold
+
 # The fix for nested structs on the LHS of an assignment hasn't been backported.
 gh161a		        NI
 
@@ -167,6 +175,7 @@ always_latch_trig	NI
 always_latch_warn	NI
 br_gh226		CE,-g2009		ivltests
 br_gh177a		NI
+br_gh177b		NI
 gh161b			NI
 sf_countbits		NI
 sf_countbits_fail	NI
@@ -179,8 +188,15 @@ sf_onehot_fail		NI
 sf_onehot0		NI
 sf_onehot0_fail		NI
 sformatf		NI
+sv_darray_decl_assign   NI
 sv_immediate_assert	NI
 sv_immediate_assume	NI
+sv_new_array_error      NI
+sv_wildcard_import1     NI
+sv_wildcard_import2     NI
+sv_wildcard_import3     NI
+sv_wildcard_import4     NI
+sv_wildcard_import5     NI
 vvp_recv_vec4_pv	CE,-g2009		ivltests
 wild_cmp_const		NI
 wild_cmp_err		NI

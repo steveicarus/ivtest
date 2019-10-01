@@ -358,6 +358,7 @@ sv_darray_args2		normal,-g2009		ivltests
 sv_darray_args2b	normal,-g2009		ivltests
 sv_darray_args3		normal,-g2009		ivltests
 sv_darray_args4		normal,-g2009		ivltests
+sv_darray_decl_assign	normal,-g2009		ivltests
 sv_darray_function	normal,-g2009		ivltests
 sv_darray_signed	normal,-g2009		ivltests
 sv_darray_word_size	normal,-g2005-sv	ivltests
@@ -376,6 +377,7 @@ sv_immediate_assert	normal,-g2009		ivltests gold=sv_immediate_assert.gold
 sv_immediate_assume	normal,-g2009		ivltests gold=sv_immediate_assume.gold
 sv_macro		normal,-g2009		ivltests
 sv_macro2		normal,-g2009		ivltests gold=sv_macro2.gold
+sv_new_array_error	CE,-g2009		ivltests gold=sv_new_array_error.gold
 sv_package		normal,-g2009		ivltests
 sv_package2		normal,-g2009		ivltests
 sv_package3		normal,-g2009		ivltests
@@ -455,6 +457,11 @@ sv_uwire3		normal,-g2009		ivltests
 sv_uwire4		normal,-g2009		ivltests
 sv_var_init1		normal,-g2009		ivltests
 sv_var_init2		normal,-g2009		ivltests
+sv_wildcard_import1	normal,-g2009		ivltests
+sv_wildcard_import2	normal,-g2009		ivltests
+sv_wildcard_import3	normal,-g2009		ivltests
+sv_wildcard_import4	CE,-g2009		ivltests gold=sv_wildcard_import4.gold
+sv_wildcard_import5	CE,-g2009		ivltests gold=sv_wildcard_import5.gold
 sys_func_as_task	normal,-g2005-sv	ivltests gold=sys_func_as_task.gold
 task_init_assign	normal,-g2009		ivltests
 task_init_var1		normal,-g2009		ivltests
