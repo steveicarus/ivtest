@@ -66,11 +66,9 @@
 
 # Different error messages.
 br975			CE,-g2009		ivltests gold=br975-v10.gold
-br991b			CE,-g2009		ivltests gold=br991b-v10.gold
 pr1704726a		CE			ivltests gold=pr1704726a-v10.gold
 pr1704726c		CE			ivltests gold=pr1704726c-v10.gold
 pr1704726d		CE			ivltests gold=pr1704726d-v10.gold
-pr1862744b		CE,-Winfloop		ivltests gold=pr1862744b-v10.gold
 
 # The fix for nested structs on the LHS of an assignment hasn't been backported.
 gh161a		        NI

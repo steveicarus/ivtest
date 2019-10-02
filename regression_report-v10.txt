@@ -1,11 +1,9 @@
 Running compiler/VVP tests for Icarus Verilog version: 10.
 ----------------------------------------------------------------------------
                       br975: Passed - CE.
-                     br991b: Passed - CE.
                  pr1704726a: Passed - CE.
                  pr1704726c: Passed - CE.
                  pr1704726d: Passed - CE.
-                 pr1862744b: Passed - CE.
                      gh161a: Not Implemented.
              func_init_var2: Not Implemented.
               br_ml20180227: Not Implemented.
@@ -1207,6 +1205,7 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
                   pr1855504: Passed.
                  pr1861212a: Passed.
                  pr1862744a: Passed.
+                 pr1862744b: Passed - CE.
                   pr1866215: Passed.
                  pr1866215b: Passed.
                  pr1867161a: Passed.
@@ -1943,6 +1942,7 @@ test_mos_strength_reduction: Passed.
                      br974b: Passed.
                      br974c: Passed.
                       br979: Passed.
+                     br991b: Passed - CE.
                     br1003a: Passed.
                     br1003d: Passed.
                      br1005: Passed - CE.
