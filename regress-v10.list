@@ -187,6 +187,10 @@ sf_onehot0		NI
 sf_onehot0_fail		NI
 sformatf		NI
 sv_darray_decl_assign   NI
+sv_deferred_assert1	NI
+sv_deferred_assert2	NI
+sv_deferred_assume1	NI
+sv_deferred_assume2	NI
 sv_immediate_assert	NI
 sv_immediate_assume	NI
 sv_new_array_error      NI
