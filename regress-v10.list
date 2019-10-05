@@ -171,6 +171,7 @@ always_latch_fail4	NI
 always_latch_no_sens	NI
 always_latch_trig	NI
 always_latch_warn	NI
+br1004                  NI
 br_gh226		CE,-g2009		ivltests
 br_gh177a		NI
 br_gh177b		NI

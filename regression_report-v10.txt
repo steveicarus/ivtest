@@ -72,6 +72,7 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
        always_latch_no_sens: Not Implemented.
           always_latch_trig: Not Implemented.
           always_latch_warn: Not Implemented.
+                     br1004: Not Implemented.
                    br_gh226: Passed - CE.
                   br_gh177a: Not Implemented.
                   br_gh177b: Not Implemented.
@@ -2421,4 +2422,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2419, Passed=2312, Failed=4, Not Implemented=102, Expected Fail=1
+  Total=2420, Passed=2312, Failed=4, Not Implemented=103, Expected Fail=1
