@@ -88,6 +88,10 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
             sf_onehot0_fail: Not Implemented.
                    sformatf: Not Implemented.
       sv_darray_decl_assign: Not Implemented.
+        sv_deferred_assert1: Not Implemented.
+        sv_deferred_assert2: Not Implemented.
+        sv_deferred_assume1: Not Implemented.
+        sv_deferred_assume2: Not Implemented.
         sv_immediate_assert: Not Implemented.
         sv_immediate_assume: Not Implemented.
          sv_new_array_error: Not Implemented.
@@ -96,6 +100,8 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
         sv_wildcard_import3: Not Implemented.
         sv_wildcard_import4: Not Implemented.
         sv_wildcard_import5: Not Implemented.
+        sv_wildcard_import6: Not Implemented.
+        sv_wildcard_import7: Not Implemented.
            vvp_recv_vec4_pv: Passed - CE.
              wild_cmp_const: Not Implemented.
                wild_cmp_err: Not Implemented.
@@ -2415,4 +2421,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2413, Passed=2312, Failed=4, Not Implemented=96, Expected Fail=1
+  Total=2419, Passed=2312, Failed=4, Not Implemented=102, Expected Fail=1
