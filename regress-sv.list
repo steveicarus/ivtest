@@ -466,6 +466,8 @@ sv_wildcard_import2	normal,-g2009		ivltests
 sv_wildcard_import3	normal,-g2009		ivltests
 sv_wildcard_import4	CE,-g2009		ivltests gold=sv_wildcard_import4.gold
 sv_wildcard_import5	CE,-g2009		ivltests gold=sv_wildcard_import5.gold
+sv_wildcard_import6	normal,-g2009		ivltests
+sv_wildcard_import7	normal,-g2009		ivltests
 sys_func_as_task	normal,-g2005-sv	ivltests gold=sys_func_as_task.gold
 task_init_assign	normal,-g2009		ivltests
 task_init_var1		normal,-g2009		ivltests

@@ -199,6 +199,8 @@ sv_wildcard_import2     NI
 sv_wildcard_import3     NI
 sv_wildcard_import4     NI
 sv_wildcard_import5     NI
+sv_wildcard_import6     NI
+sv_wildcard_import7     NI
 vvp_recv_vec4_pv	CE,-g2009		ivltests
 wild_cmp_const		NI
 wild_cmp_err		NI
