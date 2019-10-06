@@ -195,6 +195,7 @@ sv_deferred_assume2	NI
 sv_immediate_assert	NI
 sv_immediate_assume	NI
 sv_new_array_error      NI
+sv_param_port_list	NI
 sv_wildcard_import1     NI
 sv_wildcard_import2     NI
 sv_wildcard_import3     NI

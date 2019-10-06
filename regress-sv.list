@@ -390,6 +390,7 @@ sv_package4		normal,-g2009		ivltests
 sv_package5		normal,-g2009		ivltests
 sv_packed_port1		normal,-g2009		ivltests
 sv_packed_port2		normal,-g2009		ivltests
+sv_param_port_list	normal,-g2009		ivltests
 sv_pkg_class		normal,-g2009		ivltests gold=sv_pkg_class.gold
 sv_port_default1	normal,-g2009		ivltests
 sv_port_default2	normal,-g2009		ivltests
