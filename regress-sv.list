@@ -172,6 +172,8 @@ br_ml20181012a		CE,-g2009		ivltests
 br_ml20181012b		CE,-g2009		ivltests
 br_ml20181012c		CE,-g2009		ivltests
 br_ml20181012d		CE,-g2009		ivltests
+case_priority           normal,-g2005-sv        ivltests gold=case_priority.gold
+case_unique             normal,-g2005-sv        ivltests gold=case_unique.gold
 cast_real		normal,-g2005-sv	ivltests
 cfunc_assign_op_mixed	normal,-g2009		ivltests
 cfunc_assign_op_pv	normal,-g2009		ivltests
