@@ -323,6 +323,7 @@ sv-2val-nets		normal,-g2009		ivltests
 sv-constants		normal,-g2005-sv	ivltests
 sv_array_assign_pattern2	normal,-g2009	ivltests
 sv_cast_integer		normal,-g2005-sv	ivltests
+sv_cast_integer2		normal,-g2005-sv	ivltests
 sv_cast_string		normal,-g2005-sv	ivltests
 sv_class1		normal,-g2009		ivltests
 sv_class2		normal,-g2009		ivltests
