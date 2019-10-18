@@ -141,6 +141,7 @@ v2005_math		normal			ivltests
 
 # $fatal
 fatal_et_al		normal			ivltests gold=fatal_et_al.gold
+fatal_et_al2		RE			ivltests gold=fatal_et_al2.gold
 
 # $is_signed
 pr1494799		normal			ivltests gold=pr1494799.gold

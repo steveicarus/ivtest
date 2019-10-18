@@ -78,6 +78,7 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
                       tern3: Passed.
                  v2005_math: Passed.
                 fatal_et_al: Passed.
+               fatal_et_al2: Passed - RE.
                   pr1494799: Passed.
                  pr2428890c: Passed.
              sv_cast_darray: Passed.
@@ -2423,4 +2424,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2421, Passed=2414, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2422, Passed=2415, Failed=7, Not Implemented=0, Expected Fail=0
