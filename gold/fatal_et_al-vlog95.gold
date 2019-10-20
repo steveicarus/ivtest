@@ -4,5 +4,4 @@ WARNING: vlog95.v:13: This is the $warning message.
          Time: 2 Scope: top
 ERROR: vlog95.v:14: This is the $error message.
        Time: 3 Scope: top
-FATAL: vlog95.v:15: This is the $fatal message.
-       Time: 4 Scope: top
+Check that the messages are correct.
