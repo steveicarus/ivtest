@@ -150,6 +150,7 @@ v0.9:br_gh73b		 NI force.c		br_gh73b.gold
 # V10 exceptions
 v10:br_gh117		 NI br_gh117.c		br_gh117.gold
 v10:br_gh169b	normal,-g2009 br_gh169.c	br_gh169b-v10.gold
+v10:br_ml20191013	 NI br_ml20191013.c br_ml20191013.gold
 
 #==========
 # The default case.
@@ -214,6 +215,7 @@ br_gh169a        normal br_gh169.c	br_gh169a.gold
 br_gh169b        normal,-g2009 br_gh169.c	br_gh169b.gold
 br_gh184	 normal start_of_simtime1.c	br_gh184.gold
 br_gh235         normal,-g2009 br_gh235.c	br_gh235.gold
+br_ml20191013	 normal br_ml20191013.c br_ml20191013.gold
 
 # Add new tests here. If the test needs a compile option or a
 # different log file to run with an older versions or if it uses
