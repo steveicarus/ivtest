@@ -77,6 +77,7 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
                    br_gh226: Passed - CE.
                   br_gh177a: Not Implemented.
                   br_gh177b: Not Implemented.
+                  br_gh277b: Not Implemented.
                      gh161b: Not Implemented.
                sf_countbits: Not Implemented.
           sf_countbits_fail: Not Implemented.
@@ -224,6 +225,7 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
                       tern3: Passed.
                  v2005_math: Passed.
                 fatal_et_al: Passed.
+               fatal_et_al2: Passed.
                   pr1494799: Passed.
                  pr2428890c: Passed.
                       br978: Passed.
@@ -550,6 +552,7 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
                    br_gh230: Passed.
                   br_gh244a: Passed.
                   br_gh244b: Passed.
+                  br_gh277a: Passed.
               br_ml20150315: Passed.
               br_ml20150321: Passed - CE.
               br_ml20150606: Passed.
@@ -2425,4 +2428,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2423, Passed=2314, Failed=4, Not Implemented=104, Expected Fail=1
+  Total=2426, Passed=2316, Failed=4, Not Implemented=105, Expected Fail=1
