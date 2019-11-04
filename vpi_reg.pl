@@ -193,8 +193,13 @@ sub execute_regression {
         }
 
         $cmd = $with_valg ? "valgrind --trace-children=yes " : "";
-        $cmd .= "iverilog$sfx $args{$tname} -o vsim vpi/$tname.v >> " .
-                "vpi_log/$tname.log 2>&1";
+        if ($ver < 11) {
+            $cmd .= "iverilog$sfx $args{$tname} -o vsim vpi/$tname.v >> " .
+                    "vpi_log/$tname.log 2>&1";
+        } else {
+            $cmd .= "iverilog$sfx $args{$tname} -L . -m $tname -o vsim vpi/$tname.v >> " .
+                    "vpi_log/$tname.log 2>&1";
+        }
         if (system("$cmd")) {
             print "==> Failed - running iverilog.\n";
             $failed++;
@@ -203,7 +208,11 @@ sub execute_regression {
 
         $cmd = $with_valg ? "valgrind --leak-check=full " .
                             "--show-reachable=yes " : "";
-        $cmd .= "vvp$sfx -M . -m $tname vsim >> vpi_log/$tname.log 2>&1";
+        if ($ver < 11) {
+            $cmd .= "vvp$sfx -M . -m $tname vsim >> vpi_log/$tname.log 2>&1";
+        } else {
+            $cmd .= "vvp$sfx vsim >> vpi_log/$tname.log 2>&1";
+        }
         if (system("$cmd")) {
             print "==> Failed - running vvp.\n";
             $failed++;
