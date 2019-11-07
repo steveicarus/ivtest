@@ -165,6 +165,7 @@ br_gh231		normal,-g2009		ivltests
 br_gh243		normal,-g2009		ivltests
 br_gh265		CE,-g2009		ivltests gold=br_gh265.gold
 br_gh277b		normal,-g2009		ivltests
+br_gh281		normal,-g2012		ivltests
 br_ml20150315b		CE,-g2009		ivltests
 br_ml20171017		normal,-g2009		ivltests
 br_ml20180227		CE,-g2009		ivltests
