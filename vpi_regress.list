@@ -151,6 +151,7 @@ v0.9:br_gh73b		 NI force.c		br_gh73b.gold
 v10:br_gh117		 NI br_gh117.c		br_gh117.gold
 v10:br_gh169b	normal,-g2009 br_gh169.c	br_gh169b-v10.gold
 v10:br_ml20191013	 NI br_ml20191013.c br_ml20191013.gold
+v10:spec_delays  normal,-gspecify spec_delays.c spec_delays.log -DIVERILOG_V10
 
 #==========
 # The default case.
