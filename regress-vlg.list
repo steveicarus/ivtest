@@ -316,6 +316,9 @@ br_gh230		RE			ivltests gold=br_gh230.gold
 br_gh244a		normal			ivltests
 br_gh244b		normal			ivltests
 br_gh277a		normal			ivltests
+br_gh283a		normal			ivltests
+br_gh283b		normal			ivltests
+br_gh283c		normal			ivltests
 br_ml20150315		normal			ivltests gold=br_ml_20150315.gold
 br_ml20150321		CE			ivltests
 br_ml20150606		normal			ivltests
