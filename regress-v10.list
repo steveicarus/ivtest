@@ -79,6 +79,7 @@ br_gh289c               EF,-g2009		ivltests
 
 # The fix for class access to enclosing scopes hasn't been backported.
 br1003a			normal,-g2009		ivltests gold=br1003a-v10.gold
+br_ml20191221		CE,-g2009		ivltests
 
 # The fix for void functions hasn't been backported.
 br_gh281		NI
