@@ -350,6 +350,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
               generate_case: Passed - CE.
              generate_case2: Passed - CE.
              generate_case3: Passed - CE.
+             genvar_inc_dec: Passed - CE.
                    packeda2: Passed - CE.
                  pr1565699b: Passed - CE.
                   pr1623097: Passed - CE.
@@ -2439,4 +2440,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2437, Passed=2393, Failed=10, Not Implemented=3, Expected Fail=31
+  Total=2438, Passed=2394, Failed=10, Not Implemented=3, Expected Fail=31
