@@ -319,6 +319,7 @@ br_gh277a		normal			ivltests
 br_gh283a		normal			ivltests
 br_gh283b		normal			ivltests
 br_gh283c		normal			ivltests
+br_gh309		normal			ivltests
 br_ml20150315		normal			ivltests gold=br_ml_20150315.gold
 br_ml20150321		CE			ivltests
 br_ml20150606		normal			ivltests
