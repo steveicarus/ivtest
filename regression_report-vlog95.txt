@@ -2405,6 +2405,8 @@ test_mos_strength_reduction: Passed.
                 blocksynth3: Passed.
                       br995: Passed - CE.
                    br_gh115: Passed.
+                  br_gh306a: Passed - CE.
+                  br_gh306b: Passed - CE.
                       case3: Passed.
                       case4: Passed.
                       case5: Passed.
@@ -2441,4 +2443,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2439, Passed=2395, Failed=10, Not Implemented=3, Expected Fail=31
+  Total=2441, Passed=2397, Failed=10, Not Implemented=3, Expected Fail=31
