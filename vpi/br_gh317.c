@@ -7,7 +7,7 @@ static void get_type(char *obj, vpiHandle scope)
     vpi_printf("Looking for \"%s\": ",  obj);
 
     hand = vpi_handle_by_name(obj, scope);
-    if (hand) vpi_printf("found \"%s\"\n", vpi_get_str(vpiName, hand)); 
+    if (hand) vpi_printf("found \"%s\"\n", vpi_get_str(vpiName, hand));
     else vpi_printf("Not found\n");
 }
 
