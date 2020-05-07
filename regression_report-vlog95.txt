@@ -417,6 +417,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                   br_gh127c: Passed - CE.
                   br_gh127e: Passed - CE.
                   br_gh127f: Passed - CE.
+                   br_gh315: Passed - CE.
+                  br_gh316c: Passed - CE.
               countdrivers3: Passed - CE.
                       inout: Passed - TE.
                      inout2: Passed - CE.
@@ -1007,7 +1009,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                    br_gh209: Passed.
                   br_gh277a: Passed.
                    br_gh309: Passed.
-                   br_gh315: Passed.
+                  br_gh316a: Passed.
+                  br_gh316b: Passed.
               br_ml20150315: Passed.
               br_ml20150321: Passed - CE.
               br_ml20150606: Passed.
@@ -2445,4 +2448,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2443, Passed=2399, Failed=10, Not Implemented=3, Expected Fail=31
+  Total=2446, Passed=2402, Failed=10, Not Implemented=3, Expected Fail=31
