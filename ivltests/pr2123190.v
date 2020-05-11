@@ -13,7 +13,7 @@ module top;
       end
       rin = 2.0;
       #1 if (ress != 4.0 || reso != 3.0) begin
-	 $display("FAILED: rin=%f, scale=%f, expected 2.0/2.0, got %f/%f", ress, reso);
+	 $display("FAILED: rin=%f, scale=%f, expected 2.0/2.0, got %f/%f", rin, scale, ress, reso);
 	 pass = 1'b0;
       end
 

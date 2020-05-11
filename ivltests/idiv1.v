@@ -86,7 +86,7 @@ initial begin
          $display("FAILED - Divide x/3 reg assign failed - is %b",result);
          $finish;
       end
-   if( wresult !== 8'hxxxx_xxxx)
+   if( wresult !== 8'bxxxx_xxxx)
      begin
         $display("FAILED - Divide x/3 wire assign failed - is %b",wresult);
         $finish;
