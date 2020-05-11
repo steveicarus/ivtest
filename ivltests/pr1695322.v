@@ -10,7 +10,7 @@ module test ();
 	 $finish;
       end
 
-      if (a[1] !== 6'bzzzzzzzz) begin
+      if (a[1] !== 6'bzzzzzz) begin
 	 $display("FAILED -- a[1] == %h", a[1]);
 	 $finish;
       end
