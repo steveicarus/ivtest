@@ -62,7 +62,7 @@ module tb();
     #50 // time to settle
 
     // NOW throw outputs on and time how long it takes for expected output to appear.
-    
+
     // It should take 16 to propagate from nOE -> B but the change is instantaneous
 
     $display("enable output - B will change immediately");
@@ -70,7 +70,7 @@ module tb();
     timer=$time;
     nOE <= 0;
     wait(B === 8'b11111111);
-    if ($time - timer < 16) begin 
+    if ($time - timer < 16) begin
       $display("%6d", $time, " ERROR TOO QUICK - EXPECTED nOE->B = 16ns - BUT TOOK %-d", ($time - timer));
       failed = 1;
     end

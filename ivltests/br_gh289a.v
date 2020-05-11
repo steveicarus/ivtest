@@ -1,6 +1,6 @@
 package pkg;
 
-typedef enum logic [3:0] { 
+typedef enum logic [3:0] {
     ABC = 4'h1
 } enum_t;
 
