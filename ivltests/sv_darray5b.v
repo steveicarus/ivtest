@@ -37,7 +37,7 @@ module main;
 
       for (idx = 0 ; idx < 2*foo.size() ; idx += 1) begin
 	 if (foo[idx%10] != (idx%10)) begin
-	    $display("FAILED -- foo[%0d%%10] = %0d", foo[idx%10]);
+	    $display("FAILED -- foo[%0d%%10] = %0d", idx, foo[idx%10]);
 	    $finish;
 	 end
       end
