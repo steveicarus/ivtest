@@ -152,10 +152,11 @@ V0.9: br_gh317           NI br_gh317.c          br_gh317.gold
 # Add v0.8/v0.9 overrides here.
 
 # V10 exceptions
-v10:br_gh117		 NI br_gh117.c		br_gh117.gold
-v10:br_gh169b	normal,-g2009 br_gh169.c	br_gh169b-v10.gold
-v10:br_ml20191013	 NI br_ml20191013.c br_ml20191013.gold
-v10:spec_delays  normal,-gspecify spec_delays.c spec_delays.log -DIVERILOG_V10
+v10:br_gh117		NI		br_gh117.c	br_gh117.gold
+v10:br_gh169b		normal,-g2009	br_gh169.c	br_gh169b-v10.gold
+v10:br_ml20191013	NI		br_ml20191013.c br_ml20191013.gold
+v10:pr723		normal		pr723.c		pr723-v10.log
+v10:spec_delays		normal,-gspecify spec_delays.c	spec_delays.log -DIVERILOG_V10
 
 #==========
 # The default case.

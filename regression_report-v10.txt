@@ -5,6 +5,8 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
                  pr1704726c: Passed - CE.
                  pr1704726d: Passed - CE.
                    br_gh265: Passed - CE.
+           fdisplay_fail_fd: Passed.
+          fdisplay_fail_mcd: Passed.
                   br_gh289a: Not Implemented.
                   br_gh289b: Passed - expected fail.
                   br_gh289c: Passed - expected fail.
@@ -736,8 +738,6 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
                   fdisplay1: Passed.
                   fdisplay2: Passed.
                   fdisplay3: Passed.
-           fdisplay_fail_fd: Passed.
-          fdisplay_fail_mcd: Passed.
                        fifo: Passed.
                      fileio: Passed.
                      fopen1: Passed.

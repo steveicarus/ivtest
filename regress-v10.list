@@ -72,6 +72,10 @@ pr1704726d		CE			ivltests gold=pr1704726d-v10.gold
 # The fix to give a sensible error message has not been backported.
 br_gh265		CE,-g2009		ivltests
 
+# Different warning messages.
+fdisplay_fail_fd	normal			ivltests gold=fdisplay_fail_fd-v10.gold
+fdisplay_fail_mcd	normal			ivltests gold=fdisplay_fail_mcd-v10.gold
+
 # The fix for type elaboration in the correct scope hasn't been backported.
 br_gh289a               NI
 br_gh289b               EF,-g2009		ivltests
