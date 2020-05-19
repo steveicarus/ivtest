@@ -481,6 +481,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                        mem1: Passed.
                         pic: Passed.
                       pr910: Passed.
+                  pr1698820: Passed.
                   pr1819452: Passed.
                  pr2509349a: Passed.
                  pr2509349b: Passed.
@@ -1529,7 +1530,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                   pr1697732: Passed.
                   pr1698658: Passed.
                   pr1698659: Passed.
-                  pr1698820: Passed.
                   pr1699444: Passed.
                   pr1699519: Passed.
                   pr1701855: Passed.

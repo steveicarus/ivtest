@@ -646,6 +646,7 @@ parameter_type		normal			ivltests gold=parameter_type-vlog95.gold
 mem1			normal			ivltests gold=mem1-vlog95.gold
 pic			normal			contrib  gold=pic-vlog95.gold
 pr910			normal			ivltests gold=pr910-vlog95.gold
+pr1698820		normal			ivltests gold=pr1698820-vlog95.gold
 pr1819452		normal			ivltests gold=pr1819452-vlog95.gold
 pr2509349a		normal			ivltests gold=pr2509349a-vlog95.gold
 pr2509349b		normal			ivltests gold=pr2509349b-vlog95.gold
