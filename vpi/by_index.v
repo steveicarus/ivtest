@@ -28,5 +28,5 @@ module top;
     $put_val(wval, 1, 0);
     $display("     New net value is %b", wval);
   end
-  
+
 endmodule
