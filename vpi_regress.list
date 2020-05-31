@@ -146,8 +146,8 @@ v0.8:br_gh73b		 NI force.c		br_gh73b.gold
 v0.9:br_gh73b		 NI force.c		br_gh73b.gold
 
 # V0.8 and V0.9 do not support finding an escapped name in vpi_handle_by_name()
-V0.8: br_gh317           NI br_gh317.c          br_gh317.gold
-V0.9: br_gh317           NI br_gh317.c          br_gh317.gold
+v0.8:br_gh317           NI br_gh317.c          br_gh317.gold
+v0.9:br_gh317           NI br_gh317.c          br_gh317.gold
 
 # Add v0.8/v0.9 overrides here.
 
@@ -157,6 +157,12 @@ v10:br_gh169b		normal,-g2009	br_gh169.c	br_gh169b-v10.gold
 v10:br_ml20191013	NI		br_ml20191013.c br_ml20191013.gold
 v10:pr723		normal		pr723.c		pr723-v10.log
 v10:spec_delays		normal,-gspecify spec_delays.c	spec_delays.log -DIVERILOG_V10
+
+# V0.8, V0.9 and V10 do not support finding a reg bit by index
+v0.8:by_index		NI by_index.c		by_index.gold
+v0.9:by_index		NI by_index.c		by_index.gold
+v10:by_index		NI by_index.c		by_index.gold
+
 
 #==========
 # The default case.
@@ -224,6 +230,7 @@ br_gh235         normal,-g2009 br_gh235.c	br_gh235.gold
 br_ml20191013	 normal br_ml20191013.c br_ml20191013.gold
 br_gh308         normal br_gh308.c	br_gh308.gold
 br_gh317         normal br_gh317.c	br_gh317.gold
+by_index         normal by_index.c	by_index.gold
 
 # Add new tests here. If the test needs a compile option or a
 # different log file to run with an older versions or if it uses
