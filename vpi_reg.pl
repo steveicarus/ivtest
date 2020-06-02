@@ -243,6 +243,7 @@ sub execute_regression {
     print "=" x 76 . "\n";
     print "Test results: Total=$total, Passed=$passed, Failed=$failed,".
           " Not Implemented=$not_impl\n";
+    exit $failed;
 }
 
 #
