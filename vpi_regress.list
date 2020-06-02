@@ -24,222 +24,120 @@
 #==========
 # For testing with other simulators
 #==========
-# This test uses an Icarus language extension ($simparam).
-vstd:check_version	NI	check_version.c check_version.gold
-
-# This test uses an Icarus language extension (wire real).
-vstd:pr2966059		NI	pr2966059.c	pr2966059.gold
 
 # Icarus returns vpiReg instead of vpiTimeVar.
-vstd:by_name		normal	by_name.c	by_name-std.log
+vstd:by_name		normal			by_name.c		by_name-std.log
+
+# This test uses an Icarus language extension ($simparam).
+vstd:check_version	NI			check_version.c 	check_version.gold
 
 # Icarus generates spurious value change callback triggers at T=0.
-vstd:memwide		normal	memwide.cc	memwide-std.log
-vstd:nulls1		normal	nulls1.c	nulls1-std.log
+vstd:memwide		normal			memwide.cc		memwide-std.log
+vstd:nulls1		normal			nulls1.c		nulls1-std.log
 
 # Icarus outputs warning messages.
-vstd:pr723		normal	pr723.c		pr723-std.log
+vstd:pr723		normal			pr723.c 		pr723-std.log
+
+# This test uses an Icarus language extension (wire real).
+vstd:pr2966059		NI			pr2966059.c		pr2966059.gold
 
 # This test has a non-deterministic output order. The gold file needs
 # to be adjusted to match the simulator being used.
-vstd:scopes		normal	scopes.c	scopes-std.log
+vstd:scopes		normal			scopes.c		scopes-std.log
+
 
 #==========
 # MSYS2 exceptions
 #==========
 
-# This still needs investigating
-msys2:pr723       NI    pr723.c       pr723.log
+# This still needs investigating.
+msys2:pr723		NI			pr723.c 		pr723.log
+
 
 #==========
-# For version 0.8 do these instead of the default case.
-#
-# Version 0.8 defines some VPI calls differently than the standard.
-# The IVERILOG_V0_8 define is used to accommodate these differences.
-#
-# Specifically the calltf, compieltf and sizetf routines take a
-# (char *) argument not a (PLI_BYTE8 *). This difference only
-# produces a warning for C code, but is fatal for C++ code.
-#
+# V10 exceptions
 #==========
-v0.8:hello_vpi   normal hello_vpi.c   hello.log           -DIVERILOG_V0_8
-v0.8:hello_tf    normal hello_tf.c    hello_tf.log        -DIVERILOG_V0_8
-v0.8:hello_poke  normal hello_poke.c  hello_poke.log      -DIVERILOG_V0_8
-# V0.8 does not trigger a to X event at T=0.
-v0.8:nulls1      normal nulls1.c      nulls1-v0.8.log     -DIVERILOG_V0_8
-v0.8:scanmem     normal scanmem.cc    scanmem.log         -DIVERILOG_V0_8
-v0.8:scanmem2    normal scanmem2.cc   scanmem2.log        -DIVERILOG_V0_8
-# V0.8 incorrectly uses 0 bits outside the vector range to determine
-# if X is printed.
-v0.8:scanmem3    normal scanmem3.cc   scanmem3-v0.8.log   -DIVERILOG_V0_8
-v0.8:event1      normal event1.c      event1.log          -DIVERILOG_V0_8
-v0.8:pokereg     normal pokereg.cc    pokereg.log         -DIVERILOG_V0_8
-# This test has both the T=0 and X differences noted above.
-v0.8:memwide     normal memwide.cc    memwide-v0.8.log
-# V0.8 and V0.9 have a different order than later versions.
-v0.8:scopes      normal scopes.c      scopes-v0.9.log     -DIVERILOG_V0_8
-v0.9:scopes      normal scopes.c      scopes-v0.9.log
-v0.8:by_name     normal by_name.c     by_name.log         -DIVERILOG_V0_8
-v0.8:realcb      normal realcb.c      realcb.log          -DIVERILOG_V0_8
-v0.8:pr686       normal pr686.c       pr686.log           -DIVERILOG_V0_8
-v0.8:pr723       normal pr723.c       pr723-v0.8.log      -DIVERILOG_V0_8
-# V0.8 has some 32 bit time problems so this test fails.
-v0.8:realtime    normal realtime.c    realtime.log        -DIVERILOG_V0_8
-v0.8:realtime2   normal realtime2.c   realtime2.log       -DIVERILOG_V0_8
-# V0.8 does not support whole array callbacks so this test fails.
-v0.8:memmon      NI     memmon.c      memmon.log
-# From a VPI standpoint, parameters are not handled very well in V0.8.
-v0.8:listparams  normal listparams.c  listparams-v0.8.log -DIVERILOG_V0_8
-v0.8:pr1693971   normal pr1693971.c   pr1693971.log       -DIVERILOG_V0_8
-# V0.8 does not support vpiModPath!
-v0.8:spec_delays NI     spec_delays.c spec_delays.log
-# V0.9 has different T0 values for nets z vs x.
-v0.9:spec_delays normal,-gspecify spec_delays.c spec_delays-v0.9.log
-# V0.8 does not support a callback using vpiScaledRealTime
-v0.8:pr2048463   NI     pr2048463.c   pr2048463.log
-# V0.9 starts at Z so has a to X transition.
-v0.9:pr2048463   normal pr2048463.c   pr2048463-v0.9.log
-v0.8:pr2314742   normal	pr2314742.c   pr2314742.gold      -DIVERILOG_V0_8
-# V0.8, V0.9 do not support vpiCellInstance
-v0.8:celldefine	 NI	celldefine.c  celldefine.gold
-v0.9:celldefine	 NI	celldefine.c  celldefine.gold
-# V0.8 does not support a callback using vpiAtStartOfSimTime
-v0.8:start_of_simtime1	NI start_of_simtime1.c	start_of_simtime1.log
-v0.8:check_version	NI check_version.c	check_version.gold
-v0.8:pr2966059   NI pr2966059.c	pr2966059.gold
-v0.8:pr2971220   NI pr2971220.c	pr2971220.gold
-# V0.8, V0.9 do not support vpi_get_systf_info(), etc.
-v0.8:pr2971220   NI pr2971220.c   pr2971220.gold
-v0.9:pr2971220   NI pr2971220.c   pr2971220.gold
-# V0.8 does not have the updated definition for getlongsimtime().
-v0.8:timescale        normal timescale.c   timescale-v0.8.log
-
-# V0.8, V0.9 do not support final blocks.
-v0.8:final       NI final.c final.gold
-v0.9:final       NI final.c final.gold
-
-# V0.8, V0.9 do not support getting port properties.
-v0.8:ports_params  NI ports_params.c ports_params.gold
-v0.9:ports_params  NI ports_params.c ports_params.gold
-
-# V0.8, V0.9 do not support the fixed VPI access.
-v0.8:find_sig	 NI find_sig.c     find_sig.gold
-v0.9:find_sig	 NI find_sig.c     find_sig.gold
-v0.8:myscope	 NI myscope.c      myscope.gold
-v0.9:myscope	 NI myscope.c      myscope.gold
-v0.8:myscope2	 NI myscope2.c     myscope2.gold
-v0.9:myscope2	 NI myscope2.c     myscope2.gold
-v0.8:range1	 NI range1.c       range1.gold
-v0.9:range1	 NI range1.c       range1.gold
-v0.8:display_array	 NI display_array.c       display_array.gold
-v0.9:display_array	 NI display_array.c       display_array.gold
-v0.8:force_reg		 NI force.c		force_reg.gold
-v0.9:force_reg		 NI force.c		force_reg.gold
-v0.8:force_wire		 NI force.c		force_wire.gold
-v0.9:force_wire		 NI force.c		force_wire.gold
-v0.8:force_reg_pv	 NI force.c		force_reg_pv.gold
-v0.9:force_reg_pv	 NI force.c		force_reg_pv.gold
-v0.8:force_wire_pv	 NI force.c		force_wire_pv.gold
-v0.9:force_wire_pv	 NI force.c		force_wire_pv.gold
-v0.8:force_reg_real	 NI force_real.c	force_reg_real.gold
-v0.9:force_reg_real	 NI force_real.c	force_reg_real.gold
-v0.8:force_wire_real	 NI force_real.c	force_wire_real.gold
-v0.9:force_wire_real	 NI force_real.c	force_wire_real.gold
-v0.8:br_gh59		 NI br_gh59.c		br_gh59.gold
-v0.9:br_gh59		 NI br_gh59.c		br_gh59.gold
-v0.8:br_gh73a		 NI force.c		br_gh73a.gold
-v0.9:br_gh73a		 NI force.c		br_gh73a.gold
-v0.8:br_gh73b		 NI force.c		br_gh73b.gold
-v0.9:br_gh73b		 NI force.c		br_gh73b.gold
-
-# V0.8 and V0.9 do not support finding an escapped name in vpi_handle_by_name()
-v0.8:br_gh317           NI br_gh317.c          br_gh317.gold
-v0.9:br_gh317           NI br_gh317.c          br_gh317.gold
-
-# Add v0.8/v0.9 overrides here.
 
 # V10 exceptions
-v10:br_gh117		NI		br_gh117.c	br_gh117.gold
-v10:br_gh169b		normal,-g2009	br_gh169.c	br_gh169b-v10.gold
-v10:br_ml20191013	NI		br_ml20191013.c br_ml20191013.gold
-v10:pr723		normal		pr723.c		pr723-v10.log
-v10:spec_delays		normal,-gspecify spec_delays.c	spec_delays.log -DIVERILOG_V10
-
-# V0.8, V0.9 and V10 do not support finding a reg bit by index
-v0.8:by_index		NI by_index.c		by_index.gold
-v0.9:by_index		NI by_index.c		by_index.gold
-v10:by_index		NI by_index.c		by_index.gold
+v10:br_gh117		NI			br_gh117.c		br_gh117.gold
+v10:br_gh169b		normal,-g2009		br_gh169.c		br_gh169b-v10.gold
+v10:br_ml20191013	NI			br_ml20191013.c 	br_ml20191013.gold
+v10:by_index		NI			by_index.c		by_index.gold
+v10:pr723		normal			pr723.c 		pr723-v10.log
+v10:spec_delays 	normal,-gspecify	spec_delays.c		spec_delays.log -DIVERILOG_V10
 
 
 #==========
 # The default case.
 #==========
-hello_vpi        normal hello_vpi.c   hello.log
-hello_tf         normal hello_tf.c    hello_tf.log
-hello_poke       normal hello_poke.c  hello_poke.log
-callback1        normal callback1.c   callback1.log
-nulls1           normal nulls1.c      nulls1.log
-scanmem          normal scanmem.cc    scanmem.log
-scanmem2         normal scanmem2.cc   scanmem2.log
-scanmem3         normal scanmem3.cc   scanmem3.log
-event1           normal event1.c      event1.log
-event2           normal event2.c      event2.log
-pokevent         normal pokevent.cc   pokevent.log
-pokereg          normal pokereg.cc    pokereg.log
-memwide          normal memwide.cc    memwide.log
-scopes           normal scopes.c      scopes.log
-by_name          normal by_name.c     by_name.log
-realcb           normal realcb.c      realcb.log
-pr521            normal pr521.c       pr521.log
-pr686            normal pr686.c       pr686.log
-pr723            normal pr723.c       pr723.log
-realtime         normal realtime.c    realtime.log
-realtime2        normal realtime2.c   realtime2.log
-putvalue         normal putvalue.c    putvalue.log
-timescale        normal timescale.c   timescale.log
-getp             normal getp.c        getp.log
-putp             normal putp.c        putp.log
-putp2            normal putp2.c       putp2.log
-mipname          normal mipname.c     mipname.log
-memmon           normal,-g1995 memmon.c      memmon.log
-listparams       normal listparams.c  listparams.log
-pr1693971        normal pr1693971.c   pr1693971.log
-spec_delays      normal,-gspecify spec_delays.c spec_delays.log
-pr2048463        normal pr2048463.c   pr2048463.log
-pr2314742        normal pr2314742.c   pr2314742.gold
-celldefine       normal celldefine.c  celldefine.gold
-start_of_simtime1	normal start_of_simtime1.c	start_of_simtime1.log
-check_version	 normal	check_version.c	check_version.gold
-pr2966059        normal,-gno-xtypes pr2966059.c   pr2966059.gold
-pr2971220        normal pr2971220.c   pr2971220.gold
-final            normal,-g2009 final.c final.gold
-ports_params     normal ports_params.c ports_params.gold
-find_sig	 normal find_sig.c     find_sig.gold
-myscope		 normal myscope.c      myscope.gold
-myscope2	 normal myscope2.c     myscope2.gold
-range1		 normal range1.c       range1.gold
-display_array	 normal,-g2009 display_array.c       display_array.gold
-force_reg	 normal force.c		force_reg.gold
-force_wire	 normal force.c		force_wire.gold
-force_reg_pv	 normal force.c		force_reg_pv.gold
-force_wire_pv	 normal force.c		force_wire_pv.gold
-force_reg_real	 normal force_real.c	force_reg_real.gold
-force_wire_real	 normal force_real.c	force_wire_real.gold
-br_gh59		 normal	br_gh59.c	br_gh59.gold
-br_gh73a	 normal	force.c		br_gh73a.gold
-br_gh73b	 normal	force.c		br_gh73b.gold
-ro_synch	 normal ro_synch.c	ro_synch.gold
-br_gh117         normal br_gh117.c	br_gh117.gold
-br_gh169a        normal br_gh169.c	br_gh169a.gold
-br_gh169b        normal,-g2009 br_gh169.c	br_gh169b.gold
-br_gh184	 normal start_of_simtime1.c	br_gh184.gold
-br_gh235         normal,-g2009 br_gh235.c	br_gh235.gold
-br_ml20191013	 normal br_ml20191013.c br_ml20191013.gold
-br_gh308         normal br_gh308.c	br_gh308.gold
-br_gh317         normal br_gh317.c	br_gh317.gold
-by_index         normal by_index.c	by_index.gold
 
-# Add new tests here. If the test needs a compile option or a
-# different log file to run with an older versions or if it uses
-# something not implemented (NI) by other versions of the program
-# it will also need a version specific line(s) above.
+br_gh59 		normal			br_gh59.c		br_gh59.gold
+br_gh73a		normal			force.c 		br_gh73a.gold
+br_gh73b		normal			force.c 		br_gh73b.gold
+br_gh117		normal			br_gh117.c		br_gh117.gold
+br_gh169a		normal			br_gh169.c		br_gh169a.gold
+br_gh169b		normal,-g2009		br_gh169.c		br_gh169b.gold
+br_gh184		normal			start_of_simtime1.c	br_gh184.gold
+br_gh235		normal,-g2009		br_gh235.c		br_gh235.gold
+br_gh308		normal			br_gh308.c		br_gh308.gold
+br_gh317		normal			br_gh317.c		br_gh317.gold
+br_ml20191013		normal			br_ml20191013.c 	br_ml20191013.gold
+by_index		normal			by_index.c		by_index.gold
+by_name 		normal			by_name.c		by_name.log
+callback1		normal			callback1.c		callback1.log
+celldefine		normal			celldefine.c		celldefine.gold
+check_version		normal			check_version.c 	check_version.gold
+display_array		normal,-g2009		display_array.c 	display_array.gold
+event1			normal			event1.c		event1.log
+event2			normal			event2.c		event2.log
+final			normal,-g2009		final.c 		final.gold
+find_sig		normal			find_sig.c		find_sig.gold
+force_reg		normal			force.c 		force_reg.gold
+force_reg_pv		normal			force.c 		force_reg_pv.gold
+force_reg_real		normal			force_real.c		force_reg_real.gold
+force_wire		normal			force.c 		force_wire.gold
+force_wire_pv		normal			force.c 		force_wire_pv.gold
+force_wire_real 	normal			force_real.c		force_wire_real.gold
+getp			normal			getp.c			getp.log
+hello_poke		normal			hello_poke.c		hello_poke.log
+hello_tf		normal			hello_tf.c		hello_tf.log
+hello_vpi		normal			hello_vpi.c		hello.log
+listparams		normal			listparams.c		listparams.log
+memmon			normal,-g1995		memmon.c		memmon.log
+memwide 		normal			memwide.cc		memwide.log
+mipname 		normal			mipname.c		mipname.log
+myscope 		normal			myscope.c		myscope.gold
+myscope2		normal			myscope2.c		myscope2.gold
+nulls1			normal			nulls1.c		nulls1.log
+pokevent		normal			pokevent.cc		pokevent.log
+pokereg 		normal			pokereg.cc		pokereg.log
+ports_params		normal			ports_params.c		ports_params.gold
+pr521			normal			pr521.c 		pr521.log
+pr686			normal			pr686.c 		pr686.log
+pr723			normal			pr723.c 		pr723.log
+pr1693971		normal			pr1693971.c		pr1693971.log
+pr2048463		normal			pr2048463.c		pr2048463.log
+pr2314742		normal			pr2314742.c		pr2314742.gold
+pr2966059		normal,-gno-xtypes	pr2966059.c		pr2966059.gold
+pr2971220		normal			pr2971220.c		pr2971220.gold
+putp			normal			putp.c			putp.log
+putp2			normal			putp2.c 		putp2.log
+putvalue		normal			putvalue.c		putvalue.log
+range1			normal			range1.c		range1.gold
+realcb			normal			realcb.c		realcb.log
+realtime		normal			realtime.c		realtime.log
+realtime2		normal			realtime2.c		realtime2.log
+ro_synch		normal			ro_synch.c		ro_synch.gold
+scanmem 		normal			scanmem.cc		scanmem.log
+scanmem2		normal			scanmem2.cc		scanmem2.log
+scanmem3		normal			scanmem3.cc		scanmem3.log
+scopes			normal			scopes.c		scopes.log
+spec_delays		normal,-gspecify	spec_delays.c		spec_delays.log
+start_of_simtime1	normal			start_of_simtime1.c	start_of_simtime1.log
+timescale		normal			timescale.c		timescale.log
+
+# Add new tests in alphabetic/numeric order. If the test needs
+# a compile option or a different log file to run with an older
+# version or if it uses something not implemented (NI) by other
+# versions of the program it will also need a version specific
+# line above.
