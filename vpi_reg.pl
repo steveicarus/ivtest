@@ -50,6 +50,7 @@ if ($#ARGV != -1) {
 #
 #  Main script
 #
+my $sys = $ENV{MSYSTEM} ? 'msys2' : 'other';
 my $ver = &get_ivl_version($sfx);
 my $msg = $with_valg ? " (with valgrind)" : "";
 print ("Running VPI tests for Icarus Verilog version: $ver$msg.\n");
@@ -85,10 +86,10 @@ sub read_regression_list {
         }
 
         $tname = $fields[0];
-        # Check for a version specific line.
+        # Check for a version or system specific line.
         if ($tname =~ /:/) {
             ($tver, $tname) = split(':', $tname);
-            next if ($tver ne "v$ver");  # Skip if this is not our version.
+            next if ($tver ne "v$ver" && $tver ne $sys);  # Skip if this is not our version or system.
             # Get the test type and any iverilog arguments.
             if ($fields[1] =~ ',') {
                 ($testtype, $args{$tname}) = split(',', $fields[1], 2);

@@ -45,6 +45,13 @@ vstd:pr723		normal	pr723.c		pr723-std.log
 vstd:scopes		normal	scopes.c	scopes-std.log
 
 #==========
+# MSYS2 exceptions
+#==========
+
+# This still needs investigating
+msys2:pr723       NI    pr723.c       pr723.log
+
+#==========
 # For version 0.8 do these instead of the default case.
 #
 # Version 0.8 defines some VPI calls differently than the standard.

@@ -44,6 +44,9 @@ if ($#ARGV != -1) {
     my $regress_fn = &get_regress_fn;
     &read_regression_list($regress_fn, $ver, "");
 } else {
+    if ($ENV{MSYSTEM}) {
+        &read_regression_list("regress-msys2.list", $ver, "");
+    }
     &read_regression_list("regress-v$ver.list", $ver, "");
     if ($strict == 0) {
         &read_regression_list("regress-ivl2.list", $ver, "");
