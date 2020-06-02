@@ -1,5 +1,5 @@
 # This test is sensitive to the number of bytes in the text file.
 ivltests/pr1819452.txt text eol=lf
 
-# MSY2 expected results require DOS line endings.
-regression_report-msys2.txt text eol=crlf
+# MSY2 expected results require LF line endings.
+regression_report-msys2.txt text eol=lf
