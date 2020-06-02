@@ -28,11 +28,11 @@ The results from individual tests can be found in the
 log directory and gold files, when needed, are in the
 gold directory. The source files can be found in the
 ivltests and contrib directories. The list of tests
-and how they are run is in the regress.list file.
+and how they are run are in the regress-*.list files.
 
 To check a specific suffixed version of Icarus Verilog
 use the --suffix=<suffix> flag to tell the script which
-version to run e.g.(--suffix=-0.9 will test iverilog-0.9,
+version to run e.g.(--suffix=-10 will test iverilog-10,
 etc.). You can also run the test with valgrind (very very
 slow) by giving the script the --with-valgrind flag.
 
@@ -51,9 +51,9 @@ or if perl is located in /usr/bin
 
 ./vpi_reg.pl
 
-All these tests should pass for V0.10.devel and V0.9.?.
-V0.8.? is expected to fail for realtime (64 bit time
-issue) and memmon (no full array call backs).
+All these tests should pass for V11.devel. There are
+some expected failures for V10, which are flagged as
+Not Implemented
 
 The individual test results are found in the vpi_log
 directory and the gold files are in the vpi_gold
@@ -69,6 +69,8 @@ This script also takes the --suffix=<suffix> and the
 # VHDL test script
 #
 ####################
+
+** Note this is no longer maintained **
 
 This test script require that ghdl be installed in your
 path and is used to test the Verilog to VHDL translation.
@@ -108,37 +110,11 @@ regressions simply run with and without your patches.
 #
 ####################
 
-Running under Windows (using a MinGW build) the following tests are
-expected to fail:
+When running under Windows using a MinGW build in a MSYS2
+shell, the expected output from vvp_reg.pl can be found in
+regression_report-msys2.txt. The MinGW/MSYS2 specific test
+exceptions can be found in regress-msys2.list. Exceptions
+for the VPI tests can be found in the vpi_regress.list file.
 
-pr1699519       - MinGW has three digit exponents.
-pr1873372       - MinGW has three digit exponents
-pr2509349a      - MinGW cannot find /tmp
-pr2590274a      - MinGW has three digit exponents
-pr2590274b      - MinGW has three digit exponents
-pr2590274c      - MinGW has three digit exponents
-sformatf        - MinGW has three digit exponents
-swrite          - MinGW has three digit exponents
-test_va_math    - MinGW has three digit exponents
-test_vams_math  - MinGW has three digit exponents
-
-pr723  - MinGW has some fd problems that need to be investigated.
-
-v0.9 hasn't been updated to use the MinGW ANSI stdio functions, so
-has the following additional failures:
-
-ca_time         - %#g of 0.0 gives six decimal digits
-delayed_sfunc   - %#g of 0.0 gives six decimal digits
-pr1703120       - integer infinity and infinity display
-pr1752823a      - missing -0
-pr1752823b      - infinity display, missing -0
-pr1864115       - %#g of 0.0 gives six decimal digits
-test_va_math    - infinity and NaN display, missing -0
-test_vams_math  - infinity and NaN display, missing -0
-
-All of these issues produce something that humans should recognize
-as correct results (-0 == 0, extra digits, out of order text, etc.).
-
-It is reported that the -0 problem is fixed in Windows 7 so pr1752823a
-will pass and pr1752823b, test_va_math and test_vams_math only have the
-other listed issues.
+With Windows 10 and MSYS2, there are now very few differences
+between the Windows and Linux builds.
