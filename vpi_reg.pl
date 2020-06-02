@@ -89,6 +89,7 @@ sub read_regression_list {
         # Check for a version or system specific line.
         if ($tname =~ /:/) {
             ($tver, $tname) = split(':', $tname);
+            next if (exists($ccode{$tname}));  # Skip if already defined.
             next if ($tver ne "v$ver" && $tver ne $sys);  # Skip if this is not our version or system.
             # Get the test type and any iverilog arguments.
             if ($fields[1] =~ ',') {
