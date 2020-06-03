@@ -197,6 +197,8 @@ br_gh226		CE,-g2009		ivltests
 br_gh177a		NI
 br_gh177b		NI
 br_gh277b		NI
+case_priority		NI
+case_unique		NI
 genvar_inc_dec		NI
 gh161b			NI
 sf_countbits		NI

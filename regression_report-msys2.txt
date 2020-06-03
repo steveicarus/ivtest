@@ -1923,6 +1923,8 @@ test_mos_strength_reduction: Passed.
              br_ml20181012d: Passed - CE.
               br_ml20191221: Passed.
               br_mw20200501: Passed.
+              case_priority: Passed.
+                case_unique: Passed.
                   cast_real: Passed.
       cfunc_assign_op_mixed: Passed.
          cfunc_assign_op_pv: Passed.
@@ -2450,4 +2452,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2448, Passed=2439, Failed=7, Not Implemented=2, Expected Fail=0
+  Total=2450, Passed=2441, Failed=7, Not Implemented=2, Expected Fail=0

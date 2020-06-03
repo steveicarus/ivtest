@@ -88,6 +88,8 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
                   br_gh177a: Not Implemented.
                   br_gh177b: Not Implemented.
                   br_gh277b: Not Implemented.
+              case_priority: Not Implemented.
+                case_unique: Not Implemented.
              genvar_inc_dec: Not Implemented.
                      gh161b: Not Implemented.
                sf_countbits: Not Implemented.
@@ -2451,4 +2453,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2449, Passed=2333, Failed=4, Not Implemented=109, Expected Fail=3
+  Total=2451, Passed=2333, Failed=4, Not Implemented=111, Expected Fail=3

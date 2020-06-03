@@ -902,3 +902,8 @@ casesynth6		normal			ivltests
 #unp_array_typedef	CE,-g2005-sv	ivltests
 #sv_darray_word_size	CE,-g2005-sv,-pallowsigned=1	ivltests
 #sv_darray_function	CE,-g2005-sv,-pallowsigned=1	ivltests
+
+# Priority and unique case statements are converted to ordinary case
+# statements, so no warnings are generated.
+case_priority		normal,-g2009		ivltests gold=case_priority-vlog95.gold
+case_unique		normal,-g2009		ivltests gold=case_unique-vlog95.gold
