@@ -242,6 +242,7 @@ implicit-port3		CE,-g2005-sv		ivltests
 implicit-port4		normal,-g2005-sv	ivltests
 implicit-port5		normal,-g2005-sv	ivltests
 implicit-port6		CE,-g2005-sv		ivltests
+implicit-port7		normal,-g2005-sv	ivltests
 inc_dec_stmt		normal,-g2009		ivltests
 int_param		normal,-g2009		ivltests
 ishortint_test		normal,-g2005-sv	ivltests
