@@ -2077,6 +2077,7 @@ test_mos_strength_reduction: Passed.
              implicit-port4: Passed.
              implicit-port5: Passed.
              implicit-port6: Passed - CE.
+             implicit-port7: Passed.
                inc_dec_stmt: Passed.
                   int_param: Passed.
              ishortint_test: Passed.
@@ -2450,4 +2451,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2448, Passed=2332, Failed=4, Not Implemented=109, Expected Fail=3
+  Total=2449, Passed=2333, Failed=4, Not Implemented=109, Expected Fail=3
