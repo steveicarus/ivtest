@@ -1,13 +1,15 @@
 module top;
   reg [8:1] val;
   wire [1:4] wval;
+  reg [3:0] wdrv;
   real r_arr [1:8];
   integer i_arr [8:1];
   integer lp;
 
-  assign wval = 4'b1010;
+  assign wval = wdrv;
 
   initial begin
+    wdrv = 4'b1010;
     for (lp=1; lp<=8; lp=lp+1) begin
       val[lp] = lp % 2;
       r_arr[lp] = lp + 0.25;
@@ -27,6 +29,10 @@ module top;
     $put_val(wval, 2, 1);
     $put_val(wval, 1, 0);
     $display("     New net value is %b", wval);
+    #1;
+    // Verify that an update overrides the put value
+    wdrv = 4'b1001;
+    $display("     net value is now %b", wval);
   end
 
 endmodule
