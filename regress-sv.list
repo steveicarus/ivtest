@@ -222,6 +222,7 @@ func_init_var2		normal,-g2009		ivltests
 func_init_var3		normal,-g2009		ivltests
 function10		CO,-g2005-sv		ivltests
 function11		CE,-g2005-sv		ivltests
+function12		normal,-g2005-sv	ivltests gold=function12.gold
 genvar_inc_dec		normal,-g2009		ivltests
 ibit_test		normal,-g2005-sv	ivltests
 ibyte_test		normal,-g2005-sv	ivltests
