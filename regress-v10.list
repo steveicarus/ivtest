@@ -137,6 +137,10 @@ macro_replacement	NI
 br_ml20180309a          NI
 br_ml20180309b          NI
 
+# The fix for uninitialised 2-state function return values uses new
+# VVP syntax, so can't be backported.
+br_gh337		NI
+
 # V10 does not support analog functionality
 analog1			NI
 analog2			NI

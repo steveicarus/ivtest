@@ -398,6 +398,7 @@ wild_cmp_net		CE,-g2009		ivltests  # ==?/!=?
 wild_cmp_var		CE,-g2009		ivltests  # ==?/!=?
 
 # No support for the SystemVerilog two state types (initial value problems).
+br_gh337		EF,-g2009,-pallowsigned=1	ivltests
 ibit_test		EF,-g2009		ivltests
 ibyte_test		EF,-g2009		ivltests
 iint_test		EF,-g2009		ivltests
