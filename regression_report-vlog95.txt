@@ -2228,6 +2228,8 @@ test_mos_strength_reduction: Passed.
              implicit-port5: Passed.
              implicit-port6: Passed - CE.
              implicit-port7: Passed.
+              l_equiv_const: Passed.
+                    l_equiv: Passed.
            localparam_query: Passed.
            localparam_type2: Passed.
                 named_begin: Passed.
@@ -2453,4 +2455,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2451, Passed=2406, Failed=10, Not Implemented=3, Expected Fail=32
+  Total=2453, Passed=2408, Failed=10, Not Implemented=3, Expected Fail=32

@@ -205,6 +205,8 @@ case_priority		NI
 case_unique		NI
 genvar_inc_dec		NI
 gh161b			NI
+l_equiv_const		NI
+l_equiv			NI
 sf_countbits		NI
 sf_countbits_fail	NI
 sf_countones		NI

@@ -1985,6 +1985,8 @@ test_mos_strength_reduction: Passed.
                   int_param: Passed.
              ishortint_test: Passed.
                      iuint1: Passed.
+              l_equiv_const: Passed.
+                    l_equiv: Passed.
            localparam_query: Passed.
            localparam_type2: Passed.
                       logp2: Passed.
@@ -2450,4 +2452,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2448, Passed=2441, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2450, Passed=2443, Failed=7, Not Implemented=0, Expected Fail=0

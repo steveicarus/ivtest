@@ -93,6 +93,8 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
                 case_unique: Not Implemented.
              genvar_inc_dec: Not Implemented.
                      gh161b: Not Implemented.
+              l_equiv_const: Not Implemented.
+                    l_equiv: Not Implemented.
                sf_countbits: Not Implemented.
           sf_countbits_fail: Not Implemented.
                sf_countones: Not Implemented.
@@ -2454,4 +2456,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2452, Passed=2333, Failed=4, Not Implemented=112, Expected Fail=3
+  Total=2454, Passed=2333, Failed=4, Not Implemented=114, Expected Fail=3
