@@ -250,8 +250,9 @@ inc_dec_stmt		normal,-g2009		ivltests
 int_param		normal,-g2009		ivltests
 ishortint_test		normal,-g2005-sv	ivltests
 iuint1			normal,-g2005-sv	ivltests
-l_equiv_const		normal,-g2005-sv	ivltests
 l_equiv			normal,-g2005-sv	ivltests
+l_equiv_ca		normal,-g2005-sv	ivltests
+l_equiv_const		normal,-g2005-sv	ivltests
 localparam_query	normal,-g2005-sv	ivltests
 localparam_type2	normal,-g2009		ivltests
 logp2			normal,-g2005-sv	ivltests

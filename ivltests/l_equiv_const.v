@@ -16,6 +16,8 @@ module top;
   parameter lee = 1'bx <-> 1'bz; // 1'bx
   parameter lef = 1'bx <-> 1'bx; // 1'bx
 
+  parameter [1:0] lew = 4'b0110 <-> 4'b1001; // 2'b01
+  parameter [1:0] lews = $signed(4'b0110 <-> 4'b1001); // 2'b11
   parameter ler0 = 0.0 <-> 1'b0; // 1'b1
   parameter ler1 = 1'b0 <-> 2.0; // 1'b0
   parameter ler2 = 2.0 <-> 1'bx; // 1'bx
@@ -105,6 +107,14 @@ module top;
     end
     if (ler3 !== 1'b1) begin
       $display("FAILED: -5.0 <-> 2.0 returned %b not 1'b1", ler3);
+      pass = 1'b0;
+    end
+    if (lew !== 2'b01) begin
+      $display("FAILED: 4'b0110 <-> 4'b1001 returned %b not 2'b01", lew);
+      pass = 1'b0;
+    end
+    if (lews !== 2'b11) begin
+      $display("FAILED: 4'b0110 <-> 4'b1001 returned %b not 2'b11", lews);
       pass = 1'b0;
     end
 
