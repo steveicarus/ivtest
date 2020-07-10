@@ -15,6 +15,9 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
               br_ml20191221: Passed - CE.
                    br_gh281: Not Implemented.
                   br_gh281b: Not Implemented.
+                 function10: Not Implemented.
+                 function11: Not Implemented.
+                 function12: Not Implemented.
                      gh161a: Not Implemented.
              func_init_var2: Not Implemented.
               br_ml20180227: Not Implemented.
@@ -2457,4 +2460,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2455, Passed=2333, Failed=4, Not Implemented=115, Expected Fail=3
+  Total=2458, Passed=2333, Failed=4, Not Implemented=118, Expected Fail=3

@@ -1961,6 +1961,9 @@ test_mos_strength_reduction: Passed.
              func_init_var1: Passed.
              func_init_var2: Passed.
              func_init_var3: Passed.
+                 function10: Passed - CO.
+                 function11: Passed - CE.
+                 function12: Passed.
              genvar_inc_dec: Passed.
                   ibit_test: Passed.
                  ibyte_test: Passed.
@@ -1990,6 +1993,9 @@ test_mos_strength_reduction: Passed.
                   int_param: Passed.
              ishortint_test: Passed.
                      iuint1: Passed.
+                    l_equiv: Passed.
+                 l_equiv_ca: Passed.
+              l_equiv_const: Passed.
            localparam_query: Passed.
            localparam_type2: Passed.
                       logp2: Passed.
@@ -2453,4 +2459,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2451, Passed=2442, Failed=7, Not Implemented=2, Expected Fail=0
+  Total=2457, Passed=2448, Failed=7, Not Implemented=2, Expected Fail=0
