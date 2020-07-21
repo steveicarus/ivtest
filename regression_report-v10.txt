@@ -119,6 +119,14 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
         sv_immediate_assume: Not Implemented.
          sv_new_array_error: Not Implemented.
          sv_param_port_list: Not Implemented.
+              sv_queue_real: Not Implemented.
+      sv_queue_real_bounded: Not Implemented.
+         sv_queue_real_fail: Not Implemented.
+            sv_queue_string: Not Implemented.
+    sv_queue_string_bounded: Not Implemented.
+       sv_queue_string_fail: Not Implemented.
+       sv_queue_vec_bounded: Not Implemented.
+          sv_queue_vec_fail: Not Implemented.
         sv_wildcard_import1: Not Implemented.
         sv_wildcard_import2: Not Implemented.
         sv_wildcard_import3: Not Implemented.
@@ -2248,6 +2256,7 @@ test_mos_strength_reduction: Passed.
                   sv_queue1: Passed.
                   sv_queue2: Passed.
                   sv_queue3: Passed.
+               sv_queue_vec: Passed.
               sv_root_class: Passed.
                sv_root_func: Passed.
                sv_root_task: Passed.
@@ -2461,4 +2470,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2459, Passed=2334, Failed=4, Not Implemented=118, Expected Fail=3
+  Total=2468, Passed=2335, Failed=4, Not Implemented=126, Expected Fail=3

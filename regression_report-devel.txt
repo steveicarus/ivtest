@@ -2171,6 +2171,15 @@ test_mos_strength_reduction: Passed.
                   sv_queue1: Passed.
                   sv_queue2: Passed.
                   sv_queue3: Passed.
+              sv_queue_real: Passed.
+      sv_queue_real_bounded: Passed.
+         sv_queue_real_fail: Passed - CE.
+            sv_queue_string: Passed.
+    sv_queue_string_bounded: Passed.
+       sv_queue_string_fail: Passed - CE.
+               sv_queue_vec: Passed.
+       sv_queue_vec_bounded: Passed.
+          sv_queue_vec_fail: Passed - CE.
               sv_root_class: Passed.
                sv_root_func: Passed.
                sv_root_task: Passed.
@@ -2460,4 +2469,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2458, Passed=2451, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2467, Passed=2460, Failed=7, Not Implemented=0, Expected Fail=0

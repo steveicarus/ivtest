@@ -1,0 +1,4 @@
+./ivltests/sv_queue_vec_fail.v:3: error: queue 'q_vec1' bound must be positive (-1)!
+./ivltests/sv_queue_vec_fail.v:4: error: A reference to a wire or reg (`bound') is not allowed in a constant expression.
+./ivltests/sv_queue_vec_fail.v:4: error: queue 'q_vec2' bound must be a constant!
+3 error(s) during elaboration.

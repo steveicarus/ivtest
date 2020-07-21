@@ -395,6 +395,15 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                   sv_queue1: Passed - CE.
                   sv_queue2: Passed - CE.
                   sv_queue3: Passed - CE.
+              sv_queue_real: Passed - CE.
+      sv_queue_real_bounded: Passed - CE.
+         sv_queue_real_fail: Passed - CE.
+            sv_queue_string: Passed - CE.
+    sv_queue_string_bounded: Passed - CE.
+       sv_queue_string_fail: Passed - CE.
+               sv_queue_vec: Passed - CE.
+       sv_queue_vec_bounded: Passed - CE.
+          sv_queue_vec_fail: Passed - CE.
                 test_forgen: Passed - CE.
                   test_gxor: Passed - CE.
                test_varray1: Passed - CE.
@@ -2460,4 +2469,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2458, Passed=2411, Failed=12, Not Implemented=3, Expected Fail=32
+  Total=2467, Passed=2420, Failed=12, Not Implemented=3, Expected Fail=32
