@@ -12,6 +12,11 @@ module top;
       passed = 1'b0;
     end
 
+    if (q_str[0] != "") begin
+      $display("Failed: unsized element [0] != '' (%s)", q_str[0]);
+      passed = 1'b0;
+    end
+
     q_str.push_back("World");
     q_str.push_front("Hello");
     q_str.push_back("!");
@@ -33,6 +38,11 @@ module top;
 
     if (q_str[2] != "!") begin
       $display("Failed: unsized element [2] != '!' (%s)", q_str[2]);
+      passed = 1'b0;
+    end
+
+    if (q_str[3] != "") begin
+      $display("Failed: unsized element [3] != '' (%s)", q_str[3]);
       passed = 1'b0;
     end
 

@@ -12,6 +12,11 @@ module top;
       passed = 1'b0;
     end
 
+    if (q_real[0] != 0.0) begin
+      $display("Failed: unsized element [0] != 0.0 (%.1f)", q_real[0]);
+      passed = 1'b0;
+    end
+
     q_real.push_back(2.0);
     q_real.push_front(1.0);
     q_real.push_back(3.0);
@@ -33,6 +38,11 @@ module top;
 
     if (q_real[2] != 3.0) begin
       $display("Failed: unsized element [2] != 3.0 (%.1f)", q_real[2]);
+      passed = 1'b0;
+    end
+
+    if (q_real[3] != 0.0) begin
+      $display("Failed: unsized element [3] != 0.0 (%.1f)", q_real[3]);
       passed = 1'b0;
     end
 

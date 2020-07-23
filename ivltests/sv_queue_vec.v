@@ -12,6 +12,11 @@ module top;
       passed = 1'b0;
     end
 
+    if (q_vec[0] !== 'X) begin
+      $display("Failed: unsized element [0] != 'X (%0d)", q_vec[0]);
+      passed = 1'b0;
+    end
+
     q_vec.push_back(2);
     q_vec.push_front(1);
     q_vec.push_back(3);
@@ -33,6 +38,11 @@ module top;
 
     if (q_vec[2] != 3) begin
       $display("Failed: unsized element [2] != 3 (%0d)", q_vec[2]);
+      passed = 1'b0;
+    end
+
+    if (q_vec[3] !== 'X) begin
+      $display("Failed: unsized element [3] != 'X (%0d)", q_vec[3]);
       passed = 1'b0;
     end
 
