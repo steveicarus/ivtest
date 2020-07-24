@@ -58,6 +58,16 @@ module top;
       passed = 1'b0;
     end
 
+    if (q_str[-1] != "") begin
+      $display("Failed: unsized element [-1] != '' (%s)", q_str[-1]);
+      passed = 1'b0;
+    end
+
+    if (q_str['X] != "") begin
+      $display("Failed: unsized element ['X] != '' (%s)", q_str['X]);
+      passed = 1'b0;
+    end
+
     elem = q_str.pop_front();
     if (elem != "Hello") begin
       $display("Failed: unsized element pop_front() != 'Hello' (%s)", elem);

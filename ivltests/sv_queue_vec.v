@@ -58,6 +58,16 @@ module top;
       passed = 1'b0;
     end
 
+    if (q_vec[-1] !== 'X) begin
+      $display("Failed: unsized element [-1] != 'X (%0d)", q_vec[-1]);
+      passed = 1'b0;
+    end
+
+    if (q_vec['X] !== 'X) begin
+      $display("Failed: unsized element ['X] != 'X (%0d)", q_vec['X]);
+      passed = 1'b0;
+    end
+
     elem = q_vec.pop_front();
     if (elem != 1) begin
       $display("Failed: unsized element pop_front() != 1 (%0d)", elem);

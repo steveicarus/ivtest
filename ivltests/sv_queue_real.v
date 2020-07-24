@@ -58,6 +58,16 @@ module top;
       passed = 1'b0;
     end
 
+    if (q_real[-1] != 0.0) begin
+      $display("Failed: unsized element [-1] != 'X (%.1f)", q_real[-1]);
+      passed = 1'b0;
+    end
+
+    if (q_real['X] != 0.0) begin
+      $display("Failed: unsized element ['X] != 'X (%.1f)", q_real['X]);
+      passed = 1'b0;
+    end
+
     elem = q_real.pop_front();
     if (elem != 1.0) begin
       $display("Failed: unsized element pop_front() != 1.0 (%.1f)", elem);
