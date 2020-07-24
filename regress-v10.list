@@ -237,6 +237,7 @@ sv_queue_real_fail	NI
 sv_queue_string		NI
 sv_queue_string_bounded	NI
 sv_queue_string_fail	NI
+sv_queue_vec		NI
 sv_queue_vec_bounded	NI
 sv_queue_vec_fail	NI
 sv_wildcard_import1     NI

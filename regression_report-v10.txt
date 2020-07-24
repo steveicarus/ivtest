@@ -125,6 +125,7 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
             sv_queue_string: Not Implemented.
     sv_queue_string_bounded: Not Implemented.
        sv_queue_string_fail: Not Implemented.
+               sv_queue_vec: Not Implemented.
        sv_queue_vec_bounded: Not Implemented.
           sv_queue_vec_fail: Not Implemented.
         sv_wildcard_import1: Not Implemented.
@@ -2256,7 +2257,6 @@ test_mos_strength_reduction: Passed.
                   sv_queue1: Passed.
                   sv_queue2: Passed.
                   sv_queue3: Passed.
-               sv_queue_vec: Passed.
               sv_root_class: Passed.
                sv_root_func: Passed.
                sv_root_task: Passed.
@@ -2470,4 +2470,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2468, Passed=2335, Failed=4, Not Implemented=126, Expected Fail=3
+  Total=2468, Passed=2334, Failed=4, Not Implemented=127, Expected Fail=3
