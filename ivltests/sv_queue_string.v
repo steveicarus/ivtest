@@ -17,6 +17,18 @@ module top;
       passed = 1'b0;
     end
 
+    elem = q_str.pop_front();
+    if (elem != "") begin
+      $display("Failed: pop_front() != '' (%s)", elem);
+      passed = 1'b0;
+    end
+
+    elem = q_str.pop_back();
+    if (elem != "") begin
+      $display("Failed: pop_back() != '' (%s)", elem);
+      passed = 1'b0;
+    end
+
     q_str.push_back("World");
     q_str.push_front("Hello");
     q_str.push_back("!");

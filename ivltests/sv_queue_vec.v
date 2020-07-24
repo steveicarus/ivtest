@@ -17,6 +17,18 @@ module top;
       passed = 1'b0;
     end
 
+    elem = q_vec.pop_front();
+    if (elem !== 'X) begin
+      $display("Failed: pop_front() != 'X (%0d)", elem);
+      passed = 1'b0;
+    end
+
+    elem = q_vec.pop_back();
+    if (elem !== 'X) begin
+      $display("Failed: pop_back() != 'X (%0d)", elem);
+      passed = 1'b0;
+    end
+
     q_vec.push_back(2);
     q_vec.push_front(1);
     q_vec.push_back(3);

@@ -17,6 +17,18 @@ module top;
       passed = 1'b0;
     end
 
+    elem = q_real.pop_front();
+    if (elem != 0.0) begin
+      $display("Failed: pop_front() != 0.0 (%.1f)", elem);
+      passed = 1'b0;
+    end
+
+    elem = q_real.pop_back();
+    if (elem != 0.0) begin
+      $display("Failed: pop_back() != 0.0 (%.1f)", elem);
+      passed = 1'b0;
+    end
+
     q_real.push_back(2.0);
     q_real.push_front(1.0);
     q_real.push_back(3.0);
