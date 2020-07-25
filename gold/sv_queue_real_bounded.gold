@@ -1,3 +1,3 @@
-Warning: push_back(100) skipped for already full bounded queue [3].
-Warning: push_front(0.5) removed 3 from already full bounded queue [3].
+Warning: push_back(100) skipped for already full bounded queue<real> [3].
+Warning: push_front(0.5) removed 3 from already full bounded queue<real> [3].
 PASSED
