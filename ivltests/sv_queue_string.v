@@ -7,7 +7,7 @@ module top;
   initial begin
     passed = 1'b1;
 
-    if (q_str.size() != 0) begin
+    if (q_str.size() !== 0) begin
       $display("Failed: queue initial size != 0 (%0d)", q_str.size);
       passed = 1'b0;
     end
@@ -38,7 +38,7 @@ module top;
     q_str.delete(-1); // Warning
     q_str.delete('X); // Warning
 
-    if (q_str.size != 3) begin
+    if (q_str.size !== 3) begin
       $display("Failed: queue size != 3 (%0d)", q_str.size);
       passed = 1'b0;
     end
@@ -91,7 +91,7 @@ module top;
       passed = 1'b0;
     end
 
-    if (q_str.size != 1) begin
+    if (q_str.size !== 1) begin
       $display("Failed: queue size != 1 (%0d)", q_str.size);
       passed = 1'b0;
     end
@@ -104,24 +104,71 @@ module top;
 
     q_str.delete();
 
-    if (q_str.size != 0) begin
+    if (q_str.size !== 0) begin
       $display("Failed: queue size != 0 (%0d)", q_str.size);
       passed = 1'b0;
     end
 
-    q_str.push_front("Hello");
+    q_str.push_front("hello");
     q_str.push_front("Will be removed");
     q_str.push_back("Will also be removed");
     elem = q_str.pop_back;
     elem = q_str.pop_front;
 
-    if (q_str.size != 1) begin
+    if (q_str.size !== 1) begin
+      $display("Failed: queue size != 1 (%0d)", q_str.size);
+      passed = 1'b0;
+    end
+
+    if (q_str[0] != "hello") begin
+      $display("Failed: element [0] != 'hello' (%.1f)", q_str[0]);
+      passed = 1'b0;
+    end
+
+    q_str[0] = "Hello";
+    q_str[1] = "world";
+    q_str[1] = "World";
+    q_str[2] = "!";
+    q_str[-1] = "Will not write"; // Warning
+    q_str['X] = "Will not write"; // Warning
+
+    idx = -1;
+    q_str[idx] = "Will not write"; // Warning
+    idx = 3'b0x1;
+    q_str[idx] = "Will not write"; // Warning
+    idx = 4;
+    q_str[idx] = "Will not write"; // Warning
+
+    if (q_str.size !== 3) begin
+      $display("Failed: queue size != 3 (%0d)", q_str.size);
+      passed = 1'b0;
+    end
+
+    if (q_str[0] != "Hello") begin
+      $display("Failed: element [0] != 'Hello' (%s)", q_str[0]);
+      passed = 1'b0;
+    end
+
+    if (q_str[1] != "World") begin
+      $display("Failed: element [1] != 'World' (%s)", q_str[1]);
+      passed = 1'b0;
+    end
+
+    if (q_str[2] != "!") begin
+      $display("Failed: element [2] != '!' (%s)", q_str[2]);
+      passed = 1'b0;
+    end
+
+    q_str.delete();
+    q_str[0] = "Hello";
+
+    if (q_str.size !== 1) begin
       $display("Failed: queue size != 1 (%0d)", q_str.size);
       passed = 1'b0;
     end
 
     if (q_str[0] != "Hello") begin
-      $display("Failed: element [0] != 'Hello' (%.1f)", q_str[0]);
+      $display("Failed: element [0] != 'Hello' (%s)", q_str[0]);
       passed = 1'b0;
     end
 

@@ -7,7 +7,7 @@ module top;
   initial begin
     passed = 1'b1;
 
-    if (q_real.size() != 0) begin
+    if (q_real.size() !== 0) begin
       $display("Failed: queue initial size != 0 (%0d)", q_real.size);
       passed = 1'b0;
     end
@@ -38,7 +38,7 @@ module top;
     q_real.delete(-1); // Warning
     q_real.delete('X); // Warning
 
-    if (q_real.size != 3) begin
+    if (q_real.size !== 3) begin
       $display("Failed: queue size != 3 (%0d)", q_real.size);
       passed = 1'b0;
     end
@@ -91,7 +91,7 @@ module top;
       passed = 1'b0;
     end
 
-    if (q_real.size != 1) begin
+    if (q_real.size !== 1) begin
       $display("Failed: queue size != 1 (%0d)", q_real.size);
       passed = 1'b0;
     end
@@ -104,18 +104,64 @@ module top;
 
     q_real.delete();
 
-    if (q_real.size != 0) begin
+    if (q_real.size !== 0) begin
       $display("Failed: queue size != 0 (%0d)", q_real.size);
       passed = 1'b0;
     end
 
-    q_real.push_front(1.0);
+    q_real.push_front(5.0);
     q_real.push_front(100.0);
     q_real.push_back(100.0);
     elem = q_real.pop_back;
     elem = q_real.pop_front;
 
-    if (q_real.size != 1) begin
+    if (q_real.size !== 1) begin
+      $display("Failed: queue size != 1 (%0d)", q_real.size);
+      passed = 1'b0;
+    end
+
+    if (q_real[0] != 5.0) begin
+      $display("Failed: element [0] != 5.0 (%.1f)", q_real[0]);
+      passed = 1'b0;
+    end
+
+    q_real[0] = 1.0;
+    q_real[1] = 2.0;
+    q_real[2] = 3.0;
+    q_real[-1] = 10.0; // Warning
+    q_real['X] = 10.0; // Warning
+
+    idx = -1;
+    q_real[idx] = 10.0; // Warning
+    idx = 3'b0x1;
+    q_real[idx] = 10.0; // Warning
+    idx = 4;
+    q_real[idx] = 10.0; // Warning
+
+    if (q_real.size !== 3) begin
+      $display("Failed: queue size != 3 (%0d)", q_real.size);
+      passed = 1'b0;
+    end
+
+    if (q_real[0] != 1.0) begin
+      $display("Failed: element [0] != 1.0 (%.1f)", q_real[0]);
+      passed = 1'b0;
+    end
+
+    if (q_real[1] != 2.0) begin
+      $display("Failed: element [1] != 2.0 (%.1f)", q_real[1]);
+      passed = 1'b0;
+    end
+
+    if (q_real[2] != 3.0) begin
+      $display("Failed: element [2] != 3.0 (%.1f)", q_real[2]);
+      passed = 1'b0;
+    end
+
+    q_real.delete();
+    q_real[0] = 1.0;
+
+    if (q_real.size !== 1) begin
       $display("Failed: queue size != 1 (%0d)", q_real.size);
       passed = 1'b0;
     end
