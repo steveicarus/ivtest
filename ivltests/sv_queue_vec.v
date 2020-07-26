@@ -110,6 +110,10 @@ module top;
     end
 
     q_vec.push_front(1);
+    q_vec.push_front(100);
+    q_vec.push_back(100);
+    elem = q_vec.pop_back;
+    elem = q_vec.pop_front;
 
     if (q_vec.size != 1) begin
       $display("Failed: queue size != 1 (%0d)", q_vec.size);

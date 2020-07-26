@@ -110,6 +110,10 @@ module top;
     end
 
     q_str.push_front("Hello");
+    q_str.push_front("Will be removed");
+    q_str.push_back("Will also be removed");
+    elem = q_str.pop_back;
+    elem = q_str.pop_front;
 
     if (q_str.size != 1) begin
       $display("Failed: queue size != 1 (%0d)", q_str.size);

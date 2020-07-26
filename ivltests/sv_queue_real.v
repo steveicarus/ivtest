@@ -110,6 +110,10 @@ module top;
     end
 
     q_real.push_front(1.0);
+    q_real.push_front(100.0);
+    q_real.push_back(100.0);
+    elem = q_real.pop_back;
+    elem = q_real.pop_front;
 
     if (q_real.size != 1) begin
       $display("Failed: queue size != 1 (%0d)", q_real.size);
