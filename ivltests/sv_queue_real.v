@@ -64,12 +64,12 @@ module top;
     end
 
     if (q_real[-1] != 0.0) begin
-      $display("Failed: element [-1] != 'X (%.1f)", q_real[-1]);
+      $display("Failed: element [-1] != 0.0 (%.1f)", q_real[-1]);
       passed = 1'b0;
     end
 
     if (q_real['X] != 0.0) begin
-      $display("Failed: element ['X] != 'X (%.1f)", q_real['X]);
+      $display("Failed: element ['X] != 0.0 (%.1f)", q_real['X]);
       passed = 1'b0;
     end
 
@@ -99,6 +99,25 @@ module top;
     if ((q_real[0] != q_real[$]) || (q_real[0] != 2.0)) begin
       $display("Failed: q_real[0](%.1f) != q_real[$](%.1f) != 2.0",
                q_real[0], q_real[$]);
+      passed = 1'b0;
+    end
+
+    q_real.delete();
+
+    if (q_real.size != 0) begin
+      $display("Failed: queue size != 0 (%0d)", q_real.size);
+      passed = 1'b0;
+    end
+
+    q_real.push_front(1.0);
+
+    if (q_real.size != 1) begin
+      $display("Failed: queue size != 1 (%0d)", q_real.size);
+      passed = 1'b0;
+    end
+
+    if (q_real[0] != 1.0) begin
+      $display("Failed: element [0] != 1.0 (%.1f)", q_real[0]);
       passed = 1'b0;
     end
 

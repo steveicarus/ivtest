@@ -102,6 +102,25 @@ module top;
       passed = 1'b0;
     end
 
+    q_str.delete();
+
+    if (q_str.size != 0) begin
+      $display("Failed: queue size != 0 (%0d)", q_str.size);
+      passed = 1'b0;
+    end
+
+    q_str.push_front("Hello");
+
+    if (q_str.size != 1) begin
+      $display("Failed: queue size != 1 (%0d)", q_str.size);
+      passed = 1'b0;
+    end
+
+    if (q_str[0] != "Hello") begin
+      $display("Failed: element [0] != 'Hello' (%.1f)", q_str[0]);
+      passed = 1'b0;
+    end
+
     if (passed) $display("PASSED");
 
    end

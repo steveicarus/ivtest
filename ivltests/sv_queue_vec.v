@@ -74,7 +74,7 @@ module top;
     end
 
     idx = 'X;
-    if (q_vec[idx] != 0.0) begin
+    if (q_vec[idx] !== 'X) begin
       $display("Failed: element [idx] != 'X (%0d)", q_vec[idx]);
       passed = 1'b0;
     end
@@ -99,6 +99,25 @@ module top;
     if ((q_vec[0] != q_vec[$]) || (q_vec[0] != 2)) begin
       $display("Failed: q_vec[0](%0d) != q_vec[$](%0d) != 2",
                q_vec[0], q_vec[$]);
+      passed = 1'b0;
+    end
+
+    q_vec.delete();
+
+    if (q_vec.size != 0) begin
+      $display("Failed: queue size != 0 (%0d)", q_vec.size);
+      passed = 1'b0;
+    end
+
+    q_vec.push_front(1);
+
+    if (q_vec.size != 1) begin
+      $display("Failed: queue size != 1 (%0d)", q_vec.size);
+      passed = 1'b0;
+    end
+
+    if (q_vec[0] != 1) begin
+      $display("Failed: element [0] != 1 (%0d)", q_vec[0]);
       passed = 1'b0;
     end
 
