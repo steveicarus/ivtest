@@ -36,6 +36,7 @@ module top;
     end
 
     q_str.push_front("I say,"); // This should create a warning, back item removed.
+    q_str[3] = "Will not be added"; // This should create a warning, item not added.
 
     if (q_str.size != 3) begin
       $display("Failed: unsized queue size != 3 (%0d)", q_str.size);

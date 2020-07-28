@@ -1,3 +1,4 @@
 Warning: push_back(32'b00000000000000000000000001100100) skipped for already full bounded queue<vector[32]> [3].
 Warning: push_front(32'b00000000000000000000000000000101) removed 32'b00000000000000000000000000000011 from already full bounded queue<vector[32]> [3].
+Warning: assigning to queue<vector>[3] is outside bound (3). 32'b00000000000000000000000000000011 was not added.
 PASSED

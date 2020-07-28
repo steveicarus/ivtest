@@ -36,6 +36,7 @@ module top;
     end
 
     q_vec.push_front(5); // This should create a warning, back item removed.
+    q_vec[3] = 3; // This should create a warning, item not added.
 
     if (q_vec.size != 3) begin
       $display("Failed: unsized queue size != 3 (%0d)", q_vec.size);
