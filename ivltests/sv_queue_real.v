@@ -17,13 +17,13 @@ module top;
       passed = 1'b0;
     end
 
-    elem = q_real.pop_front(); // Warning
+    elem = q_real.pop_front(); // Warning: cannot pop_front() an empty queue
     if (elem != 0.0) begin
       $display("Failed: pop_front() != 0.0 (%.1f)", elem);
       passed = 1'b0;
     end
 
-    elem = q_real.pop_back(); // Warning
+    elem = q_real.pop_back(); // Warning: cannot pop_back() an empty queue
     if (elem != 0.0) begin
       $display("Failed: pop_back() != 0.0 (%.1f)", elem);
       passed = 1'b0;
@@ -34,9 +34,9 @@ module top;
     q_real.push_back(3.0);
     q_real.push_back(100.0);
     q_real.delete(3); // Should $ work here?
-    q_real.delete(3); // Warning
-    q_real.delete(-1); // Warning
-    q_real.delete('X); // Warning
+    q_real.delete(3); // Warning: skip an out of range delete()
+    q_real.delete(-1); // Warning: skip delete with negative index
+    q_real.delete('X); // Warning: skip delete with undefined index
 
     if (q_real.size !== 3) begin
       $display("Failed: queue size != 3 (%0d)", q_real.size);
@@ -128,15 +128,15 @@ module top;
     q_real[0] = 1.0;
     q_real[1] = 2.0;
     q_real[2] = 3.0;
-    q_real[-1] = 10.0; // Warning
-    q_real['X] = 10.0; // Warning
+    q_real[-1] = 10.0; // Warning: will not be added (negative index)
+    q_real['X] = 10.0; // Warning: will not be added (undefined index)
 
     idx = -1;
-    q_real[idx] = 10.0; // Warning
+    q_real[idx] = 10.0; // Warning: will not be added (negative index)
     idx = 3'b0x1;
-    q_real[idx] = 10.0; // Warning
+    q_real[idx] = 10.0; // Warning: will not be added (undefined index)
     idx = 4;
-    q_real[idx] = 10.0; // Warning
+    q_real[idx] = 10.0; // Warning: will not be added (out of range index)
 
     if (q_real.size !== 3) begin
       $display("Failed: queue size != 3 (%0d)", q_real.size);
@@ -159,15 +159,36 @@ module top;
     end
 
     q_real.delete();
-    q_real[0] = 1.0;
+    q_real[0] = 2.0;
+    q_real.insert(1, 4.0);
+    q_real.insert(0, 1.0);
+    q_real.insert(2, 3.0);
+    q_real.insert(-1, 10.0); // Warning: will not be added (negative index)
+    q_real.insert('X, 10.0); // Warning: will not be added (undefined index)
+    q_real.insert(5, 10.0); // Warning: will not be added (out of range index)
 
-    if (q_real.size !== 1) begin
-      $display("Failed: queue size != 1 (%0d)", q_real.size);
+    if (q_real.size !== 4) begin
+      $display("Failed: queue size != 4 (%0d)", q_real.size);
       passed = 1'b0;
     end
 
     if (q_real[0] != 1.0) begin
       $display("Failed: element [0] != 1.0 (%.1f)", q_real[0]);
+      passed = 1'b0;
+    end
+
+    if (q_real[1] != 2.0) begin
+      $display("Failed: element [1] != 2.0 (%.1f)", q_real[1]);
+      passed = 1'b0;
+    end
+
+    if (q_real[2] != 3.0) begin
+      $display("Failed: element [2] != 3.0 (%.1f)", q_real[2]);
+      passed = 1'b0;
+    end
+
+    if (q_real[3] != 4.0) begin
+      $display("Failed: element [3] != 4.0 (%.1f)", q_real[3]);
       passed = 1'b0;
     end
 

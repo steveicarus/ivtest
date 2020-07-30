@@ -58,6 +58,29 @@ module top;
       passed = 1'b0;
     end
 
+    q_str.insert(3, "Will not be added"); // This should create a warning, item not added.
+    q_str.insert(1, "to you"); // This should create a warning, back item removed.
+
+    if (q_str.size != 3) begin
+      $display("Failed: unsized queue size != 3 (%0d)", q_str.size);
+      passed = 1'b0;
+    end
+
+    if (q_str[0] != "I say,") begin
+      $display("Failed: unsized element [0] != 'I say,' (%s)", q_str[0]);
+      passed = 1'b0;
+    end
+
+    if (q_str[1] != "to you") begin
+      $display("Failed: unsized element [1] != 'to you' (%s)", q_str[1]);
+      passed = 1'b0;
+    end
+
+    if (q_str[2] != "Hello") begin
+      $display("Failed: unsized element [2] != 'Hello' (%s)", q_str[2]);
+      passed = 1'b0;
+    end
+
     if (passed) $display("PASSED");
 
    end

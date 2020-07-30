@@ -1,4 +1,6 @@
 Warning: push_back(100) skipped for already full bounded queue<real> [3].
 Warning: push_front(0.5) removed 3 from already full bounded queue<real> [3].
 Warning: assigning to queue<real>[3] is outside bound (3). 3 was not added.
+Warning: inserting to queue<real>[3] is outside bound (3). 10 was not added.
+Warning: insert(1, 2) removed 2 from already full bounded queue<real> [3].
 PASSED

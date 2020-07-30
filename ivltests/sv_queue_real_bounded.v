@@ -58,6 +58,29 @@ module top;
       passed = 1'b0;
     end
 
+    q_real.insert(3, 10.0); // This should create a warning, item not added.
+    q_real.insert(1, 2.0); // This should create a warning, back item removed.
+
+    if (q_real.size != 3) begin
+      $display("Failed: unsized queue size != 3 (%0d)", q_real.size);
+      passed = 1'b0;
+    end
+
+    if (q_real[0] != 0.5) begin
+      $display("Failed: unsized element [0] != 0.5 (%.1f)", q_real[0]);
+      passed = 1'b0;
+    end
+
+    if (q_real[1] != 2.0) begin
+      $display("Failed: unsized element [1] != 2.0 (%.1f)", q_real[1]);
+      passed = 1'b0;
+    end
+
+    if (q_real[2] != 1.0) begin
+      $display("Failed: unsized element [2] != 1.0 (%.1f)", q_real[2]);
+      passed = 1'b0;
+    end
+
     if (passed) $display("PASSED");
 
    end

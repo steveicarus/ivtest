@@ -1,4 +1,6 @@
 Warning: push_back("This will not be added") skipped for already full bounded queue<string> [3].
 Warning: push_front("I say,") removed "!" from already full bounded queue<string> [3].
-Warning: assigning to queue<string>[3] is outside bound (3). Will not be added was not added.
+Warning: assigning to queue<string>[3] is outside bound (3). "Will not be added" was not added.
+Warning: inserting to queue<string>[3] is outside bound (3). "Will not be added" was not added.
+Warning: insert(1, "to you") removed "World" from already full bounded queue<string> [3].
 PASSED
