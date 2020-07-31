@@ -193,6 +193,35 @@ module top;
       passed = 1'b0;
     end
 
+    q_str = '{"!", "World", "Hello"};
+
+    if (q_str.size !== 3) begin
+      $display("Failed: queue size != 3 (%0d)", q_str.size);
+      passed = 1'b0;
+    end
+
+    if (q_str[0] != "!") begin
+      $display("Failed: element [0] != '!' (%s)", q_str[0]);
+      passed = 1'b0;
+    end
+
+    if (q_str[1] != "World") begin
+      $display("Failed: element [1] != 'World' (%s)", q_str[1]);
+      passed = 1'b0;
+    end
+
+    if (q_str[2] != "Hello") begin
+      $display("Failed: element [2] != 'Hello' (%s)", q_str[2]);
+      passed = 1'b0;
+    end
+
+    q_str = '{};
+
+    if (q_str.size !== 0) begin
+      $display("Failed: queue size != 0 (%0d)", q_str.size);
+      passed = 1'b0;
+    end
+
     if (passed) $display("PASSED");
 
    end

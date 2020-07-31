@@ -192,6 +192,35 @@ module top;
       passed = 1'b0;
     end
 
+    q_vec = '{3, 2, 1};
+
+    if (q_vec.size !== 3) begin
+      $display("Failed: queue size != 3 (%0d)", q_vec.size);
+      passed = 1'b0;
+    end
+
+    if (q_vec[0] != 3) begin
+      $display("Failed: element [0] != 3 (%0d)", q_vec[0]);
+      passed = 1'b0;
+    end
+
+    if (q_vec[1] != 2) begin
+      $display("Failed: element [1] != 2 (%0d)", q_vec[1]);
+      passed = 1'b0;
+    end
+
+    if (q_vec[2] != 1) begin
+      $display("Failed: element [2] != 1 (%0d)", q_vec[2]);
+      passed = 1'b0;
+    end
+
+    q_vec = '{};
+
+    if (q_vec.size !== 0) begin
+      $display("Failed: queue size != 0 (%0d)", q_vec.size);
+      passed = 1'b0;
+    end
+
     if (passed) $display("PASSED");
 
    end

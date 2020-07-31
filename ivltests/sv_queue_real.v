@@ -192,6 +192,35 @@ module top;
       passed = 1'b0;
     end
 
+    q_real = '{3.0, 2.0, 1.0};
+
+    if (q_real.size !== 3) begin
+      $display("Failed: queue size != 3 (%0d)", q_real.size);
+      passed = 1'b0;
+    end
+
+    if (q_real[0] != 3.0) begin
+      $display("Failed: element [0] != 3.0 (%.1f)", q_real[0]);
+      passed = 1'b0;
+    end
+
+    if (q_real[1] != 2.0) begin
+      $display("Failed: element [1] != 2.0 (%.1f)", q_real[1]);
+      passed = 1'b0;
+    end
+
+    if (q_real[2] != 1.0) begin
+      $display("Failed: element [2] != 1.0 (%.1f)", q_real[2]);
+      passed = 1'b0;
+    end
+
+    q_real = '{};
+
+    if (q_real.size !== 0) begin
+      $display("Failed: queue size != 0 (%0d)", q_real.size);
+      passed = 1'b0;
+    end
+
     if (passed) $display("PASSED");
 
    end
