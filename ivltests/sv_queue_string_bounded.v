@@ -13,7 +13,7 @@ module top;
     q_str.push_back("World");
     q_str.push_front("Hello");
     q_str.push_back("!");
-    q_str.push_back("This will not be added"); // This should create a warning, item not added.
+    q_str.push_back("This will not be added"); // Warning: item not added.
 
     if (q_str.size != 3) begin
       $display("Failed: unsized queue size != 3 (%0d)", q_str.size);
@@ -35,8 +35,8 @@ module top;
       passed = 1'b0;
     end
 
-    q_str.push_front("I say,"); // This should create a warning, back item removed.
-    q_str[3] = "Will not be added"; // This should create a warning, item not added.
+    q_str.push_front("I say,"); // Warning: sback item removed.
+    q_str[3] = "Will not be added"; // Warning: item not added.
 
     if (q_str.size != 3) begin
       $display("Failed: unsized queue size != 3 (%0d)", q_str.size);
@@ -58,8 +58,8 @@ module top;
       passed = 1'b0;
     end
 
-    q_str.insert(3, "Will not be added"); // This should create a warning, item not added.
-    q_str.insert(1, "to you"); // This should create a warning, back item removed.
+    q_str.insert(3, "Will not be added"); // Warning: item not added.
+    q_str.insert(1, "to you"); // Warning: back item removed.
 
     if (q_str.size != 3) begin
       $display("Failed: unsized queue size != 3 (%0d)", q_str.size);
@@ -78,6 +78,28 @@ module top;
 
     if (q_str[2] != "Hello") begin
       $display("Failed: unsized element [2] != 'Hello' (%s)", q_str[2]);
+      passed = 1'b0;
+    end
+
+    q_str = '{"Hello", "World", "!", "Will not be added"}; // Warning: items not added.
+
+    if (q_str.size != 3) begin
+      $display("Failed: unsized queue size != 3 (%0d)", q_str.size);
+      passed = 1'b0;
+    end
+
+    if (q_str[0] != "Hello") begin
+      $display("Failed: unsized element [0] != 'Hello' (%s)", q_str[0]);
+      passed = 1'b0;
+    end
+
+    if (q_str[1] != "World") begin
+      $display("Failed: unsized element [1] != 'World' (%s)", q_str[1]);
+      passed = 1'b0;
+    end
+
+    if (q_str[2] != "!") begin
+      $display("Failed: unsized element [2] != '!' (%s)", q_str[2]);
       passed = 1'b0;
     end
 

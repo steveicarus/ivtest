@@ -1,3 +1,5 @@
+Warning: Array pattern assignment has more elements (4) than bounded queue 'q_real' supports (3).
+         Only using first 3 elements.
 Warning: push_back(100) skipped for already full bounded queue<real> [3].
 Warning: push_front(0.5) removed 3 from already full bounded queue<real> [3].
 Warning: assigning to queue<real>[3] is outside bound (3). 3 was not added.
