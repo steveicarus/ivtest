@@ -1,8 +1,9 @@
-Warning: Array pattern assignment has more elements (4) than bounded queue 'q_real' supports (3).
+./ivltests/sv_queue_real_bounded.v:58: Warning: Array pattern assignment has more elements (4) than bounded queue 'q_tst' supports (3).
          Only using first 3 elements.
 Warning: push_back(100) skipped for already full bounded queue<real> [3].
 Warning: push_front(0.5) removed 3 from already full bounded queue<real> [3].
 Warning: assigning to queue<real>[3] is outside bound (3). 3 was not added.
 Warning: inserting to queue<real>[3] is outside bound (3). 10 was not added.
 Warning: insert(1, 2) removed 2 from already full bounded queue<real> [3].
+Warning: queue<real> is bounded to have at most 3 elements, source has 4 elements.
 PASSED

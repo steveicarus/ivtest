@@ -1,8 +1,9 @@
-Warning: Array pattern assignment has more elements (4) than bounded queue 'q_str' supports (3).
+./ivltests/sv_queue_string_bounded.v:58: Warning: Array pattern assignment has more elements (4) than bounded queue 'q_tst' supports (3).
          Only using first 3 elements.
 Warning: push_back("This will not be added") skipped for already full bounded queue<string> [3].
 Warning: push_front("I say,") removed "!" from already full bounded queue<string> [3].
 Warning: assigning to queue<string>[3] is outside bound (3). "Will not be added" was not added.
 Warning: inserting to queue<string>[3] is outside bound (3). "Will not be added" was not added.
 Warning: insert(1, "to you") removed "World" from already full bounded queue<string> [3].
+Warning: queue<string> is bounded to have at most 3 elements, source has 4 elements.
 PASSED
