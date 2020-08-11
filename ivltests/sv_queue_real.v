@@ -29,6 +29,7 @@ module top;
   initial begin
     passed = 1'b1;
 
+    q_tst.delete(0); // Warning: skip delete on an empty queue
     check_size(0, `__FILE__, `__LINE__);
     check_idx_value(0, 0.0, `__FILE__, `__LINE__);
 
@@ -127,8 +128,7 @@ module top;
     q_tst[2] = 3.0;
     q_tst[-1] = 10.0; // Warning: will not be added (negative index)
     q_tst['X] = 10.0; // Warning: will not be added (undefined index)
-// FIXME: is this valid?    q_tst[$] = 2.0;
-// FIXME: Add support for this?    q_tst[$+1] = 3.0;
+    q_tst[4] = 10.0; // Warning: will not be added (out of range index)
 
     idx = -1;
     q_tst[idx] = 10.0; // Warning: will not be added (negative index)
@@ -169,6 +169,15 @@ module top;
     q_tmp[0] = 3.0;
     q_tmp[2] = 1.0;
 
+    check_size(2, `__FILE__, `__LINE__);
+    check_idx_value(0, 1.0, `__FILE__, `__LINE__);
+    check_idx_value(1, 2.0, `__FILE__, `__LINE__);
+
+    q_tst[2] = 3.0;
+    check_size(3, `__FILE__, `__LINE__);
+    check_idx_value(2, 3.0, `__FILE__, `__LINE__);
+
+    q_tst = {1.0, 2.0};
     check_size(2, `__FILE__, `__LINE__);
     check_idx_value(0, 1.0, `__FILE__, `__LINE__);
     check_idx_value(1, 2.0, `__FILE__, `__LINE__);

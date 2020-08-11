@@ -29,6 +29,7 @@ module top;
   initial begin
     passed = 1'b1;
 
+    q_tst.delete(0); // Warning: skip delete on an empty queue
     check_size(0, `__FILE__, `__LINE__);
     check_idx_value(0, "", `__FILE__, `__LINE__);
 
@@ -127,6 +128,7 @@ module top;
     q_tst[2] = "!";
     q_tst[-1] = "Will not write"; // Warning: will not be added (negative index)
     q_tst['X] = "Will not write"; // Warning: will not be added (undefined index)
+    q_tst[4] = "Will not write"; // Warning: will not be added (out of range index)
 
     idx = -1;
     q_tst[idx] = "Will not write"; // Warning: will not be added (negative index)
@@ -167,6 +169,15 @@ module top;
     q_tmp[0] = "Goodbye";
     q_tmp[2] = "Not seen";
 
+    check_size(2, `__FILE__, `__LINE__);
+    check_idx_value(0, "Hello", `__FILE__, `__LINE__);
+    check_idx_value(1, "World", `__FILE__, `__LINE__);
+
+    q_tst[2] = "Added, but removed";
+    check_size(3, `__FILE__, `__LINE__);
+    check_idx_value(2, "Added, but removed", `__FILE__, `__LINE__);
+
+    q_tst = {"Hello", "World"};
     check_size(2, `__FILE__, `__LINE__);
     check_idx_value(0, "Hello", `__FILE__, `__LINE__);
     check_idx_value(1, "World", `__FILE__, `__LINE__);
