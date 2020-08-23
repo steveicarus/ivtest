@@ -1416,6 +1416,7 @@ real11			normal			ivltests
 real_assign_deassign	normal			ivltests
 real_concat_invalid2	CE			ivltests
 real_delay		normal,-gspecify	ivltests gold=real_delay.gold
+real_events		normal			ivltests gold=real_events.gold
 real_force_rel		normal			ivltests
 real_invalid_ops	CE			ivltests gold=real_invalid_ops.gold
 real_logical		normal			ivltests

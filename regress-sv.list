@@ -174,6 +174,7 @@ br_gh289c		normal,-g2009		ivltests
 br_gh289d		normal,-g2009		ivltests gold=br_gh289d.gold
 br_gh337		normal,-g2009		ivltests
 br_gh361		normal,-g2009		ivltests
+br_gh365		normal,-g2009		ivltests gold=br_gh365.gold
 br_ml20150315b		CE,-g2009		ivltests
 br_ml20171017		normal,-g2009		ivltests
 br_ml20180227		CE,-g2009		ivltests
@@ -327,6 +328,7 @@ size_cast4		normal,-g2009		ivltests
 size_cast5		normal,-g2009		ivltests
 slongint_test		normal,-g2005-sv	ivltests
 sshortint_test		normal,-g2005-sv	ivltests
+string_events		normal,-g2009		ivltests gold=string_events.gold
 string_index		normal,-g2005-sv	ivltests
 struct1			normal,-g2009		ivltests
 struct2			normal,-g2009		ivltests

@@ -37,6 +37,8 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
              br_ml20180309a: Not Implemented.
              br_ml20180309b: Not Implemented.
                    br_gh337: Not Implemented.
+                   br_gh365: Not Implemented.
+              string_events: Not Implemented.
                     analog1: Not Implemented.
                     analog2: Not Implemented.
                 ivlh_textio: Not Implemented.
@@ -1667,6 +1669,7 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
        real_assign_deassign: Passed.
        real_concat_invalid2: Passed - CE.
                  real_delay: Passed.
+                real_events: Passed.
              real_force_rel: Passed.
            real_invalid_ops: Passed - CE.
                real_logical: Passed.
@@ -2473,4 +2476,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2471, Passed=2337, Failed=4, Not Implemented=127, Expected Fail=3
+  Total=2474, Passed=2338, Failed=4, Not Implemented=129, Expected Fail=3

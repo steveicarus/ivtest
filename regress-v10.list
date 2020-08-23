@@ -144,6 +144,11 @@ br_ml20180309b          NI
 # VVP syntax, so can't be backported.
 br_gh337		NI
 
+# The fix for string values in event expressions hasn't been backported.
+br_gh365		NI
+string_events		NI
+
+
 # V10 does not support analog functionality
 analog1			NI
 analog2			NI

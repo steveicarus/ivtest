@@ -20,6 +20,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                  pr2172606b: Passed - CE.
                   pr2276163: Passed - CE.
                   pr2929913: Passed - CE.
+                real_events: Passed - CE.
              recursive_func: Passed - CE.
              recursive_task: Passed - CE.
              task_init_var1: Passed - CE.
@@ -172,11 +173,13 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                      br932b: Passed - CE.
                      br_gh4: Passed - CE.
                    br_gh194: Passed - CE.
+                   br_gh365: Passed - CE.
              br_ml20180309a: Passed - CE.
              br_ml20180309b: Passed - CE.
                 ivlh_textio: Passed - CE.
             plus_arg_string: Passed - CE.
                    sformatf: Passed - CE.
+              string_events: Passed - CE.
                string_index: Passed - CE.
                    sv_macro: Passed - CE.
                  sv_string1: Passed - CE.
@@ -2472,4 +2475,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2470, Passed=2423, Failed=12, Not Implemented=3, Expected Fail=32
+  Total=2473, Passed=2426, Failed=12, Not Implemented=3, Expected Fail=32

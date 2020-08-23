@@ -1499,6 +1499,7 @@ Running compiler/VVP tests for Icarus Verilog version: 11 (strict).
        real_assign_deassign: Passed.
        real_concat_invalid2: Passed - CE.
                  real_delay: Passed.
+                real_events: Passed.
              real_force_rel: Passed.
            real_invalid_ops: Passed - CE.
                real_logical: Passed.
@@ -1912,6 +1913,7 @@ test_mos_strength_reduction: Passed.
                   br_gh289d: Passed.
                    br_gh337: Passed.
                    br_gh361: Passed.
+                   br_gh365: Passed.
              br_ml20150315b: Passed - CE.
               br_ml20171017: Passed.
               br_ml20180227: Passed - CE.
@@ -2064,6 +2066,7 @@ test_mos_strength_reduction: Passed.
                  size_cast5: Passed.
               slongint_test: Passed.
              sshortint_test: Passed.
+              string_events: Passed.
                string_index: Passed.
                     struct1: Passed.
                     struct2: Passed.
@@ -2469,4 +2472,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2467, Passed=2460, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2470, Passed=2463, Failed=7, Not Implemented=0, Expected Fail=0
