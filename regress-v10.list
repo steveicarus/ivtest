@@ -148,6 +148,9 @@ br_gh337		NI
 br_gh365		NI
 string_events		NI
 
+# The enhanced support for `` and `" hasn't been backported.
+br_gh366		EF			ivltests gold=br_gh366.gold
+sv_macro3		EF			ivltests gold=sv_macro3.gold
 
 # V10 does not support analog functionality
 analog1			NI
