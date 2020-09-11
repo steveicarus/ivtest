@@ -152,6 +152,9 @@ string_events		NI
 br_gh366		EF			ivltests gold=br_gh366.gold
 sv_macro3		EF			ivltests gold=sv_macro3.gold
 
+# The fix for join_any inside a task hasn't been backported.
+br_gh368		NI
+
 # V10 does not support analog functionality
 analog1			NI
 analog2			NI

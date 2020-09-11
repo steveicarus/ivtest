@@ -41,6 +41,7 @@ Running compiler/VVP tests for Icarus Verilog version: 10.
               string_events: Not Implemented.
                    br_gh366: Passed - expected fail.
                   sv_macro3: Passed - expected fail.
+                   br_gh368: Not Implemented.
                     analog1: Not Implemented.
                     analog2: Not Implemented.
                 ivlh_textio: Not Implemented.
@@ -2478,4 +2479,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2476, Passed=2338, Failed=4, Not Implemented=129, Expected Fail=5
+  Total=2477, Passed=2338, Failed=4, Not Implemented=130, Expected Fail=5
