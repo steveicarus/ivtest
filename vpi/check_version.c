@@ -88,7 +88,8 @@ static PLI_INT32 calltf(PLI_BYTE8 *name)
      * get the version and subversion. */
     str = strdup(info.version);
     cp = strchr(str, ' ');
-    *cp = '\0';
+    if (cp)
+	*cp = '\0';
     val.format = vpiStringVal;
     val.value.str = str;
     vpi_put_value(reg, &val, 0, vpiNoDelay);
