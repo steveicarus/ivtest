@@ -54,7 +54,7 @@ if ($#ARGV != -1) {
     &read_regression_list("regress-ivl1.list", $ver, "");
     &read_regression_list("regress-vlg.list",  $ver, "");
     &read_regression_list("regress-vams.list", $ver, "");
-    if ($ver == 11 or $ver == 10 or $ver == 0.10) {
+    if ($ver >= 10) {
         &read_regression_list("regress-sv.list",   $ver, "");
         &read_regression_list("regress-vhdl.list", $ver, "");
     }
