@@ -1,4 +1,4 @@
-Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
+Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
 ----------------------------------------------------------------------------
           always_comb_rfunc: Passed - CE.
           automatic_error11: Passed - CE.
@@ -610,6 +610,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 11.
                   pr3292735: Passed.
                  pr3366217e: Passed.
                       pr748: Passed.
+                    pull371: Passed.
+                   pull371b: Passed.
                      sf1289: Passed.
                      shift2: Passed.
                      shift3: Passed.
@@ -2478,4 +2480,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2476, Passed=2429, Failed=12, Not Implemented=3, Expected Fail=32
+  Total=2478, Passed=2431, Failed=12, Not Implemented=3, Expected Fail=32

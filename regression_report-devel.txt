@@ -1,4 +1,4 @@
-Running compiler/VVP tests for Icarus Verilog version: 11.
+Running compiler/VVP tests for Icarus Verilog version: 12.
 ----------------------------------------------------------------------------
                    dffsynth: Passed - CE.
                   memsynth1: Passed - CE.

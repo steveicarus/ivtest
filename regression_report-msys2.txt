@@ -1,4 +1,4 @@
-Running compiler/VVP tests for Icarus Verilog version: 11.
+Running compiler/VVP tests for Icarus Verilog version: 12.
 ----------------------------------------------------------------------------
                test_va_math: Passed.
              test_vams_math: Passed.
@@ -2262,6 +2262,8 @@ test_mos_strength_reduction: Passed.
               wild_cmp_err2: Passed - CE.
                      gh161a: Passed.
                      gh161b: Passed.
+                    pull371: Passed.
+                   pull371b: Passed.
                       br942: Passed.
                   br943_944: Passed.
                       br985: Passed.
@@ -2478,4 +2480,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2476, Passed=2467, Failed=7, Not Implemented=2, Expected Fail=0
+  Total=2478, Passed=2469, Failed=7, Not Implemented=2, Expected Fail=0
