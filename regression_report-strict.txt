@@ -1955,6 +1955,7 @@ test_mos_strength_reduction: Passed.
                  enum_test8: Passed.
             enum_value_expr: Passed.
                 enum_values: Passed.
+         escaped_macro_name: Passed.
                       final: Passed.
                      final2: Passed.
              first_last_num: Passed.
@@ -2479,4 +2480,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2477, Passed=2470, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2478, Passed=2471, Failed=7, Not Implemented=0, Expected Fail=0
