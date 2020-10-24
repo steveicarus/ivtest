@@ -721,6 +721,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
                  casesynth6: Passed.
               case_priority: Passed.
                 case_unique: Passed.
+                   br_gh377: Passed.
                    dffsynth: Passed - CE.
                   memsynth1: Passed - CE.
                   memsynth2: Passed - CE.
@@ -2483,4 +2484,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2481, Passed=2434, Failed=12, Not Implemented=3, Expected Fail=32
+  Total=2482, Passed=2435, Failed=12, Not Implemented=3, Expected Fail=32

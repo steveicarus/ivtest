@@ -241,6 +241,7 @@ tern8			normal			ivltests
 pr2476430		normal			ivltests
 
 # Command line parameters
+br_gh377		normal,-Ptest.name=	ivltests gold=br_gh377.gold
 cmdline_parm1		normal,-Pmain.foo=2	ivltests
 
 # Dumping array words

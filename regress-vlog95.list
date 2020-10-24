@@ -927,3 +927,6 @@ casesynth6		normal			ivltests
 # statements, so no warnings are generated.
 case_priority		normal,-g2009		ivltests gold=case_priority-vlog95.gold
 case_unique		normal,-g2009		ivltests gold=case_unique-vlog95.gold
+
+# An error is reported for both compiler passes
+br_gh377		normal,-Ptest.name=	ivltests gold=br_gh377-vlog95.gold

@@ -148,6 +148,7 @@ Running compiler/VVP tests for Icarus Verilog version: 12.
         real_wire_force_rel: Passed.
                       tern8: Passed.
                   pr2476430: Passed.
+                   br_gh377: Passed.
               cmdline_parm1: Passed.
                  array_dump: Passed.
                   pr2859628: Passed.
@@ -2483,4 +2484,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2481, Passed=2474, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2482, Passed=2475, Failed=7, Not Implemented=0, Expected Fail=0
