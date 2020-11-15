@@ -19,7 +19,6 @@ module a();
    initial begin
 // Need to compare the base enumeration definition to check compatibility.
       exc_code = func1(1'b1);
-      
       if(exc_code== EXC_C) begin
          $display("PASSED");
          $finish;

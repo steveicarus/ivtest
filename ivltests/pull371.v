@@ -2,7 +2,7 @@
  * 23.2.2.3 Rules for determining port kind, data type, and direction says
  *
  * For output ports, the default port kind depends on how the data type is
- * specified: 
+ * specified:
  * - If the data type is omitted or declared with the implicit_data_type
  *   syntax, the port kind shall default to a net of default net type.
  * - If the data type is declared with the explicit data_type syntax, the port
