@@ -221,6 +221,7 @@ enum_test8		normal,-g2005-sv	ivltests
 enum_value_expr		normal,-g2005-sv	ivltests
 enum_values		normal,-g2005-sv	ivltests
 escaped_macro_name	normal,-g2009	        ivltests gold=escaped_macro_name.gold
+extra_semicolon		normal,-g2005-sv	ivltests
 final			normal,-g2005-sv	ivltests gold=final.gold
 final2			normal,-g2005-sv	ivltests gold=final2.gold
 first_last_num		normal,-g2005-sv	ivltests
