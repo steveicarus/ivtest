@@ -45,8 +45,7 @@ sub read_regression_list {
         or die "No regression list file name specified";
     my $ver = shift
         or die "No iverilog version specified";
-    my $force_sv = shift
-        or die "No force SystemVerilog specified";
+    my $force_sv = shift;
     my $opt = shift;
 
     my ($line, @fields, $tname, $tver, %nameidx, $options);
