@@ -79,3 +79,6 @@ mix_reset		CE,-S			ivltests
 case1			normal			ivltests
 case2			normal			ivltests
 casex_synth		normal			ivltests
+
+br_gh390a		CE,-g2012		ivltests
+br_gh390b		normal,-g2012		ivltests gold=br_gh390b.gold
