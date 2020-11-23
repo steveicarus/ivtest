@@ -4,7 +4,7 @@
 #
 # This script is based on code with the following Copyright.
 #
-# Copyright (c) 1999 Guy Hutchison (ghutchis@pacbell.net)
+# Copyright (c) 1999-2020 Guy Hutchison (ghutchis@pacbell.net)
 #
 #    This source code is free software; you can redistribute it
 #    and/or modify it in source code form under the terms of the GNU
@@ -32,14 +32,14 @@ use Environment;
 #
 #  Main script
 #
-my ($suffix, $strict, $with_valg) = &get_args;
+my ($suffix, $strict, $with_valg, $force_sv) = &get_args;
 my $regress_fn = &get_regress_fn;
 &open_report_file('vhdl_regression_report.txt');
 my $ver = &get_ivl_version($suffix);
 my $msg = $with_valg ? " (with valgrind)" : "";
 &print_rpt("Running VHDL tests for Icarus Verilog version: $ver$msg.\n");
 &print_rpt("-" x 70 . "\n");
-&read_regression_list($regress_fn, $ver, "");
+&read_regression_list($regress_fn, $ver, $force_sv, "");
 &execute_regression($suffix, $with_valg);
 &close_report_file;
 
