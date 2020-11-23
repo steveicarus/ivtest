@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 // Module to test the messages/results for out of bound R-value constant
 // bit selects.
 
@@ -376,3 +377,4 @@ module top;
     if (pass) $display("PASSED");
   end
 endmodule
+`end_keywords

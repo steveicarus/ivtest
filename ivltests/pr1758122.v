@@ -1,3 +1,4 @@
+`begin_keywords "1364-2001-noconfig"
 // Copyright 2007, Martin Whitaker.
 // This code may be freely copied for any purpose.
 
@@ -45,3 +46,4 @@ output wire [W-1:0]	Y
 assign Y = A + B;
 
 endmodule
+`end_keywords

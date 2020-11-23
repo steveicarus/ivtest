@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 module top;
   reg passed = 1'b1;
   wire out, cout0, cout1;
@@ -130,3 +131,4 @@ module top;
     #1 if (passed) $display("PASSED");
   end
 endmodule
+`end_keywords

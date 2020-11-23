@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 /*
  * Copyright (c) 2002 Stephen Williams (steve@icarus.com)
  *
@@ -240,3 +241,4 @@ module testBench;
      end
 
 endmodule
+`end_keywords

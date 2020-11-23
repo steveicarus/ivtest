@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 //
 // Copyright (c) 1999 Thomas Coonan (tcoonan@mindspring.com)
 //
@@ -371,3 +372,4 @@ always @(U1.tail)
 
 endmodule
 `endif
+`end_keywords

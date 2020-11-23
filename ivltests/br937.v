@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 module top;
 
 localparam [8*8:0] expect = "0123456789";
@@ -15,3 +16,4 @@ initial begin
 end
 
 endmodule
+`end_keywords

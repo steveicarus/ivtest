@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 module main;
   reg pass;
   reg a, b;
@@ -36,3 +37,4 @@ module main;
   end
 
 endmodule
+`end_keywords

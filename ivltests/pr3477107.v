@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 `timescale 1ns/1ns
 module test;
 
@@ -40,3 +41,4 @@ module test;
 	end
 
 endmodule
+`end_keywords

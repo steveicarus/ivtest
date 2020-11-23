@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 module generate_multi_loop();
 
 reg [31:0] input_value;
@@ -76,3 +77,4 @@ initial begin
 end
 
 endmodule
+`end_keywords

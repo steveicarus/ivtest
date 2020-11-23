@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 /*
  * Copyright (c) 2001 Stephen Williams (steve@icarus.com)
  *
@@ -59,3 +60,4 @@ module PULLDOWN (O);
    buf (weak0,weak1) #(1,1) (O,A);
 
 endmodule
+`end_keywords

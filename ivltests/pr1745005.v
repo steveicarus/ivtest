@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 // pr1745005
 //
 module main;
@@ -33,3 +34,4 @@ module main;
    end
 
 endmodule
+`end_keywords

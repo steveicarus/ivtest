@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 module automatic_error();
 
 task automatic auto_task;
@@ -14,3 +15,4 @@ endtask
 initial auto_task;
 
 endmodule
+`end_keywords

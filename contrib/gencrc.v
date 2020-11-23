@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 //
 // Copyright (c) 1999 Thomas Coonan (tcoonan@mindspring.com)
 //
@@ -297,3 +298,4 @@ task gencrc32;
 endtask
 
 endmodule
+`end_keywords

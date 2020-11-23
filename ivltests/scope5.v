@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 module test;
 
    real tmp;
@@ -29,3 +30,4 @@ module test;
    end
 
 endmodule // test
+`end_keywords

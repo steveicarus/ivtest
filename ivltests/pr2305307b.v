@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 module top;
   reg passed, in, expect;
   integer lp;
@@ -64,3 +65,4 @@ module top;
     if (passed) $display("PASSED");
   end
 endmodule
+`end_keywords

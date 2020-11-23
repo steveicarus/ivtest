@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 /*
  * This is a general recreation of the VHDL ieee.math_real package.
  */
@@ -498,3 +499,4 @@ module math ;
     end
 
 endmodule
+`end_keywords

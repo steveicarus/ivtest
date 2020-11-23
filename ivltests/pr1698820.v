@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 module top;
   reg [4:0] var;
   integer fp;
@@ -16,3 +17,4 @@ module top;
     $fclose(fp);
   end
 endmodule
+`end_keywords

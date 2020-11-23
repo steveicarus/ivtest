@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 /*
  * This program is based on PR#1077.
  *
@@ -38,3 +39,4 @@ begin
 end
 
 endmodule
+`end_keywords

@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 // -- test force/release of:
 //      a wire assigned to a reg
 //      a wire with no assignment
@@ -146,3 +147,4 @@ module subtop(
     end
   end
 endmodule
+`end_keywords
