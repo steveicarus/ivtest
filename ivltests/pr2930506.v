@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 module test;
     reg [800:1] string;
     integer code;
@@ -10,3 +11,4 @@ module test;
         else $display("PASSED");
     end
 endmodule
+`end_keywords

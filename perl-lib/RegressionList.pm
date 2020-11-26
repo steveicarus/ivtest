@@ -7,7 +7,7 @@ package RegressionList;
 use strict;
 use warnings;
 
-our $VERSION = '1.00';
+our $VERSION = '1.01';
 
 use base 'Exporter';
 
@@ -45,6 +45,7 @@ sub read_regression_list {
         or die "No regression list file name specified";
     my $ver = shift
         or die "No iverilog version specified";
+    my $force_sv = shift;
     my $opt = shift;
 
     my ($line, @fields, $tname, $tver, %nameidx, $options);
@@ -157,6 +158,30 @@ sub read_regression_list {
         }
         push (@testlist, $tname);
         $nameidx{$tname} = @testlist - 1;
+
+        # The generation to use is passed if it does not match
+        # the default. To make sure the tests are protable we
+        # use the force SV flag to force all tests to be run
+        # as the latest SystemVerilog generation. This assumes
+        # the correct `begin_keywords has been added to the
+        # various files.
+        if ($force_sv) {
+            $args{$tname} =~ s/-g2012//;
+            $args{$tname} =~ s/-g2009//;
+            $args{$tname} =~ s/-g2005-sv//;
+            $args{$tname} =~ s/-g2005//;
+            $args{$tname} =~ s/-g2001-noconfig//;
+            $args{$tname} =~ s/-g2001//;
+            $args{$tname} =~ s/-g1995//;
+            $args{$tname} =~ s/-g2x/-gicarus-misc/;  # Deprecated for 2001
+            $args{$tname} =~ s/-g2//;  # Deprecated for 2001
+            $args{$tname} =~ s/-g1//;  # Deprecated for 1995
+            if ($args{$tname}) {
+                $args{$tname} = "-g2012 $args{$tname}";
+            } else {
+                $args{$tname} = "-g2012";
+            }
+        }
     }
 
     close (REGRESS_LIST);

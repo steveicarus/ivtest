@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 module main;
   wire y1, y2, y3;
   reg a;
@@ -27,3 +28,4 @@ module sub(y1, y2, y3, a);
   end
 
 endmodule
+`end_keywords

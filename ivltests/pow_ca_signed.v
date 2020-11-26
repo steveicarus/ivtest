@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 module test();
 
 reg  signed  [15:0] a;
@@ -30,3 +31,4 @@ initial begin
 end
 
 endmodule
+`end_keywords

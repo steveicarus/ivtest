@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 // Check that attributes are supported on all forms of
 // module port declaration.
 
@@ -34,3 +35,4 @@ module m3(a, b, c, d);
 (* name="d" *) reg  d;
 
 endmodule
+`end_keywords

@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 /*
  * This tests the synthesis of a case statement that has an empty case.
  */
@@ -41,3 +42,4 @@ module main;
    end
 
 endmodule // main
+`end_keywords

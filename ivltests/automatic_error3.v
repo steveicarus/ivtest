@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 module automatic_error();
 
 reg  global;
@@ -13,3 +14,4 @@ end
 endtask
 
 endmodule
+`end_keywords

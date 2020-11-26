@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 /*
  * Copyright (c) 2005 Stephen Williams (steve@icarus.com)
  *
@@ -62,3 +63,4 @@ module main;
    end
 
 endmodule // main
+`end_keywords

@@ -9,7 +9,7 @@ use lib './perl-lib';
 
 use RegressionList;
 
-read_regression_list("regress-msys2.list", "any", "");
+read_regression_list("regress-msys2.list", "any", 0, "");
 
 open(my $input,  '<', 'regression_report-devel.txt')
   or die "ERROR - can't open 'regression_report-devel.txt'";

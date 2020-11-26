@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 module main;
 
    wire [1:0] di;
@@ -42,3 +43,4 @@ module sub(inout [1:0]Q,
    assign	 Di = Q;
    assign	 Q = dir? Do : 2'bzz;
 endmodule // sub
+`end_keywords

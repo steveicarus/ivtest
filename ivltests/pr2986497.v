@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 module top(arg);
     input [31:0] arg;
 
@@ -18,3 +19,4 @@ module add(in0, in1, out);
     // This works if you explicitly specify the sensitivity list.
     always @* out = in0 + in1;
 endmodule
+`end_keywords

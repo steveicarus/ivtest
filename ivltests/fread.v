@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 module top;
   localparam string = "ab";
   localparam rg_res = string & 9'h1ff;
@@ -157,3 +158,4 @@ module top;
     else $display("FAILED");
   end
 endmodule
+`end_keywords

@@ -4,7 +4,7 @@
 #
 # This script is based on code with the following Copyright.
 #
-# Copyright (c) 1999-2015 Guy Hutchison (ghutchis@pacbell.net)
+# Copyright (c) 1999-2020 Guy Hutchison (ghutchis@pacbell.net)
 #
 #    This source code is free software; you can redistribute it
 #    and/or modify it in source code form under the terms of the GNU
@@ -33,7 +33,7 @@ use Environment;
 #  Main script
 #
 &open_report_file;
-my ($suffix, $strict, $with_valg) = &get_args;
+my ($suffix, $strict, $with_valg, $force_sv) = &get_args;
 my $ver = &get_ivl_version($suffix);
 my $opt = $strict ? " (strict)" : "";
 my $msg = $with_valg ? " (with valgrind)" : "";
@@ -42,26 +42,26 @@ my $msg = $with_valg ? " (with valgrind)" : "";
 &print_rpt("-" x 76 . "\n");
 if ($#ARGV != -1) {
     my $regress_fn = &get_regress_fn;
-    &read_regression_list($regress_fn, $ver, "");
+    &read_regression_list($regress_fn, $ver, $force_sv, "");
 } else {
     if ($ENV{MSYSTEM}) {
-        &read_regression_list("regress-msys2.list", $ver, "");
+        &read_regression_list("regress-msys2.list", $ver, $force_sv, "");
     }
-    &read_regression_list("regress-v$ver.list", $ver, "");
+    &read_regression_list("regress-v$ver.list", $ver, $force_sv, "");
     if ($strict == 0) {
-        &read_regression_list("regress-ivl2.list", $ver, "");
+        &read_regression_list("regress-ivl2.list", $ver, $force_sv, "");
     }
-    &read_regression_list("regress-ivl1.list", $ver, "");
-    &read_regression_list("regress-vlg.list",  $ver, "");
-    &read_regression_list("regress-vams.list", $ver, "");
+    &read_regression_list("regress-ivl1.list", $ver, $force_sv, "");
+    &read_regression_list("regress-vlg.list",  $ver, $force_sv, "");
+    &read_regression_list("regress-vams.list", $ver, $force_sv, "");
     if ($ver >= 10) {
-        &read_regression_list("regress-sv.list",   $ver, "");
-        &read_regression_list("regress-vhdl.list", $ver, "");
+        &read_regression_list("regress-sv.list",   $ver, $force_sv, "");
+        &read_regression_list("regress-vhdl.list", $ver, $force_sv, "");
     }
     if ($ver == 0.9) {
-        &read_regression_list("regress-synth.list", $ver, "");
+        &read_regression_list("regress-synth.list", $ver, $force_sv, "");
     } else {
-        &read_regression_list("regress-synth.list", $ver, "-S");
+        &read_regression_list("regress-synth.list", $ver, $force_sv, "-S");
     }
 }
 &execute_regression($suffix, $strict, $with_valg);

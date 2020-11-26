@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 module top;
   reg pass;
   reg [3:0] var;
@@ -18,3 +19,4 @@ module top;
     if (pass) $display("PASSED");
   end
 endmodule
+`end_keywords

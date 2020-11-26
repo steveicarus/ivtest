@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 module top;
   reg [31:0] var;
   integer ivar;
@@ -14,3 +15,4 @@ module top;
     end
   end
 endmodule
+`end_keywords

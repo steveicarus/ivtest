@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 module top;
   reg pass;
   real rvar;
@@ -68,3 +69,4 @@ module vec_to_real (input wire real in);
     top.pass = 1'b0;
   end
 endmodule
+`end_keywords

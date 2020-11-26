@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 `timescale 1ns/100ps
 
 module top;
@@ -43,3 +44,4 @@ endmodule
 module top2;
   initial #1.001 $display("Should be 1.001: ", $realtime);
 endmodule
+`end_keywords

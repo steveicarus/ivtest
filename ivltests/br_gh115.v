@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 // Adapted from case6.v
 module main;
 
@@ -34,3 +35,4 @@ module main;
    end
 
 endmodule // main
+`end_keywords

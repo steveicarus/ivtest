@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 `timescale 1ns / 1ns
 
 module gentest;
@@ -56,3 +57,4 @@ module add1(a, b, ci, sum, co);
 	output sum, co;
 	assign {co,sum} = a + b + ci;
 endmodule
+`end_keywords

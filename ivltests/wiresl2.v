@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 /*
  * This test is from PR#193
  */
@@ -56,3 +57,4 @@ module shl(out, bit);
    assign out = out_reg;
 
 endmodule // shl
+`end_keywords

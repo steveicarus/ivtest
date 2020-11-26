@@ -1,3 +1,4 @@
+`begin_keywords "1364-2005"
 module signed_net_display;
 
 wire signed [3:0] value[-7:7];
@@ -40,3 +41,4 @@ initial begin
 end
 
 endmodule
+`end_keywords
