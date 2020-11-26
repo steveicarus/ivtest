@@ -1,4 +1,4 @@
-WARNING: ./ivltests/mem1.v:42: $readmemb: Standard inconsistency, following 1364-2005.
+WARNING: ./ivltests/mem1.v:42: $readmemb: The behaviour for reg[...] mem[N:0]; $readmemb("...", mem); changed in the 1364-2005 standard. To avoid ambiguity, use mem[0:N] or explicit range parameters $readmemb("...", mem, start, stop);. Defaulting to 1364-2005 behavior.
 mem[          0] = 000100
 mem[          1] = 000200
 mem[          2] = 000400
