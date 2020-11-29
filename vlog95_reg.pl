@@ -44,6 +44,9 @@ if ($#ARGV != -1) {
     &read_regression_list($regress_fn, $ver, $force_sv, "");
 
 } else {
+    if ($force_sv) {
+        &read_regression_list("regress-fsv.list", $ver, $force_sv, "");
+    }
     &read_regression_list("regress-vlog95.list", $ver, $force_sv, "");
     &read_regression_list("regress-v$ver.list", $ver, $force_sv, "");
     &read_regression_list("regress-ivl2.list", $ver, $force_sv, "");
