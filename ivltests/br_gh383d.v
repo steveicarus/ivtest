@@ -1,7 +1,7 @@
 module test;
    real x[], y[], z[];
    real src[0:7];
-   int 	  i;
+   int	  i;
 
    initial begin
       src[0] = 1.0;
@@ -12,11 +12,11 @@ module test;
       src[5] = 6.0;
       src[6] = 7.0;
       src[7] = 8.0;
-     
+
       x = new [4];
-     
+
       for (i = 0; i < 4; i = i + 1) x[i] = src[i];
-      
+
       y = x;
       z = new [4](x);
       for (i = 0; i < 4; i = i + 1) y[i] = src[3 - i];

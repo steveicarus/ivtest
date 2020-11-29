@@ -1,10 +1,10 @@
 module test;
    bit [7:0] i, x[], y[], z[];
-   
+
 
   initial begin
     x = new [4];
-     
+
     for (i = 0; i < 4; i = i + 1) x[i] = 1 + i;
     y = x;
     z = new [4](x);

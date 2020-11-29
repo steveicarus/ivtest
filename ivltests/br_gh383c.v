@@ -1,7 +1,7 @@
 module test;
    string x[], y[], z[];
    string src[0:7];
-   int 	  i;
+   int	  i;
 
    initial begin
       src[0] = "a";
@@ -12,11 +12,11 @@ module test;
       src[5] = "f";
       src[6] = "g";
       src[7] = "h";
-     
+
       x = new [4];
-     
+
       for (i = 0; i < 4; i = i + 1) x[i] = src[i];
-      
+
       y = x;
       z = new [4](x);
       for (i = 0; i < 4; i = i + 1) y[i] = src[3 - i];
