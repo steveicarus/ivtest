@@ -71,9 +71,11 @@ br1027e			normal			ivltests gold=br1027e-fsv.gold
 br_gh25a		normal			ivltests
 br_gh25b		normal			ivltests
 function4		normal			ivltests
+pr1963962		normal			ivltests gold=pr1963962-fsv.gold
 pr2590274a		normal			ivltests gold=pr2590274-fsv.gold
 pr2590274b		normal			ivltests gold=pr2590274-fsv.gold
 pr2590274c		normal,-gspecify	ivltests gold=pr2590274-fsv.gold
 pr3015421		CE			ivltests gold=pr3015421-fsv.gold
 resetall		normal,-Wtimescale	ivltests gold=resetall-fsv.gold
+scope2b			normal			ivltests
 sys_func_task_error	RE			ivltests gold=sys_func_task_error-fsv.gold
