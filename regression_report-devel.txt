@@ -12,13 +12,6 @@ Running compiler/VVP tests for Icarus Verilog version: 12.
                       case1: Passed.
                       case2: Passed.
                 casex_synth: Passed.
-                   br_gh307: Passed.
-                  br_gh383a: Passed.
-                  br_gh383b: Passed.
-                  br_gh383c: Passed.
-                  br_gh383d: Passed.
-                  br_gh390a: Passed - CE.
-                  br_gh390b: Passed.
                       pr903: Passed.
                   pr1388974: Passed.
                    br_gh13a: Passed.
@@ -2282,6 +2275,13 @@ test_mos_strength_reduction: Passed.
                      gh161b: Passed.
                     pull371: Passed.
                    pull371b: Passed.
+                   br_gh307: Passed.
+                  br_gh383a: Passed.
+                  br_gh383b: Passed.
+                  br_gh383c: Passed.
+                  br_gh383d: Passed.
+                  br_gh390a: Passed - CE.
+                  br_gh390b: Passed.
                       br942: Passed.
                   br943_944: Passed.
                       br985: Passed.
