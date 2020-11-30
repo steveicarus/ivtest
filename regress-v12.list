@@ -80,6 +80,7 @@ case1			normal			ivltests
 case2			normal			ivltests
 casex_synth		normal			ivltests
 
+br_gh307		normal,-g2012		ivltests
 br_gh383a		normal,-g2012		ivltests gold=br_gh383a.gold
 br_gh383b		normal,-g2012		ivltests gold=br_gh383b.gold
 br_gh383c		normal,-g2012		ivltests gold=br_gh383c.gold

@@ -12,6 +12,7 @@ Running compiler/VVP tests for Icarus Verilog version: 12.
                       case1: Passed.
                       case2: Passed.
                 casex_synth: Passed.
+                   br_gh307: Passed.
                   br_gh383a: Passed.
                   br_gh383b: Passed.
                   br_gh383c: Passed.
@@ -2497,4 +2498,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2495, Passed=2488, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2496, Passed=2489, Failed=7, Not Implemented=0, Expected Fail=0
