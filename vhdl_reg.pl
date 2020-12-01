@@ -32,14 +32,18 @@ use Environment;
 #
 #  Main script
 #
-my ($suffix, $strict, $with_valg, $force_sv) = &get_args;
-my $regress_fn = &get_regress_fn;
 &open_report_file('vhdl_regression_report.txt');
+my ($suffix, $strict, $with_valg, $force_sv) = &get_args;
 my $ver = &get_ivl_version($suffix);
 my $msg = $with_valg ? " (with valgrind)" : "";
 &print_rpt("Running VHDL tests for Icarus Verilog version: $ver$msg.\n");
 &print_rpt("-" x 70 . "\n");
-&read_regression_list($regress_fn, $ver, $force_sv, "");
+if ($#ARGV != -1) {
+    my $regress_fn = &get_regress_fn;
+    &read_regression_list($regress_fn, $ver, $force_sv, "");
+} else {
+    &read_regression_list("vhdl_regress.list", $ver, $force_sv, "");
+}
 &execute_regression($suffix, $with_valg);
 &close_report_file;
 
