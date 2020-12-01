@@ -35,7 +35,8 @@ use Environment;
 &open_report_file;
 my ($suffix, $strict, $with_valg, $force_sv) = &get_args;
 my $ver = &get_ivl_version($suffix);
-my $opt = $strict ? " (strict)" : "";
+my $opt = $strict ? ($force_sv ? " (strict, force SV)" : " (strict)") :
+                    ($force_sv ? " (force SV)" : "");
 my $msg = $with_valg ? " (with valgrind)" : "";
 &print_rpt("Running compiler/VVP tests for Icarus Verilog " .
            "version: $ver$opt$msg.\n");

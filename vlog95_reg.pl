@@ -35,9 +35,10 @@ use Environment;
 &open_report_file;
 my ($suffix, $strict, $with_valg, $force_sv) = &get_args;
 my $ver = &get_ivl_version($suffix);
+my $opt = $force_sv ? " (force SV)" : "";
 my $msg = $with_valg ? " (with valgrind)" : "";
 &print_rpt("Running vlog95 compiler/VVP tests for Icarus Verilog " .
-           "version: $ver$msg.\n");
+           "version: $ver$opt$msg.\n");
 &print_rpt("-" x 76 . "\n");
 if ($#ARGV != -1) {
     my $regress_fn = &get_regress_fn;
