@@ -869,6 +869,8 @@ vhdl_while		normal,-g2005-sv,-pallowsigned=1,ivltests/vhdl_while.vhd	ivltests
 br919			normal,-pallowsigned=1	ivltests
 br968			normal,-pallowsigned=1	ivltests
 concat3			normal,-pallowsigned=1	ivltests
+l_equiv			normal,-g2005-sv,-pallowsigned=1	ivltests
+l_equiv_ca		normal,-g2005-sv,-pallowsigned=1	ivltests
 mult2			normal,-pallowsigned=1	ivltests
 pr757			normal,-pallowsigned=1	ivltests
 pr1002			normal,-pallowsigned=1	ivltests gold=pr1002.gold
