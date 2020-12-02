@@ -1596,9 +1596,9 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
                   pr1784984: Passed.
                  pr1787394a: Passed.
                  pr1787394b: Passed.
-                  pr1787423: ==> Failed - running iverilog (translated).
-                 pr1787423b: ==> Failed - running iverilog (translated).
-                 pr1787423c: ==> Failed - running iverilog (translated).
+                  pr1787423: Passed.
+                 pr1787423b: Passed.
+                 pr1787423c: Passed.
                   pr1792108: Passed.
                   pr1792152: Passed.
                   pr1792734: Passed.
@@ -1790,8 +1790,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
                   pr2829776: Passed.
                  pr2829776b: Passed.
                   pr2832234: Passed.
-                  pr2834340: ==> Failed - running iverilog (translated).
-                 pr2834340b: ==> Failed - running iverilog (translated).
+                  pr2834340: Passed.
+                 pr2834340b: Passed.
                  pr2835632a: Passed.
                   pr2837451: Passed.
                   pr2842185: Passed.
@@ -2498,4 +2498,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2496, Passed=2451, Failed=10, Not Implemented=3, Expected Fail=32
+  Total=2496, Passed=2456, Failed=5, Not Implemented=3, Expected Fail=32
