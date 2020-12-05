@@ -358,6 +358,7 @@ casez3.10B		normal			ivltests
 casez3.10C		normal			ivltests
 casez3.10D		normal			ivltests
 casez3.10E		normal			ivltests # Use ? and z in label
+cast_int		normal			ivltests
 check_constant_1	CE			ivltests
 check_constant_2	CE			ivltests
 check_constant_3	CE,-g1995		ivltests
@@ -404,6 +405,7 @@ constadd3		normal			ivltests
 constfunc1		normal			ivltests
 constfunc2		normal			ivltests
 constfunc3		normal			ivltests
+constfunc4		normal			ivltests
 constfunc5		normal			ivltests
 constfunc7		normal			ivltests
 constfunc9		normal			ivltests

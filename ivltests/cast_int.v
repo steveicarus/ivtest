@@ -80,7 +80,7 @@ module top;
       pass = 1'b0;
     end
 
-    in = sqrt(-1.0);
+    in = $sqrt(-1.0);
     #1;
     if (out !== 8'bxxxxxxxx) begin
       $display("Failed: nan expected 8'bxxxxxxxx, got %b", out);

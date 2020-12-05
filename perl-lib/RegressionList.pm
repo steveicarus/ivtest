@@ -166,6 +166,7 @@ sub read_regression_list {
         # the correct `begin_keywords has been added to the
         # various files.
         if ($force_sv) {
+            my $fsv_flags = "-g2012";
             $args{$tname} =~ s/-g2012//;
             $args{$tname} =~ s/-g2009//;
             $args{$tname} =~ s/-g2005-sv//;
@@ -177,9 +178,9 @@ sub read_regression_list {
             $args{$tname} =~ s/-g2//;  # Deprecated for 2001
             $args{$tname} =~ s/-g1//;  # Deprecated for 1995
             if ($args{$tname}) {
-                $args{$tname} = "-g2012 $args{$tname}";
+                $args{$tname} = "$fsv_flags $args{$tname}";
             } else {
-                $args{$tname} = "-g2012";
+                $args{$tname} = "$fsv_flags";
             }
         }
     }

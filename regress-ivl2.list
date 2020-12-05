@@ -83,6 +83,7 @@ param-width		normal			ivltests gold=param-width-ivl.gold
 #------------------------------------------------------------------------------
 
 # Different output when real numbers are displayed without a format specifier.
+br_gh383d		normal,-g2012		ivltests gold=br_gh383d-ivl.gold
 ca_time			normal			ivltests gold=ca_time-ivl.gold
 delayed_sfunc		normal,-gspecify	ivltests gold=delayed_sfunc-ivl.gold
 localparam_type		normal			ivltests gold=parameter_type-ivl.gold

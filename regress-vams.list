@@ -67,8 +67,8 @@
 analog1			normal,-gverilog-ams	ivltests
 analog2			normal,-gverilog-ams	ivltests
 br_gh99c		normal,-gverilog-ams	ivltests
-cast_int		normal,-gverilog-ams	ivltests
-constfunc4		normal,-gverilog-ams	ivltests
+cast_int_ams		normal,-gverilog-ams	ivltests
+constfunc4_ams		normal,-gverilog-ams	ivltests
 scaled_real		normal,-gverilog-ams	ivltests
 test_vams_math		normal,-gverilog-ams	ivltests gold=test_vams_math.gold
 value_range1		normal,-gverilog-ams	ivltests

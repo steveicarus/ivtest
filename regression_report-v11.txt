@@ -12,6 +12,13 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
                       case1: Passed.
                       case2: Passed.
                 casex_synth: Passed.
+                   br_gh307: Not Implemented.
+                  br_gh383a: Not Implemented.
+                  br_gh383b: Not Implemented.
+                  br_gh383c: Not Implemented.
+                  br_gh383d: Not Implemented.
+                  br_gh390a: Not Implemented.
+                  br_gh390b: Not Implemented.
                       pr903: Passed.
                   pr1388974: Passed.
                    br_gh13a: Passed.
@@ -451,6 +458,7 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
                  casez3.10C: Passed.
                  casez3.10D: Passed.
                  casez3.10E: Passed.
+                   cast_int: Passed.
            check_constant_1: Passed - CE.
            check_constant_2: Passed - CE.
            check_constant_3: Passed - CE.
@@ -497,6 +505,7 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
                  constfunc1: Passed.
                  constfunc2: Passed.
                  constfunc3: Passed.
+                 constfunc4: Passed.
                  constfunc5: Passed.
                  constfunc7: Passed.
                  constfunc9: Passed.
@@ -1797,8 +1806,8 @@ test_mos_strength_reduction: Passed.
                     analog1: ==> Failed - running iverilog.
                     analog2: ==> Failed - running iverilog.
                    br_gh99c: Passed.
-                   cast_int: Passed.
-                 constfunc4: Passed.
+               cast_int_ams: Passed.
+             constfunc4_ams: Passed.
                 scaled_real: Passed.
              test_vams_math: Passed.
                value_range1: Passed.
@@ -2491,4 +2500,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2489, Passed=2482, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2498, Passed=2484, Failed=7, Not Implemented=7, Expected Fail=0

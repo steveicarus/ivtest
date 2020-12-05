@@ -16,6 +16,7 @@ Running compiler/VVP tests for Icarus Verilog version: 12.
                   pr1388974: Passed.
                    br_gh13a: Passed.
                 param-width: Passed.
+                  br_gh383d: Passed.
                     ca_time: Passed.
               delayed_sfunc: Passed.
             localparam_type: Passed.
@@ -451,6 +452,7 @@ Running compiler/VVP tests for Icarus Verilog version: 12.
                  casez3.10C: Passed.
                  casez3.10D: Passed.
                  casez3.10E: Passed.
+                   cast_int: Passed.
            check_constant_1: Passed - CE.
            check_constant_2: Passed - CE.
            check_constant_3: Passed - CE.
@@ -497,6 +499,7 @@ Running compiler/VVP tests for Icarus Verilog version: 12.
                  constfunc1: Passed.
                  constfunc2: Passed.
                  constfunc3: Passed.
+                 constfunc4: Passed.
                  constfunc5: Passed.
                  constfunc7: Passed.
                  constfunc9: Passed.
@@ -1797,8 +1800,8 @@ test_mos_strength_reduction: Passed.
                     analog1: ==> Failed - running iverilog.
                     analog2: ==> Failed - running iverilog.
                    br_gh99c: Passed.
-                   cast_int: Passed.
-                 constfunc4: Passed.
+               cast_int_ams: Passed.
+             constfunc4_ams: Passed.
                 scaled_real: Passed.
              test_vams_math: Passed.
                value_range1: Passed.
@@ -2279,7 +2282,6 @@ test_mos_strength_reduction: Passed.
                   br_gh383a: Passed.
                   br_gh383b: Passed.
                   br_gh383c: Passed.
-                  br_gh383d: Passed.
                   br_gh390a: Passed - CE.
                   br_gh390b: Passed.
                       br942: Passed.
@@ -2498,4 +2500,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2496, Passed=2489, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2498, Passed=2491, Failed=7, Not Implemented=0, Expected Fail=0
