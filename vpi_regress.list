@@ -71,8 +71,6 @@ v10:spec_delays		normal,-gspecify	spec_delays.c		spec_delays.log -DIVERILOG_V10
 # V11 exceptions
 #==========
 
-# The fix for this hasn't been backported yet.
-v11:br_gh141		NI			br_gh141.c		br_gh141.gold
 
 #==========
 # The default case.
