@@ -9,13 +9,17 @@ use lib './perl-lib';
 
 use RegressionList;
 
+my $version = $ARGV[0] || 'devel';
+
 read_regression_list("regress-msys2.list", "any", 0, "");
 
-open(my $input,  '<', 'regression_report-devel.txt')
-  or die "ERROR - can't open 'regression_report-devel.txt'";
+my $input_name = 'regression_report-' . $version . '.txt';
+open(my $input,  '<', $input_name)
+  or die "ERROR - can't open '$input_name'";
 
-open(my $output, '>', 'regression_report-msys2.txt')
-  or die "ERROR - can't open 'regression_report-msys2.txt'";
+my $output_name = 'regression_report-msys2-' . $version . '.txt';
+open(my $output, '>', $output_name)
+  or die "ERROR - can't open '$output_name'";
 
 # Copy header.
 my $line_count = 0;
