@@ -19,6 +19,8 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
                   br_gh383d: Not Implemented.
                   br_gh390a: Not Implemented.
                   br_gh390b: Not Implemented.
+                   br_gh412: Not Implemented.
+                   br_gh414: Not Implemented.
                       pr903: Passed.
                   pr1388974: Passed.
                    br_gh13a: Passed.
@@ -2502,4 +2504,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2500, Passed=2486, Failed=7, Not Implemented=7, Expected Fail=0
+  Total=2502, Passed=2486, Failed=7, Not Implemented=9, Expected Fail=0
