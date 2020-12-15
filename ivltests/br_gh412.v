@@ -2,9 +2,9 @@ module top;
   int mbx[$];
 
   initial begin
-    $display("mbx.size() == %0d", mbx.size());     
+    $display("mbx.size() == %0d", mbx.size());
     wait(mbx.size());
-    $display("mbx.size() == %0d", mbx.size());     
+    $display("mbx.size() == %0d", mbx.size());
     $display("PASSED");
   end
 

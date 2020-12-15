@@ -20,7 +20,7 @@ module main;
 
    simple copy(src, dst);
    assign dst.b2.b = src.b2.b;
-   
+
    initial begin
       src.b1.b = 1'b1;
       src.b2.b = 1'b0;
@@ -33,5 +33,5 @@ module main;
       $display("PASSED");
       $finish;
    end
-   
+
 endmodule // main

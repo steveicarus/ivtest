@@ -1,11 +1,11 @@
 
 module tb;
    string txt_i, txt_r, txt_h;
-   
-   int 	  val_i;
+
+   int	  val_i;
    int    val_h;
    real   val_r;
-   
+
 
    initial begin
       txt_i = "123";
