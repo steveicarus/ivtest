@@ -58,8 +58,8 @@ sub diff {
         };
 
         if ($unordered) {
-            my @glines = sort map { s/\r\n$/\n/ } <GOLD>;
-            my @llines = sort map { s/\r\n$/\n/ } <LOG>;
+            my @glines = sort map { s/\r\n$/\n/; $_ } <GOLD>;
+            my @llines = sort map { s/\r\n$/\n/; $_ } <LOG>;
 
             my $gindex = 0;
             my $lindex = 0;
