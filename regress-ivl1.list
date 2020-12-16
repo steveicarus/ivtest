@@ -60,6 +60,9 @@
 #   modulename                       - Defines the top level module
 #   gold=filename                    - Compare a gold file against the
 #                                      generated log file.
+#   unordered=filename               - Compare a gold file against the
+#                                      generated log file, allowing for lines
+#                                      to appear in any order
 #   diff=filename1:filename2:skip_ln - Compare the two files for equality.
 #                                      Skip the first <skip_ln> lines or none.
 #
