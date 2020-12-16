@@ -57,6 +57,9 @@
 #   modulename                       - Defines the top level module
 #   gold=filename                    - Compare a gold file against the
 #                                      generated log file.
+#   unordered=filename               - Compare a gold file against the
+#                                      generated log file, allowing for lines
+#                                      to appear in any order
 #   diff=filename1:filename2:skip_ln - Compare the two files for equality.
 #                                      Skip the first <skip_ln> lines or none.
 #
@@ -70,7 +73,3 @@ test_vams_math		normal,-gverilog-ams	ivltests gold=test_vams_math-msys2.gold
 
 # Warning about non-existent /tmp directory
 pr2509349a		normal			ivltests gold=pr2509349a-msys2.gold
-
-# Output ordering inconsistency - needs further investigation
-pr3366217g		NI			ivltests
-sv_wildcard_import5	NI			ivltests

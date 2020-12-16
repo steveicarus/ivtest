@@ -218,8 +218,8 @@ sub execute_regression {
             }
             $diff_file = "log/$tname.log";
         }
-#        print "diff $gold{$tname}, $diff_file, $offset{$tname}\n";
-        if (diff($gold{$tname}, $diff_file, $offset{$tname})) {
+#        print "diff $gold{$tname}, $diff_file, $offset{$tname}, $unordered{$tname}\n";
+        if (diff($gold{$tname}, $diff_file, $offset{$tname}, $unordered{$tname})) {
             if ($testtype{$tname} eq "EF") {
                 &print_rpt("Passed - expected fail.\n");
                 $expected_fail++;

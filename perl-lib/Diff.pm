@@ -19,7 +19,7 @@ our @EXPORT = qw(diff);
 # and we need to ignore the valgrind output.
 #
 sub diff {
-    my ($gold, $log, $skip) = @_;
+    my ($gold, $log, $skip, $unordered) = @_;
     my ($diff, $gline, $lline);
     $diff = 0;
 
@@ -57,36 +57,71 @@ sub diff {
             return 1;
         };
 
-        # Loop on the gold file lines.
-        foreach $gline (<GOLD>) {
-            if (eof LOG) {
-                $diff = 1;
-                last;
+        if ($unordered) {
+            my @glines = sort map { s/\r\n$/\n/; $_ } <GOLD>;
+            my @llines = sort map { s/\r\n$/\n/; $_ } <LOG>;
+
+            my $gindex = 0;
+            my $lindex = 0;
+            while ($gindex < @glines) {
+                # Skip lines from valgrind ^==\d+== or ^**\d+**
+                while ($lindex < @llines && $llines[$lindex] =~ m/^(==|\*\*)\d+(==|\*\*)/) {
+                    $lindex++
+                }
+                if ($lindex == @llines) {
+                    $diff = 1;
+                    last;
+                }
+                # Skip initial lines if needed.
+                if ($skip > 0) {
+                    $lindex++;
+                    $skip--;
+                    next;
+                }
+                if ($glines[$gindex] ne $llines[$lindex]) {
+                    $diff = 1;
+                    last;
+                }
+                $gindex++;
+                $lindex++;
             }
-            $lline = <LOG>;
-            # Skip lines from valgrind ^==\d+== or ^**\d+**
-            while ($lline =~ m/^(==|\*\*)\d+(==|\*\*)/) {
+
+            # Check to see if the log file has extra lines.
+            while ($lindex < @llines && $llines[$lindex] =~ m/^(==|\*\*)\d+(==|\*\*)/) {
+                $lindex++
+            }
+            $diff = 1 if $lindex < @llines;
+        } else {
+            # Loop on the gold file lines.
+            foreach $gline (<GOLD>) {
+                if (eof LOG) {
+                    $diff = 1;
+                    last;
+                }
                 $lline = <LOG>;
+                # Skip lines from valgrind ^==\d+== or ^**\d+**
+                while ($lline =~ m/^(==|\*\*)\d+(==|\*\*)/) {
+                    $lline = <LOG>;
+                }
+                # Skip initial lines if needed.
+                if ($skip > 0) {
+                    $skip--;
+                    next;
+                }
+                $gline =~ s/\r\n$/\n/;  # Strip <CR> at the end of line.
+                $lline =~ s/\r\n$/\n/;  # Strip <CR> at the end of line.
+                if ($gline ne $lline) {
+                    $diff = 1;
+                    last;
+                }
             }
-            # Skip initial lines if needed.
-            if ($skip > 0) {
-                $skip--;
-                next;
-            }
-            $gline =~ s/\r\n$/\n/;  # Strip <CR> at the end of line.
-            $lline =~ s/\r\n$/\n/;  # Strip <CR> at the end of line.
-            if ($gline ne $lline) {
-                $diff = 1;
-                last;
+
+            # Check to see if the log file has extra lines.
+            while (!eof LOG and !$diff) {
+                $lline = <LOG>;
+                $diff = 1 if ($lline !~ m/^(==|\*\*)\d+(==|\*\*)/);
             }
         }
-
-        # Check to see if the log file has extra lines.
-        while (!eof LOG and !$diff) {
-            $lline = <LOG>;
-            $diff = 1 if ($lline !~ m/^(==|\*\*)\d+(==|\*\*)/);
-        }
-
         close (LOG);
         close (GOLD);
     }

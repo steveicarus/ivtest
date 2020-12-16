@@ -12,13 +12,13 @@ our $VERSION = '1.01';
 use base 'Exporter';
 
 our @EXPORT = qw(read_regression_list @testlist %srcpath %testtype
-                 %args %plargs %diff %gold %testmod %offset);
+                 %args %plargs %diff %gold %unordered %testmod %offset);
 
 # Properties of each test.
 # It may be nicer to have read_regression_list return an array
 # of hashes with these as keys.
 our (@testlist, %srcpath, %testtype, %args, %plargs,
-     %diff, %gold, %testmod, %offset) = ();
+     %diff, %gold, %unordered, %testmod, %offset) = ();
 
 #
 #  Parses the regression list file
@@ -123,6 +123,12 @@ sub read_regression_list {
                $diff{$tname} = "";
                $gold{$tname} = "gold/$fields[3]";
                $offset{$tname} = 0;
+           } elsif ($fields[3] =~ s/^unordered=//) {
+               $testmod{$tname} = "" ;
+               $diff{$tname} = "";
+               $gold{$tname} = "gold/$fields[3]";
+               $unordered{$tname} = 1;
+               $offset{$tname} = 0;
            } else {
                $testmod{$tname} = $fields[3];
                $diff{$tname} = "";
@@ -143,6 +149,12 @@ sub read_regression_list {
                $testmod{$tname} = "" ;
                $diff{$tname} = "";
                $gold{$tname} = "gold/$fields[4]";
+               $offset{$tname} = 0;
+           } elsif ($fields[4] =~ s/^unordered=//) {
+               $testmod{$tname} = "" ;
+               $diff{$tname} = "";
+               $gold{$tname} = "gold/$fields[4]";
+               $unordered{$tname} = 1;
                $offset{$tname} = 0;
            }
         } else {

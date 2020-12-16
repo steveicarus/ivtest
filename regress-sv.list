@@ -57,6 +57,9 @@
 #   modulename                       - Defines the top level module
 #   gold=filename                    - Compare a gold file against the
 #                                      generated log file.
+#   unordered=filename               - Compare a gold file against the
+#                                      generated log file, allowing for lines
+#                                      to appear in any order
 #   diff=filename1:filename2:skip_ln - Compare the two files for equality.
 #                                      Skip the first <skip_ln> lines or none.
 #
@@ -296,7 +299,7 @@ pr3366217c		CE,-g2005-sv		ivltests gold=pr3366217c.gold
 pr3366217d		CE,-g2005-sv		ivltests gold=pr3366217d.gold
 pr3366217e		normal,-g2005-sv	ivltests
 pr3366217f		normal,-g2005-sv	ivltests gold=pr3366217f.gold
-pr3366217g		CE,-g2005-sv		ivltests gold=pr3366217g.gold
+pr3366217g		CE,-g2005-sv		ivltests unordered=pr3366217g.gold
 pr3366217h		normal,-g2005-sv	ivltests
 pr3366217i		normal,-g2005-sv	ivltests
 pr3390385		normal,-g2009		ivltests
@@ -518,7 +521,7 @@ sv_wildcard_import1	normal,-g2009		ivltests
 sv_wildcard_import2	normal,-g2009		ivltests
 sv_wildcard_import3	normal,-g2009		ivltests
 sv_wildcard_import4	CE,-g2009		ivltests gold=sv_wildcard_import4.gold
-sv_wildcard_import5	CE,-g2009		ivltests gold=sv_wildcard_import5.gold
+sv_wildcard_import5	CE,-g2009		ivltests unordered=sv_wildcard_import5.gold
 sv_wildcard_import6	normal,-g2009		ivltests
 sv_wildcard_import7	normal,-g2009		ivltests
 sys_func_as_task	normal,-g2005-sv	ivltests gold=sys_func_as_task.gold
