@@ -4,7 +4,7 @@ input  [3:0] i;
 output [3:0] o;
 
 wire logic [3:0] i;
-reg  logic [3:0] o;
+reg        [3:0] o;
 
 always @* o = i;
 

@@ -7,8 +7,8 @@ module main;
 
    typedef word [1:0] dword;
 
-   reg		  dword foo;
-   int		  idx;
+   dword	foo;
+   int		idx;
 
    initial begin
       foo[0].low = 1;

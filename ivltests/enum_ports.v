@@ -37,7 +37,7 @@ end
 endmodule
 
 module test_unit();
-reg t_var var_in, var_out;
+t_var var_in, var_out;
 reg result;
 
 enum_ports dut(var_in, var_out, result);
