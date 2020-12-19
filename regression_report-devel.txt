@@ -37,6 +37,11 @@ Running compiler/VVP tests for Icarus Verilog version: 12.
                   pr1925360: Passed.
                     repeat1: Passed.
                   pr2002443: Passed - CO.
+             constfunc6_ams: Passed.
+        non-polymorphic-abs: Passed.
+              pr3270320_ams: Passed - CE.
+               test_va_math: Passed.
+                    va_math: Passed.
                     abstime: Passed.
                  pr2590274a: Passed.
                  pr2590274b: Passed.
@@ -88,10 +93,6 @@ Running compiler/VVP tests for Icarus Verilog version: 12.
              sv_cast_darray: Passed.
                       br978: Passed.
               br_ml20150424: Passed.
-                 constfunc6: Passed.
-                  pr2728032: Passed.
-               test_va_math: Passed.
-                    va_math: Passed.
                  pr2509349a: Passed.
                  pr2509349b: Passed.
                    simparam: Passed.
@@ -504,6 +505,7 @@ Running compiler/VVP tests for Icarus Verilog version: 12.
                  constfunc3: Passed.
                  constfunc4: Passed.
                  constfunc5: Passed.
+                 constfunc6: Passed.
                  constfunc7: Passed.
                  constfunc9: Passed.
                 constfunc10: Passed.
@@ -747,7 +749,6 @@ Running compiler/VVP tests for Icarus Verilog version: 12.
          nested_impl_event2: Passed.
             no_if_statement: Passed - CE.
      no_timescale_in_module: Passed - CE.
-        non-polymorphic-abs: Passed.
                       npmos: Passed.
                      npmos2: Passed.
                      onehot: Passed.
@@ -1311,6 +1312,7 @@ Running compiler/VVP tests for Icarus Verilog version: 12.
                  pr2725700a: Passed.
                  pr2725700b: Passed.
                  pr2725700c: Passed.
+                  pr2728032: Passed.
                   pr2728547: Passed.
                  pr2728812a: Passed.
                  pr2728812b: Passed - CE.
@@ -2504,4 +2506,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2502, Passed=2495, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2504, Passed=2497, Failed=7, Not Implemented=0, Expected Fail=0

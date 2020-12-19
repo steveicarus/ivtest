@@ -175,6 +175,10 @@ module var_2 (output out, input in);
   time delayf = 200;
   assign #(delayr, delayf) out = ~in;
 
+  function automatic real min_real(real a, real b);
+    min_real = a < b ? a : b;
+  endfunction
+
   always @(out) begin
     case (out)
       1'b0: if ($time - top.change != delayf) begin
@@ -185,7 +189,7 @@ module var_2 (output out, input in);
         $display("Failed var_2 rise");
         top.pass = 1'b0;
       end
-      1'bz: if ($time - top.change != $min(delayr, delayr)) begin
+      1'bz: if ($time - top.change != min_real(delayf, delayr)) begin
         $display("Failed var_2 high-Z");
         top.pass = 1'b0;
       end

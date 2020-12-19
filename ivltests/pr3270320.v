@@ -11,10 +11,7 @@ end
 endfunction
 
 wire [7:0] a;
-wire [7:0] b;
 
 assign a = dup(missing);
-
-assign b = $abs(missing);
 
 endmodule

@@ -80,3 +80,9 @@ value_range3		CE,-gverilog-ams	ivltests
 vams_abs1		normal,-gverilog-ams	ivltests
 vams_abs2		normal,-gverilog-ams	ivltests
 wreal			normal,-gverilog-ams	ivltests
+# Verilog functions added in a VAMS simulator
+constfunc6_ams		normal			ivltests
+non-polymorphic-abs	normal			ivltests
+pr3270320_ams		CE			ivltests
+test_va_math		normal,-mva_math	ivltests gold=test_va_math.gold
+va_math			normal			ivltests

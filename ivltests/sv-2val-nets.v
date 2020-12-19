@@ -5,7 +5,7 @@
 
 module main;
 
-   reg bit [5:0] a, b;
+   bit [5:0] a, b;
    wire bit [6:0] sum;
    wire bit c2, c4;
 
@@ -13,7 +13,7 @@ module main;
    sub b32 (.c_i(c2),   .a(a[3:2]), .b(b[3:2]), .out(sum[3:2]), .c_o(c4));
    sub b54 (.c_i(c4),   .a(a[5:4]), .b(b[5:4]), .out(sum[5:4]), .c_o(sum[6]));
 
-   reg bit [6:0] idxa, idxb;
+   bit [6:0] idxa, idxb;
    initial begin
       for (idxa = 0 ; idxa < 'b1_000000 ; idxa = idxa+1) begin
 	 for (idxb = 0 ; idxb < 'b1_000000 ; idxb = idxb+1) begin
