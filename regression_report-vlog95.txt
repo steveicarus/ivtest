@@ -796,6 +796,9 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
                  specparam1: Passed.
                  specparam2: Passed.
                       tern3: Passed.
+                    deposit: Passed.
+               deposit_wire: Passed.
+                     fileio: Passed.
                fatal_et_al2: Passed - RE.
                  pr2428890c: Passed.
                       br978: Passed.
@@ -1153,8 +1156,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
            delay_assign_nb2: Passed.
                   delay_var: Passed.
         delayed_comp_reduct: Passed.
-                    deposit: Passed.
-               deposit_wire: Passed.
                        dff1: Passed.
                 disable3.6A: Passed.
                 disable3.6B: Passed.
@@ -1200,7 +1201,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
                   fdisplay1: Passed.
                   fdisplay2: Passed.
                        fifo: Passed.
-                     fileio: Passed.
                      fopen1: Passed.
                      fopen2: Passed.
                    for3.16A: Passed.

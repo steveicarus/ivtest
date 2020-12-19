@@ -142,6 +142,13 @@ specparam2		normal			ivltests
 tern3			normal			ivltests gold=tern3.gold
 v2005_math		normal			ivltests
 
+# $deposit
+deposit			normal			ivltests
+deposit_wire		normal			ivltests
+
+# $fopena, $fopenr and $fopenw
+fileio			normal			ivltests gold=fileio.gold
+
 # $fatal
 fatal_et_al		normal			ivltests gold=fatal_et_al.gold
 fatal_et_al2		RE			ivltests gold=fatal_et_al2.gold

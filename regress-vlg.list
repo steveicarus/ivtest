@@ -453,8 +453,6 @@ delay_assign_nb		normal			ivltests
 delay_assign_nb2	normal			ivltests
 delay_var		normal			ivltests gold=delay_var.gold
 delayed_comp_reduct	normal			ivltests
-deposit			normal			ivltests
-deposit_wire		normal			ivltests
 dff1			normal			ivltests # Contrib by S Williams
 disable3.6A		normal			ivltests
 disable3.6B		normal			ivltests
@@ -504,7 +502,6 @@ fdisplay3		RE			ivltests gold=fdisplay3.gold
 fdisplay_fail_fd	normal			ivltests gold=fdisplay_fail_fd.gold
 fdisplay_fail_mcd	normal			ivltests gold=fdisplay_fail_mcd.gold
 fifo			normal			contrib
-fileio			normal			ivltests gold=fileio.gold
 fopen1			normal			ivltests # Test basic fopen operation
 fopen2			normal			ivltests # Test basic fopen operation
 for3.16A		normal			ivltests
