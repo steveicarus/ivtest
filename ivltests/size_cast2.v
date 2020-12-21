@@ -19,8 +19,8 @@
 
 // Tests size casting of complex expressions.
 
-module resize(output wire logic[4:0] result);
-  reg logic[6:0] a;
+module resize(output wire logic [4:0] result);
+  logic [6:0] a;
   assign result = (5'(a + 2));
 
   initial begin
