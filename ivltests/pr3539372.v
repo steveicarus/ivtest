@@ -3,5 +3,7 @@ module test;
 	initial
 `ifdef __ICARUS__
 		$display("PASSED");
+`else
+		$display("Not Icarus\nPASSED");
 `endif
 endmodule
