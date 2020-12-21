@@ -804,12 +804,13 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
                       tern3: Passed.
                     deposit: Passed.
                deposit_wire: Passed.
-                     fileio: Passed.
                fatal_et_al2: Passed - RE.
+                     fileio: Passed.
                  pr2428890c: Passed.
                       br978: Passed.
               br_ml20150424: Passed.
          blocking_repeat_ec: Passed.
+               ca_time_smtm: Passed.
                 nb_array_pv: Passed.
                 nb_ec_array: Passed.
              nb_ec_array_pv: Passed.
@@ -2508,4 +2509,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2506, Passed=2466, Failed=5, Not Implemented=3, Expected Fail=32
+  Total=2507, Passed=2467, Failed=5, Not Implemented=3, Expected Fail=32

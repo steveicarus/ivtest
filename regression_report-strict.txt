@@ -73,9 +73,10 @@ Running compiler/VVP tests for Icarus Verilog version: 12 (strict).
                  v2005_math: Passed.
                     deposit: Passed.
                deposit_wire: Passed.
-                     fileio: Passed.
                 fatal_et_al: Passed.
                fatal_et_al2: Passed - RE.
+            plus_arg_string: Passed.
+                     fileio: Passed.
                   pr1494799: Passed.
                  pr2428890c: Passed.
              sv_cast_darray: Passed.
@@ -85,7 +86,7 @@ Running compiler/VVP tests for Icarus Verilog version: 12 (strict).
                  pr2509349b: Passed.
                    simparam: Passed.
          blocking_repeat_ec: Passed.
-                    ca_time: Passed.
+               ca_time_smtm: Passed.
                 nb_array_pv: Passed.
                 nb_ec_array: Passed.
              nb_ec_array_pv: Passed.
@@ -435,6 +436,7 @@ Running compiler/VVP tests for Icarus Verilog version: 12 (strict).
                ca_pow_synth: Passed.
             ca_pow_unsigned: Passed.
             ca_real_logical: Passed.
+                    ca_time: Passed.
                    case3.8A: Passed.
                    case3.8B: Passed.
                    case3.8C: Passed.
@@ -2033,7 +2035,6 @@ test_mos_strength_reduction: Passed.
                parpkg_test3: Passed.
               part_sel_port: Passed.
                      plus_5: Passed.
-            plus_arg_string: Passed.
                   pr3366114: Passed.
                  pr3366217a: Passed - CE.
                  pr3366217b: Passed - CE.
@@ -2505,4 +2506,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2503, Passed=2496, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2504, Passed=2497, Failed=7, Not Implemented=0, Expected Fail=0

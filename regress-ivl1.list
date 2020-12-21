@@ -153,12 +153,16 @@ v2005_math		normal			ivltests
 deposit			normal			ivltests
 deposit_wire		normal			ivltests
 
-# $fopena, $fopenr and $fopenw
-fileio			normal			ivltests gold=fileio.gold
-
 # $fatal
 fatal_et_al		normal			ivltests gold=fatal_et_al.gold
 fatal_et_al2		RE			ivltests gold=fatal_et_al2.gold
+
+# $finish_and_return
+plus_arg_string		normal,-g2009,\
+  +img=test_image.file				ivltests
+
+# $fopena, $fopenr and $fopenw
+fileio			normal			ivltests gold=fileio.gold
 
 # $is_signed
 pr1494799		normal			ivltests gold=pr1494799.gold
@@ -180,7 +184,7 @@ simparam		normal			ivltests
 
 # $simtime
 blocking_repeat_ec	normal			ivltests
-ca_time			normal			ivltests gold=ca_time.gold
+ca_time_smtm		normal			ivltests gold=ca_time_smtm.gold
 nb_array_pv		normal			ivltests
 nb_ec_array		normal			ivltests
 nb_ec_array_pv		normal			ivltests

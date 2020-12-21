@@ -348,6 +348,7 @@ ca_pow_signed		normal			ivltests
 ca_pow_synth		normal			ivltests
 ca_pow_unsigned		normal			ivltests
 ca_real_logical		normal			ivltests
+ca_time			normal			ivltests gold=ca_time.gold
 case3.8A		normal			ivltests
 case3.8B		normal			ivltests
 case3.8C		normal			ivltests

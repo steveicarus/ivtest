@@ -1,5 +1,5 @@
 module top2;
-  reg real vo;
+  real vo;
 
   initial begin
     vo = 3.3;

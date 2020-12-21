@@ -291,8 +291,6 @@ parpkg_test2		normal,-g2009		ivltests
 parpkg_test3		normal,-g2009		ivltests
 part_sel_port		normal,-g2005-sv	ivltests
 plus_5			normal,-g2009		ivltests
-plus_arg_string		normal,-g2009,\
-  +img=test_image.file				ivltests
 pr3366114		normal,-g2009		ivltests
 pr3366217a		CE,-g2005-sv		ivltests gold=pr3366217a.gold
 pr3366217b		CE,-g2005-sv		ivltests gold=pr3366217b.gold
