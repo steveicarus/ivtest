@@ -324,6 +324,7 @@ br_gh177b		CE,-g2009		ivltests
 br_gh388		CE,-g2009		ivltests
 br_gh390b		CE,-g2009		ivltests
 br_gh391		CE,-g2009		ivltests
+br_gh437		CE,-g2009		ivltests
 sv_class1		CE,-g2009		ivltests
 sv_class2		CE,-g2009		ivltests
 sv_class3		CE,-g2009		ivltests
