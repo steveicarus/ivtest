@@ -17,7 +17,7 @@ module m;
     if (count == 10)
       $display("PASSED");
     else
-      $display("PASSED");
+      $display("FAILED");
   end
 
 endmodule
