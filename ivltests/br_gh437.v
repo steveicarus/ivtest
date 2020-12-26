@@ -9,7 +9,7 @@ endpackage : ivl_uvm_pkg
 package test_pkg;
   import ivl_uvm_pkg::*;
   class sanity_test extends uvm_test;
-  endclass : sanity_test 
+  endclass : sanity_test
 endpackage : test_pkg
 
 module m;
