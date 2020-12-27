@@ -191,6 +191,7 @@ br_gh411		normal,-g2009		ivltests
 br_gh418		normal,-g2009		ivltests
 br_gh433		normal,-g2009		ivltests gold=br_gh433.gold
 br_gh437		normal,-g2009		ivltests
+br_gh443		normal,-g2009		ivltests
 br_ml20150315b		CE,-g2009		ivltests
 br_ml20171017		normal,-g2009		ivltests
 br_ml20180227		CE,-g2009		ivltests
