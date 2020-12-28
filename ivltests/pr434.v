@@ -38,7 +38,7 @@ module test();
 	por = 0;
 	$monitor($time,, "reset0=%b, reset1=%b, reset2=%b, reset3=%b",
 		 reset0, reset1, reset2, reset3);
-	#1000 $finish;
+	#1000 $finish(0);
      end
 
    always #15 clk = ~clk;

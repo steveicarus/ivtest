@@ -37,7 +37,7 @@ decode_vec = 8'h80;
 #10;
 decode_vec = 8'h02;
 #10;
-$finish;
+$finish(0);
 end
 
 endmodule

@@ -17,7 +17,7 @@ module dcomp;
        #2000;
        phdelay = 13;
        #2001;
-       $finish;
+       $finish(0);
    end // initial begin
 
    reg       internal_Clk, Clk;

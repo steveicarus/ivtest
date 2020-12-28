@@ -28,6 +28,6 @@ module test_bToESeg
       #10 A = 0; B = 0; C = 0; D = 0;
       #10 D = 1;
       #10 C = 1; D = 0;
-      #10 $finish;
+      #10 $finish(0);
    end
 endmodule

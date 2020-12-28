@@ -49,7 +49,7 @@ module t;
         #20
           reset=0;
         #5110
-          $finish;
+          $finish(0);
      end
    always
      begin

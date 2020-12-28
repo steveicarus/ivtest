@@ -25,7 +25,7 @@ module test;
       #1 $display("$pow(2,3) returns %d", $pow(2,3));
       #1 result = $pow(a,b);
       #1 $display("$pow(a,b) returns %d (a=%d b=%d)", result, a, b);
-      #1 $finish;
+      #1 $finish(0);
     end
 
 endmodule

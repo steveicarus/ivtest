@@ -38,7 +38,7 @@ module tshl;
 	    $display("out=%h", shbit);
       end // for (i = 0; i < 8; i = i + 1)
 
-      $finish;
+      $finish(0);
    end // initial begin
 endmodule
 

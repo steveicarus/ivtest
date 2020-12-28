@@ -7,7 +7,7 @@ module test;
 	// $dumpvars;
 	#0;
 	->e_Poke;
-	#51 $finish;
+	#51 $finish(0);
     end
 
     always @(e_Poke) begin

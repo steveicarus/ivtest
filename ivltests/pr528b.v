@@ -24,7 +24,7 @@ module tester;
     end
 
     initial $monitor( "%T %b %b %b", $time, clk1, clko1, clko2 );
-    initial #50001 $finish;
+    initial #50001 $finish(0);
 endmodule
 
 module ckmux ( clko1, clk1, clk2, f1, f2 );

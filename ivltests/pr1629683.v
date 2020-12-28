@@ -20,7 +20,7 @@ module top;
     $display(".");
 
     #1 data = 0;
-    #1 $finish;
+    #1 $finish(0);
   end
 
   // Print a byte of data.

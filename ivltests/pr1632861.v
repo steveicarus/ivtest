@@ -10,7 +10,7 @@ module test;
     #1 tst = 0;
     #1 tst = 8'hxx;
     #1 tst = 0;
-    #1 $finish;
+    #1 $finish(0);
   end
 
   always @(tst) begin

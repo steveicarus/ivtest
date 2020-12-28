@@ -28,6 +28,6 @@ module top;
     en = 0;
     in = 0;
     rg = 3'b101;
-    #50 $finish;
+    #50 $finish(0);
   end
 endmodule

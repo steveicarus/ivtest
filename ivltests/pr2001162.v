@@ -11,7 +11,7 @@ module main;
       repeat(10)		// generate 5 clock cycles
 	#(`PERIOD/2) CLK = !CLK;
       $display("time %0t; the counter is %0d", $time, counter);
-      $finish;
+      $finish(0);
    end
 
    task test1;

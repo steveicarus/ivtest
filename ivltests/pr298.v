@@ -50,6 +50,6 @@ initial
     D = 1;
     #25
     $display(QQ, Q);
-    $finish;
+    $finish(0);
   end
 endmodule

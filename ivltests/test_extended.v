@@ -45,7 +45,7 @@ module main;
 		$display(">|1000|");
 		$display("*|%03d|", myReg14);
 
-		$finish;
+		$finish(0);
 
 		$display("*|",myReg14,"|");
 

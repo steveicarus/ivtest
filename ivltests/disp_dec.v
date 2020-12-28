@@ -30,7 +30,7 @@ initial
     $display("4'b00zz = %d", 4'b00zz);
     $display("4'b0000 = %d", 4'b0000);
     $display("4'b0011 = %d", 4'b0011);
-    $finish ;
+    $finish(0);
   end
 
 endmodule

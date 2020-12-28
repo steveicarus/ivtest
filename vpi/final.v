@@ -1,4 +1,4 @@
 module tb;
-initial $finish;
+initial $finish(0);
 final $display("In final statement.");
 endmodule

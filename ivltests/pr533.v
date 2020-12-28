@@ -12,7 +12,7 @@ module example;
         #100 r = 1'b1; a = 5'bxxxxx; b = 5'bxxxxx;
         #100 r = 1'b1; a = 5'b00000; b = 5'b00000;
         #100 r = 1'b0; a = 5'b00000; b = 5'b00000;
-        #100 $finish;
+        #100 $finish(0);
     end
 
     // Store c and e at time n*100 + 25.

@@ -89,7 +89,7 @@ initial begin
   else     $display("\t\t****** time precision test PASSED *******");
   $display("\t\t**********************************************\n");
 
-  $finish;
+  $finish(0);
 end
 
 initial begin

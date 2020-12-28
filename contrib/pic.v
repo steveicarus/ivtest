@@ -2071,7 +2071,7 @@ initial begin
       if (dbg_limitcycles) begin
          if (cycles > dbg_maxcycles) begin
             $display ("Maximum cycles (%0d) Exceeded.  Halting simulation.", dbg_maxcycles);
-            $finish;
+            $finish(0);
          end
       end
    end

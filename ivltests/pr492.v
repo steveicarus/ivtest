@@ -53,7 +53,7 @@ module top ;
 
   initial
     begin
-    #200 $finish ;
+    #200 $finish(0);
     end
 
 endmodule

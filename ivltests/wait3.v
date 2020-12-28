@@ -51,6 +51,6 @@ initial begin
    #100 r1=1;
    wait(a1);
    #100 r1=0;
-   #1000 $display("timeout"); $finish;
+   #1000 $display("timeout"); $finish(0);
 end
 endmodule

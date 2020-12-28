@@ -25,7 +25,7 @@ module lfsr_test();
 
   lfsr_counter LF( clk, reset, out );
 
-  initial #1000 $finish ;
+  initial #1000 $finish(0);
 endmodule // gray_code
 
 

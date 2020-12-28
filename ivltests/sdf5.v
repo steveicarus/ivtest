@@ -28,7 +28,7 @@ module tb;
       d = 1;
       #10 clk = 1;
       #10 clk = 0;
-      #10 $finish;
+      #10 $finish(0);
    end
 
 endmodule // tb

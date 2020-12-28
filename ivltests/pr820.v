@@ -16,7 +16,7 @@ module main();
     raddr = 4'd14;
     wdata = 0;
     #3001;
-    $finish();
+    $finish(0);
   end
 
   always @(posedge clk) begin

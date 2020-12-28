@@ -82,7 +82,7 @@ endgenerate
 
 initial begin
 	#40;
-	$finish;
+	$finish(0);
 end
 
 endmodule

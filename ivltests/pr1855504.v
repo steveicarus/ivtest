@@ -16,7 +16,7 @@ module mul_test();
    always begin
       prod <= op1[7:0] * op2;
       #5 $display("op1 = %h, op2 = %h, prod = %h", op1, op2, prod);
-      #5 $finish;
+      #5 $finish(0);
    end
 
 endmodule // mul_test

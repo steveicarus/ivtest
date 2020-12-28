@@ -15,6 +15,6 @@ initial
         i = $random % 256;
         $display ("The random number is %d",i);
       end
-    $finish;
+    $finish(0);
   end
 endmodule

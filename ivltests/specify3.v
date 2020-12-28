@@ -20,7 +20,7 @@ module top;
       #10 a = 0;
       #10 a = 1;
 
-      #10 $finish;
+      #10 $finish(0);
    end
 
    myxor g1 (q, a, b, fast);

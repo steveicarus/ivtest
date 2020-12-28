@@ -60,7 +60,7 @@ reg p1,p2;
   initial
   begin
     $monitor("%t p1=%b p2=%v",$time,p1,p2);
-    #101 $finish;
+    #101 $finish(0);
   end
 
 

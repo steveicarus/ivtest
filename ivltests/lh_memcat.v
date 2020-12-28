@@ -45,7 +45,7 @@ module main;
         endcase
 
         $display ("\n<< END  >>");
-        $finish;
+        $finish(0);
      end
 
    // Waves definition

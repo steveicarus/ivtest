@@ -35,7 +35,7 @@ module cnr_tb ();
 	#(10*20) clocken = 0;
 
 	#100;
-	$finish;
+	$finish(0);
      end
 
 endmodule // cnr_tb

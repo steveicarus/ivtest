@@ -21,7 +21,7 @@ always #2.5 clk = ~clk;
 initial begin
 	count = 'h8;
 	#20
-	$finish;
+	$finish(0);
 end
 
 always @(posedge clk)

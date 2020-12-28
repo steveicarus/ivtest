@@ -61,7 +61,7 @@ initial begin
     end
 
     // Finished
-    $finish;
+    $finish(0);
 end
 
 // Manually sign extended operators

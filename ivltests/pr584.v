@@ -18,6 +18,6 @@ initial begin
      // bug -- some correctly report "20" and others report "0"
      // looks like implicit real2integer conversion for every factor in expression
      // problem caused by partial support of reals
-     $finish;
+     $finish(0);
 end
 endmodule

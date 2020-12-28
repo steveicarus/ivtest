@@ -8,6 +8,6 @@ module top;
     correct = bits*(360.0/63.0) - 180;
     $display("Both of these should be the same (3): %3d, %3d", incorrect,
                                                                correct);
-    $finish;
+    $finish(0);
   end
 endmodule

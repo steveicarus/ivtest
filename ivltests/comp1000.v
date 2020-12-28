@@ -1185,6 +1185,6 @@ module compl1000;
 		$displayb("r252 = ",r252);
 		$displayb("r253 = ",r253);
 		$displayb("r254 = ",r254);
-		$finish;
+		$finish(0);
 	end
 endmodule

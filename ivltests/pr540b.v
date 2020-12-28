@@ -54,7 +54,7 @@ module top;
     if(tfk3_fail)   $display("***** the other forked block FAILED *****");
     else            $display("***** the other forked block PASSED *****");
     $display("");
-    $finish;
+    $finish(0);
   end
 
   // simple block disable

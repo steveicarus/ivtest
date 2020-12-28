@@ -11,7 +11,7 @@ module test;
           add_one(mydata);
           $display("mydata = %0d", mydata);
         end
-      $finish;
+      $finish(0);
     end
 
 

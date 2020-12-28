@@ -21,7 +21,7 @@ tval <= $realtime;
 $display ("tval = %g", tval);
 
 if (cnt >= 5) begin
-$finish;
+$finish(0);
 end
 end
 

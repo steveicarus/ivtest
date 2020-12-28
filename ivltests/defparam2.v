@@ -25,7 +25,7 @@ module main;
       #1 clk = 1;
       while (clk != 0)
 	 #1 clk = clk << 1;
-      $finish;
+      $finish(0);
    end
 
 endmodule // main

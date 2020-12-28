@@ -25,7 +25,7 @@ initial begin
     $display("zss = %b", zss);
 
     // Finished
-    $finish;
+    $finish(0);
 end
 
 // Calculate signed logical OR

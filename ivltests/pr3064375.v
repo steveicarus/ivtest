@@ -19,7 +19,7 @@ initial begin
   #20;
   RST = 0;
   #101;
-  $finish;
+  $finish(0);
 end
 
 always @(posedge CLK or posedge RST) begin

@@ -32,7 +32,7 @@ initial begin
   #1;
   $display("d_pm_in_dac_st = %0b",d_pm_in_dac_st);
   $display("d_pm_in_dac_st = %0b",pm_next_st[DAC]);
-  $finish;
+  $finish(0);
 end
 
 endmodule

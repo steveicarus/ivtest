@@ -12,7 +12,7 @@ initial begin
 	$monitor ("T=", $time, ", a=", a, ", b=", b, ", x=",
 x, ", y=", y);
 	#200
-	$finish;
+	$finish(0);
 end
 
 initial begin

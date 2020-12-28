@@ -32,7 +32,7 @@ module test;
     #10 $display("!!!VERILOG: big_reg=%h",big_reg);
         $display("            my_mem[1]=%h",my_mem[1]);
         event_trigger=!event_trigger;
-    #10 $finish;
+    #10 $finish(0);
   end
 
 endmodule

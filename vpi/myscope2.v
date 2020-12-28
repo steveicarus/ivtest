@@ -7,7 +7,7 @@
     reg     out_xor;        // The XOR output
     reg     clk;
 
-    initial begin clk = 1'b1; #10 $sn; #160 $finish; end
+    initial begin clk = 1'b1; #10 $sn; #160 $finish(0); end
     always #50 clk = ~clk;
                 // The clock
 

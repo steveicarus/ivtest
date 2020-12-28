@@ -34,7 +34,7 @@ module top;
     else         $display("***** task with loop disable PASSED *****");
     if(tfk_fail) $display("***** task with forked block disable FAILED ****\n");
     else         $display("***** task with forked block disable PASSED ****\n");
-    $finish;
+    $finish(0);
   end
 
   // simple block disable

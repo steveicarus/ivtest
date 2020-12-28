@@ -44,6 +44,6 @@ initial
     #1;
     $display ("%s", A);
     $display ("%s", message(1));
-    $finish;
+    $finish(0);
   end
 endmodule

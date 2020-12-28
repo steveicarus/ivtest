@@ -46,7 +46,7 @@ initial begin
   #1 ->sub.gen_block[3].trigger;
   #1 ->sub.my_block.trigger;
   #1 ->sub.my_task.trigger;
-  #1 $finish;
+  #1 $finish(0);
 end
 
 endmodule

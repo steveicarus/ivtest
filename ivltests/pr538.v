@@ -38,6 +38,6 @@ module test;
     if(fail) $display("\t\t********** timescale test FAILED *************");
     else     $display("\t\t********** timescale test PASSED *************");
     $display("\t\t**********************************************\n");
-    $finish;
+    $finish(0);
   end
 endmodule

@@ -23,7 +23,7 @@ module main;
 	 end
       end // for (length = 1 ;  length < 56 ;  length = length + 1)
 
-      $finish;
+      $finish(0);
    end
 
 endmodule // main

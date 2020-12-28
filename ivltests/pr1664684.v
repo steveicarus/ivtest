@@ -27,6 +27,6 @@ module bug (rdo, rm, cpen, up14, rdi);
       up14 = 32'd0;
       rm = 1'b0;
       #40;
-      $finish;
+      $finish(0);
    end
  endmodule

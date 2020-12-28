@@ -27,7 +27,7 @@ module main;
       #1 y = 2.0;
       #1 x = 1.5;
       #1 y = 5.1;
-      #1 $finish;
+      #1 $finish(0);
    end
 
 endmodule // main

@@ -6,7 +6,7 @@ module top;
     $display("here");
     $display("in top, time: %t",$time);
 
-    $finish;
+    $finish(0);
   end
 
 endmodule

@@ -38,7 +38,7 @@ end
 
 initial begin
 #20;
-$finish;
+$finish(0);
 end
 
 

@@ -47,7 +47,7 @@ module top;
     else            $display("\n***** simple block disable PASSED *****");
     if(loop_fail) $display("***** complex block & loop disable FAILED *****\n");
     else          $display("***** complex block & loop disable PASSED *****\n");
-    $finish;
+    $finish(0);
   end
 
   // simple block disable

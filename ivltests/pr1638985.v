@@ -11,6 +11,6 @@ module main;
 			$display("0.0 - x is %f", 0.0 - x);
 			$display("-x is %f", -x);
 
-			$finish;
+			$finish(0);
 		end
 endmodule

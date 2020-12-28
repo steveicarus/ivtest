@@ -26,7 +26,7 @@ begin
   #30;
   C <= {ii{1'b0}};
   #60;
-  $finish;
+  $finish(0);
 end
 
 always

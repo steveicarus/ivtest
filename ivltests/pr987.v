@@ -15,7 +15,7 @@ module main;
 
    initial begin
       #10 disable restartable;
-      #10 $finish;
+      #10 $finish(0);
    end
 
 endmodule // main

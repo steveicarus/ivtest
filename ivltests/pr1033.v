@@ -45,7 +45,7 @@ module test ();
 	  clk <= 0;
 	  a_dat <= 32'h7fffFFF5;
 	  b_dat <= 32'h7fffFFFA;
-	  #500 $finish;
+	  #500 $finish(0);
    end
    always #25 clk <= ~clk;
 

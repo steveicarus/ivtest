@@ -8,7 +8,7 @@ module test;
     initial begin
 	$monitor("<monitor> r = ", r);
 	#0.1 r = 1'b0;
-	#100000 $finish;
+	#100000 $finish(0);
     end
     always @(r) $display("<display> r = %b @ %0t", r, $time);
 

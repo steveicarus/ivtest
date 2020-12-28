@@ -47,7 +47,7 @@ module top;
                                  lrg_const.out_g, lrg_const.out_u,
                                  lrg_const.out_m, lrg_const.out_s,
                                  lrg_var.out_g, lrg_var.out_u);
-     #1.3 $finish;
+     #1.3 $finish(0);
   end
 endmodule
 

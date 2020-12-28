@@ -8,7 +8,7 @@ module test;
 // And this gives the wrong result!
      $display("Broken:  This (%0d) should be 255.", minus1(2**8-1+1));
      $display("         started with %0d.", 2**8-1+1);
-    $finish;
+    $finish(0);
   end
 
   function integer minus1;

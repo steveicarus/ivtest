@@ -52,7 +52,7 @@ module toy_toplevel(
 		ls_only = 0;
 		#( `USEC * 1 );
 		# ( CLOCK_INTERVAL/4 );
-		$finish; // Stop things for VPI unit test...
+		$finish(0); // Stop things for VPI unit test...
 		forever
 		begin
 			# ( CLOCK_INTERVAL/2 );

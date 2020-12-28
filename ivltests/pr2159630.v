@@ -12,6 +12,6 @@ module test();
 	#1 $display("Var %d vs signed(concat) %d",
 		    val_neg,
 		    $signed({{N_N+1{1'b1}},{N_N-1{1'b0}}}));
-	$finish;
+	$finish(0);
      end // initial begin
 endmodule // test

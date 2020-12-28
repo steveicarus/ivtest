@@ -12,7 +12,7 @@ module main;
    end
 
    initial begin
-      #100 $finish;
+      #100 $finish(0);
    end
 
 endmodule // main

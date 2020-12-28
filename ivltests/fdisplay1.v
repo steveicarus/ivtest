@@ -37,7 +37,7 @@ module fdisplay1;
       a = 8'h5a;
       $fwrite(1, "a = %b at %0t\n", a, $time);
 
-      $finish;
+      $finish(0);
 
    end // initial begin
 

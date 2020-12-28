@@ -10,7 +10,7 @@ tranif0 #(200) sw2(gnd, net2, gnd);
 initial begin
   $monitor($time,, gnd,, net1,, net2);
   #300;
-  $finish;
+  $finish(0);
 end
 
 endmodule

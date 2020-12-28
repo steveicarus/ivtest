@@ -54,7 +54,7 @@ module main;
 
       #1 a <= 0;
       #1 b <= 0;
-      #1 $finish;
+      #1 $finish(0);
    end
 
 endmodule // main

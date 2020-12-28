@@ -22,7 +22,7 @@ module top;
     #4;
     if(fail) $display("***** disable test FAILED *****");
     else     $display("***** disable test PASSED *****");
-    $finish;
+    $finish(0);
   end
 
   always @(cmd) begin: command_block

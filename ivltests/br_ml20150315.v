@@ -10,7 +10,7 @@ assign my_net[7:4] = 2;
 initial begin
   #1 $monitor("At time %0t, field 1 = %h, field 2 = %h",
               $time, my_net[3:0], my_net[7:4]);
-  #1 $finish;
+  #1 $finish(0);
 end
 
 endmodule

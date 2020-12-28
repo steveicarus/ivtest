@@ -16,6 +16,6 @@
 	 $display ("\tLine %d matches %d args: %h %h %h", line, rc, a, b, c);
       end
       $fclose (file);
-      $finish;
+      $finish(0);
    end
  endmodule

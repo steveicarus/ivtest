@@ -29,7 +29,7 @@ initial begin
     $display("foo=%0d  bar=%0d  $signed(bar)=%0d",
 	     foo, bar, $signed(bar));
 
-    $finish;
+    $finish(0);
 end
 
 endmodule

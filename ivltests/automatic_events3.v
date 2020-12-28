@@ -90,7 +90,7 @@ initial begin
     repeat(4) ReportNegEdge1;
     repeat(8) ReportAnyEdge1;
   join
-  $finish;
+  $finish(0);
 end
 
 endmodule

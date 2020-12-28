@@ -10,7 +10,7 @@ module main;
       for (index = 0 ;  index < 31 ;  index = index + 1) begin
 	 #1 $display("index=%d, foo=%b", index, foo);
       end
-      $finish;
+      $finish(0);
    end
 
    always @(*)

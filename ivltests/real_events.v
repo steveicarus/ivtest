@@ -37,7 +37,7 @@ initial begin
     test_task(1, 2.1, 3.1);
     test_task(2, 2.2, 3.2);
   join
-  #1 $finish;
+  #1 $finish(0);
 end
 
 endmodule

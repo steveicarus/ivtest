@@ -21,7 +21,7 @@ module subtest1(file_name);
          $display ("Execution finished.");
          $fdisplay (outfile, "Recorded data in %s",file_name);
          $fclose (outfile);
-         $finish;
+         $finish(0);
      end
 
 endmodule

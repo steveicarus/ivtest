@@ -8,6 +8,6 @@ module top;
     $display("3. The value is %3.0f", 100);
     $display("4. The value is %3.0f", val);
     $display("5. The value is %3.0f", value*100000000);  // This fails!
-    $finish;
+    $finish(0);
   end
 endmodule

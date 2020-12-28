@@ -57,7 +57,7 @@ initial begin
 //    $dumpvars;
 
     #100;
-    $finish;
+    $finish(0);
 end
 
 

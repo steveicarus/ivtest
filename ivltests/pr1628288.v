@@ -20,7 +20,7 @@ module top;
       #20;  // For the fun of it skip a clock.
     end
 
-    #1 $finish;
+    #1 $finish(0);
   end
 
   // This one locks up on the third call.

@@ -10,7 +10,7 @@
  rf[1] = 16'hffff;
  #10 rf[1] = 16'h0000;
  #10 rf[1] = 16'hbeef;
- #10 $finish;
+ #10 $finish(0);
  end
 
  endmodule

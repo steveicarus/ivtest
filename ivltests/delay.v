@@ -20,7 +20,7 @@ reg     bar4;
 
 initial begin
     clk = 0;
-    #100 $finish;
+    #100 $finish(0);
 end
 
 

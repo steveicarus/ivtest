@@ -22,7 +22,7 @@ module top;
 
   initial begin
     in = 1'b1;
-    #2 $finish;
+    #2 $finish(0);
   end
 
   always @(out_wo) $display("The time in wo_time is: %e", $abstime);

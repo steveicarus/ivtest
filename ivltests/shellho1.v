@@ -85,7 +85,7 @@ initial begin
  // Display the value that was checked
  $display("top.memory.memory[1] = %h",top.memory.memory[1]);
 
- $finish;
+ $finish(0);
 
 end
 

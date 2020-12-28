@@ -26,7 +26,7 @@ module main;
 
   initial begin
      $monitor($time,, "clk=%b", clk);
-     #61 $finish;
+     #61 $finish(0);
   end
 
 endmodule

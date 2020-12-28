@@ -27,7 +27,7 @@ module main;
 
       #1 mem[0] = 4;
       #1 mem[1] = 5;
-      #1 $finish;
+      #1 $finish(0);
    end
 
 endmodule // main

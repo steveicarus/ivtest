@@ -38,7 +38,7 @@ module test;
 	#10;
 	CL = 1'b1;
 	repeat (3) @(negedge CK);
-	$finish;
+	$finish(0);
     end
     always #10 CK = !CK;
 

@@ -14,6 +14,6 @@ begin
 	#10 in = 4'b 0100;
 	#10 sel = 0;
 	#10 sel = 1;
-	#10 $finish;
+	#10 $finish(0);
 end
 endmodule

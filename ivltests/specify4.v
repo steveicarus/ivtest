@@ -14,7 +14,7 @@ module top;
       #5 c = 1;
       #5 c = 0; d = 0;
       #5 c = 1;
-      #10 $finish;
+      #10 $finish(0);
    end
 
    mydff g1 (q, d, c);

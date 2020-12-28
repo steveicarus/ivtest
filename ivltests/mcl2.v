@@ -102,6 +102,6 @@ module test_mis;
 
     count = count + 1;
     if(count == 0)
-      $finish;
+      $finish(0);
   end
 endmodule

@@ -26,7 +26,7 @@ module test;
 	end
 
 	initial begin
-		#101 $finish;
+		#101 $finish(0);
 	end
 
 	initial

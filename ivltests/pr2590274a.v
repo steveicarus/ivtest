@@ -8,7 +8,7 @@ module wo_time;
 
   initial begin
     in = 1'b1;
-    #2 $finish;
+    #2 $finish(0);
   end
 
   always @(out) $display("The time in %m is: %e", $abstime);

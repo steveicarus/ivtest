@@ -43,7 +43,7 @@ module main();
 initial
   begin
      $my_hello;
-     $finish ;
+     $finish(0);
   end
 
 endmodule

@@ -8,7 +8,7 @@ module top ();
     #1;
     $display("decimal GEORGE: %0d, HARRY: %0d",GEORGE, HARRY);
     $display("binary GEORGE: 'b%0b, HARRY: 'b%0b",GEORGE, HARRY);
-    $finish;
+    $finish(0);
   end
 
 endmodule

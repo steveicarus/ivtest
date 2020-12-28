@@ -17,7 +17,7 @@ initial begin
 	// everybody agrees this is x x
 	$display(fdbk_err_wide, fdbk_err);
 	#10;
-	$finish();
+	$finish(0);
 end
 
 // arithmetic saturation from 14 bits down to 13 bits, and drop lsb

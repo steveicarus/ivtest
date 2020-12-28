@@ -100,7 +100,7 @@ initial
       end
       if(error === 0)
         $display("PASSED");
-      $finish;
+      $finish(0);
    end
 
 endmodule

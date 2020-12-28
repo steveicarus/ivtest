@@ -18,7 +18,7 @@ initial begin
   #10 c = 0;
   #10 c = 1;
   #10 c = 0;
-  #10 $finish;
+  #10 $finish(0);
 end
 
 endmodule

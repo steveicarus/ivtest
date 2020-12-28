@@ -33,7 +33,7 @@ reg	[1:5] foo15;	// never works.
 //reg	[4:0] foo15;
 
 initial begin
-	#102; $finish;
+	#102; $finish(0);
 end
 
 initial #1 begin

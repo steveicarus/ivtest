@@ -21,7 +21,7 @@ end
 initial begin
   #10 period = $time;
   #30 $display("bye.");
-  $finish;
+  $finish(0);
 end
 
 endmodule

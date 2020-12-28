@@ -15,7 +15,7 @@ module fail ();
 	#10 p = p+1;
 
       #1; // avoid final race
-      $finish;
+      $finish(0);
    end
 
    nr1 I1 (em, net0102, pz, p[0]);

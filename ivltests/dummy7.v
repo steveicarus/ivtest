@@ -81,6 +81,6 @@ addr16 = 16'h0022;
 $display("should be 22 -- data1=%h  data2=%h  data3=%h  data4=%h\n",data1,data2,data3,data4);
 
 
-$finish;
+$finish(0);
 end
 endmodule

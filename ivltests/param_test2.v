@@ -59,7 +59,7 @@ initial begin
         foo[i] = 1;
     end
     $write("foo = %0h\n", foo);
-    $finish;
+    $finish(0);
 end
 
 

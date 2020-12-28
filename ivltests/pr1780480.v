@@ -9,7 +9,7 @@ reg [1:0] count;
 
 initial begin
    count = 0;
-   #70 $finish;
+   #70 $finish(0);
 end
 
 always

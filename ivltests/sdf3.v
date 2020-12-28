@@ -32,7 +32,7 @@ module tb;
       b = 1;
       #10 ;
       b = 0;
-      #10 $finish;
+      #10 $finish(0);
    end
 
 endmodule // tb

@@ -29,7 +29,7 @@ module  main;
 
     reg     clk, c ;
     initial begin clk = 0 ; forever #5 clk = ~clk ; end
-    initial begin c = 0 ; #40 $finish ; end
+    initial begin c = 0 ; #40 $finish(0); end
 
     wire    a, b, s ;
 

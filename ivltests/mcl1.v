@@ -94,6 +94,6 @@ module test_simple;
 
     count = count + 1;
     if(count == 0)
-      $finish;
+      $finish(0);
   end
 endmodule

@@ -17,7 +17,7 @@ module main;
 
       if (counter == 2'd3) begin
          $display("PASSED");
-         $finish;
+         $finish(0);
       end
    end
 endmodule

@@ -14,6 +14,6 @@ initial begin
    for (idx = 0 ;  idx <= 'h7 ;  idx = idx+1)
       #1 A <= idx;
 
-   #1 $finish;
+   #1 $finish(0);
 end
 endmodule

@@ -25,7 +25,7 @@ module main;
       end
 
       $display("PASSED");
-      $finish;
+      $finish(0);
    end
 
 endmodule // main

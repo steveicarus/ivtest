@@ -17,7 +17,7 @@ initial begin
     $display("z = %b", z);
 
     // Finished
-    $finish;
+    $finish(0);
 end
 
 // Calculate signed logical OR

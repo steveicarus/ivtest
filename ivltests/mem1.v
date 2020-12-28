@@ -63,7 +63,7 @@ module main;
             write = 0;
             counter = counter + 1;
             if (counter == 16)
-                $finish;
+                $finish(0);
         end
     end
 

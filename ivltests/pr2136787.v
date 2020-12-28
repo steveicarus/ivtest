@@ -24,7 +24,7 @@ initial begin
     $display("z = %b", z);
 
     // Finished
-    $finish;
+    $finish(0);
 end
 
 endmodule

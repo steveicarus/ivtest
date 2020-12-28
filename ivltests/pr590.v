@@ -40,7 +40,7 @@ initial
    #20 insig = 4'h2;
 end
 initial
-  #71 $finish;
+  #71 $finish(0);
 
 always
    #10 clk = ~clk;

@@ -52,7 +52,7 @@ initial begin
     report_events(1);
     report_events(2);
   join
-  $finish;
+  $finish(0);
 end
 
 endmodule

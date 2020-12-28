@@ -15,7 +15,7 @@ initial begin
   #10 a = 1;
   #10 b = 0;
   #10 b = 1;
-  #10 $finish;
+  #10 $finish(0);
 end
 
 endmodule

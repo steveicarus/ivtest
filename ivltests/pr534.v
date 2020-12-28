@@ -66,7 +66,7 @@ module top;
     if(fail) $display("\t\t****** time representation test BAD    *******");
     else     $display("\t\t****** time representation test OK     *******");
     $display("\t\t**********************************************\n");
-    $finish;
+    $finish(0);
   end
 
   task delay_pci;

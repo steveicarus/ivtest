@@ -13,7 +13,7 @@ module MULT32;
 	#10 state = 0 ;
 	#10 state = 1 ;
 	#10 state = 0 ;
-	#10 $finish ;
+	#10 $finish(0);
 	end
 
     ADDERXY XX1 (VSS, N1110, VSS, N2166, X00, X31);	/* This one! */

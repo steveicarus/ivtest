@@ -6,7 +6,7 @@ always @(x) #5 x = 3;
 
 final begin
    if (x == 3) $display("x =%d, PASSED", x);
-   $finish();
+   $finish(0);
    $display("FAILED! Executed past $finish in final block!");
 end
 endmodule
