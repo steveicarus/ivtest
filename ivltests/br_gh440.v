@@ -19,6 +19,7 @@ module m;
     task check;
       // If the check in PEBComp::test_width(), elab_expr.cc is enabled
       // these fail since we cannot correctly find the class variables.
+      // Also the check in do_elab_and_eval(), netmisc.cc is disabled.
       if (val == null) $display("Empty"); // Okay
       if (arr[0] == null) $display("Empty"); // Okay
     endtask
