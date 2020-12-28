@@ -1,6 +1,6 @@
 package t;
   class c;
-    virtual function create (string name=""); 
+    virtual function create (string name="");
       return null;  // Error: logic returning a null
     endfunction
 
@@ -26,7 +26,7 @@ module m;
 
 
   // An implicit logic return type is given a NULL
-  function tmp(); 
+  function tmp();
     return null;  // Error: logic returning a null
   endfunction
 
