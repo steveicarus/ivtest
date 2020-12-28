@@ -3,15 +3,15 @@ module dut (output reg[31:0] size,
 	    output reg signed [31:0] ival,
 	    output reg [31:0] hval);
    parameter string foo = "1234";
-   string 	    tmp;
-   real 	    rval;
-   
+   string	    tmp;
+   real		    rval;
+
    initial begin
       size = foo.len();
       ival = foo.atoi();
       hval = foo.atohex();
       rval = foo.atoreal();
-      
+
       tmp = foo;
       $display("foo=%0s, tmp=%0s", foo, tmp);
       if (tmp != foo) begin
@@ -31,7 +31,7 @@ module main;
    wire [31:0]          dut0_size, dut1_size, dut2_size;
    wire signed [31:0]   dut0_ival, dut1_ival, dut2_ival;
    wire unsigned [31:0] dut0_hval, dut1_hval, dut2_hval;
-   
+
 
    // Instantate module with string parameter, use default value.
    dut dut0 (dut0_size, dut0_ival, dut0_hval);
