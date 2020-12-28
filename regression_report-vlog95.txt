@@ -2248,6 +2248,7 @@ test_mos_strength_reduction: Passed.
                   br_gh386d: Passed - CE.
                    br_gh411: Passed.
                    br_gh418: Passed.
+                   br_gh440: Passed - CE.
              br_ml20150315b: Passed - CE.
               br_ml20180227: Passed - CE.
              br_ml20181012a: Passed - CE.
@@ -2511,4 +2512,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2509, Passed=2469, Failed=5, Not Implemented=3, Expected Fail=32
+  Total=2510, Passed=2470, Failed=5, Not Implemented=3, Expected Fail=32
