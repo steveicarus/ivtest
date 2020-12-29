@@ -565,3 +565,4 @@ br_gh390a		CE,-g2012		ivltests
 br_gh390b		normal,-g2012		ivltests gold=br_gh390b.gold
 br_gh412		normal,-g2012		ivltests
 br_gh414		normal,-g2012		ivltests
+br_gh451		normal,-g2012,-Ptest.foo=4	ivltests gold=br_gh451.gold
