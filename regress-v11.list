@@ -99,5 +99,6 @@ br_gh390a		NI		ivltests
 br_gh390b		NI		ivltests
 br_gh412		NI		ivltests
 br_gh414		NI		ivltests
+br_gh453		NI		ivltests
 fileline2		NI		ivltests
 vhdl_multidim_array	NI		ivltests
