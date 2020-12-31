@@ -28,6 +28,7 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
                    br_gh412: Not Implemented.
                    br_gh414: Not Implemented.
                    br_gh453: Not Implemented.
+                   br_gh460: Not Implemented.
                   fileline2: Not Implemented.
                    string12: Not Implemented.
         vhdl_multidim_array: Not Implemented.
@@ -2518,4 +2519,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2516, Passed=2497, Failed=0, Not Implemented=19, Expected Fail=0
+  Total=2517, Passed=2497, Failed=0, Not Implemented=20, Expected Fail=0
