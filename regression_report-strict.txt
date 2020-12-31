@@ -1641,6 +1641,7 @@ Running compiler/VVP tests for Icarus Verilog version: 12 (strict).
                     string9: Passed.
                    string10: Passed.
                    string11: Passed.
+                   string12: Passed.
                     supply1: Passed.
                     supply2: Passed.
           switch_primitives: Passed.
@@ -2514,4 +2515,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2512, Passed=2505, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2513, Passed=2506, Failed=7, Not Implemented=0, Expected Fail=0

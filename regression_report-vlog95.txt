@@ -2035,6 +2035,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
                     string9: Passed.
                    string10: Passed.
                    string11: Passed.
+                   string12: Passed.
                     supply1: Passed.
                     supply2: Passed.
           switch_primitives: Passed.
@@ -2517,4 +2518,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2515, Passed=2475, Failed=5, Not Implemented=3, Expected Fail=32
+  Total=2516, Passed=2476, Failed=5, Not Implemented=3, Expected Fail=32

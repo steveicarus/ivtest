@@ -101,4 +101,5 @@ br_gh412		NI		ivltests
 br_gh414		NI		ivltests
 br_gh453		NI		ivltests
 fileline2		NI		ivltests
+string12		NI		ivltests
 vhdl_multidim_array	NI		ivltests

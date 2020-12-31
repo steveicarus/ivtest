@@ -1555,6 +1555,7 @@ string8			normal			ivltests gold=string8.gold
 string9			normal			ivltests gold=string9.gold
 string10		normal			ivltests gold=string10.gold
 string11		normal			ivltests gold=string11.gold
+string12		normal			ivltests
 supply1			normal			ivltests
 supply2			normal			ivltests
 switch_primitives	normal			ivltests gold=switch_primitives.gold
