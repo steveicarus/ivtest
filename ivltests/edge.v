@@ -10,72 +10,72 @@ module top;
 
     #1; // Check X to 0
     {pedge, nedge} = 2'b01;
-    evt = 1'b0; 
+    evt = 1'b0;
 
     #1; // Check 0 to X
     pevt = evt;
     {pedge, nedge} = 2'b10;
-    evt = 1'bx; 
+    evt = 1'bx;
 
     #1; // Check X to 1
     pevt = evt;
     {pedge, nedge} = 2'b10;
-    evt = 1'b1; 
+    evt = 1'b1;
 
     #1; // Check 1 to X
     pevt = evt;
     {pedge, nedge} = 2'b01;
-    evt = 1'bx; 
+    evt = 1'bx;
 
     #1; // Check X to Z
     pevt = evt;
     {pedge, nedge} = 2'b00;
-    evt = 1'bz; 
+    evt = 1'bz;
 
     #1; // Check Z to X
     pevt = evt;
     {pedge, nedge} = 2'b00;
-    evt = 1'bx; 
+    evt = 1'bx;
 
     #1; // Check X to Z (again)
     pevt = evt;
     {pedge, nedge} = 2'b00;
-    evt = 1'bz; 
+    evt = 1'bz;
 
     #1; // Check Z to 0
     pevt = evt;
     {pedge, nedge} = 2'b01;
-    evt = 1'b0; 
+    evt = 1'b0;
 
     #1; // Check 0 to Z
     pevt = evt;
     {pedge, nedge} = 2'b10;
-    evt = 1'bz; 
+    evt = 1'bz;
 
     #1; // Check Z to 1
     pevt = evt;
     {pedge, nedge} = 2'b10;
-    evt = 1'b1; 
+    evt = 1'b1;
 
     #1; // Check 1 to Z
     pevt = evt;
     {pedge, nedge} = 2'b01;
-    evt = 1'bz; 
+    evt = 1'bz;
 
     #1; // Check Z to 1 (again)
     pevt = evt;
     {pedge, nedge} = 2'b10;
-    evt = 1'b1; 
+    evt = 1'b1;
 
     #1; // Check 1 to 0
     pevt = evt;
     {pedge, nedge} = 2'b01;
-    evt = 1'b0; 
+    evt = 1'b0;
 
     #1; // Check 0 to 1
     pevt = evt;
     {pedge, nedge} = 2'b10;
-    evt = 1'b1; 
+    evt = 1'b1;
 
     #1;
 
@@ -103,6 +103,6 @@ module top;
     end
   end
 
-  always @(evt) 
+  always @(evt)
     $display("Checking the %b -> %b event", pevt, evt);
 endmodule
