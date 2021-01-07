@@ -219,6 +219,7 @@ clkgen_net		normal,-g2009		ivltests
 clkgen_reg		normal,-g2009		ivltests
 disable_fork_cmd	normal,-g2009		ivltests
 display_bug		normal,-g2009		ivltests gold=display_bug.gold
+edge			normal,-g2009		ivltests
 enum_base_range		normal,-g2005-sv	ivltests
 enum_elem_ranges	normal,-g2005-sv	ivltests
 enum_next		normal,-g2005-sv	ivltests

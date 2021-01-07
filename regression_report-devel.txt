@@ -1968,6 +1968,7 @@ test_mos_strength_reduction: Passed.
                  clkgen_reg: Passed.
            disable_fork_cmd: Passed.
                 display_bug: Passed.
+                       edge: Passed.
             enum_base_range: Passed.
            enum_elem_ranges: Passed.
                   enum_next: Passed.
@@ -2520,4 +2521,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2518, Passed=2511, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2519, Passed=2512, Failed=7, Not Implemented=0, Expected Fail=0
