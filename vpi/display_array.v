@@ -32,6 +32,7 @@ initial
     int_darray = '{1, 2, 3, 4};
     $display_array(int_darray);
     $increase_array_vals(int_darray);
+    $display_array(int_darray);
 
     real_darray = new[2];
     real_darray = '{2.2, 2.3};
