@@ -1,12 +1,12 @@
 package u_lib;
 
   class uvm_void;
-  endclass 
+  endclass
   class uvm_object extends uvm_void;
     task passed;
       $display("PASSED");
     endtask
-  endclass 
+  endclass
 
 endpackage
 
@@ -25,4 +25,4 @@ module m;
     obj = new;
     obj.passed();
   end
-endmodule 
+endmodule

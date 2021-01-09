@@ -3,8 +3,8 @@ module main;
 
    typedef enum { RED, ORANGE, YELLOW, GREEN, BLUE, VIOLET } rainbow_t;
    rainbow_t    color;
-   string 	tmp;
-   
+   string	tmp;
+
    initial begin
       color = color.first();
       tmp = color.name();

@@ -19,7 +19,7 @@ module main;
    end
 
    real srcr;
-   int 	srci;
+   int	srci;
 
    wire real valr;
    wire int  vali;
@@ -55,5 +55,5 @@ module main;
       $display("PASSED");
       $finish;
    end
-   
+
 endmodule // main
