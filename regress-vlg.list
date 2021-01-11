@@ -574,6 +574,7 @@ ifdef1			normal			ivltests # ifdef with no define
 ifdef2			normal			ivltests # ifdef with define
 ifdef3			normal			ivltests # compound ifdef with 1 define
 ifdef4			normal			ivltests # compound ifdef with 2 defines
+ifdef_fail		CE			ivltests
 include1		normal			ivltests # include file 1 level deep
 include2		normal			ivltests # include file 2 levels deep
 include3		normal			ivltests # include file 3 levels deep

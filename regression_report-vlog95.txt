@@ -1270,6 +1270,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
                      ifdef2: Passed.
                      ifdef3: Passed.
                      ifdef4: Passed.
+                 ifdef_fail: Passed - CE.
                    include1: Passed.
                    include2: Passed.
                    include3: Passed.
@@ -2522,4 +2523,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2520, Passed=2480, Failed=5, Not Implemented=3, Expected Fail=32
+  Total=2521, Passed=2481, Failed=5, Not Implemented=3, Expected Fail=32

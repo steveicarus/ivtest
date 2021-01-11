@@ -103,6 +103,7 @@ br_gh453		NI		ivltests
 br_gh460		NI		ivltests
 edge			NI		ivltests
 fileline2		NI		ivltests
+ifdef_fail		NI		ivltests
 scalar_vector		NI		ivltests
 string12		NI		ivltests
 vhdl_multidim_array	NI		ivltests

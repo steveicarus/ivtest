@@ -2,13 +2,6 @@ module elsif_test();
 
 `define	DEFINED
 
-`ifdef
-`ifndef
-`elsif
-`elsif DEFINED
-`else
-`endif
-
 integer i;
 
 initial begin
