@@ -435,9 +435,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
                     bitsel7: Passed - CE.
                  pr3054101a: Passed - CE.
                  pr3054101b: Passed - CE.
-                   br_gh477: Passed - CE.
-                  pr1745005: Passed - CE.
-                 pr2725700c: Passed - CE.
                  pr2835632b: Passed - CE.
                  pr3054101c: Passed - CE.
                  pr3054101d: Passed - CE.
@@ -562,6 +559,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
                   br_gh283b: Passed.
                   br_gh283c: Passed.
                   br_gh289b: Passed.
+                   br_gh477: Passed.
                     ca_mult: Passed.
                    cast_int: Passed.
                cast_int_ams: Passed.
@@ -1599,6 +1597,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
                   pr1735822: Passed.
                   pr1735836: Passed.
                   pr1742910: Passed.
+                  pr1745005: Passed.
                   pr1746401: Passed.
                   pr1746848: Passed.
                   pr1752353: Passed.
@@ -1787,6 +1786,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
                   pr2723712: Passed.
                  pr2725700a: Passed.
                  pr2725700b: Passed.
+                 pr2725700c: Passed.
                   pr2728032: Passed.
                   pr2728547: Passed.
                  pr2728812b: Passed - CE.
