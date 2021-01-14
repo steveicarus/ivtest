@@ -2,7 +2,7 @@
 # supports SystemVerilog (1800-2012).
 
 #
-# Copyright (c) 1999-2018 Guy Hutchison (ghutchis@pacbell.net)
+# Copyright (c) 1999-2021 Guy Hutchison (ghutchis@pacbell.net)
 #
 #    This source code is free software; you can redistribute it
 #    and/or modify it in source code form under the terms of the GNU
@@ -83,3 +83,21 @@ pr3015421		CE			ivltests gold=pr3015421-fsv.gold
 resetall		normal,-Wtimescale	ivltests gold=resetall-fsv.gold
 scope2b			normal			ivltests
 sys_func_task_error	RE			ivltests gold=sys_func_task_error-fsv.gold
+
+# We do not run synthesis when forcing SystemVerilog so these pass
+br995			normal			ivltests
+br_gh306a		normal			ivltests
+br_gh306b		normal			ivltests
+case5-syn-fail		normal			ivltests
+casesynth7		normal			ivltests
+casesynth8		normal			ivltests
+dffsynth		normal			ivltests
+dffsynth8		normal			ivltests
+memsynth1		normal			ivltests
+memsynth2		normal			ivltests
+memsynth3		normal			ivltests
+memsynth5		normal			ivltests
+memsynth6		normal			ivltests
+memsynth7		normal			ivltests
+memsynth9		normal			ivltests
+mix_reset		normal			ivltests

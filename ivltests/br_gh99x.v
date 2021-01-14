@@ -17,7 +17,11 @@ initial begin
   #1 clk = 1;
   #1 clk = 0;
   $display("%b %b", value1, value2);
+`ifdef __ICARUS_SYNTH__
   if (value2 === 8'bzzzz1010)
+`else
+  if (value2 === 8'bxxxx1010)
+`endif
     $display("PASSED");
   else
     $display("FAILED");

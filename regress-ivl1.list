@@ -5,7 +5,7 @@
 # __ICARUS__ macro is defined.
 
 #
-# Copyright (c) 1999-2014 Guy Hutchison (ghutchis@pacbell.net)
+# Copyright (c) 1999-2021 Guy Hutchison (ghutchis@pacbell.net)
 #
 #    This source code is free software; you can redistribute it
 #    and/or modify it in source code form under the terms of the GNU
@@ -152,6 +152,7 @@ v2005_math		normal			ivltests
 # $deposit
 deposit			normal			ivltests
 deposit_wire		normal			ivltests
+sysargs			normal			ivltests
 
 # $fatal
 fatal_et_al		normal			ivltests gold=fatal_et_al.gold
@@ -220,7 +221,9 @@ binary_nor		normal			ivltests
 # wire real
 array_lval_select4a	normal			ivltests
 array_lval_select5	normal			ivltests
+br_gh456		normal,-g2012		ivltests
 ca_64delay		normal			ivltests gold=ca_64delay.gold
+ca_time_real		normal			ivltests gold=ca_time_real.gold
 ca_var_delay		normal			ivltests
 cast_real_signed	normal			ivltests
 cast_real_unsigned	normal			ivltests

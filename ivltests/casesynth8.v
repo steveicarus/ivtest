@@ -13,6 +13,7 @@ output reg [2:0] o
 
 );
 
+(* ivl_synthesis_on *)
 always @* begin
   case (sel)
     0 : o = 0;
@@ -24,5 +25,8 @@ always @* begin
      o = 3'bx;
   endcase
 end
+(* ivl_synthesis_off *)
+
+initial $display("PASSED");
 
 endmodule

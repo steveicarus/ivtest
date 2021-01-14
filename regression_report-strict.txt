@@ -73,6 +73,7 @@ Running compiler/VVP tests for Icarus Verilog version: 12 (strict).
                  v2005_math: Passed.
                     deposit: Passed.
                deposit_wire: Passed.
+                    sysargs: Passed.
                 fatal_et_al: Passed.
                fatal_et_al2: Passed - RE.
             plus_arg_string: Passed.
@@ -114,7 +115,9 @@ Running compiler/VVP tests for Icarus Verilog version: 12 (strict).
                  binary_nor: Passed.
         array_lval_select4a: Passed.
          array_lval_select5: Passed.
+                   br_gh456: Passed.
                  ca_64delay: Passed.
+               ca_time_real: Passed.
                ca_var_delay: Passed.
            cast_real_signed: Passed.
          cast_real_unsigned: Passed.
@@ -1647,7 +1650,6 @@ Running compiler/VVP tests for Icarus Verilog version: 12 (strict).
                     supply2: Passed.
           switch_primitives: Passed.
         sys_func_task_error: Passed - RE.
-                    sysargs: Passed.
                        talu: Passed.
                  task-scope: Passed.
                   task3.14A: Passed.
@@ -2304,7 +2306,6 @@ test_mos_strength_reduction: Passed.
                    br_gh414: Passed.
                    br_gh451: Passed.
                    br_gh453: Passed.
-                   br_gh456: Passed.
                    br_gh460: Passed.
                       br942: Passed.
                   br943_944: Passed.
@@ -2522,4 +2523,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2520, Passed=2513, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2521, Passed=2514, Failed=7, Not Implemented=0, Expected Fail=0

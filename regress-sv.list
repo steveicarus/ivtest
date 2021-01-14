@@ -2,7 +2,7 @@
 # supports SystemVerilog (1800-2012).
 
 #
-# Copyright (c) 1999-2018 Guy Hutchison (ghutchis@pacbell.net)
+# Copyright (c) 1999-2021 Guy Hutchison (ghutchis@pacbell.net)
 #
 #    This source code is free software; you can redistribute it
 #    and/or modify it in source code form under the terms of the GNU
@@ -572,5 +572,4 @@ br_gh412		normal,-g2012		ivltests
 br_gh414		normal,-g2012		ivltests
 br_gh451		normal,-g2012,-Ptest.foo=4	ivltests gold=br_gh451.gold
 br_gh453		normal,-g2012		ivltests
-br_gh456		normal,-g2012		ivltests
 br_gh460		normal,-g2012		ivltests

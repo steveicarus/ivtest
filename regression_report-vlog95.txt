@@ -40,7 +40,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
          array_lval_select6: Passed - CE.
                    br_gh456: Passed - CE.
                  ca_64delay: Passed - CE.
-                    ca_time: Passed - CE.
+               ca_time_real: Passed - CE.
                ca_var_delay: Passed - CE.
                   cast_real: Passed - CE.
            cast_real_signed: Passed - CE.
@@ -811,6 +811,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
                       tern3: Passed.
                     deposit: Passed.
                deposit_wire: Passed.
+                    sysargs: Passed.
                fatal_et_al2: Passed - RE.
                      fileio: Passed.
                  pr2428890c: Passed.
@@ -1075,6 +1076,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
                    ca_force: Passed.
                     ca_func: Passed.
             ca_real_logical: Passed.
+                    ca_time: Passed.
                    case3.8A: Passed.
                    case3.8B: Passed.
                    case3.8C: Passed.
@@ -2043,7 +2045,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
                     supply1: Passed.
                     supply2: Passed.
           switch_primitives: Passed.
-                    sysargs: Passed.
                        talu: Passed.
                  task-scope: Passed.
                   task3.14A: Passed.
@@ -2525,4 +2526,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2523, Passed=2483, Failed=5, Not Implemented=3, Expected Fail=32
+  Total=2524, Passed=2484, Failed=5, Not Implemented=3, Expected Fail=32

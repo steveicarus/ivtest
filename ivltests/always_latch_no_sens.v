@@ -5,5 +5,5 @@ module test;
       y = 1'b0;
    end
 
-  initial $display("FIALED");
+  initial $display("FAILED");
 endmodule

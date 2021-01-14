@@ -10,7 +10,10 @@ module dpram #(
 localparam sz=(32'b1<<aw)-1;
 reg [dw-1:0] mem[sz:0];
 reg [aw-1:0] alb=0;
+(* ivl_synthesis_on *)
 always @(posedge clka) if (wena) mem[addra] <= dina;
 always @(posedge clkb) alb <= addrb;
 assign doutb = mem[alb];
+(* ivl_synthesis_off *)
+initial $display("PASSED");
 endmodule

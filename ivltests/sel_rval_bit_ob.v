@@ -6,7 +6,6 @@ module top;
   reg pass;
   reg big_param;
   reg bit;
-  integer idx;
 
   parameter pvar0 = 0;
   parameter pvar1 = 1;

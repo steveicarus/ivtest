@@ -19,7 +19,7 @@ module main();
 	 ref_val[34] = 1;
 	 $display("*:%d", ref_val);
 
-	 ref_val2 = 35'h7fffffffff;
+	 ref_val2 = 35'h7ffffffff;
 	 $display("*:%d", ref_val2);
 
 	 // Trivial test to see that small unsized integers still work.

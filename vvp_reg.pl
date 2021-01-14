@@ -62,7 +62,7 @@ if ($#ARGV != -1) {
         &read_regression_list("regress-sv.list",   $ver, $force_sv, "");
         &read_regression_list("regress-vhdl.list", $ver, $force_sv, "");
     }
-    if ($ver == 0.9) {
+    if ($ver == 0.9 or $force_sv) {
         &read_regression_list("regress-synth.list", $ver, $force_sv, "");
     } else {
         &read_regression_list("regress-synth.list", $ver, $force_sv, "-S");
