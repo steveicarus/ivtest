@@ -218,6 +218,9 @@ constfunc8		normal			ivltests
 binary_nand		normal			ivltests
 binary_nor		normal			ivltests
 
+# real modulus
+pr1528093		normal			ivltests
+
 # wire real
 array_lval_select4a	normal			ivltests
 array_lval_select5	normal			ivltests

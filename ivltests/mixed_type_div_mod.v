@@ -1,3 +1,7 @@
+`ifdef __ICARUS__
+  `define SUPPORT_REAL_MODULUS_IN_IVTEST
+`endif
+
 module top;
   reg pass;
   real result;
@@ -18,6 +22,7 @@ module top;
       pass = 1'b0;
     end
 
+`ifdef SUPPORT_REAL_MODULUS_IN_IVTEST
     // This should turn into a just a load of 1.0.
     result = 1%2.0;
     if (result != 1.0) begin
@@ -31,6 +36,7 @@ module top;
       $display("Failed: real%%int, expected 1.0, got %g", result);
       pass = 1'b0;
     end
+`endif
 
     if (pass) $display("PASSED");
   end

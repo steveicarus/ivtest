@@ -1,3 +1,7 @@
+`ifdef __ICARUS__
+  `define SUPPORT_REAL_MODULUS_IN_IVTEST
+`endif
+
 module test();
 
 function real pre_inc(input real x);
@@ -62,18 +66,22 @@ begin
 end
 endfunction
 
+`ifdef SUPPORT_REAL_MODULUS_IN_IVTEST
 function real mod2(input real x);
 begin
   x %= 2;
   mod2 = x;
 end
 endfunction
+`endif
 
 localparam add2_5 = add2(5);
 localparam sub2_5 = sub2(5);
 localparam mul2_5 = mul2(5);
 localparam div2_5 = div2(5);
+`ifdef SUPPORT_REAL_MODULUS_IN_IVTEST
 localparam mod2_5 = mod2(5);
+`endif
 
 function real add3(input real x);
 begin
@@ -103,18 +111,22 @@ begin
 end
 endfunction
 
+`ifdef SUPPORT_REAL_MODULUS_IN_IVTEST
 function real mod3(input real x);
 begin
   mod3 = x;
   mod3 %= 3;
 end
 endfunction
+`endif
 
 localparam add3_5 = add3(5);
 localparam sub3_5 = sub3(5);
 localparam mul3_5 = mul3(5);
 localparam div4_5 = div4(5);
+`ifdef SUPPORT_REAL_MODULUS_IN_IVTEST
 localparam mod3_5 = mod3(5);
+`endif
 
 reg failed = 0;
 
@@ -151,9 +163,11 @@ initial begin
   if (div2_5 != div2(5)) failed = 1;
   if (div2_5 != 2.5) failed = 1;
 
+`ifdef SUPPORT_REAL_MODULUS_IN_IVTEST
   $display("mod2_5 = %0f", mod2_5);
   if (mod2_5 != mod2(5)) failed = 1;
   if (mod2_5 != 1.0) failed = 1;
+`endif
 
   $display("add3_5 = %0f", add3_5);
   if (add3_5 != add3(5)) failed = 1;
@@ -171,9 +185,11 @@ initial begin
   if (div4_5 != div4(5)) failed = 1;
   if (div4_5 != 1.25) failed = 1;
 
+`ifdef SUPPORT_REAL_MODULUS_IN_IVTEST
   $display("mod3_5 = %0f", mod3_5);
   if (mod3_5 != mod3(5)) failed = 1;
   if (mod3_5 != 2.0) failed = 1;
+`endif
 
   if (failed)
     $display("FAILED");

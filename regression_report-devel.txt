@@ -125,6 +125,7 @@ Running compiler/VVP tests for Icarus Verilog version: 12.
                  constfunc8: Passed.
                 binary_nand: Passed.
                  binary_nor: Passed.
+                  pr1528093: Passed.
         array_lval_select4a: Passed.
          array_lval_select5: Passed.
                    br_gh456: Passed.
@@ -963,7 +964,6 @@ Running compiler/VVP tests for Icarus Verilog version: 12.
                   pr1515168: Passed.
                   pr1520314: Passed - CO.
                   pr1522570: Passed.
-                  pr1528093: Passed.
                   pr1530426: Passed.
                   pr1561597: Passed.
                   pr1565544: Passed.

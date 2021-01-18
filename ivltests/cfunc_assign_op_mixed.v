@@ -1,3 +1,7 @@
+`ifdef __ICARUS__
+  `define SUPPORT_REAL_MODULUS_IN_IVTEST
+`endif
+
 module test();
 
 function integer add2(input integer x);
@@ -30,7 +34,11 @@ endfunction
 
 function integer mod2(input integer x);
 begin
+`ifdef SUPPORT_REAL_MODULUS_IN_IVTEST
   x %= 2.0;
+`else
+  x %= 2;
+`endif
   mod2 = x;
 end
 endfunction
@@ -72,7 +80,11 @@ endfunction
 function integer mod3(input integer x);
 begin
   mod3 = x;
+`ifdef SUPPORT_REAL_MODULUS_IN_IVTEST
   mod3 %= 3.0;
+`else
+  mod3 %= 3;
+`endif
 end
 endfunction
 
