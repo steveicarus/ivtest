@@ -1,5 +1,10 @@
 // Check behaviour with out-of-range and undefined array indices
 // on LHS of blocking procedural assignment.
+
+`ifdef __ICARUS__
+  `define SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
+`endif
+
 module top;
 
 reg  array1[2:1];
@@ -19,7 +24,7 @@ initial begin
 
   array1[1] = 1'b0;
   array1[2] = 1'b0;
-`ifdef __ICARUS__
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
   array1[0] = 1'b1; // Constant out of bounds select may be an error
 `endif
   $display("array = %b %b", array1[2], array1[1]);
@@ -27,7 +32,7 @@ initial begin
 
   array1[1] = 1'b0;
   array1[2] = 1'b0;
-`ifdef __ICARUS__
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
   array1[3] = 1'b1; // Constant out of bounds select may be an error
 `endif
   $display("array = %b %b", array1[2], array1[1]);
@@ -35,7 +40,7 @@ initial begin
 
   array2[0] = 1'b0;
   array2[1] = 1'b0;
-`ifdef __ICARUS__
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
   array2['bx] = 1'b1; // Constant undefined out of bounds select may be an error
 `endif
   $display("array = %b %b", array2[1], array2[0]);
@@ -65,7 +70,7 @@ initial begin
 `ifndef VLOG95
   array3[1] = 0.0;
   array3[2] = 0.0;
-`ifdef __ICARUS__
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
   array3[0] = 1.0; // Constant out of bounds select may be an error
 `endif
   $display("array = %0g %0g", array3[2], array3[1]);
@@ -73,7 +78,7 @@ initial begin
 
   array3[1] = 0.0;
   array3[2] = 0.0;
-`ifdef __ICARUS__
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
   array3[3] = 1.0; // Constant out of bounds select may be an error
 `endif
   $display("array = %0g %0g", array3[2], array3[1]);
@@ -81,7 +86,7 @@ initial begin
 
   array4[0] = 0.0;
   array4[1] = 0.0;
-`ifdef __ICARUS__
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
   array4['bx] = 1.0; // Constant undefined out of bounds select may be an error
 `endif
   $display("array = %0g %0g", array4[1], array4[0]);

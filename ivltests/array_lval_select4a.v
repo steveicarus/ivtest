@@ -1,5 +1,11 @@
 // Check behaviour with out-of-range and undefined array indices
 // on LHS of procedural continuous (net) assignment.
+
+`ifdef __ICARUS__
+  `define SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
+  `define SUPPORT_REAL_NETS_IN_IVTEST
+`endif
+
 module top;
 
 wire [1:0] array1[2:1];
@@ -13,7 +19,7 @@ assign array1[2] = 2'd0;
 assign array2[0] = 2'd0;
 assign array2[1] = 2'd0;
 
-`ifdef __ICARUS__
+`ifdef SUPPORT_REAL_NETS_IN_IVTEST
 wire real array3[2:1];
 wire real array4[1:0];
 
@@ -31,10 +37,12 @@ reg failed;
 initial begin
   failed = 0;
 
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
   force array1[0] = 2'd1;
   #1 $display("array = %h %h", array1[2], array1[1]);
   if ((array1[1] !== 2'd0) || (array1[2] !== 2'd0)) failed = 1;
   release array1[0];
+`endif
 
   force array1[1] = 2'd1;
   #1 $display("array = %h %h", array1[2], array1[1]);
@@ -50,6 +58,7 @@ initial begin
   if ((array1[1] !== 2'd0) || (array1[2] !== 2'd2)) failed = 1;
   release array1[2];
 
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
   force array1[3] = var1;
   #1 $display("array = %h %h", array1[2], array1[1]);
   if ((array1[1] !== 2'd0) || (array1[2] !== 2'd0)) failed = 1;
@@ -59,8 +68,9 @@ initial begin
   #1 $display("array = %h %h", array2[1], array2[0]);
   if ((array2[0] !== 2'd0) || (array2[1] !== 2'd0)) failed = 1;
   release array2['bx];
+`endif
 
-`ifdef __ICARUS__
+`ifdef SUPPORT_REAL_NETS_IN_IVTEST
   force array3[0] = 1.0;
   #1 $display("array = %0g %0g", array3[2], array3[1]);
   if ((array3[1] != 0.0) || (array3[2] != 0.0)) failed = 1;

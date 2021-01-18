@@ -1,5 +1,10 @@
 // Check behaviour with out-of-range and undefined array indices
 // on LHS of procedural continuous (reg) assignment.
+
+`ifdef __ICARUS__
+  `define SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
+`endif
+
 module top;
 
 reg [1:0] array1[2:1];
@@ -25,10 +30,12 @@ initial begin
   array2[0] = 2'd0;
   array2[1] = 2'd0;
 
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
   assign array1[0] = 2'd1;
   #1 $display("array = %h %h", array1[2], array1[1]);
   if ((array1[1] !== 2'd0) || (array1[2] !== 2'd0)) failed = 1;
   deassign array1[0];
+`endif
 
   assign array1[1] = 2'd1;
   #1 $display("array = %h %h", array1[2], array1[1]);
@@ -44,6 +51,7 @@ initial begin
   if ((array1[1] !== 2'd0) || (array1[2] !== 2'd2)) failed = 1;
   deassign array1[2];
 
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
   assign array1[3] = var1;
   #1 $display("array = %h %h", array1[2], array1[1]);
   if ((array1[1] !== 2'd0) || (array1[2] !== 2'd0)) failed = 1;
@@ -53,6 +61,7 @@ initial begin
   #1 $display("array = %h %h", array2[1], array2[0]);
   if ((array2[0] !== 2'd0) || (array2[1] !== 2'd0)) failed = 1;
   deassign array2['bx];
+`endif
 
 `ifndef VLOG95
   array3[1] = 0.0;
@@ -61,10 +70,12 @@ initial begin
   array4[0] = 0.0;
   array4[1] = 0.0;
 
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
   assign array3[0] = 1.0;
   #1 $display("array = %0g %0g", array3[2], array3[1]);
   if ((array3[1] != 0.0) || (array3[2] != 0.0)) failed = 1;
   deassign array3[0];
+`endif
 
   assign array3[1] = 1.0;
   #1 $display("array = %0g %0g", array3[2], array3[1]);
@@ -80,6 +91,7 @@ initial begin
   if ((array3[1] != 0.0) || (array3[2] != 2.0)) failed = 1;
   deassign array3[2];
 
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
   assign array3[3] = var2;
   #1 $display("array = %0g %0g", array3[2], array3[1]);
   if ((array3[1] != 0.0) || (array3[2] != 0.0)) failed = 1;
@@ -89,6 +101,7 @@ initial begin
   #1 $display("array = %0g %0g", array4[1], array4[0]);
   if ((array4[0] != 0.0) || (array4[1] != 0.0)) failed = 1;
   deassign array4['bx];
+`endif
 `endif
 
   if (failed)

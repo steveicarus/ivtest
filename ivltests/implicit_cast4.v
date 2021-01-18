@@ -1,5 +1,10 @@
 // Test implicit casts during procedural continuous (net) assignments.
 
+`ifdef __ICARUS__
+  `define SUPPORT_REAL_NETS_IN_IVTEST
+  `define SUPPORT_TWO_STATE_NETS_IN_IVTEST
+`endif
+
 module implicit_cast();
 
 real                  src_r;
@@ -13,9 +18,11 @@ logic signed    [7:0] src_s4;
 logic unsigned  [7:0] src_ux;
 logic signed    [7:0] src_sx;
 
-`ifdef __ICARUS__
+`ifdef SUPPORT_REAL_NETS_IN_IVTEST
 wire real                  dst_r;
+`endif
 
+`ifdef SUPPORT_TWO_STATE_NETS_IN_IVTEST
 wire bit   unsigned  [3:0] dst_u2s;
 wire bit   signed    [3:0] dst_s2s;
 
@@ -41,7 +48,7 @@ initial begin
   src_ux = 8'bx0z00111;
   src_sx = 8'bx0z00111;
 
-`ifdef __ICARUS__
+`ifdef SUPPORT_REAL_NETS_IN_IVTEST
   $display("cast to real");
   force dst_r = src_r;  $display("%g", dst_r); if (dst_r != -7.0) failed = 1;
   force dst_r = src_u2; $display("%g", dst_r); if (dst_r !=  7.0) failed = 1;
@@ -50,7 +57,9 @@ initial begin
   force dst_r = src_s4; $display("%g", dst_r); if (dst_r != -7.0) failed = 1;
   force dst_r = src_ux; $display("%g", dst_r); if (dst_r !=  7.0) failed = 1;
   force dst_r = src_sx; $display("%g", dst_r); if (dst_r !=  7.0) failed = 1;
+`endif
 
+`ifdef SUPPORT_TWO_STATE_NETS_IN_IVTEST
   $display("cast to small unsigned bit");
   force dst_u2s = src_r;  $display("%d", dst_u2s); if (dst_u2s !== 4'd9) failed = 1;
   force dst_u2s = src_u2; $display("%d", dst_u2s); if (dst_u2s !== 4'd7) failed = 1;
@@ -87,6 +96,7 @@ initial begin
   force dst_s2l = src_ux; $display("%b", dst_s2l); if (dst_s2l !== 12'b000000000111) failed = 1;
   force dst_s2l = src_sx; $display("%b", dst_s2l); if (dst_s2l !== 12'b000000000111) failed = 1;
 `endif
+
   $display("cast to small unsigned logic");
   force dst_u4s = src_r;  $display("%d", dst_u4s); if (dst_u4s !== 4'd9) failed = 1;
   force dst_u4s = src_u2; $display("%d", dst_u4s); if (dst_u4s !== 4'd7) failed = 1;

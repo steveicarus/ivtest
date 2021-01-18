@@ -1,5 +1,10 @@
 // Test implicit casts during continuous assignments.
 
+`ifdef __ICARUS__
+  `define SUPPORT_REAL_NETS_IN_IVTEST
+  `define SUPPORT_TWO_STATE_NETS_IN_IVTEST
+`endif
+
 module implicit_cast();
 
 real                  src_r;
@@ -13,7 +18,7 @@ logic signed    [7:0] src_s4;
 logic unsigned  [7:0] src_ux;
 logic signed    [7:0] src_sx;
 
-`ifdef __ICARUS__
+`ifdef SUPPORT_REAL_NETS_IN_IVTEST
 wire real                  dst1_r;
 wire real                  dst2_r;
 wire real                  dst3_r;
@@ -21,7 +26,9 @@ wire real                  dst4_r;
 wire real                  dst5_r;
 wire real                  dst6_r;
 wire real                  dst7_r;
+`endif
 
+`ifdef SUPPORT_TWO_STATE_NETS_IN_IVTEST
 wire bit   unsigned  [3:0] dst1_u2s;
 wire bit   unsigned  [3:0] dst2_u2s;
 wire bit   unsigned  [3:0] dst3_u2s;
@@ -54,6 +61,7 @@ wire bit   signed   [11:0] dst5_s2l;
 wire bit   signed   [11:0] dst6_s2l;
 wire bit   signed   [11:0] dst7_s2l;
 `endif
+
 wire logic unsigned  [3:0] dst1_u4s;
 wire logic unsigned  [3:0] dst2_u4s;
 wire logic unsigned  [3:0] dst3_u4s;
@@ -86,7 +94,7 @@ wire logic signed   [11:0] dst5_s4l;
 wire logic signed   [11:0] dst6_s4l;
 wire logic signed   [11:0] dst7_s4l;
 
-`ifdef __ICARUS__
+`ifdef SUPPORT_REAL_NETS_IN_IVTEST
 assign dst1_r = src_r;
 assign dst2_r = src_u4;
 assign dst3_r = src_s4;
@@ -94,7 +102,9 @@ assign dst4_r = src_u2;
 assign dst5_r = src_s2;
 assign dst6_r = src_ux;
 assign dst7_r = src_sx;
+`endif
 
+`ifdef SUPPORT_TWO_STATE_NETS_IN_IVTEST
 assign dst1_u2s = src_r;
 assign dst2_u2s = src_u4;
 assign dst3_u2s = src_s4;
@@ -127,6 +137,7 @@ assign dst5_s2l = src_s2;
 assign dst6_s2l = src_ux;
 assign dst7_s2l = src_sx;
 `endif
+
 assign dst1_u4s = src_r;
 assign dst2_u4s = src_u4;
 assign dst3_u4s = src_s4;
@@ -174,7 +185,7 @@ initial begin
 
   #1;
 
-`ifdef __ICARUS__
+`ifdef SUPPORT_REAL_NETS_IN_IVTEST
   $display("cast to real");
   $display("%g", dst1_r); if (dst1_r != -7.0) failed = 1;
   $display("%g", dst2_r); if (dst2_r !=  7.0) failed = 1;
@@ -183,7 +194,9 @@ initial begin
   $display("%g", dst5_r); if (dst5_r != -7.0) failed = 1;
   $display("%g", dst6_r); if (dst6_r !=  7.0) failed = 1;
   $display("%g", dst7_r); if (dst7_r !=  7.0) failed = 1;
+`endif
 
+`ifdef SUPPORT_TWO_STATE_NETS_IN_IVTEST
   $display("cast to small unsigned bit");
   $display("%d", dst1_u2s); if (dst1_u2s !== 4'd9) failed = 1;
   $display("%d", dst2_u2s); if (dst2_u2s !== 4'd7) failed = 1;
@@ -220,6 +233,7 @@ initial begin
   $display("%b", dst6_s2l); if (dst6_s2l !== 12'b000000000111) failed = 1;
   $display("%b", dst7_s2l); if (dst7_s2l !== 12'b000000000111) failed = 1;
 `endif
+
   $display("cast to small unsigned logic");
   $display("%d", dst1_u4s); if (dst1_u4s !== 4'd9) failed = 1;
   $display("%d", dst2_u4s); if (dst2_u4s !== 4'd7) failed = 1;
