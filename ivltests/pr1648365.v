@@ -2,6 +2,11 @@ module ivitest;
 
 reg clock_1x, clock_2x;
 
+reg [31:1] w [0:1];
+
+wire [31:1] w0 = w[0];
+wire [31:1] w1 = w[1];
+
 initial begin
     #0; //avoid time-0 race
     clock_1x = 0;
@@ -30,10 +35,6 @@ end
 
 
 reg [31:1] v;
-reg [31:1] w [0:1];
-
-wire [31:1] w0 = w[0];
-wire [31:1] w1 = w[1];
 
 always @(posedge clock_2x) begin
     v <= 'h99999999;

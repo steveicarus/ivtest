@@ -1,6 +1,11 @@
 module tern;
 
 reg [13:0] fdbk_err_wide;
+
+// arithmetic saturation from 14 bits down to 13 bits, and drop lsb
+wire [11:0] fdbk_err = ((fdbk_err_wide[13:12]==2'b00) | (fdbk_err_wide[13:12]==2'b11)) ?
+       fdbk_err_wide[12:1] : {fdbk_err_wide[13],{11{~fdbk_err_wide[13]}}};
+
 initial begin
 	#10;
 	$display(fdbk_err_wide, fdbk_err);
@@ -19,9 +24,5 @@ initial begin
 	#10;
 	$finish(0);
 end
-
-// arithmetic saturation from 14 bits down to 13 bits, and drop lsb
-wire [11:0] fdbk_err = ((fdbk_err_wide[13:12]==2'b00) | (fdbk_err_wide[13:12]==2'b11)) ?
-       fdbk_err_wide[12:1] : {fdbk_err_wide[13],{11{~fdbk_err_wide[13]}}};
 
 endmodule

@@ -1,4 +1,9 @@
 `begin_keywords "1364-2005"
+
+`ifdef __ICARUS__
+  `define SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
+`endif
+
 module top;
   reg pass = 1'b1;
 //  reg [3:0] var = 4'b1001;
@@ -8,6 +13,7 @@ module top;
   reg [5:0] big;
 
   initial begin
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
     part = var[-2 +: 4];  // should be 01xx.
     if (part !== 4'b01xx) begin
       $display("part select [1:-2] failed, expected 4'b01xx, got %b", part);
@@ -25,6 +31,7 @@ module top;
       $display("part select [4:-1] failed, expected 6'bx1001x, got %b", big);
       pass = 1'b0;
     end
+`endif
 
     if (pass) $display("PASSED");
   end

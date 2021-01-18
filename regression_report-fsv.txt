@@ -8,9 +8,6 @@ Running compiler/VVP tests for Icarus Verilog version: 12 (force SV).
            check_constant_3: Passed.
                   function4: Passed.
                   pr1963962: Passed.
-                 pr2590274a: Passed.
-                 pr2590274b: Passed.
-                 pr2590274c: Passed.
                   pr3015421: Passed - CE.
                    resetall: Passed.
                     scope2b: Passed.
@@ -31,6 +28,9 @@ Running compiler/VVP tests for Icarus Verilog version: 12 (force SV).
                   memsynth7: Passed.
                   memsynth9: Passed.
                   mix_reset: Passed.
+                 pr2590274a: Not Implemented.
+                 pr2590274b: Not Implemented.
+                 pr2590274c: Not Implemented.
                       case1: Passed.
                       case2: Passed.
                 casex_synth: Passed.
@@ -2526,4 +2526,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2524, Passed=2517, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2524, Passed=2514, Failed=7, Not Implemented=3, Expected Fail=0

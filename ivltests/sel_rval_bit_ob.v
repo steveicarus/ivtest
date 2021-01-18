@@ -2,10 +2,16 @@
 // Module to test the messages/results for out of bound R-value constant
 // bit selects.
 
+`ifdef __ICARUS__
+  `define SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
+`endif
+
 module top;
   reg pass;
   reg big_param;
   reg bit;
+
+  integer idx;
 
   parameter pvar0 = 0;
   parameter pvar1 = 1;
@@ -41,7 +47,8 @@ module top;
     // modify our after check for unsized parameters to work (pass)
     // with a larger constant.
     big_param = 1'b1;
-    if (pvar0[32] === 1'bx) big_param = 1'b0;
+    idx = 32;
+    if (pvar0[idx] === 1'bx) big_param = 1'b0;
 
     // Check a parameter with default size equal to 0.
     bit = pvar0[31];  // At end
@@ -49,6 +56,7 @@ module top;
       $display("Failed at end bit select of a parameter (0), got %b", bit);
       pass = 1'b0;
     end
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
     bit = pvar0[32];  // May be after
     if (bit !== (big_param ? 1'b0: 1'bx)) begin
       $display("Failed after bit select of a parameter (0), got %b", bit);
@@ -69,6 +77,7 @@ module top;
       $display("Failed high-Z bit select of a parameter (0), got %b", bit);
       pass = 1'b0;
     end
+`endif
 
     // Check a parameter with default size equal to 1.
     bit = pvar1[31];  // At end
@@ -76,6 +85,7 @@ module top;
       $display("Failed at end bit select of a parameter (1), got %b", bit);
       pass = 1'b0;
     end
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
     bit = pvar1[32];  // May be after
     if (bit !== (big_param ? 1'b0: 1'bx)) begin
       $display("Failed after bit select of a parameter (1), got %b", bit);
@@ -96,6 +106,7 @@ module top;
       $display("Failed high-Z bit select of a parameter (1), got %b", bit);
       pass = 1'b0;
     end
+`endif
 
     // Check a parameter with default size equal to -1.
     bit = pvar2[31];  // At end
@@ -103,6 +114,7 @@ module top;
       $display("Failed at end bit select of a parameter (-1), got %b", bit);
       pass = 1'b0;
     end
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
     bit = pvar2[32];  // May be after
     if (bit !== (big_param ? 1'b1: 1'bx)) begin
       $display("Failed after bit select of a parameter (-1), got %b", bit);
@@ -123,8 +135,10 @@ module top;
       $display("Failed high-Z bit select of a parameter (-1), got %b", bit);
       pass = 1'b0;
     end
+`endif
 
     // Check a parameter with size four from the value.
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
     bit = pvar3[4];  // After
     if (bit !== 1'bx) begin
       $display("Failed after bit select of a parameter (3), got %b", bit);
@@ -145,8 +159,10 @@ module top;
       $display("Failed high-Z bit select of a parameter (3), got %b", bit);
       pass = 1'b0;
     end
+`endif
 
     // Check a parameter with size four from the range [4:1].
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
     bit = pvar4[5];  // After
     if (bit !== 1'bx) begin
       $display("Failed after bit select of a parameter (4), got %b", bit);
@@ -167,8 +183,10 @@ module top;
       $display("Failed high-Z bit select of a parameter (4), got %b", bit);
       pass = 1'b0;
     end
+`endif
 
     // Check a parameter with size four from the range [1:4].
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
     bit = pvar5[0];  // After
     if (bit !== 1'bx) begin
       $display("Failed after bit select of a parameter (5), got %b", bit);
@@ -189,9 +207,11 @@ module top;
       $display("Failed high-Z bit select of a parameter (5), got %b", bit);
       pass = 1'b0;
     end
+`endif
 
 
     // Check a register with range [4:1].
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
     bit = rvar[5];  // After
     if (bit !== 1'bx) begin
       $display("Failed after bit select of a register, got %b", bit);
@@ -212,8 +232,10 @@ module top;
       $display("Failed high-Z bit select of a register, got %b", bit);
       pass = 1'b0;
     end
+`endif
 
     // Check a register with range [1:4].
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
     bit = rvar2[0];  // After
     if (bit !== 1'bx) begin
       $display("Failed after bit select of a register (2), got %b", bit);
@@ -234,9 +256,11 @@ module top;
       $display("Failed high-Z bit select of a register (2), got %b", bit);
       pass = 1'b0;
     end
+`endif
 
 
     // Check an array word with range [4:1].
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
     bit = ravar[1][5];  // After
     if (bit !== 1'bx) begin
       $display("Failed after bit select of an array word, got %b", bit);
@@ -257,8 +281,10 @@ module top;
       $display("Failed high-Z bit select of an array word, got %b", bit);
       pass = 1'b0;
     end
+`endif
 
     // Check an array word with range [1:4].
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
     bit = ravar2[1][0];  // After
     if (bit !== 1'bx) begin
       $display("Failed after bit select of an array word (2), got %b", bit);
@@ -279,9 +305,11 @@ module top;
       $display("Failed high-Z bit select of an array word (2), got %b", bit);
       pass = 1'b0;
     end
+`endif
 
 
     // Check a wire with range [4:1].
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
     bit = wvar[5];  // After
     if (bit !== 1'bx) begin
       $display("Failed after bit select of a wire, got %b", bit);
@@ -302,8 +330,10 @@ module top;
       $display("Failed high-Z bit select of a wire, got %b", bit);
       pass = 1'b0;
     end
+`endif
 
     // Check a wire with range [1:4].
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
     bit = wvar2[0];  // After
     if (bit !== 1'bx) begin
       $display("Failed after bit select of a wire (2), got %b", bit);
@@ -324,9 +354,11 @@ module top;
       $display("Failed high-Z bit select of a wire (2), got %b", bit);
       pass = 1'b0;
     end
+`endif
 
 
     // Check a wire array word with range [4:1].
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
     bit = wavar[1][5];  // After
     if (bit !== 1'bx) begin
       $display("Failed after bit select of a wire array word, got %b", bit);
@@ -347,8 +379,10 @@ module top;
       $display("Failed high-Z bit select of a wire array word, got %b", bit);
       pass = 1'b0;
     end
+`endif
 
     // Check a wire array word with range [1:4].
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
     bit = wavar2[1][0];  // After
     if (bit !== 1'bx) begin
       $display("Failed after bit select of a wire array word (2), got %b", bit);
@@ -372,6 +406,7 @@ module top;
                bit);
       pass = 1'b0;
     end
+`endif
 
     if (pass) $display("PASSED");
   end

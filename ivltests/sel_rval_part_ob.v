@@ -1,9 +1,14 @@
 // Module to test the messages for out of bound R-value part selects.
 
+`ifdef __ICARUS__
+  `define SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
+`endif
+
 module top;
   reg pass;
   reg big_param;
   reg [1:0] part;
+  integer idx;
 
   parameter pvar0 = 0;
   parameter pvar1 = 1;
@@ -39,7 +44,8 @@ module top;
     // modify our after check for unsized parameters to work (pass)
     // with a larger constant.
     big_param = 1'b1;
-    if (pvar0[32] === 1'bx) big_param = 1'b0;
+    idx = 32;
+    if (pvar0[idx] === 1'bx) big_param = 1'b0;
 
     // Check a parameter with default size equal to 0.
     part = pvar0[31:30];  // At end
@@ -47,6 +53,7 @@ module top;
       $display("Failed at end part select of a parameter (0), got %b", part);
       pass = 1'b0;
     end
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
     part = pvar0[33:32];  // May be after all
     if (part !== (big_param ? 2'b00: 2'bxx)) begin
       $display("Failed after part select of a parameter (0), got %b", part);
@@ -93,6 +100,7 @@ module top;
                part);
       pass = 1'b0;
     end
+`endif
 
     // Check a parameter with default size equal to 1.
     part = pvar1[31:30];  // At end
@@ -100,6 +108,7 @@ module top;
       $display("Failed at end part select of a parameter (1), got %b", part);
       pass = 1'b0;
     end
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
     part = pvar1[33:32];  // May be after all
     if (part !== (big_param ? 2'b00: 2'bxx)) begin
       $display("Failed after part select of a parameter (1), got %b", part);
@@ -146,6 +155,7 @@ module top;
                part);
       pass = 1'b0;
     end
+`endif
 
     // Check a parameter with default size equal to -1.
     part = pvar2[31:30];  // At end
@@ -153,6 +163,7 @@ module top;
       $display("Failed at end part select of a parameter (2), got %b", part);
       pass = 1'b0;
     end
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
     part = pvar2[33:32];  // May be after all
     if (part !== (big_param ? 2'b11: 2'bxx)) begin
       $display("Failed after part select of a parameter (2), got %b", part);
@@ -199,8 +210,10 @@ module top;
                part);
       pass = 1'b0;
     end
+`endif
 
     // Check a parameter with size four from the value.
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
     part = pvar3[5:4];  // After all
     if (part !== 2'bxx) begin
       $display("Failed after part select of a parameter (3), got %b", part);
@@ -247,8 +260,10 @@ module top;
                part);
       pass = 1'b0;
     end
+`endif
 
     // Check a parameter with size four from the range [4:1].
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
     part = pvar4[6:5];  // After all
     if (part !== 2'bxx) begin
       $display("Failed after part select of a parameter (4), got %b", part);
@@ -295,8 +310,10 @@ module top;
                part);
       pass = 1'b0;
     end
+`endif
 
     // Check a parameter with size four from the range [1:4].
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
     part = pvar5[-1:0];  // After all
     if (part !== 2'bxx) begin
       $display("Failed after part select of a parameter (5), got %b", part);
@@ -343,9 +360,11 @@ module top;
                part);
       pass = 1'b0;
     end
+`endif
 
 
     // Check a register with range [4:1].
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
     part = rvar[6:5];  // After all
     if (part !== 2'bxx) begin
       $display("Failed after part select of a register, got %b", part);
@@ -386,8 +405,10 @@ module top;
       $display("Failed high-Z 2nd part select of a register, got %b", part);
       pass = 1'b0;
     end
+`endif
 
     // Check a register with range [1:4].
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
     part = rvar2[-1:0];  // After all
     if (part !== 2'bxx) begin
       $display("Failed after part select of a register (2), got %b", part);
@@ -432,9 +453,11 @@ module top;
       $display("Failed high-Z 2nd part select of a register (2), got %b", part);
       pass = 1'b0;
     end
+`endif
 
 
     // Check an array word with range [4:1].
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
     part = ravar[1][6:5];  // After all
     if (part !== 2'bxx) begin
       $display("Failed after part select of an array word, got %b", part);
@@ -479,8 +502,10 @@ module top;
       $display("Failed high-Z 2nd part select of an array word, got %b", part);
       pass = 1'b0;
     end
+`endif
 
     // Check an array word with range [1:4].
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
     part = ravar2[1][-1:0];  // After all
     if (part !== 2'bxx) begin
       $display("Failed after part select of an array word (2), got %b", part);
@@ -527,9 +552,11 @@ module top;
                part);
       pass = 1'b0;
     end
+`endif
 
 
     // Check a wire with range [4:1].
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
     part = wvar[6:5];  // After all
     if (part !== 2'bxx) begin
       $display("Failed after part select of a wire, got %b", part);
@@ -570,8 +597,10 @@ module top;
       $display("Failed high-Z 2nd part select of a wire, got %b", part);
       pass = 1'b0;
     end
+`endif
 
     // Check a wire with range [1:4].
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
     part = wvar2[-1:0];  // After all
     if (part !== 2'bxx) begin
       $display("Failed after part select of a wire (2), got %b", part);
@@ -612,9 +641,11 @@ module top;
       $display("Failed high-Z 2nd part select of a wire (2), got %b", part);
       pass = 1'b0;
     end
+`endif
 
 
     // Check a wire array word with range [4:1].
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
     part = wavar[1][6:5];  // After all
     if (part !== 2'bxx) begin
       $display("Failed after part select of a wire array word, got %b", part);
@@ -661,8 +692,10 @@ module top;
                part);
       pass = 1'b0;
     end
+`endif
 
     // Check a wire array word with range [1:4].
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
     part = wavar2[1][-1:0];  // After all
     if (part !== 2'bxx) begin
       $display("Failed after part select of a wire array word (2), got %b",
@@ -711,6 +744,7 @@ module top;
                part);
       pass = 1'b0;
     end
+`endif
 
     if (pass) $display("PASSED");
   end
