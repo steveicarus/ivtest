@@ -298,6 +298,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
                    br_gh368: Passed - CE.
                    br_gh412: Passed - CE.
                    br_gh414: Passed - CE.
+                   br_gh436: Passed - CE.
               br_mw20200501: Passed - CE.
            disable_fork_cmd: Passed - CE.
                   enum_next: Passed - CE.
@@ -2526,4 +2527,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2524, Passed=2484, Failed=5, Not Implemented=3, Expected Fail=32
+  Total=2525, Passed=2485, Failed=5, Not Implemented=3, Expected Fail=32
