@@ -2307,6 +2307,7 @@ test_mos_strength_reduction: Passed.
                   br_gh390b: Passed.
                    br_gh412: Passed.
                    br_gh414: Passed.
+                   br_gh436: Passed.
                    br_gh451: Passed.
                    br_gh453: Passed.
                    br_gh460: Passed.
@@ -2526,4 +2527,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2524, Passed=2517, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2525, Passed=2518, Failed=7, Not Implemented=0, Expected Fail=0
