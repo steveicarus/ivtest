@@ -1560,7 +1560,6 @@ supply1			normal			ivltests
 supply2			normal			ivltests
 switch_primitives	normal			ivltests gold=switch_primitives.gold
 sys_func_task_error	RE			ivltests gold=sys_func_task_error.gold
-sysargs			normal			ivltests # VVP postponed $syscall argument lookup
 talu			normal			ivltests
 task-scope		normal			ivltests
 task3.14A		normal			ivltests
