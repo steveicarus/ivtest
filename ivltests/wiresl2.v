@@ -14,7 +14,7 @@ In vvm, runtime has trouble with $display
 
 $ iverilog tshl.v
 $ ./a.out
-out=01Аляїa^[[?1;2c$
+out=01<some binary characters>
 
 (looks like the  correct output "out=01" followed by some
  random memory garbage.)
