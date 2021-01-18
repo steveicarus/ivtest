@@ -175,6 +175,9 @@ Running compiler/VVP tests for Icarus Verilog version: 12 (force SV).
             real_wire_array: Passed.
         real_wire_force_rel: Passed.
                       tern8: Passed.
+                   br_gh99e: Passed.
+                    pull371: Passed.
+               sv-2val-nets: Passed.
                   pr2476430: Passed.
                    br_gh377: Passed.
               cmdline_parm1: Passed.
@@ -1895,7 +1898,6 @@ test_mos_strength_reduction: Passed.
                    br_gh72a: Passed.
                    br_gh72b: Passed.
               br_gh72b_fail: Passed - CE.
-                   br_gh99e: Passed.
                   br_gh104a: Passed.
                   br_gh104b: Passed.
                   br_gh105a: Passed.
@@ -2127,7 +2129,6 @@ test_mos_strength_reduction: Passed.
        struct_packed_array2: Passed.
      struct_packed_sysfunct: Passed.
   struct_packed_write_read2: Passed.
-               sv-2val-nets: Passed.
                sv-constants: Passed.
    sv_array_assign_pattern2: Passed.
             sv_cast_integer: Passed.
@@ -2303,7 +2304,6 @@ test_mos_strength_reduction: Passed.
               wild_cmp_err2: Passed - CE.
                      gh161a: Passed.
                      gh161b: Passed.
-                    pull371: Passed.
                    pull371b: Passed.
                    br_gh175: Passed.
                    br_gh307: Passed.

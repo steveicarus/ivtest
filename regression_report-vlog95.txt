@@ -847,6 +847,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
        real_concat_invalid1: Passed - CE.
                real_op_fail: Passed - CE.
         real_select_invalid: Passed - CE.
+               sv-2val-nets: Passed.
                   pr2476430: Passed.
               cmdline_parm1: Passed.
                  array_dump: Passed.
@@ -2336,7 +2337,6 @@ test_mos_strength_reduction: Passed.
                     struct9: Passed.
      struct_packed_sysfunct: Passed.
   struct_packed_write_read2: Passed.
-               sv-2val-nets: Passed.
                sv-constants: Passed.
         sv_deferred_assert1: Passed - CE.
         sv_deferred_assert2: Passed - CE.

@@ -1,3 +1,7 @@
+`ifdef __ICARUS__
+  `define SUPPORT_TWO_STATE_NETS_IN_IVTEST
+`endif
+
 module test();
 
 int x2;
@@ -6,7 +10,11 @@ int z2;
 function int y2(int x);
 endfunction
 
+`ifdef SUPPORT_TWO_STATE_NETS_IN_IVTEST
 wire int w2 = y2(x2);
+`else
+wire integer w2 = 0;
+`endif
 
 integer x4;
 integer z4;

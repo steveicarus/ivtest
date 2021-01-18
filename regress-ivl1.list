@@ -255,6 +255,11 @@ real_wire_array		normal			ivltests
 real_wire_force_rel	normal			ivltests
 tern8			normal			ivltests
 
+# Two-state wires
+br_gh99e		normal,-g2009		ivltests
+pull371			normal,-g2012		ivltests
+sv-2val-nets		normal,-g2009		ivltests
+
 # Left aligned formats
 pr2476430		normal			ivltests
 
