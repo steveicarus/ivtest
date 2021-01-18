@@ -10,6 +10,7 @@ module dcomp;
    parameter clk_period = 400;
    parameter phoffset = 4;
    time      compdelay;
+   reg       internal_Clk, Clk;
 
    initial begin
       $monitor("%b %b %t %t %t", internal_Clk, Clk, phdelay, compdelay, $time);
@@ -20,7 +21,6 @@ module dcomp;
        $finish(0);
    end // initial begin
 
-   reg       internal_Clk, Clk;
    initial internal_Clk <= 0;
    always #(clk_period/2) internal_Clk = ~internal_Clk;
 

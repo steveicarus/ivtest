@@ -5,6 +5,10 @@ module MULT32;
     reg [1:0] state ;
     assign {X31, X00} = state ;
 
+    ADDERXY XX1 (VSS, N1110, VSS, N2166, X00, X31);	/* This one! */
+
+    ADDERXY XX127 (N1076, N1044, N2131, N2100, VSS, VSS);
+
     initial
 	begin
 	state = 0 ;
@@ -15,10 +19,6 @@ module MULT32;
 	#10 state = 0 ;
 	#10 $finish(0);
 	end
-
-    ADDERXY XX1 (VSS, N1110, VSS, N2166, X00, X31);	/* This one! */
-
-    ADDERXY XX127 (N1076, N1044, N2131, N2100, VSS, VSS);
 
 endmodule
 

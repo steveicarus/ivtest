@@ -4,6 +4,9 @@ package test_pkg;
   endclass : uvm_void
 
   class uvm_object extends uvm_void;
+
+    string m_name;
+
     function new (string name = "uvm_object");
        $display("uvm_object::new(%s)", name); // XXXX
        m_name = name;
@@ -12,8 +15,6 @@ package test_pkg;
     virtual function void print ();
       $display ("uvm_object::Print: m_name=%s", m_name);
     endfunction : print
-
-     string m_name;
 
   endclass : uvm_object
 
