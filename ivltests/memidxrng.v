@@ -1,3 +1,7 @@
+`ifdef __ICARUS__
+  `define SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
+`endif
+
 /*
  * Copyright (c) 2001 Stephan Boettcher <stephan@nevis.columbia.edu>
  *
@@ -35,6 +39,7 @@ module memidxrng;
 	#1;
 	for (i=0; i<17; i=i+1)
 	  $display("mem[%d] = %b \%b", i, mem[i], ^i);
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
 	if (mem[13] !== 1'bx)
 	  begin
 	     $display("FAILED: mem[13] = %b, expect x", mem[14]);
@@ -45,6 +50,7 @@ module memidxrng;
 	     $display("FAILED: mem[1] = %b, expect x", mem[1]);
 	     errs = errs + 1;
 	  end
+`endif
 	if (errs===0)
 	  $display("PASSED");
 	$finish;

@@ -1,3 +1,7 @@
+`ifdef __ICARUS__
+  `define SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
+`endif
+
 // Test array variables inside a constant function
 module constfunc14();
 
@@ -17,8 +21,13 @@ function [7:0] concat2(input [7:0] value);
 reg [3:0] tmp[1:2];
 
 begin
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
   {tmp[1], tmp[3]} = {value[3:0], value[7:4]};
   {concat2[3:0], concat2[7:4]} = {tmp[3], tmp[1]};
+`else
+  {tmp[1]} = {value[3:0]};
+  {concat2[3:0], concat2[7:4]} = {4'bxxxx, tmp[1]};
+`endif
 end
 
 endfunction
@@ -28,8 +37,13 @@ function [7:0] concat3(input [7:0] value);
 reg [3:0] tmp[1:2];
 
 begin
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
   {tmp['bx], tmp[1]} = {value[3:0], value[7:4]};
   {concat3[3:0], concat3[7:4]} = {tmp['bx], tmp[1]};
+`else
+  {tmp[1]} = {value[7:4]};
+  {concat3[3:0], concat3[7:4]} = {4'bxxxx, tmp[1]};
+`endif
 end
 
 endfunction
