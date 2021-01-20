@@ -125,8 +125,8 @@ br1003b			normal,-g2009		ivltests gold=br1003b.gold
 br1003c			normal,-g2009		ivltests gold=br1003c.gold
 br1003d			normal,-g2009		ivltests gold=br1003d.gold
 br1004			normal,-g2009		ivltests
-br1005			CE,-g2009		ivltests gold=br1005.gold
-br1015b			CE,-g2009		ivltests
+br1005			normal,-g2009		ivltests gold=br1005.gold
+br1015b			normal,-g2009		ivltests
 br1025			normal,-g2009		ivltests
 br1027b			normal,-g2009		ivltests gold=br1027b.gold
 br1027d			normal,-g2009		ivltests gold=br1027d.gold
@@ -148,7 +148,7 @@ br_gh112e		normal,-g2009		ivltests
 br_gh112f		normal,-g2009		ivltests
 br_gh129		normal,-g2009		ivltests
 br_gh130a		CE,-g2009		ivltests
-br_gh130b		CE,-g2009		ivltests
+br_gh130b		normal,-g2009		ivltests
 br_gh165		normal,-g2009		ivltests gold=br_gh165.gold
 br_gh164a		normal,-g2009		ivltests
 br_gh164b		normal,-g2009		ivltests
@@ -184,7 +184,7 @@ br_gh374		normal,-g2009		ivltests gold=br_gh374.gold
 br_gh386a		normal,-g2009		ivltests
 br_gh386b		normal,-g2009		ivltests
 br_gh386c		CE,-g2009		ivltests
-br_gh386d		CE,-g2009		ivltests
+br_gh386d		normal,-g2009		ivltests
 br_gh388		normal,-g2009		ivltests gold=br_gh388.gold
 br_gh391		normal,-g2009		ivltests gold=br_gh391.gold
 br_gh411		normal,-g2009		ivltests
@@ -196,7 +196,7 @@ br_gh443		normal,-g2009		ivltests
 br_gh445		normal,-g2009		ivltests
 br_gh461		normal,-g2009		ivltests
 br_gh477		normal,-g2009		ivltests
-br_ml20150315b		CE,-g2009		ivltests
+br_ml20150315b		normal,-g2009		ivltests
 br_ml20171017		normal,-g2009		ivltests
 br_ml20180227		CE,-g2009		ivltests
 br_ml20180309a		normal,-g2009		ivltests
@@ -412,10 +412,10 @@ sv_darray_decl_assign	normal,-g2009		ivltests
 sv_darray_function	normal,-g2009		ivltests
 sv_darray_signed	normal,-g2009		ivltests
 sv_darray_word_size	normal,-g2005-sv	ivltests
-sv_deferred_assert1	CE,-g2009		ivltests gold=sv_deferred_assert1.gold
-sv_deferred_assert2	CE,-g2009		ivltests gold=sv_deferred_assert2.gold
-sv_deferred_assume1	CE,-g2009		ivltests gold=sv_deferred_assume1.gold
-sv_deferred_assume2	CE,-g2009		ivltests gold=sv_deferred_assume2.gold
+sv_deferred_assert1	normal,-g2009		ivltests gold=sv_deferred_assert1.gold
+sv_deferred_assert2	normal,-g2009		ivltests gold=sv_deferred_assert2.gold
+sv_deferred_assume1	normal,-g2009		ivltests gold=sv_deferred_assume1.gold
+sv_deferred_assume2	normal,-g2009		ivltests gold=sv_deferred_assume2.gold
 sv_end_label		normal,-g2005-sv	ivltests
 sv_end_label_fail	CE,-g2009		ivltests gold=sv_end_label_fail.gold
 sv_end_labels		normal,-g2009		ivltests

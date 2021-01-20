@@ -2,7 +2,7 @@
 # Icarus Verilog v11.
 
 #
-# Copyright (c) 1999-2015 Guy Hutchison (ghutchis@pacbell.net)
+# Copyright (c) 1999-2021 Guy Hutchison (ghutchis@pacbell.net)
 #
 #    This source code is free software; you can redistribute it
 #    and/or modify it in source code form under the terms of the GNU
@@ -84,18 +84,25 @@ case2			normal		ivltests
 casex_synth		normal		ivltests
 
 # These tests are not implemented for v11
+array_lval_select3b	NI		ivltests
+array_lval_select4b	NI		ivltests
 analog1			NI		ivltests
 analog2			NI		ivltests
 br605a			NI		ivltests
 br605b			NI		ivltests
 br971			NI		ivltests
+br1005			NI		ivltests
+br1015a			NI		ivltests
+br1015b			NI		ivltests
 br_gh72b_fail		NI		ivltests
+br_gh130b		NI		ivltests
 br_gh175		NI		ivltests
 br_gh307		NI		ivltests
 br_gh383a		NI		ivltests
 br_gh383b		NI		ivltests
 br_gh383c		NI		ivltests
 br_gh383d		NI		ivltests
+br_gh386d		NI		ivltests
 br_gh390a		NI		ivltests
 br_gh390b		NI		ivltests
 br_gh412		NI		ivltests
@@ -103,9 +110,18 @@ br_gh414		NI		ivltests
 br_gh436		NI		ivltests
 br_gh453		NI		ivltests
 br_gh460		NI		ivltests
+br_ml20150315b		NI		ivltests
 edge			NI		ivltests
 fileline2		NI		ivltests
 ifdef_fail		NI		ivltests
 scalar_vector		NI		ivltests
 string12		NI		ivltests
+sv_deferred_assert1	NI		ivltests
+sv_deferred_assert2	NI		ivltests
+sv_deferred_assume1	NI		ivltests
+sv_deferred_assume2	NI		ivltests
+undef_lval_select3b	NI		ivltests
+undef_lval_select3c	NI		ivltests
+undef_lval_select4b	NI		ivltests
+undef_lval_select4c	NI		ivltests
 vhdl_multidim_array	NI		ivltests

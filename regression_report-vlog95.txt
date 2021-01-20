@@ -1006,7 +1006,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
                      br1000: Passed.
                      br1001: Passed.
                      br1006: Passed.
-                    br1015a: Passed - CE.
+                    br1015a: ==> Failed - running iverilog.
                      br1027: Passed.
                     br1027a: Passed - CE.
                     br1027c: Passed - CE.
@@ -2143,11 +2143,11 @@ test_mos_strength_reduction: Passed.
           undef_lval_select: Passed.
          undef_lval_select2: Passed.
         undef_lval_select3a: Passed.
-        undef_lval_select3b: Passed - CE.
-        undef_lval_select3c: Passed - CE.
+        undef_lval_select3b: ==> Failed - running iverilog.
+        undef_lval_select3c: ==> Failed - running iverilog.
         undef_lval_select4a: Passed.
-        undef_lval_select4b: Passed - CE.
-        undef_lval_select4c: Passed - CE.
+        undef_lval_select4b: ==> Failed - running iverilog.
+        undef_lval_select4c: ==> Failed - running iverilog.
          undef_lval_select5: Passed.
                     urand_r: Passed.
                    urand_r2: Passed.
@@ -2226,8 +2226,8 @@ test_mos_strength_reduction: Passed.
                       br975: Passed - CE.
                       br979: Passed.
                      br991b: Passed - CE.
-                     br1005: Passed - CE.
-                    br1015b: Passed - CE.
+                     br1005: ==> Failed - running iverilog.
+                    br1015b: ==> Failed - running iverilog.
                     br1027b: Passed.
                     br1027d: Passed.
                     br1027f: Passed.
@@ -2241,7 +2241,7 @@ test_mos_strength_reduction: Passed.
                   br_gh112a: Passed.
                   br_gh112b: Passed.
                   br_gh130a: Passed - CE.
-                  br_gh130b: Passed - CE.
+                  br_gh130b: ==> Failed - running iverilog.
                    br_gh220: Passed.
                    br_gh224: Passed.
                    br_gh226: Passed.
@@ -2258,11 +2258,11 @@ test_mos_strength_reduction: Passed.
                   br_gh386a: Passed.
                   br_gh386b: Passed.
                   br_gh386c: Passed - CE.
-                  br_gh386d: Passed - CE.
+                  br_gh386d: ==> Failed - running iverilog.
                    br_gh411: Passed.
                    br_gh418: Passed.
                    br_gh440: Passed - CE.
-             br_ml20150315b: Passed - CE.
+             br_ml20150315b: ==> Failed - running iverilog.
               br_ml20180227: Passed - CE.
              br_ml20181012a: Passed - CE.
              br_ml20181012b: Passed - CE.
@@ -2339,10 +2339,10 @@ test_mos_strength_reduction: Passed.
      struct_packed_sysfunct: Passed.
   struct_packed_write_read2: Passed.
                sv-constants: Passed.
-        sv_deferred_assert1: Passed - CE.
-        sv_deferred_assert2: Passed - CE.
-        sv_deferred_assume1: Passed - CE.
-        sv_deferred_assume2: Passed - CE.
+        sv_deferred_assert1: ==> Failed - running iverilog.
+        sv_deferred_assert2: ==> Failed - running iverilog.
+        sv_deferred_assume1: ==> Failed - running iverilog.
+        sv_deferred_assume2: ==> Failed - running iverilog.
           sv_end_label_fail: Passed - CE.
               sv_end_labels: Passed.
           sv_end_labels_bad: Passed - CE.
@@ -2527,4 +2527,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2525, Passed=2485, Failed=5, Not Implemented=3, Expected Fail=32
+  Total=2525, Passed=2471, Failed=19, Not Implemented=3, Expected Fail=32

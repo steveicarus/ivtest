@@ -242,8 +242,8 @@ Running compiler/VVP tests for Icarus Verilog version: 12 (strict).
          array_lval_select2: Passed.
         array_lval_select3a: Passed - CE.
        array_lval_select3a-: Passed.
-        array_lval_select3b: Passed - CE.
-        array_lval_select4b: Passed - CE.
+        array_lval_select3b: ==> Failed - running iverilog.
+        array_lval_select4b: ==> Failed - running iverilog.
          array_lval_select6: Passed.
             array_packed_2d: Passed.
                array_select: Passed.
@@ -343,7 +343,7 @@ Running compiler/VVP tests for Icarus Verilog version: 12 (strict).
                      br1006: Passed.
                      br1007: Passed.
                      br1008: Passed.
-                    br1015a: Passed - CE.
+                    br1015a: ==> Failed - running iverilog.
                      br1019: Passed.
                      br1027: Passed.
                     br1027a: Passed - CE.
@@ -1751,11 +1751,11 @@ test_mos_strength_reduction: Passed.
           undef_lval_select: Passed.
          undef_lval_select2: Passed.
         undef_lval_select3a: Passed.
-        undef_lval_select3b: Passed - CE.
-        undef_lval_select3c: Passed - CE.
+        undef_lval_select3b: ==> Failed - running iverilog.
+        undef_lval_select3c: ==> Failed - running iverilog.
         undef_lval_select4a: Passed.
-        undef_lval_select4b: Passed - CE.
-        undef_lval_select4c: Passed - CE.
+        undef_lval_select4b: ==> Failed - running iverilog.
+        undef_lval_select4c: ==> Failed - running iverilog.
          undef_lval_select5: Passed.
             undefined_shift: Passed.
                       urand: Passed.
@@ -1876,8 +1876,8 @@ test_mos_strength_reduction: Passed.
                     br1003c: Passed.
                     br1003d: Passed.
                      br1004: Passed.
-                     br1005: Passed - CE.
-                    br1015b: Passed - CE.
+                     br1005: ==> Failed - running iverilog.
+                    br1015b: ==> Failed - running iverilog.
                      br1025: Passed.
                     br1027b: Passed.
                     br1027d: Passed.
@@ -1899,7 +1899,7 @@ test_mos_strength_reduction: Passed.
                   br_gh112f: Passed.
                    br_gh129: Passed.
                   br_gh130a: Passed - CE.
-                  br_gh130b: Passed - CE.
+                  br_gh130b: ==> Failed - running iverilog.
                    br_gh165: Passed.
                   br_gh164a: Passed.
                   br_gh164b: Passed.
@@ -1935,7 +1935,7 @@ test_mos_strength_reduction: Passed.
                   br_gh386a: Passed.
                   br_gh386b: Passed.
                   br_gh386c: Passed - CE.
-                  br_gh386d: Passed - CE.
+                  br_gh386d: ==> Failed - running iverilog.
                    br_gh388: Passed.
                    br_gh391: Passed.
                    br_gh411: Passed.
@@ -1947,7 +1947,7 @@ test_mos_strength_reduction: Passed.
                    br_gh445: Passed.
                    br_gh461: Passed.
                    br_gh477: Passed.
-             br_ml20150315b: Passed - CE.
+             br_ml20150315b: ==> Failed - running iverilog.
               br_ml20171017: Passed.
               br_ml20180227: Passed - CE.
              br_ml20180309a: Passed.
@@ -2163,10 +2163,10 @@ test_mos_strength_reduction: Passed.
          sv_darray_function: Passed.
            sv_darray_signed: Passed.
         sv_darray_word_size: Passed.
-        sv_deferred_assert1: Passed - CE.
-        sv_deferred_assert2: Passed - CE.
-        sv_deferred_assume1: Passed - CE.
-        sv_deferred_assume2: Passed - CE.
+        sv_deferred_assert1: ==> Failed - running iverilog.
+        sv_deferred_assert2: ==> Failed - running iverilog.
+        sv_deferred_assume1: ==> Failed - running iverilog.
+        sv_deferred_assume2: ==> Failed - running iverilog.
                sv_end_label: Passed.
           sv_end_label_fail: Passed - CE.
               sv_end_labels: Passed.
@@ -2524,4 +2524,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2522, Passed=2515, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2522, Passed=2499, Failed=23, Not Implemented=0, Expected Fail=0
