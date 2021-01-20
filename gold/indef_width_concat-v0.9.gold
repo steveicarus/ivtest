@@ -1,4 +1,0 @@
-./ivltests/indef_width_concat.v:4: error: Concatenation operand "pval" has indefinite width.
-./ivltests/indef_width_concat.v:4: error: Concatenation operand "'sd2" has indefinite width.
-./ivltests/indef_width_concat.v:4: error: Concatenation/replication may not have zero width in this context.
-3 error(s) during elaboration.

@@ -1,2 +1,0 @@
-./ivltests/uwire_fail.v:2: warning: uwire is not currently supported, converting it to a wire!
-Failed: this should be a compile time error!

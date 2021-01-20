@@ -1,2 +1,0 @@
-./ivltests/pr2877564.v:2: error: identifier `ASDF` is not a parameter in testbench.
-2 error(s) during elaboration.
