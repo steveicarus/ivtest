@@ -1,4 +1,0 @@
-$this_icarus_call_should_not_exist: This task not defined by any modules. I cannot compile it.
-$sscanf: This is a system Function, you cannot call it as a Task
-$display: This is a system Task, you cannot call it as a Function
-vsim: Program not runnable, 3 errors.
