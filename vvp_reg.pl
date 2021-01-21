@@ -4,7 +4,7 @@
 #
 # This script is based on code with the following Copyright.
 #
-# Copyright (c) 1999-2020 Guy Hutchison (ghutchis@pacbell.net)
+# Copyright (c) 1999-2021 Guy Hutchison (ghutchis@pacbell.net)
 #
 #    This source code is free software; you can redistribute it
 #    and/or modify it in source code form under the terms of the GNU
@@ -200,6 +200,10 @@ sub execute_regression {
                 $failed++;
                 next;
             }
+        } elsif ($testtype{$tname} eq "RE") {
+            &print_rpt("==> Failed - RE (no error reported).\n");
+            $failed++;
+            next;
         }
 
         if ($diff{$tname} ne "") {

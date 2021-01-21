@@ -2,7 +2,7 @@
 # the Icarus Verilog vlog95 target.
 
 #
-# Copyright (c) 1999-2018 Guy Hutchison (ghutchis@pacbell.net)
+# Copyright (c) 1999-2021 Guy Hutchison (ghutchis@pacbell.net)
 #
 #    This source code is free software; you can redistribute it
 #    and/or modify it in source code form under the terms of the GNU
@@ -195,8 +195,8 @@ sf_onehot0_fail		RE,-g2005-sv		ivltests
 array_lval_select1	normal,-DVLOG95		ivltests
 array_lval_select2	normal,-DVLOG95		ivltests
 array_lval_select3a	TE,-DVLOG95		ivltests
-array_lval_select3a-	normal,-DVLOG95		ivltests
 array_lval_select3b	CE,-DVLOG95		ivltests
+array_lval_select3c	normal,-DVLOG95		ivltests
 array_select		CE,-pallowsigned=1	ivltests
 array_select_a		CE			ivltests
 array_unpacked_sysfunct	CE,-g2005-sv	ivltests
@@ -475,9 +475,6 @@ vhdl_var_init		CE,-g2009,vhdl_var_init.vhd	ivltests
 # This refers to a signal in a parent scope that is driven by a constant,
 # which hits the unhandled out_of_scope_drive clause in emit_nexus_as_ca.
 vhdl_range_func		TE,-g2005-sv,-pallowsigned=1,ivltests/vhdl_range_func_pkg.vhd,ivltests/vhdl_range_func.vhd,	ivltests
-# The $ivlh_file_open task appears to require its output parameters to be
-# 2-state variables.
-vhdl_file_open		EF,-g2005-sv,-pallowsigned=1,ivltests/vhdl_file_open.vhd		ivltests
 # This casts a signed value to a larger size (requiring sign extension, then uses
 # the cast value in an unsigned expression with an even larger width (requiring
 # zero padding. I can't think how to do this in standard Verilog without using
@@ -675,7 +672,7 @@ fdisplay3		RE			ivltests gold=fdisplay3-vlog95.gold
 fdisplay_fail_fd	normal			ivltests gold=fdisplay_fail_fd-vlog95.gold
 fdisplay_fail_mcd	normal			ivltests gold=fdisplay_fail_mcd-vlog95.gold
 format			RE			ivltests gold=format-vlog95.gold
-fread-error		normal			ivltests gold=fread-error-vlog95.gold
+fread-error		RE			ivltests gold=fread-error-vlog95.gold
 fscanf_u_warn		normal			ivltests gold=fscanf_u_warn-vlog95.gold
 fscanf_z_warn		normal			ivltests gold=fscanf_z_warn-vlog95.gold
 localparam_type		normal			ivltests gold=parameter_type-vlog95.gold
@@ -687,9 +684,9 @@ pr1698820		normal			ivltests gold=pr1698820-vlog95.gold
 pr1819452		normal			ivltests gold=pr1819452-vlog95.gold
 pr2509349a		normal			ivltests gold=pr2509349a-vlog95.gold
 pr2509349b		normal			ivltests gold=pr2509349b-vlog95.gold
-pr2800985b		normal			ivltests gold=pr2800985b-vlog95.gold
-queue_fail		normal			ivltests gold=queue_fail-vlog95.gold
-readmem-invalid		normal			ivltests gold=readmem-invalid-vlog95.gold
+pr2800985b		RE			ivltests gold=pr2800985b-vlog95.gold
+queue_fail		RE			ivltests gold=queue_fail-vlog95.gold
+readmem-invalid		RE			ivltests gold=readmem-invalid-vlog95.gold
 # Because the lower module has a parameter it is given a unique name that
 # does not match what the code is looking for. If we can verify that there
 # is only a single instance or that the instance has the original or at
@@ -702,9 +699,9 @@ swrite			normal			ivltests gold=swrite-vlog95.gold
 sys_func_task_error	RE			ivltests gold=sys_func_task_error-vlog95.gold
 # In Verilog 95 a system function cannot be called as a task.
 sys_func_as_task	RE,-g2009		ivltests
-warn_opt_sys_tf		normal			ivltests gold=warn_opt_sys_tf-vlog95.gold
+warn_opt_sys_tf		RE			ivltests gold=warn_opt_sys_tf-vlog95.gold
 writemem-error		normal			ivltests gold=writemem-error-vlog95.gold
-writemem-invalid normal ivltests gold=writemem-invalid-vlog95.gold
+writemem-invalid	RE			ivltests gold=writemem-invalid-vlog95.gold
 
 # For Verilog 95 signed is supported as an option (-pallowsigned=1).
 array6			normal,-pallowsigned=1	ivltests
@@ -844,6 +841,7 @@ test_dispwided		normal,-pallowsigned=1	ivltests gold=test_dispwided.gold
 test_inc_dec		normal,-g2009,-pallowsigned=1	ivltests
 test_enumsystem		normal,-g2009,-pallowsigned=1,ivltests/enumsystem.vhd	ivltests
 vhdl_boolean		normal,-g2009,-pallowsigned=1,ivltests/vhdl_boolean.vhd	ivltests
+vhdl_file_open		normal,-g2005-sv,-pallowsigned=1,ivltests/vhdl_file_open.vhd		ivltests
 vhdl_prefix_array	normal,-g2009,-pallowsigned=1,ivltests/vhdl_prefix_array.vhd	ivltests
 vhdl_range		normal,-g2009,-pallowsigned=1,ivltests/vhdl_range_pkg.vhd,ivltests/vhdl_range.vhd	ivltests
 vhdl_range_func		normal,-g2009,-pallowsigned=1,ivltests/vhdl_range_func_pkg.vhd,ivltests/vhdl_range_func.vhd	ivltests

@@ -12,6 +12,23 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
                       case1: Passed.
                       case2: Passed.
                 casex_synth: Passed.
+          automatic_error11: Passed.
+          automatic_error12: Passed.
+          automatic_error13: Passed.
+                   br_gh230: Passed.
+                  fdisplay3: Passed.
+                fread-error: Passed.
+                 pr2800985b: Passed.
+                 queue_fail: Passed.
+            readmem-invalid: Passed.
+               scan-invalid: Passed.
+            warn_opt_sys_tf: Passed.
+           writemem-invalid: Passed.
+          sf_countbits_fail: Passed.
+          sf_countones_fail: Passed.
+          sf_isunknown_fail: Passed.
+             sf_onehot_fail: Passed.
+            sf_onehot0_fail: Passed.
         array_lval_select3b: Not Implemented.
         array_lval_select4b: Not Implemented.
                     analog1: Not Implemented.
@@ -288,7 +305,7 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
          array_lval_select1: Passed.
          array_lval_select2: Passed.
         array_lval_select3a: Passed - CE.
-       array_lval_select3a-: Passed.
+        array_lval_select3c: Passed.
          array_lval_select6: Passed.
             array_packed_2d: Passed.
                array_select: Passed.
@@ -331,9 +348,6 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
            automatic_error8: Passed - CE.
            automatic_error9: Passed - CE.
           automatic_error10: Passed - CE.
-          automatic_error11: Passed.
-          automatic_error12: Passed.
-          automatic_error13: Passed.
            automatic_events: Passed.
           automatic_events2: Passed.
           automatic_events3: Passed.
@@ -451,7 +465,6 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
                   br_gh199a: Passed.
                   br_gh199b: Passed.
                    br_gh209: Passed.
-                   br_gh230: Passed.
                   br_gh244a: Passed.
                   br_gh244b: Passed.
                   br_gh277a: Passed.
@@ -637,7 +650,6 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
                      extend: Passed.
                   fdisplay1: Passed.
                   fdisplay2: Passed.
-                  fdisplay3: Passed.
            fdisplay_fail_fd: Passed.
           fdisplay_fail_mcd: Passed.
                        fifo: Passed.
@@ -659,7 +671,6 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
                      format: Passed.
                        fr47: Passed.
                       fread: Passed.
-                fread-error: Passed.
                    fscanf_u: Passed.
               fscanf_u_warn: Passed.
                    fscanf_z: Passed.
@@ -1368,7 +1379,6 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
                   pr2792897: Passed.
                   pr2794144: Passed - CE.
                  pr2800985a: Passed.
-                 pr2800985b: Passed.
                   pr2801134: Passed.
                   pr2801662: Passed.
                   pr2809288: Passed - CE.
@@ -1524,11 +1534,9 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
                      qmark5: Passed.
                      qmark6: Passed.
                       queue: Passed.
-                 queue_fail: Passed.
                  queue_stat: Passed.
                     ram16x1: Passed.
               readmem-error: Passed.
-            readmem-invalid: Passed.
                   readmemb1: Passed.
                   readmemb2: Passed.
                   readmemb3: Passed.
@@ -1577,7 +1585,6 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
                       rtran: Passed.
                    rtranif0: Passed.
                    rtranif1: Passed.
-               scan-invalid: Passed.
                       scanf: Passed.
                      scanf2: Passed.
                      scanf3: Passed.
@@ -1810,7 +1817,6 @@ test_mos_strength_reduction: Passed.
                       wait1: Passed.
                       wait2: Passed.
                       wait3: Passed.
-            warn_opt_sys_tf: Passed.
                   wildsense: Passed.
                  wildsense2: Passed.
                    wireadd1: Passed.
@@ -1825,7 +1831,6 @@ test_mos_strength_reduction: Passed.
                    wiresub1: Passed.
                    wirexor1: Passed.
              writemem-error: Passed.
-           writemem-invalid: Passed.
                  writememb1: Passed.
                  writememb2: Passed.
                  writememh1: Passed.
@@ -2101,15 +2106,10 @@ test_mos_strength_reduction: Passed.
              program_hello2: Passed - CE.
                  sbyte_test: Passed.
                sf_countbits: Passed.
-          sf_countbits_fail: Passed.
                sf_countones: Passed.
-          sf_countones_fail: Passed.
                sf_isunknown: Passed.
-          sf_isunknown_fail: Passed.
                   sf_onehot: Passed.
-             sf_onehot_fail: Passed.
                  sf_onehot0: Passed.
-            sf_onehot0_fail: Passed.
                    sformatf: Passed.
                 simple_byte: Passed.
                  simple_int: Passed.

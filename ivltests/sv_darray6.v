@@ -34,7 +34,7 @@ module main;
 
       $display("foo[9] = %0s", foo[9]);
       if (foo[9] != "fooJ") begin
-	 $display("FAILED -- foo[9] = %0d (s.b. fooJ)", foo[9]);
+	 $display("FAILED -- foo[9] = %0s (s.b. fooJ)", foo[9]);
 	 $finish;
       end
 

@@ -1,3 +1,7 @@
+`ifdef __ICARUS__
+  `define SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
+`endif
+
 module bug();
 
 reg [1:2][1:16][1:8] array;
@@ -13,11 +17,19 @@ initial begin
   $display("width 0 = %0d", i);
   if (i !== 256) failed = 1;
 
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
   i = $bits(array[0]);
+`else
+  i = $bits(array[1]);
+`endif
   $display("width 1 = %0d", i);
   if (i !== 128) failed = 1;
 
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
   i = $bits(array[0][0]);
+`else
+  i = $bits(array[1][1]);
+`endif
   $display("width 2 = %0d", i);
   if (i !== 8) failed = 1;
 

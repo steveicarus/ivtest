@@ -83,6 +83,25 @@ case1			normal		ivltests
 case2			normal		ivltests
 casex_synth		normal		ivltests
 
+# For V11 vvp does not fail for these tests
+automatic_error11	normal		ivltests gold=automatic_error11.gold
+automatic_error12	normal		ivltests gold=automatic_error12.gold
+automatic_error13	normal		ivltests gold=automatic_error13.gold
+br_gh230		normal		ivltests gold=br_gh230.gold
+fdisplay3		normal		ivltests gold=fdisplay3.gold
+fread-error		normal		ivltests gold=fread-error.gold
+pr2800985b		normal		ivltests gold=pr2800985b.gold
+queue_fail		normal		ivltests gold=queue_fail.gold
+readmem-invalid		normal		ivltests gold=readmem-invalid.gold
+scan-invalid		normal		ivltests gold=scan-invalid.gold
+warn_opt_sys_tf		normal		ivltests gold=warn_opt_sys_tf.gold
+writemem-invalid	normal		ivltests gold=writemem-invalid.gold
+sf_countbits_fail	normal,-g2012	ivltests gold=sf_countbits_fail.gold
+sf_countones_fail	normal,-g2009	ivltests gold=sf_countones_fail.gold
+sf_isunknown_fail	normal,-g2009	ivltests gold=sf_isunknown_fail.gold
+sf_onehot_fail		normal,-g2009	ivltests gold=sf_onehot_fail.gold
+sf_onehot0_fail		normal,-g2009	ivltests gold=sf_onehot0_fail.gold
+
 # These tests are not implemented for v11
 array_lval_select3b	NI		ivltests
 array_lval_select4b	NI		ivltests

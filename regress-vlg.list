@@ -146,8 +146,8 @@ array7			normal			ivltests
 array_lval_select1	normal			ivltests
 array_lval_select2	normal			ivltests
 array_lval_select3a	CE			ivltests
-array_lval_select3a-	normal			ivltests
 array_lval_select3b	normal			ivltests
+array_lval_select3c	normal			ivltests
 array_lval_select4b	normal			ivltests
 array_lval_select6	normal			ivltests
 array_packed_2d		normal			ivltests gold=array_packed_2d.gold
@@ -191,9 +191,9 @@ automatic_error7	CE			ivltests
 automatic_error8	CE			ivltests
 automatic_error9	CE			ivltests
 automatic_error10	CE			ivltests
-automatic_error11	normal			ivltests gold=automatic_error11.gold
-automatic_error12	normal			ivltests gold=automatic_error12.gold
-automatic_error13	normal			ivltests gold=automatic_error13.gold
+automatic_error11	RE			ivltests gold=automatic_error11.gold
+automatic_error12	RE			ivltests gold=automatic_error12.gold
+automatic_error13	RE			ivltests gold=automatic_error13.gold
 automatic_events	normal			ivltests gold=automatic_events.gold
 automatic_events2	normal			ivltests gold=automatic_events.gold
 automatic_events3	normal			ivltests gold=automatic_events3.gold
@@ -520,10 +520,10 @@ force_release_wire_pv	normal			ivltests
 fork1			normal			ivltests # Validate 3 way fork with simple assignments.
 fork3.19A		normal			ivltests
 fork3.19B		normal			ivltests
-format			RE			ivltests gold=format.gold
+format			normal			ivltests gold=format.gold
 fr47			normal			ivltests
 fread			normal			ivltests
-fread-error		normal			ivltests gold=fread-error.gold
+fread-error		RE			ivltests gold=fread-error.gold
 fscanf_u		normal			ivltests
 fscanf_u_warn		normal			ivltests gold=fscanf_u_warn.gold
 fscanf_z		normal			ivltests
@@ -1238,7 +1238,7 @@ pr2792897		normal			ivltests
 pr2792897		normal			ivltests
 pr2794144		CE			ivltests gold=pr2794144.gold
 pr2800985a		normal			ivltests
-pr2800985b		normal			ivltests gold=pr2800985b.gold
+pr2800985b		RE			ivltests gold=pr2800985b.gold
 pr2801134		normal			ivltests
 pr2801662		normal			ivltests
 pr2809288		CE			ivltests gold=pr2809288.gold
@@ -1395,11 +1395,11 @@ qmark3			normal			ivltests
 qmark5			normal			ivltests
 qmark6			normal			ivltests
 queue			normal			ivltests
-queue_fail		normal			ivltests gold=queue_fail.gold
+queue_fail		RE			ivltests gold=queue_fail.gold
 queue_stat		normal			ivltests gold=queue_stat.gold
 ram16x1			normal			ivltests # Sitting here for a long time?
 readmem-error		normal			ivltests gold=readmem-error.gold
-readmem-invalid		normal			ivltests gold=readmem-invalid.gold
+readmem-invalid		RE			ivltests gold=readmem-invalid.gold
 readmemb1		normal			ivltests # basic $readmemb - uses readmemh1.dat
 readmemb2		normal			ivltests # $readmemb w/ short data file - readmemh2.dat
 readmemb3		normal			ivltests # $readmemb 0-3 with long dfile - readmemh1.dat
@@ -1448,7 +1448,7 @@ rptconcat		normal			ivltests # Repeat concatenation operation.
 rtran			normal			ivltests gold=rtran.gold
 rtranif0		normal			ivltests gold=rtranif0.gold
 rtranif1		normal			ivltests gold=rtranif1.gold
-scan-invalid		normal			ivltests gold=scan-invalid.gold
+scan-invalid		RE			ivltests gold=scan-invalid.gold
 scanf			normal			ivltests
 scanf2			normal			ivltests
 scanf3			normal			ivltests
@@ -1686,7 +1686,7 @@ vvp_scalar_value	normal			ivltests
 wait1			normal			ivltests
 wait2			normal			ivltests
 wait3			normal			ivltests gold=wait3.gold
-warn_opt_sys_tf		normal			ivltests gold=warn_opt_sys_tf.gold
+warn_opt_sys_tf		RE			ivltests gold=warn_opt_sys_tf.gold
 wildsense		normal			ivltests # Wildcard sensitivity list.
 wildsense2		normal			ivltests # Wildcard sensitivity list.
 wireadd1		normal			ivltests
@@ -1701,7 +1701,7 @@ wiresr			normal			ivltests
 wiresub1		normal			ivltests
 wirexor1		normal			ivltests
 writemem-error		normal			ivltests gold=writemem-error.gold
-writemem-invalid	normal			ivltests gold=writemem-invalid.gold
+writemem-invalid	RE			ivltests gold=writemem-invalid.gold
 writememb1		normal			ivltests # pr#400
 writememb2		normal			ivltests # pr#400
 writememh1		normal			ivltests # pr#334

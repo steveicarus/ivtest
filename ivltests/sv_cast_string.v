@@ -47,7 +47,7 @@ module sv_cast_string();
     str = string'(chars);
     if(str != "6543210")
     begin
-        $display("FAILED 3 str = %x", str);
+        $display("FAILED 3 str = %s", str);
         $finish();
     end
 

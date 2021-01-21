@@ -117,8 +117,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
          array_lval_select1: Passed.
          array_lval_select2: Passed.
         array_lval_select3a: Passed - TE.
-       array_lval_select3a-: Passed.
         array_lval_select3b: Passed - CE.
+        array_lval_select3c: Passed.
                array_select: Passed - CE.
              array_select_a: Passed - CE.
     array_unpacked_sysfunct: Passed - CE.
@@ -349,7 +349,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
                     bitsel5: Passed - CE.
                       pr751: Passed - CE.
               vhdl_var_init: Passed - CE.
-             vhdl_file_open: Passed - expected fail.
                  size_cast4: Passed - expected fail.
                    br_gh219: Passed - expected fail.
            rise_fall_decay2: Passed - CE.
@@ -501,13 +500,13 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
                     br1003c: Passed.
                     br1003d: Passed.
                      br1007: Passed.
-                   br_gh230: Passed.
+                   br_gh230: Passed - RE.
                 fatal_et_al: Passed.
-                  fdisplay3: Passed.
+                  fdisplay3: Passed - RE.
            fdisplay_fail_fd: Passed.
           fdisplay_fail_mcd: Passed.
                      format: Passed.
-                fread-error: Passed.
+                fread-error: Passed - RE.
               fscanf_u_warn: Passed.
               fscanf_z_warn: Passed.
             localparam_type: Passed.
@@ -519,18 +518,18 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
                   pr1819452: Passed.
                  pr2509349a: Passed.
                  pr2509349b: Passed.
-                 pr2800985b: Passed.
-                 queue_fail: Passed.
-            readmem-invalid: Passed.
+                 pr2800985b: Passed - RE.
+                 queue_fail: Passed - RE.
+            readmem-invalid: Passed - RE.
                    simparam: Passed - expected fail.
         sv_immediate_assert: Passed.
         sv_immediate_assume: Passed.
                      swrite: Passed.
         sys_func_task_error: Passed - RE.
            sys_func_as_task: Passed - RE.
-            warn_opt_sys_tf: Passed.
+            warn_opt_sys_tf: Passed - RE.
              writemem-error: Passed.
-           writemem-invalid: Passed.
+           writemem-invalid: Passed - RE.
                      array6: Passed.
              assign_op_type: Passed.
                       bitp1: Passed.
@@ -668,6 +667,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
                test_inc_dec: Passed.
             test_enumsystem: Passed.
                vhdl_boolean: Passed.
+             vhdl_file_open: Passed.
           vhdl_prefix_array: Passed.
                  vhdl_range: Passed.
                   vhdl_rtoi: Passed.
@@ -2527,4 +2527,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2525, Passed=2471, Failed=19, Not Implemented=3, Expected Fail=32
+  Total=2525, Passed=2472, Failed=19, Not Implemented=3, Expected Fail=31
