@@ -67,6 +67,9 @@
 # gold or diff commands.
 #
 
+# v11 does not print a warning for too many parameter overrides
+param_test3		normal		ivltests
+
 # v11 has incomplete synthesis support
 dffsynth		CE,-S		ivltests
 memsynth1		CE,-S		ivltests

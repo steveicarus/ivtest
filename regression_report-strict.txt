@@ -778,7 +778,7 @@ Running compiler/VVP tests for Icarus Verilog version: 12 (strict).
                 param_tern2: Passed.
                 param_test1: Passed.
                 param_test2: Passed.
-                param_test3: Passed - CO.
+                param_test3: Passed.
                 param_test4: Passed.
                 param_times: Passed.
              parameter_type: Passed.
