@@ -1,3 +1,7 @@
+`ifdef __ICARUS__
+  `define SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
+`endif
+
 module top;
   reg pass;
   reg [5:0] cond;
@@ -8,8 +12,13 @@ module top;
     casex (cond)
      6'b01_??10           : result = 1;
      {2'b10, 4'b??10}     : result = 2;
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
      {expr[1:0], 4'b??01} : result = 3;
      expr[11:6]           : result = 4;
+`else
+     {expr[1], 1'bx, 4'b??01} : result = 3;
+     6'bxxxxxx                : result = 4;
+`endif
      default              : result = 0;
    endcase
   end

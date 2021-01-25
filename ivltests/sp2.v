@@ -1,3 +1,7 @@
+`ifdef __ICARUS__
+  `define SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
+`endif
+
 //
 // Copyright (c) 1999 Steve Tell (tell@telltronics.org)
 //
@@ -31,7 +35,11 @@ initial
     fp = $fopen({"work/",fname,".inv"});
     // this fails too
     //      fp = $fopen({"blurfl", ".inv"});
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
     $fdisplay(fp, "# captured from: %0s\n", source_id[8*80:8]);
+`else
+    $fdisplay(fp, "# captured from: %0s\n", source_id[$bits(source_id)-1:8]);
+`endif
   end
 endmodule
 

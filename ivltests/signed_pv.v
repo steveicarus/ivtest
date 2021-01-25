@@ -1,3 +1,7 @@
+`ifdef __ICARUS__
+  `define SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
+`endif
+
 module top;
   parameter pval = -2;
   reg pass = 1'b1;
@@ -29,7 +33,11 @@ module top;
     end
 
     /* This should work since it is a constant value. */
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
     $sformat(res, "%b", big[pval+:4]);
+`else
+    $sformat(res, "%bx", big[(pval+1)+:3]);
+`endif
     if (res !== "011x") begin
       $display("Failed: &PV<> check 3, expected 4'b011x, got %s.", res);
       pass = 1'b0;

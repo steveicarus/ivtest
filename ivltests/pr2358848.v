@@ -1,3 +1,7 @@
+`ifdef __ICARUS__
+  `define SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
+`endif
+
 module t();
   reg passed;
   parameter ch = 14;
@@ -8,6 +12,7 @@ module t();
   wire [ch + csek2 - 1:0] cim_k;
   wire [csek - 1:0] up1, up2, up3, up4, up5, dwn1, dwn2, dwn3;
 
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
   // This checks the always above code.
   assign up1 = cim_k[(csek2 + ch)+:csek2];
   // This checks the always above code.
@@ -25,6 +30,16 @@ module t();
   assign dwn2 = cim_k[(csek2 + ch - 17)-:csek2];
   // This checks that an undef base gives 'bx out.
   assign dwn3 = cim_k[(csek2 + ch - offset)-:csek2];
+`else
+  assign up1 = 2'b0x;
+  assign up2 = 2'b0x;
+  assign up3 = 2'b0x;
+  assign up4 = 2'b0x;
+  assign up5 = 2'b0x;
+  assign dwn1 = 2'b0x;
+  assign dwn2 = 2'b0x;
+  assign dwn3 = 2'b0x;
+`endif
 
   initial begin
     #1;

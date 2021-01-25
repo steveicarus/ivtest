@@ -1,3 +1,7 @@
+`ifdef __ICARUS__
+  `define SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
+`endif
+
 module top;
   reg pass;
   reg [2:0] res [0:7];
@@ -52,7 +56,11 @@ module top;
 
   genvar m;
   generate
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
      for (m=0; m<=7; m=m+1) begin: idac_loop
+`else
+     for (m=0; m<=6; m=m+1) begin: idac_loop
+`endif
       // This should complain that dummy[7] is out of bounds.
       always @ (in[m] or dummy[m]) begin
         res[m] = in[m];

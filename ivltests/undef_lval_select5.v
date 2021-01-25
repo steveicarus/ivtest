@@ -1,3 +1,7 @@
+`ifdef __ICARUS__
+  `define SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
+`endif
+
 module top;
   reg pass;
   wire [2:-1] vec1;
@@ -14,6 +18,7 @@ module top;
   assign vec5 = 4'bxxxx;
   assign vec6 = 4'bxxxx;
 
+`ifdef SUPPORT_CONST_OUT_OF_RANGE_IN_IVTEST
   assign vec1[1'bx] = 1'b1;
 
   assign vec2[1'bx:0] = 1'b1;
@@ -23,6 +28,7 @@ module top;
 
   assign vec5[1'bx+:1] = 1'b1;
   assign vec6[1'bx-:1] = 1'b1;
+`endif
 
   initial begin
     pass = 1'b1;
