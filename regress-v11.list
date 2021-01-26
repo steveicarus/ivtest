@@ -69,6 +69,7 @@
 
 # v11 does not print a warning for too many parameter overrides
 param_test3		normal		ivltests
+eofmt_percent		normal		ivltests gold=eofmt_percent-v11.gold
 
 # v11 has incomplete synthesis support
 dffsynth		CE,-S		ivltests

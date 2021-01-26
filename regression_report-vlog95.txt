@@ -501,6 +501,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
                     br1003d: Passed.
                      br1007: Passed.
                    br_gh230: Passed - RE.
+              eofmt_percent: Passed.
                 fatal_et_al: Passed.
                   fdisplay3: Passed - RE.
            fdisplay_fail_fd: Passed.
@@ -1198,7 +1199,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
                       else2: Passed.
                       else3: Passed.
                  elsif_test: Passed.
-              eofmt_percent: Passed.
                          eq: Passed.
                     escape1: Passed.
                    escape2a: Passed - CO.

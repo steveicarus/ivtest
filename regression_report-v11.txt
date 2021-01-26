@@ -1,6 +1,7 @@
 Running compiler/VVP tests for Icarus Verilog version: 11.
 ----------------------------------------------------------------------------
                 param_test3: Passed.
+              eofmt_percent: Passed.
                    dffsynth: Passed - CE.
                   memsynth1: Passed - CE.
                   memsynth2: Passed - CE.
@@ -632,7 +633,6 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
                       else2: Passed.
                       else3: Passed.
                  elsif_test: Passed.
-              eofmt_percent: Passed.
                          eq: Passed.
                     escape1: Passed.
                    escape2a: Passed - CO.
