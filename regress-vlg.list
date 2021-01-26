@@ -200,7 +200,6 @@ automatic_events3	normal			ivltests gold=automatic_events3.gold
 automatic_task		normal			ivltests gold=automatic_task.gold
 automatic_task2		normal			ivltests gold=automatic_task2.gold
 automatic_task3		normal			ivltests gold=automatic_task3.gold
-big_int			normal			ivltests # PR#405
 bitwidth		normal			ivltests
 bitwidth2		normal			ivltests
 blankport		normal			ivltests main # PR 204 Stephan Boettcher -
@@ -344,7 +343,6 @@ busbug			normal			ivltests gold=busbug.gold
 ca_force		normal			ivltests
 ca_func			normal,-gstrict-ca-eval ivltests
 ca_mult			normal			ivltests gold=ca_mult.gold
-ca_pow_signed		normal			ivltests
 ca_pow_synth		normal			ivltests
 ca_pow_unsigned		normal			ivltests
 ca_real_logical		normal			ivltests
@@ -482,7 +480,6 @@ else1			normal			ivltests # ifdef with else
 else2			normal			ivltests # compound ifdef with else
 else3			normal			ivltests # compound ifdef compound else
 elsif_test		normal			ivltests
-eofmt_percent		normal			ivltests gold=eofmt_percent.gold
 eq			normal			ivltests
 escape1			normal			ivltests # \$modulename in defparam and if()
 escape2a		CO			ivltests
@@ -1665,7 +1662,6 @@ undef_lval_select4b	normal			ivltests
 undef_lval_select4c	normal			ivltests
 undef_lval_select5	normal			ivltests
 undefined_shift		normal			ivltests
-urand			normal			ivltests gold=urand.gold
 urand_r			normal			ivltests gold=urand_r.gold
 urand_r2		normal			ivltests gold=urand_r.gold
 urand_r3		normal			ivltests gold=urand_r.gold

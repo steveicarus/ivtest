@@ -223,6 +223,9 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
               cmdline_parm1: Passed.
                  array_dump: Passed.
                   pr2859628: Passed.
+                    big_int: Passed.
+              ca_pow_signed: Passed.
+                      urand: Passed.
                        race: Passed.
            automatic_error4: Passed - CE.
                   pr1909940: Passed.
@@ -356,7 +359,6 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
              automatic_task: Passed.
             automatic_task2: Passed.
             automatic_task3: Passed.
-                    big_int: Passed.
                    bitwidth: Passed.
                   bitwidth2: Passed.
                   blankport: Passed.
@@ -495,7 +497,6 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
                    ca_force: Passed.
                     ca_func: Passed.
                     ca_mult: Passed.
-              ca_pow_signed: Passed.
                ca_pow_synth: Passed.
             ca_pow_unsigned: Passed.
             ca_real_logical: Passed.
@@ -1796,7 +1797,6 @@ test_mos_strength_reduction: Passed.
         undef_lval_select4a: Passed.
          undef_lval_select5: Passed.
             undefined_shift: Passed.
-                      urand: Passed.
                     urand_r: Passed.
                    urand_r2: Passed.
                    urand_r3: Passed.
