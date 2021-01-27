@@ -14,8 +14,6 @@ initial begin
     i = 100;
   `else
     i = 110;
-  `else
-    i = 999;
   `endif
 `elsif DEFINED
   `ifdef DEFINED
