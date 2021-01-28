@@ -68,6 +68,7 @@
 #
 
 # Some constructs/usage are not errors in SystemVerilog
+br1015a			normal			ivltests
 br1027a			normal			ivltests gold=br1027a-fsv.gold
 br1027c			normal			ivltests gold=br1027c-fsv.gold
 br1027e			normal			ivltests gold=br1027e-fsv.gold
@@ -105,3 +106,18 @@ mix_reset		normal			ivltests
 pr2590274a		NI			ivltests
 pr2590274b		NI			ivltests
 pr2590274c		NI			ivltests
+
+# These are not supported in Icarus, but are valid SystemVerilog
+array_lval_select3a	normal			ivltests
+br605a			normal			ivltests
+br605b			normal			ivltests
+br971			normal			ivltests
+br1005			normal			ivltests
+br1015b			normal			ivltests
+br_gh130b		normal			ivltests
+br_gh386d		normal			ivltests
+br_ml20150315b		normal			ivltests
+sv_deferred_assert1	normal			ivltests
+sv_deferred_assert2	normal			ivltests
+sv_deferred_assume1	normal			ivltests
+sv_deferred_assume2	normal			ivltests

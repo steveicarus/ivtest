@@ -145,10 +145,11 @@ array6			normal			ivltests
 array7			normal			ivltests
 array_lval_select1	normal			ivltests
 array_lval_select2	normal			ivltests
-array_lval_select3a	CE			ivltests
-array_lval_select3b	normal			ivltests
+array_lval_select3b	CE			ivltests
 array_lval_select3c	normal			ivltests
-array_lval_select4b	normal			ivltests
+array_lval_select4a	normal			ivltests
+array_lval_select4b	CE			ivltests
+array_lval_select5	normal			ivltests
 array_lval_select6	normal			ivltests
 array_packed_2d		normal			ivltests gold=array_packed_2d.gold
 array_select		normal			ivltests
@@ -247,7 +248,7 @@ br1001			normal			ivltests
 br1006			normal,-gspecify	ivltests
 br1007			normal,-Wselect-range	ivltests gold=br1007.gold
 br1008			normal			ivltests gold=br1008.gold
-br1015a			normal			ivltests
+br1015a			CE			ivltests
 br1019			normal			ivltests
 br1027			normal			ivltests
 br1027a			CE			ivltests gold=br1027a.gold
@@ -1655,11 +1656,11 @@ undef			normal			ivltests gold=undef.gold
 undef_lval_select	normal			ivltests
 undef_lval_select2	normal			ivltests
 undef_lval_select3a	normal			ivltests
-undef_lval_select3b	normal			ivltests
-undef_lval_select3c	normal			ivltests
+undef_lval_select3b	CE			ivltests
+undef_lval_select3c	CE			ivltests
 undef_lval_select4a	normal			ivltests
-undef_lval_select4b	normal			ivltests
-undef_lval_select4c	normal			ivltests
+undef_lval_select4b	CE			ivltests
+undef_lval_select4c	CE			ivltests
 undef_lval_select5	normal			ivltests
 undefined_shift		normal			ivltests
 urand_r			normal			ivltests gold=urand_r.gold

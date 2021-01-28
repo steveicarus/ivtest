@@ -222,8 +222,6 @@ binary_nor		normal			ivltests
 pr1528093		normal			ivltests
 
 # wire real
-array_lval_select4a	normal			ivltests
-array_lval_select5	normal			ivltests
 br_gh456		normal,-g2012		ivltests
 ca_64delay		normal			ivltests gold=ca_64delay.gold
 ca_time_real		normal			ivltests gold=ca_time_real.gold
@@ -291,6 +289,22 @@ race			normal			ivltests
 
 # Limited support for event expressions in automatic scopes
 automatic_error4	CE			ivltests
+
+# These are not currently supported in Icarus
+# Also update the regress-fsv.list since it has these marked as normal
+array_lval_select3a	CE			ivltests
+br605a			EF			ivltests
+br605b			EF			ivltests
+br971			EF			ivltests
+br1005			CE,-g2009		ivltests
+br1015b			CE,-g2009		ivltests
+br_gh130b		CE,-g2009		ivltests
+br_gh386d		CE,-g2009		ivltests
+br_ml20150315b		CE,-g2009		ivltests
+sv_deferred_assert1	CE,-g2009		ivltests gold=sv_deferred_assert1.gold
+sv_deferred_assert2	CE,-g2009		ivltests gold=sv_deferred_assert2.gold
+sv_deferred_assume1	CE,-g2009		ivltests gold=sv_deferred_assume1.gold
+sv_deferred_assume2	CE,-g2009		ivltests gold=sv_deferred_assume2.gold
 
 #------------------------------------------------------------------------------
 # Icarus deviations

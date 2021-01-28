@@ -1,5 +1,6 @@
 Running compiler/VVP tests for Icarus Verilog version: 12 (force SV).
 ----------------------------------------------------------------------------
+                    br1015a: ==> Failed - running iverilog.
                     br1027a: Passed.
                     br1027c: Passed.
                     br1027e: Passed.
@@ -31,6 +32,19 @@ Running compiler/VVP tests for Icarus Verilog version: 12 (force SV).
                  pr2590274a: Not Implemented.
                  pr2590274b: Not Implemented.
                  pr2590274c: Not Implemented.
+        array_lval_select3a: ==> Failed - running iverilog.
+                     br605a: ==> Failed - output does not match gold file.
+                     br605b: ==> Failed - output does not match gold file.
+                      br971: ==> Failed - output does not match gold file.
+                     br1005: ==> Failed - running iverilog.
+                    br1015b: ==> Failed - running iverilog.
+                  br_gh130b: ==> Failed - running iverilog.
+                  br_gh386d: ==> Failed - running iverilog.
+             br_ml20150315b: ==> Failed - running iverilog.
+        sv_deferred_assert1: ==> Failed - running iverilog.
+        sv_deferred_assert2: ==> Failed - running iverilog.
+        sv_deferred_assume1: ==> Failed - running iverilog.
+        sv_deferred_assume2: ==> Failed - running iverilog.
                       case1: Passed.
                       case2: Passed.
                 casex_synth: Passed.
@@ -145,8 +159,6 @@ Running compiler/VVP tests for Icarus Verilog version: 12 (force SV).
                 binary_nand: Passed.
                  binary_nor: Passed.
                   pr1528093: Passed.
-        array_lval_select4a: Passed.
-         array_lval_select5: Passed.
                    br_gh456: Passed.
                  ca_64delay: Passed.
                ca_var_delay: Passed.
@@ -271,10 +283,11 @@ Running compiler/VVP tests for Icarus Verilog version: 12 (force SV).
                      array7: Passed.
          array_lval_select1: Passed.
          array_lval_select2: Passed.
-        array_lval_select3a: Passed - CE.
-        array_lval_select3b: ==> Failed - running iverilog.
+        array_lval_select3b: Passed - CE.
         array_lval_select3c: Passed.
-        array_lval_select4b: ==> Failed - running iverilog.
+        array_lval_select4a: Passed.
+        array_lval_select4b: Passed - CE.
+         array_lval_select5: Passed.
          array_lval_select6: Passed.
             array_packed_2d: Passed.
                array_select: Passed.
@@ -331,8 +344,6 @@ Running compiler/VVP tests for Icarus Verilog version: 12 (force SV).
                   blankport: Passed.
     block_only_with_var_def: Passed.
                        bnot: Passed.
-                     br605a: ==> Failed - output does not match gold file.
-                     br605b: ==> Failed - output does not match gold file.
                      br916a: Passed.
                      br916b: Passed.
                      br918a: Passed.
@@ -358,7 +369,6 @@ Running compiler/VVP tests for Icarus Verilog version: 12 (force SV).
                       br965: Passed.
                       br967: Passed.
                       br968: Passed.
-                      br971: ==> Failed - output does not match gold file.
                       br972: Passed.
                       br977: Passed.
                       br982: Passed - CE.
@@ -373,7 +383,6 @@ Running compiler/VVP tests for Icarus Verilog version: 12 (force SV).
                      br1006: Passed.
                      br1007: Passed.
                      br1008: Passed.
-                    br1015a: ==> Failed - running iverilog.
                      br1019: Passed.
                      br1027: Passed.
                     br1029a: Passed.
@@ -1763,11 +1772,11 @@ test_mos_strength_reduction: Passed.
           undef_lval_select: Passed.
          undef_lval_select2: Passed.
         undef_lval_select3a: Passed.
-        undef_lval_select3b: ==> Failed - running iverilog.
-        undef_lval_select3c: ==> Failed - running iverilog.
+        undef_lval_select3b: Passed - CE.
+        undef_lval_select3c: Passed - CE.
         undef_lval_select4a: Passed.
-        undef_lval_select4b: ==> Failed - running iverilog.
-        undef_lval_select4c: ==> Failed - running iverilog.
+        undef_lval_select4b: Passed - CE.
+        undef_lval_select4c: Passed - CE.
          undef_lval_select5: Passed.
             undefined_shift: Passed.
                     urand_r: Passed.
@@ -1887,8 +1896,6 @@ test_mos_strength_reduction: Passed.
                     br1003c: Passed.
                     br1003d: Passed.
                      br1004: Passed.
-                     br1005: ==> Failed - running iverilog.
-                    br1015b: ==> Failed - running iverilog.
                      br1025: Passed.
                     br1027b: Passed.
                     br1027d: Passed.
@@ -1910,7 +1917,6 @@ test_mos_strength_reduction: Passed.
                   br_gh112f: Passed.
                    br_gh129: Passed.
                   br_gh130a: Passed - CE.
-                  br_gh130b: ==> Failed - running iverilog.
                    br_gh165: Passed.
                   br_gh164a: Passed.
                   br_gh164b: Passed.
@@ -1946,7 +1952,6 @@ test_mos_strength_reduction: Passed.
                   br_gh386a: Passed.
                   br_gh386b: Passed.
                   br_gh386c: Passed - CE.
-                  br_gh386d: ==> Failed - running iverilog.
                    br_gh388: Passed.
                    br_gh391: Passed.
                    br_gh411: Passed.
@@ -1958,7 +1963,6 @@ test_mos_strength_reduction: Passed.
                    br_gh445: Passed.
                    br_gh461: Passed.
                    br_gh477: Passed.
-             br_ml20150315b: ==> Failed - running iverilog.
               br_ml20171017: Passed.
               br_ml20180227: Passed - CE.
              br_ml20180309a: Passed.
@@ -2174,10 +2178,6 @@ test_mos_strength_reduction: Passed.
          sv_darray_function: Passed.
            sv_darray_signed: Passed.
         sv_darray_word_size: Passed.
-        sv_deferred_assert1: ==> Failed - running iverilog.
-        sv_deferred_assert2: ==> Failed - running iverilog.
-        sv_deferred_assume1: ==> Failed - running iverilog.
-        sv_deferred_assume2: ==> Failed - running iverilog.
                sv_end_label: Passed.
           sv_end_label_fail: Passed - CE.
               sv_end_labels: Passed.
@@ -2527,4 +2527,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2525, Passed=2499, Failed=23, Not Implemented=3, Expected Fail=0
+  Total=2525, Passed=2504, Failed=18, Not Implemented=3, Expected Fail=0

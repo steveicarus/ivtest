@@ -31,25 +31,15 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
           sf_isunknown_fail: Passed.
              sf_onehot_fail: Passed.
             sf_onehot0_fail: Passed.
-        array_lval_select3b: Not Implemented.
-        array_lval_select4b: Not Implemented.
                     analog1: Not Implemented.
                     analog2: Not Implemented.
-                     br605a: Not Implemented.
-                     br605b: Not Implemented.
-                      br971: Not Implemented.
-                     br1005: Not Implemented.
-                    br1015a: Not Implemented.
-                    br1015b: Not Implemented.
               br_gh72b_fail: Not Implemented.
-                  br_gh130b: Not Implemented.
                    br_gh175: Not Implemented.
                    br_gh307: Not Implemented.
                   br_gh383a: Not Implemented.
                   br_gh383b: Not Implemented.
                   br_gh383c: Not Implemented.
                   br_gh383d: Not Implemented.
-                  br_gh386d: Not Implemented.
                   br_gh390a: Not Implemented.
                   br_gh390b: Not Implemented.
                    br_gh412: Not Implemented.
@@ -57,7 +47,6 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
                    br_gh436: Not Implemented.
                    br_gh453: Not Implemented.
                    br_gh460: Not Implemented.
-             br_ml20150315b: Not Implemented.
                        edge: Not Implemented.
                   fileline2: Not Implemented.
                  ifdef_fail: Not Implemented.
@@ -67,10 +56,6 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
         sv_deferred_assert2: Not Implemented.
         sv_deferred_assume1: Not Implemented.
         sv_deferred_assume2: Not Implemented.
-        undef_lval_select3b: Not Implemented.
-        undef_lval_select3c: Not Implemented.
-        undef_lval_select4b: Not Implemented.
-        undef_lval_select4c: Not Implemented.
         vhdl_multidim_array: Not Implemented.
                       pr903: Passed.
                   pr1388974: Passed.
@@ -184,8 +169,6 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
                 binary_nand: Passed.
                  binary_nor: Passed.
                   pr1528093: Passed.
-        array_lval_select4a: Passed.
-         array_lval_select5: Passed.
                    br_gh456: Passed.
                  ca_64delay: Passed.
                ca_var_delay: Passed.
@@ -228,6 +211,15 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
                       urand: Passed.
                        race: Passed.
            automatic_error4: Passed - CE.
+        array_lval_select3a: Passed - CE.
+                     br605a: Passed - expected fail.
+                     br605b: Passed - expected fail.
+                      br971: Passed - expected fail.
+                     br1005: Passed - CE.
+                    br1015b: Passed - CE.
+                  br_gh130b: Passed - CE.
+                  br_gh386d: Passed - CE.
+             br_ml20150315b: Passed - CE.
                   pr1909940: Passed.
                  pr1909940b: Passed.
      unnamed_generate_block: Passed.
@@ -309,8 +301,11 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
                      array7: Passed.
          array_lval_select1: Passed.
          array_lval_select2: Passed.
-        array_lval_select3a: Passed - CE.
+        array_lval_select3b: Passed - CE.
         array_lval_select3c: Passed.
+        array_lval_select4a: Passed.
+        array_lval_select4b: Passed - CE.
+         array_lval_select5: Passed.
          array_lval_select6: Passed.
             array_packed_2d: Passed.
                array_select: Passed.
@@ -403,6 +398,7 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
                      br1006: Passed.
                      br1007: Passed.
                      br1008: Passed.
+                    br1015a: Passed - CE.
                      br1019: Passed.
                      br1027: Passed.
                     br1027a: Passed - CE.
@@ -1794,7 +1790,11 @@ test_mos_strength_reduction: Passed.
           undef_lval_select: Passed.
          undef_lval_select2: Passed.
         undef_lval_select3a: Passed.
+        undef_lval_select3b: Passed - CE.
+        undef_lval_select3c: Passed - CE.
         undef_lval_select4a: Passed.
+        undef_lval_select4b: Passed - CE.
+        undef_lval_select4c: Passed - CE.
          undef_lval_select5: Passed.
             undefined_shift: Passed.
                     urand_r: Passed.
@@ -2527,4 +2527,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2525, Passed=2484, Failed=0, Not Implemented=41, Expected Fail=0
+  Total=2525, Passed=2496, Failed=0, Not Implemented=26, Expected Fail=3
