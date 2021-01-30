@@ -384,7 +384,7 @@ check_constant_18	CE			ivltests
 check_constant_19	CE			ivltests
 check_constant_20	CE			ivltests
 cmos			normal			ivltests gold=cmos.gold
-comment1		normal			ivltests # PR410/411
+comment1		CE			ivltests # PR410/411
 comp1000		normal			ivltests gold=comp1000.gold
 comp1001		normal			ivltests gold=comp1001.gold
 comp1001_fail3		normal			ivltests
@@ -1043,6 +1043,7 @@ pr1913918b		normal			ivltests
 pr1913918c		normal			ivltests
 pr1913937		normal			ivltests
 pr1916261		normal			ivltests
+pr1916261a		CE			ivltests
 pr1921332		CO			ivltests
 pr1924845		normal			ivltests
 pr1925356		normal			ivltests

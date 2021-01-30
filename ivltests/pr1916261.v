@@ -4,8 +4,8 @@ module top;
   parameter one  = 1'b1;
   parameter zero = 1'b0;
 
-  wire [3:0] ca_tru = one  ? 4'b01 : {0{1'b0}};
-  wire [3:0] ca_fal = zero ? {0{1'b0}} : 4'b10;
+  wire [3:0] ca_tru = one  ? 4'b0001 : 4'b0000;
+  wire [3:0] ca_fal = zero ? 4'b0000 : 4'b0010;
 
   initial begin
     #1;

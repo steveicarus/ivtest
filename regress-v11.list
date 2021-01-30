@@ -71,6 +71,10 @@
 param_test3		normal		ivltests
 eofmt_percent		normal		ivltests gold=eofmt_percent-v11.gold
 
+# v11 does not fail during elaboration for these tests
+pr1916261a		normal		ivltests
+comment1		normal		ivltests
+
 # v11 has incomplete synthesis support
 dffsynth		CE,-S		ivltests
 memsynth1		CE,-S		ivltests

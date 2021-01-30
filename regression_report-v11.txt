@@ -2,6 +2,8 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
 ----------------------------------------------------------------------------
                 param_test3: Passed.
               eofmt_percent: Passed.
+                 pr1916261a: Passed.
+                   comment1: Passed.
                    dffsynth: Passed - CE.
                   memsynth1: Passed - CE.
                   memsynth2: Passed - CE.
@@ -533,7 +535,6 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
           check_constant_19: Passed - CE.
           check_constant_20: Passed - CE.
                        cmos: Passed.
-                   comment1: Passed.
                    comp1000: Passed.
                    comp1001: Passed.
              comp1001_fail3: Passed.
@@ -2527,4 +2528,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2525, Passed=2496, Failed=0, Not Implemented=26, Expected Fail=3
+  Total=2526, Passed=2497, Failed=0, Not Implemented=26, Expected Fail=3

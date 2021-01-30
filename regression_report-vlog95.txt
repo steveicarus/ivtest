@@ -1124,7 +1124,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
           check_constant_19: Passed - CE.
           check_constant_20: Passed - CE.
                        cmos: Passed.
-                   comment1: Passed.
+                   comment1: Passed - CE.
                    comp1000: Passed.
                    comp1001: Passed.
              comp1001_fail3: Passed.
@@ -1680,6 +1680,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
                  pr1913918c: Passed.
                   pr1913937: Passed.
                   pr1916261: Passed.
+                 pr1916261a: Passed - CE.
                   pr1921332: Passed - CO.
                   pr1924845: Passed.
                   pr1925356: Passed.
@@ -2527,4 +2528,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2525, Passed=2486, Failed=2, Not Implemented=3, Expected Fail=34
+  Total=2526, Passed=2487, Failed=2, Not Implemented=3, Expected Fail=34

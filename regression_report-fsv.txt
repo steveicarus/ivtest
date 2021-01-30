@@ -512,7 +512,7 @@ Running compiler/VVP tests for Icarus Verilog version: 12 (force SV).
           check_constant_19: Passed - CE.
           check_constant_20: Passed - CE.
                        cmos: Passed.
-                   comment1: Passed.
+                   comment1: Passed - CE.
                    comp1000: Passed.
                    comp1001: Passed.
              comp1001_fail3: Passed.
@@ -1166,6 +1166,7 @@ Running compiler/VVP tests for Icarus Verilog version: 12 (force SV).
                  pr1913918c: Passed.
                   pr1913937: Passed.
                   pr1916261: Passed.
+                 pr1916261a: Passed - CE.
                   pr1921332: Passed - CO.
                   pr1924845: Passed.
                   pr1925356: Passed.
@@ -2527,4 +2528,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2525, Passed=2504, Failed=18, Not Implemented=3, Expected Fail=0
+  Total=2526, Passed=2505, Failed=18, Not Implemented=3, Expected Fail=0
