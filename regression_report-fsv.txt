@@ -2084,9 +2084,9 @@ test_mos_strength_reduction: Passed.
                   pr3534333: Passed.
                   pr3576165: Passed.
                    program2: Passed.
-                  program2b: Passed - CE.
+                  program2b: Passed.
                    program3: Passed.
-                  program3a: Passed - CE.
+                  program3a: Passed.
                   program3b: Passed - CE.
                    program4: Passed.
                   program5a: Passed - CE.

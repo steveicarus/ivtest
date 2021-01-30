@@ -17,7 +17,7 @@ program test2;
 	 $finish;
       end
 
-      tmp <= ~shared; // ERROR: only blocking assign to program variables
+      tmp <= ~shared; // ERROR: only blocking assign in final block
       if (not_shared !== 'haa) begin
 	 $display("FAILED -- not_shared is not correct", not_shared);
 	 $finish;

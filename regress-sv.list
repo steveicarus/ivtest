@@ -314,9 +314,9 @@ pr3515542		CE,-g2005-sv		ivltests gold=pr3515542.gold
 pr3534333		normal,-g2005-sv	ivltests
 pr3576165		normal,-g2009		ivltests
 program2		normal,-g2009		ivltests
-program2b		CE,-g2009		ivltests
+program2b		normal,-g2009		ivltests
 program3		normal,-g2009		ivltests
-program3a		CE,-g2009		ivltests
+program3a		normal,-g2009		ivltests
 program3b		CE,-g2009		ivltests
 program4		normal,-g2009		ivltests
 program5a		CE,-g2009		ivltests

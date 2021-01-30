@@ -168,7 +168,9 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
                      final2: Passed - CE.
               program_hello: Passed - CE.
                    program2: Passed - CE.
+                  program2b: Passed - CE.
                    program3: Passed - CE.
+                  program3a: Passed - CE.
                    program4: Passed - CE.
                array_string: Passed - CE.
                      br932a: Passed - CE.
@@ -2322,8 +2324,6 @@ test_mos_strength_reduction: Passed.
                   pr3515542: Passed - CE.
                   pr3534333: Passed.
                   pr3576165: Passed.
-                  program2b: Passed - CE.
-                  program3a: Passed - CE.
                   program3b: Passed - CE.
                   program5a: Passed - CE.
                   program5b: Passed - CE.

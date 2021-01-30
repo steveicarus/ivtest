@@ -4,6 +4,8 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
               eofmt_percent: Passed.
                  pr1916261a: Passed.
                    comment1: Passed.
+                  program2b: Passed - CE.
+                  program3a: Passed - CE.
                    dffsynth: Passed - CE.
                   memsynth1: Passed - CE.
                   memsynth2: Passed - CE.
@@ -2096,9 +2098,7 @@ test_mos_strength_reduction: Passed.
                   pr3534333: Passed.
                   pr3576165: Passed.
                    program2: Passed.
-                  program2b: Passed - CE.
                    program3: Passed.
-                  program3a: Passed - CE.
                   program3b: Passed - CE.
                    program4: Passed.
                   program5a: Passed - CE.

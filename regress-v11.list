@@ -75,6 +75,10 @@ eofmt_percent		normal		ivltests gold=eofmt_percent-v11.gold
 pr1916261a		normal		ivltests
 comment1		normal		ivltests
 
+# v11 has not been updated to support this.
+program2b		CE,-g2009	ivltests
+program3a		CE,-g2009	ivltests
+
 # v11 has incomplete synthesis support
 dffsynth		CE,-S		ivltests
 memsynth1		CE,-S		ivltests
