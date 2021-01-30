@@ -15,7 +15,7 @@ module m;
    function int size_function(input string val);
       size_function = val.len();
    endfunction // size_function
-   
+
    initial begin
       m_argv.push_back ("str0");
       m_argv.push_back ("str1");
