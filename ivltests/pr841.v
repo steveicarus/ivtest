@@ -10,16 +10,12 @@ initial begin
       #3 forever #10 clk=~clk;
 end
 
-always @(posedge clk) begin $display("PASSED"); $finish; end
+always @(posedge clk) begin $display("PASSED"); $finish(0); end
 
 //wire kuku=clk;
 pll pll (clk);
 
 endmodule
-
-
-
-
 
 
 module pll (inclk0);

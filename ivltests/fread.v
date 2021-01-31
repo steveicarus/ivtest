@@ -10,9 +10,10 @@ module top;
 
   initial begin
     passed = 1'b1;
-    fd = $fopen("ivltests/fread.txt", "r");
 
-    res = $fread(rg, 0); // Try to read from an invalid fd.
+    fd = $fopen("ThisFileDoesNotExist.txt", "r");
+
+    res = $fread(rg, fd); // Try to read from an invalid fd.
     if (res != 0) begin
       $display("$fread (register fd) count is wrong, expected 0, got %0d", res);
       passed = 1'b0;
@@ -22,6 +23,8 @@ module top;
                rg);
       passed = 1'b0;
     end
+
+    fd = $fopen("ivltests/fread.txt", "r");
 
     res = $fread(mem, fd, -1); // Try an invalid start
     if (res != 0) begin
