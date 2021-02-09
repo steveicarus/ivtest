@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2014 CERN
+ * Copyright (c) 2014-2021 CERN
  * @author Maciej Suminski <maciej.suminski@cern.ch>
  *
  * This source code is free software; you can redistribute it
@@ -20,6 +20,7 @@
 
 # include <sv_vpi_user.h>
 # include <assert.h>
+# include <limits.h>
 
 static PLI_INT32 display_array_calltf(ICARUS_VPI_CONST PLI_BYTE8*name)
 {
@@ -56,7 +57,8 @@ static PLI_INT32 display_array_calltf(ICARUS_VPI_CONST PLI_BYTE8*name)
 
       /* Test accessing cells by index */
       vpi_printf("{ ");
-      for(int i = 0; i < array_size; ++i) {
+      int i;
+      for(i = 0; i < array_size; ++i) {
             cell = vpi_handle_by_index(array, i);
             val.format = vpiObjTypeVal;
             vpi_get_value(cell, &val);
@@ -124,6 +126,9 @@ static PLI_INT32 increase_array_vals_calltf(ICARUS_VPI_CONST PLI_BYTE8*name)
                     break;
 
                 case vpiVectorVal:
+                    /* Only support a single aval */
+                    assert((uint32_t)val.value.vector->aval < UINT_MAX);
+                    assert(val.value.vector->bval == 0);
                     ++val.value.vector->aval;
                     break;
 
