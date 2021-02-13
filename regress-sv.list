@@ -535,6 +535,7 @@ task_init_var3		normal,-g2009		ivltests
 task_scope2		normal,-g2009		ivltests
 test_inc_dec		normal,-g2009		ivltests
 test_tliteral		normal,-g2009		ivltests
+timeliteral		normal,-g2009		ivltests
 two_state_display	normal,-g2005-sv	ivltests gold=two_state_display.gold
 ubyte_test		normal,-g2005-sv	ivltests
 uint_test		normal,-g2005-sv	ivltests

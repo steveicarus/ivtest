@@ -2281,6 +2281,7 @@ test_mos_strength_reduction: Passed.
                 task_scope2: Passed.
                test_inc_dec: Passed.
               test_tliteral: Passed.
+                timeliteral: Passed.
           two_state_display: Passed.
                  ubyte_test: Passed.
                   uint_test: Passed.
@@ -2528,4 +2529,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2526, Passed=2519, Failed=4, Not Implemented=0, Expected Fail=3
+  Total=2527, Passed=2520, Failed=4, Not Implemented=0, Expected Fail=3

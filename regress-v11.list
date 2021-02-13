@@ -117,6 +117,9 @@ sf_onehot0_fail		normal,-g2009	ivltests gold=sf_onehot0_fail.gold
 # These tests are not implemented for v11
 analog1			NI		ivltests
 analog2			NI		ivltests
+br605a			NI		ivltests
+br605b			NI		ivltests
+br971			NI		ivltests
 br_gh72b_fail		NI		ivltests
 br_gh175		NI		ivltests
 br_gh307		NI		ivltests
@@ -140,4 +143,5 @@ sv_deferred_assert1	NI		ivltests
 sv_deferred_assert2	NI		ivltests
 sv_deferred_assume1	NI		ivltests
 sv_deferred_assume2	NI		ivltests
+timeliteral		NI		ivltests
 vhdl_multidim_array	NI		ivltests
