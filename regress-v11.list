@@ -134,6 +134,7 @@ br_gh414		NI		ivltests
 br_gh436		NI		ivltests
 br_gh453		NI		ivltests
 br_gh460		NI		ivltests
+br_gh478		NI		ivltests
 edge			NI		ivltests
 fileline2		NI		ivltests
 ifdef_fail		NI		ivltests
