@@ -486,6 +486,7 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
                   br_gh356a: Passed.
                   br_gh356b: Passed.
                    br_gh435: Passed.
+                   br_gh484: Passed.
               br_ml20150315: Passed.
               br_ml20150321: Passed - CE.
               br_ml20150606: Passed.
@@ -2529,4 +2530,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2527, Passed=2497, Failed=0, Not Implemented=30, Expected Fail=0
+  Total=2528, Passed=2498, Failed=0, Not Implemented=30, Expected Fail=0

@@ -332,6 +332,7 @@ br_gh345		normal			ivltests
 br_gh356a		normal,-gspecify	ivltests
 br_gh356b		normal,-gspecify	ivltests
 br_gh435		normal			ivltests
+br_gh484		normal			ivltests
 br_ml20150315		normal			ivltests gold=br_ml_20150315.gold
 br_ml20150321		CE			ivltests
 br_ml20150606		normal			ivltests
