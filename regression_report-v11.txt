@@ -6,6 +6,7 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
                    comment1: Passed.
                   program2b: Passed - CE.
                   program3a: Passed - CE.
+                   br_gh440: Passed - CE.
                    dffsynth: Passed - CE.
                   memsynth1: Passed - CE.
                   memsynth2: Passed - CE.
@@ -1977,7 +1978,6 @@ test_mos_strength_reduction: Passed.
                    br_gh418: Passed.
                    br_gh433: Passed.
                    br_gh437: Passed.
-                   br_gh440: Passed - CE.
                    br_gh443: Passed.
                    br_gh445: Passed.
                    br_gh461: Passed.
