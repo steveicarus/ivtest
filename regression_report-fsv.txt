@@ -2181,6 +2181,8 @@ test_mos_strength_reduction: Passed.
          sv_darray_function: Passed.
            sv_darray_signed: Passed.
         sv_darray_word_size: Passed.
+     sv_default_port_value1: Passed.
+     sv_default_port_value2: Passed.
                sv_end_label: Passed.
           sv_end_label_fail: Passed - CE.
               sv_end_labels: Passed.
@@ -2531,4 +2533,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2529, Passed=2508, Failed=18, Not Implemented=3, Expected Fail=0
+  Total=2531, Passed=2510, Failed=18, Not Implemented=3, Expected Fail=0

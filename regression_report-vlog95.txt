@@ -2346,6 +2346,8 @@ test_mos_strength_reduction: Passed.
      struct_packed_sysfunct: Passed.
   struct_packed_write_read2: Passed.
                sv-constants: Passed.
+     sv_default_port_value1: Passed.
+     sv_default_port_value2: Passed.
           sv_end_label_fail: Passed - CE.
               sv_end_labels: Passed.
           sv_end_labels_bad: Passed - CE.
@@ -2531,4 +2533,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2529, Passed=2490, Failed=2, Not Implemented=3, Expected Fail=34
+  Total=2531, Passed=2492, Failed=2, Not Implemented=3, Expected Fail=34

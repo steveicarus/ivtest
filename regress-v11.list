@@ -78,6 +78,8 @@ comment1		normal		ivltests
 # v11 has not been updated to support this.
 program2b		CE,-g2009	ivltests
 program3a		CE,-g2009	ivltests
+sv_default_port_value1	CE,-g2009	ivltests
+sv_default_port_value2	CE,-g2009	ivltests
 
 # v11 does not check for as many issues as devel.
 br_gh440		CE,-g2009	ivltests gold=br_gh440-v11.gold
