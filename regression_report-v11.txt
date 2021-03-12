@@ -8,6 +8,7 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
                   program3a: Passed - CE.
      sv_default_port_value1: Passed - CE.
      sv_default_port_value2: Passed - CE.
+     sv_default_port_value3: Passed - CE.
                    br_gh440: Passed - CE.
                    dffsynth: Passed - CE.
                   memsynth1: Passed - CE.
@@ -2533,4 +2534,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2531, Passed=2500, Failed=0, Not Implemented=31, Expected Fail=0
+  Total=2532, Passed=2501, Failed=0, Not Implemented=31, Expected Fail=0
