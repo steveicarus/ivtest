@@ -767,6 +767,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
                   pr1701890: Passed.
                    fileline: Passed.
                   fileline2: ==> Failed - output does not match gold file.
+             line_directive: Passed.
               macro_str_esc: Passed.
             macro_with_args: Passed.
                        mcl1: Passed.
@@ -2534,4 +2535,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2532, Passed=2493, Failed=2, Not Implemented=3, Expected Fail=34
+  Total=2533, Passed=2494, Failed=2, Not Implemented=3, Expected Fail=34

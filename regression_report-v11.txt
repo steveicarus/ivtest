@@ -4,6 +4,7 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
               eofmt_percent: Passed.
                  pr1916261a: Passed.
                    comment1: Passed.
+             line_directive: Passed - expected fail.
                   program2b: Passed - CE.
                   program3a: Passed - CE.
      sv_default_port_value1: Passed - CE.
@@ -2534,4 +2535,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2532, Passed=2501, Failed=0, Not Implemented=31, Expected Fail=0
+  Total=2533, Passed=2501, Failed=0, Not Implemented=31, Expected Fail=1

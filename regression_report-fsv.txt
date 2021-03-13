@@ -63,6 +63,7 @@ Running compiler/VVP tests for Icarus Verilog version: 12 (force SV).
                   pr1864115: Passed.
                    fileline: Passed.
                   fileline2: ==> Failed - output does not match gold file.
+             line_directive: Passed.
               macro_str_esc: Passed.
             macro_with_args: Passed.
                        mcl1: Passed.
@@ -2534,4 +2535,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2532, Passed=2511, Failed=18, Not Implemented=3, Expected Fail=0
+  Total=2533, Passed=2512, Failed=18, Not Implemented=3, Expected Fail=0
