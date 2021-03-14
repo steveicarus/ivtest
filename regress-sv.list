@@ -235,6 +235,8 @@ enum_value_expr		normal,-g2005-sv	ivltests
 enum_values		normal,-g2005-sv	ivltests
 escaped_macro_name	normal,-g2009	        ivltests gold=escaped_macro_name.gold
 extra_semicolon		normal,-g2005-sv	ivltests
+fileline		normal,-g2009		ivltests gold=fileline.gold
+fileline2		normal,-g2009		ivltests gold=fileline2.gold
 final			normal,-g2005-sv	ivltests gold=final.gold
 final2			normal,-g2005-sv	ivltests gold=final2.gold
 first_last_num		normal,-g2005-sv	ivltests
@@ -280,6 +282,7 @@ iuint1			normal,-g2005-sv	ivltests
 l_equiv			normal,-g2005-sv	ivltests
 l_equiv_ca		normal,-g2005-sv	ivltests
 l_equiv_const		normal,-g2005-sv	ivltests
+line_directive		normal,-g2009,-I./ivltests	ivltests gold=line_directive.gold
 localparam_query	normal,-g2005-sv	ivltests
 localparam_type2	normal,-g2009		ivltests
 logp2			normal,-g2005-sv	ivltests

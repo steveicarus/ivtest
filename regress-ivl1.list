@@ -74,11 +74,6 @@
 # Icarus pre-processor extensions
 #------------------------------------------------------------------------------
 
-# `__FILE__ and `__LINE__
-fileline		normal			ivltests gold=fileline.gold
-fileline2		normal			ivltests gold=fileline2.gold
-line_directive		normal,-I./ivltests	ivltests gold=line_directive.gold
-
 # Escaped defines ``
 macro_str_esc		normal			ivltests gold=macro_str_esc.gold
 macro_with_args		normal			ivltests gold=macro_with_args.gold
