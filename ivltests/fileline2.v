@@ -5,7 +5,7 @@
 module aaa;
 reg pass;
 
-`define printfl(x) $display("%d -> %s:%d", x, `__FILE__, `__LINE__)
+`define printfl(x) $display("%0d -> %s:%0d", x, `__FILE__, `__LINE__)
 initial begin #0
     pass = 1;
 
