@@ -9,19 +9,19 @@ reg pass;
 initial begin #0
     pass = 1;
 
-`line 999 "./ivltests/fileline2.v" 0
+`line 1000 "./ivltests/fileline2.v" 0
     if(`__LINE__ !== 1000) begin
         $display("FAIL"); pass = 0;
     end
     `printfl(1);
 
-`line 1999 "imaginary-include-file" 1
+`line 2000 "imaginary-include-file" 1
     if(`__LINE__ !== 2000) begin
         $display("FAIL"); pass = 0;
     end
     `printfl(2);
 
-`line 2999 "./ivltests/fileline2.v" 2
+`line 3000 "./ivltests/fileline2.v" 2
     if(`__LINE__ !== 3000) begin
         $display("FAIL"); pass = 0;
     end
