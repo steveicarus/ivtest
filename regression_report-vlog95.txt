@@ -765,9 +765,6 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
                    br_gh13a: Passed.
                 param-width: Passed.
                   pr1701890: Passed.
-                   fileline: Passed.
-                  fileline2: ==> Failed - output does not match gold file.
-             line_directive: Passed.
               macro_str_esc: Passed.
             macro_with_args: Passed.
                        mcl1: Passed.
@@ -2297,6 +2294,8 @@ test_mos_strength_reduction: Passed.
                  enum_test8: Passed.
          escaped_macro_name: Passed.
             extra_semicolon: Passed.
+                   fileline: Passed.
+                  fileline2: Passed.
                  function10: Passed - CO.
                  function11: Passed - CE.
              implicit-port1: Passed.
@@ -2307,6 +2306,7 @@ test_mos_strength_reduction: Passed.
              implicit-port6: Passed - CE.
              implicit-port7: Passed.
               l_equiv_const: Passed.
+             line_directive: Passed.
            localparam_query: Passed.
            localparam_type2: Passed.
                 named_begin: Passed.
@@ -2535,4 +2535,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2533, Passed=2494, Failed=2, Not Implemented=3, Expected Fail=34
+  Total=2533, Passed=2495, Failed=1, Not Implemented=3, Expected Fail=34

@@ -83,7 +83,6 @@ Running compiler/VVP tests for Icarus Verilog version: 11.
                  pr1864110a: Passed.
                  pr1864110b: Passed.
                   pr1864115: Passed.
-                   fileline: Passed.
               macro_str_esc: Passed.
             macro_with_args: Passed.
                        mcl1: Passed.
@@ -2025,6 +2024,7 @@ test_mos_strength_reduction: Passed.
                 enum_values: Passed.
          escaped_macro_name: Passed.
             extra_semicolon: Passed.
+                   fileline: Passed.
                       final: Passed.
                      final2: Passed.
              first_last_num: Passed.

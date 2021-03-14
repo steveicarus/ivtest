@@ -25,9 +25,6 @@ Running compiler/VVP tests for Icarus Verilog version: 12.
                  pr1864110a: Passed.
                  pr1864110b: Passed.
                   pr1864115: Passed.
-                   fileline: Passed.
-                  fileline2: ==> Failed - output does not match gold file.
-             line_directive: Passed.
               macro_str_esc: Passed.
             macro_with_args: Passed.
                        mcl1: Passed.
@@ -2000,6 +1997,8 @@ test_mos_strength_reduction: Passed.
                 enum_values: Passed.
          escaped_macro_name: Passed.
             extra_semicolon: Passed.
+                   fileline: Passed.
+                  fileline2: Passed.
                       final: Passed.
                      final2: Passed.
              first_last_num: Passed.
@@ -2045,6 +2044,7 @@ test_mos_strength_reduction: Passed.
                     l_equiv: Passed.
                  l_equiv_ca: Passed.
               l_equiv_const: Passed.
+             line_directive: Passed.
            localparam_query: Passed.
            localparam_type2: Passed.
                       logp2: Passed.
@@ -2535,4 +2535,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2533, Passed=2526, Failed=4, Not Implemented=0, Expected Fail=3
+  Total=2533, Passed=2527, Failed=3, Not Implemented=0, Expected Fail=3
