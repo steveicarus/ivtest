@@ -60,7 +60,6 @@ msys2:pr723		NI			pr723.c			pr723.log
 
 # V10 exceptions
 v10:br_gh117		NI			br_gh117.c		br_gh117.gold
-v10:br_gh169b		normal,-g2009		br_gh169.c		br_gh169b-v10.gold
 v10:br_ml20191013	NI			br_ml20191013.c		br_ml20191013.gold
 v10:by_index		NI			by_index.c		by_index.gold
 v10:pr723		normal			pr723.c			pr723-v10.log
@@ -87,6 +86,7 @@ br_gh184		normal			start_of_simtime1.c	br_gh184.gold
 br_gh235		normal,-g2009		br_gh235.c		br_gh235.gold
 br_gh308		normal			br_gh308.c		br_gh308.gold
 br_gh317		normal			br_gh317.c		br_gh317.gold
+br_gh496		normal,-g2009		br_gh496.c		br_gh496.gold
 br_ml20191013		normal			br_ml20191013.c		br_ml20191013.gold
 by_index		normal			by_index.c		by_index.gold
 by_name			normal			by_name.c		by_name.log

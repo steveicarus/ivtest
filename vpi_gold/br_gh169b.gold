@@ -1,6 +1,5 @@
 Compiling vpi/br_gh169.c...
 Making br_gh169b.vpi from  br_gh169.o...
-scope $unit
 scope test
   real  test.a
   real  test.c
