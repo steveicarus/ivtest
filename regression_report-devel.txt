@@ -183,6 +183,9 @@ Running compiler/VVP tests for Icarus Verilog version: 12.
                   pr1909940: Passed.
                  pr1909940b: Passed.
      unnamed_generate_block: Passed.
+                  br_gh497b: Passed - CE.
+                  br_gh497d: Passed - CE.
+                  br_gh497f: Passed - CE.
                       addsr: Passed.
                     addwide: Passed.
                always3.1.1A: Passed - CE.
@@ -446,6 +449,9 @@ Running compiler/VVP tests for Icarus Verilog version: 12.
                   br_gh356b: Passed.
                    br_gh435: Passed.
                    br_gh484: Passed.
+                  br_gh497a: Passed.
+                  br_gh497c: Passed.
+                  br_gh497e: Passed.
               br_ml20150315: Passed.
               br_ml20150321: Passed - CE.
               br_ml20150606: Passed.
@@ -2535,4 +2541,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2533, Passed=2527, Failed=3, Not Implemented=0, Expected Fail=3
+  Total=2539, Passed=2533, Failed=3, Not Implemented=0, Expected Fail=3

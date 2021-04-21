@@ -870,6 +870,9 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
         sv_deferred_assume2: Passed - CE.
                   pr1909940: Passed.
                  pr1909940b: Passed.
+                  br_gh497b: Passed - CE.
+                  br_gh497d: Passed - CE.
+                  br_gh497f: Passed - CE.
                       addsr: Passed.
                     addwide: Passed.
                always3.1.1A: Passed - CE.
@@ -1078,6 +1081,9 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
                    br_gh330: Passed.
                    br_gh435: Passed.
                    br_gh484: Passed.
+                  br_gh497a: Passed.
+                  br_gh497c: Passed.
+                  br_gh497e: Passed.
               br_ml20150315: Passed.
               br_ml20150321: Passed - CE.
               br_ml20150606: Passed.
@@ -2535,4 +2541,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2533, Passed=2495, Failed=1, Not Implemented=3, Expected Fail=34
+  Total=2539, Passed=2501, Failed=1, Not Implemented=3, Expected Fail=34
