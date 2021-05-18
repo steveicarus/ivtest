@@ -336,6 +336,7 @@ br_gh484		normal			ivltests
 br_gh497a		normal			ivltests
 br_gh497c		normal			ivltests
 br_gh497e		normal			ivltests
+br_gh508b		normal			ivltests
 br_gh515		normal			ivltests
 br_ml20150315		normal			ivltests gold=br_ml_20150315.gold
 br_ml20150321		CE			ivltests
