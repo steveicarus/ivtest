@@ -1,5 +1,5 @@
 package pkg1;
-   
+
 typedef enum logic [1:0] {
   R0     = 2'b00,
   R1     = 2'b01,
@@ -8,11 +8,11 @@ typedef enum logic [1:0] {
 } reg_t;
 
 endpackage
-   
+
 module dut(input pkg1::reg_t r1, output pkg1::reg_t r3);
 
 import pkg1::*;
-   
+
 reg_t r2;
 
 always_comb
@@ -20,7 +20,7 @@ always_comb
 
 always_comb
   r3 = r2;
-   
+
 endmodule
 
 
