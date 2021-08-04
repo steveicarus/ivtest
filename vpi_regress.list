@@ -104,6 +104,9 @@ force_reg_real		normal			force_real.c		force_reg_real.gold
 force_wire		normal			force.c			force_wire.gold
 force_wire_pv		normal			force.c			force_wire_pv.gold
 force_wire_real		normal			force_real.c		force_wire_real.gold
+genblk_named		normal			genblk_names.c		genblk_named.gold
+genblk_unnamed		normal			genblk_names.c		genblk_unnamed.gold
+genblk_direct		normal,-g2009		genblk_names.c		genblk_direct.gold
 getp			normal			getp.c			getp.log
 hello_poke		normal			hello_poke.c		hello_poke.log
 hello_tf		normal			hello_tf.c		hello_tf.log
