@@ -1968,6 +1968,7 @@ test_mos_strength_reduction: Passed.
                    br_gh527: Passed.
                    br_gh530: Passed - CO.
                    br_gh540: Passed.
+                   br_gh556: Passed.
               br_ml20171017: Passed.
               br_ml20180227: Passed - CE.
              br_ml20180309a: Passed.
@@ -2547,4 +2548,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2545, Passed=2539, Failed=3, Not Implemented=0, Expected Fail=3
+  Total=2546, Passed=2540, Failed=3, Not Implemented=0, Expected Fail=3

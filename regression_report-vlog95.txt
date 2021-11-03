@@ -126,6 +126,7 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
           array_word_width2: Passed - CE.
                      br1008: Passed - CE.
                      br1019: Passed - CE.
+                   br_gh556: Passed - CE.
               br_ml20171017: Passed - CE.
               genvar_scopes: Passed - CE.
                    meminit2: Passed - CE.
@@ -2550,4 +2551,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2548, Passed=2509, Failed=2, Not Implemented=3, Expected Fail=34
+  Total=2549, Passed=2510, Failed=2, Not Implemented=3, Expected Fail=34
