@@ -67,9 +67,5 @@
 # gold or diff commands.
 #
 
-# Opposite sign on zero value results from trig functions
-test_va_math		normal			ivltests gold=test_va_math-msys2.gold
-test_vams_math		normal,-gverilog-ams	ivltests gold=test_vams_math-msys2.gold
-
 # Warning about non-existent /tmp directory
 pr2509349a		normal			ivltests gold=pr2509349a-msys2.gold
