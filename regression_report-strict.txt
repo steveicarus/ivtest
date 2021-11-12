@@ -1541,6 +1541,8 @@ Running compiler/VVP tests for Icarus Verilog version: 12 (strict).
          real_reg_force_rel: Passed.
              recursive_func: Passed.
              recursive_task: Passed.
+            redef_net_error: Passed - CE.
+            redef_reg_error: Passed - CE.
                     repeat2: Passed.
           repeat_expr_probe: Passed.
          repl_zero_wid_fail: Passed - CE.
@@ -2549,4 +2551,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2547, Passed=2541, Failed=3, Not Implemented=0, Expected Fail=3
+  Total=2549, Passed=2543, Failed=3, Not Implemented=0, Expected Fail=3

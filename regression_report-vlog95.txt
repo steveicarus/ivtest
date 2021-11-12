@@ -1966,6 +1966,8 @@ Running vlog95 compiler/VVP tests for Icarus Verilog version: 12.
            real_invalid_ops: Passed - CE.
                real_logical: Passed.
          real_reg_force_rel: Passed.
+            redef_net_error: Passed - CE.
+            redef_reg_error: Passed - CE.
                     repeat2: Passed.
           repeat_expr_probe: Passed.
          repl_zero_wid_fail: Passed - CE.
@@ -2552,4 +2554,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2550, Passed=2511, Failed=2, Not Implemented=3, Expected Fail=34
+  Total=2552, Passed=2513, Failed=2, Not Implemented=3, Expected Fail=34
