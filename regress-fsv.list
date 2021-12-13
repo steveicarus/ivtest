@@ -74,6 +74,7 @@ br1027c			normal			ivltests gold=br1027c-fsv.gold
 br1027e			normal			ivltests gold=br1027e-fsv.gold
 br_gh25a		normal			ivltests
 br_gh25b		normal			ivltests
+br_gh567		normal			ivltests
 check_constant_3	normal			ivltests
 function4		normal			ivltests
 pr1963962		normal			ivltests gold=pr1963962-fsv.gold
