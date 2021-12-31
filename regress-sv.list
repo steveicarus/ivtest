@@ -293,6 +293,7 @@ l_equiv_const		normal,-g2005-sv	ivltests
 line_directive		normal,-g2009,-I./ivltests	ivltests gold=line_directive.gold
 localparam_query	normal,-g2005-sv	ivltests
 localparam_type2	normal,-g2009		ivltests
+logical_short_circuit	normal,-g2012		ivltests
 logp2			normal,-g2005-sv	ivltests
 mod_inst_pkg		normal,-g2009		ivltests
 named_begin		normal,-g2009		ivltests

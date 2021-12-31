@@ -2064,6 +2064,7 @@ test_mos_strength_reduction: Passed.
              line_directive: Passed.
            localparam_query: Passed.
            localparam_type2: Passed.
+      logical_short_circuit: Passed.
                       logp2: Passed.
                mod_inst_pkg: Passed.
                 named_begin: Passed.
@@ -2553,4 +2554,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2551, Passed=2545, Failed=3, Not Implemented=0, Expected Fail=3
+  Total=2552, Passed=2546, Failed=3, Not Implemented=0, Expected Fail=3
