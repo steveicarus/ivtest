@@ -1879,6 +1879,7 @@ test_mos_strength_reduction: Passed.
                  array_size: Passed.
                array_string: Passed.
     array_unpacked_sysfunct: Passed.
+               array_packed: Passed.
            assign_op_concat: Passed.
              assign_op_type: Passed.
                       bitp1: Passed.
@@ -2559,4 +2560,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2557, Passed=2537, Failed=17, Not Implemented=3, Expected Fail=0
+  Total=2558, Passed=2538, Failed=17, Not Implemented=3, Expected Fail=0

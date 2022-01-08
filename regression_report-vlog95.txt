@@ -2244,6 +2244,7 @@ test_mos_strength_reduction: Passed.
        always_latch_no_sens: Passed - CE.
           always_latch_trig: Passed.
                  array_size: Passed.
+               array_packed: Passed.
            assign_op_concat: Passed.
                       br921: Passed.
                       br956: Passed.
@@ -2559,4 +2560,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2557, Passed=2518, Failed=2, Not Implemented=3, Expected Fail=34
+  Total=2558, Passed=2519, Failed=2, Not Implemented=3, Expected Fail=34
