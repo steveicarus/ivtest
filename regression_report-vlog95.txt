@@ -2418,6 +2418,8 @@ test_mos_strength_reduction: Passed.
                 task_scope2: Passed.
                 timeliteral: Passed.
        undef_lval_select_SV: Passed.
+  packed_dims_invalid_class: Passed - CE.
+ packed_dims_invalid_module: Passed - CE.
              wild_cmp_const: Passed.
                      gh161a: Passed.
                      gh161b: Passed.
@@ -2557,4 +2559,4 @@ test_mos_strength_reduction: Passed.
            synth_if_no_else: Passed.
 ============================================================================
 Test results:
-  Total=2555, Passed=2516, Failed=2, Not Implemented=3, Expected Fail=34
+  Total=2557, Passed=2518, Failed=2, Not Implemented=3, Expected Fail=34
