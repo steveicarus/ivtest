@@ -2001,6 +2001,7 @@ test_mos_strength_reduction: Passed.
                        edge: Passed.
             enum_base_range: Passed.
            enum_elem_ranges: Passed.
+          enum_dims_invalid: Passed - CE.
                   enum_next: Passed.
                  enum_ports: Passed.
                  enum_test1: Passed.
@@ -2557,4 +2558,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2555, Passed=2549, Failed=3, Not Implemented=0, Expected Fail=3
+  Total=2556, Passed=2550, Failed=3, Not Implemented=0, Expected Fail=3
