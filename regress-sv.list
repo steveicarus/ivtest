@@ -95,6 +95,7 @@ always_latch_warn	normal,-g2005-sv	ivltests gold=always_latch_warn.gold
 array_size		normal,-g2005-sv	ivltests # test [size] arrays
 array_string		normal,-g2009		ivltests
 array_unpacked_sysfunct	normal,-g2005-sv	ivltests
+array_packed		normal,-g2005-sv	ivltests
 assign_op_concat	normal,-g2009		ivltests
 assign_op_type		normal,-g2009		ivltests
 bitp1			normal,-g2005-sv	ivltests
@@ -558,6 +559,8 @@ uint_test		normal,-g2005-sv	ivltests
 ulongint_test		normal,-g2005-sv	ivltests
 undef_lval_select_SV	normal,-g2009		ivltests
 unp_array_typedef	normal,-g2005-sv	ivltests
+packed_dims_invalid_class CE,-g2005-sv		ivltests
+packed_dims_invalid_module CE,-g2005-sv		ivltests
 ushortint_test		normal,-g2005-sv	ivltests
 vvp_recv_vec4_pv	normal,-g2005-sv	ivltests
 wait_fork		normal,-g2009		ivltests

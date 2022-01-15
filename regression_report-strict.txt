@@ -1868,6 +1868,7 @@ test_mos_strength_reduction: Passed.
                  array_size: Passed.
                array_string: Passed.
     array_unpacked_sysfunct: Passed.
+               array_packed: Passed.
            assign_op_concat: Passed.
              assign_op_type: Passed.
                       bitp1: Passed.
@@ -2312,6 +2313,8 @@ test_mos_strength_reduction: Passed.
               ulongint_test: Passed.
        undef_lval_select_SV: Passed.
           unp_array_typedef: Passed.
+  packed_dims_invalid_class: Passed - CE.
+ packed_dims_invalid_module: Passed - CE.
              ushortint_test: Passed.
            vvp_recv_vec4_pv: Passed.
                   wait_fork: Passed.
@@ -2554,4 +2557,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2552, Passed=2546, Failed=3, Not Implemented=0, Expected Fail=3
+  Total=2555, Passed=2549, Failed=3, Not Implemented=0, Expected Fail=3
