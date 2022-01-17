@@ -1,3 +1,14 @@
+
+### NOTE ###
+
+As of commits to iverilog master and v11-branch January 16th,
+the ivtest suite has been merged into the iverilog source tree,
+so the ivtest suite no longer exists as a separate project. That
+obviously means this github repository is obsolete, but is kept
+around for the git history it contains, and also for the rare
+case where older versions of iverilog need to be matched with
+its tests.
+
 ####################
 #
 # Main test script
