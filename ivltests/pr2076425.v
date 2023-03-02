@@ -1,3 +1,9 @@
+module z;
+  task delay;
+    #1;
+  endtask
+endmodule
+
 module top;
 
   task delay;
@@ -12,10 +18,4 @@ module top;
     #10 $display("PASSED");
     $finish;
   end
-endmodule
-
-module z;
-  task delay;
-    #1;
-  endtask
 endmodule

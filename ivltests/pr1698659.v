@@ -1,5 +1,12 @@
 `timescale 1ns/10ps
 
+module othertop;
+  reg othertopvar;
+  initial begin
+    #20 $display("%m var is (%b)", othertopvar);
+  end
+endmodule
+
 module top;
   reg topvar;
   initial begin
@@ -28,12 +35,5 @@ module evenlower;
     $display("Up reference to me (%b)", elwr.evenlowervar);
     $display("Up reference to parent (%b)", lwr.lowervar);
     $display("Up reference is (%b)", lower.lowervar);
-  end
-endmodule
-
-module othertop;
-  reg othertopvar;
-  initial begin
-    #20 $display("%m var is (%b)", othertopvar);
   end
 endmodule
