@@ -4,11 +4,6 @@
  * generated."
  */
 
-module ok;
-reg a;
-assign b=a;
-endmodule
-
 `default_nettype none
 
 module bad;

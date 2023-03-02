@@ -2,6 +2,14 @@ task start;
   top.dut.signal = 1;
 endtask
 
+module top();
+  initial begin
+    #1 start();
+  end
+
+  dut dut();
+endmodule
+
 module dut();
   logic signal = 0;
 
@@ -15,12 +23,4 @@ module dut();
       $display("FAILED");
     $finish;
   end
-endmodule
-
-module top();
-  initial begin
-    #1 start();
-  end
-
-  dut dut();
 endmodule

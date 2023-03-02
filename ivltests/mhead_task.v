@@ -18,14 +18,6 @@
 //
 //  SDW - Validate fork template 2
 
-module main;
-
-   initial begin
-      other_main.passed;
-   end
-
-endmodule // main
-
 module other_main;
 
    task passed;
@@ -33,3 +25,11 @@ module other_main;
    endtask // passed
 
 endmodule
+
+module main;
+
+   initial begin
+      other_main.passed;
+   end
+
+endmodule // main
